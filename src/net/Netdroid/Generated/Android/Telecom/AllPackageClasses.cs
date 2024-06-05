@@ -42,7 +42,8 @@ namespace Android.Telecom
         /// </summary>
         public Call(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -84,7 +85,8 @@ namespace Android.Telecom
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -128,7 +130,8 @@ namespace Android.Telecom
             /// </summary>
             public Details(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -172,7 +175,8 @@ namespace Android.Telecom
             /// </summary>
             public RttCall(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -220,7 +224,8 @@ namespace Android.Telecom
         /// </summary>
         public CallAttributes(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -260,7 +265,8 @@ namespace Android.Telecom
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -308,7 +314,8 @@ namespace Android.Telecom
         /// </summary>
         public CallAudioState(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -352,7 +359,8 @@ namespace Android.Telecom
         /// </summary>
         public CallControl(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -398,7 +406,8 @@ namespace Android.Telecom
         [global::System.Obsolete("CallControlCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CallControlCallback(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -442,7 +451,8 @@ namespace Android.Telecom
         /// </summary>
         public CallEndpoint(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -505,7 +515,8 @@ namespace Android.Telecom
         [global::System.Obsolete("CallEventCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CallEventCallback(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -568,7 +579,8 @@ namespace Android.Telecom
         [global::System.Obsolete("CallRedirectionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CallRedirectionService(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -614,7 +626,8 @@ namespace Android.Telecom
         [global::System.Obsolete("CallScreeningService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CallScreeningService(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -654,7 +667,8 @@ namespace Android.Telecom
             /// </summary>
             public CallResponse(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -694,7 +708,8 @@ namespace Android.Telecom
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
 
-                private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+                private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+                private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -748,7 +763,8 @@ namespace Android.Telecom
         [global::System.Obsolete("Conference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Conference(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -794,7 +810,8 @@ namespace Android.Telecom
         [global::System.Obsolete("Conferenceable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Conferenceable(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -840,7 +857,8 @@ namespace Android.Telecom
         [global::System.Obsolete("Connection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Connection(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -880,7 +898,8 @@ namespace Android.Telecom
             /// </summary>
             public RttModifyStatus(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -924,7 +943,8 @@ namespace Android.Telecom
             /// </summary>
             public RttTextStream(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -970,7 +990,8 @@ namespace Android.Telecom
             [global::System.Obsolete("VideoProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public VideoProvider(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1018,7 +1039,8 @@ namespace Android.Telecom
         /// </summary>
         public ConnectionRequest(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1064,7 +1086,8 @@ namespace Android.Telecom
         [global::System.Obsolete("ConnectionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConnectionService(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1108,7 +1131,8 @@ namespace Android.Telecom
         /// </summary>
         public DisconnectCause(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1152,7 +1176,8 @@ namespace Android.Telecom
         /// </summary>
         public GatewayInfo(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1198,7 +1223,8 @@ namespace Android.Telecom
         [global::System.Obsolete("InCallService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public InCallService(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1240,7 +1266,8 @@ namespace Android.Telecom
             [global::System.Obsolete("VideoCall class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public VideoCall(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1282,7 +1309,8 @@ namespace Android.Telecom
                 [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public Callback(params object[] args) : base(args) { }
 
-                private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+                private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+                private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1334,7 +1362,8 @@ namespace Android.Telecom
         /// </summary>
         public PhoneAccount(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1374,7 +1403,8 @@ namespace Android.Telecom
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1422,7 +1452,8 @@ namespace Android.Telecom
         /// </summary>
         public PhoneAccountHandle(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1466,7 +1497,8 @@ namespace Android.Telecom
         /// </summary>
         public PhoneAccountSuggestion(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1527,7 +1559,8 @@ namespace Android.Telecom
         /// </summary>
         public RemoteConference(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1569,7 +1602,8 @@ namespace Android.Telecom
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1617,7 +1651,8 @@ namespace Android.Telecom
         /// </summary>
         public RemoteConnection(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1659,7 +1694,8 @@ namespace Android.Telecom
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1703,7 +1739,8 @@ namespace Android.Telecom
             /// </summary>
             public VideoProvider(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1745,7 +1782,8 @@ namespace Android.Telecom
                 [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public Callback(params object[] args) : base(args) { }
 
-                private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+                private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+                private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1797,7 +1835,8 @@ namespace Android.Telecom
         /// </summary>
         public StatusHints(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1841,7 +1880,8 @@ namespace Android.Telecom
         /// </summary>
         public TelecomManager(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1885,7 +1925,8 @@ namespace Android.Telecom
         /// </summary>
         public VideoProfile(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1925,7 +1966,8 @@ namespace Android.Telecom
             /// </summary>
             public CameraCapabilities(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>

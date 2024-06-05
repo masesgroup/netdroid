@@ -42,7 +42,8 @@ namespace Android.Media.Tv
         /// </summary>
         public AdBuffer(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -86,7 +87,8 @@ namespace Android.Media.Tv
         /// </summary>
         public AdRequest(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -130,7 +132,8 @@ namespace Android.Media.Tv
         /// </summary>
         public AdResponse(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -174,7 +177,8 @@ namespace Android.Media.Tv
         /// </summary>
         public AitInfo(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -220,7 +224,8 @@ namespace Android.Media.Tv
         [global::System.Obsolete("BroadcastInfoRequest class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BroadcastInfoRequest(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -266,7 +271,8 @@ namespace Android.Media.Tv
         [global::System.Obsolete("BroadcastInfoResponse class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BroadcastInfoResponse(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -310,7 +316,8 @@ namespace Android.Media.Tv
         /// </summary>
         public CommandRequest(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -354,7 +361,8 @@ namespace Android.Media.Tv
         /// </summary>
         public CommandResponse(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -398,7 +406,8 @@ namespace Android.Media.Tv
         /// </summary>
         public DsmccRequest(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -442,7 +451,8 @@ namespace Android.Media.Tv
         /// </summary>
         public DsmccResponse(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -486,7 +496,8 @@ namespace Android.Media.Tv
         /// </summary>
         public PesRequest(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -530,7 +541,8 @@ namespace Android.Media.Tv
         /// </summary>
         public PesResponse(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -574,7 +586,8 @@ namespace Android.Media.Tv
         /// </summary>
         public SectionRequest(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -618,7 +631,8 @@ namespace Android.Media.Tv
         /// </summary>
         public SectionResponse(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -662,7 +676,8 @@ namespace Android.Media.Tv
         /// </summary>
         public StreamEventRequest(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -706,7 +721,8 @@ namespace Android.Media.Tv
         /// </summary>
         public StreamEventResponse(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -750,7 +766,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TableRequest(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -794,7 +811,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TableResponse(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -834,7 +852,8 @@ namespace Android.Media.Tv
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -882,7 +901,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TimelineRequest(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -926,7 +946,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TimelineResponse(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -970,7 +991,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TsRequest(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1014,7 +1036,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TsResponse(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1058,7 +1081,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TvContentRating(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1102,7 +1126,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TvContract(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1144,7 +1169,8 @@ namespace Android.Media.Tv
             [global::System.Obsolete("BaseTvColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public BaseTvColumns(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1188,7 +1214,8 @@ namespace Android.Media.Tv
             /// </summary>
             public Channels(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1228,7 +1255,8 @@ namespace Android.Media.Tv
                 /// </summary>
                 public Logo(params object[] args) : base(args) { }
 
-                private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+                private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+                private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1276,7 +1304,8 @@ namespace Android.Media.Tv
             /// </summary>
             public PreviewPrograms(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1320,7 +1349,8 @@ namespace Android.Media.Tv
             /// </summary>
             public Programs(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1360,7 +1390,8 @@ namespace Android.Media.Tv
                 /// </summary>
                 public Genres(params object[] args) : base(args) { }
 
-                private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+                private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+                private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1408,7 +1439,8 @@ namespace Android.Media.Tv
             /// </summary>
             public RecordedPrograms(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1452,7 +1484,8 @@ namespace Android.Media.Tv
             /// </summary>
             public WatchNextPrograms(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1500,7 +1533,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TvInputInfo(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1540,7 +1574,8 @@ namespace Android.Media.Tv
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1588,7 +1623,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TvInputManager(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1630,7 +1666,8 @@ namespace Android.Media.Tv
             [global::System.Obsolete("TvInputCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TvInputCallback(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1680,7 +1717,8 @@ namespace Android.Media.Tv
         [global::System.Obsolete("TvInputService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TvInputService(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1722,7 +1760,8 @@ namespace Android.Media.Tv
             [global::System.Obsolete("HardwareSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public HardwareSession(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1768,7 +1807,8 @@ namespace Android.Media.Tv
             [global::System.Obsolete("RecordingSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public RecordingSession(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1814,7 +1854,8 @@ namespace Android.Media.Tv
             [global::System.Obsolete("Session class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Session(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1862,7 +1903,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TvRecordingClient(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1904,7 +1946,8 @@ namespace Android.Media.Tv
             [global::System.Obsolete("RecordingCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public RecordingCallback(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1952,7 +1995,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TvRecordingInfo(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1996,7 +2040,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TvTrackInfo(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -2036,7 +2081,8 @@ namespace Android.Media.Tv
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -2084,7 +2130,8 @@ namespace Android.Media.Tv
         /// </summary>
         public TvView(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -2120,7 +2167,8 @@ namespace Android.Media.Tv
             public OnUnhandledInputEventListener() { InitializeHandlers(); }
 
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.tv.TvView_OnUnhandledInputEventListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
             
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2148,7 +2196,8 @@ namespace Android.Media.Tv
             protected override void InitializeHandlers() { }
 
             const string _bridgeClassName = "android.media.tv.TvView$OnUnhandledInputEventListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -2191,7 +2240,8 @@ namespace Android.Media.Tv
             [global::System.Obsolete("TimeShiftPositionCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TimeShiftPositionCallback(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -2237,7 +2287,8 @@ namespace Android.Media.Tv
             [global::System.Obsolete("TvInputCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TvInputCallback(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>

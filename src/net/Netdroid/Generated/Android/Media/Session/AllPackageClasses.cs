@@ -42,7 +42,8 @@ namespace Android.Media.Session
         /// </summary>
         public MediaController(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -84,7 +85,8 @@ namespace Android.Media.Session
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -128,7 +130,8 @@ namespace Android.Media.Session
             /// </summary>
             public PlaybackInfo(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -172,7 +175,8 @@ namespace Android.Media.Session
             /// </summary>
             public TransportControls(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -220,7 +224,8 @@ namespace Android.Media.Session
         /// </summary>
         public MediaSession(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -262,7 +267,8 @@ namespace Android.Media.Session
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -306,7 +312,8 @@ namespace Android.Media.Session
             /// </summary>
             public QueueItem(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -350,7 +357,8 @@ namespace Android.Media.Session
             /// </summary>
             public Token(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -398,7 +406,8 @@ namespace Android.Media.Session
         /// </summary>
         public MediaSessionManager(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -434,7 +443,8 @@ namespace Android.Media.Session
             public OnActiveSessionsChangedListener() { InitializeHandlers(); }
 
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.session.MediaSessionManager_OnActiveSessionsChangedListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
             
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -462,7 +472,8 @@ namespace Android.Media.Session
             protected override void InitializeHandlers() { }
 
             const string _bridgeClassName = "android.media.session.MediaSessionManager$OnActiveSessionsChangedListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -499,7 +510,8 @@ namespace Android.Media.Session
             public OnMediaKeyEventSessionChangedListener() { InitializeHandlers(); }
 
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.session.MediaSessionManager_OnMediaKeyEventSessionChangedListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
             
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -527,7 +539,8 @@ namespace Android.Media.Session
             protected override void InitializeHandlers() { }
 
             const string _bridgeClassName = "android.media.session.MediaSessionManager$OnMediaKeyEventSessionChangedListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -564,7 +577,8 @@ namespace Android.Media.Session
             public OnSession2TokensChangedListener() { InitializeHandlers(); }
 
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.session.MediaSessionManager_OnSession2TokensChangedListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
             
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -592,7 +606,8 @@ namespace Android.Media.Session
             protected override void InitializeHandlers() { }
 
             const string _bridgeClassName = "android.media.session.MediaSessionManager$OnSession2TokensChangedListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -633,7 +648,8 @@ namespace Android.Media.Session
             /// </summary>
             public RemoteUserInfo(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -681,7 +697,8 @@ namespace Android.Media.Session
         /// </summary>
         public PlaybackState(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -721,7 +738,8 @@ namespace Android.Media.Session
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -765,7 +783,8 @@ namespace Android.Media.Session
             /// </summary>
             public CustomAction(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -805,7 +824,8 @@ namespace Android.Media.Session
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
 
-                private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+                private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+                private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>

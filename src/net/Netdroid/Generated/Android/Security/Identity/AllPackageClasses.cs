@@ -42,7 +42,8 @@ namespace Android.Security.Identity
         /// </summary>
         public AccessControlProfile(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -82,7 +83,8 @@ namespace Android.Security.Identity
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -130,7 +132,8 @@ namespace Android.Security.Identity
         /// </summary>
         public AccessControlProfileId(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -191,7 +194,8 @@ namespace Android.Security.Identity
         /// </summary>
         public AuthenticationKeyMetadata(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -252,7 +256,8 @@ namespace Android.Security.Identity
         /// </summary>
         public CredentialDataRequest(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -292,7 +297,8 @@ namespace Android.Security.Identity
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -342,7 +348,8 @@ namespace Android.Security.Identity
         [global::System.Obsolete("CredentialDataResult class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CredentialDataResult(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -384,7 +391,8 @@ namespace Android.Security.Identity
             [global::System.Obsolete("Entries class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Entries(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -468,7 +476,8 @@ namespace Android.Security.Identity
         [global::System.Obsolete("IdentityCredential class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IdentityCredential(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -531,7 +540,8 @@ namespace Android.Security.Identity
         [global::System.Obsolete("IdentityCredentialStore class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IdentityCredentialStore(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -643,7 +653,8 @@ namespace Android.Security.Identity
         /// </summary>
         public PersonalizationData(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -683,7 +694,8 @@ namespace Android.Security.Identity
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -733,7 +745,8 @@ namespace Android.Security.Identity
         [global::System.Obsolete("PresentationSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PresentationSession(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -780,7 +793,8 @@ namespace Android.Security.Identity
         [global::System.Obsolete("ResultData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ResultData(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -860,7 +874,8 @@ namespace Android.Security.Identity
         [global::System.Obsolete("WritableIdentityCredential class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WritableIdentityCredential(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>

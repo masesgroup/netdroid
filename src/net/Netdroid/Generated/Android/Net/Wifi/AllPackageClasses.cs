@@ -44,7 +44,8 @@ namespace Android.Net.Wifi
         [global::System.Obsolete("EasyConnectStatusCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EasyConnectStatusCallback(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -88,7 +89,8 @@ namespace Android.Net.Wifi
         /// </summary>
         public MloLink(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -132,7 +134,8 @@ namespace Android.Net.Wifi
         /// </summary>
         public ScanResult(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -172,7 +175,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public InformationElement(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -220,7 +224,8 @@ namespace Android.Net.Wifi
         /// </summary>
         public SoftApConfiguration(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -264,7 +269,8 @@ namespace Android.Net.Wifi
         /// </summary>
         public SupplicantState(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -308,7 +314,8 @@ namespace Android.Net.Wifi
         /// </summary>
         public WifiAvailableChannel(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -353,7 +360,8 @@ namespace Android.Net.Wifi
         /// </summary>
         public WifiConfiguration(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -394,7 +402,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public AuthAlgorithm(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -439,7 +448,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public GroupCipher(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -484,7 +494,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public GroupMgmtCipher(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -529,7 +540,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public KeyMgmt(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -574,7 +586,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public PairwiseCipher(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -619,7 +632,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public Protocol(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -664,7 +678,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public Status(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -712,7 +727,8 @@ namespace Android.Net.Wifi
         /// </summary>
         public WifiEnterpriseConfig(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -752,7 +768,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public Eap(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -796,7 +813,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public Phase2(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -844,7 +862,8 @@ namespace Android.Net.Wifi
         /// </summary>
         public WifiInfo(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -884,7 +903,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -932,7 +952,8 @@ namespace Android.Net.Wifi
         /// </summary>
         public WifiManager(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -972,7 +993,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public AddNetworkResult(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1016,7 +1038,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public InterfaceCreationImpact(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1056,7 +1079,8 @@ namespace Android.Net.Wifi
             public LocalOnlyConnectionFailureListener() { InitializeHandlers(); }
 
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.WifiManager_LocalOnlyConnectionFailureListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
             
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1084,7 +1108,8 @@ namespace Android.Net.Wifi
             protected override void InitializeHandlers() { }
 
             const string _bridgeClassName = "android.net.wifi.WifiManager$LocalOnlyConnectionFailureListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1125,7 +1150,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public LocalOnlyHotspotCallback(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1169,7 +1195,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public LocalOnlyHotspotReservation(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1213,7 +1240,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public MulticastLock(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1259,7 +1287,8 @@ namespace Android.Net.Wifi
             [global::System.Obsolete("ScanResultsCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ScanResultsCallback(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1305,7 +1334,8 @@ namespace Android.Net.Wifi
             [global::System.Obsolete("SubsystemRestartTrackingCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SubsystemRestartTrackingCallback(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1345,7 +1375,8 @@ namespace Android.Net.Wifi
             public SuggestionConnectionStatusListener() { InitializeHandlers(); }
 
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.WifiManager_SuggestionConnectionStatusListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
             
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1373,7 +1404,8 @@ namespace Android.Net.Wifi
             protected override void InitializeHandlers() { }
 
             const string _bridgeClassName = "android.net.wifi.WifiManager$SuggestionConnectionStatusListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1410,7 +1442,8 @@ namespace Android.Net.Wifi
             public SuggestionUserApprovalStatusListener() { InitializeHandlers(); }
 
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.WifiManager_SuggestionUserApprovalStatusListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
             
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1438,7 +1471,8 @@ namespace Android.Net.Wifi
             protected override void InitializeHandlers() { }
 
             const string _bridgeClassName = "android.net.wifi.WifiManager$SuggestionUserApprovalStatusListener";
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
@@ -1479,7 +1513,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public WifiLock(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1526,7 +1561,8 @@ namespace Android.Net.Wifi
             [global::System.Obsolete("WpsCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public WpsCallback(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1574,7 +1610,8 @@ namespace Android.Net.Wifi
         /// </summary>
         public WifiNetworkSpecifier(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1614,7 +1651,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1662,7 +1700,8 @@ namespace Android.Net.Wifi
         /// </summary>
         public WifiNetworkSuggestion(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1702,7 +1741,8 @@ namespace Android.Net.Wifi
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1750,7 +1790,8 @@ namespace Android.Net.Wifi
         /// </summary>
         public WifiSsid(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -1794,7 +1835,8 @@ namespace Android.Net.Wifi
         /// </summary>
         public WpsInfo(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
