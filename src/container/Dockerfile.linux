@@ -13,6 +13,8 @@ RUN dotnet publish ./NetdroidCLI/NetdroidCLI.csproj --framework net8.0 -c Releas
 # Build runtime image
 FROM ubuntu:22.04
 
+ARG TARGETARCH
+
 # Change default shell for RUN from Dash to Bash
 SHELL ["/bin/bash", "-exo", "pipefail", "-c"]
 
@@ -176,7 +178,7 @@ ENV PATH $M2_HOME/bin:$PATH
 # Set JAVA_HOME (and related) environment variable. This will be set to our
 # default Java version of 21 but the user would need to reset it when changing
 # JAVA versions.
-ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk-$TARGETARCH
 ENV JDK_HOME=${JAVA_HOME}
 ENV JRE_HOME=${JDK_HOME}
 ENV MAVEN_VERSION=3.9.8
