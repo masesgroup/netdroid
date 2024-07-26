@@ -119,7 +119,7 @@ RUN noInstallRecommends="" && \
 	rm -rf /var/lib/apt/lists/*
 
 # Install Docker - needs the setup_remote_docker step to work
-ENV DOCKER_VERSION 5:25.0.3-1~ubuntu
+ENV DOCKER_VERSION=5:25.0.3-1~ubuntu
 RUN apt-get update && apt-get install -y \
 		apt-transport-https \
 		ca-certificates \
@@ -214,16 +214,15 @@ RUN SDK_TOOLS_URL="https://dl.google.com/android/repository/commandlinetools-lin
 	rm /tmp/cmdline-tools.zip && \
 	mv ${ANDROID_HOME}/cmdline-tools/cmdline-tools ${ANDROID_HOME}/cmdline-tools/latest
 
-RUN ${CMDLINE_TOOLS_ROOT}/sdkmanager --licenses && \
-    ${CMDLINE_TOOLS_ROOT}/sdkmanager "tools" && \
-    ${CMDLINE_TOOLS_ROOT}/sdkmanager "platform-tools" && \
-    ${CMDLINE_TOOLS_ROOT}/sdkmanager "build-tools;$NETDROID_DOCKER_SDK_VERSION_ARG.0.0"  && \
-    ${CMDLINE_TOOLS_ROOT}/sdkmanager "platforms;android-$NETDROID_DOCKER_SDK_VERSION_ARG"
+RUN ${CMDLINE_TOOLS_ROOT}/sdkmanager --licenses "tools" && \
+    ${CMDLINE_TOOLS_ROOT}/sdkmanager --licenses "platform-tools" && \
+    ${CMDLINE_TOOLS_ROOT}/sdkmanager --licenses "build-tools;$NETDROID_DOCKER_SDK_VERSION_ARG.0.0"  && \
+    ${CMDLINE_TOOLS_ROOT}/sdkmanager --licenses "platforms;android-$NETDROID_DOCKER_SDK_VERSION_ARG"
 
 # Install some useful packages
-RUN ${CMDLINE_TOOLS_ROOT}/sdkmanager "extras;android;m2repository" && \
-	${CMDLINE_TOOLS_ROOT}/sdkmanager "extras;google;m2repository" && \
-    ${CMDLINE_TOOLS_ROOT}/sdkmanager "extras;google;google_play_services" && \
+RUN ${CMDLINE_TOOLS_ROOT}/sdkmanager --licenses "extras;android;m2repository" && \
+	${CMDLINE_TOOLS_ROOT}/sdkmanager --licenses "extras;google;m2repository" && \
+    ${CMDLINE_TOOLS_ROOT}/sdkmanager --licenses "extras;google;google_play_services" && \
     sudo gem install fastlane --version 2.221.1 --no-document && \
 	curl -sL https://firebase.tools | bash
 
