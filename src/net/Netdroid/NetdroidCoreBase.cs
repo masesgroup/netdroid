@@ -292,7 +292,7 @@ namespace MASES.Netdroid
             }
             catch (ArgumentException)
             {
-#if !JNET_SIMPLIFIED_GENERATION
+#if !NETDROID_SIMPLIFIED_GENERATION
                 if (type.GetInterface(typeof(IJVMBridgeMain).Name) == null) throw;
                 var execType = type;
                 do

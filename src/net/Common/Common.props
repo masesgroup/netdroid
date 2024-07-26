@@ -4,13 +4,13 @@
 		<Owners>MASES s.r.l.</Owners>
 		<Authors>MASES s.r.l.</Authors>
 		<Company>MASES s.r.l.</Company>
-		<Version>1.0.0.34</Version>
+		<Version>1.0.0.35</Version>
 		<LangVersion>latest</LangVersion>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-		<PackageProjectUrl>https://github.com/masesgroup/KNet/</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/masesgroup/KNet</RepositoryUrl>
-		<PackageReleaseNotes>https://github.com/masesgroup/KNet/releases</PackageReleaseNotes>
+		<PackageProjectUrl>https://github.com/masesgroup/Netdroid/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/masesgroup/Netdroid</RepositoryUrl>
+		<PackageReleaseNotes>https://github.com/masesgroup/Netdroid/releases</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageIcon>JCOB128x128.png</PackageIcon>
 		<IncludeSymbols>true</IncludeSymbols>

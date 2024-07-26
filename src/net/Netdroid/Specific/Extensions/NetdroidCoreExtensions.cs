@@ -25,7 +25,7 @@ namespace MASES.Netdroid.Specific.Extensions
     /// <summary>
     /// Extension class
     /// </summary>
-    public static class JNetCoreExtensions
+    public static class NetdroidCoreExtensions
     {
         /// <summary>
         /// Retrieve the <see cref="Java.Lang.Class{TClass}"/> from the <typeparamref name="TClass"/>

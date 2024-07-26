@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Common\Common.props" />
+  <PropertyGroup>
+	<PackageType>DotnetTool</PackageType>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>MASES.NetdroidCLI</AssemblyName>
+    <RootNamespace>MASES.NetdroidCLI</RootNamespace>
+    <Title>NetdroidCLI - Android suite for .NET command line interface</Title>
+    <Description>NetdroidCLI - Android suite for .NET command line interface</Description>
+    <Product>NetdroidCLI</Product>
+    <OutputPath>..\..\..\bin\</OutputPath>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageTags>Netdroid android cli dotnet clr netcore net8</PackageTags>
+    <PackageId>MASES.NetdroidCLI</PackageId>
+    <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+    <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Netdroid\Netdroid.csproj">
+		<IncludeAssets>All</IncludeAssets>
+        <PrivateAssets>None</PrivateAssets>
+    </ProjectReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.10.0" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

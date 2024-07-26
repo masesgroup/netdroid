@@ -22,7 +22,7 @@ namespace Java.Util
 {
     #region IEventListener
     /// <summary>
-    /// .NET interface for org.mases.jnet.util.EventListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListener.html"/>
+    /// .NET interface for org.mases.netdroid.util.EventListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListener.html"/>
     /// </summary>
     public partial interface IEventListener
     {
