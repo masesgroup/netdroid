@@ -16,7 +16,9 @@
 *  Refer to LICENSE for more information.
 */
 
+using System;
 using System.Collections.Generic;
+using System.Runtime;
 
 namespace MASES.Netdroid
 {
@@ -64,6 +66,8 @@ namespace MASES.Netdroid
         {
             get
             {
+                var lst = base.PathToParse;
+
                 var assembly = typeof(NetdroidCore<>).Assembly;
                 var version = assembly.GetName().Version.ToString();
                 // 1. check first full version
@@ -74,11 +78,16 @@ namespace MASES.Netdroid
                     version = version.Substring(0, version.LastIndexOf(".0"));
                     netdroidFile = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"netdroid-{version}.jar");
                 }
-                var lst = base.PathToParse;
                 lst.Add(netdroidFile);
+#if !NETDROID_DOCKER_BUILD_ACTIONS
+                var androidHome = Environment.GetEnvironmentVariable("ANDROID_HOME");
+                var androidSDKVersion = Environment.GetEnvironmentVariable("NETDROID_DOCKER_SDK_VERSION");
+                var androidJarPath = System.IO.Path(androidHome, "platforms", $"android-{androidSDKVersion}", "android.jar");
+                lst.Add(androidJarPath);
+#endif
                 return lst;
             }
         }
-        #endregion
+#endregion
     }
 }

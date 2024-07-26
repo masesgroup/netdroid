@@ -75,6 +75,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
+          build-args: NETDROID_DOCKER_SDK_VERSION_ARG=35
           file: ./src/container/Dockerfile.linux
           context: .
           platforms: linux/amd64,linux/arm64
@@ -139,6 +140,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
+          build-args: NETDROID_DOCKER_SDK_VERSION_ARG=35
           file: ./src/container/DockerfileSDK.linux
           context: .
           platforms: linux/amd64
