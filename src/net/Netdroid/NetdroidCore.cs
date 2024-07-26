@@ -82,7 +82,7 @@ namespace MASES.Netdroid
 #if !NETDROID_DOCKER_BUILD_ACTIONS
                 var androidHome = Environment.GetEnvironmentVariable("ANDROID_HOME");
                 var androidSDKVersion = Environment.GetEnvironmentVariable("NETDROID_DOCKER_SDK_VERSION");
-                var androidJarPath = System.IO.Path(androidHome, "platforms", $"android-{androidSDKVersion}", "android.jar");
+                var androidJarPath = System.IO.Path.Combine(androidHome, "platforms", $"android-{androidSDKVersion}", "android.jar");
                 lst.Add(androidJarPath);
 #endif
                 return lst;
