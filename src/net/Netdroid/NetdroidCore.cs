@@ -67,15 +67,15 @@ namespace MASES.Netdroid
                 var assembly = typeof(NetdroidCore<>).Assembly;
                 var version = assembly.GetName().Version.ToString();
                 // 1. check first full version
-                var jnetFile = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"jnet-{version}.jar");
-                if (!System.IO.File.Exists(jnetFile) && version.EndsWith(".0"))
+                var netdroidFile = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"netdroid-{version}.jar");
+                if (!System.IO.File.Exists(netdroidFile) && version.EndsWith(".0"))
                 {
                     // 2. if not exist remove last part of version
                     version = version.Substring(0, version.LastIndexOf(".0"));
-                    jnetFile = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"jnet-{version}.jar");
+                    netdroidFile = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"netdroid-{version}.jar");
                 }
                 var lst = base.PathToParse;
-                lst.Add(jnetFile);
+                lst.Add(netdroidFile);
                 return lst;
             }
         }

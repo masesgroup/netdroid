@@ -40,9 +40,9 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <classpathfile>${basedir}/classpathfile.classpath</classpathfile>
-        <netdroidVersion>1.0.0.0</netdroidVersion>
+        <netdroidVersion>1.0.0.35</netdroidVersion>
 		<jcobridgepath>../../../bin/net8.0/JCOBridge.jar</jcobridgepath>
-		<androidJarPath>${env.ANDROID_HOME}/platforms/android-34-ext8/android.jar</androidJarPath>
+		<androidJarPath>${env.ANDROID_HOME}/platforms/android-35/android.jar</androidJarPath>
     </properties>
     <distributionManagement>
         <snapshotRepository>

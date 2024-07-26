@@ -26,7 +26,7 @@ using System;
 namespace MASES.Netdroid.Specific
 {
     /// <summary>
-    /// Helper class of JNet for some specific operations
+    /// Helper class of Netdroid for some specific operations
     /// </summary>
     public sealed class NetdroidHelper : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NetdroidHelper>
     {

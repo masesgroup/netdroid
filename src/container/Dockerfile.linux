@@ -1,0 +1,231 @@
+FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0-jammy AS build-env
+ARG TARGETARCH
+WORKDIR /app
+
+# Copy everything
+COPY ./src/net ./
+ENV NETDROID_DOCKER_BUILD_ACTIONS=true
+# Restore as distinct layers
+RUN dotnet restore Netdroid.sln -a $TARGETARCH
+# Build and publish a release
+RUN dotnet publish ./NetdroidCLI/NetdroidCLI.csproj --framework net8.0 -c Release -o out -a $TARGETARCH
+
+# Build runtime image
+FROM ubuntu:22.04
+
+# Change default shell for RUN from Dash to Bash
+SHELL ["/bin/bash", "-exo", "pipefail", "-c"]
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    TERM=dumb \
+    PAGER=cat
+
+# Configure environment
+RUN echo 'APT::Get::Assume-Yes "true";' > /etc/apt/apt.conf.d/90netdroid && \
+	echo 'DPkg::Options "--force-confnew";' >> /etc/apt/apt.conf.d/90netdroid && \
+	apt-get update && apt-get install -y \
+		curl \
+		locales \
+		sudo \
+	&& \
+	locale-gen en_US.UTF-8 && \
+	rm -rf /var/lib/apt/lists/* && \
+	\
+	groupadd --gid=1002 netdroid && \
+	useradd --uid=1001 --gid=netdroid --create-home netdroid && \
+	echo 'netdroid ALL=NOPASSWD: ALL' >> /etc/sudoers.d/50-netdroid && \
+	echo 'Defaults    env_keep += "DEBIAN_FRONTEND"' >> /etc/sudoers.d/env_keep && \
+	sudo -u netdroid mkdir /home/netdroid/project && \
+	sudo -u netdroid mkdir /home/netdroid/bin && \
+	sudo -u netdroid mkdir -p /home/netdroid/.local/bin && \
+	\
+	dockerizeArch=arm64 && \
+	if uname -p | grep "x86_64"; then \
+		dockerizeArch=x86_64; \
+	fi && \
+	curl -sSL --fail --retry 3 --output /usr/local/bin/dockerize "https://github.com/powerman/dockerize/releases/download/v0.8.0/dockerize-linux-${dockerizeArch}" && \
+	chmod +x /usr/local/bin/dockerize && \
+	dockerize --version
+
+ENV PATH=/home/netdroid/bin:/home/netdroid/.local/bin:$PATH \
+	LANG=en_US.UTF-8 \
+	LANGUAGE=en_US:en \
+	LC_ALL=en_US.UTF-8
+
+RUN noInstallRecommends="" && \
+	if [[ "22.04" == "22.04" ]]; then \
+		noInstallRecommends="--no-install-recommends"; \
+	fi && \
+	apt-get update && apt-get install -y $noInstallRecommends \
+		autoconf \
+		build-essential \
+		ca-certificates \
+		cmake \
+		# already installed but here for consistency
+		curl \
+		file \
+		gettext-base \
+		gnupg \
+		gzip \
+		jq \
+		libcurl4-openssl-dev \
+		libmagic-dev \
+		# popular DB lib - MariaDB
+		libmariadb-dev \
+		# allows MySQL users to use MariaDB lib
+		libmariadb-dev-compat \
+		# popular DB lib - PostgreSQL
+		libpq-dev \
+		libssl-dev \
+		libsqlite3-dev \
+		lsof \
+		make \
+		# for ssh-enabled builds
+		nano \
+		net-tools \
+		netcat \
+		openssh-client \
+		parallel \
+		# compiling tool
+		pkg-config \
+		postgresql-client \
+		python-is-python3 \
+		retry \
+		shellcheck \
+		software-properties-common \
+		# already installed but here for consistency
+		sudo \
+		tar \
+		tzdata \
+		unzip \
+		# for ssh-enabled builds
+		vim \
+		wget \
+		zip && \
+	# get the semi-official latest-stable git instead of using the old(er) version from the ubuntu distro
+	add-apt-repository ppa:git-core/ppa && apt-get install -y git && \
+	# get the semi-official latest-stable git-lfs too
+	curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && apt-get install -y git-lfs && \
+	# Quick test of the git & git-lfs install
+	git version && git lfs version && \
+	# Smoke test for python aliasing
+	python --version && \
+	rm -rf /var/lib/apt/lists/*
+
+# Install Docker - needs the setup_remote_docker step to work
+ENV DOCKER_VERSION 5:25.0.3-1~ubuntu
+RUN apt-get update && apt-get install -y \
+		apt-transport-https \
+		ca-certificates \
+		curl \
+		gnupg-agent \
+		software-properties-common && \
+	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
+	add-apt-repository -y "deb [arch=$(dpkg --print-architecture)] https://download.docker.com/linux/ubuntu $( lsb_release -cs ) stable" && \
+	apt-get install -y docker-ce=${DOCKER_VERSION}.$( lsb_release -rs )~$( lsb_release -cs ) docker-ce-cli=${DOCKER_VERSION}.$( lsb_release -rs )~$( lsb_release -cs ) containerd.io && \
+	# Quick test of the Docker install
+	docker --version && \
+	rm -rf /var/lib/apt/lists/*
+
+# Install Docker Compose - see prerequisite above
+ENV COMPOSE_VER 2.24.5
+ENV COMPOSE_SWITCH_VERSION 1.0.5
+RUN dockerPluginDir=/usr/local/lib/docker/cli-plugins && \
+	mkdir -p $dockerPluginDir && \
+	curl -sSL "https://github.com/docker/compose/releases/download/v${COMPOSE_VER}/docker-compose-linux-$(uname -m)" -o $dockerPluginDir/docker-compose && \
+	chmod +x $dockerPluginDir/docker-compose && \
+	curl -fL "https://github.com/docker/compose-switch/releases/download/v${COMPOSE_SWITCH_VERSION}/docker-compose-linux-$(dpkg --print-architecture)" -o /usr/local/bin/compose-switch && \
+	# Quick test of the Docker Compose install
+	docker compose version && \
+	chmod +x /usr/local/bin/compose-switch && \
+	update-alternatives --install /usr/local/bin/docker-compose docker-compose /usr/local/bin/compose-switch 99 && \
+	# Tests if docker-compose for v1 is transposed to v2
+	docker-compose version
+
+RUN YQ_ARCH=$(dpkg --print-architecture) && \
+	curl -sSL "https://github.com/mikefarah/yq/releases/download/v4.42.1/yq_linux_$YQ_ARCH.tar.gz" | \
+	tar -xz -C /usr/local/bin && \
+	mv /usr/local/bin/yq{_linux_$YQ_ARCH,}
+
+USER netdroid
+# Run commands and tests as netdroid user
+RUN whoami && \
+	# opt-out of the new security feature, not needed in a CI environment
+	git config --global --add safe.directory '*'
+
+# Match the default netdroid working directory
+WORKDIR /home/netdroid/project
+
+RUN sudo apt-get update && sudo apt-get install -y \
+		ant \
+		openjdk-8-jdk \
+		openjdk-17-jdk \
+		openjdk-21-jdk \
+		ruby-full \
+	&& \
+	sudo rm -rf /var/lib/apt/lists/* && \
+	ruby -v && \
+	sudo gem install bundler && \
+	bundle version
+
+RUN sudo chmod -R a+w /var/lib/gems/ /usr/local/bin
+
+ENV M2_HOME /usr/local/apache-maven
+ENV MAVEN_OPTS -Xmx2048m
+ENV PATH $M2_HOME/bin:$PATH
+# Set JAVA_HOME (and related) environment variable. This will be set to our
+# default Java version of 21 but the user would need to reset it when changing
+# JAVA versions.
+ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+ENV JDK_HOME=${JAVA_HOME}
+ENV JRE_HOME=${JDK_HOME}
+ENV MAVEN_VERSION=3.9.8
+RUN curl -sSL -o /tmp/maven.tar.gz http://apache.osuosl.org/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz && \
+	sudo tar -xz -C /usr/local -f /tmp/maven.tar.gz && \
+	sudo ln -sf /usr/local/apache-maven-${MAVEN_VERSION} /usr/local/apache-maven && \
+	rm -rf /tmp/maven.tar.gz && \
+	mkdir -p /home/netdroid/.m2
+ENV GRADLE_VERSION=8.8
+ENV PATH $PATH:/usr/local/gradle-${GRADLE_VERSION}/bin
+RUN URL=https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip && \
+	curl -sSL -o /tmp/gradle.zip $URL && \
+	sudo unzip -d /usr/local /tmp/gradle.zip && \
+	rm -rf /tmp/gradle.zip
+
+# Install Android SDK Tools
+ENV ANDROID_HOME "/home/netdroid/android-sdk"
+ENV ANDROID_SDK_ROOT $ANDROID_HOME
+ENV CMDLINE_TOOLS_ROOT "${ANDROID_HOME}/cmdline-tools/latest/bin"
+ENV ADB_INSTALL_TIMEOUT 120
+ENV PATH "${ANDROID_HOME}/emulator:${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/platform-tools/bin:${PATH}"
+# You can find the latest command line tools here: https://developer.android.com/studio#command-line-tools-only
+RUN SDK_TOOLS_URL="https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip" && \
+	mkdir -p ${ANDROID_HOME}/cmdline-tools && \
+	mkdir ${ANDROID_HOME}/platforms && \
+	mkdir ${ANDROID_HOME}/ndk && \
+	wget -O /tmp/cmdline-tools.zip -t 5 "${SDK_TOOLS_URL}" && \
+	unzip -q /tmp/cmdline-tools.zip -d ${ANDROID_HOME}/cmdline-tools && \
+	rm /tmp/cmdline-tools.zip && \
+	mv ${ANDROID_HOME}/cmdline-tools/cmdline-tools ${ANDROID_HOME}/cmdline-tools/latest
+
+RUN echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "tools" && \
+    echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "platform-tools" && \
+    echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "build-tools;35.0.0"
+RUN echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "platforms;android-35"
+
+# Install some useful packages
+RUN echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "extras;android;m2repository" && \
+	echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "extras;google;m2repository" && \
+    echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "extras;google;google_play_services" && \
+    sudo gem install fastlane --version 2.221.1 --no-document && \
+	curl -sL https://firebase.tools | bash
+
+# Install Google Cloud CLI
+# Latest gcloud version can be found here: https://cloud.google.com/sdk/docs/release-notes
+ENV GCLOUD_VERSION=467.0.0-0
+RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add - && \
+	sudo add-apt-repository "deb https://packages.cloud.google.com/apt cloud-sdk main" && \
+	sudo apt-get update && sudo apt-get install -y google-cloud-sdk=${GCLOUD_VERSION} && \
+	sudo gcloud config set --installation component_manager/disable_update_check true && \
+	sudo gcloud config set disable_usage_reporting false
+	
