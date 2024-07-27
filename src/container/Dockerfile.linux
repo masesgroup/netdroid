@@ -10,7 +10,7 @@ ENV NETDROID_DOCKER_SDK_VERSION=$NETDROID_DOCKER_SDK_VERSION_ARG
 # Restore as distinct layers
 RUN dotnet restore Netdroid.sln -a $TARGETARCH
 # Build and publish a release
-RUN dotnet publish ./NetdroidCLI/NetdroidCLI.csproj --framework net8.0 -c Release -o out -a $TARGETARCH
+RUN dotnet publish ./NetdroidCLI/NetdroidCLI.csproj --self-contained -p:PublishReadyToRun=true --framework net8.0 -c Release -o out -a $TARGETARCH
 
 # Build runtime image
 FROM ubuntu:22.04
@@ -197,3 +197,9 @@ RUN echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "platform-tools" && \
 
 # Install some useful packages
 RUN echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "extras;google;google_play_services"
+
+ENV JCOBRIDGE_LicensePath=
+
+WORKDIR /app
+COPY --from=build-env /app/out .
+ENTRYPOINT ["dotnet", "MASES.NetdroidCLI.dll"]

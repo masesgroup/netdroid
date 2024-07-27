@@ -10,7 +10,7 @@ ENV NETDROID_DOCKER_SDK_VERSION=$NETDROID_DOCKER_SDK_VERSION_ARG
 # Restore as distinct layers
 RUN dotnet restore Netdroid.sln -a $TARGETARCH
 # Build and publish a release
-RUN dotnet publish ./NetdroidCLI/NetdroidCLI.csproj --framework net8.0 -c Release -o out -a $TARGETARCH
+RUN dotnet publish ./NetdroidCLI/NetdroidCLI.csproj --self-contained -p:PublishReadyToRun=true --framework net8.0 -c Release -o out -a $TARGETARCH
 
 # Build runtime image
 FROM ubuntu:22.04
@@ -235,3 +235,8 @@ RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key ad
 	sudo gcloud config set --installation component_manager/disable_update_check true && \
 	sudo gcloud config set disable_usage_reporting false
 	
+ENV JCOBRIDGE_LicensePath=
+
+WORKDIR /app
+COPY --from=build-env /app/out .
+ENTRYPOINT ["dotnet", "MASES.NetdroidCLI.dll"]

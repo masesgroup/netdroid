@@ -83,6 +83,10 @@ namespace MASES.Netdroid
                 var androidHome = Environment.GetEnvironmentVariable("ANDROID_HOME");
                 var androidSDKVersion = Environment.GetEnvironmentVariable("NETDROID_DOCKER_SDK_VERSION");
                 var androidJarPath = System.IO.Path.Combine(androidHome, "platforms", $"android-{androidSDKVersion}", "android.jar");
+                if (!System.IO.File.Exists(androidJarPath))
+                {
+                    throw new System.IO.FileNotFoundException("Unable to identify Android Jar location", androidJarPath);
+                }
                 lst.Add(androidJarPath);
 #endif
                 return lst;
