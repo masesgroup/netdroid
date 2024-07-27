@@ -257,6 +257,85 @@ namespace Android.Hardware.Camera2
         #endregion
 
         #region Nested classes
+        #region CameraDeviceSetup
+        public partial class CameraDeviceSetup
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.CameraDeviceSetup.html#getSessionCharacteristics(android.hardware.camera2.params.SessionConfiguration)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Hardware.Camera2.Params.SessionConfiguration"/></param>
+            /// <returns><see cref="Android.Hardware.Camera2.CameraCharacteristics"/></returns>
+            /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+            public Android.Hardware.Camera2.CameraCharacteristics GetSessionCharacteristics(Android.Hardware.Camera2.Params.SessionConfiguration arg0)
+            {
+                return IExecuteWithSignature<Android.Hardware.Camera2.CameraCharacteristics>("getSessionCharacteristics", "(Landroid/hardware/camera2/params/SessionConfiguration;)Landroid/hardware/camera2/CameraCharacteristics;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.CameraDeviceSetup.html#createCaptureRequest(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Hardware.Camera2.CaptureRequest.Builder"/></returns>
+            /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+            public Android.Hardware.Camera2.CaptureRequest.Builder CreateCaptureRequest(int arg0)
+            {
+                return IExecuteWithSignature<Android.Hardware.Camera2.CaptureRequest.Builder>("createCaptureRequest", "(I)Landroid/hardware/camera2/CaptureRequest$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.CameraDeviceSetup.html#isSessionConfigurationSupported(android.hardware.camera2.params.SessionConfiguration)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Hardware.Camera2.Params.SessionConfiguration"/></param>
+            /// <returns><see cref="bool"/></returns>
+            /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+            public bool IsSessionConfigurationSupported(Android.Hardware.Camera2.Params.SessionConfiguration arg0)
+            {
+                return IExecuteWithSignature<bool>("isSessionConfigurationSupported", "(Landroid/hardware/camera2/params/SessionConfiguration;)Z", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.CameraDeviceSetup.html#getId()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetId()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.CameraDeviceSetup.html#openCamera(java.util.concurrent.Executor,android.hardware.camera2.CameraDevice.StateCallback)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+            /// <param name="arg1"><see cref="Android.Hardware.Camera2.CameraDevice.StateCallback"/></param>
+            /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+            public void OpenCamera(Java.Util.Concurrent.Executor arg0, Android.Hardware.Camera2.CameraDevice.StateCallback arg1)
+            {
+                IExecute("openCamera", arg0, arg1);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region StateCallback
         public partial class StateCallback
         {

@@ -88,6 +88,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PointerIcon.html#TYPE_DEFAULT"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int TYPE_DEFAULT { get { if (!_TYPE_DEFAULTReady) { _TYPE_DEFAULTContent = SGetField<int>(LocalBridgeClazz, "TYPE_DEFAULT"); _TYPE_DEFAULTReady = true; } return _TYPE_DEFAULTContent; } }
         private static int _TYPE_DEFAULTContent = default;
         private static bool _TYPE_DEFAULTReady = false; // this is used because in case of generics 

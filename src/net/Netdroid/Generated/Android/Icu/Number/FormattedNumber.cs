@@ -56,6 +56,14 @@ namespace Android.Icu.Number
             return IExecuteWithSignature<A>("appendTo", "(Ljava/lang/Appendable;)Ljava/lang/Appendable;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumber.html#getNounClass()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.DisplayOptions.NounClass"/></returns>
+        public Android.Icu.Text.DisplayOptions.NounClass GetNounClass()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.DisplayOptions.NounClass>("getNounClass", "()Landroid/icu/text/DisplayOptions$NounClass;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumber.html#getOutputUnit()"/>
         /// </summary>
         /// <returns><see cref="Android.Icu.Util.MeasureUnit"/></returns>

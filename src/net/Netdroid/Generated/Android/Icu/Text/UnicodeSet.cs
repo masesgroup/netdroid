@@ -138,6 +138,7 @@ namespace Android.Icu.Text
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#CASE"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int CASE { get { if (!_CASEReady) { _CASEContent = SGetField<int>(LocalBridgeClazz, "CASE"); _CASEReady = true; } return _CASEContent; } }
         private static int _CASEContent = default;
         private static bool _CASEReady = false; // this is used because in case of generics 

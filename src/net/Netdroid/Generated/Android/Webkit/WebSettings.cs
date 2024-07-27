@@ -243,6 +243,7 @@ namespace Android.Webkit
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDatabaseEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool GetDatabaseEnabled()
         {
             return IExecuteWithSignature<bool>("getDatabaseEnabled", "()Z");
@@ -585,6 +586,7 @@ namespace Android.Webkit
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDatabaseEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
         public void SetDatabaseEnabled(bool arg0)
         {
             IExecuteWithSignature("setDatabaseEnabled", "(Z)V", arg0);

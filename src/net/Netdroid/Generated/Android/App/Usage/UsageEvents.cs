@@ -228,6 +228,14 @@ namespace Android.App.Usage
                 return IExecuteWithSignature<Android.Content.Res.Configuration>("getConfiguration", "()Landroid/content/res/Configuration;");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getExtras()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+            public Android.Os.PersistableBundle GetExtras()
+            {
+                return IExecuteWithSignature<Android.Os.PersistableBundle>("getExtras", "()Landroid/os/PersistableBundle;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#getAppStandbyBucket()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>

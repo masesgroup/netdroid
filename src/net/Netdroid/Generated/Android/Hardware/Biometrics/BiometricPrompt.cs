@@ -163,6 +163,12 @@ namespace Android.Hardware.Biometrics
         public static int BIOMETRIC_ERROR_VENDOR { get { if (!_BIOMETRIC_ERROR_VENDORReady) { _BIOMETRIC_ERROR_VENDORContent = SGetField<int>(LocalBridgeClazz, "BIOMETRIC_ERROR_VENDOR"); _BIOMETRIC_ERROR_VENDORReady = true; } return _BIOMETRIC_ERROR_VENDORContent; } }
         private static int _BIOMETRIC_ERROR_VENDORContent = default;
         private static bool _BIOMETRIC_ERROR_VENDORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#BIOMETRIC_NO_AUTHENTICATION"/>
+        /// </summary>
+        public static long BIOMETRIC_NO_AUTHENTICATION { get { if (!_BIOMETRIC_NO_AUTHENTICATIONReady) { _BIOMETRIC_NO_AUTHENTICATIONContent = SGetField<long>(LocalBridgeClazz, "BIOMETRIC_NO_AUTHENTICATION"); _BIOMETRIC_NO_AUTHENTICATIONReady = true; } return _BIOMETRIC_NO_AUTHENTICATIONContent; } }
+        private static long _BIOMETRIC_NO_AUTHENTICATIONContent = default;
+        private static bool _BIOMETRIC_NO_AUTHENTICATIONReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -171,6 +177,22 @@ namespace Android.Hardware.Biometrics
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getLogoBitmap()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public Android.Graphics.Bitmap GetLogoBitmap()
+        {
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getLogoBitmap", "()Landroid/graphics/Bitmap;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getContentView()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Hardware.Biometrics.PromptContentView"/></returns>
+        public Android.Hardware.Biometrics.PromptContentView GetContentView()
+        {
+            return IExecuteWithSignature<Android.Hardware.Biometrics.PromptContentView>("getContentView", "()Landroid/hardware/biometrics/PromptContentView;");
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#isConfirmationRequired()"/>
         /// </summary>
@@ -186,6 +208,14 @@ namespace Android.Hardware.Biometrics
         public int GetAllowedAuthenticators()
         {
             return IExecuteWithSignature<int>("getAllowedAuthenticators", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getLogoRes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLogoRes()
+        {
+            return IExecuteWithSignature<int>("getLogoRes", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getDescription()"/>
@@ -218,6 +248,14 @@ namespace Android.Hardware.Biometrics
         public Java.Lang.CharSequence GetTitle()
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getLogoDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLogoDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLogoDescription", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#authenticate(android.hardware.biometrics.BiometricPrompt.CryptoObject,android.os.CancellationSignal,java.util.concurrent.Executor,android.hardware.biometrics.BiometricPrompt.AuthenticationCallback)"/>
@@ -410,6 +448,15 @@ namespace Android.Hardware.Biometrics
                 return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricPrompt.Builder>("setConfirmationRequired", "(Z)Landroid/hardware/biometrics/BiometricPrompt$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.Builder.html#setContentView(android.hardware.biometrics.PromptContentView)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Hardware.Biometrics.PromptContentView"/></param>
+            /// <returns><see cref="Android.Hardware.Biometrics.BiometricPrompt.Builder"/></returns>
+            public Android.Hardware.Biometrics.BiometricPrompt.Builder SetContentView(Android.Hardware.Biometrics.PromptContentView arg0)
+            {
+                return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricPrompt.Builder>("setContentView", "(Landroid/hardware/biometrics/PromptContentView;)Landroid/hardware/biometrics/BiometricPrompt$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.Builder.html#setDescription(java.lang.CharSequence)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -427,6 +474,33 @@ namespace Android.Hardware.Biometrics
             public Android.Hardware.Biometrics.BiometricPrompt.Builder SetDeviceCredentialAllowed(bool arg0)
             {
                 return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricPrompt.Builder>("setDeviceCredentialAllowed", "(Z)Landroid/hardware/biometrics/BiometricPrompt$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.Builder.html#setLogoBitmap(android.graphics.Bitmap)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
+            /// <returns><see cref="Android.Hardware.Biometrics.BiometricPrompt.Builder"/></returns>
+            public Android.Hardware.Biometrics.BiometricPrompt.Builder SetLogoBitmap(Android.Graphics.Bitmap arg0)
+            {
+                return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricPrompt.Builder>("setLogoBitmap", "(Landroid/graphics/Bitmap;)Landroid/hardware/biometrics/BiometricPrompt$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.Builder.html#setLogoDescription(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.Hardware.Biometrics.BiometricPrompt.Builder"/></returns>
+            public Android.Hardware.Biometrics.BiometricPrompt.Builder SetLogoDescription(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricPrompt.Builder>("setLogoDescription", "(Ljava/lang/String;)Landroid/hardware/biometrics/BiometricPrompt$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.Builder.html#setLogoRes(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Hardware.Biometrics.BiometricPrompt.Builder"/></returns>
+            public Android.Hardware.Biometrics.BiometricPrompt.Builder SetLogoRes(int arg0)
+            {
+                return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricPrompt.Builder>("setLogoRes", "(I)Landroid/hardware/biometrics/BiometricPrompt$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.Builder.html#setNegativeButton(java.lang.CharSequence,java.util.concurrent.Executor,android.content.DialogInterface.OnClickListener)"/>
@@ -513,6 +587,14 @@ namespace Android.Hardware.Biometrics
                 : base(arg0)
             {
             }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#%3Cinit%3E(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            public CryptoObject(long arg0)
+                : base(arg0)
+            {
+            }
 
             #endregion
 
@@ -569,6 +651,14 @@ namespace Android.Hardware.Biometrics
             public Javax.Crypto.Mac GetMac()
             {
                 return IExecuteWithSignature<Javax.Crypto.Mac>("getMac", "()Ljavax/crypto/Mac;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getOperationHandle()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetOperationHandle()
+            {
+                return IExecuteWithSignature<long>("getOperationHandle", "()J");
             }
 
             #endregion

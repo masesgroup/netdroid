@@ -37,6 +37,15 @@ namespace Android.Graphics
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#%3Cinit%3E(android.graphics.Gainmap,android.graphics.Bitmap)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Gainmap"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
+        public Gainmap(Android.Graphics.Gainmap arg0, Android.Graphics.Bitmap arg1)
+            : base(arg0, arg1)
+        {
+        }
 
         #endregion
 

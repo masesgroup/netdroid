@@ -78,6 +78,10 @@ namespace MASES.Netdroid
                     version = version.Substring(0, version.LastIndexOf(".0"));
                     netdroidFile = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"netdroid-{version}.jar");
                 }
+                if (!System.IO.File.Exists(netdroidFile))
+                {
+                    throw new System.IO.FileNotFoundException("Unable to identify Netdroid Jar location", netdroidFile);
+                }
                 lst.Add(netdroidFile);
 #if !NETDROID_DOCKER_BUILD_ACTIONS
                 var androidHome = Environment.GetEnvironmentVariable("ANDROID_HOME");

@@ -219,6 +219,12 @@ namespace Android.Telecom
         private static Java.Lang.String _EXTRA_CALL_DURATIONContent = default;
         private static bool _EXTRA_CALL_DURATIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_LOG_URI"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_CALL_LOG_URI { get { if (!_EXTRA_CALL_LOG_URIReady) { _EXTRA_CALL_LOG_URIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CALL_LOG_URI"); _EXTRA_CALL_LOG_URIReady = true; } return _EXTRA_CALL_LOG_URIContent; } }
+        private static Java.Lang.String _EXTRA_CALL_LOG_URIContent = default;
+        private static bool _EXTRA_CALL_LOG_URIReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#EXTRA_CALL_NETWORK_TYPE"/>
         /// </summary>
         public static Java.Lang.String EXTRA_CALL_NETWORK_TYPE { get { if (!_EXTRA_CALL_NETWORK_TYPEReady) { _EXTRA_CALL_NETWORK_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CALL_NETWORK_TYPE"); _EXTRA_CALL_NETWORK_TYPEReady = true; } return _EXTRA_CALL_NETWORK_TYPEContent; } }
@@ -588,6 +594,14 @@ namespace Android.Telecom
         public Java.Lang.String GetVoiceMailNumber(Android.Telecom.PhoneAccountHandle arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getVoiceMailNumber", "(Landroid/telecom/PhoneAccountHandle;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getRegisteredPhoneAccounts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telecom.PhoneAccount> GetRegisteredPhoneAccounts()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telecom.PhoneAccount>>("getRegisteredPhoneAccounts", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getCallCapablePhoneAccounts()"/>

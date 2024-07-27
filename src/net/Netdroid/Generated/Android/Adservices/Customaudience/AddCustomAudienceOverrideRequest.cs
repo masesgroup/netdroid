@@ -88,6 +88,14 @@ namespace Android.Adservices.Customaudience
         {
             return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.html#getBiddingLogicJsVersion()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetBiddingLogicJsVersion()
+        {
+            return IExecuteWithSignature<long>("getBiddingLogicJsVersion", "()J");
+        }
 
         #endregion
 
@@ -128,6 +136,15 @@ namespace Android.Adservices.Customaudience
             public Android.Adservices.Customaudience.AddCustomAudienceOverrideRequest.Builder SetBiddingLogicJs(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Adservices.Customaudience.AddCustomAudienceOverrideRequest.Builder>("setBiddingLogicJs", "(Ljava/lang/String;)Landroid/adservices/customaudience/AddCustomAudienceOverrideRequest$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.Builder.html#setBiddingLogicJsVersion(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            /// <returns><see cref="Android.Adservices.Customaudience.AddCustomAudienceOverrideRequest.Builder"/></returns>
+            public Android.Adservices.Customaudience.AddCustomAudienceOverrideRequest.Builder SetBiddingLogicJsVersion(long arg0)
+            {
+                return IExecuteWithSignature<Android.Adservices.Customaudience.AddCustomAudienceOverrideRequest.Builder>("setBiddingLogicJsVersion", "(J)Landroid/adservices/customaudience/AddCustomAudienceOverrideRequest$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.Builder.html#setBuyer(android.adservices.common.AdTechIdentifier)"/>

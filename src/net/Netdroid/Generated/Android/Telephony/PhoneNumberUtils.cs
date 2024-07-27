@@ -202,6 +202,15 @@ namespace Android.Telephony
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isWellFormedSmsAddress", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#isWpsCallNumber(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public static bool IsWpsCallNumber(Java.Lang.String arg0)
+        {
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isWpsCallNumber", "(Ljava/lang/String;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#networkPortionToCalledPartyBCD(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

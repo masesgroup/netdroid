@@ -246,6 +246,16 @@ namespace Android.Inputmethodservice
             return IExecute<bool>("onShowInputRequested", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartConnectionlessStylusHandwriting(int,android.view.inputmethod.CursorAnchorInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.View.Inputmethod.CursorAnchorInfo"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool OnStartConnectionlessStylusHandwriting(int arg0, Android.View.Inputmethod.CursorAnchorInfo arg1)
+        {
+            return IExecute<bool>("onStartConnectionlessStylusHandwriting", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartStylusHandwriting()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -302,6 +312,14 @@ namespace Android.Inputmethodservice
         public Java.Time.Duration GetStylusHandwritingSessionTimeout()
         {
             return IExecuteWithSignature<Java.Time.Duration>("getStylusHandwritingSessionTimeout", "()Ljava/time/Duration;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#finishConnectionlessStylusHandwriting(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void FinishConnectionlessStylusHandwriting(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("finishConnectionlessStylusHandwriting", "(Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#finishStylusHandwriting()"/>

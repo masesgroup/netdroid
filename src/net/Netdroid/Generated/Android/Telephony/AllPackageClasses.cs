@@ -2672,6 +2672,7 @@ namespace Android.Telephony
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberFormattingTextWatcher.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class PhoneNumberFormattingTextWatcher : Android.Text.TextWatcher
     {
         const string _bridgeClassName = "android.telephony.PhoneNumberFormattingTextWatcher";

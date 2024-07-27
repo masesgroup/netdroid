@@ -64,30 +64,35 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentCallbacks2.html#TRIM_MEMORY_COMPLETE"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int TRIM_MEMORY_COMPLETE { get { if (!_TRIM_MEMORY_COMPLETEReady) { _TRIM_MEMORY_COMPLETEContent = SGetField<int>(LocalBridgeClazz, "TRIM_MEMORY_COMPLETE"); _TRIM_MEMORY_COMPLETEReady = true; } return _TRIM_MEMORY_COMPLETEContent; } }
         private static int _TRIM_MEMORY_COMPLETEContent = default;
         private static bool _TRIM_MEMORY_COMPLETEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentCallbacks2.html#TRIM_MEMORY_MODERATE"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int TRIM_MEMORY_MODERATE { get { if (!_TRIM_MEMORY_MODERATEReady) { _TRIM_MEMORY_MODERATEContent = SGetField<int>(LocalBridgeClazz, "TRIM_MEMORY_MODERATE"); _TRIM_MEMORY_MODERATEReady = true; } return _TRIM_MEMORY_MODERATEContent; } }
         private static int _TRIM_MEMORY_MODERATEContent = default;
         private static bool _TRIM_MEMORY_MODERATEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentCallbacks2.html#TRIM_MEMORY_RUNNING_CRITICAL"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int TRIM_MEMORY_RUNNING_CRITICAL { get { if (!_TRIM_MEMORY_RUNNING_CRITICALReady) { _TRIM_MEMORY_RUNNING_CRITICALContent = SGetField<int>(LocalBridgeClazz, "TRIM_MEMORY_RUNNING_CRITICAL"); _TRIM_MEMORY_RUNNING_CRITICALReady = true; } return _TRIM_MEMORY_RUNNING_CRITICALContent; } }
         private static int _TRIM_MEMORY_RUNNING_CRITICALContent = default;
         private static bool _TRIM_MEMORY_RUNNING_CRITICALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentCallbacks2.html#TRIM_MEMORY_RUNNING_LOW"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int TRIM_MEMORY_RUNNING_LOW { get { if (!_TRIM_MEMORY_RUNNING_LOWReady) { _TRIM_MEMORY_RUNNING_LOWContent = SGetField<int>(LocalBridgeClazz, "TRIM_MEMORY_RUNNING_LOW"); _TRIM_MEMORY_RUNNING_LOWReady = true; } return _TRIM_MEMORY_RUNNING_LOWContent; } }
         private static int _TRIM_MEMORY_RUNNING_LOWContent = default;
         private static bool _TRIM_MEMORY_RUNNING_LOWReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentCallbacks2.html#TRIM_MEMORY_RUNNING_MODERATE"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int TRIM_MEMORY_RUNNING_MODERATE { get { if (!_TRIM_MEMORY_RUNNING_MODERATEReady) { _TRIM_MEMORY_RUNNING_MODERATEContent = SGetField<int>(LocalBridgeClazz, "TRIM_MEMORY_RUNNING_MODERATE"); _TRIM_MEMORY_RUNNING_MODERATEReady = true; } return _TRIM_MEMORY_RUNNING_MODERATEContent; } }
         private static int _TRIM_MEMORY_RUNNING_MODERATEContent = default;
         private static bool _TRIM_MEMORY_RUNNING_MODERATEReady = false; // this is used because in case of generics 

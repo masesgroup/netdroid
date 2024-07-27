@@ -128,6 +128,12 @@ namespace Android.Text
         private static int _HYPHENATION_FREQUENCY_NORMAL_FASTContent = default;
         private static bool _HYPHENATION_FREQUENCY_NORMAL_FASTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#JUSTIFICATION_MODE_INTER_CHARACTER"/>
+        /// </summary>
+        public static int JUSTIFICATION_MODE_INTER_CHARACTER { get { if (!_JUSTIFICATION_MODE_INTER_CHARACTERReady) { _JUSTIFICATION_MODE_INTER_CHARACTERContent = SGetField<int>(LocalBridgeClazz, "JUSTIFICATION_MODE_INTER_CHARACTER"); _JUSTIFICATION_MODE_INTER_CHARACTERReady = true; } return _JUSTIFICATION_MODE_INTER_CHARACTERContent; } }
+        private static int _JUSTIFICATION_MODE_INTER_CHARACTERContent = default;
+        private static bool _JUSTIFICATION_MODE_INTER_CHARACTERReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#JUSTIFICATION_MODE_INTER_WORD"/>
         /// </summary>
         public static int JUSTIFICATION_MODE_INTER_WORD { get { if (!_JUSTIFICATION_MODE_INTER_WORDReady) { _JUSTIFICATION_MODE_INTER_WORDContent = SGetField<int>(LocalBridgeClazz, "JUSTIFICATION_MODE_INTER_WORD"); _JUSTIFICATION_MODE_INTER_WORDReady = true; } return _JUSTIFICATION_MODE_INTER_WORDContent; } }
@@ -266,6 +272,46 @@ namespace Android.Text
             return IExecuteWithSignature<int>("getTopPadding", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getMinimumFontMetrics()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Paint.FontMetrics"/></returns>
+        public Android.Graphics.Paint.FontMetrics GetMinimumFontMetrics()
+        {
+            return IExecuteWithSignature<Android.Graphics.Paint.FontMetrics>("getMinimumFontMetrics", "()Landroid/graphics/Paint$FontMetrics;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#computeDrawingBoundingBox()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.RectF"/></returns>
+        public Android.Graphics.RectF ComputeDrawingBoundingBox()
+        {
+            return IExecuteWithSignature<Android.Graphics.RectF>("computeDrawingBoundingBox", "()Landroid/graphics/RectF;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineBreakConfig()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Text.LineBreakConfig"/></returns>
+        public Android.Graphics.Text.LineBreakConfig GetLineBreakConfig()
+        {
+            return IExecuteWithSignature<Android.Graphics.Text.LineBreakConfig>("getLineBreakConfig", "()Landroid/graphics/text/LineBreakConfig;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getShiftDrawingOffsetForStartOverhang()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetShiftDrawingOffsetForStartOverhang()
+        {
+            return IExecuteWithSignature<bool>("getShiftDrawingOffsetForStartOverhang", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getUseBoundsForWidth()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetUseBoundsForWidth()
+        {
+            return IExecuteWithSignature<bool>("getUseBoundsForWidth", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#isFallbackLineSpacingEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -300,12 +346,52 @@ namespace Android.Text
             return IExecuteWithSignature<Android.Text.Layout.Alignment>("getParagraphAlignment", "(I)Landroid/text/Layout$Alignment;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getTextDirectionHeuristic()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.TextDirectionHeuristic"/></returns>
+        public Android.Text.TextDirectionHeuristic GetTextDirectionHeuristic()
+        {
+            return IExecuteWithSignature<Android.Text.TextDirectionHeuristic>("getTextDirectionHeuristic", "()Landroid/text/TextDirectionHeuristic;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getPaint()"/>
         /// </summary>
         /// <returns><see cref="Android.Text.TextPaint"/></returns>
         public Android.Text.TextPaint GetPaint()
         {
             return IExecuteWithSignature<Android.Text.TextPaint>("getPaint", "()Landroid/text/TextPaint;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getEllipsize()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.TextUtils.TruncateAt"/></returns>
+        public Android.Text.TextUtils.TruncateAt GetEllipsize()
+        {
+            return IExecuteWithSignature<Android.Text.TextUtils.TruncateAt>("getEllipsize", "()Landroid/text/TextUtils$TruncateAt;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#isFontPaddingIncluded()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFontPaddingIncluded()
+        {
+            return IExecuteWithSignature<bool>("isFontPaddingIncluded", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineSpacingAmount()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetLineSpacingAmount()
+        {
+            return IExecuteWithSignature<float>("getLineSpacingAmount", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineSpacingMultiplier()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetLineSpacingMultiplier()
+        {
+            return IExecuteWithSignature<float>("getLineSpacingMultiplier", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getSpacingAdd()"/>
@@ -322,6 +408,30 @@ namespace Android.Text
         public float GetSpacingMultiplier()
         {
             return IExecuteWithSignature<float>("getSpacingMultiplier", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getBreakStrategy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBreakStrategy()
+        {
+            return IExecuteWithSignature<int>("getBreakStrategy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getHyphenationFrequency()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHyphenationFrequency()
+        {
+            return IExecuteWithSignature<int>("getHyphenationFrequency", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getJustificationMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetJustificationMode()
+        {
+            return IExecuteWithSignature<int>("getJustificationMode", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineAscent(int)"/>
@@ -360,6 +470,14 @@ namespace Android.Text
             return IExecuteWithSignature<int>("getLineEnd", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getMaxLines()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxLines()
+        {
+            return IExecuteWithSignature<int>("getMaxLines", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getParagraphLeft(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -384,6 +502,22 @@ namespace Android.Text
         public int GetWidth()
         {
             return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLeftIndents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetLeftIndents()
+        {
+            return IExecuteWithSignatureArray<int>("getLeftIndents", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getRightIndents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetRightIndents()
+        {
+            return IExecuteWithSignatureArray<int>("getRightIndents", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getText()"/>
@@ -508,6 +642,16 @@ namespace Android.Text
         public int GetLineForVertical(int arg0)
         {
             return IExecuteWithSignature<int>("getLineForVertical", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineLetterSpacingUnitCount(int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="int"/></returns>
+        public int GetLineLetterSpacingUnitCount(int arg0, bool arg1)
+        {
+            return IExecute<int>("getLineLetterSpacingUnitCount", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineVisibleEnd(int)"/>
@@ -695,6 +839,219 @@ namespace Android.Text
             #endregion
 
             #region Instance methods
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Builder
+        public partial class Builder
+        {
+            #region Constructors
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#%3Cinit%3E(java.lang.CharSequence,int,int,android.text.TextPaint,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="Android.Text.TextPaint"/></param>
+            /// <param name="arg4"><see cref="int"/></param>
+            public Builder(Java.Lang.CharSequence arg0, int arg1, int arg2, Android.Text.TextPaint arg3, int arg4)
+                : base(arg0, arg1, arg2, arg3, arg4)
+            {
+            }
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#build()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Text.Layout"/></returns>
+            public Android.Text.Layout Build()
+            {
+                return IExecuteWithSignature<Android.Text.Layout>("build", "()Landroid/text/Layout;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setAlignment(android.text.Layout.Alignment)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Text.Layout.Alignment"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetAlignment(Android.Text.Layout.Alignment arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setAlignment", "(Landroid/text/Layout$Alignment;)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setBreakStrategy(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetBreakStrategy(int arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setBreakStrategy", "(I)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setEllipsize(android.text.TextUtils.TruncateAt)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Text.TextUtils.TruncateAt"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetEllipsize(Android.Text.TextUtils.TruncateAt arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setEllipsize", "(Landroid/text/TextUtils$TruncateAt;)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setEllipsizedWidth(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetEllipsizedWidth(int arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setEllipsizedWidth", "(I)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setFallbackLineSpacingEnabled(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetFallbackLineSpacingEnabled(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setFallbackLineSpacingEnabled", "(Z)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setFontPaddingIncluded(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetFontPaddingIncluded(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setFontPaddingIncluded", "(Z)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setHyphenationFrequency(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetHyphenationFrequency(int arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setHyphenationFrequency", "(I)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setJustificationMode(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetJustificationMode(int arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setJustificationMode", "(I)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setLeftIndents(int[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetLeftIndents(int[] arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setLeftIndents", "([I)Landroid/text/Layout$Builder;", new object[] { arg0 });
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setLineBreakConfig(android.graphics.text.LineBreakConfig)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Text.LineBreakConfig"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetLineBreakConfig(Android.Graphics.Text.LineBreakConfig arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setLineBreakConfig", "(Landroid/graphics/text/LineBreakConfig;)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setLineSpacingAmount(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetLineSpacingAmount(float arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setLineSpacingAmount", "(F)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setLineSpacingMultiplier(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetLineSpacingMultiplier(float arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setLineSpacingMultiplier", "(F)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setMaxLines(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetMaxLines(int arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setMaxLines", "(I)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setMinimumFontMetrics(android.graphics.Paint.FontMetrics)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Paint.FontMetrics"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetMinimumFontMetrics(Android.Graphics.Paint.FontMetrics arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setMinimumFontMetrics", "(Landroid/graphics/Paint$FontMetrics;)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setRightIndents(int[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetRightIndents(int[] arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setRightIndents", "([I)Landroid/text/Layout$Builder;", new object[] { arg0 });
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setShiftDrawingOffsetForStartOverhang(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetShiftDrawingOffsetForStartOverhang(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setShiftDrawingOffsetForStartOverhang", "(Z)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setTextDirectionHeuristic(android.text.TextDirectionHeuristic)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Text.TextDirectionHeuristic"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetTextDirectionHeuristic(Android.Text.TextDirectionHeuristic arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setTextDirectionHeuristic", "(Landroid/text/TextDirectionHeuristic;)Landroid/text/Layout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/Layout.Builder.html#setUseBoundsForWidth(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Text.Layout.Builder"/></returns>
+            public Android.Text.Layout.Builder SetUseBoundsForWidth(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Text.Layout.Builder>("setUseBoundsForWidth", "(Z)Landroid/text/Layout$Builder;", arg0);
+            }
 
             #endregion
 

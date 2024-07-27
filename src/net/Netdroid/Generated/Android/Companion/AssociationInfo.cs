@@ -68,6 +68,14 @@ namespace Android.Companion
             return IExecuteWithSignature<Android.Net.MacAddress>("getDeviceMacAddress", "()Landroid/net/MacAddress;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#isSelfManaged()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSelfManaged()
+        {
+            return IExecuteWithSignature<bool>("isSelfManaged", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>

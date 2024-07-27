@@ -37,6 +37,12 @@ namespace Android.Adservices.Adselection
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome.html#NO_OUTCOME"/>
+        /// </summary>
+        public static Android.Adservices.Adselection.AdSelectionOutcome NO_OUTCOME { get { if (!_NO_OUTCOMEReady) { _NO_OUTCOMEContent = SGetField<Android.Adservices.Adselection.AdSelectionOutcome>(LocalBridgeClazz, "NO_OUTCOME"); _NO_OUTCOMEReady = true; } return _NO_OUTCOMEContent; } }
+        private static Android.Adservices.Adselection.AdSelectionOutcome _NO_OUTCOMEContent = default;
+        private static bool _NO_OUTCOMEReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -52,6 +58,14 @@ namespace Android.Adservices.Adselection
         public Android.Net.Uri GetRenderUri()
         {
             return IExecuteWithSignature<Android.Net.Uri>("getRenderUri", "()Landroid/net/Uri;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome.html#hasOutcome()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool HasOutcome()
+        {
+            return IExecuteWithSignature<bool>("hasOutcome", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome.html#getAdSelectionId()"/>

@@ -93,6 +93,14 @@ namespace Android.Content
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#getDeviceId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDeviceId()
+        {
+            return IExecuteWithSignature<int>("getDeviceId", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#getPid()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -196,6 +204,15 @@ namespace Android.Content
             public Android.Content.AttributionSource.Builder SetAttributionTag(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Content.AttributionSource.Builder>("setAttributionTag", "(Ljava/lang/String;)Landroid/content/AttributionSource$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/AttributionSource.Builder.html#setDeviceId(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Content.AttributionSource.Builder"/></returns>
+            public Android.Content.AttributionSource.Builder SetDeviceId(int arg0)
+            {
+                return IExecuteWithSignature<Android.Content.AttributionSource.Builder>("setDeviceId", "(I)Landroid/content/AttributionSource$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/AttributionSource.Builder.html#setNext(android.content.AttributionSource)"/>

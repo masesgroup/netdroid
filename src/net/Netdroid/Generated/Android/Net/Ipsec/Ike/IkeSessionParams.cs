@@ -38,6 +38,12 @@ namespace Android.Net.Ipsec.Ike
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_DPD_DELAY_SEC_DISABLED"/>
+        /// </summary>
+        public static int IKE_DPD_DELAY_SEC_DISABLED { get { if (!_IKE_DPD_DELAY_SEC_DISABLEDReady) { _IKE_DPD_DELAY_SEC_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "IKE_DPD_DELAY_SEC_DISABLED"); _IKE_DPD_DELAY_SEC_DISABLEDReady = true; } return _IKE_DPD_DELAY_SEC_DISABLEDContent; } }
+        private static int _IKE_DPD_DELAY_SEC_DISABLEDContent = default;
+        private static bool _IKE_DPD_DELAY_SEC_DISABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_OPTION_ACCEPT_ANY_REMOTE_ID"/>
         /// </summary>
         public static int IKE_OPTION_ACCEPT_ANY_REMOTE_ID { get { if (!_IKE_OPTION_ACCEPT_ANY_REMOTE_IDReady) { _IKE_OPTION_ACCEPT_ANY_REMOTE_IDContent = SGetField<int>(LocalBridgeClazz, "IKE_OPTION_ACCEPT_ANY_REMOTE_ID"); _IKE_OPTION_ACCEPT_ANY_REMOTE_IDReady = true; } return _IKE_OPTION_ACCEPT_ANY_REMOTE_IDContent; } }
@@ -179,6 +185,14 @@ namespace Android.Net.Ipsec.Ike
         public Java.Util.List<Android.Net.Ipsec.Ike.IkeSaProposal> GetIkeSaProposals()
         {
             return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.IkeSaProposal>>("getIkeSaProposals", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getIkeOptions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Integer> GetIkeOptions()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getIkeOptions", "()Ljava/util/Set;");
         }
 
         #endregion

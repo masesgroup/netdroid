@@ -74,6 +74,12 @@ namespace Android.Graphics.Text
         private static int _HYPHENATION_FREQUENCY_NORMALContent = default;
         private static bool _HYPHENATION_FREQUENCY_NORMALReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.html#JUSTIFICATION_MODE_INTER_CHARACTER"/>
+        /// </summary>
+        public static int JUSTIFICATION_MODE_INTER_CHARACTER { get { if (!_JUSTIFICATION_MODE_INTER_CHARACTERReady) { _JUSTIFICATION_MODE_INTER_CHARACTERContent = SGetField<int>(LocalBridgeClazz, "JUSTIFICATION_MODE_INTER_CHARACTER"); _JUSTIFICATION_MODE_INTER_CHARACTERReady = true; } return _JUSTIFICATION_MODE_INTER_CHARACTERContent; } }
+        private static int _JUSTIFICATION_MODE_INTER_CHARACTERContent = default;
+        private static bool _JUSTIFICATION_MODE_INTER_CHARACTERReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.html#JUSTIFICATION_MODE_INTER_WORD"/>
         /// </summary>
         public static int JUSTIFICATION_MODE_INTER_WORD { get { if (!_JUSTIFICATION_MODE_INTER_WORDReady) { _JUSTIFICATION_MODE_INTER_WORDContent = SGetField<int>(LocalBridgeClazz, "JUSTIFICATION_MODE_INTER_WORD"); _JUSTIFICATION_MODE_INTER_WORDReady = true; } return _JUSTIFICATION_MODE_INTER_WORDContent; } }
@@ -171,6 +177,15 @@ namespace Android.Graphics.Text
             public Android.Graphics.Text.LineBreaker.Builder SetJustificationMode(int arg0)
             {
                 return IExecuteWithSignature<Android.Graphics.Text.LineBreaker.Builder>("setJustificationMode", "(I)Landroid/graphics/text/LineBreaker$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.Builder.html#setUseBoundsForWidth(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Graphics.Text.LineBreaker.Builder"/></returns>
+            public Android.Graphics.Text.LineBreaker.Builder SetUseBoundsForWidth(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Graphics.Text.LineBreaker.Builder>("setUseBoundsForWidth", "(Z)Landroid/graphics/text/LineBreaker$Builder;", arg0);
             }
 
             #endregion

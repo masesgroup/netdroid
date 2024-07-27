@@ -353,6 +353,14 @@ namespace Android.Net.Wifi
             return IExecuteWithSignature<Java.Lang.String>("getPasspointProviderFriendlyName", "()Ljava/lang/String;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getPasspointUniqueId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPasspointUniqueId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPasspointUniqueId", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getSSID()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -477,6 +485,15 @@ namespace Android.Net.Wifi
             public Android.Net.Wifi.WifiInfo.Builder SetSsid(byte[] arg0)
             {
                 return IExecuteWithSignature<Android.Net.Wifi.WifiInfo.Builder>("setSsid", "([B)Landroid/net/wifi/WifiInfo$Builder;", new object[] { arg0 });
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.Builder.html#setSubscriptionId(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.WifiInfo.Builder"/></returns>
+            public Android.Net.Wifi.WifiInfo.Builder SetSubscriptionId(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.WifiInfo.Builder>("setSubscriptionId", "(I)Landroid/net/wifi/WifiInfo$Builder;", arg0);
             }
 
             #endregion

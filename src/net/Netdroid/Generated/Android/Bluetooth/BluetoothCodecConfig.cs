@@ -148,48 +148,56 @@ namespace Android.Bluetooth
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#SOURCE_CODEC_TYPE_AAC"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int SOURCE_CODEC_TYPE_AAC { get { if (!_SOURCE_CODEC_TYPE_AACReady) { _SOURCE_CODEC_TYPE_AACContent = SGetField<int>(LocalBridgeClazz, "SOURCE_CODEC_TYPE_AAC"); _SOURCE_CODEC_TYPE_AACReady = true; } return _SOURCE_CODEC_TYPE_AACContent; } }
         private static int _SOURCE_CODEC_TYPE_AACContent = default;
         private static bool _SOURCE_CODEC_TYPE_AACReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#SOURCE_CODEC_TYPE_APTX"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int SOURCE_CODEC_TYPE_APTX { get { if (!_SOURCE_CODEC_TYPE_APTXReady) { _SOURCE_CODEC_TYPE_APTXContent = SGetField<int>(LocalBridgeClazz, "SOURCE_CODEC_TYPE_APTX"); _SOURCE_CODEC_TYPE_APTXReady = true; } return _SOURCE_CODEC_TYPE_APTXContent; } }
         private static int _SOURCE_CODEC_TYPE_APTXContent = default;
         private static bool _SOURCE_CODEC_TYPE_APTXReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#SOURCE_CODEC_TYPE_APTX_HD"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int SOURCE_CODEC_TYPE_APTX_HD { get { if (!_SOURCE_CODEC_TYPE_APTX_HDReady) { _SOURCE_CODEC_TYPE_APTX_HDContent = SGetField<int>(LocalBridgeClazz, "SOURCE_CODEC_TYPE_APTX_HD"); _SOURCE_CODEC_TYPE_APTX_HDReady = true; } return _SOURCE_CODEC_TYPE_APTX_HDContent; } }
         private static int _SOURCE_CODEC_TYPE_APTX_HDContent = default;
         private static bool _SOURCE_CODEC_TYPE_APTX_HDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#SOURCE_CODEC_TYPE_INVALID"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int SOURCE_CODEC_TYPE_INVALID { get { if (!_SOURCE_CODEC_TYPE_INVALIDReady) { _SOURCE_CODEC_TYPE_INVALIDContent = SGetField<int>(LocalBridgeClazz, "SOURCE_CODEC_TYPE_INVALID"); _SOURCE_CODEC_TYPE_INVALIDReady = true; } return _SOURCE_CODEC_TYPE_INVALIDContent; } }
         private static int _SOURCE_CODEC_TYPE_INVALIDContent = default;
         private static bool _SOURCE_CODEC_TYPE_INVALIDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#SOURCE_CODEC_TYPE_LC3"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int SOURCE_CODEC_TYPE_LC3 { get { if (!_SOURCE_CODEC_TYPE_LC3Ready) { _SOURCE_CODEC_TYPE_LC3Content = SGetField<int>(LocalBridgeClazz, "SOURCE_CODEC_TYPE_LC3"); _SOURCE_CODEC_TYPE_LC3Ready = true; } return _SOURCE_CODEC_TYPE_LC3Content; } }
         private static int _SOURCE_CODEC_TYPE_LC3Content = default;
         private static bool _SOURCE_CODEC_TYPE_LC3Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#SOURCE_CODEC_TYPE_LDAC"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int SOURCE_CODEC_TYPE_LDAC { get { if (!_SOURCE_CODEC_TYPE_LDACReady) { _SOURCE_CODEC_TYPE_LDACContent = SGetField<int>(LocalBridgeClazz, "SOURCE_CODEC_TYPE_LDAC"); _SOURCE_CODEC_TYPE_LDACReady = true; } return _SOURCE_CODEC_TYPE_LDACContent; } }
         private static int _SOURCE_CODEC_TYPE_LDACContent = default;
         private static bool _SOURCE_CODEC_TYPE_LDACReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#SOURCE_CODEC_TYPE_OPUS"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int SOURCE_CODEC_TYPE_OPUS { get { if (!_SOURCE_CODEC_TYPE_OPUSReady) { _SOURCE_CODEC_TYPE_OPUSContent = SGetField<int>(LocalBridgeClazz, "SOURCE_CODEC_TYPE_OPUS"); _SOURCE_CODEC_TYPE_OPUSReady = true; } return _SOURCE_CODEC_TYPE_OPUSContent; } }
         private static int _SOURCE_CODEC_TYPE_OPUSContent = default;
         private static bool _SOURCE_CODEC_TYPE_OPUSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#SOURCE_CODEC_TYPE_SBC"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int SOURCE_CODEC_TYPE_SBC { get { if (!_SOURCE_CODEC_TYPE_SBCReady) { _SOURCE_CODEC_TYPE_SBCContent = SGetField<int>(LocalBridgeClazz, "SOURCE_CODEC_TYPE_SBC"); _SOURCE_CODEC_TYPE_SBCReady = true; } return _SOURCE_CODEC_TYPE_SBCContent; } }
         private static int _SOURCE_CODEC_TYPE_SBCContent = default;
         private static bool _SOURCE_CODEC_TYPE_SBCReady = false; // this is used because in case of generics 
@@ -201,6 +209,14 @@ namespace Android.Bluetooth
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getExtendedCodecType()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Bluetooth.BluetoothCodecType"/></returns>
+        public Android.Bluetooth.BluetoothCodecType GetExtendedCodecType()
+        {
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothCodecType>("getExtendedCodecType", "()Landroid/bluetooth/BluetoothCodecType;");
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#isMandatoryCodec()"/>
         /// </summary>
@@ -245,6 +261,7 @@ namespace Android.Bluetooth
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getCodecType()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int GetCodecType()
         {
             return IExecuteWithSignature<int>("getCodecType", "()I");
@@ -398,9 +415,19 @@ namespace Android.Bluetooth
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.Bluetooth.BluetoothCodecConfig.Builder"/></returns>
+            [global::System.Obsolete()]
             public Android.Bluetooth.BluetoothCodecConfig.Builder SetCodecType(int arg0)
             {
                 return IExecuteWithSignature<Android.Bluetooth.BluetoothCodecConfig.Builder>("setCodecType", "(I)Landroid/bluetooth/BluetoothCodecConfig$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.Builder.html#setExtendedCodecType(android.bluetooth.BluetoothCodecType)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothCodecType"/></param>
+            /// <returns><see cref="Android.Bluetooth.BluetoothCodecConfig.Builder"/></returns>
+            public Android.Bluetooth.BluetoothCodecConfig.Builder SetExtendedCodecType(Android.Bluetooth.BluetoothCodecType arg0)
+            {
+                return IExecuteWithSignature<Android.Bluetooth.BluetoothCodecConfig.Builder>("setExtendedCodecType", "(Landroid/bluetooth/BluetoothCodecType;)Landroid/bluetooth/BluetoothCodecConfig$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.Builder.html#setSampleRate(int)"/>

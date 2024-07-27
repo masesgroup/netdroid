@@ -212,6 +212,14 @@ namespace Android.Service.Notification
             return IExecuteWithSignature<int>("getPriorityCategorySystem", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityChannelsAllowed()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityChannelsAllowed()
+        {
+            return IExecuteWithSignature<int>("getPriorityChannelsAllowed", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityConversationSenders()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -385,6 +393,15 @@ namespace Android.Service.Notification
             public Android.Service.Notification.ZenPolicy.Builder AllowMessages(int arg0)
             {
                 return IExecuteWithSignature<Android.Service.Notification.ZenPolicy.Builder>("allowMessages", "(I)Landroid/service/notification/ZenPolicy$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.Builder.html#allowPriorityChannels(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Service.Notification.ZenPolicy.Builder"/></returns>
+            public Android.Service.Notification.ZenPolicy.Builder AllowPriorityChannels(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Service.Notification.ZenPolicy.Builder>("allowPriorityChannels", "(Z)Landroid/service/notification/ZenPolicy$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.Builder.html#allowReminders(boolean)"/>

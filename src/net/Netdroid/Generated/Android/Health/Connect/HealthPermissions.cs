@@ -116,11 +116,29 @@ namespace Android.Health.Connect
         private static Java.Lang.String _READ_EXERCISEContent = default;
         private static bool _READ_EXERCISEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_EXERCISE_ROUTES"/>
+        /// </summary>
+        public static Java.Lang.String READ_EXERCISE_ROUTES { get { if (!_READ_EXERCISE_ROUTESReady) { _READ_EXERCISE_ROUTESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_EXERCISE_ROUTES"); _READ_EXERCISE_ROUTESReady = true; } return _READ_EXERCISE_ROUTESContent; } }
+        private static Java.Lang.String _READ_EXERCISE_ROUTESContent = default;
+        private static bool _READ_EXERCISE_ROUTESReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_FLOORS_CLIMBED"/>
         /// </summary>
         public static Java.Lang.String READ_FLOORS_CLIMBED { get { if (!_READ_FLOORS_CLIMBEDReady) { _READ_FLOORS_CLIMBEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_FLOORS_CLIMBED"); _READ_FLOORS_CLIMBEDReady = true; } return _READ_FLOORS_CLIMBEDContent; } }
         private static Java.Lang.String _READ_FLOORS_CLIMBEDContent = default;
         private static bool _READ_FLOORS_CLIMBEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_HEALTH_DATA_HISTORY"/>
+        /// </summary>
+        public static Java.Lang.String READ_HEALTH_DATA_HISTORY { get { if (!_READ_HEALTH_DATA_HISTORYReady) { _READ_HEALTH_DATA_HISTORYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_HEALTH_DATA_HISTORY"); _READ_HEALTH_DATA_HISTORYReady = true; } return _READ_HEALTH_DATA_HISTORYContent; } }
+        private static Java.Lang.String _READ_HEALTH_DATA_HISTORYContent = default;
+        private static bool _READ_HEALTH_DATA_HISTORYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_HEALTH_DATA_IN_BACKGROUND"/>
+        /// </summary>
+        public static Java.Lang.String READ_HEALTH_DATA_IN_BACKGROUND { get { if (!_READ_HEALTH_DATA_IN_BACKGROUNDReady) { _READ_HEALTH_DATA_IN_BACKGROUNDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_HEALTH_DATA_IN_BACKGROUND"); _READ_HEALTH_DATA_IN_BACKGROUNDReady = true; } return _READ_HEALTH_DATA_IN_BACKGROUNDContent; } }
+        private static Java.Lang.String _READ_HEALTH_DATA_IN_BACKGROUNDContent = default;
+        private static bool _READ_HEALTH_DATA_IN_BACKGROUNDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_HEART_RATE"/>
         /// </summary>
@@ -182,6 +200,12 @@ namespace Android.Health.Connect
         private static Java.Lang.String _READ_OXYGEN_SATURATIONContent = default;
         private static bool _READ_OXYGEN_SATURATIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_PLANNED_EXERCISE"/>
+        /// </summary>
+        public static Java.Lang.String READ_PLANNED_EXERCISE { get { if (!_READ_PLANNED_EXERCISEReady) { _READ_PLANNED_EXERCISEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_PLANNED_EXERCISE"); _READ_PLANNED_EXERCISEReady = true; } return _READ_PLANNED_EXERCISEContent; } }
+        private static Java.Lang.String _READ_PLANNED_EXERCISEContent = default;
+        private static bool _READ_PLANNED_EXERCISEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_POWER"/>
         /// </summary>
         public static Java.Lang.String READ_POWER { get { if (!_READ_POWERReady) { _READ_POWERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_POWER"); _READ_POWERReady = true; } return _READ_POWERContent; } }
@@ -205,6 +229,12 @@ namespace Android.Health.Connect
         public static Java.Lang.String READ_SEXUAL_ACTIVITY { get { if (!_READ_SEXUAL_ACTIVITYReady) { _READ_SEXUAL_ACTIVITYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_SEXUAL_ACTIVITY"); _READ_SEXUAL_ACTIVITYReady = true; } return _READ_SEXUAL_ACTIVITYContent; } }
         private static Java.Lang.String _READ_SEXUAL_ACTIVITYContent = default;
         private static bool _READ_SEXUAL_ACTIVITYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_SKIN_TEMPERATURE"/>
+        /// </summary>
+        public static Java.Lang.String READ_SKIN_TEMPERATURE { get { if (!_READ_SKIN_TEMPERATUREReady) { _READ_SKIN_TEMPERATUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_SKIN_TEMPERATURE"); _READ_SKIN_TEMPERATUREReady = true; } return _READ_SKIN_TEMPERATUREContent; } }
+        private static Java.Lang.String _READ_SKIN_TEMPERATUREContent = default;
+        private static bool _READ_SKIN_TEMPERATUREReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#READ_SLEEP"/>
         /// </summary>
@@ -398,6 +428,12 @@ namespace Android.Health.Connect
         private static Java.Lang.String _WRITE_OXYGEN_SATURATIONContent = default;
         private static bool _WRITE_OXYGEN_SATURATIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#WRITE_PLANNED_EXERCISE"/>
+        /// </summary>
+        public static Java.Lang.String WRITE_PLANNED_EXERCISE { get { if (!_WRITE_PLANNED_EXERCISEReady) { _WRITE_PLANNED_EXERCISEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WRITE_PLANNED_EXERCISE"); _WRITE_PLANNED_EXERCISEReady = true; } return _WRITE_PLANNED_EXERCISEContent; } }
+        private static Java.Lang.String _WRITE_PLANNED_EXERCISEContent = default;
+        private static bool _WRITE_PLANNED_EXERCISEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#WRITE_POWER"/>
         /// </summary>
         public static Java.Lang.String WRITE_POWER { get { if (!_WRITE_POWERReady) { _WRITE_POWERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WRITE_POWER"); _WRITE_POWERReady = true; } return _WRITE_POWERContent; } }
@@ -421,6 +457,12 @@ namespace Android.Health.Connect
         public static Java.Lang.String WRITE_SEXUAL_ACTIVITY { get { if (!_WRITE_SEXUAL_ACTIVITYReady) { _WRITE_SEXUAL_ACTIVITYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WRITE_SEXUAL_ACTIVITY"); _WRITE_SEXUAL_ACTIVITYReady = true; } return _WRITE_SEXUAL_ACTIVITYContent; } }
         private static Java.Lang.String _WRITE_SEXUAL_ACTIVITYContent = default;
         private static bool _WRITE_SEXUAL_ACTIVITYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#WRITE_SKIN_TEMPERATURE"/>
+        /// </summary>
+        public static Java.Lang.String WRITE_SKIN_TEMPERATURE { get { if (!_WRITE_SKIN_TEMPERATUREReady) { _WRITE_SKIN_TEMPERATUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WRITE_SKIN_TEMPERATURE"); _WRITE_SKIN_TEMPERATUREReady = true; } return _WRITE_SKIN_TEMPERATUREContent; } }
+        private static Java.Lang.String _WRITE_SKIN_TEMPERATUREContent = default;
+        private static bool _WRITE_SKIN_TEMPERATUREReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthPermissions.html#WRITE_SLEEP"/>
         /// </summary>

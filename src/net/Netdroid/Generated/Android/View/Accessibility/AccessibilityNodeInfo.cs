@@ -351,6 +351,12 @@ namespace Android.View.Accessibility
         private static Java.Lang.String _ACTION_ARGUMENT_ROW_INTContent = default;
         private static bool _ACTION_ARGUMENT_ROW_INTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#ACTION_ARGUMENT_SCROLL_AMOUNT_FLOAT"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_ARGUMENT_SCROLL_AMOUNT_FLOAT { get { if (!_ACTION_ARGUMENT_SCROLL_AMOUNT_FLOATReady) { _ACTION_ARGUMENT_SCROLL_AMOUNT_FLOATContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_ARGUMENT_SCROLL_AMOUNT_FLOAT"); _ACTION_ARGUMENT_SCROLL_AMOUNT_FLOATReady = true; } return _ACTION_ARGUMENT_SCROLL_AMOUNT_FLOATContent; } }
+        private static Java.Lang.String _ACTION_ARGUMENT_SCROLL_AMOUNT_FLOATContent = default;
+        private static bool _ACTION_ARGUMENT_SCROLL_AMOUNT_FLOATReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#ACTION_ARGUMENT_SELECTION_END_INT"/>
         /// </summary>
         public static Java.Lang.String ACTION_ARGUMENT_SELECTION_END_INT { get { if (!_ACTION_ARGUMENT_SELECTION_END_INTReady) { _ACTION_ARGUMENT_SELECTION_END_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_ARGUMENT_SELECTION_END_INT"); _ACTION_ARGUMENT_SELECTION_END_INTReady = true; } return _ACTION_ARGUMENT_SELECTION_END_INTContent; } }
@@ -693,6 +699,14 @@ namespace Android.View.Accessibility
         public bool IsFocused()
         {
             return IExecuteWithSignature<bool>("isFocused", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#isGranularScrollingSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsGranularScrollingSupported()
+        {
+            return IExecuteWithSignature<bool>("isGranularScrollingSupported", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#isHeading()"/>
@@ -1350,6 +1364,14 @@ namespace Android.View.Accessibility
         public void SetFocused(bool arg0)
         {
             IExecuteWithSignature("setFocused", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setGranularScrollingSupported(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetGranularScrollingSupported(bool arg0)
+        {
+            IExecuteWithSignature("setGranularScrollingSupported", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setHeading(boolean)"/>
@@ -2102,6 +2124,12 @@ namespace Android.View.Accessibility
             public static int SELECTION_MODE_SINGLE { get { if (!_SELECTION_MODE_SINGLEReady) { _SELECTION_MODE_SINGLEContent = SGetField<int>(LocalBridgeClazz, "SELECTION_MODE_SINGLE"); _SELECTION_MODE_SINGLEReady = true; } return _SELECTION_MODE_SINGLEContent; } }
             private static int _SELECTION_MODE_SINGLEContent = default;
             private static bool _SELECTION_MODE_SINGLEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.html#UNDEFINED"/>
+            /// </summary>
+            public static int UNDEFINED { get { if (!_UNDEFINEDReady) { _UNDEFINEDContent = SGetField<int>(LocalBridgeClazz, "UNDEFINED"); _UNDEFINEDReady = true; } return _UNDEFINEDContent; } }
+            private static int _UNDEFINEDContent = default;
+            private static bool _UNDEFINEDReady = false; // this is used because in case of generics 
 
             #endregion
 
@@ -2152,6 +2180,22 @@ namespace Android.View.Accessibility
                 return IExecuteWithSignature<int>("getColumnCount", "()I");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.html#getImportantForAccessibilityItemCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetImportantForAccessibilityItemCount()
+            {
+                return IExecuteWithSignature<int>("getImportantForAccessibilityItemCount", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.html#getItemCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetItemCount()
+            {
+                return IExecuteWithSignature<int>("getItemCount", "()I");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.html#getRowCount()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
@@ -2171,7 +2215,100 @@ namespace Android.View.Accessibility
             #endregion
 
             #region Nested classes
+            #region Builder
+            public partial class Builder
+            {
+                #region Constructors
 
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#build()"/>
+                /// </summary>
+                /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo"/></returns>
+                public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo Build()
+                {
+                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo>("build", "()Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#setColumnCount(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder"/></returns>
+                public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder SetColumnCount(int arg0)
+                {
+                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setColumnCount", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo$Builder;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#setHierarchical(boolean)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="bool"/></param>
+                /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder"/></returns>
+                public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder SetHierarchical(bool arg0)
+                {
+                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setHierarchical", "(Z)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo$Builder;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#setImportantForAccessibilityItemCount(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder"/></returns>
+                public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder SetImportantForAccessibilityItemCount(int arg0)
+                {
+                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setImportantForAccessibilityItemCount", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo$Builder;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#setItemCount(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder"/></returns>
+                public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder SetItemCount(int arg0)
+                {
+                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setItemCount", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo$Builder;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#setRowCount(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder"/></returns>
+                public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder SetRowCount(int arg0)
+                {
+                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setRowCount", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo$Builder;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#setSelectionMode(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder"/></returns>
+                public Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder SetSelectionMode(int arg0)
+                {
+                    return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setSelectionMode", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo$Builder;", arg0);
+                }
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+        
             #endregion
 
             // TODO: complete the class

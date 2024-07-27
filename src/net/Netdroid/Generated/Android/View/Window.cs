@@ -391,6 +391,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Window.html#getNavigationBarColor()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int GetNavigationBarColor()
         {
             return IExecuteWithSignature<int>("getNavigationBarColor", "()I");
@@ -399,6 +400,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Window.html#getStatusBarColor()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int GetStatusBarColor()
         {
             return IExecuteWithSignature<int>("getStatusBarColor", "()I");
@@ -576,6 +578,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setNavigationBarColor(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
         public void SetNavigationBarColor(int arg0)
         {
             IExecuteWithSignature("setNavigationBarColor", "(I)V", arg0);
@@ -592,6 +595,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setStatusBarColor(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
         public void SetStatusBarColor(int arg0)
         {
             IExecuteWithSignature("setStatusBarColor", "(I)V", arg0);
@@ -791,6 +795,14 @@ namespace Android.View
             return IExecuteWithSignature<bool>("getAllowReturnTransitionOverlap", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getFrameRateBoostOnTouchEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetFrameRateBoostOnTouchEnabled()
+        {
+            return IExecuteWithSignature<bool>("getFrameRateBoostOnTouchEnabled", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#getSharedElementsUseOverlay()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -808,6 +820,14 @@ namespace Android.View
             return IExecuteWithSignature<bool>("hasFeature", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#isFrameRatePowerSavingsBalanced()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFrameRatePowerSavingsBalanced()
+        {
+            return IExecuteWithSignature<bool>("isFrameRatePowerSavingsBalanced", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#isNavigationBarContrastEnforced()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -819,6 +839,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Window.html#isStatusBarContrastEnforced()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool IsStatusBarContrastEnforced()
         {
             return IExecuteWithSignature<bool>("isStatusBarContrastEnforced", "()Z");
@@ -947,6 +968,14 @@ namespace Android.View
             IExecuteWithSignature("setRestrictedCaptionAreaListener", "(Landroid/view/Window$OnRestrictedCaptionAreaChangedListener;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getDesiredHdrHeadroom()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetDesiredHdrHeadroom()
+        {
+            return IExecuteWithSignature<float>("getDesiredHdrHeadroom", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#getColorMode()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -958,6 +987,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Window.html#getNavigationBarDividerColor()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int GetNavigationBarDividerColor()
         {
             return IExecuteWithSignature<int>("getNavigationBarDividerColor", "()I");
@@ -1086,9 +1116,18 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setDecorFitsSystemWindows(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
         public void SetDecorFitsSystemWindows(bool arg0)
         {
             IExecuteWithSignature("setDecorFitsSystemWindows", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setDesiredHdrHeadroom(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetDesiredHdrHeadroom(float arg0)
+        {
+            IExecuteWithSignature("setDesiredHdrHeadroom", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setDimAmount(float)"/>
@@ -1138,6 +1177,22 @@ namespace Android.View
         public void SetFormat(int arg0)
         {
             IExecuteWithSignature("setFormat", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setFrameRateBoostOnTouchEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetFrameRateBoostOnTouchEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setFrameRateBoostOnTouchEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setFrameRatePowerSavingsBalanced(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetFrameRatePowerSavingsBalanced(bool arg0)
+        {
+            IExecuteWithSignature("setFrameRatePowerSavingsBalanced", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setGravity(int)"/>
@@ -1201,6 +1256,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setNavigationBarDividerColor(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
         public void SetNavigationBarDividerColor(int arg0)
         {
             IExecuteWithSignature("setNavigationBarDividerColor", "(I)V", arg0);
@@ -1281,6 +1337,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setStatusBarContrastEnforced(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
         public void SetStatusBarContrastEnforced(bool arg0)
         {
             IExecuteWithSignature("setStatusBarContrastEnforced", "(Z)V", arg0);

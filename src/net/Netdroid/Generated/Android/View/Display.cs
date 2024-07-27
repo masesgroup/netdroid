@@ -146,6 +146,14 @@ namespace Android.View
             return IExecuteWithSignature<Android.Hardware.Display.DeviceProductInfo>("getDeviceProductInfo", "()Landroid/hardware/display/DeviceProductInfo;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getOverlaySupport()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Hardware.OverlayProperties"/></returns>
+        public Android.Hardware.OverlayProperties GetOverlaySupport()
+        {
+            return IExecuteWithSignature<Android.Hardware.OverlayProperties>("getOverlaySupport", "()Landroid/hardware/OverlayProperties;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Display.html#getHdrCapabilities()"/>
         /// </summary>
         /// <returns><see cref="Android.View.Display.HdrCapabilities"/></returns>

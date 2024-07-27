@@ -1217,6 +1217,15 @@ namespace Android.Media
             return IExecuteWithSignature<Java.Util.List<Android.Media.MicrophoneInfo>>("getMicrophones", "()Ljava/util/List;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#getSupportedDeviceTypes(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Integer> GetSupportedDeviceTypes(int arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getSupportedDeviceTypes", "(I)Ljava/util/Set;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioManager.html#addOnCommunicationDeviceChangedListener(java.util.concurrent.Executor,android.media.AudioManager.OnCommunicationDeviceChangedListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>

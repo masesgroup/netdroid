@@ -93,6 +93,17 @@ namespace Android.App.Sdksandbox.Sdkprovider
             return IExecuteWithSignature<Java.Util.List<Android.App.Sdksandbox.SandboxedSdk>>("getSandboxedSdks", "()Ljava/util/List;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#loadSdk(java.lang.String,android.os.Bundle,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg3"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void LoadSdk(Java.Lang.String arg0, Android.Os.Bundle arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<Android.App.Sdksandbox.SandboxedSdk, Android.App.Sdksandbox.LoadSdkException> arg3)
+        {
+            IExecute("loadSdk", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#unregisterSdkSandboxActivityHandler(android.app.sdksandbox.sdkprovider.SdkSandboxActivityHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Sdksandbox.Sdkprovider.SdkSandboxActivityHandler"/></param>

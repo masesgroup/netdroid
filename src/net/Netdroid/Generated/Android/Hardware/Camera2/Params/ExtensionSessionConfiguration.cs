@@ -57,6 +57,14 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#getColorSpace()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
+        public Android.Graphics.ColorSpace GetColorSpace()
+        {
+            return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#getStateCallback()"/>
         /// </summary>
         /// <returns><see cref="Android.Hardware.Camera2.CameraExtensionSession.StateCallback"/></returns>
@@ -95,6 +103,21 @@ namespace Android.Hardware.Camera2.Params
         public Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration> GetOutputConfigurations()
         {
             return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration>>("getOutputConfigurations", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#clearColorSpace()"/>
+        /// </summary>
+        public void ClearColorSpace()
+        {
+            IExecuteWithSignature("clearColorSpace", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#setColorSpace(android.graphics.ColorSpace.Named)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.ColorSpace.Named"/></param>
+        public void SetColorSpace(Android.Graphics.ColorSpace.Named arg0)
+        {
+            IExecuteWithSignature("setColorSpace", "(Landroid/graphics/ColorSpace$Named;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#setPostviewOutputConfiguration(android.hardware.camera2.params.OutputConfiguration)"/>

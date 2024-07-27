@@ -110,6 +110,12 @@ namespace Android.Telephony
         private static int _AUTHTYPE_GBA_NAF_KEY_EXTERNALContent = default;
         private static bool _AUTHTYPE_GBA_NAF_KEY_EXTERNALReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#CALL_COMPOSER_STATUS_BUSINESS_ONLY"/>
+        /// </summary>
+        public static int CALL_COMPOSER_STATUS_BUSINESS_ONLY { get { if (!_CALL_COMPOSER_STATUS_BUSINESS_ONLYReady) { _CALL_COMPOSER_STATUS_BUSINESS_ONLYContent = SGetField<int>(LocalBridgeClazz, "CALL_COMPOSER_STATUS_BUSINESS_ONLY"); _CALL_COMPOSER_STATUS_BUSINESS_ONLYReady = true; } return _CALL_COMPOSER_STATUS_BUSINESS_ONLYContent; } }
+        private static int _CALL_COMPOSER_STATUS_BUSINESS_ONLYContent = default;
+        private static bool _CALL_COMPOSER_STATUS_BUSINESS_ONLYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#CALL_COMPOSER_STATUS_OFF"/>
         /// </summary>
         public static int CALL_COMPOSER_STATUS_OFF { get { if (!_CALL_COMPOSER_STATUS_OFFReady) { _CALL_COMPOSER_STATUS_OFFContent = SGetField<int>(LocalBridgeClazz, "CALL_COMPOSER_STATUS_OFF"); _CALL_COMPOSER_STATUS_OFFReady = true; } return _CALL_COMPOSER_STATUS_OFFContent; } }
@@ -615,6 +621,12 @@ namespace Android.Telephony
         private static int _PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_CANCELEDContent = default;
         private static bool _PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_CANCELEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_DISABLED"/>
+        /// </summary>
+        public static int PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_DISABLED { get { if (!_PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_DISABLEDReady) { _PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_DISABLED"); _PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_DISABLEDReady = true; } return _PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_DISABLEDContent; } }
+        private static int _PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_DISABLEDContent = default;
+        private static bool _PURCHASE_PREMIUM_CAPABILITY_RESULT_USER_DISABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#SET_OPPORTUNISTIC_SUB_INACTIVE_SUBSCRIPTION"/>
         /// </summary>
         public static int SET_OPPORTUNISTIC_SUB_INACTIVE_SUBSCRIPTION { get { if (!_SET_OPPORTUNISTIC_SUB_INACTIVE_SUBSCRIPTIONReady) { _SET_OPPORTUNISTIC_SUB_INACTIVE_SUBSCRIPTIONContent = SGetField<int>(LocalBridgeClazz, "SET_OPPORTUNISTIC_SUB_INACTIVE_SUBSCRIPTION"); _SET_OPPORTUNISTIC_SUB_INACTIVE_SUBSCRIPTIONReady = true; } return _SET_OPPORTUNISTIC_SUB_INACTIVE_SUBSCRIPTIONContent; } }
@@ -861,6 +873,12 @@ namespace Android.Telephony
         private static Java.Lang.String _ACTION_PHONE_STATE_CHANGEDContent = default;
         private static bool _ACTION_PHONE_STATE_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#ACTION_RESET_MOBILE_NETWORK_SETTINGS"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_RESET_MOBILE_NETWORK_SETTINGS { get { if (!_ACTION_RESET_MOBILE_NETWORK_SETTINGSReady) { _ACTION_RESET_MOBILE_NETWORK_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_RESET_MOBILE_NETWORK_SETTINGS"); _ACTION_RESET_MOBILE_NETWORK_SETTINGSReady = true; } return _ACTION_RESET_MOBILE_NETWORK_SETTINGSContent; } }
+        private static Java.Lang.String _ACTION_RESET_MOBILE_NETWORK_SETTINGSContent = default;
+        private static bool _ACTION_RESET_MOBILE_NETWORK_SETTINGSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#ACTION_RESPOND_VIA_MESSAGE"/>
         /// </summary>
         public static Java.Lang.String ACTION_RESPOND_VIA_MESSAGE { get { if (!_ACTION_RESPOND_VIA_MESSAGEReady) { _ACTION_RESPOND_VIA_MESSAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_RESPOND_VIA_MESSAGE"); _ACTION_RESPOND_VIA_MESSAGEReady = true; } return _ACTION_RESPOND_VIA_MESSAGEContent; } }
@@ -896,6 +914,12 @@ namespace Android.Telephony
         public static Java.Lang.String CAPABILITY_SLICING_CONFIG_SUPPORTED { get { if (!_CAPABILITY_SLICING_CONFIG_SUPPORTEDReady) { _CAPABILITY_SLICING_CONFIG_SUPPORTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CAPABILITY_SLICING_CONFIG_SUPPORTED"); _CAPABILITY_SLICING_CONFIG_SUPPORTEDReady = true; } return _CAPABILITY_SLICING_CONFIG_SUPPORTEDContent; } }
         private static Java.Lang.String _CAPABILITY_SLICING_CONFIG_SUPPORTEDContent = default;
         private static bool _CAPABILITY_SLICING_CONFIG_SUPPORTEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#EVENT_DISPLAY_EMERGENCY_MESSAGE"/>
+        /// </summary>
+        public static Java.Lang.String EVENT_DISPLAY_EMERGENCY_MESSAGE { get { if (!_EVENT_DISPLAY_EMERGENCY_MESSAGEReady) { _EVENT_DISPLAY_EMERGENCY_MESSAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EVENT_DISPLAY_EMERGENCY_MESSAGE"); _EVENT_DISPLAY_EMERGENCY_MESSAGEReady = true; } return _EVENT_DISPLAY_EMERGENCY_MESSAGEContent; } }
+        private static Java.Lang.String _EVENT_DISPLAY_EMERGENCY_MESSAGEContent = default;
+        private static bool _EVENT_DISPLAY_EMERGENCY_MESSAGEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#EXTRA_ACTIVE_SIM_SUPPORTED_COUNT"/>
         /// </summary>
@@ -944,6 +968,18 @@ namespace Android.Telephony
         public static Java.Lang.String EXTRA_DEFAULT_NETWORK_AVAILABLE { get { if (!_EXTRA_DEFAULT_NETWORK_AVAILABLEReady) { _EXTRA_DEFAULT_NETWORK_AVAILABLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_DEFAULT_NETWORK_AVAILABLE"); _EXTRA_DEFAULT_NETWORK_AVAILABLEReady = true; } return _EXTRA_DEFAULT_NETWORK_AVAILABLEContent; } }
         private static Java.Lang.String _EXTRA_DEFAULT_NETWORK_AVAILABLEContent = default;
         private static bool _EXTRA_DEFAULT_NETWORK_AVAILABLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#EXTRA_EMERGENCY_CALL_TO_SATELLITE_HANDOVER_TYPE"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_EMERGENCY_CALL_TO_SATELLITE_HANDOVER_TYPE { get { if (!_EXTRA_EMERGENCY_CALL_TO_SATELLITE_HANDOVER_TYPEReady) { _EXTRA_EMERGENCY_CALL_TO_SATELLITE_HANDOVER_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_EMERGENCY_CALL_TO_SATELLITE_HANDOVER_TYPE"); _EXTRA_EMERGENCY_CALL_TO_SATELLITE_HANDOVER_TYPEReady = true; } return _EXTRA_EMERGENCY_CALL_TO_SATELLITE_HANDOVER_TYPEContent; } }
+        private static Java.Lang.String _EXTRA_EMERGENCY_CALL_TO_SATELLITE_HANDOVER_TYPEContent = default;
+        private static bool _EXTRA_EMERGENCY_CALL_TO_SATELLITE_HANDOVER_TYPEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#EXTRA_EMERGENCY_CALL_TO_SATELLITE_LAUNCH_INTENT"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_EMERGENCY_CALL_TO_SATELLITE_LAUNCH_INTENT { get { if (!_EXTRA_EMERGENCY_CALL_TO_SATELLITE_LAUNCH_INTENTReady) { _EXTRA_EMERGENCY_CALL_TO_SATELLITE_LAUNCH_INTENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_EMERGENCY_CALL_TO_SATELLITE_LAUNCH_INTENT"); _EXTRA_EMERGENCY_CALL_TO_SATELLITE_LAUNCH_INTENTReady = true; } return _EXTRA_EMERGENCY_CALL_TO_SATELLITE_LAUNCH_INTENTContent; } }
+        private static Java.Lang.String _EXTRA_EMERGENCY_CALL_TO_SATELLITE_LAUNCH_INTENTContent = default;
+        private static bool _EXTRA_EMERGENCY_CALL_TO_SATELLITE_LAUNCH_INTENTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#EXTRA_HIDE_PUBLIC_SETTINGS"/>
         /// </summary>
@@ -1425,6 +1461,22 @@ namespace Android.Telephony
             return IExecuteWithSignature<bool>("isDataRoamingEnabled", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#isDeviceSmsCapable()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDeviceSmsCapable()
+        {
+            return IExecuteWithSignature<bool>("isDeviceSmsCapable", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#isDeviceVoiceCapable()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDeviceVoiceCapable()
+        {
+            return IExecuteWithSignature<bool>("isDeviceVoiceCapable", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#isEmergencyNumber(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1496,6 +1548,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#isSmsCapable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool IsSmsCapable()
         {
             return IExecuteWithSignature<bool>("isSmsCapable", "()Z");
@@ -1513,6 +1566,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#isVoiceCapable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool IsVoiceCapable()
         {
             return IExecuteWithSignature<bool>("isVoiceCapable", "()Z");

@@ -38,6 +38,24 @@ namespace Android.Service.Controls
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/ControlsProviderService.html#CONTROLS_SURFACE_ACTIVITY_PANEL"/>
+        /// </summary>
+        public static int CONTROLS_SURFACE_ACTIVITY_PANEL { get { if (!_CONTROLS_SURFACE_ACTIVITY_PANELReady) { _CONTROLS_SURFACE_ACTIVITY_PANELContent = SGetField<int>(LocalBridgeClazz, "CONTROLS_SURFACE_ACTIVITY_PANEL"); _CONTROLS_SURFACE_ACTIVITY_PANELReady = true; } return _CONTROLS_SURFACE_ACTIVITY_PANELContent; } }
+        private static int _CONTROLS_SURFACE_ACTIVITY_PANELContent = default;
+        private static bool _CONTROLS_SURFACE_ACTIVITY_PANELReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/ControlsProviderService.html#CONTROLS_SURFACE_DREAM"/>
+        /// </summary>
+        public static int CONTROLS_SURFACE_DREAM { get { if (!_CONTROLS_SURFACE_DREAMReady) { _CONTROLS_SURFACE_DREAMContent = SGetField<int>(LocalBridgeClazz, "CONTROLS_SURFACE_DREAM"); _CONTROLS_SURFACE_DREAMReady = true; } return _CONTROLS_SURFACE_DREAMContent; } }
+        private static int _CONTROLS_SURFACE_DREAMContent = default;
+        private static bool _CONTROLS_SURFACE_DREAMReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/ControlsProviderService.html#EXTRA_CONTROLS_SURFACE"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_CONTROLS_SURFACE { get { if (!_EXTRA_CONTROLS_SURFACEReady) { _EXTRA_CONTROLS_SURFACEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CONTROLS_SURFACE"); _EXTRA_CONTROLS_SURFACEReady = true; } return _EXTRA_CONTROLS_SURFACEContent; } }
+        private static Java.Lang.String _EXTRA_CONTROLS_SURFACEContent = default;
+        private static bool _EXTRA_CONTROLS_SURFACEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/ControlsProviderService.html#EXTRA_LOCKSCREEN_ALLOW_TRIVIAL_CONTROLS"/>
         /// </summary>
         public static Java.Lang.String EXTRA_LOCKSCREEN_ALLOW_TRIVIAL_CONTROLS { get { if (!_EXTRA_LOCKSCREEN_ALLOW_TRIVIAL_CONTROLSReady) { _EXTRA_LOCKSCREEN_ALLOW_TRIVIAL_CONTROLSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_LOCKSCREEN_ALLOW_TRIVIAL_CONTROLS"); _EXTRA_LOCKSCREEN_ALLOW_TRIVIAL_CONTROLSReady = true; } return _EXTRA_LOCKSCREEN_ALLOW_TRIVIAL_CONTROLSContent; } }

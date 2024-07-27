@@ -127,6 +127,12 @@ namespace Android.Content
         private static int _CAPTURE_CONTENT_FOR_NOTE_WINDOW_MODE_UNSUPPORTEDContent = default;
         private static bool _CAPTURE_CONTENT_FOR_NOTE_WINDOW_MODE_UNSUPPORTEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#CHOOSER_CONTENT_TYPE_ALBUM"/>
+        /// </summary>
+        public static int CHOOSER_CONTENT_TYPE_ALBUM { get { if (!_CHOOSER_CONTENT_TYPE_ALBUMReady) { _CHOOSER_CONTENT_TYPE_ALBUMContent = SGetField<int>(LocalBridgeClazz, "CHOOSER_CONTENT_TYPE_ALBUM"); _CHOOSER_CONTENT_TYPE_ALBUMReady = true; } return _CHOOSER_CONTENT_TYPE_ALBUMContent; } }
+        private static int _CHOOSER_CONTENT_TYPE_ALBUMContent = default;
+        private static bool _CHOOSER_CONTENT_TYPE_ALBUMReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_DOCK_STATE_CAR"/>
         /// </summary>
         public static int EXTRA_DOCK_STATE_CAR { get { if (!_EXTRA_DOCK_STATE_CARReady) { _EXTRA_DOCK_STATE_CARContent = SGetField<int>(LocalBridgeClazz, "EXTRA_DOCK_STATE_CAR"); _EXTRA_DOCK_STATE_CARReady = true; } return _EXTRA_DOCK_STATE_CARContent; } }
@@ -1005,6 +1011,12 @@ namespace Android.Content
         private static Java.Lang.String _ACTION_PACKAGE_RESTARTEDContent = default;
         private static bool _ACTION_PACKAGE_RESTARTEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_PACKAGE_UNSTOPPED"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_PACKAGE_UNSTOPPED { get { if (!_ACTION_PACKAGE_UNSTOPPEDReady) { _ACTION_PACKAGE_UNSTOPPEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_PACKAGE_UNSTOPPED"); _ACTION_PACKAGE_UNSTOPPEDReady = true; } return _ACTION_PACKAGE_UNSTOPPEDContent; } }
+        private static Java.Lang.String _ACTION_PACKAGE_UNSTOPPEDContent = default;
+        private static bool _ACTION_PACKAGE_UNSTOPPEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_PACKAGE_VERIFIED"/>
         /// </summary>
         public static Java.Lang.String ACTION_PACKAGE_VERIFIED { get { if (!_ACTION_PACKAGE_VERIFIEDReady) { _ACTION_PACKAGE_VERIFIEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_PACKAGE_VERIFIED"); _ACTION_PACKAGE_VERIFIEDReady = true; } return _ACTION_PACKAGE_VERIFIEDContent; } }
@@ -1077,6 +1089,12 @@ namespace Android.Content
         private static Java.Lang.String _ACTION_PROFILE_ADDEDContent = default;
         private static bool _ACTION_PROFILE_ADDEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_PROFILE_AVAILABLE"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_PROFILE_AVAILABLE { get { if (!_ACTION_PROFILE_AVAILABLEReady) { _ACTION_PROFILE_AVAILABLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_PROFILE_AVAILABLE"); _ACTION_PROFILE_AVAILABLEReady = true; } return _ACTION_PROFILE_AVAILABLEContent; } }
+        private static Java.Lang.String _ACTION_PROFILE_AVAILABLEContent = default;
+        private static bool _ACTION_PROFILE_AVAILABLEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_PROFILE_INACCESSIBLE"/>
         /// </summary>
         public static Java.Lang.String ACTION_PROFILE_INACCESSIBLE { get { if (!_ACTION_PROFILE_INACCESSIBLEReady) { _ACTION_PROFILE_INACCESSIBLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_PROFILE_INACCESSIBLE"); _ACTION_PROFILE_INACCESSIBLEReady = true; } return _ACTION_PROFILE_INACCESSIBLEContent; } }
@@ -1088,6 +1106,12 @@ namespace Android.Content
         public static Java.Lang.String ACTION_PROFILE_REMOVED { get { if (!_ACTION_PROFILE_REMOVEDReady) { _ACTION_PROFILE_REMOVEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_PROFILE_REMOVED"); _ACTION_PROFILE_REMOVEDReady = true; } return _ACTION_PROFILE_REMOVEDContent; } }
         private static Java.Lang.String _ACTION_PROFILE_REMOVEDContent = default;
         private static bool _ACTION_PROFILE_REMOVEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_PROFILE_UNAVAILABLE"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_PROFILE_UNAVAILABLE { get { if (!_ACTION_PROFILE_UNAVAILABLEReady) { _ACTION_PROFILE_UNAVAILABLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_PROFILE_UNAVAILABLE"); _ACTION_PROFILE_UNAVAILABLEReady = true; } return _ACTION_PROFILE_UNAVAILABLEContent; } }
+        private static Java.Lang.String _ACTION_PROFILE_UNAVAILABLEContent = default;
+        private static bool _ACTION_PROFILE_UNAVAILABLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_PROVIDER_CHANGED"/>
         /// </summary>
@@ -1246,6 +1270,12 @@ namespace Android.Content
         public static Java.Lang.String ACTION_UMS_DISCONNECTED { get { if (!_ACTION_UMS_DISCONNECTEDReady) { _ACTION_UMS_DISCONNECTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_UMS_DISCONNECTED"); _ACTION_UMS_DISCONNECTEDReady = true; } return _ACTION_UMS_DISCONNECTEDContent; } }
         private static Java.Lang.String _ACTION_UMS_DISCONNECTEDContent = default;
         private static bool _ACTION_UMS_DISCONNECTEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_UNARCHIVE_PACKAGE"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_UNARCHIVE_PACKAGE { get { if (!_ACTION_UNARCHIVE_PACKAGEReady) { _ACTION_UNARCHIVE_PACKAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_UNARCHIVE_PACKAGE"); _ACTION_UNARCHIVE_PACKAGEReady = true; } return _ACTION_UNARCHIVE_PACKAGEContent; } }
+        private static Java.Lang.String _ACTION_UNARCHIVE_PACKAGEContent = default;
+        private static bool _ACTION_UNARCHIVE_PACKAGEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#ACTION_UNINSTALL_PACKAGE"/>
         /// </summary>
@@ -1598,6 +1628,12 @@ namespace Android.Content
         private static Java.Lang.String _EXTRA_ALTERNATE_INTENTSContent = default;
         private static bool _EXTRA_ALTERNATE_INTENTSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_ARCHIVAL"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_ARCHIVAL { get { if (!_EXTRA_ARCHIVALReady) { _EXTRA_ARCHIVALContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ARCHIVAL"); _EXTRA_ARCHIVALReady = true; } return _EXTRA_ARCHIVALContent; } }
+        private static Java.Lang.String _EXTRA_ARCHIVALContent = default;
+        private static bool _EXTRA_ARCHIVALReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_ASSIST_CONTEXT"/>
         /// </summary>
         public static Java.Lang.String EXTRA_ASSIST_CONTEXT { get { if (!_EXTRA_ASSIST_CONTEXTReady) { _EXTRA_ASSIST_CONTEXTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ASSIST_CONTEXT"); _EXTRA_ASSIST_CONTEXTReady = true; } return _EXTRA_ASSIST_CONTEXTContent; } }
@@ -1689,11 +1725,29 @@ namespace Android.Content
         private static Java.Lang.String _EXTRA_CHANGED_UID_LISTContent = default;
         private static bool _EXTRA_CHANGED_UID_LISTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_CHOOSER_ADDITIONAL_CONTENT_URI"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_CHOOSER_ADDITIONAL_CONTENT_URI { get { if (!_EXTRA_CHOOSER_ADDITIONAL_CONTENT_URIReady) { _EXTRA_CHOOSER_ADDITIONAL_CONTENT_URIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CHOOSER_ADDITIONAL_CONTENT_URI"); _EXTRA_CHOOSER_ADDITIONAL_CONTENT_URIReady = true; } return _EXTRA_CHOOSER_ADDITIONAL_CONTENT_URIContent; } }
+        private static Java.Lang.String _EXTRA_CHOOSER_ADDITIONAL_CONTENT_URIContent = default;
+        private static bool _EXTRA_CHOOSER_ADDITIONAL_CONTENT_URIReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_CHOOSER_CONTENT_TYPE_HINT"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_CHOOSER_CONTENT_TYPE_HINT { get { if (!_EXTRA_CHOOSER_CONTENT_TYPE_HINTReady) { _EXTRA_CHOOSER_CONTENT_TYPE_HINTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CHOOSER_CONTENT_TYPE_HINT"); _EXTRA_CHOOSER_CONTENT_TYPE_HINTReady = true; } return _EXTRA_CHOOSER_CONTENT_TYPE_HINTContent; } }
+        private static Java.Lang.String _EXTRA_CHOOSER_CONTENT_TYPE_HINTContent = default;
+        private static bool _EXTRA_CHOOSER_CONTENT_TYPE_HINTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_CHOOSER_CUSTOM_ACTIONS"/>
         /// </summary>
         public static Java.Lang.String EXTRA_CHOOSER_CUSTOM_ACTIONS { get { if (!_EXTRA_CHOOSER_CUSTOM_ACTIONSReady) { _EXTRA_CHOOSER_CUSTOM_ACTIONSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CHOOSER_CUSTOM_ACTIONS"); _EXTRA_CHOOSER_CUSTOM_ACTIONSReady = true; } return _EXTRA_CHOOSER_CUSTOM_ACTIONSContent; } }
         private static Java.Lang.String _EXTRA_CHOOSER_CUSTOM_ACTIONSContent = default;
         private static bool _EXTRA_CHOOSER_CUSTOM_ACTIONSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_CHOOSER_FOCUSED_ITEM_POSITION"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_CHOOSER_FOCUSED_ITEM_POSITION { get { if (!_EXTRA_CHOOSER_FOCUSED_ITEM_POSITIONReady) { _EXTRA_CHOOSER_FOCUSED_ITEM_POSITIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CHOOSER_FOCUSED_ITEM_POSITION"); _EXTRA_CHOOSER_FOCUSED_ITEM_POSITIONReady = true; } return _EXTRA_CHOOSER_FOCUSED_ITEM_POSITIONContent; } }
+        private static Java.Lang.String _EXTRA_CHOOSER_FOCUSED_ITEM_POSITIONContent = default;
+        private static bool _EXTRA_CHOOSER_FOCUSED_ITEM_POSITIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_CHOOSER_MODIFY_SHARE_ACTION"/>
         /// </summary>
@@ -1706,6 +1760,18 @@ namespace Android.Content
         public static Java.Lang.String EXTRA_CHOOSER_REFINEMENT_INTENT_SENDER { get { if (!_EXTRA_CHOOSER_REFINEMENT_INTENT_SENDERReady) { _EXTRA_CHOOSER_REFINEMENT_INTENT_SENDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CHOOSER_REFINEMENT_INTENT_SENDER"); _EXTRA_CHOOSER_REFINEMENT_INTENT_SENDERReady = true; } return _EXTRA_CHOOSER_REFINEMENT_INTENT_SENDERContent; } }
         private static Java.Lang.String _EXTRA_CHOOSER_REFINEMENT_INTENT_SENDERContent = default;
         private static bool _EXTRA_CHOOSER_REFINEMENT_INTENT_SENDERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_CHOOSER_RESULT"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_CHOOSER_RESULT { get { if (!_EXTRA_CHOOSER_RESULTReady) { _EXTRA_CHOOSER_RESULTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CHOOSER_RESULT"); _EXTRA_CHOOSER_RESULTReady = true; } return _EXTRA_CHOOSER_RESULTContent; } }
+        private static Java.Lang.String _EXTRA_CHOOSER_RESULTContent = default;
+        private static bool _EXTRA_CHOOSER_RESULTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_CHOOSER_RESULT_INTENT_SENDER"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_CHOOSER_RESULT_INTENT_SENDER { get { if (!_EXTRA_CHOOSER_RESULT_INTENT_SENDERReady) { _EXTRA_CHOOSER_RESULT_INTENT_SENDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CHOOSER_RESULT_INTENT_SENDER"); _EXTRA_CHOOSER_RESULT_INTENT_SENDERReady = true; } return _EXTRA_CHOOSER_RESULT_INTENT_SENDERContent; } }
+        private static Java.Lang.String _EXTRA_CHOOSER_RESULT_INTENT_SENDERContent = default;
+        private static bool _EXTRA_CHOOSER_RESULT_INTENT_SENDERReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_CHOOSER_TARGETS"/>
         /// </summary>
@@ -1844,6 +1910,12 @@ namespace Android.Content
         public static Java.Lang.String EXTRA_LOCUS_ID { get { if (!_EXTRA_LOCUS_IDReady) { _EXTRA_LOCUS_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_LOCUS_ID"); _EXTRA_LOCUS_IDReady = true; } return _EXTRA_LOCUS_IDContent; } }
         private static Java.Lang.String _EXTRA_LOCUS_IDContent = default;
         private static bool _EXTRA_LOCUS_IDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_METADATA_TEXT"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_METADATA_TEXT { get { if (!_EXTRA_METADATA_TEXTReady) { _EXTRA_METADATA_TEXTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_METADATA_TEXT"); _EXTRA_METADATA_TEXTReady = true; } return _EXTRA_METADATA_TEXTContent; } }
+        private static Java.Lang.String _EXTRA_METADATA_TEXTContent = default;
+        private static bool _EXTRA_METADATA_TEXTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#EXTRA_MIME_TYPES"/>
         /// </summary>
@@ -2881,6 +2953,14 @@ namespace Android.Content
         public bool HasFileDescriptors()
         {
             return IExecuteWithSignature<bool>("hasFileDescriptors", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Intent.html#isMismatchingFilter()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsMismatchingFilter()
+        {
+            return IExecuteWithSignature<bool>("isMismatchingFilter", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Intent.html#getBooleanArrayExtra(java.lang.String)"/>

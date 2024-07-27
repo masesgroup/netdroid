@@ -235,6 +235,14 @@ namespace Android.App.Appsearch
         {
             #region Constructors
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#%3Cinit%3E(android.app.appsearch.GenericDocument)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.Appsearch.GenericDocument"/></param>
+            public Builder(Android.App.Appsearch.GenericDocument arg0)
+                : base(arg0)
+            {
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -269,6 +277,15 @@ namespace Android.App.Appsearch
                 return IExecuteWithSignature<Android.App.Appsearch.GenericDocument>("build", "()Landroid/app/appsearch/GenericDocument;");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#clearProperty(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.GenericDocument.Builder"/></returns>
+            public Android.App.Appsearch.GenericDocument.Builder ClearProperty(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("clearProperty", "(Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setCreationTimestampMillis(long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
@@ -276,6 +293,24 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.GenericDocument.Builder SetCreationTimestampMillis(long arg0)
             {
                 return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setCreationTimestampMillis", "(J)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setId(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.GenericDocument.Builder"/></returns>
+            public Android.App.Appsearch.GenericDocument.Builder SetId(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setId", "(Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setNamespace(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.GenericDocument.Builder"/></returns>
+            public Android.App.Appsearch.GenericDocument.Builder SetNamespace(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setNamespace", "(Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyBoolean(java.lang.String,boolean[])"/>
@@ -338,6 +373,15 @@ namespace Android.App.Appsearch
                 if (arg1.Length == 0) return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyString", arg0); else return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyString", arg0, arg1);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setSchemaType(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.GenericDocument.Builder"/></returns>
+            public Android.App.Appsearch.GenericDocument.Builder SetSchemaType(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setSchemaType", "(Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setScore(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -370,6 +414,14 @@ namespace Android.App.Appsearch
         public partial class Builder<BuilderType>
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#%3Cinit%3E(android.app.appsearch.GenericDocument)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.Appsearch.GenericDocument"/></param>
+            public Builder(Android.App.Appsearch.GenericDocument arg0)
+                : base(arg0)
+            {
+            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
             /// </summary>
@@ -409,6 +461,15 @@ namespace Android.App.Appsearch
                 return IExecuteWithSignature<Android.App.Appsearch.GenericDocument>("build", "()Landroid/app/appsearch/GenericDocument;");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#clearProperty(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><typeparamref name="BuilderType"/></returns>
+            public BuilderType ClearProperty(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<BuilderType>("clearProperty", "(Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setCreationTimestampMillis(long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
@@ -416,6 +477,24 @@ namespace Android.App.Appsearch
             public BuilderType SetCreationTimestampMillis(long arg0)
             {
                 return IExecuteWithSignature<BuilderType>("setCreationTimestampMillis", "(J)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setId(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><typeparamref name="BuilderType"/></returns>
+            public BuilderType SetId(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<BuilderType>("setId", "(Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setNamespace(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><typeparamref name="BuilderType"/></returns>
+            public BuilderType SetNamespace(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<BuilderType>("setNamespace", "(Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyBoolean(java.lang.String,boolean[])"/>
@@ -476,6 +555,15 @@ namespace Android.App.Appsearch
             public BuilderType SetPropertyString(Java.Lang.String arg0, params Java.Lang.String[] arg1)
             {
                 if (arg1.Length == 0) return IExecute<BuilderType>("setPropertyString", arg0); else return IExecute<BuilderType>("setPropertyString", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setSchemaType(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><typeparamref name="BuilderType"/></returns>
+            public BuilderType SetSchemaType(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<BuilderType>("setSchemaType", "(Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setScore(int)"/>

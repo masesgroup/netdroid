@@ -122,7 +122,7 @@ namespace Android.App.Appsearch.Observer
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/ObserverSpec.html"/>
     /// </summary>
-    public partial class ObserverSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObserverSpec>
+    public partial class ObserverSpec : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.appsearch.observer.ObserverSpec";
         /// <summary>

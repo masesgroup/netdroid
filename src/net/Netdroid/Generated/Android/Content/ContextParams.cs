@@ -54,6 +54,14 @@ namespace Android.Content
             return IExecuteWithSignature<Android.Content.AttributionSource>("getNextAttributionSource", "()Landroid/content/AttributionSource;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContextParams.html#shouldRegisterAttributionSource()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool ShouldRegisterAttributionSource()
+        {
+            return IExecuteWithSignature<bool>("shouldRegisterAttributionSource", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContextParams.html#getAttributionTag()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -118,6 +126,15 @@ namespace Android.Content
             public Android.Content.ContextParams.Builder SetNextAttributionSource(Android.Content.AttributionSource arg0)
             {
                 return IExecuteWithSignature<Android.Content.ContextParams.Builder>("setNextAttributionSource", "(Landroid/content/AttributionSource;)Landroid/content/ContextParams$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/ContextParams.Builder.html#setShouldRegisterAttributionSource(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Content.ContextParams.Builder"/></returns>
+            public Android.Content.ContextParams.Builder SetShouldRegisterAttributionSource(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Content.ContextParams.Builder>("setShouldRegisterAttributionSource", "(Z)Landroid/content/ContextParams$Builder;", arg0);
             }
 
             #endregion

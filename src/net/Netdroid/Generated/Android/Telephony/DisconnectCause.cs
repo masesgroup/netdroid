@@ -458,6 +458,12 @@ namespace Android.Telephony
         private static int _POWER_OFFContent = default;
         private static bool _POWER_OFFReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/DisconnectCause.html#SATELLITE_ENABLED"/>
+        /// </summary>
+        public static int SATELLITE_ENABLED { get { if (!_SATELLITE_ENABLEDReady) { _SATELLITE_ENABLEDContent = SGetField<int>(LocalBridgeClazz, "SATELLITE_ENABLED"); _SATELLITE_ENABLEDReady = true; } return _SATELLITE_ENABLEDContent; } }
+        private static int _SATELLITE_ENABLEDContent = default;
+        private static bool _SATELLITE_ENABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/DisconnectCause.html#SERVER_ERROR"/>
         /// </summary>
         public static int SERVER_ERROR { get { if (!_SERVER_ERRORReady) { _SERVER_ERRORContent = SGetField<int>(LocalBridgeClazz, "SERVER_ERROR"); _SERVER_ERRORReady = true; } return _SERVER_ERRORContent; } }

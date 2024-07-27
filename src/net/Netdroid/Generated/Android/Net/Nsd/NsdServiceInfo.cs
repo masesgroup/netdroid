@@ -117,6 +117,14 @@ namespace Android.Net.Nsd
             return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, byte[]>>("getAttributes", "()Ljava/util/Map;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getSubtypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetSubtypes()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSubtypes", "()Ljava/util/Set;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#removeAttribute(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -181,6 +189,14 @@ namespace Android.Net.Nsd
         public void SetServiceType(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setServiceType", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setSubtypes(java.util.Set)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        public void SetSubtypes(Java.Util.Set<Java.Lang.String> arg0)
+        {
+            IExecuteWithSignature("setSubtypes", "(Ljava/util/Set;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#writeToParcel(android.os.Parcel,int)"/>

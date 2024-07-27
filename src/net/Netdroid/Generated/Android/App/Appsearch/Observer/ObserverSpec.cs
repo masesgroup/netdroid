@@ -37,6 +37,12 @@ namespace Android.App.Appsearch.Observer
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/ObserverSpec.html#CREATOR"/>
+        /// </summary>
+        public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
+        private static Android.Os.Parcelable.Creator _CREATORContent = default;
+        private static bool _CREATORReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -46,12 +52,29 @@ namespace Android.App.Appsearch.Observer
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/ObserverSpec.html#describeContents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int DescribeContents()
+        {
+            return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/ObserverSpec.html#getFilterSchemas()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> GetFilterSchemas()
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getFilterSchemas", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/ObserverSpec.html#writeToParcel(android.os.Parcel,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
+        {
+            IExecute("writeToParcel", arg0, arg1);
         }
 
         #endregion

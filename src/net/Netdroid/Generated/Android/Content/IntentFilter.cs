@@ -193,6 +193,15 @@ namespace Android.Content
             return IExecuteWithSignature<Android.Content.IntentFilter.AuthorityEntry>("getDataAuthority", "(I)Landroid/content/IntentFilter$AuthorityEntry;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#getUriRelativeFilterGroup(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Android.Content.UriRelativeFilterGroup"/></returns>
+        public Android.Content.UriRelativeFilterGroup GetUriRelativeFilterGroup(int arg0)
+        {
+            return IExecuteWithSignature<Android.Content.UriRelativeFilterGroup>("getUriRelativeFilterGroup", "(I)Landroid/content/UriRelativeFilterGroup;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#getDataPath(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -337,6 +346,14 @@ namespace Android.Content
         public int CountDataTypes()
         {
             return IExecuteWithSignature<int>("countDataTypes", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#countUriRelativeFilterGroups()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int CountUriRelativeFilterGroups()
+        {
+            return IExecuteWithSignature<int>("countUriRelativeFilterGroups", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#describeContents()"/>
@@ -560,6 +577,21 @@ namespace Android.Content
         public void AddDataType(Java.Lang.String arg0)
         {
             IExecuteWithSignature("addDataType", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#addUriRelativeFilterGroup(android.content.UriRelativeFilterGroup)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.UriRelativeFilterGroup"/></param>
+        public void AddUriRelativeFilterGroup(Android.Content.UriRelativeFilterGroup arg0)
+        {
+            IExecuteWithSignature("addUriRelativeFilterGroup", "(Landroid/content/UriRelativeFilterGroup;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#clearUriRelativeFilterGroups()"/>
+        /// </summary>
+        public void ClearUriRelativeFilterGroups()
+        {
+            IExecuteWithSignature("clearUriRelativeFilterGroups", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#setPriority(int)"/>

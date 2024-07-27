@@ -60,6 +60,14 @@ namespace Android.Media.Metrics
         {
             IExecuteWithSignature("close", "()V");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/EditingSession.html#reportEditingEndedEvent(android.media.metrics.EditingEndedEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Metrics.EditingEndedEvent"/></param>
+        public void ReportEditingEndedEvent(Android.Media.Metrics.EditingEndedEvent arg0)
+        {
+            IExecuteWithSignature("reportEditingEndedEvent", "(Landroid/media/metrics/EditingEndedEvent;)V", arg0);
+        }
 
         #endregion
 

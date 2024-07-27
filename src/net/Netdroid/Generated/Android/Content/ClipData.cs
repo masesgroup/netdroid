@@ -276,6 +276,14 @@ namespace Android.Content
                 return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#getIntentSender()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Content.IntentSender"/></returns>
+            public Android.Content.IntentSender GetIntentSender()
+            {
+                return IExecuteWithSignature<Android.Content.IntentSender>("getIntentSender", "()Landroid/content/IntentSender;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.html#getUri()"/>
             /// </summary>
             /// <returns><see cref="Android.Net.Uri"/></returns>
@@ -338,7 +346,91 @@ namespace Android.Content
             #endregion
 
             #region Nested classes
+            #region Builder
+            public partial class Builder
+            {
+                #region Constructors
 
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.Builder.html#build()"/>
+                /// </summary>
+                /// <returns><see cref="Android.Content.ClipData.Item"/></returns>
+                public Android.Content.ClipData.Item Build()
+                {
+                    return IExecuteWithSignature<Android.Content.ClipData.Item>("build", "()Landroid/content/ClipData$Item;");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.Builder.html#setHtmlText(java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Android.Content.ClipData.Item.Builder"/></returns>
+                public Android.Content.ClipData.Item.Builder SetHtmlText(Java.Lang.String arg0)
+                {
+                    return IExecuteWithSignature<Android.Content.ClipData.Item.Builder>("setHtmlText", "(Ljava/lang/String;)Landroid/content/ClipData$Item$Builder;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.Builder.html#setIntent(android.content.Intent)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+                /// <returns><see cref="Android.Content.ClipData.Item.Builder"/></returns>
+                public Android.Content.ClipData.Item.Builder SetIntent(Android.Content.Intent arg0)
+                {
+                    return IExecuteWithSignature<Android.Content.ClipData.Item.Builder>("setIntent", "(Landroid/content/Intent;)Landroid/content/ClipData$Item$Builder;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.Builder.html#setIntentSender(android.content.IntentSender)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.IntentSender"/></param>
+                /// <returns><see cref="Android.Content.ClipData.Item.Builder"/></returns>
+                public Android.Content.ClipData.Item.Builder SetIntentSender(Android.Content.IntentSender arg0)
+                {
+                    return IExecuteWithSignature<Android.Content.ClipData.Item.Builder>("setIntentSender", "(Landroid/content/IntentSender;)Landroid/content/ClipData$Item$Builder;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.Builder.html#setText(java.lang.CharSequence)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+                /// <returns><see cref="Android.Content.ClipData.Item.Builder"/></returns>
+                public Android.Content.ClipData.Item.Builder SetText(Java.Lang.CharSequence arg0)
+                {
+                    return IExecuteWithSignature<Android.Content.ClipData.Item.Builder>("setText", "(Ljava/lang/CharSequence;)Landroid/content/ClipData$Item$Builder;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/content/ClipData.Item.Builder.html#setUri(android.net.Uri)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+                /// <returns><see cref="Android.Content.ClipData.Item.Builder"/></returns>
+                public Android.Content.ClipData.Item.Builder SetUri(Android.Net.Uri arg0)
+                {
+                    return IExecuteWithSignature<Android.Content.ClipData.Item.Builder>("setUri", "(Landroid/net/Uri;)Landroid/content/ClipData$Item$Builder;", arg0);
+                }
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+        
             #endregion
 
             // TODO: complete the class

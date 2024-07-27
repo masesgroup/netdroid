@@ -166,6 +166,14 @@ namespace Android.Net.Wifi.P2p
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#getIpAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        public Java.Net.InetAddress GetIpAddress()
+        {
+            return IExecuteWithSignature<Java.Net.InetAddress>("getIpAddress", "()Ljava/net/InetAddress;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#getVendorElements()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>

@@ -346,6 +346,16 @@ namespace Android.App
             IExecuteWithSignature("callActivityOnDestroy", "(Landroid/app/Activity;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnNewIntent(android.app.Activity,android.content.Intent,android.app.ComponentCaller)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Activity"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg2"><see cref="Android.App.ComponentCaller"/></param>
+        public void CallActivityOnNewIntent(Android.App.Activity arg0, Android.Content.Intent arg1, Android.App.ComponentCaller arg2)
+        {
+            IExecute("callActivityOnNewIntent", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnNewIntent(android.app.Activity,android.content.Intent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Activity"/></param>

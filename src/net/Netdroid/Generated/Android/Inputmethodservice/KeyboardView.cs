@@ -162,6 +162,7 @@ namespace Android.Inputmethodservice
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.html#onClick(android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
+        [global::System.Obsolete()]
         public void OnClick(Android.View.View arg0)
         {
             IExecuteWithSignature("onClick", "(Landroid/view/View;)V", arg0);

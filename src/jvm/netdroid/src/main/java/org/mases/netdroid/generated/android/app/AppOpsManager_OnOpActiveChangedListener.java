@@ -31,5 +31,13 @@ public final class AppOpsManager_OnOpActiveChangedListener extends org.mases.jco
     public void onOpActiveChanged(java.lang.String arg0, int arg1, java.lang.String arg2, boolean arg3) {
         raiseEvent("onOpActiveChanged", arg0, arg1, arg2, arg3);
     }
+    //@Override
+    public void onOpActiveChanged(java.lang.String arg0, int arg1, java.lang.String arg2, java.lang.String arg3, int arg4, boolean arg5, int arg6, int arg7) {
+        raiseEvent("onOpActiveChanged8", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
+    //@Override
+    public void onOpActiveChangedDefault(java.lang.String arg0, int arg1, java.lang.String arg2, java.lang.String arg3, int arg4, boolean arg5, int arg6, int arg7) {
+        android.app.AppOpsManager.OnOpActiveChangedListener.super.onOpActiveChanged(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+    }
 
 }

@@ -43,6 +43,36 @@ namespace Android.Telephony
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#NETWORK_VALIDATION_FAILURE"/>
+        /// </summary>
+        public static int NETWORK_VALIDATION_FAILURE { get { if (!_NETWORK_VALIDATION_FAILUREReady) { _NETWORK_VALIDATION_FAILUREContent = SGetField<int>(LocalBridgeClazz, "NETWORK_VALIDATION_FAILURE"); _NETWORK_VALIDATION_FAILUREReady = true; } return _NETWORK_VALIDATION_FAILUREContent; } }
+        private static int _NETWORK_VALIDATION_FAILUREContent = default;
+        private static bool _NETWORK_VALIDATION_FAILUREReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#NETWORK_VALIDATION_IN_PROGRESS"/>
+        /// </summary>
+        public static int NETWORK_VALIDATION_IN_PROGRESS { get { if (!_NETWORK_VALIDATION_IN_PROGRESSReady) { _NETWORK_VALIDATION_IN_PROGRESSContent = SGetField<int>(LocalBridgeClazz, "NETWORK_VALIDATION_IN_PROGRESS"); _NETWORK_VALIDATION_IN_PROGRESSReady = true; } return _NETWORK_VALIDATION_IN_PROGRESSContent; } }
+        private static int _NETWORK_VALIDATION_IN_PROGRESSContent = default;
+        private static bool _NETWORK_VALIDATION_IN_PROGRESSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#NETWORK_VALIDATION_NOT_REQUESTED"/>
+        /// </summary>
+        public static int NETWORK_VALIDATION_NOT_REQUESTED { get { if (!_NETWORK_VALIDATION_NOT_REQUESTEDReady) { _NETWORK_VALIDATION_NOT_REQUESTEDContent = SGetField<int>(LocalBridgeClazz, "NETWORK_VALIDATION_NOT_REQUESTED"); _NETWORK_VALIDATION_NOT_REQUESTEDReady = true; } return _NETWORK_VALIDATION_NOT_REQUESTEDContent; } }
+        private static int _NETWORK_VALIDATION_NOT_REQUESTEDContent = default;
+        private static bool _NETWORK_VALIDATION_NOT_REQUESTEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#NETWORK_VALIDATION_SUCCESS"/>
+        /// </summary>
+        public static int NETWORK_VALIDATION_SUCCESS { get { if (!_NETWORK_VALIDATION_SUCCESSReady) { _NETWORK_VALIDATION_SUCCESSContent = SGetField<int>(LocalBridgeClazz, "NETWORK_VALIDATION_SUCCESS"); _NETWORK_VALIDATION_SUCCESSReady = true; } return _NETWORK_VALIDATION_SUCCESSContent; } }
+        private static int _NETWORK_VALIDATION_SUCCESSContent = default;
+        private static bool _NETWORK_VALIDATION_SUCCESSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#NETWORK_VALIDATION_UNSUPPORTED"/>
+        /// </summary>
+        public static int NETWORK_VALIDATION_UNSUPPORTED { get { if (!_NETWORK_VALIDATION_UNSUPPORTEDReady) { _NETWORK_VALIDATION_UNSUPPORTEDContent = SGetField<int>(LocalBridgeClazz, "NETWORK_VALIDATION_UNSUPPORTED"); _NETWORK_VALIDATION_UNSUPPORTEDReady = true; } return _NETWORK_VALIDATION_UNSUPPORTEDContent; } }
+        private static int _NETWORK_VALIDATION_UNSUPPORTEDContent = default;
+        private static bool _NETWORK_VALIDATION_UNSUPPORTEDReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -98,6 +128,14 @@ namespace Android.Telephony
         public int GetNetworkType()
         {
             return IExecuteWithSignature<int>("getNetworkType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getNetworkValidationStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNetworkValidationStatus()
+        {
+            return IExecuteWithSignature<int>("getNetworkValidationStatus", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getState()"/>

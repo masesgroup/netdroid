@@ -34,6 +34,7 @@ namespace Android.App.Slice
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
+        [global::System.Obsolete()]
         public SliceSpec(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -49,6 +50,7 @@ namespace Android.App.Slice
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#CREATOR"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
@@ -65,6 +67,7 @@ namespace Android.App.Slice
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Slice.SliceSpec"/></param>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool CanRender(Android.App.Slice.SliceSpec arg0)
         {
             return IExecuteWithSignature<bool>("canRender", "(Landroid/app/slice/SliceSpec;)Z", arg0);
@@ -73,6 +76,7 @@ namespace Android.App.Slice
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
@@ -81,6 +85,7 @@ namespace Android.App.Slice
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#getRevision()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int GetRevision()
         {
             return IExecuteWithSignature<int>("getRevision", "()I");
@@ -89,6 +94,7 @@ namespace Android.App.Slice
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#getType()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
         public Java.Lang.String GetType()
         {
             return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
@@ -98,6 +104,7 @@ namespace Android.App.Slice
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
         /// <param name="arg1"><see cref="int"/></param>
+        [global::System.Obsolete()]
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
             IExecute("writeToParcel", arg0, arg1);

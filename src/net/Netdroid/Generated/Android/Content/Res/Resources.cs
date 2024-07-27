@@ -75,6 +75,15 @@ namespace Android.Content.Res
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getAttributeSetSourceResId", "(Landroid/util/AttributeSet;)I", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#registerResourcePaths(java.lang.String,android.content.pm.ApplicationInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Pm.ApplicationInfo"/></param>
+        public static void RegisterResourcePaths(Java.Lang.String arg0, Android.Content.Pm.ApplicationInfo arg1)
+        {
+            SExecute(LocalBridgeClazz, "registerResourcePaths", arg0, arg1);
+        }
 
         #endregion
 

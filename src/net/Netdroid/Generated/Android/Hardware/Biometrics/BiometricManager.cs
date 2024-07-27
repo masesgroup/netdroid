@@ -67,6 +67,12 @@ namespace Android.Hardware.Biometrics
         public static int BIOMETRIC_SUCCESS { get { if (!_BIOMETRIC_SUCCESSReady) { _BIOMETRIC_SUCCESSContent = SGetField<int>(LocalBridgeClazz, "BIOMETRIC_SUCCESS"); _BIOMETRIC_SUCCESSReady = true; } return _BIOMETRIC_SUCCESSContent; } }
         private static int _BIOMETRIC_SUCCESSContent = default;
         private static bool _BIOMETRIC_SUCCESSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.html#BIOMETRIC_NO_AUTHENTICATION"/>
+        /// </summary>
+        public static long BIOMETRIC_NO_AUTHENTICATION { get { if (!_BIOMETRIC_NO_AUTHENTICATIONReady) { _BIOMETRIC_NO_AUTHENTICATIONContent = SGetField<long>(LocalBridgeClazz, "BIOMETRIC_NO_AUTHENTICATION"); _BIOMETRIC_NO_AUTHENTICATIONReady = true; } return _BIOMETRIC_NO_AUTHENTICATIONContent; } }
+        private static long _BIOMETRIC_NO_AUTHENTICATIONContent = default;
+        private static bool _BIOMETRIC_NO_AUTHENTICATIONReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -101,6 +107,15 @@ namespace Android.Hardware.Biometrics
         public int CanAuthenticate(int arg0)
         {
             return IExecuteWithSignature<int>("canAuthenticate", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.html#getLastAuthenticationTime(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastAuthenticationTime(int arg0)
+        {
+            return IExecuteWithSignature<long>("getLastAuthenticationTime", "(I)J", arg0);
         }
 
         #endregion

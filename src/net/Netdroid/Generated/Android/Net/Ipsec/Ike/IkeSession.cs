@@ -74,6 +74,14 @@ namespace Android.Net.Ipsec.Ike
             IExecuteWithSignature("closeChildSession", "(Landroid/net/ipsec/ike/ChildSessionCallback;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSession.html#dump(java.io.PrintWriter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
+        public void Dump(Java.Io.PrintWriter arg0)
+        {
+            IExecuteWithSignature("dump", "(Ljava/io/PrintWriter;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSession.html#kill()"/>
         /// </summary>
         public void Kill()

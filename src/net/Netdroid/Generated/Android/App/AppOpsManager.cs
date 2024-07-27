@@ -688,6 +688,7 @@ namespace Android.App
             protected virtual void InitializeHandlers()
             {
                 AddEventHandler("onOpActiveChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnOpActiveChangedEventHandler));
+                AddEventHandler("onOpActiveChanged8", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnOpActiveChanged8EventHandler));
 
             }
 
@@ -713,6 +714,51 @@ namespace Android.App
             public virtual void OnOpActiveChanged(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, bool arg3)
             {
                 
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpActiveChangedListener.html#onOpActiveChanged(java.lang.String,int,java.lang.String,java.lang.String,int,boolean,int,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg4"><see cref="int"/></param>
+            /// <param name="arg5"><see cref="bool"/></param>
+            /// <param name="arg6"><see cref="int"/></param>
+            /// <param name="arg7"><see cref="int"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnOpActiveChangedDefault(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, int arg4, bool arg5, int arg6, int arg7)
+            {
+                IExecute("onOpActiveChangedDefault", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpActiveChangedListener.html#onOpActiveChanged(java.lang.String,int,java.lang.String,java.lang.String,int,boolean,int,int)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnOpActiveChanged8"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<Java.Lang.String, int, Java.Lang.String, Java.Lang.String, int, bool, int, int> OnOnOpActiveChanged8 { get; set; } = null;
+
+            void OnOpActiveChanged8EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+            {
+                var methodToExecute = (OnOnOpActiveChanged8 != null) ? OnOnOpActiveChanged8 : OnOpActiveChanged;
+                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<Java.Lang.String>(1), data.EventData.GetAt<Java.Lang.String>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<bool>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6));
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpActiveChangedListener.html#onOpActiveChanged(java.lang.String,int,java.lang.String,java.lang.String,int,boolean,int,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg4"><see cref="int"/></param>
+            /// <param name="arg5"><see cref="bool"/></param>
+            /// <param name="arg6"><see cref="int"/></param>
+            /// <param name="arg7"><see cref="int"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnOpActiveChangedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnOpActiveChanged(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, int arg4, bool arg5, int arg6, int arg7)
+            {
+                OnOpActiveChangedDefault(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
             }
 
             #endregion
@@ -756,6 +802,21 @@ namespace Android.App
             {
                 IExecute("onOpActiveChanged", arg0, arg1, arg2, arg3);
             }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpActiveChangedListener.html#onOpActiveChanged(java.lang.String,int,java.lang.String,java.lang.String,int,boolean,int,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg4"><see cref="int"/></param>
+            /// <param name="arg5"><see cref="bool"/></param>
+            /// <param name="arg6"><see cref="int"/></param>
+            /// <param name="arg7"><see cref="int"/></param>
+            public override void OnOpActiveChanged(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, int arg4, bool arg5, int arg6, int arg7)
+            {
+                IExecute("onOpActiveChanged", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            }
 
             #endregion
 
@@ -793,6 +854,7 @@ namespace Android.App
             protected virtual void InitializeHandlers()
             {
                 AddEventHandler("onOpChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnOpChangedEventHandler));
+                AddEventHandler("onOpChanged4", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnOpChanged4EventHandler));
 
             }
 
@@ -816,6 +878,43 @@ namespace Android.App
             public virtual void OnOpChanged(Java.Lang.String arg0, Java.Lang.String arg1)
             {
                 
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpChangedListener.html#onOpChanged(java.lang.String,java.lang.String,int,java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnOpChangedDefault(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
+            {
+                IExecute("onOpChangedDefault", arg0, arg1, arg2, arg3);
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpChangedListener.html#onOpChanged(java.lang.String,java.lang.String,int,java.lang.String)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnOpChanged4"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<Java.Lang.String, Java.Lang.String, int, Java.Lang.String> OnOnOpChanged4 { get; set; } = null;
+
+            void OnOpChanged4EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+            {
+                var methodToExecute = (OnOnOpChanged4 != null) ? OnOnOpChanged4 : OnOpChanged;
+                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<Java.Lang.String>(2));
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpChangedListener.html#onOpChanged(java.lang.String,java.lang.String,int,java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnOpChangedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnOpChanged(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
+            {
+                OnOpChangedDefault(arg0, arg1, arg2, arg3);
             }
 
             #endregion
@@ -856,6 +955,17 @@ namespace Android.App
             public override void OnOpChanged(Java.Lang.String arg0, Java.Lang.String arg1)
             {
                 IExecute("onOpChanged", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpChangedListener.html#onOpChanged(java.lang.String,java.lang.String,int,java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+            public override void OnOpChanged(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
+            {
+                IExecute("onOpChanged", arg0, arg1, arg2, arg3);
             }
 
             #endregion

@@ -61,6 +61,14 @@ namespace Android.Net.Vcn
             return IExecuteWithSignature<bool>("hasGatewayOption", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#isSafeModeEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSafeModeEnabled()
+        {
+            return IExecuteWithSignature<bool>("isSafeModeEnabled", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.html#getMaxMtu()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -211,6 +219,15 @@ namespace Android.Net.Vcn
             public Android.Net.Vcn.VcnGatewayConnectionConfig.Builder SetRetryIntervalsMillis(long[] arg0)
             {
                 return IExecuteWithSignature<Android.Net.Vcn.VcnGatewayConnectionConfig.Builder>("setRetryIntervalsMillis", "([J)Landroid/net/vcn/VcnGatewayConnectionConfig$Builder;", new object[] { arg0 });
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.Builder.html#setSafeModeEnabled(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Net.Vcn.VcnGatewayConnectionConfig.Builder"/></returns>
+            public Android.Net.Vcn.VcnGatewayConnectionConfig.Builder SetSafeModeEnabled(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Vcn.VcnGatewayConnectionConfig.Builder>("setSafeModeEnabled", "(Z)Landroid/net/vcn/VcnGatewayConnectionConfig$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/vcn/VcnGatewayConnectionConfig.Builder.html#setVcnUnderlyingNetworkPriorities(java.util.List)"/>

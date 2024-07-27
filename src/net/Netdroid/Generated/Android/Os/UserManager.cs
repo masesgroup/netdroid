@@ -111,6 +111,12 @@ namespace Android.Os
         private static Java.Lang.String _DISALLOW_ADD_MANAGED_PROFILEContent = default;
         private static bool _DISALLOW_ADD_MANAGED_PROFILEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_PRIVATE_PROFILE"/>
+        /// </summary>
+        public static Java.Lang.String DISALLOW_ADD_PRIVATE_PROFILE { get { if (!_DISALLOW_ADD_PRIVATE_PROFILEReady) { _DISALLOW_ADD_PRIVATE_PROFILEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_ADD_PRIVATE_PROFILE"); _DISALLOW_ADD_PRIVATE_PROFILEReady = true; } return _DISALLOW_ADD_PRIVATE_PROFILEContent; } }
+        private static Java.Lang.String _DISALLOW_ADD_PRIVATE_PROFILEContent = default;
+        private static bool _DISALLOW_ADD_PRIVATE_PROFILEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_USER"/>
         /// </summary>
         public static Java.Lang.String DISALLOW_ADD_USER { get { if (!_DISALLOW_ADD_USERReady) { _DISALLOW_ADD_USERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_ADD_USER"); _DISALLOW_ADD_USERReady = true; } return _DISALLOW_ADD_USERContent; } }
@@ -146,6 +152,12 @@ namespace Android.Os
         public static Java.Lang.String DISALLOW_APPS_CONTROL { get { if (!_DISALLOW_APPS_CONTROLReady) { _DISALLOW_APPS_CONTROLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_APPS_CONTROL"); _DISALLOW_APPS_CONTROLReady = true; } return _DISALLOW_APPS_CONTROLContent; } }
         private static Java.Lang.String _DISALLOW_APPS_CONTROLContent = default;
         private static bool _DISALLOW_APPS_CONTROLReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ASSIST_CONTENT"/>
+        /// </summary>
+        public static Java.Lang.String DISALLOW_ASSIST_CONTENT { get { if (!_DISALLOW_ASSIST_CONTENTReady) { _DISALLOW_ASSIST_CONTENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_ASSIST_CONTENT"); _DISALLOW_ASSIST_CONTENTReady = true; } return _DISALLOW_ASSIST_CONTENTContent; } }
+        private static Java.Lang.String _DISALLOW_ASSIST_CONTENTContent = default;
+        private static bool _DISALLOW_ASSIST_CONTENTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_AUTOFILL"/>
         /// </summary>
@@ -357,6 +369,12 @@ namespace Android.Os
         private static Java.Lang.String _DISALLOW_MOUNT_PHYSICAL_MEDIAContent = default;
         private static bool _DISALLOW_MOUNT_PHYSICAL_MEDIAReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO"/>
+        /// </summary>
+        public static Java.Lang.String DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO { get { if (!_DISALLOW_NEAR_FIELD_COMMUNICATION_RADIOReady) { _DISALLOW_NEAR_FIELD_COMMUNICATION_RADIOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO"); _DISALLOW_NEAR_FIELD_COMMUNICATION_RADIOReady = true; } return _DISALLOW_NEAR_FIELD_COMMUNICATION_RADIOContent; } }
+        private static Java.Lang.String _DISALLOW_NEAR_FIELD_COMMUNICATION_RADIOContent = default;
+        private static bool _DISALLOW_NEAR_FIELD_COMMUNICATION_RADIOReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_NETWORK_RESET"/>
         /// </summary>
         public static Java.Lang.String DISALLOW_NETWORK_RESET { get { if (!_DISALLOW_NETWORK_RESETReady) { _DISALLOW_NETWORK_RESETContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_NETWORK_RESET"); _DISALLOW_NETWORK_RESETReady = true; } return _DISALLOW_NETWORK_RESETContent; } }
@@ -430,6 +448,12 @@ namespace Android.Os
         private static Java.Lang.String _DISALLOW_SHARING_ADMIN_CONFIGURED_WIFIContent = default;
         private static bool _DISALLOW_SHARING_ADMIN_CONFIGURED_WIFIReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SIM_GLOBALLY"/>
+        /// </summary>
+        public static Java.Lang.String DISALLOW_SIM_GLOBALLY { get { if (!_DISALLOW_SIM_GLOBALLYReady) { _DISALLOW_SIM_GLOBALLYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_SIM_GLOBALLY"); _DISALLOW_SIM_GLOBALLYReady = true; } return _DISALLOW_SIM_GLOBALLYContent; } }
+        private static Java.Lang.String _DISALLOW_SIM_GLOBALLYContent = default;
+        private static bool _DISALLOW_SIM_GLOBALLYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SMS"/>
         /// </summary>
         public static Java.Lang.String DISALLOW_SMS { get { if (!_DISALLOW_SMSReady) { _DISALLOW_SMSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_SMS"); _DISALLOW_SMSReady = true; } return _DISALLOW_SMSContent; } }
@@ -501,6 +525,24 @@ namespace Android.Os
         public static Java.Lang.String KEY_RESTRICTIONS_PENDING { get { if (!_KEY_RESTRICTIONS_PENDINGReady) { _KEY_RESTRICTIONS_PENDINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_RESTRICTIONS_PENDING"); _KEY_RESTRICTIONS_PENDINGReady = true; } return _KEY_RESTRICTIONS_PENDINGContent; } }
         private static Java.Lang.String _KEY_RESTRICTIONS_PENDINGContent = default;
         private static bool _KEY_RESTRICTIONS_PENDINGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#USER_TYPE_PROFILE_CLONE"/>
+        /// </summary>
+        public static Java.Lang.String USER_TYPE_PROFILE_CLONE { get { if (!_USER_TYPE_PROFILE_CLONEReady) { _USER_TYPE_PROFILE_CLONEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USER_TYPE_PROFILE_CLONE"); _USER_TYPE_PROFILE_CLONEReady = true; } return _USER_TYPE_PROFILE_CLONEContent; } }
+        private static Java.Lang.String _USER_TYPE_PROFILE_CLONEContent = default;
+        private static bool _USER_TYPE_PROFILE_CLONEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#USER_TYPE_PROFILE_MANAGED"/>
+        /// </summary>
+        public static Java.Lang.String USER_TYPE_PROFILE_MANAGED { get { if (!_USER_TYPE_PROFILE_MANAGEDReady) { _USER_TYPE_PROFILE_MANAGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USER_TYPE_PROFILE_MANAGED"); _USER_TYPE_PROFILE_MANAGEDReady = true; } return _USER_TYPE_PROFILE_MANAGEDContent; } }
+        private static Java.Lang.String _USER_TYPE_PROFILE_MANAGEDContent = default;
+        private static bool _USER_TYPE_PROFILE_MANAGEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#USER_TYPE_PROFILE_PRIVATE"/>
+        /// </summary>
+        public static Java.Lang.String USER_TYPE_PROFILE_PRIVATE { get { if (!_USER_TYPE_PROFILE_PRIVATEReady) { _USER_TYPE_PROFILE_PRIVATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USER_TYPE_PROFILE_PRIVATE"); _USER_TYPE_PROFILE_PRIVATEReady = true; } return _USER_TYPE_PROFILE_PRIVATEContent; } }
+        private static Java.Lang.String _USER_TYPE_PROFILE_PRIVATEContent = default;
+        private static bool _USER_TYPE_PROFILE_PRIVATEReady = false; // this is used because in case of generics 
 
         #endregion
 

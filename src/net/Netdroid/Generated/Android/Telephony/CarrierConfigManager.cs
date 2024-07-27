@@ -539,6 +539,12 @@ namespace Android.Telephony
         private static Java.Lang.String _KEY_CARRIER_SETTINGS_ENABLE_BOOLContent = default;
         private static bool _KEY_CARRIER_SETTINGS_ENABLE_BOOLReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_CARRIER_SUPPORTED_SATELLITE_SERVICES_PER_PROVIDER_BUNDLE"/>
+        /// </summary>
+        public static Java.Lang.String KEY_CARRIER_SUPPORTED_SATELLITE_SERVICES_PER_PROVIDER_BUNDLE { get { if (!_KEY_CARRIER_SUPPORTED_SATELLITE_SERVICES_PER_PROVIDER_BUNDLEReady) { _KEY_CARRIER_SUPPORTED_SATELLITE_SERVICES_PER_PROVIDER_BUNDLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_CARRIER_SUPPORTED_SATELLITE_SERVICES_PER_PROVIDER_BUNDLE"); _KEY_CARRIER_SUPPORTED_SATELLITE_SERVICES_PER_PROVIDER_BUNDLEReady = true; } return _KEY_CARRIER_SUPPORTED_SATELLITE_SERVICES_PER_PROVIDER_BUNDLEContent; } }
+        private static Java.Lang.String _KEY_CARRIER_SUPPORTED_SATELLITE_SERVICES_PER_PROVIDER_BUNDLEContent = default;
+        private static bool _KEY_CARRIER_SUPPORTED_SATELLITE_SERVICES_PER_PROVIDER_BUNDLEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_CARRIER_SUPPORTS_OPP_DATA_AUTO_PROVISIONING_BOOL"/>
         /// </summary>
         public static Java.Lang.String KEY_CARRIER_SUPPORTS_OPP_DATA_AUTO_PROVISIONING_BOOL { get { if (!_KEY_CARRIER_SUPPORTS_OPP_DATA_AUTO_PROVISIONING_BOOLReady) { _KEY_CARRIER_SUPPORTS_OPP_DATA_AUTO_PROVISIONING_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_CARRIER_SUPPORTS_OPP_DATA_AUTO_PROVISIONING_BOOL"); _KEY_CARRIER_SUPPORTS_OPP_DATA_AUTO_PROVISIONING_BOOLReady = true; } return _KEY_CARRIER_SUPPORTS_OPP_DATA_AUTO_PROVISIONING_BOOLContent; } }
@@ -668,6 +674,12 @@ namespace Android.Telephony
         public static Java.Lang.String KEY_CDMA_ROAMING_NETWORKS_STRING_ARRAY { get { if (!_KEY_CDMA_ROAMING_NETWORKS_STRING_ARRAYReady) { _KEY_CDMA_ROAMING_NETWORKS_STRING_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_CDMA_ROAMING_NETWORKS_STRING_ARRAY"); _KEY_CDMA_ROAMING_NETWORKS_STRING_ARRAYReady = true; } return _KEY_CDMA_ROAMING_NETWORKS_STRING_ARRAYContent; } }
         private static Java.Lang.String _KEY_CDMA_ROAMING_NETWORKS_STRING_ARRAYContent = default;
         private static bool _KEY_CDMA_ROAMING_NETWORKS_STRING_ARRAYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_CELLULAR_SERVICE_CAPABILITIES_INT_ARRAY"/>
+        /// </summary>
+        public static Java.Lang.String KEY_CELLULAR_SERVICE_CAPABILITIES_INT_ARRAY { get { if (!_KEY_CELLULAR_SERVICE_CAPABILITIES_INT_ARRAYReady) { _KEY_CELLULAR_SERVICE_CAPABILITIES_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_CELLULAR_SERVICE_CAPABILITIES_INT_ARRAY"); _KEY_CELLULAR_SERVICE_CAPABILITIES_INT_ARRAYReady = true; } return _KEY_CELLULAR_SERVICE_CAPABILITIES_INT_ARRAYContent; } }
+        private static Java.Lang.String _KEY_CELLULAR_SERVICE_CAPABILITIES_INT_ARRAYContent = default;
+        private static bool _KEY_CELLULAR_SERVICE_CAPABILITIES_INT_ARRAYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_CELLULAR_USAGE_SETTING_INT"/>
         /// </summary>
@@ -988,13 +1000,6 @@ namespace Android.Telephony
         private static Java.Lang.String _KEY_HIDE_CARRIER_NETWORK_SETTINGS_BOOLContent = default;
         private static bool _KEY_HIDE_CARRIER_NETWORK_SETTINGS_BOOLReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_HIDE_ENABLE_2G"/>
-        /// </summary>
-        [global::System.Obsolete()]
-        public static Java.Lang.String KEY_HIDE_ENABLE_2G { get { if (!_KEY_HIDE_ENABLE_2GReady) { _KEY_HIDE_ENABLE_2GContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_HIDE_ENABLE_2G"); _KEY_HIDE_ENABLE_2GReady = true; } return _KEY_HIDE_ENABLE_2GContent; } }
-        private static Java.Lang.String _KEY_HIDE_ENABLE_2GContent = default;
-        private static bool _KEY_HIDE_ENABLE_2GReady = false; // this is used because in case of generics 
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_HIDE_ENHANCED_4G_LTE_BOOL"/>
         /// </summary>
         public static Java.Lang.String KEY_HIDE_ENHANCED_4G_LTE_BOOL { get { if (!_KEY_HIDE_ENHANCED_4G_LTE_BOOLReady) { _KEY_HIDE_ENHANCED_4G_LTE_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_HIDE_ENHANCED_4G_LTE_BOOL"); _KEY_HIDE_ENHANCED_4G_LTE_BOOLReady = true; } return _KEY_HIDE_ENHANCED_4G_LTE_BOOLContent; } }
@@ -1313,6 +1318,24 @@ namespace Android.Telephony
         private static Java.Lang.String _KEY_MONTHLY_DATA_CYCLE_DAY_INTContent = default;
         private static bool _KEY_MONTHLY_DATA_CYCLE_DAY_INTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_NTN_LTE_RSRP_THRESHOLDS_INT_ARRAY"/>
+        /// </summary>
+        public static Java.Lang.String KEY_NTN_LTE_RSRP_THRESHOLDS_INT_ARRAY { get { if (!_KEY_NTN_LTE_RSRP_THRESHOLDS_INT_ARRAYReady) { _KEY_NTN_LTE_RSRP_THRESHOLDS_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_NTN_LTE_RSRP_THRESHOLDS_INT_ARRAY"); _KEY_NTN_LTE_RSRP_THRESHOLDS_INT_ARRAYReady = true; } return _KEY_NTN_LTE_RSRP_THRESHOLDS_INT_ARRAYContent; } }
+        private static Java.Lang.String _KEY_NTN_LTE_RSRP_THRESHOLDS_INT_ARRAYContent = default;
+        private static bool _KEY_NTN_LTE_RSRP_THRESHOLDS_INT_ARRAYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_NTN_LTE_RSRQ_THRESHOLDS_INT_ARRAY"/>
+        /// </summary>
+        public static Java.Lang.String KEY_NTN_LTE_RSRQ_THRESHOLDS_INT_ARRAY { get { if (!_KEY_NTN_LTE_RSRQ_THRESHOLDS_INT_ARRAYReady) { _KEY_NTN_LTE_RSRQ_THRESHOLDS_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_NTN_LTE_RSRQ_THRESHOLDS_INT_ARRAY"); _KEY_NTN_LTE_RSRQ_THRESHOLDS_INT_ARRAYReady = true; } return _KEY_NTN_LTE_RSRQ_THRESHOLDS_INT_ARRAYContent; } }
+        private static Java.Lang.String _KEY_NTN_LTE_RSRQ_THRESHOLDS_INT_ARRAYContent = default;
+        private static bool _KEY_NTN_LTE_RSRQ_THRESHOLDS_INT_ARRAYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_NTN_LTE_RSSNR_THRESHOLDS_INT_ARRAY"/>
+        /// </summary>
+        public static Java.Lang.String KEY_NTN_LTE_RSSNR_THRESHOLDS_INT_ARRAY { get { if (!_KEY_NTN_LTE_RSSNR_THRESHOLDS_INT_ARRAYReady) { _KEY_NTN_LTE_RSSNR_THRESHOLDS_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_NTN_LTE_RSSNR_THRESHOLDS_INT_ARRAY"); _KEY_NTN_LTE_RSSNR_THRESHOLDS_INT_ARRAYReady = true; } return _KEY_NTN_LTE_RSSNR_THRESHOLDS_INT_ARRAYContent; } }
+        private static Java.Lang.String _KEY_NTN_LTE_RSSNR_THRESHOLDS_INT_ARRAYContent = default;
+        private static bool _KEY_NTN_LTE_RSSNR_THRESHOLDS_INT_ARRAYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_ONLY_AUTO_SELECT_IN_HOME_NETWORK_BOOL"/>
         /// </summary>
         public static Java.Lang.String KEY_ONLY_AUTO_SELECT_IN_HOME_NETWORK_BOOL { get { if (!_KEY_ONLY_AUTO_SELECT_IN_HOME_NETWORK_BOOLReady) { _KEY_ONLY_AUTO_SELECT_IN_HOME_NETWORK_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_ONLY_AUTO_SELECT_IN_HOME_NETWORK_BOOL"); _KEY_ONLY_AUTO_SELECT_IN_HOME_NETWORK_BOOLReady = true; } return _KEY_ONLY_AUTO_SELECT_IN_HOME_NETWORK_BOOLContent; } }
@@ -1397,6 +1420,12 @@ namespace Android.Telephony
         private static Java.Lang.String _KEY_OPPORTUNISTIC_NETWORK_PING_PONG_TIME_LONGContent = default;
         private static bool _KEY_OPPORTUNISTIC_NETWORK_PING_PONG_TIME_LONGReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_PARAMETERS_USED_FOR_NTN_LTE_SIGNAL_BAR_INT"/>
+        /// </summary>
+        public static Java.Lang.String KEY_PARAMETERS_USED_FOR_NTN_LTE_SIGNAL_BAR_INT { get { if (!_KEY_PARAMETERS_USED_FOR_NTN_LTE_SIGNAL_BAR_INTReady) { _KEY_PARAMETERS_USED_FOR_NTN_LTE_SIGNAL_BAR_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_PARAMETERS_USED_FOR_NTN_LTE_SIGNAL_BAR_INT"); _KEY_PARAMETERS_USED_FOR_NTN_LTE_SIGNAL_BAR_INTReady = true; } return _KEY_PARAMETERS_USED_FOR_NTN_LTE_SIGNAL_BAR_INTContent; } }
+        private static Java.Lang.String _KEY_PARAMETERS_USED_FOR_NTN_LTE_SIGNAL_BAR_INTContent = default;
+        private static bool _KEY_PARAMETERS_USED_FOR_NTN_LTE_SIGNAL_BAR_INTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_PING_TEST_BEFORE_DATA_SWITCH_BOOL"/>
         /// </summary>
         public static Java.Lang.String KEY_PING_TEST_BEFORE_DATA_SWITCH_BOOL { get { if (!_KEY_PING_TEST_BEFORE_DATA_SWITCH_BOOLReady) { _KEY_PING_TEST_BEFORE_DATA_SWITCH_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_PING_TEST_BEFORE_DATA_SWITCH_BOOL"); _KEY_PING_TEST_BEFORE_DATA_SWITCH_BOOLReady = true; } return _KEY_PING_TEST_BEFORE_DATA_SWITCH_BOOLContent; } }
@@ -1408,6 +1437,12 @@ namespace Android.Telephony
         public static Java.Lang.String KEY_PREFER_2G_BOOL { get { if (!_KEY_PREFER_2G_BOOLReady) { _KEY_PREFER_2G_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_PREFER_2G_BOOL"); _KEY_PREFER_2G_BOOLReady = true; } return _KEY_PREFER_2G_BOOLContent; } }
         private static Java.Lang.String _KEY_PREFER_2G_BOOLContent = default;
         private static bool _KEY_PREFER_2G_BOOLReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_PREFER_3G_VISIBILITY_BOOL"/>
+        /// </summary>
+        public static Java.Lang.String KEY_PREFER_3G_VISIBILITY_BOOL { get { if (!_KEY_PREFER_3G_VISIBILITY_BOOLReady) { _KEY_PREFER_3G_VISIBILITY_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_PREFER_3G_VISIBILITY_BOOL"); _KEY_PREFER_3G_VISIBILITY_BOOLReady = true; } return _KEY_PREFER_3G_VISIBILITY_BOOLContent; } }
+        private static Java.Lang.String _KEY_PREFER_3G_VISIBILITY_BOOLContent = default;
+        private static bool _KEY_PREFER_3G_VISIBILITY_BOOLReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_PREMIUM_CAPABILITY_MAXIMUM_DAILY_NOTIFICATION_COUNT_INT"/>
         /// </summary>
@@ -1548,6 +1583,30 @@ namespace Android.Telephony
         private static Java.Lang.String _KEY_RTT_UPGRADE_SUPPORTED_FOR_DOWNGRADED_VT_CALL_BOOLContent = default;
         private static bool _KEY_RTT_UPGRADE_SUPPORTED_FOR_DOWNGRADED_VT_CALL_BOOLReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_SATELLITE_ATTACH_SUPPORTED_BOOL"/>
+        /// </summary>
+        public static Java.Lang.String KEY_SATELLITE_ATTACH_SUPPORTED_BOOL { get { if (!_KEY_SATELLITE_ATTACH_SUPPORTED_BOOLReady) { _KEY_SATELLITE_ATTACH_SUPPORTED_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SATELLITE_ATTACH_SUPPORTED_BOOL"); _KEY_SATELLITE_ATTACH_SUPPORTED_BOOLReady = true; } return _KEY_SATELLITE_ATTACH_SUPPORTED_BOOLContent; } }
+        private static Java.Lang.String _KEY_SATELLITE_ATTACH_SUPPORTED_BOOLContent = default;
+        private static bool _KEY_SATELLITE_ATTACH_SUPPORTED_BOOLReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_SATELLITE_CONNECTION_HYSTERESIS_SEC_INT"/>
+        /// </summary>
+        public static Java.Lang.String KEY_SATELLITE_CONNECTION_HYSTERESIS_SEC_INT { get { if (!_KEY_SATELLITE_CONNECTION_HYSTERESIS_SEC_INTReady) { _KEY_SATELLITE_CONNECTION_HYSTERESIS_SEC_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SATELLITE_CONNECTION_HYSTERESIS_SEC_INT"); _KEY_SATELLITE_CONNECTION_HYSTERESIS_SEC_INTReady = true; } return _KEY_SATELLITE_CONNECTION_HYSTERESIS_SEC_INTContent; } }
+        private static Java.Lang.String _KEY_SATELLITE_CONNECTION_HYSTERESIS_SEC_INTContent = default;
+        private static bool _KEY_SATELLITE_CONNECTION_HYSTERESIS_SEC_INTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_SATELLITE_ENTITLEMENT_STATUS_REFRESH_DAYS_INT"/>
+        /// </summary>
+        public static Java.Lang.String KEY_SATELLITE_ENTITLEMENT_STATUS_REFRESH_DAYS_INT { get { if (!_KEY_SATELLITE_ENTITLEMENT_STATUS_REFRESH_DAYS_INTReady) { _KEY_SATELLITE_ENTITLEMENT_STATUS_REFRESH_DAYS_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SATELLITE_ENTITLEMENT_STATUS_REFRESH_DAYS_INT"); _KEY_SATELLITE_ENTITLEMENT_STATUS_REFRESH_DAYS_INTReady = true; } return _KEY_SATELLITE_ENTITLEMENT_STATUS_REFRESH_DAYS_INTContent; } }
+        private static Java.Lang.String _KEY_SATELLITE_ENTITLEMENT_STATUS_REFRESH_DAYS_INTContent = default;
+        private static bool _KEY_SATELLITE_ENTITLEMENT_STATUS_REFRESH_DAYS_INTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_SATELLITE_ENTITLEMENT_SUPPORTED_BOOL"/>
+        /// </summary>
+        public static Java.Lang.String KEY_SATELLITE_ENTITLEMENT_SUPPORTED_BOOL { get { if (!_KEY_SATELLITE_ENTITLEMENT_SUPPORTED_BOOLReady) { _KEY_SATELLITE_ENTITLEMENT_SUPPORTED_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SATELLITE_ENTITLEMENT_SUPPORTED_BOOL"); _KEY_SATELLITE_ENTITLEMENT_SUPPORTED_BOOLReady = true; } return _KEY_SATELLITE_ENTITLEMENT_SUPPORTED_BOOLContent; } }
+        private static Java.Lang.String _KEY_SATELLITE_ENTITLEMENT_SUPPORTED_BOOLContent = default;
+        private static bool _KEY_SATELLITE_ENTITLEMENT_SUPPORTED_BOOLReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_SHOW_4G_FOR_3G_DATA_ICON_BOOL"/>
         /// </summary>
         public static Java.Lang.String KEY_SHOW_4G_FOR_3G_DATA_ICON_BOOL { get { if (!_KEY_SHOW_4G_FOR_3G_DATA_ICON_BOOLReady) { _KEY_SHOW_4G_FOR_3G_DATA_ICON_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SHOW_4G_FOR_3G_DATA_ICON_BOOL"); _KEY_SHOW_4G_FOR_3G_DATA_ICON_BOOLReady = true; } return _KEY_SHOW_4G_FOR_3G_DATA_ICON_BOOLContent; } }
@@ -1607,6 +1666,12 @@ namespace Android.Telephony
         public static Java.Lang.String KEY_SHOW_ONSCREEN_DIAL_BUTTON_BOOL { get { if (!_KEY_SHOW_ONSCREEN_DIAL_BUTTON_BOOLReady) { _KEY_SHOW_ONSCREEN_DIAL_BUTTON_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SHOW_ONSCREEN_DIAL_BUTTON_BOOL"); _KEY_SHOW_ONSCREEN_DIAL_BUTTON_BOOLReady = true; } return _KEY_SHOW_ONSCREEN_DIAL_BUTTON_BOOLContent; } }
         private static Java.Lang.String _KEY_SHOW_ONSCREEN_DIAL_BUTTON_BOOLContent = default;
         private static bool _KEY_SHOW_ONSCREEN_DIAL_BUTTON_BOOLReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_SHOW_ROAMING_INDICATOR_BOOL"/>
+        /// </summary>
+        public static Java.Lang.String KEY_SHOW_ROAMING_INDICATOR_BOOL { get { if (!_KEY_SHOW_ROAMING_INDICATOR_BOOLReady) { _KEY_SHOW_ROAMING_INDICATOR_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SHOW_ROAMING_INDICATOR_BOOL"); _KEY_SHOW_ROAMING_INDICATOR_BOOLReady = true; } return _KEY_SHOW_ROAMING_INDICATOR_BOOLContent; } }
+        private static Java.Lang.String _KEY_SHOW_ROAMING_INDICATOR_BOOLContent = default;
+        private static bool _KEY_SHOW_ROAMING_INDICATOR_BOOLReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_SHOW_SIGNAL_STRENGTH_IN_SIM_STATUS_BOOL"/>
         /// </summary>
@@ -1740,6 +1805,12 @@ namespace Android.Telephony
         public static Java.Lang.String KEY_SUPPORTED_PREMIUM_CAPABILITIES_INT_ARRAY { get { if (!_KEY_SUPPORTED_PREMIUM_CAPABILITIES_INT_ARRAYReady) { _KEY_SUPPORTED_PREMIUM_CAPABILITIES_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SUPPORTED_PREMIUM_CAPABILITIES_INT_ARRAY"); _KEY_SUPPORTED_PREMIUM_CAPABILITIES_INT_ARRAYReady = true; } return _KEY_SUPPORTED_PREMIUM_CAPABILITIES_INT_ARRAYContent; } }
         private static Java.Lang.String _KEY_SUPPORTED_PREMIUM_CAPABILITIES_INT_ARRAYContent = default;
         private static bool _KEY_SUPPORTED_PREMIUM_CAPABILITIES_INT_ARRAYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_SUPPORTS_BUSINESS_CALL_COMPOSER_BOOL"/>
+        /// </summary>
+        public static Java.Lang.String KEY_SUPPORTS_BUSINESS_CALL_COMPOSER_BOOL { get { if (!_KEY_SUPPORTS_BUSINESS_CALL_COMPOSER_BOOLReady) { _KEY_SUPPORTS_BUSINESS_CALL_COMPOSER_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SUPPORTS_BUSINESS_CALL_COMPOSER_BOOL"); _KEY_SUPPORTS_BUSINESS_CALL_COMPOSER_BOOLReady = true; } return _KEY_SUPPORTS_BUSINESS_CALL_COMPOSER_BOOLContent; } }
+        private static Java.Lang.String _KEY_SUPPORTS_BUSINESS_CALL_COMPOSER_BOOLContent = default;
+        private static bool _KEY_SUPPORTS_BUSINESS_CALL_COMPOSER_BOOLReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.html#KEY_SUPPORTS_CALL_COMPOSER_BOOL"/>
         /// </summary>
@@ -2786,11 +2857,137 @@ namespace Android.Telephony
 
             #region Fields
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#DOMAIN_CS"/>
+            /// </summary>
+            public static int DOMAIN_CS { get { if (!_DOMAIN_CSReady) { _DOMAIN_CSContent = SGetField<int>(LocalBridgeClazz, "DOMAIN_CS"); _DOMAIN_CSReady = true; } return _DOMAIN_CSContent; } }
+            private static int _DOMAIN_CSContent = default;
+            private static bool _DOMAIN_CSReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#DOMAIN_PS_3GPP"/>
+            /// </summary>
+            public static int DOMAIN_PS_3GPP { get { if (!_DOMAIN_PS_3GPPReady) { _DOMAIN_PS_3GPPContent = SGetField<int>(LocalBridgeClazz, "DOMAIN_PS_3GPP"); _DOMAIN_PS_3GPPReady = true; } return _DOMAIN_PS_3GPPContent; } }
+            private static int _DOMAIN_PS_3GPPContent = default;
+            private static bool _DOMAIN_PS_3GPPReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#DOMAIN_PS_NON_3GPP"/>
+            /// </summary>
+            public static int DOMAIN_PS_NON_3GPP { get { if (!_DOMAIN_PS_NON_3GPPReady) { _DOMAIN_PS_NON_3GPPContent = SGetField<int>(LocalBridgeClazz, "DOMAIN_PS_NON_3GPP"); _DOMAIN_PS_NON_3GPPReady = true; } return _DOMAIN_PS_NON_3GPPContent; } }
+            private static int _DOMAIN_PS_NON_3GPPContent = default;
+            private static bool _DOMAIN_PS_NON_3GPPReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#REDIAL_TIMER_DISABLED"/>
+            /// </summary>
+            public static int REDIAL_TIMER_DISABLED { get { if (!_REDIAL_TIMER_DISABLEDReady) { _REDIAL_TIMER_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "REDIAL_TIMER_DISABLED"); _REDIAL_TIMER_DISABLEDReady = true; } return _REDIAL_TIMER_DISABLEDContent; } }
+            private static int _REDIAL_TIMER_DISABLEDContent = default;
+            private static bool _REDIAL_TIMER_DISABLEDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#SCAN_TYPE_FULL_SERVICE"/>
+            /// </summary>
+            public static int SCAN_TYPE_FULL_SERVICE { get { if (!_SCAN_TYPE_FULL_SERVICEReady) { _SCAN_TYPE_FULL_SERVICEContent = SGetField<int>(LocalBridgeClazz, "SCAN_TYPE_FULL_SERVICE"); _SCAN_TYPE_FULL_SERVICEReady = true; } return _SCAN_TYPE_FULL_SERVICEContent; } }
+            private static int _SCAN_TYPE_FULL_SERVICEContent = default;
+            private static bool _SCAN_TYPE_FULL_SERVICEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICE"/>
+            /// </summary>
+            public static int SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICE { get { if (!_SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICEReady) { _SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICEContent = SGetField<int>(LocalBridgeClazz, "SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICE"); _SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICEReady = true; } return _SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICEContent; } }
+            private static int _SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICEContent = default;
+            private static bool _SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#SCAN_TYPE_NO_PREFERENCE"/>
+            /// </summary>
+            public static int SCAN_TYPE_NO_PREFERENCE { get { if (!_SCAN_TYPE_NO_PREFERENCEReady) { _SCAN_TYPE_NO_PREFERENCEContent = SGetField<int>(LocalBridgeClazz, "SCAN_TYPE_NO_PREFERENCE"); _SCAN_TYPE_NO_PREFERENCEReady = true; } return _SCAN_TYPE_NO_PREFERENCEContent; } }
+            private static int _SCAN_TYPE_NO_PREFERENCEContent = default;
+            private static bool _SCAN_TYPE_NO_PREFERENCEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#VOWIFI_REQUIRES_NONE"/>
+            /// </summary>
+            public static int VOWIFI_REQUIRES_NONE { get { if (!_VOWIFI_REQUIRES_NONEReady) { _VOWIFI_REQUIRES_NONEContent = SGetField<int>(LocalBridgeClazz, "VOWIFI_REQUIRES_NONE"); _VOWIFI_REQUIRES_NONEReady = true; } return _VOWIFI_REQUIRES_NONEContent; } }
+            private static int _VOWIFI_REQUIRES_NONEContent = default;
+            private static bool _VOWIFI_REQUIRES_NONEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#VOWIFI_REQUIRES_SETTING_ENABLED"/>
+            /// </summary>
+            public static int VOWIFI_REQUIRES_SETTING_ENABLED { get { if (!_VOWIFI_REQUIRES_SETTING_ENABLEDReady) { _VOWIFI_REQUIRES_SETTING_ENABLEDContent = SGetField<int>(LocalBridgeClazz, "VOWIFI_REQUIRES_SETTING_ENABLED"); _VOWIFI_REQUIRES_SETTING_ENABLEDReady = true; } return _VOWIFI_REQUIRES_SETTING_ENABLEDContent; } }
+            private static int _VOWIFI_REQUIRES_SETTING_ENABLEDContent = default;
+            private static bool _VOWIFI_REQUIRES_SETTING_ENABLEDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#VOWIFI_REQUIRES_VALID_EID"/>
+            /// </summary>
+            public static int VOWIFI_REQUIRES_VALID_EID { get { if (!_VOWIFI_REQUIRES_VALID_EIDReady) { _VOWIFI_REQUIRES_VALID_EIDContent = SGetField<int>(LocalBridgeClazz, "VOWIFI_REQUIRES_VALID_EID"); _VOWIFI_REQUIRES_VALID_EIDReady = true; } return _VOWIFI_REQUIRES_VALID_EIDContent; } }
+            private static int _VOWIFI_REQUIRES_VALID_EIDContent = default;
+            private static bool _VOWIFI_REQUIRES_VALID_EIDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_CROSS_STACK_REDIAL_TIMER_SEC_INT"/>
+            /// </summary>
+            public static Java.Lang.String KEY_CROSS_STACK_REDIAL_TIMER_SEC_INT { get { if (!_KEY_CROSS_STACK_REDIAL_TIMER_SEC_INTReady) { _KEY_CROSS_STACK_REDIAL_TIMER_SEC_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_CROSS_STACK_REDIAL_TIMER_SEC_INT"); _KEY_CROSS_STACK_REDIAL_TIMER_SEC_INTReady = true; } return _KEY_CROSS_STACK_REDIAL_TIMER_SEC_INTContent; } }
+            private static Java.Lang.String _KEY_CROSS_STACK_REDIAL_TIMER_SEC_INTContent = default;
+            private static bool _KEY_CROSS_STACK_REDIAL_TIMER_SEC_INTReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INT"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INT { get { if (!_KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INTReady) { _KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INT"); _KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INTReady = true; } return _KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INTContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INTContent = default;
+            private static bool _KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INTReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOL"/>
             /// </summary>
             public static Java.Lang.String KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOL { get { if (!_KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOLReady) { _KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOL"); _KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOLReady = true; } return _KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOLContent; } }
             private static Java.Lang.String _KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOLContent = default;
             private static bool _KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOLReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAY"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAY { get { if (!_KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAYReady) { _KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAY"); _KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAYReady = true; } return _KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAYContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAYContent = default;
+            private static bool _KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAYReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAY"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAY { get { if (!_KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAYReady) { _KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAY"); _KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAYReady = true; } return _KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAYContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAYContent = default;
+            private static bool _KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAYReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAY"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAY { get { if (!_KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAYReady) { _KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAY"); _KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAYReady = true; } return _KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAYContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAYContent = default;
+            private static bool _KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAYReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOL"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOL { get { if (!_KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOLReady) { _KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOL"); _KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOLReady = true; } return _KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOLContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOLContent = default;
+            private static bool _KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOLReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_NETWORK_SCAN_TYPE_INT"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_NETWORK_SCAN_TYPE_INT { get { if (!_KEY_EMERGENCY_NETWORK_SCAN_TYPE_INTReady) { _KEY_EMERGENCY_NETWORK_SCAN_TYPE_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_NETWORK_SCAN_TYPE_INT"); _KEY_EMERGENCY_NETWORK_SCAN_TYPE_INTReady = true; } return _KEY_EMERGENCY_NETWORK_SCAN_TYPE_INTContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_NETWORK_SCAN_TYPE_INTContent = default;
+            private static bool _KEY_EMERGENCY_NETWORK_SCAN_TYPE_INTReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY { get { if (!_KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAYReady) { _KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY"); _KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAYReady = true; } return _KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAYContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAYContent = default;
+            private static bool _KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAYReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY { get { if (!_KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAYReady) { _KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY"); _KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAYReady = true; } return _KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAYContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAYContent = default;
+            private static bool _KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAYReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY { get { if (!_KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAYReady) { _KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY"); _KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAYReady = true; } return _KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAYContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAYContent = default;
+            private static bool _KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAYReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY { get { if (!_KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAYReady) { _KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY"); _KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAYReady = true; } return _KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAYContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAYContent = default;
+            private static bool _KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_IMS_SUPPORTED_RATS_INT_ARRAY"/>
             /// </summary>
@@ -2810,11 +3007,59 @@ namespace Android.Telephony
             private static Java.Lang.String _KEY_EMERGENCY_REGISTRATION_TIMER_MILLIS_INTContent = default;
             private static bool _KEY_EMERGENCY_REGISTRATION_TIMER_MILLIS_INTReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOL"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOL { get { if (!_KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOLReady) { _KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOL"); _KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOLReady = true; } return _KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOLContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOLContent = default;
+            private static bool _KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOLReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOL"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOL { get { if (!_KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOLReady) { _KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOL"); _KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOLReady = true; } return _KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOLContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOLContent = default;
+            private static bool _KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOLReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_SCAN_TIMER_SEC_INT"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_SCAN_TIMER_SEC_INT { get { if (!_KEY_EMERGENCY_SCAN_TIMER_SEC_INTReady) { _KEY_EMERGENCY_SCAN_TIMER_SEC_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_SCAN_TIMER_SEC_INT"); _KEY_EMERGENCY_SCAN_TIMER_SEC_INTReady = true; } return _KEY_EMERGENCY_SCAN_TIMER_SEC_INTContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_SCAN_TIMER_SEC_INTContent = default;
+            private static bool _KEY_EMERGENCY_SCAN_TIMER_SEC_INTReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INT"/>
+            /// </summary>
+            public static Java.Lang.String KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INT { get { if (!_KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INTReady) { _KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INT"); _KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INTReady = true; } return _KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INTContent; } }
+            private static Java.Lang.String _KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INTContent = default;
+            private static bool _KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INTReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INT"/>
+            /// </summary>
+            public static Java.Lang.String KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INT { get { if (!_KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INTReady) { _KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INT"); _KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INTReady = true; } return _KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INTContent; } }
+            private static Java.Lang.String _KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INTContent = default;
+            private static bool _KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INTReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INT"/>
+            /// </summary>
+            public static Java.Lang.String KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INT { get { if (!_KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INTReady) { _KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INT"); _KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INTReady = true; } return _KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INTContent; } }
+            private static Java.Lang.String _KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INTContent = default;
+            private static bool _KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INTReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOL"/>
+            /// </summary>
+            public static Java.Lang.String KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOL { get { if (!_KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOLReady) { _KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOL"); _KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOLReady = true; } return _KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOLContent; } }
+            private static Java.Lang.String _KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOLContent = default;
+            private static bool _KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOLReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_PREFIX"/>
             /// </summary>
             public static Java.Lang.String KEY_PREFIX { get { if (!_KEY_PREFIXReady) { _KEY_PREFIXContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_PREFIX"); _KEY_PREFIXReady = true; } return _KEY_PREFIXContent; } }
             private static Java.Lang.String _KEY_PREFIXContent = default;
             private static bool _KEY_PREFIXReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INT"/>
+            /// </summary>
+            public static Java.Lang.String KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INT { get { if (!_KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INTReady) { _KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INT"); _KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INTReady = true; } return _KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INTContent; } }
+            private static Java.Lang.String _KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INTContent = default;
+            private static bool _KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_REFRESH_GEOLOCATION_TIMEOUT_MILLIS_INT"/>
             /// </summary>
@@ -2827,6 +3072,18 @@ namespace Android.Telephony
             public static Java.Lang.String KEY_RETRY_EMERGENCY_ON_IMS_PDN_BOOL { get { if (!_KEY_RETRY_EMERGENCY_ON_IMS_PDN_BOOLReady) { _KEY_RETRY_EMERGENCY_ON_IMS_PDN_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_RETRY_EMERGENCY_ON_IMS_PDN_BOOL"); _KEY_RETRY_EMERGENCY_ON_IMS_PDN_BOOLReady = true; } return _KEY_RETRY_EMERGENCY_ON_IMS_PDN_BOOLContent; } }
             private static Java.Lang.String _KEY_RETRY_EMERGENCY_ON_IMS_PDN_BOOLContent = default;
             private static bool _KEY_RETRY_EMERGENCY_ON_IMS_PDN_BOOLReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOL"/>
+            /// </summary>
+            public static Java.Lang.String KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOL { get { if (!_KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOLReady) { _KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOL"); _KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOLReady = true; } return _KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOLContent; } }
+            private static Java.Lang.String _KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOLContent = default;
+            private static bool _KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOLReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOL"/>
+            /// </summary>
+            public static Java.Lang.String KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOL { get { if (!_KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOLReady) { _KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOL"); _KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOLReady = true; } return _KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOLContent; } }
+            private static Java.Lang.String _KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOLContent = default;
+            private static bool _KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOLReady = false; // this is used because in case of generics 
 
             #endregion
 
@@ -4258,6 +4515,12 @@ namespace Android.Telephony
             private static Java.Lang.String _KEY_CHILD_SESSION_AES_CTR_KEY_SIZE_INT_ARRAYContent = default;
             private static bool _KEY_CHILD_SESSION_AES_CTR_KEY_SIZE_INT_ARRAYReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Iwlan.html#KEY_CHILD_SESSION_AES_GCM_KEY_SIZE_INT_ARRAY"/>
+            /// </summary>
+            public static Java.Lang.String KEY_CHILD_SESSION_AES_GCM_KEY_SIZE_INT_ARRAY { get { if (!_KEY_CHILD_SESSION_AES_GCM_KEY_SIZE_INT_ARRAYReady) { _KEY_CHILD_SESSION_AES_GCM_KEY_SIZE_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_CHILD_SESSION_AES_GCM_KEY_SIZE_INT_ARRAY"); _KEY_CHILD_SESSION_AES_GCM_KEY_SIZE_INT_ARRAYReady = true; } return _KEY_CHILD_SESSION_AES_GCM_KEY_SIZE_INT_ARRAYContent; } }
+            private static Java.Lang.String _KEY_CHILD_SESSION_AES_GCM_KEY_SIZE_INT_ARRAYContent = default;
+            private static bool _KEY_CHILD_SESSION_AES_GCM_KEY_SIZE_INT_ARRAYReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Iwlan.html#KEY_DIFFIE_HELLMAN_GROUPS_INT_ARRAY"/>
             /// </summary>
             public static Java.Lang.String KEY_DIFFIE_HELLMAN_GROUPS_INT_ARRAY { get { if (!_KEY_DIFFIE_HELLMAN_GROUPS_INT_ARRAYReady) { _KEY_DIFFIE_HELLMAN_GROUPS_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_DIFFIE_HELLMAN_GROUPS_INT_ARRAY"); _KEY_DIFFIE_HELLMAN_GROUPS_INT_ARRAYReady = true; } return _KEY_DIFFIE_HELLMAN_GROUPS_INT_ARRAYContent; } }
@@ -4348,6 +4611,12 @@ namespace Android.Telephony
             private static Java.Lang.String _KEY_IKE_SESSION_AES_CTR_KEY_SIZE_INT_ARRAYContent = default;
             private static bool _KEY_IKE_SESSION_AES_CTR_KEY_SIZE_INT_ARRAYReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Iwlan.html#KEY_IKE_SESSION_AES_GCM_KEY_SIZE_INT_ARRAY"/>
+            /// </summary>
+            public static Java.Lang.String KEY_IKE_SESSION_AES_GCM_KEY_SIZE_INT_ARRAY { get { if (!_KEY_IKE_SESSION_AES_GCM_KEY_SIZE_INT_ARRAYReady) { _KEY_IKE_SESSION_AES_GCM_KEY_SIZE_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_IKE_SESSION_AES_GCM_KEY_SIZE_INT_ARRAY"); _KEY_IKE_SESSION_AES_GCM_KEY_SIZE_INT_ARRAYReady = true; } return _KEY_IKE_SESSION_AES_GCM_KEY_SIZE_INT_ARRAYContent; } }
+            private static Java.Lang.String _KEY_IKE_SESSION_AES_GCM_KEY_SIZE_INT_ARRAYContent = default;
+            private static bool _KEY_IKE_SESSION_AES_GCM_KEY_SIZE_INT_ARRAYReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Iwlan.html#KEY_MAX_RETRIES_INT"/>
             /// </summary>
             public static Java.Lang.String KEY_MAX_RETRIES_INT { get { if (!_KEY_MAX_RETRIES_INTReady) { _KEY_MAX_RETRIES_INTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_MAX_RETRIES_INT"); _KEY_MAX_RETRIES_INTReady = true; } return _KEY_MAX_RETRIES_INTContent; } }
@@ -4378,11 +4647,23 @@ namespace Android.Telephony
             private static Java.Lang.String _KEY_RETRANSMIT_TIMER_MSEC_INT_ARRAYContent = default;
             private static bool _KEY_RETRANSMIT_TIMER_MSEC_INT_ARRAYReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Iwlan.html#KEY_SUPPORTED_CHILD_SESSION_AEAD_ALGORITHMS_INT_ARRAY"/>
+            /// </summary>
+            public static Java.Lang.String KEY_SUPPORTED_CHILD_SESSION_AEAD_ALGORITHMS_INT_ARRAY { get { if (!_KEY_SUPPORTED_CHILD_SESSION_AEAD_ALGORITHMS_INT_ARRAYReady) { _KEY_SUPPORTED_CHILD_SESSION_AEAD_ALGORITHMS_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SUPPORTED_CHILD_SESSION_AEAD_ALGORITHMS_INT_ARRAY"); _KEY_SUPPORTED_CHILD_SESSION_AEAD_ALGORITHMS_INT_ARRAYReady = true; } return _KEY_SUPPORTED_CHILD_SESSION_AEAD_ALGORITHMS_INT_ARRAYContent; } }
+            private static Java.Lang.String _KEY_SUPPORTED_CHILD_SESSION_AEAD_ALGORITHMS_INT_ARRAYContent = default;
+            private static bool _KEY_SUPPORTED_CHILD_SESSION_AEAD_ALGORITHMS_INT_ARRAYReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Iwlan.html#KEY_SUPPORTED_CHILD_SESSION_ENCRYPTION_ALGORITHMS_INT_ARRAY"/>
             /// </summary>
             public static Java.Lang.String KEY_SUPPORTED_CHILD_SESSION_ENCRYPTION_ALGORITHMS_INT_ARRAY { get { if (!_KEY_SUPPORTED_CHILD_SESSION_ENCRYPTION_ALGORITHMS_INT_ARRAYReady) { _KEY_SUPPORTED_CHILD_SESSION_ENCRYPTION_ALGORITHMS_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SUPPORTED_CHILD_SESSION_ENCRYPTION_ALGORITHMS_INT_ARRAY"); _KEY_SUPPORTED_CHILD_SESSION_ENCRYPTION_ALGORITHMS_INT_ARRAYReady = true; } return _KEY_SUPPORTED_CHILD_SESSION_ENCRYPTION_ALGORITHMS_INT_ARRAYContent; } }
             private static Java.Lang.String _KEY_SUPPORTED_CHILD_SESSION_ENCRYPTION_ALGORITHMS_INT_ARRAYContent = default;
             private static bool _KEY_SUPPORTED_CHILD_SESSION_ENCRYPTION_ALGORITHMS_INT_ARRAYReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Iwlan.html#KEY_SUPPORTED_IKE_SESSION_AEAD_ALGORITHMS_INT_ARRAY"/>
+            /// </summary>
+            public static Java.Lang.String KEY_SUPPORTED_IKE_SESSION_AEAD_ALGORITHMS_INT_ARRAY { get { if (!_KEY_SUPPORTED_IKE_SESSION_AEAD_ALGORITHMS_INT_ARRAYReady) { _KEY_SUPPORTED_IKE_SESSION_AEAD_ALGORITHMS_INT_ARRAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SUPPORTED_IKE_SESSION_AEAD_ALGORITHMS_INT_ARRAY"); _KEY_SUPPORTED_IKE_SESSION_AEAD_ALGORITHMS_INT_ARRAYReady = true; } return _KEY_SUPPORTED_IKE_SESSION_AEAD_ALGORITHMS_INT_ARRAYContent; } }
+            private static Java.Lang.String _KEY_SUPPORTED_IKE_SESSION_AEAD_ALGORITHMS_INT_ARRAYContent = default;
+            private static bool _KEY_SUPPORTED_IKE_SESSION_AEAD_ALGORITHMS_INT_ARRAYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Iwlan.html#KEY_SUPPORTED_IKE_SESSION_ENCRYPTION_ALGORITHMS_INT_ARRAY"/>
             /// </summary>
@@ -4402,11 +4683,23 @@ namespace Android.Telephony
             private static Java.Lang.String _KEY_SUPPORTED_PRF_ALGORITHMS_INT_ARRAYContent = default;
             private static bool _KEY_SUPPORTED_PRF_ALGORITHMS_INT_ARRAYReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Iwlan.html#KEY_SUPPORTS_CHILD_SESSION_MULTIPLE_SA_PROPOSALS_BOOL"/>
+            /// </summary>
+            public static Java.Lang.String KEY_SUPPORTS_CHILD_SESSION_MULTIPLE_SA_PROPOSALS_BOOL { get { if (!_KEY_SUPPORTS_CHILD_SESSION_MULTIPLE_SA_PROPOSALS_BOOLReady) { _KEY_SUPPORTS_CHILD_SESSION_MULTIPLE_SA_PROPOSALS_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SUPPORTS_CHILD_SESSION_MULTIPLE_SA_PROPOSALS_BOOL"); _KEY_SUPPORTS_CHILD_SESSION_MULTIPLE_SA_PROPOSALS_BOOLReady = true; } return _KEY_SUPPORTS_CHILD_SESSION_MULTIPLE_SA_PROPOSALS_BOOLContent; } }
+            private static Java.Lang.String _KEY_SUPPORTS_CHILD_SESSION_MULTIPLE_SA_PROPOSALS_BOOLContent = default;
+            private static bool _KEY_SUPPORTS_CHILD_SESSION_MULTIPLE_SA_PROPOSALS_BOOLReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Iwlan.html#KEY_SUPPORTS_EAP_AKA_FAST_REAUTH_BOOL"/>
             /// </summary>
             public static Java.Lang.String KEY_SUPPORTS_EAP_AKA_FAST_REAUTH_BOOL { get { if (!_KEY_SUPPORTS_EAP_AKA_FAST_REAUTH_BOOLReady) { _KEY_SUPPORTS_EAP_AKA_FAST_REAUTH_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SUPPORTS_EAP_AKA_FAST_REAUTH_BOOL"); _KEY_SUPPORTS_EAP_AKA_FAST_REAUTH_BOOLReady = true; } return _KEY_SUPPORTS_EAP_AKA_FAST_REAUTH_BOOLContent; } }
             private static Java.Lang.String _KEY_SUPPORTS_EAP_AKA_FAST_REAUTH_BOOLContent = default;
             private static bool _KEY_SUPPORTS_EAP_AKA_FAST_REAUTH_BOOLReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.Iwlan.html#KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOL"/>
+            /// </summary>
+            public static Java.Lang.String KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOL { get { if (!_KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOLReady) { _KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOL"); _KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOLReady = true; } return _KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOLContent; } }
+            private static Java.Lang.String _KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOLContent = default;
+            private static bool _KEY_SUPPORTS_IKE_SESSION_MULTIPLE_SA_PROPOSALS_BOOLReady = false; // this is used because in case of generics 
 
             #endregion
 

@@ -97,6 +97,18 @@ namespace Android.App.Usage
         public static int STANDBY_BUCKET_WORKING_SET { get { if (!_STANDBY_BUCKET_WORKING_SETReady) { _STANDBY_BUCKET_WORKING_SETContent = SGetField<int>(LocalBridgeClazz, "STANDBY_BUCKET_WORKING_SET"); _STANDBY_BUCKET_WORKING_SETReady = true; } return _STANDBY_BUCKET_WORKING_SETContent; } }
         private static int _STANDBY_BUCKET_WORKING_SETContent = default;
         private static bool _STANDBY_BUCKET_WORKING_SETReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#EXTRA_EVENT_ACTION"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_EVENT_ACTION { get { if (!_EXTRA_EVENT_ACTIONReady) { _EXTRA_EVENT_ACTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_EVENT_ACTION"); _EXTRA_EVENT_ACTIONReady = true; } return _EXTRA_EVENT_ACTIONContent; } }
+        private static Java.Lang.String _EXTRA_EVENT_ACTIONContent = default;
+        private static bool _EXTRA_EVENT_ACTIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#EXTRA_EVENT_CATEGORY"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_EVENT_CATEGORY { get { if (!_EXTRA_EVENT_CATEGORYReady) { _EXTRA_EVENT_CATEGORYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_EVENT_CATEGORY"); _EXTRA_EVENT_CATEGORYReady = true; } return _EXTRA_EVENT_CATEGORYContent; } }
+        private static Java.Lang.String _EXTRA_EVENT_CATEGORYContent = default;
+        private static bool _EXTRA_EVENT_CATEGORYReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -105,6 +117,15 @@ namespace Android.App.Usage
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEvents(android.app.usage.UsageEventsQuery)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Usage.UsageEventsQuery"/></param>
+        /// <returns><see cref="Android.App.Usage.UsageEvents"/></returns>
+        public Android.App.Usage.UsageEvents QueryEvents(Android.App.Usage.UsageEventsQuery arg0)
+        {
+            return IExecuteWithSignature<Android.App.Usage.UsageEvents>("queryEvents", "(Landroid/app/usage/UsageEventsQuery;)Landroid/app/usage/UsageEvents;", arg0);
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEvents(long,long)"/>
         /// </summary>

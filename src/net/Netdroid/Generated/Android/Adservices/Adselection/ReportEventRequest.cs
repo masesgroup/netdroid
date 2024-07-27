@@ -58,6 +58,14 @@ namespace Android.Adservices.Adselection
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.html#getInputEvent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.InputEvent"/></returns>
+        public Android.View.InputEvent GetInputEvent()
+        {
+            return IExecuteWithSignature<Android.View.InputEvent>("getInputEvent", "()Landroid/view/InputEvent;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.html#getReportingDestinations()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -149,6 +157,15 @@ namespace Android.Adservices.Adselection
             public Android.Adservices.Adselection.ReportEventRequest.Builder SetData(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Adservices.Adselection.ReportEventRequest.Builder>("setData", "(Ljava/lang/String;)Landroid/adservices/adselection/ReportEventRequest$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.Builder.html#setInputEvent(android.view.InputEvent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.View.InputEvent"/></param>
+            /// <returns><see cref="Android.Adservices.Adselection.ReportEventRequest.Builder"/></returns>
+            public Android.Adservices.Adselection.ReportEventRequest.Builder SetInputEvent(Android.View.InputEvent arg0)
+            {
+                return IExecuteWithSignature<Android.Adservices.Adselection.ReportEventRequest.Builder>("setInputEvent", "(Landroid/view/InputEvent;)Landroid/adservices/adselection/ReportEventRequest$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.Builder.html#setKey(java.lang.String)"/>

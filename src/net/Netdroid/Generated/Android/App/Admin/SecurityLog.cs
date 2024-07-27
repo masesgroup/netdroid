@@ -74,6 +74,12 @@ namespace Android.App.Admin
         private static int _TAG_APP_PROCESS_STARTContent = default;
         private static bool _TAG_APP_PROCESS_STARTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_BACKUP_SERVICE_TOGGLED"/>
+        /// </summary>
+        public static int TAG_BACKUP_SERVICE_TOGGLED { get { if (!_TAG_BACKUP_SERVICE_TOGGLEDReady) { _TAG_BACKUP_SERVICE_TOGGLEDContent = SGetField<int>(LocalBridgeClazz, "TAG_BACKUP_SERVICE_TOGGLED"); _TAG_BACKUP_SERVICE_TOGGLEDReady = true; } return _TAG_BACKUP_SERVICE_TOGGLEDContent; } }
+        private static int _TAG_BACKUP_SERVICE_TOGGLEDContent = default;
+        private static bool _TAG_BACKUP_SERVICE_TOGGLEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_BLUETOOTH_CONNECTION"/>
         /// </summary>
         public static int TAG_BLUETOOTH_CONNECTION { get { if (!_TAG_BLUETOOTH_CONNECTIONReady) { _TAG_BLUETOOTH_CONNECTIONContent = SGetField<int>(LocalBridgeClazz, "TAG_BLUETOOTH_CONNECTION"); _TAG_BLUETOOTH_CONNECTIONReady = true; } return _TAG_BLUETOOTH_CONNECTIONContent; } }

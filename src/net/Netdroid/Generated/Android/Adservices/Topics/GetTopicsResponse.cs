@@ -46,6 +46,14 @@ namespace Android.Adservices.Topics
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/topics/GetTopicsResponse.html#getEncryptedTopics()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Adservices.Topics.EncryptedTopic> GetEncryptedTopics()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Topics.EncryptedTopic>>("getEncryptedTopics", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/topics/GetTopicsResponse.html#getTopics()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -62,9 +70,19 @@ namespace Android.Adservices.Topics
         {
             #region Constructors
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/topics/GetTopicsResponse.Builder.html#%3Cinit%3E(java.util.List,java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            /// <param name="arg1"><see cref="Java.Util.List"/></param>
+            public Builder(Java.Util.List<Android.Adservices.Topics.Topic> arg0, Java.Util.List<Android.Adservices.Topics.EncryptedTopic> arg1)
+                : base(arg0, arg1)
+            {
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/topics/GetTopicsResponse.Builder.html#%3Cinit%3E(java.util.List)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            [global::System.Obsolete()]
             public Builder(Java.Util.List<Android.Adservices.Topics.Topic> arg0)
                 : base(arg0)
             {

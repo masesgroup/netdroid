@@ -44,6 +44,12 @@ namespace Android.Bluetooth
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_ANONYMOUS"/>
+        /// </summary>
+        public static int ADDRESS_TYPE_ANONYMOUS { get { if (!_ADDRESS_TYPE_ANONYMOUSReady) { _ADDRESS_TYPE_ANONYMOUSContent = SGetField<int>(LocalBridgeClazz, "ADDRESS_TYPE_ANONYMOUS"); _ADDRESS_TYPE_ANONYMOUSReady = true; } return _ADDRESS_TYPE_ANONYMOUSContent; } }
+        private static int _ADDRESS_TYPE_ANONYMOUSContent = default;
+        private static bool _ADDRESS_TYPE_ANONYMOUSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_PUBLIC"/>
         /// </summary>
         public static int ADDRESS_TYPE_PUBLIC { get { if (!_ADDRESS_TYPE_PUBLICReady) { _ADDRESS_TYPE_PUBLICContent = SGetField<int>(LocalBridgeClazz, "ADDRESS_TYPE_PUBLIC"); _ADDRESS_TYPE_PUBLICReady = true; } return _ADDRESS_TYPE_PUBLICContent; } }
@@ -474,6 +480,14 @@ namespace Android.Bluetooth
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getAddressType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAddressType()
+        {
+            return IExecuteWithSignature<int>("getAddressType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getBondState()"/>

@@ -46,6 +46,15 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchManager.html#createEnterpriseGlobalSearchSession(java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+        public void CreateEnterpriseGlobalSearchSession(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Android.App.Appsearch.AppSearchResult<Android.App.Appsearch.EnterpriseGlobalSearchSession>> arg1)
+        {
+            IExecute("createEnterpriseGlobalSearchSession", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchManager.html#createGlobalSearchSession(java.util.concurrent.Executor,java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>

@@ -103,6 +103,14 @@ namespace Android.Graphics.Fonts
                 return IExecuteWithSignature<Android.Graphics.Fonts.FontFamily>("build", "()Landroid/graphics/fonts/FontFamily;");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/fonts/FontFamily.Builder.html#buildVariableFamily()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.Fonts.FontFamily"/></returns>
+            public Android.Graphics.Fonts.FontFamily BuildVariableFamily()
+            {
+                return IExecuteWithSignature<Android.Graphics.Fonts.FontFamily>("buildVariableFamily", "()Landroid/graphics/fonts/FontFamily;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/fonts/FontFamily.Builder.html#addFont(android.graphics.fonts.Font)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Graphics.Fonts.Font"/></param>

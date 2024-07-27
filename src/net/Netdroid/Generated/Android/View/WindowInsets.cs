@@ -131,6 +131,14 @@ namespace Android.View
             return IExecuteWithSignature<Android.Graphics.Rect>("getPrivacyIndicatorBounds", "()Landroid/graphics/Rect;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getFrame()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Util.Size"/></returns>
+        public Android.Util.Size GetFrame()
+        {
+            return IExecuteWithSignature<Android.Util.Size>("getFrame", "()Landroid/util/Size;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getDisplayCutout()"/>
         /// </summary>
         /// <returns><see cref="Android.View.DisplayCutout"/></returns>
@@ -349,6 +357,24 @@ namespace Android.View
         {
             return IExecuteWithSignature<int>("getSystemWindowInsetTop", "()I");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getBoundingRects(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Graphics.Rect> GetBoundingRects(int arg0)
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Graphics.Rect>>("getBoundingRects", "(I)Ljava/util/List;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getBoundingRectsIgnoringVisibility(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Graphics.Rect> GetBoundingRectsIgnoringVisibility(int arg0)
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Graphics.Rect>>("getBoundingRectsIgnoringVisibility", "(I)Ljava/util/List;", arg0);
+        }
 
         #endregion
 
@@ -390,6 +416,26 @@ namespace Android.View
                 return IExecuteWithSignature<Android.View.WindowInsets>("build", "()Landroid/view/WindowInsets;");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Builder.html#setBoundingRects(int,java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="Java.Util.List"/></param>
+            /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
+            public Android.View.WindowInsets.Builder SetBoundingRects(int arg0, Java.Util.List<Android.Graphics.Rect> arg1)
+            {
+                return IExecute<Android.View.WindowInsets.Builder>("setBoundingRects", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Builder.html#setBoundingRectsIgnoringVisibility(int,java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="Java.Util.List"/></param>
+            /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
+            public Android.View.WindowInsets.Builder SetBoundingRectsIgnoringVisibility(int arg0, Java.Util.List<Android.Graphics.Rect> arg1)
+            {
+                return IExecute<Android.View.WindowInsets.Builder>("setBoundingRectsIgnoringVisibility", arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Builder.html#setDisplayCutout(android.view.DisplayCutout)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.DisplayCutout"/></param>
@@ -406,6 +452,16 @@ namespace Android.View
             public Android.View.WindowInsets.Builder SetDisplayShape(Android.View.DisplayShape arg0)
             {
                 return IExecuteWithSignature<Android.View.WindowInsets.Builder>("setDisplayShape", "(Landroid/view/DisplayShape;)Landroid/view/WindowInsets$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Builder.html#setFrame(int,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
+            public Android.View.WindowInsets.Builder SetFrame(int arg0, int arg1)
+            {
+                return IExecute<Android.View.WindowInsets.Builder>("setFrame", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Builder.html#setInsets(int,android.graphics.Insets)"/>

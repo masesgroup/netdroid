@@ -71,6 +71,25 @@ namespace Android.Os.Health
         {
             return IExecuteWithSignatureArray<Android.Os.Health.HealthStats>("takeUidSnapshots", "([I)[Landroid/os/health/HealthStats;", new object[] { arg0 });
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/SystemHealthManager.html#getPowerMonitorReadings(java.util.List,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void GetPowerMonitorReadings(Java.Util.List<Android.Os.PowerMonitor> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Os.PowerMonitorReadings, Java.Lang.RuntimeException> arg2)
+        {
+            IExecute("getPowerMonitorReadings", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/SystemHealthManager.html#getSupportedPowerMonitors(java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+        public void GetSupportedPowerMonitors(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Util.List<Android.Os.PowerMonitor>> arg1)
+        {
+            IExecute("getSupportedPowerMonitors", arg0, arg1);
+        }
 
         #endregion
 

@@ -2732,6 +2732,24 @@ namespace Android.Icu.Lang
 
             #region Fields
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.LineBreak.html#AKSARA"/>
+            /// </summary>
+            public static int AKSARA { get { if (!_AKSARAReady) { _AKSARAContent = SGetField<int>(LocalBridgeClazz, "AKSARA"); _AKSARAReady = true; } return _AKSARAContent; } }
+            private static int _AKSARAContent = default;
+            private static bool _AKSARAReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.LineBreak.html#AKSARA_PREBASE"/>
+            /// </summary>
+            public static int AKSARA_PREBASE { get { if (!_AKSARA_PREBASEReady) { _AKSARA_PREBASEContent = SGetField<int>(LocalBridgeClazz, "AKSARA_PREBASE"); _AKSARA_PREBASEReady = true; } return _AKSARA_PREBASEContent; } }
+            private static int _AKSARA_PREBASEContent = default;
+            private static bool _AKSARA_PREBASEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.LineBreak.html#AKSARA_START"/>
+            /// </summary>
+            public static int AKSARA_START { get { if (!_AKSARA_STARTReady) { _AKSARA_STARTContent = SGetField<int>(LocalBridgeClazz, "AKSARA_START"); _AKSARA_STARTReady = true; } return _AKSARA_STARTContent; } }
+            private static int _AKSARA_STARTContent = default;
+            private static bool _AKSARA_STARTReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.LineBreak.html#ALPHABETIC"/>
             /// </summary>
             public static int ALPHABETIC { get { if (!_ALPHABETICReady) { _ALPHABETICContent = SGetField<int>(LocalBridgeClazz, "ALPHABETIC"); _ALPHABETICReady = true; } return _ALPHABETICContent; } }
@@ -2977,6 +2995,18 @@ namespace Android.Icu.Lang
             public static int UNKNOWN { get { if (!_UNKNOWNReady) { _UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "UNKNOWN"); _UNKNOWNReady = true; } return _UNKNOWNContent; } }
             private static int _UNKNOWNContent = default;
             private static bool _UNKNOWNReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.LineBreak.html#VIRAMA"/>
+            /// </summary>
+            public static int VIRAMA { get { if (!_VIRAMAReady) { _VIRAMAContent = SGetField<int>(LocalBridgeClazz, "VIRAMA"); _VIRAMAReady = true; } return _VIRAMAContent; } }
+            private static int _VIRAMAContent = default;
+            private static bool _VIRAMAReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.LineBreak.html#VIRAMA_FINAL"/>
+            /// </summary>
+            public static int VIRAMA_FINAL { get { if (!_VIRAMA_FINALReady) { _VIRAMA_FINALContent = SGetField<int>(LocalBridgeClazz, "VIRAMA_FINAL"); _VIRAMA_FINALReady = true; } return _VIRAMA_FINALContent; } }
+            private static int _VIRAMA_FINALContent = default;
+            private static bool _VIRAMA_FINALReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.LineBreak.html#WORD_JOINER"/>
             /// </summary>
@@ -3568,6 +3598,12 @@ namespace Android.Icu.Lang
             public static Android.Icu.Lang.UCharacter.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_H { get { if (!_CJK_UNIFIED_IDEOGRAPHS_EXTENSION_HReady) { _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_HContent = SGetField<Android.Icu.Lang.UCharacter.UnicodeBlock>(LocalBridgeClazz, "CJK_UNIFIED_IDEOGRAPHS_EXTENSION_H"); _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_HReady = true; } return _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_HContent; } }
             private static Android.Icu.Lang.UCharacter.UnicodeBlock _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_HContent = default;
             private static bool _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_HReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I"/>
+            /// </summary>
+            public static Android.Icu.Lang.UCharacter.UnicodeBlock CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I { get { if (!_CJK_UNIFIED_IDEOGRAPHS_EXTENSION_IReady) { _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_IContent = SGetField<Android.Icu.Lang.UCharacter.UnicodeBlock>(LocalBridgeClazz, "CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I"); _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_IReady = true; } return _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_IContent; } }
+            private static Android.Icu.Lang.UCharacter.UnicodeBlock _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_IContent = default;
+            private static bool _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_IReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.UnicodeBlock.html#COMBINING_DIACRITICAL_MARKS"/>
             /// </summary>
@@ -5548,6 +5584,12 @@ namespace Android.Icu.Lang
             public static int CJK_UNIFIED_IDEOGRAPHS_EXTENSION_H_ID { get { if (!_CJK_UNIFIED_IDEOGRAPHS_EXTENSION_H_IDReady) { _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_H_IDContent = SGetField<int>(LocalBridgeClazz, "CJK_UNIFIED_IDEOGRAPHS_EXTENSION_H_ID"); _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_H_IDReady = true; } return _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_H_IDContent; } }
             private static int _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_H_IDContent = default;
             private static bool _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_H_IDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I_ID"/>
+            /// </summary>
+            public static int CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I_ID { get { if (!_CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I_IDReady) { _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I_IDContent = SGetField<int>(LocalBridgeClazz, "CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I_ID"); _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I_IDReady = true; } return _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I_IDContent; } }
+            private static int _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I_IDContent = default;
+            private static bool _CJK_UNIFIED_IDEOGRAPHS_EXTENSION_I_IDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.UnicodeBlock.html#CJK_UNIFIED_IDEOGRAPHS_ID"/>
             /// </summary>

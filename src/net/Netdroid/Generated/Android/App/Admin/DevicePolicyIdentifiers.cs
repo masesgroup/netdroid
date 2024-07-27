@@ -80,6 +80,12 @@ namespace Android.App.Admin
         private static Java.Lang.String _CAMERA_DISABLED_POLICYContent = default;
         private static bool _CAMERA_DISABLED_POLICYReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyIdentifiers.html#CONTENT_PROTECTION_POLICY"/>
+        /// </summary>
+        public static Java.Lang.String CONTENT_PROTECTION_POLICY { get { if (!_CONTENT_PROTECTION_POLICYReady) { _CONTENT_PROTECTION_POLICYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONTENT_PROTECTION_POLICY"); _CONTENT_PROTECTION_POLICYReady = true; } return _CONTENT_PROTECTION_POLICYContent; } }
+        private static Java.Lang.String _CONTENT_PROTECTION_POLICYContent = default;
+        private static bool _CONTENT_PROTECTION_POLICYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyIdentifiers.html#KEYGUARD_DISABLED_FEATURES_POLICY"/>
         /// </summary>
         public static Java.Lang.String KEYGUARD_DISABLED_FEATURES_POLICY { get { if (!_KEYGUARD_DISABLED_FEATURES_POLICYReady) { _KEYGUARD_DISABLED_FEATURES_POLICYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEYGUARD_DISABLED_FEATURES_POLICY"); _KEYGUARD_DISABLED_FEATURES_POLICYReady = true; } return _KEYGUARD_DISABLED_FEATURES_POLICYContent; } }
@@ -104,6 +110,12 @@ namespace Android.App.Admin
         private static Java.Lang.String _PACKAGES_SUSPENDED_POLICYContent = default;
         private static bool _PACKAGES_SUSPENDED_POLICYReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyIdentifiers.html#PASSWORD_COMPLEXITY_POLICY"/>
+        /// </summary>
+        public static Java.Lang.String PASSWORD_COMPLEXITY_POLICY { get { if (!_PASSWORD_COMPLEXITY_POLICYReady) { _PASSWORD_COMPLEXITY_POLICYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PASSWORD_COMPLEXITY_POLICY"); _PASSWORD_COMPLEXITY_POLICYReady = true; } return _PASSWORD_COMPLEXITY_POLICYContent; } }
+        private static Java.Lang.String _PASSWORD_COMPLEXITY_POLICYContent = default;
+        private static bool _PASSWORD_COMPLEXITY_POLICYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyIdentifiers.html#PERMISSION_GRANT_POLICY"/>
         /// </summary>
         public static Java.Lang.String PERMISSION_GRANT_POLICY { get { if (!_PERMISSION_GRANT_POLICYReady) { _PERMISSION_GRANT_POLICYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PERMISSION_GRANT_POLICY"); _PERMISSION_GRANT_POLICYReady = true; } return _PERMISSION_GRANT_POLICYContent; } }
@@ -122,11 +134,23 @@ namespace Android.App.Admin
         private static Java.Lang.String _RESET_PASSWORD_TOKEN_POLICYContent = default;
         private static bool _RESET_PASSWORD_TOKEN_POLICYReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyIdentifiers.html#SECURITY_LOGGING_POLICY"/>
+        /// </summary>
+        public static Java.Lang.String SECURITY_LOGGING_POLICY { get { if (!_SECURITY_LOGGING_POLICYReady) { _SECURITY_LOGGING_POLICYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SECURITY_LOGGING_POLICY"); _SECURITY_LOGGING_POLICYReady = true; } return _SECURITY_LOGGING_POLICYContent; } }
+        private static Java.Lang.String _SECURITY_LOGGING_POLICYContent = default;
+        private static bool _SECURITY_LOGGING_POLICYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyIdentifiers.html#STATUS_BAR_DISABLED_POLICY"/>
         /// </summary>
         public static Java.Lang.String STATUS_BAR_DISABLED_POLICY { get { if (!_STATUS_BAR_DISABLED_POLICYReady) { _STATUS_BAR_DISABLED_POLICYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STATUS_BAR_DISABLED_POLICY"); _STATUS_BAR_DISABLED_POLICYReady = true; } return _STATUS_BAR_DISABLED_POLICYContent; } }
         private static Java.Lang.String _STATUS_BAR_DISABLED_POLICYContent = default;
         private static bool _STATUS_BAR_DISABLED_POLICYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyIdentifiers.html#USB_DATA_SIGNALING_POLICY"/>
+        /// </summary>
+        public static Java.Lang.String USB_DATA_SIGNALING_POLICY { get { if (!_USB_DATA_SIGNALING_POLICYReady) { _USB_DATA_SIGNALING_POLICYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USB_DATA_SIGNALING_POLICY"); _USB_DATA_SIGNALING_POLICYReady = true; } return _USB_DATA_SIGNALING_POLICYContent; } }
+        private static Java.Lang.String _USB_DATA_SIGNALING_POLICYContent = default;
+        private static bool _USB_DATA_SIGNALING_POLICYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyIdentifiers.html#USER_CONTROL_DISABLED_PACKAGES_POLICY"/>
         /// </summary>

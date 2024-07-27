@@ -617,6 +617,47 @@ namespace Android.View
         }
         #endregion
 
+        #region ViewBehavior
+        public partial class ViewBehavior
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/InputDevice.ViewBehavior.html#shouldSmoothScroll(int,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <returns><see cref="bool"/></returns>
+            public bool ShouldSmoothScroll(int arg0, int arg1)
+            {
+                return IExecute<bool>("shouldSmoothScroll", arg0, arg1);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
     
         #endregion
 

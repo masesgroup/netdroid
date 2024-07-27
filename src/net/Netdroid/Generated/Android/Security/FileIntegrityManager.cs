@@ -59,6 +59,7 @@ namespace Android.Security
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Security.Cert.CertificateEncodingException"/>
+        [global::System.Obsolete()]
         public bool IsAppSourceCertificateTrusted(Java.Security.Cert.X509Certificate arg0)
         {
             return IExecuteWithSignature<bool>("isAppSourceCertificateTrusted", "(Ljava/security/cert/X509Certificate;)Z", arg0);

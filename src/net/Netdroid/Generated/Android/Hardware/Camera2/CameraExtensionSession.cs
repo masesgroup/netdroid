@@ -127,6 +127,16 @@ namespace Android.Hardware.Camera2
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionSession.ExtensionCaptureCallback.html#onCaptureFailed(android.hardware.camera2.CameraExtensionSession,android.hardware.camera2.CaptureRequest,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Hardware.Camera2.CameraExtensionSession"/></param>
+            /// <param name="arg1"><see cref="Android.Hardware.Camera2.CaptureRequest"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            public void OnCaptureFailed(Android.Hardware.Camera2.CameraExtensionSession arg0, Android.Hardware.Camera2.CaptureRequest arg1, int arg2)
+            {
+                IExecute("onCaptureFailed", arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionSession.ExtensionCaptureCallback.html#onCaptureFailed(android.hardware.camera2.CameraExtensionSession,android.hardware.camera2.CaptureRequest)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Hardware.Camera2.CameraExtensionSession"/></param>

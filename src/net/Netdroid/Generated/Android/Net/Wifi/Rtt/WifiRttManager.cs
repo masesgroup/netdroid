@@ -56,6 +56,12 @@ namespace Android.Net.Wifi.Rtt
         private static Java.Lang.String _CHARACTERISTICS_KEY_BOOLEAN_LCRContent = default;
         private static bool _CHARACTERISTICS_KEY_BOOLEAN_LCRReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/WifiRttManager.html#CHARACTERISTICS_KEY_BOOLEAN_NTB_INITIATOR"/>
+        /// </summary>
+        public static Java.Lang.String CHARACTERISTICS_KEY_BOOLEAN_NTB_INITIATOR { get { if (!_CHARACTERISTICS_KEY_BOOLEAN_NTB_INITIATORReady) { _CHARACTERISTICS_KEY_BOOLEAN_NTB_INITIATORContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CHARACTERISTICS_KEY_BOOLEAN_NTB_INITIATOR"); _CHARACTERISTICS_KEY_BOOLEAN_NTB_INITIATORReady = true; } return _CHARACTERISTICS_KEY_BOOLEAN_NTB_INITIATORContent; } }
+        private static Java.Lang.String _CHARACTERISTICS_KEY_BOOLEAN_NTB_INITIATORContent = default;
+        private static bool _CHARACTERISTICS_KEY_BOOLEAN_NTB_INITIATORReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/WifiRttManager.html#CHARACTERISTICS_KEY_BOOLEAN_ONE_SIDED_RTT"/>
         /// </summary>
         public static Java.Lang.String CHARACTERISTICS_KEY_BOOLEAN_ONE_SIDED_RTT { get { if (!_CHARACTERISTICS_KEY_BOOLEAN_ONE_SIDED_RTTReady) { _CHARACTERISTICS_KEY_BOOLEAN_ONE_SIDED_RTTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CHARACTERISTICS_KEY_BOOLEAN_ONE_SIDED_RTT"); _CHARACTERISTICS_KEY_BOOLEAN_ONE_SIDED_RTTReady = true; } return _CHARACTERISTICS_KEY_BOOLEAN_ONE_SIDED_RTTContent; } }

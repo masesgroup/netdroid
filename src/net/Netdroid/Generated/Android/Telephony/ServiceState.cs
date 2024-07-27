@@ -141,6 +141,14 @@ namespace Android.Telephony
             return IExecuteWithSignature<bool>("isSearching", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#isUsingNonTerrestrialNetwork()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsUsingNonTerrestrialNetwork()
+        {
+            return IExecuteWithSignature<bool>("isUsingNonTerrestrialNetwork", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>

@@ -110,6 +110,24 @@ namespace Android.Telephony
         private static int _PHONE_NUMBER_SOURCE_UICCContent = default;
         private static bool _PHONE_NUMBER_SOURCE_UICCReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#SERVICE_CAPABILITY_DATA"/>
+        /// </summary>
+        public static int SERVICE_CAPABILITY_DATA { get { if (!_SERVICE_CAPABILITY_DATAReady) { _SERVICE_CAPABILITY_DATAContent = SGetField<int>(LocalBridgeClazz, "SERVICE_CAPABILITY_DATA"); _SERVICE_CAPABILITY_DATAReady = true; } return _SERVICE_CAPABILITY_DATAContent; } }
+        private static int _SERVICE_CAPABILITY_DATAContent = default;
+        private static bool _SERVICE_CAPABILITY_DATAReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#SERVICE_CAPABILITY_SMS"/>
+        /// </summary>
+        public static int SERVICE_CAPABILITY_SMS { get { if (!_SERVICE_CAPABILITY_SMSReady) { _SERVICE_CAPABILITY_SMSContent = SGetField<int>(LocalBridgeClazz, "SERVICE_CAPABILITY_SMS"); _SERVICE_CAPABILITY_SMSReady = true; } return _SERVICE_CAPABILITY_SMSContent; } }
+        private static int _SERVICE_CAPABILITY_SMSContent = default;
+        private static bool _SERVICE_CAPABILITY_SMSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#SERVICE_CAPABILITY_VOICE"/>
+        /// </summary>
+        public static int SERVICE_CAPABILITY_VOICE { get { if (!_SERVICE_CAPABILITY_VOICEReady) { _SERVICE_CAPABILITY_VOICEContent = SGetField<int>(LocalBridgeClazz, "SERVICE_CAPABILITY_VOICE"); _SERVICE_CAPABILITY_VOICEReady = true; } return _SERVICE_CAPABILITY_VOICEContent; } }
+        private static int _SERVICE_CAPABILITY_VOICEContent = default;
+        private static bool _SERVICE_CAPABILITY_VOICEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#SUBSCRIPTION_TYPE_LOCAL_SIM"/>
         /// </summary>
         public static int SUBSCRIPTION_TYPE_LOCAL_SIM { get { if (!_SUBSCRIPTION_TYPE_LOCAL_SIMReady) { _SUBSCRIPTION_TYPE_LOCAL_SIMContent = SGetField<int>(LocalBridgeClazz, "SUBSCRIPTION_TYPE_LOCAL_SIM"); _SUBSCRIPTION_TYPE_LOCAL_SIMReady = true; } return _SUBSCRIPTION_TYPE_LOCAL_SIMContent; } }

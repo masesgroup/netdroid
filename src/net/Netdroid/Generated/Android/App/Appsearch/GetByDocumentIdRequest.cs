@@ -38,6 +38,12 @@ namespace Android.App.Appsearch
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html#CREATOR"/>
+        /// </summary>
+        public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
+        private static Android.Os.Parcelable.Creator _CREATORContent = default;
+        private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html#PROJECTION_SCHEMA_TYPE_WILDCARD"/>
         /// </summary>
         public static Java.Lang.String PROJECTION_SCHEMA_TYPE_WILDCARD { get { if (!_PROJECTION_SCHEMA_TYPE_WILDCARDReady) { _PROJECTION_SCHEMA_TYPE_WILDCARDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROJECTION_SCHEMA_TYPE_WILDCARD"); _PROJECTION_SCHEMA_TYPE_WILDCARDReady = true; } return _PROJECTION_SCHEMA_TYPE_WILDCARDContent; } }
@@ -51,6 +57,14 @@ namespace Android.App.Appsearch
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html#describeContents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int DescribeContents()
+        {
+            return IExecuteWithSignature<int>("describeContents", "()I");
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html#getNamespace()"/>
         /// </summary>
@@ -82,6 +96,15 @@ namespace Android.App.Appsearch
         public Java.Util.Set<Java.Lang.String> GetIds()
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getIds", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html#writeToParcel(android.os.Parcel,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
+        {
+            IExecute("writeToParcel", arg0, arg1);
         }
 
         #endregion

@@ -37,6 +37,42 @@ namespace Android.Health.Connect.Datatypes
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#DIASTOLIC_AVG"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType DIASTOLIC_AVG { get { if (!_DIASTOLIC_AVGReady) { _DIASTOLIC_AVGContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "DIASTOLIC_AVG"); _DIASTOLIC_AVGReady = true; } return _DIASTOLIC_AVGContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _DIASTOLIC_AVGContent = default;
+        private static bool _DIASTOLIC_AVGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#DIASTOLIC_MAX"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType DIASTOLIC_MAX { get { if (!_DIASTOLIC_MAXReady) { _DIASTOLIC_MAXContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "DIASTOLIC_MAX"); _DIASTOLIC_MAXReady = true; } return _DIASTOLIC_MAXContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _DIASTOLIC_MAXContent = default;
+        private static bool _DIASTOLIC_MAXReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#DIASTOLIC_MIN"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType DIASTOLIC_MIN { get { if (!_DIASTOLIC_MINReady) { _DIASTOLIC_MINContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "DIASTOLIC_MIN"); _DIASTOLIC_MINReady = true; } return _DIASTOLIC_MINContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _DIASTOLIC_MINContent = default;
+        private static bool _DIASTOLIC_MINReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#SYSTOLIC_AVG"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType SYSTOLIC_AVG { get { if (!_SYSTOLIC_AVGReady) { _SYSTOLIC_AVGContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "SYSTOLIC_AVG"); _SYSTOLIC_AVGReady = true; } return _SYSTOLIC_AVGContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _SYSTOLIC_AVGContent = default;
+        private static bool _SYSTOLIC_AVGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#SYSTOLIC_MAX"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType SYSTOLIC_MAX { get { if (!_SYSTOLIC_MAXReady) { _SYSTOLIC_MAXContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "SYSTOLIC_MAX"); _SYSTOLIC_MAXReady = true; } return _SYSTOLIC_MAXContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _SYSTOLIC_MAXContent = default;
+        private static bool _SYSTOLIC_MAXReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodPressureRecord.html#SYSTOLIC_MIN"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType SYSTOLIC_MIN { get { if (!_SYSTOLIC_MINReady) { _SYSTOLIC_MINContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "SYSTOLIC_MIN"); _SYSTOLIC_MINReady = true; } return _SYSTOLIC_MINContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _SYSTOLIC_MINContent = default;
+        private static bool _SYSTOLIC_MINReady = false; // this is used because in case of generics 
 
         #endregion
 

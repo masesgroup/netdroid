@@ -102,6 +102,14 @@ namespace Android.Nfc.Cardemulation
         {
             IExecuteWithSignature("sendResponseApdu", "([B)V", new object[] { arg0 });
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/HostApduService.html#processPollingFrames(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public void ProcessPollingFrames(Java.Util.List<Android.Nfc.Cardemulation.PollingFrame> arg0)
+        {
+            IExecuteWithSignature("processPollingFrames", "(Ljava/util/List;)V", arg0);
+        }
 
         #endregion
 

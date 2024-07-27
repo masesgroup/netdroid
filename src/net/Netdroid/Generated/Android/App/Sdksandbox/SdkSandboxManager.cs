@@ -100,30 +100,35 @@ namespace Android.App.Sdksandbox
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#EXTRA_DISPLAY_ID"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_DISPLAY_ID { get { if (!_EXTRA_DISPLAY_IDReady) { _EXTRA_DISPLAY_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_DISPLAY_ID"); _EXTRA_DISPLAY_IDReady = true; } return _EXTRA_DISPLAY_IDContent; } }
         private static Java.Lang.String _EXTRA_DISPLAY_IDContent = default;
         private static bool _EXTRA_DISPLAY_IDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#EXTRA_HEIGHT_IN_PIXELS"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_HEIGHT_IN_PIXELS { get { if (!_EXTRA_HEIGHT_IN_PIXELSReady) { _EXTRA_HEIGHT_IN_PIXELSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_HEIGHT_IN_PIXELS"); _EXTRA_HEIGHT_IN_PIXELSReady = true; } return _EXTRA_HEIGHT_IN_PIXELSContent; } }
         private static Java.Lang.String _EXTRA_HEIGHT_IN_PIXELSContent = default;
         private static bool _EXTRA_HEIGHT_IN_PIXELSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#EXTRA_HOST_TOKEN"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_HOST_TOKEN { get { if (!_EXTRA_HOST_TOKENReady) { _EXTRA_HOST_TOKENContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_HOST_TOKEN"); _EXTRA_HOST_TOKENReady = true; } return _EXTRA_HOST_TOKENContent; } }
         private static Java.Lang.String _EXTRA_HOST_TOKENContent = default;
         private static bool _EXTRA_HOST_TOKENReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#EXTRA_SURFACE_PACKAGE"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_SURFACE_PACKAGE { get { if (!_EXTRA_SURFACE_PACKAGEReady) { _EXTRA_SURFACE_PACKAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SURFACE_PACKAGE"); _EXTRA_SURFACE_PACKAGEReady = true; } return _EXTRA_SURFACE_PACKAGEContent; } }
         private static Java.Lang.String _EXTRA_SURFACE_PACKAGEContent = default;
         private static bool _EXTRA_SURFACE_PACKAGEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#EXTRA_WIDTH_IN_PIXELS"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_WIDTH_IN_PIXELS { get { if (!_EXTRA_WIDTH_IN_PIXELSReady) { _EXTRA_WIDTH_IN_PIXELSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_WIDTH_IN_PIXELS"); _EXTRA_WIDTH_IN_PIXELSReady = true; } return _EXTRA_WIDTH_IN_PIXELSContent; } }
         private static Java.Lang.String _EXTRA_WIDTH_IN_PIXELSContent = default;
         private static bool _EXTRA_WIDTH_IN_PIXELSReady = false; // this is used because in case of generics 
@@ -232,6 +237,7 @@ namespace Android.App.Sdksandbox
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg3"><see cref="Android.Os.OutcomeReceiver"/></param>
+        [global::System.Obsolete()]
         public void RequestSurfacePackage(Java.Lang.String arg0, Android.Os.Bundle arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<Android.Os.Bundle, Android.App.Sdksandbox.RequestSurfacePackageException> arg3)
         {
             IExecute("requestSurfacePackage", arg0, arg1, arg2, arg3);

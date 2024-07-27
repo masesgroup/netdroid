@@ -626,6 +626,12 @@ namespace Android.Os
             public static int UPSIDE_DOWN_CAKE { get { if (!_UPSIDE_DOWN_CAKEReady) { _UPSIDE_DOWN_CAKEContent = SGetField<int>(LocalBridgeClazz, "UPSIDE_DOWN_CAKE"); _UPSIDE_DOWN_CAKEReady = true; } return _UPSIDE_DOWN_CAKEContent; } }
             private static int _UPSIDE_DOWN_CAKEContent = default;
             private static bool _UPSIDE_DOWN_CAKEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM"/>
+            /// </summary>
+            public static int VANILLA_ICE_CREAM { get { if (!_VANILLA_ICE_CREAMReady) { _VANILLA_ICE_CREAMContent = SGetField<int>(LocalBridgeClazz, "VANILLA_ICE_CREAM"); _VANILLA_ICE_CREAMReady = true; } return _VANILLA_ICE_CREAMContent; } }
+            private static int _VANILLA_ICE_CREAMContent = default;
+            private static bool _VANILLA_ICE_CREAMReady = false; // this is used because in case of generics 
 
             #endregion
 

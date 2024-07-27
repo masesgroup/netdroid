@@ -184,6 +184,14 @@ namespace Android.Net.Wifi
             return IExecuteWithSignature<bool>("isUserInteractionRequired", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#isWifi7Enabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsWifi7Enabled()
+        {
+            return IExecuteWithSignature<bool>("isWifi7Enabled", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -468,6 +476,15 @@ namespace Android.Net.Wifi
             public Android.Net.Wifi.WifiNetworkSuggestion.Builder SetWapiPassphrase(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Net.Wifi.WifiNetworkSuggestion.Builder>("setWapiPassphrase", "(Ljava/lang/String;)Landroid/net/wifi/WifiNetworkSuggestion$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.Builder.html#setWifi7Enabled(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Net.Wifi.WifiNetworkSuggestion.Builder"/></returns>
+            public Android.Net.Wifi.WifiNetworkSuggestion.Builder SetWifi7Enabled(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.WifiNetworkSuggestion.Builder>("setWifi7Enabled", "(Z)Landroid/net/wifi/WifiNetworkSuggestion$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.Builder.html#setWifiSsid(android.net.wifi.WifiSsid)"/>

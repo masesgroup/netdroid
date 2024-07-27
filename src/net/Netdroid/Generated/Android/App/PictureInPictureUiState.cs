@@ -60,6 +60,14 @@ namespace Android.App
             return IExecuteWithSignature<bool>("isStashed", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureUiState.html#isTransitioningToPip()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTransitioningToPip()
+        {
+            return IExecuteWithSignature<bool>("isTransitioningToPip", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PictureInPictureUiState.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>

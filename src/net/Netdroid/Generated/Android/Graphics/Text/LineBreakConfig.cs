@@ -38,11 +38,47 @@ namespace Android.Graphics.Text
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#CREATOR"/>
+        /// </summary>
+        public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
+        private static Android.Os.Parcelable.Creator _CREATORContent = default;
+        private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#HYPHENATION_DISABLED"/>
+        /// </summary>
+        public static int HYPHENATION_DISABLED { get { if (!_HYPHENATION_DISABLEDReady) { _HYPHENATION_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "HYPHENATION_DISABLED"); _HYPHENATION_DISABLEDReady = true; } return _HYPHENATION_DISABLEDContent; } }
+        private static int _HYPHENATION_DISABLEDContent = default;
+        private static bool _HYPHENATION_DISABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#HYPHENATION_ENABLED"/>
+        /// </summary>
+        public static int HYPHENATION_ENABLED { get { if (!_HYPHENATION_ENABLEDReady) { _HYPHENATION_ENABLEDContent = SGetField<int>(LocalBridgeClazz, "HYPHENATION_ENABLED"); _HYPHENATION_ENABLEDReady = true; } return _HYPHENATION_ENABLEDContent; } }
+        private static int _HYPHENATION_ENABLEDContent = default;
+        private static bool _HYPHENATION_ENABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#HYPHENATION_UNSPECIFIED"/>
+        /// </summary>
+        public static int HYPHENATION_UNSPECIFIED { get { if (!_HYPHENATION_UNSPECIFIEDReady) { _HYPHENATION_UNSPECIFIEDContent = SGetField<int>(LocalBridgeClazz, "HYPHENATION_UNSPECIFIED"); _HYPHENATION_UNSPECIFIEDReady = true; } return _HYPHENATION_UNSPECIFIEDContent; } }
+        private static int _HYPHENATION_UNSPECIFIEDContent = default;
+        private static bool _HYPHENATION_UNSPECIFIEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#LINE_BREAK_STYLE_AUTO"/>
+        /// </summary>
+        public static int LINE_BREAK_STYLE_AUTO { get { if (!_LINE_BREAK_STYLE_AUTOReady) { _LINE_BREAK_STYLE_AUTOContent = SGetField<int>(LocalBridgeClazz, "LINE_BREAK_STYLE_AUTO"); _LINE_BREAK_STYLE_AUTOReady = true; } return _LINE_BREAK_STYLE_AUTOContent; } }
+        private static int _LINE_BREAK_STYLE_AUTOContent = default;
+        private static bool _LINE_BREAK_STYLE_AUTOReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#LINE_BREAK_STYLE_LOOSE"/>
         /// </summary>
         public static int LINE_BREAK_STYLE_LOOSE { get { if (!_LINE_BREAK_STYLE_LOOSEReady) { _LINE_BREAK_STYLE_LOOSEContent = SGetField<int>(LocalBridgeClazz, "LINE_BREAK_STYLE_LOOSE"); _LINE_BREAK_STYLE_LOOSEReady = true; } return _LINE_BREAK_STYLE_LOOSEContent; } }
         private static int _LINE_BREAK_STYLE_LOOSEContent = default;
         private static bool _LINE_BREAK_STYLE_LOOSEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#LINE_BREAK_STYLE_NO_BREAK"/>
+        /// </summary>
+        public static int LINE_BREAK_STYLE_NO_BREAK { get { if (!_LINE_BREAK_STYLE_NO_BREAKReady) { _LINE_BREAK_STYLE_NO_BREAKContent = SGetField<int>(LocalBridgeClazz, "LINE_BREAK_STYLE_NO_BREAK"); _LINE_BREAK_STYLE_NO_BREAKReady = true; } return _LINE_BREAK_STYLE_NO_BREAKContent; } }
+        private static int _LINE_BREAK_STYLE_NO_BREAKContent = default;
+        private static bool _LINE_BREAK_STYLE_NO_BREAKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#LINE_BREAK_STYLE_NONE"/>
         /// </summary>
@@ -62,6 +98,18 @@ namespace Android.Graphics.Text
         private static int _LINE_BREAK_STYLE_STRICTContent = default;
         private static bool _LINE_BREAK_STYLE_STRICTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#LINE_BREAK_STYLE_UNSPECIFIED"/>
+        /// </summary>
+        public static int LINE_BREAK_STYLE_UNSPECIFIED { get { if (!_LINE_BREAK_STYLE_UNSPECIFIEDReady) { _LINE_BREAK_STYLE_UNSPECIFIEDContent = SGetField<int>(LocalBridgeClazz, "LINE_BREAK_STYLE_UNSPECIFIED"); _LINE_BREAK_STYLE_UNSPECIFIEDReady = true; } return _LINE_BREAK_STYLE_UNSPECIFIEDContent; } }
+        private static int _LINE_BREAK_STYLE_UNSPECIFIEDContent = default;
+        private static bool _LINE_BREAK_STYLE_UNSPECIFIEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#LINE_BREAK_WORD_STYLE_AUTO"/>
+        /// </summary>
+        public static int LINE_BREAK_WORD_STYLE_AUTO { get { if (!_LINE_BREAK_WORD_STYLE_AUTOReady) { _LINE_BREAK_WORD_STYLE_AUTOContent = SGetField<int>(LocalBridgeClazz, "LINE_BREAK_WORD_STYLE_AUTO"); _LINE_BREAK_WORD_STYLE_AUTOReady = true; } return _LINE_BREAK_WORD_STYLE_AUTOContent; } }
+        private static int _LINE_BREAK_WORD_STYLE_AUTOContent = default;
+        private static bool _LINE_BREAK_WORD_STYLE_AUTOReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#LINE_BREAK_WORD_STYLE_NONE"/>
         /// </summary>
         public static int LINE_BREAK_WORD_STYLE_NONE { get { if (!_LINE_BREAK_WORD_STYLE_NONEReady) { _LINE_BREAK_WORD_STYLE_NONEContent = SGetField<int>(LocalBridgeClazz, "LINE_BREAK_WORD_STYLE_NONE"); _LINE_BREAK_WORD_STYLE_NONEReady = true; } return _LINE_BREAK_WORD_STYLE_NONEContent; } }
@@ -73,6 +121,12 @@ namespace Android.Graphics.Text
         public static int LINE_BREAK_WORD_STYLE_PHRASE { get { if (!_LINE_BREAK_WORD_STYLE_PHRASEReady) { _LINE_BREAK_WORD_STYLE_PHRASEContent = SGetField<int>(LocalBridgeClazz, "LINE_BREAK_WORD_STYLE_PHRASE"); _LINE_BREAK_WORD_STYLE_PHRASEReady = true; } return _LINE_BREAK_WORD_STYLE_PHRASEContent; } }
         private static int _LINE_BREAK_WORD_STYLE_PHRASEContent = default;
         private static bool _LINE_BREAK_WORD_STYLE_PHRASEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#LINE_BREAK_WORD_STYLE_UNSPECIFIED"/>
+        /// </summary>
+        public static int LINE_BREAK_WORD_STYLE_UNSPECIFIED { get { if (!_LINE_BREAK_WORD_STYLE_UNSPECIFIEDReady) { _LINE_BREAK_WORD_STYLE_UNSPECIFIEDContent = SGetField<int>(LocalBridgeClazz, "LINE_BREAK_WORD_STYLE_UNSPECIFIED"); _LINE_BREAK_WORD_STYLE_UNSPECIFIEDReady = true; } return _LINE_BREAK_WORD_STYLE_UNSPECIFIEDContent; } }
+        private static int _LINE_BREAK_WORD_STYLE_UNSPECIFIEDContent = default;
+        private static bool _LINE_BREAK_WORD_STYLE_UNSPECIFIEDReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -81,6 +135,31 @@ namespace Android.Graphics.Text
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#merge(android.graphics.text.LineBreakConfig)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Text.LineBreakConfig"/></param>
+        /// <returns><see cref="Android.Graphics.Text.LineBreakConfig"/></returns>
+        public Android.Graphics.Text.LineBreakConfig Merge(Android.Graphics.Text.LineBreakConfig arg0)
+        {
+            return IExecuteWithSignature<Android.Graphics.Text.LineBreakConfig>("merge", "(Landroid/graphics/text/LineBreakConfig;)Landroid/graphics/text/LineBreakConfig;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#describeContents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int DescribeContents()
+        {
+            return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#getHyphenation()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHyphenation()
+        {
+            return IExecuteWithSignature<int>("getHyphenation", "()I");
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#getLineBreakStyle()"/>
         /// </summary>
@@ -96,6 +175,15 @@ namespace Android.Graphics.Text
         public int GetLineBreakWordStyle()
         {
             return IExecuteWithSignature<int>("getLineBreakWordStyle", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#writeToParcel(android.os.Parcel,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
+        {
+            IExecute("writeToParcel", arg0, arg1);
         }
 
         #endregion
@@ -128,6 +216,24 @@ namespace Android.Graphics.Text
             public Android.Graphics.Text.LineBreakConfig Build()
             {
                 return IExecuteWithSignature<Android.Graphics.Text.LineBreakConfig>("build", "()Landroid/graphics/text/LineBreakConfig;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.Builder.html#merge(android.graphics.text.LineBreakConfig)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Text.LineBreakConfig"/></param>
+            /// <returns><see cref="Android.Graphics.Text.LineBreakConfig.Builder"/></returns>
+            public Android.Graphics.Text.LineBreakConfig.Builder Merge(Android.Graphics.Text.LineBreakConfig arg0)
+            {
+                return IExecuteWithSignature<Android.Graphics.Text.LineBreakConfig.Builder>("merge", "(Landroid/graphics/text/LineBreakConfig;)Landroid/graphics/text/LineBreakConfig$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.Builder.html#setHyphenation(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Graphics.Text.LineBreakConfig.Builder"/></returns>
+            public Android.Graphics.Text.LineBreakConfig.Builder SetHyphenation(int arg0)
+            {
+                return IExecuteWithSignature<Android.Graphics.Text.LineBreakConfig.Builder>("setHyphenation", "(I)Landroid/graphics/text/LineBreakConfig$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.Builder.html#setLineBreakStyle(int)"/>

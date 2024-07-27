@@ -266,6 +266,12 @@ namespace Android.Provider
             private static int _VOICEMAIL_TYPEContent = default;
             private static bool _VOICEMAIL_TYPEReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#ASSERTED_DISPLAY_NAME"/>
+            /// </summary>
+            public static Java.Lang.String ASSERTED_DISPLAY_NAME { get { if (!_ASSERTED_DISPLAY_NAMEReady) { _ASSERTED_DISPLAY_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ASSERTED_DISPLAY_NAME"); _ASSERTED_DISPLAY_NAMEReady = true; } return _ASSERTED_DISPLAY_NAMEContent; } }
+            private static Java.Lang.String _ASSERTED_DISPLAY_NAMEContent = default;
+            private static bool _ASSERTED_DISPLAY_NAMEReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON"/>
             /// </summary>
             public static Java.Lang.String BLOCK_REASON { get { if (!_BLOCK_REASONReady) { _BLOCK_REASONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BLOCK_REASON"); _BLOCK_REASONReady = true; } return _BLOCK_REASONContent; } }
@@ -403,6 +409,12 @@ namespace Android.Provider
             public static Java.Lang.String GEOCODED_LOCATION { get { if (!_GEOCODED_LOCATIONReady) { _GEOCODED_LOCATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "GEOCODED_LOCATION"); _GEOCODED_LOCATIONReady = true; } return _GEOCODED_LOCATIONContent; } }
             private static Java.Lang.String _GEOCODED_LOCATIONContent = default;
             private static bool _GEOCODED_LOCATIONReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#IS_BUSINESS_CALL"/>
+            /// </summary>
+            public static Java.Lang.String IS_BUSINESS_CALL { get { if (!_IS_BUSINESS_CALLReady) { _IS_BUSINESS_CALLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "IS_BUSINESS_CALL"); _IS_BUSINESS_CALLReady = true; } return _IS_BUSINESS_CALLContent; } }
+            private static Java.Lang.String _IS_BUSINESS_CALLContent = default;
+            private static bool _IS_BUSINESS_CALLReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#IS_READ"/>
             /// </summary>

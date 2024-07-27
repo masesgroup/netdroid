@@ -349,6 +349,33 @@ namespace Android.App
             return IExecute<Java.Util.List<Android.App.ApplicationExitInfo>>("getHistoricalProcessExitReasons", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getHistoricalProcessStartReasons(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.ApplicationStartInfo> GetHistoricalProcessStartReasons(int arg0)
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.ApplicationStartInfo>>("getHistoricalProcessStartReasons", "(I)Ljava/util/List;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#addApplicationStartInfoCompletionListener(java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+        public void AddApplicationStartInfoCompletionListener(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Android.App.ApplicationStartInfo> arg1)
+        {
+            IExecute("addApplicationStartInfoCompletionListener", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#addStartInfoTimestamp(int,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        public void AddStartInfoTimestamp(int arg0, long arg1)
+        {
+            IExecute("addStartInfoTimestamp", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#appNotResponding(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -406,6 +433,14 @@ namespace Android.App
         public void MoveTaskToFront(int arg0, int arg1)
         {
             IExecute("moveTaskToFront", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#removeApplicationStartInfoCompletionListener(java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        public void RemoveApplicationStartInfoCompletionListener(Java.Util.Function.Consumer<Android.App.ApplicationStartInfo> arg0)
+        {
+            IExecuteWithSignature("removeApplicationStartInfoCompletionListener", "(Ljava/util/function/Consumer;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#restartPackage(java.lang.String)"/>

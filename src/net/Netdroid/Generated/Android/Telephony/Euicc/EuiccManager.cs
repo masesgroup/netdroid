@@ -295,6 +295,12 @@ namespace Android.Telephony.Euicc
         public static Java.Lang.String META_DATA_CARRIER_ICON { get { if (!_META_DATA_CARRIER_ICONReady) { _META_DATA_CARRIER_ICONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "META_DATA_CARRIER_ICON"); _META_DATA_CARRIER_ICONReady = true; } return _META_DATA_CARRIER_ICONContent; } }
         private static Java.Lang.String _META_DATA_CARRIER_ICONContent = default;
         private static bool _META_DATA_CARRIER_ICONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EUICC_MEMORY_FIELD_UNAVAILABLE"/>
+        /// </summary>
+        public static long EUICC_MEMORY_FIELD_UNAVAILABLE { get { if (!_EUICC_MEMORY_FIELD_UNAVAILABLEReady) { _EUICC_MEMORY_FIELD_UNAVAILABLEContent = SGetField<long>(LocalBridgeClazz, "EUICC_MEMORY_FIELD_UNAVAILABLE"); _EUICC_MEMORY_FIELD_UNAVAILABLEReady = true; } return _EUICC_MEMORY_FIELD_UNAVAILABLEContent; } }
+        private static long _EUICC_MEMORY_FIELD_UNAVAILABLEContent = default;
+        private static bool _EUICC_MEMORY_FIELD_UNAVAILABLEReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -344,6 +350,14 @@ namespace Android.Telephony.Euicc
         public Java.Lang.String GetEid()
         {
             return IExecuteWithSignature<Java.Lang.String>("getEid", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getAvailableMemoryInBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetAvailableMemoryInBytes()
+        {
+            return IExecuteWithSignature<long>("getAvailableMemoryInBytes", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#deleteSubscription(int,android.app.PendingIntent)"/>

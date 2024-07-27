@@ -123,6 +123,15 @@ namespace Android.Companion
             return IExecuteWithSignature<bool>("hasNotificationAccess", "(Landroid/content/ComponentName;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#isPermissionTransferUserConsented(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPermissionTransferUserConsented(int arg0)
+        {
+            return IExecuteWithSignature<bool>("isPermissionTransferUserConsented", "(I)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#getMyAssociations()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>

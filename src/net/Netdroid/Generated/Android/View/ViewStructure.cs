@@ -464,6 +464,29 @@ namespace Android.View
             IExecuteWithSignature("setWebDomain", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getPendingCredentialRequest()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Credentials.GetCredentialRequest"/></returns>
+        public Android.Credentials.GetCredentialRequest GetPendingCredentialRequest()
+        {
+            return IExecuteWithSignature<Android.Credentials.GetCredentialRequest>("getPendingCredentialRequest", "()Landroid/credentials/GetCredentialRequest;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getPendingCredentialCallback()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.OutcomeReceiver"/></returns>
+        public Android.Os.OutcomeReceiver<Android.Credentials.GetCredentialResponse, Android.Credentials.GetCredentialException> GetPendingCredentialCallback()
+        {
+            return IExecuteWithSignature<Android.Os.OutcomeReceiver<Android.Credentials.GetCredentialResponse, Android.Credentials.GetCredentialException>>("getPendingCredentialCallback", "()Landroid/os/OutcomeReceiver;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#clearCredentialManagerRequest()"/>
+        /// </summary>
+        public void ClearCredentialManagerRequest()
+        {
+            IExecuteWithSignature("clearCredentialManagerRequest", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setHintIdEntry(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -502,6 +525,15 @@ namespace Android.View
         public void SetMinTextEms(int arg0)
         {
             IExecuteWithSignature("setMinTextEms", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setPendingCredentialRequest(android.credentials.GetCredentialRequest,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Credentials.GetCredentialRequest"/></param>
+        /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void SetPendingCredentialRequest(Android.Credentials.GetCredentialRequest arg0, Android.Os.OutcomeReceiver<Android.Credentials.GetCredentialResponse, Android.Credentials.GetCredentialException> arg1)
+        {
+            IExecute("setPendingCredentialRequest", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setReceiveContentMimeTypes(java.lang.String[])"/>

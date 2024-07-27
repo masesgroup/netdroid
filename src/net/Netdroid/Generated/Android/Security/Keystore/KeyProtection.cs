@@ -62,6 +62,14 @@ namespace Android.Security.Keystore
             return IExecuteWithSignature<bool>("isInvalidatedByBiometricEnrollment", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyProtection.html#isMgf1DigestsSpecified()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsMgf1DigestsSpecified()
+        {
+            return IExecuteWithSignature<bool>("isMgf1DigestsSpecified", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/keystore/KeyProtection.html#isRandomizedEncryptionRequired()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -197,6 +205,14 @@ namespace Android.Security.Keystore
         {
             return IExecuteWithSignature<Java.Util.Date>("getKeyValidityStart", "()Ljava/util/Date;");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyProtection.html#getMgf1Digests()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetMgf1Digests()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getMgf1Digests", "()Ljava/util/Set;");
+        }
 
         #endregion
 
@@ -326,6 +342,15 @@ namespace Android.Security.Keystore
             public Android.Security.Keystore.KeyProtection.Builder SetMaxUsageCount(int arg0)
             {
                 return IExecuteWithSignature<Android.Security.Keystore.KeyProtection.Builder>("setMaxUsageCount", "(I)Landroid/security/keystore/KeyProtection$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/security/keystore/KeyProtection.Builder.html#setMgf1Digests(java.lang.String[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.Security.Keystore.KeyProtection.Builder"/></returns>
+            public Android.Security.Keystore.KeyProtection.Builder SetMgf1Digests(params Java.Lang.String[] arg0)
+            {
+                if (arg0.Length == 0) return IExecuteWithSignature<Android.Security.Keystore.KeyProtection.Builder>("setMgf1Digests", "([Ljava/lang/String;)Landroid/security/keystore/KeyProtection$Builder;"); else return IExecuteWithSignature<Android.Security.Keystore.KeyProtection.Builder>("setMgf1Digests", "([Ljava/lang/String;)Landroid/security/keystore/KeyProtection$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/security/keystore/KeyProtection.Builder.html#setRandomizedEncryptionRequired(boolean)"/>

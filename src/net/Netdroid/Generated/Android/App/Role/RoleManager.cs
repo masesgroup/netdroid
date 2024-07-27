@@ -91,6 +91,12 @@ namespace Android.App.Role
         public static Java.Lang.String ROLE_SMS { get { if (!_ROLE_SMSReady) { _ROLE_SMSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ROLE_SMS"); _ROLE_SMSReady = true; } return _ROLE_SMSContent; } }
         private static Java.Lang.String _ROLE_SMSContent = default;
         private static bool _ROLE_SMSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/role/RoleManager.html#ROLE_WALLET"/>
+        /// </summary>
+        public static Java.Lang.String ROLE_WALLET { get { if (!_ROLE_WALLETReady) { _ROLE_WALLETContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ROLE_WALLET"); _ROLE_WALLETReady = true; } return _ROLE_WALLETContent; } }
+        private static Java.Lang.String _ROLE_WALLETContent = default;
+        private static bool _ROLE_WALLETReady = false; // this is used because in case of generics 
 
         #endregion
 

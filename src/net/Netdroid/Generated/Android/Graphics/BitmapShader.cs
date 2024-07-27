@@ -105,6 +105,14 @@ namespace Android.Graphics
         {
             IExecuteWithSignature("setMaxAnisotropy", "(I)V", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/BitmapShader.html#setOverrideGainmap(android.graphics.Gainmap)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Gainmap"/></param>
+        public void SetOverrideGainmap(Android.Graphics.Gainmap arg0)
+        {
+            IExecuteWithSignature("setOverrideGainmap", "(Landroid/graphics/Gainmap;)V", arg0);
+        }
 
         #endregion
 

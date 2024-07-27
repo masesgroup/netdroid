@@ -37,6 +37,12 @@ namespace Android.App.Appsearch
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.html#CREATOR"/>
+        /// </summary>
+        public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
+        private static Android.Os.Parcelable.Creator _CREATORContent = default;
+        private static bool _CREATORReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -45,6 +51,14 @@ namespace Android.App.Appsearch
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.html#describeContents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int DescribeContents()
+        {
+            return IExecuteWithSignature<int>("describeContents", "()I");
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.html#getMigrationFailures()"/>
         /// </summary>
@@ -76,6 +90,15 @@ namespace Android.App.Appsearch
         public Java.Util.Set<Java.Lang.String> GetMigratedTypes()
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getMigratedTypes", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.html#writeToParcel(android.os.Parcel,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
+        {
+            IExecute("writeToParcel", arg0, arg1);
         }
 
         #endregion
@@ -215,6 +238,12 @@ namespace Android.App.Appsearch
             #endregion
 
             #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.MigrationFailure.html#CREATOR"/>
+            /// </summary>
+            public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
+            private static Android.Os.Parcelable.Creator _CREATORContent = default;
+            private static bool _CREATORReady = false; // this is used because in case of generics 
 
             #endregion
 
@@ -230,6 +259,14 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.AppSearchResult<Java.Lang.Void> GetAppSearchResult()
             {
                 return IExecuteWithSignature<Android.App.Appsearch.AppSearchResult<Java.Lang.Void>>("getAppSearchResult", "()Landroid/app/appsearch/AppSearchResult;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.MigrationFailure.html#describeContents()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int DescribeContents()
+            {
+                return IExecuteWithSignature<int>("describeContents", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.MigrationFailure.html#getDocumentId()"/>
@@ -254,6 +291,15 @@ namespace Android.App.Appsearch
             public Java.Lang.String GetSchemaType()
             {
                 return IExecuteWithSignature<Java.Lang.String>("getSchemaType", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.MigrationFailure.html#writeToParcel(android.os.Parcel,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
+            {
+                IExecute("writeToParcel", arg0, arg1);
             }
 
             #endregion

@@ -121,11 +121,12 @@
     "java.time.chrono.ChronoZonedDateTime"
   ],
   "NamespacesInConflict": [
-    "java.lang.module",
     "java.awt.color",
     "java.awt.desktop",
     "java.awt.image",
     "java.awt.event",
-    "java.awt.font"
+    "java.awt.font",
+    "java.lang.module",
+	"java.util.random"
   ]
 }

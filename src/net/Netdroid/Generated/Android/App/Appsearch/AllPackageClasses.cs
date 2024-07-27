@@ -440,7 +440,7 @@ namespace Android.App.Appsearch
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.html"/>
     /// </summary>
-    public partial class AppSearchSchema : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AppSearchSchema>
+    public partial class AppSearchSchema : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.appsearch.AppSearchSchema";
         /// <summary>
@@ -1254,6 +1254,51 @@ namespace Android.App.Appsearch
     }
     #endregion
 
+    #region EnterpriseGlobalSearchSession
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/app/appsearch/EnterpriseGlobalSearchSession.html"/>
+    /// </summary>
+    public partial class EnterpriseGlobalSearchSession : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EnterpriseGlobalSearchSession>
+    {
+        const string _bridgeClassName = "android.app.appsearch.EnterpriseGlobalSearchSession";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public EnterpriseGlobalSearchSession() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public EnterpriseGlobalSearchSession(params object[] args) : base(args) { }
+
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region GenericDocument
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html"/>
@@ -1394,7 +1439,7 @@ namespace Android.App.Appsearch
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html"/>
     /// </summary>
-    public partial class GetByDocumentIdRequest : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GetByDocumentIdRequest>
+    public partial class GetByDocumentIdRequest : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.appsearch.GetByDocumentIdRequest";
         /// <summary>
@@ -1484,7 +1529,7 @@ namespace Android.App.Appsearch
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.html"/>
     /// </summary>
-    public partial class GetSchemaResponse : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GetSchemaResponse>
+    public partial class GetSchemaResponse : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.appsearch.GetSchemaResponse";
         /// <summary>
@@ -1619,7 +1664,7 @@ namespace Android.App.Appsearch
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html"/>
     /// </summary>
-    public partial class JoinSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JoinSpec>
+    public partial class JoinSpec : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.appsearch.JoinSpec";
         /// <summary>
@@ -1981,7 +2026,7 @@ namespace Android.App.Appsearch
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/RemoveByDocumentIdRequest.html"/>
     /// </summary>
-    public partial class RemoveByDocumentIdRequest : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RemoveByDocumentIdRequest>
+    public partial class RemoveByDocumentIdRequest : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.appsearch.RemoveByDocumentIdRequest";
         /// <summary>
@@ -2161,7 +2206,7 @@ namespace Android.App.Appsearch
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportUsageRequest.html"/>
     /// </summary>
-    public partial class ReportUsageRequest : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReportUsageRequest>
+    public partial class ReportUsageRequest : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.appsearch.ReportUsageRequest";
         /// <summary>
@@ -2247,11 +2292,101 @@ namespace Android.App.Appsearch
     }
     #endregion
 
+    #region SchemaVisibilityConfig
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/app/appsearch/SchemaVisibilityConfig.html"/>
+    /// </summary>
+    public partial class SchemaVisibilityConfig : Android.Os.Parcelable
+    {
+        const string _bridgeClassName = "android.app.appsearch.SchemaVisibilityConfig";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SchemaVisibilityConfig() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SchemaVisibilityConfig(params object[] args) : base(args) { }
+
+        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+        #region Builder
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SchemaVisibilityConfig.Builder.html"/>
+        /// </summary>
+        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
+        {
+            const string _bridgeClassName = "android.app.appsearch.SchemaVisibilityConfig$Builder";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Builder() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Builder(params object[] args) : base(args) { }
+
+            private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+    
+    }
+    #endregion
+
     #region SearchResult
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html"/>
     /// </summary>
-    public partial class SearchResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SearchResult>
+    public partial class SearchResult : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.appsearch.SearchResult";
         /// <summary>
@@ -2337,7 +2472,7 @@ namespace Android.App.Appsearch
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html"/>
         /// </summary>
-        public partial class MatchInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MatchInfo>
+        public partial class MatchInfo : Android.Os.Parcelable
         {
             const string _bridgeClassName = "android.app.appsearch.SearchResult$MatchInfo";
             /// <summary>
@@ -2521,7 +2656,7 @@ namespace Android.App.Appsearch
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html"/>
     /// </summary>
-    public partial class SearchSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SearchSpec>
+    public partial class SearchSpec : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.appsearch.SearchSpec";
         /// <summary>
@@ -2611,7 +2746,7 @@ namespace Android.App.Appsearch
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionResult.html"/>
     /// </summary>
-    public partial class SearchSuggestionResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SearchSuggestionResult>
+    public partial class SearchSuggestionResult : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.appsearch.SearchSuggestionResult";
         /// <summary>
@@ -2701,7 +2836,7 @@ namespace Android.App.Appsearch
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html"/>
     /// </summary>
-    public partial class SearchSuggestionSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SearchSuggestionSpec>
+    public partial class SearchSuggestionSpec : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.appsearch.SearchSuggestionSpec";
         /// <summary>
@@ -2881,7 +3016,7 @@ namespace Android.App.Appsearch
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.html"/>
     /// </summary>
-    public partial class SetSchemaResponse : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SetSchemaResponse>
+    public partial class SetSchemaResponse : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.appsearch.SetSchemaResponse";
         /// <summary>
@@ -2967,7 +3102,7 @@ namespace Android.App.Appsearch
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaResponse.MigrationFailure.html"/>
         /// </summary>
-        public partial class MigrationFailure : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MigrationFailure>
+        public partial class MigrationFailure : Android.Os.Parcelable
         {
             const string _bridgeClassName = "android.app.appsearch.SetSchemaResponse$MigrationFailure";
             /// <summary>
@@ -3016,7 +3151,7 @@ namespace Android.App.Appsearch
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/appsearch/StorageInfo.html"/>
     /// </summary>
-    public partial class StorageInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StorageInfo>
+    public partial class StorageInfo : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.appsearch.StorageInfo";
         /// <summary>

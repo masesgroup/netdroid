@@ -38,6 +38,14 @@ namespace Android.Adservices.Adselection
             : base(arg0, arg1)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportImpressionRequest.html#%3Cinit%3E(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public ReportImpressionRequest(long arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 

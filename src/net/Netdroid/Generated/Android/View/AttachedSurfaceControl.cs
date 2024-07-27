@@ -82,6 +82,14 @@ namespace Android.View
             return IExecuteWithSignature<bool>("applyTransactionOnDraw", "(Landroid/view/SurfaceControl$Transaction;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#getInputTransferToken()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Window.InputTransferToken"/></returns>
+        public Android.Window.InputTransferToken GetInputTransferToken()
+        {
+            return IExecuteWithSignature<Android.Window.InputTransferToken>("getInputTransferToken", "()Landroid/window/InputTransferToken;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#getBufferTransformHint()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>

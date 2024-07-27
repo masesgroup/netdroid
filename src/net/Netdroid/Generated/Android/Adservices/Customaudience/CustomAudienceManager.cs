@@ -63,6 +63,16 @@ namespace Android.Adservices.Customaudience
             return IExecuteWithSignature<Android.Adservices.Customaudience.TestCustomAudienceManager>("getTestCustomAudienceManager", "()Landroid/adservices/customaudience/TestCustomAudienceManager;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudienceManager.html#fetchAndJoinCustomAudience(android.adservices.customaudience.FetchAndJoinCustomAudienceRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Adservices.Customaudience.FetchAndJoinCustomAudienceRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void FetchAndJoinCustomAudience(Android.Adservices.Customaudience.FetchAndJoinCustomAudienceRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
+        {
+            IExecute("fetchAndJoinCustomAudience", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudienceManager.html#joinCustomAudience(android.adservices.customaudience.JoinCustomAudienceRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Adservices.Customaudience.JoinCustomAudienceRequest"/></param>
@@ -81,6 +91,16 @@ namespace Android.Adservices.Customaudience
         public void LeaveCustomAudience(Android.Adservices.Customaudience.LeaveCustomAudienceRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
         {
             IExecute("leaveCustomAudience", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudienceManager.html#scheduleCustomAudienceUpdate(android.adservices.customaudience.ScheduleCustomAudienceUpdateRequest,java.util.concurrent.Executor,android.adservices.common.AdServicesOutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Adservices.Customaudience.ScheduleCustomAudienceUpdateRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
+        public void ScheduleCustomAudienceUpdate(Android.Adservices.Customaudience.ScheduleCustomAudienceUpdateRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Adservices.Common.AdServicesOutcomeReceiver<object, Java.Lang.Exception> arg2)
+        {
+            IExecute("scheduleCustomAudienceUpdate", arg0, arg1, arg2);
         }
 
         #endregion

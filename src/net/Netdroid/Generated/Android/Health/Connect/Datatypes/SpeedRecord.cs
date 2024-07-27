@@ -37,6 +37,24 @@ namespace Android.Health.Connect.Datatypes
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SpeedRecord.html#SPEED_AVG"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType SPEED_AVG { get { if (!_SPEED_AVGReady) { _SPEED_AVGContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "SPEED_AVG"); _SPEED_AVGReady = true; } return _SPEED_AVGContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _SPEED_AVGContent = default;
+        private static bool _SPEED_AVGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SpeedRecord.html#SPEED_MAX"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType SPEED_MAX { get { if (!_SPEED_MAXReady) { _SPEED_MAXContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "SPEED_MAX"); _SPEED_MAXReady = true; } return _SPEED_MAXContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _SPEED_MAXContent = default;
+        private static bool _SPEED_MAXReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SpeedRecord.html#SPEED_MIN"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType SPEED_MIN { get { if (!_SPEED_MINReady) { _SPEED_MINContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "SPEED_MIN"); _SPEED_MINReady = true; } return _SPEED_MINContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _SPEED_MINContent = default;
+        private static bool _SPEED_MINReady = false; // this is used because in case of generics 
 
         #endregion
 

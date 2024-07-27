@@ -37,6 +37,12 @@ namespace Android.Graphics.Text
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#NO_OVERRIDE"/>
+        /// </summary>
+        public static float NO_OVERRIDE { get { if (!_NO_OVERRIDEReady) { _NO_OVERRIDEContent = SGetField<float>(LocalBridgeClazz, "NO_OVERRIDE"); _NO_OVERRIDEReady = true; } return _NO_OVERRIDEContent; } }
+        private static float _NO_OVERRIDEContent = default;
+        private static bool _NO_OVERRIDEReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -53,6 +59,24 @@ namespace Android.Graphics.Text
         public Android.Graphics.Fonts.Font GetFont(int arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Fonts.Font>("getFont", "(I)Landroid/graphics/fonts/Font;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getFakeBold(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetFakeBold(int arg0)
+        {
+            return IExecuteWithSignature<bool>("getFakeBold", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getFakeItalic(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetFakeItalic(int arg0)
+        {
+            return IExecuteWithSignature<bool>("getFakeItalic", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getAdvance()"/>
@@ -97,6 +121,15 @@ namespace Android.Graphics.Text
             return IExecuteWithSignature<float>("getGlyphY", "(I)F", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getItalicOverride(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="float"/></returns>
+        public float GetItalicOverride(int arg0)
+        {
+            return IExecuteWithSignature<float>("getItalicOverride", "(I)F", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getOffsetX()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
@@ -111,6 +144,15 @@ namespace Android.Graphics.Text
         public float GetOffsetY()
         {
             return IExecuteWithSignature<float>("getOffsetY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getWeightOverride(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="float"/></returns>
+        public float GetWeightOverride(int arg0)
+        {
+            return IExecuteWithSignature<float>("getWeightOverride", "(I)F", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getGlyphId(int)"/>

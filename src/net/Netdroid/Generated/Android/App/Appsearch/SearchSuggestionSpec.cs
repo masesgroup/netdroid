@@ -38,6 +38,12 @@ namespace Android.App.Appsearch
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#CREATOR"/>
+        /// </summary>
+        public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
+        private static Android.Os.Parcelable.Creator _CREATORContent = default;
+        private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#SUGGESTION_RANKING_STRATEGY_DOCUMENT_COUNT"/>
         /// </summary>
         public static int SUGGESTION_RANKING_STRATEGY_DOCUMENT_COUNT { get { if (!_SUGGESTION_RANKING_STRATEGY_DOCUMENT_COUNTReady) { _SUGGESTION_RANKING_STRATEGY_DOCUMENT_COUNTContent = SGetField<int>(LocalBridgeClazz, "SUGGESTION_RANKING_STRATEGY_DOCUMENT_COUNT"); _SUGGESTION_RANKING_STRATEGY_DOCUMENT_COUNTReady = true; } return _SUGGESTION_RANKING_STRATEGY_DOCUMENT_COUNTContent; } }
@@ -63,6 +69,14 @@ namespace Android.App.Appsearch
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#describeContents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int DescribeContents()
+        {
+            return IExecuteWithSignature<int>("describeContents", "()I");
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getMaximumResultCount()"/>
         /// </summary>
@@ -102,6 +116,23 @@ namespace Android.App.Appsearch
         public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> GetFilterDocumentIds()
         {
             return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getFilterDocumentIds", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getFilterProperties()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> GetFilterProperties()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getFilterProperties", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#writeToParcel(android.os.Parcel,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
+        {
+            IExecute("writeToParcel", arg0, arg1);
         }
 
         #endregion
@@ -180,6 +211,26 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.SearchSuggestionSpec.Builder AddFilterNamespaces(Java.Util.Collection<Java.Lang.String> arg0)
             {
                 return IExecuteWithSignature<Android.App.Appsearch.SearchSuggestionSpec.Builder>("addFilterNamespaces", "(Ljava/util/Collection;)Landroid/app/appsearch/SearchSuggestionSpec$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.Builder.html#addFilterProperties(java.lang.String,java.util.Collection)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+            /// <returns><see cref="Android.App.Appsearch.SearchSuggestionSpec.Builder"/></returns>
+            public Android.App.Appsearch.SearchSuggestionSpec.Builder AddFilterProperties(Java.Lang.String arg0, Java.Util.Collection<Java.Lang.String> arg1)
+            {
+                return IExecute<Android.App.Appsearch.SearchSuggestionSpec.Builder>("addFilterProperties", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.Builder.html#addFilterPropertyPaths(java.lang.String,java.util.Collection)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+            /// <returns><see cref="Android.App.Appsearch.SearchSuggestionSpec.Builder"/></returns>
+            public Android.App.Appsearch.SearchSuggestionSpec.Builder AddFilterPropertyPaths(Java.Lang.String arg0, Java.Util.Collection<Android.App.Appsearch.PropertyPath> arg1)
+            {
+                return IExecute<Android.App.Appsearch.SearchSuggestionSpec.Builder>("addFilterPropertyPaths", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.Builder.html#addFilterSchemas(java.lang.String[])"/>

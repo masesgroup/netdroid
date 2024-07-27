@@ -46,6 +46,15 @@ namespace Android.Location.Altitude
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/altitude/AltitudeConverter.html#tryAddMslAltitudeToLocation(android.location.Location)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Location.Location"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool TryAddMslAltitudeToLocation(Android.Location.Location arg0)
+        {
+            return IExecuteWithSignature<bool>("tryAddMslAltitudeToLocation", "(Landroid/location/Location;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/altitude/AltitudeConverter.html#addMslAltitudeToLocation(android.content.Context,android.location.Location)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>

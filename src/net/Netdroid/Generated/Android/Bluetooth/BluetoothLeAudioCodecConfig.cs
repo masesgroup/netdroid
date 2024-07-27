@@ -122,11 +122,35 @@ namespace Android.Bluetooth
         private static int _FRAME_DURATION_NONEContent = default;
         private static bool _FRAME_DURATION_NONEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#SAMPLE_RATE_11025"/>
+        /// </summary>
+        public static int SAMPLE_RATE_11025 { get { if (!_SAMPLE_RATE_11025Ready) { _SAMPLE_RATE_11025Content = SGetField<int>(LocalBridgeClazz, "SAMPLE_RATE_11025"); _SAMPLE_RATE_11025Ready = true; } return _SAMPLE_RATE_11025Content; } }
+        private static int _SAMPLE_RATE_11025Content = default;
+        private static bool _SAMPLE_RATE_11025Ready = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#SAMPLE_RATE_16000"/>
         /// </summary>
         public static int SAMPLE_RATE_16000 { get { if (!_SAMPLE_RATE_16000Ready) { _SAMPLE_RATE_16000Content = SGetField<int>(LocalBridgeClazz, "SAMPLE_RATE_16000"); _SAMPLE_RATE_16000Ready = true; } return _SAMPLE_RATE_16000Content; } }
         private static int _SAMPLE_RATE_16000Content = default;
         private static bool _SAMPLE_RATE_16000Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#SAMPLE_RATE_176400"/>
+        /// </summary>
+        public static int SAMPLE_RATE_176400 { get { if (!_SAMPLE_RATE_176400Ready) { _SAMPLE_RATE_176400Content = SGetField<int>(LocalBridgeClazz, "SAMPLE_RATE_176400"); _SAMPLE_RATE_176400Ready = true; } return _SAMPLE_RATE_176400Content; } }
+        private static int _SAMPLE_RATE_176400Content = default;
+        private static bool _SAMPLE_RATE_176400Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#SAMPLE_RATE_192000"/>
+        /// </summary>
+        public static int SAMPLE_RATE_192000 { get { if (!_SAMPLE_RATE_192000Ready) { _SAMPLE_RATE_192000Content = SGetField<int>(LocalBridgeClazz, "SAMPLE_RATE_192000"); _SAMPLE_RATE_192000Ready = true; } return _SAMPLE_RATE_192000Content; } }
+        private static int _SAMPLE_RATE_192000Content = default;
+        private static bool _SAMPLE_RATE_192000Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#SAMPLE_RATE_22050"/>
+        /// </summary>
+        public static int SAMPLE_RATE_22050 { get { if (!_SAMPLE_RATE_22050Ready) { _SAMPLE_RATE_22050Content = SGetField<int>(LocalBridgeClazz, "SAMPLE_RATE_22050"); _SAMPLE_RATE_22050Ready = true; } return _SAMPLE_RATE_22050Content; } }
+        private static int _SAMPLE_RATE_22050Content = default;
+        private static bool _SAMPLE_RATE_22050Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#SAMPLE_RATE_24000"/>
         /// </summary>
@@ -139,6 +163,12 @@ namespace Android.Bluetooth
         public static int SAMPLE_RATE_32000 { get { if (!_SAMPLE_RATE_32000Ready) { _SAMPLE_RATE_32000Content = SGetField<int>(LocalBridgeClazz, "SAMPLE_RATE_32000"); _SAMPLE_RATE_32000Ready = true; } return _SAMPLE_RATE_32000Content; } }
         private static int _SAMPLE_RATE_32000Content = default;
         private static bool _SAMPLE_RATE_32000Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#SAMPLE_RATE_384000"/>
+        /// </summary>
+        public static int SAMPLE_RATE_384000 { get { if (!_SAMPLE_RATE_384000Ready) { _SAMPLE_RATE_384000Content = SGetField<int>(LocalBridgeClazz, "SAMPLE_RATE_384000"); _SAMPLE_RATE_384000Ready = true; } return _SAMPLE_RATE_384000Content; } }
+        private static int _SAMPLE_RATE_384000Content = default;
+        private static bool _SAMPLE_RATE_384000Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#SAMPLE_RATE_44100"/>
         /// </summary>
@@ -157,6 +187,18 @@ namespace Android.Bluetooth
         public static int SAMPLE_RATE_8000 { get { if (!_SAMPLE_RATE_8000Ready) { _SAMPLE_RATE_8000Content = SGetField<int>(LocalBridgeClazz, "SAMPLE_RATE_8000"); _SAMPLE_RATE_8000Ready = true; } return _SAMPLE_RATE_8000Content; } }
         private static int _SAMPLE_RATE_8000Content = default;
         private static bool _SAMPLE_RATE_8000Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#SAMPLE_RATE_88200"/>
+        /// </summary>
+        public static int SAMPLE_RATE_88200 { get { if (!_SAMPLE_RATE_88200Ready) { _SAMPLE_RATE_88200Content = SGetField<int>(LocalBridgeClazz, "SAMPLE_RATE_88200"); _SAMPLE_RATE_88200Ready = true; } return _SAMPLE_RATE_88200Content; } }
+        private static int _SAMPLE_RATE_88200Content = default;
+        private static bool _SAMPLE_RATE_88200Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#SAMPLE_RATE_96000"/>
+        /// </summary>
+        public static int SAMPLE_RATE_96000 { get { if (!_SAMPLE_RATE_96000Ready) { _SAMPLE_RATE_96000Content = SGetField<int>(LocalBridgeClazz, "SAMPLE_RATE_96000"); _SAMPLE_RATE_96000Ready = true; } return _SAMPLE_RATE_96000Content; } }
+        private static int _SAMPLE_RATE_96000Content = default;
+        private static bool _SAMPLE_RATE_96000Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#SAMPLE_RATE_NONE"/>
         /// </summary>

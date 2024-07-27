@@ -285,6 +285,15 @@ namespace Android.Os
             return IExecuteWithSignature<int>("getIntProperty", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/BatteryManager.html#getStringProperty(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetStringProperty(int arg0)
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getStringProperty", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BatteryManager.html#computeChargeTimeRemaining()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>

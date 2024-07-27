@@ -131,6 +131,14 @@ namespace Android.App
             return IExecuteWithSignature<int>("getStatus", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/LocaleConfig.html#getDefaultLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public Java.Util.Locale GetDefaultLocale()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getDefaultLocale", "()Ljava/util/Locale;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocaleConfig.html#writeToParcel(android.os.Parcel,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>

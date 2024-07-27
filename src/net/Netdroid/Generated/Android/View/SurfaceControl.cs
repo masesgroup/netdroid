@@ -270,6 +270,16 @@ namespace Android.View
                 return IExecute<Android.View.SurfaceControl.Transaction>("addTransactionCommittedListener", arg0, arg1);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#addTransactionCompletedListener(java.util.concurrent.Executor,java.util.function.Consumer)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+            /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
+            public Android.View.SurfaceControl.Transaction AddTransactionCompletedListener(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Android.View.SurfaceControl.TransactionStats> arg1)
+            {
+                return IExecute<Android.View.SurfaceControl.Transaction>("addTransactionCompletedListener", arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#clearFrameRate(android.view.SurfaceControl)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.SurfaceControl"/></param>
@@ -283,6 +293,7 @@ namespace Android.View
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.SurfaceControl"/></param>
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
+            [global::System.Obsolete()]
             public Android.View.SurfaceControl.Transaction ClearTrustedPresentationCallback(Android.View.SurfaceControl arg0)
             {
                 return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("clearTrustedPresentationCallback", "(Landroid/view/SurfaceControl;)Landroid/view/SurfaceControl$Transaction;", arg0);
@@ -401,6 +412,25 @@ namespace Android.View
                 return IExecute<Android.View.SurfaceControl.Transaction>("setDataSpace", arg0, arg1);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setDesiredHdrHeadroom(android.view.SurfaceControl,float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.View.SurfaceControl"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
+            public Android.View.SurfaceControl.Transaction SetDesiredHdrHeadroom(Android.View.SurfaceControl arg0, float arg1)
+            {
+                return IExecute<Android.View.SurfaceControl.Transaction>("setDesiredHdrHeadroom", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setDesiredPresentTimeNanos(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
+            public Android.View.SurfaceControl.Transaction SetDesiredPresentTimeNanos(long arg0)
+            {
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setDesiredPresentTimeNanos", "(J)Landroid/view/SurfaceControl$Transaction;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setExtendedRangeBrightness(android.view.SurfaceControl,float,float)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.SurfaceControl"/></param>
@@ -433,6 +463,15 @@ namespace Android.View
             public Android.View.SurfaceControl.Transaction SetFrameRate(Android.View.SurfaceControl arg0, float arg1, int arg2)
             {
                 return IExecute<Android.View.SurfaceControl.Transaction>("setFrameRate", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setFrameTimeline(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
+            public Android.View.SurfaceControl.Transaction SetFrameTimeline(long arg0)
+            {
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setFrameTimeline", "(J)Landroid/view/SurfaceControl$Transaction;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setGeometry(android.view.SurfaceControl,android.graphics.Rect,android.graphics.Rect,int)"/>
@@ -497,6 +536,7 @@ namespace Android.View
             /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
             /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
+            [global::System.Obsolete()]
             public Android.View.SurfaceControl.Transaction SetTrustedPresentationCallback(Android.View.SurfaceControl arg0, Android.View.SurfaceControl.TrustedPresentationThresholds arg1, Java.Util.Concurrent.Executor arg2, Java.Util.Function.Consumer<Java.Lang.Boolean> arg3)
             {
                 return IExecute<Android.View.SurfaceControl.Transaction>("setTrustedPresentationCallback", arg0, arg1, arg2, arg3);
@@ -650,6 +690,53 @@ namespace Android.View
         }
         #endregion
 
+        #region TransactionStats
+        public partial class TransactionStats
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.TransactionStats.html#getPresentFence()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Hardware.SyncFence"/></returns>
+            public Android.Hardware.SyncFence GetPresentFence()
+            {
+                return IExecuteWithSignature<Android.Hardware.SyncFence>("getPresentFence", "()Landroid/hardware/SyncFence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.TransactionStats.html#getLatchTimeNanos()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetLatchTimeNanos()
+            {
+                return IExecuteWithSignature<long>("getLatchTimeNanos", "()J");
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region TrustedPresentationThresholds
         public partial class TrustedPresentationThresholds
         {
@@ -660,6 +747,7 @@ namespace Android.View
             /// <param name="arg0"><see cref="float"/></param>
             /// <param name="arg1"><see cref="float"/></param>
             /// <param name="arg2"><see cref="int"/></param>
+            [global::System.Obsolete()]
             public TrustedPresentationThresholds(float arg0, float arg1, int arg2)
                 : base(arg0, arg1, arg2)
             {

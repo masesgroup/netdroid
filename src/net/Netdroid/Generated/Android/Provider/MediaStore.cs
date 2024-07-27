@@ -68,6 +68,24 @@ namespace Android.Provider
         private static int _MATCH_ONLYContent = default;
         private static bool _MATCH_ONLYReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#PICK_IMAGES_TAB_ALBUMS"/>
+        /// </summary>
+        public static int PICK_IMAGES_TAB_ALBUMS { get { if (!_PICK_IMAGES_TAB_ALBUMSReady) { _PICK_IMAGES_TAB_ALBUMSContent = SGetField<int>(LocalBridgeClazz, "PICK_IMAGES_TAB_ALBUMS"); _PICK_IMAGES_TAB_ALBUMSReady = true; } return _PICK_IMAGES_TAB_ALBUMSContent; } }
+        private static int _PICK_IMAGES_TAB_ALBUMSContent = default;
+        private static bool _PICK_IMAGES_TAB_ALBUMSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#PICK_IMAGES_TAB_IMAGES"/>
+        /// </summary>
+        public static int PICK_IMAGES_TAB_IMAGES { get { if (!_PICK_IMAGES_TAB_IMAGESReady) { _PICK_IMAGES_TAB_IMAGESContent = SGetField<int>(LocalBridgeClazz, "PICK_IMAGES_TAB_IMAGES"); _PICK_IMAGES_TAB_IMAGESReady = true; } return _PICK_IMAGES_TAB_IMAGESContent; } }
+        private static int _PICK_IMAGES_TAB_IMAGESContent = default;
+        private static bool _PICK_IMAGES_TAB_IMAGESReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSION"/>
+        /// </summary>
+        public static Java.Lang.String ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSION { get { if (!_ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSIONReady) { _ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSION"); _ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSIONReady = true; } return _ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSIONContent; } }
+        private static Java.Lang.String _ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSIONContent = default;
+        private static bool _ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSIONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_IMAGE_CAPTURE"/>
         /// </summary>
         public static Java.Lang.String ACTION_IMAGE_CAPTURE { get { if (!_ACTION_IMAGE_CAPTUREReady) { _ACTION_IMAGE_CAPTUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_IMAGE_CAPTURE"); _ACTION_IMAGE_CAPTUREReady = true; } return _ACTION_IMAGE_CAPTUREContent; } }
@@ -207,6 +225,24 @@ namespace Android.Provider
         private static Java.Lang.String _EXTRA_OUTPUTContent = default;
         private static bool _EXTRA_OUTPUTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_ACCENT_COLOR"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_PICK_IMAGES_ACCENT_COLOR { get { if (!_EXTRA_PICK_IMAGES_ACCENT_COLORReady) { _EXTRA_PICK_IMAGES_ACCENT_COLORContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PICK_IMAGES_ACCENT_COLOR"); _EXTRA_PICK_IMAGES_ACCENT_COLORReady = true; } return _EXTRA_PICK_IMAGES_ACCENT_COLORContent; } }
+        private static Java.Lang.String _EXTRA_PICK_IMAGES_ACCENT_COLORContent = default;
+        private static bool _EXTRA_PICK_IMAGES_ACCENT_COLORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_IN_ORDER"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_PICK_IMAGES_IN_ORDER { get { if (!_EXTRA_PICK_IMAGES_IN_ORDERReady) { _EXTRA_PICK_IMAGES_IN_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PICK_IMAGES_IN_ORDER"); _EXTRA_PICK_IMAGES_IN_ORDERReady = true; } return _EXTRA_PICK_IMAGES_IN_ORDERContent; } }
+        private static Java.Lang.String _EXTRA_PICK_IMAGES_IN_ORDERContent = default;
+        private static bool _EXTRA_PICK_IMAGES_IN_ORDERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_LAUNCH_TAB"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_PICK_IMAGES_LAUNCH_TAB { get { if (!_EXTRA_PICK_IMAGES_LAUNCH_TABReady) { _EXTRA_PICK_IMAGES_LAUNCH_TABContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PICK_IMAGES_LAUNCH_TAB"); _EXTRA_PICK_IMAGES_LAUNCH_TABReady = true; } return _EXTRA_PICK_IMAGES_LAUNCH_TABContent; } }
+        private static Java.Lang.String _EXTRA_PICK_IMAGES_LAUNCH_TABContent = default;
+        private static bool _EXTRA_PICK_IMAGES_LAUNCH_TABReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_MAX"/>
         /// </summary>
         public static Java.Lang.String EXTRA_PICK_IMAGES_MAX { get { if (!_EXTRA_PICK_IMAGES_MAXReady) { _EXTRA_PICK_IMAGES_MAXContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PICK_IMAGES_MAX"); _EXTRA_PICK_IMAGES_MAXReady = true; } return _EXTRA_PICK_IMAGES_MAXContent; } }
@@ -315,6 +351,12 @@ namespace Android.Provider
         public static Java.Lang.String QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES { get { if (!_QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMESReady) { _QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES"); _QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMESReady = true; } return _QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMESContent; } }
         private static Java.Lang.String _QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMESContent = default;
         private static bool _QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMESReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_LATEST_SELECTION_ONLY"/>
+        /// </summary>
+        public static Java.Lang.String QUERY_ARG_LATEST_SELECTION_ONLY { get { if (!_QUERY_ARG_LATEST_SELECTION_ONLYReady) { _QUERY_ARG_LATEST_SELECTION_ONLYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "QUERY_ARG_LATEST_SELECTION_ONLY"); _QUERY_ARG_LATEST_SELECTION_ONLYReady = true; } return _QUERY_ARG_LATEST_SELECTION_ONLYContent; } }
+        private static Java.Lang.String _QUERY_ARG_LATEST_SELECTION_ONLYContent = default;
+        private static bool _QUERY_ARG_LATEST_SELECTION_ONLYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MATCH_FAVORITE"/>
         /// </summary>

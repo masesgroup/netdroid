@@ -140,6 +140,30 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.ActionBar>("getActionBar", "()Landroid/app/ActionBar;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getCaller()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.ComponentCaller"/></returns>
+        public Android.App.ComponentCaller GetCaller()
+        {
+            return IExecuteWithSignature<Android.App.ComponentCaller>("getCaller", "()Landroid/app/ComponentCaller;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getCurrentCaller()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.ComponentCaller"/></returns>
+        public Android.App.ComponentCaller GetCurrentCaller()
+        {
+            return IExecuteWithSignature<Android.App.ComponentCaller>("getCurrentCaller", "()Landroid/app/ComponentCaller;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#getInitialCaller()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.ComponentCaller"/></returns>
+        public Android.App.ComponentCaller GetInitialCaller()
+        {
+            return IExecuteWithSignature<Android.App.ComponentCaller>("getInitialCaller", "()Landroid/app/ComponentCaller;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#getFragmentManager()"/>
         /// </summary>
         /// <returns><see cref="Android.App.FragmentManager"/></returns>
@@ -817,6 +841,16 @@ namespace Android.App
             return IExecuteWithSignature<bool>("shouldDockBigOverlays", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#shouldShowRequestPermissionRationale(java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool ShouldShowRequestPermissionRationale(Java.Lang.String arg0, int arg1)
+        {
+            return IExecute<bool>("shouldShowRequestPermissionRationale", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#shouldShowRequestPermissionRationale(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -897,6 +931,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#getParent()"/>
         /// </summary>
         /// <returns><see cref="Android.App.Activity"/></returns>
+        [global::System.Obsolete()]
         public Android.App.Activity GetParent()
         {
             return IExecuteWithSignature<Android.App.Activity>("getParent", "()Landroid/app/Activity;");
@@ -951,6 +986,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#isChild()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool IsChild()
         {
             return IExecuteWithSignature<bool>("isChild", "()Z");
@@ -1023,6 +1059,16 @@ namespace Android.App
         public void RemoveDialog(int arg0)
         {
             IExecuteWithSignature("removeDialog", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#requestPermissions(java.lang.String[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        public void RequestPermissions(Java.Lang.String[] arg0, int arg1, int arg2)
+        {
+            IExecute("requestPermissions", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#requestPermissions(java.lang.String[],int)"/>
@@ -1405,6 +1451,17 @@ namespace Android.App
             IExecute("onActivityReenter", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onActivityResult(int,int,android.content.Intent,android.app.ComponentCaller)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg3"><see cref="Android.App.ComponentCaller"/></param>
+        public void OnActivityResult(int arg0, int arg1, Android.Content.Intent arg2, Android.App.ComponentCaller arg3)
+        {
+            IExecute("onActivityResult", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onAttachedToWindow()"/>
         /// </summary>
         public void OnAttachedToWindow()
@@ -1541,6 +1598,15 @@ namespace Android.App
             IExecuteWithSignature("onMultiWindowModeChanged", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent,android.app.ComponentCaller)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg1"><see cref="Android.App.ComponentCaller"/></param>
+        public void OnNewIntent(Android.Content.Intent arg0, Android.App.ComponentCaller arg1)
+        {
+            IExecute("onNewIntent", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onOptionsMenuClosed(android.view.Menu)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Menu"/></param>
@@ -1636,6 +1702,17 @@ namespace Android.App
         public void OnProvideKeyboardShortcuts(Java.Util.List<Android.View.KeyboardShortcutGroup> arg0, Android.View.Menu arg1, int arg2)
         {
             IExecute("onProvideKeyboardShortcuts", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#onRequestPermissionsResult(int,java.lang.String[],int[],int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        public void OnRequestPermissionsResult(int arg0, Java.Lang.String[] arg1, int[] arg2, int arg3)
+        {
+            IExecute("onRequestPermissionsResult", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#onRequestPermissionsResult(int,java.lang.String[],int[])"/>
@@ -1841,6 +1918,14 @@ namespace Android.App
             IExecuteWithSignature("setActionBar", "(Landroid/widget/Toolbar;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#setAllowCrossUidActivitySwitchFromBelow(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetAllowCrossUidActivitySwitchFromBelow(bool arg0)
+        {
+            IExecuteWithSignature("setAllowCrossUidActivitySwitchFromBelow", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#setContentTransitionManager(android.transition.TransitionManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Transition.TransitionManager"/></param>
@@ -1912,6 +1997,15 @@ namespace Android.App
         public void SetInheritShowWhenLocked(bool arg0)
         {
             IExecuteWithSignature("setInheritShowWhenLocked", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Activity.html#setIntent(android.content.Intent,android.app.ComponentCaller)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg1"><see cref="Android.App.ComponentCaller"/></param>
+        public void SetIntent(Android.Content.Intent arg0, Android.App.ComponentCaller arg1)
+        {
+            IExecute("setIntent", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#setIntent(android.content.Intent)"/>

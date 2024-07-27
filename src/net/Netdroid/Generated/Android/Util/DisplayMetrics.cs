@@ -121,6 +121,12 @@ namespace Android.Util
         private static int _DENSITY_360Content = default;
         private static bool _DENSITY_360Ready = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_390"/>
+        /// </summary>
+        public static int DENSITY_390 { get { if (!_DENSITY_390Ready) { _DENSITY_390Content = SGetField<int>(LocalBridgeClazz, "DENSITY_390"); _DENSITY_390Ready = true; } return _DENSITY_390Content; } }
+        private static int _DENSITY_390Content = default;
+        private static bool _DENSITY_390Ready = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_400"/>
         /// </summary>
         public static int DENSITY_400 { get { if (!_DENSITY_400Ready) { _DENSITY_400Content = SGetField<int>(LocalBridgeClazz, "DENSITY_400"); _DENSITY_400Ready = true; } return _DENSITY_400Content; } }

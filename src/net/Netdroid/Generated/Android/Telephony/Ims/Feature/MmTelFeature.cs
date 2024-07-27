@@ -68,6 +68,12 @@ namespace Android.Telephony.Ims.Feature
             private static int _CAPABILITY_TYPE_CALL_COMPOSERContent = default;
             private static bool _CAPABILITY_TYPE_CALL_COMPOSERReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/ims/feature/MmTelFeature.MmTelCapabilities.html#CAPABILITY_TYPE_CALL_COMPOSER_BUSINESS_ONLY"/>
+            /// </summary>
+            public static int CAPABILITY_TYPE_CALL_COMPOSER_BUSINESS_ONLY { get { if (!_CAPABILITY_TYPE_CALL_COMPOSER_BUSINESS_ONLYReady) { _CAPABILITY_TYPE_CALL_COMPOSER_BUSINESS_ONLYContent = SGetField<int>(LocalBridgeClazz, "CAPABILITY_TYPE_CALL_COMPOSER_BUSINESS_ONLY"); _CAPABILITY_TYPE_CALL_COMPOSER_BUSINESS_ONLYReady = true; } return _CAPABILITY_TYPE_CALL_COMPOSER_BUSINESS_ONLYContent; } }
+            private static int _CAPABILITY_TYPE_CALL_COMPOSER_BUSINESS_ONLYContent = default;
+            private static bool _CAPABILITY_TYPE_CALL_COMPOSER_BUSINESS_ONLYReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/ims/feature/MmTelFeature.MmTelCapabilities.html#CAPABILITY_TYPE_SMS"/>
             /// </summary>
             public static int CAPABILITY_TYPE_SMS { get { if (!_CAPABILITY_TYPE_SMSReady) { _CAPABILITY_TYPE_SMSContent = SGetField<int>(LocalBridgeClazz, "CAPABILITY_TYPE_SMS"); _CAPABILITY_TYPE_SMSReady = true; } return _CAPABILITY_TYPE_SMSContent; } }

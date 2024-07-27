@@ -80,6 +80,12 @@ namespace Android.Telecom
         private static int _SUPPORTS_TRANSFERContent = default;
         private static bool _SUPPORTS_TRANSFERReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#SUPPORTS_VIDEO_CALLING"/>
+        /// </summary>
+        public static int SUPPORTS_VIDEO_CALLING { get { if (!_SUPPORTS_VIDEO_CALLINGReady) { _SUPPORTS_VIDEO_CALLINGContent = SGetField<int>(LocalBridgeClazz, "SUPPORTS_VIDEO_CALLING"); _SUPPORTS_VIDEO_CALLINGReady = true; } return _SUPPORTS_VIDEO_CALLINGContent; } }
+        private static int _SUPPORTS_VIDEO_CALLINGContent = default;
+        private static bool _SUPPORTS_VIDEO_CALLINGReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallAttributes.html#VIDEO_CALL"/>
         /// </summary>
         public static int VIDEO_CALL { get { if (!_VIDEO_CALLReady) { _VIDEO_CALLContent = SGetField<int>(LocalBridgeClazz, "VIDEO_CALL"); _VIDEO_CALLReady = true; } return _VIDEO_CALLContent; } }

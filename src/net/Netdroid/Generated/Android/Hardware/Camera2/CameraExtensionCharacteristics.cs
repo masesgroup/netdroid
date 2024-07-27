@@ -93,6 +93,17 @@ namespace Android.Hardware.Camera2
             return IExecute<Java.Util.List<Android.Util.Size>>("getExtensionSupportedSizes", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#get(int,android.hardware.camera2.CameraCharacteristics.Key)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.Hardware.Camera2.CameraCharacteristics.Key"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public T Get<T>(int arg0, Android.Hardware.Camera2.CameraCharacteristics.Key<T> arg1)
+        {
+            return IExecute<T>("get", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#isCaptureProcessProgressAvailable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -138,6 +149,15 @@ namespace Android.Hardware.Camera2
         public Java.Util.List<Java.Lang.Integer> GetSupportedExtensions()
         {
             return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getSupportedExtensions", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#getKeys(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Hardware.Camera2.CameraCharacteristics.Key> GetKeys(int arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.Hardware.Camera2.CameraCharacteristics.Key>>("getKeys", "(I)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#getAvailableCaptureRequestKeys(int)"/>

@@ -77,6 +77,14 @@ namespace Android.Telephony
             return IExecuteWithSignature<bool>("isEmbedded", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#isOnlyNonTerrestrialNetwork()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsOnlyNonTerrestrialNetwork()
+        {
+            return IExecuteWithSignature<bool>("isOnlyNonTerrestrialNetwork", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#isOpportunistic()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -238,6 +246,14 @@ namespace Android.Telephony
         public Java.Lang.String GetNumber()
         {
             return IExecuteWithSignature<Java.Lang.String>("getNumber", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getServiceCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Integer> GetServiceCapabilities()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getServiceCapabilities", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#writeToParcel(android.os.Parcel,int)"/>

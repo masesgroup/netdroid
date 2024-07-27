@@ -130,6 +130,14 @@ namespace Android.View.Inputmethod
             return IExecuteWithSignature<bool>("shouldShowInInputMethodPicker", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#supportsConnectionlessStylusHandwriting()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool SupportsConnectionlessStylusHandwriting()
+        {
+            return IExecuteWithSignature<bool>("supportsConnectionlessStylusHandwriting", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#supportsStylusHandwriting()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

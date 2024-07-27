@@ -152,6 +152,36 @@ namespace Android.View
         private static Android.Util.Property _ZContent = default;
         private static bool _ZReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#REQUESTED_FRAME_RATE_CATEGORY_DEFAULT"/>
+        /// </summary>
+        public static float REQUESTED_FRAME_RATE_CATEGORY_DEFAULT { get { if (!_REQUESTED_FRAME_RATE_CATEGORY_DEFAULTReady) { _REQUESTED_FRAME_RATE_CATEGORY_DEFAULTContent = SGetField<float>(LocalBridgeClazz, "REQUESTED_FRAME_RATE_CATEGORY_DEFAULT"); _REQUESTED_FRAME_RATE_CATEGORY_DEFAULTReady = true; } return _REQUESTED_FRAME_RATE_CATEGORY_DEFAULTContent; } }
+        private static float _REQUESTED_FRAME_RATE_CATEGORY_DEFAULTContent = default;
+        private static bool _REQUESTED_FRAME_RATE_CATEGORY_DEFAULTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#REQUESTED_FRAME_RATE_CATEGORY_HIGH"/>
+        /// </summary>
+        public static float REQUESTED_FRAME_RATE_CATEGORY_HIGH { get { if (!_REQUESTED_FRAME_RATE_CATEGORY_HIGHReady) { _REQUESTED_FRAME_RATE_CATEGORY_HIGHContent = SGetField<float>(LocalBridgeClazz, "REQUESTED_FRAME_RATE_CATEGORY_HIGH"); _REQUESTED_FRAME_RATE_CATEGORY_HIGHReady = true; } return _REQUESTED_FRAME_RATE_CATEGORY_HIGHContent; } }
+        private static float _REQUESTED_FRAME_RATE_CATEGORY_HIGHContent = default;
+        private static bool _REQUESTED_FRAME_RATE_CATEGORY_HIGHReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#REQUESTED_FRAME_RATE_CATEGORY_LOW"/>
+        /// </summary>
+        public static float REQUESTED_FRAME_RATE_CATEGORY_LOW { get { if (!_REQUESTED_FRAME_RATE_CATEGORY_LOWReady) { _REQUESTED_FRAME_RATE_CATEGORY_LOWContent = SGetField<float>(LocalBridgeClazz, "REQUESTED_FRAME_RATE_CATEGORY_LOW"); _REQUESTED_FRAME_RATE_CATEGORY_LOWReady = true; } return _REQUESTED_FRAME_RATE_CATEGORY_LOWContent; } }
+        private static float _REQUESTED_FRAME_RATE_CATEGORY_LOWContent = default;
+        private static bool _REQUESTED_FRAME_RATE_CATEGORY_LOWReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#REQUESTED_FRAME_RATE_CATEGORY_NO_PREFERENCE"/>
+        /// </summary>
+        public static float REQUESTED_FRAME_RATE_CATEGORY_NO_PREFERENCE { get { if (!_REQUESTED_FRAME_RATE_CATEGORY_NO_PREFERENCEReady) { _REQUESTED_FRAME_RATE_CATEGORY_NO_PREFERENCEContent = SGetField<float>(LocalBridgeClazz, "REQUESTED_FRAME_RATE_CATEGORY_NO_PREFERENCE"); _REQUESTED_FRAME_RATE_CATEGORY_NO_PREFERENCEReady = true; } return _REQUESTED_FRAME_RATE_CATEGORY_NO_PREFERENCEContent; } }
+        private static float _REQUESTED_FRAME_RATE_CATEGORY_NO_PREFERENCEContent = default;
+        private static bool _REQUESTED_FRAME_RATE_CATEGORY_NO_PREFERENCEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#REQUESTED_FRAME_RATE_CATEGORY_NORMAL"/>
+        /// </summary>
+        public static float REQUESTED_FRAME_RATE_CATEGORY_NORMAL { get { if (!_REQUESTED_FRAME_RATE_CATEGORY_NORMALReady) { _REQUESTED_FRAME_RATE_CATEGORY_NORMALContent = SGetField<float>(LocalBridgeClazz, "REQUESTED_FRAME_RATE_CATEGORY_NORMAL"); _REQUESTED_FRAME_RATE_CATEGORY_NORMALReady = true; } return _REQUESTED_FRAME_RATE_CATEGORY_NORMALContent; } }
+        private static float _REQUESTED_FRAME_RATE_CATEGORY_NORMALContent = default;
+        private static bool _REQUESTED_FRAME_RATE_CATEGORY_NORMALReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#ACCESSIBILITY_DATA_SENSITIVE_AUTO"/>
         /// </summary>
         public static int ACCESSIBILITY_DATA_SENSITIVE_AUTO { get { if (!_ACCESSIBILITY_DATA_SENSITIVE_AUTOReady) { _ACCESSIBILITY_DATA_SENSITIVE_AUTOContent = SGetField<int>(LocalBridgeClazz, "ACCESSIBILITY_DATA_SENSITIVE_AUTO"); _ACCESSIBILITY_DATA_SENSITIVE_AUTOReady = true; } return _ACCESSIBILITY_DATA_SENSITIVE_AUTOContent; } }
@@ -224,6 +254,24 @@ namespace Android.View
         private static int _AUTOFILL_TYPE_TOGGLEContent = default;
         private static bool _AUTOFILL_TYPE_TOGGLEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#CONTENT_SENSITIVITY_AUTO"/>
+        /// </summary>
+        public static int CONTENT_SENSITIVITY_AUTO { get { if (!_CONTENT_SENSITIVITY_AUTOReady) { _CONTENT_SENSITIVITY_AUTOContent = SGetField<int>(LocalBridgeClazz, "CONTENT_SENSITIVITY_AUTO"); _CONTENT_SENSITIVITY_AUTOReady = true; } return _CONTENT_SENSITIVITY_AUTOContent; } }
+        private static int _CONTENT_SENSITIVITY_AUTOContent = default;
+        private static bool _CONTENT_SENSITIVITY_AUTOReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#CONTENT_SENSITIVITY_NOT_SENSITIVE"/>
+        /// </summary>
+        public static int CONTENT_SENSITIVITY_NOT_SENSITIVE { get { if (!_CONTENT_SENSITIVITY_NOT_SENSITIVEReady) { _CONTENT_SENSITIVITY_NOT_SENSITIVEContent = SGetField<int>(LocalBridgeClazz, "CONTENT_SENSITIVITY_NOT_SENSITIVE"); _CONTENT_SENSITIVITY_NOT_SENSITIVEReady = true; } return _CONTENT_SENSITIVITY_NOT_SENSITIVEContent; } }
+        private static int _CONTENT_SENSITIVITY_NOT_SENSITIVEContent = default;
+        private static bool _CONTENT_SENSITIVITY_NOT_SENSITIVEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#CONTENT_SENSITIVITY_SENSITIVE"/>
+        /// </summary>
+        public static int CONTENT_SENSITIVITY_SENSITIVE { get { if (!_CONTENT_SENSITIVITY_SENSITIVEReady) { _CONTENT_SENSITIVITY_SENSITIVEContent = SGetField<int>(LocalBridgeClazz, "CONTENT_SENSITIVITY_SENSITIVE"); _CONTENT_SENSITIVITY_SENSITIVEReady = true; } return _CONTENT_SENSITIVITY_SENSITIVEContent; } }
+        private static int _CONTENT_SENSITIVITY_SENSITIVEContent = default;
+        private static bool _CONTENT_SENSITIVITY_SENSITIVEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#DRAG_FLAG_ACCESSIBILITY_ACTION"/>
         /// </summary>
         public static int DRAG_FLAG_ACCESSIBILITY_ACTION { get { if (!_DRAG_FLAG_ACCESSIBILITY_ACTIONReady) { _DRAG_FLAG_ACCESSIBILITY_ACTIONContent = SGetField<int>(LocalBridgeClazz, "DRAG_FLAG_ACCESSIBILITY_ACTION"); _DRAG_FLAG_ACCESSIBILITY_ACTIONReady = true; } return _DRAG_FLAG_ACCESSIBILITY_ACTIONContent; } }
@@ -248,6 +296,12 @@ namespace Android.View
         private static int _DRAG_FLAG_GLOBAL_PREFIX_URI_PERMISSIONContent = default;
         private static bool _DRAG_FLAG_GLOBAL_PREFIX_URI_PERMISSIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#DRAG_FLAG_GLOBAL_SAME_APPLICATION"/>
+        /// </summary>
+        public static int DRAG_FLAG_GLOBAL_SAME_APPLICATION { get { if (!_DRAG_FLAG_GLOBAL_SAME_APPLICATIONReady) { _DRAG_FLAG_GLOBAL_SAME_APPLICATIONContent = SGetField<int>(LocalBridgeClazz, "DRAG_FLAG_GLOBAL_SAME_APPLICATION"); _DRAG_FLAG_GLOBAL_SAME_APPLICATIONReady = true; } return _DRAG_FLAG_GLOBAL_SAME_APPLICATIONContent; } }
+        private static int _DRAG_FLAG_GLOBAL_SAME_APPLICATIONContent = default;
+        private static bool _DRAG_FLAG_GLOBAL_SAME_APPLICATIONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#DRAG_FLAG_GLOBAL_URI_READ"/>
         /// </summary>
         public static int DRAG_FLAG_GLOBAL_URI_READ { get { if (!_DRAG_FLAG_GLOBAL_URI_READReady) { _DRAG_FLAG_GLOBAL_URI_READContent = SGetField<int>(LocalBridgeClazz, "DRAG_FLAG_GLOBAL_URI_READ"); _DRAG_FLAG_GLOBAL_URI_READReady = true; } return _DRAG_FLAG_GLOBAL_URI_READContent; } }
@@ -265,6 +319,12 @@ namespace Android.View
         public static int DRAG_FLAG_OPAQUE { get { if (!_DRAG_FLAG_OPAQUEReady) { _DRAG_FLAG_OPAQUEContent = SGetField<int>(LocalBridgeClazz, "DRAG_FLAG_OPAQUE"); _DRAG_FLAG_OPAQUEReady = true; } return _DRAG_FLAG_OPAQUEContent; } }
         private static int _DRAG_FLAG_OPAQUEContent = default;
         private static bool _DRAG_FLAG_OPAQUEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#DRAG_FLAG_START_INTENT_SENDER_ON_UNHANDLED_DRAG"/>
+        /// </summary>
+        public static int DRAG_FLAG_START_INTENT_SENDER_ON_UNHANDLED_DRAG { get { if (!_DRAG_FLAG_START_INTENT_SENDER_ON_UNHANDLED_DRAGReady) { _DRAG_FLAG_START_INTENT_SENDER_ON_UNHANDLED_DRAGContent = SGetField<int>(LocalBridgeClazz, "DRAG_FLAG_START_INTENT_SENDER_ON_UNHANDLED_DRAG"); _DRAG_FLAG_START_INTENT_SENDER_ON_UNHANDLED_DRAGReady = true; } return _DRAG_FLAG_START_INTENT_SENDER_ON_UNHANDLED_DRAGContent; } }
+        private static int _DRAG_FLAG_START_INTENT_SENDER_ON_UNHANDLED_DRAGContent = default;
+        private static bool _DRAG_FLAG_START_INTENT_SENDER_ON_UNHANDLED_DRAGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#DRAWING_CACHE_QUALITY_AUTO"/>
         /// </summary>
@@ -2603,6 +2663,22 @@ namespace Android.View
             return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getPendingCredentialRequest()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Credentials.GetCredentialRequest"/></returns>
+        public Android.Credentials.GetCredentialRequest GetPendingCredentialRequest()
+        {
+            return IExecuteWithSignature<Android.Credentials.GetCredentialRequest>("getPendingCredentialRequest", "()Landroid/credentials/GetCredentialRequest;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getPendingCredentialCallback()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.OutcomeReceiver"/></returns>
+        public Android.Os.OutcomeReceiver<Android.Credentials.GetCredentialResponse, Android.Credentials.GetCredentialException> GetPendingCredentialCallback()
+        {
+            return IExecuteWithSignature<Android.Os.OutcomeReceiver<Android.Credentials.GetCredentialResponse, Android.Credentials.GetCredentialException>>("getPendingCredentialCallback", "()Landroid/os/OutcomeReceiver;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getAutofillId()"/>
         /// </summary>
         /// <returns><see cref="Android.View.Autofill.AutofillId"/></returns>
@@ -2683,6 +2759,14 @@ namespace Android.View
         public bool GetRevealOnFocusHint()
         {
             return IExecuteWithSignature<bool>("getRevealOnFocusHint", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#isContentSensitive()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsContentSensitive()
+        {
+            return IExecuteWithSignature<bool>("isContentSensitive", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#isFocusable()"/>
@@ -2813,6 +2897,14 @@ namespace Android.View
         public int GetBottom()
         {
             return IExecuteWithSignature<int>("getBottom", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getContentSensitivity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetContentSensitivity()
+        {
+            return IExecuteWithSignature<int>("getContentSensitivity", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getHeight()"/>
@@ -2995,6 +3087,14 @@ namespace Android.View
             IExecuteWithSignature("setBottom", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setContentSensitivity(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetContentSensitivity(int arg0)
+        {
+            IExecuteWithSignature("setContentSensitivity", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setLeft(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -3102,6 +3202,14 @@ namespace Android.View
             return IExecuteWithSignature<float>("getElevation", "()F");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getFrameContentVelocity()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetFrameContentVelocity()
+        {
+            return IExecuteWithSignature<float>("getFrameContentVelocity", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getHandwritingBoundsOffsetBottom()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
@@ -3148,6 +3256,14 @@ namespace Android.View
         public float GetPivotY()
         {
             return IExecuteWithSignature<float>("getPivotY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getRequestedFrameRate()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetRequestedFrameRate()
+        {
+            return IExecuteWithSignature<float>("getRequestedFrameRate", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getRotation()"/>
@@ -3326,6 +3442,14 @@ namespace Android.View
         public int GetForegroundGravity()
         {
             return IExecuteWithSignature<int>("getForegroundGravity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getHandwritingDelegateFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHandwritingDelegateFlags()
+        {
+            return IExecuteWithSignature<int>("getHandwritingDelegateFlags", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getHorizontalFadingEdgeLength()"/>
@@ -3973,6 +4097,13 @@ namespace Android.View
         public void ClearFocus()
         {
             IExecuteWithSignature("clearFocus", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#clearPendingCredentialRequest()"/>
+        /// </summary>
+        public void ClearPendingCredentialRequest()
+        {
+            IExecuteWithSignature("clearPendingCredentialRequest", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#clearViewTranslationCallback()"/>
@@ -5151,6 +5282,14 @@ namespace Android.View
             IExecuteWithSignature("setForegroundTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setFrameContentVelocity(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetFrameContentVelocity(float arg0)
+        {
+            IExecuteWithSignature("setFrameContentVelocity", "(F)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setHandwritingBoundsOffsets(float,float,float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -5160,6 +5299,14 @@ namespace Android.View
         public void SetHandwritingBoundsOffsets(float arg0, float arg1, float arg2, float arg3)
         {
             IExecute("setHandwritingBoundsOffsets", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setHandwritingDelegateFlags(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetHandwritingDelegateFlags(int arg0)
+        {
+            IExecuteWithSignature("setHandwritingDelegateFlags", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setHandwritingDelegatorCallback(java.lang.Runnable)"/>
@@ -5587,6 +5734,15 @@ namespace Android.View
             IExecute("setPaddingRelative", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setPendingCredentialRequest(android.credentials.GetCredentialRequest,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Credentials.GetCredentialRequest"/></param>
+        /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void SetPendingCredentialRequest(Android.Credentials.GetCredentialRequest arg0, Android.Os.OutcomeReceiver<Android.Credentials.GetCredentialResponse, Android.Credentials.GetCredentialException> arg1)
+        {
+            IExecute("setPendingCredentialRequest", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setPivotX(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -5625,6 +5781,14 @@ namespace Android.View
         public void SetRenderEffect(Android.Graphics.RenderEffect arg0)
         {
             IExecuteWithSignature("setRenderEffect", "(Landroid/graphics/RenderEffect;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setRequestedFrameRate(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetRequestedFrameRate(float arg0)
+        {
+            IExecuteWithSignature("setRequestedFrameRate", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setRotation(float)"/>

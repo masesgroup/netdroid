@@ -100,6 +100,14 @@ namespace Android.Net.Wifi.Rtt
             return IExecuteWithSignature<Android.Net.Wifi.Rtt.ResponderLocation>("getUnverifiedResponderLocation", "()Landroid/net/wifi/rtt/ResponderLocation;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#is80211azNtbMeasurement()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool Is80211azNtbMeasurement()
+        {
+            return IExecuteWithSignature<bool>("is80211azNtbMeasurement", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#is80211mcMeasurement()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -108,12 +116,60 @@ namespace Android.Net.Wifi.Rtt
             return IExecuteWithSignature<bool>("is80211mcMeasurement", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getLci()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetLci()
+        {
+            return IExecuteWithSignatureArray<byte>("getLci", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getLcr()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetLcr()
+        {
+            return IExecuteWithSignatureArray<byte>("getLcr", "()[B");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#get80211azInitiatorTxLtfRepetitionsCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int Get80211azInitiatorTxLtfRepetitionsCount()
+        {
+            return IExecuteWithSignature<int>("get80211azInitiatorTxLtfRepetitionsCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#get80211azNumberOfRxSpatialStreams()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int Get80211azNumberOfRxSpatialStreams()
+        {
+            return IExecuteWithSignature<int>("get80211azNumberOfRxSpatialStreams", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#get80211azNumberOfTxSpatialStreams()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int Get80211azNumberOfTxSpatialStreams()
+        {
+            return IExecuteWithSignature<int>("get80211azNumberOfTxSpatialStreams", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#get80211azResponderTxLtfRepetitionsCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int Get80211azResponderTxLtfRepetitionsCount()
+        {
+            return IExecuteWithSignature<int>("get80211azResponderTxLtfRepetitionsCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getDistanceMm()"/>
@@ -180,6 +236,22 @@ namespace Android.Net.Wifi.Rtt
             return IExecuteWithSignature<int>("getStatus", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getMaxTimeBetweenNtbMeasurementsMicros()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetMaxTimeBetweenNtbMeasurementsMicros()
+        {
+            return IExecuteWithSignature<long>("getMaxTimeBetweenNtbMeasurementsMicros", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getMinTimeBetweenNtbMeasurementsMicros()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetMinTimeBetweenNtbMeasurementsMicros()
+        {
+            return IExecuteWithSignature<long>("getMinTimeBetweenNtbMeasurementsMicros", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getRangingTimestampMillis()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
@@ -200,7 +272,244 @@ namespace Android.Net.Wifi.Rtt
         #endregion
 
         #region Nested classes
+        #region Builder
+        public partial class Builder
+        {
+            #region Constructors
 
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#build()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult Build()
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult>("build", "()Landroid/net/wifi/rtt/RangingResult;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#set80211azInitiatorTxLtfRepetitionsCount(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder Set80211azInitiatorTxLtfRepetitionsCount(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("set80211azInitiatorTxLtfRepetitionsCount", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#set80211azNtbMeasurement(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder Set80211azNtbMeasurement(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("set80211azNtbMeasurement", "(Z)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#set80211azNumberOfRxSpatialStreams(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder Set80211azNumberOfRxSpatialStreams(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("set80211azNumberOfRxSpatialStreams", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#set80211azNumberOfTxSpatialStreams(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder Set80211azNumberOfTxSpatialStreams(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("set80211azNumberOfTxSpatialStreams", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#set80211azResponderTxLtfRepetitionsCount(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder Set80211azResponderTxLtfRepetitionsCount(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("set80211azResponderTxLtfRepetitionsCount", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#set80211mcMeasurement(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder Set80211mcMeasurement(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("set80211mcMeasurement", "(Z)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setDistanceMm(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetDistanceMm(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setDistanceMm", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setDistanceStdDevMm(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetDistanceStdDevMm(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setDistanceStdDevMm", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setLci(byte[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="byte"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetLci(byte[] arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setLci", "([B)Landroid/net/wifi/rtt/RangingResult$Builder;", new object[] { arg0 });
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setLcr(byte[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="byte"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetLcr(byte[] arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setLcr", "([B)Landroid/net/wifi/rtt/RangingResult$Builder;", new object[] { arg0 });
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setMacAddress(android.net.MacAddress)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.MacAddress"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetMacAddress(Android.Net.MacAddress arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setMacAddress", "(Landroid/net/MacAddress;)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setMaxTimeBetweenNtbMeasurementsMicros(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetMaxTimeBetweenNtbMeasurementsMicros(long arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setMaxTimeBetweenNtbMeasurementsMicros", "(J)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setMeasurementBandwidth(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetMeasurementBandwidth(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setMeasurementBandwidth", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setMeasurementChannelFrequencyMHz(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetMeasurementChannelFrequencyMHz(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setMeasurementChannelFrequencyMHz", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setMinTimeBetweenNtbMeasurementsMicros(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetMinTimeBetweenNtbMeasurementsMicros(long arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setMinTimeBetweenNtbMeasurementsMicros", "(J)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setNumAttemptedMeasurements(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetNumAttemptedMeasurements(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setNumAttemptedMeasurements", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setNumSuccessfulMeasurements(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetNumSuccessfulMeasurements(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setNumSuccessfulMeasurements", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setPeerHandle(android.net.wifi.aware.PeerHandle)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.Aware.PeerHandle"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetPeerHandle(Android.Net.Wifi.Aware.PeerHandle arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setPeerHandle", "(Landroid/net/wifi/aware/PeerHandle;)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setRangingTimestampMillis(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetRangingTimestampMillis(long arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setRangingTimestampMillis", "(J)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setRssi(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetRssi(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setRssi", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setStatus(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetStatus(int arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setStatus", "(I)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.Builder.html#setUnverifiedResponderLocation(android.net.wifi.rtt.ResponderLocation)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.Rtt.ResponderLocation"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.RangingResult.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.RangingResult.Builder SetUnverifiedResponderLocation(Android.Net.Wifi.Rtt.ResponderLocation arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.RangingResult.Builder>("setUnverifiedResponderLocation", "(Landroid/net/wifi/rtt/ResponderLocation;)Landroid/net/wifi/rtt/RangingResult$Builder;", arg0);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+    
         #endregion
 
         // TODO: complete the class

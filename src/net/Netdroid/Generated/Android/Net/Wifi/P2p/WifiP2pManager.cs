@@ -74,6 +74,42 @@ namespace Android.Net.Wifi.P2p
         private static int _ERRORContent = default;
         private static bool _ERRORReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#GROUP_CREATION_FAILURE_REASON_CONNECTION_CANCELLED"/>
+        /// </summary>
+        public static int GROUP_CREATION_FAILURE_REASON_CONNECTION_CANCELLED { get { if (!_GROUP_CREATION_FAILURE_REASON_CONNECTION_CANCELLEDReady) { _GROUP_CREATION_FAILURE_REASON_CONNECTION_CANCELLEDContent = SGetField<int>(LocalBridgeClazz, "GROUP_CREATION_FAILURE_REASON_CONNECTION_CANCELLED"); _GROUP_CREATION_FAILURE_REASON_CONNECTION_CANCELLEDReady = true; } return _GROUP_CREATION_FAILURE_REASON_CONNECTION_CANCELLEDContent; } }
+        private static int _GROUP_CREATION_FAILURE_REASON_CONNECTION_CANCELLEDContent = default;
+        private static bool _GROUP_CREATION_FAILURE_REASON_CONNECTION_CANCELLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#GROUP_CREATION_FAILURE_REASON_GROUP_REMOVED"/>
+        /// </summary>
+        public static int GROUP_CREATION_FAILURE_REASON_GROUP_REMOVED { get { if (!_GROUP_CREATION_FAILURE_REASON_GROUP_REMOVEDReady) { _GROUP_CREATION_FAILURE_REASON_GROUP_REMOVEDContent = SGetField<int>(LocalBridgeClazz, "GROUP_CREATION_FAILURE_REASON_GROUP_REMOVED"); _GROUP_CREATION_FAILURE_REASON_GROUP_REMOVEDReady = true; } return _GROUP_CREATION_FAILURE_REASON_GROUP_REMOVEDContent; } }
+        private static int _GROUP_CREATION_FAILURE_REASON_GROUP_REMOVEDContent = default;
+        private static bool _GROUP_CREATION_FAILURE_REASON_GROUP_REMOVEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#GROUP_CREATION_FAILURE_REASON_INVITATION_FAILED"/>
+        /// </summary>
+        public static int GROUP_CREATION_FAILURE_REASON_INVITATION_FAILED { get { if (!_GROUP_CREATION_FAILURE_REASON_INVITATION_FAILEDReady) { _GROUP_CREATION_FAILURE_REASON_INVITATION_FAILEDContent = SGetField<int>(LocalBridgeClazz, "GROUP_CREATION_FAILURE_REASON_INVITATION_FAILED"); _GROUP_CREATION_FAILURE_REASON_INVITATION_FAILEDReady = true; } return _GROUP_CREATION_FAILURE_REASON_INVITATION_FAILEDContent; } }
+        private static int _GROUP_CREATION_FAILURE_REASON_INVITATION_FAILEDContent = default;
+        private static bool _GROUP_CREATION_FAILURE_REASON_INVITATION_FAILEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#GROUP_CREATION_FAILURE_REASON_PROVISION_DISCOVERY_FAILED"/>
+        /// </summary>
+        public static int GROUP_CREATION_FAILURE_REASON_PROVISION_DISCOVERY_FAILED { get { if (!_GROUP_CREATION_FAILURE_REASON_PROVISION_DISCOVERY_FAILEDReady) { _GROUP_CREATION_FAILURE_REASON_PROVISION_DISCOVERY_FAILEDContent = SGetField<int>(LocalBridgeClazz, "GROUP_CREATION_FAILURE_REASON_PROVISION_DISCOVERY_FAILED"); _GROUP_CREATION_FAILURE_REASON_PROVISION_DISCOVERY_FAILEDReady = true; } return _GROUP_CREATION_FAILURE_REASON_PROVISION_DISCOVERY_FAILEDContent; } }
+        private static int _GROUP_CREATION_FAILURE_REASON_PROVISION_DISCOVERY_FAILEDContent = default;
+        private static bool _GROUP_CREATION_FAILURE_REASON_PROVISION_DISCOVERY_FAILEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#GROUP_CREATION_FAILURE_REASON_TIMED_OUT"/>
+        /// </summary>
+        public static int GROUP_CREATION_FAILURE_REASON_TIMED_OUT { get { if (!_GROUP_CREATION_FAILURE_REASON_TIMED_OUTReady) { _GROUP_CREATION_FAILURE_REASON_TIMED_OUTContent = SGetField<int>(LocalBridgeClazz, "GROUP_CREATION_FAILURE_REASON_TIMED_OUT"); _GROUP_CREATION_FAILURE_REASON_TIMED_OUTReady = true; } return _GROUP_CREATION_FAILURE_REASON_TIMED_OUTContent; } }
+        private static int _GROUP_CREATION_FAILURE_REASON_TIMED_OUTContent = default;
+        private static bool _GROUP_CREATION_FAILURE_REASON_TIMED_OUTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#GROUP_CREATION_FAILURE_REASON_USER_REJECTED"/>
+        /// </summary>
+        public static int GROUP_CREATION_FAILURE_REASON_USER_REJECTED { get { if (!_GROUP_CREATION_FAILURE_REASON_USER_REJECTEDReady) { _GROUP_CREATION_FAILURE_REASON_USER_REJECTEDContent = SGetField<int>(LocalBridgeClazz, "GROUP_CREATION_FAILURE_REASON_USER_REJECTED"); _GROUP_CREATION_FAILURE_REASON_USER_REJECTEDReady = true; } return _GROUP_CREATION_FAILURE_REASON_USER_REJECTEDContent; } }
+        private static int _GROUP_CREATION_FAILURE_REASON_USER_REJECTEDContent = default;
+        private static bool _GROUP_CREATION_FAILURE_REASON_USER_REJECTEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#NO_SERVICE_REQUESTS"/>
         /// </summary>
         public static int NO_SERVICE_REQUESTS { get { if (!_NO_SERVICE_REQUESTSReady) { _NO_SERVICE_REQUESTSContent = SGetField<int>(LocalBridgeClazz, "NO_SERVICE_REQUESTS"); _NO_SERVICE_REQUESTSReady = true; } return _NO_SERVICE_REQUESTSContent; } }
@@ -109,6 +145,24 @@ namespace Android.Net.Wifi.P2p
         public static int WIFI_P2P_LISTEN_STOPPED { get { if (!_WIFI_P2P_LISTEN_STOPPEDReady) { _WIFI_P2P_LISTEN_STOPPEDContent = SGetField<int>(LocalBridgeClazz, "WIFI_P2P_LISTEN_STOPPED"); _WIFI_P2P_LISTEN_STOPPEDReady = true; } return _WIFI_P2P_LISTEN_STOPPEDContent; } }
         private static int _WIFI_P2P_LISTEN_STOPPEDContent = default;
         private static bool _WIFI_P2P_LISTEN_STOPPEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_SCAN_FULL"/>
+        /// </summary>
+        public static int WIFI_P2P_SCAN_FULL { get { if (!_WIFI_P2P_SCAN_FULLReady) { _WIFI_P2P_SCAN_FULLContent = SGetField<int>(LocalBridgeClazz, "WIFI_P2P_SCAN_FULL"); _WIFI_P2P_SCAN_FULLReady = true; } return _WIFI_P2P_SCAN_FULLContent; } }
+        private static int _WIFI_P2P_SCAN_FULLContent = default;
+        private static bool _WIFI_P2P_SCAN_FULLReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_SCAN_SINGLE_FREQ"/>
+        /// </summary>
+        public static int WIFI_P2P_SCAN_SINGLE_FREQ { get { if (!_WIFI_P2P_SCAN_SINGLE_FREQReady) { _WIFI_P2P_SCAN_SINGLE_FREQContent = SGetField<int>(LocalBridgeClazz, "WIFI_P2P_SCAN_SINGLE_FREQ"); _WIFI_P2P_SCAN_SINGLE_FREQReady = true; } return _WIFI_P2P_SCAN_SINGLE_FREQContent; } }
+        private static int _WIFI_P2P_SCAN_SINGLE_FREQContent = default;
+        private static bool _WIFI_P2P_SCAN_SINGLE_FREQReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_SCAN_SOCIAL"/>
+        /// </summary>
+        public static int WIFI_P2P_SCAN_SOCIAL { get { if (!_WIFI_P2P_SCAN_SOCIALReady) { _WIFI_P2P_SCAN_SOCIALContent = SGetField<int>(LocalBridgeClazz, "WIFI_P2P_SCAN_SOCIAL"); _WIFI_P2P_SCAN_SOCIALReady = true; } return _WIFI_P2P_SCAN_SOCIALContent; } }
+        private static int _WIFI_P2P_SCAN_SOCIALContent = default;
+        private static bool _WIFI_P2P_SCAN_SOCIALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_STATE_DISABLED"/>
         /// </summary>
@@ -416,6 +470,15 @@ namespace Android.Net.Wifi.P2p
             IExecute("getListenState", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#registerWifiP2pListener(java.util.concurrent.Executor,android.net.wifi.p2p.WifiP2pManager.WifiP2pListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener"/></param>
+        public void RegisterWifiP2pListener(Java.Util.Concurrent.Executor arg0, Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener arg1)
+        {
+            IExecute("registerWifiP2pListener", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeClient(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.Channel"/></param>
@@ -608,6 +671,16 @@ namespace Android.Net.Wifi.P2p
             IExecute("startListening", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#startPeerDiscovery(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pDiscoveryConfig,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.Channel"/></param>
+        /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pDiscoveryConfig"/></param>
+        /// <param name="arg2"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener"/></param>
+        public void StartPeerDiscovery(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pDiscoveryConfig arg1, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg2)
+        {
+            IExecute("startPeerDiscovery", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#stopListening(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.Channel"/></param>
@@ -624,6 +697,14 @@ namespace Android.Net.Wifi.P2p
         public void StopPeerDiscovery(Android.Net.Wifi.P2p.WifiP2pManager.Channel arg0, Android.Net.Wifi.P2p.WifiP2pManager.ActionListener arg1)
         {
             IExecute("stopPeerDiscovery", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#unregisterWifiP2pListener(android.net.wifi.p2p.WifiP2pManager.WifiP2pListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener"/></param>
+        public void UnregisterWifiP2pListener(Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener arg0)
+        {
+            IExecuteWithSignature("unregisterWifiP2pListener", "(Landroid/net/wifi/p2p/WifiP2pManager$WifiP2pListener;)V", arg0);
         }
 
         #endregion
@@ -2179,6 +2260,598 @@ namespace Android.Net.Wifi.P2p
             public override void OnUpnpServiceAvailable(Java.Util.List<Java.Lang.String> arg0, Android.Net.Wifi.P2p.WifiP2pDevice arg1)
             {
                 IExecute("onUpnpServiceAvailable", arg0, arg1);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region WifiP2pListener
+        public partial class WifiP2pListener
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// Handlers initializer for <see cref="WifiP2pListener"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("onDeviceConfigurationChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pDevice>>>(OnDeviceConfigurationChangedEventHandler));
+                AddEventHandler("onDiscoveryStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDiscoveryStateChangedEventHandler));
+                AddEventHandler("onFrequencyChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pInfo>>>(OnFrequencyChangedEventHandler));
+                AddEventHandler("onGroupCreated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pInfo>>>(OnGroupCreatedEventHandler));
+                AddEventHandler("onGroupCreating", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnGroupCreatingEventHandler));
+                AddEventHandler("onGroupCreationFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnGroupCreationFailedEventHandler));
+                AddEventHandler("onGroupNegotiationRejectedByUser", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnGroupNegotiationRejectedByUserEventHandler));
+                AddEventHandler("onGroupRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnGroupRemovedEventHandler));
+                AddEventHandler("onListenStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnListenStateChangedEventHandler));
+                AddEventHandler("onP2pStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnP2pStateChangedEventHandler));
+                AddEventHandler("onPeerClientDisconnected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pInfo>>>(OnPeerClientDisconnectedEventHandler));
+                AddEventHandler("onPeerClientJoined", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pInfo>>>(OnPeerClientJoinedEventHandler));
+                AddEventHandler("onPeerListChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pDeviceList>>>(OnPeerListChangedEventHandler));
+
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDeviceConfigurationChanged(android.net.wifi.p2p.WifiP2pDevice)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pDevice"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnDeviceConfigurationChangedDefault(Android.Net.Wifi.P2p.WifiP2pDevice arg0)
+            {
+                IExecuteWithSignature("onDeviceConfigurationChangedDefault", "(Landroid/net/wifi/p2p/WifiP2pDevice;)V", arg0);
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDeviceConfigurationChanged(android.net.wifi.p2p.WifiP2pDevice)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnDeviceConfigurationChanged"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<Android.Net.Wifi.P2p.WifiP2pDevice> OnOnDeviceConfigurationChanged { get; set; } = null;
+
+            void OnDeviceConfigurationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pDevice>> data)
+            {
+                var methodToExecute = (OnOnDeviceConfigurationChanged != null) ? OnOnDeviceConfigurationChanged : OnDeviceConfigurationChanged;
+                methodToExecute.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDeviceConfigurationChanged(android.net.wifi.p2p.WifiP2pDevice)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pDevice"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnDeviceConfigurationChangedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnDeviceConfigurationChanged(Android.Net.Wifi.P2p.WifiP2pDevice arg0)
+            {
+                OnDeviceConfigurationChangedDefault(arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDiscoveryStateChanged(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnDiscoveryStateChangedDefault(int arg0)
+            {
+                IExecuteWithSignature("onDiscoveryStateChangedDefault", "(I)V", arg0);
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDiscoveryStateChanged(int)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnDiscoveryStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<int> OnOnDiscoveryStateChanged { get; set; } = null;
+
+            void OnDiscoveryStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+            {
+                var methodToExecute = (OnOnDiscoveryStateChanged != null) ? OnOnDiscoveryStateChanged : OnDiscoveryStateChanged;
+                methodToExecute.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDiscoveryStateChanged(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnDiscoveryStateChangedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnDiscoveryStateChanged(int arg0)
+            {
+                OnDiscoveryStateChangedDefault(arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onFrequencyChanged(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pInfo"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnFrequencyChangedDefault(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
+            {
+                IExecute("onFrequencyChangedDefault", arg0, arg1);
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onFrequencyChanged(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnFrequencyChanged"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<Android.Net.Wifi.P2p.WifiP2pInfo, Android.Net.Wifi.P2p.WifiP2pGroup> OnOnFrequencyChanged { get; set; } = null;
+
+            void OnFrequencyChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pInfo>> data)
+            {
+                var methodToExecute = (OnOnFrequencyChanged != null) ? OnOnFrequencyChanged : OnFrequencyChanged;
+                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pGroup>(0));
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onFrequencyChanged(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pInfo"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnFrequencyChangedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnFrequencyChanged(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
+            {
+                OnFrequencyChangedDefault(arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreated(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pInfo"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnGroupCreatedDefault(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
+            {
+                IExecute("onGroupCreatedDefault", arg0, arg1);
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreated(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnGroupCreated"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<Android.Net.Wifi.P2p.WifiP2pInfo, Android.Net.Wifi.P2p.WifiP2pGroup> OnOnGroupCreated { get; set; } = null;
+
+            void OnGroupCreatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pInfo>> data)
+            {
+                var methodToExecute = (OnOnGroupCreated != null) ? OnOnGroupCreated : OnGroupCreated;
+                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pGroup>(0));
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreated(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pInfo"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnGroupCreatedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnGroupCreated(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
+            {
+                OnGroupCreatedDefault(arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreating()"/>
+            /// </summary>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnGroupCreatingDefault()
+            {
+                IExecuteWithSignature("onGroupCreatingDefault", "()V");
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreating()"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnGroupCreating"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action OnOnGroupCreating { get; set; } = null;
+
+            void OnGroupCreatingEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                var methodToExecute = (OnOnGroupCreating != null) ? OnOnGroupCreating : OnGroupCreating;
+                methodToExecute.Invoke();
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreating()"/>
+            /// </summary>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnGroupCreatingDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnGroupCreating()
+            {
+                OnGroupCreatingDefault();
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreationFailed(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnGroupCreationFailedDefault(int arg0)
+            {
+                IExecuteWithSignature("onGroupCreationFailedDefault", "(I)V", arg0);
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreationFailed(int)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnGroupCreationFailed"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<int> OnOnGroupCreationFailed { get; set; } = null;
+
+            void OnGroupCreationFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+            {
+                var methodToExecute = (OnOnGroupCreationFailed != null) ? OnOnGroupCreationFailed : OnGroupCreationFailed;
+                methodToExecute.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreationFailed(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnGroupCreationFailedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnGroupCreationFailed(int arg0)
+            {
+                OnGroupCreationFailedDefault(arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupNegotiationRejectedByUser()"/>
+            /// </summary>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnGroupNegotiationRejectedByUserDefault()
+            {
+                IExecuteWithSignature("onGroupNegotiationRejectedByUserDefault", "()V");
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupNegotiationRejectedByUser()"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnGroupNegotiationRejectedByUser"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action OnOnGroupNegotiationRejectedByUser { get; set; } = null;
+
+            void OnGroupNegotiationRejectedByUserEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                var methodToExecute = (OnOnGroupNegotiationRejectedByUser != null) ? OnOnGroupNegotiationRejectedByUser : OnGroupNegotiationRejectedByUser;
+                methodToExecute.Invoke();
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupNegotiationRejectedByUser()"/>
+            /// </summary>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnGroupNegotiationRejectedByUserDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnGroupNegotiationRejectedByUser()
+            {
+                OnGroupNegotiationRejectedByUserDefault();
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupRemoved()"/>
+            /// </summary>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnGroupRemovedDefault()
+            {
+                IExecuteWithSignature("onGroupRemovedDefault", "()V");
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupRemoved()"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnGroupRemoved"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action OnOnGroupRemoved { get; set; } = null;
+
+            void OnGroupRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                var methodToExecute = (OnOnGroupRemoved != null) ? OnOnGroupRemoved : OnGroupRemoved;
+                methodToExecute.Invoke();
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupRemoved()"/>
+            /// </summary>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnGroupRemovedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnGroupRemoved()
+            {
+                OnGroupRemovedDefault();
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onListenStateChanged(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnListenStateChangedDefault(int arg0)
+            {
+                IExecuteWithSignature("onListenStateChangedDefault", "(I)V", arg0);
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onListenStateChanged(int)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnListenStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<int> OnOnListenStateChanged { get; set; } = null;
+
+            void OnListenStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+            {
+                var methodToExecute = (OnOnListenStateChanged != null) ? OnOnListenStateChanged : OnListenStateChanged;
+                methodToExecute.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onListenStateChanged(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnListenStateChangedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnListenStateChanged(int arg0)
+            {
+                OnListenStateChangedDefault(arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onP2pStateChanged(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnP2pStateChangedDefault(int arg0)
+            {
+                IExecuteWithSignature("onP2pStateChangedDefault", "(I)V", arg0);
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onP2pStateChanged(int)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnP2pStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<int> OnOnP2pStateChanged { get; set; } = null;
+
+            void OnP2pStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+            {
+                var methodToExecute = (OnOnP2pStateChanged != null) ? OnOnP2pStateChanged : OnP2pStateChanged;
+                methodToExecute.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onP2pStateChanged(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnP2pStateChangedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnP2pStateChanged(int arg0)
+            {
+                OnP2pStateChangedDefault(arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientDisconnected(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pInfo"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnPeerClientDisconnectedDefault(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
+            {
+                IExecute("onPeerClientDisconnectedDefault", arg0, arg1);
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientDisconnected(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnPeerClientDisconnected"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<Android.Net.Wifi.P2p.WifiP2pInfo, Android.Net.Wifi.P2p.WifiP2pGroup> OnOnPeerClientDisconnected { get; set; } = null;
+
+            void OnPeerClientDisconnectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pInfo>> data)
+            {
+                var methodToExecute = (OnOnPeerClientDisconnected != null) ? OnOnPeerClientDisconnected : OnPeerClientDisconnected;
+                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pGroup>(0));
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientDisconnected(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pInfo"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPeerClientDisconnectedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnPeerClientDisconnected(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
+            {
+                OnPeerClientDisconnectedDefault(arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientJoined(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pInfo"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnPeerClientJoinedDefault(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
+            {
+                IExecute("onPeerClientJoinedDefault", arg0, arg1);
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientJoined(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnPeerClientJoined"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<Android.Net.Wifi.P2p.WifiP2pInfo, Android.Net.Wifi.P2p.WifiP2pGroup> OnOnPeerClientJoined { get; set; } = null;
+
+            void OnPeerClientJoinedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pInfo>> data)
+            {
+                var methodToExecute = (OnOnPeerClientJoined != null) ? OnOnPeerClientJoined : OnPeerClientJoined;
+                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Net.Wifi.P2p.WifiP2pGroup>(0));
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientJoined(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pInfo"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPeerClientJoinedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnPeerClientJoined(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
+            {
+                OnPeerClientJoinedDefault(arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerListChanged(android.net.wifi.p2p.WifiP2pDeviceList)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pDeviceList"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnPeerListChangedDefault(Android.Net.Wifi.P2p.WifiP2pDeviceList arg0)
+            {
+                IExecuteWithSignature("onPeerListChangedDefault", "(Landroid/net/wifi/p2p/WifiP2pDeviceList;)V", arg0);
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerListChanged(android.net.wifi.p2p.WifiP2pDeviceList)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnPeerListChanged"/> has a value it takes precedence over corresponding class method</remarks>
+            public global::System.Action<Android.Net.Wifi.P2p.WifiP2pDeviceList> OnOnPeerListChanged { get; set; } = null;
+
+            void OnPeerListChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pDeviceList>> data)
+            {
+                var methodToExecute = (OnOnPeerListChanged != null) ? OnOnPeerListChanged : OnPeerListChanged;
+                methodToExecute.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerListChanged(android.net.wifi.p2p.WifiP2pDeviceList)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pDeviceList"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPeerListChangedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnPeerListChanged(Android.Net.Wifi.P2p.WifiP2pDeviceList arg0)
+            {
+                OnPeerListChangedDefault(arg0);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region WifiP2pListenerDirect
+        public partial class WifiP2pListenerDirect
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDeviceConfigurationChanged(android.net.wifi.p2p.WifiP2pDevice)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pDevice"/></param>
+            public override void OnDeviceConfigurationChanged(Android.Net.Wifi.P2p.WifiP2pDevice arg0)
+            {
+                IExecuteWithSignature("onDeviceConfigurationChanged", "(Landroid/net/wifi/p2p/WifiP2pDevice;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDiscoveryStateChanged(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public override void OnDiscoveryStateChanged(int arg0)
+            {
+                IExecuteWithSignature("onDiscoveryStateChanged", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onFrequencyChanged(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pInfo"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
+            public override void OnFrequencyChanged(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
+            {
+                IExecute("onFrequencyChanged", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreated(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pInfo"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
+            public override void OnGroupCreated(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
+            {
+                IExecute("onGroupCreated", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreating()"/>
+            /// </summary>
+            public override void OnGroupCreating()
+            {
+                IExecuteWithSignature("onGroupCreating", "()V");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreationFailed(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public override void OnGroupCreationFailed(int arg0)
+            {
+                IExecuteWithSignature("onGroupCreationFailed", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupNegotiationRejectedByUser()"/>
+            /// </summary>
+            public override void OnGroupNegotiationRejectedByUser()
+            {
+                IExecuteWithSignature("onGroupNegotiationRejectedByUser", "()V");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupRemoved()"/>
+            /// </summary>
+            public override void OnGroupRemoved()
+            {
+                IExecuteWithSignature("onGroupRemoved", "()V");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onListenStateChanged(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public override void OnListenStateChanged(int arg0)
+            {
+                IExecuteWithSignature("onListenStateChanged", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onP2pStateChanged(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public override void OnP2pStateChanged(int arg0)
+            {
+                IExecuteWithSignature("onP2pStateChanged", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientDisconnected(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pInfo"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
+            public override void OnPeerClientDisconnected(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
+            {
+                IExecute("onPeerClientDisconnected", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientJoined(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pInfo"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Wifi.P2p.WifiP2pGroup"/></param>
+            public override void OnPeerClientJoined(Android.Net.Wifi.P2p.WifiP2pInfo arg0, Android.Net.Wifi.P2p.WifiP2pGroup arg1)
+            {
+                IExecute("onPeerClientJoined", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerListChanged(android.net.wifi.p2p.WifiP2pDeviceList)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.P2p.WifiP2pDeviceList"/></param>
+            public override void OnPeerListChanged(Android.Net.Wifi.P2p.WifiP2pDeviceList arg0)
+            {
+                IExecuteWithSignature("onPeerListChanged", "(Landroid/net/wifi/p2p/WifiP2pDeviceList;)V", arg0);
             }
 
             #endregion

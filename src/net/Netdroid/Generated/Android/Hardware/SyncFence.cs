@@ -29,6 +29,14 @@ namespace Android.Hardware
     public partial class SyncFence : Java.Lang.IAutoCloseable, Android.Os.IParcelable
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SyncFence.html#%3Cinit%3E(android.hardware.SyncFence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.SyncFence"/></param>
+        public SyncFence(Android.Hardware.SyncFence arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 
