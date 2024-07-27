@@ -196,8 +196,10 @@ RUN echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "platform-tools" && \
 # Install some useful packages
 RUN echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "extras;google;google_play_services"
 
+ADD ./jars /app/jars
+
 ENV JCOBRIDGE_LicensePath=
 
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "MASES.NetdroidCLI.dll"]
+ENTRYPOINT ["/app/MASES.NetdroidCLI"]

@@ -232,9 +232,11 @@ RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key ad
 	sudo apt-get update && sudo apt-get install -y google-cloud-sdk=${GCLOUD_VERSION} && \
 	sudo gcloud config set --installation component_manager/disable_update_check true && \
 	sudo gcloud config set disable_usage_reporting false
+
+ADD ./jars /app/jars
 	
 ENV JCOBRIDGE_LicensePath=
 
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "MASES.NetdroidCLI.dll"]
+ENTRYPOINT ["/app/MASES.NetdroidCLI"]
