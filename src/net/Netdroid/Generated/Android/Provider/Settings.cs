@@ -164,6 +164,12 @@ namespace Android.Provider
         private static Java.Lang.String _ACTION_AUTO_ROTATE_SETTINGSContent = default;
         private static bool _ACTION_AUTO_ROTATE_SETTINGSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_AUTOMATIC_ZEN_RULE_SETTINGS"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_AUTOMATIC_ZEN_RULE_SETTINGS { get { if (!_ACTION_AUTOMATIC_ZEN_RULE_SETTINGSReady) { _ACTION_AUTOMATIC_ZEN_RULE_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_AUTOMATIC_ZEN_RULE_SETTINGS"); _ACTION_AUTOMATIC_ZEN_RULE_SETTINGSReady = true; } return _ACTION_AUTOMATIC_ZEN_RULE_SETTINGSContent; } }
+        private static Java.Lang.String _ACTION_AUTOMATIC_ZEN_RULE_SETTINGSContent = default;
+        private static bool _ACTION_AUTOMATIC_ZEN_RULE_SETTINGSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_BATTERY_SAVER_SETTINGS"/>
         /// </summary>
         public static Java.Lang.String ACTION_BATTERY_SAVER_SETTINGS { get { if (!_ACTION_BATTERY_SAVER_SETTINGSReady) { _ACTION_BATTERY_SAVER_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_BATTERY_SAVER_SETTINGS"); _ACTION_BATTERY_SAVER_SETTINGSReady = true; } return _ACTION_BATTERY_SAVER_SETTINGSContent; } }
@@ -205,6 +211,12 @@ namespace Android.Provider
         public static Java.Lang.String ACTION_CONDITION_PROVIDER_SETTINGS { get { if (!_ACTION_CONDITION_PROVIDER_SETTINGSReady) { _ACTION_CONDITION_PROVIDER_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_CONDITION_PROVIDER_SETTINGS"); _ACTION_CONDITION_PROVIDER_SETTINGSReady = true; } return _ACTION_CONDITION_PROVIDER_SETTINGSContent; } }
         private static Java.Lang.String _ACTION_CONDITION_PROVIDER_SETTINGSContent = default;
         private static bool _ACTION_CONDITION_PROVIDER_SETTINGSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_CREDENTIAL_PROVIDER"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_CREDENTIAL_PROVIDER { get { if (!_ACTION_CREDENTIAL_PROVIDERReady) { _ACTION_CREDENTIAL_PROVIDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_CREDENTIAL_PROVIDER"); _ACTION_CREDENTIAL_PROVIDERReady = true; } return _ACTION_CREDENTIAL_PROVIDERContent; } }
+        private static Java.Lang.String _ACTION_CREDENTIAL_PROVIDERContent = default;
+        private static bool _ACTION_CREDENTIAL_PROVIDERReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_DATA_ROAMING_SETTINGS"/>
         /// </summary>
@@ -477,6 +489,12 @@ namespace Android.Provider
         private static Java.Lang.String _ACTION_REQUEST_MANAGE_MEDIAContent = default;
         private static bool _ACTION_REQUEST_MANAGE_MEDIAReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_REQUEST_MEDIA_ROUTING_CONTROL"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_REQUEST_MEDIA_ROUTING_CONTROL { get { if (!_ACTION_REQUEST_MEDIA_ROUTING_CONTROLReady) { _ACTION_REQUEST_MEDIA_ROUTING_CONTROLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_REQUEST_MEDIA_ROUTING_CONTROL"); _ACTION_REQUEST_MEDIA_ROUTING_CONTROLReady = true; } return _ACTION_REQUEST_MEDIA_ROUTING_CONTROLContent; } }
+        private static Java.Lang.String _ACTION_REQUEST_MEDIA_ROUTING_CONTROLContent = default;
+        private static bool _ACTION_REQUEST_MEDIA_ROUTING_CONTROLReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_REQUEST_SCHEDULE_EXACT_ALARM"/>
         /// </summary>
         public static Java.Lang.String ACTION_REQUEST_SCHEDULE_EXACT_ALARM { get { if (!_ACTION_REQUEST_SCHEDULE_EXACT_ALARMReady) { _ACTION_REQUEST_SCHEDULE_EXACT_ALARMContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_REQUEST_SCHEDULE_EXACT_ALARM"); _ACTION_REQUEST_SCHEDULE_EXACT_ALARMReady = true; } return _ACTION_REQUEST_SCHEDULE_EXACT_ALARMContent; } }
@@ -488,6 +506,12 @@ namespace Android.Provider
         public static Java.Lang.String ACTION_REQUEST_SET_AUTOFILL_SERVICE { get { if (!_ACTION_REQUEST_SET_AUTOFILL_SERVICEReady) { _ACTION_REQUEST_SET_AUTOFILL_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_REQUEST_SET_AUTOFILL_SERVICE"); _ACTION_REQUEST_SET_AUTOFILL_SERVICEReady = true; } return _ACTION_REQUEST_SET_AUTOFILL_SERVICEContent; } }
         private static Java.Lang.String _ACTION_REQUEST_SET_AUTOFILL_SERVICEContent = default;
         private static bool _ACTION_REQUEST_SET_AUTOFILL_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_SATELLITE_SETTING"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_SATELLITE_SETTING { get { if (!_ACTION_SATELLITE_SETTINGReady) { _ACTION_SATELLITE_SETTINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_SATELLITE_SETTING"); _ACTION_SATELLITE_SETTINGReady = true; } return _ACTION_SATELLITE_SETTINGContent; } }
+        private static Java.Lang.String _ACTION_SATELLITE_SETTINGContent = default;
+        private static bool _ACTION_SATELLITE_SETTINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_SEARCH_SETTINGS"/>
         /// </summary>
@@ -657,6 +681,12 @@ namespace Android.Provider
         public static Java.Lang.String EXTRA_AUTHORITIES { get { if (!_EXTRA_AUTHORITIESReady) { _EXTRA_AUTHORITIESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_AUTHORITIES"); _EXTRA_AUTHORITIESReady = true; } return _EXTRA_AUTHORITIESContent; } }
         private static Java.Lang.String _EXTRA_AUTHORITIESContent = default;
         private static bool _EXTRA_AUTHORITIESReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Settings.html#EXTRA_AUTOMATIC_ZEN_RULE_ID"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_AUTOMATIC_ZEN_RULE_ID { get { if (!_EXTRA_AUTOMATIC_ZEN_RULE_IDReady) { _EXTRA_AUTOMATIC_ZEN_RULE_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_AUTOMATIC_ZEN_RULE_ID"); _EXTRA_AUTOMATIC_ZEN_RULE_IDReady = true; } return _EXTRA_AUTOMATIC_ZEN_RULE_IDContent; } }
+        private static Java.Lang.String _EXTRA_AUTOMATIC_ZEN_RULE_IDContent = default;
+        private static bool _EXTRA_AUTOMATIC_ZEN_RULE_IDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#EXTRA_BATTERY_SAVER_MODE_ENABLED"/>
         /// </summary>

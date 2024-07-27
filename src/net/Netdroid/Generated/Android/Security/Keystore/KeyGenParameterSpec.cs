@@ -70,6 +70,14 @@ namespace Android.Security.Keystore
             return IExecuteWithSignature<bool>("isInvalidatedByBiometricEnrollment", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.html#isMgf1DigestsSpecified()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsMgf1DigestsSpecified()
+        {
+            return IExecuteWithSignature<bool>("isMgf1DigestsSpecified", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.html#isRandomizedEncryptionRequired()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -276,6 +284,14 @@ namespace Android.Security.Keystore
         public Java.Util.Date GetKeyValidityStart()
         {
             return IExecuteWithSignature<Java.Util.Date>("getKeyValidityStart", "()Ljava/util/Date;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.html#getMgf1Digests()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetMgf1Digests()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getMgf1Digests", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.html#getCertificateSubject()"/>
@@ -496,6 +512,15 @@ namespace Android.Security.Keystore
             public Android.Security.Keystore.KeyGenParameterSpec.Builder SetMaxUsageCount(int arg0)
             {
                 return IExecuteWithSignature<Android.Security.Keystore.KeyGenParameterSpec.Builder>("setMaxUsageCount", "(I)Landroid/security/keystore/KeyGenParameterSpec$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.Builder.html#setMgf1Digests(java.lang.String[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.Security.Keystore.KeyGenParameterSpec.Builder"/></returns>
+            public Android.Security.Keystore.KeyGenParameterSpec.Builder SetMgf1Digests(params Java.Lang.String[] arg0)
+            {
+                if (arg0.Length == 0) return IExecuteWithSignature<Android.Security.Keystore.KeyGenParameterSpec.Builder>("setMgf1Digests", "([Ljava/lang/String;)Landroid/security/keystore/KeyGenParameterSpec$Builder;"); else return IExecuteWithSignature<Android.Security.Keystore.KeyGenParameterSpec.Builder>("setMgf1Digests", "([Ljava/lang/String;)Landroid/security/keystore/KeyGenParameterSpec$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.Builder.html#setRandomizedEncryptionRequired(boolean)"/>

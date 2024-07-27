@@ -38,6 +38,12 @@ namespace Android.View.Inputmethod
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED"/>
+        /// </summary>
+        public static int HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED { get { if (!_HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWEDReady) { _HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWEDContent = SGetField<int>(LocalBridgeClazz, "HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED"); _HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWEDReady = true; } return _HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWEDContent; } }
+        private static int _HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWEDContent = default;
+        private static bool _HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#HIDE_IMPLICIT_ONLY"/>
         /// </summary>
         public static int HIDE_IMPLICIT_ONLY { get { if (!_HIDE_IMPLICIT_ONLYReady) { _HIDE_IMPLICIT_ONLYContent = SGetField<int>(LocalBridgeClazz, "HIDE_IMPLICIT_ONLY"); _HIDE_IMPLICIT_ONLYReady = true; } return _HIDE_IMPLICIT_ONLYContent; } }
@@ -184,6 +190,14 @@ namespace Android.View.Inputmethod
             return IExecuteWithSignature<bool>("isActive", "(Landroid/view/View;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isConnectionlessStylusHandwritingAvailable()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsConnectionlessStylusHandwritingAvailable()
+        {
+            return IExecuteWithSignature<bool>("isConnectionlessStylusHandwritingAvailable", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isFullscreenMode()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -312,6 +326,29 @@ namespace Android.View.Inputmethod
         public Java.Util.Map<Android.View.Inputmethod.InputMethodInfo, Java.Util.List<Android.View.Inputmethod.InputMethodSubtype>> GetShortcutInputMethodsAndSubtypes()
         {
             return IExecuteWithSignature<Java.Util.Map<Android.View.Inputmethod.InputMethodInfo, Java.Util.List<Android.View.Inputmethod.InputMethodSubtype>>>("getShortcutInputMethodsAndSubtypes", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#acceptStylusHandwritingDelegation(android.view.View,java.lang.String,int,java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg4"><see cref="Java.Util.Function.Consumer"/></param>
+        public void AcceptStylusHandwritingDelegation(Android.View.View arg0, Java.Lang.String arg1, int arg2, Java.Util.Concurrent.Executor arg3, Java.Util.Function.Consumer<Java.Lang.Boolean> arg4)
+        {
+            IExecute("acceptStylusHandwritingDelegation", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#acceptStylusHandwritingDelegation(android.view.View,java.lang.String,java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
+        public void AcceptStylusHandwritingDelegation(Android.View.View arg0, Java.Lang.String arg1, Java.Util.Concurrent.Executor arg2, Java.Util.Function.Consumer<Java.Lang.Boolean> arg3)
+        {
+            IExecute("acceptStylusHandwritingDelegation", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#dispatchKeyEventFromInputMethod(android.view.View,android.view.KeyEvent)"/>
@@ -468,6 +505,40 @@ namespace Android.View.Inputmethod
         public void ShowStatusIcon(Android.Os.IBinder arg0, Java.Lang.String arg1, int arg2)
         {
             IExecute("showStatusIcon", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startConnectionlessStylusHandwriting(android.view.View,android.view.inputmethod.CursorAnchorInfo,java.util.concurrent.Executor,android.view.inputmethod.ConnectionlessHandwritingCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="Android.View.Inputmethod.CursorAnchorInfo"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg3"><see cref="Android.View.Inputmethod.ConnectionlessHandwritingCallback"/></param>
+        public void StartConnectionlessStylusHandwriting(Android.View.View arg0, Android.View.Inputmethod.CursorAnchorInfo arg1, Java.Util.Concurrent.Executor arg2, Android.View.Inputmethod.ConnectionlessHandwritingCallback arg3)
+        {
+            IExecute("startConnectionlessStylusHandwriting", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startConnectionlessStylusHandwritingForDelegation(android.view.View,android.view.inputmethod.CursorAnchorInfo,java.lang.String,java.util.concurrent.Executor,android.view.inputmethod.ConnectionlessHandwritingCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="Android.View.Inputmethod.CursorAnchorInfo"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg4"><see cref="Android.View.Inputmethod.ConnectionlessHandwritingCallback"/></param>
+        public void StartConnectionlessStylusHandwritingForDelegation(Android.View.View arg0, Android.View.Inputmethod.CursorAnchorInfo arg1, Java.Lang.String arg2, Java.Util.Concurrent.Executor arg3, Android.View.Inputmethod.ConnectionlessHandwritingCallback arg4)
+        {
+            IExecute("startConnectionlessStylusHandwritingForDelegation", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startConnectionlessStylusHandwritingForDelegation(android.view.View,android.view.inputmethod.CursorAnchorInfo,java.util.concurrent.Executor,android.view.inputmethod.ConnectionlessHandwritingCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="Android.View.Inputmethod.CursorAnchorInfo"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg3"><see cref="Android.View.Inputmethod.ConnectionlessHandwritingCallback"/></param>
+        public void StartConnectionlessStylusHandwritingForDelegation(Android.View.View arg0, Android.View.Inputmethod.CursorAnchorInfo arg1, Java.Util.Concurrent.Executor arg2, Android.View.Inputmethod.ConnectionlessHandwritingCallback arg3)
+        {
+            IExecute("startConnectionlessStylusHandwritingForDelegation", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startStylusHandwriting(android.view.View)"/>

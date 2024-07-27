@@ -52,6 +52,14 @@ namespace Android.Companion.Virtual
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDevice.html#hasCustomSensorSupport()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool HasCustomSensorSupport()
+        {
+            return IExecuteWithSignature<bool>("hasCustomSensorSupport", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDevice.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -68,12 +76,36 @@ namespace Android.Companion.Virtual
             return IExecuteWithSignature<int>("getDeviceId", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDevice.html#getDisplayIds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetDisplayIds()
+        {
+            return IExecuteWithSignatureArray<int>("getDisplayIds", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDevice.html#getDisplayName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDisplayName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDisplayName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDevice.html#getName()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName()
         {
             return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDevice.html#getPersistentDeviceId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPersistentDeviceId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPersistentDeviceId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDevice.html#writeToParcel(android.os.Parcel,int)"/>

@@ -581,6 +581,18 @@ namespace Android.Media
             private static Java.Lang.String _FEATURE_AdaptivePlaybackContent = default;
             private static bool _FEATURE_AdaptivePlaybackReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#FEATURE_DetachedSurface"/>
+            /// </summary>
+            public static Java.Lang.String FEATURE_DetachedSurface { get { if (!_FEATURE_DetachedSurfaceReady) { _FEATURE_DetachedSurfaceContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_DetachedSurface"); _FEATURE_DetachedSurfaceReady = true; } return _FEATURE_DetachedSurfaceContent; } }
+            private static Java.Lang.String _FEATURE_DetachedSurfaceContent = default;
+            private static bool _FEATURE_DetachedSurfaceReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#FEATURE_DynamicColorAspects"/>
+            /// </summary>
+            public static Java.Lang.String FEATURE_DynamicColorAspects { get { if (!_FEATURE_DynamicColorAspectsReady) { _FEATURE_DynamicColorAspectsContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_DynamicColorAspects"); _FEATURE_DynamicColorAspectsReady = true; } return _FEATURE_DynamicColorAspectsContent; } }
+            private static Java.Lang.String _FEATURE_DynamicColorAspectsContent = default;
+            private static bool _FEATURE_DynamicColorAspectsReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#FEATURE_DynamicTimestamp"/>
             /// </summary>
             public static Java.Lang.String FEATURE_DynamicTimestamp { get { if (!_FEATURE_DynamicTimestampReady) { _FEATURE_DynamicTimestampContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_DynamicTimestamp"); _FEATURE_DynamicTimestampReady = true; } return _FEATURE_DynamicTimestampContent; } }
@@ -604,6 +616,12 @@ namespace Android.Media
             public static Java.Lang.String FEATURE_HdrEditing { get { if (!_FEATURE_HdrEditingReady) { _FEATURE_HdrEditingContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_HdrEditing"); _FEATURE_HdrEditingReady = true; } return _FEATURE_HdrEditingContent; } }
             private static Java.Lang.String _FEATURE_HdrEditingContent = default;
             private static bool _FEATURE_HdrEditingReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#FEATURE_HlgEditing"/>
+            /// </summary>
+            public static Java.Lang.String FEATURE_HlgEditing { get { if (!_FEATURE_HlgEditingReady) { _FEATURE_HlgEditingContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_HlgEditing"); _FEATURE_HlgEditingReady = true; } return _FEATURE_HlgEditingContent; } }
+            private static Java.Lang.String _FEATURE_HlgEditingContent = default;
+            private static bool _FEATURE_HlgEditingReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#FEATURE_IntraRefresh"/>
             /// </summary>
@@ -634,6 +652,12 @@ namespace Android.Media
             public static Java.Lang.String FEATURE_QpBounds { get { if (!_FEATURE_QpBoundsReady) { _FEATURE_QpBoundsContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_QpBounds"); _FEATURE_QpBoundsReady = true; } return _FEATURE_QpBoundsContent; } }
             private static Java.Lang.String _FEATURE_QpBoundsContent = default;
             private static bool _FEATURE_QpBoundsReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#FEATURE_Roi"/>
+            /// </summary>
+            public static Java.Lang.String FEATURE_Roi { get { if (!_FEATURE_RoiReady) { _FEATURE_RoiContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_Roi"); _FEATURE_RoiReady = true; } return _FEATURE_RoiContent; } }
+            private static Java.Lang.String _FEATURE_RoiContent = default;
+            private static bool _FEATURE_RoiReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#FEATURE_SecurePlayback"/>
             /// </summary>

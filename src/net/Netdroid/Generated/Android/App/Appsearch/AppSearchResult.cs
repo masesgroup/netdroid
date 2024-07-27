@@ -38,6 +38,12 @@ namespace Android.App.Appsearch
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_DENIED"/>
+        /// </summary>
+        public static int RESULT_DENIED { get { if (!_RESULT_DENIEDReady) { _RESULT_DENIEDContent = SGetField<int>(LocalBridgeClazz, "RESULT_DENIED"); _RESULT_DENIEDReady = true; } return _RESULT_DENIEDContent; } }
+        private static int _RESULT_DENIEDContent = default;
+        private static bool _RESULT_DENIEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_INTERNAL_ERROR"/>
         /// </summary>
         public static int RESULT_INTERNAL_ERROR { get { if (!_RESULT_INTERNAL_ERRORReady) { _RESULT_INTERNAL_ERRORContent = SGetField<int>(LocalBridgeClazz, "RESULT_INTERNAL_ERROR"); _RESULT_INTERNAL_ERRORReady = true; } return _RESULT_INTERNAL_ERRORContent; } }
@@ -79,6 +85,12 @@ namespace Android.App.Appsearch
         public static int RESULT_OUT_OF_SPACE { get { if (!_RESULT_OUT_OF_SPACEReady) { _RESULT_OUT_OF_SPACEContent = SGetField<int>(LocalBridgeClazz, "RESULT_OUT_OF_SPACE"); _RESULT_OUT_OF_SPACEReady = true; } return _RESULT_OUT_OF_SPACEContent; } }
         private static int _RESULT_OUT_OF_SPACEContent = default;
         private static bool _RESULT_OUT_OF_SPACEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_RATE_LIMITED"/>
+        /// </summary>
+        public static int RESULT_RATE_LIMITED { get { if (!_RESULT_RATE_LIMITEDReady) { _RESULT_RATE_LIMITEDContent = SGetField<int>(LocalBridgeClazz, "RESULT_RATE_LIMITED"); _RESULT_RATE_LIMITEDReady = true; } return _RESULT_RATE_LIMITEDContent; } }
+        private static int _RESULT_RATE_LIMITEDContent = default;
+        private static bool _RESULT_RATE_LIMITEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_SECURITY_ERROR"/>
         /// </summary>
@@ -178,6 +190,12 @@ namespace Android.App.Appsearch
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_DENIED"/>
+        /// </summary>
+        public static int RESULT_DENIED { get { if (!_RESULT_DENIEDReady) { _RESULT_DENIEDContent = SGetField<int>(LocalBridgeClazz, "RESULT_DENIED"); _RESULT_DENIEDReady = true; } return _RESULT_DENIEDContent; } }
+        private static int _RESULT_DENIEDContent = default;
+        private static bool _RESULT_DENIEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_INTERNAL_ERROR"/>
         /// </summary>
         public static int RESULT_INTERNAL_ERROR { get { if (!_RESULT_INTERNAL_ERRORReady) { _RESULT_INTERNAL_ERRORContent = SGetField<int>(LocalBridgeClazz, "RESULT_INTERNAL_ERROR"); _RESULT_INTERNAL_ERRORReady = true; } return _RESULT_INTERNAL_ERRORContent; } }
@@ -219,6 +237,12 @@ namespace Android.App.Appsearch
         public static int RESULT_OUT_OF_SPACE { get { if (!_RESULT_OUT_OF_SPACEReady) { _RESULT_OUT_OF_SPACEContent = SGetField<int>(LocalBridgeClazz, "RESULT_OUT_OF_SPACE"); _RESULT_OUT_OF_SPACEReady = true; } return _RESULT_OUT_OF_SPACEContent; } }
         private static int _RESULT_OUT_OF_SPACEContent = default;
         private static bool _RESULT_OUT_OF_SPACEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_RATE_LIMITED"/>
+        /// </summary>
+        public static int RESULT_RATE_LIMITED { get { if (!_RESULT_RATE_LIMITEDReady) { _RESULT_RATE_LIMITEDContent = SGetField<int>(LocalBridgeClazz, "RESULT_RATE_LIMITED"); _RESULT_RATE_LIMITEDReady = true; } return _RESULT_RATE_LIMITEDContent; } }
+        private static int _RESULT_RATE_LIMITEDContent = default;
+        private static bool _RESULT_RATE_LIMITEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#RESULT_SECURITY_ERROR"/>
         /// </summary>

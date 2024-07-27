@@ -33,6 +33,7 @@ namespace Android.App.Slice
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceProvider.html#%3Cinit%3E(java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
         public SliceProvider(params Java.Lang.String[] arg0)
             : base(arg0)
         {
@@ -48,6 +49,7 @@ namespace Android.App.Slice
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceProvider.html#SLICE_TYPE"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static Java.Lang.String SLICE_TYPE { get { if (!_SLICE_TYPEReady) { _SLICE_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SLICE_TYPE"); _SLICE_TYPEReady = true; } return _SLICE_TYPEContent; } }
         private static Java.Lang.String _SLICE_TYPEContent = default;
         private static bool _SLICE_TYPEReady = false; // this is used because in case of generics 
@@ -64,6 +66,7 @@ namespace Android.App.Slice
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
+        [global::System.Obsolete()]
         public Android.App.PendingIntent OnCreatePermissionRequest(Android.Net.Uri arg0)
         {
             return IExecuteWithSignature<Android.App.PendingIntent>("onCreatePermissionRequest", "(Landroid/net/Uri;)Landroid/app/PendingIntent;", arg0);
@@ -74,6 +77,7 @@ namespace Android.App.Slice
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="Android.App.Slice.Slice"/></returns>
+        [global::System.Obsolete()]
         public Android.App.Slice.Slice OnBindSlice(Android.Net.Uri arg0, Java.Util.Set<Android.App.Slice.SliceSpec> arg1)
         {
             return IExecute<Android.App.Slice.Slice>("onBindSlice", arg0, arg1);
@@ -83,6 +87,7 @@ namespace Android.App.Slice
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
         /// <returns><see cref="Android.Net.Uri"/></returns>
+        [global::System.Obsolete()]
         public Android.Net.Uri OnMapIntentToUri(Android.Content.Intent arg0)
         {
             return IExecuteWithSignature<Android.Net.Uri>("onMapIntentToUri", "(Landroid/content/Intent;)Landroid/net/Uri;", arg0);
@@ -92,6 +97,7 @@ namespace Android.App.Slice
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <returns><see cref="Java.Util.Collection"/></returns>
+        [global::System.Obsolete()]
         public Java.Util.Collection<Android.Net.Uri> OnGetSliceDescendants(Android.Net.Uri arg0)
         {
             return IExecuteWithSignature<Java.Util.Collection<Android.Net.Uri>>("onGetSliceDescendants", "(Landroid/net/Uri;)Ljava/util/Collection;", arg0);
@@ -100,6 +106,7 @@ namespace Android.App.Slice
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceProvider.html#onSlicePinned(android.net.Uri)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        [global::System.Obsolete()]
         public void OnSlicePinned(Android.Net.Uri arg0)
         {
             IExecuteWithSignature("onSlicePinned", "(Landroid/net/Uri;)V", arg0);
@@ -108,6 +115,7 @@ namespace Android.App.Slice
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceProvider.html#onSliceUnpinned(android.net.Uri)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        [global::System.Obsolete()]
         public void OnSliceUnpinned(Android.Net.Uri arg0)
         {
             IExecuteWithSignature("onSliceUnpinned", "(Landroid/net/Uri;)V", arg0);

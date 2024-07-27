@@ -40,6 +40,15 @@ namespace Android.Hardware.Camera2.Params
             : base(arg0, arg1, arg2, arg3)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#%3Cinit%3E(int,java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        public SessionConfiguration(int arg0, Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration> arg1)
+            : base(arg0, arg1)
+        {
+        }
 
         #endregion
 
@@ -168,6 +177,15 @@ namespace Android.Hardware.Camera2.Params
         public void SetSessionParameters(Android.Hardware.Camera2.CaptureRequest arg0)
         {
             IExecuteWithSignature("setSessionParameters", "(Landroid/hardware/camera2/CaptureRequest;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#setStateCallback(java.util.concurrent.Executor,android.hardware.camera2.CameraCaptureSession.StateCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Android.Hardware.Camera2.CameraCaptureSession.StateCallback"/></param>
+        public void SetStateCallback(Java.Util.Concurrent.Executor arg0, Android.Hardware.Camera2.CameraCaptureSession.StateCallback arg1)
+        {
+            IExecute("setStateCallback", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/SessionConfiguration.html#writeToParcel(android.os.Parcel,int)"/>

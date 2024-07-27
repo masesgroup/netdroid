@@ -68,6 +68,12 @@ namespace Android.Bluetooth
         private static int _GATT_CONNECTION_CONGESTEDContent = default;
         private static bool _GATT_CONNECTION_CONGESTEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_CONNECTION_TIMEOUT"/>
+        /// </summary>
+        public static int GATT_CONNECTION_TIMEOUT { get { if (!_GATT_CONNECTION_TIMEOUTReady) { _GATT_CONNECTION_TIMEOUTContent = SGetField<int>(LocalBridgeClazz, "GATT_CONNECTION_TIMEOUT"); _GATT_CONNECTION_TIMEOUTReady = true; } return _GATT_CONNECTION_TIMEOUTContent; } }
+        private static int _GATT_CONNECTION_TIMEOUTContent = default;
+        private static bool _GATT_CONNECTION_TIMEOUTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_FAILURE"/>
         /// </summary>
         public static int GATT_FAILURE { get { if (!_GATT_FAILUREReady) { _GATT_FAILUREContent = SGetField<int>(LocalBridgeClazz, "GATT_FAILURE"); _GATT_FAILUREReady = true; } return _GATT_FAILUREContent; } }

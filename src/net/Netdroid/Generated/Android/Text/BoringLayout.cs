@@ -268,6 +268,14 @@ namespace Android.Text
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/BoringLayout.Metrics.html#getDrawingBoundingBox()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.RectF"/></returns>
+            public Android.Graphics.RectF GetDrawingBoundingBox()
+            {
+                return IExecuteWithSignature<Android.Graphics.RectF>("getDrawingBoundingBox", "()Landroid/graphics/RectF;");
+            }
 
             #endregion
 

@@ -37,6 +37,24 @@ namespace Android.Health.Connect.Datatypes
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/CyclingPedalingCadenceRecord.html#RPM_AVG"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType RPM_AVG { get { if (!_RPM_AVGReady) { _RPM_AVGContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "RPM_AVG"); _RPM_AVGReady = true; } return _RPM_AVGContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _RPM_AVGContent = default;
+        private static bool _RPM_AVGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/CyclingPedalingCadenceRecord.html#RPM_MAX"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType RPM_MAX { get { if (!_RPM_MAXReady) { _RPM_MAXContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "RPM_MAX"); _RPM_MAXReady = true; } return _RPM_MAXContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _RPM_MAXContent = default;
+        private static bool _RPM_MAXReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/CyclingPedalingCadenceRecord.html#RPM_MIN"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType RPM_MIN { get { if (!_RPM_MINReady) { _RPM_MINContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "RPM_MIN"); _RPM_MINReady = true; } return _RPM_MINContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _RPM_MINContent = default;
+        private static bool _RPM_MINReady = false; // this is used because in case of generics 
 
         #endregion
 

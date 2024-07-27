@@ -92,6 +92,14 @@ namespace Android.Health.Connect.Datatypes
             return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getPlannedExerciseSessionId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPlannedExerciseSessionId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPlannedExerciseSessionId", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getLaps()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -192,6 +200,15 @@ namespace Android.Health.Connect.Datatypes
             public Android.Health.Connect.Datatypes.ExerciseSessionRecord.Builder SetNotes(Java.Lang.CharSequence arg0)
             {
                 return IExecuteWithSignature<Android.Health.Connect.Datatypes.ExerciseSessionRecord.Builder>("setNotes", "(Ljava/lang/CharSequence;)Landroid/health/connect/datatypes/ExerciseSessionRecord$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.Builder.html#setPlannedExerciseSessionId(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.Health.Connect.Datatypes.ExerciseSessionRecord.Builder"/></returns>
+            public Android.Health.Connect.Datatypes.ExerciseSessionRecord.Builder SetPlannedExerciseSessionId(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.Health.Connect.Datatypes.ExerciseSessionRecord.Builder>("setPlannedExerciseSessionId", "(Ljava/lang/String;)Landroid/health/connect/datatypes/ExerciseSessionRecord$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.Builder.html#setRoute(android.health.connect.datatypes.ExerciseRoute)"/>

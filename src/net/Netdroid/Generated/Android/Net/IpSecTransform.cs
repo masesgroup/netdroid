@@ -52,6 +52,15 @@ namespace Android.Net
         {
             IExecuteWithSignature("close", "()V");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/IpSecTransform.html#requestIpSecTransformState(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void RequestIpSecTransformState(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<Android.Net.IpSecTransformState, Java.Lang.RuntimeException> arg1)
+        {
+            IExecute("requestIpSecTransformState", arg0, arg1);
+        }
 
         #endregion
 

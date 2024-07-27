@@ -55,6 +55,15 @@ namespace Android.Icu.Number
             return IExecuteWithSignature<Android.Icu.Number.NumberFormatterSettings>("decimal", "(Landroid/icu/number/NumberFormatter$DecimalSeparatorDisplay;)Landroid/icu/number/NumberFormatterSettings;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/number/NumberFormatterSettings.html#displayOptions(android.icu.text.DisplayOptions)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Text.DisplayOptions"/></param>
+        /// <returns><see cref="Android.Icu.Number.NumberFormatterSettings"/></returns>
+        public Android.Icu.Number.NumberFormatterSettings DisplayOptions(Android.Icu.Text.DisplayOptions arg0)
+        {
+            return IExecuteWithSignature<Android.Icu.Number.NumberFormatterSettings>("displayOptions", "(Landroid/icu/text/DisplayOptions;)Landroid/icu/number/NumberFormatterSettings;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/NumberFormatterSettings.html#grouping(android.icu.number.NumberFormatter.GroupingStrategy)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Number.NumberFormatter.GroupingStrategy"/></param>
@@ -214,6 +223,15 @@ namespace Android.Icu.Number
         public T Decimal(Android.Icu.Number.NumberFormatter.DecimalSeparatorDisplay arg0)
         {
             return IExecuteWithSignature<T>("decimal", "(Landroid/icu/number/NumberFormatter$DecimalSeparatorDisplay;)Landroid/icu/number/NumberFormatterSettings;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/number/NumberFormatterSettings.html#displayOptions(android.icu.text.DisplayOptions)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Text.DisplayOptions"/></param>
+        /// <returns><typeparamref name="T"/></returns>
+        public T DisplayOptions(Android.Icu.Text.DisplayOptions arg0)
+        {
+            return IExecuteWithSignature<T>("displayOptions", "(Landroid/icu/text/DisplayOptions;)Landroid/icu/number/NumberFormatterSettings;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/NumberFormatterSettings.html#grouping(android.icu.number.NumberFormatter.GroupingStrategy)"/>

@@ -311,6 +311,7 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
@@ -374,6 +375,7 @@ namespace Android.Net.Wifi
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
         /// <param name="arg1"><see cref="int"/></param>
+        [global::System.Obsolete()]
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
             IExecute("writeToParcel", arg0, arg1);

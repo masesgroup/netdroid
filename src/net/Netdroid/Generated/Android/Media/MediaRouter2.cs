@@ -42,6 +42,18 @@ namespace Android.Media
 
         #region Static methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#getInstance(android.content.Context,java.lang.String,java.util.concurrent.Executor,java.lang.Runnable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.Runnable"/></param>
+        /// <returns><see cref="Android.Media.MediaRouter2"/></returns>
+        public static Android.Media.MediaRouter2 GetInstance(Android.Content.Context arg0, Java.Lang.String arg1, Java.Util.Concurrent.Executor arg2, Java.Lang.Runnable arg3)
+        {
+            return SExecute<Android.Media.MediaRouter2>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#getInstance(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -72,6 +84,23 @@ namespace Android.Media
             return IExecuteWithSignature<Android.Media.MediaRouter2.RoutingController>("getSystemController", "()Landroid/media/MediaRouter2$RoutingController;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#requestScan(android.media.MediaRouter2.ScanRequest)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.MediaRouter2.ScanRequest"/></param>
+        /// <returns><see cref="Android.Media.MediaRouter2.ScanToken"/></returns>
+        public Android.Media.MediaRouter2.ScanToken RequestScan(Android.Media.MediaRouter2.ScanRequest arg0)
+        {
+            return IExecuteWithSignature<Android.Media.MediaRouter2.ScanToken>("requestScan", "(Landroid/media/MediaRouter2$ScanRequest;)Landroid/media/MediaRouter2$ScanToken;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#getRouteListingPreference()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.RouteListingPreference"/></returns>
+        public Android.Media.RouteListingPreference GetRouteListingPreference()
+        {
+            return IExecuteWithSignature<Android.Media.RouteListingPreference>("getRouteListingPreference", "()Landroid/media/RouteListingPreference;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#showSystemOutputSwitcher()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -96,6 +125,14 @@ namespace Android.Media
             return IExecuteWithSignature<Java.Util.List<Android.Media.MediaRouter2.RoutingController>>("getControllers", "()Ljava/util/List;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#cancelScanRequest(android.media.MediaRouter2.ScanToken)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.MediaRouter2.ScanToken"/></param>
+        public void CancelScanRequest(Android.Media.MediaRouter2.ScanToken arg0)
+        {
+            IExecuteWithSignature("cancelScanRequest", "(Landroid/media/MediaRouter2$ScanToken;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#registerControllerCallback(java.util.concurrent.Executor,android.media.MediaRouter2.ControllerCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -113,6 +150,15 @@ namespace Android.Media
         public void RegisterRouteCallback(Java.Util.Concurrent.Executor arg0, Android.Media.MediaRouter2.RouteCallback arg1, Android.Media.RouteDiscoveryPreference arg2)
         {
             IExecute("registerRouteCallback", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#registerRouteListingPreferenceUpdatedCallback(java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+        public void RegisterRouteListingPreferenceUpdatedCallback(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Android.Media.RouteListingPreference> arg1)
+        {
+            IExecute("registerRouteListingPreferenceUpdatedCallback", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#registerTransferCallback(java.util.concurrent.Executor,android.media.MediaRouter2.TransferCallback)"/>
@@ -138,6 +184,15 @@ namespace Android.Media
         public void SetRouteListingPreference(Android.Media.RouteListingPreference arg0)
         {
             IExecuteWithSignature("setRouteListingPreference", "(Landroid/media/RouteListingPreference;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#setRouteVolume(android.media.MediaRoute2Info,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.MediaRoute2Info"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void SetRouteVolume(Android.Media.MediaRoute2Info arg0, int arg1)
+        {
+            IExecute("setRouteVolume", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#stop()"/>
@@ -169,6 +224,14 @@ namespace Android.Media
         public void UnregisterRouteCallback(Android.Media.MediaRouter2.RouteCallback arg0)
         {
             IExecuteWithSignature("unregisterRouteCallback", "(Landroid/media/MediaRouter2$RouteCallback;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#unregisterRouteListingPreferenceUpdatedCallback(java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        public void UnregisterRouteListingPreferenceUpdatedCallback(Java.Util.Function.Consumer<Android.Media.RouteListingPreference> arg0)
+        {
+            IExecuteWithSignature("unregisterRouteListingPreferenceUpdatedCallback", "(Ljava/util/function/Consumer;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#unregisterTransferCallback(android.media.MediaRouter2.TransferCallback)"/>
@@ -434,6 +497,14 @@ namespace Android.Media
                 return IExecuteWithSignature<bool>("isReleased", "()Z");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#wasTransferInitiatedBySelf()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool WasTransferInitiatedBySelf()
+            {
+                return IExecuteWithSignature<bool>("wasTransferInitiatedBySelf", "()Z");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getVolume()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
@@ -490,6 +561,14 @@ namespace Android.Media
                 return IExecuteWithSignature<Java.Util.List<Android.Media.MediaRoute2Info>>("getSelectedRoutes", "()Ljava/util/List;");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getTransferableRoutes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.Media.MediaRoute2Info> GetTransferableRoutes()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.Media.MediaRoute2Info>>("getTransferableRoutes", "()Ljava/util/List;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#deselectRoute(android.media.MediaRoute2Info)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.MediaRoute2Info"/></param>
@@ -520,6 +599,124 @@ namespace Android.Media
             {
                 IExecuteWithSignature("setVolume", "(I)V", arg0);
             }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ScanRequest
+        public partial class ScanRequest
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.ScanRequest.html#isScreenOffScan()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsScreenOffScan()
+            {
+                return IExecuteWithSignature<bool>("isScreenOffScan", "()Z");
+            }
+
+            #endregion
+
+            #region Nested classes
+            #region Builder
+            public partial class Builder
+            {
+                #region Constructors
+
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.ScanRequest.Builder.html#build()"/>
+                /// </summary>
+                /// <returns><see cref="Android.Media.MediaRouter2.ScanRequest"/></returns>
+                public Android.Media.MediaRouter2.ScanRequest Build()
+                {
+                    return IExecuteWithSignature<Android.Media.MediaRouter2.ScanRequest>("build", "()Landroid/media/MediaRouter2$ScanRequest;");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.ScanRequest.Builder.html#setScreenOffScan(boolean)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="bool"/></param>
+                /// <returns><see cref="Android.Media.MediaRouter2.ScanRequest.Builder"/></returns>
+                public Android.Media.MediaRouter2.ScanRequest.Builder SetScreenOffScan(bool arg0)
+                {
+                    return IExecuteWithSignature<Android.Media.MediaRouter2.ScanRequest.Builder>("setScreenOffScan", "(Z)Landroid/media/MediaRouter2$ScanRequest$Builder;", arg0);
+                }
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+        
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ScanToken
+        public partial class ScanToken
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
 
             #endregion
 

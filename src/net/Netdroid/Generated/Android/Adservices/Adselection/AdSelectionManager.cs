@@ -63,6 +63,26 @@ namespace Android.Adservices.Adselection
             return IExecuteWithSignature<Android.Adservices.Adselection.TestAdSelectionManager>("getTestAdSelectionManager", "()Landroid/adservices/adselection/TestAdSelectionManager;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#getAdSelectionData(android.adservices.adselection.GetAdSelectionDataRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Adservices.Adselection.GetAdSelectionDataRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void GetAdSelectionData(Android.Adservices.Adselection.GetAdSelectionDataRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Adservices.Adselection.GetAdSelectionDataOutcome, Java.Lang.Exception> arg2)
+        {
+            IExecute("getAdSelectionData", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#persistAdSelectionResult(android.adservices.adselection.PersistAdSelectionResultRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Adservices.Adselection.PersistAdSelectionResultRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void PersistAdSelectionResult(Android.Adservices.Adselection.PersistAdSelectionResultRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Adservices.Adselection.AdSelectionOutcome, Java.Lang.Exception> arg2)
+        {
+            IExecute("persistAdSelectionResult", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#reportEvent(android.adservices.adselection.ReportEventRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Adservices.Adselection.ReportEventRequest"/></param>
@@ -91,6 +111,26 @@ namespace Android.Adservices.Adselection
         public void SelectAds(Android.Adservices.Adselection.AdSelectionConfig arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Adservices.Adselection.AdSelectionOutcome, Java.Lang.Exception> arg2)
         {
             IExecute("selectAds", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#selectAds(android.adservices.adselection.AdSelectionFromOutcomesConfig,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Adservices.Adselection.AdSelectionFromOutcomesConfig"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void SelectAds(Android.Adservices.Adselection.AdSelectionFromOutcomesConfig arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Adservices.Adselection.AdSelectionOutcome, Java.Lang.Exception> arg2)
+        {
+            IExecute("selectAds", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#setAppInstallAdvertisers(android.adservices.adselection.SetAppInstallAdvertisersRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Adservices.Adselection.SetAppInstallAdvertisersRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void SetAppInstallAdvertisers(Android.Adservices.Adselection.SetAppInstallAdvertisersRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
+        {
+            IExecute("setAppInstallAdvertisers", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#updateAdCounterHistogram(android.adservices.adselection.UpdateAdCounterHistogramRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>

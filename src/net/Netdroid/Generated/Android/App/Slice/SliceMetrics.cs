@@ -34,6 +34,7 @@ namespace Android.App.Slice
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+        [global::System.Obsolete()]
         public SliceMetrics(Android.Content.Context arg0, Android.Net.Uri arg1)
             : base(arg0, arg1)
         {
@@ -57,6 +58,7 @@ namespace Android.App.Slice
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceMetrics.html#logHidden()"/>
         /// </summary>
+        [global::System.Obsolete()]
         public void LogHidden()
         {
             IExecuteWithSignature("logHidden", "()V");
@@ -66,6 +68,7 @@ namespace Android.App.Slice
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+        [global::System.Obsolete()]
         public void LogTouch(int arg0, Android.Net.Uri arg1)
         {
             IExecute("logTouch", arg0, arg1);
@@ -73,6 +76,7 @@ namespace Android.App.Slice
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceMetrics.html#logVisible()"/>
         /// </summary>
+        [global::System.Obsolete()]
         public void LogVisible()
         {
             IExecuteWithSignature("logVisible", "()V");

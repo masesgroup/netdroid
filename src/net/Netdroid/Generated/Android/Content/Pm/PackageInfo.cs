@@ -210,6 +210,22 @@ namespace Android.Content.Pm
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#getApexPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetApexPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getApexPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#getArchiveTimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetArchiveTimeMillis()
+        {
+            return IExecuteWithSignature<long>("getArchiveTimeMillis", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#getLongVersionCode()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>

@@ -629,6 +629,12 @@ namespace Android
             private static int _allContactsNameContent = default;
             private static bool _allContactsNameReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#allow"/>
+            /// </summary>
+            public static int allow { get { if (!_allowReady) { _allowContent = SGetField<int>(LocalBridgeClazz, "allow"); _allowReady = true; } return _allowContent; } }
+            private static int _allowContent = default;
+            private static bool _allowReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#allowAudioPlaybackCapture"/>
             /// </summary>
             public static int allowAudioPlaybackCapture { get { if (!_allowAudioPlaybackCaptureReady) { _allowAudioPlaybackCaptureContent = SGetField<int>(LocalBridgeClazz, "allowAudioPlaybackCapture"); _allowAudioPlaybackCaptureReady = true; } return _allowAudioPlaybackCaptureContent; } }
@@ -652,6 +658,12 @@ namespace Android
             public static int allowClickWhenDisabled { get { if (!_allowClickWhenDisabledReady) { _allowClickWhenDisabledContent = SGetField<int>(LocalBridgeClazz, "allowClickWhenDisabled"); _allowClickWhenDisabledReady = true; } return _allowClickWhenDisabledContent; } }
             private static int _allowClickWhenDisabledContent = default;
             private static bool _allowClickWhenDisabledReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#allowCrossUidActivitySwitchFromBelow"/>
+            /// </summary>
+            public static int allowCrossUidActivitySwitchFromBelow { get { if (!_allowCrossUidActivitySwitchFromBelowReady) { _allowCrossUidActivitySwitchFromBelowContent = SGetField<int>(LocalBridgeClazz, "allowCrossUidActivitySwitchFromBelow"); _allowCrossUidActivitySwitchFromBelowReady = true; } return _allowCrossUidActivitySwitchFromBelowContent; } }
+            private static int _allowCrossUidActivitySwitchFromBelowContent = default;
+            private static bool _allowCrossUidActivitySwitchFromBelowReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#allowEmbedded"/>
             /// </summary>
@@ -993,6 +1005,12 @@ namespace Android
             public static int autoText { get { if (!_autoTextReady) { _autoTextContent = SGetField<int>(LocalBridgeClazz, "autoText"); _autoTextReady = true; } return _autoTextContent; } }
             private static int _autoTextContent = default;
             private static bool _autoTextReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#autoTransact"/>
+            /// </summary>
+            public static int autoTransact { get { if (!_autoTransactReady) { _autoTransactContent = SGetField<int>(LocalBridgeClazz, "autoTransact"); _autoTransactReady = true; } return _autoTransactContent; } }
+            private static int _autoTransactContent = default;
+            private static bool _autoTransactReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#autoUrlDetect"/>
             /// </summary>
@@ -1861,6 +1879,12 @@ namespace Android
             private static int _contentInsetStartWithNavigationContent = default;
             private static bool _contentInsetStartWithNavigationReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#contentSensitivity"/>
+            /// </summary>
+            public static int contentSensitivity { get { if (!_contentSensitivityReady) { _contentSensitivityContent = SGetField<int>(LocalBridgeClazz, "contentSensitivity"); _contentSensitivityReady = true; } return _contentSensitivityContent; } }
+            private static int _contentSensitivityContent = default;
+            private static bool _contentSensitivityReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#contextClickable"/>
             /// </summary>
             public static int contextClickable { get { if (!_contextClickableReady) { _contextClickableContent = SGetField<int>(LocalBridgeClazz, "contextClickable"); _contextClickableReady = true; } return _contextClickableContent; } }
@@ -2036,6 +2060,12 @@ namespace Android
             public static int defaultHeight { get { if (!_defaultHeightReady) { _defaultHeightContent = SGetField<int>(LocalBridgeClazz, "defaultHeight"); _defaultHeightReady = true; } return _defaultHeightContent; } }
             private static int _defaultHeightContent = default;
             private static bool _defaultHeightReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#defaultLocale"/>
+            /// </summary>
+            public static int defaultLocale { get { if (!_defaultLocaleReady) { _defaultLocaleContent = SGetField<int>(LocalBridgeClazz, "defaultLocale"); _defaultLocaleReady = true; } return _defaultLocaleContent; } }
+            private static int _defaultLocaleContent = default;
+            private static bool _defaultLocaleReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#defaultToDeviceProtectedStorage"/>
             /// </summary>
@@ -2534,6 +2564,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#enforceStatusBarContrast"/>
             /// </summary>
+            [global::System.Obsolete()]
             public static int enforceStatusBarContrast { get { if (!_enforceStatusBarContrastReady) { _enforceStatusBarContrastContent = SGetField<int>(LocalBridgeClazz, "enforceStatusBarContrast"); _enforceStatusBarContrastReady = true; } return _enforceStatusBarContrastContent; } }
             private static int _enforceStatusBarContrastContent = default;
             private static bool _enforceStatusBarContrastReady = false; // this is used because in case of generics 
@@ -3059,6 +3090,12 @@ namespace Android
             private static int _fragmentContent = default;
             private static bool _fragmentReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#fragmentAdvancedPattern"/>
+            /// </summary>
+            public static int fragmentAdvancedPattern { get { if (!_fragmentAdvancedPatternReady) { _fragmentAdvancedPatternContent = SGetField<int>(LocalBridgeClazz, "fragmentAdvancedPattern"); _fragmentAdvancedPatternReady = true; } return _fragmentAdvancedPatternContent; } }
+            private static int _fragmentAdvancedPatternContent = default;
+            private static bool _fragmentAdvancedPatternReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#fragmentAllowEnterTransitionOverlap"/>
             /// </summary>
             public static int fragmentAllowEnterTransitionOverlap { get { if (!_fragmentAllowEnterTransitionOverlapReady) { _fragmentAllowEnterTransitionOverlapContent = SGetField<int>(LocalBridgeClazz, "fragmentAllowEnterTransitionOverlap"); _fragmentAllowEnterTransitionOverlapReady = true; } return _fragmentAllowEnterTransitionOverlapContent; } }
@@ -3119,6 +3156,18 @@ namespace Android
             private static int _fragmentOpenExitAnimationContent = default;
             private static bool _fragmentOpenExitAnimationReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#fragmentPattern"/>
+            /// </summary>
+            public static int fragmentPattern { get { if (!_fragmentPatternReady) { _fragmentPatternContent = SGetField<int>(LocalBridgeClazz, "fragmentPattern"); _fragmentPatternReady = true; } return _fragmentPatternContent; } }
+            private static int _fragmentPatternContent = default;
+            private static bool _fragmentPatternReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#fragmentPrefix"/>
+            /// </summary>
+            public static int fragmentPrefix { get { if (!_fragmentPrefixReady) { _fragmentPrefixContent = SGetField<int>(LocalBridgeClazz, "fragmentPrefix"); _fragmentPrefixReady = true; } return _fragmentPrefixContent; } }
+            private static int _fragmentPrefixContent = default;
+            private static bool _fragmentPrefixReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#fragmentReenterTransition"/>
             /// </summary>
             public static int fragmentReenterTransition { get { if (!_fragmentReenterTransitionReady) { _fragmentReenterTransitionContent = SGetField<int>(LocalBridgeClazz, "fragmentReenterTransition"); _fragmentReenterTransitionReady = true; } return _fragmentReenterTransitionContent; } }
@@ -3142,6 +3191,12 @@ namespace Android
             public static int fragmentSharedElementReturnTransition { get { if (!_fragmentSharedElementReturnTransitionReady) { _fragmentSharedElementReturnTransitionContent = SGetField<int>(LocalBridgeClazz, "fragmentSharedElementReturnTransition"); _fragmentSharedElementReturnTransitionReady = true; } return _fragmentSharedElementReturnTransitionContent; } }
             private static int _fragmentSharedElementReturnTransitionContent = default;
             private static bool _fragmentSharedElementReturnTransitionReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#fragmentSuffix"/>
+            /// </summary>
+            public static int fragmentSuffix { get { if (!_fragmentSuffixReady) { _fragmentSuffixContent = SGetField<int>(LocalBridgeClazz, "fragmentSuffix"); _fragmentSuffixReady = true; } return _fragmentSuffixContent; } }
+            private static int _fragmentSuffixContent = default;
+            private static bool _fragmentSuffixReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#freezesText"/>
             /// </summary>
@@ -5127,12 +5182,14 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#navigationBarColor"/>
             /// </summary>
+            [global::System.Obsolete()]
             public static int navigationBarColor { get { if (!_navigationBarColorReady) { _navigationBarColorContent = SGetField<int>(LocalBridgeClazz, "navigationBarColor"); _navigationBarColorReady = true; } return _navigationBarColorContent; } }
             private static int _navigationBarColorContent = default;
             private static bool _navigationBarColorReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#navigationBarDividerColor"/>
             /// </summary>
+            [global::System.Obsolete()]
             public static int navigationBarDividerColor { get { if (!_navigationBarDividerColorReady) { _navigationBarDividerColorContent = SGetField<int>(LocalBridgeClazz, "navigationBarDividerColor"); _navigationBarDividerColorReady = true; } return _navigationBarDividerColorContent; } }
             private static int _navigationBarDividerColorContent = default;
             private static bool _navigationBarDividerColorReady = false; // this is used because in case of generics 
@@ -5978,11 +6035,23 @@ namespace Android
             private static int _publicKeyContent = default;
             private static bool _publicKeyReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#query"/>
+            /// </summary>
+            public static int query { get { if (!_queryReady) { _queryContent = SGetField<int>(LocalBridgeClazz, "query"); _queryReady = true; } return _queryContent; } }
+            private static int _queryContent = default;
+            private static bool _queryReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#queryActionMsg"/>
             /// </summary>
             public static int queryActionMsg { get { if (!_queryActionMsgReady) { _queryActionMsgContent = SGetField<int>(LocalBridgeClazz, "queryActionMsg"); _queryActionMsgReady = true; } return _queryActionMsgContent; } }
             private static int _queryActionMsgContent = default;
             private static bool _queryActionMsgReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#queryAdvancedPattern"/>
+            /// </summary>
+            public static int queryAdvancedPattern { get { if (!_queryAdvancedPatternReady) { _queryAdvancedPatternContent = SGetField<int>(LocalBridgeClazz, "queryAdvancedPattern"); _queryAdvancedPatternReady = true; } return _queryAdvancedPatternContent; } }
+            private static int _queryAdvancedPatternContent = default;
+            private static bool _queryAdvancedPatternReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#queryAfterZeroResults"/>
             /// </summary>
@@ -6001,6 +6070,24 @@ namespace Android
             public static int queryHint { get { if (!_queryHintReady) { _queryHintContent = SGetField<int>(LocalBridgeClazz, "queryHint"); _queryHintReady = true; } return _queryHintContent; } }
             private static int _queryHintContent = default;
             private static bool _queryHintReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#queryPattern"/>
+            /// </summary>
+            public static int queryPattern { get { if (!_queryPatternReady) { _queryPatternContent = SGetField<int>(LocalBridgeClazz, "queryPattern"); _queryPatternReady = true; } return _queryPatternContent; } }
+            private static int _queryPatternContent = default;
+            private static bool _queryPatternReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#queryPrefix"/>
+            /// </summary>
+            public static int queryPrefix { get { if (!_queryPrefixReady) { _queryPrefixContent = SGetField<int>(LocalBridgeClazz, "queryPrefix"); _queryPrefixReady = true; } return _queryPrefixContent; } }
+            private static int _queryPrefixContent = default;
+            private static bool _queryPrefixReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#querySuffix"/>
+            /// </summary>
+            public static int querySuffix { get { if (!_querySuffixReady) { _querySuffixContent = SGetField<int>(LocalBridgeClazz, "querySuffix"); _querySuffixReady = true; } return _querySuffixContent; } }
+            private static int _querySuffixContent = default;
+            private static bool _querySuffixReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#quickContactBadgeStyleSmallWindowLarge"/>
             /// </summary>
@@ -6169,6 +6256,12 @@ namespace Android
             public static int requestRawExternalStorageAccess { get { if (!_requestRawExternalStorageAccessReady) { _requestRawExternalStorageAccessContent = SGetField<int>(LocalBridgeClazz, "requestRawExternalStorageAccess"); _requestRawExternalStorageAccessReady = true; } return _requestRawExternalStorageAccessContent; } }
             private static int _requestRawExternalStorageAccessContent = default;
             private static bool _requestRawExternalStorageAccessReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#requireContentUriPermissionFromCaller"/>
+            /// </summary>
+            public static int requireContentUriPermissionFromCaller { get { if (!_requireContentUriPermissionFromCallerReady) { _requireContentUriPermissionFromCallerContent = SGetField<int>(LocalBridgeClazz, "requireContentUriPermissionFromCaller"); _requireContentUriPermissionFromCallerReady = true; } return _requireContentUriPermissionFromCallerContent; } }
+            private static int _requireContentUriPermissionFromCallerContent = default;
+            private static bool _requireContentUriPermissionFromCallerReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#required"/>
             /// </summary>
@@ -6843,6 +6936,12 @@ namespace Android
             private static int _shellContent = default;
             private static bool _shellReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#shiftDrawingOffsetForStartOverhang"/>
+            /// </summary>
+            public static int shiftDrawingOffsetForStartOverhang { get { if (!_shiftDrawingOffsetForStartOverhangReady) { _shiftDrawingOffsetForStartOverhangContent = SGetField<int>(LocalBridgeClazz, "shiftDrawingOffsetForStartOverhang"); _shiftDrawingOffsetForStartOverhangReady = true; } return _shiftDrawingOffsetForStartOverhangContent; } }
+            private static int _shiftDrawingOffsetForStartOverhangContent = default;
+            private static bool _shiftDrawingOffsetForStartOverhangReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#shortcutDisabledMessage"/>
             /// </summary>
             public static int shortcutDisabledMessage { get { if (!_shortcutDisabledMessageReady) { _shortcutDisabledMessageContent = SGetField<int>(LocalBridgeClazz, "shortcutDisabledMessage"); _shortcutDisabledMessageReady = true; } return _shortcutDisabledMessageContent; } }
@@ -6866,6 +6965,12 @@ namespace Android
             public static int shortcutShortLabel { get { if (!_shortcutShortLabelReady) { _shortcutShortLabelContent = SGetField<int>(LocalBridgeClazz, "shortcutShortLabel"); _shortcutShortLabelReady = true; } return _shortcutShortLabelContent; } }
             private static int _shortcutShortLabelContent = default;
             private static bool _shortcutShortLabelReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#shouldDefaultToObserveMode"/>
+            /// </summary>
+            public static int shouldDefaultToObserveMode { get { if (!_shouldDefaultToObserveModeReady) { _shouldDefaultToObserveModeContent = SGetField<int>(LocalBridgeClazz, "shouldDefaultToObserveMode"); _shouldDefaultToObserveModeReady = true; } return _shouldDefaultToObserveModeContent; } }
+            private static int _shouldDefaultToObserveModeContent = default;
+            private static bool _shouldDefaultToObserveModeReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#shouldDisableView"/>
             /// </summary>
@@ -7343,6 +7448,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#statusBarColor"/>
             /// </summary>
+            [global::System.Obsolete()]
             public static int statusBarColor { get { if (!_statusBarColorReady) { _statusBarColorContent = SGetField<int>(LocalBridgeClazz, "statusBarColor"); _statusBarColorReady = true; } return _statusBarColorContent; } }
             private static int _statusBarColorContent = default;
             private static bool _statusBarColorReady = false; // this is used because in case of generics 
@@ -7533,6 +7639,12 @@ namespace Android
             private static int _supportsBatteryGameModeContent = default;
             private static bool _supportsBatteryGameModeReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#supportsConnectionlessStylusHandwriting"/>
+            /// </summary>
+            public static int supportsConnectionlessStylusHandwriting { get { if (!_supportsConnectionlessStylusHandwritingReady) { _supportsConnectionlessStylusHandwritingContent = SGetField<int>(LocalBridgeClazz, "supportsConnectionlessStylusHandwriting"); _supportsConnectionlessStylusHandwritingReady = true; } return _supportsConnectionlessStylusHandwritingContent; } }
+            private static int _supportsConnectionlessStylusHandwritingContent = default;
+            private static bool _supportsConnectionlessStylusHandwritingReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#supportsInlineSuggestions"/>
             /// </summary>
             public static int supportsInlineSuggestions { get { if (!_supportsInlineSuggestionsReady) { _supportsInlineSuggestionsContent = SGetField<int>(LocalBridgeClazz, "supportsInlineSuggestions"); _supportsInlineSuggestionsReady = true; } return _supportsInlineSuggestionsContent; } }
@@ -7652,6 +7764,12 @@ namespace Android
             public static int syncable { get { if (!_syncableReady) { _syncableContent = SGetField<int>(LocalBridgeClazz, "syncable"); _syncableReady = true; } return _syncableContent; } }
             private static int _syncableContent = default;
             private static bool _syncableReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#systemUserOnly"/>
+            /// </summary>
+            public static int systemUserOnly { get { if (!_systemUserOnlyReady) { _systemUserOnlyContent = SGetField<int>(LocalBridgeClazz, "systemUserOnly"); _systemUserOnlyReady = true; } return _systemUserOnlyContent; } }
+            private static int _systemUserOnlyContent = default;
+            private static bool _systemUserOnlyReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#tabStripEnabled"/>
             /// </summary>
@@ -8712,6 +8830,12 @@ namespace Android
             private static int _useAppZygoteContent = default;
             private static bool _useAppZygoteReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#useBoundsForWidth"/>
+            /// </summary>
+            public static int useBoundsForWidth { get { if (!_useBoundsForWidthReady) { _useBoundsForWidthContent = SGetField<int>(LocalBridgeClazz, "useBoundsForWidth"); _useBoundsForWidthReady = true; } return _useBoundsForWidthContent; } }
+            private static int _useBoundsForWidthContent = default;
+            private static bool _useBoundsForWidthReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#useDefaultMargins"/>
             /// </summary>
             public static int useDefaultMargins { get { if (!_useDefaultMarginsReady) { _useDefaultMarginsContent = SGetField<int>(LocalBridgeClazz, "useDefaultMargins"); _useDefaultMarginsReady = true; } return _useDefaultMarginsContent; } }
@@ -8735,6 +8859,12 @@ namespace Android
             public static int useLevel { get { if (!_useLevelReady) { _useLevelContent = SGetField<int>(LocalBridgeClazz, "useLevel"); _useLevelReady = true; } return _useLevelContent; } }
             private static int _useLevelContent = default;
             private static bool _useLevelReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#useLocalePreferredLineHeightForMinimum"/>
+            /// </summary>
+            public static int useLocalePreferredLineHeightForMinimum { get { if (!_useLocalePreferredLineHeightForMinimumReady) { _useLocalePreferredLineHeightForMinimumContent = SGetField<int>(LocalBridgeClazz, "useLocalePreferredLineHeightForMinimum"); _useLocalePreferredLineHeightForMinimumReady = true; } return _useLocalePreferredLineHeightForMinimumContent; } }
+            private static int _useLocalePreferredLineHeightForMinimumContent = default;
+            private static bool _useLocalePreferredLineHeightForMinimumReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#userVisible"/>
             /// </summary>
@@ -9208,6 +9338,12 @@ namespace Android
             private static int _windowIsFloatingContent = default;
             private static bool _windowIsFloatingReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#windowIsFrameRatePowerSavingsBalanced"/>
+            /// </summary>
+            public static int windowIsFrameRatePowerSavingsBalanced { get { if (!_windowIsFrameRatePowerSavingsBalancedReady) { _windowIsFrameRatePowerSavingsBalancedContent = SGetField<int>(LocalBridgeClazz, "windowIsFrameRatePowerSavingsBalanced"); _windowIsFrameRatePowerSavingsBalancedReady = true; } return _windowIsFrameRatePowerSavingsBalancedContent; } }
+            private static int _windowIsFrameRatePowerSavingsBalancedContent = default;
+            private static bool _windowIsFrameRatePowerSavingsBalancedReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#windowIsTranslucent"/>
             /// </summary>
             public static int windowIsTranslucent { get { if (!_windowIsTranslucentReady) { _windowIsTranslucentContent = SGetField<int>(LocalBridgeClazz, "windowIsTranslucent"); _windowIsTranslucentReady = true; } return _windowIsTranslucentContent; } }
@@ -9267,6 +9403,12 @@ namespace Android
             public static int windowNoTitle { get { if (!_windowNoTitleReady) { _windowNoTitleContent = SGetField<int>(LocalBridgeClazz, "windowNoTitle"); _windowNoTitleReady = true; } return _windowNoTitleContent; } }
             private static int _windowNoTitleContent = default;
             private static bool _windowNoTitleReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.attr.html#windowOptOutEdgeToEdgeEnforcement"/>
+            /// </summary>
+            public static int windowOptOutEdgeToEdgeEnforcement { get { if (!_windowOptOutEdgeToEdgeEnforcementReady) { _windowOptOutEdgeToEdgeEnforcementContent = SGetField<int>(LocalBridgeClazz, "windowOptOutEdgeToEdgeEnforcement"); _windowOptOutEdgeToEdgeEnforcementReady = true; } return _windowOptOutEdgeToEdgeEnforcementContent; } }
+            private static int _windowOptOutEdgeToEdgeEnforcementContent = default;
+            private static bool _windowOptOutEdgeToEdgeEnforcementReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.attr.html#windowOverscan"/>
             /// </summary>
@@ -9962,6 +10104,84 @@ namespace Android
             private static int _system_control_normal_lightContent = default;
             private static bool _system_control_normal_lightReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_0"/>
+            /// </summary>
+            public static int system_error_0 { get { if (!_system_error_0Ready) { _system_error_0Content = SGetField<int>(LocalBridgeClazz, "system_error_0"); _system_error_0Ready = true; } return _system_error_0Content; } }
+            private static int _system_error_0Content = default;
+            private static bool _system_error_0Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_10"/>
+            /// </summary>
+            public static int system_error_10 { get { if (!_system_error_10Ready) { _system_error_10Content = SGetField<int>(LocalBridgeClazz, "system_error_10"); _system_error_10Ready = true; } return _system_error_10Content; } }
+            private static int _system_error_10Content = default;
+            private static bool _system_error_10Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_100"/>
+            /// </summary>
+            public static int system_error_100 { get { if (!_system_error_100Ready) { _system_error_100Content = SGetField<int>(LocalBridgeClazz, "system_error_100"); _system_error_100Ready = true; } return _system_error_100Content; } }
+            private static int _system_error_100Content = default;
+            private static bool _system_error_100Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_1000"/>
+            /// </summary>
+            public static int system_error_1000 { get { if (!_system_error_1000Ready) { _system_error_1000Content = SGetField<int>(LocalBridgeClazz, "system_error_1000"); _system_error_1000Ready = true; } return _system_error_1000Content; } }
+            private static int _system_error_1000Content = default;
+            private static bool _system_error_1000Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_200"/>
+            /// </summary>
+            public static int system_error_200 { get { if (!_system_error_200Ready) { _system_error_200Content = SGetField<int>(LocalBridgeClazz, "system_error_200"); _system_error_200Ready = true; } return _system_error_200Content; } }
+            private static int _system_error_200Content = default;
+            private static bool _system_error_200Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_300"/>
+            /// </summary>
+            public static int system_error_300 { get { if (!_system_error_300Ready) { _system_error_300Content = SGetField<int>(LocalBridgeClazz, "system_error_300"); _system_error_300Ready = true; } return _system_error_300Content; } }
+            private static int _system_error_300Content = default;
+            private static bool _system_error_300Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_400"/>
+            /// </summary>
+            public static int system_error_400 { get { if (!_system_error_400Ready) { _system_error_400Content = SGetField<int>(LocalBridgeClazz, "system_error_400"); _system_error_400Ready = true; } return _system_error_400Content; } }
+            private static int _system_error_400Content = default;
+            private static bool _system_error_400Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_50"/>
+            /// </summary>
+            public static int system_error_50 { get { if (!_system_error_50Ready) { _system_error_50Content = SGetField<int>(LocalBridgeClazz, "system_error_50"); _system_error_50Ready = true; } return _system_error_50Content; } }
+            private static int _system_error_50Content = default;
+            private static bool _system_error_50Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_500"/>
+            /// </summary>
+            public static int system_error_500 { get { if (!_system_error_500Ready) { _system_error_500Content = SGetField<int>(LocalBridgeClazz, "system_error_500"); _system_error_500Ready = true; } return _system_error_500Content; } }
+            private static int _system_error_500Content = default;
+            private static bool _system_error_500Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_600"/>
+            /// </summary>
+            public static int system_error_600 { get { if (!_system_error_600Ready) { _system_error_600Content = SGetField<int>(LocalBridgeClazz, "system_error_600"); _system_error_600Ready = true; } return _system_error_600Content; } }
+            private static int _system_error_600Content = default;
+            private static bool _system_error_600Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_700"/>
+            /// </summary>
+            public static int system_error_700 { get { if (!_system_error_700Ready) { _system_error_700Content = SGetField<int>(LocalBridgeClazz, "system_error_700"); _system_error_700Ready = true; } return _system_error_700Content; } }
+            private static int _system_error_700Content = default;
+            private static bool _system_error_700Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_800"/>
+            /// </summary>
+            public static int system_error_800 { get { if (!_system_error_800Ready) { _system_error_800Content = SGetField<int>(LocalBridgeClazz, "system_error_800"); _system_error_800Ready = true; } return _system_error_800Content; } }
+            private static int _system_error_800Content = default;
+            private static bool _system_error_800Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_900"/>
+            /// </summary>
+            public static int system_error_900 { get { if (!_system_error_900Ready) { _system_error_900Content = SGetField<int>(LocalBridgeClazz, "system_error_900"); _system_error_900Ready = true; } return _system_error_900Content; } }
+            private static int _system_error_900Content = default;
+            private static bool _system_error_900Ready = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.color.html#system_error_container_dark"/>
             /// </summary>
             public static int system_error_container_dark { get { if (!_system_error_container_darkReady) { _system_error_container_darkContent = SGetField<int>(LocalBridgeClazz, "system_error_container_dark"); _system_error_container_darkReady = true; } return _system_error_container_darkContent; } }
@@ -10256,6 +10476,12 @@ namespace Android
             private static int _system_on_surface_darkContent = default;
             private static bool _system_on_surface_darkReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_on_surface_disabled"/>
+            /// </summary>
+            public static int system_on_surface_disabled { get { if (!_system_on_surface_disabledReady) { _system_on_surface_disabledContent = SGetField<int>(LocalBridgeClazz, "system_on_surface_disabled"); _system_on_surface_disabledReady = true; } return _system_on_surface_disabledContent; } }
+            private static int _system_on_surface_disabledContent = default;
+            private static bool _system_on_surface_disabledReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.color.html#system_on_surface_light"/>
             /// </summary>
             public static int system_on_surface_light { get { if (!_system_on_surface_lightReady) { _system_on_surface_lightContent = SGetField<int>(LocalBridgeClazz, "system_on_surface_light"); _system_on_surface_lightReady = true; } return _system_on_surface_lightContent; } }
@@ -10315,6 +10541,12 @@ namespace Android
             public static int system_outline_dark { get { if (!_system_outline_darkReady) { _system_outline_darkContent = SGetField<int>(LocalBridgeClazz, "system_outline_dark"); _system_outline_darkReady = true; } return _system_outline_darkContent; } }
             private static int _system_outline_darkContent = default;
             private static bool _system_outline_darkReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_outline_disabled"/>
+            /// </summary>
+            public static int system_outline_disabled { get { if (!_system_outline_disabledReady) { _system_outline_disabledContent = SGetField<int>(LocalBridgeClazz, "system_outline_disabled"); _system_outline_disabledReady = true; } return _system_outline_disabledContent; } }
+            private static int _system_outline_disabledContent = default;
+            private static bool _system_outline_disabledReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.color.html#system_outline_light"/>
             /// </summary>
@@ -10555,6 +10787,12 @@ namespace Android
             public static int system_surface_dim_light { get { if (!_system_surface_dim_lightReady) { _system_surface_dim_lightContent = SGetField<int>(LocalBridgeClazz, "system_surface_dim_light"); _system_surface_dim_lightReady = true; } return _system_surface_dim_lightContent; } }
             private static int _system_surface_dim_lightContent = default;
             private static bool _system_surface_dim_lightReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/R.color.html#system_surface_disabled"/>
+            /// </summary>
+            public static int system_surface_disabled { get { if (!_system_surface_disabledReady) { _system_surface_disabledContent = SGetField<int>(LocalBridgeClazz, "system_surface_disabled"); _system_surface_disabledReady = true; } return _system_surface_disabledContent; } }
+            private static int _system_surface_disabledContent = default;
+            private static bool _system_surface_disabledReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/R.color.html#system_surface_light"/>
             /// </summary>

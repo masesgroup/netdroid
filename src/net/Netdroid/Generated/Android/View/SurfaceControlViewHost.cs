@@ -39,6 +39,16 @@ namespace Android.View
             : base(arg0, arg1, arg2)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#%3Cinit%3E(android.content.Context,android.view.Display,android.window.InputTransferToken)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Android.View.Display"/></param>
+        /// <param name="arg2"><see cref="Android.Window.InputTransferToken"/></param>
+        public SurfaceControlViewHost(Android.Content.Context arg0, Android.View.Display arg1, Android.Window.InputTransferToken arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
 
         #endregion
 
@@ -75,6 +85,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#transferTouchGestureToHost()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool TransferTouchGestureToHost()
         {
             return IExecuteWithSignature<bool>("transferTouchGestureToHost", "()Z");
@@ -150,6 +161,14 @@ namespace Android.View
             public Android.View.SurfaceControl GetSurfaceControl()
             {
                 return IExecuteWithSignature<Android.View.SurfaceControl>("getSurfaceControl", "()Landroid/view/SurfaceControl;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.SurfacePackage.html#getInputTransferToken()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Window.InputTransferToken"/></returns>
+            public Android.Window.InputTransferToken GetInputTransferToken()
+            {
+                return IExecuteWithSignature<Android.Window.InputTransferToken>("getInputTransferToken", "()Landroid/window/InputTransferToken;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.SurfacePackage.html#describeContents()"/>

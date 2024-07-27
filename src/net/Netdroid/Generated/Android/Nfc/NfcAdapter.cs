@@ -38,6 +38,48 @@ namespace Android.Nfc
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_DISABLE"/>
+        /// </summary>
+        public static int FLAG_LISTEN_DISABLE { get { if (!_FLAG_LISTEN_DISABLEReady) { _FLAG_LISTEN_DISABLEContent = SGetField<int>(LocalBridgeClazz, "FLAG_LISTEN_DISABLE"); _FLAG_LISTEN_DISABLEReady = true; } return _FLAG_LISTEN_DISABLEContent; } }
+        private static int _FLAG_LISTEN_DISABLEContent = default;
+        private static bool _FLAG_LISTEN_DISABLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_KEEP"/>
+        /// </summary>
+        public static int FLAG_LISTEN_KEEP { get { if (!_FLAG_LISTEN_KEEPReady) { _FLAG_LISTEN_KEEPContent = SGetField<int>(LocalBridgeClazz, "FLAG_LISTEN_KEEP"); _FLAG_LISTEN_KEEPReady = true; } return _FLAG_LISTEN_KEEPContent; } }
+        private static int _FLAG_LISTEN_KEEPContent = default;
+        private static bool _FLAG_LISTEN_KEEPReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_NFC_PASSIVE_A"/>
+        /// </summary>
+        public static int FLAG_LISTEN_NFC_PASSIVE_A { get { if (!_FLAG_LISTEN_NFC_PASSIVE_AReady) { _FLAG_LISTEN_NFC_PASSIVE_AContent = SGetField<int>(LocalBridgeClazz, "FLAG_LISTEN_NFC_PASSIVE_A"); _FLAG_LISTEN_NFC_PASSIVE_AReady = true; } return _FLAG_LISTEN_NFC_PASSIVE_AContent; } }
+        private static int _FLAG_LISTEN_NFC_PASSIVE_AContent = default;
+        private static bool _FLAG_LISTEN_NFC_PASSIVE_AReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_NFC_PASSIVE_B"/>
+        /// </summary>
+        public static int FLAG_LISTEN_NFC_PASSIVE_B { get { if (!_FLAG_LISTEN_NFC_PASSIVE_BReady) { _FLAG_LISTEN_NFC_PASSIVE_BContent = SGetField<int>(LocalBridgeClazz, "FLAG_LISTEN_NFC_PASSIVE_B"); _FLAG_LISTEN_NFC_PASSIVE_BReady = true; } return _FLAG_LISTEN_NFC_PASSIVE_BContent; } }
+        private static int _FLAG_LISTEN_NFC_PASSIVE_BContent = default;
+        private static bool _FLAG_LISTEN_NFC_PASSIVE_BReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_NFC_PASSIVE_F"/>
+        /// </summary>
+        public static int FLAG_LISTEN_NFC_PASSIVE_F { get { if (!_FLAG_LISTEN_NFC_PASSIVE_FReady) { _FLAG_LISTEN_NFC_PASSIVE_FContent = SGetField<int>(LocalBridgeClazz, "FLAG_LISTEN_NFC_PASSIVE_F"); _FLAG_LISTEN_NFC_PASSIVE_FReady = true; } return _FLAG_LISTEN_NFC_PASSIVE_FContent; } }
+        private static int _FLAG_LISTEN_NFC_PASSIVE_FContent = default;
+        private static bool _FLAG_LISTEN_NFC_PASSIVE_FReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_DISABLE"/>
+        /// </summary>
+        public static int FLAG_READER_DISABLE { get { if (!_FLAG_READER_DISABLEReady) { _FLAG_READER_DISABLEContent = SGetField<int>(LocalBridgeClazz, "FLAG_READER_DISABLE"); _FLAG_READER_DISABLEReady = true; } return _FLAG_READER_DISABLEContent; } }
+        private static int _FLAG_READER_DISABLEContent = default;
+        private static bool _FLAG_READER_DISABLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_KEEP"/>
+        /// </summary>
+        public static int FLAG_READER_KEEP { get { if (!_FLAG_READER_KEEPReady) { _FLAG_READER_KEEPContent = SGetField<int>(LocalBridgeClazz, "FLAG_READER_KEEP"); _FLAG_READER_KEEPReady = true; } return _FLAG_READER_KEEPContent; } }
+        private static int _FLAG_READER_KEEPContent = default;
+        private static bool _FLAG_READER_KEEPReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_NFC_A"/>
         /// </summary>
         public static int FLAG_READER_NFC_A { get { if (!_FLAG_READER_NFC_AReady) { _FLAG_READER_NFC_AContent = SGetField<int>(LocalBridgeClazz, "FLAG_READER_NFC_A"); _FLAG_READER_NFC_AReady = true; } return _FLAG_READER_NFC_AContent; } }
@@ -257,6 +299,38 @@ namespace Android.Nfc
             return IExecuteWithSignature<bool>("isEnabled", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isObserveModeEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsObserveModeEnabled()
+        {
+            return IExecuteWithSignature<bool>("isObserveModeEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isObserveModeSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsObserveModeSupported()
+        {
+            return IExecuteWithSignature<bool>("isObserveModeSupported", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isReaderOptionEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsReaderOptionEnabled()
+        {
+            return IExecuteWithSignature<bool>("isReaderOptionEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isReaderOptionSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsReaderOptionSupported()
+        {
+            return IExecuteWithSignature<bool>("isReaderOptionSupported", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isSecureNfcEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -271,6 +345,15 @@ namespace Android.Nfc
         public bool IsSecureNfcSupported()
         {
             return IExecuteWithSignature<bool>("isSecureNfcSupported", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#setObserveModeEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool SetObserveModeEnabled(bool arg0)
+        {
+            return IExecuteWithSignature<bool>("setObserveModeEnabled", "(Z)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#disableForegroundDispatch(android.app.Activity)"/>
@@ -309,6 +392,24 @@ namespace Android.Nfc
         public void EnableReaderMode(Android.App.Activity arg0, Android.Nfc.NfcAdapter.ReaderCallback arg1, int arg2, Android.Os.Bundle arg3)
         {
             IExecute("enableReaderMode", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#resetDiscoveryTechnology(android.app.Activity)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Activity"/></param>
+        public void ResetDiscoveryTechnology(Android.App.Activity arg0)
+        {
+            IExecuteWithSignature("resetDiscoveryTechnology", "(Landroid/app/Activity;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#setDiscoveryTechnology(android.app.Activity,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Activity"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        public void SetDiscoveryTechnology(Android.App.Activity arg0, int arg1, int arg2)
+        {
+            IExecute("setDiscoveryTechnology", arg0, arg1, arg2);
         }
 
         #endregion

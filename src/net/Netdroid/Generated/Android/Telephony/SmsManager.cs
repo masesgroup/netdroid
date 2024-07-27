@@ -80,6 +80,12 @@ namespace Android.Telephony
         private static int _MMS_ERROR_IO_ERRORContent = default;
         private static bool _MMS_ERROR_IO_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#MMS_ERROR_MMS_DISABLED_BY_CARRIER"/>
+        /// </summary>
+        public static int MMS_ERROR_MMS_DISABLED_BY_CARRIER { get { if (!_MMS_ERROR_MMS_DISABLED_BY_CARRIERReady) { _MMS_ERROR_MMS_DISABLED_BY_CARRIERContent = SGetField<int>(LocalBridgeClazz, "MMS_ERROR_MMS_DISABLED_BY_CARRIER"); _MMS_ERROR_MMS_DISABLED_BY_CARRIERReady = true; } return _MMS_ERROR_MMS_DISABLED_BY_CARRIERContent; } }
+        private static int _MMS_ERROR_MMS_DISABLED_BY_CARRIERContent = default;
+        private static bool _MMS_ERROR_MMS_DISABLED_BY_CARRIERReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#MMS_ERROR_NO_DATA_NETWORK"/>
         /// </summary>
         public static int MMS_ERROR_NO_DATA_NETWORK { get { if (!_MMS_ERROR_NO_DATA_NETWORKReady) { _MMS_ERROR_NO_DATA_NETWORKContent = SGetField<int>(LocalBridgeClazz, "MMS_ERROR_NO_DATA_NETWORK"); _MMS_ERROR_NO_DATA_NETWORKReady = true; } return _MMS_ERROR_NO_DATA_NETWORKContent; } }

@@ -1808,6 +1808,12 @@ namespace Android.System
         private static int _IP_TTLContent = default;
         private static bool _IP_TTLReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/system/OsConstants.html#IPPROTO_ESP"/>
+        /// </summary>
+        public static int IPPROTO_ESP { get { if (!_IPPROTO_ESPReady) { _IPPROTO_ESPContent = SGetField<int>(LocalBridgeClazz, "IPPROTO_ESP"); _IPPROTO_ESPReady = true; } return _IPPROTO_ESPContent; } }
+        private static int _IPPROTO_ESPContent = default;
+        private static bool _IPPROTO_ESPReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/OsConstants.html#IPPROTO_ICMP"/>
         /// </summary>
         public static int IPPROTO_ICMP { get { if (!_IPPROTO_ICMPReady) { _IPPROTO_ICMPContent = SGetField<int>(LocalBridgeClazz, "IPPROTO_ICMP"); _IPPROTO_ICMPReady = true; } return _IPPROTO_ICMPContent; } }
@@ -1873,6 +1879,12 @@ namespace Android.System
         public static int IPV6_MULTICAST_LOOP { get { if (!_IPV6_MULTICAST_LOOPReady) { _IPV6_MULTICAST_LOOPContent = SGetField<int>(LocalBridgeClazz, "IPV6_MULTICAST_LOOP"); _IPV6_MULTICAST_LOOPReady = true; } return _IPV6_MULTICAST_LOOPContent; } }
         private static int _IPV6_MULTICAST_LOOPContent = default;
         private static bool _IPV6_MULTICAST_LOOPReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/system/OsConstants.html#IPV6_PKTINFO"/>
+        /// </summary>
+        public static int IPV6_PKTINFO { get { if (!_IPV6_PKTINFOReady) { _IPV6_PKTINFOContent = SGetField<int>(LocalBridgeClazz, "IPV6_PKTINFO"); _IPV6_PKTINFOReady = true; } return _IPV6_PKTINFOContent; } }
+        private static int _IPV6_PKTINFOContent = default;
+        private static bool _IPV6_PKTINFOReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/OsConstants.html#IPV6_RECVDSTOPTS"/>
         /// </summary>
@@ -2084,6 +2096,12 @@ namespace Android.System
         private static int _NETLINK_ROUTEContent = default;
         private static bool _NETLINK_ROUTEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/system/OsConstants.html#NETLINK_XFRM"/>
+        /// </summary>
+        public static int NETLINK_XFRM { get { if (!_NETLINK_XFRMReady) { _NETLINK_XFRMContent = SGetField<int>(LocalBridgeClazz, "NETLINK_XFRM"); _NETLINK_XFRMReady = true; } return _NETLINK_XFRMContent; } }
+        private static int _NETLINK_XFRMContent = default;
+        private static bool _NETLINK_XFRMReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/OsConstants.html#NI_DGRAM"/>
         /// </summary>
         public static int NI_DGRAM { get { if (!_NI_DGRAMReady) { _NI_DGRAMContent = SGetField<int>(LocalBridgeClazz, "NI_DGRAM"); _NI_DGRAMReady = true; } return _NI_DGRAMContent; } }
@@ -2197,6 +2215,12 @@ namespace Android.System
         public static int O_WRONLY { get { if (!_O_WRONLYReady) { _O_WRONLYContent = SGetField<int>(LocalBridgeClazz, "O_WRONLY"); _O_WRONLYReady = true; } return _O_WRONLYContent; } }
         private static int _O_WRONLYContent = default;
         private static bool _O_WRONLYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/system/OsConstants.html#PACKET_IGNORE_OUTGOING"/>
+        /// </summary>
+        public static int PACKET_IGNORE_OUTGOING { get { if (!_PACKET_IGNORE_OUTGOINGReady) { _PACKET_IGNORE_OUTGOINGContent = SGetField<int>(LocalBridgeClazz, "PACKET_IGNORE_OUTGOING"); _PACKET_IGNORE_OUTGOINGReady = true; } return _PACKET_IGNORE_OUTGOINGContent; } }
+        private static int _PACKET_IGNORE_OUTGOINGContent = default;
+        private static bool _PACKET_IGNORE_OUTGOINGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/OsConstants.html#POLLERR"/>
         /// </summary>
@@ -2881,6 +2905,12 @@ namespace Android.System
         public static int SOCK_STREAM { get { if (!_SOCK_STREAMReady) { _SOCK_STREAMContent = SGetField<int>(LocalBridgeClazz, "SOCK_STREAM"); _SOCK_STREAMReady = true; } return _SOCK_STREAMContent; } }
         private static int _SOCK_STREAMContent = default;
         private static bool _SOCK_STREAMReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/system/OsConstants.html#SOL_PACKET"/>
+        /// </summary>
+        public static int SOL_PACKET { get { if (!_SOL_PACKETReady) { _SOL_PACKETContent = SGetField<int>(LocalBridgeClazz, "SOL_PACKET"); _SOL_PACKETReady = true; } return _SOL_PACKETContent; } }
+        private static int _SOL_PACKETContent = default;
+        private static bool _SOL_PACKETReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/OsConstants.html#SOL_SOCKET"/>
         /// </summary>

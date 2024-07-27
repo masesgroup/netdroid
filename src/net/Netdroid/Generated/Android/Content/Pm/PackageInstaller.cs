@@ -128,6 +128,48 @@ namespace Android.Content.Pm
         private static int _STATUS_SUCCESSContent = default;
         private static bool _STATUS_SUCCESSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_INSTALLER_DISABLED"/>
+        /// </summary>
+        public static int UNARCHIVAL_ERROR_INSTALLER_DISABLED { get { if (!_UNARCHIVAL_ERROR_INSTALLER_DISABLEDReady) { _UNARCHIVAL_ERROR_INSTALLER_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "UNARCHIVAL_ERROR_INSTALLER_DISABLED"); _UNARCHIVAL_ERROR_INSTALLER_DISABLEDReady = true; } return _UNARCHIVAL_ERROR_INSTALLER_DISABLEDContent; } }
+        private static int _UNARCHIVAL_ERROR_INSTALLER_DISABLEDContent = default;
+        private static bool _UNARCHIVAL_ERROR_INSTALLER_DISABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED"/>
+        /// </summary>
+        public static int UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED { get { if (!_UNARCHIVAL_ERROR_INSTALLER_UNINSTALLEDReady) { _UNARCHIVAL_ERROR_INSTALLER_UNINSTALLEDContent = SGetField<int>(LocalBridgeClazz, "UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED"); _UNARCHIVAL_ERROR_INSTALLER_UNINSTALLEDReady = true; } return _UNARCHIVAL_ERROR_INSTALLER_UNINSTALLEDContent; } }
+        private static int _UNARCHIVAL_ERROR_INSTALLER_UNINSTALLEDContent = default;
+        private static bool _UNARCHIVAL_ERROR_INSTALLER_UNINSTALLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE"/>
+        /// </summary>
+        public static int UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE { get { if (!_UNARCHIVAL_ERROR_INSUFFICIENT_STORAGEReady) { _UNARCHIVAL_ERROR_INSUFFICIENT_STORAGEContent = SGetField<int>(LocalBridgeClazz, "UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE"); _UNARCHIVAL_ERROR_INSUFFICIENT_STORAGEReady = true; } return _UNARCHIVAL_ERROR_INSUFFICIENT_STORAGEContent; } }
+        private static int _UNARCHIVAL_ERROR_INSUFFICIENT_STORAGEContent = default;
+        private static bool _UNARCHIVAL_ERROR_INSUFFICIENT_STORAGEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_NO_CONNECTIVITY"/>
+        /// </summary>
+        public static int UNARCHIVAL_ERROR_NO_CONNECTIVITY { get { if (!_UNARCHIVAL_ERROR_NO_CONNECTIVITYReady) { _UNARCHIVAL_ERROR_NO_CONNECTIVITYContent = SGetField<int>(LocalBridgeClazz, "UNARCHIVAL_ERROR_NO_CONNECTIVITY"); _UNARCHIVAL_ERROR_NO_CONNECTIVITYReady = true; } return _UNARCHIVAL_ERROR_NO_CONNECTIVITYContent; } }
+        private static int _UNARCHIVAL_ERROR_NO_CONNECTIVITYContent = default;
+        private static bool _UNARCHIVAL_ERROR_NO_CONNECTIVITYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_USER_ACTION_NEEDED"/>
+        /// </summary>
+        public static int UNARCHIVAL_ERROR_USER_ACTION_NEEDED { get { if (!_UNARCHIVAL_ERROR_USER_ACTION_NEEDEDReady) { _UNARCHIVAL_ERROR_USER_ACTION_NEEDEDContent = SGetField<int>(LocalBridgeClazz, "UNARCHIVAL_ERROR_USER_ACTION_NEEDED"); _UNARCHIVAL_ERROR_USER_ACTION_NEEDEDReady = true; } return _UNARCHIVAL_ERROR_USER_ACTION_NEEDEDContent; } }
+        private static int _UNARCHIVAL_ERROR_USER_ACTION_NEEDEDContent = default;
+        private static bool _UNARCHIVAL_ERROR_USER_ACTION_NEEDEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_GENERIC_ERROR"/>
+        /// </summary>
+        public static int UNARCHIVAL_GENERIC_ERROR { get { if (!_UNARCHIVAL_GENERIC_ERRORReady) { _UNARCHIVAL_GENERIC_ERRORContent = SGetField<int>(LocalBridgeClazz, "UNARCHIVAL_GENERIC_ERROR"); _UNARCHIVAL_GENERIC_ERRORReady = true; } return _UNARCHIVAL_GENERIC_ERRORContent; } }
+        private static int _UNARCHIVAL_GENERIC_ERRORContent = default;
+        private static bool _UNARCHIVAL_GENERIC_ERRORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_OK"/>
+        /// </summary>
+        public static int UNARCHIVAL_OK { get { if (!_UNARCHIVAL_OKReady) { _UNARCHIVAL_OKContent = SGetField<int>(LocalBridgeClazz, "UNARCHIVAL_OK"); _UNARCHIVAL_OKReady = true; } return _UNARCHIVAL_OKContent; } }
+        private static int _UNARCHIVAL_OKContent = default;
+        private static bool _UNARCHIVAL_OKReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#ACTION_SESSION_COMMITTED"/>
         /// </summary>
         public static Java.Lang.String ACTION_SESSION_COMMITTED { get { if (!_ACTION_SESSION_COMMITTEDReady) { _ACTION_SESSION_COMMITTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_SESSION_COMMITTED"); _ACTION_SESSION_COMMITTEDReady = true; } return _ACTION_SESSION_COMMITTEDContent; } }
@@ -205,6 +247,30 @@ namespace Android.Content.Pm
         public static Java.Lang.String EXTRA_STORAGE_PATH { get { if (!_EXTRA_STORAGE_PATHReady) { _EXTRA_STORAGE_PATHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_STORAGE_PATH"); _EXTRA_STORAGE_PATHReady = true; } return _EXTRA_STORAGE_PATHContent; } }
         private static Java.Lang.String _EXTRA_STORAGE_PATHContent = default;
         private static bool _EXTRA_STORAGE_PATHReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_UNARCHIVE_ALL_USERS"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_UNARCHIVE_ALL_USERS { get { if (!_EXTRA_UNARCHIVE_ALL_USERSReady) { _EXTRA_UNARCHIVE_ALL_USERSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_UNARCHIVE_ALL_USERS"); _EXTRA_UNARCHIVE_ALL_USERSReady = true; } return _EXTRA_UNARCHIVE_ALL_USERSContent; } }
+        private static Java.Lang.String _EXTRA_UNARCHIVE_ALL_USERSContent = default;
+        private static bool _EXTRA_UNARCHIVE_ALL_USERSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_UNARCHIVE_ID"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_UNARCHIVE_ID { get { if (!_EXTRA_UNARCHIVE_IDReady) { _EXTRA_UNARCHIVE_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_UNARCHIVE_ID"); _EXTRA_UNARCHIVE_IDReady = true; } return _EXTRA_UNARCHIVE_IDContent; } }
+        private static Java.Lang.String _EXTRA_UNARCHIVE_IDContent = default;
+        private static bool _EXTRA_UNARCHIVE_IDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_UNARCHIVE_PACKAGE_NAME"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_UNARCHIVE_PACKAGE_NAME { get { if (!_EXTRA_UNARCHIVE_PACKAGE_NAMEReady) { _EXTRA_UNARCHIVE_PACKAGE_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_UNARCHIVE_PACKAGE_NAME"); _EXTRA_UNARCHIVE_PACKAGE_NAMEReady = true; } return _EXTRA_UNARCHIVE_PACKAGE_NAMEContent; } }
+        private static Java.Lang.String _EXTRA_UNARCHIVE_PACKAGE_NAMEContent = default;
+        private static bool _EXTRA_UNARCHIVE_PACKAGE_NAMEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_UNARCHIVE_STATUS"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_UNARCHIVE_STATUS { get { if (!_EXTRA_UNARCHIVE_STATUSReady) { _EXTRA_UNARCHIVE_STATUSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_UNARCHIVE_STATUS"); _EXTRA_UNARCHIVE_STATUSReady = true; } return _EXTRA_UNARCHIVE_STATUSContent; } }
+        private static Java.Lang.String _EXTRA_UNARCHIVE_STATUSContent = default;
+        private static bool _EXTRA_UNARCHIVE_STATUSReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -324,6 +390,16 @@ namespace Android.Content.Pm
             IExecute("installExistingPackage", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#installPackageArchived(android.content.pm.ArchivedPackageInfo,android.content.pm.PackageInstaller.SessionParams,android.content.IntentSender)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Pm.ArchivedPackageInfo"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Pm.PackageInstaller.SessionParams"/></param>
+        /// <param name="arg2"><see cref="Android.Content.IntentSender"/></param>
+        public void InstallPackageArchived(Android.Content.Pm.ArchivedPackageInfo arg0, Android.Content.Pm.PackageInstaller.SessionParams arg1, Android.Content.IntentSender arg2)
+        {
+            IExecute("installPackageArchived", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#registerSessionCallback(android.content.pm.PackageInstaller.SessionCallback,android.os.Handler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PackageInstaller.SessionCallback"/></param>
@@ -339,6 +415,48 @@ namespace Android.Content.Pm
         public void RegisterSessionCallback(Android.Content.Pm.PackageInstaller.SessionCallback arg0)
         {
             IExecuteWithSignature("registerSessionCallback", "(Landroid/content/pm/PackageInstaller$SessionCallback;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#reportUnarchivalState(android.content.pm.PackageInstaller.UnarchivalState)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Pm.PackageInstaller.UnarchivalState"/></param>
+        /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
+        public void ReportUnarchivalState(Android.Content.Pm.PackageInstaller.UnarchivalState arg0)
+        {
+            IExecuteWithSignature("reportUnarchivalState", "(Landroid/content/pm/PackageInstaller$UnarchivalState;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#reportUnarchivalStatus(int,int,long,android.app.PendingIntent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="Android.App.PendingIntent"/></param>
+        /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
+        public void ReportUnarchivalStatus(int arg0, int arg1, long arg2, Android.App.PendingIntent arg3)
+        {
+            IExecute("reportUnarchivalStatus", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#requestArchive(java.lang.String,android.content.IntentSender)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Content.IntentSender"/></param>
+        /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
+        public void RequestArchive(Java.Lang.String arg0, Android.Content.IntentSender arg1)
+        {
+            IExecute("requestArchive", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#requestUnarchive(java.lang.String,android.content.IntentSender)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Content.IntentSender"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
+        public void RequestUnarchive(Java.Lang.String arg0, Android.Content.IntentSender arg1)
+        {
+            IExecute("requestUnarchive", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#uninstall(android.content.pm.VersionedPackage,android.content.IntentSender)"/>
@@ -1379,6 +1497,14 @@ namespace Android.Content.Pm
                 return IExecuteWithSignature<bool>("isStagedSessionReady", "()Z");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#isUnarchival()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsUnarchival()
+            {
+                return IExecuteWithSignature<bool>("isUnarchival", "()Z");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getProgress()"/>
             /// </summary>
             /// <returns><see cref="float"/></returns>
@@ -1816,6 +1942,14 @@ namespace Android.Content.Pm
                 IExecuteWithSignature("setSize", "(J)V", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionParams.html#setUnarchiveId(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetUnarchiveId(int arg0)
+            {
+                IExecuteWithSignature("setUnarchiveId", "(I)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionParams.html#setWhitelistedRestrictedPermissions(java.util.Set)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Set"/></param>
@@ -1832,6 +1966,85 @@ namespace Android.Content.Pm
             {
                 IExecute("writeToParcel", arg0, arg1);
             }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region UnarchivalState
+        public partial class UnarchivalState
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.UnarchivalState.html#createGenericErrorState(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Content.Pm.PackageInstaller.UnarchivalState"/></returns>
+            public static Android.Content.Pm.PackageInstaller.UnarchivalState CreateGenericErrorState(int arg0)
+            {
+                return SExecuteWithSignature<Android.Content.Pm.PackageInstaller.UnarchivalState>(LocalBridgeClazz, "createGenericErrorState", "(I)Landroid/content/pm/PackageInstaller$UnarchivalState;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.UnarchivalState.html#createInsufficientStorageState(int,long,android.app.PendingIntent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="long"/></param>
+            /// <param name="arg2"><see cref="Android.App.PendingIntent"/></param>
+            /// <returns><see cref="Android.Content.Pm.PackageInstaller.UnarchivalState"/></returns>
+            public static Android.Content.Pm.PackageInstaller.UnarchivalState CreateInsufficientStorageState(int arg0, long arg1, Android.App.PendingIntent arg2)
+            {
+                return SExecute<Android.Content.Pm.PackageInstaller.UnarchivalState>(LocalBridgeClazz, "createInsufficientStorageState", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.UnarchivalState.html#createNoConnectivityState(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Content.Pm.PackageInstaller.UnarchivalState"/></returns>
+            public static Android.Content.Pm.PackageInstaller.UnarchivalState CreateNoConnectivityState(int arg0)
+            {
+                return SExecuteWithSignature<Android.Content.Pm.PackageInstaller.UnarchivalState>(LocalBridgeClazz, "createNoConnectivityState", "(I)Landroid/content/pm/PackageInstaller$UnarchivalState;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.UnarchivalState.html#createOkState(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Content.Pm.PackageInstaller.UnarchivalState"/></returns>
+            public static Android.Content.Pm.PackageInstaller.UnarchivalState CreateOkState(int arg0)
+            {
+                return SExecuteWithSignature<Android.Content.Pm.PackageInstaller.UnarchivalState>(LocalBridgeClazz, "createOkState", "(I)Landroid/content/pm/PackageInstaller$UnarchivalState;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.UnarchivalState.html#createUserActionRequiredState(int,android.app.PendingIntent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
+            /// <returns><see cref="Android.Content.Pm.PackageInstaller.UnarchivalState"/></returns>
+            public static Android.Content.Pm.PackageInstaller.UnarchivalState CreateUserActionRequiredState(int arg0, Android.App.PendingIntent arg1)
+            {
+                return SExecute<Android.Content.Pm.PackageInstaller.UnarchivalState>(LocalBridgeClazz, "createUserActionRequiredState", arg0, arg1);
+            }
+
+            #endregion
+
+            #region Instance methods
 
             #endregion
 

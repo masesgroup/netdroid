@@ -111,6 +111,14 @@ namespace Android.Net
             return IExecuteWithSignatureArray<int>("getTransportTypes", "()[I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/NetworkRequest.html#getSubscriptionIds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Integer> GetSubscriptionIds()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getSubscriptionIds", "()Ljava/util/Set;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/NetworkRequest.html#writeToParcel(android.os.Parcel,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
@@ -230,6 +238,15 @@ namespace Android.Net
             public Android.Net.NetworkRequest.Builder SetNetworkSpecifier(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Net.NetworkRequest.Builder>("setNetworkSpecifier", "(Ljava/lang/String;)Landroid/net/NetworkRequest$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/NetworkRequest.Builder.html#setSubscriptionIds(java.util.Set)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+            /// <returns><see cref="Android.Net.NetworkRequest.Builder"/></returns>
+            public Android.Net.NetworkRequest.Builder SetSubscriptionIds(Java.Util.Set<Java.Lang.Integer> arg0)
+            {
+                return IExecuteWithSignature<Android.Net.NetworkRequest.Builder>("setSubscriptionIds", "(Ljava/util/Set;)Landroid/net/NetworkRequest$Builder;", arg0);
             }
 
             #endregion

@@ -299,6 +299,15 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<Java.Lang.String>("getDateTimeFormat", "()Ljava/lang/String;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getDateTimeFormat(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDateTimeFormat(int arg0)
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDateTimeFormat", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getDecimal()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -381,6 +390,15 @@ namespace Android.Icu.Text
         public void SetAppendItemName(int arg0, Java.Lang.String arg1)
         {
             IExecute("setAppendItemName", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#setDateTimeFormat(int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        public void SetDateTimeFormat(int arg0, Java.Lang.String arg1)
+        {
+            IExecute("setDateTimeFormat", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#setDateTimeFormat(java.lang.String)"/>

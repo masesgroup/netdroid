@@ -1647,6 +1647,7 @@ namespace Android.Media.Audiofx
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class Virtualizer : Android.Media.Audiofx.AudioEffect
     {
         const string _bridgeClassName = "android.media.audiofx.Virtualizer";
@@ -1688,6 +1689,7 @@ namespace Android.Media.Audiofx
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.OnParameterChangeListener.html"/>
         /// </summary>
+        [global::System.Obsolete()]
         public partial class OnParameterChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -1755,6 +1757,7 @@ namespace Android.Media.Audiofx
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.Settings.html"/>
         /// </summary>
+        [global::System.Obsolete()]
         public partial class Settings : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Settings>
         {
             const string _bridgeClassName = "android.media.audiofx.Virtualizer$Settings";

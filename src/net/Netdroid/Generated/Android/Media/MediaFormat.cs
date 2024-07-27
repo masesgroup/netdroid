@@ -269,6 +269,18 @@ namespace Android.Media
         private static Java.Lang.String _KEY_BITRATE_MODEContent = default;
         private static bool _KEY_BITRATE_MODEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#KEY_BUFFER_BATCH_MAX_OUTPUT_SIZE"/>
+        /// </summary>
+        public static Java.Lang.String KEY_BUFFER_BATCH_MAX_OUTPUT_SIZE { get { if (!_KEY_BUFFER_BATCH_MAX_OUTPUT_SIZEReady) { _KEY_BUFFER_BATCH_MAX_OUTPUT_SIZEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_BUFFER_BATCH_MAX_OUTPUT_SIZE"); _KEY_BUFFER_BATCH_MAX_OUTPUT_SIZEReady = true; } return _KEY_BUFFER_BATCH_MAX_OUTPUT_SIZEContent; } }
+        private static Java.Lang.String _KEY_BUFFER_BATCH_MAX_OUTPUT_SIZEContent = default;
+        private static bool _KEY_BUFFER_BATCH_MAX_OUTPUT_SIZEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#KEY_BUFFER_BATCH_THRESHOLD_OUTPUT_SIZE"/>
+        /// </summary>
+        public static Java.Lang.String KEY_BUFFER_BATCH_THRESHOLD_OUTPUT_SIZE { get { if (!_KEY_BUFFER_BATCH_THRESHOLD_OUTPUT_SIZEReady) { _KEY_BUFFER_BATCH_THRESHOLD_OUTPUT_SIZEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_BUFFER_BATCH_THRESHOLD_OUTPUT_SIZE"); _KEY_BUFFER_BATCH_THRESHOLD_OUTPUT_SIZEReady = true; } return _KEY_BUFFER_BATCH_THRESHOLD_OUTPUT_SIZEContent; } }
+        private static Java.Lang.String _KEY_BUFFER_BATCH_THRESHOLD_OUTPUT_SIZEContent = default;
+        private static bool _KEY_BUFFER_BATCH_THRESHOLD_OUTPUT_SIZEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#KEY_CAPTION_SERVICE_NUMBER"/>
         /// </summary>
         public static Java.Lang.String KEY_CAPTION_SERVICE_NUMBER { get { if (!_KEY_CAPTION_SERVICE_NUMBERReady) { _KEY_CAPTION_SERVICE_NUMBERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_CAPTION_SERVICE_NUMBER"); _KEY_CAPTION_SERVICE_NUMBERReady = true; } return _KEY_CAPTION_SERVICE_NUMBERContent; } }
@@ -442,6 +454,12 @@ namespace Android.Media
         public static Java.Lang.String KEY_I_FRAME_INTERVAL { get { if (!_KEY_I_FRAME_INTERVALReady) { _KEY_I_FRAME_INTERVALContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_I_FRAME_INTERVAL"); _KEY_I_FRAME_INTERVALReady = true; } return _KEY_I_FRAME_INTERVALContent; } }
         private static Java.Lang.String _KEY_I_FRAME_INTERVALContent = default;
         private static bool _KEY_I_FRAME_INTERVALReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#KEY_IMPORTANCE"/>
+        /// </summary>
+        public static Java.Lang.String KEY_IMPORTANCE { get { if (!_KEY_IMPORTANCEReady) { _KEY_IMPORTANCEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_IMPORTANCE"); _KEY_IMPORTANCEReady = true; } return _KEY_IMPORTANCEContent; } }
+        private static Java.Lang.String _KEY_IMPORTANCEContent = default;
+        private static bool _KEY_IMPORTANCEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#KEY_INTRA_REFRESH_PERIOD"/>
         /// </summary>
@@ -1352,7 +1370,73 @@ namespace Android.Media
         #endregion
 
         #region Nested classes
+        #region QpOffsetRect
+        public partial class QpOffsetRect
+        {
+            #region Constructors
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaFormat.QpOffsetRect.html#%3Cinit%3E(android.graphics.Rect,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            public QpOffsetRect(Android.Graphics.Rect arg0, int arg1)
+                : base(arg0, arg1)
+            {
+            }
 
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaFormat.QpOffsetRect.html#flattenToString(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public static Java.Lang.String FlattenToString(Java.Util.List<Android.Media.MediaFormat.QpOffsetRect> arg0)
+            {
+                return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "flattenToString", "(Ljava/util/List;)Ljava/lang/String;", arg0);
+            }
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaFormat.QpOffsetRect.html#flattenToString()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String FlattenToString()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("flattenToString", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaFormat.QpOffsetRect.html#set(android.graphics.Rect,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            public void Set(Android.Graphics.Rect arg0, int arg1)
+            {
+                IExecute("set", arg0, arg1);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+    
         #endregion
 
         // TODO: complete the class

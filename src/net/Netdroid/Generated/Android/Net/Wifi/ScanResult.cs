@@ -280,6 +280,14 @@ namespace Android.Net.Wifi
             return IExecuteWithSignature<Android.Net.Wifi.WifiSsid>("getWifiSsid", "()Landroid/net/wifi/WifiSsid;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#is80211azNtbResponder()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool Is80211azNtbResponder()
+        {
+            return IExecuteWithSignature<bool>("is80211azNtbResponder", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#is80211mcResponder()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -294,6 +302,14 @@ namespace Android.Net.Wifi
         public bool IsPasspointNetwork()
         {
             return IExecuteWithSignature<bool>("isPasspointNetwork", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#isTwtResponder()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTwtResponder()
+        {
+            return IExecuteWithSignature<bool>("isTwtResponder", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#describeContents()"/>

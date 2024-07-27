@@ -71,6 +71,15 @@ namespace Android.Health.Connect
             return IExecuteWithSignature<Java.Time.ZoneOffset>("getZoneOffset", "(Landroid/health/connect/datatypes/AggregationType;)Ljava/time/ZoneOffset;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#getDataOrigins(android.health.connect.datatypes.AggregationType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Health.Connect.Datatypes.AggregationType"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetDataOrigins(Android.Health.Connect.Datatypes.AggregationType arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Set>("getDataOrigins", "(Landroid/health/connect/datatypes/AggregationType;)Ljava/util/Set;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#get(android.health.connect.datatypes.AggregationType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Health.Connect.Datatypes.AggregationType"/></param>
@@ -138,6 +147,15 @@ namespace Android.Health.Connect
         public Java.Time.ZoneOffset GetZoneOffset(Android.Health.Connect.Datatypes.AggregationType<T> arg0)
         {
             return IExecuteWithSignature<Java.Time.ZoneOffset>("getZoneOffset", "(Landroid/health/connect/datatypes/AggregationType;)Ljava/time/ZoneOffset;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#getDataOrigins(android.health.connect.datatypes.AggregationType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Health.Connect.Datatypes.AggregationType"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin> GetDataOrigins(Android.Health.Connect.Datatypes.AggregationType<T> arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin>>("getDataOrigins", "(Landroid/health/connect/datatypes/AggregationType;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#get(android.health.connect.datatypes.AggregationType)"/>

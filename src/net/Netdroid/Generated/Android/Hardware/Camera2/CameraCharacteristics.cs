@@ -188,6 +188,12 @@ namespace Android.Hardware.Camera2
         private static Android.Hardware.Camera2.CameraCharacteristics.Key _SCALER_STREAM_CONFIGURATION_MAP_MAXIMUM_RESOLUTIONContent = default;
         private static bool _SCALER_STREAM_CONFIGURATION_MAP_MAXIMUM_RESOLUTIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#CONTROL_LOW_LIGHT_BOOST_INFO_LUMINANCE_RANGE"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CameraCharacteristics.Key CONTROL_LOW_LIGHT_BOOST_INFO_LUMINANCE_RANGE { get { if (!_CONTROL_LOW_LIGHT_BOOST_INFO_LUMINANCE_RANGEReady) { _CONTROL_LOW_LIGHT_BOOST_INFO_LUMINANCE_RANGEContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "CONTROL_LOW_LIGHT_BOOST_INFO_LUMINANCE_RANGE"); _CONTROL_LOW_LIGHT_BOOST_INFO_LUMINANCE_RANGEReady = true; } return _CONTROL_LOW_LIGHT_BOOST_INFO_LUMINANCE_RANGEContent; } }
+        private static Android.Hardware.Camera2.CameraCharacteristics.Key _CONTROL_LOW_LIGHT_BOOST_INFO_LUMINANCE_RANGEContent = default;
+        private static bool _CONTROL_LOW_LIGHT_BOOST_INFO_LUMINANCE_RANGEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#CONTROL_ZOOM_RATIO_RANGE"/>
         /// </summary>
         public static Android.Hardware.Camera2.CameraCharacteristics.Key CONTROL_ZOOM_RATIO_RANGE { get { if (!_CONTROL_ZOOM_RATIO_RANGEReady) { _CONTROL_ZOOM_RATIO_RANGEContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "CONTROL_ZOOM_RATIO_RANGE"); _CONTROL_ZOOM_RATIO_RANGEReady = true; } return _CONTROL_ZOOM_RATIO_RANGEContent; } }
@@ -579,6 +585,36 @@ namespace Android.Hardware.Camera2
         private static Android.Hardware.Camera2.CameraCharacteristics.Key _FLASH_INFO_STRENGTH_MAXIMUM_LEVELContent = default;
         private static bool _FLASH_INFO_STRENGTH_MAXIMUM_LEVELReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#FLASH_SINGLE_STRENGTH_DEFAULT_LEVEL"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CameraCharacteristics.Key FLASH_SINGLE_STRENGTH_DEFAULT_LEVEL { get { if (!_FLASH_SINGLE_STRENGTH_DEFAULT_LEVELReady) { _FLASH_SINGLE_STRENGTH_DEFAULT_LEVELContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "FLASH_SINGLE_STRENGTH_DEFAULT_LEVEL"); _FLASH_SINGLE_STRENGTH_DEFAULT_LEVELReady = true; } return _FLASH_SINGLE_STRENGTH_DEFAULT_LEVELContent; } }
+        private static Android.Hardware.Camera2.CameraCharacteristics.Key _FLASH_SINGLE_STRENGTH_DEFAULT_LEVELContent = default;
+        private static bool _FLASH_SINGLE_STRENGTH_DEFAULT_LEVELReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#FLASH_SINGLE_STRENGTH_MAX_LEVEL"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CameraCharacteristics.Key FLASH_SINGLE_STRENGTH_MAX_LEVEL { get { if (!_FLASH_SINGLE_STRENGTH_MAX_LEVELReady) { _FLASH_SINGLE_STRENGTH_MAX_LEVELContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "FLASH_SINGLE_STRENGTH_MAX_LEVEL"); _FLASH_SINGLE_STRENGTH_MAX_LEVELReady = true; } return _FLASH_SINGLE_STRENGTH_MAX_LEVELContent; } }
+        private static Android.Hardware.Camera2.CameraCharacteristics.Key _FLASH_SINGLE_STRENGTH_MAX_LEVELContent = default;
+        private static bool _FLASH_SINGLE_STRENGTH_MAX_LEVELReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#FLASH_TORCH_STRENGTH_DEFAULT_LEVEL"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CameraCharacteristics.Key FLASH_TORCH_STRENGTH_DEFAULT_LEVEL { get { if (!_FLASH_TORCH_STRENGTH_DEFAULT_LEVELReady) { _FLASH_TORCH_STRENGTH_DEFAULT_LEVELContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "FLASH_TORCH_STRENGTH_DEFAULT_LEVEL"); _FLASH_TORCH_STRENGTH_DEFAULT_LEVELReady = true; } return _FLASH_TORCH_STRENGTH_DEFAULT_LEVELContent; } }
+        private static Android.Hardware.Camera2.CameraCharacteristics.Key _FLASH_TORCH_STRENGTH_DEFAULT_LEVELContent = default;
+        private static bool _FLASH_TORCH_STRENGTH_DEFAULT_LEVELReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#FLASH_TORCH_STRENGTH_MAX_LEVEL"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CameraCharacteristics.Key FLASH_TORCH_STRENGTH_MAX_LEVEL { get { if (!_FLASH_TORCH_STRENGTH_MAX_LEVELReady) { _FLASH_TORCH_STRENGTH_MAX_LEVELContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "FLASH_TORCH_STRENGTH_MAX_LEVEL"); _FLASH_TORCH_STRENGTH_MAX_LEVELReady = true; } return _FLASH_TORCH_STRENGTH_MAX_LEVELContent; } }
+        private static Android.Hardware.Camera2.CameraCharacteristics.Key _FLASH_TORCH_STRENGTH_MAX_LEVELContent = default;
+        private static bool _FLASH_TORCH_STRENGTH_MAX_LEVELReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#INFO_SESSION_CONFIGURATION_QUERY_VERSION"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CameraCharacteristics.Key INFO_SESSION_CONFIGURATION_QUERY_VERSION { get { if (!_INFO_SESSION_CONFIGURATION_QUERY_VERSIONReady) { _INFO_SESSION_CONFIGURATION_QUERY_VERSIONContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "INFO_SESSION_CONFIGURATION_QUERY_VERSION"); _INFO_SESSION_CONFIGURATION_QUERY_VERSIONReady = true; } return _INFO_SESSION_CONFIGURATION_QUERY_VERSIONContent; } }
+        private static Android.Hardware.Camera2.CameraCharacteristics.Key _INFO_SESSION_CONFIGURATION_QUERY_VERSIONContent = default;
+        private static bool _INFO_SESSION_CONFIGURATION_QUERY_VERSIONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#INFO_SUPPORTED_HARDWARE_LEVEL"/>
         /// </summary>
         public static Android.Hardware.Camera2.CameraCharacteristics.Key INFO_SUPPORTED_HARDWARE_LEVEL { get { if (!_INFO_SUPPORTED_HARDWARE_LEVELReady) { _INFO_SUPPORTED_HARDWARE_LEVELContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "INFO_SUPPORTED_HARDWARE_LEVEL"); _INFO_SUPPORTED_HARDWARE_LEVELReady = true; } return _INFO_SUPPORTED_HARDWARE_LEVELContent; } }
@@ -760,6 +796,14 @@ namespace Android.Hardware.Camera2
         public Android.Hardware.Camera2.Params.RecommendedStreamConfigurationMap GetRecommendedStreamConfigurationMap(int arg0)
         {
             return IExecuteWithSignature<Android.Hardware.Camera2.Params.RecommendedStreamConfigurationMap>("getRecommendedStreamConfigurationMap", "(I)Landroid/hardware/camera2/params/RecommendedStreamConfigurationMap;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getAvailableSessionCharacteristicsKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Hardware.Camera2.CameraCharacteristics.Key<object>> GetAvailableSessionCharacteristicsKeys()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CameraCharacteristics.Key<object>>>("getAvailableSessionCharacteristicsKeys", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getKeysNeedingPermission()"/>

@@ -30,6 +30,7 @@ namespace Android.App.Slice
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/slice/Slice.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class Slice : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.slice.Slice";
@@ -71,6 +72,7 @@ namespace Android.App.Slice
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/Slice.Builder.html"/>
         /// </summary>
+        [global::System.Obsolete()]
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
         {
             const string _bridgeClassName = "android.app.slice.Slice$Builder";
@@ -120,6 +122,7 @@ namespace Android.App.Slice
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class SliceItem : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.slice.SliceItem";
@@ -165,6 +168,7 @@ namespace Android.App.Slice
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class SliceManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SliceManager>
     {
         const string _bridgeClassName = "android.app.slice.SliceManager";
@@ -210,6 +214,7 @@ namespace Android.App.Slice
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/slice/SliceMetrics.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class SliceMetrics : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SliceMetrics>
     {
         const string _bridgeClassName = "android.app.slice.SliceMetrics";
@@ -255,6 +260,7 @@ namespace Android.App.Slice
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/slice/SliceProvider.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class SliceProvider : Android.Content.ContentProvider
     {
         const string _bridgeClassName = "android.app.slice.SliceProvider";
@@ -302,6 +308,7 @@ namespace Android.App.Slice
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/slice/SliceSpec.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class SliceSpec : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.app.slice.SliceSpec";

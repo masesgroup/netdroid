@@ -38,6 +38,18 @@ namespace Android.App
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#AUTOMATIC_RULE_STATUS_ACTIVATED"/>
+        /// </summary>
+        public static int AUTOMATIC_RULE_STATUS_ACTIVATED { get { if (!_AUTOMATIC_RULE_STATUS_ACTIVATEDReady) { _AUTOMATIC_RULE_STATUS_ACTIVATEDContent = SGetField<int>(LocalBridgeClazz, "AUTOMATIC_RULE_STATUS_ACTIVATED"); _AUTOMATIC_RULE_STATUS_ACTIVATEDReady = true; } return _AUTOMATIC_RULE_STATUS_ACTIVATEDContent; } }
+        private static int _AUTOMATIC_RULE_STATUS_ACTIVATEDContent = default;
+        private static bool _AUTOMATIC_RULE_STATUS_ACTIVATEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#AUTOMATIC_RULE_STATUS_DEACTIVATED"/>
+        /// </summary>
+        public static int AUTOMATIC_RULE_STATUS_DEACTIVATED { get { if (!_AUTOMATIC_RULE_STATUS_DEACTIVATEDReady) { _AUTOMATIC_RULE_STATUS_DEACTIVATEDContent = SGetField<int>(LocalBridgeClazz, "AUTOMATIC_RULE_STATUS_DEACTIVATED"); _AUTOMATIC_RULE_STATUS_DEACTIVATEDReady = true; } return _AUTOMATIC_RULE_STATUS_DEACTIVATEDContent; } }
+        private static int _AUTOMATIC_RULE_STATUS_DEACTIVATEDContent = default;
+        private static bool _AUTOMATIC_RULE_STATUS_DEACTIVATEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#AUTOMATIC_RULE_STATUS_DISABLED"/>
         /// </summary>
         public static int AUTOMATIC_RULE_STATUS_DISABLED { get { if (!_AUTOMATIC_RULE_STATUS_DISABLEDReady) { _AUTOMATIC_RULE_STATUS_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "AUTOMATIC_RULE_STATUS_DISABLED"); _AUTOMATIC_RULE_STATUS_DISABLEDReady = true; } return _AUTOMATIC_RULE_STATUS_DISABLEDContent; } }
@@ -170,6 +182,12 @@ namespace Android.App
         private static Java.Lang.String _ACTION_AUTOMATIC_ZEN_RULE_STATUS_CHANGEDContent = default;
         private static bool _ACTION_AUTOMATIC_ZEN_RULE_STATUS_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_CONSOLIDATED_NOTIFICATION_POLICY_CHANGED"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_CONSOLIDATED_NOTIFICATION_POLICY_CHANGED { get { if (!_ACTION_CONSOLIDATED_NOTIFICATION_POLICY_CHANGEDReady) { _ACTION_CONSOLIDATED_NOTIFICATION_POLICY_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_CONSOLIDATED_NOTIFICATION_POLICY_CHANGED"); _ACTION_CONSOLIDATED_NOTIFICATION_POLICY_CHANGEDReady = true; } return _ACTION_CONSOLIDATED_NOTIFICATION_POLICY_CHANGEDContent; } }
+        private static Java.Lang.String _ACTION_CONSOLIDATED_NOTIFICATION_POLICY_CHANGEDContent = default;
+        private static bool _ACTION_CONSOLIDATED_NOTIFICATION_POLICY_CHANGEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_INTERRUPTION_FILTER_CHANGED"/>
         /// </summary>
         public static Java.Lang.String ACTION_INTERRUPTION_FILTER_CHANGED { get { if (!_ACTION_INTERRUPTION_FILTER_CHANGEDReady) { _ACTION_INTERRUPTION_FILTER_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_INTERRUPTION_FILTER_CHANGED"); _ACTION_INTERRUPTION_FILTER_CHANGEDReady = true; } return _ACTION_INTERRUPTION_FILTER_CHANGEDContent; } }
@@ -235,6 +253,12 @@ namespace Android.App
         public static Java.Lang.String EXTRA_NOTIFICATION_CHANNEL_ID { get { if (!_EXTRA_NOTIFICATION_CHANNEL_IDReady) { _EXTRA_NOTIFICATION_CHANNEL_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_NOTIFICATION_CHANNEL_ID"); _EXTRA_NOTIFICATION_CHANNEL_IDReady = true; } return _EXTRA_NOTIFICATION_CHANNEL_IDContent; } }
         private static Java.Lang.String _EXTRA_NOTIFICATION_CHANNEL_IDContent = default;
         private static bool _EXTRA_NOTIFICATION_CHANNEL_IDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#EXTRA_NOTIFICATION_POLICY"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_NOTIFICATION_POLICY { get { if (!_EXTRA_NOTIFICATION_POLICYReady) { _EXTRA_NOTIFICATION_POLICYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_NOTIFICATION_POLICY"); _EXTRA_NOTIFICATION_POLICYReady = true; } return _EXTRA_NOTIFICATION_POLICYContent; } }
+        private static Java.Lang.String _EXTRA_NOTIFICATION_POLICYContent = default;
+        private static bool _EXTRA_NOTIFICATION_POLICYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#META_DATA_AUTOMATIC_RULE_TYPE"/>
         /// </summary>
@@ -315,6 +339,14 @@ namespace Android.App
         public Android.Service.Notification.StatusBarNotification[] GetActiveNotifications()
         {
             return IExecuteWithSignatureArray<Android.Service.Notification.StatusBarNotification>("getActiveNotifications", "()[Landroid/service/notification/StatusBarNotification;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#areAutomaticZenRulesUserManaged()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool AreAutomaticZenRulesUserManaged()
+        {
+            return IExecuteWithSignature<bool>("areAutomaticZenRulesUserManaged", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#areBubblesAllowed()"/>
@@ -434,6 +466,15 @@ namespace Android.App
         public void SetInterruptionFilter(int arg0)
         {
             IExecuteWithSignature("setInterruptionFilter", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getAutomaticZenRuleState(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        public int GetAutomaticZenRuleState(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<int>("getAutomaticZenRuleState", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getBubblePreference()"/>

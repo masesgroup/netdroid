@@ -63,6 +63,7 @@ namespace Android.App.Sdksandbox
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Android.View.View"/></returns>
+        [global::System.Obsolete()]
         public Android.View.View GetView(Android.Content.Context arg0, Android.Os.Bundle arg1, int arg2, int arg3)
         {
             return IExecute<Android.View.View>("getView", arg0, arg1, arg2, arg3);

@@ -128,6 +128,18 @@ namespace Android.Location
         private static int _TYPE_GPS_L5CNAVContent = default;
         private static bool _TYPE_GPS_L5CNAVReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#TYPE_IRN_L1"/>
+        /// </summary>
+        public static int TYPE_IRN_L1 { get { if (!_TYPE_IRN_L1Ready) { _TYPE_IRN_L1Content = SGetField<int>(LocalBridgeClazz, "TYPE_IRN_L1"); _TYPE_IRN_L1Ready = true; } return _TYPE_IRN_L1Content; } }
+        private static int _TYPE_IRN_L1Content = default;
+        private static bool _TYPE_IRN_L1Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#TYPE_IRN_L5"/>
+        /// </summary>
+        public static int TYPE_IRN_L5 { get { if (!_TYPE_IRN_L5Ready) { _TYPE_IRN_L5Content = SGetField<int>(LocalBridgeClazz, "TYPE_IRN_L5"); _TYPE_IRN_L5Ready = true; } return _TYPE_IRN_L5Content; } }
+        private static int _TYPE_IRN_L5Content = default;
+        private static bool _TYPE_IRN_L5Ready = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssNavigationMessage.html#TYPE_IRN_L5CA"/>
         /// </summary>
         public static int TYPE_IRN_L5CA { get { if (!_TYPE_IRN_L5CAReady) { _TYPE_IRN_L5CAContent = SGetField<int>(LocalBridgeClazz, "TYPE_IRN_L5CA"); _TYPE_IRN_L5CAReady = true; } return _TYPE_IRN_L5CAContent; } }

@@ -75,6 +75,12 @@ namespace Android.Media
         private static int _BUFFER_FLAG_SYNC_FRAMEContent = default;
         private static bool _BUFFER_FLAG_SYNC_FRAMEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#CONFIGURE_FLAG_DETACHED_SURFACE"/>
+        /// </summary>
+        public static int CONFIGURE_FLAG_DETACHED_SURFACE { get { if (!_CONFIGURE_FLAG_DETACHED_SURFACEReady) { _CONFIGURE_FLAG_DETACHED_SURFACEContent = SGetField<int>(LocalBridgeClazz, "CONFIGURE_FLAG_DETACHED_SURFACE"); _CONFIGURE_FLAG_DETACHED_SURFACEReady = true; } return _CONFIGURE_FLAG_DETACHED_SURFACEContent; } }
+        private static int _CONFIGURE_FLAG_DETACHED_SURFACEContent = default;
+        private static bool _CONFIGURE_FLAG_DETACHED_SURFACEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#CONFIGURE_FLAG_ENCODE"/>
         /// </summary>
         public static int CONFIGURE_FLAG_ENCODE { get { if (!_CONFIGURE_FLAG_ENCODEReady) { _CONFIGURE_FLAG_ENCODEContent = SGetField<int>(LocalBridgeClazz, "CONFIGURE_FLAG_ENCODE"); _CONFIGURE_FLAG_ENCODEReady = true; } return _CONFIGURE_FLAG_ENCODEContent; } }
@@ -159,6 +165,18 @@ namespace Android.Media
         public static Java.Lang.String PARAMETER_KEY_OFFSET_TIME { get { if (!_PARAMETER_KEY_OFFSET_TIMEReady) { _PARAMETER_KEY_OFFSET_TIMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PARAMETER_KEY_OFFSET_TIME"); _PARAMETER_KEY_OFFSET_TIMEReady = true; } return _PARAMETER_KEY_OFFSET_TIMEContent; } }
         private static Java.Lang.String _PARAMETER_KEY_OFFSET_TIMEContent = default;
         private static bool _PARAMETER_KEY_OFFSET_TIMEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_QP_OFFSET_MAP"/>
+        /// </summary>
+        public static Java.Lang.String PARAMETER_KEY_QP_OFFSET_MAP { get { if (!_PARAMETER_KEY_QP_OFFSET_MAPReady) { _PARAMETER_KEY_QP_OFFSET_MAPContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PARAMETER_KEY_QP_OFFSET_MAP"); _PARAMETER_KEY_QP_OFFSET_MAPReady = true; } return _PARAMETER_KEY_QP_OFFSET_MAPContent; } }
+        private static Java.Lang.String _PARAMETER_KEY_QP_OFFSET_MAPContent = default;
+        private static bool _PARAMETER_KEY_QP_OFFSET_MAPReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_QP_OFFSET_RECTS"/>
+        /// </summary>
+        public static Java.Lang.String PARAMETER_KEY_QP_OFFSET_RECTS { get { if (!_PARAMETER_KEY_QP_OFFSET_RECTSReady) { _PARAMETER_KEY_QP_OFFSET_RECTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PARAMETER_KEY_QP_OFFSET_RECTS"); _PARAMETER_KEY_QP_OFFSET_RECTSReady = true; } return _PARAMETER_KEY_QP_OFFSET_RECTSContent; } }
+        private static Java.Lang.String _PARAMETER_KEY_QP_OFFSET_RECTSContent = default;
+        private static bool _PARAMETER_KEY_QP_OFFSET_RECTSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_REQUEST_SYNC_FRAME"/>
         /// </summary>
@@ -455,6 +473,13 @@ namespace Android.Media
             IExecute("configure", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#detachOutputSurface()"/>
+        /// </summary>
+        public void DetachOutputSurface()
+        {
+            IExecuteWithSignature("detachOutputSurface", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#flush()"/>
         /// </summary>
         public void Flush()
@@ -475,6 +500,15 @@ namespace Android.Media
             IExecute("queueInputBuffer", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#queueInputBuffers(int,java.util.ArrayDeque)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.ArrayDeque"/></param>
+        public void QueueInputBuffers(int arg0, Java.Util.ArrayDeque<Android.Media.MediaCodec.BufferInfo> arg1)
+        {
+            IExecute("queueInputBuffers", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#queueSecureInputBuffer(int,int,android.media.MediaCodec.CryptoInfo,long,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -486,6 +520,16 @@ namespace Android.Media
         public void QueueSecureInputBuffer(int arg0, int arg1, Android.Media.MediaCodec.CryptoInfo arg2, long arg3, int arg4)
         {
             IExecute("queueSecureInputBuffer", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#queueSecureInputBuffers(int,java.util.ArrayDeque,java.util.ArrayDeque)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.ArrayDeque"/></param>
+        /// <param name="arg2"><see cref="Java.Util.ArrayDeque"/></param>
+        public void QueueSecureInputBuffers(int arg0, Java.Util.ArrayDeque<Android.Media.MediaCodec.BufferInfo> arg1, Java.Util.ArrayDeque<Android.Media.MediaCodec.CryptoInfo> arg2)
+        {
+            IExecute("queueSecureInputBuffers", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#release()"/>
@@ -743,6 +787,16 @@ namespace Android.Media
             public void OnCryptoError(Android.Media.MediaCodec arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
                 IExecute("onCryptoError", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.Callback.html#onOutputBuffersAvailable(android.media.MediaCodec,int,java.util.ArrayDeque)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.MediaCodec"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="Java.Util.ArrayDeque"/></param>
+            public void OnOutputBuffersAvailable(Android.Media.MediaCodec arg0, int arg1, Java.Util.ArrayDeque<Android.Media.MediaCodec.BufferInfo> arg2)
+            {
+                IExecute("onOutputBuffersAvailable", arg0, arg1, arg2);
             }
 
             #endregion
@@ -1447,6 +1501,14 @@ namespace Android.Media
                 return IExecuteWithSignature<int>("getFlags", "()I");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getBufferInfos()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.ArrayDeque"/></returns>
+            public Java.Util.ArrayDeque<Android.Media.MediaCodec.BufferInfo> GetBufferInfos()
+            {
+                return IExecuteWithSignature<Java.Util.ArrayDeque<Android.Media.MediaCodec.BufferInfo>>("getBufferInfos", "()Ljava/util/ArrayDeque;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getChangedKeys()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.Set"/></returns>
@@ -1620,6 +1682,27 @@ namespace Android.Media
             public Android.Media.MediaCodec.QueueRequest SetLongParameter(Java.Lang.String arg0, long arg1)
             {
                 return IExecute<Android.Media.MediaCodec.QueueRequest>("setLongParameter", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.QueueRequest.html#setMultiFrameEncryptedLinearBlock(android.media.MediaCodec.LinearBlock,java.util.ArrayDeque,java.util.ArrayDeque)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.MediaCodec.LinearBlock"/></param>
+            /// <param name="arg1"><see cref="Java.Util.ArrayDeque"/></param>
+            /// <param name="arg2"><see cref="Java.Util.ArrayDeque"/></param>
+            /// <returns><see cref="Android.Media.MediaCodec.QueueRequest"/></returns>
+            public Android.Media.MediaCodec.QueueRequest SetMultiFrameEncryptedLinearBlock(Android.Media.MediaCodec.LinearBlock arg0, Java.Util.ArrayDeque<Android.Media.MediaCodec.BufferInfo> arg1, Java.Util.ArrayDeque<Android.Media.MediaCodec.CryptoInfo> arg2)
+            {
+                return IExecute<Android.Media.MediaCodec.QueueRequest>("setMultiFrameEncryptedLinearBlock", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.QueueRequest.html#setMultiFrameLinearBlock(android.media.MediaCodec.LinearBlock,java.util.ArrayDeque)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.MediaCodec.LinearBlock"/></param>
+            /// <param name="arg1"><see cref="Java.Util.ArrayDeque"/></param>
+            /// <returns><see cref="Android.Media.MediaCodec.QueueRequest"/></returns>
+            public Android.Media.MediaCodec.QueueRequest SetMultiFrameLinearBlock(Android.Media.MediaCodec.LinearBlock arg0, Java.Util.ArrayDeque<Android.Media.MediaCodec.BufferInfo> arg1)
+            {
+                return IExecute<Android.Media.MediaCodec.QueueRequest>("setMultiFrameLinearBlock", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.QueueRequest.html#setPresentationTimeUs(long)"/>

@@ -210,6 +210,18 @@ namespace Android.Graphics
         private static int _SUBPIXEL_TEXT_FLAGContent = default;
         private static bool _SUBPIXEL_TEXT_FLAGReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#TEXT_RUN_FLAG_LEFT_EDGE"/>
+        /// </summary>
+        public static int TEXT_RUN_FLAG_LEFT_EDGE { get { if (!_TEXT_RUN_FLAG_LEFT_EDGEReady) { _TEXT_RUN_FLAG_LEFT_EDGEContent = SGetField<int>(LocalBridgeClazz, "TEXT_RUN_FLAG_LEFT_EDGE"); _TEXT_RUN_FLAG_LEFT_EDGEReady = true; } return _TEXT_RUN_FLAG_LEFT_EDGEContent; } }
+        private static int _TEXT_RUN_FLAG_LEFT_EDGEContent = default;
+        private static bool _TEXT_RUN_FLAG_LEFT_EDGEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#TEXT_RUN_FLAG_RIGHT_EDGE"/>
+        /// </summary>
+        public static int TEXT_RUN_FLAG_RIGHT_EDGE { get { if (!_TEXT_RUN_FLAG_RIGHT_EDGEReady) { _TEXT_RUN_FLAG_RIGHT_EDGEContent = SGetField<int>(LocalBridgeClazz, "TEXT_RUN_FLAG_RIGHT_EDGE"); _TEXT_RUN_FLAG_RIGHT_EDGEReady = true; } return _TEXT_RUN_FLAG_RIGHT_EDGEContent; } }
+        private static int _TEXT_RUN_FLAG_RIGHT_EDGEContent = default;
+        private static bool _TEXT_RUN_FLAG_RIGHT_EDGEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#UNDERLINE_TEXT_FLAG"/>
         /// </summary>
         public static int UNDERLINE_TEXT_FLAG { get { if (!_UNDERLINE_TEXT_FLAGReady) { _UNDERLINE_TEXT_FLAGContent = SGetField<int>(LocalBridgeClazz, "UNDERLINE_TEXT_FLAG"); _UNDERLINE_TEXT_FLAGReady = true; } return _UNDERLINE_TEXT_FLAGContent; } }
@@ -1021,6 +1033,14 @@ namespace Android.Graphics
             IExecuteWithSignature("clearShadowLayer", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontMetricsForLocale(android.graphics.Paint.FontMetrics)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Paint.FontMetrics"/></param>
+        public void GetFontMetricsForLocale(Android.Graphics.Paint.FontMetrics arg0)
+        {
+            IExecuteWithSignature("getFontMetricsForLocale", "(Landroid/graphics/Paint$FontMetrics;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontMetricsInt(char[],int,int,int,int,boolean,android.graphics.Paint.FontMetricsInt)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
@@ -1047,6 +1067,14 @@ namespace Android.Graphics
         public void GetFontMetricsInt(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, bool arg5, Android.Graphics.Paint.FontMetricsInt arg6)
         {
             IExecute("getFontMetricsInt", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getFontMetricsIntForLocale(android.graphics.Paint.FontMetricsInt)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Paint.FontMetricsInt"/></param>
+        public void GetFontMetricsIntForLocale(Android.Graphics.Paint.FontMetricsInt arg0)
+        {
+            IExecuteWithSignature("getFontMetricsIntForLocale", "(Landroid/graphics/Paint$FontMetricsInt;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getTextBounds(char[],int,int,android.graphics.Rect)"/>
@@ -1630,6 +1658,22 @@ namespace Android.Graphics
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/Paint.FontMetricsInt.html#set(android.graphics.Paint.FontMetrics)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Paint.FontMetrics"/></param>
+            public void Set(Android.Graphics.Paint.FontMetrics arg0)
+            {
+                IExecuteWithSignature("set", "(Landroid/graphics/Paint$FontMetrics;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/Paint.FontMetricsInt.html#set(android.graphics.Paint.FontMetricsInt)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Paint.FontMetricsInt"/></param>
+            public void Set(Android.Graphics.Paint.FontMetricsInt arg0)
+            {
+                IExecuteWithSignature("set", "(Landroid/graphics/Paint$FontMetricsInt;)V", arg0);
+            }
 
             #endregion
 

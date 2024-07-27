@@ -76,6 +76,15 @@ namespace Android.Hardware.Input
             return IExecuteWithSignature<Android.View.InputDevice>("getInputDevice", "(I)Landroid/view/InputDevice;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.html#getInputDeviceViewBehavior(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Android.View.InputDevice.ViewBehavior"/></returns>
+        public Android.View.InputDevice.ViewBehavior GetInputDeviceViewBehavior(int arg0)
+        {
+            return IExecuteWithSignature<Android.View.InputDevice.ViewBehavior>("getInputDeviceViewBehavior", "(I)Landroid/view/InputDevice$ViewBehavior;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.html#verifyInputEvent(android.view.InputEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.InputEvent"/></param>

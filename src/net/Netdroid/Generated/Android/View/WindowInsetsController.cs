@@ -56,6 +56,12 @@ namespace Android.View
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#APPEARANCE_LIGHT_CAPTION_BARS"/>
+        /// </summary>
+        public static int APPEARANCE_LIGHT_CAPTION_BARS { get { if (!_APPEARANCE_LIGHT_CAPTION_BARSReady) { _APPEARANCE_LIGHT_CAPTION_BARSContent = SGetField<int>(LocalBridgeClazz, "APPEARANCE_LIGHT_CAPTION_BARS"); _APPEARANCE_LIGHT_CAPTION_BARSReady = true; } return _APPEARANCE_LIGHT_CAPTION_BARSContent; } }
+        private static int _APPEARANCE_LIGHT_CAPTION_BARSContent = default;
+        private static bool _APPEARANCE_LIGHT_CAPTION_BARSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#APPEARANCE_LIGHT_NAVIGATION_BARS"/>
         /// </summary>
         public static int APPEARANCE_LIGHT_NAVIGATION_BARS { get { if (!_APPEARANCE_LIGHT_NAVIGATION_BARSReady) { _APPEARANCE_LIGHT_NAVIGATION_BARSContent = SGetField<int>(LocalBridgeClazz, "APPEARANCE_LIGHT_NAVIGATION_BARS"); _APPEARANCE_LIGHT_NAVIGATION_BARSReady = true; } return _APPEARANCE_LIGHT_NAVIGATION_BARSContent; } }
@@ -67,6 +73,12 @@ namespace Android.View
         public static int APPEARANCE_LIGHT_STATUS_BARS { get { if (!_APPEARANCE_LIGHT_STATUS_BARSReady) { _APPEARANCE_LIGHT_STATUS_BARSContent = SGetField<int>(LocalBridgeClazz, "APPEARANCE_LIGHT_STATUS_BARS"); _APPEARANCE_LIGHT_STATUS_BARSReady = true; } return _APPEARANCE_LIGHT_STATUS_BARSContent; } }
         private static int _APPEARANCE_LIGHT_STATUS_BARSContent = default;
         private static bool _APPEARANCE_LIGHT_STATUS_BARSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUND"/>
+        /// </summary>
+        public static int APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUND { get { if (!_APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUNDReady) { _APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUNDContent = SGetField<int>(LocalBridgeClazz, "APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUND"); _APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUNDReady = true; } return _APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUNDContent; } }
+        private static int _APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUNDContent = default;
+        private static bool _APPEARANCE_TRANSPARENT_CAPTION_BAR_BACKGROUNDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#BEHAVIOR_DEFAULT"/>
         /// </summary>

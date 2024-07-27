@@ -207,6 +207,18 @@ namespace Android.Speech
         private static Java.Lang.String _EXTRA_LANGUAGE_SWITCH_ALLOWED_LANGUAGESContent = default;
         private static bool _EXTRA_LANGUAGE_SWITCH_ALLOWED_LANGUAGESReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLIS"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLIS { get { if (!_EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLISReady) { _EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLISContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLIS"); _EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLISReady = true; } return _EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLISContent; } }
+        private static Java.Lang.String _EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLISContent = default;
+        private static bool _EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLISReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_LANGUAGE_SWITCH_MAX_SWITCHES"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_LANGUAGE_SWITCH_MAX_SWITCHES { get { if (!_EXTRA_LANGUAGE_SWITCH_MAX_SWITCHESReady) { _EXTRA_LANGUAGE_SWITCH_MAX_SWITCHESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_LANGUAGE_SWITCH_MAX_SWITCHES"); _EXTRA_LANGUAGE_SWITCH_MAX_SWITCHESReady = true; } return _EXTRA_LANGUAGE_SWITCH_MAX_SWITCHESContent; } }
+        private static Java.Lang.String _EXTRA_LANGUAGE_SWITCH_MAX_SWITCHESContent = default;
+        private static bool _EXTRA_LANGUAGE_SWITCH_MAX_SWITCHESReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_MASK_OFFENSIVE_WORDS"/>
         /// </summary>
         public static Java.Lang.String EXTRA_MASK_OFFENSIVE_WORDS { get { if (!_EXTRA_MASK_OFFENSIVE_WORDSReady) { _EXTRA_MASK_OFFENSIVE_WORDSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_MASK_OFFENSIVE_WORDS"); _EXTRA_MASK_OFFENSIVE_WORDSReady = true; } return _EXTRA_MASK_OFFENSIVE_WORDSContent; } }

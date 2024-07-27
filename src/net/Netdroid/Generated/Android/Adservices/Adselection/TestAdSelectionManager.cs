@@ -56,6 +56,16 @@ namespace Android.Adservices.Adselection
             IExecute("overrideAdSelectionConfigRemoteInfo", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/TestAdSelectionManager.html#overrideAdSelectionFromOutcomesConfigRemoteInfo(android.adservices.adselection.AddAdSelectionFromOutcomesOverrideRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Adservices.Adselection.AddAdSelectionFromOutcomesOverrideRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void OverrideAdSelectionFromOutcomesConfigRemoteInfo(Android.Adservices.Adselection.AddAdSelectionFromOutcomesOverrideRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
+        {
+            IExecute("overrideAdSelectionFromOutcomesConfigRemoteInfo", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/TestAdSelectionManager.html#removeAdSelectionConfigRemoteInfoOverride(android.adservices.adselection.RemoveAdSelectionOverrideRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Adservices.Adselection.RemoveAdSelectionOverrideRequest"/></param>
@@ -66,6 +76,16 @@ namespace Android.Adservices.Adselection
             IExecute("removeAdSelectionConfigRemoteInfoOverride", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/TestAdSelectionManager.html#removeAdSelectionFromOutcomesConfigRemoteInfoOverride(android.adservices.adselection.RemoveAdSelectionFromOutcomesOverrideRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Adservices.Adselection.RemoveAdSelectionFromOutcomesOverrideRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void RemoveAdSelectionFromOutcomesConfigRemoteInfoOverride(Android.Adservices.Adselection.RemoveAdSelectionFromOutcomesOverrideRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg2)
+        {
+            IExecute("removeAdSelectionFromOutcomesConfigRemoteInfoOverride", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/TestAdSelectionManager.html#resetAllAdSelectionConfigRemoteOverrides(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -73,6 +93,15 @@ namespace Android.Adservices.Adselection
         public void ResetAllAdSelectionConfigRemoteOverrides(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg1)
         {
             IExecute("resetAllAdSelectionConfigRemoteOverrides", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/TestAdSelectionManager.html#resetAllAdSelectionFromOutcomesConfigRemoteOverrides(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
+        public void ResetAllAdSelectionFromOutcomesConfigRemoteOverrides(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<object, Java.Lang.Exception> arg1)
+        {
+            IExecute("resetAllAdSelectionFromOutcomesConfigRemoteOverrides", arg0, arg1);
         }
 
         #endregion

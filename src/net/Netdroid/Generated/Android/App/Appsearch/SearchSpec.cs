@@ -38,6 +38,12 @@ namespace Android.App.Appsearch
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#CREATOR"/>
+        /// </summary>
+        public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
+        private static Android.Os.Parcelable.Creator _CREATORContent = default;
+        private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#GROUPING_TYPE_PER_NAMESPACE"/>
         /// </summary>
         public static int GROUPING_TYPE_PER_NAMESPACE { get { if (!_GROUPING_TYPE_PER_NAMESPACEReady) { _GROUPING_TYPE_PER_NAMESPACEContent = SGetField<int>(LocalBridgeClazz, "GROUPING_TYPE_PER_NAMESPACE"); _GROUPING_TYPE_PER_NAMESPACEReady = true; } return _GROUPING_TYPE_PER_NAMESPACEContent; } }
@@ -49,6 +55,12 @@ namespace Android.App.Appsearch
         public static int GROUPING_TYPE_PER_PACKAGE { get { if (!_GROUPING_TYPE_PER_PACKAGEReady) { _GROUPING_TYPE_PER_PACKAGEContent = SGetField<int>(LocalBridgeClazz, "GROUPING_TYPE_PER_PACKAGE"); _GROUPING_TYPE_PER_PACKAGEReady = true; } return _GROUPING_TYPE_PER_PACKAGEContent; } }
         private static int _GROUPING_TYPE_PER_PACKAGEContent = default;
         private static bool _GROUPING_TYPE_PER_PACKAGEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#GROUPING_TYPE_PER_SCHEMA"/>
+        /// </summary>
+        public static int GROUPING_TYPE_PER_SCHEMA { get { if (!_GROUPING_TYPE_PER_SCHEMAReady) { _GROUPING_TYPE_PER_SCHEMAContent = SGetField<int>(LocalBridgeClazz, "GROUPING_TYPE_PER_SCHEMA"); _GROUPING_TYPE_PER_SCHEMAReady = true; } return _GROUPING_TYPE_PER_SCHEMAContent; } }
+        private static int _GROUPING_TYPE_PER_SCHEMAContent = default;
+        private static bool _GROUPING_TYPE_PER_SCHEMAReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#ORDER_ASCENDING"/>
         /// </summary>
@@ -136,9 +148,16 @@ namespace Android.App.Appsearch
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#PROJECTION_SCHEMA_TYPE_WILDCARD"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static Java.Lang.String PROJECTION_SCHEMA_TYPE_WILDCARD { get { if (!_PROJECTION_SCHEMA_TYPE_WILDCARDReady) { _PROJECTION_SCHEMA_TYPE_WILDCARDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROJECTION_SCHEMA_TYPE_WILDCARD"); _PROJECTION_SCHEMA_TYPE_WILDCARDReady = true; } return _PROJECTION_SCHEMA_TYPE_WILDCARDContent; } }
         private static Java.Lang.String _PROJECTION_SCHEMA_TYPE_WILDCARDContent = default;
         private static bool _PROJECTION_SCHEMA_TYPE_WILDCARDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#SCHEMA_TYPE_WILDCARD"/>
+        /// </summary>
+        public static Java.Lang.String SCHEMA_TYPE_WILDCARD { get { if (!_SCHEMA_TYPE_WILDCARDReady) { _SCHEMA_TYPE_WILDCARDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCHEMA_TYPE_WILDCARD"); _SCHEMA_TYPE_WILDCARDReady = true; } return _SCHEMA_TYPE_WILDCARDContent; } }
+        private static Java.Lang.String _SCHEMA_TYPE_WILDCARDContent = default;
+        private static bool _SCHEMA_TYPE_WILDCARDReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -154,6 +173,14 @@ namespace Android.App.Appsearch
         public Android.App.Appsearch.JoinSpec GetJoinSpec()
         {
             return IExecuteWithSignature<Android.App.Appsearch.JoinSpec>("getJoinSpec", "()Landroid/app/appsearch/JoinSpec;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#isListFilterHasPropertyFunctionEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsListFilterHasPropertyFunctionEnabled()
+        {
+            return IExecuteWithSignature<bool>("isListFilterHasPropertyFunctionEnabled", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#isListFilterQueryLanguageEnabled()"/>
@@ -178,6 +205,14 @@ namespace Android.App.Appsearch
         public bool IsVerbatimSearchEnabled()
         {
             return IExecuteWithSignature<bool>("isVerbatimSearchEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#describeContents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int DescribeContents()
+        {
+            return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getMaxSnippetSize()"/>
@@ -260,6 +295,14 @@ namespace Android.App.Appsearch
             return IExecuteWithSignature<Java.Lang.String>("getAdvancedRankingExpression", "()Ljava/lang/String;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getSearchSourceLogTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSearchSourceLogTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSearchSourceLogTag", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getFilterNamespaces()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -292,6 +335,14 @@ namespace Android.App.Appsearch
             return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Android.App.Appsearch.PropertyPath>>>("getProjectionPaths", "()Ljava/util/Map;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getFilterProperties()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> GetFilterProperties()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getFilterProperties", "()Ljava/util/Map;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#getProjections()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map"/></returns>
@@ -314,6 +365,15 @@ namespace Android.App.Appsearch
         public Java.Util.Map<Java.Lang.String, Java.Util.Map<Java.Lang.String, Java.Lang.Double>> GetPropertyWeights()
         {
             return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Map<Java.Lang.String, Java.Lang.Double>>>("getPropertyWeights", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.html#writeToParcel(android.os.Parcel,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
+        {
+            IExecute("writeToParcel", arg0, arg1);
         }
 
         #endregion
@@ -384,6 +444,26 @@ namespace Android.App.Appsearch
                 return IExecuteWithSignature<Android.App.Appsearch.SearchSpec.Builder>("addFilterPackageNames", "(Ljava/util/Collection;)Landroid/app/appsearch/SearchSpec$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#addFilterProperties(java.lang.String,java.util.Collection)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+            /// <returns><see cref="Android.App.Appsearch.SearchSpec.Builder"/></returns>
+            public Android.App.Appsearch.SearchSpec.Builder AddFilterProperties(Java.Lang.String arg0, Java.Util.Collection<Java.Lang.String> arg1)
+            {
+                return IExecute<Android.App.Appsearch.SearchSpec.Builder>("addFilterProperties", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#addFilterPropertyPaths(java.lang.String,java.util.Collection)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+            /// <returns><see cref="Android.App.Appsearch.SearchSpec.Builder"/></returns>
+            public Android.App.Appsearch.SearchSpec.Builder AddFilterPropertyPaths(Java.Lang.String arg0, Java.Util.Collection<Android.App.Appsearch.PropertyPath> arg1)
+            {
+                return IExecute<Android.App.Appsearch.SearchSpec.Builder>("addFilterPropertyPaths", arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#addFilterSchemas(java.lang.String[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -429,6 +509,15 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.SearchSpec.Builder SetJoinSpec(Android.App.Appsearch.JoinSpec arg0)
             {
                 return IExecuteWithSignature<Android.App.Appsearch.SearchSpec.Builder>("setJoinSpec", "(Landroid/app/appsearch/JoinSpec;)Landroid/app/appsearch/SearchSpec$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#setListFilterHasPropertyFunctionEnabled(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.App.Appsearch.SearchSpec.Builder"/></returns>
+            public Android.App.Appsearch.SearchSpec.Builder SetListFilterHasPropertyFunctionEnabled(bool arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.SearchSpec.Builder>("setListFilterHasPropertyFunctionEnabled", "(Z)Landroid/app/appsearch/SearchSpec$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#setListFilterQueryLanguageEnabled(boolean)"/>
@@ -522,6 +611,15 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.SearchSpec.Builder SetResultGrouping(int arg0, int arg1)
             {
                 return IExecute<Android.App.Appsearch.SearchSpec.Builder>("setResultGrouping", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#setSearchSourceLogTag(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.SearchSpec.Builder"/></returns>
+            public Android.App.Appsearch.SearchSpec.Builder SetSearchSourceLogTag(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.SearchSpec.Builder>("setSearchSourceLogTag", "(Ljava/lang/String;)Landroid/app/appsearch/SearchSpec$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSpec.Builder.html#setSnippetCount(int)"/>

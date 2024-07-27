@@ -74,6 +74,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentCallbacks.html#onLowMemory()"/>
         /// </summary>
+        [global::System.Obsolete()]
         public void OnLowMemory()
         {
             IExecuteWithSignature("onLowMemory", "()V");

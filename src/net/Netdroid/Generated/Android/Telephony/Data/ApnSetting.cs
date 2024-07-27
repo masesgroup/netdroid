@@ -200,6 +200,12 @@ namespace Android.Telephony.Data
         private static int _TYPE_MMSContent = default;
         private static bool _TYPE_MMSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#TYPE_RCS"/>
+        /// </summary>
+        public static int TYPE_RCS { get { if (!_TYPE_RCSReady) { _TYPE_RCSContent = SGetField<int>(LocalBridgeClazz, "TYPE_RCS"); _TYPE_RCSReady = true; } return _TYPE_RCSContent; } }
+        private static int _TYPE_RCSContent = default;
+        private static bool _TYPE_RCSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#TYPE_SUPL"/>
         /// </summary>
         public static int TYPE_SUPL { get { if (!_TYPE_SUPLReady) { _TYPE_SUPLContent = SGetField<int>(LocalBridgeClazz, "TYPE_SUPL"); _TYPE_SUPLReady = true; } return _TYPE_SUPLContent; } }
@@ -232,6 +238,14 @@ namespace Android.Telephony.Data
         public Android.Net.Uri GetMmsc()
         {
             return IExecuteWithSignature<Android.Net.Uri>("getMmsc", "()Landroid/net/Uri;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#isAlwaysOn()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAlwaysOn()
+        {
+            return IExecuteWithSignature<bool>("isAlwaysOn", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#isEnabled()"/>
@@ -475,6 +489,15 @@ namespace Android.Telephony.Data
             public Android.Telephony.Data.ApnSetting Build()
             {
                 return IExecuteWithSignature<Android.Telephony.Data.ApnSetting>("build", "()Landroid/telephony/data/ApnSetting;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.Builder.html#setAlwaysOn(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Telephony.Data.ApnSetting.Builder"/></returns>
+            public Android.Telephony.Data.ApnSetting.Builder SetAlwaysOn(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Telephony.Data.ApnSetting.Builder>("setAlwaysOn", "(Z)Landroid/telephony/data/ApnSetting$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.Builder.html#setApnName(java.lang.String)"/>

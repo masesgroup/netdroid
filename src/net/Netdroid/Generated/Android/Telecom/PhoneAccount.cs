@@ -287,6 +287,14 @@ namespace Android.Telecom
             return IExecuteWithSignature<bool>("hasCapabilities", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#hasSimultaneousCallingRestriction()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool HasSimultaneousCallingRestriction()
+        {
+            return IExecuteWithSignature<bool>("hasSimultaneousCallingRestriction", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#isEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -350,6 +358,14 @@ namespace Android.Telecom
         public Java.Util.List<Java.Lang.String> GetSupportedUriSchemes()
         {
             return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedUriSchemes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getSimultaneousCallingRestriction()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Telecom.PhoneAccountHandle> GetSimultaneousCallingRestriction()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.Telecom.PhoneAccountHandle>>("getSimultaneousCallingRestriction", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#writeToParcel(android.os.Parcel,int)"/>
@@ -419,6 +435,14 @@ namespace Android.Telecom
                 return IExecuteWithSignature<Android.Telecom.PhoneAccount.Builder>("addSupportedUriScheme", "(Ljava/lang/String;)Landroid/telecom/PhoneAccount$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.Builder.html#clearSimultaneousCallingRestriction()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Telecom.PhoneAccount.Builder"/></returns>
+            public Android.Telecom.PhoneAccount.Builder ClearSimultaneousCallingRestriction()
+            {
+                return IExecuteWithSignature<Android.Telecom.PhoneAccount.Builder>("clearSimultaneousCallingRestriction", "()Landroid/telecom/PhoneAccount$Builder;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.Builder.html#setAddress(android.net.Uri)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
@@ -471,6 +495,15 @@ namespace Android.Telecom
             public Android.Telecom.PhoneAccount.Builder SetShortDescription(Java.Lang.CharSequence arg0)
             {
                 return IExecuteWithSignature<Android.Telecom.PhoneAccount.Builder>("setShortDescription", "(Ljava/lang/CharSequence;)Landroid/telecom/PhoneAccount$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.Builder.html#setSimultaneousCallingRestriction(java.util.Set)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+            /// <returns><see cref="Android.Telecom.PhoneAccount.Builder"/></returns>
+            public Android.Telecom.PhoneAccount.Builder SetSimultaneousCallingRestriction(Java.Util.Set<Android.Telecom.PhoneAccountHandle> arg0)
+            {
+                return IExecuteWithSignature<Android.Telecom.PhoneAccount.Builder>("setSimultaneousCallingRestriction", "(Ljava/util/Set;)Landroid/telecom/PhoneAccount$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.Builder.html#setSubscriptionAddress(android.net.Uri)"/>

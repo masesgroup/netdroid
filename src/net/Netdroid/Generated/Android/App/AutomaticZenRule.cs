@@ -78,6 +78,60 @@ namespace Android.App
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_BEDTIME"/>
+        /// </summary>
+        public static int TYPE_BEDTIME { get { if (!_TYPE_BEDTIMEReady) { _TYPE_BEDTIMEContent = SGetField<int>(LocalBridgeClazz, "TYPE_BEDTIME"); _TYPE_BEDTIMEReady = true; } return _TYPE_BEDTIMEContent; } }
+        private static int _TYPE_BEDTIMEContent = default;
+        private static bool _TYPE_BEDTIMEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_DRIVING"/>
+        /// </summary>
+        public static int TYPE_DRIVING { get { if (!_TYPE_DRIVINGReady) { _TYPE_DRIVINGContent = SGetField<int>(LocalBridgeClazz, "TYPE_DRIVING"); _TYPE_DRIVINGReady = true; } return _TYPE_DRIVINGContent; } }
+        private static int _TYPE_DRIVINGContent = default;
+        private static bool _TYPE_DRIVINGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_IMMERSIVE"/>
+        /// </summary>
+        public static int TYPE_IMMERSIVE { get { if (!_TYPE_IMMERSIVEReady) { _TYPE_IMMERSIVEContent = SGetField<int>(LocalBridgeClazz, "TYPE_IMMERSIVE"); _TYPE_IMMERSIVEReady = true; } return _TYPE_IMMERSIVEContent; } }
+        private static int _TYPE_IMMERSIVEContent = default;
+        private static bool _TYPE_IMMERSIVEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_MANAGED"/>
+        /// </summary>
+        public static int TYPE_MANAGED { get { if (!_TYPE_MANAGEDReady) { _TYPE_MANAGEDContent = SGetField<int>(LocalBridgeClazz, "TYPE_MANAGED"); _TYPE_MANAGEDReady = true; } return _TYPE_MANAGEDContent; } }
+        private static int _TYPE_MANAGEDContent = default;
+        private static bool _TYPE_MANAGEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_OTHER"/>
+        /// </summary>
+        public static int TYPE_OTHER { get { if (!_TYPE_OTHERReady) { _TYPE_OTHERContent = SGetField<int>(LocalBridgeClazz, "TYPE_OTHER"); _TYPE_OTHERReady = true; } return _TYPE_OTHERContent; } }
+        private static int _TYPE_OTHERContent = default;
+        private static bool _TYPE_OTHERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_SCHEDULE_CALENDAR"/>
+        /// </summary>
+        public static int TYPE_SCHEDULE_CALENDAR { get { if (!_TYPE_SCHEDULE_CALENDARReady) { _TYPE_SCHEDULE_CALENDARContent = SGetField<int>(LocalBridgeClazz, "TYPE_SCHEDULE_CALENDAR"); _TYPE_SCHEDULE_CALENDARReady = true; } return _TYPE_SCHEDULE_CALENDARContent; } }
+        private static int _TYPE_SCHEDULE_CALENDARContent = default;
+        private static bool _TYPE_SCHEDULE_CALENDARReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_SCHEDULE_TIME"/>
+        /// </summary>
+        public static int TYPE_SCHEDULE_TIME { get { if (!_TYPE_SCHEDULE_TIMEReady) { _TYPE_SCHEDULE_TIMEContent = SGetField<int>(LocalBridgeClazz, "TYPE_SCHEDULE_TIME"); _TYPE_SCHEDULE_TIMEReady = true; } return _TYPE_SCHEDULE_TIMEContent; } }
+        private static int _TYPE_SCHEDULE_TIMEContent = default;
+        private static bool _TYPE_SCHEDULE_TIMEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_THEATER"/>
+        /// </summary>
+        public static int TYPE_THEATER { get { if (!_TYPE_THEATERReady) { _TYPE_THEATERContent = SGetField<int>(LocalBridgeClazz, "TYPE_THEATER"); _TYPE_THEATERReady = true; } return _TYPE_THEATERContent; } }
+        private static int _TYPE_THEATERContent = default;
+        private static bool _TYPE_THEATERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_UNKNOWN"/>
+        /// </summary>
+        public static int TYPE_UNKNOWN { get { if (!_TYPE_UNKNOWNReady) { _TYPE_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "TYPE_UNKNOWN"); _TYPE_UNKNOWNReady = true; } return _TYPE_UNKNOWNContent; } }
+        private static int _TYPE_UNKNOWNContent = default;
+        private static bool _TYPE_UNKNOWNReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -111,6 +165,14 @@ namespace Android.App
             return IExecuteWithSignature<Android.Net.Uri>("getConditionId", "()Landroid/net/Uri;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getDeviceEffects()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Service.Notification.ZenDeviceEffects"/></returns>
+        public Android.Service.Notification.ZenDeviceEffects GetDeviceEffects()
+        {
+            return IExecuteWithSignature<Android.Service.Notification.ZenDeviceEffects>("getDeviceEffects", "()Landroid/service/notification/ZenDeviceEffects;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getZenPolicy()"/>
         /// </summary>
         /// <returns><see cref="Android.Service.Notification.ZenPolicy"/></returns>
@@ -127,12 +189,28 @@ namespace Android.App
             return IExecuteWithSignature<bool>("isEnabled", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#isManualInvocationAllowed()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsManualInvocationAllowed()
+        {
+            return IExecuteWithSignature<bool>("isManualInvocationAllowed", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getIconResId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIconResId()
+        {
+            return IExecuteWithSignature<int>("getIconResId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getInterruptionFilter()"/>
@@ -143,12 +221,28 @@ namespace Android.App
             return IExecuteWithSignature<int>("getInterruptionFilter", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getName()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName()
         {
             return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getTriggerDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTriggerDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTriggerDescription", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getCreationTime()"/>
@@ -173,6 +267,14 @@ namespace Android.App
         public void SetConfigurationActivity(Android.Content.ComponentName arg0)
         {
             IExecuteWithSignature("setConfigurationActivity", "(Landroid/content/ComponentName;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setDeviceEffects(android.service.notification.ZenDeviceEffects)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Service.Notification.ZenDeviceEffects"/></param>
+        public void SetDeviceEffects(Android.Service.Notification.ZenDeviceEffects arg0)
+        {
+            IExecuteWithSignature("setDeviceEffects", "(Landroid/service/notification/ZenDeviceEffects;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setEnabled(boolean)"/>
@@ -219,7 +321,171 @@ namespace Android.App
         #endregion
 
         #region Nested classes
+        #region Builder
+        public partial class Builder
+        {
+            #region Constructors
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#%3Cinit%3E(android.app.AutomaticZenRule)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.AutomaticZenRule"/></param>
+            public Builder(Android.App.AutomaticZenRule arg0)
+                : base(arg0)
+            {
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#%3Cinit%3E(java.lang.String,android.net.Uri)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+            public Builder(Java.Lang.String arg0, Android.Net.Uri arg1)
+                : base(arg0, arg1)
+            {
+            }
 
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#build()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.AutomaticZenRule"/></returns>
+            public Android.App.AutomaticZenRule Build()
+            {
+                return IExecuteWithSignature<Android.App.AutomaticZenRule>("build", "()Landroid/app/AutomaticZenRule;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#setConditionId(android.net.Uri)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+            /// <returns><see cref="Android.App.AutomaticZenRule.Builder"/></returns>
+            public Android.App.AutomaticZenRule.Builder SetConditionId(Android.Net.Uri arg0)
+            {
+                return IExecuteWithSignature<Android.App.AutomaticZenRule.Builder>("setConditionId", "(Landroid/net/Uri;)Landroid/app/AutomaticZenRule$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#setConfigurationActivity(android.content.ComponentName)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+            /// <returns><see cref="Android.App.AutomaticZenRule.Builder"/></returns>
+            public Android.App.AutomaticZenRule.Builder SetConfigurationActivity(Android.Content.ComponentName arg0)
+            {
+                return IExecuteWithSignature<Android.App.AutomaticZenRule.Builder>("setConfigurationActivity", "(Landroid/content/ComponentName;)Landroid/app/AutomaticZenRule$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#setDeviceEffects(android.service.notification.ZenDeviceEffects)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Service.Notification.ZenDeviceEffects"/></param>
+            /// <returns><see cref="Android.App.AutomaticZenRule.Builder"/></returns>
+            public Android.App.AutomaticZenRule.Builder SetDeviceEffects(Android.Service.Notification.ZenDeviceEffects arg0)
+            {
+                return IExecuteWithSignature<Android.App.AutomaticZenRule.Builder>("setDeviceEffects", "(Landroid/service/notification/ZenDeviceEffects;)Landroid/app/AutomaticZenRule$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#setEnabled(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.App.AutomaticZenRule.Builder"/></returns>
+            public Android.App.AutomaticZenRule.Builder SetEnabled(bool arg0)
+            {
+                return IExecuteWithSignature<Android.App.AutomaticZenRule.Builder>("setEnabled", "(Z)Landroid/app/AutomaticZenRule$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#setIconResId(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.App.AutomaticZenRule.Builder"/></returns>
+            public Android.App.AutomaticZenRule.Builder SetIconResId(int arg0)
+            {
+                return IExecuteWithSignature<Android.App.AutomaticZenRule.Builder>("setIconResId", "(I)Landroid/app/AutomaticZenRule$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#setInterruptionFilter(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.App.AutomaticZenRule.Builder"/></returns>
+            public Android.App.AutomaticZenRule.Builder SetInterruptionFilter(int arg0)
+            {
+                return IExecuteWithSignature<Android.App.AutomaticZenRule.Builder>("setInterruptionFilter", "(I)Landroid/app/AutomaticZenRule$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#setManualInvocationAllowed(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.App.AutomaticZenRule.Builder"/></returns>
+            public Android.App.AutomaticZenRule.Builder SetManualInvocationAllowed(bool arg0)
+            {
+                return IExecuteWithSignature<Android.App.AutomaticZenRule.Builder>("setManualInvocationAllowed", "(Z)Landroid/app/AutomaticZenRule$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#setName(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.AutomaticZenRule.Builder"/></returns>
+            public Android.App.AutomaticZenRule.Builder SetName(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.AutomaticZenRule.Builder>("setName", "(Ljava/lang/String;)Landroid/app/AutomaticZenRule$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#setOwner(android.content.ComponentName)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+            /// <returns><see cref="Android.App.AutomaticZenRule.Builder"/></returns>
+            public Android.App.AutomaticZenRule.Builder SetOwner(Android.Content.ComponentName arg0)
+            {
+                return IExecuteWithSignature<Android.App.AutomaticZenRule.Builder>("setOwner", "(Landroid/content/ComponentName;)Landroid/app/AutomaticZenRule$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#setTriggerDescription(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.AutomaticZenRule.Builder"/></returns>
+            public Android.App.AutomaticZenRule.Builder SetTriggerDescription(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.AutomaticZenRule.Builder>("setTriggerDescription", "(Ljava/lang/String;)Landroid/app/AutomaticZenRule$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#setType(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.App.AutomaticZenRule.Builder"/></returns>
+            public Android.App.AutomaticZenRule.Builder SetType(int arg0)
+            {
+                return IExecuteWithSignature<Android.App.AutomaticZenRule.Builder>("setType", "(I)Landroid/app/AutomaticZenRule$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.Builder.html#setZenPolicy(android.service.notification.ZenPolicy)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Service.Notification.ZenPolicy"/></param>
+            /// <returns><see cref="Android.App.AutomaticZenRule.Builder"/></returns>
+            public Android.App.AutomaticZenRule.Builder SetZenPolicy(Android.Service.Notification.ZenPolicy arg0)
+            {
+                return IExecuteWithSignature<Android.App.AutomaticZenRule.Builder>("setZenPolicy", "(Landroid/service/notification/ZenPolicy;)Landroid/app/AutomaticZenRule$Builder;", arg0);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+    
         #endregion
 
         // TODO: complete the class

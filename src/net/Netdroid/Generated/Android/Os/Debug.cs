@@ -363,6 +363,14 @@ namespace Android.Os
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getPss", "()J");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getRss()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetRss()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getRss", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#getMemoryInfo(android.os.Debug.MemoryInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Debug.MemoryInfo"/></param>

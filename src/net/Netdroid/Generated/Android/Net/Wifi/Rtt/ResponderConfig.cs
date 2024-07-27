@@ -81,6 +81,14 @@ namespace Android.Net.Wifi.Rtt
             return IExecuteWithSignature<Android.Net.MacAddress>("getMacAddress", "()Landroid/net/MacAddress;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#is80211azNtbSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool Is80211azNtbSupported()
+        {
+            return IExecuteWithSignature<bool>("is80211azNtbSupported", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.html#is80211mcSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -184,6 +192,15 @@ namespace Android.Net.Wifi.Rtt
             public Android.Net.Wifi.Rtt.ResponderConfig Build()
             {
                 return IExecuteWithSignature<Android.Net.Wifi.Rtt.ResponderConfig>("build", "()Landroid/net/wifi/rtt/ResponderConfig;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.Builder.html#set80211azNtbSupported(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Net.Wifi.Rtt.ResponderConfig.Builder"/></returns>
+            public Android.Net.Wifi.Rtt.ResponderConfig.Builder Set80211azNtbSupported(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.Rtt.ResponderConfig.Builder>("set80211azNtbSupported", "(Z)Landroid/net/wifi/rtt/ResponderConfig$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderConfig.Builder.html#set80211mcSupported(boolean)"/>

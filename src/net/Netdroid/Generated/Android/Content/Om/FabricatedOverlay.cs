@@ -63,6 +63,26 @@ namespace Android.Content.Om
             return IExecuteWithSignature<Android.Content.Om.OverlayIdentifier>("getIdentifier", "()Landroid/content/om/OverlayIdentifier;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/om/FabricatedOverlay.html#setNinePatchResourceValue(java.lang.String,android.os.ParcelFileDescriptor,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Os.ParcelFileDescriptor"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        public void SetNinePatchResourceValue(Java.Lang.String arg0, Android.Os.ParcelFileDescriptor arg1, Java.Lang.String arg2)
+        {
+            IExecute("setNinePatchResourceValue", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/om/FabricatedOverlay.html#setResourceValue(java.lang.String,android.content.res.AssetFileDescriptor,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Res.AssetFileDescriptor"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        public void SetResourceValue(Java.Lang.String arg0, Android.Content.Res.AssetFileDescriptor arg1, Java.Lang.String arg2)
+        {
+            IExecute("setResourceValue", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/om/FabricatedOverlay.html#setResourceValue(java.lang.String,android.os.ParcelFileDescriptor,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

@@ -106,6 +106,16 @@ namespace Android.Net.Nsd
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.html#discoverServices(android.net.nsd.DiscoveryRequest,java.util.concurrent.Executor,android.net.nsd.NsdManager.DiscoveryListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Nsd.DiscoveryRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Net.Nsd.NsdManager.DiscoveryListener"/></param>
+        public void DiscoverServices(Android.Net.Nsd.DiscoveryRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Net.Nsd.NsdManager.DiscoveryListener arg2)
+        {
+            IExecute("discoverServices", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.html#discoverServices(java.lang.String,int,android.net.Network,java.util.concurrent.Executor,android.net.nsd.NsdManager.DiscoveryListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

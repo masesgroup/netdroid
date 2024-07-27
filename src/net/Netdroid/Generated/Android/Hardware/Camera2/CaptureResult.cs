@@ -44,6 +44,12 @@ namespace Android.Hardware.Camera2
         private static Android.Hardware.Camera2.CaptureResult.Key _STATISTICS_HOT_PIXEL_MAPContent = default;
         private static bool _STATISTICS_HOT_PIXEL_MAPReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_SENSOR_CROP_REGION"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CaptureResult.Key LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_SENSOR_CROP_REGION { get { if (!_LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_SENSOR_CROP_REGIONReady) { _LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_SENSOR_CROP_REGIONContent = SGetField<Android.Hardware.Camera2.CaptureResult.Key>(LocalBridgeClazz, "LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_SENSOR_CROP_REGION"); _LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_SENSOR_CROP_REGIONReady = true; } return _LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_SENSOR_CROP_REGIONContent; } }
+        private static Android.Hardware.Camera2.CaptureResult.Key _LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_SENSOR_CROP_REGIONContent = default;
+        private static bool _LOGICAL_MULTI_CAMERA_ACTIVE_PHYSICAL_SENSOR_CROP_REGIONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#SCALER_CROP_REGION"/>
         /// </summary>
         public static Android.Hardware.Camera2.CaptureResult.Key SCALER_CROP_REGION { get { if (!_SCALER_CROP_REGIONReady) { _SCALER_CROP_REGIONContent = SGetField<Android.Hardware.Camera2.CaptureResult.Key>(LocalBridgeClazz, "SCALER_CROP_REGION"); _SCALER_CROP_REGIONReady = true; } return _SCALER_CROP_REGIONContent; } }
@@ -67,6 +73,12 @@ namespace Android.Hardware.Camera2
         public static Android.Hardware.Camera2.CaptureResult.Key STATISTICS_FACES { get { if (!_STATISTICS_FACESReady) { _STATISTICS_FACESContent = SGetField<Android.Hardware.Camera2.CaptureResult.Key>(LocalBridgeClazz, "STATISTICS_FACES"); _STATISTICS_FACESReady = true; } return _STATISTICS_FACESContent; } }
         private static Android.Hardware.Camera2.CaptureResult.Key _STATISTICS_FACESContent = default;
         private static bool _STATISTICS_FACESReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#STATISTICS_LENS_INTRINSICS_SAMPLES"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CaptureResult.Key STATISTICS_LENS_INTRINSICS_SAMPLES { get { if (!_STATISTICS_LENS_INTRINSICS_SAMPLESReady) { _STATISTICS_LENS_INTRINSICS_SAMPLESContent = SGetField<Android.Hardware.Camera2.CaptureResult.Key>(LocalBridgeClazz, "STATISTICS_LENS_INTRINSICS_SAMPLES"); _STATISTICS_LENS_INTRINSICS_SAMPLESReady = true; } return _STATISTICS_LENS_INTRINSICS_SAMPLESContent; } }
+        private static Android.Hardware.Camera2.CaptureResult.Key _STATISTICS_LENS_INTRINSICS_SAMPLESContent = default;
+        private static bool _STATISTICS_LENS_INTRINSICS_SAMPLESReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#STATISTICS_LENS_SHADING_CORRECTION_MAP"/>
         /// </summary>
@@ -399,6 +411,12 @@ namespace Android.Hardware.Camera2
         private static Android.Hardware.Camera2.CaptureResult.Key _CONTROL_EXTENDED_SCENE_MODEContent = default;
         private static bool _CONTROL_EXTENDED_SCENE_MODEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#CONTROL_LOW_LIGHT_BOOST_STATE"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CaptureResult.Key CONTROL_LOW_LIGHT_BOOST_STATE { get { if (!_CONTROL_LOW_LIGHT_BOOST_STATEReady) { _CONTROL_LOW_LIGHT_BOOST_STATEContent = SGetField<Android.Hardware.Camera2.CaptureResult.Key>(LocalBridgeClazz, "CONTROL_LOW_LIGHT_BOOST_STATE"); _CONTROL_LOW_LIGHT_BOOST_STATEReady = true; } return _CONTROL_LOW_LIGHT_BOOST_STATEContent; } }
+        private static Android.Hardware.Camera2.CaptureResult.Key _CONTROL_LOW_LIGHT_BOOST_STATEContent = default;
+        private static bool _CONTROL_LOW_LIGHT_BOOST_STATEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#CONTROL_MODE"/>
         /// </summary>
         public static Android.Hardware.Camera2.CaptureResult.Key CONTROL_MODE { get { if (!_CONTROL_MODEReady) { _CONTROL_MODEContent = SGetField<Android.Hardware.Camera2.CaptureResult.Key>(LocalBridgeClazz, "CONTROL_MODE"); _CONTROL_MODEReady = true; } return _CONTROL_MODEContent; } }
@@ -464,6 +482,12 @@ namespace Android.Hardware.Camera2
         public static Android.Hardware.Camera2.CaptureResult.Key FLASH_STATE { get { if (!_FLASH_STATEReady) { _FLASH_STATEContent = SGetField<Android.Hardware.Camera2.CaptureResult.Key>(LocalBridgeClazz, "FLASH_STATE"); _FLASH_STATEReady = true; } return _FLASH_STATEContent; } }
         private static Android.Hardware.Camera2.CaptureResult.Key _FLASH_STATEContent = default;
         private static bool _FLASH_STATEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#FLASH_STRENGTH_LEVEL"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CaptureResult.Key FLASH_STRENGTH_LEVEL { get { if (!_FLASH_STRENGTH_LEVELReady) { _FLASH_STRENGTH_LEVELContent = SGetField<Android.Hardware.Camera2.CaptureResult.Key>(LocalBridgeClazz, "FLASH_STRENGTH_LEVEL"); _FLASH_STRENGTH_LEVELReady = true; } return _FLASH_STRENGTH_LEVELContent; } }
+        private static Android.Hardware.Camera2.CaptureResult.Key _FLASH_STRENGTH_LEVELContent = default;
+        private static bool _FLASH_STRENGTH_LEVELReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#HOT_PIXEL_MODE"/>
         /// </summary>

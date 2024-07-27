@@ -88,6 +88,14 @@ namespace Android.Bluetooth
             return IExecuteWithSignature<int>("getConnectionState", "(Landroid/bluetooth/BluetoothDevice;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothA2dp.html#getSupportedCodecTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Android.Bluetooth.BluetoothCodecType> GetSupportedCodecTypes()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Android.Bluetooth.BluetoothCodecType>>("getSupportedCodecTypes", "()Ljava/util/Collection;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothA2dp.html#getConnectedDevices()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>

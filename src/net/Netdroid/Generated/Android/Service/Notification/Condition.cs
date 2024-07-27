@@ -30,6 +30,17 @@ namespace Android.Service.Notification
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/Condition.html#%3Cinit%3E(android.net.Uri,java.lang.String,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        public Condition(Android.Net.Uri arg0, Java.Lang.String arg1, int arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/Condition.html#%3Cinit%3E(android.net.Uri,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
@@ -37,6 +48,21 @@ namespace Android.Service.Notification
         /// <param name="arg2"><see cref="int"/></param>
         public Condition(Android.Net.Uri arg0, Java.Lang.String arg1, int arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/Condition.html#%3Cinit%3E(android.net.Uri,java.lang.String,java.lang.String,java.lang.String,int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg7"><see cref="int"/></param>
+        public Condition(Android.Net.Uri arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, int arg4, int arg5, int arg6, int arg7)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
         }
         /// <summary>
@@ -88,6 +114,12 @@ namespace Android.Service.Notification
         private int _iconContent = default;
         private bool _iconReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/Condition.html#source"/>
+        /// </summary>
+        public int source { get { if (!_sourceReady) { _sourceContent = IGetField<int>("source"); _sourceReady = true; } return _sourceContent; } }
+        private int _sourceContent = default;
+        private bool _sourceReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/Condition.html#state"/>
         /// </summary>
         public int state { get { if (!_stateReady) { _stateContent = IGetField<int>("state"); _stateReady = true; } return _stateContent; } }
@@ -129,6 +161,30 @@ namespace Android.Service.Notification
         public static int FLAG_RELEVANT_NOW { get { if (!_FLAG_RELEVANT_NOWReady) { _FLAG_RELEVANT_NOWContent = SGetField<int>(LocalBridgeClazz, "FLAG_RELEVANT_NOW"); _FLAG_RELEVANT_NOWReady = true; } return _FLAG_RELEVANT_NOWContent; } }
         private static int _FLAG_RELEVANT_NOWContent = default;
         private static bool _FLAG_RELEVANT_NOWReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/Condition.html#SOURCE_CONTEXT"/>
+        /// </summary>
+        public static int SOURCE_CONTEXT { get { if (!_SOURCE_CONTEXTReady) { _SOURCE_CONTEXTContent = SGetField<int>(LocalBridgeClazz, "SOURCE_CONTEXT"); _SOURCE_CONTEXTReady = true; } return _SOURCE_CONTEXTContent; } }
+        private static int _SOURCE_CONTEXTContent = default;
+        private static bool _SOURCE_CONTEXTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/Condition.html#SOURCE_SCHEDULE"/>
+        /// </summary>
+        public static int SOURCE_SCHEDULE { get { if (!_SOURCE_SCHEDULEReady) { _SOURCE_SCHEDULEContent = SGetField<int>(LocalBridgeClazz, "SOURCE_SCHEDULE"); _SOURCE_SCHEDULEReady = true; } return _SOURCE_SCHEDULEContent; } }
+        private static int _SOURCE_SCHEDULEContent = default;
+        private static bool _SOURCE_SCHEDULEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/Condition.html#SOURCE_UNKNOWN"/>
+        /// </summary>
+        public static int SOURCE_UNKNOWN { get { if (!_SOURCE_UNKNOWNReady) { _SOURCE_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "SOURCE_UNKNOWN"); _SOURCE_UNKNOWNReady = true; } return _SOURCE_UNKNOWNContent; } }
+        private static int _SOURCE_UNKNOWNContent = default;
+        private static bool _SOURCE_UNKNOWNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/Condition.html#SOURCE_USER_ACTION"/>
+        /// </summary>
+        public static int SOURCE_USER_ACTION { get { if (!_SOURCE_USER_ACTIONReady) { _SOURCE_USER_ACTIONContent = SGetField<int>(LocalBridgeClazz, "SOURCE_USER_ACTION"); _SOURCE_USER_ACTIONReady = true; } return _SOURCE_USER_ACTIONContent; } }
+        private static int _SOURCE_USER_ACTIONContent = default;
+        private static bool _SOURCE_USER_ACTIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/Condition.html#STATE_ERROR"/>
         /// </summary>

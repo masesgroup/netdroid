@@ -50,6 +50,10 @@ namespace Android.Content.Pm
         /// </summary>
         public Android.Os.Bundle metaData { get { return IGetField<Android.Os.Bundle>("metaData"); } set { ISetField("metaData", value); } }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageItemInfo.html#isArchived"/>
+        /// </summary>
+        public bool isArchived { get { return IGetField<bool>("isArchived"); } set { ISetField("isArchived", value); } }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageItemInfo.html#banner"/>
         /// </summary>
         public int banner { get { return IGetField<int>("banner"); } set { ISetField("banner", value); } }

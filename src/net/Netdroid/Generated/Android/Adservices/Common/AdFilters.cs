@@ -52,6 +52,14 @@ namespace Android.Adservices.Common
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/common/AdFilters.html#getAppInstallFilters()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Adservices.Common.AppInstallFilters"/></returns>
+        public Android.Adservices.Common.AppInstallFilters GetAppInstallFilters()
+        {
+            return IExecuteWithSignature<Android.Adservices.Common.AppInstallFilters>("getAppInstallFilters", "()Landroid/adservices/common/AppInstallFilters;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/common/AdFilters.html#getFrequencyCapFilters()"/>
         /// </summary>
         /// <returns><see cref="Android.Adservices.Common.FrequencyCapFilters"/></returns>
@@ -107,6 +115,15 @@ namespace Android.Adservices.Common
             public Android.Adservices.Common.AdFilters Build()
             {
                 return IExecuteWithSignature<Android.Adservices.Common.AdFilters>("build", "()Landroid/adservices/common/AdFilters;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/common/AdFilters.Builder.html#setAppInstallFilters(android.adservices.common.AppInstallFilters)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Adservices.Common.AppInstallFilters"/></param>
+            /// <returns><see cref="Android.Adservices.Common.AdFilters.Builder"/></returns>
+            public Android.Adservices.Common.AdFilters.Builder SetAppInstallFilters(Android.Adservices.Common.AppInstallFilters arg0)
+            {
+                return IExecuteWithSignature<Android.Adservices.Common.AdFilters.Builder>("setAppInstallFilters", "(Landroid/adservices/common/AppInstallFilters;)Landroid/adservices/common/AdFilters$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/common/AdFilters.Builder.html#setFrequencyCapFilters(android.adservices.common.FrequencyCapFilters)"/>

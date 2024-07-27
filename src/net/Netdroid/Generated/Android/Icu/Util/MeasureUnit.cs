@@ -806,6 +806,12 @@ namespace Android.Icu.Util
         private static Android.Icu.Util.MeasureUnit _QUARTContent = default;
         private static bool _QUARTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#QUARTER"/>
+        /// </summary>
+        public static Android.Icu.Util.MeasureUnit QUARTER { get { if (!_QUARTERReady) { _QUARTERContent = SGetField<Android.Icu.Util.MeasureUnit>(LocalBridgeClazz, "QUARTER"); _QUARTERReady = true; } return _QUARTERContent; } }
+        private static Android.Icu.Util.MeasureUnit _QUARTERContent = default;
+        private static bool _QUARTERReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#RADIAN"/>
         /// </summary>
         public static Android.Icu.Util.MeasureUnit RADIAN { get { if (!_RADIANReady) { _RADIANContent = SGetField<Android.Icu.Util.MeasureUnit>(LocalBridgeClazz, "RADIAN"); _RADIANReady = true; } return _RADIANContent; } }
@@ -895,6 +901,12 @@ namespace Android.Icu.Util
         public static Android.Icu.Util.MeasureUnit TON { get { if (!_TONReady) { _TONContent = SGetField<Android.Icu.Util.MeasureUnit>(LocalBridgeClazz, "TON"); _TONReady = true; } return _TONContent; } }
         private static Android.Icu.Util.MeasureUnit _TONContent = default;
         private static bool _TONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#TONNE"/>
+        /// </summary>
+        public static Android.Icu.Util.MeasureUnit TONNE { get { if (!_TONNEReady) { _TONNEContent = SGetField<Android.Icu.Util.MeasureUnit>(LocalBridgeClazz, "TONNE"); _TONNEReady = true; } return _TONNEContent; } }
+        private static Android.Icu.Util.MeasureUnit _TONNEContent = default;
+        private static bool _TONNEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#VOLT"/>
         /// </summary>

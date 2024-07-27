@@ -64,6 +64,7 @@ namespace Android.View.Inputmethod
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#SHOW_FORCED"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static int SHOW_FORCED { get { if (!_SHOW_FORCEDReady) { _SHOW_FORCEDContent = SGetField<int>(LocalBridgeClazz, "SHOW_FORCED"); _SHOW_FORCEDReady = true; } return _SHOW_FORCEDContent; } }
         private static int _SHOW_FORCEDContent = default;
         private static bool _SHOW_FORCEDReady = false; // this is used because in case of generics 

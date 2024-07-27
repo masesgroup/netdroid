@@ -236,6 +236,15 @@ namespace Android.Os
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSdkSandbox", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Process.html#isSdkSandboxUid(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public static bool IsSdkSandboxUid(int arg0)
+        {
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSdkSandboxUid", "(I)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Process.html#supportsProcesses()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -243,6 +252,24 @@ namespace Android.Os
         public static bool SupportsProcesses()
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "supportsProcesses", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Process.html#getAppUidForSdkSandboxUid(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        public static int GetAppUidForSdkSandboxUid(int arg0)
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getAppUidForSdkSandboxUid", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Process.html#getSdkSandboxUidForAppUid(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        public static int GetSdkSandboxUidForAppUid(int arg0)
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getSdkSandboxUidForAppUid", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Process.html#myPid()"/>

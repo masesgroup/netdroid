@@ -37,6 +37,12 @@ namespace Android.App.Appsearch
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#CREATOR"/>
+        /// </summary>
+        public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
+        private static Android.Os.Parcelable.Creator _CREATORContent = default;
+        private static bool _CREATORReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -60,6 +66,14 @@ namespace Android.App.Appsearch
         public double GetRankingSignal()
         {
             return IExecuteWithSignature<double>("getRankingSignal", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#describeContents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int DescribeContents()
+        {
+            return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#getDatabaseName()"/>
@@ -92,6 +106,15 @@ namespace Android.App.Appsearch
         public Java.Util.List<Android.App.Appsearch.SearchResult.MatchInfo> GetMatchInfos()
         {
             return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.SearchResult.MatchInfo>>("getMatchInfos", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.html#writeToParcel(android.os.Parcel,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
+        {
+            IExecute("writeToParcel", arg0, arg1);
         }
 
         #endregion
@@ -193,6 +216,12 @@ namespace Android.App.Appsearch
             #endregion
 
             #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#CREATOR"/>
+            /// </summary>
+            public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
+            private static Android.Os.Parcelable.Creator _CREATORContent = default;
+            private static bool _CREATORReady = false; // this is used because in case of generics 
 
             #endregion
 
@@ -234,6 +263,14 @@ namespace Android.App.Appsearch
                 return IExecuteWithSignature<Android.App.Appsearch.SearchResult.MatchRange>("getSubmatchRange", "()Landroid/app/appsearch/SearchResult$MatchRange;");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#describeContents()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int DescribeContents()
+            {
+                return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#getExactMatch()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.CharSequence"/></returns>
@@ -272,6 +309,15 @@ namespace Android.App.Appsearch
             public Java.Lang.String GetPropertyPath()
             {
                 return IExecuteWithSignature<Java.Lang.String>("getPropertyPath", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchResult.MatchInfo.html#writeToParcel(android.os.Parcel,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
+            {
+                IExecute("writeToParcel", arg0, arg1);
             }
 
             #endregion

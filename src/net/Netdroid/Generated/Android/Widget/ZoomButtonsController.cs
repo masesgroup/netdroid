@@ -96,6 +96,7 @@ namespace Android.Widget
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <param name="arg1"><see cref="Android.View.MotionEvent"/></param>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool OnTouch(Android.View.View arg0, Android.View.MotionEvent arg1)
         {
             return IExecute<bool>("onTouch", arg0, arg1);

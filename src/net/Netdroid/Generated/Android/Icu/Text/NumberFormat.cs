@@ -638,6 +638,12 @@ namespace Android.Icu.Text
 
             #region Fields
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.Field.html#APPROXIMATELY_SIGN"/>
+            /// </summary>
+            public static Android.Icu.Text.NumberFormat.Field APPROXIMATELY_SIGN { get { if (!_APPROXIMATELY_SIGNReady) { _APPROXIMATELY_SIGNContent = SGetField<Android.Icu.Text.NumberFormat.Field>(LocalBridgeClazz, "APPROXIMATELY_SIGN"); _APPROXIMATELY_SIGNReady = true; } return _APPROXIMATELY_SIGNContent; } }
+            private static Android.Icu.Text.NumberFormat.Field _APPROXIMATELY_SIGNContent = default;
+            private static bool _APPROXIMATELY_SIGNReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/NumberFormat.Field.html#COMPACT"/>
             /// </summary>
             public static Android.Icu.Text.NumberFormat.Field COMPACT { get { if (!_COMPACTReady) { _COMPACTContent = SGetField<Android.Icu.Text.NumberFormat.Field>(LocalBridgeClazz, "COMPACT"); _COMPACTReady = true; } return _COMPACTContent; } }

@@ -44,6 +44,12 @@ namespace Android.Adservices.Common
         private static Java.Lang.String _ACCESS_ADSERVICES_AD_IDContent = default;
         private static bool _ACCESS_ADSERVICES_AD_IDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/common/AdServicesPermissions.html#ACCESS_ADSERVICES_AD_SELECTION"/>
+        /// </summary>
+        public static Java.Lang.String ACCESS_ADSERVICES_AD_SELECTION { get { if (!_ACCESS_ADSERVICES_AD_SELECTIONReady) { _ACCESS_ADSERVICES_AD_SELECTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESS_ADSERVICES_AD_SELECTION"); _ACCESS_ADSERVICES_AD_SELECTIONReady = true; } return _ACCESS_ADSERVICES_AD_SELECTIONContent; } }
+        private static Java.Lang.String _ACCESS_ADSERVICES_AD_SELECTIONContent = default;
+        private static bool _ACCESS_ADSERVICES_AD_SELECTIONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/common/AdServicesPermissions.html#ACCESS_ADSERVICES_ATTRIBUTION"/>
         /// </summary>
         public static Java.Lang.String ACCESS_ADSERVICES_ATTRIBUTION { get { if (!_ACCESS_ADSERVICES_ATTRIBUTIONReady) { _ACCESS_ADSERVICES_ATTRIBUTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESS_ADSERVICES_ATTRIBUTION"); _ACCESS_ADSERVICES_ATTRIBUTIONReady = true; } return _ACCESS_ADSERVICES_ATTRIBUTIONContent; } }
@@ -55,6 +61,12 @@ namespace Android.Adservices.Common
         public static Java.Lang.String ACCESS_ADSERVICES_CUSTOM_AUDIENCE { get { if (!_ACCESS_ADSERVICES_CUSTOM_AUDIENCEReady) { _ACCESS_ADSERVICES_CUSTOM_AUDIENCEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESS_ADSERVICES_CUSTOM_AUDIENCE"); _ACCESS_ADSERVICES_CUSTOM_AUDIENCEReady = true; } return _ACCESS_ADSERVICES_CUSTOM_AUDIENCEContent; } }
         private static Java.Lang.String _ACCESS_ADSERVICES_CUSTOM_AUDIENCEContent = default;
         private static bool _ACCESS_ADSERVICES_CUSTOM_AUDIENCEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/common/AdServicesPermissions.html#ACCESS_ADSERVICES_PROTECTED_SIGNALS"/>
+        /// </summary>
+        public static Java.Lang.String ACCESS_ADSERVICES_PROTECTED_SIGNALS { get { if (!_ACCESS_ADSERVICES_PROTECTED_SIGNALSReady) { _ACCESS_ADSERVICES_PROTECTED_SIGNALSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESS_ADSERVICES_PROTECTED_SIGNALS"); _ACCESS_ADSERVICES_PROTECTED_SIGNALSReady = true; } return _ACCESS_ADSERVICES_PROTECTED_SIGNALSContent; } }
+        private static Java.Lang.String _ACCESS_ADSERVICES_PROTECTED_SIGNALSContent = default;
+        private static bool _ACCESS_ADSERVICES_PROTECTED_SIGNALSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/common/AdServicesPermissions.html#ACCESS_ADSERVICES_TOPICS"/>
         /// </summary>

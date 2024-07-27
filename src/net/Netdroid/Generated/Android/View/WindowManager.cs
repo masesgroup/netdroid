@@ -56,6 +56,24 @@ namespace Android.View
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#COMPAT_SMALL_COVER_SCREEN_OPT_IN"/>
+        /// </summary>
+        public static int COMPAT_SMALL_COVER_SCREEN_OPT_IN { get { if (!_COMPAT_SMALL_COVER_SCREEN_OPT_INReady) { _COMPAT_SMALL_COVER_SCREEN_OPT_INContent = SGetField<int>(LocalBridgeClazz, "COMPAT_SMALL_COVER_SCREEN_OPT_IN"); _COMPAT_SMALL_COVER_SCREEN_OPT_INReady = true; } return _COMPAT_SMALL_COVER_SCREEN_OPT_INContent; } }
+        private static int _COMPAT_SMALL_COVER_SCREEN_OPT_INContent = default;
+        private static bool _COMPAT_SMALL_COVER_SCREEN_OPT_INReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#SCREEN_RECORDING_STATE_NOT_VISIBLE"/>
+        /// </summary>
+        public static int SCREEN_RECORDING_STATE_NOT_VISIBLE { get { if (!_SCREEN_RECORDING_STATE_NOT_VISIBLEReady) { _SCREEN_RECORDING_STATE_NOT_VISIBLEContent = SGetField<int>(LocalBridgeClazz, "SCREEN_RECORDING_STATE_NOT_VISIBLE"); _SCREEN_RECORDING_STATE_NOT_VISIBLEReady = true; } return _SCREEN_RECORDING_STATE_NOT_VISIBLEContent; } }
+        private static int _SCREEN_RECORDING_STATE_NOT_VISIBLEContent = default;
+        private static bool _SCREEN_RECORDING_STATE_NOT_VISIBLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#SCREEN_RECORDING_STATE_VISIBLE"/>
+        /// </summary>
+        public static int SCREEN_RECORDING_STATE_VISIBLE { get { if (!_SCREEN_RECORDING_STATE_VISIBLEReady) { _SCREEN_RECORDING_STATE_VISIBLEContent = SGetField<int>(LocalBridgeClazz, "SCREEN_RECORDING_STATE_VISIBLE"); _SCREEN_RECORDING_STATE_VISIBLEReady = true; } return _SCREEN_RECORDING_STATE_VISIBLEContent; } }
+        private static int _SCREEN_RECORDING_STATE_VISIBLEContent = default;
+        private static bool _SCREEN_RECORDING_STATE_VISIBLEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#PROPERTY_ACTIVITY_EMBEDDING_ALLOW_SYSTEM_OVERRIDE"/>
         /// </summary>
         public static Java.Lang.String PROPERTY_ACTIVITY_EMBEDDING_ALLOW_SYSTEM_OVERRIDE { get { if (!_PROPERTY_ACTIVITY_EMBEDDING_ALLOW_SYSTEM_OVERRIDEReady) { _PROPERTY_ACTIVITY_EMBEDDING_ALLOW_SYSTEM_OVERRIDEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_ACTIVITY_EMBEDDING_ALLOW_SYSTEM_OVERRIDE"); _PROPERTY_ACTIVITY_EMBEDDING_ALLOW_SYSTEM_OVERRIDEReady = true; } return _PROPERTY_ACTIVITY_EMBEDDING_ALLOW_SYSTEM_OVERRIDEContent; } }
@@ -92,17 +110,53 @@ namespace Android.View
         private static Java.Lang.String _PROPERTY_COMPAT_ALLOW_DISPLAY_ORIENTATION_OVERRIDEContent = default;
         private static bool _PROPERTY_COMPAT_ALLOW_DISPLAY_ORIENTATION_OVERRIDEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#PROPERTY_COMPAT_ALLOW_IGNORING_ORIENTATION_REQUEST_WHEN_LOOP_DETECTED"/>
+        /// </summary>
+        public static Java.Lang.String PROPERTY_COMPAT_ALLOW_IGNORING_ORIENTATION_REQUEST_WHEN_LOOP_DETECTED { get { if (!_PROPERTY_COMPAT_ALLOW_IGNORING_ORIENTATION_REQUEST_WHEN_LOOP_DETECTEDReady) { _PROPERTY_COMPAT_ALLOW_IGNORING_ORIENTATION_REQUEST_WHEN_LOOP_DETECTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_COMPAT_ALLOW_IGNORING_ORIENTATION_REQUEST_WHEN_LOOP_DETECTED"); _PROPERTY_COMPAT_ALLOW_IGNORING_ORIENTATION_REQUEST_WHEN_LOOP_DETECTEDReady = true; } return _PROPERTY_COMPAT_ALLOW_IGNORING_ORIENTATION_REQUEST_WHEN_LOOP_DETECTEDContent; } }
+        private static Java.Lang.String _PROPERTY_COMPAT_ALLOW_IGNORING_ORIENTATION_REQUEST_WHEN_LOOP_DETECTEDContent = default;
+        private static bool _PROPERTY_COMPAT_ALLOW_IGNORING_ORIENTATION_REQUEST_WHEN_LOOP_DETECTEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE"/>
+        /// </summary>
+        public static Java.Lang.String PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE { get { if (!_PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDEReady) { _PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE"); _PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDEReady = true; } return _PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDEContent; } }
+        private static Java.Lang.String _PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDEContent = default;
+        private static bool _PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE"/>
         /// </summary>
         public static Java.Lang.String PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE { get { if (!_PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDEReady) { _PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE"); _PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDEReady = true; } return _PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDEContent; } }
         private static Java.Lang.String _PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDEContent = default;
         private static bool _PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES"/>
+        /// </summary>
+        public static Java.Lang.String PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES { get { if (!_PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDESReady) { _PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES"); _PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDESReady = true; } return _PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDESContent; } }
+        private static Java.Lang.String _PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDESContent = default;
+        private static bool _PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDESReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#PROPERTY_COMPAT_ALLOW_SANDBOXING_VIEW_BOUNDS_APIS"/>
         /// </summary>
         public static Java.Lang.String PROPERTY_COMPAT_ALLOW_SANDBOXING_VIEW_BOUNDS_APIS { get { if (!_PROPERTY_COMPAT_ALLOW_SANDBOXING_VIEW_BOUNDS_APISReady) { _PROPERTY_COMPAT_ALLOW_SANDBOXING_VIEW_BOUNDS_APISContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_COMPAT_ALLOW_SANDBOXING_VIEW_BOUNDS_APIS"); _PROPERTY_COMPAT_ALLOW_SANDBOXING_VIEW_BOUNDS_APISReady = true; } return _PROPERTY_COMPAT_ALLOW_SANDBOXING_VIEW_BOUNDS_APISContent; } }
         private static Java.Lang.String _PROPERTY_COMPAT_ALLOW_SANDBOXING_VIEW_BOUNDS_APISContent = default;
         private static bool _PROPERTY_COMPAT_ALLOW_SANDBOXING_VIEW_BOUNDS_APISReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#PROPERTY_COMPAT_ALLOW_SMALL_COVER_SCREEN"/>
+        /// </summary>
+        public static Java.Lang.String PROPERTY_COMPAT_ALLOW_SMALL_COVER_SCREEN { get { if (!_PROPERTY_COMPAT_ALLOW_SMALL_COVER_SCREENReady) { _PROPERTY_COMPAT_ALLOW_SMALL_COVER_SCREENContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_COMPAT_ALLOW_SMALL_COVER_SCREEN"); _PROPERTY_COMPAT_ALLOW_SMALL_COVER_SCREENReady = true; } return _PROPERTY_COMPAT_ALLOW_SMALL_COVER_SCREENContent; } }
+        private static Java.Lang.String _PROPERTY_COMPAT_ALLOW_SMALL_COVER_SCREENContent = default;
+        private static bool _PROPERTY_COMPAT_ALLOW_SMALL_COVER_SCREENReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDE"/>
+        /// </summary>
+        public static Java.Lang.String PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDE { get { if (!_PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDEReady) { _PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDE"); _PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDEReady = true; } return _PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDEContent; } }
+        private static Java.Lang.String _PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDEContent = default;
+        private static bool _PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDE"/>
+        /// </summary>
+        public static Java.Lang.String PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDE { get { if (!_PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDEReady) { _PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDE"); _PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDEReady = true; } return _PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDEContent; } }
+        private static Java.Lang.String _PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDEContent = default;
+        private static bool _PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#PROPERTY_COMPAT_ENABLE_FAKE_FOCUS"/>
         /// </summary>
@@ -115,6 +169,12 @@ namespace Android.View
         public static Java.Lang.String PROPERTY_COMPAT_IGNORE_REQUESTED_ORIENTATION { get { if (!_PROPERTY_COMPAT_IGNORE_REQUESTED_ORIENTATIONReady) { _PROPERTY_COMPAT_IGNORE_REQUESTED_ORIENTATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_COMPAT_IGNORE_REQUESTED_ORIENTATION"); _PROPERTY_COMPAT_IGNORE_REQUESTED_ORIENTATIONReady = true; } return _PROPERTY_COMPAT_IGNORE_REQUESTED_ORIENTATIONContent; } }
         private static Java.Lang.String _PROPERTY_COMPAT_IGNORE_REQUESTED_ORIENTATIONContent = default;
         private static bool _PROPERTY_COMPAT_IGNORE_REQUESTED_ORIENTATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UI"/>
+        /// </summary>
+        public static Java.Lang.String PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UI { get { if (!_PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UIReady) { _PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UI"); _PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UIReady = true; } return _PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UIContent; } }
+        private static Java.Lang.String _PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UIContent = default;
+        private static bool _PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UIReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -157,12 +217,56 @@ namespace Android.View
             return IExecuteWithSignature<Android.View.WindowMetrics>("getMaximumWindowMetrics", "()Landroid/view/WindowMetrics;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#registerBatchedSurfaceControlInputReceiver(android.window.InputTransferToken,android.view.SurfaceControl,android.view.Choreographer,android.view.SurfaceControlInputReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Window.InputTransferToken"/></param>
+        /// <param name="arg1"><see cref="Android.View.SurfaceControl"/></param>
+        /// <param name="arg2"><see cref="Android.View.Choreographer"/></param>
+        /// <param name="arg3"><see cref="Android.View.SurfaceControlInputReceiver"/></param>
+        /// <returns><see cref="Android.Window.InputTransferToken"/></returns>
+        public Android.Window.InputTransferToken RegisterBatchedSurfaceControlInputReceiver(Android.Window.InputTransferToken arg0, Android.View.SurfaceControl arg1, Android.View.Choreographer arg2, Android.View.SurfaceControlInputReceiver arg3)
+        {
+            return IExecute<Android.Window.InputTransferToken>("registerBatchedSurfaceControlInputReceiver", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#registerUnbatchedSurfaceControlInputReceiver(android.window.InputTransferToken,android.view.SurfaceControl,android.os.Looper,android.view.SurfaceControlInputReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Window.InputTransferToken"/></param>
+        /// <param name="arg1"><see cref="Android.View.SurfaceControl"/></param>
+        /// <param name="arg2"><see cref="Android.Os.Looper"/></param>
+        /// <param name="arg3"><see cref="Android.View.SurfaceControlInputReceiver"/></param>
+        /// <returns><see cref="Android.Window.InputTransferToken"/></returns>
+        public Android.Window.InputTransferToken RegisterUnbatchedSurfaceControlInputReceiver(Android.Window.InputTransferToken arg0, Android.View.SurfaceControl arg1, Android.Os.Looper arg2, Android.View.SurfaceControlInputReceiver arg3)
+        {
+            return IExecute<Android.Window.InputTransferToken>("registerUnbatchedSurfaceControlInputReceiver", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#isCrossWindowBlurEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCrossWindowBlurEnabled()
         {
             return IExecuteWithSignature<bool>("isCrossWindowBlurEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#transferTouchGesture(android.window.InputTransferToken,android.window.InputTransferToken)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Window.InputTransferToken"/></param>
+        /// <param name="arg1"><see cref="Android.Window.InputTransferToken"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool TransferTouchGesture(Android.Window.InputTransferToken arg0, Android.Window.InputTransferToken arg1)
+        {
+            return IExecute<bool>("transferTouchGesture", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#addScreenRecordingCallback(java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <returns><see cref="int"/></returns>
+        public int AddScreenRecordingCallback(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Lang.Integer> arg1)
+        {
+            return IExecute<int>("addScreenRecordingCallback", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#addCrossWindowBlurEnabledListener(java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -191,6 +295,17 @@ namespace Android.View
             IExecute("addProposedRotationListener", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#registerTrustedPresentationListener(android.os.IBinder,android.window.TrustedPresentationThresholds,java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.IBinder"/></param>
+        /// <param name="arg1"><see cref="Android.Window.TrustedPresentationThresholds"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
+        public void RegisterTrustedPresentationListener(Android.Os.IBinder arg0, Android.Window.TrustedPresentationThresholds arg1, Java.Util.Concurrent.Executor arg2, Java.Util.Function.Consumer<Java.Lang.Boolean> arg3)
+        {
+            IExecute("registerTrustedPresentationListener", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#removeCrossWindowBlurEnabledListener(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
@@ -205,6 +320,30 @@ namespace Android.View
         public void RemoveProposedRotationListener(Java.Util.Function.IntConsumer arg0)
         {
             IExecuteWithSignature("removeProposedRotationListener", "(Ljava/util/function/IntConsumer;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#removeScreenRecordingCallback(java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        public void RemoveScreenRecordingCallback(Java.Util.Function.Consumer<Java.Lang.Integer> arg0)
+        {
+            IExecuteWithSignature("removeScreenRecordingCallback", "(Ljava/util/function/Consumer;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#unregisterSurfaceControlInputReceiver(android.view.SurfaceControl)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.SurfaceControl"/></param>
+        public void UnregisterSurfaceControlInputReceiver(Android.View.SurfaceControl arg0)
+        {
+            IExecuteWithSignature("unregisterSurfaceControlInputReceiver", "(Landroid/view/SurfaceControl;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#unregisterTrustedPresentationListener(java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        public void UnregisterTrustedPresentationListener(Java.Util.Function.Consumer<Java.Lang.Boolean> arg0)
+        {
+            IExecuteWithSignature("unregisterTrustedPresentationListener", "(Ljava/util/function/Consumer;)V", arg0);
         }
 
         #endregion
@@ -1136,12 +1275,28 @@ namespace Android.View
                 return IExecuteWithSignature<bool>("canPlayMoveAnimation", "()Z");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#getFrameRateBoostOnTouchEnabled()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool GetFrameRateBoostOnTouchEnabled()
+            {
+                return IExecuteWithSignature<bool>("getFrameRateBoostOnTouchEnabled", "()Z");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#isFitInsetsIgnoringVisibility()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool IsFitInsetsIgnoringVisibility()
             {
                 return IExecuteWithSignature<bool>("isFitInsetsIgnoringVisibility", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#isFrameRatePowerSavingsBalanced()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsFrameRatePowerSavingsBalanced()
+            {
+                return IExecuteWithSignature<bool>("isFrameRatePowerSavingsBalanced", "()Z");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#isHdrConversionEnabled()"/>
@@ -1175,6 +1330,14 @@ namespace Android.View
             public void SetTitle(Java.Lang.CharSequence arg0)
             {
                 IExecuteWithSignature("setTitle", "(Ljava/lang/CharSequence;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#getDesiredHdrHeadroom()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float GetDesiredHdrHeadroom()
+            {
+                return IExecuteWithSignature<float>("getDesiredHdrHeadroom", "()F");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#describeContents()"/>
@@ -1250,6 +1413,14 @@ namespace Android.View
                 IExecuteWithSignature("setColorMode", "(I)V", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setDesiredHdrHeadroom(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetDesiredHdrHeadroom(float arg0)
+            {
+                IExecuteWithSignature("setDesiredHdrHeadroom", "(F)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setFitInsetsIgnoringVisibility(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
@@ -1272,6 +1443,22 @@ namespace Android.View
             public void SetFitInsetsTypes(int arg0)
             {
                 IExecuteWithSignature("setFitInsetsTypes", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setFrameRateBoostOnTouchEnabled(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public void SetFrameRateBoostOnTouchEnabled(bool arg0)
+            {
+                IExecuteWithSignature("setFrameRateBoostOnTouchEnabled", "(Z)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setFrameRatePowerSavingsBalanced(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public void SetFrameRatePowerSavingsBalanced(bool arg0)
+            {
+                IExecuteWithSignature("setFrameRatePowerSavingsBalanced", "(Z)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setHdrConversionEnabled(boolean)"/>

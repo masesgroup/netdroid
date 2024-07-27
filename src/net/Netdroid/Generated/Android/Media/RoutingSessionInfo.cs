@@ -43,6 +43,24 @@ namespace Android.Media
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#TRANSFER_REASON_APP"/>
+        /// </summary>
+        public static int TRANSFER_REASON_APP { get { if (!_TRANSFER_REASON_APPReady) { _TRANSFER_REASON_APPContent = SGetField<int>(LocalBridgeClazz, "TRANSFER_REASON_APP"); _TRANSFER_REASON_APPReady = true; } return _TRANSFER_REASON_APPContent; } }
+        private static int _TRANSFER_REASON_APPContent = default;
+        private static bool _TRANSFER_REASON_APPReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#TRANSFER_REASON_FALLBACK"/>
+        /// </summary>
+        public static int TRANSFER_REASON_FALLBACK { get { if (!_TRANSFER_REASON_FALLBACKReady) { _TRANSFER_REASON_FALLBACKContent = SGetField<int>(LocalBridgeClazz, "TRANSFER_REASON_FALLBACK"); _TRANSFER_REASON_FALLBACKReady = true; } return _TRANSFER_REASON_FALLBACKContent; } }
+        private static int _TRANSFER_REASON_FALLBACKContent = default;
+        private static bool _TRANSFER_REASON_FALLBACKReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#TRANSFER_REASON_SYSTEM_REQUEST"/>
+        /// </summary>
+        public static int TRANSFER_REASON_SYSTEM_REQUEST { get { if (!_TRANSFER_REASON_SYSTEM_REQUESTReady) { _TRANSFER_REASON_SYSTEM_REQUESTContent = SGetField<int>(LocalBridgeClazz, "TRANSFER_REASON_SYSTEM_REQUEST"); _TRANSFER_REASON_SYSTEM_REQUESTReady = true; } return _TRANSFER_REASON_SYSTEM_REQUESTContent; } }
+        private static int _TRANSFER_REASON_SYSTEM_REQUESTContent = default;
+        private static bool _TRANSFER_REASON_SYSTEM_REQUESTReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -66,6 +84,14 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getTransferReason()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTransferReason()
+        {
+            return IExecuteWithSignature<int>("getTransferReason", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.html#getVolume()"/>
@@ -326,6 +352,25 @@ namespace Android.Media
             public Android.Media.RoutingSessionInfo.Builder SetName(Java.Lang.CharSequence arg0)
             {
                 return IExecuteWithSignature<Android.Media.RoutingSessionInfo.Builder>("setName", "(Ljava/lang/CharSequence;)Landroid/media/RoutingSessionInfo$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.Builder.html#setTransferInitiator(android.os.UserHandle,java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Os.UserHandle"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.Media.RoutingSessionInfo.Builder"/></returns>
+            public Android.Media.RoutingSessionInfo.Builder SetTransferInitiator(Android.Os.UserHandle arg0, Java.Lang.String arg1)
+            {
+                return IExecute<Android.Media.RoutingSessionInfo.Builder>("setTransferInitiator", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.Builder.html#setTransferReason(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Media.RoutingSessionInfo.Builder"/></returns>
+            public Android.Media.RoutingSessionInfo.Builder SetTransferReason(int arg0)
+            {
+                return IExecuteWithSignature<Android.Media.RoutingSessionInfo.Builder>("setTransferReason", "(I)Landroid/media/RoutingSessionInfo$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/RoutingSessionInfo.Builder.html#setVolume(int)"/>

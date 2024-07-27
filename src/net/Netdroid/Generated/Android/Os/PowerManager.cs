@@ -320,6 +320,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#isRebootingUserspaceSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
         public bool IsRebootingUserspaceSupported()
         {
             return IExecuteWithSignature<bool>("isRebootingUserspaceSupported", "()Z");
@@ -382,6 +383,14 @@ namespace Android.Os
         public Java.Time.Duration GetBatteryDischargePrediction()
         {
             return IExecuteWithSignature<Java.Time.Duration>("getBatteryDischargePrediction", "()Ljava/time/Duration;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#getThermalHeadroomThresholds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.Integer, Java.Lang.Float> GetThermalHeadroomThresholds()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.Integer, Java.Lang.Float>>("getThermalHeadroomThresholds", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#addThermalStatusListener(android.os.PowerManager.OnThermalStatusChangedListener)"/>

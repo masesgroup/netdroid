@@ -106,12 +106,28 @@ namespace Android.App.Appsearch
             return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.App.Appsearch.Migrator>>("getMigrators", "()Ljava/util/Map;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getPubliclyVisibleSchemas()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Android.App.Appsearch.PackageIdentifier> GetPubliclyVisibleSchemas()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.App.Appsearch.PackageIdentifier>>("getPubliclyVisibleSchemas", "()Ljava/util/Map;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getSchemasVisibleToPackages()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<Java.Lang.String, Java.Util.Set<Android.App.Appsearch.PackageIdentifier>> GetSchemasVisibleToPackages()
         {
             return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Set<Android.App.Appsearch.PackageIdentifier>>>("getSchemasVisibleToPackages", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getSchemasVisibleToConfigs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.Set<Android.App.Appsearch.SchemaVisibilityConfig>> GetSchemasVisibleToConfigs()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Set<Android.App.Appsearch.SchemaVisibilityConfig>>>("getSchemasVisibleToConfigs", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getRequiredPermissionsForSchemaTypeVisibility()"/>
@@ -198,6 +214,16 @@ namespace Android.App.Appsearch
                 return IExecuteWithSignature<Android.App.Appsearch.SetSchemaRequest.Builder>("addSchemas", "(Ljava/util/Collection;)Landroid/app/appsearch/SetSchemaRequest$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.Builder.html#addSchemaTypeVisibleToConfig(java.lang.String,android.app.appsearch.SchemaVisibilityConfig)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.App.Appsearch.SchemaVisibilityConfig"/></param>
+            /// <returns><see cref="Android.App.Appsearch.SetSchemaRequest.Builder"/></returns>
+            public Android.App.Appsearch.SetSchemaRequest.Builder AddSchemaTypeVisibleToConfig(Java.Lang.String arg0, Android.App.Appsearch.SchemaVisibilityConfig arg1)
+            {
+                return IExecute<Android.App.Appsearch.SetSchemaRequest.Builder>("addSchemaTypeVisibleToConfig", arg0, arg1);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.Builder.html#clearRequiredPermissionsForSchemaTypeVisibility(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -205,6 +231,15 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.SetSchemaRequest.Builder ClearRequiredPermissionsForSchemaTypeVisibility(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.App.Appsearch.SetSchemaRequest.Builder>("clearRequiredPermissionsForSchemaTypeVisibility", "(Ljava/lang/String;)Landroid/app/appsearch/SetSchemaRequest$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.Builder.html#clearSchemaTypeVisibleToConfigs(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.SetSchemaRequest.Builder"/></returns>
+            public Android.App.Appsearch.SetSchemaRequest.Builder ClearSchemaTypeVisibleToConfigs(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.SetSchemaRequest.Builder>("clearSchemaTypeVisibleToConfigs", "(Ljava/lang/String;)Landroid/app/appsearch/SetSchemaRequest$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.Builder.html#setForceOverride(boolean)"/>
@@ -233,6 +268,16 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.SetSchemaRequest.Builder SetMigrators(Java.Util.Map<Java.Lang.String, Android.App.Appsearch.Migrator> arg0)
             {
                 return IExecuteWithSignature<Android.App.Appsearch.SetSchemaRequest.Builder>("setMigrators", "(Ljava/util/Map;)Landroid/app/appsearch/SetSchemaRequest$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.Builder.html#setPubliclyVisibleSchema(java.lang.String,android.app.appsearch.PackageIdentifier)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.App.Appsearch.PackageIdentifier"/></param>
+            /// <returns><see cref="Android.App.Appsearch.SetSchemaRequest.Builder"/></returns>
+            public Android.App.Appsearch.SetSchemaRequest.Builder SetPubliclyVisibleSchema(Java.Lang.String arg0, Android.App.Appsearch.PackageIdentifier arg1)
+            {
+                return IExecute<Android.App.Appsearch.SetSchemaRequest.Builder>("setPubliclyVisibleSchema", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.Builder.html#setSchemaTypeDisplayedBySystem(java.lang.String,boolean)"/>

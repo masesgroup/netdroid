@@ -104,6 +104,12 @@ namespace Android.Content
         private static int _BIND_NOT_PERCEPTIBLEContent = default;
         private static bool _BIND_NOT_PERCEPTIBLEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#BIND_PACKAGE_ISOLATED_PROCESS"/>
+        /// </summary>
+        public static int BIND_PACKAGE_ISOLATED_PROCESS { get { if (!_BIND_PACKAGE_ISOLATED_PROCESSReady) { _BIND_PACKAGE_ISOLATED_PROCESSContent = SGetField<int>(LocalBridgeClazz, "BIND_PACKAGE_ISOLATED_PROCESS"); _BIND_PACKAGE_ISOLATED_PROCESSReady = true; } return _BIND_PACKAGE_ISOLATED_PROCESSContent; } }
+        private static int _BIND_PACKAGE_ISOLATED_PROCESSContent = default;
+        private static bool _BIND_PACKAGE_ISOLATED_PROCESSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#BIND_SHARED_ISOLATED_PROCESS"/>
         /// </summary>
         public static int BIND_SHARED_ISOLATED_PROCESS { get { if (!_BIND_SHARED_ISOLATED_PROCESSReady) { _BIND_SHARED_ISOLATED_PROCESSContent = SGetField<int>(LocalBridgeClazz, "BIND_SHARED_ISOLATED_PROCESS"); _BIND_SHARED_ISOLATED_PROCESSReady = true; } return _BIND_SHARED_ISOLATED_PROCESSContent; } }
@@ -335,6 +341,12 @@ namespace Android.Content
         private static Java.Lang.String _CONSUMER_IR_SERVICEContent = default;
         private static bool _CONSUMER_IR_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#CONTACT_KEYS_SERVICE"/>
+        /// </summary>
+        public static Java.Lang.String CONTACT_KEYS_SERVICE { get { if (!_CONTACT_KEYS_SERVICEReady) { _CONTACT_KEYS_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONTACT_KEYS_SERVICE"); _CONTACT_KEYS_SERVICEReady = true; } return _CONTACT_KEYS_SERVICEContent; } }
+        private static Java.Lang.String _CONTACT_KEYS_SERVICEContent = default;
+        private static bool _CONTACT_KEYS_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#CREDENTIAL_SERVICE"/>
         /// </summary>
         public static Java.Lang.String CREDENTIAL_SERVICE { get { if (!_CREDENTIAL_SERVICEReady) { _CREDENTIAL_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CREDENTIAL_SERVICE"); _CREDENTIAL_SERVICEReady = true; } return _CREDENTIAL_SERVICEContent; } }
@@ -563,6 +575,12 @@ namespace Android.Content
         private static Java.Lang.String _PERFORMANCE_HINT_SERVICEContent = default;
         private static bool _PERFORMANCE_HINT_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#PERSISTENT_DATA_BLOCK_SERVICE"/>
+        /// </summary>
+        public static Java.Lang.String PERSISTENT_DATA_BLOCK_SERVICE { get { if (!_PERSISTENT_DATA_BLOCK_SERVICEReady) { _PERSISTENT_DATA_BLOCK_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PERSISTENT_DATA_BLOCK_SERVICE"); _PERSISTENT_DATA_BLOCK_SERVICEReady = true; } return _PERSISTENT_DATA_BLOCK_SERVICEContent; } }
+        private static Java.Lang.String _PERSISTENT_DATA_BLOCK_SERVICEContent = default;
+        private static bool _PERSISTENT_DATA_BLOCK_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#POWER_SERVICE"/>
         /// </summary>
         public static Java.Lang.String POWER_SERVICE { get { if (!_POWER_SERVICEReady) { _POWER_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "POWER_SERVICE"); _POWER_SERVICEReady = true; } return _POWER_SERVICEContent; } }
@@ -574,6 +592,12 @@ namespace Android.Content
         public static Java.Lang.String PRINT_SERVICE { get { if (!_PRINT_SERVICEReady) { _PRINT_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PRINT_SERVICE"); _PRINT_SERVICEReady = true; } return _PRINT_SERVICEContent; } }
         private static Java.Lang.String _PRINT_SERVICEContent = default;
         private static bool _PRINT_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#PROFILING_SERVICE"/>
+        /// </summary>
+        public static Java.Lang.String PROFILING_SERVICE { get { if (!_PROFILING_SERVICEReady) { _PROFILING_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROFILING_SERVICE"); _PROFILING_SERVICEReady = true; } return _PROFILING_SERVICEContent; } }
+        private static Java.Lang.String _PROFILING_SERVICEContent = default;
+        private static bool _PROFILING_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#RESTRICTIONS_SERVICE"/>
         /// </summary>
@@ -592,6 +616,12 @@ namespace Android.Content
         public static Java.Lang.String SEARCH_SERVICE { get { if (!_SEARCH_SERVICEReady) { _SEARCH_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SEARCH_SERVICE"); _SEARCH_SERVICEReady = true; } return _SEARCH_SERVICEContent; } }
         private static Java.Lang.String _SEARCH_SERVICEContent = default;
         private static bool _SEARCH_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#SECURITY_STATE_SERVICE"/>
+        /// </summary>
+        public static Java.Lang.String SECURITY_STATE_SERVICE { get { if (!_SECURITY_STATE_SERVICEReady) { _SECURITY_STATE_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SECURITY_STATE_SERVICE"); _SECURITY_STATE_SERVICEReady = true; } return _SECURITY_STATE_SERVICEContent; } }
+        private static Java.Lang.String _SECURITY_STATE_SERVICEContent = default;
+        private static bool _SECURITY_STATE_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#SENSOR_SERVICE"/>
         /// </summary>
@@ -2041,6 +2071,18 @@ namespace Android.Content
         public Java.Lang.String GetString(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getString", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#checkContentUriPermissionFull(android.net.Uri,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        public int CheckContentUriPermissionFull(Android.Net.Uri arg0, int arg1, int arg2, int arg3)
+        {
+            return IExecute<int>("checkContentUriPermissionFull", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getDeviceId()"/>

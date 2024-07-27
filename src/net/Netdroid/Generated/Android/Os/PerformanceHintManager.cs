@@ -95,12 +95,28 @@ namespace Android.Os
                 IExecuteWithSignature("close", "()V");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/PerformanceHintManager.Session.html#reportActualWorkDuration(android.os.WorkDuration)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Os.WorkDuration"/></param>
+            public void ReportActualWorkDuration(Android.Os.WorkDuration arg0)
+            {
+                IExecuteWithSignature("reportActualWorkDuration", "(Landroid/os/WorkDuration;)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/PerformanceHintManager.Session.html#reportActualWorkDuration(long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
             public void ReportActualWorkDuration(long arg0)
             {
                 IExecuteWithSignature("reportActualWorkDuration", "(J)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/PerformanceHintManager.Session.html#setPreferPowerEfficiency(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public void SetPreferPowerEfficiency(bool arg0)
+            {
+                IExecuteWithSignature("setPreferPowerEfficiency", "(Z)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/PerformanceHintManager.Session.html#setThreads(int[])"/>

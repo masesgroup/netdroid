@@ -30,6 +30,17 @@ namespace Android.Adservices.Adselection
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AddAdSelectionOverrideRequest.html#%3Cinit%3E(android.adservices.adselection.AdSelectionConfig,java.lang.String,android.adservices.common.AdSelectionSignals,android.adservices.adselection.PerBuyerDecisionLogic)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Adservices.Adselection.AdSelectionConfig"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Android.Adservices.Common.AdSelectionSignals"/></param>
+        /// <param name="arg3"><see cref="Android.Adservices.Adselection.PerBuyerDecisionLogic"/></param>
+        public AddAdSelectionOverrideRequest(Android.Adservices.Adselection.AdSelectionConfig arg0, Java.Lang.String arg1, Android.Adservices.Common.AdSelectionSignals arg2, Android.Adservices.Adselection.PerBuyerDecisionLogic arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AddAdSelectionOverrideRequest.html#%3Cinit%3E(android.adservices.adselection.AdSelectionConfig,java.lang.String,android.adservices.common.AdSelectionSignals)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Adservices.Adselection.AdSelectionConfig"/></param>
@@ -62,6 +73,14 @@ namespace Android.Adservices.Adselection
         public Android.Adservices.Adselection.AdSelectionConfig GetAdSelectionConfig()
         {
             return IExecuteWithSignature<Android.Adservices.Adselection.AdSelectionConfig>("getAdSelectionConfig", "()Landroid/adservices/adselection/AdSelectionConfig;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AddAdSelectionOverrideRequest.html#getPerBuyerDecisionLogic()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Adservices.Adselection.PerBuyerDecisionLogic"/></returns>
+        public Android.Adservices.Adselection.PerBuyerDecisionLogic GetPerBuyerDecisionLogic()
+        {
+            return IExecuteWithSignature<Android.Adservices.Adselection.PerBuyerDecisionLogic>("getPerBuyerDecisionLogic", "()Landroid/adservices/adselection/PerBuyerDecisionLogic;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AddAdSelectionOverrideRequest.html#getTrustedScoringSignals()"/>

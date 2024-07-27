@@ -290,6 +290,12 @@ namespace Android.Hardware.Camera2
         private static int _CONTROL_AE_MODE_ON_EXTERNAL_FLASHContent = default;
         private static bool _CONTROL_AE_MODE_ON_EXTERNAL_FLASHReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITY"/>
+        /// </summary>
+        public static int CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITY { get { if (!_CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITYReady) { _CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITYContent = SGetField<int>(LocalBridgeClazz, "CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITY"); _CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITYReady = true; } return _CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITYContent; } }
+        private static int _CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITYContent = default;
+        private static bool _CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_AE_PRECAPTURE_TRIGGER_CANCEL"/>
         /// </summary>
         public static int CONTROL_AE_PRECAPTURE_TRIGGER_CANCEL { get { if (!_CONTROL_AE_PRECAPTURE_TRIGGER_CANCELReady) { _CONTROL_AE_PRECAPTURE_TRIGGER_CANCELContent = SGetField<int>(LocalBridgeClazz, "CONTROL_AE_PRECAPTURE_TRIGGER_CANCEL"); _CONTROL_AE_PRECAPTURE_TRIGGER_CANCELReady = true; } return _CONTROL_AE_PRECAPTURE_TRIGGER_CANCELContent; } }
@@ -679,6 +685,18 @@ namespace Android.Hardware.Camera2
         public static int CONTROL_EXTENDED_SCENE_MODE_DISABLED { get { if (!_CONTROL_EXTENDED_SCENE_MODE_DISABLEDReady) { _CONTROL_EXTENDED_SCENE_MODE_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "CONTROL_EXTENDED_SCENE_MODE_DISABLED"); _CONTROL_EXTENDED_SCENE_MODE_DISABLEDReady = true; } return _CONTROL_EXTENDED_SCENE_MODE_DISABLEDContent; } }
         private static int _CONTROL_EXTENDED_SCENE_MODE_DISABLEDContent = default;
         private static bool _CONTROL_EXTENDED_SCENE_MODE_DISABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVE"/>
+        /// </summary>
+        public static int CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVE { get { if (!_CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVEReady) { _CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVEContent = SGetField<int>(LocalBridgeClazz, "CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVE"); _CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVEReady = true; } return _CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVEContent; } }
+        private static int _CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVEContent = default;
+        private static bool _CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVE"/>
+        /// </summary>
+        public static int CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVE { get { if (!_CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVEReady) { _CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVEContent = SGetField<int>(LocalBridgeClazz, "CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVE"); _CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVEReady = true; } return _CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVEContent; } }
+        private static int _CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVEContent = default;
+        private static bool _CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_MODE_AUTO"/>
         /// </summary>
@@ -1984,6 +2002,12 @@ namespace Android.Hardware.Camera2
         private static int _CONTROL_AE_MODE_ON_EXTERNAL_FLASHContent = default;
         private static bool _CONTROL_AE_MODE_ON_EXTERNAL_FLASHReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITY"/>
+        /// </summary>
+        public static int CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITY { get { if (!_CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITYReady) { _CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITYContent = SGetField<int>(LocalBridgeClazz, "CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITY"); _CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITYReady = true; } return _CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITYContent; } }
+        private static int _CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITYContent = default;
+        private static bool _CONTROL_AE_MODE_ON_LOW_LIGHT_BOOST_BRIGHTNESS_PRIORITYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_AE_PRECAPTURE_TRIGGER_CANCEL"/>
         /// </summary>
         public static int CONTROL_AE_PRECAPTURE_TRIGGER_CANCEL { get { if (!_CONTROL_AE_PRECAPTURE_TRIGGER_CANCELReady) { _CONTROL_AE_PRECAPTURE_TRIGGER_CANCELContent = SGetField<int>(LocalBridgeClazz, "CONTROL_AE_PRECAPTURE_TRIGGER_CANCEL"); _CONTROL_AE_PRECAPTURE_TRIGGER_CANCELReady = true; } return _CONTROL_AE_PRECAPTURE_TRIGGER_CANCELContent; } }
@@ -2373,6 +2397,18 @@ namespace Android.Hardware.Camera2
         public static int CONTROL_EXTENDED_SCENE_MODE_DISABLED { get { if (!_CONTROL_EXTENDED_SCENE_MODE_DISABLEDReady) { _CONTROL_EXTENDED_SCENE_MODE_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "CONTROL_EXTENDED_SCENE_MODE_DISABLED"); _CONTROL_EXTENDED_SCENE_MODE_DISABLEDReady = true; } return _CONTROL_EXTENDED_SCENE_MODE_DISABLEDContent; } }
         private static int _CONTROL_EXTENDED_SCENE_MODE_DISABLEDContent = default;
         private static bool _CONTROL_EXTENDED_SCENE_MODE_DISABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVE"/>
+        /// </summary>
+        public static int CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVE { get { if (!_CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVEReady) { _CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVEContent = SGetField<int>(LocalBridgeClazz, "CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVE"); _CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVEReady = true; } return _CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVEContent; } }
+        private static int _CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVEContent = default;
+        private static bool _CONTROL_LOW_LIGHT_BOOST_STATE_ACTIVEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVE"/>
+        /// </summary>
+        public static int CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVE { get { if (!_CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVEReady) { _CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVEContent = SGetField<int>(LocalBridgeClazz, "CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVE"); _CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVEReady = true; } return _CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVEContent; } }
+        private static int _CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVEContent = default;
+        private static bool _CONTROL_LOW_LIGHT_BOOST_STATE_INACTIVEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_MODE_AUTO"/>
         /// </summary>

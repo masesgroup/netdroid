@@ -47,12 +47,52 @@ namespace Android.Hardware.Camera2.Params
         {
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#%3Cinit%3E(int,android.util.Size,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.Util.Size"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        public OutputConfiguration(int arg0, Android.Util.Size arg1, long arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#%3Cinit%3E(int,android.util.Size)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.Util.Size"/></param>
+        public OutputConfiguration(int arg0, Android.Util.Size arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#%3Cinit%3E(int,android.view.Surface)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.View.Surface"/></param>
         public OutputConfiguration(int arg0, Android.View.Surface arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#%3Cinit%3E(int,int,android.util.Size,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Util.Size"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        public OutputConfiguration(int arg0, int arg1, Android.Util.Size arg2, long arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#%3Cinit%3E(int,int,android.util.Size)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Util.Size"/></param>
+        public OutputConfiguration(int arg0, int arg1, Android.Util.Size arg2)
+            : base(arg0, arg1, arg2)
         {
         }
 
@@ -141,6 +181,25 @@ namespace Android.Hardware.Camera2.Params
         public static Java.Util.Collection<Android.Hardware.Camera2.Params.OutputConfiguration> CreateInstancesForMultiResolutionOutput(Android.Hardware.Camera2.MultiResolutionImageReader arg0)
         {
             return SExecuteWithSignature<Java.Util.Collection<Android.Hardware.Camera2.Params.OutputConfiguration>>(LocalBridgeClazz, "createInstancesForMultiResolutionOutput", "(Landroid/hardware/camera2/MultiResolutionImageReader;)Ljava/util/Collection;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#createInstancesForMultiResolutionOutput(java.util.Collection,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public static Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration> CreateInstancesForMultiResolutionOutput(Java.Util.Collection<Android.Hardware.Camera2.Params.MultiResolutionStreamInfo> arg0, int arg1)
+        {
+            return SExecute<Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration>>(LocalBridgeClazz, "createInstancesForMultiResolutionOutput", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#setSurfacesForMultiResolutionOutput(java.util.Collection,android.hardware.camera2.MultiResolutionImageReader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="Android.Hardware.Camera2.MultiResolutionImageReader"/></param>
+        public static void SetSurfacesForMultiResolutionOutput(Java.Util.Collection<Android.Hardware.Camera2.Params.OutputConfiguration> arg0, Android.Hardware.Camera2.MultiResolutionImageReader arg1)
+        {
+            SExecute(LocalBridgeClazz, "setSurfacesForMultiResolutionOutput", arg0, arg1);
         }
 
         #endregion

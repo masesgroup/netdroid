@@ -38,6 +38,24 @@ namespace Android.App.Admin
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#CONTENT_PROTECTION_DISABLED"/>
+        /// </summary>
+        public static int CONTENT_PROTECTION_DISABLED { get { if (!_CONTENT_PROTECTION_DISABLEDReady) { _CONTENT_PROTECTION_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "CONTENT_PROTECTION_DISABLED"); _CONTENT_PROTECTION_DISABLEDReady = true; } return _CONTENT_PROTECTION_DISABLEDContent; } }
+        private static int _CONTENT_PROTECTION_DISABLEDContent = default;
+        private static bool _CONTENT_PROTECTION_DISABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#CONTENT_PROTECTION_ENABLED"/>
+        /// </summary>
+        public static int CONTENT_PROTECTION_ENABLED { get { if (!_CONTENT_PROTECTION_ENABLEDReady) { _CONTENT_PROTECTION_ENABLEDContent = SGetField<int>(LocalBridgeClazz, "CONTENT_PROTECTION_ENABLED"); _CONTENT_PROTECTION_ENABLEDReady = true; } return _CONTENT_PROTECTION_ENABLEDContent; } }
+        private static int _CONTENT_PROTECTION_ENABLEDContent = default;
+        private static bool _CONTENT_PROTECTION_ENABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#CONTENT_PROTECTION_NOT_CONTROLLED_BY_POLICY"/>
+        /// </summary>
+        public static int CONTENT_PROTECTION_NOT_CONTROLLED_BY_POLICY { get { if (!_CONTENT_PROTECTION_NOT_CONTROLLED_BY_POLICYReady) { _CONTENT_PROTECTION_NOT_CONTROLLED_BY_POLICYContent = SGetField<int>(LocalBridgeClazz, "CONTENT_PROTECTION_NOT_CONTROLLED_BY_POLICY"); _CONTENT_PROTECTION_NOT_CONTROLLED_BY_POLICYReady = true; } return _CONTENT_PROTECTION_NOT_CONTROLLED_BY_POLICYContent; } }
+        private static int _CONTENT_PROTECTION_NOT_CONTROLLED_BY_POLICYContent = default;
+        private static bool _CONTENT_PROTECTION_NOT_CONTROLLED_BY_POLICYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#ENCRYPTION_STATUS_ACTIVATING"/>
         /// </summary>
         [global::System.Obsolete()]
@@ -1118,6 +1136,14 @@ namespace Android.App.Admin
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#isMtePolicyEnforced()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public static bool IsMtePolicyEnforced()
+        {
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isMtePolicyEnforced", "()Z");
+        }
 
         #endregion
 
@@ -2082,6 +2108,15 @@ namespace Android.App.Admin
             return IExecute<int>("enableSystemApp", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getContentProtectionPolicy(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="int"/></returns>
+        public int GetContentProtectionPolicy(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<int>("getContentProtectionPolicy", "(Landroid/content/ComponentName;)I", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getCurrentFailedPasswordAttempts()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -2723,6 +2758,14 @@ namespace Android.App.Admin
             return IExecuteWithSignature<Java.Util.Map<Java.Lang.Integer, Java.Util.Set<Java.Lang.String>>>("getKeyPairGrants", "(Ljava/lang/String;)Ljava/util/Map;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getSubscriptionIds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Integer> GetSubscriptionIds()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getSubscriptionIds", "()Ljava/util/Set;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getAffiliationIds(android.content.ComponentName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -3100,6 +3143,15 @@ namespace Android.App.Admin
         public void SetConfiguredNetworksLockdownState(Android.Content.ComponentName arg0, bool arg1)
         {
             IExecute("setConfiguredNetworksLockdownState", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setContentProtectionPolicy(android.content.ComponentName,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void SetContentProtectionPolicy(Android.Content.ComponentName arg0, int arg1)
+        {
+            IExecute("setContentProtectionPolicy", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCredentialManagerPolicy(android.app.admin.PackagePolicy)"/>

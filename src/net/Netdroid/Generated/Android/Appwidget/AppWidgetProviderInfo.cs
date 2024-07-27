@@ -62,6 +62,10 @@ namespace Android.Appwidget
         /// </summary>
         public int descriptionRes { get { return IGetField<int>("descriptionRes"); } set { ISetField("descriptionRes", value); } }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#generatedPreviewCategories"/>
+        /// </summary>
+        public int generatedPreviewCategories { get { return IGetField<int>("generatedPreviewCategories"); } set { ISetField("generatedPreviewCategories", value); } }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#icon"/>
         /// </summary>
         public int icon { get { return IGetField<int>("icon"); } set { ISetField("icon", value); } }

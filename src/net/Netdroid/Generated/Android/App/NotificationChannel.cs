@@ -126,6 +126,14 @@ namespace Android.App
             return IExecuteWithSignature<Android.Net.Uri>("getSound", "()Landroid/net/Uri;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getVibrationEffect()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.VibrationEffect"/></returns>
+        public Android.Os.VibrationEffect GetVibrationEffect()
+        {
+            return IExecuteWithSignature<Android.Os.VibrationEffect>("getVibrationEffect", "()Landroid/os/VibrationEffect;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#canBubble()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -414,6 +422,14 @@ namespace Android.App
         public void SetSound(Android.Net.Uri arg0, Android.Media.AudioAttributes arg1)
         {
             IExecute("setSound", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setVibrationEffect(android.os.VibrationEffect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.VibrationEffect"/></param>
+        public void SetVibrationEffect(Android.Os.VibrationEffect arg0)
+        {
+            IExecuteWithSignature("setVibrationEffect", "(Landroid/os/VibrationEffect;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setVibrationPattern(long[])"/>

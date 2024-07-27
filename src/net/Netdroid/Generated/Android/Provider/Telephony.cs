@@ -461,6 +461,12 @@ namespace Android.Provider
             private static Android.Net.Uri _SIM_APN_URIContent = default;
             private static bool _SIM_APN_URIReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/Telephony.Carriers.html#ALWAYS_ON"/>
+            /// </summary>
+            public static Java.Lang.String ALWAYS_ON { get { if (!_ALWAYS_ONReady) { _ALWAYS_ONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ALWAYS_ON"); _ALWAYS_ONReady = true; } return _ALWAYS_ONContent; } }
+            private static Java.Lang.String _ALWAYS_ONContent = default;
+            private static bool _ALWAYS_ONReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Telephony.Carriers.html#APN"/>
             /// </summary>
             public static Java.Lang.String APN { get { if (!_APNReady) { _APNContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "APN"); _APNReady = true; } return _APNContent; } }
@@ -535,6 +541,18 @@ namespace Android.Provider
             public static Java.Lang.String MNC { get { if (!_MNCReady) { _MNCContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MNC"); _MNCReady = true; } return _MNCContent; } }
             private static Java.Lang.String _MNCContent = default;
             private static bool _MNCReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/Telephony.Carriers.html#MTU_V4"/>
+            /// </summary>
+            public static Java.Lang.String MTU_V4 { get { if (!_MTU_V4Ready) { _MTU_V4Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "MTU_V4"); _MTU_V4Ready = true; } return _MTU_V4Content; } }
+            private static Java.Lang.String _MTU_V4Content = default;
+            private static bool _MTU_V4Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/Telephony.Carriers.html#MTU_V6"/>
+            /// </summary>
+            public static Java.Lang.String MTU_V6 { get { if (!_MTU_V6Ready) { _MTU_V6Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "MTU_V6"); _MTU_V6Ready = true; } return _MTU_V6Content; } }
+            private static Java.Lang.String _MTU_V6Content = default;
+            private static bool _MTU_V6Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Telephony.Carriers.html#MVNO_MATCH_DATA"/>
             /// </summary>
@@ -622,6 +640,18 @@ namespace Android.Provider
             public static Java.Lang.String USER { get { if (!_USERReady) { _USERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USER"); _USERReady = true; } return _USERContent; } }
             private static Java.Lang.String _USERContent = default;
             private static bool _USERReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/Telephony.Carriers.html#USER_EDITABLE"/>
+            /// </summary>
+            public static Java.Lang.String USER_EDITABLE { get { if (!_USER_EDITABLEReady) { _USER_EDITABLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USER_EDITABLE"); _USER_EDITABLEReady = true; } return _USER_EDITABLEContent; } }
+            private static Java.Lang.String _USER_EDITABLEContent = default;
+            private static bool _USER_EDITABLEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/Telephony.Carriers.html#USER_VISIBLE"/>
+            /// </summary>
+            public static Java.Lang.String USER_VISIBLE { get { if (!_USER_VISIBLEReady) { _USER_VISIBLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USER_VISIBLE"); _USER_VISIBLEReady = true; } return _USER_VISIBLEContent; } }
+            private static Java.Lang.String _USER_VISIBLEContent = default;
+            private static bool _USER_VISIBLEReady = false; // this is used because in case of generics 
 
             #endregion
 

@@ -43,6 +43,12 @@ namespace Android.Adservices.Customaudience
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#FLAG_AUCTION_SERVER_REQUEST_OMIT_ADS"/>
+        /// </summary>
+        public static int FLAG_AUCTION_SERVER_REQUEST_OMIT_ADS { get { if (!_FLAG_AUCTION_SERVER_REQUEST_OMIT_ADSReady) { _FLAG_AUCTION_SERVER_REQUEST_OMIT_ADSContent = SGetField<int>(LocalBridgeClazz, "FLAG_AUCTION_SERVER_REQUEST_OMIT_ADS"); _FLAG_AUCTION_SERVER_REQUEST_OMIT_ADSReady = true; } return _FLAG_AUCTION_SERVER_REQUEST_OMIT_ADSContent; } }
+        private static int _FLAG_AUCTION_SERVER_REQUEST_OMIT_ADSContent = default;
+        private static bool _FLAG_AUCTION_SERVER_REQUEST_OMIT_ADSReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -98,6 +104,14 @@ namespace Android.Adservices.Customaudience
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getAuctionServerRequestFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAuctionServerRequestFlags()
+        {
+            return IExecuteWithSignature<int>("getAuctionServerRequestFlags", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getName()"/>
@@ -189,6 +203,15 @@ namespace Android.Adservices.Customaudience
             public Android.Adservices.Customaudience.CustomAudience.Builder SetAds(Java.Util.List<Android.Adservices.Common.AdData> arg0)
             {
                 return IExecuteWithSignature<Android.Adservices.Customaudience.CustomAudience.Builder>("setAds", "(Ljava/util/List;)Landroid/adservices/customaudience/CustomAudience$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.Builder.html#setAuctionServerRequestFlags(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Adservices.Customaudience.CustomAudience.Builder"/></returns>
+            public Android.Adservices.Customaudience.CustomAudience.Builder SetAuctionServerRequestFlags(int arg0)
+            {
+                return IExecuteWithSignature<Android.Adservices.Customaudience.CustomAudience.Builder>("setAuctionServerRequestFlags", "(I)Landroid/adservices/customaudience/CustomAudience$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.Builder.html#setBiddingLogicUri(android.net.Uri)"/>

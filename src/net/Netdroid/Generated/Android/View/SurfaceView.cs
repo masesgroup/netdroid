@@ -105,6 +105,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#getHostToken()"/>
         /// </summary>
         /// <returns><see cref="Android.Os.IBinder"/></returns>
+        [global::System.Obsolete()]
         public Android.Os.IBinder GetHostToken()
         {
             return IExecuteWithSignature<Android.Os.IBinder>("getHostToken", "()Landroid/os/IBinder;");
@@ -140,6 +141,14 @@ namespace Android.View
         public void SetChildSurfacePackage(Android.View.SurfaceControlViewHost.SurfacePackage arg0)
         {
             IExecuteWithSignature("setChildSurfacePackage", "(Landroid/view/SurfaceControlViewHost$SurfacePackage;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#setDesiredHdrHeadroom(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetDesiredHdrHeadroom(float arg0)
+        {
+            IExecuteWithSignature("setDesiredHdrHeadroom", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#setSecure(boolean)"/>

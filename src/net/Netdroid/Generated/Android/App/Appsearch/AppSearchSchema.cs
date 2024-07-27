@@ -37,6 +37,12 @@ namespace Android.App.Appsearch
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.html#CREATOR"/>
+        /// </summary>
+        public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
+        private static Android.Os.Parcelable.Creator _CREATORContent = default;
+        private static bool _CREATORReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -45,6 +51,14 @@ namespace Android.App.Appsearch
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.html#describeContents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int DescribeContents()
+        {
+            return IExecuteWithSignature<int>("describeContents", "()I");
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.html#getSchemaType()"/>
         /// </summary>
@@ -60,6 +74,23 @@ namespace Android.App.Appsearch
         public Java.Util.List<Android.App.Appsearch.AppSearchSchema.PropertyConfig> GetProperties()
         {
             return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.AppSearchSchema.PropertyConfig>>("getProperties", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.html#getParentTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetParentTypes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getParentTypes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.html#writeToParcel(android.os.Parcel,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
+        {
+            IExecute("writeToParcel", arg0, arg1);
         }
 
         #endregion
@@ -187,6 +218,15 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.AppSearchSchema Build()
             {
                 return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema>("build", "()Landroid/app/appsearch/AppSearchSchema;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.Builder.html#addParentType(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.Builder"/></returns>
+            public Android.App.Appsearch.AppSearchSchema.Builder AddParentType(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.Builder>("addParentType", "(Ljava/lang/String;)Landroid/app/appsearch/AppSearchSchema$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.Builder.html#addProperty(android.app.appsearch.AppSearchSchema.PropertyConfig)"/>
@@ -331,6 +371,14 @@ namespace Android.App.Appsearch
             {
                 return IExecuteWithSignature<Java.Lang.String>("getSchemaType", "()Ljava/lang/String;");
             }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.html#getIndexableNestedProperties()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Java.Lang.String> GetIndexableNestedProperties()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getIndexableNestedProperties", "()Ljava/util/List;");
+            }
 
             #endregion
 
@@ -371,6 +419,42 @@ namespace Android.App.Appsearch
                 public Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig Build()
                 {
                     return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig>("build", "()Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig;");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.Builder.html#addIndexableNestedProperties(java.lang.String[])"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder"/></returns>
+                public Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder AddIndexableNestedProperties(params Java.Lang.String[] arg0)
+                {
+                    if (arg0.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedProperties", "([Ljava/lang/String;)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;"); else return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedProperties", "([Ljava/lang/String;)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.Builder.html#addIndexableNestedProperties(java.util.Collection)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+                /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder"/></returns>
+                public Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder AddIndexableNestedProperties(Java.Util.Collection<Java.Lang.String> arg0)
+                {
+                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedProperties", "(Ljava/util/Collection;)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.Builder.html#addIndexableNestedPropertyPaths(android.app.appsearch.PropertyPath[])"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.App.Appsearch.PropertyPath"/></param>
+                /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder"/></returns>
+                public Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder AddIndexableNestedPropertyPaths(params Android.App.Appsearch.PropertyPath[] arg0)
+                {
+                    if (arg0.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedPropertyPaths", "([Landroid/app/appsearch/PropertyPath;)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;"); else return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedPropertyPaths", "([Landroid/app/appsearch/PropertyPath;)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.Builder.html#addIndexableNestedPropertyPaths(java.util.Collection)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+                /// <returns><see cref="Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder"/></returns>
+                public Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder AddIndexableNestedPropertyPaths(Java.Util.Collection<Android.App.Appsearch.PropertyPath> arg0)
+                {
+                    return IExecuteWithSignature<Android.App.Appsearch.AppSearchSchema.DocumentPropertyConfig.Builder>("addIndexableNestedPropertyPaths", "(Ljava/util/Collection;)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.Builder.html#setCardinality(int)"/>

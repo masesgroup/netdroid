@@ -625,24 +625,28 @@ namespace Android.Provider
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.SipAddress.html#TYPE_HOME"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static int TYPE_HOME { get { if (!_TYPE_HOMEReady) { _TYPE_HOMEContent = SGetField<int>(LocalBridgeClazz, "TYPE_HOME"); _TYPE_HOMEReady = true; } return _TYPE_HOMEContent; } }
                 private static int _TYPE_HOMEContent = default;
                 private static bool _TYPE_HOMEReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.SipAddress.html#TYPE_OTHER"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static int TYPE_OTHER { get { if (!_TYPE_OTHERReady) { _TYPE_OTHERContent = SGetField<int>(LocalBridgeClazz, "TYPE_OTHER"); _TYPE_OTHERReady = true; } return _TYPE_OTHERContent; } }
                 private static int _TYPE_OTHERContent = default;
                 private static bool _TYPE_OTHERReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.SipAddress.html#TYPE_WORK"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static int TYPE_WORK { get { if (!_TYPE_WORKReady) { _TYPE_WORKContent = SGetField<int>(LocalBridgeClazz, "TYPE_WORK"); _TYPE_WORKReady = true; } return _TYPE_WORKContent; } }
                 private static int _TYPE_WORKContent = default;
                 private static bool _TYPE_WORKReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.SipAddress.html#CONTENT_ITEM_TYPE"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static Java.Lang.String CONTENT_ITEM_TYPE { get { if (!_CONTENT_ITEM_TYPEReady) { _CONTENT_ITEM_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONTENT_ITEM_TYPE"); _CONTENT_ITEM_TYPEReady = true; } return _CONTENT_ITEM_TYPEContent; } }
                 private static Java.Lang.String _CONTENT_ITEM_TYPEContent = default;
                 private static bool _CONTENT_ITEM_TYPEReady = false; // this is used because in case of generics 
@@ -667,6 +671,7 @@ namespace Android.Provider
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.SipAddress.html#SIP_ADDRESS"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static Java.Lang.String SIP_ADDRESS { get { if (!_SIP_ADDRESSReady) { _SIP_ADDRESSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SIP_ADDRESS"); _SIP_ADDRESSReady = true; } return _SIP_ADDRESSContent; } }
                 private static Java.Lang.String _SIP_ADDRESSContent = default;
                 private static bool _SIP_ADDRESSReady = false; // this is used because in case of generics 
@@ -679,6 +684,7 @@ namespace Android.Provider
                 /// </summary>
                 /// <param name="arg0"><see cref="int"/></param>
                 /// <returns><see cref="int"/></returns>
+                [global::System.Obsolete()]
                 public static int GetTypeLabelResource(int arg0)
                 {
                     return SExecuteWithSignature<int>(LocalBridgeClazz, "getTypeLabelResource", "(I)I", arg0);
@@ -690,6 +696,7 @@ namespace Android.Provider
                 /// <param name="arg1"><see cref="int"/></param>
                 /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
                 /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+                [global::System.Obsolete()]
                 public static Java.Lang.CharSequence GetTypeLabel(Android.Content.Res.Resources arg0, int arg1, Java.Lang.CharSequence arg2)
                 {
                     return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", arg0, arg1, arg2);
@@ -1506,6 +1513,7 @@ namespace Android.Provider
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#PROTOCOL_CUSTOM"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static int PROTOCOL_CUSTOM { get { if (!_PROTOCOL_CUSTOMReady) { _PROTOCOL_CUSTOMContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_CUSTOM"); _PROTOCOL_CUSTOMReady = true; } return _PROTOCOL_CUSTOMContent; } }
                 private static int _PROTOCOL_CUSTOMContent = default;
                 private static bool _PROTOCOL_CUSTOMReady = false; // this is used because in case of generics 
@@ -1568,30 +1576,35 @@ namespace Android.Provider
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#TYPE_HOME"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static int TYPE_HOME { get { if (!_TYPE_HOMEReady) { _TYPE_HOMEContent = SGetField<int>(LocalBridgeClazz, "TYPE_HOME"); _TYPE_HOMEReady = true; } return _TYPE_HOMEContent; } }
                 private static int _TYPE_HOMEContent = default;
                 private static bool _TYPE_HOMEReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#TYPE_OTHER"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static int TYPE_OTHER { get { if (!_TYPE_OTHERReady) { _TYPE_OTHERContent = SGetField<int>(LocalBridgeClazz, "TYPE_OTHER"); _TYPE_OTHERReady = true; } return _TYPE_OTHERContent; } }
                 private static int _TYPE_OTHERContent = default;
                 private static bool _TYPE_OTHERReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#TYPE_WORK"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static int TYPE_WORK { get { if (!_TYPE_WORKReady) { _TYPE_WORKContent = SGetField<int>(LocalBridgeClazz, "TYPE_WORK"); _TYPE_WORKReady = true; } return _TYPE_WORKContent; } }
                 private static int _TYPE_WORKContent = default;
                 private static bool _TYPE_WORKReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#CONTENT_ITEM_TYPE"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static Java.Lang.String CONTENT_ITEM_TYPE { get { if (!_CONTENT_ITEM_TYPEReady) { _CONTENT_ITEM_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONTENT_ITEM_TYPE"); _CONTENT_ITEM_TYPEReady = true; } return _CONTENT_ITEM_TYPEContent; } }
                 private static Java.Lang.String _CONTENT_ITEM_TYPEContent = default;
                 private static bool _CONTENT_ITEM_TYPEReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#CUSTOM_PROTOCOL"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static Java.Lang.String CUSTOM_PROTOCOL { get { if (!_CUSTOM_PROTOCOLReady) { _CUSTOM_PROTOCOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CUSTOM_PROTOCOL"); _CUSTOM_PROTOCOLReady = true; } return _CUSTOM_PROTOCOLContent; } }
                 private static Java.Lang.String _CUSTOM_PROTOCOLContent = default;
                 private static bool _CUSTOM_PROTOCOLReady = false; // this is used because in case of generics 
@@ -1616,6 +1629,7 @@ namespace Android.Provider
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#PROTOCOL"/>
                 /// </summary>
+                [global::System.Obsolete()]
                 public static Java.Lang.String PROTOCOL { get { if (!_PROTOCOLReady) { _PROTOCOLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROTOCOL"); _PROTOCOLReady = true; } return _PROTOCOLContent; } }
                 private static Java.Lang.String _PROTOCOLContent = default;
                 private static bool _PROTOCOLReady = false; // this is used because in case of generics 
@@ -1628,6 +1642,7 @@ namespace Android.Provider
                 /// </summary>
                 /// <param name="arg0"><see cref="int"/></param>
                 /// <returns><see cref="int"/></returns>
+                [global::System.Obsolete()]
                 public static int GetProtocolLabelResource(int arg0)
                 {
                     return SExecuteWithSignature<int>(LocalBridgeClazz, "getProtocolLabelResource", "(I)I", arg0);
@@ -1637,6 +1652,7 @@ namespace Android.Provider
                 /// </summary>
                 /// <param name="arg0"><see cref="int"/></param>
                 /// <returns><see cref="int"/></returns>
+                [global::System.Obsolete()]
                 public static int GetTypeLabelResource(int arg0)
                 {
                     return SExecuteWithSignature<int>(LocalBridgeClazz, "getTypeLabelResource", "(I)I", arg0);
@@ -1648,6 +1664,7 @@ namespace Android.Provider
                 /// <param name="arg1"><see cref="int"/></param>
                 /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
                 /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+                [global::System.Obsolete()]
                 public static Java.Lang.CharSequence GetProtocolLabel(Android.Content.Res.Resources arg0, int arg1, Java.Lang.CharSequence arg2)
                 {
                     return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getProtocolLabel", arg0, arg1, arg2);
@@ -1659,6 +1676,7 @@ namespace Android.Provider
                 /// <param name="arg1"><see cref="int"/></param>
                 /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
                 /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+                [global::System.Obsolete()]
                 public static Java.Lang.CharSequence GetTypeLabel(Android.Content.Res.Resources arg0, int arg1, Java.Lang.CharSequence arg2)
                 {
                     return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getTypeLabel", arg0, arg1, arg2);

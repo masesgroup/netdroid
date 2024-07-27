@@ -142,6 +142,12 @@ namespace Android.Content.Pm
         private static int _FOREGROUND_SERVICE_TYPE_MEDIA_PLAYBACKContent = default;
         private static bool _FOREGROUND_SERVICE_TYPE_MEDIA_PLAYBACKReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_MEDIA_PROCESSING"/>
+        /// </summary>
+        public static int FOREGROUND_SERVICE_TYPE_MEDIA_PROCESSING { get { if (!_FOREGROUND_SERVICE_TYPE_MEDIA_PROCESSINGReady) { _FOREGROUND_SERVICE_TYPE_MEDIA_PROCESSINGContent = SGetField<int>(LocalBridgeClazz, "FOREGROUND_SERVICE_TYPE_MEDIA_PROCESSING"); _FOREGROUND_SERVICE_TYPE_MEDIA_PROCESSINGReady = true; } return _FOREGROUND_SERVICE_TYPE_MEDIA_PROCESSINGContent; } }
+        private static int _FOREGROUND_SERVICE_TYPE_MEDIA_PROCESSINGContent = default;
+        private static bool _FOREGROUND_SERVICE_TYPE_MEDIA_PROCESSINGReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTION"/>
         /// </summary>
         public static int FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTION { get { if (!_FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTIONReady) { _FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTIONContent = SGetField<int>(LocalBridgeClazz, "FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTION"); _FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTIONReady = true; } return _FOREGROUND_SERVICE_TYPE_MEDIA_PROJECTIONContent; } }

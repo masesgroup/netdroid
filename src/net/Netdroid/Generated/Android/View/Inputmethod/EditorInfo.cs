@@ -243,6 +243,14 @@ namespace Android.View.Inputmethod
             return IExecute<Android.View.Inputmethod.SurroundingText>("getInitialSurroundingText", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#isStylusHandwritingEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsStylusHandwritingEnabled()
+        {
+            return IExecuteWithSignature<bool>("isStylusHandwritingEnabled", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#makeCompatible(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -346,6 +354,14 @@ namespace Android.View.Inputmethod
         public void SetInitialToolType(int arg0)
         {
             IExecuteWithSignature("setInitialToolType", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setStylusHandwritingEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetStylusHandwritingEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setStylusHandwritingEnabled", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setSupportedHandwritingGesturePreviews(java.util.Set)"/>

@@ -61,6 +61,12 @@ namespace Android.App.Admin
         private static int _HEADLESS_DEVICE_OWNER_MODE_AFFILIATEDContent = default;
         private static bool _HEADLESS_DEVICE_OWNER_MODE_AFFILIATEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER"/>
+        /// </summary>
+        public static int HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER { get { if (!_HEADLESS_DEVICE_OWNER_MODE_SINGLE_USERReady) { _HEADLESS_DEVICE_OWNER_MODE_SINGLE_USERContent = SGetField<int>(LocalBridgeClazz, "HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER"); _HEADLESS_DEVICE_OWNER_MODE_SINGLE_USERReady = true; } return _HEADLESS_DEVICE_OWNER_MODE_SINGLE_USERContent; } }
+        private static int _HEADLESS_DEVICE_OWNER_MODE_SINGLE_USERContent = default;
+        private static bool _HEADLESS_DEVICE_OWNER_MODE_SINGLE_USERReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED"/>
         /// </summary>
         public static int HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED { get { if (!_HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTEDReady) { _HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTEDContent = SGetField<int>(LocalBridgeClazz, "HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED"); _HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTEDReady = true; } return _HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTEDContent; } }

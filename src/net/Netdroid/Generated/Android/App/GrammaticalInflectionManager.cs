@@ -54,6 +54,14 @@ namespace Android.App
             return IExecuteWithSignature<int>("getApplicationGrammaticalGender", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/GrammaticalInflectionManager.html#getSystemGrammaticalGender()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSystemGrammaticalGender()
+        {
+            return IExecuteWithSignature<int>("getSystemGrammaticalGender", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/GrammaticalInflectionManager.html#setRequestedApplicationGrammaticalGender(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

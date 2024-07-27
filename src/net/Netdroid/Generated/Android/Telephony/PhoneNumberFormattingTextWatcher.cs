@@ -33,6 +33,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberFormattingTextWatcher.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
         public PhoneNumberFormattingTextWatcher(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -57,6 +58,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberFormattingTextWatcher.html#afterTextChanged(android.text.Editable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Text.Editable"/></param>
+        [global::System.Obsolete()]
         public void AfterTextChanged(Android.Text.Editable arg0)
         {
             IExecuteWithSignature("afterTextChanged", "(Landroid/text/Editable;)V", arg0);
@@ -68,6 +70,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
+        [global::System.Obsolete()]
         public void BeforeTextChanged(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
             IExecute("beforeTextChanged", arg0, arg1, arg2, arg3);
@@ -79,6 +82,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
+        [global::System.Obsolete()]
         public void OnTextChanged(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
             IExecute("onTextChanged", arg0, arg1, arg2, arg3);

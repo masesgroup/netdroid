@@ -104,6 +104,12 @@ namespace Android.Telephony
         private static int _SERVICE_TYPE_EMERGENCYContent = default;
         private static bool _SERVICE_TYPE_EMERGENCYReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#SERVICE_TYPE_MMS"/>
+        /// </summary>
+        public static int SERVICE_TYPE_MMS { get { if (!_SERVICE_TYPE_MMSReady) { _SERVICE_TYPE_MMSContent = SGetField<int>(LocalBridgeClazz, "SERVICE_TYPE_MMS"); _SERVICE_TYPE_MMSReady = true; } return _SERVICE_TYPE_MMSContent; } }
+        private static int _SERVICE_TYPE_MMSContent = default;
+        private static bool _SERVICE_TYPE_MMSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#SERVICE_TYPE_SMS"/>
         /// </summary>
         public static int SERVICE_TYPE_SMS { get { if (!_SERVICE_TYPE_SMSReady) { _SERVICE_TYPE_SMSContent = SGetField<int>(LocalBridgeClazz, "SERVICE_TYPE_SMS"); _SERVICE_TYPE_SMSReady = true; } return _SERVICE_TYPE_SMSContent; } }
@@ -168,6 +174,14 @@ namespace Android.Telephony
             return IExecuteWithSignature<bool>("isNetworkSearching", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#isNonTerrestrialNetwork()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsNonTerrestrialNetwork()
+        {
+            return IExecuteWithSignature<bool>("isNonTerrestrialNetwork", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#isRegistered()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -217,6 +231,14 @@ namespace Android.Telephony
         public int GetDomain()
         {
             return IExecuteWithSignature<int>("getDomain", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getRejectCause()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRejectCause()
+        {
+            return IExecuteWithSignature<int>("getRejectCause", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#getTransportType()"/>

@@ -76,6 +76,16 @@ namespace Android.Content.Pm
             return IExecute<Android.App.PendingIntent>("getShortcutIntent", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getAppMarketActivityIntent(java.lang.String,android.os.UserHandle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
+        /// <returns><see cref="Android.Content.IntentSender"/></returns>
+        public Android.Content.IntentSender GetAppMarketActivityIntent(Java.Lang.String arg0, Android.Os.UserHandle arg1)
+        {
+            return IExecute<Android.Content.IntentSender>("getAppMarketActivityIntent", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getShortcutConfigActivityIntent(android.content.pm.LauncherActivityInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.LauncherActivityInfo"/></param>
@@ -184,6 +194,15 @@ namespace Android.Content.Pm
             return IExecute<bool>("shouldHideFromSuggestions", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getLauncherUserInfo(android.os.UserHandle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.UserHandle"/></param>
+        /// <returns><see cref="Android.Content.Pm.LauncherUserInfo"/></returns>
+        public Android.Content.Pm.LauncherUserInfo GetLauncherUserInfo(Android.Os.UserHandle arg0)
+        {
+            return IExecuteWithSignature<Android.Content.Pm.LauncherUserInfo>("getLauncherUserInfo", "(Landroid/os/UserHandle;)Landroid/content/pm/LauncherUserInfo;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getActivityList(java.lang.String,android.os.UserHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -230,6 +249,15 @@ namespace Android.Content.Pm
             return IExecuteWithSignature<Java.Util.List<Android.Os.UserHandle>>("getProfiles", "()Ljava/util/List;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getPreInstalledSystemPackages(android.os.UserHandle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.UserHandle"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetPreInstalledSystemPackages(Android.Os.UserHandle arg0)
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getPreInstalledSystemPackages", "(Landroid/os/UserHandle;)Ljava/util/List;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#pinShortcuts(java.lang.String,java.util.List,android.os.UserHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -264,6 +292,14 @@ namespace Android.Content.Pm
         public void RegisterPackageInstallerSessionCallback(Java.Util.Concurrent.Executor arg0, Android.Content.Pm.PackageInstaller.SessionCallback arg1)
         {
             IExecute("registerPackageInstallerSessionCallback", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#setArchiveCompatibility(android.content.pm.LauncherApps.ArchiveCompatibilityParams)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Pm.LauncherApps.ArchiveCompatibilityParams"/></param>
+        public void SetArchiveCompatibility(Android.Content.Pm.LauncherApps.ArchiveCompatibilityParams arg0)
+        {
+            IExecuteWithSignature("setArchiveCompatibility", "(Landroid/content/pm/LauncherApps$ArchiveCompatibilityParams;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#startAppDetailsActivity(android.content.ComponentName,android.os.UserHandle,android.graphics.Rect,android.os.Bundle)"/>
@@ -339,6 +375,53 @@ namespace Android.Content.Pm
         #endregion
 
         #region Nested classes
+        #region ArchiveCompatibilityParams
+        public partial class ArchiveCompatibilityParams
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.ArchiveCompatibilityParams.html#setEnableIconOverlay(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public void SetEnableIconOverlay(bool arg0)
+            {
+                IExecuteWithSignature("setEnableIconOverlay", "(Z)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.ArchiveCompatibilityParams.html#setEnableUnarchivalConfirmation(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public void SetEnableUnarchivalConfirmation(bool arg0)
+            {
+                IExecuteWithSignature("setEnableUnarchivalConfirmation", "(Z)V", arg0);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Callback
         public partial class Callback
         {

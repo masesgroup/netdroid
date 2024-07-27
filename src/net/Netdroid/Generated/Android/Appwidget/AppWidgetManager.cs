@@ -247,6 +247,17 @@ namespace Android.Appwidget
             return IExecuteWithSignature<Android.Os.Bundle>("getAppWidgetOptions", "(I)Landroid/os/Bundle;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#getWidgetPreview(android.content.ComponentName,android.os.UserHandle,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Android.Widget.RemoteViews"/></returns>
+        public Android.Widget.RemoteViews GetWidgetPreview(Android.Content.ComponentName arg0, Android.Os.UserHandle arg1, int arg2)
+        {
+            return IExecute<Android.Widget.RemoteViews>("getWidgetPreview", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#bindAppWidgetIdIfAllowed(int,android.content.ComponentName,android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -299,6 +310,17 @@ namespace Android.Appwidget
             return IExecute<bool>("requestPinAppWidget", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#setWidgetPreview(android.content.ComponentName,int,android.widget.RemoteViews)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Widget.RemoteViews"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool SetWidgetPreview(Android.Content.ComponentName arg0, int arg1, Android.Widget.RemoteViews arg2)
+        {
+            return IExecute<bool>("setWidgetPreview", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#getAppWidgetIds(android.content.ComponentName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -339,6 +361,7 @@ namespace Android.Appwidget
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
+        [global::System.Obsolete()]
         public void NotifyAppWidgetViewDataChanged(int arg0, int arg1)
         {
             IExecute("notifyAppWidgetViewDataChanged", arg0, arg1);
@@ -348,6 +371,7 @@ namespace Android.Appwidget
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
+        [global::System.Obsolete()]
         public void NotifyAppWidgetViewDataChanged(int[] arg0, int arg1)
         {
             IExecute("notifyAppWidgetViewDataChanged", arg0, arg1);
@@ -369,6 +393,15 @@ namespace Android.Appwidget
         public void PartiallyUpdateAppWidget(int[] arg0, Android.Widget.RemoteViews arg1)
         {
             IExecute("partiallyUpdateAppWidget", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#removeWidgetPreview(android.content.ComponentName,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void RemoveWidgetPreview(Android.Content.ComponentName arg0, int arg1)
+        {
+            IExecute("removeWidgetPreview", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetManager.html#updateAppWidget(android.content.ComponentName,android.widget.RemoteViews)"/>

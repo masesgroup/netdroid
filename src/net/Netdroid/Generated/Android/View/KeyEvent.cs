@@ -812,6 +812,12 @@ namespace Android.View
         private static int _KEYCODE_EISUContent = default;
         private static bool _KEYCODE_EISUReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_EMOJI_PICKER"/>
+        /// </summary>
+        public static int KEYCODE_EMOJI_PICKER { get { if (!_KEYCODE_EMOJI_PICKERReady) { _KEYCODE_EMOJI_PICKERContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_EMOJI_PICKER"); _KEYCODE_EMOJI_PICKERReady = true; } return _KEYCODE_EMOJI_PICKERContent; } }
+        private static int _KEYCODE_EMOJI_PICKERContent = default;
+        private static bool _KEYCODE_EMOJI_PICKERReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_ENDCALL"/>
         /// </summary>
         public static int KEYCODE_ENDCALL { get { if (!_KEYCODE_ENDCALLReady) { _KEYCODE_ENDCALLContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_ENDCALL"); _KEYCODE_ENDCALLReady = true; } return _KEYCODE_ENDCALLContent; } }
@@ -1603,6 +1609,12 @@ namespace Android.View
         public static int KEYCODE_S { get { if (!_KEYCODE_SReady) { _KEYCODE_SContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_S"); _KEYCODE_SReady = true; } return _KEYCODE_SContent; } }
         private static int _KEYCODE_SContent = default;
         private static bool _KEYCODE_SReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_SCREENSHOT"/>
+        /// </summary>
+        public static int KEYCODE_SCREENSHOT { get { if (!_KEYCODE_SCREENSHOTReady) { _KEYCODE_SCREENSHOTContent = SGetField<int>(LocalBridgeClazz, "KEYCODE_SCREENSHOT"); _KEYCODE_SCREENSHOTReady = true; } return _KEYCODE_SCREENSHOTContent; } }
+        private static int _KEYCODE_SCREENSHOTContent = default;
+        private static bool _KEYCODE_SCREENSHOTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_SCROLL_LOCK"/>
         /// </summary>

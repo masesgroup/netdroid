@@ -56,6 +56,16 @@ namespace Android.Hardware.Camera2
             return IExecuteWithSignature<Android.Hardware.Camera2.CameraCharacteristics>("getCameraCharacteristics", "(Ljava/lang/String;)Landroid/hardware/camera2/CameraCharacteristics;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#getCameraDeviceSetup(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.Hardware.Camera2.CameraDevice.CameraDeviceSetup"/></returns>
+        /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+        public Android.Hardware.Camera2.CameraDevice.CameraDeviceSetup GetCameraDeviceSetup(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<Android.Hardware.Camera2.CameraDevice.CameraDeviceSetup>("getCameraDeviceSetup", "(Ljava/lang/String;)Landroid/hardware/camera2/CameraDevice$CameraDeviceSetup;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#getCameraExtensionCharacteristics(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -64,6 +74,16 @@ namespace Android.Hardware.Camera2
         public Android.Hardware.Camera2.CameraExtensionCharacteristics GetCameraExtensionCharacteristics(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Hardware.Camera2.CameraExtensionCharacteristics>("getCameraExtensionCharacteristics", "(Ljava/lang/String;)Landroid/hardware/camera2/CameraExtensionCharacteristics;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#isCameraDeviceSetupSupported(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+        public bool IsCameraDeviceSetupSupported(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<bool>("isCameraDeviceSetupSupported", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#isConcurrentSessionConfigurationSupported(java.util.Map)"/>

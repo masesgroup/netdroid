@@ -502,12 +502,36 @@ namespace Android.Graphics
             return IExecute<int>("saveLayerAlpha", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipOutShader(android.graphics.Shader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Shader"/></param>
+        public void ClipOutShader(Android.Graphics.Shader arg0)
+        {
+            IExecuteWithSignature("clipOutShader", "(Landroid/graphics/Shader;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipShader(android.graphics.Shader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Shader"/></param>
+        public void ClipShader(Android.Graphics.Shader arg0)
+        {
+            IExecuteWithSignature("clipShader", "(Landroid/graphics/Shader;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#concat(android.graphics.Matrix)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Matrix"/></param>
         public void Concat(Android.Graphics.Matrix arg0)
         {
             IExecuteWithSignature("concat", "(Landroid/graphics/Matrix;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#concat(android.graphics.Matrix44)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Matrix44"/></param>
+        public void Concat(Android.Graphics.Matrix44 arg0)
+        {
+            IExecuteWithSignature("concat", "(Landroid/graphics/Matrix44;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#disableZ()"/>

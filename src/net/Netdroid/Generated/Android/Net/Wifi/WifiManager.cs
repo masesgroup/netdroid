@@ -57,6 +57,36 @@ namespace Android.Net.Wifi
         private static int _ERROR_AUTHENTICATINGContent = default;
         private static bool _ERROR_AUTHENTICATINGReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_OPEN"/>
+        /// </summary>
+        public static int FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_OPEN { get { if (!_FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_OPENReady) { _FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_OPENContent = SGetField<int>(LocalBridgeClazz, "FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_OPEN"); _FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_OPENReady = true; } return _FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_OPENContent; } }
+        private static int _FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_OPENContent = default;
+        private static bool _FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_OPENReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_SECURE"/>
+        /// </summary>
+        public static int FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_SECURE { get { if (!_FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_SECUREReady) { _FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_SECUREContent = SGetField<int>(LocalBridgeClazz, "FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_SECURE"); _FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_SECUREReady = true; } return _FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_SECUREContent; } }
+        private static int _FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_SECUREContent = default;
+        private static bool _FLAG_SEND_DHCP_HOSTNAME_RESTRICTION_SECUREReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#ROAMING_MODE_AGGRESSIVE"/>
+        /// </summary>
+        public static int ROAMING_MODE_AGGRESSIVE { get { if (!_ROAMING_MODE_AGGRESSIVEReady) { _ROAMING_MODE_AGGRESSIVEContent = SGetField<int>(LocalBridgeClazz, "ROAMING_MODE_AGGRESSIVE"); _ROAMING_MODE_AGGRESSIVEReady = true; } return _ROAMING_MODE_AGGRESSIVEContent; } }
+        private static int _ROAMING_MODE_AGGRESSIVEContent = default;
+        private static bool _ROAMING_MODE_AGGRESSIVEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#ROAMING_MODE_NONE"/>
+        /// </summary>
+        public static int ROAMING_MODE_NONE { get { if (!_ROAMING_MODE_NONEReady) { _ROAMING_MODE_NONEContent = SGetField<int>(LocalBridgeClazz, "ROAMING_MODE_NONE"); _ROAMING_MODE_NONEReady = true; } return _ROAMING_MODE_NONEContent; } }
+        private static int _ROAMING_MODE_NONEContent = default;
+        private static bool _ROAMING_MODE_NONEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#ROAMING_MODE_NORMAL"/>
+        /// </summary>
+        public static int ROAMING_MODE_NORMAL { get { if (!_ROAMING_MODE_NORMALReady) { _ROAMING_MODE_NORMALContent = SGetField<int>(LocalBridgeClazz, "ROAMING_MODE_NORMAL"); _ROAMING_MODE_NORMALReady = true; } return _ROAMING_MODE_NORMALContent; } }
+        private static int _ROAMING_MODE_NORMALContent = default;
+        private static bool _ROAMING_MODE_NORMALReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#STATUS_LOCAL_ONLY_CONNECTION_FAILURE_ASSOCIATION"/>
         /// </summary>
         public static int STATUS_LOCAL_ONLY_CONNECTION_FAILURE_ASSOCIATION { get { if (!_STATUS_LOCAL_ONLY_CONNECTION_FAILURE_ASSOCIATIONReady) { _STATUS_LOCAL_ONLY_CONNECTION_FAILURE_ASSOCIATIONContent = SGetField<int>(LocalBridgeClazz, "STATUS_LOCAL_ONLY_CONNECTION_FAILURE_ASSOCIATION"); _STATUS_LOCAL_ONLY_CONNECTION_FAILURE_ASSOCIATIONReady = true; } return _STATUS_LOCAL_ONLY_CONNECTION_FAILURE_ASSOCIATIONContent; } }
@@ -645,6 +675,14 @@ namespace Android.Net.Wifi
             return IExecuteWithSignature<bool>("is6GHzBandSupported", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#isAggressiveRoamingModeSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAggressiveRoamingModeSupported()
+        {
+            return IExecuteWithSignature<bool>("isAggressiveRoamingModeSupported", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#isAutoWakeupEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -669,6 +707,14 @@ namespace Android.Net.Wifi
         public bool IsCarrierNetworkOffloadEnabled(int arg0, bool arg1)
         {
             return IExecute<bool>("isCarrierNetworkOffloadEnabled", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#isD2dSupportedWhenInfraStaDisabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsD2dSupportedWhenInfraStaDisabled()
+        {
+            return IExecuteWithSignature<bool>("isD2dSupportedWhenInfraStaDisabled", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#isDecoratedIdentitySupported()"/>
@@ -865,6 +911,14 @@ namespace Android.Net.Wifi
             return IExecuteWithSignature<bool>("isWapiSupported", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#isWepSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsWepSupported()
+        {
+            return IExecuteWithSignature<bool>("isWepSupported", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#isWifiDisplayR2Supported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -928,6 +982,14 @@ namespace Android.Net.Wifi
         public bool IsWpa3SuiteBSupported()
         {
             return IExecuteWithSignature<bool>("isWpa3SuiteBSupported", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#isWpaPersonalSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsWpaPersonalSupported()
+        {
+            return IExecuteWithSignature<bool>("isWpaPersonalSupported", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#pingSupplicant()"/>
@@ -1257,6 +1319,15 @@ namespace Android.Net.Wifi
             IExecute("getNumberOfEnabledTdlsSessions", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getPerSsidRoamingModes(java.util.concurrent.Executor,java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
+        public void GetPerSsidRoamingModes(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Util.Map<Java.Lang.String, Java.Lang.Integer>> arg1)
+        {
+            IExecute("getPerSsidRoamingModes", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#isTdlsOperationCurrentlyAvailable(java.util.concurrent.Executor,java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -1273,6 +1344,15 @@ namespace Android.Net.Wifi
         public void QueryAutojoinGlobal(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Lang.Boolean> arg1)
         {
             IExecute("queryAutojoinGlobal", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#querySendDhcpHostnameRestriction(java.util.concurrent.Executor,java.util.function.IntConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.IntConsumer"/></param>
+        public void QuerySendDhcpHostnameRestriction(Java.Util.Concurrent.Executor arg0, Java.Util.Function.IntConsumer arg1)
+        {
+            IExecute("querySendDhcpHostnameRestriction", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#registerScanResultsCallback(java.util.concurrent.Executor,android.net.wifi.WifiManager.ScanResultsCallback)"/>
@@ -1310,6 +1390,14 @@ namespace Android.Net.Wifi
             IExecuteWithSignature("removePasspointConfiguration", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#removePerSsidRoamingMode(android.net.wifi.WifiSsid)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.WifiSsid"/></param>
+        public void RemovePerSsidRoamingMode(Android.Net.Wifi.WifiSsid arg0)
+        {
+            IExecuteWithSignature("removePerSsidRoamingMode", "(Landroid/net/wifi/WifiSsid;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#removeSuggestionConnectionStatusListener(android.net.wifi.WifiManager.SuggestionConnectionStatusListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Wifi.WifiManager.SuggestionConnectionStatusListener"/></param>
@@ -1335,6 +1423,23 @@ namespace Android.Net.Wifi
         public void ReportCreateInterfaceImpact(int arg0, bool arg1, Java.Util.Concurrent.Executor arg2, Java.Util.Function.BiConsumer<Java.Lang.Boolean, Java.Util.Set<Android.Net.Wifi.WifiManager.InterfaceCreationImpact>> arg3)
         {
             IExecute("reportCreateInterfaceImpact", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#setPerSsidRoamingMode(android.net.wifi.WifiSsid,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.WifiSsid"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void SetPerSsidRoamingMode(Android.Net.Wifi.WifiSsid arg0, int arg1)
+        {
+            IExecute("setPerSsidRoamingMode", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#setSendDhcpHostnameRestriction(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSendDhcpHostnameRestriction(int arg0)
+        {
+            IExecuteWithSignature("setSendDhcpHostnameRestriction", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#setTdlsEnabled(java.net.InetAddress,boolean,java.util.concurrent.Executor,java.util.function.Consumer)"/>

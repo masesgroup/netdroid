@@ -37,6 +37,24 @@ namespace Android.Health.Connect.Datatypes
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/StepsCadenceRecord.html#STEPS_CADENCE_RATE_AVG"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType STEPS_CADENCE_RATE_AVG { get { if (!_STEPS_CADENCE_RATE_AVGReady) { _STEPS_CADENCE_RATE_AVGContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "STEPS_CADENCE_RATE_AVG"); _STEPS_CADENCE_RATE_AVGReady = true; } return _STEPS_CADENCE_RATE_AVGContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _STEPS_CADENCE_RATE_AVGContent = default;
+        private static bool _STEPS_CADENCE_RATE_AVGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/StepsCadenceRecord.html#STEPS_CADENCE_RATE_MAX"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType STEPS_CADENCE_RATE_MAX { get { if (!_STEPS_CADENCE_RATE_MAXReady) { _STEPS_CADENCE_RATE_MAXContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "STEPS_CADENCE_RATE_MAX"); _STEPS_CADENCE_RATE_MAXReady = true; } return _STEPS_CADENCE_RATE_MAXContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _STEPS_CADENCE_RATE_MAXContent = default;
+        private static bool _STEPS_CADENCE_RATE_MAXReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/StepsCadenceRecord.html#STEPS_CADENCE_RATE_MIN"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType STEPS_CADENCE_RATE_MIN { get { if (!_STEPS_CADENCE_RATE_MINReady) { _STEPS_CADENCE_RATE_MINContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "STEPS_CADENCE_RATE_MIN"); _STEPS_CADENCE_RATE_MINReady = true; } return _STEPS_CADENCE_RATE_MINContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _STEPS_CADENCE_RATE_MINContent = default;
+        private static bool _STEPS_CADENCE_RATE_MINReady = false; // this is used because in case of generics 
 
         #endregion
 

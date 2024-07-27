@@ -99,6 +99,14 @@ namespace Android.Os
             return SExecuteWithSignature<long>(LocalBridgeClazz, "uptimeMillis", "()J");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/SystemClock.html#uptimeNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long UptimeNanos()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "uptimeNanos", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/SystemClock.html#sleep(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>

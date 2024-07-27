@@ -122,6 +122,12 @@ namespace Android.Icu.Util
         private static Android.Icu.Util.VersionInfo _UNICODE_15_0Content = default;
         private static bool _UNICODE_15_0Ready = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#UNICODE_15_1"/>
+        /// </summary>
+        public static Android.Icu.Util.VersionInfo UNICODE_15_1 { get { if (!_UNICODE_15_1Ready) { _UNICODE_15_1Content = SGetField<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "UNICODE_15_1"); _UNICODE_15_1Ready = true; } return _UNICODE_15_1Content; } }
+        private static Android.Icu.Util.VersionInfo _UNICODE_15_1Content = default;
+        private static bool _UNICODE_15_1Ready = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/VersionInfo.html#UNICODE_2_0"/>
         /// </summary>
         public static Android.Icu.Util.VersionInfo UNICODE_2_0 { get { if (!_UNICODE_2_0Ready) { _UNICODE_2_0Content = SGetField<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "UNICODE_2_0"); _UNICODE_2_0Ready = true; } return _UNICODE_2_0Content; } }

@@ -38,6 +38,12 @@ namespace Android.App.Appsearch
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#CREATOR"/>
+        /// </summary>
+        public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
+        private static Android.Os.Parcelable.Creator _CREATORContent = default;
+        private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#AGGREGATION_SCORING_AVG_RANKING_SIGNAL"/>
         /// </summary>
         public static int AGGREGATION_SCORING_AVG_RANKING_SIGNAL { get { if (!_AGGREGATION_SCORING_AVG_RANKING_SIGNALReady) { _AGGREGATION_SCORING_AVG_RANKING_SIGNALContent = SGetField<int>(LocalBridgeClazz, "AGGREGATION_SCORING_AVG_RANKING_SIGNAL"); _AGGREGATION_SCORING_AVG_RANKING_SIGNALReady = true; } return _AGGREGATION_SCORING_AVG_RANKING_SIGNALContent; } }
@@ -90,6 +96,14 @@ namespace Android.App.Appsearch
             return IExecuteWithSignature<Android.App.Appsearch.SearchSpec>("getNestedSearchSpec", "()Landroid/app/appsearch/SearchSpec;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#describeContents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int DescribeContents()
+        {
+            return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#getAggregationScoringStrategy()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -120,6 +134,15 @@ namespace Android.App.Appsearch
         public Java.Lang.String GetNestedQuery()
         {
             return IExecuteWithSignature<Java.Lang.String>("getNestedQuery", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#writeToParcel(android.os.Parcel,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
+        {
+            IExecute("writeToParcel", arg0, arg1);
         }
 
         #endregion

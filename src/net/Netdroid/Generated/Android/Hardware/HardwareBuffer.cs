@@ -88,6 +88,24 @@ namespace Android.Hardware
         private static int _DS_FP32UI8Content = default;
         private static bool _DS_FP32UI8Ready = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/HardwareBuffer.html#R_16"/>
+        /// </summary>
+        public static int R_16 { get { if (!_R_16Ready) { _R_16Content = SGetField<int>(LocalBridgeClazz, "R_16"); _R_16Ready = true; } return _R_16Content; } }
+        private static int _R_16Content = default;
+        private static bool _R_16Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/HardwareBuffer.html#R_8"/>
+        /// </summary>
+        public static int R_8 { get { if (!_R_8Ready) { _R_8Content = SGetField<int>(LocalBridgeClazz, "R_8"); _R_8Ready = true; } return _R_8Content; } }
+        private static int _R_8Content = default;
+        private static bool _R_8Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/HardwareBuffer.html#RG_1616"/>
+        /// </summary>
+        public static int RG_1616 { get { if (!_RG_1616Ready) { _RG_1616Content = SGetField<int>(LocalBridgeClazz, "RG_1616"); _RG_1616Ready = true; } return _RG_1616Content; } }
+        private static int _RG_1616Content = default;
+        private static bool _RG_1616Ready = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/HardwareBuffer.html#RGB_565"/>
         /// </summary>
         public static int RGB_565 { get { if (!_RGB_565Ready) { _RGB_565Content = SGetField<int>(LocalBridgeClazz, "RGB_565"); _RGB_565Ready = true; } return _RGB_565Content; } }
@@ -99,6 +117,12 @@ namespace Android.Hardware
         public static int RGB_888 { get { if (!_RGB_888Ready) { _RGB_888Content = SGetField<int>(LocalBridgeClazz, "RGB_888"); _RGB_888Ready = true; } return _RGB_888Content; } }
         private static int _RGB_888Content = default;
         private static bool _RGB_888Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/HardwareBuffer.html#RGBA_10101010"/>
+        /// </summary>
+        public static int RGBA_10101010 { get { if (!_RGBA_10101010Ready) { _RGBA_10101010Content = SGetField<int>(LocalBridgeClazz, "RGBA_10101010"); _RGBA_10101010Ready = true; } return _RGBA_10101010Content; } }
+        private static int _RGBA_10101010Content = default;
+        private static bool _RGBA_10101010Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/HardwareBuffer.html#RGBA_1010102"/>
         /// </summary>

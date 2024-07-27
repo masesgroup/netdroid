@@ -76,6 +76,14 @@ namespace Android.Adservices.Common
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.html#getAdRenderId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAdRenderId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAdRenderId", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.html#getMetadata()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -149,6 +157,15 @@ namespace Android.Adservices.Common
             public Android.Adservices.Common.AdData.Builder SetAdFilters(Android.Adservices.Common.AdFilters arg0)
             {
                 return IExecuteWithSignature<Android.Adservices.Common.AdData.Builder>("setAdFilters", "(Landroid/adservices/common/AdFilters;)Landroid/adservices/common/AdData$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.Builder.html#setAdRenderId(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.Adservices.Common.AdData.Builder"/></returns>
+            public Android.Adservices.Common.AdData.Builder SetAdRenderId(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.Adservices.Common.AdData.Builder>("setAdRenderId", "(Ljava/lang/String;)Landroid/adservices/common/AdData$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.Builder.html#setMetadata(java.lang.String)"/>

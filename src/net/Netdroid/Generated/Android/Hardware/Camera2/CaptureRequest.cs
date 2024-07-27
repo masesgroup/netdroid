@@ -324,6 +324,12 @@ namespace Android.Hardware.Camera2
         private static Android.Hardware.Camera2.CaptureRequest.Key _FLASH_MODEContent = default;
         private static bool _FLASH_MODEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html#FLASH_STRENGTH_LEVEL"/>
+        /// </summary>
+        public static Android.Hardware.Camera2.CaptureRequest.Key FLASH_STRENGTH_LEVEL { get { if (!_FLASH_STRENGTH_LEVELReady) { _FLASH_STRENGTH_LEVELContent = SGetField<Android.Hardware.Camera2.CaptureRequest.Key>(LocalBridgeClazz, "FLASH_STRENGTH_LEVEL"); _FLASH_STRENGTH_LEVELReady = true; } return _FLASH_STRENGTH_LEVELContent; } }
+        private static Android.Hardware.Camera2.CaptureRequest.Key _FLASH_STRENGTH_LEVELContent = default;
+        private static bool _FLASH_STRENGTH_LEVELReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html#HOT_PIXEL_MODE"/>
         /// </summary>
         public static Android.Hardware.Camera2.CaptureRequest.Key HOT_PIXEL_MODE { get { if (!_HOT_PIXEL_MODEReady) { _HOT_PIXEL_MODEContent = SGetField<Android.Hardware.Camera2.CaptureRequest.Key>(LocalBridgeClazz, "HOT_PIXEL_MODE"); _HOT_PIXEL_MODEReady = true; } return _HOT_PIXEL_MODEContent; } }

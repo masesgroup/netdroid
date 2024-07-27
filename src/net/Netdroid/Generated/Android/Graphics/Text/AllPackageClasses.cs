@@ -30,7 +30,7 @@ namespace Android.Graphics.Text
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html"/>
     /// </summary>
-    public partial class LineBreakConfig : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LineBreakConfig>
+    public partial class LineBreakConfig : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.graphics.text.LineBreakConfig";
         /// <summary>

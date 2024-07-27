@@ -107,6 +107,12 @@ namespace Android.Service.Voice
         private static int _SHOW_WITH_SCREENSHOTContent = default;
         private static bool _SHOW_WITH_SCREENSHOTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#KEY_FOREGROUND_ACTIVITIES"/>
+        /// </summary>
+        public static Java.Lang.String KEY_FOREGROUND_ACTIVITIES { get { if (!_KEY_FOREGROUND_ACTIVITIESReady) { _KEY_FOREGROUND_ACTIVITIESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_FOREGROUND_ACTIVITIES"); _KEY_FOREGROUND_ACTIVITIESReady = true; } return _KEY_FOREGROUND_ACTIVITIESContent; } }
+        private static Java.Lang.String _KEY_FOREGROUND_ACTIVITIESContent = default;
+        private static bool _KEY_FOREGROUND_ACTIVITIESReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#KEY_SHOW_SESSION_ID"/>
         /// </summary>
         public static Java.Lang.String KEY_SHOW_SESSION_ID { get { if (!_KEY_SHOW_SESSION_IDReady) { _KEY_SHOW_SESSION_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_SHOW_SESSION_ID"); _KEY_SHOW_SESSION_IDReady = true; } return _KEY_SHOW_SESSION_IDContent; } }

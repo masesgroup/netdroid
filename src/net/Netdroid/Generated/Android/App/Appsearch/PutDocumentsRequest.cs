@@ -53,6 +53,14 @@ namespace Android.App.Appsearch
         {
             return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.GenericDocument>>("getGenericDocuments", "()Ljava/util/List;");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/PutDocumentsRequest.html#getTakenActionGenericDocuments()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Appsearch.GenericDocument> GetTakenActionGenericDocuments()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.GenericDocument>>("getTakenActionGenericDocuments", "()Ljava/util/List;");
+        }
 
         #endregion
 
@@ -103,6 +111,27 @@ namespace Android.App.Appsearch
             public Android.App.Appsearch.PutDocumentsRequest.Builder AddGenericDocuments<Arg0ExtendsAndroid_App_Appsearch_GenericDocument>(Java.Util.Collection<Arg0ExtendsAndroid_App_Appsearch_GenericDocument> arg0) where Arg0ExtendsAndroid_App_Appsearch_GenericDocument : Android.App.Appsearch.GenericDocument
             {
                 return IExecuteWithSignature<Android.App.Appsearch.PutDocumentsRequest.Builder>("addGenericDocuments", "(Ljava/util/Collection;)Landroid/app/appsearch/PutDocumentsRequest$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/PutDocumentsRequest.Builder.html#addTakenActionGenericDocuments(android.app.appsearch.GenericDocument[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.Appsearch.GenericDocument"/></param>
+            /// <returns><see cref="Android.App.Appsearch.PutDocumentsRequest.Builder"/></returns>
+            /// <exception cref="Android.App.Appsearch.Exceptions.AppSearchException"/>
+            public Android.App.Appsearch.PutDocumentsRequest.Builder AddTakenActionGenericDocuments(params Android.App.Appsearch.GenericDocument[] arg0)
+            {
+                if (arg0.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.PutDocumentsRequest.Builder>("addTakenActionGenericDocuments", "([Landroid/app/appsearch/GenericDocument;)Landroid/app/appsearch/PutDocumentsRequest$Builder;"); else return IExecuteWithSignature<Android.App.Appsearch.PutDocumentsRequest.Builder>("addTakenActionGenericDocuments", "([Landroid/app/appsearch/GenericDocument;)Landroid/app/appsearch/PutDocumentsRequest$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/PutDocumentsRequest.Builder.html#addTakenActionGenericDocuments(java.util.Collection)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+            /// <typeparam name="Arg0ExtendsAndroid_App_Appsearch_GenericDocument"><see cref="Android.App.Appsearch.GenericDocument"/></typeparam>
+            /// <returns><see cref="Android.App.Appsearch.PutDocumentsRequest.Builder"/></returns>
+            /// <exception cref="Android.App.Appsearch.Exceptions.AppSearchException"/>
+            public Android.App.Appsearch.PutDocumentsRequest.Builder AddTakenActionGenericDocuments<Arg0ExtendsAndroid_App_Appsearch_GenericDocument>(Java.Util.Collection<Arg0ExtendsAndroid_App_Appsearch_GenericDocument> arg0) where Arg0ExtendsAndroid_App_Appsearch_GenericDocument : Android.App.Appsearch.GenericDocument
+            {
+                return IExecuteWithSignature<Android.App.Appsearch.PutDocumentsRequest.Builder>("addTakenActionGenericDocuments", "(Ljava/util/Collection;)Landroid/app/appsearch/PutDocumentsRequest$Builder;", arg0);
             }
 
             #endregion

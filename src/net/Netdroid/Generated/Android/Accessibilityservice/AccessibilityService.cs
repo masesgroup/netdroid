@@ -650,6 +650,14 @@ namespace Android.Accessibilityservice
             return IExecuteWithSignature<Android.Accessibilityservice.AccessibilityServiceInfo>("getServiceInfo", "()Landroid/accessibilityservice/AccessibilityServiceInfo;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getBrailleDisplayController()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Accessibilityservice.BrailleDisplayController"/></returns>
+        public Android.Accessibilityservice.BrailleDisplayController GetBrailleDisplayController()
+        {
+            return IExecuteWithSignature<Android.Accessibilityservice.BrailleDisplayController>("getBrailleDisplayController", "()Landroid/accessibilityservice/BrailleDisplayController;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getFingerprintGestureController()"/>
         /// </summary>
         /// <returns><see cref="Android.Accessibilityservice.FingerprintGestureController"/></returns>

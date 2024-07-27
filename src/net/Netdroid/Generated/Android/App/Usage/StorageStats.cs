@@ -43,6 +43,42 @@ namespace Android.App.Usage
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#APP_DATA_TYPE_FILE_TYPE_APK"/>
+        /// </summary>
+        public static int APP_DATA_TYPE_FILE_TYPE_APK { get { if (!_APP_DATA_TYPE_FILE_TYPE_APKReady) { _APP_DATA_TYPE_FILE_TYPE_APKContent = SGetField<int>(LocalBridgeClazz, "APP_DATA_TYPE_FILE_TYPE_APK"); _APP_DATA_TYPE_FILE_TYPE_APKReady = true; } return _APP_DATA_TYPE_FILE_TYPE_APKContent; } }
+        private static int _APP_DATA_TYPE_FILE_TYPE_APKContent = default;
+        private static bool _APP_DATA_TYPE_FILE_TYPE_APKReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#APP_DATA_TYPE_FILE_TYPE_CURRENT_PROFILE"/>
+        /// </summary>
+        public static int APP_DATA_TYPE_FILE_TYPE_CURRENT_PROFILE { get { if (!_APP_DATA_TYPE_FILE_TYPE_CURRENT_PROFILEReady) { _APP_DATA_TYPE_FILE_TYPE_CURRENT_PROFILEContent = SGetField<int>(LocalBridgeClazz, "APP_DATA_TYPE_FILE_TYPE_CURRENT_PROFILE"); _APP_DATA_TYPE_FILE_TYPE_CURRENT_PROFILEReady = true; } return _APP_DATA_TYPE_FILE_TYPE_CURRENT_PROFILEContent; } }
+        private static int _APP_DATA_TYPE_FILE_TYPE_CURRENT_PROFILEContent = default;
+        private static bool _APP_DATA_TYPE_FILE_TYPE_CURRENT_PROFILEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#APP_DATA_TYPE_FILE_TYPE_DEXOPT_ARTIFACT"/>
+        /// </summary>
+        public static int APP_DATA_TYPE_FILE_TYPE_DEXOPT_ARTIFACT { get { if (!_APP_DATA_TYPE_FILE_TYPE_DEXOPT_ARTIFACTReady) { _APP_DATA_TYPE_FILE_TYPE_DEXOPT_ARTIFACTContent = SGetField<int>(LocalBridgeClazz, "APP_DATA_TYPE_FILE_TYPE_DEXOPT_ARTIFACT"); _APP_DATA_TYPE_FILE_TYPE_DEXOPT_ARTIFACTReady = true; } return _APP_DATA_TYPE_FILE_TYPE_DEXOPT_ARTIFACTContent; } }
+        private static int _APP_DATA_TYPE_FILE_TYPE_DEXOPT_ARTIFACTContent = default;
+        private static bool _APP_DATA_TYPE_FILE_TYPE_DEXOPT_ARTIFACTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#APP_DATA_TYPE_FILE_TYPE_DM"/>
+        /// </summary>
+        public static int APP_DATA_TYPE_FILE_TYPE_DM { get { if (!_APP_DATA_TYPE_FILE_TYPE_DMReady) { _APP_DATA_TYPE_FILE_TYPE_DMContent = SGetField<int>(LocalBridgeClazz, "APP_DATA_TYPE_FILE_TYPE_DM"); _APP_DATA_TYPE_FILE_TYPE_DMReady = true; } return _APP_DATA_TYPE_FILE_TYPE_DMContent; } }
+        private static int _APP_DATA_TYPE_FILE_TYPE_DMContent = default;
+        private static bool _APP_DATA_TYPE_FILE_TYPE_DMReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#APP_DATA_TYPE_FILE_TYPE_REFERENCE_PROFILE"/>
+        /// </summary>
+        public static int APP_DATA_TYPE_FILE_TYPE_REFERENCE_PROFILE { get { if (!_APP_DATA_TYPE_FILE_TYPE_REFERENCE_PROFILEReady) { _APP_DATA_TYPE_FILE_TYPE_REFERENCE_PROFILEContent = SGetField<int>(LocalBridgeClazz, "APP_DATA_TYPE_FILE_TYPE_REFERENCE_PROFILE"); _APP_DATA_TYPE_FILE_TYPE_REFERENCE_PROFILEReady = true; } return _APP_DATA_TYPE_FILE_TYPE_REFERENCE_PROFILEContent; } }
+        private static int _APP_DATA_TYPE_FILE_TYPE_REFERENCE_PROFILEContent = default;
+        private static bool _APP_DATA_TYPE_FILE_TYPE_REFERENCE_PROFILEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#APP_DATA_TYPE_LIB"/>
+        /// </summary>
+        public static int APP_DATA_TYPE_LIB { get { if (!_APP_DATA_TYPE_LIBReady) { _APP_DATA_TYPE_LIBContent = SGetField<int>(LocalBridgeClazz, "APP_DATA_TYPE_LIB"); _APP_DATA_TYPE_LIBReady = true; } return _APP_DATA_TYPE_LIBContent; } }
+        private static int _APP_DATA_TYPE_LIBContent = default;
+        private static bool _APP_DATA_TYPE_LIBReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -66,6 +102,15 @@ namespace Android.App.Usage
         public long GetAppBytes()
         {
             return IExecuteWithSignature<long>("getAppBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#getAppBytesByDataType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="long"/></returns>
+        public long GetAppBytesByDataType(int arg0)
+        {
+            return IExecuteWithSignature<long>("getAppBytesByDataType", "(I)J", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#getCacheBytes()"/>

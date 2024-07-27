@@ -55,6 +55,14 @@ namespace Android.Widget
         {
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#%3Cinit%3E(android.widget.RemoteViews.DrawInstructions)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Widget.RemoteViews.DrawInstructions"/></param>
+        public RemoteViews(Android.Widget.RemoteViews.DrawInstructions arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#%3Cinit%3E(java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -711,6 +719,15 @@ namespace Android.Widget
             IExecute("setOnClickResponse", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setOnStylusHandwritingPendingIntent(int,android.app.PendingIntent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
+        public void SetOnStylusHandwritingPendingIntent(int arg0, Android.App.PendingIntent arg1)
+        {
+            IExecute("setOnStylusHandwritingPendingIntent", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setPendingIntentTemplate(int,android.app.PendingIntent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -753,6 +770,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
+        [global::System.Obsolete()]
         public void SetRemoteAdapter(int arg0, Android.Content.Intent arg1)
         {
             IExecute("setRemoteAdapter", arg0, arg1);
@@ -1060,6 +1078,92 @@ namespace Android.Widget
 
             #region Nested classes
 
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region DrawInstructions
+        public partial class DrawInstructions
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.DrawInstructions.html#getSupportedVersion()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public static long GetSupportedVersion()
+            {
+                return SExecuteWithSignature<long>(LocalBridgeClazz, "getSupportedVersion", "()J");
+            }
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            #region Nested classes
+            #region Builder
+            public partial class Builder
+            {
+                #region Constructors
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.DrawInstructions.Builder.html#%3Cinit%3E(java.util.List)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Java.Util.List"/></param>
+                public Builder(Java.Util.List<byte[]> arg0)
+                    : base(arg0)
+                {
+                }
+
+                #endregion
+
+                #region Class/Interface conversion operators
+
+                #endregion
+
+                #region Fields
+
+                #endregion
+
+                #region Static methods
+
+                #endregion
+
+                #region Instance methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.DrawInstructions.Builder.html#build()"/>
+                /// </summary>
+                /// <returns><see cref="Android.Widget.RemoteViews.DrawInstructions"/></returns>
+                public Android.Widget.RemoteViews.DrawInstructions Build()
+                {
+                    return IExecuteWithSignature<Android.Widget.RemoteViews.DrawInstructions>("build", "()Landroid/widget/RemoteViews$DrawInstructions;");
+                }
+
+                #endregion
+
+                #region Nested classes
+
+                #endregion
+
+                // TODO: complete the class
+            }
+            #endregion
+
+        
             #endregion
 
             // TODO: complete the class

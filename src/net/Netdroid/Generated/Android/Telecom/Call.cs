@@ -141,6 +141,12 @@ namespace Android.Telecom
         private static Java.Lang.String _EVENT_DISPLAY_DIAGNOSTIC_MESSAGEContent = default;
         private static bool _EVENT_DISPLAY_DIAGNOSTIC_MESSAGEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#EXTRA_ASSERTED_DISPLAY_NAME"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_ASSERTED_DISPLAY_NAME { get { if (!_EXTRA_ASSERTED_DISPLAY_NAMEReady) { _EXTRA_ASSERTED_DISPLAY_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ASSERTED_DISPLAY_NAME"); _EXTRA_ASSERTED_DISPLAY_NAMEReady = true; } return _EXTRA_ASSERTED_DISPLAY_NAMEContent; } }
+        private static Java.Lang.String _EXTRA_ASSERTED_DISPLAY_NAMEContent = default;
+        private static bool _EXTRA_ASSERTED_DISPLAY_NAMEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Call.html#EXTRA_DIAGNOSTIC_MESSAGE"/>
         /// </summary>
         public static Java.Lang.String EXTRA_DIAGNOSTIC_MESSAGE { get { if (!_EXTRA_DIAGNOSTIC_MESSAGEReady) { _EXTRA_DIAGNOSTIC_MESSAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_DIAGNOSTIC_MESSAGE"); _EXTRA_DIAGNOSTIC_MESSAGEReady = true; } return _EXTRA_DIAGNOSTIC_MESSAGEContent; } }
@@ -152,6 +158,12 @@ namespace Android.Telecom
         public static Java.Lang.String EXTRA_DIAGNOSTIC_MESSAGE_ID { get { if (!_EXTRA_DIAGNOSTIC_MESSAGE_IDReady) { _EXTRA_DIAGNOSTIC_MESSAGE_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_DIAGNOSTIC_MESSAGE_ID"); _EXTRA_DIAGNOSTIC_MESSAGE_IDReady = true; } return _EXTRA_DIAGNOSTIC_MESSAGE_IDContent; } }
         private static Java.Lang.String _EXTRA_DIAGNOSTIC_MESSAGE_IDContent = default;
         private static bool _EXTRA_DIAGNOSTIC_MESSAGE_IDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#EXTRA_IS_BUSINESS_CALL"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_IS_BUSINESS_CALL { get { if (!_EXTRA_IS_BUSINESS_CALLReady) { _EXTRA_IS_BUSINESS_CALLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_IS_BUSINESS_CALL"); _EXTRA_IS_BUSINESS_CALLReady = true; } return _EXTRA_IS_BUSINESS_CALLContent; } }
+        private static Java.Lang.String _EXTRA_IS_BUSINESS_CALLContent = default;
+        private static bool _EXTRA_IS_BUSINESS_CALLReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Call.html#EXTRA_IS_SUPPRESSED_BY_DO_NOT_DISTURB"/>
         /// </summary>
@@ -920,6 +932,12 @@ namespace Android.Telecom
             private static int _PROPERTY_IS_EXTERNAL_CALLContent = default;
             private static bool _PROPERTY_IS_EXTERNAL_CALLReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_IS_TRANSACTIONAL"/>
+            /// </summary>
+            public static int PROPERTY_IS_TRANSACTIONAL { get { if (!_PROPERTY_IS_TRANSACTIONALReady) { _PROPERTY_IS_TRANSACTIONALContent = SGetField<int>(LocalBridgeClazz, "PROPERTY_IS_TRANSACTIONAL"); _PROPERTY_IS_TRANSACTIONALReady = true; } return _PROPERTY_IS_TRANSACTIONALContent; } }
+            private static int _PROPERTY_IS_TRANSACTIONALContent = default;
+            private static bool _PROPERTY_IS_TRANSACTIONALReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALL"/>
             /// </summary>
             public static int PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALL { get { if (!_PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALLReady) { _PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALLContent = SGetField<int>(LocalBridgeClazz, "PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALL"); _PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALLReady = true; } return _PROPERTY_NETWORK_IDENTIFIED_EMERGENCY_CALLContent; } }
@@ -1164,6 +1182,14 @@ namespace Android.Telecom
             public Java.Lang.String GetContactDisplayName()
             {
                 return IExecuteWithSignature<Java.Lang.String>("getContactDisplayName", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getId()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetId()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCreationTimeMillis()"/>

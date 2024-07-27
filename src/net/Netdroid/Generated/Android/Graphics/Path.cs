@@ -359,6 +359,7 @@ namespace Android.Graphics
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.RectF"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
+        [global::System.Obsolete()]
         public void ComputeBounds(Android.Graphics.RectF arg0, bool arg1)
         {
             IExecute("computeBounds", arg0, arg1);

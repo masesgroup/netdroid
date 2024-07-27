@@ -108,6 +108,14 @@ namespace Android.Adservices.Adselection
             return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.AdTechIdentifier>>("getCustomAudienceBuyers", "()Ljava/util/List;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getPerBuyerSignedContextualAds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Android.Adservices.Common.AdTechIdentifier, Android.Adservices.Adselection.SignedContextualAds> GetPerBuyerSignedContextualAds()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Android.Adservices.Common.AdTechIdentifier, Android.Adservices.Adselection.SignedContextualAds>>("getPerBuyerSignedContextualAds", "()Ljava/util/Map;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getPerBuyerSignals()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Map"/></returns>
@@ -191,6 +199,15 @@ namespace Android.Adservices.Adselection
             public Android.Adservices.Adselection.AdSelectionConfig.Builder SetPerBuyerSignals(Java.Util.Map<Android.Adservices.Common.AdTechIdentifier, Android.Adservices.Common.AdSelectionSignals> arg0)
             {
                 return IExecuteWithSignature<Android.Adservices.Adselection.AdSelectionConfig.Builder>("setPerBuyerSignals", "(Ljava/util/Map;)Landroid/adservices/adselection/AdSelectionConfig$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.Builder.html#setPerBuyerSignedContextualAds(java.util.Map)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+            /// <returns><see cref="Android.Adservices.Adselection.AdSelectionConfig.Builder"/></returns>
+            public Android.Adservices.Adselection.AdSelectionConfig.Builder SetPerBuyerSignedContextualAds(Java.Util.Map<Android.Adservices.Common.AdTechIdentifier, Android.Adservices.Adselection.SignedContextualAds> arg0)
+            {
+                return IExecuteWithSignature<Android.Adservices.Adselection.AdSelectionConfig.Builder>("setPerBuyerSignedContextualAds", "(Ljava/util/Map;)Landroid/adservices/adselection/AdSelectionConfig$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.Builder.html#setSeller(android.adservices.common.AdTechIdentifier)"/>

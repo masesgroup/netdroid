@@ -80,6 +80,12 @@ namespace Android.Content.Pm
         private static int _COMPONENT_ENABLED_STATE_ENABLEDContent = default;
         private static bool _COMPONENT_ENABLED_STATE_ENABLEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#DELETE_ARCHIVE"/>
+        /// </summary>
+        public static int DELETE_ARCHIVE { get { if (!_DELETE_ARCHIVEReady) { _DELETE_ARCHIVEContent = SGetField<int>(LocalBridgeClazz, "DELETE_ARCHIVE"); _DELETE_ARCHIVEReady = true; } return _DELETE_ARCHIVEContent; } }
+        private static int _DELETE_ARCHIVEContent = default;
+        private static bool _DELETE_ARCHIVEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#DONT_KILL_APP"/>
         /// </summary>
         public static int DONT_KILL_APP { get { if (!_DONT_KILL_APPReady) { _DONT_KILL_APPContent = SGetField<int>(LocalBridgeClazz, "DONT_KILL_APP"); _DONT_KILL_APPReady = true; } return _DONT_KILL_APPContent; } }
@@ -1325,6 +1331,12 @@ namespace Android.Content.Pm
         private static long _GET_ATTRIBUTIONS_LONGContent = default;
         private static bool _GET_ATTRIBUTIONS_LONGReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#MATCH_ARCHIVED_PACKAGES"/>
+        /// </summary>
+        public static long MATCH_ARCHIVED_PACKAGES { get { if (!_MATCH_ARCHIVED_PACKAGESReady) { _MATCH_ARCHIVED_PACKAGESContent = SGetField<long>(LocalBridgeClazz, "MATCH_ARCHIVED_PACKAGES"); _MATCH_ARCHIVED_PACKAGESReady = true; } return _MATCH_ARCHIVED_PACKAGESContent; } }
+        private static long _MATCH_ARCHIVED_PACKAGESContent = default;
+        private static bool _MATCH_ARCHIVED_PACKAGESReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#MAXIMUM_VERIFICATION_TIMEOUT"/>
         /// </summary>
         public static long MAXIMUM_VERIFICATION_TIMEOUT { get { if (!_MAXIMUM_VERIFICATION_TIMEOUTReady) { _MAXIMUM_VERIFICATION_TIMEOUTContent = SGetField<long>(LocalBridgeClazz, "MAXIMUM_VERIFICATION_TIMEOUT"); _MAXIMUM_VERIFICATION_TIMEOUTReady = true; } return _MAXIMUM_VERIFICATION_TIMEOUTContent; } }
@@ -1338,6 +1350,18 @@ namespace Android.Content.Pm
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#parseAndroidManifest(java.io.File,java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public T ParseAndroidManifest<T>(Java.Io.File arg0, Java.Util.Function.Function<Android.Content.Res.XmlResourceParser, T> arg1)
+        {
+            return IExecute<T>("parseAndroidManifest", arg0, arg1);
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getLaunchIntentForPackage(java.lang.String)"/>
         /// </summary>
@@ -2294,6 +2318,15 @@ namespace Android.Content.Pm
             return IExecute<Android.Content.Pm.ApplicationInfo>("getApplicationInfo", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getArchivedPackage(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.Content.Pm.ArchivedPackageInfo"/></returns>
+        public Android.Content.Pm.ArchivedPackageInfo GetArchivedPackage(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<Android.Content.Pm.ArchivedPackageInfo>("getArchivedPackage", "(Ljava/lang/String;)Landroid/content/pm/ArchivedPackageInfo;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstallSourceInfo(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -2503,6 +2536,16 @@ namespace Android.Content.Pm
             return IExecute<bool>("hasSigningCertificate", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#isAppArchivable(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
+        public bool IsAppArchivable(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<bool>("isAppArchivable", "(Ljava/lang/String;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#isAutoRevokeWhitelisted()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -2535,6 +2578,16 @@ namespace Android.Content.Pm
         public bool IsDeviceUpgrading()
         {
             return IExecuteWithSignature<bool>("isDeviceUpgrading", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#isPackageStopped(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
+        public bool IsPackageStopped(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<bool>("isPackageStopped", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#isPackageSuspended()"/>

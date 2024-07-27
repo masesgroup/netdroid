@@ -441,6 +441,15 @@ namespace Android.Database.Sqlite
             return IExecute<Android.Database.Cursor>("rawQueryWithFactory", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#createRawStatement(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.Database.Sqlite.SQLiteRawStatement"/></returns>
+        public Android.Database.Sqlite.SQLiteRawStatement CreateRawStatement(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<Android.Database.Sqlite.SQLiteRawStatement>("createRawStatement", "(Ljava/lang/String;)Landroid/database/sqlite/SQLiteRawStatement;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#compileStatement(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -620,6 +629,22 @@ namespace Android.Database.Sqlite
             return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getSyncedTables", "()Ljava/util/Map;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getLastChangedRowCount()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastChangedRowCount()
+        {
+            return IExecuteWithSignature<long>("getLastChangedRowCount", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getLastInsertRowId()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastInsertRowId()
+        {
+            return IExecuteWithSignature<long>("getLastInsertRowId", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getMaximumSize()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
@@ -634,6 +659,14 @@ namespace Android.Database.Sqlite
         public long GetPageSize()
         {
             return IExecuteWithSignature<long>("getPageSize", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getTotalChangedRowCount()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTotalChangedRowCount()
+        {
+            return IExecuteWithSignature<long>("getTotalChangedRowCount", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#insert(java.lang.String,java.lang.String,android.content.ContentValues)"/>
@@ -717,6 +750,13 @@ namespace Android.Database.Sqlite
             IExecuteWithSignature("beginTransactionNonExclusive", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransactionReadOnly()"/>
+        /// </summary>
+        public void BeginTransactionReadOnly()
+        {
+            IExecuteWithSignature("beginTransactionReadOnly", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransactionWithListener(android.database.sqlite.SQLiteTransactionListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Database.Sqlite.SQLiteTransactionListener"/></param>
@@ -731,6 +771,14 @@ namespace Android.Database.Sqlite
         public void BeginTransactionWithListenerNonExclusive(Android.Database.Sqlite.SQLiteTransactionListener arg0)
         {
             IExecuteWithSignature("beginTransactionWithListenerNonExclusive", "(Landroid/database/sqlite/SQLiteTransactionListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#beginTransactionWithListenerReadOnly(android.database.sqlite.SQLiteTransactionListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Database.Sqlite.SQLiteTransactionListener"/></param>
+        public void BeginTransactionWithListenerReadOnly(Android.Database.Sqlite.SQLiteTransactionListener arg0)
+        {
+            IExecuteWithSignature("beginTransactionWithListenerReadOnly", "(Landroid/database/sqlite/SQLiteTransactionListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#disableWriteAheadLogging()"/>

@@ -1571,6 +1571,14 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/MotionEvent.PointerCoords.html#isResampled()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsResampled()
+            {
+                return IExecuteWithSignature<bool>("isResampled", "()Z");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/MotionEvent.PointerCoords.html#getAxisValue(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>

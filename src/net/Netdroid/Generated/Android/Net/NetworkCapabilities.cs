@@ -118,6 +118,12 @@ namespace Android.Net
         private static int _NET_CAPABILITY_INTERNETContent = default;
         private static bool _NET_CAPABILITY_INTERNETReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#NET_CAPABILITY_LOCAL_NETWORK"/>
+        /// </summary>
+        public static int NET_CAPABILITY_LOCAL_NETWORK { get { if (!_NET_CAPABILITY_LOCAL_NETWORKReady) { _NET_CAPABILITY_LOCAL_NETWORKContent = SGetField<int>(LocalBridgeClazz, "NET_CAPABILITY_LOCAL_NETWORK"); _NET_CAPABILITY_LOCAL_NETWORKReady = true; } return _NET_CAPABILITY_LOCAL_NETWORKContent; } }
+        private static int _NET_CAPABILITY_LOCAL_NETWORKContent = default;
+        private static bool _NET_CAPABILITY_LOCAL_NETWORKReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#NET_CAPABILITY_MCX"/>
         /// </summary>
         public static int NET_CAPABILITY_MCX { get { if (!_NET_CAPABILITY_MCXReady) { _NET_CAPABILITY_MCXContent = SGetField<int>(LocalBridgeClazz, "NET_CAPABILITY_MCX"); _NET_CAPABILITY_MCXReady = true; } return _NET_CAPABILITY_MCXContent; } }
@@ -286,6 +292,12 @@ namespace Android.Net
         private static int _TRANSPORT_LOWPANContent = default;
         private static bool _TRANSPORT_LOWPANReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#TRANSPORT_SATELLITE"/>
+        /// </summary>
+        public static int TRANSPORT_SATELLITE { get { if (!_TRANSPORT_SATELLITEReady) { _TRANSPORT_SATELLITEContent = SGetField<int>(LocalBridgeClazz, "TRANSPORT_SATELLITE"); _TRANSPORT_SATELLITEReady = true; } return _TRANSPORT_SATELLITEContent; } }
+        private static int _TRANSPORT_SATELLITEContent = default;
+        private static bool _TRANSPORT_SATELLITEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#TRANSPORT_THREAD"/>
         /// </summary>
         public static int TRANSPORT_THREAD { get { if (!_TRANSPORT_THREADReady) { _TRANSPORT_THREADContent = SGetField<int>(LocalBridgeClazz, "TRANSPORT_THREAD"); _TRANSPORT_THREADReady = true; } return _TRANSPORT_THREADContent; } }
@@ -413,6 +425,14 @@ namespace Android.Net
         public int[] GetEnterpriseIds()
         {
             return IExecuteWithSignatureArray<int>("getEnterpriseIds", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getSubscriptionIds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Integer> GetSubscriptionIds()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getSubscriptionIds", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#writeToParcel(android.os.Parcel,int)"/>

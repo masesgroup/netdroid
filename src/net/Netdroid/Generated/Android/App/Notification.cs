@@ -526,6 +526,12 @@ namespace Android.App
         private static Java.Lang.String _CATEGORY_TRANSPORTContent = default;
         private static bool _CATEGORY_TRANSPORTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#CATEGORY_VOICEMAIL"/>
+        /// </summary>
+        public static Java.Lang.String CATEGORY_VOICEMAIL { get { if (!_CATEGORY_VOICEMAILReady) { _CATEGORY_VOICEMAILContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CATEGORY_VOICEMAIL"); _CATEGORY_VOICEMAILReady = true; } return _CATEGORY_VOICEMAILContent; } }
+        private static Java.Lang.String _CATEGORY_VOICEMAILContent = default;
+        private static bool _CATEGORY_VOICEMAILReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#CATEGORY_WORKOUT"/>
         /// </summary>
         public static Java.Lang.String CATEGORY_WORKOUT { get { if (!_CATEGORY_WORKOUTReady) { _CATEGORY_WORKOUTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CATEGORY_WORKOUT"); _CATEGORY_WORKOUTReady = true; } return _CATEGORY_WORKOUTContent; } }
@@ -2698,6 +2704,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#createBigContentView()"/>
             /// </summary>
             /// <returns><see cref="Android.Widget.RemoteViews"/></returns>
+            [global::System.Obsolete()]
             public Android.Widget.RemoteViews CreateBigContentView()
             {
                 return IExecuteWithSignature<Android.Widget.RemoteViews>("createBigContentView", "()Landroid/widget/RemoteViews;");
@@ -2706,6 +2713,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#createContentView()"/>
             /// </summary>
             /// <returns><see cref="Android.Widget.RemoteViews"/></returns>
+            [global::System.Obsolete()]
             public Android.Widget.RemoteViews CreateContentView()
             {
                 return IExecuteWithSignature<Android.Widget.RemoteViews>("createContentView", "()Landroid/widget/RemoteViews;");
@@ -2714,6 +2722,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#createHeadsUpContentView()"/>
             /// </summary>
             /// <returns><see cref="Android.Widget.RemoteViews"/></returns>
+            [global::System.Obsolete()]
             public Android.Widget.RemoteViews CreateHeadsUpContentView()
             {
                 return IExecuteWithSignature<Android.Widget.RemoteViews>("createHeadsUpContentView", "()Landroid/widget/RemoteViews;");
@@ -3706,6 +3715,130 @@ namespace Android.App
         }
         #endregion
 
+        #region TvExtender
+        public partial class TvExtender
+        {
+            #region Constructors
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.TvExtender.html#%3Cinit%3E(android.app.Notification)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.Notification"/></param>
+            public TvExtender(Android.App.Notification arg0)
+                : base(arg0)
+            {
+            }
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.TvExtender.html#extend(android.app.Notification.Builder)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.Notification.Builder"/></param>
+            /// <returns><see cref="Android.App.Notification.Builder"/></returns>
+            public Android.App.Notification.Builder Extend(Android.App.Notification.Builder arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.Builder>("extend", "(Landroid/app/Notification$Builder;)Landroid/app/Notification$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.TvExtender.html#setChannelId(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Notification.TvExtender"/></returns>
+            public Android.App.Notification.TvExtender SetChannelId(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.TvExtender>("setChannelId", "(Ljava/lang/String;)Landroid/app/Notification$TvExtender;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.TvExtender.html#setContentIntent(android.app.PendingIntent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.PendingIntent"/></param>
+            /// <returns><see cref="Android.App.Notification.TvExtender"/></returns>
+            public Android.App.Notification.TvExtender SetContentIntent(Android.App.PendingIntent arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.TvExtender>("setContentIntent", "(Landroid/app/PendingIntent;)Landroid/app/Notification$TvExtender;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.TvExtender.html#setDeleteIntent(android.app.PendingIntent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.App.PendingIntent"/></param>
+            /// <returns><see cref="Android.App.Notification.TvExtender"/></returns>
+            public Android.App.Notification.TvExtender SetDeleteIntent(Android.App.PendingIntent arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.TvExtender>("setDeleteIntent", "(Landroid/app/PendingIntent;)Landroid/app/Notification$TvExtender;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.TvExtender.html#setSuppressShowOverApps(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.App.Notification.TvExtender"/></returns>
+            public Android.App.Notification.TvExtender SetSuppressShowOverApps(bool arg0)
+            {
+                return IExecuteWithSignature<Android.App.Notification.TvExtender>("setSuppressShowOverApps", "(Z)Landroid/app/Notification$TvExtender;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.TvExtender.html#getContentIntent()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.PendingIntent"/></returns>
+            public Android.App.PendingIntent GetContentIntent()
+            {
+                return IExecuteWithSignature<Android.App.PendingIntent>("getContentIntent", "()Landroid/app/PendingIntent;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.TvExtender.html#getDeleteIntent()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.PendingIntent"/></returns>
+            public Android.App.PendingIntent GetDeleteIntent()
+            {
+                return IExecuteWithSignature<Android.App.PendingIntent>("getDeleteIntent", "()Landroid/app/PendingIntent;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.TvExtender.html#isAvailableOnTv()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsAvailableOnTv()
+            {
+                return IExecuteWithSignature<bool>("isAvailableOnTv", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.TvExtender.html#isSuppressShowOverApps()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool IsSuppressShowOverApps()
+            {
+                return IExecuteWithSignature<bool>("isSuppressShowOverApps", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.TvExtender.html#getChannelId()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetChannelId()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getChannelId", "()Ljava/lang/String;");
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region WearableExtender
         public partial class WearableExtender
         {
@@ -3867,16 +4000,6 @@ namespace Android.App
             public Android.App.Notification.WearableExtender Clone()
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("clone", "()Landroid/app/Notification$WearableExtender;");
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#setBackground(android.graphics.Bitmap)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
-            /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [global::System.Obsolete()]
-            public Android.App.Notification.WearableExtender SetBackground(Android.Graphics.Bitmap arg0)
-            {
-                return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setBackground", "(Landroid/graphics/Bitmap;)Landroid/app/Notification$WearableExtender;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#setBridgeTag(java.lang.String)"/>
@@ -4050,15 +4173,6 @@ namespace Android.App
             public Android.App.PendingIntent GetDisplayIntent()
             {
                 return IExecuteWithSignature<Android.App.PendingIntent>("getDisplayIntent", "()Landroid/app/PendingIntent;");
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getBackground()"/>
-            /// </summary>
-            /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
-            [global::System.Obsolete()]
-            public Android.Graphics.Bitmap GetBackground()
-            {
-                return IExecuteWithSignature<Android.Graphics.Bitmap>("getBackground", "()Landroid/graphics/Bitmap;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getContentIntentAvailableOffline()"/>

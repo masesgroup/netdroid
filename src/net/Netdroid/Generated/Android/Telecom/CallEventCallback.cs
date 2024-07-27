@@ -104,6 +104,14 @@ namespace Android.Telecom
         {
             IExecuteWithSignature("onMuteStateChanged", "(Z)V", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/CallEventCallback.html#onVideoStateChanged(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void OnVideoStateChanged(int arg0)
+        {
+            IExecuteWithSignature("onVideoStateChanged", "(I)V", arg0);
+        }
 
         #endregion
 

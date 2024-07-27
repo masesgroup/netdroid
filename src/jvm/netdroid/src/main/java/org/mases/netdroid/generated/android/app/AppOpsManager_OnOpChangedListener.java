@@ -31,5 +31,13 @@ public final class AppOpsManager_OnOpChangedListener extends org.mases.jcobridge
     public void onOpChanged(java.lang.String arg0, java.lang.String arg1) {
         raiseEvent("onOpChanged", arg0, arg1);
     }
+    //@Override
+    public void onOpChanged(java.lang.String arg0, java.lang.String arg1, int arg2, java.lang.String arg3) {
+        raiseEvent("onOpChanged4", arg0, arg1, arg2, arg3);
+    }
+    //@Override
+    public void onOpChangedDefault(java.lang.String arg0, java.lang.String arg1, int arg2, java.lang.String arg3) {
+        android.app.AppOpsManager.OnOpChangedListener.super.onOpChanged(arg0, arg1, arg2, arg3);
+    }
 
 }

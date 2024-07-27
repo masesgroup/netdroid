@@ -55,6 +55,15 @@ namespace Android.Adservices.Adid
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adid/AdIdManager.html#getAdId(java.util.concurrent.Executor,android.adservices.common.AdServicesOutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg1"><see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/></param>
+        public void GetAdId(Java.Util.Concurrent.Executor arg0, Android.Adservices.Common.AdServicesOutcomeReceiver<Android.Adservices.Adid.AdId, Java.Lang.Exception> arg1)
+        {
+            IExecute("getAdId", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adid/AdIdManager.html#getAdId(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>

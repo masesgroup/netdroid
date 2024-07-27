@@ -37,6 +37,17 @@ namespace Android.Content.Pm
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#%3Cinit%3E(int,java.util.Collection,java.util.Collection,java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Collection"/></param>
+        public SigningInfo(int arg0, Java.Util.Collection<Android.Content.Pm.Signature> arg1, Java.Util.Collection<Java.Security.PublicKey> arg2, Java.Util.Collection<Android.Content.Pm.Signature> arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
 
         #endregion
 
@@ -98,6 +109,22 @@ namespace Android.Content.Pm
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#getSchemeVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSchemeVersion()
+        {
+            return IExecuteWithSignature<int>("getSchemeVersion", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#getPublicKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Java.Security.PublicKey> GetPublicKeys()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Java.Security.PublicKey>>("getPublicKeys", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/SigningInfo.html#writeToParcel(android.os.Parcel,int)"/>

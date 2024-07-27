@@ -210,6 +210,15 @@ namespace Android.Text
                 return IExecuteWithSignature<Android.Text.DynamicLayout.Builder>("setJustificationMode", "(I)Landroid/text/DynamicLayout$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/DynamicLayout.Builder.html#setLineBreakConfig(android.graphics.text.LineBreakConfig)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Text.LineBreakConfig"/></param>
+            /// <returns><see cref="Android.Text.DynamicLayout.Builder"/></returns>
+            public Android.Text.DynamicLayout.Builder SetLineBreakConfig(Android.Graphics.Text.LineBreakConfig arg0)
+            {
+                return IExecuteWithSignature<Android.Text.DynamicLayout.Builder>("setLineBreakConfig", "(Landroid/graphics/text/LineBreakConfig;)Landroid/text/DynamicLayout$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/DynamicLayout.Builder.html#setLineSpacing(float,float)"/>
             /// </summary>
             /// <param name="arg0"><see cref="float"/></param>
@@ -220,6 +229,24 @@ namespace Android.Text
                 return IExecute<Android.Text.DynamicLayout.Builder>("setLineSpacing", arg0, arg1);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/DynamicLayout.Builder.html#setMinimumFontMetrics(android.graphics.Paint.FontMetrics)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Paint.FontMetrics"/></param>
+            /// <returns><see cref="Android.Text.DynamicLayout.Builder"/></returns>
+            public Android.Text.DynamicLayout.Builder SetMinimumFontMetrics(Android.Graphics.Paint.FontMetrics arg0)
+            {
+                return IExecuteWithSignature<Android.Text.DynamicLayout.Builder>("setMinimumFontMetrics", "(Landroid/graphics/Paint$FontMetrics;)Landroid/text/DynamicLayout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/DynamicLayout.Builder.html#setShiftDrawingOffsetForStartOverhang(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Text.DynamicLayout.Builder"/></returns>
+            public Android.Text.DynamicLayout.Builder SetShiftDrawingOffsetForStartOverhang(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Text.DynamicLayout.Builder>("setShiftDrawingOffsetForStartOverhang", "(Z)Landroid/text/DynamicLayout$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/DynamicLayout.Builder.html#setTextDirection(android.text.TextDirectionHeuristic)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Text.TextDirectionHeuristic"/></param>
@@ -227,6 +254,15 @@ namespace Android.Text
             public Android.Text.DynamicLayout.Builder SetTextDirection(Android.Text.TextDirectionHeuristic arg0)
             {
                 return IExecuteWithSignature<Android.Text.DynamicLayout.Builder>("setTextDirection", "(Landroid/text/TextDirectionHeuristic;)Landroid/text/DynamicLayout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/DynamicLayout.Builder.html#setUseBoundsForWidth(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Text.DynamicLayout.Builder"/></returns>
+            public Android.Text.DynamicLayout.Builder SetUseBoundsForWidth(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Text.DynamicLayout.Builder>("setUseBoundsForWidth", "(Z)Landroid/text/DynamicLayout$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/DynamicLayout.Builder.html#setUseLineSpacingFromFallbacks(boolean)"/>

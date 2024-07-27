@@ -58,6 +58,7 @@ namespace Android.Nfc.Cardemulation
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#ACTION_CHANGE_DEFAULT"/>
         /// </summary>
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_CHANGE_DEFAULT { get { if (!_ACTION_CHANGE_DEFAULTReady) { _ACTION_CHANGE_DEFAULTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_CHANGE_DEFAULT"); _ACTION_CHANGE_DEFAULTReady = true; } return _ACTION_CHANGE_DEFAULTContent; } }
         private static Java.Lang.String _ACTION_CHANGE_DEFAULTContent = default;
         private static bool _ACTION_CHANGE_DEFAULTReady = false; // this is used because in case of generics 
@@ -143,6 +144,28 @@ namespace Android.Nfc.Cardemulation
             return IExecute<bool>("registerAidsForService", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#registerPollingLoopFilterForService(android.content.ComponentName,java.lang.String,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool RegisterPollingLoopFilterForService(Android.Content.ComponentName arg0, Java.Lang.String arg1, bool arg2)
+        {
+            return IExecute<bool>("registerPollingLoopFilterForService", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#registerPollingLoopPatternFilterForService(android.content.ComponentName,java.lang.String,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool RegisterPollingLoopPatternFilterForService(Android.Content.ComponentName arg0, Java.Lang.String arg1, bool arg2)
+        {
+            return IExecute<bool>("registerPollingLoopPatternFilterForService", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#removeAidsForService(android.content.ComponentName,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -151,6 +174,26 @@ namespace Android.Nfc.Cardemulation
         public bool RemoveAidsForService(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
             return IExecute<bool>("removeAidsForService", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#removePollingLoopFilterForService(android.content.ComponentName,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool RemovePollingLoopFilterForService(Android.Content.ComponentName arg0, Java.Lang.String arg1)
+        {
+            return IExecute<bool>("removePollingLoopFilterForService", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#removePollingLoopPatternFilterForService(android.content.ComponentName,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool RemovePollingLoopPatternFilterForService(Android.Content.ComponentName arg0, Java.Lang.String arg1)
+        {
+            return IExecute<bool>("removePollingLoopPatternFilterForService", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#setOffHostForService(android.content.ComponentName,java.lang.String)"/>
@@ -171,6 +214,16 @@ namespace Android.Nfc.Cardemulation
         public bool SetPreferredService(Android.App.Activity arg0, Android.Content.ComponentName arg1)
         {
             return IExecute<bool>("setPreferredService", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#setShouldDefaultToObserveModeForService(android.content.ComponentName,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool SetShouldDefaultToObserveModeForService(Android.Content.ComponentName arg0, bool arg1)
+        {
+            return IExecute<bool>("setShouldDefaultToObserveModeForService", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#supportsAidPrefixRegistration()"/>

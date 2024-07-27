@@ -166,6 +166,14 @@ namespace Android.Widget
             return IExecuteWithSignatureArray<Android.Graphics.Drawable.Drawable>("getCompoundDrawablesRelative", "()[Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMinimumFontMetrics()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Paint.FontMetrics"/></returns>
+        public Android.Graphics.Paint.FontMetrics GetMinimumFontMetrics()
+        {
+            return IExecuteWithSignature<Android.Graphics.Paint.FontMetrics>("getMinimumFontMetrics", "()Landroid/graphics/Paint$FontMetrics;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawableTintMode()"/>
         /// </summary>
         /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
@@ -356,6 +364,22 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("getIncludeFontPadding", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getShiftDrawingOffsetForStartOverhang()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetShiftDrawingOffsetForStartOverhang()
+        {
+            return IExecuteWithSignature<bool>("getShiftDrawingOffsetForStartOverhang", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getUseBoundsForWidth()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetUseBoundsForWidth()
+        {
+            return IExecuteWithSignature<bool>("getUseBoundsForWidth", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#hasSelection()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -402,6 +426,14 @@ namespace Android.Widget
         public bool IsInputMethodTarget()
         {
             return IExecuteWithSignature<bool>("isInputMethodTarget", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#isLocalePreferredLineHeightForMinimumUsed()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsLocalePreferredLineHeightForMinimumUsed()
+        {
+            return IExecuteWithSignature<bool>("isLocalePreferredLineHeightForMinimumUsed", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#isSingleLine()"/>
@@ -1873,6 +1905,14 @@ namespace Android.Widget
             IExecute("setLineSpacing", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setLocalePreferredLineHeightForMinimumUsed(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetLocalePreferredLineHeightForMinimumUsed(bool arg0)
+        {
+            IExecuteWithSignature("setLocalePreferredLineHeightForMinimumUsed", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setMarqueeRepeatLimit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1927,6 +1967,14 @@ namespace Android.Widget
         public void SetMinHeight(int arg0)
         {
             IExecuteWithSignature("setMinHeight", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setMinimumFontMetrics(android.graphics.Paint.FontMetrics)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Paint.FontMetrics"/></param>
+        public void SetMinimumFontMetrics(Android.Graphics.Paint.FontMetrics arg0)
+        {
+            IExecuteWithSignature("setMinimumFontMetrics", "(Landroid/graphics/Paint$FontMetrics;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setMinLines(int)"/>
@@ -2018,6 +2066,14 @@ namespace Android.Widget
         public void SetShadowLayer(float arg0, float arg1, float arg2, int arg3)
         {
             IExecute("setShadowLayer", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setShiftDrawingOffsetForStartOverhang(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetShiftDrawingOffsetForStartOverhang(bool arg0)
+        {
+            IExecuteWithSignature("setShiftDrawingOffsetForStartOverhang", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setSingleLine()"/>
@@ -2222,6 +2278,14 @@ namespace Android.Widget
         public void SetTypeface(Android.Graphics.Typeface arg0)
         {
             IExecuteWithSignature("setTypeface", "(Landroid/graphics/Typeface;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setUseBoundsForWidth(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetUseBoundsForWidth(bool arg0)
+        {
+            IExecuteWithSignature("setUseBoundsForWidth", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setWidth(int)"/>

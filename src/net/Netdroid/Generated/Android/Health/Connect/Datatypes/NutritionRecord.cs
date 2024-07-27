@@ -230,6 +230,12 @@ namespace Android.Health.Connect.Datatypes
         private static Android.Health.Connect.Datatypes.AggregationType _TOTAL_FAT_TOTALContent = default;
         private static bool _TOTAL_FAT_TOTALReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#TRANS_FAT_TOTAL"/>
+        /// </summary>
+        public static Android.Health.Connect.Datatypes.AggregationType TRANS_FAT_TOTAL { get { if (!_TRANS_FAT_TOTALReady) { _TRANS_FAT_TOTALContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "TRANS_FAT_TOTAL"); _TRANS_FAT_TOTALReady = true; } return _TRANS_FAT_TOTALContent; } }
+        private static Android.Health.Connect.Datatypes.AggregationType _TRANS_FAT_TOTALContent = default;
+        private static bool _TRANS_FAT_TOTALReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#UNSATURATED_FAT_TOTAL"/>
         /// </summary>
         public static Android.Health.Connect.Datatypes.AggregationType UNSATURATED_FAT_TOTAL { get { if (!_UNSATURATED_FAT_TOTALReady) { _UNSATURATED_FAT_TOTALContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "UNSATURATED_FAT_TOTAL"); _UNSATURATED_FAT_TOTALReady = true; } return _UNSATURATED_FAT_TOTALContent; } }

@@ -342,6 +342,22 @@ namespace Android.App.Job
             return IExecuteWithSignature<int>("getPriority", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getTraceTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTraceTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTraceTag", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getDebugTags()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetDebugTags()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getDebugTags", "()Ljava/util/Set;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getEstimatedNetworkDownloadBytes()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
@@ -472,6 +488,15 @@ namespace Android.App.Job
                 return IExecuteWithSignature<Android.App.Job.JobInfo>("build", "()Landroid/app/job/JobInfo;");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.Builder.html#addDebugTag(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Job.JobInfo.Builder"/></returns>
+            public Android.App.Job.JobInfo.Builder AddDebugTag(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Job.JobInfo.Builder>("addDebugTag", "(Ljava/lang/String;)Landroid/app/job/JobInfo$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.Builder.html#addTriggerContentUri(android.app.job.JobInfo.TriggerContentUri)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.Job.JobInfo.TriggerContentUri"/></param>
@@ -479,6 +504,15 @@ namespace Android.App.Job
             public Android.App.Job.JobInfo.Builder AddTriggerContentUri(Android.App.Job.JobInfo.TriggerContentUri arg0)
             {
                 return IExecuteWithSignature<Android.App.Job.JobInfo.Builder>("addTriggerContentUri", "(Landroid/app/job/JobInfo$TriggerContentUri;)Landroid/app/job/JobInfo$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.Builder.html#removeDebugTag(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Job.JobInfo.Builder"/></returns>
+            public Android.App.Job.JobInfo.Builder RemoveDebugTag(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Job.JobInfo.Builder>("removeDebugTag", "(Ljava/lang/String;)Landroid/app/job/JobInfo$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.Builder.html#setBackoffCriteria(long,int)"/>
@@ -664,6 +698,15 @@ namespace Android.App.Job
             public Android.App.Job.JobInfo.Builder SetRequiresStorageNotLow(bool arg0)
             {
                 return IExecuteWithSignature<Android.App.Job.JobInfo.Builder>("setRequiresStorageNotLow", "(Z)Landroid/app/job/JobInfo$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.Builder.html#setTraceTag(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.App.Job.JobInfo.Builder"/></returns>
+            public Android.App.Job.JobInfo.Builder SetTraceTag(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.App.Job.JobInfo.Builder>("setTraceTag", "(Ljava/lang/String;)Landroid/app/job/JobInfo$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.Builder.html#setTransientExtras(android.os.Bundle)"/>

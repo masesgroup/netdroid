@@ -271,6 +271,15 @@ namespace Android.App
             IExecuteWithSignature("onTaskRemoved", "(Landroid/content/Intent;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Service.html#onTimeout(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public void OnTimeout(int arg0, int arg1)
+        {
+            IExecute("onTimeout", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Service.html#onTimeout(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

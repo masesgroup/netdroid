@@ -1035,37 +1035,6 @@ namespace Android.Media
         }
         #endregion
 
-        #region HdcpLevel
-        public partial class HdcpLevel
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region KeyRequest
         public partial class KeyRequest
         {
@@ -2060,37 +2029,6 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<Java.Lang.String>("getDefaultUrl", "()Ljava/lang/String;");
             }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region SecurityLevel
-        public partial class SecurityLevel
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
 
             #endregion
 

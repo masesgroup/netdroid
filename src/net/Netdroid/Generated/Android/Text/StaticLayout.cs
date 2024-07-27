@@ -243,6 +243,24 @@ namespace Android.Text
                 return IExecuteWithSignature<Android.Text.StaticLayout.Builder>("setMaxLines", "(I)Landroid/text/StaticLayout$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/StaticLayout.Builder.html#setMinimumFontMetrics(android.graphics.Paint.FontMetrics)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Paint.FontMetrics"/></param>
+            /// <returns><see cref="Android.Text.StaticLayout.Builder"/></returns>
+            public Android.Text.StaticLayout.Builder SetMinimumFontMetrics(Android.Graphics.Paint.FontMetrics arg0)
+            {
+                return IExecuteWithSignature<Android.Text.StaticLayout.Builder>("setMinimumFontMetrics", "(Landroid/graphics/Paint$FontMetrics;)Landroid/text/StaticLayout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/StaticLayout.Builder.html#setShiftDrawingOffsetForStartOverhang(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Text.StaticLayout.Builder"/></returns>
+            public Android.Text.StaticLayout.Builder SetShiftDrawingOffsetForStartOverhang(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Text.StaticLayout.Builder>("setShiftDrawingOffsetForStartOverhang", "(Z)Landroid/text/StaticLayout$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/StaticLayout.Builder.html#setText(java.lang.CharSequence)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -259,6 +277,15 @@ namespace Android.Text
             public Android.Text.StaticLayout.Builder SetTextDirection(Android.Text.TextDirectionHeuristic arg0)
             {
                 return IExecuteWithSignature<Android.Text.StaticLayout.Builder>("setTextDirection", "(Landroid/text/TextDirectionHeuristic;)Landroid/text/StaticLayout$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/StaticLayout.Builder.html#setUseBoundsForWidth(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Text.StaticLayout.Builder"/></returns>
+            public Android.Text.StaticLayout.Builder SetUseBoundsForWidth(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Text.StaticLayout.Builder>("setUseBoundsForWidth", "(Z)Landroid/text/StaticLayout$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/StaticLayout.Builder.html#setUseLineSpacingFromFallbacks(boolean)"/>

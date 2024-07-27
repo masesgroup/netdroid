@@ -85,6 +85,24 @@ namespace Android.Content.Pm
             return IExecuteWithSignature<bool>("canRequestInteractAcrossProfiles", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/CrossProfileApps.html#isManagedProfile(android.os.UserHandle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.UserHandle"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsManagedProfile(Android.Os.UserHandle arg0)
+        {
+            return IExecuteWithSignature<bool>("isManagedProfile", "(Landroid/os/UserHandle;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/CrossProfileApps.html#isProfile(android.os.UserHandle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.UserHandle"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsProfile(Android.Os.UserHandle arg0)
+        {
+            return IExecuteWithSignature<bool>("isProfile", "(Landroid/os/UserHandle;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/CrossProfileApps.html#getProfileSwitchingLabel(android.os.UserHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.UserHandle"/></param>

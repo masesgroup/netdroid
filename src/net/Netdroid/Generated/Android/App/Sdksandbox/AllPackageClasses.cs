@@ -92,6 +92,7 @@ namespace Android.App.Sdksandbox
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/app/sdksandbox/RequestSurfacePackageException.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class RequestSurfacePackageException : Java.Lang.Exception
     {
         const string _bridgeClassName = "android.app.sdksandbox.RequestSurfacePackageException";

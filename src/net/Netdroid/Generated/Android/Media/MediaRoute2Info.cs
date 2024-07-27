@@ -74,6 +74,24 @@ namespace Android.Media
         private static int _PLAYBACK_VOLUME_VARIABLEContent = default;
         private static bool _PLAYBACK_VOLUME_VARIABLEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#SUITABILITY_STATUS_NOT_SUITABLE_FOR_TRANSFER"/>
+        /// </summary>
+        public static int SUITABILITY_STATUS_NOT_SUITABLE_FOR_TRANSFER { get { if (!_SUITABILITY_STATUS_NOT_SUITABLE_FOR_TRANSFERReady) { _SUITABILITY_STATUS_NOT_SUITABLE_FOR_TRANSFERContent = SGetField<int>(LocalBridgeClazz, "SUITABILITY_STATUS_NOT_SUITABLE_FOR_TRANSFER"); _SUITABILITY_STATUS_NOT_SUITABLE_FOR_TRANSFERReady = true; } return _SUITABILITY_STATUS_NOT_SUITABLE_FOR_TRANSFERContent; } }
+        private static int _SUITABILITY_STATUS_NOT_SUITABLE_FOR_TRANSFERContent = default;
+        private static bool _SUITABILITY_STATUS_NOT_SUITABLE_FOR_TRANSFERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#SUITABILITY_STATUS_SUITABLE_FOR_DEFAULT_TRANSFER"/>
+        /// </summary>
+        public static int SUITABILITY_STATUS_SUITABLE_FOR_DEFAULT_TRANSFER { get { if (!_SUITABILITY_STATUS_SUITABLE_FOR_DEFAULT_TRANSFERReady) { _SUITABILITY_STATUS_SUITABLE_FOR_DEFAULT_TRANSFERContent = SGetField<int>(LocalBridgeClazz, "SUITABILITY_STATUS_SUITABLE_FOR_DEFAULT_TRANSFER"); _SUITABILITY_STATUS_SUITABLE_FOR_DEFAULT_TRANSFERReady = true; } return _SUITABILITY_STATUS_SUITABLE_FOR_DEFAULT_TRANSFERContent; } }
+        private static int _SUITABILITY_STATUS_SUITABLE_FOR_DEFAULT_TRANSFERContent = default;
+        private static bool _SUITABILITY_STATUS_SUITABLE_FOR_DEFAULT_TRANSFERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#SUITABILITY_STATUS_SUITABLE_FOR_MANUAL_TRANSFER"/>
+        /// </summary>
+        public static int SUITABILITY_STATUS_SUITABLE_FOR_MANUAL_TRANSFER { get { if (!_SUITABILITY_STATUS_SUITABLE_FOR_MANUAL_TRANSFERReady) { _SUITABILITY_STATUS_SUITABLE_FOR_MANUAL_TRANSFERContent = SGetField<int>(LocalBridgeClazz, "SUITABILITY_STATUS_SUITABLE_FOR_MANUAL_TRANSFER"); _SUITABILITY_STATUS_SUITABLE_FOR_MANUAL_TRANSFERReady = true; } return _SUITABILITY_STATUS_SUITABLE_FOR_MANUAL_TRANSFERContent; } }
+        private static int _SUITABILITY_STATUS_SUITABLE_FOR_MANUAL_TRANSFERContent = default;
+        private static bool _SUITABILITY_STATUS_SUITABLE_FOR_MANUAL_TRANSFERReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_BLE_HEADSET"/>
         /// </summary>
         public static int TYPE_BLE_HEADSET { get { if (!_TYPE_BLE_HEADSETReady) { _TYPE_BLE_HEADSETContent = SGetField<int>(LocalBridgeClazz, "TYPE_BLE_HEADSET"); _TYPE_BLE_HEADSETReady = true; } return _TYPE_BLE_HEADSETContent; } }
@@ -110,6 +128,18 @@ namespace Android.Media
         private static int _TYPE_HDMIContent = default;
         private static bool _TYPE_HDMIReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_HDMI_ARC"/>
+        /// </summary>
+        public static int TYPE_HDMI_ARC { get { if (!_TYPE_HDMI_ARCReady) { _TYPE_HDMI_ARCContent = SGetField<int>(LocalBridgeClazz, "TYPE_HDMI_ARC"); _TYPE_HDMI_ARCReady = true; } return _TYPE_HDMI_ARCContent; } }
+        private static int _TYPE_HDMI_ARCContent = default;
+        private static bool _TYPE_HDMI_ARCReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_HDMI_EARC"/>
+        /// </summary>
+        public static int TYPE_HDMI_EARC { get { if (!_TYPE_HDMI_EARCReady) { _TYPE_HDMI_EARCContent = SGetField<int>(LocalBridgeClazz, "TYPE_HDMI_EARC"); _TYPE_HDMI_EARCReady = true; } return _TYPE_HDMI_EARCContent; } }
+        private static int _TYPE_HDMI_EARCContent = default;
+        private static bool _TYPE_HDMI_EARCReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_HEARING_AID"/>
         /// </summary>
         public static int TYPE_HEARING_AID { get { if (!_TYPE_HEARING_AIDReady) { _TYPE_HEARING_AIDContent = SGetField<int>(LocalBridgeClazz, "TYPE_HEARING_AID"); _TYPE_HEARING_AIDReady = true; } return _TYPE_HEARING_AIDContent; } }
@@ -122,11 +152,53 @@ namespace Android.Media
         private static int _TYPE_REMOTE_AUDIO_VIDEO_RECEIVERContent = default;
         private static bool _TYPE_REMOTE_AUDIO_VIDEO_RECEIVERReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_REMOTE_CAR"/>
+        /// </summary>
+        public static int TYPE_REMOTE_CAR { get { if (!_TYPE_REMOTE_CARReady) { _TYPE_REMOTE_CARContent = SGetField<int>(LocalBridgeClazz, "TYPE_REMOTE_CAR"); _TYPE_REMOTE_CARReady = true; } return _TYPE_REMOTE_CARContent; } }
+        private static int _TYPE_REMOTE_CARContent = default;
+        private static bool _TYPE_REMOTE_CARReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_REMOTE_COMPUTER"/>
+        /// </summary>
+        public static int TYPE_REMOTE_COMPUTER { get { if (!_TYPE_REMOTE_COMPUTERReady) { _TYPE_REMOTE_COMPUTERContent = SGetField<int>(LocalBridgeClazz, "TYPE_REMOTE_COMPUTER"); _TYPE_REMOTE_COMPUTERReady = true; } return _TYPE_REMOTE_COMPUTERContent; } }
+        private static int _TYPE_REMOTE_COMPUTERContent = default;
+        private static bool _TYPE_REMOTE_COMPUTERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_REMOTE_GAME_CONSOLE"/>
+        /// </summary>
+        public static int TYPE_REMOTE_GAME_CONSOLE { get { if (!_TYPE_REMOTE_GAME_CONSOLEReady) { _TYPE_REMOTE_GAME_CONSOLEContent = SGetField<int>(LocalBridgeClazz, "TYPE_REMOTE_GAME_CONSOLE"); _TYPE_REMOTE_GAME_CONSOLEReady = true; } return _TYPE_REMOTE_GAME_CONSOLEContent; } }
+        private static int _TYPE_REMOTE_GAME_CONSOLEContent = default;
+        private static bool _TYPE_REMOTE_GAME_CONSOLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_REMOTE_SMARTPHONE"/>
+        /// </summary>
+        public static int TYPE_REMOTE_SMARTPHONE { get { if (!_TYPE_REMOTE_SMARTPHONEReady) { _TYPE_REMOTE_SMARTPHONEContent = SGetField<int>(LocalBridgeClazz, "TYPE_REMOTE_SMARTPHONE"); _TYPE_REMOTE_SMARTPHONEReady = true; } return _TYPE_REMOTE_SMARTPHONEContent; } }
+        private static int _TYPE_REMOTE_SMARTPHONEContent = default;
+        private static bool _TYPE_REMOTE_SMARTPHONEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_REMOTE_SMARTWATCH"/>
+        /// </summary>
+        public static int TYPE_REMOTE_SMARTWATCH { get { if (!_TYPE_REMOTE_SMARTWATCHReady) { _TYPE_REMOTE_SMARTWATCHContent = SGetField<int>(LocalBridgeClazz, "TYPE_REMOTE_SMARTWATCH"); _TYPE_REMOTE_SMARTWATCHReady = true; } return _TYPE_REMOTE_SMARTWATCHContent; } }
+        private static int _TYPE_REMOTE_SMARTWATCHContent = default;
+        private static bool _TYPE_REMOTE_SMARTWATCHReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_REMOTE_SPEAKER"/>
         /// </summary>
         public static int TYPE_REMOTE_SPEAKER { get { if (!_TYPE_REMOTE_SPEAKERReady) { _TYPE_REMOTE_SPEAKERContent = SGetField<int>(LocalBridgeClazz, "TYPE_REMOTE_SPEAKER"); _TYPE_REMOTE_SPEAKERReady = true; } return _TYPE_REMOTE_SPEAKERContent; } }
         private static int _TYPE_REMOTE_SPEAKERContent = default;
         private static bool _TYPE_REMOTE_SPEAKERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_REMOTE_TABLET"/>
+        /// </summary>
+        public static int TYPE_REMOTE_TABLET { get { if (!_TYPE_REMOTE_TABLETReady) { _TYPE_REMOTE_TABLETContent = SGetField<int>(LocalBridgeClazz, "TYPE_REMOTE_TABLET"); _TYPE_REMOTE_TABLETReady = true; } return _TYPE_REMOTE_TABLETContent; } }
+        private static int _TYPE_REMOTE_TABLETContent = default;
+        private static bool _TYPE_REMOTE_TABLETReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_REMOTE_TABLET_DOCKED"/>
+        /// </summary>
+        public static int TYPE_REMOTE_TABLET_DOCKED { get { if (!_TYPE_REMOTE_TABLET_DOCKEDReady) { _TYPE_REMOTE_TABLET_DOCKEDContent = SGetField<int>(LocalBridgeClazz, "TYPE_REMOTE_TABLET_DOCKED"); _TYPE_REMOTE_TABLET_DOCKEDReady = true; } return _TYPE_REMOTE_TABLET_DOCKEDContent; } }
+        private static int _TYPE_REMOTE_TABLET_DOCKEDContent = default;
+        private static bool _TYPE_REMOTE_TABLET_DOCKEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#TYPE_REMOTE_TV"/>
         /// </summary>
@@ -246,6 +318,14 @@ namespace Android.Media
         public int GetConnectionState()
         {
             return IExecuteWithSignature<int>("getConnectionState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getSuitabilityStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSuitabilityStatus()
+        {
+            return IExecuteWithSignature<int>("getSuitabilityStatus", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.html#getType()"/>
@@ -464,6 +544,15 @@ namespace Android.Media
             public Android.Media.MediaRoute2Info.Builder SetIconUri(Android.Net.Uri arg0)
             {
                 return IExecuteWithSignature<Android.Media.MediaRoute2Info.Builder>("setIconUri", "(Landroid/net/Uri;)Landroid/media/MediaRoute2Info$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.Builder.html#setSuitabilityStatus(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Media.MediaRoute2Info.Builder"/></returns>
+            public Android.Media.MediaRoute2Info.Builder SetSuitabilityStatus(int arg0)
+            {
+                return IExecuteWithSignature<Android.Media.MediaRoute2Info.Builder>("setSuitabilityStatus", "(I)Landroid/media/MediaRoute2Info$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRoute2Info.Builder.html#setType(int)"/>
