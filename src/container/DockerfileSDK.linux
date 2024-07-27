@@ -1,12 +1,10 @@
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0-jammy AS build-env
 ARG TARGETARCH
-ARG NETDROID_DOCKER_SDK_VERSION_ARG
 WORKDIR /app
 
 # Copy everything
 COPY ./src/net ./
 ENV NETDROID_DOCKER_BUILD_ACTIONS=true
-ENV NETDROID_DOCKER_SDK_VERSION=$NETDROID_DOCKER_SDK_VERSION_ARG
 # Restore as distinct layers
 RUN dotnet restore Netdroid.sln -a $TARGETARCH
 # Build and publish a release
