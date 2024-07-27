@@ -9,8 +9,9 @@ updates:
     directory: "/src/net" # Location of package manifests
     schedule:
       interval: "weekly"
+
   - package-ecosystem: maven
-    directory: "/src/java/netdroid"
+    directory: "/src/jvm/netdroid"
     schedule:
       interval: "weekly"
 
