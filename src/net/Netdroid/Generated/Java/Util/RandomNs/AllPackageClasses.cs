@@ -24,7 +24,7 @@
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 
-namespace Java.Util.Random
+namespace Java.Util.RandomNs
 {
     #region RandomGeneratorFactory
     /// <summary>
@@ -75,8 +75,8 @@ namespace Java.Util.Random
     /// <summary>
     /// <see href="https://developer.android.com/reference/java/util/random/RandomGeneratorFactory.html"/>
     /// </summary>
-    /// <typeparam name="T"><see cref="Java.Util.Random.IRandomGenerator"/></typeparam>
-    public partial class RandomGeneratorFactory<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RandomGeneratorFactory<T>> where T : Java.Util.Random.IRandomGenerator, new()
+    /// <typeparam name="T"><see cref="Java.Util.RandomNs.IRandomGenerator"/></typeparam>
+    public partial class RandomGeneratorFactory<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RandomGeneratorFactory<T>> where T : Java.Util.RandomNs.IRandomGenerator, new()
     {
         const string _bridgeClassName = "java.util.random.RandomGeneratorFactory";
         /// <summary>

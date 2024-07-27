@@ -23,7 +23,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Util.Random
+namespace Java.Util.RandomNs
 {
     #region RandomGeneratorFactory
     public partial class RandomGeneratorFactory
@@ -45,10 +45,10 @@ namespace Java.Util.Random
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGeneratorFactory.html#of(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Random.RandomGeneratorFactory"/></returns>
-        public static Java.Util.Random.RandomGeneratorFactory Of(Java.Lang.String arg0)
+        /// <returns><see cref="Java.Util.RandomNs.RandomGeneratorFactory"/></returns>
+        public static Java.Util.RandomNs.RandomGeneratorFactory Of(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.Random.RandomGeneratorFactory>(LocalBridgeClazz, "of", "(Ljava/lang/String;)Ljava/util/random/RandomGeneratorFactory;", arg0);
+            return SExecuteWithSignature<Java.Util.RandomNs.RandomGeneratorFactory>(LocalBridgeClazz, "of", "(Ljava/lang/String;)Ljava/util/random/RandomGeneratorFactory;", arg0);
         }
 
         #endregion
@@ -186,9 +186,9 @@ namespace Java.Util.Random
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Random.RandomGeneratorFactory{T}"/> to <see cref="Java.Util.Random.RandomGeneratorFactory"/>
+        /// Converter from <see cref="Java.Util.RandomNs.RandomGeneratorFactory{T}"/> to <see cref="Java.Util.RandomNs.RandomGeneratorFactory"/>
         /// </summary>
-        public static implicit operator Java.Util.Random.RandomGeneratorFactory(Java.Util.Random.RandomGeneratorFactory<T> t) => t.Cast<Java.Util.Random.RandomGeneratorFactory>();
+        public static implicit operator Java.Util.RandomNs.RandomGeneratorFactory(Java.Util.RandomNs.RandomGeneratorFactory<T> t) => t.Cast<Java.Util.RandomNs.RandomGeneratorFactory>();
 
         #endregion
 
@@ -201,10 +201,10 @@ namespace Java.Util.Random
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGeneratorFactory.html#of(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Random.RandomGeneratorFactory"/></returns>
-        public static Java.Util.Random.RandomGeneratorFactory<T> Of(Java.Lang.String arg0)
+        /// <returns><see cref="Java.Util.RandomNs.RandomGeneratorFactory"/></returns>
+        public static Java.Util.RandomNs.RandomGeneratorFactory<T> Of(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.Random.RandomGeneratorFactory<T>>(LocalBridgeClazz, "of", "(Ljava/lang/String;)Ljava/util/random/RandomGeneratorFactory;", arg0);
+            return SExecuteWithSignature<Java.Util.RandomNs.RandomGeneratorFactory<T>>(LocalBridgeClazz, "of", "(Ljava/lang/String;)Ljava/util/random/RandomGeneratorFactory;", arg0);
         }
 
         #endregion
