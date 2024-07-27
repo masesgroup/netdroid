@@ -25,6 +25,7 @@
 		<TargetFrameworks>net8.0</TargetFrameworks>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(NETDROID_DOCKER_BUILD_ACTIONS)' == 'true'">
+		<DefineConstants>$(DefineConstants);NETDROID_DOCKER_BUILD_ACTIONS</DefineConstants>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<TargetFramework>net8.0</TargetFramework>
 	</PropertyGroup>

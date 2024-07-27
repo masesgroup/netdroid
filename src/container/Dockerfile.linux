@@ -8,12 +8,14 @@ ENV NETDROID_DOCKER_BUILD_ACTIONS=true
 # Restore as distinct layers
 RUN dotnet restore Netdroid.sln -a $TARGETARCH
 # Build and publish a release
-RUN dotnet publish ./NetdroidCLI/NetdroidCLI.csproj --framework net8.0 -c Release -o out -a $TARGETARCH
+RUN dotnet publish ./NetdroidCLI/NetdroidCLI.csproj --self-contained -p:PublishReadyToRun=true --framework net8.0 -c Release -o out -a $TARGETARCH
 
 # Build runtime image
 FROM ubuntu:22.04
 
 ARG TARGETARCH
+ARG NETDROID_DOCKER_SDK_VERSION_ARG
+ENV NETDROID_DOCKER_SDK_VERSION=$NETDROID_DOCKER_SDK_VERSION_ARG
 
 # Change default shell for RUN from Dash to Bash
 SHELL ["/bin/bash", "-exo", "pipefail", "-c"]
@@ -115,7 +117,7 @@ RUN noInstallRecommends="" && \
 	rm -rf /var/lib/apt/lists/*
 
 # Install Docker - needs the setup_remote_docker step to work
-ENV DOCKER_VERSION 5:25.0.3-1~ubuntu
+ENV DOCKER_VERSION=5:25.0.3-1~ubuntu
 RUN apt-get update && apt-get install -y \
 		apt-transport-https \
 		ca-certificates \
@@ -178,7 +180,7 @@ ENV ANDROID_HOME="/home/netdroid/android-sdk"
 ENV ANDROID_SDK_ROOT=$ANDROID_HOME
 ENV CMDLINE_TOOLS_ROOT="${ANDROID_HOME}/cmdline-tools/latest/bin"
 ENV ADB_INSTALL_TIMEOUT=120
-ENV PATH="${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/platform-tools/bin:${PATH}"
+ENV PATH="${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/platform-tools/bin:${PATH}"
 # You can find the latest command line tools here: https://developer.android.com/studio#command-line-tools-only
 RUN SDK_TOOLS_URL="https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip" && \
 	mkdir -p ${ANDROID_HOME}/cmdline-tools && \
@@ -188,9 +190,14 @@ RUN SDK_TOOLS_URL="https://dl.google.com/android/repository/commandlinetools-lin
 	rm /tmp/cmdline-tools.zip && \
 	mv ${ANDROID_HOME}/cmdline-tools/cmdline-tools ${ANDROID_HOME}/cmdline-tools/latest
 
-RUN ${CMDLINE_TOOLS_ROOT}/sdkmanager --licenses && \
-    ${CMDLINE_TOOLS_ROOT}/sdkmanager "platform-tools" && \
-    ${CMDLINE_TOOLS_ROOT}/sdkmanager "platforms;android-35"
+RUN echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "platform-tools" && \
+    echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "platforms;android-$NETDROID_DOCKER_SDK_VERSION_ARG"
 
 # Install some useful packages
-RUN ${CMDLINE_TOOLS_ROOT}/sdkmanager "extras;google;google_play_services"
+RUN echo y | ${CMDLINE_TOOLS_ROOT}/sdkmanager "extras;google;google_play_services"
+
+ENV JCOBRIDGE_LicensePath=
+
+WORKDIR /app
+COPY --from=build-env /app/out .
+ENTRYPOINT ["dotnet", "MASES.NetdroidCLI.dll"]
