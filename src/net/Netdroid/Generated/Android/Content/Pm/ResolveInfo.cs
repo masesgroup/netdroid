@@ -179,66 +179,7 @@ namespace Android.Content.Pm
         #endregion
 
         #region Nested classes
-        #region DisplayNameComparator
-        public partial class DisplayNameComparator
-        {
-            #region Constructors
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/ResolveInfo.DisplayNameComparator.html#%3Cinit%3E(android.content.pm.PackageManager)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Content.Pm.PackageManager"/></param>
-            public DisplayNameComparator(Android.Content.Pm.PackageManager arg0)
-                : base(arg0)
-            {
-            }
 
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/ResolveInfo.DisplayNameComparator.html#compare(android.content.pm.ResolveInfo,android.content.pm.ResolveInfo)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.Content.Pm.ResolveInfo"/></param>
-            /// <param name="arg1"><see cref="Android.Content.Pm.ResolveInfo"/></param>
-            /// <returns><see cref="int"/></returns>
-            public int Compare(Android.Content.Pm.ResolveInfo arg0, Android.Content.Pm.ResolveInfo arg1)
-            {
-                return IExecute<int>("compare", arg0, arg1);
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/ResolveInfo.DisplayNameComparator.html#compare(java.lang.Object,java.lang.Object)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <returns><see cref="int"/></returns>
-            public int Compare(object arg0, object arg1)
-            {
-                return IExecute<int>("compare", arg0, arg1);
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-    
         #endregion
 
         // TODO: complete the class
