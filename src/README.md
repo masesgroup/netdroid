@@ -86,6 +86,10 @@ The configuration is:
     "android.view.accessibility.CaptioningManager$CaptioningChangeListener",
     "org.xml.sax.helpers.XMLReaderAdapter"
   ],
+  "ClassesManuallyDeveloped": [
+    "java.util.Comparator",
+    "java.util.EventListener"
+  ],
   "ClassesToAvoid": [
     "android.net.TransportInfo",
     "android.util.Range",
@@ -110,8 +114,6 @@ The configuration is:
     "java.text.NumberFormat$Style",
     "java.time.chrono.ChronoLocalDateTime",
     "java.time.chrono.ChronoZonedDateTime",
-    "java.util.Comparator",
-    "java.util.EventListener",
     "java.util.stream.DoubleStream$Builder",
     "java.util.stream.DoubleStream$DoubleMapMultiConsumer",
     "java.util.stream.IntStream$Builder",
