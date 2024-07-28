@@ -101,8 +101,6 @@
     "java.time.chrono.ChronoZonedDateTime",
     "java.util.Comparator",
     "java.util.EventListener",
-    "java.util.random.RandomGenerator",
-    "java.util.random.RandomGenerator$SplittableGenerator",
     "java.util.stream.DoubleStream$Builder",
     "java.util.stream.DoubleStream$DoubleMapMultiConsumer",
     "java.util.stream.IntStream$Builder",
