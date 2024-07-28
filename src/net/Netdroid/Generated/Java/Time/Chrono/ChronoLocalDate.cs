@@ -80,6 +80,14 @@ namespace Java.Time.Chrono
         {
             return SExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDate;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoLocalDate.html#timeLineOrder()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator<Java.Time.Chrono.ChronoLocalDate> TimeLineOrder()
+        {
+            return SExecuteWithSignature<Java.Util.Comparator<Java.Time.Chrono.ChronoLocalDate>>(LocalBridgeClazz, "timeLineOrder", "()Ljava/util/Comparator;");
+        }
 
         #endregion
 

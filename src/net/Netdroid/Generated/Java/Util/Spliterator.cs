@@ -136,6 +136,14 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasCharacteristics", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Spliterator.html#getComparator()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator GetComparator()
+        {
+            return IExecuteWithSignature<Java.Util.Comparator>("getComparator", "()Ljava/util/Comparator;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterator.html#getExactSizeIfKnown()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
@@ -686,6 +694,15 @@ namespace Java.Util
         public bool HasCharacteristics(int arg0)
         {
             return IExecuteWithSignature<bool>("hasCharacteristics", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Spliterator.html#getComparator()"/>
+        /// </summary>
+        /// <typeparam name="ReturnobjectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator<ReturnobjectSuperT> GetComparator<ReturnobjectSuperT>() where ReturnobjectSuperT : T
+        {
+            return IExecuteWithSignature<Java.Util.Comparator<ReturnobjectSuperT>>("getComparator", "()Ljava/util/Comparator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterator.html#getExactSizeIfKnown()"/>

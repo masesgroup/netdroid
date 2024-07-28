@@ -209,6 +209,14 @@ namespace Android.Widget
         {
             IExecuteWithSignature("setNotifyOnChange", "(Z)V", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ArrayAdapter.html#sort(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        public void Sort(Java.Util.Comparator arg0)
+        {
+            IExecuteWithSignature("sort", "(Ljava/util/Comparator;)V", arg0);
+        }
 
         #endregion
 
@@ -429,6 +437,15 @@ namespace Android.Widget
         public void SetNotifyOnChange(bool arg0)
         {
             IExecuteWithSignature("setNotifyOnChange", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ArrayAdapter.html#sort(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        public void Sort<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        {
+            IExecuteWithSignature("sort", "(Ljava/util/Comparator;)V", arg0);
         }
 
         #endregion

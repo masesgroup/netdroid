@@ -209,6 +209,27 @@ namespace Android.Icu.Text
         {
             return IExecuteWithSignature<Java.Lang.String>("variantDisplayName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.html#getUiListCompareWholeItems(java.util.Set,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Icu.Text.LocaleDisplayNames.UiListItem> GetUiListCompareWholeItems(Java.Util.Set<Android.Icu.Util.ULocale> arg0, Java.Util.Comparator<Android.Icu.Text.LocaleDisplayNames.UiListItem> arg1)
+        {
+            return IExecute<Java.Util.List<Android.Icu.Text.LocaleDisplayNames.UiListItem>>("getUiListCompareWholeItems", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.html#getUiList(java.util.Set,boolean,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Icu.Text.LocaleDisplayNames.UiListItem> GetUiList(Java.Util.Set<Android.Icu.Util.ULocale> arg0, bool arg1, Java.Util.Comparator<object> arg2)
+        {
+            return IExecute<Java.Util.List<Android.Icu.Text.LocaleDisplayNames.UiListItem>>("getUiList", arg0, arg1, arg2);
+        }
 
         #endregion
 
@@ -324,6 +345,16 @@ namespace Android.Icu.Text
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.UiListItem.html#getComparator(java.util.Comparator,boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+            /// <param name="arg1"><see cref="bool"/></param>
+            /// <returns><see cref="Java.Util.Comparator"/></returns>
+            public static Java.Util.Comparator<Android.Icu.Text.LocaleDisplayNames.UiListItem> GetComparator(Java.Util.Comparator<object> arg0, bool arg1)
+            {
+                return SExecute<Java.Util.Comparator<Android.Icu.Text.LocaleDisplayNames.UiListItem>>(LocalBridgeClazz, "getComparator", arg0, arg1);
+            }
 
             #endregion
 
