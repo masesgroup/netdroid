@@ -3,7 +3,7 @@
 The command used to build the classes is the following:
 
 ```cmd
-MASES.JNetReflector.exe -TraceLevel 0 -OriginRootPath %ANDROID_HOME%\platforms\android-34-ext8 -DestinationRootPath .\src\ -ConfigurationFile .\src\configuration.json
+MASES.JNetReflector.exe -TraceLevel 0 -OriginRootPath %ANDROID_HOME%\platforms\android-35 -DestinationRootPath .\src\ -ConfigurationFile .\src\configuration.json
 ```
 
 The configuration is:
@@ -112,8 +112,6 @@ The configuration is:
     "java.time.chrono.ChronoZonedDateTime",
     "java.util.Comparator",
     "java.util.EventListener",
-    "java.util.random.RandomGenerator",
-    "java.util.random.RandomGenerator$SplittableGenerator",
     "java.util.stream.DoubleStream$Builder",
     "java.util.stream.DoubleStream$DoubleMapMultiConsumer",
     "java.util.stream.IntStream$Builder",
@@ -132,12 +130,13 @@ The configuration is:
     "java.time.chrono.ChronoZonedDateTime"
   ],
   "NamespacesInConflict": [
-    "java.lang.module",
     "java.awt.color",
     "java.awt.desktop",
     "java.awt.image",
     "java.awt.event",
-    "java.awt.font"
+    "java.awt.font",
+    "java.lang.module",
+	"java.util.random"
   ]
 }
 ```
