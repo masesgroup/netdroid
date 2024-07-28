@@ -89,7 +89,7 @@ jobs:
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
 
       - name: Download latest published version of JNetReflector
-        run: dotnet tool update --version 2.5.4 -g MASES.JNetReflector
+        run: dotnet tool update --version 2.5.5 -g MASES.JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == false }}
 
       - name: Set up Apache Maven Central
