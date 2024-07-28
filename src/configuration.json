@@ -80,6 +80,9 @@
     "java.util.EventListener"
   ],
   "ClassesToAvoid": [
+    "android.content.pm.ApplicationInfo$DisplayNameComparator",
+    "android.content.pm.PackageItemInfo$DisplayNameComparator",
+    "android.content.pm.ResolveInfo$DisplayNameComparator",	
     "android.net.TransportInfo",
     "android.util.Range",
     "java.io.ObjectInputFilter",
