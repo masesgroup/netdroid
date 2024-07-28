@@ -230,6 +230,24 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Optional>("findFirst", "()Ljava/util/Optional;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#max(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional Max(Java.Util.Comparator arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Optional>("max", "(Ljava/util/Comparator;)Ljava/util/Optional;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#min(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional Min(Java.Util.Comparator arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Optional>("min", "(Ljava/util/Comparator;)Ljava/util/Optional;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#reduce(java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BinaryOperator"/></param>
@@ -343,6 +361,15 @@ namespace Java.Util.Stream
         public Java.Util.Stream.Stream Sorted()
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream>("sorted", "()Ljava/util/stream/Stream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#sorted(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Sorted(Java.Util.Comparator arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Stream.Stream>("sorted", "(Ljava/util/Comparator;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#count()"/>
@@ -700,6 +727,26 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Optional<T>>("findFirst", "()Ljava/util/Optional;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#max(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<T> Max<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        {
+            return IExecuteWithSignature<Java.Util.Optional<T>>("max", "(Ljava/util/Comparator;)Ljava/util/Optional;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#min(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<T> Min<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        {
+            return IExecuteWithSignature<Java.Util.Optional<T>>("min", "(Ljava/util/Comparator;)Ljava/util/Optional;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#reduce(java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BinaryOperator"/></param>
@@ -824,6 +871,16 @@ namespace Java.Util.Stream
         public Java.Util.Stream.Stream<T> Sorted()
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("sorted", "()Ljava/util/stream/Stream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#sorted(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream<T> Sorted<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
+        {
+            return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("sorted", "(Ljava/util/Comparator;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#count()"/>

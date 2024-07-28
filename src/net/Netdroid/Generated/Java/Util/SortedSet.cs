@@ -62,6 +62,14 @@ namespace Java.Util
             return IExecuteWithSignature("last", "()Ljava/lang/Object;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#comparator()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator Comparator()
+        {
+            return IExecuteWithSignature<Java.Util.Comparator>("comparator", "()Ljava/util/Comparator;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#headSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -165,6 +173,15 @@ namespace Java.Util
         public E Last()
         {
             return IExecuteWithSignature<E>("last", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#comparator()"/>
+        /// </summary>
+        /// <typeparam name="ReturnobjectSuperE"><typeparamref name="E"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE : E
+        {
+            return IExecuteWithSignature<Java.Util.Comparator<ReturnobjectSuperE>>("comparator", "()Ljava/util/Comparator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#headSet(java.lang.Object)"/>

@@ -170,6 +170,14 @@ namespace Java.Time
         {
             return SExecuteWithSignature<Java.Time.OffsetDateTime>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;)Ljava/time/OffsetDateTime;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html#timeLineOrder()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public static Java.Util.Comparator<Java.Time.OffsetDateTime> TimeLineOrder()
+        {
+            return SExecuteWithSignature<Java.Util.Comparator<Java.Time.OffsetDateTime>>(LocalBridgeClazz, "timeLineOrder", "()Ljava/util/Comparator;");
+        }
 
         #endregion
 

@@ -206,7 +206,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.DisplayNameComparator.html"/>
         /// </summary>
-        public partial class DisplayNameComparator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DisplayNameComparator>
+        public partial class DisplayNameComparator : Java.Util.Comparator<Android.Content.Pm.ApplicationInfo>
         {
             const string _bridgeClassName = "android.content.pm.ApplicationInfo$DisplayNameComparator";
             /// <summary>
@@ -1965,7 +1965,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageItemInfo.DisplayNameComparator.html"/>
         /// </summary>
-        public partial class DisplayNameComparator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DisplayNameComparator>
+        public partial class DisplayNameComparator : Java.Util.Comparator<Android.Content.Pm.PackageItemInfo>
         {
             const string _bridgeClassName = "android.content.pm.PackageItemInfo$DisplayNameComparator";
             /// <summary>
@@ -2682,7 +2682,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ResolveInfo.DisplayNameComparator.html"/>
         /// </summary>
-        public partial class DisplayNameComparator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DisplayNameComparator>
+        public partial class DisplayNameComparator : Java.Util.Comparator<Android.Content.Pm.ResolveInfo>
         {
             const string _bridgeClassName = "android.content.pm.ResolveInfo$DisplayNameComparator";
             /// <summary>

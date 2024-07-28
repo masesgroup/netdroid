@@ -26,13 +26,17 @@ using MASES.JCOBridge.C2JBridge;
 namespace Android.Icu.Text
 {
     #region Collator
-    public partial class Collator : Android.Icu.Util.IFreezable<Android.Icu.Text.Collator>, Java.Lang.ICloneable
+    public partial class Collator : Java.Util.IComparator<object>, Android.Icu.Util.IFreezable<Android.Icu.Text.Collator>, Java.Lang.ICloneable
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Android.Icu.Text.Collator"/> to <see cref="Java.Util.Comparator"/>
+        /// </summary>
+        public static implicit operator Java.Util.Comparator(Android.Icu.Text.Collator t) => t.Cast<Java.Util.Comparator>();
         /// <summary>
         /// Converter from <see cref="Android.Icu.Text.Collator"/> to <see cref="Android.Icu.Util.Freezable"/>
         /// </summary>

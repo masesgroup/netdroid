@@ -29,6 +29,14 @@ namespace Java.Util
     public partial class EventListenerProxy
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/EventListenerProxy.html#%3Cinit%3E(java.util.EventListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.EventListener"/></param>
+        public EventListenerProxy(Java.Util.EventListener arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 
@@ -45,6 +53,22 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/EventListenerProxy.html#getListener()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.EventListener"/></returns>
+        public Java.Util.EventListener GetListener()
+        {
+            return IExecuteWithSignature<Java.Util.EventListener>("getListener", "()Ljava/util/EventListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/EventListenerProxy.html#getListener()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.EventListener"/></returns>
+        public Java.Util.EventListener GetListenerDirect()
+        {
+            return IExecuteWithSignature<Java.Util.EventListenerDirect, Java.Util.EventListener>("getListener", "()Ljava/util/EventListener;");
+        }
 
         #endregion
 
@@ -60,6 +84,14 @@ namespace Java.Util
     public partial class EventListenerProxy<T>
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/EventListenerProxy.html#%3Cinit%3E(java.util.EventListener)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        public EventListenerProxy(T arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 
@@ -80,6 +112,14 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/EventListenerProxy.html#getListener()"/>
+        /// </summary>
+        /// <returns><typeparamref name="T"/></returns>
+        public T GetListener()
+        {
+            return IExecuteWithSignature<T>("getListener", "()Ljava/util/EventListener;");
+        }
 
         #endregion
 

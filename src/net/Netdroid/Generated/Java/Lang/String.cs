@@ -183,6 +183,12 @@ namespace Java.Lang
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#CASE_INSENSITIVE_ORDER"/>
+        /// </summary>
+        public static Java.Util.Comparator CASE_INSENSITIVE_ORDER { get { if (!_CASE_INSENSITIVE_ORDERReady) { _CASE_INSENSITIVE_ORDERContent = SGetField<Java.Util.Comparator>(LocalBridgeClazz, "CASE_INSENSITIVE_ORDER"); _CASE_INSENSITIVE_ORDERReady = true; } return _CASE_INSENSITIVE_ORDERContent; } }
+        private static Java.Util.Comparator _CASE_INSENSITIVE_ORDERContent = default;
+        private static bool _CASE_INSENSITIVE_ORDERReady = false; // this is used because in case of generics 
 
         #endregion
 
