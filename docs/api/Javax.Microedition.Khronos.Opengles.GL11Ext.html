@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -321,6 +321,12 @@ Class GL11Ext  <a class="header-action link-secondary" title="View source" href=
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -479,7 +485,7 @@ Class GL11Ext  <a class="header-action link-secondary" title="View source" href=
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -495,7 +501,7 @@ Class GL11Ext  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Javax_Microedition_Khronos_Opengles_GL11Ext__ctor" data-uid="Javax.Microedition.Khronos.Opengles.GL11Ext.#ctor">
   GL11Ext()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -523,7 +529,7 @@ public GL11Ext()</code></pre>
 
   <h3 id="Javax_Microedition_Khronos_Opengles_GL11Ext__ctor_System_Object___" data-uid="Javax.Microedition.Khronos.Opengles.GL11Ext.#ctor(System.Object[])">
   GL11Ext(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -560,7 +566,7 @@ public GL11Ext(params object[] args)</code></pre>
 
   <h3 id="Javax_Microedition_Khronos_Opengles_GL11Ext_BridgeClassName" data-uid="Javax.Microedition.Khronos.Opengles.GL11Ext.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -1104,7 +1110,7 @@ public GL11Ext(params object[] args)</code></pre>
 
   <h3 id="Javax_Microedition_Khronos_Opengles_GL11Ext_IsBridgeAbstract" data-uid="Javax.Microedition.Khronos.Opengles.GL11Ext.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L245"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1136,7 +1142,7 @@ public GL11Ext(params object[] args)</code></pre>
 
   <h3 id="Javax_Microedition_Khronos_Opengles_GL11Ext_IsBridgeCloseable" data-uid="Javax.Microedition.Khronos.Opengles.GL11Ext.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L249"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1168,7 +1174,7 @@ public GL11Ext(params object[] args)</code></pre>
 
   <h3 id="Javax_Microedition_Khronos_Opengles_GL11Ext_IsBridgeInterface" data-uid="Javax.Microedition.Khronos.Opengles.GL11Ext.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1200,7 +1206,7 @@ public GL11Ext(params object[] args)</code></pre>
 
   <h3 id="Javax_Microedition_Khronos_Opengles_GL11Ext_IsBridgeStatic" data-uid="Javax.Microedition.Khronos.Opengles.GL11Ext.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Opengles/AllPackageClasses.cs/#L257"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>

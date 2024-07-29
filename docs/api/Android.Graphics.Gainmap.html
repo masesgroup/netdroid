@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -326,6 +326,12 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -484,7 +490,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -500,7 +506,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap__ctor" data-uid="Android.Graphics.Gainmap.#ctor">
   Gainmap()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1538"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1572"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -558,9 +564,45 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <a id="Android_Graphics_Gainmap__ctor_" data-uid="Android.Graphics.Gainmap.#ctor*"></a>
 
+  <h3 id="Android_Graphics_Gainmap__ctor_Android_Graphics_Gainmap_Android_Graphics_Bitmap_" data-uid="Android.Graphics.Gainmap.#ctor(Android.Graphics.Gainmap,Android.Graphics.Bitmap)">
+  Gainmap(Gainmap, Bitmap)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#%3Cinit%3E(android.graphics.Gainmap,android.graphics.Bitmap)">https://developer.android.com/reference/android/graphics/Gainmap.html#%3Cinit%3E(android.graphics.Gainmap,android.graphics.Bitmap)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gainmap(Gainmap arg0, Bitmap arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Graphics.Gainmap.html">Gainmap</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Gainmap.html">Gainmap</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Graphics.Bitmap.html">Bitmap</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Bitmap.html">Bitmap</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Gainmap__ctor_" data-uid="Android.Graphics.Gainmap.#ctor*"></a>
+
   <h3 id="Android_Graphics_Gainmap__ctor_System_Object___" data-uid="Android.Graphics.Gainmap.#ctor(System.Object[])">
   Gainmap(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1542"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1576"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -596,7 +638,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_BridgeClassName" data-uid="Android.Graphics.Gainmap.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1549"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1584"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -628,7 +670,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_CREATOR" data-uid="Android.Graphics.Gainmap.CREATOR">
   CREATOR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#CREATOR">https://developer.android.com/reference/android/graphics/Gainmap.html#CREATOR</a></p>
@@ -660,7 +702,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_IsBridgeAbstract" data-uid="Android.Graphics.Gainmap.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1553"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1588"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -692,7 +734,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_IsBridgeCloseable" data-uid="Android.Graphics.Gainmap.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1557"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1592"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -724,7 +766,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_IsBridgeInterface" data-uid="Android.Graphics.Gainmap.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1561"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1596"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -756,7 +798,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_IsBridgeStatic" data-uid="Android.Graphics.Gainmap.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1565"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1600"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -792,7 +834,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_DescribeContents" data-uid="Android.Graphics.Gainmap.DescribeContents">
   DescribeContents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#describeContents()">https://developer.android.com/reference/android/graphics/Gainmap.html#describeContents()</a></p>
@@ -825,7 +867,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_GetDisplayRatioForFullHdr" data-uid="Android.Graphics.Gainmap.GetDisplayRatioForFullHdr">
   GetDisplayRatioForFullHdr()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#getDisplayRatioForFullHdr()">https://developer.android.com/reference/android/graphics/Gainmap.html#getDisplayRatioForFullHdr()</a></p>
@@ -858,7 +900,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_GetEpsilonHdr" data-uid="Android.Graphics.Gainmap.GetEpsilonHdr">
   GetEpsilonHdr()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#getEpsilonHdr()">https://developer.android.com/reference/android/graphics/Gainmap.html#getEpsilonHdr()</a></p>
@@ -891,7 +933,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_GetEpsilonSdr" data-uid="Android.Graphics.Gainmap.GetEpsilonSdr">
   GetEpsilonSdr()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#getEpsilonSdr()">https://developer.android.com/reference/android/graphics/Gainmap.html#getEpsilonSdr()</a></p>
@@ -924,7 +966,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_GetGainmapContents" data-uid="Android.Graphics.Gainmap.GetGainmapContents">
   GetGainmapContents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#getGainmapContents()">https://developer.android.com/reference/android/graphics/Gainmap.html#getGainmapContents()</a></p>
@@ -957,7 +999,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_GetGamma" data-uid="Android.Graphics.Gainmap.GetGamma">
   GetGamma()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#getGamma()">https://developer.android.com/reference/android/graphics/Gainmap.html#getGamma()</a></p>
@@ -990,7 +1032,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_GetMinDisplayRatioForHdrTransition" data-uid="Android.Graphics.Gainmap.GetMinDisplayRatioForHdrTransition">
   GetMinDisplayRatioForHdrTransition()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#getMinDisplayRatioForHdrTransition()">https://developer.android.com/reference/android/graphics/Gainmap.html#getMinDisplayRatioForHdrTransition()</a></p>
@@ -1023,7 +1065,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_GetRatioMax" data-uid="Android.Graphics.Gainmap.GetRatioMax">
   GetRatioMax()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#getRatioMax()">https://developer.android.com/reference/android/graphics/Gainmap.html#getRatioMax()</a></p>
@@ -1056,7 +1098,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_GetRatioMin" data-uid="Android.Graphics.Gainmap.GetRatioMin">
   GetRatioMin()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#getRatioMin()">https://developer.android.com/reference/android/graphics/Gainmap.html#getRatioMin()</a></p>
@@ -1089,7 +1131,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_SetDisplayRatioForFullHdr_System_Single_" data-uid="Android.Graphics.Gainmap.SetDisplayRatioForFullHdr(System.Single)">
   SetDisplayRatioForFullHdr(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#setDisplayRatioForFullHdr(float)">https://developer.android.com/reference/android/graphics/Gainmap.html#setDisplayRatioForFullHdr(float)</a></p>
@@ -1122,7 +1164,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_SetEpsilonHdr_System_Single_System_Single_System_Single_" data-uid="Android.Graphics.Gainmap.SetEpsilonHdr(System.Single,System.Single,System.Single)">
   SetEpsilonHdr(float, float, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#setEpsilonHdr(float,float,float)">https://developer.android.com/reference/android/graphics/Gainmap.html#setEpsilonHdr(float,float,float)</a></p>
@@ -1161,7 +1203,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_SetEpsilonSdr_System_Single_System_Single_System_Single_" data-uid="Android.Graphics.Gainmap.SetEpsilonSdr(System.Single,System.Single,System.Single)">
   SetEpsilonSdr(float, float, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#setEpsilonSdr(float,float,float)">https://developer.android.com/reference/android/graphics/Gainmap.html#setEpsilonSdr(float,float,float)</a></p>
@@ -1200,7 +1242,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_SetGainmapContents_Android_Graphics_Bitmap_" data-uid="Android.Graphics.Gainmap.SetGainmapContents(Android.Graphics.Bitmap)">
   SetGainmapContents(Bitmap)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#setGainmapContents(android.graphics.Bitmap)">https://developer.android.com/reference/android/graphics/Gainmap.html#setGainmapContents(android.graphics.Bitmap)</a></p>
@@ -1233,7 +1275,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_SetGamma_System_Single_System_Single_System_Single_" data-uid="Android.Graphics.Gainmap.SetGamma(System.Single,System.Single,System.Single)">
   SetGamma(float, float, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#setGamma(float,float,float)">https://developer.android.com/reference/android/graphics/Gainmap.html#setGamma(float,float,float)</a></p>
@@ -1272,7 +1314,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_SetMinDisplayRatioForHdrTransition_System_Single_" data-uid="Android.Graphics.Gainmap.SetMinDisplayRatioForHdrTransition(System.Single)">
   SetMinDisplayRatioForHdrTransition(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#setMinDisplayRatioForHdrTransition(float)">https://developer.android.com/reference/android/graphics/Gainmap.html#setMinDisplayRatioForHdrTransition(float)</a></p>
@@ -1305,7 +1347,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_SetRatioMax_System_Single_System_Single_System_Single_" data-uid="Android.Graphics.Gainmap.SetRatioMax(System.Single,System.Single,System.Single)">
   SetRatioMax(float, float, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#setRatioMax(float,float,float)">https://developer.android.com/reference/android/graphics/Gainmap.html#setRatioMax(float,float,float)</a></p>
@@ -1344,7 +1386,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_SetRatioMin_System_Single_System_Single_System_Single_" data-uid="Android.Graphics.Gainmap.SetRatioMin(System.Single,System.Single,System.Single)">
   SetRatioMin(float, float, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L213"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#setRatioMin(float,float,float)">https://developer.android.com/reference/android/graphics/Gainmap.html#setRatioMin(float,float,float)</a></p>
@@ -1383,7 +1425,7 @@ Class Gainmap  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="Android_Graphics_Gainmap_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Graphics.Gainmap.WriteToParcel(Android.Os.Parcel,System.Int32)">
   WriteToParcel(Parcel, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Gainmap.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/Gainmap.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/graphics/Gainmap.html#writeToParcel(android.os.Parcel,int)</a></p>

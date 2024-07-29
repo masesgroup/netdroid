@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation__ctor" data-uid="Android.App.Instrumentation.#ctor">
   Instrumentation()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3461"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3676"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation__ctor_System_Object___" data-uid="Android.App.Instrumentation.#ctor(System.Object[])">
   Instrumentation(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3465"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3680"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -555,7 +561,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_BridgeClassName" data-uid="Android.App.Instrumentation.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3472"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3688"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -587,7 +593,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_IsBridgeAbstract" data-uid="Android.App.Instrumentation.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3476"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3692"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -619,7 +625,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_IsBridgeCloseable" data-uid="Android.App.Instrumentation.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3480"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3696"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -651,7 +657,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_IsBridgeInterface" data-uid="Android.App.Instrumentation.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3484"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3700"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -683,7 +689,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_IsBridgeStatic" data-uid="Android.App.Instrumentation.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3488"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L3704"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1086,7 +1092,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallActivityOnNewIntent_Android_App_Activity_Android_Content_Intent_" data-uid="Android.App.Instrumentation.CallActivityOnNewIntent(Android.App.Activity,Android.Content.Intent)">
   CallActivityOnNewIntent(Activity, Intent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L363"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnNewIntent(android.app.Activity,android.content.Intent)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnNewIntent(android.app.Activity,android.content.Intent)</a></p>
@@ -1118,11 +1124,50 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="Android_App_Instrumentation_CallActivityOnNewIntent_" data-uid="Android.App.Instrumentation.CallActivityOnNewIntent*"></a>
+
+  <h3 id="Android_App_Instrumentation_CallActivityOnNewIntent_Android_App_Activity_Android_Content_Intent_Android_App_ComponentCaller_" data-uid="Android.App.Instrumentation.CallActivityOnNewIntent(Android.App.Activity,Android.Content.Intent,Android.App.ComponentCaller)">
+  CallActivityOnNewIntent(Activity, Intent, ComponentCaller)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnNewIntent(android.app.Activity,android.content.Intent,android.app.ComponentCaller)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnNewIntent(android.app.Activity,android.content.Intent,android.app.ComponentCaller)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallActivityOnNewIntent(Activity arg0, Intent arg1, ComponentCaller arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.App.ComponentCaller.html">ComponentCaller</a></dt>
+    <dd><p><a class="xref" href="Android.App.ComponentCaller.html">ComponentCaller</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_App_Instrumentation_CallActivityOnPause_" data-uid="Android.App.Instrumentation.CallActivityOnPause*"></a>
 
   <h3 id="Android_App_Instrumentation_CallActivityOnPause_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnPause(Android.App.Activity)">
   CallActivityOnPause(Activity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L371"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPause(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPause(android.app.Activity)</a></p>
@@ -1155,7 +1200,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallActivityOnPictureInPictureRequested_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnPictureInPictureRequested(Android.App.Activity)">
   CallActivityOnPictureInPictureRequested(Activity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L379"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPictureInPictureRequested(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPictureInPictureRequested(android.app.Activity)</a></p>
@@ -1188,7 +1233,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallActivityOnPostCreate_Android_App_Activity_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.CallActivityOnPostCreate(Android.App.Activity,Android.Os.Bundle)">
   CallActivityOnPostCreate(Activity, Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L398"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPostCreate(android.app.Activity,android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPostCreate(android.app.Activity,android.os.Bundle)</a></p>
@@ -1224,7 +1269,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallActivityOnPostCreate_Android_App_Activity_Android_Os_Bundle_Android_Os_PersistableBundle_" data-uid="Android.App.Instrumentation.CallActivityOnPostCreate(Android.App.Activity,Android.Os.Bundle,Android.Os.PersistableBundle)">
   CallActivityOnPostCreate(Activity, Bundle, PersistableBundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L389"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPostCreate(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPostCreate(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)</a></p>
@@ -1263,7 +1308,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallActivityOnRestart_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnRestart(Android.App.Activity)">
   CallActivityOnRestart(Activity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L406"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestart(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestart(android.app.Activity)</a></p>
@@ -1296,7 +1341,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallActivityOnRestoreInstanceState_Android_App_Activity_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.CallActivityOnRestoreInstanceState(Android.App.Activity,Android.Os.Bundle)">
   CallActivityOnRestoreInstanceState(Activity, Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L425"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestoreInstanceState(android.app.Activity,android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestoreInstanceState(android.app.Activity,android.os.Bundle)</a></p>
@@ -1332,7 +1377,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallActivityOnRestoreInstanceState_Android_App_Activity_Android_Os_Bundle_Android_Os_PersistableBundle_" data-uid="Android.App.Instrumentation.CallActivityOnRestoreInstanceState(Android.App.Activity,Android.Os.Bundle,Android.Os.PersistableBundle)">
   CallActivityOnRestoreInstanceState(Activity, Bundle, PersistableBundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L416"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestoreInstanceState(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestoreInstanceState(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)</a></p>
@@ -1371,7 +1416,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallActivityOnResume_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnResume(Android.App.Activity)">
   CallActivityOnResume(Activity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L433"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnResume(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnResume(android.app.Activity)</a></p>
@@ -1404,7 +1449,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallActivityOnSaveInstanceState_Android_App_Activity_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.CallActivityOnSaveInstanceState(Android.App.Activity,Android.Os.Bundle)">
   CallActivityOnSaveInstanceState(Activity, Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L452"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnSaveInstanceState(android.app.Activity,android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnSaveInstanceState(android.app.Activity,android.os.Bundle)</a></p>
@@ -1440,7 +1485,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallActivityOnSaveInstanceState_Android_App_Activity_Android_Os_Bundle_Android_Os_PersistableBundle_" data-uid="Android.App.Instrumentation.CallActivityOnSaveInstanceState(Android.App.Activity,Android.Os.Bundle,Android.Os.PersistableBundle)">
   CallActivityOnSaveInstanceState(Activity, Bundle, PersistableBundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L443"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnSaveInstanceState(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnSaveInstanceState(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)</a></p>
@@ -1479,7 +1524,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallActivityOnStart_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnStart(Android.App.Activity)">
   CallActivityOnStart(Activity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L460"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnStart(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnStart(android.app.Activity)</a></p>
@@ -1512,7 +1557,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallActivityOnStop_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnStop(Android.App.Activity)">
   CallActivityOnStop(Activity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L468"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnStop(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnStop(android.app.Activity)</a></p>
@@ -1545,7 +1590,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallActivityOnUserLeaving_Android_App_Activity_" data-uid="Android.App.Instrumentation.CallActivityOnUserLeaving(Android.App.Activity)">
   CallActivityOnUserLeaving(Activity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L476"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnUserLeaving(android.app.Activity)">https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnUserLeaving(android.app.Activity)</a></p>
@@ -1578,7 +1623,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_CallApplicationOnCreate_Android_App_Application_" data-uid="Android.App.Instrumentation.CallApplicationOnCreate(Android.App.Application)">
   CallApplicationOnCreate(Application)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L484"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#callApplicationOnCreate(android.app.Application)">https://developer.android.com/reference/android/app/Instrumentation.html#callApplicationOnCreate(android.app.Application)</a></p>
@@ -1653,7 +1698,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_EndPerformanceSnapshot" data-uid="Android.App.Instrumentation.EndPerformanceSnapshot">
   EndPerformanceSnapshot()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L491"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#endPerformanceSnapshot()">https://developer.android.com/reference/android/app/Instrumentation.html#endPerformanceSnapshot()</a></p>
@@ -1680,7 +1725,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_Finish_System_Int32_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.Finish(System.Int32,Android.Os.Bundle)">
   Finish(int, Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L500"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#finish(int,android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#finish(int,android.os.Bundle)</a></p>
@@ -2341,7 +2386,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_OnCreate_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.OnCreate(Android.Os.Bundle)">
   OnCreate(Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L508"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#onCreate(android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#onCreate(android.os.Bundle)</a></p>
@@ -2374,7 +2419,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_OnDestroy" data-uid="Android.App.Instrumentation.OnDestroy">
   OnDestroy()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L515"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#onDestroy()">https://developer.android.com/reference/android/app/Instrumentation.html#onDestroy()</a></p>
@@ -2443,7 +2488,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_OnStart" data-uid="Android.App.Instrumentation.OnStart">
   OnStart()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L512"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L522"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#onStart()">https://developer.android.com/reference/android/app/Instrumentation.html#onStart()</a></p>
@@ -2470,7 +2515,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_RemoveMonitor_Android_App_Instrumentation_ActivityMonitor_" data-uid="Android.App.Instrumentation.RemoveMonitor(Android.App.Instrumentation.ActivityMonitor)">
   RemoveMonitor(ActivityMonitor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L530"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#removeMonitor(android.app.Instrumentation.ActivityMonitor)">https://developer.android.com/reference/android/app/Instrumentation.html#removeMonitor(android.app.Instrumentation.ActivityMonitor)</a></p>
@@ -2503,7 +2548,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_ResetInTouchMode" data-uid="Android.App.Instrumentation.ResetInTouchMode">
   ResetInTouchMode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L527"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L537"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#resetInTouchMode()">https://developer.android.com/reference/android/app/Instrumentation.html#resetInTouchMode()</a></p>
@@ -2530,7 +2575,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_RunOnMainSync_Java_Lang_Runnable_" data-uid="Android.App.Instrumentation.RunOnMainSync(Java.Lang.Runnable)">
   RunOnMainSync(Runnable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L545"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#runOnMainSync(java.lang.Runnable)">https://developer.android.com/reference/android/app/Instrumentation.html#runOnMainSync(java.lang.Runnable)</a></p>
@@ -2563,7 +2608,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_SendCharacterSync_System_Int32_" data-uid="Android.App.Instrumentation.SendCharacterSync(System.Int32)">
   SendCharacterSync(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L553"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendCharacterSync(int)">https://developer.android.com/reference/android/app/Instrumentation.html#sendCharacterSync(int)</a></p>
@@ -2596,7 +2641,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_SendKeyDownUpSync_System_Int32_" data-uid="Android.App.Instrumentation.SendKeyDownUpSync(System.Int32)">
   SendKeyDownUpSync(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L551"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L561"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendKeyDownUpSync(int)">https://developer.android.com/reference/android/app/Instrumentation.html#sendKeyDownUpSync(int)</a></p>
@@ -2629,7 +2674,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_SendKeySync_Android_View_KeyEvent_" data-uid="Android.App.Instrumentation.SendKeySync(Android.View.KeyEvent)">
   SendKeySync(KeyEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L569"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendKeySync(android.view.KeyEvent)">https://developer.android.com/reference/android/app/Instrumentation.html#sendKeySync(android.view.KeyEvent)</a></p>
@@ -2662,7 +2707,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_SendPointerSync_Android_View_MotionEvent_" data-uid="Android.App.Instrumentation.SendPointerSync(Android.View.MotionEvent)">
   SendPointerSync(MotionEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L567"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L577"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendPointerSync(android.view.MotionEvent)">https://developer.android.com/reference/android/app/Instrumentation.html#sendPointerSync(android.view.MotionEvent)</a></p>
@@ -2695,7 +2740,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_SendStatus_System_Int32_Android_Os_Bundle_" data-uid="Android.App.Instrumentation.SendStatus(System.Int32,Android.Os.Bundle)">
   SendStatus(int, Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L586"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendStatus(int,android.os.Bundle)">https://developer.android.com/reference/android/app/Instrumentation.html#sendStatus(int,android.os.Bundle)</a></p>
@@ -2731,7 +2776,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_SendStringSync_Java_Lang_String_" data-uid="Android.App.Instrumentation.SendStringSync(Java.Lang.String)">
   SendStringSync(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L594"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendStringSync(java.lang.String)">https://developer.android.com/reference/android/app/Instrumentation.html#sendStringSync(java.lang.String)</a></p>
@@ -2764,7 +2809,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_SendTrackballEventSync_Android_View_MotionEvent_" data-uid="Android.App.Instrumentation.SendTrackballEventSync(Android.View.MotionEvent)">
   SendTrackballEventSync(MotionEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L602"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#sendTrackballEventSync(android.view.MotionEvent)">https://developer.android.com/reference/android/app/Instrumentation.html#sendTrackballEventSync(android.view.MotionEvent)</a></p>
@@ -2797,7 +2842,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_SetAutomaticPerformanceSnapshots" data-uid="Android.App.Instrumentation.SetAutomaticPerformanceSnapshots">
   SetAutomaticPerformanceSnapshots()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L599"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L609"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#setAutomaticPerformanceSnapshots()">https://developer.android.com/reference/android/app/Instrumentation.html#setAutomaticPerformanceSnapshots()</a></p>
@@ -2824,7 +2869,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_SetInTouchMode_System_Boolean_" data-uid="Android.App.Instrumentation.SetInTouchMode(System.Boolean)">
   SetInTouchMode(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L607"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L617"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#setInTouchMode(boolean)">https://developer.android.com/reference/android/app/Instrumentation.html#setInTouchMode(boolean)</a></p>
@@ -2857,7 +2902,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_Start" data-uid="Android.App.Instrumentation.Start">
   Start()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L614"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L624"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#start()">https://developer.android.com/reference/android/app/Instrumentation.html#start()</a></p>
@@ -2965,7 +3010,7 @@ Class Instrumentation  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Instrumentation_StartAllocCounting" data-uid="Android.App.Instrumentation.StartAllocCounting">
   StartAllocCounting()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L621"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L631"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#startAllocCounting()">https://developer.android.com/reference/android/app/Instrumentation.html#startAllocCounting()</a></p>
@@ -2993,7 +3038,7 @@ public void StartAllocCounting()</code></pre>
 
   <h3 id="Android_App_Instrumentation_StartPerformanceSnapshot" data-uid="Android.App.Instrumentation.StartPerformanceSnapshot">
   StartPerformanceSnapshot()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L629"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L639"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#startPerformanceSnapshot()">https://developer.android.com/reference/android/app/Instrumentation.html#startPerformanceSnapshot()</a></p>
@@ -3020,7 +3065,7 @@ public void StartAllocCounting()</code></pre>
 
   <h3 id="Android_App_Instrumentation_StartProfiling" data-uid="Android.App.Instrumentation.StartProfiling">
   StartProfiling()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L636"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L646"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#startProfiling()">https://developer.android.com/reference/android/app/Instrumentation.html#startProfiling()</a></p>
@@ -3047,7 +3092,7 @@ public void StartAllocCounting()</code></pre>
 
   <h3 id="Android_App_Instrumentation_StopAllocCounting" data-uid="Android.App.Instrumentation.StopAllocCounting">
   StopAllocCounting()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L643"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L653"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#stopAllocCounting()">https://developer.android.com/reference/android/app/Instrumentation.html#stopAllocCounting()</a></p>
@@ -3075,7 +3120,7 @@ public void StopAllocCounting()</code></pre>
 
   <h3 id="Android_App_Instrumentation_StopProfiling" data-uid="Android.App.Instrumentation.StopProfiling">
   StopProfiling()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L651"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L661"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#stopProfiling()">https://developer.android.com/reference/android/app/Instrumentation.html#stopProfiling()</a></p>
@@ -3102,7 +3147,7 @@ public void StopAllocCounting()</code></pre>
 
   <h3 id="Android_App_Instrumentation_WaitForIdle_Java_Lang_Runnable_" data-uid="Android.App.Instrumentation.WaitForIdle(Java.Lang.Runnable)">
   WaitForIdle(Runnable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L659"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L669"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#waitForIdle(java.lang.Runnable)">https://developer.android.com/reference/android/app/Instrumentation.html#waitForIdle(java.lang.Runnable)</a></p>
@@ -3135,7 +3180,7 @@ public void StopAllocCounting()</code></pre>
 
   <h3 id="Android_App_Instrumentation_WaitForIdleSync" data-uid="Android.App.Instrumentation.WaitForIdleSync">
   WaitForIdleSync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L666"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Instrumentation.cs/#L676"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/Instrumentation.html#waitForIdleSync()">https://developer.android.com/reference/android/app/Instrumentation.html#waitForIdleSync()</a></p>

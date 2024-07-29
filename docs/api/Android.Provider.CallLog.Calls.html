@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -326,6 +326,12 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -484,7 +490,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -500,7 +506,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls__ctor" data-uid="Android.Provider.CallLog.Calls.#ctor">
   Calls()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L917"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L937"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -527,7 +533,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls__ctor_System_Object___" data-uid="Android.Provider.CallLog.Calls.#ctor(System.Object[])">
   Calls(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L921"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L941"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -591,11 +597,43 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
 
 
+  <a id="Android_Provider_CallLog_Calls_ASSERTED_DISPLAY_NAME_" data-uid="Android.Provider.CallLog.Calls.ASSERTED_DISPLAY_NAME*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_ASSERTED_DISPLAY_NAME" data-uid="Android.Provider.CallLog.Calls.ASSERTED_DISPLAY_NAME">
+  ASSERTED_DISPLAY_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#ASSERTED_DISPLAY_NAME">https://developer.android.com/reference/android/provider/CallLog.Calls.html#ASSERTED_DISPLAY_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ASSERTED_DISPLAY_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Provider_CallLog_Calls_AUTO_MISSED_EMERGENCY_CALL_" data-uid="Android.Provider.CallLog.Calls.AUTO_MISSED_EMERGENCY_CALL*"></a>
 
   <h3 id="Android_Provider_CallLog_Calls_AUTO_MISSED_EMERGENCY_CALL" data-uid="Android.Provider.CallLog.Calls.AUTO_MISSED_EMERGENCY_CALL">
   AUTO_MISSED_EMERGENCY_CALL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L517"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L529"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#AUTO_MISSED_EMERGENCY_CALL">https://developer.android.com/reference/android/provider/CallLog.Calls.html#AUTO_MISSED_EMERGENCY_CALL</a></p>
@@ -627,7 +665,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_AUTO_MISSED_MAXIMUM_DIALING" data-uid="Android.Provider.CallLog.Calls.AUTO_MISSED_MAXIMUM_DIALING">
   AUTO_MISSED_MAXIMUM_DIALING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L535"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#AUTO_MISSED_MAXIMUM_DIALING">https://developer.android.com/reference/android/provider/CallLog.Calls.html#AUTO_MISSED_MAXIMUM_DIALING</a></p>
@@ -659,7 +697,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_AUTO_MISSED_MAXIMUM_RINGING" data-uid="Android.Provider.CallLog.Calls.AUTO_MISSED_MAXIMUM_RINGING">
   AUTO_MISSED_MAXIMUM_RINGING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L541"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#AUTO_MISSED_MAXIMUM_RINGING">https://developer.android.com/reference/android/provider/CallLog.Calls.html#AUTO_MISSED_MAXIMUM_RINGING</a></p>
@@ -723,7 +761,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_BLOCK_REASON" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON">
   BLOCK_REASON
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L277"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON">https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON</a></p>
@@ -1011,7 +1049,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_BridgeClassName" data-uid="Android.Provider.CallLog.Calls.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L928"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L949"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -1043,7 +1081,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_CACHED_FORMATTED_NUMBER" data-uid="Android.Provider.CallLog.Calls.CACHED_FORMATTED_NUMBER">
   CACHED_FORMATTED_NUMBER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L283"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_FORMATTED_NUMBER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_FORMATTED_NUMBER</a></p>
@@ -1075,7 +1113,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_CACHED_LOOKUP_URI" data-uid="Android.Provider.CallLog.Calls.CACHED_LOOKUP_URI">
   CACHED_LOOKUP_URI
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_LOOKUP_URI">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_LOOKUP_URI</a></p>
@@ -1107,7 +1145,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_CACHED_MATCHED_NUMBER" data-uid="Android.Provider.CallLog.Calls.CACHED_MATCHED_NUMBER">
   CACHED_MATCHED_NUMBER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_MATCHED_NUMBER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_MATCHED_NUMBER</a></p>
@@ -1139,7 +1177,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_CACHED_NAME" data-uid="Android.Provider.CallLog.Calls.CACHED_NAME">
   CACHED_NAME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L301"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NAME">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NAME</a></p>
@@ -1171,7 +1209,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_CACHED_NORMALIZED_NUMBER" data-uid="Android.Provider.CallLog.Calls.CACHED_NORMALIZED_NUMBER">
   CACHED_NORMALIZED_NUMBER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L307"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NORMALIZED_NUMBER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NORMALIZED_NUMBER</a></p>
@@ -1203,7 +1241,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_CACHED_NUMBER_LABEL" data-uid="Android.Provider.CallLog.Calls.CACHED_NUMBER_LABEL">
   CACHED_NUMBER_LABEL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L313"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NUMBER_LABEL">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NUMBER_LABEL</a></p>
@@ -1235,7 +1273,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_CACHED_NUMBER_TYPE" data-uid="Android.Provider.CallLog.Calls.CACHED_NUMBER_TYPE">
   CACHED_NUMBER_TYPE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L319"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NUMBER_TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NUMBER_TYPE</a></p>
@@ -1267,7 +1305,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_CACHED_PHOTO_ID" data-uid="Android.Provider.CallLog.Calls.CACHED_PHOTO_ID">
   CACHED_PHOTO_ID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L325"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_PHOTO_ID">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_PHOTO_ID</a></p>
@@ -1299,7 +1337,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_CACHED_PHOTO_URI" data-uid="Android.Provider.CallLog.Calls.CACHED_PHOTO_URI">
   CACHED_PHOTO_URI
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L331"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_PHOTO_URI">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_PHOTO_URI</a></p>
@@ -1331,7 +1369,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_CALL_SCREENING_APP_NAME" data-uid="Android.Provider.CallLog.Calls.CALL_SCREENING_APP_NAME">
   CALL_SCREENING_APP_NAME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L337"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CALL_SCREENING_APP_NAME">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CALL_SCREENING_APP_NAME</a></p>
@@ -1363,7 +1401,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_CALL_SCREENING_COMPONENT_NAME" data-uid="Android.Provider.CallLog.Calls.CALL_SCREENING_COMPONENT_NAME">
   CALL_SCREENING_COMPONENT_NAME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L343"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CALL_SCREENING_COMPONENT_NAME">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CALL_SCREENING_COMPONENT_NAME</a></p>
@@ -1395,7 +1433,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_COMPOSER_PHOTO_URI" data-uid="Android.Provider.CallLog.Calls.COMPOSER_PHOTO_URI">
   COMPOSER_PHOTO_URI
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L349"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#COMPOSER_PHOTO_URI">https://developer.android.com/reference/android/provider/CallLog.Calls.html#COMPOSER_PHOTO_URI</a></p>
@@ -1459,7 +1497,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_CONTENT_ITEM_TYPE" data-uid="Android.Provider.CallLog.Calls.CONTENT_ITEM_TYPE">
   CONTENT_ITEM_TYPE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L355"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_ITEM_TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_ITEM_TYPE</a></p>
@@ -1491,7 +1529,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_CONTENT_TYPE" data-uid="Android.Provider.CallLog.Calls.CONTENT_TYPE">
   CONTENT_TYPE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L361"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_TYPE</a></p>
@@ -1587,7 +1625,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_COUNTRY_ISO" data-uid="Android.Provider.CallLog.Calls.COUNTRY_ISO">
   COUNTRY_ISO
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#COUNTRY_ISO">https://developer.android.com/reference/android/provider/CallLog.Calls.html#COUNTRY_ISO</a></p>
@@ -1619,7 +1657,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_DATA_USAGE" data-uid="Android.Provider.CallLog.Calls.DATA_USAGE">
   DATA_USAGE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L373"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#DATA_USAGE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#DATA_USAGE</a></p>
@@ -1651,7 +1689,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_DATE" data-uid="Android.Provider.CallLog.Calls.DATE">
   DATE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L379"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#DATE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#DATE</a></p>
@@ -1683,7 +1721,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_DEFAULT_SORT_ORDER" data-uid="Android.Provider.CallLog.Calls.DEFAULT_SORT_ORDER">
   DEFAULT_SORT_ORDER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L385"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#DEFAULT_SORT_ORDER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#DEFAULT_SORT_ORDER</a></p>
@@ -1715,7 +1753,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_DURATION" data-uid="Android.Provider.CallLog.Calls.DURATION">
   DURATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L391"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#DURATION">https://developer.android.com/reference/android/provider/CallLog.Calls.html#DURATION</a></p>
@@ -1747,7 +1785,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_EXTRA_CALL_TYPE_FILTER" data-uid="Android.Provider.CallLog.Calls.EXTRA_CALL_TYPE_FILTER">
   EXTRA_CALL_TYPE_FILTER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L397"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#EXTRA_CALL_TYPE_FILTER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#EXTRA_CALL_TYPE_FILTER</a></p>
@@ -1779,7 +1817,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_FEATURES" data-uid="Android.Provider.CallLog.Calls.FEATURES">
   FEATURES
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L403"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES">https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES</a></p>
@@ -2035,7 +2073,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_GEOCODED_LOCATION" data-uid="Android.Provider.CallLog.Calls.GEOCODED_LOCATION">
   GEOCODED_LOCATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L409"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#GEOCODED_LOCATION">https://developer.android.com/reference/android/provider/CallLog.Calls.html#GEOCODED_LOCATION</a></p>
@@ -2095,11 +2133,43 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
 
 
+  <a id="Android_Provider_CallLog_Calls_IS_BUSINESS_CALL_" data-uid="Android.Provider.CallLog.Calls.IS_BUSINESS_CALL*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_IS_BUSINESS_CALL" data-uid="Android.Provider.CallLog.Calls.IS_BUSINESS_CALL">
+  IS_BUSINESS_CALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#IS_BUSINESS_CALL">https://developer.android.com/reference/android/provider/CallLog.Calls.html#IS_BUSINESS_CALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String IS_BUSINESS_CALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Provider_CallLog_Calls_IS_READ_" data-uid="Android.Provider.CallLog.Calls.IS_READ*"></a>
 
   <h3 id="Android_Provider_CallLog_Calls_IS_READ" data-uid="Android.Provider.CallLog.Calls.IS_READ">
   IS_READ
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L421"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#IS_READ">https://developer.android.com/reference/android/provider/CallLog.Calls.html#IS_READ</a></p>
@@ -2131,7 +2201,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_IsBridgeAbstract" data-uid="Android.Provider.CallLog.Calls.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L932"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L953"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -2163,7 +2233,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_IsBridgeCloseable" data-uid="Android.Provider.CallLog.Calls.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L936"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L957"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -2195,7 +2265,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_IsBridgeInterface" data-uid="Android.Provider.CallLog.Calls.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L940"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L961"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -2227,7 +2297,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_IsBridgeStatic" data-uid="Android.Provider.CallLog.Calls.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L944"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L965"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -2259,7 +2329,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_LAST_MODIFIED" data-uid="Android.Provider.CallLog.Calls.LAST_MODIFIED">
   LAST_MODIFIED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L427"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#LAST_MODIFIED">https://developer.android.com/reference/android/provider/CallLog.Calls.html#LAST_MODIFIED</a></p>
@@ -2291,7 +2361,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_LIMIT_PARAM_KEY" data-uid="Android.Provider.CallLog.Calls.LIMIT_PARAM_KEY">
   LIMIT_PARAM_KEY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L433"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#LIMIT_PARAM_KEY">https://developer.android.com/reference/android/provider/CallLog.Calls.html#LIMIT_PARAM_KEY</a></p>
@@ -2323,7 +2393,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_LOCATION" data-uid="Android.Provider.CallLog.Calls.LOCATION">
   LOCATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L439"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#LOCATION">https://developer.android.com/reference/android/provider/CallLog.Calls.html#LOCATION</a></p>
@@ -2355,7 +2425,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_MISSED_REASON" data-uid="Android.Provider.CallLog.Calls.MISSED_REASON">
   MISSED_REASON
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L445"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#MISSED_REASON">https://developer.android.com/reference/android/provider/CallLog.Calls.html#MISSED_REASON</a></p>
@@ -2387,7 +2457,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_MISSED_REASON_NOT_MISSED" data-uid="Android.Provider.CallLog.Calls.MISSED_REASON_NOT_MISSED">
   MISSED_REASON_NOT_MISSED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L547"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#MISSED_REASON_NOT_MISSED">https://developer.android.com/reference/android/provider/CallLog.Calls.html#MISSED_REASON_NOT_MISSED</a></p>
@@ -2451,7 +2521,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_NEW" data-uid="Android.Provider.CallLog.Calls.NEW">
   NEW
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L451"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#NEW">https://developer.android.com/reference/android/provider/CallLog.Calls.html#NEW</a></p>
@@ -2483,7 +2553,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_NUMBER" data-uid="Android.Provider.CallLog.Calls.NUMBER">
   NUMBER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L457"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#NUMBER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#NUMBER</a></p>
@@ -2515,7 +2585,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_NUMBER_PRESENTATION" data-uid="Android.Provider.CallLog.Calls.NUMBER_PRESENTATION">
   NUMBER_PRESENTATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L463"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#NUMBER_PRESENTATION">https://developer.android.com/reference/android/provider/CallLog.Calls.html#NUMBER_PRESENTATION</a></p>
@@ -2547,7 +2617,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_OFFSET_PARAM_KEY" data-uid="Android.Provider.CallLog.Calls.OFFSET_PARAM_KEY">
   OFFSET_PARAM_KEY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L469"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#OFFSET_PARAM_KEY">https://developer.android.com/reference/android/provider/CallLog.Calls.html#OFFSET_PARAM_KEY</a></p>
@@ -2611,7 +2681,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_PHONE_ACCOUNT_COMPONENT_NAME" data-uid="Android.Provider.CallLog.Calls.PHONE_ACCOUNT_COMPONENT_NAME">
   PHONE_ACCOUNT_COMPONENT_NAME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L475"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#PHONE_ACCOUNT_COMPONENT_NAME">https://developer.android.com/reference/android/provider/CallLog.Calls.html#PHONE_ACCOUNT_COMPONENT_NAME</a></p>
@@ -2643,7 +2713,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_PHONE_ACCOUNT_ID" data-uid="Android.Provider.CallLog.Calls.PHONE_ACCOUNT_ID">
   PHONE_ACCOUNT_ID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L481"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#PHONE_ACCOUNT_ID">https://developer.android.com/reference/android/provider/CallLog.Calls.html#PHONE_ACCOUNT_ID</a></p>
@@ -2675,7 +2745,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_POST_DIAL_DIGITS" data-uid="Android.Provider.CallLog.Calls.POST_DIAL_DIGITS">
   POST_DIAL_DIGITS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L487"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#POST_DIAL_DIGITS">https://developer.android.com/reference/android/provider/CallLog.Calls.html#POST_DIAL_DIGITS</a></p>
@@ -2867,7 +2937,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_PRIORITY" data-uid="Android.Provider.CallLog.Calls.PRIORITY">
   PRIORITY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L493"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRIORITY">https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRIORITY</a></p>
@@ -2995,7 +3065,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_SUBJECT" data-uid="Android.Provider.CallLog.Calls.SUBJECT">
   SUBJECT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L499"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#SUBJECT">https://developer.android.com/reference/android/provider/CallLog.Calls.html#SUBJECT</a></p>
@@ -3027,7 +3097,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_TRANSCRIPTION" data-uid="Android.Provider.CallLog.Calls.TRANSCRIPTION">
   TRANSCRIPTION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L505"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#TRANSCRIPTION">https://developer.android.com/reference/android/provider/CallLog.Calls.html#TRANSCRIPTION</a></p>
@@ -3059,7 +3129,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_TYPE" data-uid="Android.Provider.CallLog.Calls.TYPE">
   TYPE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L499"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L511"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#TYPE</a></p>
@@ -3091,7 +3161,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_CALL_FILTERS_TIMEOUT" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_CALL_FILTERS_TIMEOUT">
   USER_MISSED_CALL_FILTERS_TIMEOUT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L553"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_CALL_FILTERS_TIMEOUT">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_CALL_FILTERS_TIMEOUT</a></p>
@@ -3123,7 +3193,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_CALL_SCREENING_SERVICE_SILENCED" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_CALL_SCREENING_SERVICE_SILENCED">
   USER_MISSED_CALL_SCREENING_SERVICE_SILENCED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L559"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_CALL_SCREENING_SERVICE_SILENCED">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_CALL_SCREENING_SERVICE_SILENCED</a></p>
@@ -3155,7 +3225,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_DND_MODE" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_DND_MODE">
   USER_MISSED_DND_MODE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L553"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L565"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_DND_MODE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_DND_MODE</a></p>
@@ -3187,7 +3257,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_LOW_RING_VOLUME" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_LOW_RING_VOLUME">
   USER_MISSED_LOW_RING_VOLUME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L571"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_LOW_RING_VOLUME">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_LOW_RING_VOLUME</a></p>
@@ -3219,7 +3289,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_NO_ANSWER" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_NO_ANSWER">
   USER_MISSED_NO_ANSWER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L577"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_NO_ANSWER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_NO_ANSWER</a></p>
@@ -3251,7 +3321,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_NO_VIBRATE" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_NO_VIBRATE">
   USER_MISSED_NO_VIBRATE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L583"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_NO_VIBRATE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_NO_VIBRATE</a></p>
@@ -3283,7 +3353,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_SHORT_RING" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_SHORT_RING">
   USER_MISSED_SHORT_RING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L577"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L589"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_SHORT_RING">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_SHORT_RING</a></p>
@@ -3315,7 +3385,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_VIA_NUMBER" data-uid="Android.Provider.CallLog.Calls.VIA_NUMBER">
   VIA_NUMBER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L517"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#VIA_NUMBER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#VIA_NUMBER</a></p>
@@ -3379,7 +3449,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_VOICEMAIL_URI" data-uid="Android.Provider.CallLog.Calls.VOICEMAIL_URI">
   VOICEMAIL_URI
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L523"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#VOICEMAIL_URI">https://developer.android.com/reference/android/provider/CallLog.Calls.html#VOICEMAIL_URI</a></p>
@@ -3415,7 +3485,7 @@ Class CallLog.Calls  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Provider_CallLog_Calls_GetLastOutgoingCall_Android_Content_Context_" data-uid="Android.Provider.CallLog.Calls.GetLastOutgoingCall(Android.Content.Context)">
   GetLastOutgoingCall(Context)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L589"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L601"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#getLastOutgoingCall(android.content.Context)">https://developer.android.com/reference/android/provider/CallLog.Calls.html#getLastOutgoingCall(android.content.Context)</a></p>

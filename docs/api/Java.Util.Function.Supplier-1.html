@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -85,7 +85,7 @@
 
 
   <h1 id="Java_Util_Function_Supplier_1" data-uid="Java.Util.Function.Supplier`1" class="text-break">
-Class Supplier&lt;TReturn&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Developed/Java/Util/Function/Supplier.cs/#L92"><i class="bi bi-code-slash"></i></a>
+Class Supplier&lt;TReturn&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Developed/Java/Util/Function/Supplier.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -139,7 +139,7 @@ Class Supplier&lt;TReturn&gt;  <a class="header-action link-secondary" title="Vi
   <dl class="typelist derived">
     <dt>Derived</dt>
     <dd>
-      <div><a class="xref" href="Java.Util.Function.SupplierDirect-1.html">SupplierDirect&lt;TReturn&gt;</a></div>
+      <div><a class="xref" href="Java.Util.Function.SupplierDirect-1.html">SupplierDirect&lt;T&gt;</a></div>
     </dd>
   </dl>
 
@@ -360,6 +360,12 @@ Class Supplier&lt;TReturn&gt;  <a class="header-action link-secondary" title="Vi
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -518,7 +524,7 @@ Class Supplier&lt;TReturn&gt;  <a class="header-action link-secondary" title="Vi
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -534,7 +540,7 @@ Class Supplier&lt;TReturn&gt;  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Java_Util_Function_Supplier_1__ctor" data-uid="Java.Util.Function.Supplier`1.#ctor">
   Supplier()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Developed/Java/Util/Function/Supplier.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Developed/Java/Util/Function/Supplier.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initialize a new instance of <a class="xref" href="Java.Util.Function.Supplier-1.html">Supplier&lt;TReturn&gt;</a></p>
@@ -565,7 +571,7 @@ Class Supplier&lt;TReturn&gt;  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Java_Util_Function_Supplier_1_OnGet" data-uid="Java.Util.Function.Supplier`1.OnGet">
   OnGet
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Developed/Java/Util/Function/Supplier.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Developed/Java/Util/Function/Supplier.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a> to be executed</p>
@@ -601,7 +607,7 @@ Class Supplier&lt;TReturn&gt;  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Java_Util_Function_Supplier_1_Get" data-uid="Java.Util.Function.Supplier`1.Get">
   Get()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Developed/Java/Util/Function/Supplier.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Developed/Java/Util/Function/Supplier.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the Supplier action in the CLR</p>
@@ -634,7 +640,7 @@ Class Supplier&lt;TReturn&gt;  <a class="header-action link-secondary" title="Vi
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Developed/Java/Util/Function/Supplier.cs/#L92" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Developed/Java/Util/Function/Supplier.cs/#L101" class="edit-link">Edit this page</a>
         </div>
 
 

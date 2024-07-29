@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class Window  <a class="header-action link-secondary" title="View source" href="
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class Window  <a class="header-action link-secondary" title="View source" href="
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class Window  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Android_View_Window__ctor" data-uid="Android.View.Window.#ctor">
   Window()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7957"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L8341"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -553,7 +559,7 @@ public Window()</code></pre>
 
   <h3 id="Android_View_Window__ctor_System_Object___" data-uid="Android.View.Window.#ctor(System.Object[])">
   Window(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7962"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L8346"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -590,7 +596,7 @@ public Window(params object[] args)</code></pre>
 
   <h3 id="Android_View_Window_BridgeClassName" data-uid="Android.View.Window.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7970"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L8355"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -1201,7 +1207,7 @@ public static int FEATURE_SWIPE_TO_DISMISS { get; }</code></pre>
 
   <h3 id="Android_View_Window_IsBridgeAbstract" data-uid="Android.View.Window.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7974"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L8359"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1233,7 +1239,7 @@ public static int FEATURE_SWIPE_TO_DISMISS { get; }</code></pre>
 
   <h3 id="Android_View_Window_IsBridgeCloseable" data-uid="Android.View.Window.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7978"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L8363"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1265,7 +1271,7 @@ public static int FEATURE_SWIPE_TO_DISMISS { get; }</code></pre>
 
   <h3 id="Android_View_Window_IsBridgeInterface" data-uid="Android.View.Window.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7982"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L8367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1297,7 +1303,7 @@ public static int FEATURE_SWIPE_TO_DISMISS { get; }</code></pre>
 
   <h3 id="Android_View_Window_IsBridgeStatic" data-uid="Android.View.Window.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L7986"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L8371"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1661,7 +1667,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_AddContentView_Android_View_View_Android_View_ViewGroup_LayoutParams_" data-uid="Android.View.Window.AddContentView(Android.View.View,Android.View.ViewGroup.LayoutParams)">
   AddContentView(View, LayoutParams)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L421"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#addContentView(android.view.View,android.view.ViewGroup.LayoutParams)">https://developer.android.com/reference/android/view/Window.html#addContentView(android.view.View,android.view.ViewGroup.LayoutParams)</a></p>
@@ -1697,7 +1703,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_AddFlags_System_Int32_" data-uid="Android.View.Window.AddFlags(System.Int32)">
   AddFlags(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L985"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1015"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#addFlags(int)">https://developer.android.com/reference/android/view/Window.html#addFlags(int)</a></p>
@@ -1730,7 +1736,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_AddOnFrameMetricsAvailableListener_Android_View_Window_OnFrameMetricsAvailableListener_Android_Os_Handler_" data-uid="Android.View.Window.AddOnFrameMetricsAvailableListener(Android.View.Window.OnFrameMetricsAvailableListener,Android.Os.Handler)">
   AddOnFrameMetricsAvailableListener(OnFrameMetricsAvailableListener, Handler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L914"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L935"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#addOnFrameMetricsAvailableListener(android.view.Window.OnFrameMetricsAvailableListener,android.os.Handler)">https://developer.android.com/reference/android/view/Window.html#addOnFrameMetricsAvailableListener(android.view.Window.OnFrameMetricsAvailableListener,android.os.Handler)</a></p>
@@ -1766,7 +1772,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_ClearFlags_System_Int32_" data-uid="Android.View.Window.ClearFlags(System.Int32)">
   ClearFlags(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L993"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1023"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#clearFlags(int)">https://developer.android.com/reference/android/view/Window.html#clearFlags(int)</a></p>
@@ -1799,7 +1805,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_CloseAllPanels" data-uid="Android.View.Window.CloseAllPanels">
   CloseAllPanels()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L428"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#closeAllPanels()">https://developer.android.com/reference/android/view/Window.html#closeAllPanels()</a></p>
@@ -1826,7 +1832,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_ClosePanel_System_Int32_" data-uid="Android.View.Window.ClosePanel(System.Int32)">
   ClosePanel(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L436"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#closePanel(int)">https://developer.android.com/reference/android/view/Window.html#closePanel(int)</a></p>
@@ -1904,7 +1910,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetAllowEnterTransitionOverlap" data-uid="Android.View.Window.GetAllowEnterTransitionOverlap">
   GetAllowEnterTransitionOverlap()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L781"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L785"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getAllowEnterTransitionOverlap()">https://developer.android.com/reference/android/view/Window.html#getAllowEnterTransitionOverlap()</a></p>
@@ -1937,7 +1943,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetAllowReturnTransitionOverlap" data-uid="Android.View.Window.GetAllowReturnTransitionOverlap">
   GetAllowReturnTransitionOverlap()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L789"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L793"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getAllowReturnTransitionOverlap()">https://developer.android.com/reference/android/view/Window.html#getAllowReturnTransitionOverlap()</a></p>
@@ -1970,7 +1976,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetAttributes" data-uid="Android.View.Window.GetAttributes">
   GetAttributes()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L889"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L910"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getAttributes()">https://developer.android.com/reference/android/view/Window.html#getAttributes()</a></p>
@@ -2003,7 +2009,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetCallback" data-uid="Android.View.Window.GetCallback">
   GetCallback()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L881"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L902"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getCallback()">https://developer.android.com/reference/android/view/Window.html#getCallback()</a></p>
@@ -2036,7 +2042,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetColorMode" data-uid="Android.View.Window.GetColorMode">
   GetColorMode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L953"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L982"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getColorMode()">https://developer.android.com/reference/android/view/Window.html#getColorMode()</a></p>
@@ -2069,7 +2075,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetContainer" data-uid="Android.View.Window.GetContainer">
   GetContainer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L873"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L894"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getContainer()">https://developer.android.com/reference/android/view/Window.html#getContainer()</a></p>
@@ -2102,7 +2108,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetContentScene" data-uid="Android.View.Window.GetContentScene">
   GetContentScene()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L669"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L673"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getContentScene()">https://developer.android.com/reference/android/view/Window.html#getContentScene()</a></p>
@@ -2135,7 +2141,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetContext" data-uid="Android.View.Window.GetContext">
   GetContext()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L857"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L878"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getContext()">https://developer.android.com/reference/android/view/Window.html#getContext()</a></p>
@@ -2269,11 +2275,44 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
 
 
+  <a id="Android_View_Window_GetDesiredHdrHeadroom_" data-uid="Android.View.Window.GetDesiredHdrHeadroom*"></a>
+
+  <h3 id="Android_View_Window_GetDesiredHdrHeadroom" data-uid="Android.View.Window.GetDesiredHdrHeadroom">
+  GetDesiredHdrHeadroom()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L974"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getDesiredHdrHeadroom()">https://developer.android.com/reference/android/view/Window.html#getDesiredHdrHeadroom()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetDesiredHdrHeadroom()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_View_Window_GetEnterTransition_" data-uid="Android.View.Window.GetEnterTransition*"></a>
 
   <h3 id="Android_View_Window_GetEnterTransition" data-uid="Android.View.Window.GetEnterTransition">
   GetEnterTransition()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L677"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L681"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getEnterTransition()">https://developer.android.com/reference/android/view/Window.html#getEnterTransition()</a></p>
@@ -2306,7 +2345,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetExitTransition" data-uid="Android.View.Window.GetExitTransition">
   GetExitTransition()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L685"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L689"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getExitTransition()">https://developer.android.com/reference/android/view/Window.html#getExitTransition()</a></p>
@@ -2335,11 +2374,44 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
 
 
+  <a id="Android_View_Window_GetFrameRateBoostOnTouchEnabled_" data-uid="Android.View.Window.GetFrameRateBoostOnTouchEnabled*"></a>
+
+  <h3 id="Android_View_Window_GetFrameRateBoostOnTouchEnabled" data-uid="Android.View.Window.GetFrameRateBoostOnTouchEnabled">
+  GetFrameRateBoostOnTouchEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L801"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getFrameRateBoostOnTouchEnabled()">https://developer.android.com/reference/android/view/Window.html#getFrameRateBoostOnTouchEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetFrameRateBoostOnTouchEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_View_Window_GetInsetsController_" data-uid="Android.View.Window.GetInsetsController*"></a>
 
   <h3 id="Android_View_Window_GetInsetsController" data-uid="Android.View.Window.GetInsetsController">
   GetInsetsController()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L757"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L761"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getInsetsController()">https://developer.android.com/reference/android/view/Window.html#getInsetsController()</a></p>
@@ -2405,7 +2477,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetMediaController" data-uid="Android.View.Window.GetMediaController">
   GetMediaController()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L661"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L665"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getMediaController()">https://developer.android.com/reference/android/view/Window.html#getMediaController()</a></p>
@@ -2446,7 +2518,8 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetNavigationBarColor()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public int GetNavigationBarColor()</code></pre>
   </div>
 
 
@@ -2471,7 +2544,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetNavigationBarDividerColor" data-uid="Android.View.Window.GetNavigationBarDividerColor">
   GetNavigationBarDividerColor()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L961"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L990"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getNavigationBarDividerColor()">https://developer.android.com/reference/android/view/Window.html#getNavigationBarDividerColor()</a></p>
@@ -2479,7 +2552,8 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetNavigationBarDividerColor()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public int GetNavigationBarDividerColor()</code></pre>
   </div>
 
 
@@ -2504,7 +2578,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetOnBackInvokedDispatcher" data-uid="Android.View.Window.GetOnBackInvokedDispatcher">
   GetOnBackInvokedDispatcher()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L773"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L777"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getOnBackInvokedDispatcher()">https://developer.android.com/reference/android/view/Window.html#getOnBackInvokedDispatcher()</a></p>
@@ -2537,7 +2611,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetReenterTransition" data-uid="Android.View.Window.GetReenterTransition">
   GetReenterTransition()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L693"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L697"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getReenterTransition()">https://developer.android.com/reference/android/view/Window.html#getReenterTransition()</a></p>
@@ -2570,7 +2644,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetReturnTransition" data-uid="Android.View.Window.GetReturnTransition">
   GetReturnTransition()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L701"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L705"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getReturnTransition()">https://developer.android.com/reference/android/view/Window.html#getReturnTransition()</a></p>
@@ -2603,7 +2677,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetRootSurfaceControl" data-uid="Android.View.Window.GetRootSurfaceControl">
   GetRootSurfaceControl()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L749"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L753"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getRootSurfaceControl()">https://developer.android.com/reference/android/view/Window.html#getRootSurfaceControl()</a></p>
@@ -2636,7 +2710,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetSharedElementEnterTransition" data-uid="Android.View.Window.GetSharedElementEnterTransition">
   GetSharedElementEnterTransition()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L709"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L713"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getSharedElementEnterTransition()">https://developer.android.com/reference/android/view/Window.html#getSharedElementEnterTransition()</a></p>
@@ -2669,7 +2743,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetSharedElementExitTransition" data-uid="Android.View.Window.GetSharedElementExitTransition">
   GetSharedElementExitTransition()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L717"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L721"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getSharedElementExitTransition()">https://developer.android.com/reference/android/view/Window.html#getSharedElementExitTransition()</a></p>
@@ -2702,7 +2776,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetSharedElementReenterTransition" data-uid="Android.View.Window.GetSharedElementReenterTransition">
   GetSharedElementReenterTransition()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L725"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L729"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getSharedElementReenterTransition()">https://developer.android.com/reference/android/view/Window.html#getSharedElementReenterTransition()</a></p>
@@ -2735,7 +2809,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetSharedElementReturnTransition" data-uid="Android.View.Window.GetSharedElementReturnTransition">
   GetSharedElementReturnTransition()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L733"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L737"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getSharedElementReturnTransition()">https://developer.android.com/reference/android/view/Window.html#getSharedElementReturnTransition()</a></p>
@@ -2768,7 +2842,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetSharedElementsUseOverlay" data-uid="Android.View.Window.GetSharedElementsUseOverlay">
   GetSharedElementsUseOverlay()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L797"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L809"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getSharedElementsUseOverlay()">https://developer.android.com/reference/android/view/Window.html#getSharedElementsUseOverlay()</a></p>
@@ -2801,7 +2875,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetStatusBarColor" data-uid="Android.View.Window.GetStatusBarColor">
   GetStatusBarColor()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L403"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getStatusBarColor()">https://developer.android.com/reference/android/view/Window.html#getStatusBarColor()</a></p>
@@ -2809,7 +2883,8 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetStatusBarColor()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public int GetStatusBarColor()</code></pre>
   </div>
 
 
@@ -2834,7 +2909,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetSystemGestureExclusionRects" data-uid="Android.View.Window.GetSystemGestureExclusionRects">
   GetSystemGestureExclusionRects()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L969"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L999"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getSystemGestureExclusionRects()">https://developer.android.com/reference/android/view/Window.html#getSystemGestureExclusionRects()</a></p>
@@ -2867,7 +2942,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetTransitionBackgroundFadeDuration" data-uid="Android.View.Window.GetTransitionBackgroundFadeDuration">
   GetTransitionBackgroundFadeDuration()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L977"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1007"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getTransitionBackgroundFadeDuration()">https://developer.android.com/reference/android/view/Window.html#getTransitionBackgroundFadeDuration()</a></p>
@@ -2900,7 +2975,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetTransitionManager" data-uid="Android.View.Window.GetTransitionManager">
   GetTransitionManager()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L741"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L745"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getTransitionManager()">https://developer.android.com/reference/android/view/Window.html#getTransitionManager()</a></p>
@@ -2933,7 +3008,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetVolumeControlStream" data-uid="Android.View.Window.GetVolumeControlStream">
   GetVolumeControlStream()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L412"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getVolumeControlStream()">https://developer.android.com/reference/android/view/Window.html#getVolumeControlStream()</a></p>
@@ -2966,7 +3041,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetWindowManager" data-uid="Android.View.Window.GetWindowManager">
   GetWindowManager()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L765"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L769"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getWindowManager()">https://developer.android.com/reference/android/view/Window.html#getWindowManager()</a></p>
@@ -2999,7 +3074,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_GetWindowStyle" data-uid="Android.View.Window.GetWindowStyle">
   GetWindowStyle()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L865"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L886"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#getWindowStyle()">https://developer.android.com/reference/android/view/Window.html#getWindowStyle()</a></p>
@@ -3032,7 +3107,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_HasChildren" data-uid="Android.View.Window.HasChildren">
   HasChildren()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L897"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L918"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#hasChildren()">https://developer.android.com/reference/android/view/Window.html#hasChildren()</a></p>
@@ -3065,7 +3140,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_HasFeature_System_Int32_" data-uid="Android.View.Window.HasFeature(System.Int32)">
   HasFeature(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L806"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L818"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#hasFeature(int)">https://developer.android.com/reference/android/view/Window.html#hasFeature(int)</a></p>
@@ -3104,7 +3179,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_InjectInputEvent_Android_View_InputEvent_" data-uid="Android.View.Window.InjectInputEvent(Android.View.InputEvent)">
   InjectInputEvent(InputEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1001"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1031"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#injectInputEvent(android.view.InputEvent)">https://developer.android.com/reference/android/view/Window.html#injectInputEvent(android.view.InputEvent)</a></p>
@@ -3137,7 +3212,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_InvalidatePanelMenu_System_Int32_" data-uid="Android.View.Window.InvalidatePanelMenu(System.Int32)">
   InvalidatePanelMenu(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L444"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#invalidatePanelMenu(int)">https://developer.android.com/reference/android/view/Window.html#invalidatePanelMenu(int)</a></p>
@@ -3170,7 +3245,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_IsActive" data-uid="Android.View.Window.IsActive">
   IsActive()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L905"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L926"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#isActive()">https://developer.android.com/reference/android/view/Window.html#isActive()</a></p>
@@ -3232,11 +3307,44 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
 
 
+  <a id="Android_View_Window_IsFrameRatePowerSavingsBalanced_" data-uid="Android.View.Window.IsFrameRatePowerSavingsBalanced*"></a>
+
+  <h3 id="Android_View_Window_IsFrameRatePowerSavingsBalanced" data-uid="Android.View.Window.IsFrameRatePowerSavingsBalanced">
+  IsFrameRatePowerSavingsBalanced()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L826"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#isFrameRatePowerSavingsBalanced()">https://developer.android.com/reference/android/view/Window.html#isFrameRatePowerSavingsBalanced()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFrameRatePowerSavingsBalanced()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_View_Window_IsNavigationBarContrastEnforced_" data-uid="Android.View.Window.IsNavigationBarContrastEnforced*"></a>
 
   <h3 id="Android_View_Window_IsNavigationBarContrastEnforced" data-uid="Android.View.Window.IsNavigationBarContrastEnforced">
   IsNavigationBarContrastEnforced()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L814"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L834"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#isNavigationBarContrastEnforced()">https://developer.android.com/reference/android/view/Window.html#isNavigationBarContrastEnforced()</a></p>
@@ -3311,7 +3419,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_IsStatusBarContrastEnforced" data-uid="Android.View.Window.IsStatusBarContrastEnforced">
   IsStatusBarContrastEnforced()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L822"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L842"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#isStatusBarContrastEnforced()">https://developer.android.com/reference/android/view/Window.html#isStatusBarContrastEnforced()</a></p>
@@ -3319,7 +3427,8 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsStatusBarContrastEnforced()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool IsStatusBarContrastEnforced()</code></pre>
   </div>
 
 
@@ -3344,7 +3453,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_IsWideColorGamut" data-uid="Android.View.Window.IsWideColorGamut">
   IsWideColorGamut()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L830"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L851"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#isWideColorGamut()">https://developer.android.com/reference/android/view/Window.html#isWideColorGamut()</a></p>
@@ -3377,7 +3486,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_MakeActive" data-uid="Android.View.Window.MakeActive">
   MakeActive()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L921"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L942"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#makeActive()">https://developer.android.com/reference/android/view/Window.html#makeActive()</a></p>
@@ -3404,7 +3513,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_OnConfigurationChanged_Android_Content_Res_Configuration_" data-uid="Android.View.Window.OnConfigurationChanged(Android.Content.Res.Configuration)">
   OnConfigurationChanged(Configuration)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L452"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#onConfigurationChanged(android.content.res.Configuration)">https://developer.android.com/reference/android/view/Window.html#onConfigurationChanged(android.content.res.Configuration)</a></p>
@@ -3437,7 +3546,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_OpenPanel_System_Int32_Android_View_KeyEvent_" data-uid="Android.View.Window.OpenPanel(System.Int32,Android.View.KeyEvent)">
   OpenPanel(int, KeyEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L461"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#openPanel(int,android.view.KeyEvent)">https://developer.android.com/reference/android/view/Window.html#openPanel(int,android.view.KeyEvent)</a></p>
@@ -3641,7 +3750,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_RegisterScrollCaptureCallback_Android_View_ScrollCaptureCallback_" data-uid="Android.View.Window.RegisterScrollCaptureCallback(Android.View.ScrollCaptureCallback)">
   RegisterScrollCaptureCallback(ScrollCaptureCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1009"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1039"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#registerScrollCaptureCallback(android.view.ScrollCaptureCallback)">https://developer.android.com/reference/android/view/Window.html#registerScrollCaptureCallback(android.view.ScrollCaptureCallback)</a></p>
@@ -3674,7 +3783,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_RemoveOnFrameMetricsAvailableListener_Android_View_Window_OnFrameMetricsAvailableListener_" data-uid="Android.View.Window.RemoveOnFrameMetricsAvailableListener(Android.View.Window.OnFrameMetricsAvailableListener)">
   RemoveOnFrameMetricsAvailableListener(OnFrameMetricsAvailableListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L929"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L950"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#removeOnFrameMetricsAvailableListener(android.view.Window.OnFrameMetricsAvailableListener)">https://developer.android.com/reference/android/view/Window.html#removeOnFrameMetricsAvailableListener(android.view.Window.OnFrameMetricsAvailableListener)</a></p>
@@ -3707,7 +3816,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_RequestFeature_System_Int32_" data-uid="Android.View.Window.RequestFeature(System.Int32)">
   RequestFeature(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L839"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L860"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#requestFeature(int)">https://developer.android.com/reference/android/view/Window.html#requestFeature(int)</a></p>
@@ -3746,7 +3855,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_RequireViewById__1_System_Int32_" data-uid="Android.View.Window.RequireViewById``1(System.Int32)">
   RequireViewById&lt;T&gt;(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L849"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L870"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#requireViewById(int)">https://developer.android.com/reference/android/view/Window.html#requireViewById(int)</a></p>
@@ -3791,7 +3900,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_RestoreHierarchyState_Android_Os_Bundle_" data-uid="Android.View.Window.RestoreHierarchyState(Android.Os.Bundle)">
   RestoreHierarchyState(Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L469"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#restoreHierarchyState(android.os.Bundle)">https://developer.android.com/reference/android/view/Window.html#restoreHierarchyState(android.os.Bundle)</a></p>
@@ -3857,7 +3966,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetAllowEnterTransitionOverlap_System_Boolean_" data-uid="Android.View.Window.SetAllowEnterTransitionOverlap(System.Boolean)">
   SetAllowEnterTransitionOverlap(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1017"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1047"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setAllowEnterTransitionOverlap(boolean)">https://developer.android.com/reference/android/view/Window.html#setAllowEnterTransitionOverlap(boolean)</a></p>
@@ -3890,7 +3999,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetAllowReturnTransitionOverlap_System_Boolean_" data-uid="Android.View.Window.SetAllowReturnTransitionOverlap(System.Boolean)">
   SetAllowReturnTransitionOverlap(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1025"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1055"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setAllowReturnTransitionOverlap(boolean)">https://developer.android.com/reference/android/view/Window.html#setAllowReturnTransitionOverlap(boolean)</a></p>
@@ -3923,7 +4032,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetAttributes_Android_View_WindowManager_LayoutParams_" data-uid="Android.View.Window.SetAttributes(Android.View.WindowManager.LayoutParams)">
   SetAttributes(LayoutParams)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1033"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1063"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setAttributes(android.view.WindowManager.LayoutParams)">https://developer.android.com/reference/android/view/Window.html#setAttributes(android.view.WindowManager.LayoutParams)</a></p>
@@ -3956,7 +4065,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetBackgroundBlurRadius_System_Int32_" data-uid="Android.View.Window.SetBackgroundBlurRadius(System.Int32)">
   SetBackgroundBlurRadius(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1041"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1071"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setBackgroundBlurRadius(int)">https://developer.android.com/reference/android/view/Window.html#setBackgroundBlurRadius(int)</a></p>
@@ -3989,7 +4098,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetBackgroundDrawable_Android_Graphics_Drawable_Drawable_" data-uid="Android.View.Window.SetBackgroundDrawable(Android.Graphics.Drawable.Drawable)">
   SetBackgroundDrawable(Drawable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L477"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setBackgroundDrawable(android.graphics.drawable.Drawable)">https://developer.android.com/reference/android/view/Window.html#setBackgroundDrawable(android.graphics.drawable.Drawable)</a></p>
@@ -4022,7 +4131,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetBackgroundDrawableResource_System_Int32_" data-uid="Android.View.Window.SetBackgroundDrawableResource(System.Int32)">
   SetBackgroundDrawableResource(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1049"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1079"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setBackgroundDrawableResource(int)">https://developer.android.com/reference/android/view/Window.html#setBackgroundDrawableResource(int)</a></p>
@@ -4055,7 +4164,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetCallback_Android_View_Window_Callback_" data-uid="Android.View.Window.SetCallback(Android.View.Window.Callback)">
   SetCallback(Callback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1057"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1087"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setCallback(android.view.Window.Callback)">https://developer.android.com/reference/android/view/Window.html#setCallback(android.view.Window.Callback)</a></p>
@@ -4088,7 +4197,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetChildDrawable_System_Int32_Android_Graphics_Drawable_Drawable_" data-uid="Android.View.Window.SetChildDrawable(System.Int32,Android.Graphics.Drawable.Drawable)">
   SetChildDrawable(int, Drawable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L486"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setChildDrawable(int,android.graphics.drawable.Drawable)">https://developer.android.com/reference/android/view/Window.html#setChildDrawable(int,android.graphics.drawable.Drawable)</a></p>
@@ -4124,7 +4233,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetChildInt_System_Int32_System_Int32_" data-uid="Android.View.Window.SetChildInt(System.Int32,System.Int32)">
   SetChildInt(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L495"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setChildInt(int,int)">https://developer.android.com/reference/android/view/Window.html#setChildInt(int,int)</a></p>
@@ -4160,7 +4269,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetClipToOutline_System_Boolean_" data-uid="Android.View.Window.SetClipToOutline(System.Boolean)">
   SetClipToOutline(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1065"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1095"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setClipToOutline(boolean)">https://developer.android.com/reference/android/view/Window.html#setClipToOutline(boolean)</a></p>
@@ -4193,7 +4302,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetColorMode_System_Int32_" data-uid="Android.View.Window.SetColorMode(System.Int32)">
   SetColorMode(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1073"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setColorMode(int)">https://developer.android.com/reference/android/view/Window.html#setColorMode(int)</a></p>
@@ -4226,7 +4335,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetContainer_Android_View_Window_" data-uid="Android.View.Window.SetContainer(Android.View.Window)">
   SetContainer(Window)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1081"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setContainer(android.view.Window)">https://developer.android.com/reference/android/view/Window.html#setContainer(android.view.Window)</a></p>
@@ -4259,7 +4368,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetContentView_Android_View_View_" data-uid="Android.View.Window.SetContentView(Android.View.View)">
   SetContentView(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L512"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setContentView(android.view.View)">https://developer.android.com/reference/android/view/Window.html#setContentView(android.view.View)</a></p>
@@ -4292,7 +4401,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetContentView_Android_View_View_Android_View_ViewGroup_LayoutParams_" data-uid="Android.View.Window.SetContentView(Android.View.View,Android.View.ViewGroup.LayoutParams)">
   SetContentView(View, LayoutParams)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L504"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setContentView(android.view.View,android.view.ViewGroup.LayoutParams)">https://developer.android.com/reference/android/view/Window.html#setContentView(android.view.View,android.view.ViewGroup.LayoutParams)</a></p>
@@ -4328,7 +4437,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetContentView_System_Int32_" data-uid="Android.View.Window.SetContentView(System.Int32)">
   SetContentView(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L520"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setContentView(int)">https://developer.android.com/reference/android/view/Window.html#setContentView(int)</a></p>
@@ -4361,7 +4470,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetDecorCaptionShade_System_Int32_" data-uid="Android.View.Window.SetDecorCaptionShade(System.Int32)">
   SetDecorCaptionShade(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L528"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setDecorCaptionShade(int)">https://developer.android.com/reference/android/view/Window.html#setDecorCaptionShade(int)</a></p>
@@ -4394,7 +4503,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetDecorFitsSystemWindows_System_Boolean_" data-uid="Android.View.Window.SetDecorFitsSystemWindows(System.Boolean)">
   SetDecorFitsSystemWindows(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1089"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setDecorFitsSystemWindows(boolean)">https://developer.android.com/reference/android/view/Window.html#setDecorFitsSystemWindows(boolean)</a></p>
@@ -4402,7 +4511,8 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetDecorFitsSystemWindows(bool arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetDecorFitsSystemWindows(bool arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -4423,11 +4533,44 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
 
 
+  <a id="Android_View_Window_SetDesiredHdrHeadroom_" data-uid="Android.View.Window.SetDesiredHdrHeadroom*"></a>
+
+  <h3 id="Android_View_Window_SetDesiredHdrHeadroom_System_Single_" data-uid="Android.View.Window.SetDesiredHdrHeadroom(System.Single)">
+  SetDesiredHdrHeadroom(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setDesiredHdrHeadroom(float)">https://developer.android.com/reference/android/view/Window.html#setDesiredHdrHeadroom(float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDesiredHdrHeadroom(float arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_View_Window_SetDimAmount_" data-uid="Android.View.Window.SetDimAmount*"></a>
 
   <h3 id="Android_View_Window_SetDimAmount_System_Single_" data-uid="Android.View.Window.SetDimAmount(System.Single)">
   SetDimAmount(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1097"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1136"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setDimAmount(float)">https://developer.android.com/reference/android/view/Window.html#setDimAmount(float)</a></p>
@@ -4460,7 +4603,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetElevation_System_Single_" data-uid="Android.View.Window.SetElevation(System.Single)">
   SetElevation(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setElevation(float)">https://developer.android.com/reference/android/view/Window.html#setElevation(float)</a></p>
@@ -4493,7 +4636,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetEnterTransition_Android_Transition_Transition_" data-uid="Android.View.Window.SetEnterTransition(Android.Transition.Transition)">
   SetEnterTransition(Transition)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1152"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setEnterTransition(android.transition.Transition)">https://developer.android.com/reference/android/view/Window.html#setEnterTransition(android.transition.Transition)</a></p>
@@ -4526,7 +4669,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetExitTransition_Android_Transition_Transition_" data-uid="Android.View.Window.SetExitTransition(Android.Transition.Transition)">
   SetExitTransition(Transition)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setExitTransition(android.transition.Transition)">https://developer.android.com/reference/android/view/Window.html#setExitTransition(android.transition.Transition)</a></p>
@@ -4559,7 +4702,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetFeatureDrawable_System_Int32_Android_Graphics_Drawable_Drawable_" data-uid="Android.View.Window.SetFeatureDrawable(System.Int32,Android.Graphics.Drawable.Drawable)">
   SetFeatureDrawable(int, Drawable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L537"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setFeatureDrawable(int,android.graphics.drawable.Drawable)">https://developer.android.com/reference/android/view/Window.html#setFeatureDrawable(int,android.graphics.drawable.Drawable)</a></p>
@@ -4595,7 +4738,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetFeatureDrawableAlpha_System_Int32_System_Int32_" data-uid="Android.View.Window.SetFeatureDrawableAlpha(System.Int32,System.Int32)">
   SetFeatureDrawableAlpha(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L546"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setFeatureDrawableAlpha(int,int)">https://developer.android.com/reference/android/view/Window.html#setFeatureDrawableAlpha(int,int)</a></p>
@@ -4631,7 +4774,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetFeatureDrawableResource_System_Int32_System_Int32_" data-uid="Android.View.Window.SetFeatureDrawableResource(System.Int32,System.Int32)">
   SetFeatureDrawableResource(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L553"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L555"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setFeatureDrawableResource(int,int)">https://developer.android.com/reference/android/view/Window.html#setFeatureDrawableResource(int,int)</a></p>
@@ -4667,7 +4810,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetFeatureDrawableUri_System_Int32_Android_Net_Uri_" data-uid="Android.View.Window.SetFeatureDrawableUri(System.Int32,Android.Net.Uri)">
   SetFeatureDrawableUri(int, Uri)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L562"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L564"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setFeatureDrawableUri(int,android.net.Uri)">https://developer.android.com/reference/android/view/Window.html#setFeatureDrawableUri(int,android.net.Uri)</a></p>
@@ -4703,7 +4846,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetFeatureInt_System_Int32_System_Int32_" data-uid="Android.View.Window.SetFeatureInt(System.Int32,System.Int32)">
   SetFeatureInt(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L573"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setFeatureInt(int,int)">https://developer.android.com/reference/android/view/Window.html#setFeatureInt(int,int)</a></p>
@@ -4739,7 +4882,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetFlags_System_Int32_System_Int32_" data-uid="Android.View.Window.SetFlags(System.Int32,System.Int32)">
   SetFlags(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1169"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setFlags(int,int)">https://developer.android.com/reference/android/view/Window.html#setFlags(int,int)</a></p>
@@ -4775,7 +4918,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetFormat_System_Int32_" data-uid="Android.View.Window.SetFormat(System.Int32)">
   SetFormat(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setFormat(int)">https://developer.android.com/reference/android/view/Window.html#setFormat(int)</a></p>
@@ -4804,11 +4947,77 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
 
 
+  <a id="Android_View_Window_SetFrameRateBoostOnTouchEnabled_" data-uid="Android.View.Window.SetFrameRateBoostOnTouchEnabled*"></a>
+
+  <h3 id="Android_View_Window_SetFrameRateBoostOnTouchEnabled_System_Boolean_" data-uid="Android.View.Window.SetFrameRateBoostOnTouchEnabled(System.Boolean)">
+  SetFrameRateBoostOnTouchEnabled(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setFrameRateBoostOnTouchEnabled(boolean)">https://developer.android.com/reference/android/view/Window.html#setFrameRateBoostOnTouchEnabled(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFrameRateBoostOnTouchEnabled(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Window_SetFrameRatePowerSavingsBalanced_" data-uid="Android.View.Window.SetFrameRatePowerSavingsBalanced*"></a>
+
+  <h3 id="Android_View_Window_SetFrameRatePowerSavingsBalanced_System_Boolean_" data-uid="Android.View.Window.SetFrameRatePowerSavingsBalanced(System.Boolean)">
+  SetFrameRatePowerSavingsBalanced(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setFrameRatePowerSavingsBalanced(boolean)">https://developer.android.com/reference/android/view/Window.html#setFrameRatePowerSavingsBalanced(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFrameRatePowerSavingsBalanced(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_View_Window_SetGravity_" data-uid="Android.View.Window.SetGravity*"></a>
 
   <h3 id="Android_View_Window_SetGravity_System_Int32_" data-uid="Android.View.Window.SetGravity(System.Int32)">
   SetGravity(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setGravity(int)">https://developer.android.com/reference/android/view/Window.html#setGravity(int)</a></p>
@@ -4841,7 +5050,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetHideOverlayWindows_System_Boolean_" data-uid="Android.View.Window.SetHideOverlayWindows(System.Boolean)">
   SetHideOverlayWindows(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L937"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L958"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setHideOverlayWindows(boolean)">https://developer.android.com/reference/android/view/Window.html#setHideOverlayWindows(boolean)</a></p>
@@ -4874,7 +5083,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetIcon_System_Int32_" data-uid="Android.View.Window.SetIcon(System.Int32)">
   SetIcon(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setIcon(int)">https://developer.android.com/reference/android/view/Window.html#setIcon(int)</a></p>
@@ -4907,7 +5116,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetLayout_System_Int32_System_Int32_" data-uid="Android.View.Window.SetLayout(System.Int32,System.Int32)">
   SetLayout(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setLayout(int,int)">https://developer.android.com/reference/android/view/Window.html#setLayout(int,int)</a></p>
@@ -4943,7 +5152,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetLocalFocus_System_Boolean_System_Boolean_" data-uid="Android.View.Window.SetLocalFocus(System.Boolean,System.Boolean)">
   SetLocalFocus(bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setLocalFocus(boolean,boolean)">https://developer.android.com/reference/android/view/Window.html#setLocalFocus(boolean,boolean)</a></p>
@@ -4979,7 +5188,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetLogo_System_Int32_" data-uid="Android.View.Window.SetLogo(System.Int32)">
   SetLogo(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1180"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setLogo(int)">https://developer.android.com/reference/android/view/Window.html#setLogo(int)</a></p>
@@ -5012,7 +5221,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetMediaController_Android_Media_Session_MediaController_" data-uid="Android.View.Window.SetMediaController(Android.Media.Session.MediaController)">
   SetMediaController(MediaController)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1243"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setMediaController(android.media.session.MediaController)">https://developer.android.com/reference/android/view/Window.html#setMediaController(android.media.session.MediaController)</a></p>
@@ -5045,7 +5254,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetNavigationBarColor_System_Int32_" data-uid="Android.View.Window.SetNavigationBarColor(System.Int32)">
   SetNavigationBarColor(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L579"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L581"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setNavigationBarColor(int)">https://developer.android.com/reference/android/view/Window.html#setNavigationBarColor(int)</a></p>
@@ -5053,7 +5262,8 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetNavigationBarColor(int arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetNavigationBarColor(int arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -5078,7 +5288,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetNavigationBarContrastEnforced_System_Boolean_" data-uid="Android.View.Window.SetNavigationBarContrastEnforced(System.Boolean)">
   SetNavigationBarContrastEnforced(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1196"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1251"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setNavigationBarContrastEnforced(boolean)">https://developer.android.com/reference/android/view/Window.html#setNavigationBarContrastEnforced(boolean)</a></p>
@@ -5111,7 +5321,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetNavigationBarDividerColor_System_Int32_" data-uid="Android.View.Window.SetNavigationBarDividerColor(System.Int32)">
   SetNavigationBarDividerColor(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1204"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setNavigationBarDividerColor(int)">https://developer.android.com/reference/android/view/Window.html#setNavigationBarDividerColor(int)</a></p>
@@ -5119,7 +5329,8 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetNavigationBarDividerColor(int arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetNavigationBarDividerColor(int arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -5144,7 +5355,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetPreferMinimalPostProcessing_System_Boolean_" data-uid="Android.View.Window.SetPreferMinimalPostProcessing(System.Boolean)">
   SetPreferMinimalPostProcessing(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1268"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setPreferMinimalPostProcessing(boolean)">https://developer.android.com/reference/android/view/Window.html#setPreferMinimalPostProcessing(boolean)</a></p>
@@ -5177,7 +5388,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetReenterTransition_Android_Transition_Transition_" data-uid="Android.View.Window.SetReenterTransition(Android.Transition.Transition)">
   SetReenterTransition(Transition)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1220"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1276"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setReenterTransition(android.transition.Transition)">https://developer.android.com/reference/android/view/Window.html#setReenterTransition(android.transition.Transition)</a></p>
@@ -5210,7 +5421,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetResizingCaptionDrawable_Android_Graphics_Drawable_Drawable_" data-uid="Android.View.Window.SetResizingCaptionDrawable(Android.Graphics.Drawable.Drawable)">
   SetResizingCaptionDrawable(Drawable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L587"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L590"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setResizingCaptionDrawable(android.graphics.drawable.Drawable)">https://developer.android.com/reference/android/view/Window.html#setResizingCaptionDrawable(android.graphics.drawable.Drawable)</a></p>
@@ -5243,7 +5454,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetRestrictedCaptionAreaListener_Android_View_Window_OnRestrictedCaptionAreaChangedListener_" data-uid="Android.View.Window.SetRestrictedCaptionAreaListener(Android.View.Window.OnRestrictedCaptionAreaChangedListener)">
   SetRestrictedCaptionAreaListener(OnRestrictedCaptionAreaChangedListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L945"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L966"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setRestrictedCaptionAreaListener(android.view.Window.OnRestrictedCaptionAreaChangedListener)">https://developer.android.com/reference/android/view/Window.html#setRestrictedCaptionAreaListener(android.view.Window.OnRestrictedCaptionAreaChangedListener)</a></p>
@@ -5276,7 +5487,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetReturnTransition_Android_Transition_Transition_" data-uid="Android.View.Window.SetReturnTransition(Android.Transition.Transition)">
   SetReturnTransition(Transition)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1228"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1284"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setReturnTransition(android.transition.Transition)">https://developer.android.com/reference/android/view/Window.html#setReturnTransition(android.transition.Transition)</a></p>
@@ -5309,7 +5520,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetSharedElementEnterTransition_Android_Transition_Transition_" data-uid="Android.View.Window.SetSharedElementEnterTransition(Android.Transition.Transition)">
   SetSharedElementEnterTransition(Transition)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1236"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1292"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setSharedElementEnterTransition(android.transition.Transition)">https://developer.android.com/reference/android/view/Window.html#setSharedElementEnterTransition(android.transition.Transition)</a></p>
@@ -5342,7 +5553,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetSharedElementExitTransition_Android_Transition_Transition_" data-uid="Android.View.Window.SetSharedElementExitTransition(Android.Transition.Transition)">
   SetSharedElementExitTransition(Transition)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1244"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1300"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setSharedElementExitTransition(android.transition.Transition)">https://developer.android.com/reference/android/view/Window.html#setSharedElementExitTransition(android.transition.Transition)</a></p>
@@ -5375,7 +5586,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetSharedElementReenterTransition_Android_Transition_Transition_" data-uid="Android.View.Window.SetSharedElementReenterTransition(Android.Transition.Transition)">
   SetSharedElementReenterTransition(Transition)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setSharedElementReenterTransition(android.transition.Transition)">https://developer.android.com/reference/android/view/Window.html#setSharedElementReenterTransition(android.transition.Transition)</a></p>
@@ -5408,7 +5619,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetSharedElementReturnTransition_Android_Transition_Transition_" data-uid="Android.View.Window.SetSharedElementReturnTransition(Android.Transition.Transition)">
   SetSharedElementReturnTransition(Transition)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1260"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1316"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setSharedElementReturnTransition(android.transition.Transition)">https://developer.android.com/reference/android/view/Window.html#setSharedElementReturnTransition(android.transition.Transition)</a></p>
@@ -5441,7 +5652,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetSharedElementsUseOverlay_System_Boolean_" data-uid="Android.View.Window.SetSharedElementsUseOverlay(System.Boolean)">
   SetSharedElementsUseOverlay(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1268"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1324"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setSharedElementsUseOverlay(boolean)">https://developer.android.com/reference/android/view/Window.html#setSharedElementsUseOverlay(boolean)</a></p>
@@ -5474,7 +5685,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetSoftInputMode_System_Int32_" data-uid="Android.View.Window.SetSoftInputMode(System.Int32)">
   SetSoftInputMode(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1276"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1332"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setSoftInputMode(int)">https://developer.android.com/reference/android/view/Window.html#setSoftInputMode(int)</a></p>
@@ -5507,7 +5718,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetStatusBarColor_System_Int32_" data-uid="Android.View.Window.SetStatusBarColor(System.Int32)">
   SetStatusBarColor(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L595"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L598"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setStatusBarColor(int)">https://developer.android.com/reference/android/view/Window.html#setStatusBarColor(int)</a></p>
@@ -5515,7 +5726,8 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetStatusBarColor(int arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetStatusBarColor(int arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -5540,7 +5752,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetStatusBarContrastEnforced_System_Boolean_" data-uid="Android.View.Window.SetStatusBarContrastEnforced(System.Boolean)">
   SetStatusBarContrastEnforced(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1284"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1340"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setStatusBarContrastEnforced(boolean)">https://developer.android.com/reference/android/view/Window.html#setStatusBarContrastEnforced(boolean)</a></p>
@@ -5548,7 +5760,8 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetStatusBarContrastEnforced(bool arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetStatusBarContrastEnforced(bool arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -5573,7 +5786,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetSustainedPerformanceMode_System_Boolean_" data-uid="Android.View.Window.SetSustainedPerformanceMode(System.Boolean)">
   SetSustainedPerformanceMode(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1292"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1349"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setSustainedPerformanceMode(boolean)">https://developer.android.com/reference/android/view/Window.html#setSustainedPerformanceMode(boolean)</a></p>
@@ -5606,7 +5819,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetSystemGestureExclusionRects_Java_Util_List_Android_Graphics_Rect__" data-uid="Android.View.Window.SetSystemGestureExclusionRects(Java.Util.List{Android.Graphics.Rect})">
   SetSystemGestureExclusionRects(List&lt;Rect&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1300"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1357"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setSystemGestureExclusionRects(java.util.List)">https://developer.android.com/reference/android/view/Window.html#setSystemGestureExclusionRects(java.util.List)</a></p>
@@ -5639,7 +5852,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetTitle_Java_Lang_CharSequence_" data-uid="Android.View.Window.SetTitle(Java.Lang.CharSequence)">
   SetTitle(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L603"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L607"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setTitle(java.lang.CharSequence)">https://developer.android.com/reference/android/view/Window.html#setTitle(java.lang.CharSequence)</a></p>
@@ -5672,7 +5885,7 @@ public static int PROGRESS_VISIBILITY_ON { get; }</code></pre>
 
   <h3 id="Android_View_Window_SetTitleColor_System_Int32_" data-uid="Android.View.Window.SetTitleColor(System.Int32)">
   SetTitleColor(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L611"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L615"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setTitleColor(int)">https://developer.android.com/reference/android/view/Window.html#setTitleColor(int)</a></p>
@@ -5706,7 +5919,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_SetTransitionBackgroundFadeDuration_System_Int64_" data-uid="Android.View.Window.SetTransitionBackgroundFadeDuration(System.Int64)">
   SetTransitionBackgroundFadeDuration(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1308"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1365"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setTransitionBackgroundFadeDuration(long)">https://developer.android.com/reference/android/view/Window.html#setTransitionBackgroundFadeDuration(long)</a></p>
@@ -5739,7 +5952,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_SetTransitionManager_Android_Transition_TransitionManager_" data-uid="Android.View.Window.SetTransitionManager(Android.Transition.TransitionManager)">
   SetTransitionManager(TransitionManager)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1316"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1373"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setTransitionManager(android.transition.TransitionManager)">https://developer.android.com/reference/android/view/Window.html#setTransitionManager(android.transition.TransitionManager)</a></p>
@@ -5772,7 +5985,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_SetType_System_Int32_" data-uid="Android.View.Window.SetType(System.Int32)">
   SetType(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1324"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1381"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setType(int)">https://developer.android.com/reference/android/view/Window.html#setType(int)</a></p>
@@ -5805,7 +6018,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_SetUiOptions_System_Int32_" data-uid="Android.View.Window.SetUiOptions(System.Int32)">
   SetUiOptions(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1341"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1398"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setUiOptions(int)">https://developer.android.com/reference/android/view/Window.html#setUiOptions(int)</a></p>
@@ -5838,7 +6051,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_SetUiOptions_System_Int32_System_Int32_" data-uid="Android.View.Window.SetUiOptions(System.Int32,System.Int32)">
   SetUiOptions(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1333"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1390"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setUiOptions(int,int)">https://developer.android.com/reference/android/view/Window.html#setUiOptions(int,int)</a></p>
@@ -5874,7 +6087,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_SetVolumeControlStream_System_Int32_" data-uid="Android.View.Window.SetVolumeControlStream(System.Int32)">
   SetVolumeControlStream(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L620"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L624"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setVolumeControlStream(int)">https://developer.android.com/reference/android/view/Window.html#setVolumeControlStream(int)</a></p>
@@ -5907,7 +6120,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_SetWindowAnimations_System_Int32_" data-uid="Android.View.Window.SetWindowAnimations(System.Int32)">
   SetWindowAnimations(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1349"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1406"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setWindowAnimations(int)">https://developer.android.com/reference/android/view/Window.html#setWindowAnimations(int)</a></p>
@@ -5940,7 +6153,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_SetWindowManager_Android_View_WindowManager_Android_Os_IBinder_Java_Lang_String_" data-uid="Android.View.Window.SetWindowManager(Android.View.WindowManager,Android.Os.IBinder,Java.Lang.String)">
   SetWindowManager(WindowManager, IBinder, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1370"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1427"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setWindowManager(android.view.WindowManager,android.os.IBinder,java.lang.String)">https://developer.android.com/reference/android/view/Window.html#setWindowManager(android.view.WindowManager,android.os.IBinder,java.lang.String)</a></p>
@@ -5979,7 +6192,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_SetWindowManager_Android_View_WindowManager_Android_Os_IBinder_Java_Lang_String_System_Boolean_" data-uid="Android.View.Window.SetWindowManager(Android.View.WindowManager,Android.Os.IBinder,Java.Lang.String,System.Boolean)">
   SetWindowManager(WindowManager, IBinder, String, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1360"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1417"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#setWindowManager(android.view.WindowManager,android.os.IBinder,java.lang.String,boolean)">https://developer.android.com/reference/android/view/Window.html#setWindowManager(android.view.WindowManager,android.os.IBinder,java.lang.String,boolean)</a></p>
@@ -6216,7 +6429,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_TakeInputQueue_Android_View_InputQueue_Callback_" data-uid="Android.View.Window.TakeInputQueue(Android.View.InputQueue.Callback)">
   TakeInputQueue(Callback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L632"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#takeInputQueue(android.view.InputQueue.Callback)">https://developer.android.com/reference/android/view/Window.html#takeInputQueue(android.view.InputQueue.Callback)</a></p>
@@ -6249,7 +6462,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_TakeKeyEvents_System_Boolean_" data-uid="Android.View.Window.TakeKeyEvents(System.Boolean)">
   TakeKeyEvents(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L636"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L640"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#takeKeyEvents(boolean)">https://developer.android.com/reference/android/view/Window.html#takeKeyEvents(boolean)</a></p>
@@ -6282,7 +6495,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_TakeSurface_Android_View_SurfaceHolder_Callback2_" data-uid="Android.View.Window.TakeSurface(Android.View.SurfaceHolder.Callback2)">
   TakeSurface(Callback2)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L644"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L648"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#takeSurface(android.view.SurfaceHolder.Callback2)">https://developer.android.com/reference/android/view/Window.html#takeSurface(android.view.SurfaceHolder.Callback2)</a></p>
@@ -6315,7 +6528,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_TogglePanel_System_Int32_Android_View_KeyEvent_" data-uid="Android.View.Window.TogglePanel(System.Int32,Android.View.KeyEvent)">
   TogglePanel(int, KeyEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L653"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L657"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#togglePanel(int,android.view.KeyEvent)">https://developer.android.com/reference/android/view/Window.html#togglePanel(int,android.view.KeyEvent)</a></p>
@@ -6351,7 +6564,7 @@ public void SetTitleColor(int arg0)</code></pre>
 
   <h3 id="Android_View_Window_UnregisterScrollCaptureCallback_Android_View_ScrollCaptureCallback_" data-uid="Android.View.Window.UnregisterScrollCaptureCallback(Android.View.ScrollCaptureCallback)">
   UnregisterScrollCaptureCallback(ScrollCaptureCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1378"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Window.cs/#L1435"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/Window.html#unregisterScrollCaptureCallback(android.view.ScrollCaptureCallback)">https://developer.android.com/reference/android/view/Window.html#unregisterScrollCaptureCallback(android.view.ScrollCaptureCallback)</a></p>

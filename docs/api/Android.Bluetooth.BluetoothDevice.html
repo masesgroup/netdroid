@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -326,6 +326,12 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -481,7 +487,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -497,7 +503,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice__ctor" data-uid="Android.Bluetooth.BluetoothDevice.#ctor">
   BluetoothDevice()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L613"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L671"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -524,7 +530,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice__ctor_System_Object___" data-uid="Android.Bluetooth.BluetoothDevice.#ctor(System.Object[])">
   BluetoothDevice(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L617"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L675"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -560,7 +566,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ACTION_ACL_CONNECTED" data-uid="Android.Bluetooth.BluetoothDevice.ACTION_ACL_CONNECTED">
   ACTION_ACL_CONNECTED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_ACL_CONNECTED">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_ACL_CONNECTED</a></p>
@@ -592,7 +598,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ACTION_ACL_DISCONNECTED" data-uid="Android.Bluetooth.BluetoothDevice.ACTION_ACL_DISCONNECTED">
   ACTION_ACL_DISCONNECTED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L217"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_ACL_DISCONNECTED">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_ACL_DISCONNECTED</a></p>
@@ -624,7 +630,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ACTION_ACL_DISCONNECT_REQUESTED" data-uid="Android.Bluetooth.BluetoothDevice.ACTION_ACL_DISCONNECT_REQUESTED">
   ACTION_ACL_DISCONNECT_REQUESTED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_ACL_DISCONNECT_REQUESTED">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_ACL_DISCONNECT_REQUESTED</a></p>
@@ -656,7 +662,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ACTION_ALIAS_CHANGED" data-uid="Android.Bluetooth.BluetoothDevice.ACTION_ALIAS_CHANGED">
   ACTION_ALIAS_CHANGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_ALIAS_CHANGED">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_ALIAS_CHANGED</a></p>
@@ -688,7 +694,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ACTION_BOND_STATE_CHANGED" data-uid="Android.Bluetooth.BluetoothDevice.ACTION_BOND_STATE_CHANGED">
   ACTION_BOND_STATE_CHANGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_BOND_STATE_CHANGED">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_BOND_STATE_CHANGED</a></p>
@@ -720,7 +726,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ACTION_CLASS_CHANGED" data-uid="Android.Bluetooth.BluetoothDevice.ACTION_CLASS_CHANGED">
   ACTION_CLASS_CHANGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_CLASS_CHANGED">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_CLASS_CHANGED</a></p>
@@ -752,7 +758,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ACTION_FOUND" data-uid="Android.Bluetooth.BluetoothDevice.ACTION_FOUND">
   ACTION_FOUND
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_FOUND">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_FOUND</a></p>
@@ -784,7 +790,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ACTION_NAME_CHANGED" data-uid="Android.Bluetooth.BluetoothDevice.ACTION_NAME_CHANGED">
   ACTION_NAME_CHANGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_NAME_CHANGED">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_NAME_CHANGED</a></p>
@@ -816,7 +822,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ACTION_PAIRING_REQUEST" data-uid="Android.Bluetooth.BluetoothDevice.ACTION_PAIRING_REQUEST">
   ACTION_PAIRING_REQUEST
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_PAIRING_REQUEST">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_PAIRING_REQUEST</a></p>
@@ -848,7 +854,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ACTION_UUID" data-uid="Android.Bluetooth.BluetoothDevice.ACTION_UUID">
   ACTION_UUID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_UUID">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ACTION_UUID</a></p>
@@ -876,11 +882,43 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="Android_Bluetooth_BluetoothDevice_ADDRESS_TYPE_ANONYMOUS_" data-uid="Android.Bluetooth.BluetoothDevice.ADDRESS_TYPE_ANONYMOUS*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothDevice_ADDRESS_TYPE_ANONYMOUS" data-uid="Android.Bluetooth.BluetoothDevice.ADDRESS_TYPE_ANONYMOUS">
+  ADDRESS_TYPE_ANONYMOUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_ANONYMOUS">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_ANONYMOUS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ADDRESS_TYPE_ANONYMOUS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Bluetooth_BluetoothDevice_ADDRESS_TYPE_PUBLIC_" data-uid="Android.Bluetooth.BluetoothDevice.ADDRESS_TYPE_PUBLIC*"></a>
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ADDRESS_TYPE_PUBLIC" data-uid="Android.Bluetooth.BluetoothDevice.ADDRESS_TYPE_PUBLIC">
   ADDRESS_TYPE_PUBLIC
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_PUBLIC">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_PUBLIC</a></p>
@@ -912,7 +950,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ADDRESS_TYPE_RANDOM" data-uid="Android.Bluetooth.BluetoothDevice.ADDRESS_TYPE_RANDOM">
   ADDRESS_TYPE_RANDOM
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_RANDOM">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_RANDOM</a></p>
@@ -944,7 +982,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ADDRESS_TYPE_UNKNOWN" data-uid="Android.Bluetooth.BluetoothDevice.ADDRESS_TYPE_UNKNOWN">
   ADDRESS_TYPE_UNKNOWN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_UNKNOWN">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ADDRESS_TYPE_UNKNOWN</a></p>
@@ -976,7 +1014,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_BOND_BONDED" data-uid="Android.Bluetooth.BluetoothDevice.BOND_BONDED">
   BOND_BONDED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#BOND_BONDED">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#BOND_BONDED</a></p>
@@ -1008,7 +1046,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_BOND_BONDING" data-uid="Android.Bluetooth.BluetoothDevice.BOND_BONDING">
   BOND_BONDING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#BOND_BONDING">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#BOND_BONDING</a></p>
@@ -1040,7 +1078,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_BOND_NONE" data-uid="Android.Bluetooth.BluetoothDevice.BOND_NONE">
   BOND_NONE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#BOND_NONE">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#BOND_NONE</a></p>
@@ -1072,7 +1110,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_BridgeClassName" data-uid="Android.Bluetooth.BluetoothDevice.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L624"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L683"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -1136,7 +1174,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_DEVICE_TYPE_CLASSIC" data-uid="Android.Bluetooth.BluetoothDevice.DEVICE_TYPE_CLASSIC">
   DEVICE_TYPE_CLASSIC
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#DEVICE_TYPE_CLASSIC">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#DEVICE_TYPE_CLASSIC</a></p>
@@ -1168,7 +1206,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_DEVICE_TYPE_DUAL" data-uid="Android.Bluetooth.BluetoothDevice.DEVICE_TYPE_DUAL">
   DEVICE_TYPE_DUAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#DEVICE_TYPE_DUAL">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#DEVICE_TYPE_DUAL</a></p>
@@ -1200,7 +1238,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_DEVICE_TYPE_LE" data-uid="Android.Bluetooth.BluetoothDevice.DEVICE_TYPE_LE">
   DEVICE_TYPE_LE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#DEVICE_TYPE_LE">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#DEVICE_TYPE_LE</a></p>
@@ -1232,7 +1270,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_DEVICE_TYPE_UNKNOWN" data-uid="Android.Bluetooth.BluetoothDevice.DEVICE_TYPE_UNKNOWN">
   DEVICE_TYPE_UNKNOWN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#DEVICE_TYPE_UNKNOWN">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#DEVICE_TYPE_UNKNOWN</a></p>
@@ -1264,7 +1302,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ERROR" data-uid="Android.Bluetooth.BluetoothDevice.ERROR">
   ERROR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ERROR">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#ERROR</a></p>
@@ -1296,7 +1334,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_EXTRA_BOND_STATE" data-uid="Android.Bluetooth.BluetoothDevice.EXTRA_BOND_STATE">
   EXTRA_BOND_STATE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L265"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_BOND_STATE">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_BOND_STATE</a></p>
@@ -1328,7 +1366,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_EXTRA_CLASS" data-uid="Android.Bluetooth.BluetoothDevice.EXTRA_CLASS">
   EXTRA_CLASS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L271"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_CLASS">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_CLASS</a></p>
@@ -1360,7 +1398,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_EXTRA_DEVICE" data-uid="Android.Bluetooth.BluetoothDevice.EXTRA_DEVICE">
   EXTRA_DEVICE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L277"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_DEVICE">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_DEVICE</a></p>
@@ -1392,7 +1430,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_EXTRA_IS_COORDINATED_SET_MEMBER" data-uid="Android.Bluetooth.BluetoothDevice.EXTRA_IS_COORDINATED_SET_MEMBER">
   EXTRA_IS_COORDINATED_SET_MEMBER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L283"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_IS_COORDINATED_SET_MEMBER">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_IS_COORDINATED_SET_MEMBER</a></p>
@@ -1424,7 +1462,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_EXTRA_NAME" data-uid="Android.Bluetooth.BluetoothDevice.EXTRA_NAME">
   EXTRA_NAME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_NAME">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_NAME</a></p>
@@ -1456,7 +1494,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_EXTRA_PAIRING_KEY" data-uid="Android.Bluetooth.BluetoothDevice.EXTRA_PAIRING_KEY">
   EXTRA_PAIRING_KEY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_PAIRING_KEY">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_PAIRING_KEY</a></p>
@@ -1488,7 +1526,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_EXTRA_PAIRING_VARIANT" data-uid="Android.Bluetooth.BluetoothDevice.EXTRA_PAIRING_VARIANT">
   EXTRA_PAIRING_VARIANT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L301"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_PAIRING_VARIANT">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_PAIRING_VARIANT</a></p>
@@ -1520,7 +1558,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_EXTRA_PREVIOUS_BOND_STATE" data-uid="Android.Bluetooth.BluetoothDevice.EXTRA_PREVIOUS_BOND_STATE">
   EXTRA_PREVIOUS_BOND_STATE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L307"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_PREVIOUS_BOND_STATE">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_PREVIOUS_BOND_STATE</a></p>
@@ -1552,7 +1590,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_EXTRA_RSSI" data-uid="Android.Bluetooth.BluetoothDevice.EXTRA_RSSI">
   EXTRA_RSSI
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L313"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_RSSI">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_RSSI</a></p>
@@ -1584,7 +1622,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_EXTRA_TRANSPORT" data-uid="Android.Bluetooth.BluetoothDevice.EXTRA_TRANSPORT">
   EXTRA_TRANSPORT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L319"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_TRANSPORT">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_TRANSPORT</a></p>
@@ -1616,7 +1654,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_EXTRA_UUID" data-uid="Android.Bluetooth.BluetoothDevice.EXTRA_UUID">
   EXTRA_UUID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L325"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_UUID">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#EXTRA_UUID</a></p>
@@ -1648,7 +1686,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_IsBridgeAbstract" data-uid="Android.Bluetooth.BluetoothDevice.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L687"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1680,7 +1718,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_IsBridgeCloseable" data-uid="Android.Bluetooth.BluetoothDevice.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L632"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L691"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1712,7 +1750,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_IsBridgeInterface" data-uid="Android.Bluetooth.BluetoothDevice.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L636"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L695"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1744,7 +1782,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_IsBridgeStatic" data-uid="Android.Bluetooth.BluetoothDevice.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L640"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L699"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1776,7 +1814,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_PAIRING_VARIANT_PASSKEY_CONFIRMATION" data-uid="Android.Bluetooth.BluetoothDevice.PAIRING_VARIANT_PASSKEY_CONFIRMATION">
   PAIRING_VARIANT_PASSKEY_CONFIRMATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PAIRING_VARIANT_PASSKEY_CONFIRMATION">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PAIRING_VARIANT_PASSKEY_CONFIRMATION</a></p>
@@ -1808,7 +1846,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_PAIRING_VARIANT_PIN" data-uid="Android.Bluetooth.BluetoothDevice.PAIRING_VARIANT_PIN">
   PAIRING_VARIANT_PIN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PAIRING_VARIANT_PIN">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PAIRING_VARIANT_PIN</a></p>
@@ -1840,7 +1878,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_PHY_LE_1M" data-uid="Android.Bluetooth.BluetoothDevice.PHY_LE_1M">
   PHY_LE_1M
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_LE_1M">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_LE_1M</a></p>
@@ -1872,7 +1910,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_PHY_LE_1M_MASK" data-uid="Android.Bluetooth.BluetoothDevice.PHY_LE_1M_MASK">
   PHY_LE_1M_MASK
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_LE_1M_MASK">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_LE_1M_MASK</a></p>
@@ -1904,7 +1942,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_PHY_LE_2M" data-uid="Android.Bluetooth.BluetoothDevice.PHY_LE_2M">
   PHY_LE_2M
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_LE_2M">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_LE_2M</a></p>
@@ -1936,7 +1974,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_PHY_LE_2M_MASK" data-uid="Android.Bluetooth.BluetoothDevice.PHY_LE_2M_MASK">
   PHY_LE_2M_MASK
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_LE_2M_MASK">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_LE_2M_MASK</a></p>
@@ -1968,7 +2006,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_PHY_LE_CODED" data-uid="Android.Bluetooth.BluetoothDevice.PHY_LE_CODED">
   PHY_LE_CODED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_LE_CODED">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_LE_CODED</a></p>
@@ -2000,7 +2038,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_PHY_LE_CODED_MASK" data-uid="Android.Bluetooth.BluetoothDevice.PHY_LE_CODED_MASK">
   PHY_LE_CODED_MASK
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_LE_CODED_MASK">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_LE_CODED_MASK</a></p>
@@ -2032,7 +2070,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_PHY_OPTION_NO_PREFERRED" data-uid="Android.Bluetooth.BluetoothDevice.PHY_OPTION_NO_PREFERRED">
   PHY_OPTION_NO_PREFERRED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L169"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_OPTION_NO_PREFERRED">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_OPTION_NO_PREFERRED</a></p>
@@ -2064,7 +2102,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_PHY_OPTION_S2" data-uid="Android.Bluetooth.BluetoothDevice.PHY_OPTION_S2">
   PHY_OPTION_S2
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_OPTION_S2">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_OPTION_S2</a></p>
@@ -2096,7 +2134,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_PHY_OPTION_S8" data-uid="Android.Bluetooth.BluetoothDevice.PHY_OPTION_S8">
   PHY_OPTION_S8
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_OPTION_S8">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#PHY_OPTION_S8</a></p>
@@ -2128,7 +2166,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_TRANSPORT_AUTO" data-uid="Android.Bluetooth.BluetoothDevice.TRANSPORT_AUTO">
   TRANSPORT_AUTO
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#TRANSPORT_AUTO">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#TRANSPORT_AUTO</a></p>
@@ -2160,7 +2198,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_TRANSPORT_BREDR" data-uid="Android.Bluetooth.BluetoothDevice.TRANSPORT_BREDR">
   TRANSPORT_BREDR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#TRANSPORT_BREDR">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#TRANSPORT_BREDR</a></p>
@@ -2192,7 +2230,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_TRANSPORT_LE" data-uid="Android.Bluetooth.BluetoothDevice.TRANSPORT_LE">
   TRANSPORT_LE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L199"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#TRANSPORT_LE">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#TRANSPORT_LE</a></p>
@@ -2228,7 +2266,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ConnectGatt_Android_Content_Context_System_Boolean_Android_Bluetooth_BluetoothGattCallback_" data-uid="Android.Bluetooth.BluetoothDevice.ConnectGatt(Android.Content.Context,System.Boolean,Android.Bluetooth.BluetoothGattCallback)">
   ConnectGatt(Context, bool, BluetoothGattCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L390"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,boolean,android.bluetooth.BluetoothGattCallback)">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,boolean,android.bluetooth.BluetoothGattCallback)</a></p>
@@ -2273,7 +2311,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ConnectGatt_Android_Content_Context_System_Boolean_Android_Bluetooth_BluetoothGattCallback_System_Int32_" data-uid="Android.Bluetooth.BluetoothDevice.ConnectGatt(Android.Content.Context,System.Boolean,Android.Bluetooth.BluetoothGattCallback,System.Int32)">
   ConnectGatt(Context, bool, BluetoothGattCallback, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L379"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,boolean,android.bluetooth.BluetoothGattCallback,int)">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,boolean,android.bluetooth.BluetoothGattCallback,int)</a></p>
@@ -2321,7 +2359,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ConnectGatt_Android_Content_Context_System_Boolean_Android_Bluetooth_BluetoothGattCallback_System_Int32_System_Int32_" data-uid="Android.Bluetooth.BluetoothDevice.ConnectGatt(Android.Content.Context,System.Boolean,Android.Bluetooth.BluetoothGattCallback,System.Int32,System.Int32)">
   ConnectGatt(Context, bool, BluetoothGattCallback, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,boolean,android.bluetooth.BluetoothGattCallback,int,int)">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,boolean,android.bluetooth.BluetoothGattCallback,int,int)</a></p>
@@ -2372,7 +2410,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_ConnectGatt_Android_Content_Context_System_Boolean_Android_Bluetooth_BluetoothGattCallback_System_Int32_System_Int32_Android_Os_Handler_" data-uid="Android.Bluetooth.BluetoothDevice.ConnectGatt(Android.Content.Context,System.Boolean,Android.Bluetooth.BluetoothGattCallback,System.Int32,System.Int32,Android.Os.Handler)">
   ConnectGatt(Context, bool, BluetoothGattCallback, int, int, Handler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L354"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,boolean,android.bluetooth.BluetoothGattCallback,int,int,android.os.Handler)">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,boolean,android.bluetooth.BluetoothGattCallback,int,int,android.os.Handler)</a></p>
@@ -2426,7 +2464,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_CreateBond" data-uid="Android.Bluetooth.BluetoothDevice.CreateBond">
   CreateBond()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L446"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createBond()">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createBond()</a></p>
@@ -2459,7 +2497,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_CreateInsecureL2capChannel_System_Int32_" data-uid="Android.Bluetooth.BluetoothDevice.CreateInsecureL2capChannel(System.Int32)">
   CreateInsecureL2capChannel(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L400"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createInsecureL2capChannel(int)">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createInsecureL2capChannel(int)</a></p>
@@ -2503,7 +2541,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_CreateInsecureRfcommSocketToServiceRecord_Java_Util_UUID_" data-uid="Android.Bluetooth.BluetoothDevice.CreateInsecureRfcommSocketToServiceRecord(Java.Util.UUID)">
   CreateInsecureRfcommSocketToServiceRecord(UUID)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L404"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L410"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createInsecureRfcommSocketToServiceRecord(java.util.UUID)">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createInsecureRfcommSocketToServiceRecord(java.util.UUID)</a></p>
@@ -2547,7 +2585,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_CreateL2capChannel_System_Int32_" data-uid="Android.Bluetooth.BluetoothDevice.CreateL2capChannel(System.Int32)">
   CreateL2capChannel(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L420"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createL2capChannel(int)">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createL2capChannel(int)</a></p>
@@ -2591,7 +2629,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_CreateRfcommSocketToServiceRecord_Java_Util_UUID_" data-uid="Android.Bluetooth.BluetoothDevice.CreateRfcommSocketToServiceRecord(Java.Util.UUID)">
   CreateRfcommSocketToServiceRecord(UUID)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L430"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createRfcommSocketToServiceRecord(java.util.UUID)">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createRfcommSocketToServiceRecord(java.util.UUID)</a></p>
@@ -2635,7 +2673,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_DescribeContents" data-uid="Android.Bluetooth.BluetoothDevice.DescribeContents">
   DescribeContents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L480"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#describeContents()">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#describeContents()</a></p>
@@ -2668,7 +2706,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_FetchUuidsWithSdp" data-uid="Android.Bluetooth.BluetoothDevice.FetchUuidsWithSdp">
   FetchUuidsWithSdp()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L454"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#fetchUuidsWithSdp()">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#fetchUuidsWithSdp()</a></p>
@@ -2701,7 +2739,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_GetAddress" data-uid="Android.Bluetooth.BluetoothDevice.GetAddress">
   GetAddress()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L507"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L521"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getAddress()">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getAddress()</a></p>
@@ -2730,11 +2768,44 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="Android_Bluetooth_BluetoothDevice_GetAddressType_" data-uid="Android.Bluetooth.BluetoothDevice.GetAddressType*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothDevice_GetAddressType" data-uid="Android.Bluetooth.BluetoothDevice.GetAddressType">
+  GetAddressType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L488"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getAddressType()">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getAddressType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAddressType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Bluetooth_BluetoothDevice_GetAlias_" data-uid="Android.Bluetooth.BluetoothDevice.GetAlias*"></a>
 
   <h3 id="Android_Bluetooth_BluetoothDevice_GetAlias" data-uid="Android.Bluetooth.BluetoothDevice.GetAlias">
   GetAlias()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L515"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L529"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getAlias()">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getAlias()</a></p>
@@ -2767,7 +2838,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_GetBluetoothClass" data-uid="Android.Bluetooth.BluetoothDevice.GetBluetoothClass">
   GetBluetoothClass()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L340"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getBluetoothClass()">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getBluetoothClass()</a></p>
@@ -2800,7 +2871,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_GetBondState" data-uid="Android.Bluetooth.BluetoothDevice.GetBondState">
   GetBondState()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L496"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getBondState()">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getBondState()</a></p>
@@ -2833,7 +2904,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_GetName" data-uid="Android.Bluetooth.BluetoothDevice.GetName">
   GetName()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L537"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getName()">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getName()</a></p>
@@ -2866,7 +2937,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_GetType" data-uid="Android.Bluetooth.BluetoothDevice.GetType">
   GetType()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L504"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getType()">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getType()</a></p>
@@ -2899,7 +2970,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_GetUuids" data-uid="Android.Bluetooth.BluetoothDevice.GetUuids">
   GetUuids()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L432"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L438"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getUuids()">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getUuids()</a></p>
@@ -2932,7 +3003,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_SetAlias_Java_Lang_String_" data-uid="Android.Bluetooth.BluetoothDevice.SetAlias(Java.Lang.String)">
   SetAlias(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L499"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L513"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#setAlias(java.lang.String)">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#setAlias(java.lang.String)</a></p>
@@ -2971,7 +3042,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_SetPairingConfirmation_System_Boolean_" data-uid="Android.Bluetooth.BluetoothDevice.SetPairingConfirmation(System.Boolean)">
   SetPairingConfirmation(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L463"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#setPairingConfirmation(boolean)">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#setPairingConfirmation(boolean)</a></p>
@@ -3010,7 +3081,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_SetPin_System_Byte___" data-uid="Android.Bluetooth.BluetoothDevice.SetPin(System.Byte[])">
   SetPin(byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L472"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#setPin(byte[])">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#setPin(byte[])</a></p>
@@ -3049,7 +3120,7 @@ Class BluetoothDevice  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_Bluetooth_BluetoothDevice_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Bluetooth.BluetoothDevice.WriteToParcel(Android.Os.Parcel,System.Int32)">
   WriteToParcel(Parcel, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothDevice.cs/#L546"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#writeToParcel(android.os.Parcel,int)</a></p>

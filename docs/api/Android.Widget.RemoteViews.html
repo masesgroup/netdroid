@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -319,6 +319,12 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -477,7 +483,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -493,7 +499,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews__ctor" data-uid="Android.Widget.RemoteViews.#ctor">
   RemoteViews()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5558"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5698"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -620,9 +626,42 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <a id="Android_Widget_RemoteViews__ctor_" data-uid="Android.Widget.RemoteViews.#ctor*"></a>
 
+  <h3 id="Android_Widget_RemoteViews__ctor_Android_Widget_RemoteViews_DrawInstructions_" data-uid="Android.Widget.RemoteViews.#ctor(Android.Widget.RemoteViews.DrawInstructions)">
+  RemoteViews(DrawInstructions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#%3Cinit%3E(android.widget.RemoteViews.DrawInstructions)">https://developer.android.com/reference/android/widget/RemoteViews.html#%3Cinit%3E(android.widget.RemoteViews.DrawInstructions)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RemoteViews(RemoteViews.DrawInstructions arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Widget.RemoteViews.html">RemoteViews</a>.<a class="xref" href="Android.Widget.RemoteViews.DrawInstructions.html">DrawInstructions</a></dt>
+    <dd><p><a class="xref" href="Android.Widget.RemoteViews.DrawInstructions.html">RemoteViews.DrawInstructions</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Widget_RemoteViews__ctor_" data-uid="Android.Widget.RemoteViews.#ctor*"></a>
+
   <h3 id="Android_Widget_RemoteViews__ctor_Java_Lang_String_System_Int32_" data-uid="Android.Widget.RemoteViews.#ctor(Java.Lang.String,System.Int32)">
   RemoteViews(String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#%3Cinit%3E(java.lang.String,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#%3Cinit%3E(java.lang.String,int)</a></p>
@@ -658,7 +697,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews__ctor_Java_Lang_String_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.#ctor(Java.Lang.String,System.Int32,System.Int32)">
   RemoteViews(String, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#%3Cinit%3E(java.lang.String,int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#%3Cinit%3E(java.lang.String,int,int)</a></p>
@@ -697,7 +736,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews__ctor_Java_Util_Map_Android_Util_SizeF_Android_Widget_RemoteViews__" data-uid="Android.Widget.RemoteViews.#ctor(Java.Util.Map{Android.Util.SizeF,Android.Widget.RemoteViews})">
   RemoteViews(Map&lt;SizeF, RemoteViews&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#%3Cinit%3E(java.util.Map)">https://developer.android.com/reference/android/widget/RemoteViews.html#%3Cinit%3E(java.util.Map)</a></p>
@@ -730,7 +769,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews__ctor_System_Object___" data-uid="Android.Widget.RemoteViews.#ctor(System.Object[])">
   RemoteViews(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5562"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5702"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -766,7 +805,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_BridgeClassName" data-uid="Android.Widget.RemoteViews.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5569"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5710"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -798,7 +837,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_CREATOR" data-uid="Android.Widget.RemoteViews.CREATOR">
   CREATOR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#CREATOR">https://developer.android.com/reference/android/widget/RemoteViews.html#CREATOR</a></p>
@@ -830,7 +869,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_EXTRA_CHECKED" data-uid="Android.Widget.RemoteViews.EXTRA_CHECKED">
   EXTRA_CHECKED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#EXTRA_CHECKED">https://developer.android.com/reference/android/widget/RemoteViews.html#EXTRA_CHECKED</a></p>
@@ -862,7 +901,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_EXTRA_SHARED_ELEMENT_BOUNDS" data-uid="Android.Widget.RemoteViews.EXTRA_SHARED_ELEMENT_BOUNDS">
   EXTRA_SHARED_ELEMENT_BOUNDS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#EXTRA_SHARED_ELEMENT_BOUNDS">https://developer.android.com/reference/android/widget/RemoteViews.html#EXTRA_SHARED_ELEMENT_BOUNDS</a></p>
@@ -894,7 +933,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_IsBridgeAbstract" data-uid="Android.Widget.RemoteViews.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5573"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5714"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -926,7 +965,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_IsBridgeCloseable" data-uid="Android.Widget.RemoteViews.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5577"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5718"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -958,7 +997,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_IsBridgeInterface" data-uid="Android.Widget.RemoteViews.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5581"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5722"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -990,7 +1029,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_IsBridgeStatic" data-uid="Android.Widget.RemoteViews.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5585"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/AllPackageClasses.cs/#L5726"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1022,7 +1061,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_MARGIN_BOTTOM" data-uid="Android.Widget.RemoteViews.MARGIN_BOTTOM">
   MARGIN_BOTTOM
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#MARGIN_BOTTOM">https://developer.android.com/reference/android/widget/RemoteViews.html#MARGIN_BOTTOM</a></p>
@@ -1054,7 +1093,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_MARGIN_END" data-uid="Android.Widget.RemoteViews.MARGIN_END">
   MARGIN_END
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#MARGIN_END">https://developer.android.com/reference/android/widget/RemoteViews.html#MARGIN_END</a></p>
@@ -1086,7 +1125,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_MARGIN_LEFT" data-uid="Android.Widget.RemoteViews.MARGIN_LEFT">
   MARGIN_LEFT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#MARGIN_LEFT">https://developer.android.com/reference/android/widget/RemoteViews.html#MARGIN_LEFT</a></p>
@@ -1118,7 +1157,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_MARGIN_RIGHT" data-uid="Android.Widget.RemoteViews.MARGIN_RIGHT">
   MARGIN_RIGHT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#MARGIN_RIGHT">https://developer.android.com/reference/android/widget/RemoteViews.html#MARGIN_RIGHT</a></p>
@@ -1150,7 +1189,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_MARGIN_START" data-uid="Android.Widget.RemoteViews.MARGIN_START">
   MARGIN_START
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#MARGIN_START">https://developer.android.com/reference/android/widget/RemoteViews.html#MARGIN_START</a></p>
@@ -1182,7 +1221,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_MARGIN_TOP" data-uid="Android.Widget.RemoteViews.MARGIN_TOP">
   MARGIN_TOP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#MARGIN_TOP">https://developer.android.com/reference/android/widget/RemoteViews.html#MARGIN_TOP</a></p>
@@ -1218,7 +1257,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_AddStableView_System_Int32_Android_Widget_RemoteViews_System_Int32_" data-uid="Android.Widget.RemoteViews.AddStableView(System.Int32,Android.Widget.RemoteViews,System.Int32)">
   AddStableView(int, RemoteViews, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#addStableView(int,android.widget.RemoteViews,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#addStableView(int,android.widget.RemoteViews,int)</a></p>
@@ -1257,7 +1296,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_AddView_System_Int32_Android_Widget_RemoteViews_" data-uid="Android.Widget.RemoteViews.AddView(System.Int32,Android.Widget.RemoteViews)">
   AddView(int, RemoteViews)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L242"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#addView(int,android.widget.RemoteViews)">https://developer.android.com/reference/android/widget/RemoteViews.html#addView(int,android.widget.RemoteViews)</a></p>
@@ -1293,7 +1332,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_Apply_Android_Content_Context_Android_View_ViewGroup_" data-uid="Android.Widget.RemoteViews.Apply(Android.Content.Context,Android.View.ViewGroup)">
   Apply(Context, ViewGroup)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#apply(android.content.Context,android.view.ViewGroup)">https://developer.android.com/reference/android/widget/RemoteViews.html#apply(android.content.Context,android.view.ViewGroup)</a></p>
@@ -1335,7 +1374,7 @@ Class RemoteViews  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Widget_RemoteViews_Clone" data-uid="Android.Widget.RemoteViews.Clone">
   Clone()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L180"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#clone()">https://developer.android.com/reference/android/widget/RemoteViews.html#clone()</a></p>
@@ -1369,7 +1408,7 @@ public RemoteViews Clone()</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_DescribeContents" data-uid="Android.Widget.RemoteViews.DescribeContents">
   DescribeContents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L199"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#describeContents()">https://developer.android.com/reference/android/widget/RemoteViews.html#describeContents()</a></p>
@@ -1402,7 +1441,7 @@ public RemoteViews Clone()</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_GetLayoutId" data-uid="Android.Widget.RemoteViews.GetLayoutId">
   GetLayoutId()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L207"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#getLayoutId()">https://developer.android.com/reference/android/widget/RemoteViews.html#getLayoutId()</a></p>
@@ -1435,7 +1474,7 @@ public RemoteViews Clone()</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_GetPackage" data-uid="Android.Widget.RemoteViews.GetPackage">
   GetPackage()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#getPackage()">https://developer.android.com/reference/android/widget/RemoteViews.html#getPackage()</a></p>
@@ -1468,7 +1507,7 @@ public RemoteViews Clone()</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_GetViewId" data-uid="Android.Widget.RemoteViews.GetViewId">
   GetViewId()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#getViewId()">https://developer.android.com/reference/android/widget/RemoteViews.html#getViewId()</a></p>
@@ -1501,7 +1540,7 @@ public RemoteViews Clone()</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_OnLoadClass_Java_Lang_Class_" data-uid="Android.Widget.RemoteViews.OnLoadClass(Java.Lang.Class)">
   OnLoadClass(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L190"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#onLoadClass(java.lang.Class)">https://developer.android.com/reference/android/widget/RemoteViews.html#onLoadClass(java.lang.Class)</a></p>
@@ -1541,7 +1580,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_Reapply_Android_Content_Context_Android_View_View_" data-uid="Android.Widget.RemoteViews.Reapply(Android.Content.Context,Android.View.View)">
   Reapply(Context, View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L251"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#reapply(android.content.Context,android.view.View)">https://developer.android.com/reference/android/widget/RemoteViews.html#reapply(android.content.Context,android.view.View)</a></p>
@@ -1577,7 +1616,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_RemoveAllViews_System_Int32_" data-uid="Android.Widget.RemoteViews.RemoveAllViews(System.Int32)">
   RemoveAllViews(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#removeAllViews(int)">https://developer.android.com/reference/android/widget/RemoteViews.html#removeAllViews(int)</a></p>
@@ -1610,7 +1649,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetAccessibilityTraversalAfter_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetAccessibilityTraversalAfter(System.Int32,System.Int32)">
   SetAccessibilityTraversalAfter(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L268"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setAccessibilityTraversalAfter(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setAccessibilityTraversalAfter(int,int)</a></p>
@@ -1646,7 +1685,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetAccessibilityTraversalBefore_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetAccessibilityTraversalBefore(System.Int32,System.Int32)">
   SetAccessibilityTraversalBefore(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L277"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setAccessibilityTraversalBefore(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setAccessibilityTraversalBefore(int,int)</a></p>
@@ -1682,7 +1721,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetBitmap_System_Int32_Java_Lang_String_Android_Graphics_Bitmap_" data-uid="Android.Widget.RemoteViews.SetBitmap(System.Int32,Java.Lang.String,Android.Graphics.Bitmap)">
   SetBitmap(int, String, Bitmap)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L287"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setBitmap(int,java.lang.String,android.graphics.Bitmap)">https://developer.android.com/reference/android/widget/RemoteViews.html#setBitmap(int,java.lang.String,android.graphics.Bitmap)</a></p>
@@ -1721,7 +1760,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetBlendMode_System_Int32_Java_Lang_String_Android_Graphics_BlendMode_" data-uid="Android.Widget.RemoteViews.SetBlendMode(System.Int32,Java.Lang.String,Android.Graphics.BlendMode)">
   SetBlendMode(int, String, BlendMode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L297"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setBlendMode(int,java.lang.String,android.graphics.BlendMode)">https://developer.android.com/reference/android/widget/RemoteViews.html#setBlendMode(int,java.lang.String,android.graphics.BlendMode)</a></p>
@@ -1760,7 +1799,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetBoolean_System_Int32_Java_Lang_String_System_Boolean_" data-uid="Android.Widget.RemoteViews.SetBoolean(System.Int32,Java.Lang.String,System.Boolean)">
   SetBoolean(int, String, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L307"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setBoolean(int,java.lang.String,boolean)">https://developer.android.com/reference/android/widget/RemoteViews.html#setBoolean(int,java.lang.String,boolean)</a></p>
@@ -1799,7 +1838,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetBundle_System_Int32_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Widget.RemoteViews.SetBundle(System.Int32,Java.Lang.String,Android.Os.Bundle)">
   SetBundle(int, String, Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L317"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setBundle(int,java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/widget/RemoteViews.html#setBundle(int,java.lang.String,android.os.Bundle)</a></p>
@@ -1838,7 +1877,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetByte_System_Int32_Java_Lang_String_System_Byte_" data-uid="Android.Widget.RemoteViews.SetByte(System.Int32,Java.Lang.String,System.Byte)">
   SetByte(int, String, byte)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L327"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setByte(int,java.lang.String,byte)">https://developer.android.com/reference/android/widget/RemoteViews.html#setByte(int,java.lang.String,byte)</a></p>
@@ -1877,7 +1916,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetChar_System_Int32_Java_Lang_String_System_Char_" data-uid="Android.Widget.RemoteViews.SetChar(System.Int32,Java.Lang.String,System.Char)">
   SetChar(int, String, char)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L337"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setChar(int,java.lang.String,char)">https://developer.android.com/reference/android/widget/RemoteViews.html#setChar(int,java.lang.String,char)</a></p>
@@ -1916,7 +1955,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetCharSequence_System_Int32_Java_Lang_String_Java_Lang_CharSequence_" data-uid="Android.Widget.RemoteViews.SetCharSequence(System.Int32,Java.Lang.String,Java.Lang.CharSequence)">
   SetCharSequence(int, String, CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L357"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setCharSequence(int,java.lang.String,java.lang.CharSequence)">https://developer.android.com/reference/android/widget/RemoteViews.html#setCharSequence(int,java.lang.String,java.lang.CharSequence)</a></p>
@@ -1955,7 +1994,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetCharSequence_System_Int32_Java_Lang_String_System_Int32_" data-uid="Android.Widget.RemoteViews.SetCharSequence(System.Int32,Java.Lang.String,System.Int32)">
   SetCharSequence(int, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L347"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setCharSequence(int,java.lang.String,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setCharSequence(int,java.lang.String,int)</a></p>
@@ -1994,7 +2033,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetCharSequenceAttr_System_Int32_Java_Lang_String_System_Int32_" data-uid="Android.Widget.RemoteViews.SetCharSequenceAttr(System.Int32,Java.Lang.String,System.Int32)">
   SetCharSequenceAttr(int, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L359"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setCharSequenceAttr(int,java.lang.String,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setCharSequenceAttr(int,java.lang.String,int)</a></p>
@@ -2033,7 +2072,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetChronometer_System_Int32_System_Int64_Java_Lang_String_System_Boolean_" data-uid="Android.Widget.RemoteViews.SetChronometer(System.Int32,System.Int64,Java.Lang.String,System.Boolean)">
   SetChronometer(int, long, String, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L378"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setChronometer(int,long,java.lang.String,boolean)">https://developer.android.com/reference/android/widget/RemoteViews.html#setChronometer(int,long,java.lang.String,boolean)</a></p>
@@ -2075,7 +2114,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetChronometerCountDown_System_Int32_System_Boolean_" data-uid="Android.Widget.RemoteViews.SetChronometerCountDown(System.Int32,System.Boolean)">
   SetChronometerCountDown(int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L387"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setChronometerCountDown(int,boolean)">https://developer.android.com/reference/android/widget/RemoteViews.html#setChronometerCountDown(int,boolean)</a></p>
@@ -2111,7 +2150,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetColor_System_Int32_Java_Lang_String_System_Int32_" data-uid="Android.Widget.RemoteViews.SetColor(System.Int32,Java.Lang.String,System.Int32)">
   SetColor(int, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L397"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColor(int,java.lang.String,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setColor(int,java.lang.String,int)</a></p>
@@ -2150,7 +2189,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetColorAttr_System_Int32_Java_Lang_String_System_Int32_" data-uid="Android.Widget.RemoteViews.SetColorAttr(System.Int32,Java.Lang.String,System.Int32)">
   SetColorAttr(int, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L407"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColorAttr(int,java.lang.String,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setColorAttr(int,java.lang.String,int)</a></p>
@@ -2189,7 +2228,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetColorInt_System_Int32_Java_Lang_String_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetColorInt(System.Int32,Java.Lang.String,System.Int32,System.Int32)">
   SetColorInt(int, String, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L418"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColorInt(int,java.lang.String,int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setColorInt(int,java.lang.String,int,int)</a></p>
@@ -2231,7 +2270,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetColorStateList_System_Int32_Java_Lang_String_Android_Content_Res_ColorStateList_" data-uid="Android.Widget.RemoteViews.SetColorStateList(System.Int32,Java.Lang.String,Android.Content.Res.ColorStateList)">
   SetColorStateList(int, String, ColorStateList)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L439"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColorStateList(int,java.lang.String,android.content.res.ColorStateList)">https://developer.android.com/reference/android/widget/RemoteViews.html#setColorStateList(int,java.lang.String,android.content.res.ColorStateList)</a></p>
@@ -2270,7 +2309,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetColorStateList_System_Int32_Java_Lang_String_Android_Content_Res_ColorStateList_Android_Content_Res_ColorStateList_" data-uid="Android.Widget.RemoteViews.SetColorStateList(System.Int32,Java.Lang.String,Android.Content.Res.ColorStateList,Android.Content.Res.ColorStateList)">
   SetColorStateList(int, String, ColorStateList, ColorStateList)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L429"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColorStateList(int,java.lang.String,android.content.res.ColorStateList,android.content.res.ColorStateList)">https://developer.android.com/reference/android/widget/RemoteViews.html#setColorStateList(int,java.lang.String,android.content.res.ColorStateList,android.content.res.ColorStateList)</a></p>
@@ -2312,7 +2351,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetColorStateList_System_Int32_Java_Lang_String_System_Int32_" data-uid="Android.Widget.RemoteViews.SetColorStateList(System.Int32,Java.Lang.String,System.Int32)">
   SetColorStateList(int, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L449"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColorStateList(int,java.lang.String,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setColorStateList(int,java.lang.String,int)</a></p>
@@ -2351,7 +2390,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetColorStateListAttr_System_Int32_Java_Lang_String_System_Int32_" data-uid="Android.Widget.RemoteViews.SetColorStateListAttr(System.Int32,Java.Lang.String,System.Int32)">
   SetColorStateListAttr(int, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L459"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setColorStateListAttr(int,java.lang.String,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setColorStateListAttr(int,java.lang.String,int)</a></p>
@@ -2390,7 +2429,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetCompoundButtonChecked_System_Int32_System_Boolean_" data-uid="Android.Widget.RemoteViews.SetCompoundButtonChecked(System.Int32,System.Boolean)">
   SetCompoundButtonChecked(int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L460"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L468"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setCompoundButtonChecked(int,boolean)">https://developer.android.com/reference/android/widget/RemoteViews.html#setCompoundButtonChecked(int,boolean)</a></p>
@@ -2426,7 +2465,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetContentDescription_System_Int32_Java_Lang_CharSequence_" data-uid="Android.Widget.RemoteViews.SetContentDescription(System.Int32,Java.Lang.CharSequence)">
   SetContentDescription(int, CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L477"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setContentDescription(int,java.lang.CharSequence)">https://developer.android.com/reference/android/widget/RemoteViews.html#setContentDescription(int,java.lang.CharSequence)</a></p>
@@ -2462,7 +2501,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetDisplayedChild_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetDisplayedChild(System.Int32,System.Int32)">
   SetDisplayedChild(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L486"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setDisplayedChild(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setDisplayedChild(int,int)</a></p>
@@ -2498,7 +2537,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetDouble_System_Int32_Java_Lang_String_System_Double_" data-uid="Android.Widget.RemoteViews.SetDouble(System.Int32,Java.Lang.String,System.Double)">
   SetDouble(int, String, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L488"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L496"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setDouble(int,java.lang.String,double)">https://developer.android.com/reference/android/widget/RemoteViews.html#setDouble(int,java.lang.String,double)</a></p>
@@ -2537,7 +2576,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetEmptyView_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetEmptyView(System.Int32,System.Int32)">
   SetEmptyView(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L497"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L505"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setEmptyView(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setEmptyView(int,int)</a></p>
@@ -2573,7 +2612,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetFloat_System_Int32_Java_Lang_String_System_Single_" data-uid="Android.Widget.RemoteViews.SetFloat(System.Int32,Java.Lang.String,System.Single)">
   SetFloat(int, String, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L507"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L515"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setFloat(int,java.lang.String,float)">https://developer.android.com/reference/android/widget/RemoteViews.html#setFloat(int,java.lang.String,float)</a></p>
@@ -2612,7 +2651,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetFloatDimen_System_Int32_Java_Lang_String_System_Int32_" data-uid="Android.Widget.RemoteViews.SetFloatDimen(System.Int32,Java.Lang.String,System.Int32)">
   SetFloatDimen(int, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L536"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setFloatDimen(int,java.lang.String,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setFloatDimen(int,java.lang.String,int)</a></p>
@@ -2651,7 +2690,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetFloatDimen_System_Int32_Java_Lang_String_System_Single_System_Int32_" data-uid="Android.Widget.RemoteViews.SetFloatDimen(System.Int32,Java.Lang.String,System.Single,System.Int32)">
   SetFloatDimen(int, String, float, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L526"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setFloatDimen(int,java.lang.String,float,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setFloatDimen(int,java.lang.String,float,int)</a></p>
@@ -2693,7 +2732,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetFloatDimenAttr_System_Int32_Java_Lang_String_System_Int32_" data-uid="Android.Widget.RemoteViews.SetFloatDimenAttr(System.Int32,Java.Lang.String,System.Int32)">
   SetFloatDimenAttr(int, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L546"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setFloatDimenAttr(int,java.lang.String,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setFloatDimenAttr(int,java.lang.String,int)</a></p>
@@ -2732,7 +2771,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetIcon_System_Int32_Java_Lang_String_Android_Graphics_Drawable_Icon_" data-uid="Android.Widget.RemoteViews.SetIcon(System.Int32,Java.Lang.String,Android.Graphics.Drawable.Icon)">
   SetIcon(int, String, Icon)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L567"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setIcon(int,java.lang.String,android.graphics.drawable.Icon)">https://developer.android.com/reference/android/widget/RemoteViews.html#setIcon(int,java.lang.String,android.graphics.drawable.Icon)</a></p>
@@ -2771,7 +2810,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetIcon_System_Int32_Java_Lang_String_Android_Graphics_Drawable_Icon_Android_Graphics_Drawable_Icon_" data-uid="Android.Widget.RemoteViews.SetIcon(System.Int32,Java.Lang.String,Android.Graphics.Drawable.Icon,Android.Graphics.Drawable.Icon)">
   SetIcon(int, String, Icon, Icon)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L557"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setIcon(int,java.lang.String,android.graphics.drawable.Icon,android.graphics.drawable.Icon)">https://developer.android.com/reference/android/widget/RemoteViews.html#setIcon(int,java.lang.String,android.graphics.drawable.Icon,android.graphics.drawable.Icon)</a></p>
@@ -2813,7 +2852,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetImageViewBitmap_System_Int32_Android_Graphics_Bitmap_" data-uid="Android.Widget.RemoteViews.SetImageViewBitmap(System.Int32,Android.Graphics.Bitmap)">
   SetImageViewBitmap(int, Bitmap)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L576"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setImageViewBitmap(int,android.graphics.Bitmap)">https://developer.android.com/reference/android/widget/RemoteViews.html#setImageViewBitmap(int,android.graphics.Bitmap)</a></p>
@@ -2849,7 +2888,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetImageViewIcon_System_Int32_Android_Graphics_Drawable_Icon_" data-uid="Android.Widget.RemoteViews.SetImageViewIcon(System.Int32,Android.Graphics.Drawable.Icon)">
   SetImageViewIcon(int, Icon)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L577"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L585"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setImageViewIcon(int,android.graphics.drawable.Icon)">https://developer.android.com/reference/android/widget/RemoteViews.html#setImageViewIcon(int,android.graphics.drawable.Icon)</a></p>
@@ -2885,7 +2924,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetImageViewResource_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetImageViewResource(System.Int32,System.Int32)">
   SetImageViewResource(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L586"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L594"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setImageViewResource(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setImageViewResource(int,int)</a></p>
@@ -2921,7 +2960,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetImageViewUri_System_Int32_Android_Net_Uri_" data-uid="Android.Widget.RemoteViews.SetImageViewUri(System.Int32,Android.Net.Uri)">
   SetImageViewUri(int, Uri)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L595"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L603"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setImageViewUri(int,android.net.Uri)">https://developer.android.com/reference/android/widget/RemoteViews.html#setImageViewUri(int,android.net.Uri)</a></p>
@@ -2957,7 +2996,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetInt_System_Int32_Java_Lang_String_System_Int32_" data-uid="Android.Widget.RemoteViews.SetInt(System.Int32,Java.Lang.String,System.Int32)">
   SetInt(int, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L605"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L613"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setInt(int,java.lang.String,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setInt(int,java.lang.String,int)</a></p>
@@ -2996,7 +3035,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetIntDimen_System_Int32_Java_Lang_String_System_Int32_" data-uid="Android.Widget.RemoteViews.SetIntDimen(System.Int32,Java.Lang.String,System.Int32)">
   SetIntDimen(int, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L626"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L634"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setIntDimen(int,java.lang.String,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setIntDimen(int,java.lang.String,int)</a></p>
@@ -3035,7 +3074,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetIntDimen_System_Int32_Java_Lang_String_System_Single_System_Int32_" data-uid="Android.Widget.RemoteViews.SetIntDimen(System.Int32,Java.Lang.String,System.Single,System.Int32)">
   SetIntDimen(int, String, float, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L616"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L624"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setIntDimen(int,java.lang.String,float,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setIntDimen(int,java.lang.String,float,int)</a></p>
@@ -3077,7 +3116,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetIntDimenAttr_System_Int32_Java_Lang_String_System_Int32_" data-uid="Android.Widget.RemoteViews.SetIntDimenAttr(System.Int32,Java.Lang.String,System.Int32)">
   SetIntDimenAttr(int, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L636"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L644"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setIntDimenAttr(int,java.lang.String,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setIntDimenAttr(int,java.lang.String,int)</a></p>
@@ -3116,7 +3155,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetIntent_System_Int32_Java_Lang_String_Android_Content_Intent_" data-uid="Android.Widget.RemoteViews.SetIntent(System.Int32,Java.Lang.String,Android.Content.Intent)">
   SetIntent(int, String, Intent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L646"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L654"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setIntent(int,java.lang.String,android.content.Intent)">https://developer.android.com/reference/android/widget/RemoteViews.html#setIntent(int,java.lang.String,android.content.Intent)</a></p>
@@ -3155,7 +3194,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetLabelFor_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetLabelFor(System.Int32,System.Int32)">
   SetLabelFor(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L655"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L663"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setLabelFor(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setLabelFor(int,int)</a></p>
@@ -3191,7 +3230,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetLightBackgroundLayoutId_System_Int32_" data-uid="Android.Widget.RemoteViews.SetLightBackgroundLayoutId(System.Int32)">
   SetLightBackgroundLayoutId(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L663"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L671"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setLightBackgroundLayoutId(int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setLightBackgroundLayoutId(int)</a></p>
@@ -3224,7 +3263,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetLong_System_Int32_Java_Lang_String_System_Int64_" data-uid="Android.Widget.RemoteViews.SetLong(System.Int32,Java.Lang.String,System.Int64)">
   SetLong(int, String, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L673"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L681"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setLong(int,java.lang.String,long)">https://developer.android.com/reference/android/widget/RemoteViews.html#setLong(int,java.lang.String,long)</a></p>
@@ -3263,7 +3302,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetOnCheckedChangeResponse_System_Int32_Android_Widget_RemoteViews_RemoteResponse_" data-uid="Android.Widget.RemoteViews.SetOnCheckedChangeResponse(System.Int32,Android.Widget.RemoteViews.RemoteResponse)">
   SetOnCheckedChangeResponse(int, RemoteResponse)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L682"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L690"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setOnCheckedChangeResponse(int,android.widget.RemoteViews.RemoteResponse)">https://developer.android.com/reference/android/widget/RemoteViews.html#setOnCheckedChangeResponse(int,android.widget.RemoteViews.RemoteResponse)</a></p>
@@ -3299,7 +3338,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetOnClickFillInIntent_System_Int32_Android_Content_Intent_" data-uid="Android.Widget.RemoteViews.SetOnClickFillInIntent(System.Int32,Android.Content.Intent)">
   SetOnClickFillInIntent(int, Intent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L691"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L699"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setOnClickFillInIntent(int,android.content.Intent)">https://developer.android.com/reference/android/widget/RemoteViews.html#setOnClickFillInIntent(int,android.content.Intent)</a></p>
@@ -3335,7 +3374,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetOnClickPendingIntent_System_Int32_Android_App_PendingIntent_" data-uid="Android.Widget.RemoteViews.SetOnClickPendingIntent(System.Int32,Android.App.PendingIntent)">
   SetOnClickPendingIntent(int, PendingIntent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L700"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L708"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setOnClickPendingIntent(int,android.app.PendingIntent)">https://developer.android.com/reference/android/widget/RemoteViews.html#setOnClickPendingIntent(int,android.app.PendingIntent)</a></p>
@@ -3371,7 +3410,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetOnClickResponse_System_Int32_Android_Widget_RemoteViews_RemoteResponse_" data-uid="Android.Widget.RemoteViews.SetOnClickResponse(System.Int32,Android.Widget.RemoteViews.RemoteResponse)">
   SetOnClickResponse(int, RemoteResponse)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L709"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L717"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setOnClickResponse(int,android.widget.RemoteViews.RemoteResponse)">https://developer.android.com/reference/android/widget/RemoteViews.html#setOnClickResponse(int,android.widget.RemoteViews.RemoteResponse)</a></p>
@@ -3403,11 +3442,47 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
 
 
+  <a id="Android_Widget_RemoteViews_SetOnStylusHandwritingPendingIntent_" data-uid="Android.Widget.RemoteViews.SetOnStylusHandwritingPendingIntent*"></a>
+
+  <h3 id="Android_Widget_RemoteViews_SetOnStylusHandwritingPendingIntent_System_Int32_Android_App_PendingIntent_" data-uid="Android.Widget.RemoteViews.SetOnStylusHandwritingPendingIntent(System.Int32,Android.App.PendingIntent)">
+  SetOnStylusHandwritingPendingIntent(int, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L726"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setOnStylusHandwritingPendingIntent(int,android.app.PendingIntent)">https://developer.android.com/reference/android/widget/RemoteViews.html#setOnStylusHandwritingPendingIntent(int,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnStylusHandwritingPendingIntent(int arg0, PendingIntent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Widget_RemoteViews_SetPendingIntentTemplate_" data-uid="Android.Widget.RemoteViews.SetPendingIntentTemplate*"></a>
 
   <h3 id="Android_Widget_RemoteViews_SetPendingIntentTemplate_System_Int32_Android_App_PendingIntent_" data-uid="Android.Widget.RemoteViews.SetPendingIntentTemplate(System.Int32,Android.App.PendingIntent)">
   SetPendingIntentTemplate(int, PendingIntent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L718"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L735"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setPendingIntentTemplate(int,android.app.PendingIntent)">https://developer.android.com/reference/android/widget/RemoteViews.html#setPendingIntentTemplate(int,android.app.PendingIntent)</a></p>
@@ -3443,7 +3518,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetProgressBar_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="Android.Widget.RemoteViews.SetProgressBar(System.Int32,System.Int32,System.Int32,System.Boolean)">
   SetProgressBar(int, int, int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L729"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L746"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setProgressBar(int,int,int,boolean)">https://developer.android.com/reference/android/widget/RemoteViews.html#setProgressBar(int,int,int,boolean)</a></p>
@@ -3485,7 +3560,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetRadioGroupChecked_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetRadioGroupChecked(System.Int32,System.Int32)">
   SetRadioGroupChecked(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L738"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L755"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setRadioGroupChecked(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setRadioGroupChecked(int,int)</a></p>
@@ -3521,7 +3596,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetRelativeScrollPosition_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetRelativeScrollPosition(System.Int32,System.Int32)">
   SetRelativeScrollPosition(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L747"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L764"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setRelativeScrollPosition(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setRelativeScrollPosition(int,int)</a></p>
@@ -3557,7 +3632,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetRemoteAdapter_System_Int32_Android_Content_Intent_" data-uid="Android.Widget.RemoteViews.SetRemoteAdapter(System.Int32,Android.Content.Intent)">
   SetRemoteAdapter(int, Intent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L756"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L773"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setRemoteAdapter(int,android.content.Intent)">https://developer.android.com/reference/android/widget/RemoteViews.html#setRemoteAdapter(int,android.content.Intent)</a></p>
@@ -3565,7 +3640,8 @@ public bool OnLoadClass(Class arg0)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetRemoteAdapter(int arg0, Intent arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetRemoteAdapter(int arg0, Intent arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -3593,7 +3669,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetRemoteAdapter_System_Int32_Android_Widget_RemoteViews_RemoteCollectionItems_" data-uid="Android.Widget.RemoteViews.SetRemoteAdapter(System.Int32,Android.Widget.RemoteViews.RemoteCollectionItems)">
   SetRemoteAdapter(int, RemoteCollectionItems)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L765"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L783"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setRemoteAdapter(int,android.widget.RemoteViews.RemoteCollectionItems)">https://developer.android.com/reference/android/widget/RemoteViews.html#setRemoteAdapter(int,android.widget.RemoteViews.RemoteCollectionItems)</a></p>
@@ -3629,7 +3705,7 @@ public bool OnLoadClass(Class arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetRemoteAdapter_System_Int32_System_Int32_Android_Content_Intent_" data-uid="Android.Widget.RemoteViews.SetRemoteAdapter(System.Int32,System.Int32,Android.Content.Intent)">
   SetRemoteAdapter(int, int, Intent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L775"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L793"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setRemoteAdapter(int,int,android.content.Intent)">https://developer.android.com/reference/android/widget/RemoteViews.html#setRemoteAdapter(int,int,android.content.Intent)</a></p>
@@ -3669,7 +3745,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetScrollPosition_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetScrollPosition(System.Int32,System.Int32)">
   SetScrollPosition(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L785"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L803"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setScrollPosition(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setScrollPosition(int,int)</a></p>
@@ -3705,7 +3781,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetShort_System_Int32_Java_Lang_String_System_Int16_" data-uid="Android.Widget.RemoteViews.SetShort(System.Int32,Java.Lang.String,System.Int16)">
   SetShort(int, String, short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L795"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L813"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setShort(int,java.lang.String,short)">https://developer.android.com/reference/android/widget/RemoteViews.html#setShort(int,java.lang.String,short)</a></p>
@@ -3744,7 +3820,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetString_System_Int32_Java_Lang_String_Java_Lang_String_" data-uid="Android.Widget.RemoteViews.SetString(System.Int32,Java.Lang.String,Java.Lang.String)">
   SetString(int, String, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L805"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L823"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setString(int,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/widget/RemoteViews.html#setString(int,java.lang.String,java.lang.String)</a></p>
@@ -3783,7 +3859,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetTextColor_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetTextColor(System.Int32,System.Int32)">
   SetTextColor(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L814"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L832"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setTextColor(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setTextColor(int,int)</a></p>
@@ -3819,7 +3895,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetTextViewCompoundDrawables_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetTextViewCompoundDrawables(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
   SetTextViewCompoundDrawables(int, int, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L826"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L844"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setTextViewCompoundDrawables(int,int,int,int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setTextViewCompoundDrawables(int,int,int,int,int)</a></p>
@@ -3864,7 +3940,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetTextViewCompoundDrawablesRelative_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetTextViewCompoundDrawablesRelative(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
   SetTextViewCompoundDrawablesRelative(int, int, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L838"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L856"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setTextViewCompoundDrawablesRelative(int,int,int,int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setTextViewCompoundDrawablesRelative(int,int,int,int,int)</a></p>
@@ -3909,7 +3985,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetTextViewText_System_Int32_Java_Lang_CharSequence_" data-uid="Android.Widget.RemoteViews.SetTextViewText(System.Int32,Java.Lang.CharSequence)">
   SetTextViewText(int, CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L847"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L865"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setTextViewText(int,java.lang.CharSequence)">https://developer.android.com/reference/android/widget/RemoteViews.html#setTextViewText(int,java.lang.CharSequence)</a></p>
@@ -3945,7 +4021,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetTextViewTextSize_System_Int32_System_Int32_System_Single_" data-uid="Android.Widget.RemoteViews.SetTextViewTextSize(System.Int32,System.Int32,System.Single)">
   SetTextViewTextSize(int, int, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L857"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L875"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setTextViewTextSize(int,int,float)">https://developer.android.com/reference/android/widget/RemoteViews.html#setTextViewTextSize(int,int,float)</a></p>
@@ -3984,7 +4060,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetUri_System_Int32_Java_Lang_String_Android_Net_Uri_" data-uid="Android.Widget.RemoteViews.SetUri(System.Int32,Java.Lang.String,Android.Net.Uri)">
   SetUri(int, String, Uri)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L867"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L885"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setUri(int,java.lang.String,android.net.Uri)">https://developer.android.com/reference/android/widget/RemoteViews.html#setUri(int,java.lang.String,android.net.Uri)</a></p>
@@ -4023,7 +4099,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewLayoutHeight_System_Int32_System_Single_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewLayoutHeight(System.Int32,System.Single,System.Int32)">
   SetViewLayoutHeight(int, float, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L877"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L895"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutHeight(int,float,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutHeight(int,float,int)</a></p>
@@ -4062,7 +4138,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewLayoutHeightAttr_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewLayoutHeightAttr(System.Int32,System.Int32)">
   SetViewLayoutHeightAttr(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L886"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L904"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutHeightAttr(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutHeightAttr(int,int)</a></p>
@@ -4098,7 +4174,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewLayoutHeightDimen_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewLayoutHeightDimen(System.Int32,System.Int32)">
   SetViewLayoutHeightDimen(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L895"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L913"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutHeightDimen(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutHeightDimen(int,int)</a></p>
@@ -4134,7 +4210,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewLayoutMargin_System_Int32_System_Int32_System_Single_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewLayoutMargin(System.Int32,System.Int32,System.Single,System.Int32)">
   SetViewLayoutMargin(int, int, float, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L906"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L924"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutMargin(int,int,float,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutMargin(int,int,float,int)</a></p>
@@ -4176,7 +4252,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewLayoutMarginAttr_System_Int32_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewLayoutMarginAttr(System.Int32,System.Int32,System.Int32)">
   SetViewLayoutMarginAttr(int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L916"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L934"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutMarginAttr(int,int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutMarginAttr(int,int,int)</a></p>
@@ -4215,7 +4291,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewLayoutMarginDimen_System_Int32_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewLayoutMarginDimen(System.Int32,System.Int32,System.Int32)">
   SetViewLayoutMarginDimen(int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L926"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L944"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutMarginDimen(int,int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutMarginDimen(int,int,int)</a></p>
@@ -4254,7 +4330,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewLayoutWidth_System_Int32_System_Single_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewLayoutWidth(System.Int32,System.Single,System.Int32)">
   SetViewLayoutWidth(int, float, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L936"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L954"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutWidth(int,float,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutWidth(int,float,int)</a></p>
@@ -4293,7 +4369,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewLayoutWidthAttr_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewLayoutWidthAttr(System.Int32,System.Int32)">
   SetViewLayoutWidthAttr(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L945"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L963"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutWidthAttr(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutWidthAttr(int,int)</a></p>
@@ -4329,7 +4405,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewLayoutWidthDimen_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewLayoutWidthDimen(System.Int32,System.Int32)">
   SetViewLayoutWidthDimen(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L954"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L972"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutWidthDimen(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewLayoutWidthDimen(int,int)</a></p>
@@ -4365,7 +4441,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewOutlinePreferredRadius_System_Int32_System_Single_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewOutlinePreferredRadius(System.Int32,System.Single,System.Int32)">
   SetViewOutlinePreferredRadius(int, float, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L964"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L982"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewOutlinePreferredRadius(int,float,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewOutlinePreferredRadius(int,float,int)</a></p>
@@ -4404,7 +4480,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewOutlinePreferredRadiusAttr_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewOutlinePreferredRadiusAttr(System.Int32,System.Int32)">
   SetViewOutlinePreferredRadiusAttr(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L973"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L991"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewOutlinePreferredRadiusAttr(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewOutlinePreferredRadiusAttr(int,int)</a></p>
@@ -4440,7 +4516,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewOutlinePreferredRadiusDimen_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewOutlinePreferredRadiusDimen(System.Int32,System.Int32)">
   SetViewOutlinePreferredRadiusDimen(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L982"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L1000"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewOutlinePreferredRadiusDimen(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewOutlinePreferredRadiusDimen(int,int)</a></p>
@@ -4476,7 +4552,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewPadding_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewPadding(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
   SetViewPadding(int, int, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L994"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L1012"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewPadding(int,int,int,int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewPadding(int,int,int,int,int)</a></p>
@@ -4521,7 +4597,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_SetViewVisibility_System_Int32_System_Int32_" data-uid="Android.Widget.RemoteViews.SetViewVisibility(System.Int32,System.Int32)">
   SetViewVisibility(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L1003"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L1021"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#setViewVisibility(int,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#setViewVisibility(int,int)</a></p>
@@ -4557,7 +4633,7 @@ public void SetRemoteAdapter(int arg0, int arg1, Intent arg2)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_ShowNext_System_Int32_" data-uid="Android.Widget.RemoteViews.ShowNext(System.Int32)">
   ShowNext(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L1011"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L1029"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#showNext(int)">https://developer.android.com/reference/android/widget/RemoteViews.html#showNext(int)</a></p>
@@ -4591,7 +4667,7 @@ public void ShowNext(int arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_ShowPrevious_System_Int32_" data-uid="Android.Widget.RemoteViews.ShowPrevious(System.Int32)">
   ShowPrevious(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L1020"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L1038"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#showPrevious(int)">https://developer.android.com/reference/android/widget/RemoteViews.html#showPrevious(int)</a></p>
@@ -4625,7 +4701,7 @@ public void ShowPrevious(int arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Widget.RemoteViews.WriteToParcel(Android.Os.Parcel,System.Int32)">
   WriteToParcel(Parcel, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L1030"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L1048"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/widget/RemoteViews.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/widget/RemoteViews.html#writeToParcel(android.os.Parcel,int)</a></p>
@@ -4665,7 +4741,7 @@ public void ShowPrevious(int arg0)</code></pre>
 
   <h3 id="Android_Widget_RemoteViews_op_Implicit_Android_Widget_RemoteViews__Android_Os_Parcelable" data-uid="Android.Widget.RemoteViews.op_Implicit(Android.Widget.RemoteViews)~Android.Os.Parcelable">
   implicit operator Parcelable(RemoteViews)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Widget/RemoteViews.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Widget.RemoteViews.html">RemoteViews</a> to <a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>

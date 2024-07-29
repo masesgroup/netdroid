@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -371,6 +371,12 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -529,7 +535,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -545,7 +551,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt__ctor" data-uid="Android.Bluetooth.BluetoothGatt.#ctor">
   BluetoothGatt()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L657"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L716"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -572,7 +578,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt__ctor_System_Object___" data-uid="Android.Bluetooth.BluetoothGatt.#ctor(System.Object[])">
   BluetoothGatt(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L661"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L720"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -608,7 +614,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_BridgeClassName" data-uid="Android.Bluetooth.BluetoothGatt.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L668"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L728"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -796,11 +802,43 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
 
 
+  <a id="Android_Bluetooth_BluetoothGatt_GATT_CONNECTION_TIMEOUT_" data-uid="Android.Bluetooth.BluetoothGatt.GATT_CONNECTION_TIMEOUT*"></a>
+
+  <h3 id="Android_Bluetooth_BluetoothGatt_GATT_CONNECTION_TIMEOUT" data-uid="Android.Bluetooth.BluetoothGatt.GATT_CONNECTION_TIMEOUT">
+  GATT_CONNECTION_TIMEOUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_CONNECTION_TIMEOUT">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_CONNECTION_TIMEOUT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GATT_CONNECTION_TIMEOUT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Bluetooth_BluetoothGatt_GATT_FAILURE_" data-uid="Android.Bluetooth.BluetoothGatt.GATT_FAILURE*"></a>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GATT_FAILURE" data-uid="Android.Bluetooth.BluetoothGatt.GATT_FAILURE">
   GATT_FAILURE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_FAILURE">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_FAILURE</a></p>
@@ -832,7 +870,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GATT_INSUFFICIENT_AUTHENTICATION" data-uid="Android.Bluetooth.BluetoothGatt.GATT_INSUFFICIENT_AUTHENTICATION">
   GATT_INSUFFICIENT_AUTHENTICATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_INSUFFICIENT_AUTHENTICATION">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_INSUFFICIENT_AUTHENTICATION</a></p>
@@ -864,7 +902,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GATT_INSUFFICIENT_AUTHORIZATION" data-uid="Android.Bluetooth.BluetoothGatt.GATT_INSUFFICIENT_AUTHORIZATION">
   GATT_INSUFFICIENT_AUTHORIZATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_INSUFFICIENT_AUTHORIZATION">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_INSUFFICIENT_AUTHORIZATION</a></p>
@@ -896,7 +934,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GATT_INSUFFICIENT_ENCRYPTION" data-uid="Android.Bluetooth.BluetoothGatt.GATT_INSUFFICIENT_ENCRYPTION">
   GATT_INSUFFICIENT_ENCRYPTION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_INSUFFICIENT_ENCRYPTION">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_INSUFFICIENT_ENCRYPTION</a></p>
@@ -928,7 +966,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GATT_INVALID_ATTRIBUTE_LENGTH" data-uid="Android.Bluetooth.BluetoothGatt.GATT_INVALID_ATTRIBUTE_LENGTH">
   GATT_INVALID_ATTRIBUTE_LENGTH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_INVALID_ATTRIBUTE_LENGTH">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_INVALID_ATTRIBUTE_LENGTH</a></p>
@@ -960,7 +998,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GATT_INVALID_OFFSET" data-uid="Android.Bluetooth.BluetoothGatt.GATT_INVALID_OFFSET">
   GATT_INVALID_OFFSET
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_INVALID_OFFSET">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_INVALID_OFFSET</a></p>
@@ -992,7 +1030,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GATT_READ_NOT_PERMITTED" data-uid="Android.Bluetooth.BluetoothGatt.GATT_READ_NOT_PERMITTED">
   GATT_READ_NOT_PERMITTED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_READ_NOT_PERMITTED">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_READ_NOT_PERMITTED</a></p>
@@ -1024,7 +1062,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GATT_REQUEST_NOT_SUPPORTED" data-uid="Android.Bluetooth.BluetoothGatt.GATT_REQUEST_NOT_SUPPORTED">
   GATT_REQUEST_NOT_SUPPORTED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_REQUEST_NOT_SUPPORTED">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_REQUEST_NOT_SUPPORTED</a></p>
@@ -1056,7 +1094,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GATT_SUCCESS" data-uid="Android.Bluetooth.BluetoothGatt.GATT_SUCCESS">
   GATT_SUCCESS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_SUCCESS">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_SUCCESS</a></p>
@@ -1088,7 +1126,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GATT_WRITE_NOT_PERMITTED" data-uid="Android.Bluetooth.BluetoothGatt.GATT_WRITE_NOT_PERMITTED">
   GATT_WRITE_NOT_PERMITTED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_WRITE_NOT_PERMITTED">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#GATT_WRITE_NOT_PERMITTED</a></p>
@@ -1120,7 +1158,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_IsBridgeAbstract" data-uid="Android.Bluetooth.BluetoothGatt.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L672"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L732"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1152,7 +1190,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_IsBridgeCloseable" data-uid="Android.Bluetooth.BluetoothGatt.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L676"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L736"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1184,7 +1222,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_IsBridgeInterface" data-uid="Android.Bluetooth.BluetoothGatt.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L680"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L740"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1216,7 +1254,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_IsBridgeStatic" data-uid="Android.Bluetooth.BluetoothGatt.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L684"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/AllPackageClasses.cs/#L744"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1252,7 +1290,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_AbortReliableWrite" data-uid="Android.Bluetooth.BluetoothGatt.AbortReliableWrite">
   AbortReliableWrite()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L328"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#abortReliableWrite()">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#abortReliableWrite()</a></p>
@@ -1279,7 +1317,7 @@ Class BluetoothGatt  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Bluetooth_BluetoothGatt_AbortReliableWrite_Android_Bluetooth_BluetoothDevice_" data-uid="Android.Bluetooth.BluetoothGatt.AbortReliableWrite(Android.Bluetooth.BluetoothDevice)">
   AbortReliableWrite(BluetoothDevice)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L336"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#abortReliableWrite(android.bluetooth.BluetoothDevice)">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#abortReliableWrite(android.bluetooth.BluetoothDevice)</a></p>
@@ -1313,7 +1351,7 @@ public void AbortReliableWrite(BluetoothDevice arg0)</code></pre>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_BeginReliableWrite" data-uid="Android.Bluetooth.BluetoothGatt.BeginReliableWrite">
   BeginReliableWrite()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#beginReliableWrite()">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#beginReliableWrite()</a></p>
@@ -1346,7 +1384,7 @@ public void AbortReliableWrite(BluetoothDevice arg0)</code></pre>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_Close" data-uid="Android.Bluetooth.BluetoothGatt.Close">
   Close()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L344"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#close()">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#close()</a></p>
@@ -1373,7 +1411,7 @@ public void AbortReliableWrite(BluetoothDevice arg0)</code></pre>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_Connect" data-uid="Android.Bluetooth.BluetoothGatt.Connect">
   Connect()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#connect()">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#connect()</a></p>
@@ -1406,7 +1444,7 @@ public void AbortReliableWrite(BluetoothDevice arg0)</code></pre>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_Disconnect" data-uid="Android.Bluetooth.BluetoothGatt.Disconnect">
   Disconnect()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L351"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#disconnect()">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#disconnect()</a></p>
@@ -1433,7 +1471,7 @@ public void AbortReliableWrite(BluetoothDevice arg0)</code></pre>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_DiscoverServices" data-uid="Android.Bluetooth.BluetoothGatt.DiscoverServices">
   DiscoverServices()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#discoverServices()">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#discoverServices()</a></p>
@@ -1466,7 +1504,7 @@ public void AbortReliableWrite(BluetoothDevice arg0)</code></pre>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_ExecuteReliableWrite" data-uid="Android.Bluetooth.BluetoothGatt.ExecuteReliableWrite">
   ExecuteReliableWrite()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#executeReliableWrite()">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#executeReliableWrite()</a></p>
@@ -1499,7 +1537,7 @@ public void AbortReliableWrite(BluetoothDevice arg0)</code></pre>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GetConnectedDevices" data-uid="Android.Bluetooth.BluetoothGatt.GetConnectedDevices">
   GetConnectedDevices()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L302"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getConnectedDevices()">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getConnectedDevices()</a></p>
@@ -1533,7 +1571,7 @@ public List&lt;BluetoothDevice&gt; GetConnectedDevices()</code></pre>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GetConnectionState_Android_Bluetooth_BluetoothDevice_" data-uid="Android.Bluetooth.BluetoothGatt.GetConnectionState(Android.Bluetooth.BluetoothDevice)">
   GetConnectionState(BluetoothDevice)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L272"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getConnectionState(android.bluetooth.BluetoothDevice)">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getConnectionState(android.bluetooth.BluetoothDevice)</a></p>
@@ -1573,7 +1611,7 @@ public int GetConnectionState(BluetoothDevice arg0)</code></pre>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GetDevice" data-uid="Android.Bluetooth.BluetoothGatt.GetDevice">
   GetDevice()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getDevice()">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getDevice()</a></p>
@@ -1606,7 +1644,7 @@ public int GetConnectionState(BluetoothDevice arg0)</code></pre>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GetDevicesMatchingConnectionStates_System_Int32___" data-uid="Android.Bluetooth.BluetoothGatt.GetDevicesMatchingConnectionStates(System.Int32[])">
   GetDevicesMatchingConnectionStates(int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L312"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getDevicesMatchingConnectionStates(int[])">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getDevicesMatchingConnectionStates(int[])</a></p>
@@ -1646,7 +1684,7 @@ public List&lt;BluetoothDevice&gt; GetDevicesMatchingConnectionStates(int[] arg0
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GetService_Java_Util_UUID_" data-uid="Android.Bluetooth.BluetoothGatt.GetService(Java.Util.UUID)">
   GetService(UUID)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getService(java.util.UUID)">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getService(java.util.UUID)</a></p>
@@ -1685,7 +1723,7 @@ public List&lt;BluetoothDevice&gt; GetDevicesMatchingConnectionStates(int[] arg0
 
   <h3 id="Android_Bluetooth_BluetoothGatt_GetServices" data-uid="Android.Bluetooth.BluetoothGatt.GetServices">
   GetServices()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L321"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getServices()">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getServices()</a></p>
@@ -1718,7 +1756,7 @@ public List&lt;BluetoothDevice&gt; GetDevicesMatchingConnectionStates(int[] arg0
 
   <h3 id="Android_Bluetooth_BluetoothGatt_ReadCharacteristic_Android_Bluetooth_BluetoothGattCharacteristic_" data-uid="Android.Bluetooth.BluetoothGatt.ReadCharacteristic(Android.Bluetooth.BluetoothGattCharacteristic)">
   ReadCharacteristic(BluetoothGattCharacteristic)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#readCharacteristic(android.bluetooth.BluetoothGattCharacteristic)">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#readCharacteristic(android.bluetooth.BluetoothGattCharacteristic)</a></p>
@@ -1757,7 +1795,7 @@ public List&lt;BluetoothDevice&gt; GetDevicesMatchingConnectionStates(int[] arg0
 
   <h3 id="Android_Bluetooth_BluetoothGatt_ReadDescriptor_Android_Bluetooth_BluetoothGattDescriptor_" data-uid="Android.Bluetooth.BluetoothGatt.ReadDescriptor(Android.Bluetooth.BluetoothGattDescriptor)">
   ReadDescriptor(BluetoothGattDescriptor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L207"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#readDescriptor(android.bluetooth.BluetoothGattDescriptor)">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#readDescriptor(android.bluetooth.BluetoothGattDescriptor)</a></p>
@@ -1796,7 +1834,7 @@ public List&lt;BluetoothDevice&gt; GetDevicesMatchingConnectionStates(int[] arg0
 
   <h3 id="Android_Bluetooth_BluetoothGatt_ReadPhy" data-uid="Android.Bluetooth.BluetoothGatt.ReadPhy">
   ReadPhy()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L358"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#readPhy()">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#readPhy()</a></p>
@@ -1823,7 +1861,7 @@ public List&lt;BluetoothDevice&gt; GetDevicesMatchingConnectionStates(int[] arg0
 
   <h3 id="Android_Bluetooth_BluetoothGatt_ReadRemoteRssi" data-uid="Android.Bluetooth.BluetoothGatt.ReadRemoteRssi">
   ReadRemoteRssi()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#readRemoteRssi()">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#readRemoteRssi()</a></p>
@@ -1856,7 +1894,7 @@ public List&lt;BluetoothDevice&gt; GetDevicesMatchingConnectionStates(int[] arg0
 
   <h3 id="Android_Bluetooth_BluetoothGatt_RequestConnectionPriority_System_Int32_" data-uid="Android.Bluetooth.BluetoothGatt.RequestConnectionPriority(System.Int32)">
   RequestConnectionPriority(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#requestConnectionPriority(int)">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#requestConnectionPriority(int)</a></p>
@@ -1895,7 +1933,7 @@ public List&lt;BluetoothDevice&gt; GetDevicesMatchingConnectionStates(int[] arg0
 
   <h3 id="Android_Bluetooth_BluetoothGatt_RequestMtu_System_Int32_" data-uid="Android.Bluetooth.BluetoothGatt.RequestMtu(System.Int32)">
   RequestMtu(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#requestMtu(int)">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#requestMtu(int)</a></p>
@@ -1934,7 +1972,7 @@ public List&lt;BluetoothDevice&gt; GetDevicesMatchingConnectionStates(int[] arg0
 
   <h3 id="Android_Bluetooth_BluetoothGatt_SetCharacteristicNotification_Android_Bluetooth_BluetoothGattCharacteristic_System_Boolean_" data-uid="Android.Bluetooth.BluetoothGatt.SetCharacteristicNotification(Android.Bluetooth.BluetoothGattCharacteristic,System.Boolean)">
   SetCharacteristicNotification(BluetoothGattCharacteristic, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L243"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#setCharacteristicNotification(android.bluetooth.BluetoothGattCharacteristic,boolean)">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#setCharacteristicNotification(android.bluetooth.BluetoothGattCharacteristic,boolean)</a></p>
@@ -1976,7 +2014,7 @@ public List&lt;BluetoothDevice&gt; GetDevicesMatchingConnectionStates(int[] arg0
 
   <h3 id="Android_Bluetooth_BluetoothGatt_SetPreferredPhy_System_Int32_System_Int32_System_Int32_" data-uid="Android.Bluetooth.BluetoothGatt.SetPreferredPhy(System.Int32,System.Int32,System.Int32)">
   SetPreferredPhy(int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L368"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#setPreferredPhy(int,int,int)">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#setPreferredPhy(int,int,int)</a></p>
@@ -2015,7 +2053,7 @@ public List&lt;BluetoothDevice&gt; GetDevicesMatchingConnectionStates(int[] arg0
 
   <h3 id="Android_Bluetooth_BluetoothGatt_WriteCharacteristic_Android_Bluetooth_BluetoothGattCharacteristic_" data-uid="Android.Bluetooth.BluetoothGatt.WriteCharacteristic(Android.Bluetooth.BluetoothGattCharacteristic)">
   WriteCharacteristic(BluetoothGattCharacteristic)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L252"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic)">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic)</a></p>
@@ -2055,7 +2093,7 @@ public bool WriteCharacteristic(BluetoothGattCharacteristic arg0)</code></pre>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_WriteCharacteristic_Android_Bluetooth_BluetoothGattCharacteristic_System_Byte___System_Int32_" data-uid="Android.Bluetooth.BluetoothGatt.WriteCharacteristic(Android.Bluetooth.BluetoothGattCharacteristic,System.Byte[],System.Int32)">
   WriteCharacteristic(BluetoothGattCharacteristic, byte[], int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L284"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic,byte[],int)">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic,byte[],int)</a></p>
@@ -2100,7 +2138,7 @@ public bool WriteCharacteristic(BluetoothGattCharacteristic arg0)</code></pre>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_WriteDescriptor_Android_Bluetooth_BluetoothGattDescriptor_" data-uid="Android.Bluetooth.BluetoothGatt.WriteDescriptor(Android.Bluetooth.BluetoothGattDescriptor)">
   WriteDescriptor(BluetoothGattDescriptor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L262"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeDescriptor(android.bluetooth.BluetoothGattDescriptor)">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeDescriptor(android.bluetooth.BluetoothGattDescriptor)</a></p>
@@ -2140,7 +2178,7 @@ public bool WriteDescriptor(BluetoothGattDescriptor arg0)</code></pre>
 
   <h3 id="Android_Bluetooth_BluetoothGatt_WriteDescriptor_Android_Bluetooth_BluetoothGattDescriptor_System_Byte___" data-uid="Android.Bluetooth.BluetoothGatt.WriteDescriptor(Android.Bluetooth.BluetoothGattDescriptor,System.Byte[])">
   WriteDescriptor(BluetoothGattDescriptor, byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Bluetooth/BluetoothGatt.cs/#L294"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeDescriptor(android.bluetooth.BluetoothGattDescriptor,byte[])">https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeDescriptor(android.bluetooth.BluetoothGattDescriptor,byte[])</a></p>

@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -326,6 +326,12 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -484,7 +490,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -500,7 +506,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo__ctor" data-uid="Android.App.Admin.DeviceAdminInfo.#ctor">
   DeviceAdminInfo()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -570,7 +576,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo__ctor_System_Object___" data-uid="Android.App.Admin.DeviceAdminInfo.#ctor(System.Object[])">
   DeviceAdminInfo(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -606,7 +612,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_BridgeClassName" data-uid="Android.App.Admin.DeviceAdminInfo.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -698,11 +704,43 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="Android_App_Admin_DeviceAdminInfo_HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER_" data-uid="Android.App.Admin.DeviceAdminInfo.HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER*"></a>
+
+  <h3 id="Android_App_Admin_DeviceAdminInfo_HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER" data-uid="Android.App.Admin.DeviceAdminInfo.HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER">
+  HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_App_Admin_DeviceAdminInfo_HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED_" data-uid="Android.App.Admin.DeviceAdminInfo.HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED*"></a>
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED" data-uid="Android.App.Admin.DeviceAdminInfo.HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED">
   HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED</a></p>
@@ -734,7 +772,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_IsBridgeAbstract" data-uid="Android.App.Admin.DeviceAdminInfo.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -766,7 +804,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_IsBridgeCloseable" data-uid="Android.App.Admin.DeviceAdminInfo.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -798,7 +836,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_IsBridgeInterface" data-uid="Android.App.Admin.DeviceAdminInfo.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -830,7 +868,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_IsBridgeStatic" data-uid="Android.App.Admin.DeviceAdminInfo.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -862,7 +900,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_USES_ENCRYPTED_STORAGE" data-uid="Android.App.Admin.DeviceAdminInfo.USES_ENCRYPTED_STORAGE">
   USES_ENCRYPTED_STORAGE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_ENCRYPTED_STORAGE">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_ENCRYPTED_STORAGE</a></p>
@@ -894,7 +932,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_USES_POLICY_DISABLE_CAMERA" data-uid="Android.App.Admin.DeviceAdminInfo.USES_POLICY_DISABLE_CAMERA">
   USES_POLICY_DISABLE_CAMERA
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_DISABLE_CAMERA">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_DISABLE_CAMERA</a></p>
@@ -926,7 +964,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_USES_POLICY_DISABLE_KEYGUARD_FEATURES" data-uid="Android.App.Admin.DeviceAdminInfo.USES_POLICY_DISABLE_KEYGUARD_FEATURES">
   USES_POLICY_DISABLE_KEYGUARD_FEATURES
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_DISABLE_KEYGUARD_FEATURES">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_DISABLE_KEYGUARD_FEATURES</a></p>
@@ -958,7 +996,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_USES_POLICY_EXPIRE_PASSWORD" data-uid="Android.App.Admin.DeviceAdminInfo.USES_POLICY_EXPIRE_PASSWORD">
   USES_POLICY_EXPIRE_PASSWORD
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_EXPIRE_PASSWORD">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_EXPIRE_PASSWORD</a></p>
@@ -990,7 +1028,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_USES_POLICY_FORCE_LOCK" data-uid="Android.App.Admin.DeviceAdminInfo.USES_POLICY_FORCE_LOCK">
   USES_POLICY_FORCE_LOCK
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L102"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_FORCE_LOCK">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_FORCE_LOCK</a></p>
@@ -1022,7 +1060,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_USES_POLICY_LIMIT_PASSWORD" data-uid="Android.App.Admin.DeviceAdminInfo.USES_POLICY_LIMIT_PASSWORD">
   USES_POLICY_LIMIT_PASSWORD
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_LIMIT_PASSWORD">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_LIMIT_PASSWORD</a></p>
@@ -1054,7 +1092,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_USES_POLICY_RESET_PASSWORD" data-uid="Android.App.Admin.DeviceAdminInfo.USES_POLICY_RESET_PASSWORD">
   USES_POLICY_RESET_PASSWORD
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_RESET_PASSWORD">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_RESET_PASSWORD</a></p>
@@ -1086,7 +1124,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_USES_POLICY_WATCH_LOGIN" data-uid="Android.App.Admin.DeviceAdminInfo.USES_POLICY_WATCH_LOGIN">
   USES_POLICY_WATCH_LOGIN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_WATCH_LOGIN">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_WATCH_LOGIN</a></p>
@@ -1118,7 +1156,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_USES_POLICY_WIPE_DATA" data-uid="Android.App.Admin.DeviceAdminInfo.USES_POLICY_WIPE_DATA">
   USES_POLICY_WIPE_DATA
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_WIPE_DATA">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#USES_POLICY_WIPE_DATA</a></p>
@@ -1154,7 +1192,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_DescribeContents" data-uid="Android.App.Admin.DeviceAdminInfo.DescribeContents">
   DescribeContents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#describeContents()">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#describeContents()</a></p>
@@ -1187,7 +1225,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_Dump_Android_Util_Printer_Java_Lang_String_" data-uid="Android.App.Admin.DeviceAdminInfo.Dump(Android.Util.Printer,Java.Lang.String)">
   Dump(Printer, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L252"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#dump(android.util.Printer,java.lang.String)">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#dump(android.util.Printer,java.lang.String)</a></p>
@@ -1223,7 +1261,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_GetActivityInfo" data-uid="Android.App.Admin.DeviceAdminInfo.GetActivityInfo">
   GetActivityInfo()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getActivityInfo()">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getActivityInfo()</a></p>
@@ -1256,7 +1294,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_GetComponent" data-uid="Android.App.Admin.DeviceAdminInfo.GetComponent">
   GetComponent()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getComponent()">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getComponent()</a></p>
@@ -1289,7 +1327,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_GetHeadlessDeviceOwnerMode" data-uid="Android.App.Admin.DeviceAdminInfo.GetHeadlessDeviceOwnerMode">
   GetHeadlessDeviceOwnerMode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L199"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getHeadlessDeviceOwnerMode()">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getHeadlessDeviceOwnerMode()</a></p>
@@ -1322,7 +1360,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_GetPackageName" data-uid="Android.App.Admin.DeviceAdminInfo.GetPackageName">
   GetPackageName()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L226"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getPackageName()">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getPackageName()</a></p>
@@ -1355,7 +1393,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_GetReceiverName" data-uid="Android.App.Admin.DeviceAdminInfo.GetReceiverName">
   GetReceiverName()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L234"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getReceiverName()">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getReceiverName()</a></p>
@@ -1388,7 +1426,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_GetTagForPolicy_System_Int32_" data-uid="Android.App.Admin.DeviceAdminInfo.GetTagForPolicy(System.Int32)">
   GetTagForPolicy(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L243"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getTagForPolicy(int)">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getTagForPolicy(int)</a></p>
@@ -1427,7 +1465,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_IsVisible" data-uid="Android.App.Admin.DeviceAdminInfo.IsVisible">
   IsVisible()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#isVisible()">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#isVisible()</a></p>
@@ -1460,7 +1498,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_LoadDescription_Android_Content_Pm_PackageManager_" data-uid="Android.App.Admin.DeviceAdminInfo.LoadDescription(Android.Content.Pm.PackageManager)">
   LoadDescription(PackageManager)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#loadDescription(android.content.pm.PackageManager)">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#loadDescription(android.content.pm.PackageManager)</a></p>
@@ -1504,7 +1542,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_LoadIcon_Android_Content_Pm_PackageManager_" data-uid="Android.App.Admin.DeviceAdminInfo.LoadIcon(Android.Content.Pm.PackageManager)">
   LoadIcon(PackageManager)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L158"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#loadIcon(android.content.pm.PackageManager)">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#loadIcon(android.content.pm.PackageManager)</a></p>
@@ -1543,7 +1581,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_LoadLabel_Android_Content_Pm_PackageManager_" data-uid="Android.App.Admin.DeviceAdminInfo.LoadLabel(Android.Content.Pm.PackageManager)">
   LoadLabel(PackageManager)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#loadLabel(android.content.pm.PackageManager)">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#loadLabel(android.content.pm.PackageManager)</a></p>
@@ -1582,7 +1620,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_SupportsTransferOwnership" data-uid="Android.App.Admin.DeviceAdminInfo.SupportsTransferOwnership">
   SupportsTransferOwnership()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#supportsTransferOwnership()">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#supportsTransferOwnership()</a></p>
@@ -1615,7 +1653,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_UsesPolicy_System_Int32_" data-uid="Android.App.Admin.DeviceAdminInfo.UsesPolicy(System.Int32)">
   UsesPolicy(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L183"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#usesPolicy(int)">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#usesPolicy(int)</a></p>
@@ -1654,7 +1692,7 @@ Class DeviceAdminInfo  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Android_App_Admin_DeviceAdminInfo_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.App.Admin.DeviceAdminInfo.WriteToParcel(Android.Os.Parcel,System.Int32)">
   WriteToParcel(Parcel, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/DeviceAdminInfo.cs/#L261"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#writeToParcel(android.os.Parcel,int)</a></p>

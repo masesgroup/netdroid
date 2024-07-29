@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore__ctor" data-uid="Android.Provider.MediaStore.#ctor">
   MediaStore()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5475"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5734"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore__ctor_System_Object___" data-uid="Android.Provider.MediaStore.#ctor(System.Object[])">
   MediaStore(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5479"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5738"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -551,11 +557,43 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 </h2>
 
 
+  <a id="Android_Provider_MediaStore_ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSION_" data-uid="Android.Provider.MediaStore.ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSION*"></a>
+
+  <h3 id="Android_Provider_MediaStore_ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSION" data-uid="Android.Provider.MediaStore.ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSION">
+  ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSION">https://developer.android.com/reference/android/provider/MediaStore.html#ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACCESS_MEDIA_OWNER_PACKAGE_NAME_PERMISSION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Provider_MediaStore_ACTION_IMAGE_CAPTURE_" data-uid="Android.Provider.MediaStore.ACTION_IMAGE_CAPTURE*"></a>
 
   <h3 id="Android_Provider_MediaStore_ACTION_IMAGE_CAPTURE" data-uid="Android.Provider.MediaStore.ACTION_IMAGE_CAPTURE">
   ACTION_IMAGE_CAPTURE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_IMAGE_CAPTURE">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_IMAGE_CAPTURE</a></p>
@@ -587,7 +625,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_ACTION_IMAGE_CAPTURE_SECURE" data-uid="Android.Provider.MediaStore.ACTION_IMAGE_CAPTURE_SECURE">
   ACTION_IMAGE_CAPTURE_SECURE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_IMAGE_CAPTURE_SECURE">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_IMAGE_CAPTURE_SECURE</a></p>
@@ -619,7 +657,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_ACTION_PICK_IMAGES" data-uid="Android.Provider.MediaStore.ACTION_PICK_IMAGES">
   ACTION_PICK_IMAGES
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_PICK_IMAGES">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_PICK_IMAGES</a></p>
@@ -651,7 +689,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_ACTION_PICK_IMAGES_SETTINGS" data-uid="Android.Provider.MediaStore.ACTION_PICK_IMAGES_SETTINGS">
   ACTION_PICK_IMAGES_SETTINGS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_PICK_IMAGES_SETTINGS">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_PICK_IMAGES_SETTINGS</a></p>
@@ -683,7 +721,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_ACTION_REVIEW" data-uid="Android.Provider.MediaStore.ACTION_REVIEW">
   ACTION_REVIEW
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_REVIEW">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_REVIEW</a></p>
@@ -715,7 +753,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_ACTION_REVIEW_SECURE" data-uid="Android.Provider.MediaStore.ACTION_REVIEW_SECURE">
   ACTION_REVIEW_SECURE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_REVIEW_SECURE">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_REVIEW_SECURE</a></p>
@@ -747,7 +785,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_ACTION_VIDEO_CAPTURE" data-uid="Android.Provider.MediaStore.ACTION_VIDEO_CAPTURE">
   ACTION_VIDEO_CAPTURE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_VIDEO_CAPTURE">https://developer.android.com/reference/android/provider/MediaStore.html#ACTION_VIDEO_CAPTURE</a></p>
@@ -779,7 +817,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_AUTHORITY" data-uid="Android.Provider.MediaStore.AUTHORITY">
   AUTHORITY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#AUTHORITY">https://developer.android.com/reference/android/provider/MediaStore.html#AUTHORITY</a></p>
@@ -843,7 +881,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_BridgeClassName" data-uid="Android.Provider.MediaStore.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5486"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5746"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -875,7 +913,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT" data-uid="Android.Provider.MediaStore.EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT">
   EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_ACCEPT_ORIGINAL_MEDIA_FORMAT</a></p>
@@ -907,7 +945,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_EXTRA_BRIGHTNESS" data-uid="Android.Provider.MediaStore.EXTRA_BRIGHTNESS">
   EXTRA_BRIGHTNESS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_BRIGHTNESS">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_BRIGHTNESS</a></p>
@@ -939,7 +977,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_EXTRA_DURATION_LIMIT" data-uid="Android.Provider.MediaStore.EXTRA_DURATION_LIMIT">
   EXTRA_DURATION_LIMIT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_DURATION_LIMIT">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_DURATION_LIMIT</a></p>
@@ -971,7 +1009,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_EXTRA_FINISH_ON_COMPLETION" data-uid="Android.Provider.MediaStore.EXTRA_FINISH_ON_COMPLETION">
   EXTRA_FINISH_ON_COMPLETION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_FINISH_ON_COMPLETION">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_FINISH_ON_COMPLETION</a></p>
@@ -1003,7 +1041,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_EXTRA_FULL_SCREEN" data-uid="Android.Provider.MediaStore.EXTRA_FULL_SCREEN">
   EXTRA_FULL_SCREEN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_FULL_SCREEN">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_FULL_SCREEN</a></p>
@@ -1035,7 +1073,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_ALBUM" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_ALBUM">
   EXTRA_MEDIA_ALBUM
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L169"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_ALBUM">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_ALBUM</a></p>
@@ -1067,7 +1105,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_ARTIST" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_ARTIST">
   EXTRA_MEDIA_ARTIST
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_ARTIST">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_ARTIST</a></p>
@@ -1099,7 +1137,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_CAPABILITIES" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_CAPABILITIES">
   EXTRA_MEDIA_CAPABILITIES
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_CAPABILITIES">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_CAPABILITIES</a></p>
@@ -1131,7 +1169,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_CAPABILITIES_UID" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_CAPABILITIES_UID">
   EXTRA_MEDIA_CAPABILITIES_UID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_CAPABILITIES_UID">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_CAPABILITIES_UID</a></p>
@@ -1163,7 +1201,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_FOCUS" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_FOCUS">
   EXTRA_MEDIA_FOCUS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_FOCUS">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_FOCUS</a></p>
@@ -1195,7 +1233,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_GENRE" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_GENRE">
   EXTRA_MEDIA_GENRE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L199"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_GENRE">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_GENRE</a></p>
@@ -1227,7 +1265,7 @@ Class MediaStore  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_PLAYLIST" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_PLAYLIST">
   EXTRA_MEDIA_PLAYLIST
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_PLAYLIST">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_PLAYLIST</a></p>
@@ -1260,7 +1298,7 @@ public static String EXTRA_MEDIA_PLAYLIST { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_RADIO_CHANNEL" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_RADIO_CHANNEL">
   EXTRA_MEDIA_RADIO_CHANNEL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L212"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_RADIO_CHANNEL">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_RADIO_CHANNEL</a></p>
@@ -1292,7 +1330,7 @@ public static String EXTRA_MEDIA_PLAYLIST { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_EXTRA_MEDIA_TITLE" data-uid="Android.Provider.MediaStore.EXTRA_MEDIA_TITLE">
   EXTRA_MEDIA_TITLE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_TITLE">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_TITLE</a></p>
@@ -1324,7 +1362,7 @@ public static String EXTRA_MEDIA_PLAYLIST { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_EXTRA_OUTPUT" data-uid="Android.Provider.MediaStore.EXTRA_OUTPUT">
   EXTRA_OUTPUT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_OUTPUT">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_OUTPUT</a></p>
@@ -1352,11 +1390,107 @@ public static String EXTRA_MEDIA_PLAYLIST { get; }</code></pre>
 
 
 
+  <a id="Android_Provider_MediaStore_EXTRA_PICK_IMAGES_ACCENT_COLOR_" data-uid="Android.Provider.MediaStore.EXTRA_PICK_IMAGES_ACCENT_COLOR*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_PICK_IMAGES_ACCENT_COLOR" data-uid="Android.Provider.MediaStore.EXTRA_PICK_IMAGES_ACCENT_COLOR">
+  EXTRA_PICK_IMAGES_ACCENT_COLOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_ACCENT_COLOR">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_ACCENT_COLOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_PICK_IMAGES_ACCENT_COLOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_PICK_IMAGES_IN_ORDER_" data-uid="Android.Provider.MediaStore.EXTRA_PICK_IMAGES_IN_ORDER*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_PICK_IMAGES_IN_ORDER" data-uid="Android.Provider.MediaStore.EXTRA_PICK_IMAGES_IN_ORDER">
+  EXTRA_PICK_IMAGES_IN_ORDER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_IN_ORDER">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_IN_ORDER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_PICK_IMAGES_IN_ORDER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_EXTRA_PICK_IMAGES_LAUNCH_TAB_" data-uid="Android.Provider.MediaStore.EXTRA_PICK_IMAGES_LAUNCH_TAB*"></a>
+
+  <h3 id="Android_Provider_MediaStore_EXTRA_PICK_IMAGES_LAUNCH_TAB" data-uid="Android.Provider.MediaStore.EXTRA_PICK_IMAGES_LAUNCH_TAB">
+  EXTRA_PICK_IMAGES_LAUNCH_TAB
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_LAUNCH_TAB">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_LAUNCH_TAB</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_PICK_IMAGES_LAUNCH_TAB { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Provider_MediaStore_EXTRA_PICK_IMAGES_MAX_" data-uid="Android.Provider.MediaStore.EXTRA_PICK_IMAGES_MAX*"></a>
 
   <h3 id="Android_Provider_MediaStore_EXTRA_PICK_IMAGES_MAX" data-uid="Android.Provider.MediaStore.EXTRA_PICK_IMAGES_MAX">
   EXTRA_PICK_IMAGES_MAX
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_MAX">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_PICK_IMAGES_MAX</a></p>
@@ -1388,7 +1522,7 @@ public static String EXTRA_MEDIA_PLAYLIST { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_EXTRA_SCREEN_ORIENTATION" data-uid="Android.Provider.MediaStore.EXTRA_SCREEN_ORIENTATION">
   EXTRA_SCREEN_ORIENTATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L254"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_SCREEN_ORIENTATION">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_SCREEN_ORIENTATION</a></p>
@@ -1420,7 +1554,7 @@ public static String EXTRA_MEDIA_PLAYLIST { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_EXTRA_SHOW_ACTION_ICONS" data-uid="Android.Provider.MediaStore.EXTRA_SHOW_ACTION_ICONS">
   EXTRA_SHOW_ACTION_ICONS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L260"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_SHOW_ACTION_ICONS">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_SHOW_ACTION_ICONS</a></p>
@@ -1452,7 +1586,7 @@ public static String EXTRA_MEDIA_PLAYLIST { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_EXTRA_SIZE_LIMIT" data-uid="Android.Provider.MediaStore.EXTRA_SIZE_LIMIT">
   EXTRA_SIZE_LIMIT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L266"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_SIZE_LIMIT">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_SIZE_LIMIT</a></p>
@@ -1484,7 +1618,7 @@ public static String EXTRA_MEDIA_PLAYLIST { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_EXTRA_VIDEO_QUALITY" data-uid="Android.Provider.MediaStore.EXTRA_VIDEO_QUALITY">
   EXTRA_VIDEO_QUALITY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L272"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_VIDEO_QUALITY">https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_VIDEO_QUALITY</a></p>
@@ -1516,7 +1650,7 @@ public static String EXTRA_MEDIA_PLAYLIST { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH" data-uid="Android.Provider.MediaStore.INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH">
   INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L278"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_MEDIA_PLAY_FROM_SEARCH</a></p>
@@ -1548,7 +1682,7 @@ public static String EXTRA_MEDIA_PLAYLIST { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_INTENT_ACTION_MEDIA_SEARCH" data-uid="Android.Provider.MediaStore.INTENT_ACTION_MEDIA_SEARCH">
   INTENT_ACTION_MEDIA_SEARCH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L284"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_MEDIA_SEARCH">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_MEDIA_SEARCH</a></p>
@@ -1580,7 +1714,7 @@ public static String EXTRA_MEDIA_PLAYLIST { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_INTENT_ACTION_MUSIC_PLAYER" data-uid="Android.Provider.MediaStore.INTENT_ACTION_MUSIC_PLAYER">
   INTENT_ACTION_MUSIC_PLAYER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L290"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_MUSIC_PLAYER">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_MUSIC_PLAYER</a></p>
@@ -1613,7 +1747,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_INTENT_ACTION_STILL_IMAGE_CAMERA" data-uid="Android.Provider.MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA">
   INTENT_ACTION_STILL_IMAGE_CAMERA
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L297"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_STILL_IMAGE_CAMERA">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_STILL_IMAGE_CAMERA</a></p>
@@ -1645,7 +1779,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE" data-uid="Android.Provider.MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE">
   INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L303"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE</a></p>
@@ -1677,7 +1811,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_INTENT_ACTION_TEXT_OPEN_FROM_SEARCH" data-uid="Android.Provider.MediaStore.INTENT_ACTION_TEXT_OPEN_FROM_SEARCH">
   INTENT_ACTION_TEXT_OPEN_FROM_SEARCH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L309"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_TEXT_OPEN_FROM_SEARCH">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_TEXT_OPEN_FROM_SEARCH</a></p>
@@ -1709,7 +1843,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_INTENT_ACTION_VIDEO_CAMERA" data-uid="Android.Provider.MediaStore.INTENT_ACTION_VIDEO_CAMERA">
   INTENT_ACTION_VIDEO_CAMERA
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L315"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_VIDEO_CAMERA">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_VIDEO_CAMERA</a></p>
@@ -1741,7 +1875,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH" data-uid="Android.Provider.MediaStore.INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH">
   INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L321"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH">https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH</a></p>
@@ -1773,7 +1907,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_IsBridgeAbstract" data-uid="Android.Provider.MediaStore.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5490"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5750"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1805,7 +1939,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_IsBridgeCloseable" data-uid="Android.Provider.MediaStore.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5494"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5754"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1837,7 +1971,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_IsBridgeInterface" data-uid="Android.Provider.MediaStore.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5498"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5758"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1869,7 +2003,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_IsBridgeStatic" data-uid="Android.Provider.MediaStore.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5502"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5762"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -2029,7 +2163,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_MEDIA_IGNORE_FILENAME" data-uid="Android.Provider.MediaStore.MEDIA_IGNORE_FILENAME">
   MEDIA_IGNORE_FILENAME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L327"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#MEDIA_IGNORE_FILENAME">https://developer.android.com/reference/android/provider/MediaStore.html#MEDIA_IGNORE_FILENAME</a></p>
@@ -2061,7 +2195,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_MEDIA_SCANNER_VOLUME" data-uid="Android.Provider.MediaStore.MEDIA_SCANNER_VOLUME">
   MEDIA_SCANNER_VOLUME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L333"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#MEDIA_SCANNER_VOLUME">https://developer.android.com/reference/android/provider/MediaStore.html#MEDIA_SCANNER_VOLUME</a></p>
@@ -2093,7 +2227,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_META_DATA_REVIEW_GALLERY_PREWARM_SERVICE" data-uid="Android.Provider.MediaStore.META_DATA_REVIEW_GALLERY_PREWARM_SERVICE">
   META_DATA_REVIEW_GALLERY_PREWARM_SERVICE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L339"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#META_DATA_REVIEW_GALLERY_PREWARM_SERVICE">https://developer.android.com/reference/android/provider/MediaStore.html#META_DATA_REVIEW_GALLERY_PREWARM_SERVICE</a></p>
@@ -2125,7 +2259,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE" data-uid="Android.Provider.MediaStore.META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE">
   META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L345"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE">https://developer.android.com/reference/android/provider/MediaStore.html#META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE</a></p>
@@ -2153,11 +2287,75 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
 
 
+  <a id="Android_Provider_MediaStore_PICK_IMAGES_TAB_ALBUMS_" data-uid="Android.Provider.MediaStore.PICK_IMAGES_TAB_ALBUMS*"></a>
+
+  <h3 id="Android_Provider_MediaStore_PICK_IMAGES_TAB_ALBUMS" data-uid="Android.Provider.MediaStore.PICK_IMAGES_TAB_ALBUMS">
+  PICK_IMAGES_TAB_ALBUMS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#PICK_IMAGES_TAB_ALBUMS">https://developer.android.com/reference/android/provider/MediaStore.html#PICK_IMAGES_TAB_ALBUMS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PICK_IMAGES_TAB_ALBUMS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_MediaStore_PICK_IMAGES_TAB_IMAGES_" data-uid="Android.Provider.MediaStore.PICK_IMAGES_TAB_IMAGES*"></a>
+
+  <h3 id="Android_Provider_MediaStore_PICK_IMAGES_TAB_IMAGES" data-uid="Android.Provider.MediaStore.PICK_IMAGES_TAB_IMAGES">
+  PICK_IMAGES_TAB_IMAGES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#PICK_IMAGES_TAB_IMAGES">https://developer.android.com/reference/android/provider/MediaStore.html#PICK_IMAGES_TAB_IMAGES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PICK_IMAGES_TAB_IMAGES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Provider_MediaStore_QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES_" data-uid="Android.Provider.MediaStore.QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES*"></a>
 
   <h3 id="Android_Provider_MediaStore_QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES" data-uid="Android.Provider.MediaStore.QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES">
   QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L351"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES">https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_INCLUDE_RECENTLY_UNMOUNTED_VOLUMES</a></p>
@@ -2185,11 +2383,43 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
 
 
+  <a id="Android_Provider_MediaStore_QUERY_ARG_LATEST_SELECTION_ONLY_" data-uid="Android.Provider.MediaStore.QUERY_ARG_LATEST_SELECTION_ONLY*"></a>
+
+  <h3 id="Android_Provider_MediaStore_QUERY_ARG_LATEST_SELECTION_ONLY" data-uid="Android.Provider.MediaStore.QUERY_ARG_LATEST_SELECTION_ONLY">
+  QUERY_ARG_LATEST_SELECTION_ONLY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_LATEST_SELECTION_ONLY">https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_LATEST_SELECTION_ONLY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String QUERY_ARG_LATEST_SELECTION_ONLY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Provider_MediaStore_QUERY_ARG_MATCH_FAVORITE_" data-uid="Android.Provider.MediaStore.QUERY_ARG_MATCH_FAVORITE*"></a>
 
   <h3 id="Android_Provider_MediaStore_QUERY_ARG_MATCH_FAVORITE" data-uid="Android.Provider.MediaStore.QUERY_ARG_MATCH_FAVORITE">
   QUERY_ARG_MATCH_FAVORITE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L363"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MATCH_FAVORITE">https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MATCH_FAVORITE</a></p>
@@ -2221,7 +2451,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_QUERY_ARG_MATCH_PENDING" data-uid="Android.Provider.MediaStore.QUERY_ARG_MATCH_PENDING">
   QUERY_ARG_MATCH_PENDING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L369"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MATCH_PENDING">https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MATCH_PENDING</a></p>
@@ -2253,7 +2483,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_QUERY_ARG_MATCH_TRASHED" data-uid="Android.Provider.MediaStore.QUERY_ARG_MATCH_TRASHED">
   QUERY_ARG_MATCH_TRASHED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L375"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MATCH_TRASHED">https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_MATCH_TRASHED</a></p>
@@ -2285,7 +2515,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_QUERY_ARG_RELATED_URI" data-uid="Android.Provider.MediaStore.QUERY_ARG_RELATED_URI">
   QUERY_ARG_RELATED_URI
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L381"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_RELATED_URI">https://developer.android.com/reference/android/provider/MediaStore.html#QUERY_ARG_RELATED_URI</a></p>
@@ -2317,7 +2547,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_UNKNOWN_STRING" data-uid="Android.Provider.MediaStore.UNKNOWN_STRING">
   UNKNOWN_STRING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L387"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#UNKNOWN_STRING">https://developer.android.com/reference/android/provider/MediaStore.html#UNKNOWN_STRING</a></p>
@@ -2349,7 +2579,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_VOLUME_EXTERNAL" data-uid="Android.Provider.MediaStore.VOLUME_EXTERNAL">
   VOLUME_EXTERNAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L393"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#VOLUME_EXTERNAL">https://developer.android.com/reference/android/provider/MediaStore.html#VOLUME_EXTERNAL</a></p>
@@ -2381,7 +2611,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_VOLUME_EXTERNAL_PRIMARY" data-uid="Android.Provider.MediaStore.VOLUME_EXTERNAL_PRIMARY">
   VOLUME_EXTERNAL_PRIMARY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L399"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#VOLUME_EXTERNAL_PRIMARY">https://developer.android.com/reference/android/provider/MediaStore.html#VOLUME_EXTERNAL_PRIMARY</a></p>
@@ -2413,7 +2643,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_VOLUME_INTERNAL" data-uid="Android.Provider.MediaStore.VOLUME_INTERNAL">
   VOLUME_INTERNAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L405"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#VOLUME_INTERNAL">https://developer.android.com/reference/android/provider/MediaStore.html#VOLUME_INTERNAL</a></p>
@@ -2449,7 +2679,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_CanManageMedia_Android_Content_Context_" data-uid="Android.Provider.MediaStore.CanManageMedia(Android.Content.Context)">
   CanManageMedia(Context)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L527"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#canManageMedia(android.content.Context)">https://developer.android.com/reference/android/provider/MediaStore.html#canManageMedia(android.content.Context)</a></p>
@@ -2488,7 +2718,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_CreateDeleteRequest_Android_Content_ContentResolver_Java_Util_Collection_Android_Net_Uri__" data-uid="Android.Provider.MediaStore.CreateDeleteRequest(Android.Content.ContentResolver,Java.Util.Collection{Android.Net.Uri})">
   CreateDeleteRequest(ContentResolver, Collection&lt;Uri&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L418"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#createDeleteRequest(android.content.ContentResolver,java.util.Collection)">https://developer.android.com/reference/android/provider/MediaStore.html#createDeleteRequest(android.content.ContentResolver,java.util.Collection)</a></p>
@@ -2530,7 +2760,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_CreateFavoriteRequest_Android_Content_ContentResolver_Java_Util_Collection_Android_Net_Uri__System_Boolean_" data-uid="Android.Provider.MediaStore.CreateFavoriteRequest(Android.Content.ContentResolver,Java.Util.Collection{Android.Net.Uri},System.Boolean)">
   CreateFavoriteRequest(ContentResolver, Collection&lt;Uri&gt;, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L429"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#createFavoriteRequest(android.content.ContentResolver,java.util.Collection,boolean)">https://developer.android.com/reference/android/provider/MediaStore.html#createFavoriteRequest(android.content.ContentResolver,java.util.Collection,boolean)</a></p>
@@ -2575,7 +2805,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_CreateTrashRequest_Android_Content_ContentResolver_Java_Util_Collection_Android_Net_Uri__System_Boolean_" data-uid="Android.Provider.MediaStore.CreateTrashRequest(Android.Content.ContentResolver,Java.Util.Collection{Android.Net.Uri},System.Boolean)">
   CreateTrashRequest(ContentResolver, Collection&lt;Uri&gt;, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L440"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#createTrashRequest(android.content.ContentResolver,java.util.Collection,boolean)">https://developer.android.com/reference/android/provider/MediaStore.html#createTrashRequest(android.content.ContentResolver,java.util.Collection,boolean)</a></p>
@@ -2620,7 +2850,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_CreateWriteRequest_Android_Content_ContentResolver_Java_Util_Collection_Android_Net_Uri__" data-uid="Android.Provider.MediaStore.CreateWriteRequest(Android.Content.ContentResolver,Java.Util.Collection{Android.Net.Uri})">
   CreateWriteRequest(ContentResolver, Collection&lt;Uri&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L408"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L450"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#createWriteRequest(android.content.ContentResolver,java.util.Collection)">https://developer.android.com/reference/android/provider/MediaStore.html#createWriteRequest(android.content.ContentResolver,java.util.Collection)</a></p>
@@ -2662,7 +2892,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetDocumentUri_Android_Content_Context_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.GetDocumentUri(Android.Content.Context,Android.Net.Uri)">
   GetDocumentUri(Context, Uri)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L460"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getDocumentUri(android.content.Context,android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#getDocumentUri(android.content.Context,android.net.Uri)</a></p>
@@ -2704,7 +2934,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetExternalVolumeNames_Android_Content_Context_" data-uid="Android.Provider.MediaStore.GetExternalVolumeNames(Android.Content.Context)">
   GetExternalVolumeNames(Context)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L622"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getExternalVolumeNames(android.content.Context)">https://developer.android.com/reference/android/provider/MediaStore.html#getExternalVolumeNames(android.content.Context)</a></p>
@@ -2743,7 +2973,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetGeneration_Android_Content_Context_Java_Lang_String_" data-uid="Android.Provider.MediaStore.GetGeneration(Android.Content.Context,Java.Lang.String)">
   GetGeneration(Context, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L599"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L641"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getGeneration(android.content.Context,java.lang.String)">https://developer.android.com/reference/android/provider/MediaStore.html#getGeneration(android.content.Context,java.lang.String)</a></p>
@@ -2785,7 +3015,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetMediaScannerUri" data-uid="Android.Provider.MediaStore.GetMediaScannerUri">
   GetMediaScannerUri()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L468"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getMediaScannerUri()">https://developer.android.com/reference/android/provider/MediaStore.html#getMediaScannerUri()</a></p>
@@ -2818,7 +3048,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetMediaUri_Android_Content_Context_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.GetMediaUri(Android.Content.Context,Android.Net.Uri)">
   GetMediaUri(Context, Uri)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L436"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L478"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getMediaUri(android.content.Context,android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#getMediaUri(android.content.Context,android.net.Uri)</a></p>
@@ -2860,7 +3090,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetOriginalMediaFormatFileDescriptor_Android_Content_Context_Android_Os_ParcelFileDescriptor_" data-uid="Android.Provider.MediaStore.GetOriginalMediaFormatFileDescriptor(Android.Content.Context,Android.Os.ParcelFileDescriptor)">
   GetOriginalMediaFormatFileDescriptor(Context, ParcelFileDescriptor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L518"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getOriginalMediaFormatFileDescriptor(android.content.Context,android.os.ParcelFileDescriptor)">https://developer.android.com/reference/android/provider/MediaStore.html#getOriginalMediaFormatFileDescriptor(android.content.Context,android.os.ParcelFileDescriptor)</a></p>
@@ -2907,7 +3137,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetPickImagesMaxLimit" data-uid="Android.Provider.MediaStore.GetPickImagesMaxLimit">
   GetPickImagesMaxLimit()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L575"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getPickImagesMaxLimit()">https://developer.android.com/reference/android/provider/MediaStore.html#getPickImagesMaxLimit()</a></p>
@@ -2940,7 +3170,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetRecentExternalVolumeNames_Android_Content_Context_" data-uid="Android.Provider.MediaStore.GetRecentExternalVolumeNames(Android.Content.Context)">
   GetRecentExternalVolumeNames(Context)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L589"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L631"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getRecentExternalVolumeNames(android.content.Context)">https://developer.android.com/reference/android/provider/MediaStore.html#getRecentExternalVolumeNames(android.content.Context)</a></p>
@@ -2979,7 +3209,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetRedactedUri_Android_Content_ContentResolver_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.GetRedactedUri(Android.Content.ContentResolver,Android.Net.Uri)">
   GetRedactedUri(ContentResolver, Uri)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L488"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getRedactedUri(android.content.ContentResolver,android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#getRedactedUri(android.content.ContentResolver,android.net.Uri)</a></p>
@@ -3021,7 +3251,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetRedactedUri_Android_Content_ContentResolver_Java_Util_List_Android_Net_Uri__" data-uid="Android.Provider.MediaStore.GetRedactedUri(Android.Content.ContentResolver,Java.Util.List{Android.Net.Uri})">
   GetRedactedUri(ContentResolver, List&lt;Uri&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L613"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getRedactedUri(android.content.ContentResolver,java.util.List)">https://developer.android.com/reference/android/provider/MediaStore.html#getRedactedUri(android.content.ContentResolver,java.util.List)</a></p>
@@ -3063,7 +3293,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetRequireOriginal_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.GetRequireOriginal(Android.Net.Uri)">
   GetRequireOriginal(Uri)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L536"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getRequireOriginal(android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#getRequireOriginal(android.net.Uri)</a></p>
@@ -3102,7 +3332,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetVersion_Android_Content_Context_" data-uid="Android.Provider.MediaStore.GetVersion(Android.Content.Context)">
   GetVersion(Context)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L552"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L594"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getVersion(android.content.Context)">https://developer.android.com/reference/android/provider/MediaStore.html#getVersion(android.content.Context)</a></p>
@@ -3141,7 +3371,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetVersion_Android_Content_Context_Java_Lang_String_" data-uid="Android.Provider.MediaStore.GetVersion(Android.Content.Context,Java.Lang.String)">
   GetVersion(Context, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L585"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getVersion(android.content.Context,java.lang.String)">https://developer.android.com/reference/android/provider/MediaStore.html#getVersion(android.content.Context,java.lang.String)</a></p>
@@ -3183,7 +3413,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_GetVolumeName_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.GetVolumeName(Android.Net.Uri)">
   GetVolumeName(Uri)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L561"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L603"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#getVolumeName(android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#getVolumeName(android.net.Uri)</a></p>
@@ -3222,7 +3452,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_IsCurrentCloudMediaProviderAuthority_Android_Content_ContentResolver_Java_Lang_String_" data-uid="Android.Provider.MediaStore.IsCurrentCloudMediaProviderAuthority(Android.Content.ContentResolver,Java.Lang.String)">
   IsCurrentCloudMediaProviderAuthority(ContentResolver, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L546"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#isCurrentCloudMediaProviderAuthority(android.content.ContentResolver,java.lang.String)">https://developer.android.com/reference/android/provider/MediaStore.html#isCurrentCloudMediaProviderAuthority(android.content.ContentResolver,java.lang.String)</a></p>
@@ -3264,7 +3494,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_IsCurrentSystemGallery_Android_Content_ContentResolver_System_Int32_Java_Lang_String_" data-uid="Android.Provider.MediaStore.IsCurrentSystemGallery(Android.Content.ContentResolver,System.Int32,Java.Lang.String)">
   IsCurrentSystemGallery(ContentResolver, int, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L515"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L557"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#isCurrentSystemGallery(android.content.ContentResolver,int,java.lang.String)">https://developer.android.com/reference/android/provider/MediaStore.html#isCurrentSystemGallery(android.content.ContentResolver,int,java.lang.String)</a></p>
@@ -3309,7 +3539,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_IsSupportedCloudMediaProviderAuthority_Android_Content_ContentResolver_Java_Lang_String_" data-uid="Android.Provider.MediaStore.IsSupportedCloudMediaProviderAuthority(Android.Content.ContentResolver,Java.Lang.String)">
   IsSupportedCloudMediaProviderAuthority(ContentResolver, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L567"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#isSupportedCloudMediaProviderAuthority(android.content.ContentResolver,java.lang.String)">https://developer.android.com/reference/android/provider/MediaStore.html#isSupportedCloudMediaProviderAuthority(android.content.ContentResolver,java.lang.String)</a></p>
@@ -3351,7 +3581,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_NotifyCloudMediaChangedEvent_Android_Content_ContentResolver_Java_Lang_String_Java_Lang_String_" data-uid="Android.Provider.MediaStore.NotifyCloudMediaChangedEvent(Android.Content.ContentResolver,Java.Lang.String,Java.Lang.String)">
   NotifyCloudMediaChangedEvent(ContentResolver, String, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L652"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#notifyCloudMediaChangedEvent(android.content.ContentResolver,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/provider/MediaStore.html#notifyCloudMediaChangedEvent(android.content.ContentResolver,java.lang.String,java.lang.String)</a></p>
@@ -3395,7 +3625,7 @@ public static String INTENT_ACTION_MUSIC_PLAYER { get; }</code></pre>
 
   <h3 id="Android_Provider_MediaStore_SetIncludePending_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.SetIncludePending(Android.Net.Uri)">
   SetIncludePending(Uri)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L497"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#setIncludePending(android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#setIncludePending(android.net.Uri)</a></p>
@@ -3435,7 +3665,7 @@ public static Uri SetIncludePending(Uri arg0)</code></pre>
 
   <h3 id="Android_Provider_MediaStore_SetRequireOriginal_Android_Net_Uri_" data-uid="Android.Provider.MediaStore.SetRequireOriginal(Android.Net.Uri)">
   SetRequireOriginal(Uri)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/MediaStore.cs/#L507"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/MediaStore.html#setRequireOriginal(android.net.Uri)">https://developer.android.com/reference/android/provider/MediaStore.html#setRequireOriginal(android.net.Uri)</a></p>

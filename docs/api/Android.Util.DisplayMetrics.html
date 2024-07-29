@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics__ctor" data-uid="Android.Util.DisplayMetrics.#ctor">
   DisplayMetrics()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L624"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L636"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics__ctor_System_Object___" data-uid="Android.Util.DisplayMetrics.#ctor(System.Object[])">
   DisplayMetrics(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L640"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -555,7 +561,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_BridgeClassName" data-uid="Android.Util.DisplayMetrics.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L635"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L648"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -871,11 +877,43 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
 
 
+  <a id="Android_Util_DisplayMetrics_DENSITY_390_" data-uid="Android.Util.DisplayMetrics.DENSITY_390*"></a>
+
+  <h3 id="Android_Util_DisplayMetrics_DENSITY_390" data-uid="Android.Util.DisplayMetrics.DENSITY_390">
+  DENSITY_390
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_390">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_390</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DENSITY_390 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Util_DisplayMetrics_DENSITY_400_" data-uid="Android.Util.DisplayMetrics.DENSITY_400*"></a>
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_400" data-uid="Android.Util.DisplayMetrics.DENSITY_400">
   DENSITY_400
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_400">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_400</a></p>
@@ -907,7 +945,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_420" data-uid="Android.Util.DisplayMetrics.DENSITY_420">
   DENSITY_420
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_420">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_420</a></p>
@@ -939,7 +977,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_440" data-uid="Android.Util.DisplayMetrics.DENSITY_440">
   DENSITY_440
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_440">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_440</a></p>
@@ -971,7 +1009,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_450" data-uid="Android.Util.DisplayMetrics.DENSITY_450">
   DENSITY_450
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L150"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_450">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_450</a></p>
@@ -1003,7 +1041,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_520" data-uid="Android.Util.DisplayMetrics.DENSITY_520">
   DENSITY_520
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_520">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_520</a></p>
@@ -1035,7 +1073,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_560" data-uid="Android.Util.DisplayMetrics.DENSITY_560">
   DENSITY_560
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_560">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_560</a></p>
@@ -1067,7 +1105,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_600" data-uid="Android.Util.DisplayMetrics.DENSITY_600">
   DENSITY_600
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_600">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_600</a></p>
@@ -1099,7 +1137,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_DEFAULT" data-uid="Android.Util.DisplayMetrics.DENSITY_DEFAULT">
   DENSITY_DEFAULT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_DEFAULT">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_DEFAULT</a></p>
@@ -1131,7 +1169,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_DEVICE_STABLE" data-uid="Android.Util.DisplayMetrics.DENSITY_DEVICE_STABLE">
   DENSITY_DEVICE_STABLE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L180"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_DEVICE_STABLE">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_DEVICE_STABLE</a></p>
@@ -1163,7 +1201,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_HIGH" data-uid="Android.Util.DisplayMetrics.DENSITY_HIGH">
   DENSITY_HIGH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_HIGH">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_HIGH</a></p>
@@ -1195,7 +1233,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_LOW" data-uid="Android.Util.DisplayMetrics.DENSITY_LOW">
   DENSITY_LOW
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L192"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_LOW">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_LOW</a></p>
@@ -1227,7 +1265,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_MEDIUM" data-uid="Android.Util.DisplayMetrics.DENSITY_MEDIUM">
   DENSITY_MEDIUM
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_MEDIUM">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_MEDIUM</a></p>
@@ -1259,7 +1297,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_TV" data-uid="Android.Util.DisplayMetrics.DENSITY_TV">
   DENSITY_TV
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_TV">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_TV</a></p>
@@ -1291,7 +1329,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_XHIGH" data-uid="Android.Util.DisplayMetrics.DENSITY_XHIGH">
   DENSITY_XHIGH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_XHIGH">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_XHIGH</a></p>
@@ -1323,7 +1361,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_XXHIGH" data-uid="Android.Util.DisplayMetrics.DENSITY_XXHIGH">
   DENSITY_XXHIGH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L216"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_XXHIGH">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_XXHIGH</a></p>
@@ -1355,7 +1393,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_DENSITY_XXXHIGH" data-uid="Android.Util.DisplayMetrics.DENSITY_XXXHIGH">
   DENSITY_XXXHIGH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_XXXHIGH">https://developer.android.com/reference/android/util/DisplayMetrics.html#DENSITY_XXXHIGH</a></p>
@@ -1387,7 +1425,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_IsBridgeAbstract" data-uid="Android.Util.DisplayMetrics.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L639"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L652"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1419,7 +1457,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_IsBridgeCloseable" data-uid="Android.Util.DisplayMetrics.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L643"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L656"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1451,7 +1489,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_IsBridgeInterface" data-uid="Android.Util.DisplayMetrics.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L647"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L660"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1483,7 +1521,7 @@ Class DisplayMetrics  <a class="header-action link-secondary" title="View source
 
   <h3 id="Android_Util_DisplayMetrics_IsBridgeStatic" data-uid="Android.Util.DisplayMetrics.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L651"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/AllPackageClasses.cs/#L664"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1744,7 +1782,7 @@ public float scaledDensity { get; set; }</code></pre>
 
   <h3 id="Android_Util_DisplayMetrics_SetTo_Android_Util_DisplayMetrics_" data-uid="Android.Util.DisplayMetrics.SetTo(Android.Util.DisplayMetrics)">
   SetTo(DisplayMetrics)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#setTo(android.util.DisplayMetrics)">https://developer.android.com/reference/android/util/DisplayMetrics.html#setTo(android.util.DisplayMetrics)</a></p>
@@ -1777,7 +1815,7 @@ public float scaledDensity { get; set; }</code></pre>
 
   <h3 id="Android_Util_DisplayMetrics_SetToDefaults" data-uid="Android.Util.DisplayMetrics.SetToDefaults">
   SetToDefaults()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Util/DisplayMetrics.cs/#L244"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/util/DisplayMetrics.html#setToDefaults()">https://developer.android.com/reference/android/util/DisplayMetrics.html#setToDefaults()</a></p>

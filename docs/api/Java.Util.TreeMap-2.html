@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -85,7 +85,7 @@
 
 
   <h1 id="Java_Util_TreeMap_2" data-uid="Java.Util.TreeMap`2" class="text-break">
-Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L292"><i class="bi bi-code-slash"></i></a>
+Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -509,6 +509,12 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -676,7 +682,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
       <a class="xref" href="MASES.Netdroid.Specific.Extensions.JavaUtilExtensions.html#MASES_Netdroid_Specific_Extensions_JavaUtilExtensions_ToNetDictiony__5_Java_Util_Map___3___4__System_Func___3___1__System_Func___4___2__">JavaUtilExtensions.ToNetDictiony&lt;TDictionaryType, K, V, TJVMK, TJVMV&gt;(Map&lt;TJVMK, TJVMV&gt;, Func&lt;TJVMK, K&gt;, Func&lt;TJVMV, V&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -692,7 +698,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2__ctor" data-uid="Java.Util.TreeMap`2.#ctor">
   TreeMap()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6877"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L7024"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -717,9 +723,42 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <a id="Java_Util_TreeMap_2__ctor_" data-uid="Java.Util.TreeMap`2.#ctor*"></a>
 
+  <h3 id="Java_Util_TreeMap_2__ctor_Java_Util_Comparator__0__" data-uid="Java.Util.TreeMap`2.#ctor(Java.Util.Comparator{`0})">
+  TreeMap(Comparator&lt;K&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#%3Cinit%3E(java.util.Comparator)">https://developer.android.com/reference/java/util/TreeMap.html#%3Cinit%3E(java.util.Comparator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TreeMap(Comparator&lt;K&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Comparator-1.html">Comparator</a>&lt;K&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_TreeMap_2__ctor_" data-uid="Java.Util.TreeMap`2.#ctor*"></a>
+
   <h3 id="Java_Util_TreeMap_2__ctor_Java_Util_Map__0__1__" data-uid="Java.Util.TreeMap`2.#ctor(Java.Util.Map{`0,`1})">
   TreeMap(Map&lt;K, V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L323"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#%3Cinit%3E(java.util.Map)">https://developer.android.com/reference/java/util/TreeMap.html#%3Cinit%3E(java.util.Map)</a></p>
@@ -752,7 +791,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2__ctor_Java_Util_SortedMap__0__1__" data-uid="Java.Util.TreeMap`2.#ctor(Java.Util.SortedMap{`0,`1})">
   TreeMap(SortedMap&lt;K, V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L331"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#%3Cinit%3E(java.util.SortedMap)">https://developer.android.com/reference/java/util/TreeMap.html#%3Cinit%3E(java.util.SortedMap)</a></p>
@@ -785,7 +824,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2__ctor_System_Object___" data-uid="Java.Util.TreeMap`2.#ctor(System.Object[])">
   TreeMap(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6881"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L7028"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -821,7 +860,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_BridgeClassName" data-uid="Java.Util.TreeMap`2.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6888"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L7036"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -853,7 +892,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_IsBridgeAbstract" data-uid="Java.Util.TreeMap`2.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6892"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L7040"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -885,7 +924,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_IsBridgeCloseable" data-uid="Java.Util.TreeMap`2.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6896"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L7044"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -917,7 +956,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_IsBridgeInterface" data-uid="Java.Util.TreeMap`2.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6900"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L7048"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -949,7 +988,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_IsBridgeStatic" data-uid="Java.Util.TreeMap`2.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L6904"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L7052"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -985,7 +1024,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_CeilingEntry__0_" data-uid="Java.Util.TreeMap`2.CeilingEntry(`0)">
   CeilingEntry(K)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L381"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#ceilingEntry(java.lang.Object)">https://developer.android.com/reference/java/util/TreeMap.html#ceilingEntry(java.lang.Object)</a></p>
@@ -1024,7 +1063,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_CeilingKey__0_" data-uid="Java.Util.TreeMap`2.CeilingKey(`0)">
   CeilingKey(K)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L533"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#ceilingKey(java.lang.Object)">https://developer.android.com/reference/java/util/TreeMap.html#ceilingKey(java.lang.Object)</a></p>
@@ -1059,11 +1098,50 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
 
 
+  <a id="Java_Util_TreeMap_2_Comparator_" data-uid="Java.Util.TreeMap`2.Comparator*"></a>
+
+  <h3 id="Java_Util_TreeMap_2_Comparator__1" data-uid="Java.Util.TreeMap`2.Comparator``1">
+  Comparator&lt;ReturnobjectSuperK&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#comparator()">https://developer.android.com/reference/java/util/TreeMap.html#comparator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Comparator&lt;ReturnobjectSuperK&gt; Comparator&lt;ReturnobjectSuperK&gt;() where ReturnobjectSuperK : K</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Comparator-1.html">Comparator</a>&lt;ReturnobjectSuperK&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ReturnobjectSuperK</code></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_TreeMap_2_DescendingKeySet_" data-uid="Java.Util.TreeMap`2.DescendingKeySet*"></a>
 
   <h3 id="Java_Util_TreeMap_2_DescendingKeySet" data-uid="Java.Util.TreeMap`2.DescendingKeySet">
   DescendingKeySet()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L488"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#descendingKeySet()">https://developer.android.com/reference/java/util/TreeMap.html#descendingKeySet()</a></p>
@@ -1096,7 +1174,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_DescendingMap" data-uid="Java.Util.TreeMap`2.DescendingMap">
   DescendingMap()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L448"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#descendingMap()">https://developer.android.com/reference/java/util/TreeMap.html#descendingMap()</a></p>
@@ -1129,7 +1207,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_FirstEntry" data-uid="Java.Util.TreeMap`2.FirstEntry">
   FirstEntry()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L389"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#firstEntry()">https://developer.android.com/reference/java/util/TreeMap.html#firstEntry()</a></p>
@@ -1162,7 +1240,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_FirstKey" data-uid="Java.Util.TreeMap`2.FirstKey">
   FirstKey()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L541"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#firstKey()">https://developer.android.com/reference/java/util/TreeMap.html#firstKey()</a></p>
@@ -1195,7 +1273,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_FloorEntry__0_" data-uid="Java.Util.TreeMap`2.FloorEntry(`0)">
   FloorEntry(K)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L398"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#floorEntry(java.lang.Object)">https://developer.android.com/reference/java/util/TreeMap.html#floorEntry(java.lang.Object)</a></p>
@@ -1234,7 +1312,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_FloorKey__0_" data-uid="Java.Util.TreeMap`2.FloorKey(`0)">
   FloorKey(K)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L517"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L550"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#floorKey(java.lang.Object)">https://developer.android.com/reference/java/util/TreeMap.html#floorKey(java.lang.Object)</a></p>
@@ -1273,7 +1351,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_HeadMap__0_" data-uid="Java.Util.TreeMap`2.HeadMap(`0)">
   HeadMap(K)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L472"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L505"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#headMap(java.lang.Object)">https://developer.android.com/reference/java/util/TreeMap.html#headMap(java.lang.Object)</a></p>
@@ -1312,7 +1390,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_HeadMap__0_System_Boolean_" data-uid="Java.Util.TreeMap`2.HeadMap(`0,System.Boolean)">
   HeadMap(K, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L458"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#headMap(java.lang.Object,boolean)">https://developer.android.com/reference/java/util/TreeMap.html#headMap(java.lang.Object,boolean)</a></p>
@@ -1354,7 +1432,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_HigherEntry__0_" data-uid="Java.Util.TreeMap`2.HigherEntry(`0)">
   HigherEntry(K)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L407"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#higherEntry(java.lang.Object)">https://developer.android.com/reference/java/util/TreeMap.html#higherEntry(java.lang.Object)</a></p>
@@ -1393,7 +1471,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_HigherKey__0_" data-uid="Java.Util.TreeMap`2.HigherKey(`0)">
   HigherKey(K)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L559"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#higherKey(java.lang.Object)">https://developer.android.com/reference/java/util/TreeMap.html#higherKey(java.lang.Object)</a></p>
@@ -1432,7 +1510,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_LastEntry" data-uid="Java.Util.TreeMap`2.LastEntry">
   LastEntry()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L415"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#lastEntry()">https://developer.android.com/reference/java/util/TreeMap.html#lastEntry()</a></p>
@@ -1465,7 +1543,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_LastKey" data-uid="Java.Util.TreeMap`2.LastKey">
   LastKey()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L567"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#lastKey()">https://developer.android.com/reference/java/util/TreeMap.html#lastKey()</a></p>
@@ -1498,7 +1576,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_LowerEntry__0_" data-uid="Java.Util.TreeMap`2.LowerEntry(`0)">
   LowerEntry(K)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L424"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#lowerEntry(java.lang.Object)">https://developer.android.com/reference/java/util/TreeMap.html#lowerEntry(java.lang.Object)</a></p>
@@ -1537,7 +1615,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_LowerKey__0_" data-uid="Java.Util.TreeMap`2.LowerKey(`0)">
   LowerKey(K)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L576"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#lowerKey(java.lang.Object)">https://developer.android.com/reference/java/util/TreeMap.html#lowerKey(java.lang.Object)</a></p>
@@ -1576,7 +1654,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_NavigableKeySet" data-uid="Java.Util.TreeMap`2.NavigableKeySet">
   NavigableKeySet()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L496"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#navigableKeySet()">https://developer.android.com/reference/java/util/TreeMap.html#navigableKeySet()</a></p>
@@ -1609,7 +1687,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_PollFirstEntry" data-uid="Java.Util.TreeMap`2.PollFirstEntry">
   PollFirstEntry()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L432"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#pollFirstEntry()">https://developer.android.com/reference/java/util/TreeMap.html#pollFirstEntry()</a></p>
@@ -1642,7 +1720,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_PollLastEntry" data-uid="Java.Util.TreeMap`2.PollLastEntry">
   PollLastEntry()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L440"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#pollLastEntry()">https://developer.android.com/reference/java/util/TreeMap.html#pollLastEntry()</a></p>
@@ -1675,7 +1753,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_SubMap__0_System_Boolean__0_System_Boolean_" data-uid="Java.Util.TreeMap`2.SubMap(`0,System.Boolean,`0,System.Boolean)">
   SubMap(K, bool, K, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L470"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)">https://developer.android.com/reference/java/util/TreeMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)</a></p>
@@ -1723,7 +1801,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_SubMap__0__0_" data-uid="Java.Util.TreeMap`2.SubMap(`0,`0)">
   SubMap(K, K)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L515"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#subMap(java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/TreeMap.html#subMap(java.lang.Object,java.lang.Object)</a></p>
@@ -1765,7 +1843,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_TailMap__0_" data-uid="Java.Util.TreeMap`2.TailMap(`0)">
   TailMap(K)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L491"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L524"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#tailMap(java.lang.Object)">https://developer.android.com/reference/java/util/TreeMap.html#tailMap(java.lang.Object)</a></p>
@@ -1804,7 +1882,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_TailMap__0_System_Boolean_" data-uid="Java.Util.TreeMap`2.TailMap(`0,System.Boolean)">
   TailMap(K, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L480"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/TreeMap.html#tailMap(java.lang.Object,boolean)">https://developer.android.com/reference/java/util/TreeMap.html#tailMap(java.lang.Object,boolean)</a></p>
@@ -1850,7 +1928,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_op_Implicit_Java_Util_TreeMap__0__1___Java_Io_Serializable" data-uid="Java.Util.TreeMap`2.op_Implicit(Java.Util.TreeMap{`0,`1})~Java.Io.Serializable">
   implicit operator Serializable(TreeMap&lt;K, V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L350"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.TreeMap-2.html">TreeMap&lt;K, V&gt;</a> to <a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
@@ -1887,7 +1965,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_op_Implicit_Java_Util_TreeMap__0__1___Java_Lang_Cloneable" data-uid="Java.Util.TreeMap`2.op_Implicit(Java.Util.TreeMap{`0,`1})~Java.Lang.Cloneable">
   implicit operator Cloneable(TreeMap&lt;K, V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L346"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.TreeMap-2.html">TreeMap&lt;K, V&gt;</a> to <a class="xref" href="Java.Lang.Cloneable.html">Cloneable</a></p>
@@ -1924,7 +2002,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_op_Implicit_Java_Util_TreeMap__0__1___Java_Util_NavigableMap__0__1_" data-uid="Java.Util.TreeMap`2.op_Implicit(Java.Util.TreeMap{`0,`1})~Java.Util.NavigableMap{`0,`1}">
   implicit operator NavigableMap&lt;K, V&gt;(TreeMap&lt;K, V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L342"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.TreeMap-2.html">TreeMap&lt;K, V&gt;</a> to <a class="xref" href="Java.Util.NavigableMap-2.html">NavigableMap&lt;K, V&gt;</a></p>
@@ -1961,7 +2039,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 
   <h3 id="Java_Util_TreeMap_2_op_Implicit_Java_Util_TreeMap__0__1___Java_Util_TreeMap" data-uid="Java.Util.TreeMap`2.op_Implicit(Java.Util.TreeMap{`0,`1})~Java.Util.TreeMap">
   implicit operator TreeMap(TreeMap&lt;K, V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L354"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.TreeMap-2.html">TreeMap&lt;K, V&gt;</a> to <a class="xref" href="Java.Util.TreeMap.html">TreeMap</a></p>
@@ -1998,7 +2076,7 @@ Class TreeMap&lt;K, V&gt;  <a class="header-action link-secondary" title="View s
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L292" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/TreeMap.cs/#L308" class="edit-link">Edit this page</a>
         </div>
 
 

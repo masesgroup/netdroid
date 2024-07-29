@@ -144,6 +144,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Accessibilityservice.BrailleDisplayController.BrailleDisplayCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Accessibilityservice.BrailleDisplayController.BrailleDisplayCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Accessibilityservice.BrailleDisplayController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Accessibilityservice.BrailleDisplayController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Accessibilityservice.FingerprintGestureController.FingerprintGestureCallback.yml",
       "output": {
         ".html": {
@@ -188,6 +208,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Accessibilityservice.GestureDescription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Accessibilityservice.IBrailleDisplayController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Accessibilityservice.IBrailleDisplayController.html"
         }
       },
       "version": ""
@@ -524,6 +554,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.AdSelectionFromOutcomesConfig.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.AdSelectionFromOutcomesConfig.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.AdSelectionFromOutcomesConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.AdSelectionFromOutcomesConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Adservices.Adselection.AdSelectionManager.yml",
       "output": {
         ".html": {
@@ -554,10 +604,110 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.AdWithBid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.AdWithBid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.AddAdSelectionFromOutcomesOverrideRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.AddAdSelectionFromOutcomesOverrideRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Adservices.Adselection.AddAdSelectionOverrideRequest.yml",
       "output": {
         ".html": {
           "relative_path": "api/Android.Adservices.Adselection.AddAdSelectionOverrideRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.DecisionLogic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.DecisionLogic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.GetAdSelectionDataOutcome.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.GetAdSelectionDataOutcome.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.GetAdSelectionDataRequest.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.GetAdSelectionDataRequest.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.GetAdSelectionDataRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.GetAdSelectionDataRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.PerBuyerDecisionLogic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.PerBuyerDecisionLogic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.PersistAdSelectionResultRequest.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.PersistAdSelectionResultRequest.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.PersistAdSelectionResultRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.PersistAdSelectionResultRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.RemoveAdSelectionFromOutcomesOverrideRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.RemoveAdSelectionFromOutcomesOverrideRequest.html"
         }
       },
       "version": ""
@@ -598,6 +748,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Adservices.Adselection.ReportImpressionRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.SetAppInstallAdvertisersRequest.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.SetAppInstallAdvertisersRequest.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.SetAppInstallAdvertisersRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.SetAppInstallAdvertisersRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.SignedContextualAds.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.SignedContextualAds.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Adselection.SignedContextualAds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Adselection.SignedContextualAds.html"
         }
       },
       "version": ""
@@ -724,6 +914,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Common.AdServicesOutcomeReceiver-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Common.AdServicesOutcomeReceiver-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Common.AdServicesOutcomeReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Common.AdServicesOutcomeReceiver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Adservices.Common.AdServicesPermissions.yml",
       "output": {
         ".html": {
@@ -744,6 +954,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Common.AppInstallFilters.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Common.AppInstallFilters.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Common.AppInstallFilters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Common.AppInstallFilters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Adservices.Common.FrequencyCapFilters.Builder.yml",
       "output": {
         ".html": {
@@ -758,6 +988,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Adservices.Common.FrequencyCapFilters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Common.IAdServicesOutcomeReceiver-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Common.IAdServicesOutcomeReceiver-2.html"
         }
       },
       "version": ""
@@ -844,6 +1084,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Customaudience.FetchAndJoinCustomAudienceRequest.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Customaudience.FetchAndJoinCustomAudienceRequest.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Customaudience.FetchAndJoinCustomAudienceRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Customaudience.FetchAndJoinCustomAudienceRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Adservices.Customaudience.JoinCustomAudienceRequest.Builder.yml",
       "output": {
         ".html": {
@@ -884,6 +1144,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Customaudience.PartialCustomAudience.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Customaudience.PartialCustomAudience.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Customaudience.PartialCustomAudience.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Customaudience.PartialCustomAudience.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Adservices.Customaudience.RemoveCustomAudienceOverrideRequest.Builder.yml",
       "output": {
         ".html": {
@@ -898,6 +1178,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Adservices.Customaudience.RemoveCustomAudienceOverrideRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Customaudience.ScheduleCustomAudienceUpdateRequest.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Customaudience.ScheduleCustomAudienceUpdateRequest.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Customaudience.ScheduleCustomAudienceUpdateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Customaudience.ScheduleCustomAudienceUpdateRequest.html"
         }
       },
       "version": ""
@@ -994,6 +1294,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Measurement.SourceRegistrationRequest.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Measurement.SourceRegistrationRequest.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Measurement.SourceRegistrationRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Measurement.SourceRegistrationRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Adservices.Measurement.WebSourceParams.Builder.yml",
       "output": {
         ".html": {
@@ -1078,6 +1398,626 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Adservices.Measurement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.AppInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.AppInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.DownloadCompletedInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.DownloadCompletedInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.DownloadCompletedOutput.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.DownloadCompletedOutput.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.DownloadCompletedOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.DownloadCompletedOutput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.EventInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.EventInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.EventLogRecord.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.EventLogRecord.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.EventLogRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.EventLogRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.EventOutput.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.EventOutput.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.EventOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.EventOutput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.EventUrlProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.EventUrlProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.ExecuteInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.ExecuteInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.ExecuteOutput.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.ExecuteOutput.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.ExecuteOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.ExecuteOutput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.FederatedComputeInput.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.FederatedComputeInput.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.FederatedComputeInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.FederatedComputeInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.FederatedComputeScheduler.Params.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.FederatedComputeScheduler.Params.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.FederatedComputeScheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.FederatedComputeScheduler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.IIsolatedWorker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.IIsolatedWorker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.IKeyValueStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.IKeyValueStore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.IMutableKeyValueStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.IMutableKeyValueStore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.InferenceInput.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.InferenceInput.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.InferenceInput.Params.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.InferenceInput.Params.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.InferenceInput.Params.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.InferenceInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.InferenceInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.InferenceOutput.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.InferenceOutput.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.InferenceOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.InferenceOutput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.IsolatedService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.IsolatedService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.IsolatedServiceException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.IsolatedServiceException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.IsolatedWorker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.IsolatedWorker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.KeyValueStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.KeyValueStore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.LogReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.LogReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.ModelManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.ModelManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.MutableKeyValueStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.MutableKeyValueStore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.OnDevicePersonalizationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.OnDevicePersonalizationException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.OnDevicePersonalizationManager.ExecuteResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.OnDevicePersonalizationManager.ExecuteResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.OnDevicePersonalizationManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.OnDevicePersonalizationManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.RenderInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.RenderInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.RenderOutput.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.RenderOutput.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.RenderOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.RenderOutput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.RenderingConfig.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.RenderingConfig.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.RenderingConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.RenderingConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.RequestLogRecord.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.RequestLogRecord.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.RequestLogRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.RequestLogRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.RequestToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.RequestToken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.SurfacePackageToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.SurfacePackageToken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingExampleRecord.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingExampleRecord.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingExampleRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingExampleRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingExamplesInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingExamplesInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingExamplesOutput.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingExamplesOutput.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingExamplesOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingExamplesOutput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingInterval.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingInterval.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingInterval.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.TrainingInterval.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.UserData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.UserData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.WebTriggerInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.WebTriggerInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.WebTriggerOutput.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.WebTriggerOutput.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.WebTriggerOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.WebTriggerOutput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Ondevicepersonalization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Ondevicepersonalization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Signals.ProtectedSignalsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Signals.ProtectedSignalsManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Signals.UpdateSignalsRequest.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Signals.UpdateSignalsRequest.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Signals.UpdateSignalsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Signals.UpdateSignalsRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Signals.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Signals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Adservices.Topics.EncryptedTopic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Adservices.Topics.EncryptedTopic.html"
         }
       },
       "version": ""
@@ -2414,6 +3354,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.ApplicationStartInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.ApplicationStartInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.App.Appsearch.AppSearchBatchResult-2.yml",
       "output": {
         ".html": {
@@ -2678,6 +3628,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.App.Appsearch.BatchResultCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.Appsearch.EnterpriseGlobalSearchSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.Appsearch.EnterpriseGlobalSearchSession.html"
         }
       },
       "version": ""
@@ -3004,6 +3964,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.Appsearch.SchemaVisibilityConfig.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.Appsearch.SchemaVisibilityConfig.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.Appsearch.SchemaVisibilityConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.Appsearch.SchemaVisibilityConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.App.Appsearch.SearchResult.Builder.yml",
       "output": {
         ".html": {
@@ -3294,6 +4274,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.AutomaticZenRule.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.AutomaticZenRule.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.App.AutomaticZenRule.yml",
       "output": {
         ".html": {
@@ -3488,6 +4478,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.App.BroadcastOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.ComponentCaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.ComponentCaller.html"
         }
       },
       "version": ""
@@ -4404,6 +5404,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.Notification.TvExtender.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.Notification.TvExtender.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.App.Notification.WearableExtender.yml",
       "output": {
         ".html": {
@@ -5244,6 +6254,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.Usage.UsageEventsQuery.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.Usage.UsageEventsQuery.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.App.Usage.UsageEventsQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.App.Usage.UsageEventsQuery.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.App.Usage.UsageStats.yml",
       "output": {
         ".html": {
@@ -5608,6 +6638,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Bluetooth.BluetoothCodecStatus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Bluetooth.BluetoothCodecType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Bluetooth.BluetoothCodecType.html"
         }
       },
       "version": ""
@@ -6334,6 +7374,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Companion.Virtual.VirtualDeviceManager.VirtualDeviceListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Companion.Virtual.VirtualDeviceManager.VirtualDeviceListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Companion.Virtual.VirtualDeviceManager.VirtualDeviceListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Companion.Virtual.VirtualDeviceManager.VirtualDeviceListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Companion.Virtual.VirtualDeviceManager.yml",
       "output": {
         ".html": {
@@ -6468,6 +7528,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Content.BroadcastReceiver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Content.ClipData.Item.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Content.ClipData.Item.Builder.html"
         }
       },
       "version": ""
@@ -7314,20 +8384,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Content.Pm.ApplicationInfo.DisplayNameComparator.yml",
+      "source_relative_path": "api/Android.Content.Pm.ApplicationInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Content.Pm.ApplicationInfo.DisplayNameComparator.html"
+          "relative_path": "api/Android.Content.Pm.ApplicationInfo.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Content.Pm.ApplicationInfo.yml",
+      "source_relative_path": "api/Android.Content.Pm.ArchivedActivityInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Content.Pm.ApplicationInfo.html"
+          "relative_path": "api/Android.Content.Pm.ArchivedActivityInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Content.Pm.ArchivedPackageInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Content.Pm.ArchivedPackageInfo.html"
         }
       },
       "version": ""
@@ -7494,6 +8574,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Content.Pm.LauncherApps.ArchiveCompatibilityParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Content.Pm.LauncherApps.ArchiveCompatibilityParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Content.Pm.LauncherApps.Callback.yml",
       "output": {
         ".html": {
@@ -7528,6 +8618,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Content.Pm.LauncherApps.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Content.Pm.LauncherUserInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Content.Pm.LauncherUserInfo.html"
         }
       },
       "version": ""
@@ -7644,20 +8744,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Content.Pm.PackageInstaller.yml",
+      "source_relative_path": "api/Android.Content.Pm.PackageInstaller.UnarchivalState.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Content.Pm.PackageInstaller.html"
+          "relative_path": "api/Android.Content.Pm.PackageInstaller.UnarchivalState.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Content.Pm.PackageItemInfo.DisplayNameComparator.yml",
+      "source_relative_path": "api/Android.Content.Pm.PackageInstaller.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Android.Content.Pm.PackageItemInfo.DisplayNameComparator.html"
+          "relative_path": "api/Android.Content.Pm.PackageInstaller.html"
         }
       },
       "version": ""
@@ -7818,16 +8918,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Content.Pm.ProviderInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Android.Content.Pm.ResolveInfo.DisplayNameComparator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Android.Content.Pm.ResolveInfo.DisplayNameComparator.html"
         }
       },
       "version": ""
@@ -8048,6 +9138,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Content.Res.Configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Content.Res.FontScaleConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Content.Res.FontScaleConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Content.Res.IFontScaleConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Content.Res.IFontScaleConverter.html"
         }
       },
       "version": ""
@@ -8374,6 +9484,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Content.UriRelativeFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Content.UriRelativeFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Content.UriRelativeFilterGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Content.UriRelativeFilterGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Content.yml",
       "output": {
         ".html": {
@@ -8578,6 +9708,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Credentials.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Crypto.Hpke.HpkeSpi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Crypto.Hpke.HpkeSpi.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Crypto.Hpke.IHpkeSpi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Crypto.Hpke.IHpkeSpi.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Crypto.Hpke.XdhKeySpec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Crypto.Hpke.XdhKeySpec.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Crypto.Hpke.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Crypto.Hpke.html"
         }
       },
       "version": ""
@@ -9148,6 +10318,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Database.Sqlite.SQLiteQueryBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Database.Sqlite.SQLiteRawStatement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Database.Sqlite.SQLiteRawStatement.html"
         }
       },
       "version": ""
@@ -10824,6 +12004,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Matrix44.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Matrix44.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Graphics.Mesh.yml",
       "output": {
         ".html": {
@@ -11084,6 +12274,186 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Content.PdfPageGotoLinkContent.Destination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Content.PdfPageGotoLinkContent.Destination.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Content.PdfPageGotoLinkContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Content.PdfPageGotoLinkContent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Content.PdfPageImageContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Content.PdfPageImageContent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Content.PdfPageLinkContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Content.PdfPageLinkContent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Content.PdfPageTextContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Content.PdfPageTextContent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Content.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Content.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.LoadParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.LoadParams.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.LoadParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.LoadParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Models.FormEditRecord.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Models.FormEditRecord.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Models.FormEditRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Models.FormEditRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Models.FormWidgetInfo.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Models.FormWidgetInfo.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Models.FormWidgetInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Models.FormWidgetInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Models.ListItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Models.ListItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Models.PageMatchBounds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Models.PageMatchBounds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Models.Selection.PageSelection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Models.Selection.PageSelection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Models.Selection.SelectionBoundary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Models.Selection.SelectionBoundary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Models.Selection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Models.Selection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Graphics.Pdf.PdfDocument.Page.yml",
       "output": {
         ".html": {
@@ -11138,6 +12508,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Graphics.Pdf.PdfRenderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.PdfRendererPreV.Page.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.PdfRendererPreV.Page.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.PdfRendererPreV.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.PdfRendererPreV.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.RenderParams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.RenderParams.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Graphics.Pdf.RenderParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Graphics.Pdf.RenderParams.html"
         }
       },
       "version": ""
@@ -11684,6 +13094,106 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Hardware.Biometrics.IPromptContentItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Hardware.Biometrics.IPromptContentItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Hardware.Biometrics.IPromptContentView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Hardware.Biometrics.IPromptContentView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Hardware.Biometrics.PromptContentItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Hardware.Biometrics.PromptContentItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Hardware.Biometrics.PromptContentItemBulletedText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Hardware.Biometrics.PromptContentItemBulletedText.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Hardware.Biometrics.PromptContentItemPlainText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Hardware.Biometrics.PromptContentItemPlainText.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Hardware.Biometrics.PromptContentView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Hardware.Biometrics.PromptContentView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Hardware.Biometrics.PromptContentViewWithMoreOptionsButton.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Hardware.Biometrics.PromptContentViewWithMoreOptionsButton.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Hardware.Biometrics.PromptContentViewWithMoreOptionsButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Hardware.Biometrics.PromptContentViewWithMoreOptionsButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Hardware.Biometrics.PromptVerticalListContentView.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Hardware.Biometrics.PromptVerticalListContentView.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Hardware.Biometrics.PromptVerticalListContentView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Hardware.Biometrics.PromptVerticalListContentView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Hardware.Biometrics.yml",
       "output": {
         ".html": {
@@ -11928,6 +13438,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Hardware.Camera2.CameraConstrainedHighSpeedCaptureSession.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Hardware.Camera2.CameraDevice.CameraDeviceSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Hardware.Camera2.CameraDevice.CameraDeviceSetup.html"
         }
       },
       "version": ""
@@ -12278,6 +13798,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Hardware.Camera2.Params.InputConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Hardware.Camera2.Params.LensIntrinsicsSample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Hardware.Camera2.Params.LensIntrinsicsSample.html"
         }
       },
       "version": ""
@@ -12798,6 +14328,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Hardware.Lights.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Hardware.OverlayProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Hardware.OverlayProperties.html"
         }
       },
       "version": ""
@@ -13684,6 +15224,106 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.ActiveCaloriesBurnedGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.ActiveCaloriesBurnedGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.DistanceGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.DistanceGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.DistanceWithVariableRestGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.DistanceWithVariableRestGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.DurationGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.DurationGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.RepetitionsGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.RepetitionsGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.StepsGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.StepsGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.TotalCaloriesBurnedGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.TotalCaloriesBurnedGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.UnknownGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.UnknownGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.UnspecifiedGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.UnspecifiedGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExerciseCompletionGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Health.Connect.Datatypes.ExerciseLap.Builder.yml",
       "output": {
         ".html": {
@@ -13698,6 +15338,96 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Health.Connect.Datatypes.ExerciseLap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.AmrapGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.AmrapGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.CadenceGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.CadenceGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.HeartRateGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.HeartRateGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.PowerGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.PowerGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.RateOfPerceivedExertionGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.RateOfPerceivedExertionGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.SpeedGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.SpeedGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.UnknownGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.UnknownGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.WeightGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.WeightGoal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.ExercisePerformanceGoal.html"
         }
       },
       "version": ""
@@ -14114,6 +15844,66 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.PlannedExerciseBlock.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.PlannedExerciseBlock.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.PlannedExerciseBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.PlannedExerciseBlock.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.PlannedExerciseSessionRecord.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.PlannedExerciseSessionRecord.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.PlannedExerciseSessionRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.PlannedExerciseSessionRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.PlannedExerciseStep.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.PlannedExerciseStep.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.PlannedExerciseStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.PlannedExerciseStep.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Health.Connect.Datatypes.PowerRecord.Builder.yml",
       "output": {
         ".html": {
@@ -14218,6 +16008,36 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Health.Connect.Datatypes.SexualActivityRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.SkinTemperatureRecord.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.SkinTemperatureRecord.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.SkinTemperatureRecord.Delta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.SkinTemperatureRecord.Delta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.SkinTemperatureRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.SkinTemperatureRecord.html"
         }
       },
       "version": ""
@@ -14438,6 +16258,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Health.Connect.Datatypes.Units.Temperature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Health.Connect.Datatypes.Units.TemperatureDelta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Health.Connect.Datatypes.Units.TemperatureDelta.html"
         }
       },
       "version": ""
@@ -15838,6 +17668,96 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Icu.Text.DisplayContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Icu.Text.DisplayOptions.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Icu.Text.DisplayOptions.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Icu.Text.DisplayOptions.Capitalization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Icu.Text.DisplayOptions.Capitalization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Icu.Text.DisplayOptions.DisplayLength.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Icu.Text.DisplayOptions.DisplayLength.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Icu.Text.DisplayOptions.GrammaticalCase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Icu.Text.DisplayOptions.GrammaticalCase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Icu.Text.DisplayOptions.NameStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Icu.Text.DisplayOptions.NameStyle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Icu.Text.DisplayOptions.NounClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Icu.Text.DisplayOptions.NounClass.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Icu.Text.DisplayOptions.PluralCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Icu.Text.DisplayOptions.PluralCategory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Icu.Text.DisplayOptions.SubstituteHandling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Icu.Text.DisplayOptions.SubstituteHandling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Icu.Text.DisplayOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Icu.Text.DisplayOptions.html"
         }
       },
       "version": ""
@@ -19284,6 +21204,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Media.LoudnessCodecController.OnLoudnessCodecUpdateListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Media.LoudnessCodecController.OnLoudnessCodecUpdateListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Media.LoudnessCodecController.OnLoudnessCodecUpdateListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Media.LoudnessCodecController.OnLoudnessCodecUpdateListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Media.LoudnessCodecController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Media.LoudnessCodecController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Media.MediaActionSound.yml",
       "output": {
         ".html": {
@@ -19794,16 +21744,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Media.MediaDrm.HdcpLevel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Android.Media.MediaDrm.HdcpLevel.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Android.Media.MediaDrm.KeyRequest.yml",
       "output": {
         ".html": {
@@ -19954,16 +21894,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Android.Media.MediaDrm.SecurityLevel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Android.Media.MediaDrm.SecurityLevel.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Android.Media.MediaDrm.SessionException.yml",
       "output": {
         ".html": {
@@ -20058,6 +21988,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Media.MediaFeature.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Media.MediaFormat.QpOffsetRect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Media.MediaFormat.QpOffsetRect.html"
         }
       },
       "version": ""
@@ -20844,6 +22784,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Media.MediaRouter2.ScanRequest.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Media.MediaRouter2.ScanRequest.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Media.MediaRouter2.ScanRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Media.MediaRouter2.ScanRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Media.MediaRouter2.ScanToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Media.MediaRouter2.ScanToken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Media.MediaRouter2.TransferCallback.yml",
       "output": {
         ".html": {
@@ -21044,6 +23014,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Media.Metrics.EditingEndedEvent.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Media.Metrics.EditingEndedEvent.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Media.Metrics.EditingEndedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Media.Metrics.EditingEndedEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Media.Metrics.EditingSession.yml",
       "output": {
         ".html": {
@@ -21068,6 +23058,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Media.Metrics.LogSessionId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Media.Metrics.MediaItemInfo.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Media.Metrics.MediaItemInfo.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Media.Metrics.MediaItemInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Media.Metrics.MediaItemInfo.html"
         }
       },
       "version": ""
@@ -21388,6 +23398,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Media.Midi.MidiSender.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Media.Midi.MidiUmpDeviceService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Media.Midi.MidiUmpDeviceService.html"
         }
       },
       "version": ""
@@ -23694,6 +25714,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Net.IpSecTransformState.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Net.IpSecTransformState.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Net.IpSecTransformState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Net.IpSecTransformState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Net.Ipsec.Ike.ChildSaProposal.Builder.yml",
       "output": {
         ".html": {
@@ -24398,6 +26438,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Net.NetworkSpecifier.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Net.Nsd.DiscoveryRequest.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Net.Nsd.DiscoveryRequest.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Net.Nsd.DiscoveryRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Net.Nsd.DiscoveryRequest.html"
         }
       },
       "version": ""
@@ -25584,6 +27644,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Net.Wifi.P2p.WifiP2pDiscoveryConfig.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Net.Wifi.P2p.WifiP2pDiscoveryConfig.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Net.Wifi.P2p.WifiP2pDiscoveryConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Net.Wifi.P2p.WifiP2pDiscoveryConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Net.Wifi.P2p.WifiP2pGroup.yml",
       "output": {
         ".html": {
@@ -25894,6 +27974,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Net.Wifi.P2p.WifiP2pManager.yml",
       "output": {
         ".html": {
@@ -25948,6 +28048,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Net.Wifi.Rtt.RangingRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Net.Wifi.Rtt.RangingResult.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Net.Wifi.Rtt.RangingResult.Builder.html"
         }
       },
       "version": ""
@@ -26498,6 +28608,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Nfc.Cardemulation.OffHostApduService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Nfc.Cardemulation.PollingFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Nfc.Cardemulation.PollingFrame.html"
         }
       },
       "version": ""
@@ -28124,10 +30244,50 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Os.PowerMonitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Os.PowerMonitor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Os.PowerMonitorReadings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Os.PowerMonitorReadings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Os.Process.yml",
       "output": {
         ".html": {
           "relative_path": "api/Android.Os.Process.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Os.ProfilingManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Os.ProfilingManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Os.ProfilingResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Os.ProfilingResult.html"
         }
       },
       "version": ""
@@ -28208,6 +30368,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Os.ResultReceiver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Os.SecurityStateManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Os.SecurityStateManager.html"
         }
       },
       "version": ""
@@ -28748,6 +30918,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Os.VibratorManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Os.WorkDuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Os.WorkDuration.html"
         }
       },
       "version": ""
@@ -30528,6 +32708,36 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Provider.DocumentsProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Provider.E2eeContactKeysManager.E2eeContactKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Provider.E2eeContactKeysManager.E2eeContactKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Provider.E2eeContactKeysManager.E2eeSelfKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Provider.E2eeContactKeysManager.E2eeSelfKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Provider.E2eeContactKeysManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Provider.E2eeContactKeysManager.html"
         }
       },
       "version": ""
@@ -33914,6 +36124,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Service.Chooser.AdditionalContentContract.Columns.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Service.Chooser.AdditionalContentContract.Columns.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Service.Chooser.AdditionalContentContract.CursorExtraKeys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Service.Chooser.AdditionalContentContract.CursorExtraKeys.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Service.Chooser.AdditionalContentContract.MethodNames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Service.Chooser.AdditionalContentContract.MethodNames.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Service.Chooser.AdditionalContentContract.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Service.Chooser.AdditionalContentContract.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Service.Chooser.ChooserAction.Builder.yml",
       "output": {
         ".html": {
@@ -33934,6 +36184,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Service.Chooser.ChooserResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Service.Chooser.ChooserResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Service.Chooser.ChooserTarget.yml",
       "output": {
         ".html": {
@@ -33948,6 +36208,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Service.Chooser.ChooserTargetService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Service.Chooser.IAdditionalContentContract.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Service.Chooser.IAdditionalContentContract.html"
         }
       },
       "version": ""
@@ -34494,6 +36764,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Service.Notification.ZenDeviceEffects.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Service.Notification.ZenDeviceEffects.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Service.Notification.ZenDeviceEffects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Service.Notification.ZenDeviceEffects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Service.Notification.ZenPolicy.Builder.yml",
       "output": {
         ".html": {
@@ -34518,6 +36808,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Service.Notification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Service.Persistentdata.PersistentDataBlockManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Service.Persistentdata.PersistentDataBlockManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Service.Persistentdata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Service.Persistentdata.html"
         }
       },
       "version": ""
@@ -38454,6 +40764,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Text.Layout.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Text.Layout.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Text.Layout.Directions.yml",
       "output": {
         ".html": {
@@ -39308,6 +41628,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Text.Style.LineBackgroundSpan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Text.Style.LineBreakConfigSpan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Text.Style.LineBreakConfigSpan.html"
         }
       },
       "version": ""
@@ -41184,6 +43514,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.yml",
       "output": {
         ".html": {
@@ -42384,10 +44724,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.View.IScrollFeedbackProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.View.IScrollFeedbackProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.View.ISubMenu.yml",
       "output": {
         ".html": {
           "relative_path": "api/Android.View.ISubMenu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.View.ISurfaceControlInputReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.View.ISurfaceControlInputReceiver.html"
         }
       },
       "version": ""
@@ -42484,6 +44844,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.View.InputDevice.ViewBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.View.InputDevice.ViewBehavior.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.View.InputDevice.yml",
       "output": {
         ".html": {
@@ -42538,6 +44908,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.View.Inputmethod.CompletionInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.View.Inputmethod.ConnectionlessHandwritingCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.View.Inputmethod.ConnectionlessHandwritingCallback.html"
         }
       },
       "version": ""
@@ -42668,6 +45048,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.View.Inputmethod.HandwritingGesture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.View.Inputmethod.IConnectionlessHandwritingCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.View.Inputmethod.IConnectionlessHandwritingCallback.html"
         }
       },
       "version": ""
@@ -43704,6 +46094,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.View.ScrollFeedbackProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.View.ScrollFeedbackProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.View.SearchEvent.yml",
       "output": {
         ".html": {
@@ -43794,6 +46194,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.View.SurfaceControl.TransactionStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.View.SurfaceControl.TransactionStats.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.View.SurfaceControl.TrustedPresentationThresholds.yml",
       "output": {
         ".html": {
@@ -43808,6 +46218,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.View.SurfaceControl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.View.SurfaceControlInputReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.View.SurfaceControlInputReceiver.html"
         }
       },
       "version": ""
@@ -48214,6 +50634,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Widget.RemoteViews.DrawInstructions.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Widget.RemoteViews.DrawInstructions.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Widget.RemoteViews.DrawInstructions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Widget.RemoteViews.DrawInstructions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Widget.RemoteViews.RemoteCollectionItems.Builder.yml",
       "output": {
         ".html": {
@@ -49174,6 +51614,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Android.Window.InputTransferToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Window.InputTransferToken.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Android.Window.OnBackAnimationCallback.yml",
       "output": {
         ".html": {
@@ -49248,6 +51698,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Android.Window.SurfaceSyncGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Android.Window.TrustedPresentationThresholds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Android.Window.TrustedPresentationThresholds.html"
         }
       },
       "version": ""
@@ -56654,6 +59114,56 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Security.DrbgParameters.Capability.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Security.DrbgParameters.Capability.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Security.DrbgParameters.Instantiation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Security.DrbgParameters.Instantiation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Security.DrbgParameters.NextBytes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Security.DrbgParameters.NextBytes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Security.DrbgParameters.Reseed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Security.DrbgParameters.Reseed.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Security.DrbgParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Security.DrbgParameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Security.GeneralSecurityException.yml",
       "output": {
         ".html": {
@@ -57794,6 +60304,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Security.Spec.DSAGenParameterSpec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Security.Spec.DSAGenParameterSpec.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Security.Spec.DSAParameterSpec.yml",
       "output": {
         ".html": {
@@ -57898,6 +60418,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Security.Spec.ECPublicKeySpec.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Security.Spec.EdDSAParameterSpec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Security.Spec.EdDSAParameterSpec.html"
         }
       },
       "version": ""
@@ -62294,6 +64824,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.EventListenerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.EventListenerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.EventListenerProxy-1.yml",
       "output": {
         ".html": {
@@ -62484,6 +65024,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.BiPredicateDirect-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.BiPredicateDirect-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.BiPredicateDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.BiPredicateDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.BinaryOperator-1.yml",
       "output": {
         ".html": {
@@ -62534,6 +65094,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.BooleanSupplierDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.BooleanSupplierDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.Consumer-1.yml",
       "output": {
         ".html": {
@@ -62548,6 +65118,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.Consumer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ConsumerDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ConsumerDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ConsumerDirect.html"
         }
       },
       "version": ""
@@ -62584,6 +65174,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleConsumerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.DoubleFunction-1.yml",
       "output": {
         ".html": {
@@ -62604,10 +65204,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleFunctionDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleFunctionDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.DoublePredicate.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.DoublePredicate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoublePredicateDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoublePredicateDirect.html"
         }
       },
       "version": ""
@@ -62624,6 +65254,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleSupplierDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleSupplierDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.DoubleToIntFunction.yml",
       "output": {
         ".html": {
@@ -62634,10 +65274,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleToIntFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleToIntFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.DoubleToLongFunction.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.DoubleToLongFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.DoubleToLongFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.DoubleToLongFunctionDirect.html"
         }
       },
       "version": ""
@@ -63144,10 +65804,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntBinaryOperatorDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntBinaryOperatorDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.IntConsumer.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.IntConsumer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntConsumerDirect.html"
         }
       },
       "version": ""
@@ -63174,10 +65854,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntFunctionDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntFunctionDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.IntPredicate.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.IntPredicate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntPredicateDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntPredicateDirect.html"
         }
       },
       "version": ""
@@ -63194,10 +65904,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntSupplierDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntSupplierDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.IntToDoubleFunction.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.IntToDoubleFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntToDoubleFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntToDoubleFunctionDirect.html"
         }
       },
       "version": ""
@@ -63214,10 +65944,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntToLongFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntToLongFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.IntUnaryOperator.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.IntUnaryOperator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.IntUnaryOperatorDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.IntUnaryOperatorDirect.html"
         }
       },
       "version": ""
@@ -63234,10 +65984,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongBinaryOperatorDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongBinaryOperatorDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.LongConsumer.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.LongConsumer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongConsumerDirect.html"
         }
       },
       "version": ""
@@ -63264,10 +66034,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongFunctionDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongFunctionDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.LongPredicate.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.LongPredicate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongPredicateDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongPredicateDirect.html"
         }
       },
       "version": ""
@@ -63284,10 +66084,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongSupplierDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongSupplierDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.LongToDoubleFunction.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.LongToDoubleFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongToDoubleFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongToDoubleFunctionDirect.html"
         }
       },
       "version": ""
@@ -63304,10 +66124,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongToIntFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongToIntFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.LongUnaryOperator.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.LongUnaryOperator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.LongUnaryOperatorDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.LongUnaryOperatorDirect.html"
         }
       },
       "version": ""
@@ -63334,6 +66174,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ObjDoubleConsumerDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ObjDoubleConsumerDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ObjDoubleConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ObjDoubleConsumerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.ObjIntConsumer-1.yml",
       "output": {
         ".html": {
@@ -63354,6 +66214,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ObjIntConsumerDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ObjIntConsumerDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ObjIntConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ObjIntConsumerDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.ObjLongConsumer-1.yml",
       "output": {
         ".html": {
@@ -63368,6 +66248,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.ObjLongConsumer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ObjLongConsumerDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ObjLongConsumerDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ObjLongConsumerDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ObjLongConsumerDirect.html"
         }
       },
       "version": ""
@@ -63474,6 +66374,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToDoubleBiFunctionDirect-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToDoubleBiFunctionDirect-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToDoubleBiFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToDoubleBiFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.ToDoubleFunction-1.yml",
       "output": {
         ".html": {
@@ -63488,6 +66408,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.ToDoubleFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToDoubleFunctionDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToDoubleFunctionDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToDoubleFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToDoubleFunctionDirect.html"
         }
       },
       "version": ""
@@ -63514,6 +66454,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToIntBiFunctionDirect-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToIntBiFunctionDirect-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToIntBiFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToIntBiFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.ToIntFunction-1.yml",
       "output": {
         ".html": {
@@ -63528,6 +66488,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.ToIntFunction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToIntFunctionDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToIntFunctionDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToIntFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToIntFunctionDirect.html"
         }
       },
       "version": ""
@@ -63554,6 +66534,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToLongBiFunctionDirect-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToLongBiFunctionDirect-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToLongBiFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToLongBiFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.ToLongFunction-1.yml",
       "output": {
         ".html": {
@@ -63574,6 +66574,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToLongFunctionDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToLongFunctionDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.ToLongFunctionDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.ToLongFunctionDirect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Function.UnaryOperator-1.yml",
       "output": {
         ".html": {
@@ -63588,6 +66608,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.UnaryOperator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.UnaryOperatorDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.UnaryOperatorDirect-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Function.UnaryOperatorDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Function.UnaryOperatorDirect.html"
         }
       },
       "version": ""
@@ -64984,6 +68024,106 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.RandomNs.IRandomGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.RandomNs.IRandomGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.RandomNs.RandomGenerator.ArbitrarilyJumpableGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.RandomNs.RandomGenerator.ArbitrarilyJumpableGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.RandomNs.RandomGenerator.JumpableGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.RandomNs.RandomGenerator.JumpableGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.RandomNs.RandomGenerator.LeapableGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.RandomNs.RandomGenerator.LeapableGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.RandomNs.RandomGenerator.SplittableGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.RandomNs.RandomGenerator.SplittableGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.RandomNs.RandomGenerator.StreamableGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.RandomNs.RandomGenerator.StreamableGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.RandomNs.RandomGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.RandomNs.RandomGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.RandomNs.RandomGeneratorFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.RandomNs.RandomGeneratorFactory-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.RandomNs.RandomGeneratorFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.RandomNs.RandomGeneratorFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.RandomNs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.RandomNs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Regex.IMatchResult.yml",
       "output": {
         ".html": {
@@ -66304,6 +69444,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Crypto.Spec.ChaCha20ParameterSpec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Crypto.Spec.ChaCha20ParameterSpec.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Javax.Crypto.Spec.DESKeySpec.yml",
       "output": {
         ".html": {
@@ -67478,6 +70628,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Javax.Security.Auth.X500.X500Principal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Javax.Security.Auth.X500.X500PrivateCredential.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Javax.Security.Auth.X500.X500PrivateCredential.html"
         }
       },
       "version": ""
@@ -68734,20 +71894,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.yml",
+      "source_relative_path": "api/MASES.Netdroid.Specific.Extensions.JavaUtilExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html"
+          "relative_path": "api/MASES.Netdroid.Specific.Extensions.JavaUtilExtensions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MASES.Netdroid.Specific.Extensions.JavaUtilExtensions.yml",
+      "source_relative_path": "api/MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MASES.Netdroid.Specific.Extensions.JavaUtilExtensions.html"
+          "relative_path": "api/MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html"
         }
       },
       "version": ""
@@ -68808,6 +71968,36 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.Netdroid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.NetdroidCLI.NetdroidCLICore-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.NetdroidCLI.NetdroidCLICore-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.NetdroidCLI.NetdroidCLICore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.NetdroidCLI.NetdroidCLICore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.NetdroidCLI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.NetdroidCLI.html"
         }
       },
       "version": ""

@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Inputmethod_InputMethodManager__ctor" data-uid="Android.View.Inputmethod.InputMethodManager.#ctor">
   InputMethodManager()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1309"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Inputmethod_InputMethodManager__ctor_System_Object___" data-uid="Android.View.Inputmethod.InputMethodManager.#ctor(System.Object[])">
   InputMethodManager(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1239"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1313"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -555,7 +561,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_BridgeClassName" data-uid="Android.View.Inputmethod.InputMethodManager.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1246"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1321"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -583,11 +589,43 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
 
 
+  <a id="Android_View_Inputmethod_InputMethodManager_HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED_" data-uid="Android.View.Inputmethod.InputMethodManager.HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED*"></a>
+
+  <h3 id="Android_View_Inputmethod_InputMethodManager_HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED" data-uid="Android.View.Inputmethod.InputMethodManager.HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED">
+  HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_View_Inputmethod_InputMethodManager_HIDE_IMPLICIT_ONLY_" data-uid="Android.View.Inputmethod.InputMethodManager.HIDE_IMPLICIT_ONLY*"></a>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_HIDE_IMPLICIT_ONLY" data-uid="Android.View.Inputmethod.InputMethodManager.HIDE_IMPLICIT_ONLY">
   HIDE_IMPLICIT_ONLY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#HIDE_IMPLICIT_ONLY">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#HIDE_IMPLICIT_ONLY</a></p>
@@ -619,7 +657,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_HIDE_NOT_ALWAYS" data-uid="Android.View.Inputmethod.InputMethodManager.HIDE_NOT_ALWAYS">
   HIDE_NOT_ALWAYS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#HIDE_NOT_ALWAYS">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#HIDE_NOT_ALWAYS</a></p>
@@ -651,7 +689,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_IsBridgeAbstract" data-uid="Android.View.Inputmethod.InputMethodManager.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1250"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1325"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -683,7 +721,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_IsBridgeCloseable" data-uid="Android.View.Inputmethod.InputMethodManager.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1254"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1329"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -715,7 +753,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_IsBridgeInterface" data-uid="Android.View.Inputmethod.InputMethodManager.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1258"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1333"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -747,7 +785,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_IsBridgeStatic" data-uid="Android.View.Inputmethod.InputMethodManager.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1262"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/AllPackageClasses.cs/#L1337"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -779,7 +817,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_RESULT_HIDDEN" data-uid="Android.View.Inputmethod.InputMethodManager.RESULT_HIDDEN">
   RESULT_HIDDEN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#RESULT_HIDDEN">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#RESULT_HIDDEN</a></p>
@@ -811,7 +849,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_RESULT_SHOWN" data-uid="Android.View.Inputmethod.InputMethodManager.RESULT_SHOWN">
   RESULT_SHOWN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#RESULT_SHOWN">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#RESULT_SHOWN</a></p>
@@ -843,7 +881,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_RESULT_UNCHANGED_HIDDEN" data-uid="Android.View.Inputmethod.InputMethodManager.RESULT_UNCHANGED_HIDDEN">
   RESULT_UNCHANGED_HIDDEN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#RESULT_UNCHANGED_HIDDEN">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#RESULT_UNCHANGED_HIDDEN</a></p>
@@ -875,7 +913,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_RESULT_UNCHANGED_SHOWN" data-uid="Android.View.Inputmethod.InputMethodManager.RESULT_UNCHANGED_SHOWN">
   RESULT_UNCHANGED_SHOWN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#RESULT_UNCHANGED_SHOWN">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#RESULT_UNCHANGED_SHOWN</a></p>
@@ -907,7 +945,7 @@ Class InputMethodManager  <a class="header-action link-secondary" title="View so
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_SHOW_FORCED" data-uid="Android.View.Inputmethod.InputMethodManager.SHOW_FORCED">
   SHOW_FORCED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#SHOW_FORCED">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#SHOW_FORCED</a></p>
@@ -940,7 +978,7 @@ public static int SHOW_FORCED { get; }</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_SHOW_IMPLICIT" data-uid="Android.View.Inputmethod.InputMethodManager.SHOW_IMPLICIT">
   SHOW_IMPLICIT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#SHOW_IMPLICIT">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#SHOW_IMPLICIT</a></p>
@@ -976,7 +1014,7 @@ public static int SHOW_FORCED { get; }</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_AcceptStylusHandwritingDelegation_Android_View_View_" data-uid="Android.View.Inputmethod.InputMethodManager.AcceptStylusHandwritingDelegation(Android.View.View)">
   AcceptStylusHandwritingDelegation(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#acceptStylusHandwritingDelegation(android.view.View)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#acceptStylusHandwritingDelegation(android.view.View)</a></p>
@@ -1015,7 +1053,7 @@ public static int SHOW_FORCED { get; }</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_AcceptStylusHandwritingDelegation_Android_View_View_Java_Lang_String_" data-uid="Android.View.Inputmethod.InputMethodManager.AcceptStylusHandwritingDelegation(Android.View.View,Java.Lang.String)">
   AcceptStylusHandwritingDelegation(View, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#acceptStylusHandwritingDelegation(android.view.View,java.lang.String)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#acceptStylusHandwritingDelegation(android.view.View,java.lang.String)</a></p>
@@ -1053,11 +1091,98 @@ public static int SHOW_FORCED { get; }</code></pre>
 
 
 
+  <a id="Android_View_Inputmethod_InputMethodManager_AcceptStylusHandwritingDelegation_" data-uid="Android.View.Inputmethod.InputMethodManager.AcceptStylusHandwritingDelegation*"></a>
+
+  <h3 id="Android_View_Inputmethod_InputMethodManager_AcceptStylusHandwritingDelegation_Android_View_View_Java_Lang_String_Java_Util_Concurrent_Executor_Java_Util_Function_Consumer_Java_Lang_Boolean__" data-uid="Android.View.Inputmethod.InputMethodManager.AcceptStylusHandwritingDelegation(Android.View.View,Java.Lang.String,Java.Util.Concurrent.Executor,Java.Util.Function.Consumer{Java.Lang.Boolean})">
+  AcceptStylusHandwritingDelegation(View, String, Executor, Consumer&lt;Boolean&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#acceptStylusHandwritingDelegation(android.view.View,java.lang.String,java.util.concurrent.Executor,java.util.function.Consumer)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#acceptStylusHandwritingDelegation(android.view.View,java.lang.String,java.util.concurrent.Executor,java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AcceptStylusHandwritingDelegation(View arg0, String arg1, Executor arg2, Consumer&lt;Boolean&gt; arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;<a class="xref" href="Java.Lang.Boolean.html">Boolean</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_InputMethodManager_AcceptStylusHandwritingDelegation_" data-uid="Android.View.Inputmethod.InputMethodManager.AcceptStylusHandwritingDelegation*"></a>
+
+  <h3 id="Android_View_Inputmethod_InputMethodManager_AcceptStylusHandwritingDelegation_Android_View_View_Java_Lang_String_System_Int32_Java_Util_Concurrent_Executor_Java_Util_Function_Consumer_Java_Lang_Boolean__" data-uid="Android.View.Inputmethod.InputMethodManager.AcceptStylusHandwritingDelegation(Android.View.View,Java.Lang.String,System.Int32,Java.Util.Concurrent.Executor,Java.Util.Function.Consumer{Java.Lang.Boolean})">
+  AcceptStylusHandwritingDelegation(View, String, int, Executor, Consumer&lt;Boolean&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#acceptStylusHandwritingDelegation(android.view.View,java.lang.String,int,java.util.concurrent.Executor,java.util.function.Consumer)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#acceptStylusHandwritingDelegation(android.view.View,java.lang.String,int,java.util.concurrent.Executor,java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AcceptStylusHandwritingDelegation(View arg0, String arg1, int arg2, Executor arg3, Consumer&lt;Boolean&gt; arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;<a class="xref" href="Java.Lang.Boolean.html">Boolean</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_View_Inputmethod_InputMethodManager_DispatchKeyEventFromInputMethod_" data-uid="Android.View.Inputmethod.InputMethodManager.DispatchKeyEventFromInputMethod*"></a>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_DispatchKeyEventFromInputMethod_Android_View_View_Android_View_KeyEvent_" data-uid="Android.View.Inputmethod.InputMethodManager.DispatchKeyEventFromInputMethod(Android.View.View,Android.View.KeyEvent)">
   DispatchKeyEventFromInputMethod(View, KeyEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L358"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#dispatchKeyEventFromInputMethod(android.view.View,android.view.KeyEvent)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#dispatchKeyEventFromInputMethod(android.view.View,android.view.KeyEvent)</a></p>
@@ -1093,7 +1218,7 @@ public static int SHOW_FORCED { get; }</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_DisplayCompletions_Android_View_View_Android_View_Inputmethod_CompletionInfo___" data-uid="Android.View.Inputmethod.InputMethodManager.DisplayCompletions(Android.View.View,Android.View.Inputmethod.CompletionInfo[])">
   DisplayCompletions(View, CompletionInfo[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#displayCompletions(android.view.View,android.view.inputmethod.CompletionInfo[])">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#displayCompletions(android.view.View,android.view.inputmethod.CompletionInfo[])</a></p>
@@ -1129,7 +1254,7 @@ public static int SHOW_FORCED { get; }</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_GetCurrentInputMethodInfo" data-uid="Android.View.Inputmethod.InputMethodManager.GetCurrentInputMethodInfo">
   GetCurrentInputMethodInfo()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getCurrentInputMethodInfo()">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getCurrentInputMethodInfo()</a></p>
@@ -1162,7 +1287,7 @@ public static int SHOW_FORCED { get; }</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_GetCurrentInputMethodSubtype" data-uid="Android.View.Inputmethod.InputMethodManager.GetCurrentInputMethodSubtype">
   GetCurrentInputMethodSubtype()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getCurrentInputMethodSubtype()">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getCurrentInputMethodSubtype()</a></p>
@@ -1195,7 +1320,7 @@ public static int SHOW_FORCED { get; }</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_GetEnabledInputMethodList" data-uid="Android.View.Inputmethod.InputMethodManager.GetEnabledInputMethodList">
   GetEnabledInputMethodList()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L300"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getEnabledInputMethodList()">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getEnabledInputMethodList()</a></p>
@@ -1228,7 +1353,7 @@ public static int SHOW_FORCED { get; }</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_GetEnabledInputMethodSubtypeList_Android_View_Inputmethod_InputMethodInfo_System_Boolean_" data-uid="Android.View.Inputmethod.InputMethodManager.GetEnabledInputMethodSubtypeList(Android.View.Inputmethod.InputMethodInfo,System.Boolean)">
   GetEnabledInputMethodSubtypeList(InputMethodInfo, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L318"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getEnabledInputMethodSubtypeList(android.view.inputmethod.InputMethodInfo,boolean)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getEnabledInputMethodSubtypeList(android.view.inputmethod.InputMethodInfo,boolean)</a></p>
@@ -1270,7 +1395,7 @@ public static int SHOW_FORCED { get; }</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_GetInputMethodList" data-uid="Android.View.Inputmethod.InputMethodManager.GetInputMethodList">
   GetInputMethodList()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getInputMethodList()">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getInputMethodList()</a></p>
@@ -1303,7 +1428,7 @@ public static int SHOW_FORCED { get; }</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_GetLastInputMethodSubtype" data-uid="Android.View.Inputmethod.InputMethodManager.GetLastInputMethodSubtype">
   GetLastInputMethodSubtype()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getLastInputMethodSubtype()">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getLastInputMethodSubtype()</a></p>
@@ -1336,7 +1461,7 @@ public static int SHOW_FORCED { get; }</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_GetShortcutInputMethodsAndSubtypes" data-uid="Android.View.Inputmethod.InputMethodManager.GetShortcutInputMethodsAndSubtypes">
   GetShortcutInputMethodsAndSubtypes()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L326"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getShortcutInputMethodsAndSubtypes()">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getShortcutInputMethodsAndSubtypes()</a></p>
@@ -1369,7 +1494,7 @@ public static int SHOW_FORCED { get; }</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_HideSoftInputFromInputMethod_Android_Os_IBinder_System_Int32_" data-uid="Android.View.Inputmethod.InputMethodManager.HideSoftInputFromInputMethod(Android.Os.IBinder,System.Int32)">
   HideSoftInputFromInputMethod(IBinder, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L376"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#hideSoftInputFromInputMethod(android.os.IBinder,int)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#hideSoftInputFromInputMethod(android.os.IBinder,int)</a></p>
@@ -1406,7 +1531,7 @@ public void HideSoftInputFromInputMethod(IBinder arg0, int arg1)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_HideSoftInputFromWindow_Android_Os_IBinder_System_Int32_" data-uid="Android.View.Inputmethod.InputMethodManager.HideSoftInputFromWindow(Android.Os.IBinder,System.Int32)">
   HideSoftInputFromWindow(IBinder, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#hideSoftInputFromWindow(android.os.IBinder,int)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#hideSoftInputFromWindow(android.os.IBinder,int)</a></p>
@@ -1448,7 +1573,7 @@ public void HideSoftInputFromInputMethod(IBinder arg0, int arg1)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_HideSoftInputFromWindow_Android_Os_IBinder_System_Int32_Android_Os_ResultReceiver_" data-uid="Android.View.Inputmethod.InputMethodManager.HideSoftInputFromWindow(Android.Os.IBinder,System.Int32,Android.Os.ResultReceiver)">
   HideSoftInputFromWindow(IBinder, int, ResultReceiver)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#hideSoftInputFromWindow(android.os.IBinder,int,android.os.ResultReceiver)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#hideSoftInputFromWindow(android.os.IBinder,int,android.os.ResultReceiver)</a></p>
@@ -1493,7 +1618,7 @@ public void HideSoftInputFromInputMethod(IBinder arg0, int arg1)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_HideStatusIcon_Android_Os_IBinder_" data-uid="Android.View.Inputmethod.InputMethodManager.HideStatusIcon(Android.Os.IBinder)">
   HideStatusIcon(IBinder)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L385"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#hideStatusIcon(android.os.IBinder)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#hideStatusIcon(android.os.IBinder)</a></p>
@@ -1527,7 +1652,7 @@ public void HideStatusIcon(IBinder arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_InvalidateInput_Android_View_View_" data-uid="Android.View.Inputmethod.InputMethodManager.InvalidateInput(Android.View.View)">
   InvalidateInput(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L394"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#invalidateInput(android.view.View)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#invalidateInput(android.view.View)</a></p>
@@ -1560,7 +1685,7 @@ public void HideStatusIcon(IBinder arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_IsAcceptingText" data-uid="Android.View.Inputmethod.InputMethodManager.IsAcceptingText">
   IsAcceptingText()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L171"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isAcceptingText()">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isAcceptingText()</a></p>
@@ -1593,7 +1718,7 @@ public void HideStatusIcon(IBinder arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_IsActive" data-uid="Android.View.Inputmethod.InputMethodManager.IsActive">
   IsActive()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L179"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isActive()">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isActive()</a></p>
@@ -1626,7 +1751,7 @@ public void HideStatusIcon(IBinder arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_IsActive_Android_View_View_" data-uid="Android.View.Inputmethod.InputMethodManager.IsActive(Android.View.View)">
   IsActive(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isActive(android.view.View)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isActive(android.view.View)</a></p>
@@ -1661,11 +1786,44 @@ public void HideStatusIcon(IBinder arg0)</code></pre>
 
 
 
+  <a id="Android_View_Inputmethod_InputMethodManager_IsConnectionlessStylusHandwritingAvailable_" data-uid="Android.View.Inputmethod.InputMethodManager.IsConnectionlessStylusHandwritingAvailable*"></a>
+
+  <h3 id="Android_View_Inputmethod_InputMethodManager_IsConnectionlessStylusHandwritingAvailable" data-uid="Android.View.Inputmethod.InputMethodManager.IsConnectionlessStylusHandwritingAvailable">
+  IsConnectionlessStylusHandwritingAvailable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isConnectionlessStylusHandwritingAvailable()">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isConnectionlessStylusHandwritingAvailable()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConnectionlessStylusHandwritingAvailable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_View_Inputmethod_InputMethodManager_IsFullscreenMode_" data-uid="Android.View.Inputmethod.InputMethodManager.IsFullscreenMode*"></a>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_IsFullscreenMode" data-uid="Android.View.Inputmethod.InputMethodManager.IsFullscreenMode">
   IsFullscreenMode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isFullscreenMode()">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isFullscreenMode()</a></p>
@@ -1698,7 +1856,7 @@ public void HideStatusIcon(IBinder arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_IsInputMethodSuppressingSpellChecker" data-uid="Android.View.Inputmethod.InputMethodManager.IsInputMethodSuppressingSpellChecker">
   IsInputMethodSuppressingSpellChecker()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L212"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isInputMethodSuppressingSpellChecker()">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isInputMethodSuppressingSpellChecker()</a></p>
@@ -1731,7 +1889,7 @@ public void HideStatusIcon(IBinder arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_IsStylusHandwritingAvailable" data-uid="Android.View.Inputmethod.InputMethodManager.IsStylusHandwritingAvailable">
   IsStylusHandwritingAvailable()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L220"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isStylusHandwritingAvailable()">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isStylusHandwritingAvailable()</a></p>
@@ -1764,7 +1922,7 @@ public void HideStatusIcon(IBinder arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_IsWatchingCursor_Android_View_View_" data-uid="Android.View.Inputmethod.InputMethodManager.IsWatchingCursor(Android.View.View)">
   IsWatchingCursor(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isWatchingCursor(android.view.View)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#isWatchingCursor(android.view.View)</a></p>
@@ -1804,7 +1962,7 @@ public bool IsWatchingCursor(View arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_PrepareStylusHandwritingDelegation_Android_View_View_" data-uid="Android.View.Inputmethod.InputMethodManager.PrepareStylusHandwritingDelegation(Android.View.View)">
   PrepareStylusHandwritingDelegation(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L411"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#prepareStylusHandwritingDelegation(android.view.View)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#prepareStylusHandwritingDelegation(android.view.View)</a></p>
@@ -1837,7 +1995,7 @@ public bool IsWatchingCursor(View arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_PrepareStylusHandwritingDelegation_Android_View_View_Java_Lang_String_" data-uid="Android.View.Inputmethod.InputMethodManager.PrepareStylusHandwritingDelegation(Android.View.View,Java.Lang.String)">
   PrepareStylusHandwritingDelegation(View, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L403"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#prepareStylusHandwritingDelegation(android.view.View,java.lang.String)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#prepareStylusHandwritingDelegation(android.view.View,java.lang.String)</a></p>
@@ -1873,7 +2031,7 @@ public bool IsWatchingCursor(View arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_RestartInput_Android_View_View_" data-uid="Android.View.Inputmethod.InputMethodManager.RestartInput(Android.View.View)">
   RestartInput(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L419"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#restartInput(android.view.View)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#restartInput(android.view.View)</a></p>
@@ -1906,7 +2064,7 @@ public bool IsWatchingCursor(View arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_SendAppPrivateCommand_Android_View_View_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.View.Inputmethod.InputMethodManager.SendAppPrivateCommand(Android.View.View,Java.Lang.String,Android.Os.Bundle)">
   SendAppPrivateCommand(View, String, Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L429"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#sendAppPrivateCommand(android.view.View,java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#sendAppPrivateCommand(android.view.View,java.lang.String,android.os.Bundle)</a></p>
@@ -1945,7 +2103,7 @@ public bool IsWatchingCursor(View arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_SetAdditionalInputMethodSubtypes_Java_Lang_String_Android_View_Inputmethod_InputMethodSubtype___" data-uid="Android.View.Inputmethod.InputMethodManager.SetAdditionalInputMethodSubtypes(Java.Lang.String,Android.View.Inputmethod.InputMethodSubtype[])">
   SetAdditionalInputMethodSubtypes(String, InputMethodSubtype[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L438"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setAdditionalInputMethodSubtypes(java.lang.String,android.view.inputmethod.InputMethodSubtype[])">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setAdditionalInputMethodSubtypes(java.lang.String,android.view.inputmethod.InputMethodSubtype[])</a></p>
@@ -1982,7 +2140,7 @@ public void SetAdditionalInputMethodSubtypes(String arg0, InputMethodSubtype[] a
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_SetCurrentInputMethodSubtype_Android_View_Inputmethod_InputMethodSubtype_" data-uid="Android.View.Inputmethod.InputMethodManager.SetCurrentInputMethodSubtype(Android.View.Inputmethod.InputMethodSubtype)">
   SetCurrentInputMethodSubtype(InputMethodSubtype)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L239"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setCurrentInputMethodSubtype(android.view.inputmethod.InputMethodSubtype)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setCurrentInputMethodSubtype(android.view.inputmethod.InputMethodSubtype)</a></p>
@@ -2022,7 +2180,7 @@ public bool SetCurrentInputMethodSubtype(InputMethodSubtype arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_SetExplicitlyEnabledInputMethodSubtypes_Java_Lang_String_System_Int32___" data-uid="Android.View.Inputmethod.InputMethodManager.SetExplicitlyEnabledInputMethodSubtypes(Java.Lang.String,System.Int32[])">
   SetExplicitlyEnabledInputMethodSubtypes(String, int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L448"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setExplicitlyEnabledInputMethodSubtypes(java.lang.String,int[])">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setExplicitlyEnabledInputMethodSubtypes(java.lang.String,int[])</a></p>
@@ -2058,7 +2216,7 @@ public bool SetCurrentInputMethodSubtype(InputMethodSubtype arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_SetInputMethod_Android_Os_IBinder_Java_Lang_String_" data-uid="Android.View.Inputmethod.InputMethodManager.SetInputMethod(Android.Os.IBinder,Java.Lang.String)">
   SetInputMethod(IBinder, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L420"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L457"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setInputMethod(android.os.IBinder,java.lang.String)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setInputMethod(android.os.IBinder,java.lang.String)</a></p>
@@ -2095,7 +2253,7 @@ public void SetInputMethod(IBinder arg0, String arg1)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_SetInputMethodAndSubtype_Android_Os_IBinder_Java_Lang_String_Android_View_Inputmethod_InputMethodSubtype_" data-uid="Android.View.Inputmethod.InputMethodManager.SetInputMethodAndSubtype(Android.Os.IBinder,Java.Lang.String,Android.View.Inputmethod.InputMethodSubtype)">
   SetInputMethodAndSubtype(IBinder, String, InputMethodSubtype)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L468"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setInputMethodAndSubtype(android.os.IBinder,java.lang.String,android.view.inputmethod.InputMethodSubtype)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#setInputMethodAndSubtype(android.os.IBinder,java.lang.String,android.view.inputmethod.InputMethodSubtype)</a></p>
@@ -2135,7 +2293,7 @@ public void SetInputMethodAndSubtype(IBinder arg0, String arg1, InputMethodSubty
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_ShouldOfferSwitchingToNextInputMethod_Android_Os_IBinder_" data-uid="Android.View.Inputmethod.InputMethodManager.ShouldOfferSwitchingToNextInputMethod(Android.Os.IBinder)">
   ShouldOfferSwitchingToNextInputMethod(IBinder)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L249"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#shouldOfferSwitchingToNextInputMethod(android.os.IBinder)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#shouldOfferSwitchingToNextInputMethod(android.os.IBinder)</a></p>
@@ -2175,7 +2333,7 @@ public bool ShouldOfferSwitchingToNextInputMethod(IBinder arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_ShowInputMethodAndSubtypeEnabler_Java_Lang_String_" data-uid="Android.View.Inputmethod.InputMethodManager.ShowInputMethodAndSubtypeEnabler(Java.Lang.String)">
   ShowInputMethodAndSubtypeEnabler(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L477"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showInputMethodAndSubtypeEnabler(java.lang.String)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showInputMethodAndSubtypeEnabler(java.lang.String)</a></p>
@@ -2208,7 +2366,7 @@ public bool ShouldOfferSwitchingToNextInputMethod(IBinder arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_ShowInputMethodPicker" data-uid="Android.View.Inputmethod.InputMethodManager.ShowInputMethodPicker">
   ShowInputMethodPicker()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L484"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showInputMethodPicker()">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showInputMethodPicker()</a></p>
@@ -2235,7 +2393,7 @@ public bool ShouldOfferSwitchingToNextInputMethod(IBinder arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_ShowSoftInput_Android_View_View_System_Int32_" data-uid="Android.View.Inputmethod.InputMethodManager.ShowSoftInput(Android.View.View,System.Int32)">
   ShowSoftInput(View, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L271"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showSoftInput(android.view.View,int)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showSoftInput(android.view.View,int)</a></p>
@@ -2277,7 +2435,7 @@ public bool ShouldOfferSwitchingToNextInputMethod(IBinder arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_ShowSoftInput_Android_View_View_System_Int32_Android_Os_ResultReceiver_" data-uid="Android.View.Inputmethod.InputMethodManager.ShowSoftInput(Android.View.View,System.Int32,Android.Os.ResultReceiver)">
   ShowSoftInput(View, int, ResultReceiver)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L261"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showSoftInput(android.view.View,int,android.os.ResultReceiver)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showSoftInput(android.view.View,int,android.os.ResultReceiver)</a></p>
@@ -2322,7 +2480,7 @@ public bool ShouldOfferSwitchingToNextInputMethod(IBinder arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_ShowSoftInputFromInputMethod_Android_Os_IBinder_System_Int32_" data-uid="Android.View.Inputmethod.InputMethodManager.ShowSoftInputFromInputMethod(Android.Os.IBinder,System.Int32)">
   ShowSoftInputFromInputMethod(IBinder, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L456"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L493"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showSoftInputFromInputMethod(android.os.IBinder,int)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showSoftInputFromInputMethod(android.os.IBinder,int)</a></p>
@@ -2359,7 +2517,7 @@ public void ShowSoftInputFromInputMethod(IBinder arg0, int arg1)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_ShowStatusIcon_Android_Os_IBinder_Java_Lang_String_System_Int32_" data-uid="Android.View.Inputmethod.InputMethodManager.ShowStatusIcon(Android.Os.IBinder,Java.Lang.String,System.Int32)">
   ShowStatusIcon(IBinder, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L504"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showStatusIcon(android.os.IBinder,java.lang.String,int)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#showStatusIcon(android.os.IBinder,java.lang.String,int)</a></p>
@@ -2395,11 +2553,140 @@ public void ShowStatusIcon(IBinder arg0, String arg1, int arg2)</code></pre>
 
 
 
+  <a id="Android_View_Inputmethod_InputMethodManager_StartConnectionlessStylusHandwriting_" data-uid="Android.View.Inputmethod.InputMethodManager.StartConnectionlessStylusHandwriting*"></a>
+
+  <h3 id="Android_View_Inputmethod_InputMethodManager_StartConnectionlessStylusHandwriting_Android_View_View_Android_View_Inputmethod_CursorAnchorInfo_Java_Util_Concurrent_Executor_Android_View_Inputmethod_ConnectionlessHandwritingCallback_" data-uid="Android.View.Inputmethod.InputMethodManager.StartConnectionlessStylusHandwriting(Android.View.View,Android.View.Inputmethod.CursorAnchorInfo,Java.Util.Concurrent.Executor,Android.View.Inputmethod.ConnectionlessHandwritingCallback)">
+  StartConnectionlessStylusHandwriting(View, CursorAnchorInfo, Executor, ConnectionlessHandwritingCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startConnectionlessStylusHandwriting(android.view.View,android.view.inputmethod.CursorAnchorInfo,java.util.concurrent.Executor,android.view.inputmethod.ConnectionlessHandwritingCallback)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startConnectionlessStylusHandwriting(android.view.View,android.view.inputmethod.CursorAnchorInfo,java.util.concurrent.Executor,android.view.inputmethod.ConnectionlessHandwritingCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartConnectionlessStylusHandwriting(View arg0, CursorAnchorInfo arg1, Executor arg2, ConnectionlessHandwritingCallback arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.Inputmethod.CursorAnchorInfo.html">CursorAnchorInfo</a></dt>
+    <dd><p><a class="xref" href="Android.View.Inputmethod.CursorAnchorInfo.html">CursorAnchorInfo</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.View.Inputmethod.ConnectionlessHandwritingCallback.html">ConnectionlessHandwritingCallback</a></dt>
+    <dd><p><a class="xref" href="Android.View.Inputmethod.ConnectionlessHandwritingCallback.html">ConnectionlessHandwritingCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_InputMethodManager_StartConnectionlessStylusHandwritingForDelegation_" data-uid="Android.View.Inputmethod.InputMethodManager.StartConnectionlessStylusHandwritingForDelegation*"></a>
+
+  <h3 id="Android_View_Inputmethod_InputMethodManager_StartConnectionlessStylusHandwritingForDelegation_Android_View_View_Android_View_Inputmethod_CursorAnchorInfo_Java_Lang_String_Java_Util_Concurrent_Executor_Android_View_Inputmethod_ConnectionlessHandwritingCallback_" data-uid="Android.View.Inputmethod.InputMethodManager.StartConnectionlessStylusHandwritingForDelegation(Android.View.View,Android.View.Inputmethod.CursorAnchorInfo,Java.Lang.String,Java.Util.Concurrent.Executor,Android.View.Inputmethod.ConnectionlessHandwritingCallback)">
+  StartConnectionlessStylusHandwritingForDelegation(View, CursorAnchorInfo, String, Executor, ConnectionlessHandwritingCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startConnectionlessStylusHandwritingForDelegation(android.view.View,android.view.inputmethod.CursorAnchorInfo,java.lang.String,java.util.concurrent.Executor,android.view.inputmethod.ConnectionlessHandwritingCallback)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startConnectionlessStylusHandwritingForDelegation(android.view.View,android.view.inputmethod.CursorAnchorInfo,java.lang.String,java.util.concurrent.Executor,android.view.inputmethod.ConnectionlessHandwritingCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartConnectionlessStylusHandwritingForDelegation(View arg0, CursorAnchorInfo arg1, String arg2, Executor arg3, ConnectionlessHandwritingCallback arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.Inputmethod.CursorAnchorInfo.html">CursorAnchorInfo</a></dt>
+    <dd><p><a class="xref" href="Android.View.Inputmethod.CursorAnchorInfo.html">CursorAnchorInfo</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.View.Inputmethod.ConnectionlessHandwritingCallback.html">ConnectionlessHandwritingCallback</a></dt>
+    <dd><p><a class="xref" href="Android.View.Inputmethod.ConnectionlessHandwritingCallback.html">ConnectionlessHandwritingCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_Inputmethod_InputMethodManager_StartConnectionlessStylusHandwritingForDelegation_" data-uid="Android.View.Inputmethod.InputMethodManager.StartConnectionlessStylusHandwritingForDelegation*"></a>
+
+  <h3 id="Android_View_Inputmethod_InputMethodManager_StartConnectionlessStylusHandwritingForDelegation_Android_View_View_Android_View_Inputmethod_CursorAnchorInfo_Java_Util_Concurrent_Executor_Android_View_Inputmethod_ConnectionlessHandwritingCallback_" data-uid="Android.View.Inputmethod.InputMethodManager.StartConnectionlessStylusHandwritingForDelegation(Android.View.View,Android.View.Inputmethod.CursorAnchorInfo,Java.Util.Concurrent.Executor,Android.View.Inputmethod.ConnectionlessHandwritingCallback)">
+  StartConnectionlessStylusHandwritingForDelegation(View, CursorAnchorInfo, Executor, ConnectionlessHandwritingCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L539"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startConnectionlessStylusHandwritingForDelegation(android.view.View,android.view.inputmethod.CursorAnchorInfo,java.util.concurrent.Executor,android.view.inputmethod.ConnectionlessHandwritingCallback)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startConnectionlessStylusHandwritingForDelegation(android.view.View,android.view.inputmethod.CursorAnchorInfo,java.util.concurrent.Executor,android.view.inputmethod.ConnectionlessHandwritingCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartConnectionlessStylusHandwritingForDelegation(View arg0, CursorAnchorInfo arg1, Executor arg2, ConnectionlessHandwritingCallback arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.Inputmethod.CursorAnchorInfo.html">CursorAnchorInfo</a></dt>
+    <dd><p><a class="xref" href="Android.View.Inputmethod.CursorAnchorInfo.html">CursorAnchorInfo</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.View.Inputmethod.ConnectionlessHandwritingCallback.html">ConnectionlessHandwritingCallback</a></dt>
+    <dd><p><a class="xref" href="Android.View.Inputmethod.ConnectionlessHandwritingCallback.html">ConnectionlessHandwritingCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_View_Inputmethod_InputMethodManager_StartStylusHandwriting_" data-uid="Android.View.Inputmethod.InputMethodManager.StartStylusHandwriting*"></a>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_StartStylusHandwriting_Android_View_View_" data-uid="Android.View.Inputmethod.InputMethodManager.StartStylusHandwriting(Android.View.View)">
   StartStylusHandwriting(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L547"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startStylusHandwriting(android.view.View)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#startStylusHandwriting(android.view.View)</a></p>
@@ -2432,7 +2719,7 @@ public void ShowStatusIcon(IBinder arg0, String arg1, int arg2)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_SwitchToLastInputMethod_Android_Os_IBinder_" data-uid="Android.View.Inputmethod.InputMethodManager.SwitchToLastInputMethod(Android.Os.IBinder)">
   SwitchToLastInputMethod(IBinder)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L280"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#switchToLastInputMethod(android.os.IBinder)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#switchToLastInputMethod(android.os.IBinder)</a></p>
@@ -2472,7 +2759,7 @@ public bool SwitchToLastInputMethod(IBinder arg0)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_SwitchToNextInputMethod_Android_Os_IBinder_System_Boolean_" data-uid="Android.View.Inputmethod.InputMethodManager.SwitchToNextInputMethod(Android.Os.IBinder,System.Boolean)">
   SwitchToNextInputMethod(IBinder, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L291"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#switchToNextInputMethod(android.os.IBinder,boolean)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#switchToNextInputMethod(android.os.IBinder,boolean)</a></p>
@@ -2515,7 +2802,7 @@ public bool SwitchToNextInputMethod(IBinder arg0, bool arg1)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_ToggleSoftInput_System_Int32_System_Int32_" data-uid="Android.View.Inputmethod.InputMethodManager.ToggleSoftInput(System.Int32,System.Int32)">
   ToggleSoftInput(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L556"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#toggleSoftInput(int,int)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#toggleSoftInput(int,int)</a></p>
@@ -2552,7 +2839,7 @@ public void ToggleSoftInput(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_ToggleSoftInputFromWindow_Android_Os_IBinder_System_Int32_System_Int32_" data-uid="Android.View.Inputmethod.InputMethodManager.ToggleSoftInputFromWindow(Android.Os.IBinder,System.Int32,System.Int32)">
   ToggleSoftInputFromWindow(IBinder, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L496"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L567"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#toggleSoftInputFromWindow(android.os.IBinder,int,int)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#toggleSoftInputFromWindow(android.os.IBinder,int,int)</a></p>
@@ -2592,7 +2879,7 @@ public void ToggleSoftInputFromWindow(IBinder arg0, int arg1, int arg2)</code></
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_UpdateCursor_Android_View_View_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.View.Inputmethod.InputMethodManager.UpdateCursor(Android.View.View,System.Int32,System.Int32,System.Int32,System.Int32)">
   UpdateCursor(View, int, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L509"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L580"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#updateCursor(android.view.View,int,int,int,int)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#updateCursor(android.view.View,int,int,int,int)</a></p>
@@ -2638,7 +2925,7 @@ public void UpdateCursor(View arg0, int arg1, int arg2, int arg3, int arg4)</cod
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_UpdateCursorAnchorInfo_Android_View_View_Android_View_Inputmethod_CursorAnchorInfo_" data-uid="Android.View.Inputmethod.InputMethodManager.UpdateCursorAnchorInfo(Android.View.View,Android.View.Inputmethod.CursorAnchorInfo)">
   UpdateCursorAnchorInfo(View, CursorAnchorInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L590"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#updateCursorAnchorInfo(android.view.View,android.view.inputmethod.CursorAnchorInfo)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#updateCursorAnchorInfo(android.view.View,android.view.inputmethod.CursorAnchorInfo)</a></p>
@@ -2674,7 +2961,7 @@ public void UpdateCursor(View arg0, int arg1, int arg2, int arg3, int arg4)</cod
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_UpdateExtractedText_Android_View_View_System_Int32_Android_View_Inputmethod_ExtractedText_" data-uid="Android.View.Inputmethod.InputMethodManager.UpdateExtractedText(Android.View.View,System.Int32,Android.View.Inputmethod.ExtractedText)">
   UpdateExtractedText(View, int, ExtractedText)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L600"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#updateExtractedText(android.view.View,int,android.view.inputmethod.ExtractedText)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#updateExtractedText(android.view.View,int,android.view.inputmethod.ExtractedText)</a></p>
@@ -2713,7 +3000,7 @@ public void UpdateCursor(View arg0, int arg1, int arg2, int arg3, int arg4)</cod
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_UpdateSelection_Android_View_View_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.View.Inputmethod.InputMethodManager.UpdateSelection(Android.View.View,System.Int32,System.Int32,System.Int32,System.Int32)">
   UpdateSelection(View, int, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L612"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#updateSelection(android.view.View,int,int,int,int)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#updateSelection(android.view.View,int,int,int,int)</a></p>
@@ -2758,7 +3045,7 @@ public void UpdateCursor(View arg0, int arg1, int arg2, int arg3, int arg4)</cod
 
   <h3 id="Android_View_Inputmethod_InputMethodManager_ViewClicked_Android_View_View_" data-uid="Android.View.Inputmethod.InputMethodManager.ViewClicked(Android.View.View)">
   ViewClicked(View)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/Inputmethod/InputMethodManager.cs/#L620"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#viewClicked(android.view.View)">https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#viewClicked(android.view.View)</a></p>

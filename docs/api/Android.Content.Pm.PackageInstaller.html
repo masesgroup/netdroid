@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller__ctor" data-uid="Android.Content.Pm.PackageInstaller.#ctor">
   PackageInstaller()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1229"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1391"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller__ctor_System_Object___" data-uid="Android.Content.Pm.PackageInstaller.#ctor(System.Object[])">
   PackageInstaller(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1233"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1395"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -555,7 +561,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_ACTION_SESSION_COMMITTED" data-uid="Android.Content.Pm.PackageInstaller.ACTION_SESSION_COMMITTED">
   ACTION_SESSION_COMMITTED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#ACTION_SESSION_COMMITTED">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#ACTION_SESSION_COMMITTED</a></p>
@@ -587,7 +593,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_ACTION_SESSION_DETAILS" data-uid="Android.Content.Pm.PackageInstaller.ACTION_SESSION_DETAILS">
   ACTION_SESSION_DETAILS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#ACTION_SESSION_DETAILS">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#ACTION_SESSION_DETAILS</a></p>
@@ -619,7 +625,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_ACTION_SESSION_UPDATED" data-uid="Android.Content.Pm.PackageInstaller.ACTION_SESSION_UPDATED">
   ACTION_SESSION_UPDATED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#ACTION_SESSION_UPDATED">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#ACTION_SESSION_UPDATED</a></p>
@@ -651,7 +657,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_BridgeClassName" data-uid="Android.Content.Pm.PackageInstaller.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1240"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1403"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -683,7 +689,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_INSTALL_CONSTRAINTS" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_INSTALL_CONSTRAINTS">
   EXTRA_INSTALL_CONSTRAINTS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_INSTALL_CONSTRAINTS">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_INSTALL_CONSTRAINTS</a></p>
@@ -715,7 +721,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_INSTALL_CONSTRAINTS_RESULT" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_INSTALL_CONSTRAINTS_RESULT">
   EXTRA_INSTALL_CONSTRAINTS_RESULT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L199"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_INSTALL_CONSTRAINTS_RESULT">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_INSTALL_CONSTRAINTS_RESULT</a></p>
@@ -747,7 +753,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_OTHER_PACKAGE_NAME" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_OTHER_PACKAGE_NAME">
   EXTRA_OTHER_PACKAGE_NAME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_OTHER_PACKAGE_NAME">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_OTHER_PACKAGE_NAME</a></p>
@@ -779,7 +785,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_PACKAGE_NAME" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_PACKAGE_NAME">
   EXTRA_PACKAGE_NAME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_PACKAGE_NAME">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_PACKAGE_NAME</a></p>
@@ -811,7 +817,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_PRE_APPROVAL" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_PRE_APPROVAL">
   EXTRA_PRE_APPROVAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L217"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_PRE_APPROVAL">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_PRE_APPROVAL</a></p>
@@ -843,7 +849,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_SESSION" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_SESSION">
   EXTRA_SESSION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_SESSION">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_SESSION</a></p>
@@ -875,7 +881,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_SESSION_ID" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_SESSION_ID">
   EXTRA_SESSION_ID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_SESSION_ID">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_SESSION_ID</a></p>
@@ -907,7 +913,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_STATUS" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_STATUS">
   EXTRA_STATUS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_STATUS">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_STATUS</a></p>
@@ -939,7 +945,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_STATUS_MESSAGE" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_STATUS_MESSAGE">
   EXTRA_STATUS_MESSAGE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_STATUS_MESSAGE">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_STATUS_MESSAGE</a></p>
@@ -971,7 +977,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_STORAGE_PATH" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_STORAGE_PATH">
   EXTRA_STORAGE_PATH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_STORAGE_PATH">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_STORAGE_PATH</a></p>
@@ -999,11 +1005,139 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
 
 
+  <a id="Android_Content_Pm_PackageInstaller_EXTRA_UNARCHIVE_ALL_USERS_" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_UNARCHIVE_ALL_USERS*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_UNARCHIVE_ALL_USERS" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_UNARCHIVE_ALL_USERS">
+  EXTRA_UNARCHIVE_ALL_USERS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_UNARCHIVE_ALL_USERS">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_UNARCHIVE_ALL_USERS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_UNARCHIVE_ALL_USERS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_PackageInstaller_EXTRA_UNARCHIVE_ID_" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_UNARCHIVE_ID*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_UNARCHIVE_ID" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_UNARCHIVE_ID">
+  EXTRA_UNARCHIVE_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_UNARCHIVE_ID">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_UNARCHIVE_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_UNARCHIVE_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_PackageInstaller_EXTRA_UNARCHIVE_PACKAGE_NAME_" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_UNARCHIVE_PACKAGE_NAME*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_UNARCHIVE_PACKAGE_NAME" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_UNARCHIVE_PACKAGE_NAME">
+  EXTRA_UNARCHIVE_PACKAGE_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_UNARCHIVE_PACKAGE_NAME">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_UNARCHIVE_PACKAGE_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_UNARCHIVE_PACKAGE_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_PackageInstaller_EXTRA_UNARCHIVE_STATUS_" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_UNARCHIVE_STATUS*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_EXTRA_UNARCHIVE_STATUS" data-uid="Android.Content.Pm.PackageInstaller.EXTRA_UNARCHIVE_STATUS">
+  EXTRA_UNARCHIVE_STATUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_UNARCHIVE_STATUS">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#EXTRA_UNARCHIVE_STATUS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_UNARCHIVE_STATUS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Content_Pm_PackageInstaller_IsBridgeAbstract_" data-uid="Android.Content.Pm.PackageInstaller.IsBridgeAbstract*"></a>
 
   <h3 id="Android_Content_Pm_PackageInstaller_IsBridgeAbstract" data-uid="Android.Content.Pm.PackageInstaller.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1244"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1407"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1035,7 +1169,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_IsBridgeCloseable" data-uid="Android.Content.Pm.PackageInstaller.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1248"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1411"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1067,7 +1201,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_IsBridgeInterface" data-uid="Android.Content.Pm.PackageInstaller.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1415"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1099,7 +1233,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_IsBridgeStatic" data-uid="Android.Content.Pm.PackageInstaller.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1256"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L1419"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1607,6 +1741,230 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
 
 
+  <a id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_ERROR_INSTALLER_DISABLED_" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_ERROR_INSTALLER_DISABLED*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_ERROR_INSTALLER_DISABLED" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_ERROR_INSTALLER_DISABLED">
+  UNARCHIVAL_ERROR_INSTALLER_DISABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_INSTALLER_DISABLED">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_INSTALLER_DISABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UNARCHIVAL_ERROR_INSTALLER_DISABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED_" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED">
+  UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UNARCHIVAL_ERROR_INSTALLER_UNINSTALLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE_" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE">
+  UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UNARCHIVAL_ERROR_INSUFFICIENT_STORAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_ERROR_NO_CONNECTIVITY_" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_ERROR_NO_CONNECTIVITY*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_ERROR_NO_CONNECTIVITY" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_ERROR_NO_CONNECTIVITY">
+  UNARCHIVAL_ERROR_NO_CONNECTIVITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_NO_CONNECTIVITY">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_NO_CONNECTIVITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UNARCHIVAL_ERROR_NO_CONNECTIVITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_ERROR_USER_ACTION_NEEDED_" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_ERROR_USER_ACTION_NEEDED*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_ERROR_USER_ACTION_NEEDED" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_ERROR_USER_ACTION_NEEDED">
+  UNARCHIVAL_ERROR_USER_ACTION_NEEDED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_USER_ACTION_NEEDED">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_ERROR_USER_ACTION_NEEDED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UNARCHIVAL_ERROR_USER_ACTION_NEEDED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_GENERIC_ERROR_" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_GENERIC_ERROR*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_GENERIC_ERROR" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_GENERIC_ERROR">
+  UNARCHIVAL_GENERIC_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_GENERIC_ERROR">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_GENERIC_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UNARCHIVAL_GENERIC_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_OK_" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_OK*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_UNARCHIVAL_OK" data-uid="Android.Content.Pm.PackageInstaller.UNARCHIVAL_OK">
+  UNARCHIVAL_OK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_OK">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#UNARCHIVAL_OK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UNARCHIVAL_OK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -1615,7 +1973,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_AbandonSession_System_Int32_" data-uid="Android.Content.Pm.PackageInstaller.AbandonSession(System.Int32)">
   AbandonSession(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L356"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#abandonSession(int)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#abandonSession(int)</a></p>
@@ -1648,7 +2006,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_CheckInstallConstraints_Java_Util_List_Java_Lang_String__Android_Content_Pm_PackageInstaller_InstallConstraints_Java_Util_Concurrent_Executor_Java_Util_Function_Consumer_Android_Content_Pm_PackageInstaller_InstallConstraintsResult__" data-uid="Android.Content.Pm.PackageInstaller.CheckInstallConstraints(Java.Util.List{Java.Lang.String},Android.Content.Pm.PackageInstaller.InstallConstraints,Java.Util.Concurrent.Executor,Java.Util.Function.Consumer{Android.Content.Pm.PackageInstaller.InstallConstraintsResult})">
   CheckInstallConstraints(List&lt;String&gt;, InstallConstraints, Executor, Consumer&lt;InstallConstraintsResult&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#checkInstallConstraints(java.util.List,android.content.pm.PackageInstaller.InstallConstraints,java.util.concurrent.Executor,java.util.function.Consumer)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#checkInstallConstraints(java.util.List,android.content.pm.PackageInstaller.InstallConstraints,java.util.concurrent.Executor,java.util.function.Consumer)</a></p>
@@ -1690,7 +2048,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_CommitSessionAfterInstallConstraintsAreMet_System_Int32_Android_Content_IntentSender_Android_Content_Pm_PackageInstaller_InstallConstraints_System_Int64_" data-uid="Android.Content.Pm.PackageInstaller.CommitSessionAfterInstallConstraintsAreMet(System.Int32,Android.Content.IntentSender,Android.Content.Pm.PackageInstaller.InstallConstraints,System.Int64)">
   CommitSessionAfterInstallConstraintsAreMet(int, IntentSender, InstallConstraints, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L378"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#commitSessionAfterInstallConstraintsAreMet(int,android.content.IntentSender,android.content.pm.PackageInstaller.InstallConstraints,long)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#commitSessionAfterInstallConstraintsAreMet(int,android.content.IntentSender,android.content.pm.PackageInstaller.InstallConstraints,long)</a></p>
@@ -1732,7 +2090,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_CreateSession_Android_Content_Pm_PackageInstaller_SessionParams_" data-uid="Android.Content.Pm.PackageInstaller.CreateSession(Android.Content.Pm.PackageInstaller.SessionParams)">
   CreateSession(SessionParams)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L316"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#createSession(android.content.pm.PackageInstaller.SessionParams)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#createSession(android.content.pm.PackageInstaller.SessionParams)</a></p>
@@ -1776,7 +2134,7 @@ Class PackageInstaller  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Content_Pm_PackageInstaller_GetActiveStagedSession" data-uid="Android.Content.Pm.PackageInstaller.GetActiveStagedSession">
   GetActiveStagedSession()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L296"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getActiveStagedSession()">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getActiveStagedSession()</a></p>
@@ -1810,7 +2168,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_GetActiveStagedSessions" data-uid="Android.Content.Pm.PackageInstaller.GetActiveStagedSessions">
   GetActiveStagedSessions()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L324"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getActiveStagedSessions()">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getActiveStagedSessions()</a></p>
@@ -1843,7 +2201,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_GetAllSessions" data-uid="Android.Content.Pm.PackageInstaller.GetAllSessions">
   GetAllSessions()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L332"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getAllSessions()">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getAllSessions()</a></p>
@@ -1876,7 +2234,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_GetMySessions" data-uid="Android.Content.Pm.PackageInstaller.GetMySessions">
   GetMySessions()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L340"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getMySessions()">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getMySessions()</a></p>
@@ -1909,7 +2267,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_GetSessionInfo_System_Int32_" data-uid="Android.Content.Pm.PackageInstaller.GetSessionInfo(System.Int32)">
   GetSessionInfo(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L306"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getSessionInfo(int)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getSessionInfo(int)</a></p>
@@ -1948,7 +2306,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_GetStagedSessions" data-uid="Android.Content.Pm.PackageInstaller.GetStagedSessions">
   GetStagedSessions()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L348"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getStagedSessions()">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getStagedSessions()</a></p>
@@ -1981,7 +2339,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_InstallExistingPackage_Java_Lang_String_System_Int32_Android_Content_IntentSender_" data-uid="Android.Content.Pm.PackageInstaller.InstallExistingPackage(Java.Lang.String,System.Int32,Android.Content.IntentSender)">
   InstallExistingPackage(String, int, IntentSender)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L388"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#installExistingPackage(java.lang.String,int,android.content.IntentSender)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#installExistingPackage(java.lang.String,int,android.content.IntentSender)</a></p>
@@ -2016,11 +2374,50 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
 
 
+  <a id="Android_Content_Pm_PackageInstaller_InstallPackageArchived_" data-uid="Android.Content.Pm.PackageInstaller.InstallPackageArchived*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_InstallPackageArchived_Android_Content_Pm_ArchivedPackageInfo_Android_Content_Pm_PackageInstaller_SessionParams_Android_Content_IntentSender_" data-uid="Android.Content.Pm.PackageInstaller.InstallPackageArchived(Android.Content.Pm.ArchivedPackageInfo,Android.Content.Pm.PackageInstaller.SessionParams,Android.Content.IntentSender)">
+  InstallPackageArchived(ArchivedPackageInfo, SessionParams, IntentSender)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#installPackageArchived(android.content.pm.ArchivedPackageInfo,android.content.pm.PackageInstaller.SessionParams,android.content.IntentSender)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#installPackageArchived(android.content.pm.ArchivedPackageInfo,android.content.pm.PackageInstaller.SessionParams,android.content.IntentSender)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InstallPackageArchived(ArchivedPackageInfo arg0, PackageInstaller.SessionParams arg1, IntentSender arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Pm.ArchivedPackageInfo.html">ArchivedPackageInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Pm.ArchivedPackageInfo.html">ArchivedPackageInfo</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.Pm.PackageInstaller.html">PackageInstaller</a>.<a class="xref" href="Android.Content.Pm.PackageInstaller.SessionParams.html">SessionParams</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Pm.PackageInstaller.SessionParams.html">PackageInstaller.SessionParams</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.IntentSender.html">IntentSender</a></dt>
+    <dd><p><a class="xref" href="Android.Content.IntentSender.html">IntentSender</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Content_Pm_PackageInstaller_OpenSession_" data-uid="Android.Content.Pm.PackageInstaller.OpenSession*"></a>
 
   <h3 id="Android_Content_Pm_PackageInstaller_OpenSession_System_Int32_" data-uid="Android.Content.Pm.PackageInstaller.OpenSession(System.Int32)">
   OpenSession(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L288"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#openSession(int)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#openSession(int)</a></p>
@@ -2064,7 +2461,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_RegisterSessionCallback_Android_Content_Pm_PackageInstaller_SessionCallback_" data-uid="Android.Content.Pm.PackageInstaller.RegisterSessionCallback(Android.Content.Pm.PackageInstaller.SessionCallback)">
   RegisterSessionCallback(SessionCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L415"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#registerSessionCallback(android.content.pm.PackageInstaller.SessionCallback)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#registerSessionCallback(android.content.pm.PackageInstaller.SessionCallback)</a></p>
@@ -2097,7 +2494,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_RegisterSessionCallback_Android_Content_Pm_PackageInstaller_SessionCallback_Android_Os_Handler_" data-uid="Android.Content.Pm.PackageInstaller.RegisterSessionCallback(Android.Content.Pm.PackageInstaller.SessionCallback,Android.Os.Handler)">
   RegisterSessionCallback(SessionCallback, Handler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L407"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#registerSessionCallback(android.content.pm.PackageInstaller.SessionCallback,android.os.Handler)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#registerSessionCallback(android.content.pm.PackageInstaller.SessionCallback,android.os.Handler)</a></p>
@@ -2129,11 +2526,180 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
 
 
+  <a id="Android_Content_Pm_PackageInstaller_ReportUnarchivalState_" data-uid="Android.Content.Pm.PackageInstaller.ReportUnarchivalState*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_ReportUnarchivalState_Android_Content_Pm_PackageInstaller_UnarchivalState_" data-uid="Android.Content.Pm.PackageInstaller.ReportUnarchivalState(Android.Content.Pm.PackageInstaller.UnarchivalState)">
+  ReportUnarchivalState(UnarchivalState)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#reportUnarchivalState(android.content.pm.PackageInstaller.UnarchivalState)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#reportUnarchivalState(android.content.pm.PackageInstaller.UnarchivalState)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReportUnarchivalState(PackageInstaller.UnarchivalState arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Pm.PackageInstaller.html">PackageInstaller</a>.<a class="xref" href="Android.Content.Pm.PackageInstaller.UnarchivalState.html">UnarchivalState</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Pm.PackageInstaller.UnarchivalState.html">PackageInstaller.UnarchivalState</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Pm.PackageManager.html">PackageManager</a>.<a class="xref" href="Android.Content.Pm.PackageManager.NameNotFoundException.html">NameNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Pm_PackageInstaller_ReportUnarchivalStatus_" data-uid="Android.Content.Pm.PackageInstaller.ReportUnarchivalStatus*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_ReportUnarchivalStatus_System_Int32_System_Int32_System_Int64_Android_App_PendingIntent_" data-uid="Android.Content.Pm.PackageInstaller.ReportUnarchivalStatus(System.Int32,System.Int32,System.Int64,Android.App.PendingIntent)">
+  ReportUnarchivalStatus(int, int, long, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L436"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#reportUnarchivalStatus(int,int,long,android.app.PendingIntent)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#reportUnarchivalStatus(int,int,long,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReportUnarchivalStatus(int arg0, int arg1, long arg2, PendingIntent arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Pm.PackageManager.html">PackageManager</a>.<a class="xref" href="Android.Content.Pm.PackageManager.NameNotFoundException.html">NameNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Pm_PackageInstaller_RequestArchive_" data-uid="Android.Content.Pm.PackageInstaller.RequestArchive*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_RequestArchive_Java_Lang_String_Android_Content_IntentSender_" data-uid="Android.Content.Pm.PackageInstaller.RequestArchive(Java.Lang.String,Android.Content.IntentSender)">
+  RequestArchive(String, IntentSender)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#requestArchive(java.lang.String,android.content.IntentSender)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#requestArchive(java.lang.String,android.content.IntentSender)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestArchive(String arg0, IntentSender arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.IntentSender.html">IntentSender</a></dt>
+    <dd><p><a class="xref" href="Android.Content.IntentSender.html">IntentSender</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Pm.PackageManager.html">PackageManager</a>.<a class="xref" href="Android.Content.Pm.PackageManager.NameNotFoundException.html">NameNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Content_Pm_PackageInstaller_RequestUnarchive_" data-uid="Android.Content.Pm.PackageInstaller.RequestUnarchive*"></a>
+
+  <h3 id="Android_Content_Pm_PackageInstaller_RequestUnarchive_Java_Lang_String_Android_Content_IntentSender_" data-uid="Android.Content.Pm.PackageInstaller.RequestUnarchive(Java.Lang.String,Android.Content.IntentSender)">
+  RequestUnarchive(String, IntentSender)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#requestUnarchive(java.lang.String,android.content.IntentSender)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#requestUnarchive(java.lang.String,android.content.IntentSender)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestUnarchive(String arg0, IntentSender arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.IntentSender.html">IntentSender</a></dt>
+    <dd><p><a class="xref" href="Android.Content.IntentSender.html">IntentSender</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Android.Content.Pm.PackageManager.html">PackageManager</a>.<a class="xref" href="Android.Content.Pm.PackageManager.NameNotFoundException.html">NameNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
   <a id="Android_Content_Pm_PackageInstaller_Uninstall_" data-uid="Android.Content.Pm.PackageInstaller.Uninstall*"></a>
 
   <h3 id="Android_Content_Pm_PackageInstaller_Uninstall_Android_Content_Pm_VersionedPackage_Android_Content_IntentSender_" data-uid="Android.Content.Pm.PackageInstaller.Uninstall(Android.Content.Pm.VersionedPackage,Android.Content.IntentSender)">
   Uninstall(VersionedPackage, IntentSender)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L466"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#uninstall(android.content.pm.VersionedPackage,android.content.IntentSender)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#uninstall(android.content.pm.VersionedPackage,android.content.IntentSender)</a></p>
@@ -2169,7 +2735,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_Uninstall_Android_Content_Pm_VersionedPackage_System_Int32_Android_Content_IntentSender_" data-uid="Android.Content.Pm.PackageInstaller.Uninstall(Android.Content.Pm.VersionedPackage,System.Int32,Android.Content.IntentSender)">
   Uninstall(VersionedPackage, int, IntentSender)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L476"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#uninstall(android.content.pm.VersionedPackage,int,android.content.IntentSender)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#uninstall(android.content.pm.VersionedPackage,int,android.content.IntentSender)</a></p>
@@ -2208,7 +2774,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_Uninstall_Java_Lang_String_Android_Content_IntentSender_" data-uid="Android.Content.Pm.PackageInstaller.Uninstall(Java.Lang.String,Android.Content.IntentSender)">
   Uninstall(String, IntentSender)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L485"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#uninstall(java.lang.String,android.content.IntentSender)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#uninstall(java.lang.String,android.content.IntentSender)</a></p>
@@ -2244,7 +2810,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_UninstallExistingPackage_Java_Lang_String_Android_Content_IntentSender_" data-uid="Android.Content.Pm.PackageInstaller.UninstallExistingPackage(Java.Lang.String,Android.Content.IntentSender)">
   UninstallExistingPackage(String, IntentSender)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L494"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#uninstallExistingPackage(java.lang.String,android.content.IntentSender)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#uninstallExistingPackage(java.lang.String,android.content.IntentSender)</a></p>
@@ -2280,7 +2846,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_UnregisterSessionCallback_Android_Content_Pm_PackageInstaller_SessionCallback_" data-uid="Android.Content.Pm.PackageInstaller.UnregisterSessionCallback(Android.Content.Pm.PackageInstaller.SessionCallback)">
   UnregisterSessionCallback(SessionCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L502"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#unregisterSessionCallback(android.content.pm.PackageInstaller.SessionCallback)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#unregisterSessionCallback(android.content.pm.PackageInstaller.SessionCallback)</a></p>
@@ -2313,7 +2879,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_UpdateSessionAppIcon_System_Int32_Android_Graphics_Bitmap_" data-uid="Android.Content.Pm.PackageInstaller.UpdateSessionAppIcon(System.Int32,Android.Graphics.Bitmap)">
   UpdateSessionAppIcon(int, Bitmap)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L511"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#updateSessionAppIcon(int,android.graphics.Bitmap)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#updateSessionAppIcon(int,android.graphics.Bitmap)</a></p>
@@ -2349,7 +2915,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_UpdateSessionAppLabel_System_Int32_Java_Lang_CharSequence_" data-uid="Android.Content.Pm.PackageInstaller.UpdateSessionAppLabel(System.Int32,Java.Lang.CharSequence)">
   UpdateSessionAppLabel(int, CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L520"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#updateSessionAppLabel(int,java.lang.CharSequence)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#updateSessionAppLabel(int,java.lang.CharSequence)</a></p>
@@ -2385,7 +2951,7 @@ public PackageInstaller.SessionInfo GetActiveStagedSession()</code></pre>
 
   <h3 id="Android_Content_Pm_PackageInstaller_WaitForInstallConstraints_Java_Util_List_Java_Lang_String__Android_Content_Pm_PackageInstaller_InstallConstraints_Android_Content_IntentSender_System_Int64_" data-uid="Android.Content.Pm.PackageInstaller.WaitForInstallConstraints(Java.Util.List{Java.Lang.String},Android.Content.Pm.PackageInstaller.InstallConstraints,Android.Content.IntentSender,System.Int64)">
   WaitForInstallConstraints(List&lt;String&gt;, InstallConstraints, IntentSender, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/PackageInstaller.cs/#L531"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#waitForInstallConstraints(java.util.List,android.content.pm.PackageInstaller.InstallConstraints,android.content.IntentSender,long)">https://developer.android.com/reference/android/content/pm/PackageInstaller.html#waitForInstallConstraints(java.util.List,android.content.pm.PackageInstaller.InstallConstraints,android.content.IntentSender,long)</a></p>
