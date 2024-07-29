@@ -18,7 +18,7 @@ on:
         default: false
         type: boolean
       ContinueOnLatestJNetReflectorError:
-        description: 'Shall use continue in case of failure of latest unpublished version of JNetReflector'
+        description: 'Shall continue execution in case of failure of build from latest unpublished version of JNetReflector'
         required: true
         default: false
         type: boolean
