@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -98,7 +98,8 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SliceSpec : Parcelable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IParcelable</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public class SliceSpec : Parcelable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IParcelable</code></pre>
   </div>
 
 
@@ -326,6 +327,12 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -481,7 +488,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -497,7 +504,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceSpec__ctor" data-uid="Android.App.Slice.SliceSpec.#ctor">
   SliceSpec()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L318"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -532,7 +539,8 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SliceSpec(String arg0, int arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public SliceSpec(String arg0, int arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -560,7 +568,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceSpec__ctor_System_Object___" data-uid="Android.App.Slice.SliceSpec.#ctor(System.Object[])">
   SliceSpec(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L322"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -596,7 +604,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceSpec_BridgeClassName" data-uid="Android.App.Slice.SliceSpec.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L330"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -628,7 +636,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceSpec_CREATOR" data-uid="Android.App.Slice.SliceSpec.CREATOR">
   CREATOR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceSpec.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceSpec.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#CREATOR">https://developer.android.com/reference/android/app/slice/SliceSpec.html#CREATOR</a></p>
@@ -636,7 +644,8 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static Parcelable.Creator CREATOR { get; }</code></pre>
   </div>
 
 
@@ -660,7 +669,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceSpec_IsBridgeAbstract" data-uid="Android.App.Slice.SliceSpec.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L334"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -692,7 +701,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceSpec_IsBridgeCloseable" data-uid="Android.App.Slice.SliceSpec.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L338"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -724,7 +733,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceSpec_IsBridgeInterface" data-uid="Android.App.Slice.SliceSpec.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L342"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -756,7 +765,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceSpec_IsBridgeStatic" data-uid="Android.App.Slice.SliceSpec.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L346"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -792,7 +801,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceSpec_CanRender_Android_App_Slice_SliceSpec_" data-uid="Android.App.Slice.SliceSpec.CanRender(Android.App.Slice.SliceSpec)">
   CanRender(SliceSpec)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceSpec.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceSpec.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#canRender(android.app.slice.SliceSpec)">https://developer.android.com/reference/android/app/slice/SliceSpec.html#canRender(android.app.slice.SliceSpec)</a></p>
@@ -800,7 +809,8 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanRender(SliceSpec arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool CanRender(SliceSpec arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -831,7 +841,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceSpec_DescribeContents" data-uid="Android.App.Slice.SliceSpec.DescribeContents">
   DescribeContents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceSpec.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceSpec.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#describeContents()">https://developer.android.com/reference/android/app/slice/SliceSpec.html#describeContents()</a></p>
@@ -839,7 +849,8 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public int DescribeContents()</code></pre>
   </div>
 
 
@@ -864,7 +875,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceSpec_GetRevision" data-uid="Android.App.Slice.SliceSpec.GetRevision">
   GetRevision()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceSpec.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceSpec.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#getRevision()">https://developer.android.com/reference/android/app/slice/SliceSpec.html#getRevision()</a></p>
@@ -872,7 +883,8 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetRevision()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public int GetRevision()</code></pre>
   </div>
 
 
@@ -897,7 +909,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceSpec_GetType" data-uid="Android.App.Slice.SliceSpec.GetType">
   GetType()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceSpec.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceSpec.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#getType()">https://developer.android.com/reference/android/app/slice/SliceSpec.html#getType()</a></p>
@@ -905,7 +917,8 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String GetType()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public String GetType()</code></pre>
   </div>
 
 
@@ -930,7 +943,7 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceSpec_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.App.Slice.SliceSpec.WriteToParcel(Android.Os.Parcel,System.Int32)">
   WriteToParcel(Parcel, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceSpec.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceSpec.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceSpec.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/app/slice/SliceSpec.html#writeToParcel(android.os.Parcel,int)</a></p>
@@ -938,7 +951,8 @@ Class SliceSpec  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager__ctor" data-uid="Android.Telephony.Euicc.EuiccManager.#ctor">
   EuiccManager()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager__ctor_System_Object___" data-uid="Android.Telephony.Euicc.EuiccManager.#ctor(System.Object[])">
   EuiccManager(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -651,7 +657,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_BridgeClassName" data-uid="Android.Telephony.Euicc.EuiccManager.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -1351,6 +1357,38 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <a id="Android_Telephony_Euicc_EuiccManager_EUICC_MEMORY_FIELD_UNAVAILABLE_" data-uid="Android.Telephony.Euicc.EuiccManager.EUICC_MEMORY_FIELD_UNAVAILABLE*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_EUICC_MEMORY_FIELD_UNAVAILABLE" data-uid="Android.Telephony.Euicc.EuiccManager.EUICC_MEMORY_FIELD_UNAVAILABLE">
+  EUICC_MEMORY_FIELD_UNAVAILABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EUICC_MEMORY_FIELD_UNAVAILABLE">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#EUICC_MEMORY_FIELD_UNAVAILABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long EUICC_MEMORY_FIELD_UNAVAILABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE_" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE*"></a>
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE" data-uid="Android.Telephony.Euicc.EuiccManager.EXTRA_EMBEDDED_SUBSCRIPTION_DETAILED_CODE">
@@ -1579,7 +1617,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_IsBridgeAbstract" data-uid="Android.Telephony.Euicc.EuiccManager.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L190"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1611,7 +1649,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_IsBridgeCloseable" data-uid="Android.Telephony.Euicc.EuiccManager.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1643,7 +1681,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_IsBridgeInterface" data-uid="Android.Telephony.Euicc.EuiccManager.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1675,7 +1713,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_IsBridgeStatic" data-uid="Android.Telephony.Euicc.EuiccManager.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/AllPackageClasses.cs/#L202"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -2095,7 +2133,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_CreateForCardId_System_Int32_" data-uid="Android.Telephony.Euicc.EuiccManager.CreateForCardId(System.Int32)">
   CreateForCardId(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L325"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#createForCardId(int)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#createForCardId(int)</a></p>
@@ -2134,7 +2172,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_DeleteSubscription_System_Int32_Android_App_PendingIntent_" data-uid="Android.Telephony.Euicc.EuiccManager.DeleteSubscription(System.Int32,Android.App.PendingIntent)">
   DeleteSubscription(int, PendingIntent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L367"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#deleteSubscription(int,android.app.PendingIntent)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#deleteSubscription(int,android.app.PendingIntent)</a></p>
@@ -2170,7 +2208,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_DownloadSubscription_Android_Telephony_Euicc_DownloadableSubscription_System_Boolean_Android_App_PendingIntent_" data-uid="Android.Telephony.Euicc.EuiccManager.DownloadSubscription(Android.Telephony.Euicc.DownloadableSubscription,System.Boolean,Android.App.PendingIntent)">
   DownloadSubscription(DownloadableSubscription, bool, PendingIntent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L377"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#downloadSubscription(android.telephony.euicc.DownloadableSubscription,boolean,android.app.PendingIntent)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#downloadSubscription(android.telephony.euicc.DownloadableSubscription,boolean,android.app.PendingIntent)</a></p>
@@ -2205,11 +2243,44 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
 
 
+  <a id="Android_Telephony_Euicc_EuiccManager_GetAvailableMemoryInBytes_" data-uid="Android.Telephony.Euicc.EuiccManager.GetAvailableMemoryInBytes*"></a>
+
+  <h3 id="Android_Telephony_Euicc_EuiccManager_GetAvailableMemoryInBytes" data-uid="Android.Telephony.Euicc.EuiccManager.GetAvailableMemoryInBytes">
+  GetAvailableMemoryInBytes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getAvailableMemoryInBytes()">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getAvailableMemoryInBytes()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetAvailableMemoryInBytes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Telephony_Euicc_EuiccManager_GetEid_" data-uid="Android.Telephony.Euicc.EuiccManager.GetEid*"></a>
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_GetEid" data-uid="Android.Telephony.Euicc.EuiccManager.GetEid">
   GetEid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L350"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getEid()">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getEid()</a></p>
@@ -2242,7 +2313,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_GetEuiccInfo" data-uid="Android.Telephony.Euicc.EuiccManager.GetEuiccInfo">
   GetEuiccInfo()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L316"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getEuiccInfo()">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#getEuiccInfo()</a></p>
@@ -2275,7 +2346,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_IsEnabled" data-uid="Android.Telephony.Euicc.EuiccManager.IsEnabled">
   IsEnabled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L333"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#isEnabled()">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#isEnabled()</a></p>
@@ -2308,7 +2379,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_IsSimPortAvailable_System_Int32_" data-uid="Android.Telephony.Euicc.EuiccManager.IsSimPortAvailable(System.Int32)">
   IsSimPortAvailable(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L342"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#isSimPortAvailable(int)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#isSimPortAvailable(int)</a></p>
@@ -2347,7 +2418,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_StartResolutionActivity_Android_App_Activity_System_Int32_Android_Content_Intent_Android_App_PendingIntent_" data-uid="Android.Telephony.Euicc.EuiccManager.StartResolutionActivity(Android.App.Activity,System.Int32,Android.Content.Intent,Android.App.PendingIntent)">
   StartResolutionActivity(Activity, int, Intent, PendingIntent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L389"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#startResolutionActivity(android.app.Activity,int,android.content.Intent,android.app.PendingIntent)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#startResolutionActivity(android.app.Activity,int,android.content.Intent,android.app.PendingIntent)</a></p>
@@ -2394,7 +2465,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_SwitchToSubscription_System_Int32_Android_App_PendingIntent_" data-uid="Android.Telephony.Euicc.EuiccManager.SwitchToSubscription(System.Int32,Android.App.PendingIntent)">
   SwitchToSubscription(int, PendingIntent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L398"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#switchToSubscription(int,android.app.PendingIntent)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#switchToSubscription(int,android.app.PendingIntent)</a></p>
@@ -2430,7 +2501,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_SwitchToSubscription_System_Int32_System_Int32_Android_App_PendingIntent_" data-uid="Android.Telephony.Euicc.EuiccManager.SwitchToSubscription(System.Int32,System.Int32,Android.App.PendingIntent)">
   SwitchToSubscription(int, int, PendingIntent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L408"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#switchToSubscription(int,int,android.app.PendingIntent)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#switchToSubscription(int,int,android.app.PendingIntent)</a></p>
@@ -2469,7 +2540,7 @@ Class EuiccManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Telephony_Euicc_EuiccManager_UpdateSubscriptionNickname_System_Int32_Java_Lang_String_Android_App_PendingIntent_" data-uid="Android.Telephony.Euicc.EuiccManager.UpdateSubscriptionNickname(System.Int32,Java.Lang.String,Android.App.PendingIntent)">
   UpdateSubscriptionNickname(int, String, PendingIntent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L404"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/Euicc/EuiccManager.cs/#L418"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#updateSubscriptionNickname(int,java.lang.String,android.app.PendingIntent)">https://developer.android.com/reference/android/telephony/euicc/EuiccManager.html#updateSubscriptionNickname(int,java.lang.String,android.app.PendingIntent)</a></p>

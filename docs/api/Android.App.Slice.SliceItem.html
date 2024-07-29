@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -98,7 +98,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SliceItem : Parcelable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IParcelable</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public class SliceItem : Parcelable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IParcelable</code></pre>
   </div>
 
 
@@ -326,6 +327,12 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -484,7 +491,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -500,7 +507,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem__ctor" data-uid="Android.App.Slice.SliceItem.#ctor">
   SliceItem()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -527,7 +534,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem__ctor_System_Object___" data-uid="Android.App.Slice.SliceItem.#ctor(System.Object[])">
   SliceItem(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L136"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -563,7 +570,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_BridgeClassName" data-uid="Android.App.Slice.SliceItem.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -603,7 +610,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static Parcelable.Creator CREATOR { get; }</code></pre>
   </div>
 
 
@@ -627,7 +635,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_FORMAT_ACTION" data-uid="Android.App.Slice.SliceItem.FORMAT_ACTION">
   FORMAT_ACTION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_ACTION">https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_ACTION</a></p>
@@ -635,7 +643,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String FORMAT_ACTION { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String FORMAT_ACTION { get; }</code></pre>
   </div>
 
 
@@ -659,7 +668,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_FORMAT_BUNDLE" data-uid="Android.App.Slice.SliceItem.FORMAT_BUNDLE">
   FORMAT_BUNDLE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_BUNDLE">https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_BUNDLE</a></p>
@@ -667,7 +676,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String FORMAT_BUNDLE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String FORMAT_BUNDLE { get; }</code></pre>
   </div>
 
 
@@ -691,7 +701,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_FORMAT_IMAGE" data-uid="Android.App.Slice.SliceItem.FORMAT_IMAGE">
   FORMAT_IMAGE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_IMAGE">https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_IMAGE</a></p>
@@ -699,7 +709,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String FORMAT_IMAGE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String FORMAT_IMAGE { get; }</code></pre>
   </div>
 
 
@@ -723,7 +734,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_FORMAT_INT" data-uid="Android.App.Slice.SliceItem.FORMAT_INT">
   FORMAT_INT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_INT">https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_INT</a></p>
@@ -731,7 +742,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String FORMAT_INT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String FORMAT_INT { get; }</code></pre>
   </div>
 
 
@@ -755,7 +767,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_FORMAT_LONG" data-uid="Android.App.Slice.SliceItem.FORMAT_LONG">
   FORMAT_LONG
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_LONG">https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_LONG</a></p>
@@ -763,7 +775,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String FORMAT_LONG { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String FORMAT_LONG { get; }</code></pre>
   </div>
 
 
@@ -787,7 +800,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_FORMAT_REMOTE_INPUT" data-uid="Android.App.Slice.SliceItem.FORMAT_REMOTE_INPUT">
   FORMAT_REMOTE_INPUT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_REMOTE_INPUT">https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_REMOTE_INPUT</a></p>
@@ -795,7 +808,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String FORMAT_REMOTE_INPUT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String FORMAT_REMOTE_INPUT { get; }</code></pre>
   </div>
 
 
@@ -819,7 +833,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_FORMAT_SLICE" data-uid="Android.App.Slice.SliceItem.FORMAT_SLICE">
   FORMAT_SLICE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_SLICE">https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_SLICE</a></p>
@@ -827,7 +841,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String FORMAT_SLICE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String FORMAT_SLICE { get; }</code></pre>
   </div>
 
 
@@ -851,7 +866,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_FORMAT_TEXT" data-uid="Android.App.Slice.SliceItem.FORMAT_TEXT">
   FORMAT_TEXT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_TEXT">https://developer.android.com/reference/android/app/slice/SliceItem.html#FORMAT_TEXT</a></p>
@@ -859,7 +874,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String FORMAT_TEXT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String FORMAT_TEXT { get; }</code></pre>
   </div>
 
 
@@ -883,7 +899,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_IsBridgeAbstract" data-uid="Android.App.Slice.SliceItem.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -915,7 +931,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_IsBridgeCloseable" data-uid="Android.App.Slice.SliceItem.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L152"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -947,7 +963,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_IsBridgeInterface" data-uid="Android.App.Slice.SliceItem.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L156"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -979,7 +995,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_IsBridgeStatic" data-uid="Android.App.Slice.SliceItem.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/AllPackageClasses.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1015,7 +1031,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_DescribeContents" data-uid="Android.App.Slice.SliceItem.DescribeContents">
   DescribeContents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#describeContents()">https://developer.android.com/reference/android/app/slice/SliceItem.html#describeContents()</a></p>
@@ -1023,7 +1039,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public int DescribeContents()</code></pre>
   </div>
 
 
@@ -1048,7 +1065,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_GetAction" data-uid="Android.App.Slice.SliceItem.GetAction">
   GetAction()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getAction()">https://developer.android.com/reference/android/app/slice/SliceItem.html#getAction()</a></p>
@@ -1056,7 +1073,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PendingIntent GetAction()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public PendingIntent GetAction()</code></pre>
   </div>
 
 
@@ -1081,7 +1099,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_GetBundle" data-uid="Android.App.Slice.SliceItem.GetBundle">
   GetBundle()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getBundle()">https://developer.android.com/reference/android/app/slice/SliceItem.html#getBundle()</a></p>
@@ -1089,7 +1107,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Bundle GetBundle()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Bundle GetBundle()</code></pre>
   </div>
 
 
@@ -1114,7 +1133,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_GetFormat" data-uid="Android.App.Slice.SliceItem.GetFormat">
   GetFormat()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getFormat()">https://developer.android.com/reference/android/app/slice/SliceItem.html#getFormat()</a></p>
@@ -1122,7 +1141,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String GetFormat()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public String GetFormat()</code></pre>
   </div>
 
 
@@ -1147,7 +1167,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_GetHints" data-uid="Android.App.Slice.SliceItem.GetHints">
   GetHints()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getHints()">https://developer.android.com/reference/android/app/slice/SliceItem.html#getHints()</a></p>
@@ -1155,7 +1175,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;String&gt; GetHints()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public List&lt;String&gt; GetHints()</code></pre>
   </div>
 
 
@@ -1180,7 +1201,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_GetIcon" data-uid="Android.App.Slice.SliceItem.GetIcon">
   GetIcon()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getIcon()">https://developer.android.com/reference/android/app/slice/SliceItem.html#getIcon()</a></p>
@@ -1188,7 +1209,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Icon GetIcon()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Icon GetIcon()</code></pre>
   </div>
 
 
@@ -1213,7 +1235,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_GetInt" data-uid="Android.App.Slice.SliceItem.GetInt">
   GetInt()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L179"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getInt()">https://developer.android.com/reference/android/app/slice/SliceItem.html#getInt()</a></p>
@@ -1221,7 +1243,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetInt()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public int GetInt()</code></pre>
   </div>
 
 
@@ -1246,7 +1269,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_GetLong" data-uid="Android.App.Slice.SliceItem.GetLong">
   GetLong()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getLong()">https://developer.android.com/reference/android/app/slice/SliceItem.html#getLong()</a></p>
@@ -1254,7 +1277,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long GetLong()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public long GetLong()</code></pre>
   </div>
 
 
@@ -1279,7 +1303,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_GetRemoteInput" data-uid="Android.App.Slice.SliceItem.GetRemoteInput">
   GetRemoteInput()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getRemoteInput()">https://developer.android.com/reference/android/app/slice/SliceItem.html#getRemoteInput()</a></p>
@@ -1287,7 +1311,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RemoteInput GetRemoteInput()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public RemoteInput GetRemoteInput()</code></pre>
   </div>
 
 
@@ -1312,7 +1337,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_GetSlice" data-uid="Android.App.Slice.SliceItem.GetSlice">
   GetSlice()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getSlice()">https://developer.android.com/reference/android/app/slice/SliceItem.html#getSlice()</a></p>
@@ -1320,7 +1345,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Slice GetSlice()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Slice GetSlice()</code></pre>
   </div>
 
 
@@ -1345,7 +1371,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_GetSubType" data-uid="Android.App.Slice.SliceItem.GetSubType">
   GetSubType()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L206"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getSubType()">https://developer.android.com/reference/android/app/slice/SliceItem.html#getSubType()</a></p>
@@ -1353,7 +1379,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public String GetSubType()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public String GetSubType()</code></pre>
   </div>
 
 
@@ -1378,7 +1405,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_GetText" data-uid="Android.App.Slice.SliceItem.GetText">
   GetText()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getText()">https://developer.android.com/reference/android/app/slice/SliceItem.html#getText()</a></p>
@@ -1386,7 +1413,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CharSequence GetText()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public CharSequence GetText()</code></pre>
   </div>
 
 
@@ -1411,7 +1439,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_HasHint_Java_Lang_String_" data-uid="Android.App.Slice.SliceItem.HasHint(Java.Lang.String)">
   HasHint(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#hasHint(java.lang.String)">https://developer.android.com/reference/android/app/slice/SliceItem.html#hasHint(java.lang.String)</a></p>
@@ -1419,7 +1447,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool HasHint(String arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool HasHint(String arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1450,7 +1479,7 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_App_Slice_SliceItem_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.App.Slice.SliceItem.WriteToParcel(Android.Os.Parcel,System.Int32)">
   WriteToParcel(Parcel, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Slice/SliceItem.cs/#L234"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/slice/SliceItem.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/app/slice/SliceItem.html#writeToParcel(android.os.Parcel,int)</a></p>
@@ -1458,7 +1487,8 @@ Class SliceItem  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

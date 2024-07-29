@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams__ctor" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.#ctor">
   IkeSessionParams()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L927"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L947"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams__ctor_System_Object___" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.#ctor(System.Object[])">
   IkeSessionParams(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L931"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L951"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -555,7 +561,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_BridgeClassName" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L938"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L959"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -583,11 +589,43 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
 
 
+  <a id="Android_Net_Ipsec_Ike_IkeSessionParams_IKE_DPD_DELAY_SEC_DISABLED_" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.IKE_DPD_DELAY_SEC_DISABLED*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_IKE_DPD_DELAY_SEC_DISABLED" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.IKE_DPD_DELAY_SEC_DISABLED">
+  IKE_DPD_DELAY_SEC_DISABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_DPD_DELAY_SEC_DISABLED">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_DPD_DELAY_SEC_DISABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IKE_DPD_DELAY_SEC_DISABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Net_Ipsec_Ike_IkeSessionParams_IKE_OPTION_ACCEPT_ANY_REMOTE_ID_" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.IKE_OPTION_ACCEPT_ANY_REMOTE_ID*"></a>
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_IKE_OPTION_ACCEPT_ANY_REMOTE_ID" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.IKE_OPTION_ACCEPT_ANY_REMOTE_ID">
   IKE_OPTION_ACCEPT_ANY_REMOTE_ID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_OPTION_ACCEPT_ANY_REMOTE_ID">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_OPTION_ACCEPT_ANY_REMOTE_ID</a></p>
@@ -619,7 +657,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_IKE_OPTION_EAP_ONLY_AUTH" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.IKE_OPTION_EAP_ONLY_AUTH">
   IKE_OPTION_EAP_ONLY_AUTH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_OPTION_EAP_ONLY_AUTH">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_OPTION_EAP_ONLY_AUTH</a></p>
@@ -651,7 +689,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_IKE_OPTION_FORCE_PORT_4500" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.IKE_OPTION_FORCE_PORT_4500">
   IKE_OPTION_FORCE_PORT_4500
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L61"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_OPTION_FORCE_PORT_4500">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_OPTION_FORCE_PORT_4500</a></p>
@@ -683,7 +721,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_IKE_OPTION_INITIAL_CONTACT" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.IKE_OPTION_INITIAL_CONTACT">
   IKE_OPTION_INITIAL_CONTACT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_OPTION_INITIAL_CONTACT">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_OPTION_INITIAL_CONTACT</a></p>
@@ -715,7 +753,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_IKE_OPTION_MOBIKE" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.IKE_OPTION_MOBIKE">
   IKE_OPTION_MOBIKE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_OPTION_MOBIKE">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#IKE_OPTION_MOBIKE</a></p>
@@ -747,7 +785,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_IsBridgeAbstract" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L942"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L963"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -779,7 +817,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_IsBridgeCloseable" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L946"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L967"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -811,7 +849,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_IsBridgeInterface" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L950"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L971"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -843,7 +881,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_IsBridgeStatic" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L954"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/AllPackageClasses.cs/#L975"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -879,7 +917,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_GetDpdDelaySeconds" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetDpdDelaySeconds">
   GetDpdDelaySeconds()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getDpdDelaySeconds()">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getDpdDelaySeconds()</a></p>
@@ -912,7 +950,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_GetHardLifetimeSeconds" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetHardLifetimeSeconds">
   GetHardLifetimeSeconds()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getHardLifetimeSeconds()">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getHardLifetimeSeconds()</a></p>
@@ -941,11 +979,44 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
 
 
+  <a id="Android_Net_Ipsec_Ike_IkeSessionParams_GetIkeOptions_" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetIkeOptions*"></a>
+
+  <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_GetIkeOptions" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetIkeOptions">
+  GetIkeOptions()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getIkeOptions()">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getIkeOptions()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Set&lt;Integer&gt; GetIkeOptions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Net_Ipsec_Ike_IkeSessionParams_GetIkeSaProposals_" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetIkeSaProposals*"></a>
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_GetIkeSaProposals" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetIkeSaProposals">
   GetIkeSaProposals()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getIkeSaProposals()">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getIkeSaProposals()</a></p>
@@ -978,7 +1049,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_GetLocalAuthConfig" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetLocalAuthConfig">
   GetLocalAuthConfig()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getLocalAuthConfig()">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getLocalAuthConfig()</a></p>
@@ -1011,7 +1082,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_GetLocalIdentification" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetLocalIdentification">
   GetLocalIdentification()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getLocalIdentification()">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getLocalIdentification()</a></p>
@@ -1044,7 +1115,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_GetNattKeepAliveDelaySeconds" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetNattKeepAliveDelaySeconds">
   GetNattKeepAliveDelaySeconds()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getNattKeepAliveDelaySeconds()">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getNattKeepAliveDelaySeconds()</a></p>
@@ -1077,7 +1148,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_GetNetwork" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetNetwork">
   GetNetwork()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getNetwork()">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getNetwork()</a></p>
@@ -1110,7 +1181,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_GetRemoteAuthConfig" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetRemoteAuthConfig">
   GetRemoteAuthConfig()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getRemoteAuthConfig()">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getRemoteAuthConfig()</a></p>
@@ -1143,7 +1214,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_GetRemoteIdentification" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetRemoteIdentification">
   GetRemoteIdentification()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getRemoteIdentification()">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getRemoteIdentification()</a></p>
@@ -1176,7 +1247,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_GetRetransmissionTimeoutsMillis" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetRetransmissionTimeoutsMillis">
   GetRetransmissionTimeoutsMillis()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L169"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getRetransmissionTimeoutsMillis()">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getRetransmissionTimeoutsMillis()</a></p>
@@ -1209,7 +1280,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_GetServerHostname" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetServerHostname">
   GetServerHostname()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getServerHostname()">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getServerHostname()</a></p>
@@ -1242,7 +1313,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_GetSoftLifetimeSeconds" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.GetSoftLifetimeSeconds">
   GetSoftLifetimeSeconds()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getSoftLifetimeSeconds()">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getSoftLifetimeSeconds()</a></p>
@@ -1275,7 +1346,7 @@ Class IkeSessionParams  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Net_Ipsec_Ike_IkeSessionParams_HasIkeOption_System_Int32_" data-uid="Android.Net.Ipsec.Ike.IkeSessionParams.HasIkeOption(System.Int32)">
   HasIkeOption(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Ipsec/Ike/IkeSessionParams.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#hasIkeOption(int)">https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#hasIkeOption(int)</a></p>

@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -326,6 +326,12 @@ Class AutomaticZenRule  <a class="header-action link-secondary" title="View sour
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -470,9 +476,6 @@ Class AutomaticZenRule  <a class="header-action link-secondary" title="View sour
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
@@ -484,7 +487,7 @@ Class AutomaticZenRule  <a class="header-action link-secondary" title="View sour
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -500,7 +503,7 @@ Class AutomaticZenRule  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_App_AutomaticZenRule__ctor" data-uid="Android.App.AutomaticZenRule.#ctor">
   AutomaticZenRule()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2022"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -657,7 +660,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule__ctor_System_Object___" data-uid="Android.App.AutomaticZenRule.#ctor(System.Object[])">
   AutomaticZenRule(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2026"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -693,7 +696,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_BridgeClassName" data-uid="Android.App.AutomaticZenRule.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2033"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -757,7 +760,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_IsBridgeAbstract" data-uid="Android.App.AutomaticZenRule.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2037"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -789,7 +792,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_IsBridgeCloseable" data-uid="Android.App.AutomaticZenRule.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2041"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -821,7 +824,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_IsBridgeInterface" data-uid="Android.App.AutomaticZenRule.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2045"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -853,7 +856,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_IsBridgeStatic" data-uid="Android.App.AutomaticZenRule.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2049"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L2143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -881,6 +884,294 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
 
 
+  <a id="Android_App_AutomaticZenRule_TYPE_BEDTIME_" data-uid="Android.App.AutomaticZenRule.TYPE_BEDTIME*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_TYPE_BEDTIME" data-uid="Android.App.AutomaticZenRule.TYPE_BEDTIME">
+  TYPE_BEDTIME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_BEDTIME">https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_BEDTIME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_BEDTIME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AutomaticZenRule_TYPE_DRIVING_" data-uid="Android.App.AutomaticZenRule.TYPE_DRIVING*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_TYPE_DRIVING" data-uid="Android.App.AutomaticZenRule.TYPE_DRIVING">
+  TYPE_DRIVING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_DRIVING">https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_DRIVING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_DRIVING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AutomaticZenRule_TYPE_IMMERSIVE_" data-uid="Android.App.AutomaticZenRule.TYPE_IMMERSIVE*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_TYPE_IMMERSIVE" data-uid="Android.App.AutomaticZenRule.TYPE_IMMERSIVE">
+  TYPE_IMMERSIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_IMMERSIVE">https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_IMMERSIVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_IMMERSIVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AutomaticZenRule_TYPE_MANAGED_" data-uid="Android.App.AutomaticZenRule.TYPE_MANAGED*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_TYPE_MANAGED" data-uid="Android.App.AutomaticZenRule.TYPE_MANAGED">
+  TYPE_MANAGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_MANAGED">https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_MANAGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_MANAGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AutomaticZenRule_TYPE_OTHER_" data-uid="Android.App.AutomaticZenRule.TYPE_OTHER*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_TYPE_OTHER" data-uid="Android.App.AutomaticZenRule.TYPE_OTHER">
+  TYPE_OTHER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_OTHER">https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_OTHER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_OTHER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AutomaticZenRule_TYPE_SCHEDULE_CALENDAR_" data-uid="Android.App.AutomaticZenRule.TYPE_SCHEDULE_CALENDAR*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_TYPE_SCHEDULE_CALENDAR" data-uid="Android.App.AutomaticZenRule.TYPE_SCHEDULE_CALENDAR">
+  TYPE_SCHEDULE_CALENDAR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_SCHEDULE_CALENDAR">https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_SCHEDULE_CALENDAR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_SCHEDULE_CALENDAR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AutomaticZenRule_TYPE_SCHEDULE_TIME_" data-uid="Android.App.AutomaticZenRule.TYPE_SCHEDULE_TIME*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_TYPE_SCHEDULE_TIME" data-uid="Android.App.AutomaticZenRule.TYPE_SCHEDULE_TIME">
+  TYPE_SCHEDULE_TIME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_SCHEDULE_TIME">https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_SCHEDULE_TIME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_SCHEDULE_TIME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AutomaticZenRule_TYPE_THEATER_" data-uid="Android.App.AutomaticZenRule.TYPE_THEATER*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_TYPE_THEATER" data-uid="Android.App.AutomaticZenRule.TYPE_THEATER">
+  TYPE_THEATER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_THEATER">https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_THEATER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_THEATER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AutomaticZenRule_TYPE_UNKNOWN_" data-uid="Android.App.AutomaticZenRule.TYPE_UNKNOWN*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_TYPE_UNKNOWN" data-uid="Android.App.AutomaticZenRule.TYPE_UNKNOWN">
+  TYPE_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_UNKNOWN">https://developer.android.com/reference/android/app/AutomaticZenRule.html#TYPE_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -889,7 +1180,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_DescribeContents" data-uid="Android.App.AutomaticZenRule.DescribeContents">
   DescribeContents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#describeContents()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#describeContents()</a></p>
@@ -922,7 +1213,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_GetConditionId" data-uid="Android.App.AutomaticZenRule.GetConditionId">
   GetConditionId()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getConditionId()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#getConditionId()</a></p>
@@ -955,7 +1246,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_GetConfigurationActivity" data-uid="Android.App.AutomaticZenRule.GetConfigurationActivity">
   GetConfigurationActivity()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getConfigurationActivity()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#getConfigurationActivity()</a></p>
@@ -988,7 +1279,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_GetCreationTime" data-uid="Android.App.AutomaticZenRule.GetCreationTime">
   GetCreationTime()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L251"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getCreationTime()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#getCreationTime()</a></p>
@@ -1017,11 +1308,77 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
 
 
+  <a id="Android_App_AutomaticZenRule_GetDeviceEffects_" data-uid="Android.App.AutomaticZenRule.GetDeviceEffects*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_GetDeviceEffects" data-uid="Android.App.AutomaticZenRule.GetDeviceEffects">
+  GetDeviceEffects()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getDeviceEffects()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#getDeviceEffects()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZenDeviceEffects GetDeviceEffects()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Service.Notification.ZenDeviceEffects.html">ZenDeviceEffects</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Notification.ZenDeviceEffects.html">ZenDeviceEffects</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AutomaticZenRule_GetIconResId_" data-uid="Android.App.AutomaticZenRule.GetIconResId*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_GetIconResId" data-uid="Android.App.AutomaticZenRule.GetIconResId">
+  GetIconResId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getIconResId()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#getIconResId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetIconResId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_App_AutomaticZenRule_GetInterruptionFilter_" data-uid="Android.App.AutomaticZenRule.GetInterruptionFilter*"></a>
 
   <h3 id="Android_App_AutomaticZenRule_GetInterruptionFilter" data-uid="Android.App.AutomaticZenRule.GetInterruptionFilter">
   GetInterruptionFilter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getInterruptionFilter()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#getInterruptionFilter()</a></p>
@@ -1054,7 +1411,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_GetName" data-uid="Android.App.AutomaticZenRule.GetName">
   GetName()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getName()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#getName()</a></p>
@@ -1087,7 +1444,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_GetOwner" data-uid="Android.App.AutomaticZenRule.GetOwner">
   GetOwner()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getOwner()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#getOwner()</a></p>
@@ -1116,11 +1473,77 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
 
 
+  <a id="Android_App_AutomaticZenRule_GetTriggerDescription_" data-uid="Android.App.AutomaticZenRule.GetTriggerDescription*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_GetTriggerDescription" data-uid="Android.App.AutomaticZenRule.GetTriggerDescription">
+  GetTriggerDescription()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getTriggerDescription()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#getTriggerDescription()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetTriggerDescription()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AutomaticZenRule_GetType_" data-uid="Android.App.AutomaticZenRule.GetType*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_GetType" data-uid="Android.App.AutomaticZenRule.GetType">
+  GetType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getType()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#getType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_App_AutomaticZenRule_GetZenPolicy_" data-uid="Android.App.AutomaticZenRule.GetZenPolicy*"></a>
 
   <h3 id="Android_App_AutomaticZenRule_GetZenPolicy" data-uid="Android.App.AutomaticZenRule.GetZenPolicy">
   GetZenPolicy()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L179"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getZenPolicy()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#getZenPolicy()</a></p>
@@ -1153,7 +1576,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_IsEnabled" data-uid="Android.App.AutomaticZenRule.IsEnabled">
   IsEnabled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#isEnabled()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#isEnabled()</a></p>
@@ -1182,11 +1605,44 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
 
 
+  <a id="Android_App_AutomaticZenRule_IsManualInvocationAllowed_" data-uid="Android.App.AutomaticZenRule.IsManualInvocationAllowed*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_IsManualInvocationAllowed" data-uid="Android.App.AutomaticZenRule.IsManualInvocationAllowed">
+  IsManualInvocationAllowed()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#isManualInvocationAllowed()">https://developer.android.com/reference/android/app/AutomaticZenRule.html#isManualInvocationAllowed()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsManualInvocationAllowed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_App_AutomaticZenRule_SetConditionId_" data-uid="Android.App.AutomaticZenRule.SetConditionId*"></a>
 
   <h3 id="Android_App_AutomaticZenRule_SetConditionId_Android_Net_Uri_" data-uid="Android.App.AutomaticZenRule.SetConditionId(Android.Net.Uri)">
   SetConditionId(Uri)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setConditionId(android.net.Uri)">https://developer.android.com/reference/android/app/AutomaticZenRule.html#setConditionId(android.net.Uri)</a></p>
@@ -1219,7 +1675,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_SetConfigurationActivity_Android_Content_ComponentName_" data-uid="Android.App.AutomaticZenRule.SetConfigurationActivity(Android.Content.ComponentName)">
   SetConfigurationActivity(ComponentName)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L267"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setConfigurationActivity(android.content.ComponentName)">https://developer.android.com/reference/android/app/AutomaticZenRule.html#setConfigurationActivity(android.content.ComponentName)</a></p>
@@ -1248,11 +1704,44 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
 
 
+  <a id="Android_App_AutomaticZenRule_SetDeviceEffects_" data-uid="Android.App.AutomaticZenRule.SetDeviceEffects*"></a>
+
+  <h3 id="Android_App_AutomaticZenRule_SetDeviceEffects_Android_Service_Notification_ZenDeviceEffects_" data-uid="Android.App.AutomaticZenRule.SetDeviceEffects(Android.Service.Notification.ZenDeviceEffects)">
+  SetDeviceEffects(ZenDeviceEffects)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setDeviceEffects(android.service.notification.ZenDeviceEffects)">https://developer.android.com/reference/android/app/AutomaticZenRule.html#setDeviceEffects(android.service.notification.ZenDeviceEffects)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDeviceEffects(ZenDeviceEffects arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Service.Notification.ZenDeviceEffects.html">ZenDeviceEffects</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Notification.ZenDeviceEffects.html">ZenDeviceEffects</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_App_AutomaticZenRule_SetEnabled_" data-uid="Android.App.AutomaticZenRule.SetEnabled*"></a>
 
   <h3 id="Android_App_AutomaticZenRule_SetEnabled_System_Boolean_" data-uid="Android.App.AutomaticZenRule.SetEnabled(System.Boolean)">
   SetEnabled(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L283"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setEnabled(boolean)">https://developer.android.com/reference/android/app/AutomaticZenRule.html#setEnabled(boolean)</a></p>
@@ -1285,7 +1774,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_SetInterruptionFilter_System_Int32_" data-uid="Android.App.AutomaticZenRule.SetInterruptionFilter(System.Int32)">
   SetInterruptionFilter(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L291"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setInterruptionFilter(int)">https://developer.android.com/reference/android/app/AutomaticZenRule.html#setInterruptionFilter(int)</a></p>
@@ -1318,7 +1807,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_SetName_Java_Lang_String_" data-uid="Android.App.AutomaticZenRule.SetName(Java.Lang.String)">
   SetName(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L299"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setName(java.lang.String)">https://developer.android.com/reference/android/app/AutomaticZenRule.html#setName(java.lang.String)</a></p>
@@ -1351,7 +1840,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_SetZenPolicy_Android_Service_Notification_ZenPolicy_" data-uid="Android.App.AutomaticZenRule.SetZenPolicy(Android.Service.Notification.ZenPolicy)">
   SetZenPolicy(ZenPolicy)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L307"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setZenPolicy(android.service.notification.ZenPolicy)">https://developer.android.com/reference/android/app/AutomaticZenRule.html#setZenPolicy(android.service.notification.ZenPolicy)</a></p>
@@ -1384,7 +1873,7 @@ public AutomaticZenRule(String arg0, ComponentName arg1, Uri arg2, int arg3, boo
 
   <h3 id="Android_App_AutomaticZenRule_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.App.AutomaticZenRule.WriteToParcel(Android.Os.Parcel,System.Int32)">
   WriteToParcel(Parcel, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AutomaticZenRule.cs/#L316"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/app/AutomaticZenRule.html#writeToParcel(android.os.Parcel,int)</a></p>

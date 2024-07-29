@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager__ctor" data-uid="Android.App.Usage.UsageStatsManager.#ctor">
   UsageStatsManager()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L569"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L671"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager__ctor_System_Object___" data-uid="Android.App.Usage.UsageStatsManager.#ctor(System.Object[])">
   UsageStatsManager(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L573"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L675"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -555,7 +561,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager_BridgeClassName" data-uid="Android.App.Usage.UsageStatsManager.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L683"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -573,6 +579,70 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Usage_UsageStatsManager_EXTRA_EVENT_ACTION_" data-uid="Android.App.Usage.UsageStatsManager.EXTRA_EVENT_ACTION*"></a>
+
+  <h3 id="Android_App_Usage_UsageStatsManager_EXTRA_EVENT_ACTION" data-uid="Android.App.Usage.UsageStatsManager.EXTRA_EVENT_ACTION">
+  EXTRA_EVENT_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#EXTRA_EVENT_ACTION">https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#EXTRA_EVENT_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_EVENT_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Usage_UsageStatsManager_EXTRA_EVENT_CATEGORY_" data-uid="Android.App.Usage.UsageStatsManager.EXTRA_EVENT_CATEGORY*"></a>
+
+  <h3 id="Android_App_Usage_UsageStatsManager_EXTRA_EVENT_CATEGORY" data-uid="Android.App.Usage.UsageStatsManager.EXTRA_EVENT_CATEGORY">
+  EXTRA_EVENT_CATEGORY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#EXTRA_EVENT_CATEGORY">https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#EXTRA_EVENT_CATEGORY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_EVENT_CATEGORY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
     <dd></dd>
   </dl>
 
@@ -747,7 +817,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager_IsBridgeAbstract" data-uid="Android.App.Usage.UsageStatsManager.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L687"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -779,7 +849,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager_IsBridgeCloseable" data-uid="Android.App.Usage.UsageStatsManager.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L691"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -811,7 +881,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager_IsBridgeInterface" data-uid="Android.App.Usage.UsageStatsManager.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L695"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -843,7 +913,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager_IsBridgeStatic" data-uid="Android.App.Usage.UsageStatsManager.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/AllPackageClasses.cs/#L699"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1039,7 +1109,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager_GetAppStandbyBucket" data-uid="Android.App.Usage.UsageStatsManager.GetAppStandbyBucket">
   GetAppStandbyBucket()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#getAppStandbyBucket()">https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#getAppStandbyBucket()</a></p>
@@ -1072,7 +1142,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager_IsAppInactive_Java_Lang_String_" data-uid="Android.App.Usage.UsageStatsManager.IsAppInactive(Java.Lang.String)">
   IsAppInactive(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#isAppInactive(java.lang.String)">https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#isAppInactive(java.lang.String)</a></p>
@@ -1111,7 +1181,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager_QueryAndAggregateUsageStats_System_Int64_System_Int64_" data-uid="Android.App.Usage.UsageStatsManager.QueryAndAggregateUsageStats(System.Int64,System.Int64)">
   QueryAndAggregateUsageStats(long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryAndAggregateUsageStats(long,long)">https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryAndAggregateUsageStats(long,long)</a></p>
@@ -1153,7 +1223,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager_QueryConfigurations_System_Int32_System_Int64_System_Int64_" data-uid="Android.App.Usage.UsageStatsManager.QueryConfigurations(System.Int32,System.Int64,System.Int64)">
   QueryConfigurations(int, long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryConfigurations(int,long,long)">https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryConfigurations(int,long,long)</a></p>
@@ -1198,7 +1268,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager_QueryEventStats_System_Int32_System_Int64_System_Int64_" data-uid="Android.App.Usage.UsageStatsManager.QueryEventStats(System.Int32,System.Int64,System.Int64)">
   QueryEventStats(int, long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEventStats(int,long,long)">https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEventStats(int,long,long)</a></p>
@@ -1241,9 +1311,48 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <a id="Android_App_Usage_UsageStatsManager_QueryEvents_" data-uid="Android.App.Usage.UsageStatsManager.QueryEvents*"></a>
 
+  <h3 id="Android_App_Usage_UsageStatsManager_QueryEvents_Android_App_Usage_UsageEventsQuery_" data-uid="Android.App.Usage.UsageStatsManager.QueryEvents(Android.App.Usage.UsageEventsQuery)">
+  QueryEvents(UsageEventsQuery)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEvents(android.app.usage.UsageEventsQuery)">https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEvents(android.app.usage.UsageEventsQuery)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UsageEvents QueryEvents(UsageEventsQuery arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Usage.UsageEventsQuery.html">UsageEventsQuery</a></dt>
+    <dd><p><a class="xref" href="Android.App.Usage.UsageEventsQuery.html">UsageEventsQuery</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Usage.UsageEvents.html">UsageEvents</a></dt>
+    <dd><p><a class="xref" href="Android.App.Usage.UsageEvents.html">UsageEvents</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Usage_UsageStatsManager_QueryEvents_" data-uid="Android.App.Usage.UsageStatsManager.QueryEvents*"></a>
+
   <h3 id="Android_App_Usage_UsageStatsManager_QueryEvents_System_Int64_System_Int64_" data-uid="Android.App.Usage.UsageStatsManager.QueryEvents(System.Int64,System.Int64)">
   QueryEvents(long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEvents(long,long)">https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEvents(long,long)</a></p>
@@ -1285,7 +1394,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager_QueryEventsForSelf_System_Int64_System_Int64_" data-uid="Android.App.Usage.UsageStatsManager.QueryEventsForSelf(System.Int64,System.Int64)">
   QueryEventsForSelf(long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEventsForSelf(long,long)">https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEventsForSelf(long,long)</a></p>
@@ -1327,7 +1436,7 @@ Class UsageStatsManager  <a class="header-action link-secondary" title="View sou
 
   <h3 id="Android_App_Usage_UsageStatsManager_QueryUsageStats_System_Int32_System_Int64_System_Int64_" data-uid="Android.App.Usage.UsageStatsManager.QueryUsageStats(System.Int32,System.Int64,System.Int64)">
   QueryUsageStats(int, long, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Usage/UsageStatsManager.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryUsageStats(int,long,long)">https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryUsageStats(int,long,long)</a></p>

@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -98,7 +98,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Virtualizer : AudioEffect, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public class Virtualizer : AudioEffect, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
 
 
@@ -445,6 +446,12 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -603,7 +610,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -619,7 +626,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer__ctor" data-uid="Android.Media.Audiofx.Virtualizer.#ctor">
   Virtualizer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1617"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1657"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -654,7 +661,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Virtualizer(int arg0, int arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Virtualizer(int arg0, int arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -693,7 +701,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer__ctor_System_Object___" data-uid="Android.Media.Audiofx.Virtualizer.#ctor(System.Object[])">
   Virtualizer(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1621"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1661"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -729,7 +737,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_BridgeClassName" data-uid="Android.Media.Audiofx.Virtualizer.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1628"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1669"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -761,7 +769,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_IsBridgeAbstract" data-uid="Android.Media.Audiofx.Virtualizer.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1632"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1673"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -793,7 +801,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_IsBridgeCloseable" data-uid="Android.Media.Audiofx.Virtualizer.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1636"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1677"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -825,7 +833,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_IsBridgeInterface" data-uid="Android.Media.Audiofx.Virtualizer.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1640"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1681"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -857,7 +865,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_IsBridgeStatic" data-uid="Android.Media.Audiofx.Virtualizer.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1644"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1685"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -889,7 +897,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_PARAM_STRENGTH" data-uid="Android.Media.Audiofx.Virtualizer.PARAM_STRENGTH">
   PARAM_STRENGTH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#PARAM_STRENGTH">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#PARAM_STRENGTH</a></p>
@@ -897,7 +905,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int PARAM_STRENGTH { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int PARAM_STRENGTH { get; }</code></pre>
   </div>
 
 
@@ -921,7 +930,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_PARAM_STRENGTH_SUPPORTED" data-uid="Android.Media.Audiofx.Virtualizer.PARAM_STRENGTH_SUPPORTED">
   PARAM_STRENGTH_SUPPORTED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#PARAM_STRENGTH_SUPPORTED">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#PARAM_STRENGTH_SUPPORTED</a></p>
@@ -929,7 +938,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int PARAM_STRENGTH_SUPPORTED { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int PARAM_STRENGTH_SUPPORTED { get; }</code></pre>
   </div>
 
 
@@ -953,7 +963,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_VIRTUALIZATION_MODE_AUTO" data-uid="Android.Media.Audiofx.Virtualizer.VIRTUALIZATION_MODE_AUTO">
   VIRTUALIZATION_MODE_AUTO
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#VIRTUALIZATION_MODE_AUTO">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#VIRTUALIZATION_MODE_AUTO</a></p>
@@ -961,7 +971,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int VIRTUALIZATION_MODE_AUTO { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int VIRTUALIZATION_MODE_AUTO { get; }</code></pre>
   </div>
 
 
@@ -985,7 +996,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_VIRTUALIZATION_MODE_BINAURAL" data-uid="Android.Media.Audiofx.Virtualizer.VIRTUALIZATION_MODE_BINAURAL">
   VIRTUALIZATION_MODE_BINAURAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#VIRTUALIZATION_MODE_BINAURAL">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#VIRTUALIZATION_MODE_BINAURAL</a></p>
@@ -993,7 +1004,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int VIRTUALIZATION_MODE_BINAURAL { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int VIRTUALIZATION_MODE_BINAURAL { get; }</code></pre>
   </div>
 
 
@@ -1017,7 +1029,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_VIRTUALIZATION_MODE_OFF" data-uid="Android.Media.Audiofx.Virtualizer.VIRTUALIZATION_MODE_OFF">
   VIRTUALIZATION_MODE_OFF
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#VIRTUALIZATION_MODE_OFF">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#VIRTUALIZATION_MODE_OFF</a></p>
@@ -1025,7 +1037,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int VIRTUALIZATION_MODE_OFF { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int VIRTUALIZATION_MODE_OFF { get; }</code></pre>
   </div>
 
 
@@ -1049,7 +1062,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_VIRTUALIZATION_MODE_TRANSAURAL" data-uid="Android.Media.Audiofx.Virtualizer.VIRTUALIZATION_MODE_TRANSAURAL">
   VIRTUALIZATION_MODE_TRANSAURAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#VIRTUALIZATION_MODE_TRANSAURAL">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#VIRTUALIZATION_MODE_TRANSAURAL</a></p>
@@ -1057,7 +1070,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int VIRTUALIZATION_MODE_TRANSAURAL { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int VIRTUALIZATION_MODE_TRANSAURAL { get; }</code></pre>
   </div>
 
 
@@ -1085,7 +1099,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_CanVirtualize_System_Int32_System_Int32_" data-uid="Android.Media.Audiofx.Virtualizer.CanVirtualize(System.Int32,System.Int32)">
   CanVirtualize(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#canVirtualize(int,int)">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#canVirtualize(int,int)</a></p>
@@ -1093,7 +1107,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanVirtualize(int arg0, int arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool CanVirtualize(int arg0, int arg1)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1136,7 +1151,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_ForceVirtualizationMode_System_Int32_" data-uid="Android.Media.Audiofx.Virtualizer.ForceVirtualizationMode(System.Int32)">
   ForceVirtualizationMode(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L138"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#forceVirtualizationMode(int)">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#forceVirtualizationMode(int)</a></p>
@@ -1144,7 +1159,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ForceVirtualizationMode(int arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool ForceVirtualizationMode(int arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1184,7 +1200,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_GetProperties" data-uid="Android.Media.Audiofx.Virtualizer.GetProperties">
   GetProperties()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getProperties()">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getProperties()</a></p>
@@ -1192,7 +1208,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Virtualizer.Settings GetProperties()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Virtualizer.Settings GetProperties()</code></pre>
   </div>
 
 
@@ -1226,7 +1243,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_GetRoundedStrength" data-uid="Android.Media.Audiofx.Virtualizer.GetRoundedStrength">
   GetRoundedStrength()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getRoundedStrength()">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getRoundedStrength()</a></p>
@@ -1234,7 +1251,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public short GetRoundedStrength()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public short GetRoundedStrength()</code></pre>
   </div>
 
 
@@ -1268,7 +1286,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_GetSpeakerAngles_System_Int32_System_Int32_System_Int32___" data-uid="Android.Media.Audiofx.Virtualizer.GetSpeakerAngles(System.Int32,System.Int32,System.Int32[])">
   GetSpeakerAngles(int, int, int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getSpeakerAngles(int,int,int[])">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getSpeakerAngles(int,int,int[])</a></p>
@@ -1276,7 +1294,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool GetSpeakerAngles(int arg0, int arg1, int[] arg2)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool GetSpeakerAngles(int arg0, int arg1, int[] arg2)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1322,7 +1341,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_GetStrengthSupported" data-uid="Android.Media.Audiofx.Virtualizer.GetStrengthSupported">
   GetStrengthSupported()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getStrengthSupported()">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getStrengthSupported()</a></p>
@@ -1330,7 +1349,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool GetStrengthSupported()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool GetStrengthSupported()</code></pre>
   </div>
 
 
@@ -1355,7 +1375,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_GetVirtualizationMode" data-uid="Android.Media.Audiofx.Virtualizer.GetVirtualizationMode">
   GetVirtualizationMode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getVirtualizationMode()">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getVirtualizationMode()</a></p>
@@ -1363,7 +1383,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetVirtualizationMode()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public int GetVirtualizationMode()</code></pre>
   </div>
 
 
@@ -1395,7 +1416,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_SetParameterListener_Android_Media_Audiofx_Virtualizer_OnParameterChangeListener_" data-uid="Android.Media.Audiofx.Virtualizer.SetParameterListener(Android.Media.Audiofx.Virtualizer.OnParameterChangeListener)">
   SetParameterListener(OnParameterChangeListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#setParameterListener(android.media.audiofx.Virtualizer.OnParameterChangeListener)">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#setParameterListener(android.media.audiofx.Virtualizer.OnParameterChangeListener)</a></p>
@@ -1403,7 +1424,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetParameterListener(Virtualizer.OnParameterChangeListener arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetParameterListener(Virtualizer.OnParameterChangeListener arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1428,7 +1450,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_SetProperties_Android_Media_Audiofx_Virtualizer_Settings_" data-uid="Android.Media.Audiofx.Virtualizer.SetProperties(Android.Media.Audiofx.Virtualizer.Settings)">
   SetProperties(Settings)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L206"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#setProperties(android.media.audiofx.Virtualizer.Settings)">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#setProperties(android.media.audiofx.Virtualizer.Settings)</a></p>
@@ -1436,7 +1458,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetProperties(Virtualizer.Settings arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetProperties(Virtualizer.Settings arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1470,7 +1493,7 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Media_Audiofx_Virtualizer_SetStrength_System_Int16_" data-uid="Android.Media.Audiofx.Virtualizer.SetStrength(System.Int16)">
   SetStrength(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/Virtualizer.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#setStrength(short)">https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#setStrength(short)</a></p>
@@ -1478,7 +1501,8 @@ Class Virtualizer  <a class="header-action link-secondary" title="View source" h
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetStrength(short arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetStrength(short arg0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>

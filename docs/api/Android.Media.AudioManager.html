@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class AudioManager  <a class="header-action link-secondary" title="View source" 
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class AudioManager  <a class="header-action link-secondary" title="View source" 
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class AudioManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Media_AudioManager__ctor" data-uid="Android.Media.AudioManager.#ctor">
   AudioManager()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L569"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L581"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class AudioManager  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="Android_Media_AudioManager__ctor_System_Object___" data-uid="Android.Media.AudioManager.#ctor(System.Object[])">
   AudioManager(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L573"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L585"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -1356,7 +1362,7 @@ public static String ACTION_SCO_AUDIO_STATE_CHANGED { get; }</code></pre>
 
   <h3 id="Android_Media_AudioManager_BridgeClassName" data-uid="Android.Media.AudioManager.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L593"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -2606,7 +2612,7 @@ public static String EXTRA_VIBRATE_TYPE { get; }</code></pre>
 
   <h3 id="Android_Media_AudioManager_IsBridgeAbstract" data-uid="Android.Media.AudioManager.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L597"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -2638,7 +2644,7 @@ public static String EXTRA_VIBRATE_TYPE { get; }</code></pre>
 
   <h3 id="Android_Media_AudioManager_IsBridgeCloseable" data-uid="Android.Media.AudioManager.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L601"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -2670,7 +2676,7 @@ public static String EXTRA_VIBRATE_TYPE { get; }</code></pre>
 
   <h3 id="Android_Media_AudioManager_IsBridgeInterface" data-uid="Android.Media.AudioManager.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L605"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -2702,7 +2708,7 @@ public static String EXTRA_VIBRATE_TYPE { get; }</code></pre>
 
   <h3 id="Android_Media_AudioManager_IsBridgeStatic" data-uid="Android.Media.AudioManager.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L609"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -4367,7 +4373,7 @@ public int AbandonAudioFocus(AudioManager.OnAudioFocusChangeListener arg0)</code
 
   <h3 id="Android_Media_AudioManager_AddOnCommunicationDeviceChangedListener_Java_Util_Concurrent_Executor_Android_Media_AudioManager_OnCommunicationDeviceChangedListener_" data-uid="Android.Media.AudioManager.AddOnCommunicationDeviceChangedListener(Java.Util.Concurrent.Executor,Android.Media.AudioManager.OnCommunicationDeviceChangedListener)">
   AddOnCommunicationDeviceChangedListener(Executor, OnCommunicationDeviceChangedListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1224"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#addOnCommunicationDeviceChangedListener(java.util.concurrent.Executor,android.media.AudioManager.OnCommunicationDeviceChangedListener)">https://developer.android.com/reference/android/media/AudioManager.html#addOnCommunicationDeviceChangedListener(java.util.concurrent.Executor,android.media.AudioManager.OnCommunicationDeviceChangedListener)</a></p>
@@ -4403,7 +4409,7 @@ public int AbandonAudioFocus(AudioManager.OnAudioFocusChangeListener arg0)</code
 
   <h3 id="Android_Media_AudioManager_AddOnModeChangedListener_Java_Util_Concurrent_Executor_Android_Media_AudioManager_OnModeChangedListener_" data-uid="Android.Media.AudioManager.AddOnModeChangedListener(Java.Util.Concurrent.Executor,Android.Media.AudioManager.OnModeChangedListener)">
   AddOnModeChangedListener(Executor, OnModeChangedListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1233"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1242"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#addOnModeChangedListener(java.util.concurrent.Executor,android.media.AudioManager.OnModeChangedListener)">https://developer.android.com/reference/android/media/AudioManager.html#addOnModeChangedListener(java.util.concurrent.Executor,android.media.AudioManager.OnModeChangedListener)</a></p>
@@ -4439,7 +4445,7 @@ public int AbandonAudioFocus(AudioManager.OnAudioFocusChangeListener arg0)</code
 
   <h3 id="Android_Media_AudioManager_AddOnPreferredMixerAttributesChangedListener_Java_Util_Concurrent_Executor_Android_Media_AudioManager_OnPreferredMixerAttributesChangedListener_" data-uid="Android.Media.AudioManager.AddOnPreferredMixerAttributesChangedListener(Java.Util.Concurrent.Executor,Android.Media.AudioManager.OnPreferredMixerAttributesChangedListener)">
   AddOnPreferredMixerAttributesChangedListener(Executor, OnPreferredMixerAttributesChangedListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1251"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#addOnPreferredMixerAttributesChangedListener(java.util.concurrent.Executor,android.media.AudioManager.OnPreferredMixerAttributesChangedListener)">https://developer.android.com/reference/android/media/AudioManager.html#addOnPreferredMixerAttributesChangedListener(java.util.concurrent.Executor,android.media.AudioManager.OnPreferredMixerAttributesChangedListener)</a></p>
@@ -4475,7 +4481,7 @@ public int AbandonAudioFocus(AudioManager.OnAudioFocusChangeListener arg0)</code
 
   <h3 id="Android_Media_AudioManager_AdjustStreamVolume_System_Int32_System_Int32_System_Int32_" data-uid="Android.Media.AudioManager.AdjustStreamVolume(System.Int32,System.Int32,System.Int32)">
   AdjustStreamVolume(int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1252"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1261"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#adjustStreamVolume(int,int,int)">https://developer.android.com/reference/android/media/AudioManager.html#adjustStreamVolume(int,int,int)</a></p>
@@ -4514,7 +4520,7 @@ public int AbandonAudioFocus(AudioManager.OnAudioFocusChangeListener arg0)</code
 
   <h3 id="Android_Media_AudioManager_AdjustSuggestedStreamVolume_System_Int32_System_Int32_System_Int32_" data-uid="Android.Media.AudioManager.AdjustSuggestedStreamVolume(System.Int32,System.Int32,System.Int32)">
   AdjustSuggestedStreamVolume(int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1262"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1271"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#adjustSuggestedStreamVolume(int,int,int)">https://developer.android.com/reference/android/media/AudioManager.html#adjustSuggestedStreamVolume(int,int,int)</a></p>
@@ -4553,7 +4559,7 @@ public int AbandonAudioFocus(AudioManager.OnAudioFocusChangeListener arg0)</code
 
   <h3 id="Android_Media_AudioManager_AdjustVolume_System_Int32_System_Int32_" data-uid="Android.Media.AudioManager.AdjustVolume(System.Int32,System.Int32)">
   AdjustVolume(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1271"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1280"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#adjustVolume(int,int)">https://developer.android.com/reference/android/media/AudioManager.html#adjustVolume(int,int)</a></p>
@@ -4589,7 +4595,7 @@ public int AbandonAudioFocus(AudioManager.OnAudioFocusChangeListener arg0)</code
 
   <h3 id="Android_Media_AudioManager_AdjustVolumeGroupVolume_System_Int32_System_Int32_System_Int32_" data-uid="Android.Media.AudioManager.AdjustVolumeGroupVolume(System.Int32,System.Int32,System.Int32)">
   AdjustVolumeGroupVolume(int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1281"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1290"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#adjustVolumeGroupVolume(int,int,int)">https://developer.android.com/reference/android/media/AudioManager.html#adjustVolumeGroupVolume(int,int,int)</a></p>
@@ -4628,7 +4634,7 @@ public int AbandonAudioFocus(AudioManager.OnAudioFocusChangeListener arg0)</code
 
   <h3 id="Android_Media_AudioManager_ClearCommunicationDevice" data-uid="Android.Media.AudioManager.ClearCommunicationDevice">
   ClearCommunicationDevice()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1288"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1297"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#clearCommunicationDevice()">https://developer.android.com/reference/android/media/AudioManager.html#clearCommunicationDevice()</a></p>
@@ -4697,7 +4703,7 @@ public int AbandonAudioFocus(AudioManager.OnAudioFocusChangeListener arg0)</code
 
   <h3 id="Android_Media_AudioManager_DispatchMediaKeyEvent_Android_View_KeyEvent_" data-uid="Android.Media.AudioManager.DispatchMediaKeyEvent(Android.View.KeyEvent)">
   DispatchMediaKeyEvent(KeyEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1296"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1305"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#dispatchMediaKeyEvent(android.view.KeyEvent)">https://developer.android.com/reference/android/media/AudioManager.html#dispatchMediaKeyEvent(android.view.KeyEvent)</a></p>
@@ -5657,6 +5663,45 @@ public int GetRouting(int arg0)</code></pre>
 
 
 
+  <a id="Android_Media_AudioManager_GetSupportedDeviceTypes_" data-uid="Android.Media.AudioManager.GetSupportedDeviceTypes*"></a>
+
+  <h3 id="Android_Media_AudioManager_GetSupportedDeviceTypes_System_Int32_" data-uid="Android.Media.AudioManager.GetSupportedDeviceTypes(System.Int32)">
+  GetSupportedDeviceTypes(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#getSupportedDeviceTypes(int)">https://developer.android.com/reference/android/media/AudioManager.html#getSupportedDeviceTypes(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Set&lt;Integer&gt; GetSupportedDeviceTypes(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Media_AudioManager_GetSupportedMixerAttributes_" data-uid="Android.Media.AudioManager.GetSupportedMixerAttributes*"></a>
 
   <h3 id="Android_Media_AudioManager_GetSupportedMixerAttributes_Android_Media_AudioDeviceInfo_" data-uid="Android.Media.AudioManager.GetSupportedMixerAttributes(Android.Media.AudioDeviceInfo)">
@@ -6305,7 +6350,7 @@ public bool IsWiredHeadsetOn()</code></pre>
 
   <h3 id="Android_Media_AudioManager_LoadSoundEffects" data-uid="Android.Media.AudioManager.LoadSoundEffects">
   LoadSoundEffects()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1303"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1312"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#loadSoundEffects()">https://developer.android.com/reference/android/media/AudioManager.html#loadSoundEffects()</a></p>
@@ -6332,7 +6377,7 @@ public bool IsWiredHeadsetOn()</code></pre>
 
   <h3 id="Android_Media_AudioManager_PlaySoundEffect_System_Int32_" data-uid="Android.Media.AudioManager.PlaySoundEffect(System.Int32)">
   PlaySoundEffect(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1320"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1329"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#playSoundEffect(int)">https://developer.android.com/reference/android/media/AudioManager.html#playSoundEffect(int)</a></p>
@@ -6365,7 +6410,7 @@ public bool IsWiredHeadsetOn()</code></pre>
 
   <h3 id="Android_Media_AudioManager_PlaySoundEffect_System_Int32_System_Single_" data-uid="Android.Media.AudioManager.PlaySoundEffect(System.Int32,System.Single)">
   PlaySoundEffect(int, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1312"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1321"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#playSoundEffect(int,float)">https://developer.android.com/reference/android/media/AudioManager.html#playSoundEffect(int,float)</a></p>
@@ -6401,7 +6446,7 @@ public bool IsWiredHeadsetOn()</code></pre>
 
   <h3 id="Android_Media_AudioManager_RegisterAudioDeviceCallback_Android_Media_AudioDeviceCallback_Android_Os_Handler_" data-uid="Android.Media.AudioManager.RegisterAudioDeviceCallback(Android.Media.AudioDeviceCallback,Android.Os.Handler)">
   RegisterAudioDeviceCallback(AudioDeviceCallback, Handler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1329"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1338"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#registerAudioDeviceCallback(android.media.AudioDeviceCallback,android.os.Handler)">https://developer.android.com/reference/android/media/AudioManager.html#registerAudioDeviceCallback(android.media.AudioDeviceCallback,android.os.Handler)</a></p>
@@ -6437,7 +6482,7 @@ public bool IsWiredHeadsetOn()</code></pre>
 
   <h3 id="Android_Media_AudioManager_RegisterAudioPlaybackCallback_Android_Media_AudioManager_AudioPlaybackCallback_Android_Os_Handler_" data-uid="Android.Media.AudioManager.RegisterAudioPlaybackCallback(Android.Media.AudioManager.AudioPlaybackCallback,Android.Os.Handler)">
   RegisterAudioPlaybackCallback(AudioPlaybackCallback, Handler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1338"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1347"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#registerAudioPlaybackCallback(android.media.AudioManager.AudioPlaybackCallback,android.os.Handler)">https://developer.android.com/reference/android/media/AudioManager.html#registerAudioPlaybackCallback(android.media.AudioManager.AudioPlaybackCallback,android.os.Handler)</a></p>
@@ -6473,7 +6518,7 @@ public bool IsWiredHeadsetOn()</code></pre>
 
   <h3 id="Android_Media_AudioManager_RegisterAudioRecordingCallback_Android_Media_AudioManager_AudioRecordingCallback_Android_Os_Handler_" data-uid="Android.Media.AudioManager.RegisterAudioRecordingCallback(Android.Media.AudioManager.AudioRecordingCallback,Android.Os.Handler)">
   RegisterAudioRecordingCallback(AudioRecordingCallback, Handler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1347"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1356"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#registerAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback,android.os.Handler)">https://developer.android.com/reference/android/media/AudioManager.html#registerAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback,android.os.Handler)</a></p>
@@ -6509,7 +6554,7 @@ public bool IsWiredHeadsetOn()</code></pre>
 
   <h3 id="Android_Media_AudioManager_RegisterMediaButtonEventReceiver_Android_App_PendingIntent_" data-uid="Android.Media.AudioManager.RegisterMediaButtonEventReceiver(Android.App.PendingIntent)">
   RegisterMediaButtonEventReceiver(PendingIntent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1355"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1364"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#registerMediaButtonEventReceiver(android.app.PendingIntent)">https://developer.android.com/reference/android/media/AudioManager.html#registerMediaButtonEventReceiver(android.app.PendingIntent)</a></p>
@@ -6543,7 +6588,7 @@ public void RegisterMediaButtonEventReceiver(PendingIntent arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_RegisterMediaButtonEventReceiver_Android_Content_ComponentName_" data-uid="Android.Media.AudioManager.RegisterMediaButtonEventReceiver(Android.Content.ComponentName)">
   RegisterMediaButtonEventReceiver(ComponentName)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1364"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1373"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#registerMediaButtonEventReceiver(android.content.ComponentName)">https://developer.android.com/reference/android/media/AudioManager.html#registerMediaButtonEventReceiver(android.content.ComponentName)</a></p>
@@ -6577,7 +6622,7 @@ public void RegisterMediaButtonEventReceiver(ComponentName arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_RegisterRemoteControlClient_Android_Media_RemoteControlClient_" data-uid="Android.Media.AudioManager.RegisterRemoteControlClient(Android.Media.RemoteControlClient)">
   RegisterRemoteControlClient(RemoteControlClient)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1373"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1382"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#registerRemoteControlClient(android.media.RemoteControlClient)">https://developer.android.com/reference/android/media/AudioManager.html#registerRemoteControlClient(android.media.RemoteControlClient)</a></p>
@@ -6651,7 +6696,7 @@ public bool RegisterRemoteController(RemoteController arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_RemoveOnCommunicationDeviceChangedListener_Android_Media_AudioManager_OnCommunicationDeviceChangedListener_" data-uid="Android.Media.AudioManager.RemoveOnCommunicationDeviceChangedListener(Android.Media.AudioManager.OnCommunicationDeviceChangedListener)">
   RemoveOnCommunicationDeviceChangedListener(OnCommunicationDeviceChangedListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1382"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1391"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#removeOnCommunicationDeviceChangedListener(android.media.AudioManager.OnCommunicationDeviceChangedListener)">https://developer.android.com/reference/android/media/AudioManager.html#removeOnCommunicationDeviceChangedListener(android.media.AudioManager.OnCommunicationDeviceChangedListener)</a></p>
@@ -6684,7 +6729,7 @@ public bool RegisterRemoteController(RemoteController arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_RemoveOnModeChangedListener_Android_Media_AudioManager_OnModeChangedListener_" data-uid="Android.Media.AudioManager.RemoveOnModeChangedListener(Android.Media.AudioManager.OnModeChangedListener)">
   RemoveOnModeChangedListener(OnModeChangedListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1390"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1399"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#removeOnModeChangedListener(android.media.AudioManager.OnModeChangedListener)">https://developer.android.com/reference/android/media/AudioManager.html#removeOnModeChangedListener(android.media.AudioManager.OnModeChangedListener)</a></p>
@@ -6717,7 +6762,7 @@ public bool RegisterRemoteController(RemoteController arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_RemoveOnPreferredMixerAttributesChangedListener_Android_Media_AudioManager_OnPreferredMixerAttributesChangedListener_" data-uid="Android.Media.AudioManager.RemoveOnPreferredMixerAttributesChangedListener(Android.Media.AudioManager.OnPreferredMixerAttributesChangedListener)">
   RemoveOnPreferredMixerAttributesChangedListener(OnPreferredMixerAttributesChangedListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1398"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1407"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#removeOnPreferredMixerAttributesChangedListener(android.media.AudioManager.OnPreferredMixerAttributesChangedListener)">https://developer.android.com/reference/android/media/AudioManager.html#removeOnPreferredMixerAttributesChangedListener(android.media.AudioManager.OnPreferredMixerAttributesChangedListener)</a></p>
@@ -6835,7 +6880,7 @@ public int RequestAudioFocus(AudioManager.OnAudioFocusChangeListener arg0, int a
 
   <h3 id="Android_Media_AudioManager_SetAllowedCapturePolicy_System_Int32_" data-uid="Android.Media.AudioManager.SetAllowedCapturePolicy(System.Int32)">
   SetAllowedCapturePolicy(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1406"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1415"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setAllowedCapturePolicy(int)">https://developer.android.com/reference/android/media/AudioManager.html#setAllowedCapturePolicy(int)</a></p>
@@ -6868,7 +6913,7 @@ public int RequestAudioFocus(AudioManager.OnAudioFocusChangeListener arg0, int a
 
   <h3 id="Android_Media_AudioManager_SetBluetoothA2dpOn_System_Boolean_" data-uid="Android.Media.AudioManager.SetBluetoothA2dpOn(System.Boolean)">
   SetBluetoothA2dpOn(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1414"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1423"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setBluetoothA2dpOn(boolean)">https://developer.android.com/reference/android/media/AudioManager.html#setBluetoothA2dpOn(boolean)</a></p>
@@ -6902,7 +6947,7 @@ public void SetBluetoothA2dpOn(bool arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_SetBluetoothScoOn_System_Boolean_" data-uid="Android.Media.AudioManager.SetBluetoothScoOn(System.Boolean)">
   SetBluetoothScoOn(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1423"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1432"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setBluetoothScoOn(boolean)">https://developer.android.com/reference/android/media/AudioManager.html#setBluetoothScoOn(boolean)</a></p>
@@ -7013,7 +7058,7 @@ public void SetBluetoothA2dpOn(bool arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_SetMicrophoneMute_System_Boolean_" data-uid="Android.Media.AudioManager.SetMicrophoneMute(System.Boolean)">
   SetMicrophoneMute(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1431"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1440"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setMicrophoneMute(boolean)">https://developer.android.com/reference/android/media/AudioManager.html#setMicrophoneMute(boolean)</a></p>
@@ -7046,7 +7091,7 @@ public void SetBluetoothA2dpOn(bool arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_SetMode_System_Int32_" data-uid="Android.Media.AudioManager.SetMode(System.Int32)">
   SetMode(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1439"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1448"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setMode(int)">https://developer.android.com/reference/android/media/AudioManager.html#setMode(int)</a></p>
@@ -7079,7 +7124,7 @@ public void SetBluetoothA2dpOn(bool arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_SetParameters_Java_Lang_String_" data-uid="Android.Media.AudioManager.SetParameters(Java.Lang.String)">
   SetParameters(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1447"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1456"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setParameters(java.lang.String)">https://developer.android.com/reference/android/media/AudioManager.html#setParameters(java.lang.String)</a></p>
@@ -7157,7 +7202,7 @@ public void SetBluetoothA2dpOn(bool arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_SetRingerMode_System_Int32_" data-uid="Android.Media.AudioManager.SetRingerMode(System.Int32)">
   SetRingerMode(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1455"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1464"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setRingerMode(int)">https://developer.android.com/reference/android/media/AudioManager.html#setRingerMode(int)</a></p>
@@ -7190,7 +7235,7 @@ public void SetBluetoothA2dpOn(bool arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_SetRouting_System_Int32_System_Int32_System_Int32_" data-uid="Android.Media.AudioManager.SetRouting(System.Int32,System.Int32,System.Int32)">
   SetRouting(int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1465"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1474"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setRouting(int,int,int)">https://developer.android.com/reference/android/media/AudioManager.html#setRouting(int,int,int)</a></p>
@@ -7230,7 +7275,7 @@ public void SetRouting(int arg0, int arg1, int arg2)</code></pre>
 
   <h3 id="Android_Media_AudioManager_SetSpeakerphoneOn_System_Boolean_" data-uid="Android.Media.AudioManager.SetSpeakerphoneOn(System.Boolean)">
   SetSpeakerphoneOn(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1474"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1483"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setSpeakerphoneOn(boolean)">https://developer.android.com/reference/android/media/AudioManager.html#setSpeakerphoneOn(boolean)</a></p>
@@ -7264,7 +7309,7 @@ public void SetSpeakerphoneOn(bool arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_SetStreamMute_System_Int32_System_Boolean_" data-uid="Android.Media.AudioManager.SetStreamMute(System.Int32,System.Boolean)">
   SetStreamMute(int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1484"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1493"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setStreamMute(int,boolean)">https://developer.android.com/reference/android/media/AudioManager.html#setStreamMute(int,boolean)</a></p>
@@ -7301,7 +7346,7 @@ public void SetStreamMute(int arg0, bool arg1)</code></pre>
 
   <h3 id="Android_Media_AudioManager_SetStreamSolo_System_Int32_System_Boolean_" data-uid="Android.Media.AudioManager.SetStreamSolo(System.Int32,System.Boolean)">
   SetStreamSolo(int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1494"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1503"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setStreamSolo(int,boolean)">https://developer.android.com/reference/android/media/AudioManager.html#setStreamSolo(int,boolean)</a></p>
@@ -7338,7 +7383,7 @@ public void SetStreamSolo(int arg0, bool arg1)</code></pre>
 
   <h3 id="Android_Media_AudioManager_SetStreamVolume_System_Int32_System_Int32_System_Int32_" data-uid="Android.Media.AudioManager.SetStreamVolume(System.Int32,System.Int32,System.Int32)">
   SetStreamVolume(int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1505"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1514"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setStreamVolume(int,int,int)">https://developer.android.com/reference/android/media/AudioManager.html#setStreamVolume(int,int,int)</a></p>
@@ -7419,7 +7464,7 @@ public void SetStreamSolo(int arg0, bool arg1)</code></pre>
 
   <h3 id="Android_Media_AudioManager_SetVibrateSetting_System_Int32_System_Int32_" data-uid="Android.Media.AudioManager.SetVibrateSetting(System.Int32,System.Int32)">
   SetVibrateSetting(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1514"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1523"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setVibrateSetting(int,int)">https://developer.android.com/reference/android/media/AudioManager.html#setVibrateSetting(int,int)</a></p>
@@ -7456,7 +7501,7 @@ public void SetVibrateSetting(int arg0, int arg1)</code></pre>
 
   <h3 id="Android_Media_AudioManager_SetWiredHeadsetOn_System_Boolean_" data-uid="Android.Media.AudioManager.SetWiredHeadsetOn(System.Boolean)">
   SetWiredHeadsetOn(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1523"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1532"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#setWiredHeadsetOn(boolean)">https://developer.android.com/reference/android/media/AudioManager.html#setWiredHeadsetOn(boolean)</a></p>
@@ -7530,7 +7575,7 @@ public bool ShouldVibrate(int arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_StartBluetoothSco" data-uid="Android.Media.AudioManager.StartBluetoothSco">
   StartBluetoothSco()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1531"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1540"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#startBluetoothSco()">https://developer.android.com/reference/android/media/AudioManager.html#startBluetoothSco()</a></p>
@@ -7558,7 +7603,7 @@ public void StartBluetoothSco()</code></pre>
 
   <h3 id="Android_Media_AudioManager_StopBluetoothSco" data-uid="Android.Media.AudioManager.StopBluetoothSco">
   StopBluetoothSco()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1539"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1548"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#stopBluetoothSco()">https://developer.android.com/reference/android/media/AudioManager.html#stopBluetoothSco()</a></p>
@@ -7586,7 +7631,7 @@ public void StopBluetoothSco()</code></pre>
 
   <h3 id="Android_Media_AudioManager_UnloadSoundEffects" data-uid="Android.Media.AudioManager.UnloadSoundEffects">
   UnloadSoundEffects()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1547"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1556"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#unloadSoundEffects()">https://developer.android.com/reference/android/media/AudioManager.html#unloadSoundEffects()</a></p>
@@ -7613,7 +7658,7 @@ public void StopBluetoothSco()</code></pre>
 
   <h3 id="Android_Media_AudioManager_UnregisterAudioDeviceCallback_Android_Media_AudioDeviceCallback_" data-uid="Android.Media.AudioManager.UnregisterAudioDeviceCallback(Android.Media.AudioDeviceCallback)">
   UnregisterAudioDeviceCallback(AudioDeviceCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1555"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1564"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#unregisterAudioDeviceCallback(android.media.AudioDeviceCallback)">https://developer.android.com/reference/android/media/AudioManager.html#unregisterAudioDeviceCallback(android.media.AudioDeviceCallback)</a></p>
@@ -7646,7 +7691,7 @@ public void StopBluetoothSco()</code></pre>
 
   <h3 id="Android_Media_AudioManager_UnregisterAudioPlaybackCallback_Android_Media_AudioManager_AudioPlaybackCallback_" data-uid="Android.Media.AudioManager.UnregisterAudioPlaybackCallback(Android.Media.AudioManager.AudioPlaybackCallback)">
   UnregisterAudioPlaybackCallback(AudioPlaybackCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1563"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1572"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#unregisterAudioPlaybackCallback(android.media.AudioManager.AudioPlaybackCallback)">https://developer.android.com/reference/android/media/AudioManager.html#unregisterAudioPlaybackCallback(android.media.AudioManager.AudioPlaybackCallback)</a></p>
@@ -7679,7 +7724,7 @@ public void StopBluetoothSco()</code></pre>
 
   <h3 id="Android_Media_AudioManager_UnregisterAudioRecordingCallback_Android_Media_AudioManager_AudioRecordingCallback_" data-uid="Android.Media.AudioManager.UnregisterAudioRecordingCallback(Android.Media.AudioManager.AudioRecordingCallback)">
   UnregisterAudioRecordingCallback(AudioRecordingCallback)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1571"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1580"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#unregisterAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback)">https://developer.android.com/reference/android/media/AudioManager.html#unregisterAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback)</a></p>
@@ -7712,7 +7757,7 @@ public void StopBluetoothSco()</code></pre>
 
   <h3 id="Android_Media_AudioManager_UnregisterMediaButtonEventReceiver_Android_App_PendingIntent_" data-uid="Android.Media.AudioManager.UnregisterMediaButtonEventReceiver(Android.App.PendingIntent)">
   UnregisterMediaButtonEventReceiver(PendingIntent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1579"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1588"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#unregisterMediaButtonEventReceiver(android.app.PendingIntent)">https://developer.android.com/reference/android/media/AudioManager.html#unregisterMediaButtonEventReceiver(android.app.PendingIntent)</a></p>
@@ -7746,7 +7791,7 @@ public void UnregisterMediaButtonEventReceiver(PendingIntent arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_UnregisterMediaButtonEventReceiver_Android_Content_ComponentName_" data-uid="Android.Media.AudioManager.UnregisterMediaButtonEventReceiver(Android.Content.ComponentName)">
   UnregisterMediaButtonEventReceiver(ComponentName)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1588"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1597"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#unregisterMediaButtonEventReceiver(android.content.ComponentName)">https://developer.android.com/reference/android/media/AudioManager.html#unregisterMediaButtonEventReceiver(android.content.ComponentName)</a></p>
@@ -7780,7 +7825,7 @@ public void UnregisterMediaButtonEventReceiver(ComponentName arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_UnregisterRemoteControlClient_Android_Media_RemoteControlClient_" data-uid="Android.Media.AudioManager.UnregisterRemoteControlClient(Android.Media.RemoteControlClient)">
   UnregisterRemoteControlClient(RemoteControlClient)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1597"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1606"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#unregisterRemoteControlClient(android.media.RemoteControlClient)">https://developer.android.com/reference/android/media/AudioManager.html#unregisterRemoteControlClient(android.media.RemoteControlClient)</a></p>
@@ -7814,7 +7859,7 @@ public void UnregisterRemoteControlClient(RemoteControlClient arg0)</code></pre>
 
   <h3 id="Android_Media_AudioManager_UnregisterRemoteController_Android_Media_RemoteController_" data-uid="Android.Media.AudioManager.UnregisterRemoteController(Android.Media.RemoteController)">
   UnregisterRemoteController(RemoteController)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1606"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioManager.cs/#L1615"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioManager.html#unregisterRemoteController(android.media.RemoteController)">https://developer.android.com/reference/android/media/AudioManager.html#unregisterRemoteController(android.media.RemoteController)</a></p>

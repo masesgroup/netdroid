@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -326,6 +326,12 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -484,7 +490,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -527,7 +533,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition__ctor_Android_Net_Uri_Java_Lang_String_Java_Lang_String_Java_Lang_String_System_Int32_System_Int32_System_Int32_" data-uid="Android.Service.Notification.Condition.#ctor(Android.Net.Uri,Java.Lang.String,Java.Lang.String,Java.Lang.String,System.Int32,System.Int32,System.Int32)">
   Condition(Uri, String, String, String, int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#%3Cinit%3E(android.net.Uri,java.lang.String,java.lang.String,java.lang.String,int,int,int)">https://developer.android.com/reference/android/service/notification/Condition.html#%3Cinit%3E(android.net.Uri,java.lang.String,java.lang.String,java.lang.String,int,int,int)</a></p>
@@ -576,9 +582,63 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <a id="Android_Service_Notification_Condition__ctor_" data-uid="Android.Service.Notification.Condition.#ctor*"></a>
 
+  <h3 id="Android_Service_Notification_Condition__ctor_Android_Net_Uri_Java_Lang_String_Java_Lang_String_Java_Lang_String_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.Service.Notification.Condition.#ctor(Android.Net.Uri,Java.Lang.String,Java.Lang.String,Java.Lang.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+  Condition(Uri, String, String, String, int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#%3Cinit%3E(android.net.Uri,java.lang.String,java.lang.String,java.lang.String,int,int,int,int)">https://developer.android.com/reference/android/service/notification/Condition.html#%3Cinit%3E(android.net.Uri,java.lang.String,java.lang.String,java.lang.String,int,int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Condition(Uri arg0, String arg1, String arg2, String arg3, int arg4, int arg5, int arg6, int arg7)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg7</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Notification_Condition__ctor_" data-uid="Android.Service.Notification.Condition.#ctor*"></a>
+
   <h3 id="Android_Service_Notification_Condition__ctor_Android_Net_Uri_Java_Lang_String_System_Int32_" data-uid="Android.Service.Notification.Condition.#ctor(Android.Net.Uri,Java.Lang.String,System.Int32)">
   Condition(Uri, String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#%3Cinit%3E(android.net.Uri,java.lang.String,int)">https://developer.android.com/reference/android/service/notification/Condition.html#%3Cinit%3E(android.net.Uri,java.lang.String,int)</a></p>
@@ -615,9 +675,51 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <a id="Android_Service_Notification_Condition__ctor_" data-uid="Android.Service.Notification.Condition.#ctor*"></a>
 
+  <h3 id="Android_Service_Notification_Condition__ctor_Android_Net_Uri_Java_Lang_String_System_Int32_System_Int32_" data-uid="Android.Service.Notification.Condition.#ctor(Android.Net.Uri,Java.Lang.String,System.Int32,System.Int32)">
+  Condition(Uri, String, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#%3Cinit%3E(android.net.Uri,java.lang.String,int,int)">https://developer.android.com/reference/android/service/notification/Condition.html#%3Cinit%3E(android.net.Uri,java.lang.String,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Condition(Uri arg0, String arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Notification_Condition__ctor_" data-uid="Android.Service.Notification.Condition.#ctor*"></a>
+
   <h3 id="Android_Service_Notification_Condition__ctor_Android_Os_Parcel_" data-uid="Android.Service.Notification.Condition.#ctor(Android.Os.Parcel)">
   Condition(Parcel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#%3Cinit%3E(android.os.Parcel)">https://developer.android.com/reference/android/service/notification/Condition.html#%3Cinit%3E(android.os.Parcel)</a></p>
@@ -686,7 +788,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_BridgeClassName" data-uid="Android.Service.Notification.Condition.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/AllPackageClasses.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/AllPackageClasses.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -718,7 +820,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_CREATOR" data-uid="Android.Service.Notification.Condition.CREATOR">
   CREATOR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#CREATOR">https://developer.android.com/reference/android/service/notification/Condition.html#CREATOR</a></p>
@@ -750,7 +852,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_FLAG_RELEVANT_ALWAYS" data-uid="Android.Service.Notification.Condition.FLAG_RELEVANT_ALWAYS">
   FLAG_RELEVANT_ALWAYS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#FLAG_RELEVANT_ALWAYS">https://developer.android.com/reference/android/service/notification/Condition.html#FLAG_RELEVANT_ALWAYS</a></p>
@@ -782,7 +884,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_FLAG_RELEVANT_NOW" data-uid="Android.Service.Notification.Condition.FLAG_RELEVANT_NOW">
   FLAG_RELEVANT_NOW
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#FLAG_RELEVANT_NOW">https://developer.android.com/reference/android/service/notification/Condition.html#FLAG_RELEVANT_NOW</a></p>
@@ -814,7 +916,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_IsBridgeAbstract" data-uid="Android.Service.Notification.Condition.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/AllPackageClasses.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/AllPackageClasses.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -846,7 +948,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_IsBridgeCloseable" data-uid="Android.Service.Notification.Condition.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/AllPackageClasses.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/AllPackageClasses.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -878,7 +980,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_IsBridgeInterface" data-uid="Android.Service.Notification.Condition.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/AllPackageClasses.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/AllPackageClasses.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -910,7 +1012,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_IsBridgeStatic" data-uid="Android.Service.Notification.Condition.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/AllPackageClasses.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/AllPackageClasses.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -942,7 +1044,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_SCHEME" data-uid="Android.Service.Notification.Condition.SCHEME">
   SCHEME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#SCHEME">https://developer.android.com/reference/android/service/notification/Condition.html#SCHEME</a></p>
@@ -970,11 +1072,139 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <a id="Android_Service_Notification_Condition_SOURCE_CONTEXT_" data-uid="Android.Service.Notification.Condition.SOURCE_CONTEXT*"></a>
+
+  <h3 id="Android_Service_Notification_Condition_SOURCE_CONTEXT" data-uid="Android.Service.Notification.Condition.SOURCE_CONTEXT">
+  SOURCE_CONTEXT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#SOURCE_CONTEXT">https://developer.android.com/reference/android/service/notification/Condition.html#SOURCE_CONTEXT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SOURCE_CONTEXT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Notification_Condition_SOURCE_SCHEDULE_" data-uid="Android.Service.Notification.Condition.SOURCE_SCHEDULE*"></a>
+
+  <h3 id="Android_Service_Notification_Condition_SOURCE_SCHEDULE" data-uid="Android.Service.Notification.Condition.SOURCE_SCHEDULE">
+  SOURCE_SCHEDULE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#SOURCE_SCHEDULE">https://developer.android.com/reference/android/service/notification/Condition.html#SOURCE_SCHEDULE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SOURCE_SCHEDULE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Notification_Condition_SOURCE_UNKNOWN_" data-uid="Android.Service.Notification.Condition.SOURCE_UNKNOWN*"></a>
+
+  <h3 id="Android_Service_Notification_Condition_SOURCE_UNKNOWN" data-uid="Android.Service.Notification.Condition.SOURCE_UNKNOWN">
+  SOURCE_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#SOURCE_UNKNOWN">https://developer.android.com/reference/android/service/notification/Condition.html#SOURCE_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SOURCE_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Notification_Condition_SOURCE_USER_ACTION_" data-uid="Android.Service.Notification.Condition.SOURCE_USER_ACTION*"></a>
+
+  <h3 id="Android_Service_Notification_Condition_SOURCE_USER_ACTION" data-uid="Android.Service.Notification.Condition.SOURCE_USER_ACTION">
+  SOURCE_USER_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#SOURCE_USER_ACTION">https://developer.android.com/reference/android/service/notification/Condition.html#SOURCE_USER_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SOURCE_USER_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Service_Notification_Condition_STATE_ERROR_" data-uid="Android.Service.Notification.Condition.STATE_ERROR*"></a>
 
   <h3 id="Android_Service_Notification_Condition_STATE_ERROR" data-uid="Android.Service.Notification.Condition.STATE_ERROR">
   STATE_ERROR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#STATE_ERROR">https://developer.android.com/reference/android/service/notification/Condition.html#STATE_ERROR</a></p>
@@ -1006,7 +1236,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_STATE_FALSE" data-uid="Android.Service.Notification.Condition.STATE_FALSE">
   STATE_FALSE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#STATE_FALSE">https://developer.android.com/reference/android/service/notification/Condition.html#STATE_FALSE</a></p>
@@ -1038,7 +1268,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_STATE_TRUE" data-uid="Android.Service.Notification.Condition.STATE_TRUE">
   STATE_TRUE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#STATE_TRUE">https://developer.android.com/reference/android/service/notification/Condition.html#STATE_TRUE</a></p>
@@ -1070,7 +1300,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_STATE_UNKNOWN" data-uid="Android.Service.Notification.Condition.STATE_UNKNOWN">
   STATE_UNKNOWN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#STATE_UNKNOWN">https://developer.android.com/reference/android/service/notification/Condition.html#STATE_UNKNOWN</a></p>
@@ -1102,7 +1332,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_flags" data-uid="Android.Service.Notification.Condition.flags">
   flags
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#flags">https://developer.android.com/reference/android/service/notification/Condition.html#flags</a></p>
@@ -1134,7 +1364,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_icon" data-uid="Android.Service.Notification.Condition.icon">
   icon
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#icon">https://developer.android.com/reference/android/service/notification/Condition.html#icon</a></p>
@@ -1166,7 +1396,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_id" data-uid="Android.Service.Notification.Condition.id">
   id
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#id">https://developer.android.com/reference/android/service/notification/Condition.html#id</a></p>
@@ -1198,7 +1428,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_line1" data-uid="Android.Service.Notification.Condition.line1">
   line1
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#line1">https://developer.android.com/reference/android/service/notification/Condition.html#line1</a></p>
@@ -1230,7 +1460,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_line2" data-uid="Android.Service.Notification.Condition.line2">
   line2
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#line2">https://developer.android.com/reference/android/service/notification/Condition.html#line2</a></p>
@@ -1258,11 +1488,43 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
 
 
+  <a id="Android_Service_Notification_Condition_source_" data-uid="Android.Service.Notification.Condition.source*"></a>
+
+  <h3 id="Android_Service_Notification_Condition_source" data-uid="Android.Service.Notification.Condition.source">
+  source
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#source">https://developer.android.com/reference/android/service/notification/Condition.html#source</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int source { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Service_Notification_Condition_state_" data-uid="Android.Service.Notification.Condition.state*"></a>
 
   <h3 id="Android_Service_Notification_Condition_state" data-uid="Android.Service.Notification.Condition.state">
   state
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#state">https://developer.android.com/reference/android/service/notification/Condition.html#state</a></p>
@@ -1294,7 +1556,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_summary" data-uid="Android.Service.Notification.Condition.summary">
   summary
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#summary">https://developer.android.com/reference/android/service/notification/Condition.html#summary</a></p>
@@ -1330,7 +1592,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_Copy" data-uid="Android.Service.Notification.Condition.Copy">
   Copy()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L267"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#copy()">https://developer.android.com/reference/android/service/notification/Condition.html#copy()</a></p>
@@ -1363,7 +1625,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_DescribeContents" data-uid="Android.Service.Notification.Condition.DescribeContents">
   DescribeContents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#describeContents()">https://developer.android.com/reference/android/service/notification/Condition.html#describeContents()</a></p>
@@ -1396,7 +1658,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_IsValidId_Android_Net_Uri_Java_Lang_String_" data-uid="Android.Service.Notification.Condition.IsValidId(Android.Net.Uri,Java.Lang.String)">
   IsValidId(Uri, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L237"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#isValidId(android.net.Uri,java.lang.String)">https://developer.android.com/reference/android/service/notification/Condition.html#isValidId(android.net.Uri,java.lang.String)</a></p>
@@ -1438,7 +1700,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_NewId_Android_Content_Context_" data-uid="Android.Service.Notification.Condition.NewId(Android.Content.Context)">
   NewId(Context)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#newId(android.content.Context)">https://developer.android.com/reference/android/service/notification/Condition.html#newId(android.content.Context)</a></p>
@@ -1477,7 +1739,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_RelevanceToString_System_Int32_" data-uid="Android.Service.Notification.Condition.RelevanceToString(System.Int32)">
   RelevanceToString(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L246"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#relevanceToString(int)">https://developer.android.com/reference/android/service/notification/Condition.html#relevanceToString(int)</a></p>
@@ -1516,7 +1778,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_StateToString_System_Int32_" data-uid="Android.Service.Notification.Condition.StateToString(System.Int32)">
   StateToString(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L255"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#stateToString(int)">https://developer.android.com/reference/android/service/notification/Condition.html#stateToString(int)</a></p>
@@ -1555,7 +1817,7 @@ Class Condition  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Service_Notification_Condition_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Service.Notification.Condition.WriteToParcel(Android.Os.Parcel,System.Int32)">
   WriteToParcel(Parcel, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Notification/Condition.cs/#L284"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/notification/Condition.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/service/notification/Condition.html#writeToParcel(android.os.Parcel,int)</a></p>

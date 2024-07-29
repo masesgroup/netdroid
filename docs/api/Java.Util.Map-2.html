@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -85,7 +85,7 @@
 
 
   <h1 id="Java_Util_Map_2" data-uid="Java.Util.Map`2" class="text-break">
-Class Map&lt;K, V&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L649"><i class="bi bi-code-slash"></i></a>
+Class Map&lt;K, V&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L719"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -335,6 +335,12 @@ Class Map&lt;K, V&gt;  <a class="header-action link-secondary" title="View sourc
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -493,13 +499,13 @@ Class Map&lt;K, V&gt;  <a class="header-action link-secondary" title="View sourc
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
-  </div>
-  <div>
       <a class="xref" href="MASES.Netdroid.Specific.Extensions.JavaUtilExtensions.html#MASES_Netdroid_Specific_Extensions_JavaUtilExtensions_ToNetDictiony__4_Java_Util_Map___2___3__System_Func___2___0__System_Func___3___1__">JavaUtilExtensions.ToNetDictiony&lt;K, V, TJVMK, TJVMV&gt;(Map&lt;TJVMK, TJVMV&gt;, Func&lt;TJVMK, K&gt;, Func&lt;TJVMV, V&gt;)</a>
   </div>
   <div>
       <a class="xref" href="MASES.Netdroid.Specific.Extensions.JavaUtilExtensions.html#MASES_Netdroid_Specific_Extensions_JavaUtilExtensions_ToNetDictiony__5_Java_Util_Map___3___4__System_Func___3___1__System_Func___4___2__">JavaUtilExtensions.ToNetDictiony&lt;TDictionaryType, K, V, TJVMK, TJVMV&gt;(Map&lt;TJVMK, TJVMV&gt;, Func&lt;TJVMK, K&gt;, Func&lt;TJVMV, V&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -515,7 +521,7 @@ Class Map&lt;K, V&gt;  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Java_Util_Map_2__ctor" data-uid="Java.Util.Map`2.#ctor">
   Map()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L3998"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L4084"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -543,7 +549,7 @@ public Map()</code></pre>
 
   <h3 id="Java_Util_Map_2__ctor_System_Object___" data-uid="Java.Util.Map`2.#ctor(System.Object[])">
   Map(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L4003"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L4089"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -580,7 +586,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_BridgeClassName" data-uid="Java.Util.Map`2.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L4011"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L4098"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -612,7 +618,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_IsBridgeAbstract" data-uid="Java.Util.Map`2.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L4015"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L4102"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -644,7 +650,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_IsBridgeCloseable" data-uid="Java.Util.Map`2.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L4019"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L4106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -676,7 +682,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_IsBridgeInterface" data-uid="Java.Util.Map`2.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L4023"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L4110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -708,7 +714,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_IsBridgeStatic" data-uid="Java.Util.Map`2.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L4027"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/AllPackageClasses.cs/#L4114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -744,7 +750,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Clear" data-uid="Java.Util.Map`2.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L991"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1061"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#clear()">https://developer.android.com/reference/java/util/Map.html#clear()</a></p>
@@ -771,7 +777,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_ComputeIfAbsent__2__0_Java_Util_Function_Function___0___1__" data-uid="Java.Util.Map`2.ComputeIfAbsent``2(`0,Java.Util.Function.Function{``0,``1})">
   ComputeIfAbsent&lt;Arg1objectSuperK, Arg1ExtendsV&gt;(K, Function&lt;Arg1objectSuperK, Arg1ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1047"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)">https://developer.android.com/reference/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)</a></p>
@@ -822,7 +828,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_ComputeIfPresent__3__0_Java_Util_Function_BiFunction___0___1___2__" data-uid="Java.Util.Map`2.ComputeIfPresent``3(`0,Java.Util.Function.BiFunction{``0,``1,``2})">
   ComputeIfPresent&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV&gt;(K, BiFunction&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1060"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1130"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)">https://developer.android.com/reference/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)</a></p>
@@ -876,7 +882,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Compute__3__0_Java_Util_Function_BiFunction___0___1___2__" data-uid="Java.Util.Map`2.Compute``3(`0,Java.Util.Function.BiFunction{``0,``1,``2})">
   Compute&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV&gt;(K, BiFunction&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1035"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)">https://developer.android.com/reference/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)</a></p>
@@ -930,7 +936,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_ContainsKey_System_Object_" data-uid="Java.Util.Map`2.ContainsKey(System.Object)">
   ContainsKey(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L907"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L977"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#containsKey(java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#containsKey(java.lang.Object)</a></p>
@@ -969,7 +975,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_ContainsValue_System_Object_" data-uid="Java.Util.Map`2.ContainsValue(System.Object)">
   ContainsValue(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L916"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L986"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#containsValue(java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#containsValue(java.lang.Object)</a></p>
@@ -1008,7 +1014,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_CopyOf__2_Java_Util_Map___0___1__" data-uid="Java.Util.Map`2.CopyOf``2(Java.Util.Map{``0,``1})">
   CopyOf&lt;Arg0ExtendsK, Arg0ExtendsV&gt;(Map&lt;Arg0ExtendsK, Arg0ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L675"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L745"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#copyOf(java.util.Map)">https://developer.android.com/reference/java/util/Map.html#copyOf(java.util.Map)</a></p>
@@ -1056,7 +1062,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_EntryMethod__0__1_" data-uid="Java.Util.Map`2.EntryMethod(`0,`1)">
   EntryMethod(K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L894"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L964"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#entry(java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#entry(java.lang.Object,java.lang.Object)</a></p>
@@ -1098,7 +1104,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_EntrySet" data-uid="Java.Util.Map`2.EntrySet">
   EntrySet()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L948"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1018"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#entrySet()">https://developer.android.com/reference/java/util/Map.html#entrySet()</a></p>
@@ -1131,7 +1137,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_ForEach__2_Java_Util_Function_BiConsumer___0___1__" data-uid="Java.Util.Map`2.ForEach``2(Java.Util.Function.BiConsumer{``0,``1})">
   ForEach&lt;Arg0objectSuperK, Arg0objectSuperV&gt;(BiConsumer&lt;Arg0objectSuperK, Arg0objectSuperV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1183"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#forEach(java.util.function.BiConsumer)">https://developer.android.com/reference/java/util/Map.html#forEach(java.util.function.BiConsumer)</a></p>
@@ -1173,7 +1179,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Get_System_Object_" data-uid="Java.Util.Map`2.Get(System.Object)">
   Get(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L965"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1035"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#get(java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#get(java.lang.Object)</a></p>
@@ -1212,7 +1218,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_GetOrDefault_System_Object__1_" data-uid="Java.Util.Map`2.GetOrDefault(System.Object,`1)">
   GetOrDefault(object, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1070"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1140"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)</a></p>
@@ -1254,7 +1260,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_IsEmpty" data-uid="Java.Util.Map`2.IsEmpty">
   IsEmpty()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L924"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L994"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#isEmpty()">https://developer.android.com/reference/java/util/Map.html#isEmpty()</a></p>
@@ -1287,7 +1293,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_KeySet" data-uid="Java.Util.Map`2.KeySet">
   KeySet()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L956"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1026"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#keySet()">https://developer.android.com/reference/java/util/Map.html#keySet()</a></p>
@@ -1320,7 +1326,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Merge__2__0__1_Java_Util_Function_BiFunction___0___0___1__" data-uid="Java.Util.Map`2.Merge``2(`0,`1,Java.Util.Function.BiFunction{``0,``0,``1})">
   Merge&lt;Arg2objectSuperV, Arg2ExtendsV&gt;(K, V, BiFunction&lt;Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1083"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)">https://developer.android.com/reference/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)</a></p>
@@ -1374,7 +1380,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of" data-uid="Java.Util.Map`2.Of">
   Of()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L683"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L753"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#of()">https://developer.android.com/reference/java/util/Map.html#of()</a></p>
@@ -1407,7 +1413,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1)">
   Of(K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L873"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L943"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object)</a></p>
@@ -1449,7 +1455,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1)">
   Of(K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L863"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L933"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1497,7 +1503,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L851"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L921"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1551,7 +1557,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L837"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L907"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1611,7 +1617,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L821"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L891"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1677,7 +1683,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L803"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L873"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1749,7 +1755,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L783"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L853"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1827,7 +1833,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V, K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L761"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L831"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1911,7 +1917,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1__0__1__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V, K, V, K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L737"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L807"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -2001,7 +2007,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1__0__1__0__1__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V, K, V, K, V, K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L711"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L781"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -2097,7 +2103,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_OfEntries__2_Java_Util_Map_Entry___0___1____" data-uid="Java.Util.Map`2.OfEntries``2(Java.Util.Map.Entry{``0,``1}[])">
   OfEntries&lt;Arg0ExtendsK, Arg0ExtendsV&gt;(params Entry&lt;Arg0ExtendsK, Arg0ExtendsV&gt;[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L884"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L954"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#ofEntries(java.util.Map.Entry[])">https://developer.android.com/reference/java/util/Map.html#ofEntries(java.util.Map.Entry[])</a></p>
@@ -2145,7 +2151,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Put__0__1_" data-uid="Java.Util.Map`2.Put(`0,`1)">
   Put(K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L975"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1045"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#put(java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#put(java.lang.Object,java.lang.Object)</a></p>
@@ -2187,7 +2193,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_PutAll__2_Java_Util_Map___0___1__" data-uid="Java.Util.Map`2.PutAll``2(Java.Util.Map{``0,``1})">
   PutAll&lt;Arg0ExtendsK, Arg0ExtendsV&gt;(Map&lt;Arg0ExtendsK, Arg0ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1001"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1071"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#putAll(java.util.Map)">https://developer.android.com/reference/java/util/Map.html#putAll(java.util.Map)</a></p>
@@ -2229,7 +2235,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_PutIfAbsent__0__1_" data-uid="Java.Util.Map`2.PutIfAbsent(`0,`1)">
   PutIfAbsent(K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1093"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)</a></p>
@@ -2271,7 +2277,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Remove_System_Object_" data-uid="Java.Util.Map`2.Remove(System.Object)">
   Remove(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L984"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1054"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#remove(java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#remove(java.lang.Object)</a></p>
@@ -2310,7 +2316,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Remove_System_Object_System_Object_" data-uid="Java.Util.Map`2.Remove(System.Object,System.Object)">
   Remove(object, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1011"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1081"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#remove(java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#remove(java.lang.Object,java.lang.Object)</a></p>
@@ -2352,7 +2358,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Replace__0__1_" data-uid="Java.Util.Map`2.Replace(`0,`1)">
   Replace(K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#replace(java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#replace(java.lang.Object,java.lang.Object)</a></p>
@@ -2394,7 +2400,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Replace__0__1__1_" data-uid="Java.Util.Map`2.Replace(`0,`1,`1)">
   Replace(K, V, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1022"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1092"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)">https://developer.android.com/reference/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -2439,7 +2445,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_ReplaceAll__3_Java_Util_Function_BiFunction___0___1___2__" data-uid="Java.Util.Map`2.ReplaceAll``3(Java.Util.Function.BiFunction{``0,``1,``2})">
   ReplaceAll&lt;Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV&gt;(BiFunction&lt;Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#replaceAll(java.util.function.BiFunction)">https://developer.android.com/reference/java/util/Map.html#replaceAll(java.util.function.BiFunction)</a></p>
@@ -2484,7 +2490,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Size" data-uid="Java.Util.Map`2.Size">
   Size()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L932"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1002"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#size()">https://developer.android.com/reference/java/util/Map.html#size()</a></p>
@@ -2517,7 +2523,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Values" data-uid="Java.Util.Map`2.Values">
   Values()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L940"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L1010"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/Map.html#values()">https://developer.android.com/reference/java/util/Map.html#values()</a></p>
@@ -2554,7 +2560,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_op_Implicit_Java_Util_Map__0__1___Java_Util_Map" data-uid="Java.Util.Map`2.op_Implicit(Java.Util.Map{`0,`1})~Java.Util.Map">
   implicit operator Map(Map&lt;K, V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L659"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L729"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a> to <a class="xref" href="Java.Util.Map.html">Map</a></p>
@@ -2591,7 +2597,7 @@ public Map(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L649" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Map.cs/#L719" class="edit-link">Edit this page</a>
         </div>
 
 

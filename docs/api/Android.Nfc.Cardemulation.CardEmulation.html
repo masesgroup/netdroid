@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -563,7 +569,8 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static String ACTION_CHANGE_DEFAULT { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String ACTION_CHANGE_DEFAULT { get; }</code></pre>
   </div>
 
 
@@ -587,7 +594,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_BridgeClassName" data-uid="Android.Nfc.Cardemulation.CardEmulation.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/AllPackageClasses.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/AllPackageClasses.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -619,7 +626,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_CATEGORY_OTHER" data-uid="Android.Nfc.Cardemulation.CardEmulation.CATEGORY_OTHER">
   CATEGORY_OTHER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#CATEGORY_OTHER">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#CATEGORY_OTHER</a></p>
@@ -651,7 +658,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_CATEGORY_PAYMENT" data-uid="Android.Nfc.Cardemulation.CardEmulation.CATEGORY_PAYMENT">
   CATEGORY_PAYMENT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#CATEGORY_PAYMENT">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#CATEGORY_PAYMENT</a></p>
@@ -683,7 +690,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_EXTRA_CATEGORY" data-uid="Android.Nfc.Cardemulation.CardEmulation.EXTRA_CATEGORY">
   EXTRA_CATEGORY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#EXTRA_CATEGORY">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#EXTRA_CATEGORY</a></p>
@@ -715,7 +722,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_EXTRA_SERVICE_COMPONENT" data-uid="Android.Nfc.Cardemulation.CardEmulation.EXTRA_SERVICE_COMPONENT">
   EXTRA_SERVICE_COMPONENT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#EXTRA_SERVICE_COMPONENT">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#EXTRA_SERVICE_COMPONENT</a></p>
@@ -747,7 +754,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_IsBridgeAbstract" data-uid="Android.Nfc.Cardemulation.CardEmulation.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/AllPackageClasses.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/AllPackageClasses.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -779,7 +786,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_IsBridgeCloseable" data-uid="Android.Nfc.Cardemulation.CardEmulation.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/AllPackageClasses.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/AllPackageClasses.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -811,7 +818,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_IsBridgeInterface" data-uid="Android.Nfc.Cardemulation.CardEmulation.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/AllPackageClasses.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/AllPackageClasses.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -843,7 +850,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_IsBridgeStatic" data-uid="Android.Nfc.Cardemulation.CardEmulation.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/AllPackageClasses.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/AllPackageClasses.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -975,7 +982,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_CategoryAllowsForegroundPreference_Java_Lang_String_" data-uid="Android.Nfc.Cardemulation.CardEmulation.CategoryAllowsForegroundPreference(Java.Lang.String)">
   CategoryAllowsForegroundPreference(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#categoryAllowsForegroundPreference(java.lang.String)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#categoryAllowsForegroundPreference(java.lang.String)</a></p>
@@ -1014,7 +1021,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_GetAidsForPreferredPaymentService" data-uid="Android.Nfc.Cardemulation.CardEmulation.GetAidsForPreferredPaymentService">
   GetAidsForPreferredPaymentService()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L283"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getAidsForPreferredPaymentService()">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getAidsForPreferredPaymentService()</a></p>
@@ -1047,7 +1054,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_GetAidsForService_Android_Content_ComponentName_Java_Lang_String_" data-uid="Android.Nfc.Cardemulation.CardEmulation.GetAidsForService(Android.Content.ComponentName,Java.Lang.String)">
   GetAidsForService(ComponentName, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L293"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getAidsForService(android.content.ComponentName,java.lang.String)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getAidsForService(android.content.ComponentName,java.lang.String)</a></p>
@@ -1089,7 +1096,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_GetDescriptionForPreferredPaymentService" data-uid="Android.Nfc.Cardemulation.CardEmulation.GetDescriptionForPreferredPaymentService">
   GetDescriptionForPreferredPaymentService()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L267"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getDescriptionForPreferredPaymentService()">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getDescriptionForPreferredPaymentService()</a></p>
@@ -1122,7 +1129,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_GetInstance_Android_Nfc_NfcAdapter_" data-uid="Android.Nfc.Cardemulation.CardEmulation.GetInstance(Android.Nfc.NfcAdapter)">
   GetInstance(NfcAdapter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getInstance(android.nfc.NfcAdapter)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getInstance(android.nfc.NfcAdapter)</a></p>
@@ -1161,7 +1168,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_GetRouteDestinationForPreferredPaymentService" data-uid="Android.Nfc.Cardemulation.CardEmulation.GetRouteDestinationForPreferredPaymentService">
   GetRouteDestinationForPreferredPaymentService()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getRouteDestinationForPreferredPaymentService()">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getRouteDestinationForPreferredPaymentService()</a></p>
@@ -1194,7 +1201,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_GetSelectionModeForCategory_Java_Lang_String_" data-uid="Android.Nfc.Cardemulation.CardEmulation.GetSelectionModeForCategory(Java.Lang.String)">
   GetSelectionModeForCategory(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getSelectionModeForCategory(java.lang.String)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#getSelectionModeForCategory(java.lang.String)</a></p>
@@ -1233,7 +1240,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_IsDefaultServiceForAid_Android_Content_ComponentName_Java_Lang_String_" data-uid="Android.Nfc.Cardemulation.CardEmulation.IsDefaultServiceForAid(Android.Content.ComponentName,Java.Lang.String)">
   IsDefaultServiceForAid(ComponentName, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#isDefaultServiceForAid(android.content.ComponentName,java.lang.String)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#isDefaultServiceForAid(android.content.ComponentName,java.lang.String)</a></p>
@@ -1275,7 +1282,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_IsDefaultServiceForCategory_Android_Content_ComponentName_Java_Lang_String_" data-uid="Android.Nfc.Cardemulation.CardEmulation.IsDefaultServiceForCategory(Android.Content.ComponentName,Java.Lang.String)">
   IsDefaultServiceForCategory(ComponentName, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#isDefaultServiceForCategory(android.content.ComponentName,java.lang.String)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#isDefaultServiceForCategory(android.content.ComponentName,java.lang.String)</a></p>
@@ -1317,7 +1324,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_RegisterAidsForService_Android_Content_ComponentName_Java_Lang_String_Java_Util_List_Java_Lang_String__" data-uid="Android.Nfc.Cardemulation.CardEmulation.RegisterAidsForService(Android.Content.ComponentName,Java.Lang.String,Java.Util.List{Java.Lang.String})">
   RegisterAidsForService(ComponentName, String, List&lt;String&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#registerAidsForService(android.content.ComponentName,java.lang.String,java.util.List)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#registerAidsForService(android.content.ComponentName,java.lang.String,java.util.List)</a></p>
@@ -1358,11 +1365,101 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
 
 
+  <a id="Android_Nfc_Cardemulation_CardEmulation_RegisterPollingLoopFilterForService_" data-uid="Android.Nfc.Cardemulation.CardEmulation.RegisterPollingLoopFilterForService*"></a>
+
+  <h3 id="Android_Nfc_Cardemulation_CardEmulation_RegisterPollingLoopFilterForService_Android_Content_ComponentName_Java_Lang_String_System_Boolean_" data-uid="Android.Nfc.Cardemulation.CardEmulation.RegisterPollingLoopFilterForService(Android.Content.ComponentName,Java.Lang.String,System.Boolean)">
+  RegisterPollingLoopFilterForService(ComponentName, String, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#registerPollingLoopFilterForService(android.content.ComponentName,java.lang.String,boolean)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#registerPollingLoopFilterForService(android.content.ComponentName,java.lang.String,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterPollingLoopFilterForService(ComponentName arg0, String arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_Cardemulation_CardEmulation_RegisterPollingLoopPatternFilterForService_" data-uid="Android.Nfc.Cardemulation.CardEmulation.RegisterPollingLoopPatternFilterForService*"></a>
+
+  <h3 id="Android_Nfc_Cardemulation_CardEmulation_RegisterPollingLoopPatternFilterForService_Android_Content_ComponentName_Java_Lang_String_System_Boolean_" data-uid="Android.Nfc.Cardemulation.CardEmulation.RegisterPollingLoopPatternFilterForService(Android.Content.ComponentName,Java.Lang.String,System.Boolean)">
+  RegisterPollingLoopPatternFilterForService(ComponentName, String, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#registerPollingLoopPatternFilterForService(android.content.ComponentName,java.lang.String,boolean)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#registerPollingLoopPatternFilterForService(android.content.ComponentName,java.lang.String,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterPollingLoopPatternFilterForService(ComponentName arg0, String arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Nfc_Cardemulation_CardEmulation_RemoveAidsForService_" data-uid="Android.Nfc.Cardemulation.CardEmulation.RemoveAidsForService*"></a>
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_RemoveAidsForService_Android_Content_ComponentName_Java_Lang_String_" data-uid="Android.Nfc.Cardemulation.CardEmulation.RemoveAidsForService(Android.Content.ComponentName,Java.Lang.String)">
   RemoveAidsForService(ComponentName, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#removeAidsForService(android.content.ComponentName,java.lang.String)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#removeAidsForService(android.content.ComponentName,java.lang.String)</a></p>
@@ -1400,11 +1497,95 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
 
 
+  <a id="Android_Nfc_Cardemulation_CardEmulation_RemovePollingLoopFilterForService_" data-uid="Android.Nfc.Cardemulation.CardEmulation.RemovePollingLoopFilterForService*"></a>
+
+  <h3 id="Android_Nfc_Cardemulation_CardEmulation_RemovePollingLoopFilterForService_Android_Content_ComponentName_Java_Lang_String_" data-uid="Android.Nfc.Cardemulation.CardEmulation.RemovePollingLoopFilterForService(Android.Content.ComponentName,Java.Lang.String)">
+  RemovePollingLoopFilterForService(ComponentName, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#removePollingLoopFilterForService(android.content.ComponentName,java.lang.String)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#removePollingLoopFilterForService(android.content.ComponentName,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemovePollingLoopFilterForService(ComponentName arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_Cardemulation_CardEmulation_RemovePollingLoopPatternFilterForService_" data-uid="Android.Nfc.Cardemulation.CardEmulation.RemovePollingLoopPatternFilterForService*"></a>
+
+  <h3 id="Android_Nfc_Cardemulation_CardEmulation_RemovePollingLoopPatternFilterForService_Android_Content_ComponentName_Java_Lang_String_" data-uid="Android.Nfc.Cardemulation.CardEmulation.RemovePollingLoopPatternFilterForService(Android.Content.ComponentName,Java.Lang.String)">
+  RemovePollingLoopPatternFilterForService(ComponentName, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#removePollingLoopPatternFilterForService(android.content.ComponentName,java.lang.String)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#removePollingLoopPatternFilterForService(android.content.ComponentName,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemovePollingLoopPatternFilterForService(ComponentName arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Nfc_Cardemulation_CardEmulation_SetOffHostForService_" data-uid="Android.Nfc.Cardemulation.CardEmulation.SetOffHostForService*"></a>
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_SetOffHostForService_Android_Content_ComponentName_Java_Lang_String_" data-uid="Android.Nfc.Cardemulation.CardEmulation.SetOffHostForService(Android.Content.ComponentName,Java.Lang.String)">
   SetOffHostForService(ComponentName, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#setOffHostForService(android.content.ComponentName,java.lang.String)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#setOffHostForService(android.content.ComponentName,java.lang.String)</a></p>
@@ -1446,7 +1627,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_SetPreferredService_Android_App_Activity_Android_Content_ComponentName_" data-uid="Android.Nfc.Cardemulation.CardEmulation.SetPreferredService(Android.App.Activity,Android.Content.ComponentName)">
   SetPreferredService(Activity, ComponentName)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#setPreferredService(android.app.Activity,android.content.ComponentName)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#setPreferredService(android.app.Activity,android.content.ComponentName)</a></p>
@@ -1484,11 +1665,53 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
 
 
+  <a id="Android_Nfc_Cardemulation_CardEmulation_SetShouldDefaultToObserveModeForService_" data-uid="Android.Nfc.Cardemulation.CardEmulation.SetShouldDefaultToObserveModeForService*"></a>
+
+  <h3 id="Android_Nfc_Cardemulation_CardEmulation_SetShouldDefaultToObserveModeForService_Android_Content_ComponentName_System_Boolean_" data-uid="Android.Nfc.Cardemulation.CardEmulation.SetShouldDefaultToObserveModeForService(Android.Content.ComponentName,System.Boolean)">
+  SetShouldDefaultToObserveModeForService(ComponentName, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#setShouldDefaultToObserveModeForService(android.content.ComponentName,boolean)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#setShouldDefaultToObserveModeForService(android.content.ComponentName,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetShouldDefaultToObserveModeForService(ComponentName arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Nfc_Cardemulation_CardEmulation_SupportsAidPrefixRegistration_" data-uid="Android.Nfc.Cardemulation.CardEmulation.SupportsAidPrefixRegistration*"></a>
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_SupportsAidPrefixRegistration" data-uid="Android.Nfc.Cardemulation.CardEmulation.SupportsAidPrefixRegistration">
   SupportsAidPrefixRegistration()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#supportsAidPrefixRegistration()">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#supportsAidPrefixRegistration()</a></p>
@@ -1521,7 +1744,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_UnsetOffHostForService_Android_Content_ComponentName_" data-uid="Android.Nfc.Cardemulation.CardEmulation.UnsetOffHostForService(Android.Content.ComponentName)">
   UnsetOffHostForService(ComponentName)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#unsetOffHostForService(android.content.ComponentName)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#unsetOffHostForService(android.content.ComponentName)</a></p>
@@ -1560,7 +1783,7 @@ Class CardEmulation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="Android_Nfc_Cardemulation_CardEmulation_UnsetPreferredService_Android_App_Activity_" data-uid="Android.Nfc.Cardemulation.CardEmulation.UnsetPreferredService(Android.App.Activity)">
   UnsetPreferredService(Activity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/Cardemulation/CardEmulation.cs/#L250"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#unsetPreferredService(android.app.Activity)">https://developer.android.com/reference/android/nfc/cardemulation/CardEmulation.html#unsetPreferredService(android.app.Activity)</a></p>

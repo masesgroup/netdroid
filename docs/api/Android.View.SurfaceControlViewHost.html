@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Android_View_SurfaceControlViewHost__ctor" data-uid="Android.View.SurfaceControlViewHost.#ctor">
   SurfaceControlViewHost()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4262"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4548"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -556,9 +562,48 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
 
   <a id="Android_View_SurfaceControlViewHost__ctor_" data-uid="Android.View.SurfaceControlViewHost.#ctor*"></a>
 
+  <h3 id="Android_View_SurfaceControlViewHost__ctor_Android_Content_Context_Android_View_Display_Android_Window_InputTransferToken_" data-uid="Android.View.SurfaceControlViewHost.#ctor(Android.Content.Context,Android.View.Display,Android.Window.InputTransferToken)">
+  SurfaceControlViewHost(Context, Display, InputTransferToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControlViewHost.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#%3Cinit%3E(android.content.Context,android.view.Display,android.window.InputTransferToken)">https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#%3Cinit%3E(android.content.Context,android.view.Display,android.window.InputTransferToken)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SurfaceControlViewHost(Context arg0, Display arg1, InputTransferToken arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.Display.html">Display</a></dt>
+    <dd><p><a class="xref" href="Android.View.Display.html">Display</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Window.InputTransferToken.html">InputTransferToken</a></dt>
+    <dd><p><a class="xref" href="Android.Window.InputTransferToken.html">InputTransferToken</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_View_SurfaceControlViewHost__ctor_" data-uid="Android.View.SurfaceControlViewHost.#ctor*"></a>
+
   <h3 id="Android_View_SurfaceControlViewHost__ctor_System_Object___" data-uid="Android.View.SurfaceControlViewHost.#ctor(System.Object[])">
   SurfaceControlViewHost(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4552"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -594,7 +639,7 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Android_View_SurfaceControlViewHost_BridgeClassName" data-uid="Android.View.SurfaceControlViewHost.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4273"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4560"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -626,7 +671,7 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Android_View_SurfaceControlViewHost_IsBridgeAbstract" data-uid="Android.View.SurfaceControlViewHost.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4277"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4564"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -658,7 +703,7 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Android_View_SurfaceControlViewHost_IsBridgeCloseable" data-uid="Android.View.SurfaceControlViewHost.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4281"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4568"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -690,7 +735,7 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Android_View_SurfaceControlViewHost_IsBridgeInterface" data-uid="Android.View.SurfaceControlViewHost.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4572"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -722,7 +767,7 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Android_View_SurfaceControlViewHost_IsBridgeStatic" data-uid="Android.View.SurfaceControlViewHost.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4289"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/AllPackageClasses.cs/#L4576"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -758,7 +803,7 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Android_View_SurfaceControlViewHost_GetSurfacePackage" data-uid="Android.View.SurfaceControlViewHost.GetSurfacePackage">
   GetSurfacePackage()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControlViewHost.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControlViewHost.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#getSurfacePackage()">https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#getSurfacePackage()</a></p>
@@ -791,7 +836,7 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Android_View_SurfaceControlViewHost_GetView" data-uid="Android.View.SurfaceControlViewHost.GetView">
   GetView()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControlViewHost.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControlViewHost.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#getView()">https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#getView()</a></p>
@@ -824,7 +869,7 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Android_View_SurfaceControlViewHost_Relayout_System_Int32_System_Int32_" data-uid="Android.View.SurfaceControlViewHost.Relayout(System.Int32,System.Int32)">
   Relayout(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControlViewHost.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControlViewHost.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#relayout(int,int)">https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#relayout(int,int)</a></p>
@@ -860,7 +905,7 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Android_View_SurfaceControlViewHost_Release" data-uid="Android.View.SurfaceControlViewHost.Release">
   Release()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControlViewHost.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControlViewHost.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#release()">https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#release()</a></p>
@@ -887,7 +932,7 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Android_View_SurfaceControlViewHost_SetView_Android_View_View_System_Int32_System_Int32_" data-uid="Android.View.SurfaceControlViewHost.SetView(Android.View.View,System.Int32,System.Int32)">
   SetView(View, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControlViewHost.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControlViewHost.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#setView(android.view.View,int,int)">https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#setView(android.view.View,int,int)</a></p>
@@ -926,7 +971,7 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
 
   <h3 id="Android_View_SurfaceControlViewHost_TransferTouchGestureToHost" data-uid="Android.View.SurfaceControlViewHost.TransferTouchGestureToHost">
   TransferTouchGestureToHost()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControlViewHost.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/View/SurfaceControlViewHost.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#transferTouchGestureToHost()">https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#transferTouchGestureToHost()</a></p>
@@ -934,7 +979,8 @@ Class SurfaceControlViewHost  <a class="header-action link-secondary" title="Vie
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TransferTouchGestureToHost()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool TransferTouchGestureToHost()</code></pre>
   </div>
 
 

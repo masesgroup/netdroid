@@ -1,0 +1,2185 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class EditingEndedEvent | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EditingEndedEvent | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_Metrics_EditingEndedEvent.md&amp;value=---%0Auid%3A%20Android.Media.Metrics.EditingEndedEvent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.Metrics.EditingEndedEvent">
+
+
+
+  <h1 id="Android_Media_Metrics_EditingEndedEvent" data-uid="Android.Media.Metrics.EditingEndedEvent" class="text-break">
+Class EditingEndedEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a>.<a class="xref" href="Android.Media.Metrics.html">Metrics</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EditingEndedEvent : Event, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Media.Metrics.Event.html">Event</a>&gt;</div>
+      <div><a class="xref" href="Android.Media.Metrics.Event.html">Event</a></div>
+      <div><span class="xref">EditingEndedEvent</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Media.Metrics.Event.html#Android_Media_Metrics_Event_GetMetricsBundle">Event.GetMetricsBundle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Metrics.Event.html#Android_Media_Metrics_Event_GetTimeSinceCreatedMillis">Event.GetTimeSinceCreatedMillis()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Event&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Event&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Event&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Event&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Event&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Event&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Event&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Event&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Event&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Event&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Event&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Event&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Event&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent__ctor_" data-uid="Android.Media.Metrics.EditingEndedEvent.#ctor*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent__ctor" data-uid="Android.Media.Metrics.EditingEndedEvent.#ctor">
+  EditingEndedEvent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/AllPackageClasses.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditingEndedEvent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent__ctor_" data-uid="Android.Media.Metrics.EditingEndedEvent.#ctor*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent__ctor_System_Object___" data-uid="Android.Media.Metrics.EditingEndedEvent.#ctor(System.Object[])">
+  EditingEndedEvent(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/AllPackageClasses.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditingEndedEvent(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_BridgeClassName_" data-uid="Android.Media.Metrics.EditingEndedEvent.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_BridgeClassName" data-uid="Android.Media.Metrics.EditingEndedEvent.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/AllPackageClasses.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_CREATOR_" data-uid="Android.Media.Metrics.EditingEndedEvent.CREATOR*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_CREATOR" data-uid="Android.Media.Metrics.EditingEndedEvent.CREATOR">
+  CREATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#CREATOR">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#CREATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>.<a class="xref" href="Android.Os.Parcelable.Creator.html">Creator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_AUDIO_PROCESSING_FAILED_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_AUDIO_PROCESSING_FAILED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_AUDIO_PROCESSING_FAILED" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_AUDIO_PROCESSING_FAILED">
+  ERROR_CODE_AUDIO_PROCESSING_FAILED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_AUDIO_PROCESSING_FAILED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_AUDIO_PROCESSING_FAILED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_AUDIO_PROCESSING_FAILED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_DECODER_INIT_FAILED_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_DECODER_INIT_FAILED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_DECODER_INIT_FAILED" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_DECODER_INIT_FAILED">
+  ERROR_CODE_DECODER_INIT_FAILED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_DECODER_INIT_FAILED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_DECODER_INIT_FAILED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_DECODER_INIT_FAILED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_DECODING_FAILED_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_DECODING_FAILED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_DECODING_FAILED" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_DECODING_FAILED">
+  ERROR_CODE_DECODING_FAILED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_DECODING_FAILED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_DECODING_FAILED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_DECODING_FAILED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_DECODING_FORMAT_UNSUPPORTED_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_DECODING_FORMAT_UNSUPPORTED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_DECODING_FORMAT_UNSUPPORTED" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_DECODING_FORMAT_UNSUPPORTED">
+  ERROR_CODE_DECODING_FORMAT_UNSUPPORTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_DECODING_FORMAT_UNSUPPORTED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_DECODING_FORMAT_UNSUPPORTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_DECODING_FORMAT_UNSUPPORTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_ENCODER_INIT_FAILED_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_ENCODER_INIT_FAILED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_ENCODER_INIT_FAILED" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_ENCODER_INIT_FAILED">
+  ERROR_CODE_ENCODER_INIT_FAILED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_ENCODER_INIT_FAILED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_ENCODER_INIT_FAILED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_ENCODER_INIT_FAILED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_ENCODING_FAILED_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_ENCODING_FAILED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_ENCODING_FAILED" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_ENCODING_FAILED">
+  ERROR_CODE_ENCODING_FAILED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_ENCODING_FAILED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_ENCODING_FAILED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_ENCODING_FAILED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_ENCODING_FORMAT_UNSUPPORTED_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_ENCODING_FORMAT_UNSUPPORTED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_ENCODING_FORMAT_UNSUPPORTED" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_ENCODING_FORMAT_UNSUPPORTED">
+  ERROR_CODE_ENCODING_FORMAT_UNSUPPORTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_ENCODING_FORMAT_UNSUPPORTED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_ENCODING_FORMAT_UNSUPPORTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_ENCODING_FORMAT_UNSUPPORTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_FAILED_RUNTIME_CHECK_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_FAILED_RUNTIME_CHECK*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_FAILED_RUNTIME_CHECK" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_FAILED_RUNTIME_CHECK">
+  ERROR_CODE_FAILED_RUNTIME_CHECK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_FAILED_RUNTIME_CHECK">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_FAILED_RUNTIME_CHECK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_FAILED_RUNTIME_CHECK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_BAD_HTTP_STATUS_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_BAD_HTTP_STATUS*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_BAD_HTTP_STATUS" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_BAD_HTTP_STATUS">
+  ERROR_CODE_IO_BAD_HTTP_STATUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_BAD_HTTP_STATUS">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_BAD_HTTP_STATUS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_IO_BAD_HTTP_STATUS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_CLEARTEXT_NOT_PERMITTED_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_CLEARTEXT_NOT_PERMITTED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_CLEARTEXT_NOT_PERMITTED" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_CLEARTEXT_NOT_PERMITTED">
+  ERROR_CODE_IO_CLEARTEXT_NOT_PERMITTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_CLEARTEXT_NOT_PERMITTED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_CLEARTEXT_NOT_PERMITTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_IO_CLEARTEXT_NOT_PERMITTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_FILE_NOT_FOUND_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_FILE_NOT_FOUND*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_FILE_NOT_FOUND" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_FILE_NOT_FOUND">
+  ERROR_CODE_IO_FILE_NOT_FOUND
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_FILE_NOT_FOUND">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_FILE_NOT_FOUND</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_IO_FILE_NOT_FOUND { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_NETWORK_CONNECTION_FAILED_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_NETWORK_CONNECTION_FAILED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_NETWORK_CONNECTION_FAILED" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_NETWORK_CONNECTION_FAILED">
+  ERROR_CODE_IO_NETWORK_CONNECTION_FAILED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_NETWORK_CONNECTION_FAILED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_NETWORK_CONNECTION_FAILED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_IO_NETWORK_CONNECTION_FAILED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_NETWORK_CONNECTION_TIMEOUT_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_NETWORK_CONNECTION_TIMEOUT*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_NETWORK_CONNECTION_TIMEOUT" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_NETWORK_CONNECTION_TIMEOUT">
+  ERROR_CODE_IO_NETWORK_CONNECTION_TIMEOUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_NETWORK_CONNECTION_TIMEOUT">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_NETWORK_CONNECTION_TIMEOUT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_IO_NETWORK_CONNECTION_TIMEOUT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_NO_PERMISSION_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_NO_PERMISSION*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_NO_PERMISSION" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_NO_PERMISSION">
+  ERROR_CODE_IO_NO_PERMISSION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_NO_PERMISSION">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_NO_PERMISSION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_IO_NO_PERMISSION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_READ_POSITION_OUT_OF_RANGE_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_READ_POSITION_OUT_OF_RANGE*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_READ_POSITION_OUT_OF_RANGE" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_READ_POSITION_OUT_OF_RANGE">
+  ERROR_CODE_IO_READ_POSITION_OUT_OF_RANGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_READ_POSITION_OUT_OF_RANGE">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_READ_POSITION_OUT_OF_RANGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_IO_READ_POSITION_OUT_OF_RANGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_UNSPECIFIED_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_UNSPECIFIED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_IO_UNSPECIFIED" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_IO_UNSPECIFIED">
+  ERROR_CODE_IO_UNSPECIFIED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_UNSPECIFIED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_IO_UNSPECIFIED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_IO_UNSPECIFIED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_MUXING_FAILED_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_MUXING_FAILED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_MUXING_FAILED" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_MUXING_FAILED">
+  ERROR_CODE_MUXING_FAILED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_MUXING_FAILED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_MUXING_FAILED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_MUXING_FAILED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_NONE_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_NONE*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_NONE" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_NONE">
+  ERROR_CODE_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_NONE">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_VIDEO_FRAME_PROCESSING_FAILED_" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_VIDEO_FRAME_PROCESSING_FAILED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_ERROR_CODE_VIDEO_FRAME_PROCESSING_FAILED" data-uid="Android.Media.Metrics.EditingEndedEvent.ERROR_CODE_VIDEO_FRAME_PROCESSING_FAILED">
+  ERROR_CODE_VIDEO_FRAME_PROCESSING_FAILED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_VIDEO_FRAME_PROCESSING_FAILED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#ERROR_CODE_VIDEO_FRAME_PROCESSING_FAILED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_CODE_VIDEO_FRAME_PROCESSING_FAILED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_FINAL_STATE_CANCELED_" data-uid="Android.Media.Metrics.EditingEndedEvent.FINAL_STATE_CANCELED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_FINAL_STATE_CANCELED" data-uid="Android.Media.Metrics.EditingEndedEvent.FINAL_STATE_CANCELED">
+  FINAL_STATE_CANCELED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#FINAL_STATE_CANCELED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#FINAL_STATE_CANCELED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FINAL_STATE_CANCELED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_FINAL_STATE_ERROR_" data-uid="Android.Media.Metrics.EditingEndedEvent.FINAL_STATE_ERROR*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_FINAL_STATE_ERROR" data-uid="Android.Media.Metrics.EditingEndedEvent.FINAL_STATE_ERROR">
+  FINAL_STATE_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#FINAL_STATE_ERROR">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#FINAL_STATE_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FINAL_STATE_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_FINAL_STATE_SUCCEEDED_" data-uid="Android.Media.Metrics.EditingEndedEvent.FINAL_STATE_SUCCEEDED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_FINAL_STATE_SUCCEEDED" data-uid="Android.Media.Metrics.EditingEndedEvent.FINAL_STATE_SUCCEEDED">
+  FINAL_STATE_SUCCEEDED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#FINAL_STATE_SUCCEEDED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#FINAL_STATE_SUCCEEDED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FINAL_STATE_SUCCEEDED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_IsBridgeAbstract_" data-uid="Android.Media.Metrics.EditingEndedEvent.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_IsBridgeAbstract" data-uid="Android.Media.Metrics.EditingEndedEvent.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/AllPackageClasses.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_IsBridgeCloseable_" data-uid="Android.Media.Metrics.EditingEndedEvent.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_IsBridgeCloseable" data-uid="Android.Media.Metrics.EditingEndedEvent.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/AllPackageClasses.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_IsBridgeInterface_" data-uid="Android.Media.Metrics.EditingEndedEvent.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_IsBridgeInterface" data-uid="Android.Media.Metrics.EditingEndedEvent.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/AllPackageClasses.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_IsBridgeStatic_" data-uid="Android.Media.Metrics.EditingEndedEvent.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_IsBridgeStatic" data-uid="Android.Media.Metrics.EditingEndedEvent.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/AllPackageClasses.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_AUDIO_EDIT_" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_AUDIO_EDIT*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_AUDIO_EDIT" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_AUDIO_EDIT">
+  OPERATION_TYPE_AUDIO_EDIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_AUDIO_EDIT">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_AUDIO_EDIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long OPERATION_TYPE_AUDIO_EDIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_AUDIO_TRANSCODE_" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_AUDIO_TRANSCODE*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_AUDIO_TRANSCODE" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_AUDIO_TRANSCODE">
+  OPERATION_TYPE_AUDIO_TRANSCODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_AUDIO_TRANSCODE">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_AUDIO_TRANSCODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long OPERATION_TYPE_AUDIO_TRANSCODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_AUDIO_TRANSMUX_" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_AUDIO_TRANSMUX*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_AUDIO_TRANSMUX" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_AUDIO_TRANSMUX">
+  OPERATION_TYPE_AUDIO_TRANSMUX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_AUDIO_TRANSMUX">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_AUDIO_TRANSMUX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long OPERATION_TYPE_AUDIO_TRANSMUX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_PAUSED_" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_PAUSED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_PAUSED" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_PAUSED">
+  OPERATION_TYPE_PAUSED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_PAUSED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_PAUSED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long OPERATION_TYPE_PAUSED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_RESUMED_" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_RESUMED*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_RESUMED" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_RESUMED">
+  OPERATION_TYPE_RESUMED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_RESUMED">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_RESUMED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long OPERATION_TYPE_RESUMED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_VIDEO_EDIT_" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_VIDEO_EDIT*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_VIDEO_EDIT" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_VIDEO_EDIT">
+  OPERATION_TYPE_VIDEO_EDIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_VIDEO_EDIT">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_VIDEO_EDIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long OPERATION_TYPE_VIDEO_EDIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_VIDEO_TRANSCODE_" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_VIDEO_TRANSCODE*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_VIDEO_TRANSCODE" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_VIDEO_TRANSCODE">
+  OPERATION_TYPE_VIDEO_TRANSCODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_VIDEO_TRANSCODE">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_VIDEO_TRANSCODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long OPERATION_TYPE_VIDEO_TRANSCODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_VIDEO_TRANSMUX_" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_VIDEO_TRANSMUX*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_OPERATION_TYPE_VIDEO_TRANSMUX" data-uid="Android.Media.Metrics.EditingEndedEvent.OPERATION_TYPE_VIDEO_TRANSMUX">
+  OPERATION_TYPE_VIDEO_TRANSMUX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_VIDEO_TRANSMUX">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#OPERATION_TYPE_VIDEO_TRANSMUX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long OPERATION_TYPE_VIDEO_TRANSMUX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_PROGRESS_PERCENT_UNKNOWN_" data-uid="Android.Media.Metrics.EditingEndedEvent.PROGRESS_PERCENT_UNKNOWN*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_PROGRESS_PERCENT_UNKNOWN" data-uid="Android.Media.Metrics.EditingEndedEvent.PROGRESS_PERCENT_UNKNOWN">
+  PROGRESS_PERCENT_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#PROGRESS_PERCENT_UNKNOWN">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#PROGRESS_PERCENT_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PROGRESS_PERCENT_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_TIME_SINCE_CREATED_UNKNOWN_" data-uid="Android.Media.Metrics.EditingEndedEvent.TIME_SINCE_CREATED_UNKNOWN*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_TIME_SINCE_CREATED_UNKNOWN" data-uid="Android.Media.Metrics.EditingEndedEvent.TIME_SINCE_CREATED_UNKNOWN">
+  TIME_SINCE_CREATED_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#TIME_SINCE_CREATED_UNKNOWN">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#TIME_SINCE_CREATED_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TIME_SINCE_CREATED_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_DescribeContents_" data-uid="Android.Media.Metrics.EditingEndedEvent.DescribeContents*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_DescribeContents" data-uid="Android.Media.Metrics.EditingEndedEvent.DescribeContents">
+  DescribeContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#describeContents()">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#describeContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_GetErrorCode_" data-uid="Android.Media.Metrics.EditingEndedEvent.GetErrorCode*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_GetErrorCode" data-uid="Android.Media.Metrics.EditingEndedEvent.GetErrorCode">
+  GetErrorCode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getErrorCode()">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getErrorCode()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetErrorCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_GetExporterName_" data-uid="Android.Media.Metrics.EditingEndedEvent.GetExporterName*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_GetExporterName" data-uid="Android.Media.Metrics.EditingEndedEvent.GetExporterName">
+  GetExporterName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getExporterName()">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getExporterName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetExporterName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_GetFinalProgressPercent_" data-uid="Android.Media.Metrics.EditingEndedEvent.GetFinalProgressPercent*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_GetFinalProgressPercent" data-uid="Android.Media.Metrics.EditingEndedEvent.GetFinalProgressPercent">
+  GetFinalProgressPercent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getFinalProgressPercent()">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getFinalProgressPercent()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFinalProgressPercent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_GetFinalState_" data-uid="Android.Media.Metrics.EditingEndedEvent.GetFinalState*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_GetFinalState" data-uid="Android.Media.Metrics.EditingEndedEvent.GetFinalState">
+  GetFinalState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getFinalState()">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getFinalState()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFinalState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_GetInputMediaItemInfos_" data-uid="Android.Media.Metrics.EditingEndedEvent.GetInputMediaItemInfos*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_GetInputMediaItemInfos" data-uid="Android.Media.Metrics.EditingEndedEvent.GetInputMediaItemInfos">
+  GetInputMediaItemInfos()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getInputMediaItemInfos()">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getInputMediaItemInfos()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MediaItemInfo&gt; GetInputMediaItemInfos()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Media.Metrics.MediaItemInfo.html">MediaItemInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_GetMuxerName_" data-uid="Android.Media.Metrics.EditingEndedEvent.GetMuxerName*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_GetMuxerName" data-uid="Android.Media.Metrics.EditingEndedEvent.GetMuxerName">
+  GetMuxerName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getMuxerName()">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getMuxerName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetMuxerName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_GetOperationTypes_" data-uid="Android.Media.Metrics.EditingEndedEvent.GetOperationTypes*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_GetOperationTypes" data-uid="Android.Media.Metrics.EditingEndedEvent.GetOperationTypes">
+  GetOperationTypes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getOperationTypes()">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getOperationTypes()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetOperationTypes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_GetOutputMediaItemInfo_" data-uid="Android.Media.Metrics.EditingEndedEvent.GetOutputMediaItemInfo*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_GetOutputMediaItemInfo" data-uid="Android.Media.Metrics.EditingEndedEvent.GetOutputMediaItemInfo">
+  GetOutputMediaItemInfo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getOutputMediaItemInfo()">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#getOutputMediaItemInfo()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaItemInfo GetOutputMediaItemInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Metrics.MediaItemInfo.html">MediaItemInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Metrics.MediaItemInfo.html">MediaItemInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_WriteToParcel_" data-uid="Android.Media.Metrics.EditingEndedEvent.WriteToParcel*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Media.Metrics.EditingEndedEvent.WriteToParcel(Android.Os.Parcel,System.Int32)">
+  WriteToParcel(Parcel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/media/metrics/EditingEndedEvent.html#writeToParcel(android.os.Parcel,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Android_Media_Metrics_EditingEndedEvent_op_Implicit_" data-uid="Android.Media.Metrics.EditingEndedEvent.op_Implicit*"></a>
+
+  <h3 id="Android_Media_Metrics_EditingEndedEvent_op_Implicit_Android_Media_Metrics_EditingEndedEvent__Android_Os_Parcelable" data-uid="Android.Media.Metrics.EditingEndedEvent.op_Implicit(Android.Media.Metrics.EditingEndedEvent)~Android.Os.Parcelable">
+  implicit operator Parcelable(EditingEndedEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Media.Metrics.EditingEndedEvent.html">EditingEndedEvent</a> to <a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Parcelable(EditingEndedEvent t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Media.Metrics.EditingEndedEvent.html">EditingEndedEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Metrics/EditingEndedEvent.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

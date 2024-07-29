@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -352,6 +352,12 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -510,7 +516,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -526,7 +532,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet__ctor" data-uid="Android.Icu.Text.UnicodeSet.#ctor">
   UnicodeSet()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4718"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L5228"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -841,7 +847,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet__ctor_System_Object___" data-uid="Android.Icu.Text.UnicodeSet.#ctor(System.Object[])">
   UnicodeSet(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4722"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L5232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -941,7 +947,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_BridgeClassName" data-uid="Android.Icu.Text.UnicodeSet.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4729"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L5240"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -981,7 +987,8 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int CASE { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int CASE { get; }</code></pre>
   </div>
 
 
@@ -1005,7 +1012,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_CASE_INSENSITIVE" data-uid="Android.Icu.Text.UnicodeSet.CASE_INSENSITIVE">
   CASE_INSENSITIVE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#CASE_INSENSITIVE">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#CASE_INSENSITIVE</a></p>
@@ -1069,7 +1076,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_IGNORE_SPACE" data-uid="Android.Icu.Text.UnicodeSet.IGNORE_SPACE">
   IGNORE_SPACE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#IGNORE_SPACE">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#IGNORE_SPACE</a></p>
@@ -1101,7 +1108,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_IsBridgeAbstract" data-uid="Android.Icu.Text.UnicodeSet.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4733"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L5244"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1133,7 +1140,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_IsBridgeCloseable" data-uid="Android.Icu.Text.UnicodeSet.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4737"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L5248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1165,7 +1172,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_IsBridgeInterface" data-uid="Android.Icu.Text.UnicodeSet.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4741"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L5252"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1197,7 +1204,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_IsBridgeStatic" data-uid="Android.Icu.Text.UnicodeSet.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4745"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L5256"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1229,7 +1236,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_MAX_VALUE" data-uid="Android.Icu.Text.UnicodeSet.MAX_VALUE">
   MAX_VALUE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#MAX_VALUE">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#MAX_VALUE</a></p>
@@ -1261,7 +1268,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_MIN_VALUE" data-uid="Android.Icu.Text.UnicodeSet.MIN_VALUE">
   MIN_VALUE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#MIN_VALUE">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#MIN_VALUE</a></p>
@@ -1297,7 +1304,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Add_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.Add(Java.Lang.CharSequence)">
   Add(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L566"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(java.lang.CharSequence)</a></p>
@@ -1336,7 +1343,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Add_Java_Lang_Iterable_System_Object__" data-uid="Android.Icu.Text.UnicodeSet.Add(Java.Lang.Iterable{System.Object})">
   Add(Iterable&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L270"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(java.lang.Iterable)</a></p>
@@ -1375,7 +1382,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Add_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Add(System.Int32)">
   Add(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L557"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(int)</a></p>
@@ -1414,7 +1421,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Add_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Add(System.Int32,System.Int32)">
   Add(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L261"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(int,int)</a></p>
@@ -1456,7 +1463,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_AddAll_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.AddAll(Android.Icu.Text.UnicodeSet)">
   AddAll(UnicodeSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L279"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(android.icu.text.UnicodeSet)</a></p>
@@ -1495,7 +1502,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_AddAll_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.AddAll(Java.Lang.CharSequence)">
   AddAll(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L574"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L575"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.CharSequence)</a></p>
@@ -1534,7 +1541,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_AddAll_Java_Lang_Iterable_System_Object__" data-uid="Android.Icu.Text.UnicodeSet.AddAll(Java.Lang.Iterable{System.Object})">
   AddAll(Iterable&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L298"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.Iterable)</a></p>
@@ -1573,7 +1580,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_AddAll_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.AddAll(System.Int32,System.Int32)">
   AddAll(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(int,int)</a></p>
@@ -1615,7 +1622,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_AddAllTo__1___0_" data-uid="Android.Icu.Text.UnicodeSet.AddAllTo``1(``0)">
   AddAllTo&lt;T&gt;(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L251"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAllTo(java.util.Collection)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAllTo(java.util.Collection)</a></p>
@@ -1660,7 +1667,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_AddAll__1___0___" data-uid="Android.Icu.Text.UnicodeSet.AddAll``1(``0[])">
   AddAll&lt;T&gt;(params T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.CharSequence[])">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.CharSequence[])</a></p>
@@ -1705,7 +1712,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ApplyIntPropertyValue_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.ApplyIntPropertyValue(System.Int32,System.Int32)">
   ApplyIntPropertyValue(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyIntPropertyValue(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyIntPropertyValue(int,int)</a></p>
@@ -1747,7 +1754,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ApplyPattern_Java_Lang_String_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPattern(Java.Lang.String)">
   ApplyPattern(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L584"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String)</a></p>
@@ -1786,7 +1793,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ApplyPattern_Java_Lang_String_System_Boolean_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPattern(Java.Lang.String,System.Boolean)">
   ApplyPattern(String, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L318"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String,boolean)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String,boolean)</a></p>
@@ -1828,7 +1835,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ApplyPattern_Java_Lang_String_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPattern(Java.Lang.String,System.Int32)">
   ApplyPattern(String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L328"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String,int)</a></p>
@@ -1870,7 +1877,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ApplyPropertyAlias_Java_Lang_String_Java_Lang_String_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPropertyAlias(Java.Lang.String,Java.Lang.String)">
   ApplyPropertyAlias(String, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L349"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPropertyAlias(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPropertyAlias(java.lang.String,java.lang.String)</a></p>
@@ -1912,7 +1919,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ApplyPropertyAlias_Java_Lang_String_Java_Lang_String_Android_Icu_Text_SymbolTable_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPropertyAlias(Java.Lang.String,Java.Lang.String,Android.Icu.Text.SymbolTable)">
   ApplyPropertyAlias(String, String, SymbolTable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L339"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPropertyAlias(java.lang.String,java.lang.String,android.icu.text.SymbolTable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPropertyAlias(java.lang.String,java.lang.String,android.icu.text.SymbolTable)</a></p>
@@ -1957,7 +1964,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_CharAt_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.CharAt(System.Int32)">
   CharAt(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L718"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L719"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#charAt(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#charAt(int)</a></p>
@@ -1996,7 +2003,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Clear" data-uid="Android.Icu.Text.UnicodeSet.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L357"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#clear()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#clear()</a></p>
@@ -2029,7 +2036,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_CloneAsThawed" data-uid="Android.Icu.Text.UnicodeSet.CloneAsThawed">
   CloneAsThawed()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L856"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L857"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#cloneAsThawed()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#cloneAsThawed()</a></p>
@@ -2062,7 +2069,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_CloseOver_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.CloseOver(System.Int32)">
   CloseOver(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L366"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#closeOver(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#closeOver(int)</a></p>
@@ -2101,7 +2108,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Compact" data-uid="Android.Icu.Text.UnicodeSet.Compact">
   Compact()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L374"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compact()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compact()</a></p>
@@ -2134,7 +2141,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_CompareTo_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.CompareTo(Android.Icu.Text.UnicodeSet)">
   CompareTo(UnicodeSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L737"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L738"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(android.icu.text.UnicodeSet)</a></p>
@@ -2173,7 +2180,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_CompareTo_Android_Icu_Text_UnicodeSet_Android_Icu_Text_UnicodeSet_ComparisonStyle_" data-uid="Android.Icu.Text.UnicodeSet.CompareTo(Android.Icu.Text.UnicodeSet,Android.Icu.Text.UnicodeSet.ComparisonStyle)">
   CompareTo(UnicodeSet, ComparisonStyle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L728"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L729"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(android.icu.text.UnicodeSet,android.icu.text.UnicodeSet.ComparisonStyle)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(android.icu.text.UnicodeSet,android.icu.text.UnicodeSet.ComparisonStyle)</a></p>
@@ -2215,7 +2222,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_CompareTo_Java_Lang_Iterable_Java_Lang_String__" data-uid="Android.Icu.Text.UnicodeSet.CompareTo(Java.Lang.Iterable{Java.Lang.String})">
   CompareTo(Iterable&lt;String&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L746"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L747"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(java.lang.Iterable)</a></p>
@@ -2254,7 +2261,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_CompareTo_System_Object_" data-uid="Android.Icu.Text.UnicodeSet.CompareTo(System.Object)">
   CompareTo(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L755"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L756"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(java.lang.Object)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(java.lang.Object)</a></p>
@@ -2293,7 +2300,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Complement" data-uid="Android.Icu.Text.UnicodeSet.Complement">
   Complement()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L382"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement()</a></p>
@@ -2326,7 +2333,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Complement_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.Complement(Java.Lang.CharSequence)">
   Complement(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L601"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L602"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement(java.lang.CharSequence)</a></p>
@@ -2365,7 +2372,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Complement_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Complement(System.Int32)">
   Complement(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L593"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement(int)</a></p>
@@ -2404,7 +2411,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Complement_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Complement(System.Int32,System.Int32)">
   Complement(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L392"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement(int,int)</a></p>
@@ -2446,7 +2453,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ComplementAll_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.ComplementAll(Android.Icu.Text.UnicodeSet)">
   ComplementAll(UnicodeSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L401"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complementAll(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complementAll(android.icu.text.UnicodeSet)</a></p>
@@ -2485,7 +2492,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ComplementAll_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.ComplementAll(Java.Lang.CharSequence)">
   ComplementAll(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L611"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complementAll(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complementAll(java.lang.CharSequence)</a></p>
@@ -2524,7 +2531,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Contains_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.Contains(Java.Lang.CharSequence)">
   Contains(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L681"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L682"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#contains(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#contains(java.lang.CharSequence)</a></p>
@@ -2563,7 +2570,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Contains_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Contains(System.Int32,System.Int32)">
   Contains(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L468"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#contains(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#contains(int,int)</a></p>
@@ -2605,7 +2612,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ContainsAll_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.ContainsAll(Android.Icu.Text.UnicodeSet)">
   ContainsAll(UnicodeSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L477"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(android.icu.text.UnicodeSet)</a></p>
@@ -2644,7 +2651,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ContainsAll_Java_Lang_String_" data-uid="Android.Icu.Text.UnicodeSet.ContainsAll(Java.Lang.String)">
   ContainsAll(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L486"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(java.lang.String)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(java.lang.String)</a></p>
@@ -2683,7 +2690,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ContainsAll__1_Java_Lang_Iterable___0__" data-uid="Android.Icu.Text.UnicodeSet.ContainsAll``1(Java.Lang.Iterable{``0})">
   ContainsAll&lt;T&gt;(Iterable&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L231"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(java.lang.Iterable)</a></p>
@@ -2728,7 +2735,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ContainsNone_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.ContainsNone(Android.Icu.Text.UnicodeSet)">
   ContainsNone(UnicodeSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L495"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(android.icu.text.UnicodeSet)</a></p>
@@ -2767,7 +2774,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ContainsNone_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.ContainsNone(Java.Lang.CharSequence)">
   ContainsNone(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L513"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L514"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(java.lang.CharSequence)</a></p>
@@ -2806,7 +2813,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ContainsNone_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.ContainsNone(System.Int32,System.Int32)">
   ContainsNone(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L505"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(int,int)</a></p>
@@ -2848,7 +2855,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ContainsNone__1_Java_Lang_Iterable___0__" data-uid="Android.Icu.Text.UnicodeSet.ContainsNone``1(Java.Lang.Iterable{``0})">
   ContainsNone&lt;T&gt;(Iterable&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(java.lang.Iterable)</a></p>
@@ -2893,7 +2900,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ContainsSome_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.ContainsSome(Android.Icu.Text.UnicodeSet)">
   ContainsSome(UnicodeSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L690"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L691"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(android.icu.text.UnicodeSet)</a></p>
@@ -2932,7 +2939,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ContainsSome_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.ContainsSome(Java.Lang.CharSequence)">
   ContainsSome(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L709"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L710"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(java.lang.CharSequence)</a></p>
@@ -2971,7 +2978,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ContainsSome_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.ContainsSome(System.Int32,System.Int32)">
   ContainsSome(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L700"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L701"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(int,int)</a></p>
@@ -3013,7 +3020,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_ContainsSome__1_Java_Lang_Iterable___0__" data-uid="Android.Icu.Text.UnicodeSet.ContainsSome``1(Java.Lang.Iterable{``0})">
   ContainsSome&lt;T&gt;(Iterable&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L548"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(java.lang.Iterable)</a></p>
@@ -3058,7 +3065,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Freeze" data-uid="Android.Icu.Text.UnicodeSet.Freeze">
   Freeze()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L864"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L865"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#freeze()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#freeze()</a></p>
@@ -3091,7 +3098,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_From_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.From(Java.Lang.CharSequence)">
   From(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L178"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#from(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#from(java.lang.CharSequence)</a></p>
@@ -3130,7 +3137,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_FromAll_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.FromAll(Java.Lang.CharSequence)">
   FromAll(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#fromAll(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#fromAll(java.lang.CharSequence)</a></p>
@@ -3169,7 +3176,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_GetRangeCount" data-uid="Android.Icu.Text.UnicodeSet.GetRangeCount">
   GetRangeCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L763"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L764"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeCount()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeCount()</a></p>
@@ -3202,7 +3209,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_GetRangeEnd_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.GetRangeEnd(System.Int32)">
   GetRangeEnd(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L772"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L773"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeEnd(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeEnd(int)</a></p>
@@ -3241,7 +3248,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_GetRangeStart_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.GetRangeStart(System.Int32)">
   GetRangeStart(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L781"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L782"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeStart(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeStart(int)</a></p>
@@ -3280,7 +3287,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_HasStrings" data-uid="Android.Icu.Text.UnicodeSet.HasStrings">
   HasStrings()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L521"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L522"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#hasStrings()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#hasStrings()</a></p>
@@ -3313,7 +3320,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_IndexOf_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.IndexOf(System.Int32)">
   IndexOf(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L790"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L791"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#indexOf(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#indexOf(int)</a></p>
@@ -3352,7 +3359,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_IsEmpty" data-uid="Android.Icu.Text.UnicodeSet.IsEmpty">
   IsEmpty()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L530"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#isEmpty()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#isEmpty()</a></p>
@@ -3385,7 +3392,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_IsFrozen" data-uid="Android.Icu.Text.UnicodeSet.IsFrozen">
   IsFrozen()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L537"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L538"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#isFrozen()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#isFrozen()</a></p>
@@ -3418,7 +3425,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Iterator" data-uid="Android.Icu.Text.UnicodeSet.Iterator">
   Iterator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L901"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L902"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#iterator()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#iterator()</a></p>
@@ -3451,7 +3458,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Ranges" data-uid="Android.Icu.Text.UnicodeSet.Ranges">
   Ranges()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L848"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L849"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#ranges()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#ranges()</a></p>
@@ -3484,7 +3491,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Remove_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.Remove(Java.Lang.CharSequence)">
   Remove(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L629"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#remove(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#remove(java.lang.CharSequence)</a></p>
@@ -3523,7 +3530,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Remove_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Remove(System.Int32)">
   Remove(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L619"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L620"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#remove(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#remove(int)</a></p>
@@ -3562,7 +3569,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Remove_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Remove(System.Int32,System.Int32)">
   Remove(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L411"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#remove(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#remove(int,int)</a></p>
@@ -3604,7 +3611,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_RemoveAll_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.RemoveAll(Android.Icu.Text.UnicodeSet)">
   RemoveAll(UnicodeSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L420"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(android.icu.text.UnicodeSet)</a></p>
@@ -3643,7 +3650,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_RemoveAll_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.RemoveAll(Java.Lang.CharSequence)">
   RemoveAll(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L637"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L638"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(java.lang.CharSequence)</a></p>
@@ -3682,7 +3689,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_RemoveAllStrings" data-uid="Android.Icu.Text.UnicodeSet.RemoveAllStrings">
   RemoveAllStrings()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L645"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L646"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAllStrings()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAllStrings()</a></p>
@@ -3715,7 +3722,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_RemoveAll__1_Java_Lang_Iterable___0__" data-uid="Android.Icu.Text.UnicodeSet.RemoveAll``1(Java.Lang.Iterable{``0})">
   RemoveAll&lt;T&gt;(Iterable&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(java.lang.Iterable)</a></p>
@@ -3760,7 +3767,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Retain_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.Retain(Java.Lang.CharSequence)">
   Retain(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L663"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L664"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retain(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retain(java.lang.CharSequence)</a></p>
@@ -3799,7 +3806,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Retain_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Retain(System.Int32)">
   Retain(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L654"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L655"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retain(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retain(int)</a></p>
@@ -3838,7 +3845,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Retain_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Retain(System.Int32,System.Int32)">
   Retain(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L430"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retain(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retain(int,int)</a></p>
@@ -3880,7 +3887,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_RetainAll_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.RetainAll(Android.Icu.Text.UnicodeSet)">
   RetainAll(UnicodeSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L438"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L439"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(android.icu.text.UnicodeSet)</a></p>
@@ -3919,7 +3926,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_RetainAll_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.RetainAll(Java.Lang.CharSequence)">
   RetainAll(CharSequence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L672"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L673"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(java.lang.CharSequence)</a></p>
@@ -3958,7 +3965,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_RetainAll__1_Java_Lang_Iterable___0__" data-uid="Android.Icu.Text.UnicodeSet.RetainAll``1(Java.Lang.Iterable{``0})">
   RetainAll&lt;T&gt;(Iterable&lt;T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L221"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(java.lang.Iterable)</a></p>
@@ -4003,7 +4010,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Set_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.Set(Android.Icu.Text.UnicodeSet)">
   Set(UnicodeSet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L448"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#set(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#set(android.icu.text.UnicodeSet)</a></p>
@@ -4042,7 +4049,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Set_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Set(System.Int32,System.Int32)">
   Set(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L458"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#set(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#set(int,int)</a></p>
@@ -4084,7 +4091,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Size" data-uid="Android.Icu.Text.UnicodeSet.Size">
   Size()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L798"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L799"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#size()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#size()</a></p>
@@ -4117,7 +4124,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Span_Java_Lang_CharSequence_Android_Icu_Text_UnicodeSet_SpanCondition_" data-uid="Android.Icu.Text.UnicodeSet.Span(Java.Lang.CharSequence,Android.Icu.Text.UnicodeSet.SpanCondition)">
   Span(CharSequence, SpanCondition)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L808"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L809"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#span(java.lang.CharSequence,android.icu.text.UnicodeSet.SpanCondition)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#span(java.lang.CharSequence,android.icu.text.UnicodeSet.SpanCondition)</a></p>
@@ -4159,7 +4166,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Span_Java_Lang_CharSequence_System_Int32_Android_Icu_Text_UnicodeSet_SpanCondition_" data-uid="Android.Icu.Text.UnicodeSet.Span(Java.Lang.CharSequence,System.Int32,Android.Icu.Text.UnicodeSet.SpanCondition)">
   Span(CharSequence, int, SpanCondition)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L819"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L820"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#span(java.lang.CharSequence,int,android.icu.text.UnicodeSet.SpanCondition)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#span(java.lang.CharSequence,int,android.icu.text.UnicodeSet.SpanCondition)</a></p>
@@ -4204,7 +4211,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_SpanBack_Java_Lang_CharSequence_Android_Icu_Text_UnicodeSet_SpanCondition_" data-uid="Android.Icu.Text.UnicodeSet.SpanBack(Java.Lang.CharSequence,Android.Icu.Text.UnicodeSet.SpanCondition)">
   SpanBack(CharSequence, SpanCondition)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L829"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L830"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#spanBack(java.lang.CharSequence,android.icu.text.UnicodeSet.SpanCondition)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#spanBack(java.lang.CharSequence,android.icu.text.UnicodeSet.SpanCondition)</a></p>
@@ -4246,7 +4253,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_SpanBack_Java_Lang_CharSequence_System_Int32_Android_Icu_Text_UnicodeSet_SpanCondition_" data-uid="Android.Icu.Text.UnicodeSet.SpanBack(Java.Lang.CharSequence,System.Int32,Android.Icu.Text.UnicodeSet.SpanCondition)">
   SpanBack(CharSequence, int, SpanCondition)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L840"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L841"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#spanBack(java.lang.CharSequence,int,android.icu.text.UnicodeSet.SpanCondition)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#spanBack(java.lang.CharSequence,int,android.icu.text.UnicodeSet.SpanCondition)</a></p>
@@ -4291,7 +4298,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet_Strings" data-uid="Android.Icu.Text.UnicodeSet.Strings">
   Strings()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L893"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L894"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#strings()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#strings()</a></p>
@@ -4324,7 +4331,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet__generatePattern_Java_Lang_StringBuffer_System_Boolean_" data-uid="Android.Icu.Text.UnicodeSet._generatePattern(Java.Lang.StringBuffer,System.Boolean)">
   _generatePattern(StringBuffer, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L885"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L886"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#_generatePattern(java.lang.StringBuffer,boolean)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#_generatePattern(java.lang.StringBuffer,boolean)</a></p>
@@ -4366,7 +4373,7 @@ Class UnicodeSet  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Icu_Text_UnicodeSet__generatePattern_Java_Lang_StringBuffer_System_Boolean_System_Boolean_" data-uid="Android.Icu.Text.UnicodeSet._generatePattern(Java.Lang.StringBuffer,System.Boolean,System.Boolean)">
   _generatePattern(StringBuffer, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L875"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L876"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#_generatePattern(java.lang.StringBuffer,boolean,boolean)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#_generatePattern(java.lang.StringBuffer,boolean,boolean)</a></p>

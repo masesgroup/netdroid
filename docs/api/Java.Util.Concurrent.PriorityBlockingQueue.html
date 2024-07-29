@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -389,6 +389,12 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -547,7 +553,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -563,7 +569,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue__ctor" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.#ctor">
   PriorityBlockingQueue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3511"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3586"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -590,7 +596,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue__ctor_Java_Util_Collection_" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.#ctor(Java.Util.Collection)">
   PriorityBlockingQueue(Collection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L53"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#%3Cinit%3E(java.util.Collection)">https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#%3Cinit%3E(java.util.Collection)</a></p>
@@ -623,7 +629,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue__ctor_System_Int32_" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.#ctor(System.Int32)">
   PriorityBlockingQueue(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#%3Cinit%3E(int)">https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#%3Cinit%3E(int)</a></p>
@@ -654,9 +660,45 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <a id="Java_Util_Concurrent_PriorityBlockingQueue__ctor_" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.#ctor*"></a>
 
+  <h3 id="Java_Util_Concurrent_PriorityBlockingQueue__ctor_System_Int32_Java_Util_Comparator_" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.#ctor(System.Int32,Java.Util.Comparator)">
+  PriorityBlockingQueue(int, Comparator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#%3Cinit%3E(int,java.util.Comparator)">https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#%3Cinit%3E(int,java.util.Comparator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PriorityBlockingQueue(int arg0, Comparator arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Comparator.html">Comparator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_PriorityBlockingQueue__ctor_" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.#ctor*"></a>
+
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue__ctor_System_Object___" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.#ctor(System.Object[])">
   PriorityBlockingQueue(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3515"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3590"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -692,7 +734,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_BridgeClassName" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3522"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3598"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -724,7 +766,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_IsBridgeAbstract" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3526"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3602"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -756,7 +798,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_IsBridgeCloseable" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3530"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3606"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -788,7 +830,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_IsBridgeInterface" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3534"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3610"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -820,7 +862,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_IsBridgeStatic" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3538"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/AllPackageClasses.cs/#L3614"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -852,11 +894,44 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 </h2>
 
 
+  <a id="Java_Util_Concurrent_PriorityBlockingQueue_Comparator_" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.Comparator*"></a>
+
+  <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_Comparator" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.Comparator">
+  Comparator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#comparator()">https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#comparator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Comparator Comparator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Comparator.html">Comparator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Comparator.html">Comparator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_Concurrent_PriorityBlockingQueue_DrainTo_" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.DrainTo*"></a>
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_DrainTo_Java_Util_Collection_" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.DrainTo(Java.Util.Collection)">
   DrainTo(Collection)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#drainTo(java.util.Collection)">https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#drainTo(java.util.Collection)</a></p>
@@ -895,7 +970,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_DrainTo_Java_Util_Collection_System_Int32_" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.DrainTo(Java.Util.Collection,System.Int32)">
   DrainTo(Collection, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#drainTo(java.util.Collection,int)">https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#drainTo(java.util.Collection,int)</a></p>
@@ -937,7 +1012,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_Offer_System_Object_System_Int64_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.Offer(System.Object,System.Int64,Java.Util.Concurrent.TimeUnit)">
   Offer(object, long, TimeUnit)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)">https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)</a></p>
@@ -982,7 +1057,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_Poll_System_Int64_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.Poll(System.Int64,Java.Util.Concurrent.TimeUnit)">
   Poll(long, TimeUnit)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#poll(long,java.util.concurrent.TimeUnit)">https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#poll(long,java.util.concurrent.TimeUnit)</a></p>
@@ -1029,7 +1104,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_Put_System_Object_" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.Put(System.Object)">
   Put(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#put(java.lang.Object)">https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#put(java.lang.Object)</a></p>
@@ -1062,7 +1137,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_RemainingCapacity" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.RemainingCapacity">
   RemainingCapacity()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#remainingCapacity()">https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#remainingCapacity()</a></p>
@@ -1095,7 +1170,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_Take" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.Take">
   Take()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#take()">https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html#take()</a></p>
@@ -1137,7 +1212,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_op_Implicit_Java_Util_Concurrent_PriorityBlockingQueue__Java_Io_Serializable" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.op_Implicit(Java.Util.Concurrent.PriorityBlockingQueue)~Java.Io.Serializable">
   implicit operator Serializable(PriorityBlockingQueue)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L68"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.PriorityBlockingQueue.html">PriorityBlockingQueue</a> to <a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
@@ -1174,7 +1249,7 @@ Class PriorityBlockingQueue  <a class="header-action link-secondary" title="View
 
   <h3 id="Java_Util_Concurrent_PriorityBlockingQueue_op_Implicit_Java_Util_Concurrent_PriorityBlockingQueue__Java_Util_Concurrent_BlockingQueue" data-uid="Java.Util.Concurrent.PriorityBlockingQueue.op_Implicit(Java.Util.Concurrent.PriorityBlockingQueue)~Java.Util.Concurrent.BlockingQueue">
   implicit operator BlockingQueue(PriorityBlockingQueue)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Concurrent/PriorityBlockingQueue.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.PriorityBlockingQueue.html">PriorityBlockingQueue</a> to <a class="xref" href="Java.Util.Concurrent.BlockingQueue.html">BlockingQueue</a></p>

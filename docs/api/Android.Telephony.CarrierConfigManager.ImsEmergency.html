@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -85,7 +85,7 @@
 
 
   <h1 id="Android_Telephony_CarrierConfigManager_ImsEmergency" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency" class="text-break">
-Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2777"><i class="bi bi-code-slash"></i></a>
+Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2848"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -318,6 +318,12 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency__ctor" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.#ctor">
   ImsEmergency()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L760"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L777"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency__ctor_System_Object___" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.#ctor(System.Object[])">
   ImsEmergency(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L764"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L781"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -555,7 +561,7 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_BridgeClassName" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L771"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L789"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -583,11 +589,107 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
 
 
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_DOMAIN_CS_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.DOMAIN_CS*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_DOMAIN_CS" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.DOMAIN_CS">
+  DOMAIN_CS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2862"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#DOMAIN_CS">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#DOMAIN_CS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOMAIN_CS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_DOMAIN_PS_3GPP_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.DOMAIN_PS_3GPP*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_DOMAIN_PS_3GPP" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.DOMAIN_PS_3GPP">
+  DOMAIN_PS_3GPP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2868"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#DOMAIN_PS_3GPP">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#DOMAIN_PS_3GPP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOMAIN_PS_3GPP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_DOMAIN_PS_NON_3GPP_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.DOMAIN_PS_NON_3GPP*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_DOMAIN_PS_NON_3GPP" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.DOMAIN_PS_NON_3GPP">
+  DOMAIN_PS_NON_3GPP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2874"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#DOMAIN_PS_NON_3GPP">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#DOMAIN_PS_NON_3GPP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOMAIN_PS_NON_3GPP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_IsBridgeAbstract_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.IsBridgeAbstract*"></a>
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_IsBridgeAbstract" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L775"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L793"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -619,7 +721,7 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_IsBridgeCloseable" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L779"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L797"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -651,7 +753,7 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_IsBridgeInterface" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L783"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L801"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -683,7 +785,7 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_IsBridgeStatic" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L787"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/AllPackageClasses.cs/#L805"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -711,11 +813,43 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
 
 
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_CROSS_STACK_REDIAL_TIMER_SEC_INT_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_CROSS_STACK_REDIAL_TIMER_SEC_INT*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_CROSS_STACK_REDIAL_TIMER_SEC_INT" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_CROSS_STACK_REDIAL_TIMER_SEC_INT">
+  KEY_CROSS_STACK_REDIAL_TIMER_SEC_INT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2922"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_CROSS_STACK_REDIAL_TIMER_SEC_INT">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_CROSS_STACK_REDIAL_TIMER_SEC_INT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_CROSS_STACK_REDIAL_TIMER_SEC_INT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOL_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOL*"></a>
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOL" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOL">
   KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2791"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2934"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOL">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_CALLBACK_MODE_SUPPORTED_BOOL</a></p>
@@ -743,11 +877,331 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
 
 
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INT_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INT*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INT" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INT">
+  KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2928"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INT">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_CALL_SETUP_TIMER_ON_CURRENT_NETWORK_SEC_INT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAY_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAY*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAY" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAY">
+  KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2940"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAY">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_CDMA_PREFERRED_NUMBERS_STRING_ARRAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAY_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAY*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAY" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAY">
+  KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2946"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAY">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_DOMAIN_PREFERENCE_INT_ARRAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAY_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAY*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAY" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAY">
+  KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2952"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAY">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_DOMAIN_PREFERENCE_ROAMING_INT_ARRAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOL_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOL*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOL" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOL">
+  KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2958"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOL">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_LTE_PREFERRED_AFTER_NR_FAILED_BOOL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_NETWORK_SCAN_TYPE_INT_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_NETWORK_SCAN_TYPE_INT*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_NETWORK_SCAN_TYPE_INT" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_NETWORK_SCAN_TYPE_INT">
+  KEY_EMERGENCY_NETWORK_SCAN_TYPE_INT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2964"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_NETWORK_SCAN_TYPE_INT">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_NETWORK_SCAN_TYPE_INT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_NETWORK_SCAN_TYPE_INT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY">
+  KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2970"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_OVER_CS_ROAMING_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY">
+  KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2976"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_OVER_CS_SUPPORTED_ACCESS_NETWORK_TYPES_INT_ARRAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY">
+  KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2982"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_OVER_IMS_ROAMING_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY">
+  KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2988"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_OVER_IMS_SUPPORTED_3GPP_NETWORK_TYPES_INT_ARRAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_OVER_IMS_SUPPORTED_RATS_INT_ARRAY_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_OVER_IMS_SUPPORTED_RATS_INT_ARRAY*"></a>
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_OVER_IMS_SUPPORTED_RATS_INT_ARRAY" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_OVER_IMS_SUPPORTED_RATS_INT_ARRAY">
   KEY_EMERGENCY_OVER_IMS_SUPPORTED_RATS_INT_ARRAY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2797"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2994"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_IMS_SUPPORTED_RATS_INT_ARRAY">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_OVER_IMS_SUPPORTED_RATS_INT_ARRAY</a></p>
@@ -779,7 +1233,7 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_QOS_PRECONDITION_SUPPORTED_BOOL" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_QOS_PRECONDITION_SUPPORTED_BOOL">
   KEY_EMERGENCY_QOS_PRECONDITION_SUPPORTED_BOOL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2803"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3000"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_QOS_PRECONDITION_SUPPORTED_BOOL">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_QOS_PRECONDITION_SUPPORTED_BOOL</a></p>
@@ -811,7 +1265,7 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_REGISTRATION_TIMER_MILLIS_INT" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_REGISTRATION_TIMER_MILLIS_INT">
   KEY_EMERGENCY_REGISTRATION_TIMER_MILLIS_INT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2809"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3006"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_REGISTRATION_TIMER_MILLIS_INT">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_REGISTRATION_TIMER_MILLIS_INT</a></p>
@@ -839,11 +1293,235 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
 
 
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOL_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOL*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOL" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOL">
+  KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3012"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOL">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_REQUIRES_IMS_REGISTRATION_BOOL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOL_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOL*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOL" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOL">
+  KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3018"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOL">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_REQUIRES_VOLTE_ENABLED_BOOL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_SCAN_TIMER_SEC_INT_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_SCAN_TIMER_SEC_INT*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_SCAN_TIMER_SEC_INT" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_SCAN_TIMER_SEC_INT">
+  KEY_EMERGENCY_SCAN_TIMER_SEC_INT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3024"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_SCAN_TIMER_SEC_INT">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_SCAN_TIMER_SEC_INT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_SCAN_TIMER_SEC_INT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INT_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INT*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INT" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INT">
+  KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3030"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INT">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_EMERGENCY_VOWIFI_REQUIRES_CONDITION_INT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INT_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INT*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INT" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INT">
+  KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3036"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INT">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_MAXIMUM_CELLULAR_SEARCH_TIMER_SEC_INT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INT_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INT*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INT" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INT">
+  KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3042"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INT">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_MAXIMUM_NUMBER_OF_EMERGENCY_TRIES_OVER_VOWIFI_INT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOL_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOL*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOL" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOL">
+  KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3048"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOL">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_PREFER_IMS_EMERGENCY_WHEN_VOICE_CALLS_ON_CS_BOOL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_PREFIX_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_PREFIX*"></a>
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_PREFIX" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_PREFIX">
   KEY_PREFIX
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2815"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3054"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_PREFIX">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_PREFIX</a></p>
@@ -871,11 +1549,43 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
 
 
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INT_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INT*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INT" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INT">
+  KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3060"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INT">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_QUICK_CROSS_STACK_REDIAL_TIMER_SEC_INT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_REFRESH_GEOLOCATION_TIMEOUT_MILLIS_INT_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_REFRESH_GEOLOCATION_TIMEOUT_MILLIS_INT*"></a>
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_REFRESH_GEOLOCATION_TIMEOUT_MILLIS_INT" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_REFRESH_GEOLOCATION_TIMEOUT_MILLIS_INT">
   KEY_REFRESH_GEOLOCATION_TIMEOUT_MILLIS_INT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2821"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3066"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_REFRESH_GEOLOCATION_TIMEOUT_MILLIS_INT">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_REFRESH_GEOLOCATION_TIMEOUT_MILLIS_INT</a></p>
@@ -907,7 +1617,7 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
   <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_RETRY_EMERGENCY_ON_IMS_PDN_BOOL" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_RETRY_EMERGENCY_ON_IMS_PDN_BOOL">
   KEY_RETRY_EMERGENCY_ON_IMS_PDN_BOOL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2827"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3072"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_RETRY_EMERGENCY_ON_IMS_PDN_BOOL">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_RETRY_EMERGENCY_ON_IMS_PDN_BOOL</a></p>
@@ -935,11 +1645,299 @@ Class CarrierConfigManager.ImsEmergency  <a class="header-action link-secondary"
 
 
 
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOL_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOL*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOL" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOL">
+  KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3078"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOL">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_SCAN_LIMITED_SERVICE_AFTER_VOLTE_FAILURE_BOOL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOL_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOL*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOL" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOL">
+  KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L3084"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOL">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_START_QUICK_CROSS_STACK_REDIAL_TIMER_WHEN_REGISTERED_BOOL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_REDIAL_TIMER_DISABLED_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.REDIAL_TIMER_DISABLED*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_REDIAL_TIMER_DISABLED" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.REDIAL_TIMER_DISABLED">
+  REDIAL_TIMER_DISABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2880"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#REDIAL_TIMER_DISABLED">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#REDIAL_TIMER_DISABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int REDIAL_TIMER_DISABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_SCAN_TYPE_FULL_SERVICE_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.SCAN_TYPE_FULL_SERVICE*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_SCAN_TYPE_FULL_SERVICE" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.SCAN_TYPE_FULL_SERVICE">
+  SCAN_TYPE_FULL_SERVICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2886"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#SCAN_TYPE_FULL_SERVICE">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#SCAN_TYPE_FULL_SERVICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCAN_TYPE_FULL_SERVICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICE_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICE*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICE" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICE">
+  SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2892"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICE">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCAN_TYPE_FULL_SERVICE_FOLLOWED_BY_LIMITED_SERVICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_SCAN_TYPE_NO_PREFERENCE_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.SCAN_TYPE_NO_PREFERENCE*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_SCAN_TYPE_NO_PREFERENCE" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.SCAN_TYPE_NO_PREFERENCE">
+  SCAN_TYPE_NO_PREFERENCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2898"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#SCAN_TYPE_NO_PREFERENCE">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#SCAN_TYPE_NO_PREFERENCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SCAN_TYPE_NO_PREFERENCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_VOWIFI_REQUIRES_NONE_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.VOWIFI_REQUIRES_NONE*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_VOWIFI_REQUIRES_NONE" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.VOWIFI_REQUIRES_NONE">
+  VOWIFI_REQUIRES_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2904"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#VOWIFI_REQUIRES_NONE">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#VOWIFI_REQUIRES_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VOWIFI_REQUIRES_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_VOWIFI_REQUIRES_SETTING_ENABLED_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.VOWIFI_REQUIRES_SETTING_ENABLED*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_VOWIFI_REQUIRES_SETTING_ENABLED" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.VOWIFI_REQUIRES_SETTING_ENABLED">
+  VOWIFI_REQUIRES_SETTING_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2910"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#VOWIFI_REQUIRES_SETTING_ENABLED">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#VOWIFI_REQUIRES_SETTING_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VOWIFI_REQUIRES_SETTING_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Telephony_CarrierConfigManager_ImsEmergency_VOWIFI_REQUIRES_VALID_EID_" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.VOWIFI_REQUIRES_VALID_EID*"></a>
+
+  <h3 id="Android_Telephony_CarrierConfigManager_ImsEmergency_VOWIFI_REQUIRES_VALID_EID" data-uid="Android.Telephony.CarrierConfigManager.ImsEmergency.VOWIFI_REQUIRES_VALID_EID">
+  VOWIFI_REQUIRES_VALID_EID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2916"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#VOWIFI_REQUIRES_VALID_EID">https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsEmergency.html#VOWIFI_REQUIRES_VALID_EID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VOWIFI_REQUIRES_VALID_EID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2777" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Telephony/CarrierConfigManager.cs/#L2848" class="edit-link">Edit this page</a>
         </div>
 
 

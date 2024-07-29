@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -320,6 +320,12 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -478,7 +484,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -494,7 +500,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence__ctor" data-uid="Android.Hardware.SyncFence.#ctor">
   SyncFence()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1587"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1669"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,9 +525,42 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <a id="Android_Hardware_SyncFence__ctor_" data-uid="Android.Hardware.SyncFence.#ctor*"></a>
 
+  <h3 id="Android_Hardware_SyncFence__ctor_Android_Hardware_SyncFence_" data-uid="Android.Hardware.SyncFence.#ctor(Android.Hardware.SyncFence)">
+  SyncFence(SyncFence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SyncFence.html#%3Cinit%3E(android.hardware.SyncFence)">https://developer.android.com/reference/android/hardware/SyncFence.html#%3Cinit%3E(android.hardware.SyncFence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SyncFence(SyncFence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.SyncFence.html">SyncFence</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.SyncFence.html">SyncFence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Hardware_SyncFence__ctor_" data-uid="Android.Hardware.SyncFence.#ctor*"></a>
+
   <h3 id="Android_Hardware_SyncFence__ctor_System_Object___" data-uid="Android.Hardware.SyncFence.#ctor(System.Object[])">
   SyncFence(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1591"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1673"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -557,7 +596,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_BridgeClassName" data-uid="Android.Hardware.SyncFence.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1598"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1681"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -589,7 +628,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_CREATOR" data-uid="Android.Hardware.SyncFence.CREATOR">
   CREATOR
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SyncFence.html#CREATOR">https://developer.android.com/reference/android/hardware/SyncFence.html#CREATOR</a></p>
@@ -621,7 +660,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_IsBridgeAbstract" data-uid="Android.Hardware.SyncFence.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1602"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1685"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -653,7 +692,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_IsBridgeCloseable" data-uid="Android.Hardware.SyncFence.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1606"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1689"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -685,7 +724,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_IsBridgeInterface" data-uid="Android.Hardware.SyncFence.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1610"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1693"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -717,7 +756,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_IsBridgeStatic" data-uid="Android.Hardware.SyncFence.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1614"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/AllPackageClasses.cs/#L1697"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -749,7 +788,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_SIGNAL_TIME_INVALID" data-uid="Android.Hardware.SyncFence.SIGNAL_TIME_INVALID">
   SIGNAL_TIME_INVALID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L65"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SyncFence.html#SIGNAL_TIME_INVALID">https://developer.android.com/reference/android/hardware/SyncFence.html#SIGNAL_TIME_INVALID</a></p>
@@ -781,7 +820,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_SIGNAL_TIME_PENDING" data-uid="Android.Hardware.SyncFence.SIGNAL_TIME_PENDING">
   SIGNAL_TIME_PENDING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SyncFence.html#SIGNAL_TIME_PENDING">https://developer.android.com/reference/android/hardware/SyncFence.html#SIGNAL_TIME_PENDING</a></p>
@@ -817,7 +856,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_Await_Java_Time_Duration_" data-uid="Android.Hardware.SyncFence.Await(Java.Time.Duration)">
   Await(Duration)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SyncFence.html#await(java.time.Duration)">https://developer.android.com/reference/android/hardware/SyncFence.html#await(java.time.Duration)</a></p>
@@ -856,7 +895,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_AwaitForever" data-uid="Android.Hardware.SyncFence.AwaitForever">
   AwaitForever()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SyncFence.html#awaitForever()">https://developer.android.com/reference/android/hardware/SyncFence.html#awaitForever()</a></p>
@@ -889,7 +928,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_Close" data-uid="Android.Hardware.SyncFence.Close">
   Close()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SyncFence.html#close()">https://developer.android.com/reference/android/hardware/SyncFence.html#close()</a></p>
@@ -916,7 +955,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_DescribeContents" data-uid="Android.Hardware.SyncFence.DescribeContents">
   DescribeContents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SyncFence.html#describeContents()">https://developer.android.com/reference/android/hardware/SyncFence.html#describeContents()</a></p>
@@ -949,7 +988,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_GetSignalTime" data-uid="Android.Hardware.SyncFence.GetSignalTime">
   GetSignalTime()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SyncFence.html#getSignalTime()">https://developer.android.com/reference/android/hardware/SyncFence.html#getSignalTime()</a></p>
@@ -982,7 +1021,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_IsValid" data-uid="Android.Hardware.SyncFence.IsValid">
   IsValid()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SyncFence.html#isValid()">https://developer.android.com/reference/android/hardware/SyncFence.html#isValid()</a></p>
@@ -1015,7 +1054,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Hardware.SyncFence.WriteToParcel(Android.Os.Parcel,System.Int32)">
   WriteToParcel(Parcel, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/hardware/SyncFence.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/hardware/SyncFence.html#writeToParcel(android.os.Parcel,int)</a></p>
@@ -1055,7 +1094,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_op_Implicit_Android_Hardware_SyncFence__Android_Os_Parcelable" data-uid="Android.Hardware.SyncFence.op_Implicit(Android.Hardware.SyncFence)~Android.Os.Parcelable">
   implicit operator Parcelable(SyncFence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Hardware.SyncFence.html">SyncFence</a> to <a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
@@ -1092,7 +1131,7 @@ Class SyncFence  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Android_Hardware_SyncFence_op_Implicit_Android_Hardware_SyncFence__Java_Lang_AutoCloseable" data-uid="Android.Hardware.SyncFence.op_Implicit(Android.Hardware.SyncFence)~Java.Lang.AutoCloseable">
   implicit operator AutoCloseable(SyncFence)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Hardware/SyncFence.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Hardware.SyncFence.html">SyncFence</a> to <a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a></p>

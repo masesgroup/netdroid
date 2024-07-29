@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class UserManager  <a class="header-action link-secondary" title="View source" h
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class UserManager  <a class="header-action link-secondary" title="View source" h
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class UserManager  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Os_UserManager__ctor" data-uid="Android.Os.UserManager.#ctor">
   UserManager()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4251"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4571"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class UserManager  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Os_UserManager__ctor_System_Object___" data-uid="Android.Os.UserManager.#ctor(System.Object[])">
   UserManager(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4255"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4575"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -587,7 +593,7 @@ Class UserManager  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Os_UserManager_BridgeClassName" data-uid="Android.Os.UserManager.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4262"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4583"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -648,11 +654,43 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
 
 
+  <a id="Android_Os_UserManager_DISALLOW_ADD_PRIVATE_PROFILE_" data-uid="Android.Os.UserManager.DISALLOW_ADD_PRIVATE_PROFILE*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_ADD_PRIVATE_PROFILE" data-uid="Android.Os.UserManager.DISALLOW_ADD_PRIVATE_PROFILE">
+  DISALLOW_ADD_PRIVATE_PROFILE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_PRIVATE_PROFILE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_PRIVATE_PROFILE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_ADD_PRIVATE_PROFILE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Os_UserManager_DISALLOW_ADD_USER_" data-uid="Android.Os.UserManager.DISALLOW_ADD_USER*"></a>
 
   <h3 id="Android_Os_UserManager_DISALLOW_ADD_USER" data-uid="Android.Os.UserManager.DISALLOW_ADD_USER">
   DISALLOW_ADD_USER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_USER">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_USER</a></p>
@@ -684,7 +722,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_ADD_WIFI_CONFIG" data-uid="Android.Os.UserManager.DISALLOW_ADD_WIFI_CONFIG">
   DISALLOW_ADD_WIFI_CONFIG
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_WIFI_CONFIG">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_WIFI_CONFIG</a></p>
@@ -716,7 +754,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_ADJUST_VOLUME" data-uid="Android.Os.UserManager.DISALLOW_ADJUST_VOLUME">
   DISALLOW_ADJUST_VOLUME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADJUST_VOLUME">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADJUST_VOLUME</a></p>
@@ -748,7 +786,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_AIRPLANE_MODE" data-uid="Android.Os.UserManager.DISALLOW_AIRPLANE_MODE">
   DISALLOW_AIRPLANE_MODE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L140"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_AIRPLANE_MODE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_AIRPLANE_MODE</a></p>
@@ -780,7 +818,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_AMBIENT_DISPLAY" data-uid="Android.Os.UserManager.DISALLOW_AMBIENT_DISPLAY">
   DISALLOW_AMBIENT_DISPLAY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_AMBIENT_DISPLAY">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_AMBIENT_DISPLAY</a></p>
@@ -812,7 +850,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_APPS_CONTROL" data-uid="Android.Os.UserManager.DISALLOW_APPS_CONTROL">
   DISALLOW_APPS_CONTROL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L152"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_APPS_CONTROL">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_APPS_CONTROL</a></p>
@@ -840,11 +878,43 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
 
 
+  <a id="Android_Os_UserManager_DISALLOW_ASSIST_CONTENT_" data-uid="Android.Os.UserManager.DISALLOW_ASSIST_CONTENT*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_ASSIST_CONTENT" data-uid="Android.Os.UserManager.DISALLOW_ASSIST_CONTENT">
+  DISALLOW_ASSIST_CONTENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ASSIST_CONTENT">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ASSIST_CONTENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_ASSIST_CONTENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Os_UserManager_DISALLOW_AUTOFILL_" data-uid="Android.Os.UserManager.DISALLOW_AUTOFILL*"></a>
 
   <h3 id="Android_Os_UserManager_DISALLOW_AUTOFILL" data-uid="Android.Os.UserManager.DISALLOW_AUTOFILL">
   DISALLOW_AUTOFILL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_AUTOFILL">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_AUTOFILL</a></p>
@@ -876,7 +946,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_BLUETOOTH" data-uid="Android.Os.UserManager.DISALLOW_BLUETOOTH">
   DISALLOW_BLUETOOTH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_BLUETOOTH">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_BLUETOOTH</a></p>
@@ -908,7 +978,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_BLUETOOTH_SHARING" data-uid="Android.Os.UserManager.DISALLOW_BLUETOOTH_SHARING">
   DISALLOW_BLUETOOTH_SHARING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L176"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_BLUETOOTH_SHARING">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_BLUETOOTH_SHARING</a></p>
@@ -940,7 +1010,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CAMERA_TOGGLE" data-uid="Android.Os.UserManager.DISALLOW_CAMERA_TOGGLE">
   DISALLOW_CAMERA_TOGGLE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CAMERA_TOGGLE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CAMERA_TOGGLE</a></p>
@@ -972,7 +1042,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CELLULAR_2G" data-uid="Android.Os.UserManager.DISALLOW_CELLULAR_2G">
   DISALLOW_CELLULAR_2G
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CELLULAR_2G">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CELLULAR_2G</a></p>
@@ -1004,7 +1074,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CHANGE_WIFI_STATE" data-uid="Android.Os.UserManager.DISALLOW_CHANGE_WIFI_STATE">
   DISALLOW_CHANGE_WIFI_STATE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CHANGE_WIFI_STATE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CHANGE_WIFI_STATE</a></p>
@@ -1036,7 +1106,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_BLUETOOTH" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_BLUETOOTH">
   DISALLOW_CONFIG_BLUETOOTH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_BLUETOOTH">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_BLUETOOTH</a></p>
@@ -1068,7 +1138,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_BRIGHTNESS" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_BRIGHTNESS">
   DISALLOW_CONFIG_BRIGHTNESS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L206"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_BRIGHTNESS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_BRIGHTNESS</a></p>
@@ -1100,7 +1170,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_CELL_BROADCASTS" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_CELL_BROADCASTS">
   DISALLOW_CONFIG_CELL_BROADCASTS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L212"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_CELL_BROADCASTS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_CELL_BROADCASTS</a></p>
@@ -1132,7 +1202,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_CREDENTIALS" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_CREDENTIALS">
   DISALLOW_CONFIG_CREDENTIALS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_CREDENTIALS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_CREDENTIALS</a></p>
@@ -1164,7 +1234,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_DATE_TIME" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_DATE_TIME">
   DISALLOW_CONFIG_DATE_TIME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_DATE_TIME">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_DATE_TIME</a></p>
@@ -1196,7 +1266,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_DEFAULT_APPS" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_DEFAULT_APPS">
   DISALLOW_CONFIG_DEFAULT_APPS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L230"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_DEFAULT_APPS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_DEFAULT_APPS</a></p>
@@ -1228,7 +1298,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_LOCALE" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_LOCALE">
   DISALLOW_CONFIG_LOCALE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L236"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_LOCALE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_LOCALE</a></p>
@@ -1260,7 +1330,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_LOCATION" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_LOCATION">
   DISALLOW_CONFIG_LOCATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L242"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_LOCATION">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_LOCATION</a></p>
@@ -1292,7 +1362,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_MOBILE_NETWORKS" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_MOBILE_NETWORKS">
   DISALLOW_CONFIG_MOBILE_NETWORKS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_MOBILE_NETWORKS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_MOBILE_NETWORKS</a></p>
@@ -1324,7 +1394,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_PRIVATE_DNS" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_PRIVATE_DNS">
   DISALLOW_CONFIG_PRIVATE_DNS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L254"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_PRIVATE_DNS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_PRIVATE_DNS</a></p>
@@ -1356,7 +1426,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_SCREEN_TIMEOUT" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_SCREEN_TIMEOUT">
   DISALLOW_CONFIG_SCREEN_TIMEOUT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L260"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_SCREEN_TIMEOUT">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_SCREEN_TIMEOUT</a></p>
@@ -1388,7 +1458,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_TETHERING" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_TETHERING">
   DISALLOW_CONFIG_TETHERING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L266"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_TETHERING">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_TETHERING</a></p>
@@ -1420,7 +1490,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_VPN" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_VPN">
   DISALLOW_CONFIG_VPN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L272"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_VPN">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_VPN</a></p>
@@ -1452,7 +1522,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_WIFI" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_WIFI">
   DISALLOW_CONFIG_WIFI
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L278"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_WIFI">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_WIFI</a></p>
@@ -1484,7 +1554,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONTENT_CAPTURE" data-uid="Android.Os.UserManager.DISALLOW_CONTENT_CAPTURE">
   DISALLOW_CONTENT_CAPTURE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L284"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONTENT_CAPTURE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONTENT_CAPTURE</a></p>
@@ -1516,7 +1586,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CONTENT_SUGGESTIONS" data-uid="Android.Os.UserManager.DISALLOW_CONTENT_SUGGESTIONS">
   DISALLOW_CONTENT_SUGGESTIONS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L290"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONTENT_SUGGESTIONS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONTENT_SUGGESTIONS</a></p>
@@ -1548,7 +1618,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CREATE_WINDOWS" data-uid="Android.Os.UserManager.DISALLOW_CREATE_WINDOWS">
   DISALLOW_CREATE_WINDOWS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L296"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CREATE_WINDOWS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CREATE_WINDOWS</a></p>
@@ -1580,7 +1650,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_CROSS_PROFILE_COPY_PASTE" data-uid="Android.Os.UserManager.DISALLOW_CROSS_PROFILE_COPY_PASTE">
   DISALLOW_CROSS_PROFILE_COPY_PASTE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L302"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CROSS_PROFILE_COPY_PASTE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CROSS_PROFILE_COPY_PASTE</a></p>
@@ -1612,7 +1682,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_DATA_ROAMING" data-uid="Android.Os.UserManager.DISALLOW_DATA_ROAMING">
   DISALLOW_DATA_ROAMING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_DATA_ROAMING">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_DATA_ROAMING</a></p>
@@ -1644,7 +1714,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_DEBUGGING_FEATURES" data-uid="Android.Os.UserManager.DISALLOW_DEBUGGING_FEATURES">
   DISALLOW_DEBUGGING_FEATURES
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L314"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_DEBUGGING_FEATURES">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_DEBUGGING_FEATURES</a></p>
@@ -1676,7 +1746,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_FACTORY_RESET" data-uid="Android.Os.UserManager.DISALLOW_FACTORY_RESET">
   DISALLOW_FACTORY_RESET
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L320"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_FACTORY_RESET">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_FACTORY_RESET</a></p>
@@ -1708,7 +1778,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_FUN" data-uid="Android.Os.UserManager.DISALLOW_FUN">
   DISALLOW_FUN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L326"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_FUN">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_FUN</a></p>
@@ -1740,7 +1810,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_GRANT_ADMIN" data-uid="Android.Os.UserManager.DISALLOW_GRANT_ADMIN">
   DISALLOW_GRANT_ADMIN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L332"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_GRANT_ADMIN">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_GRANT_ADMIN</a></p>
@@ -1772,7 +1842,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_INSTALL_APPS" data-uid="Android.Os.UserManager.DISALLOW_INSTALL_APPS">
   DISALLOW_INSTALL_APPS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L338"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_INSTALL_APPS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_INSTALL_APPS</a></p>
@@ -1804,7 +1874,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_INSTALL_UNKNOWN_SOURCES" data-uid="Android.Os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES">
   DISALLOW_INSTALL_UNKNOWN_SOURCES
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L344"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES</a></p>
@@ -1836,7 +1906,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY" data-uid="Android.Os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY">
   DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L350"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY</a></p>
@@ -1868,7 +1938,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_MICROPHONE_TOGGLE" data-uid="Android.Os.UserManager.DISALLOW_MICROPHONE_TOGGLE">
   DISALLOW_MICROPHONE_TOGGLE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L356"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_MICROPHONE_TOGGLE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_MICROPHONE_TOGGLE</a></p>
@@ -1900,7 +1970,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_MODIFY_ACCOUNTS" data-uid="Android.Os.UserManager.DISALLOW_MODIFY_ACCOUNTS">
   DISALLOW_MODIFY_ACCOUNTS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L362"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_MODIFY_ACCOUNTS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_MODIFY_ACCOUNTS</a></p>
@@ -1932,7 +2002,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_MOUNT_PHYSICAL_MEDIA" data-uid="Android.Os.UserManager.DISALLOW_MOUNT_PHYSICAL_MEDIA">
   DISALLOW_MOUNT_PHYSICAL_MEDIA
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L368"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_MOUNT_PHYSICAL_MEDIA">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_MOUNT_PHYSICAL_MEDIA</a></p>
@@ -1960,11 +2030,43 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
 
 
+  <a id="Android_Os_UserManager_DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO_" data-uid="Android.Os.UserManager.DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO" data-uid="Android.Os.UserManager.DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO">
+  DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Os_UserManager_DISALLOW_NETWORK_RESET_" data-uid="Android.Os.UserManager.DISALLOW_NETWORK_RESET*"></a>
 
   <h3 id="Android_Os_UserManager_DISALLOW_NETWORK_RESET" data-uid="Android.Os.UserManager.DISALLOW_NETWORK_RESET">
   DISALLOW_NETWORK_RESET
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L380"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_NETWORK_RESET">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_NETWORK_RESET</a></p>
@@ -1996,7 +2098,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_OUTGOING_BEAM" data-uid="Android.Os.UserManager.DISALLOW_OUTGOING_BEAM">
   DISALLOW_OUTGOING_BEAM
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L386"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_OUTGOING_BEAM">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_OUTGOING_BEAM</a></p>
@@ -2028,7 +2130,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_OUTGOING_CALLS" data-uid="Android.Os.UserManager.DISALLOW_OUTGOING_CALLS">
   DISALLOW_OUTGOING_CALLS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L392"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_OUTGOING_CALLS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_OUTGOING_CALLS</a></p>
@@ -2060,7 +2162,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_PRINTING" data-uid="Android.Os.UserManager.DISALLOW_PRINTING">
   DISALLOW_PRINTING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L398"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_PRINTING">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_PRINTING</a></p>
@@ -2092,7 +2194,7 @@ public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_REMOVE_MANAGED_PROFILE" data-uid="Android.Os.UserManager.DISALLOW_REMOVE_MANAGED_PROFILE">
   DISALLOW_REMOVE_MANAGED_PROFILE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L404"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_REMOVE_MANAGED_PROFILE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_REMOVE_MANAGED_PROFILE</a></p>
@@ -2125,7 +2227,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_REMOVE_USER" data-uid="Android.Os.UserManager.DISALLOW_REMOVE_USER">
   DISALLOW_REMOVE_USER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L411"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_REMOVE_USER">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_REMOVE_USER</a></p>
@@ -2157,7 +2259,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_SAFE_BOOT" data-uid="Android.Os.UserManager.DISALLOW_SAFE_BOOT">
   DISALLOW_SAFE_BOOT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L417"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SAFE_BOOT">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SAFE_BOOT</a></p>
@@ -2189,7 +2291,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_SET_USER_ICON" data-uid="Android.Os.UserManager.DISALLOW_SET_USER_ICON">
   DISALLOW_SET_USER_ICON
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L423"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SET_USER_ICON">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SET_USER_ICON</a></p>
@@ -2221,7 +2323,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_SET_WALLPAPER" data-uid="Android.Os.UserManager.DISALLOW_SET_WALLPAPER">
   DISALLOW_SET_WALLPAPER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L429"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SET_WALLPAPER">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SET_WALLPAPER</a></p>
@@ -2253,7 +2355,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_SHARE_INTO_MANAGED_PROFILE" data-uid="Android.Os.UserManager.DISALLOW_SHARE_INTO_MANAGED_PROFILE">
   DISALLOW_SHARE_INTO_MANAGED_PROFILE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L417"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L435"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SHARE_INTO_MANAGED_PROFILE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SHARE_INTO_MANAGED_PROFILE</a></p>
@@ -2285,7 +2387,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_SHARE_LOCATION" data-uid="Android.Os.UserManager.DISALLOW_SHARE_LOCATION">
   DISALLOW_SHARE_LOCATION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L441"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SHARE_LOCATION">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SHARE_LOCATION</a></p>
@@ -2317,7 +2419,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI" data-uid="Android.Os.UserManager.DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI">
   DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L447"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI</a></p>
@@ -2345,11 +2447,43 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
 
 
+  <a id="Android_Os_UserManager_DISALLOW_SIM_GLOBALLY_" data-uid="Android.Os.UserManager.DISALLOW_SIM_GLOBALLY*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_SIM_GLOBALLY" data-uid="Android.Os.UserManager.DISALLOW_SIM_GLOBALLY">
+  DISALLOW_SIM_GLOBALLY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L453"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SIM_GLOBALLY">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SIM_GLOBALLY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_SIM_GLOBALLY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Os_UserManager_DISALLOW_SMS_" data-uid="Android.Os.UserManager.DISALLOW_SMS*"></a>
 
   <h3 id="Android_Os_UserManager_DISALLOW_SMS" data-uid="Android.Os.UserManager.DISALLOW_SMS">
   DISALLOW_SMS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L435"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L459"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SMS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SMS</a></p>
@@ -2381,7 +2515,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_SYSTEM_ERROR_DIALOGS" data-uid="Android.Os.UserManager.DISALLOW_SYSTEM_ERROR_DIALOGS">
   DISALLOW_SYSTEM_ERROR_DIALOGS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L465"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SYSTEM_ERROR_DIALOGS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SYSTEM_ERROR_DIALOGS</a></p>
@@ -2413,7 +2547,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_ULTRA_WIDEBAND_RADIO" data-uid="Android.Os.UserManager.DISALLOW_ULTRA_WIDEBAND_RADIO">
   DISALLOW_ULTRA_WIDEBAND_RADIO
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L471"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ULTRA_WIDEBAND_RADIO">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ULTRA_WIDEBAND_RADIO</a></p>
@@ -2445,7 +2579,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_UNIFIED_PASSWORD" data-uid="Android.Os.UserManager.DISALLOW_UNIFIED_PASSWORD">
   DISALLOW_UNIFIED_PASSWORD
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L453"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L477"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_UNIFIED_PASSWORD">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_UNIFIED_PASSWORD</a></p>
@@ -2477,7 +2611,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_UNINSTALL_APPS" data-uid="Android.Os.UserManager.DISALLOW_UNINSTALL_APPS">
   DISALLOW_UNINSTALL_APPS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L483"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_UNINSTALL_APPS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_UNINSTALL_APPS</a></p>
@@ -2509,7 +2643,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_UNMUTE_MICROPHONE" data-uid="Android.Os.UserManager.DISALLOW_UNMUTE_MICROPHONE">
   DISALLOW_UNMUTE_MICROPHONE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L489"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_UNMUTE_MICROPHONE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_UNMUTE_MICROPHONE</a></p>
@@ -2541,7 +2675,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_USB_FILE_TRANSFER" data-uid="Android.Os.UserManager.DISALLOW_USB_FILE_TRANSFER">
   DISALLOW_USB_FILE_TRANSFER
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L471"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L495"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_USB_FILE_TRANSFER">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_USB_FILE_TRANSFER</a></p>
@@ -2573,7 +2707,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_USER_SWITCH" data-uid="Android.Os.UserManager.DISALLOW_USER_SWITCH">
   DISALLOW_USER_SWITCH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L477"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L501"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_USER_SWITCH">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_USER_SWITCH</a></p>
@@ -2605,7 +2739,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_WIFI_DIRECT" data-uid="Android.Os.UserManager.DISALLOW_WIFI_DIRECT">
   DISALLOW_WIFI_DIRECT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L483"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L507"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_WIFI_DIRECT">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_WIFI_DIRECT</a></p>
@@ -2637,7 +2771,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_DISALLOW_WIFI_TETHERING" data-uid="Android.Os.UserManager.DISALLOW_WIFI_TETHERING">
   DISALLOW_WIFI_TETHERING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L513"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_WIFI_TETHERING">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_WIFI_TETHERING</a></p>
@@ -2669,7 +2803,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_ENSURE_VERIFY_APPS" data-uid="Android.Os.UserManager.ENSURE_VERIFY_APPS">
   ENSURE_VERIFY_APPS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L495"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L519"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#ENSURE_VERIFY_APPS">https://developer.android.com/reference/android/os/UserManager.html#ENSURE_VERIFY_APPS</a></p>
@@ -2701,7 +2835,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsBridgeAbstract" data-uid="Android.Os.UserManager.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4587"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -2733,7 +2867,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsBridgeCloseable" data-uid="Android.Os.UserManager.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4270"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4591"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -2765,7 +2899,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsBridgeInterface" data-uid="Android.Os.UserManager.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4595"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -2797,7 +2931,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsBridgeStatic" data-uid="Android.Os.UserManager.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4278"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4599"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -2829,7 +2963,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_KEY_RESTRICTIONS_PENDING" data-uid="Android.Os.UserManager.KEY_RESTRICTIONS_PENDING">
   KEY_RESTRICTIONS_PENDING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L525"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#KEY_RESTRICTIONS_PENDING">https://developer.android.com/reference/android/os/UserManager.html#KEY_RESTRICTIONS_PENDING</a></p>
@@ -3177,6 +3311,102 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
 
 
+  <a id="Android_Os_UserManager_USER_TYPE_PROFILE_CLONE_" data-uid="Android.Os.UserManager.USER_TYPE_PROFILE_CLONE*"></a>
+
+  <h3 id="Android_Os_UserManager_USER_TYPE_PROFILE_CLONE" data-uid="Android.Os.UserManager.USER_TYPE_PROFILE_CLONE">
+  USER_TYPE_PROFILE_CLONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L531"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#USER_TYPE_PROFILE_CLONE">https://developer.android.com/reference/android/os/UserManager.html#USER_TYPE_PROFILE_CLONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String USER_TYPE_PROFILE_CLONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_USER_TYPE_PROFILE_MANAGED_" data-uid="Android.Os.UserManager.USER_TYPE_PROFILE_MANAGED*"></a>
+
+  <h3 id="Android_Os_UserManager_USER_TYPE_PROFILE_MANAGED" data-uid="Android.Os.UserManager.USER_TYPE_PROFILE_MANAGED">
+  USER_TYPE_PROFILE_MANAGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L537"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#USER_TYPE_PROFILE_MANAGED">https://developer.android.com/reference/android/os/UserManager.html#USER_TYPE_PROFILE_MANAGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String USER_TYPE_PROFILE_MANAGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_USER_TYPE_PROFILE_PRIVATE_" data-uid="Android.Os.UserManager.USER_TYPE_PROFILE_PRIVATE*"></a>
+
+  <h3 id="Android_Os_UserManager_USER_TYPE_PROFILE_PRIVATE" data-uid="Android.Os.UserManager.USER_TYPE_PROFILE_PRIVATE">
+  USER_TYPE_PROFILE_PRIVATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#USER_TYPE_PROFILE_PRIVATE">https://developer.android.com/reference/android/os/UserManager.html#USER_TYPE_PROFILE_PRIVATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String USER_TYPE_PROFILE_PRIVATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -3185,7 +3415,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_CreateUserCreationIntent_Java_Lang_String_Java_Lang_String_Java_Lang_String_Android_Os_PersistableBundle_" data-uid="Android.Os.UserManager.CreateUserCreationIntent(Java.Lang.String,Java.Lang.String,Java.Lang.String,Android.Os.PersistableBundle)">
   CreateUserCreationIntent(String, String, String, PersistableBundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L558"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#createUserCreationIntent(java.lang.String,java.lang.String,java.lang.String,android.os.PersistableBundle)">https://developer.android.com/reference/android/os/UserManager.html#createUserCreationIntent(java.lang.String,java.lang.String,java.lang.String,android.os.PersistableBundle)</a></p>
@@ -3233,7 +3463,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_GetApplicationRestrictions_Java_Lang_String_" data-uid="Android.Os.UserManager.GetApplicationRestrictions(Java.Lang.String)">
   GetApplicationRestrictions(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L545"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L587"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getApplicationRestrictions(java.lang.String)">https://developer.android.com/reference/android/os/UserManager.html#getApplicationRestrictions(java.lang.String)</a></p>
@@ -3272,7 +3502,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_GetSerialNumberForUser_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.GetSerialNumberForUser(Android.Os.UserHandle)">
   GetSerialNumberForUser(UserHandle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L744"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L786"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getSerialNumberForUser(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#getSerialNumberForUser(android.os.UserHandle)</a></p>
@@ -3311,7 +3541,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_GetUserCount" data-uid="Android.Os.UserManager.GetUserCount">
   GetUserCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L719"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L761"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserCount()">https://developer.android.com/reference/android/os/UserManager.html#getUserCount()</a></p>
@@ -3344,7 +3574,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_GetUserCreationTime_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.GetUserCreationTime(Android.Os.UserHandle)">
   GetUserCreationTime(UserHandle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L753"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L795"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserCreationTime(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#getUserCreationTime(android.os.UserHandle)</a></p>
@@ -3383,7 +3613,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_GetUserForSerialNumber_System_Int64_" data-uid="Android.Os.UserManager.GetUserForSerialNumber(System.Int64)">
   GetUserForSerialNumber(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L613"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserForSerialNumber(long)">https://developer.android.com/reference/android/os/UserManager.html#getUserForSerialNumber(long)</a></p>
@@ -3422,7 +3652,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_GetUserName" data-uid="Android.Os.UserManager.GetUserName">
   GetUserName()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L727"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L769"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserName()">https://developer.android.com/reference/android/os/UserManager.html#getUserName()</a></p>
@@ -3455,7 +3685,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_GetUserProfiles" data-uid="Android.Os.UserManager.GetUserProfiles">
   GetUserProfiles()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L735"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L777"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserProfiles()">https://developer.android.com/reference/android/os/UserManager.html#getUserProfiles()</a></p>
@@ -3488,7 +3718,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_GetUserRestrictions" data-uid="Android.Os.UserManager.GetUserRestrictions">
   GetUserRestrictions()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L553"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L595"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserRestrictions()">https://developer.android.com/reference/android/os/UserManager.html#getUserRestrictions()</a></p>
@@ -3521,7 +3751,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_GetUserRestrictions_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.GetUserRestrictions(Android.Os.UserHandle)">
   GetUserRestrictions(UserHandle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L562"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L604"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserRestrictions(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#getUserRestrictions(android.os.UserHandle)</a></p>
@@ -3560,7 +3790,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_HasUserRestriction_Java_Lang_String_" data-uid="Android.Os.UserManager.HasUserRestriction(Java.Lang.String)">
   HasUserRestriction(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L622"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#hasUserRestriction(java.lang.String)">https://developer.android.com/reference/android/os/UserManager.html#hasUserRestriction(java.lang.String)</a></p>
@@ -3599,7 +3829,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsAdminUser" data-uid="Android.Os.UserManager.IsAdminUser">
   IsAdminUser()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L630"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isAdminUser()">https://developer.android.com/reference/android/os/UserManager.html#isAdminUser()</a></p>
@@ -3632,7 +3862,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsDemoUser" data-uid="Android.Os.UserManager.IsDemoUser">
   IsDemoUser()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L638"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isDemoUser()">https://developer.android.com/reference/android/os/UserManager.html#isDemoUser()</a></p>
@@ -3665,7 +3895,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsHeadlessSystemUserMode" data-uid="Android.Os.UserManager.IsHeadlessSystemUserMode">
   IsHeadlessSystemUserMode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L524"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L566"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isHeadlessSystemUserMode()">https://developer.android.com/reference/android/os/UserManager.html#isHeadlessSystemUserMode()</a></p>
@@ -3698,7 +3928,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsManagedProfile" data-uid="Android.Os.UserManager.IsManagedProfile">
   IsManagedProfile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L604"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L646"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isManagedProfile()">https://developer.android.com/reference/android/os/UserManager.html#isManagedProfile()</a></p>
@@ -3731,7 +3961,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsProfile" data-uid="Android.Os.UserManager.IsProfile">
   IsProfile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L612"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L654"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isProfile()">https://developer.android.com/reference/android/os/UserManager.html#isProfile()</a></p>
@@ -3764,7 +3994,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsQuietModeEnabled_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.IsQuietModeEnabled(Android.Os.UserHandle)">
   IsQuietModeEnabled(UserHandle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L621"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L663"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isQuietModeEnabled(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#isQuietModeEnabled(android.os.UserHandle)</a></p>
@@ -3803,7 +4033,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsSystemUser" data-uid="Android.Os.UserManager.IsSystemUser">
   IsSystemUser()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L629"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L671"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isSystemUser()">https://developer.android.com/reference/android/os/UserManager.html#isSystemUser()</a></p>
@@ -3836,7 +4066,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsUserAGoat" data-uid="Android.Os.UserManager.IsUserAGoat">
   IsUserAGoat()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L637"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L679"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isUserAGoat()">https://developer.android.com/reference/android/os/UserManager.html#isUserAGoat()</a></p>
@@ -3869,7 +4099,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsUserForeground" data-uid="Android.Os.UserManager.IsUserForeground">
   IsUserForeground()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L645"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L687"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isUserForeground()">https://developer.android.com/reference/android/os/UserManager.html#isUserForeground()</a></p>
@@ -3902,7 +4132,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsUserRunning_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.IsUserRunning(Android.Os.UserHandle)">
   IsUserRunning(UserHandle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L654"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L696"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isUserRunning(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#isUserRunning(android.os.UserHandle)</a></p>
@@ -3941,7 +4171,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsUserRunningOrStopping_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.IsUserRunningOrStopping(Android.Os.UserHandle)">
   IsUserRunningOrStopping(UserHandle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L663"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L705"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isUserRunningOrStopping(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#isUserRunningOrStopping(android.os.UserHandle)</a></p>
@@ -3980,7 +4210,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsUserUnlocked" data-uid="Android.Os.UserManager.IsUserUnlocked">
   IsUserUnlocked()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L671"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L713"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isUserUnlocked()">https://developer.android.com/reference/android/os/UserManager.html#isUserUnlocked()</a></p>
@@ -4013,7 +4243,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_IsUserUnlocked_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.IsUserUnlocked(Android.Os.UserHandle)">
   IsUserUnlocked(UserHandle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L680"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L722"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isUserUnlocked(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#isUserUnlocked(android.os.UserHandle)</a></p>
@@ -4052,7 +4282,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_RequestQuietModeEnabled_System_Boolean_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.RequestQuietModeEnabled(System.Boolean,Android.Os.UserHandle)">
   RequestQuietModeEnabled(bool, UserHandle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L701"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L743"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#requestQuietModeEnabled(boolean,android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#requestQuietModeEnabled(boolean,android.os.UserHandle)</a></p>
@@ -4094,7 +4324,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_RequestQuietModeEnabled_System_Boolean_Android_Os_UserHandle_System_Int32_" data-uid="Android.Os.UserManager.RequestQuietModeEnabled(System.Boolean,Android.Os.UserHandle,System.Int32)">
   RequestQuietModeEnabled(bool, UserHandle, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L691"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L733"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#requestQuietModeEnabled(boolean,android.os.UserHandle,int)">https://developer.android.com/reference/android/os/UserManager.html#requestQuietModeEnabled(boolean,android.os.UserHandle,int)</a></p>
@@ -4139,7 +4369,7 @@ public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
 
   <h3 id="Android_Os_UserManager_SetRestrictionsChallenge_Java_Lang_String_" data-uid="Android.Os.UserManager.SetRestrictionsChallenge(Java.Lang.String)">
   SetRestrictionsChallenge(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L710"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L752"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#setRestrictionsChallenge(java.lang.String)">https://developer.android.com/reference/android/os/UserManager.html#setRestrictionsChallenge(java.lang.String)</a></p>
@@ -4179,7 +4409,7 @@ public bool SetRestrictionsChallenge(String arg0)</code></pre>
 
   <h3 id="Android_Os_UserManager_SetUserRestriction_Java_Lang_String_System_Boolean_" data-uid="Android.Os.UserManager.SetUserRestriction(Java.Lang.String,System.Boolean)">
   SetUserRestriction(String, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L762"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L804"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#setUserRestriction(java.lang.String,boolean)">https://developer.android.com/reference/android/os/UserManager.html#setUserRestriction(java.lang.String,boolean)</a></p>
@@ -4216,7 +4446,7 @@ public void SetUserRestriction(String arg0, bool arg1)</code></pre>
 
   <h3 id="Android_Os_UserManager_SetUserRestrictions_Android_Os_Bundle_" data-uid="Android.Os.UserManager.SetUserRestrictions(Android.Os.Bundle)">
   SetUserRestrictions(Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L781"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L823"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle)">https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle)</a></p>
@@ -4250,7 +4480,7 @@ public void SetUserRestrictions(Bundle arg0)</code></pre>
 
   <h3 id="Android_Os_UserManager_SetUserRestrictions_Android_Os_Bundle_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.SetUserRestrictions(Android.Os.Bundle,Android.Os.UserHandle)">
   SetUserRestrictions(Bundle, UserHandle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L772"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L814"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle,android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle,android.os.UserHandle)</a></p>
@@ -4287,7 +4517,7 @@ public void SetUserRestrictions(Bundle arg0, UserHandle arg1)</code></pre>
 
   <h3 id="Android_Os_UserManager_SupportsMultipleUsers" data-uid="Android.Os.UserManager.SupportsMultipleUsers">
   SupportsMultipleUsers()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L574"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#supportsMultipleUsers()">https://developer.android.com/reference/android/os/UserManager.html#supportsMultipleUsers()</a></p>

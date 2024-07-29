@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class Debug  <a class="header-action link-secondary" title="View source" href="h
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class Debug  <a class="header-action link-secondary" title="View source" href="h
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class Debug  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Android_Os_Debug__ctor" data-uid="Android.Os.Debug.#ctor">
   Debug()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1007"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1028"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class Debug  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Android_Os_Debug__ctor_System_Object___" data-uid="Android.Os.Debug.#ctor(System.Object[])">
   Debug(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1011"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1032"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -555,7 +561,7 @@ Class Debug  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Android_Os_Debug_BridgeClassName" data-uid="Android.Os.Debug.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1018"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1040"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -587,7 +593,7 @@ Class Debug  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Android_Os_Debug_IsBridgeAbstract" data-uid="Android.Os.Debug.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1022"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1044"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -619,7 +625,7 @@ Class Debug  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Android_Os_Debug_IsBridgeCloseable" data-uid="Android.Os.Debug.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1026"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1048"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -651,7 +657,7 @@ Class Debug  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Android_Os_Debug_IsBridgeInterface" data-uid="Android.Os.Debug.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1030"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1052"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -683,7 +689,7 @@ Class Debug  <a class="header-action link-secondary" title="View source" href="h
 
   <h3 id="Android_Os_Debug_IsBridgeStatic" data-uid="Android.Os.Debug.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1034"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L1056"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -848,7 +854,7 @@ public static int TRACE_COUNT_ALLOCS { get; }</code></pre>
 
   <h3 id="Android_Os_Debug_AttachJvmtiAgent_Java_Lang_String_Java_Lang_String_Java_Lang_ClassLoader_" data-uid="Android.Os.Debug.AttachJvmtiAgent(Java.Lang.String,Java.Lang.String,Java.Lang.ClassLoader)">
   AttachJvmtiAgent(String, String, ClassLoader)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L388"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#attachJvmtiAgent(java.lang.String,java.lang.String,java.lang.ClassLoader)">https://developer.android.com/reference/android/os/Debug.html#attachJvmtiAgent(java.lang.String,java.lang.String,java.lang.ClassLoader)</a></p>
@@ -892,7 +898,7 @@ public static int TRACE_COUNT_ALLOCS { get; }</code></pre>
 
   <h3 id="Android_Os_Debug_ChangeDebugPort_System_Int32_" data-uid="Android.Os.Debug.ChangeDebugPort(System.Int32)">
   ChangeDebugPort(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L396"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#changeDebugPort(int)">https://developer.android.com/reference/android/os/Debug.html#changeDebugPort(int)</a></p>
@@ -926,7 +932,7 @@ public static void ChangeDebugPort(int arg0)</code></pre>
 
   <h3 id="Android_Os_Debug_DumpHprofData_Java_Lang_String_" data-uid="Android.Os.Debug.DumpHprofData(Java.Lang.String)">
   DumpHprofData(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L406"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#dumpHprofData(java.lang.String)">https://developer.android.com/reference/android/os/Debug.html#dumpHprofData(java.lang.String)</a></p>
@@ -1009,7 +1015,7 @@ public static void ChangeDebugPort(int arg0)</code></pre>
 
   <h3 id="Android_Os_Debug_EnableEmulatorTraceOutput" data-uid="Android.Os.Debug.EnableEmulatorTraceOutput">
   EnableEmulatorTraceOutput()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L413"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#enableEmulatorTraceOutput()">https://developer.android.com/reference/android/os/Debug.html#enableEmulatorTraceOutput()</a></p>
@@ -1609,7 +1615,7 @@ public static int GetGlobalGcInvocationCount()</code></pre>
 
   <h3 id="Android_Os_Debug_GetMemoryInfo_Android_Os_Debug_MemoryInfo_" data-uid="Android.Os.Debug.GetMemoryInfo(Android.Os.Debug.MemoryInfo)">
   GetMemoryInfo(MemoryInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L377"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#getMemoryInfo(android.os.Debug.MemoryInfo)">https://developer.android.com/reference/android/os/Debug.html#getMemoryInfo(android.os.Debug.MemoryInfo)</a></p>
@@ -1750,6 +1756,39 @@ public static int GetGlobalGcInvocationCount()</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static long GetPss()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_Debug_GetRss_" data-uid="Android.Os.Debug.GetRss*"></a>
+
+  <h3 id="Android_Os_Debug_GetRss" data-uid="Android.Os.Debug.GetRss">
+  GetRss()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#getRss()">https://developer.android.com/reference/android/os/Debug.html#getRss()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long GetRss()</code></pre>
   </div>
 
 
@@ -2049,7 +2088,7 @@ public static int GetThreadGcInvocationCount()</code></pre>
 
   <h3 id="Android_Os_Debug_PrintLoadedClasses_System_Int32_" data-uid="Android.Os.Debug.PrintLoadedClasses(System.Int32)">
   PrintLoadedClasses(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L422"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#printLoadedClasses(int)">https://developer.android.com/reference/android/os/Debug.html#printLoadedClasses(int)</a></p>
@@ -2082,7 +2121,7 @@ public static int GetThreadGcInvocationCount()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetAllCounts" data-uid="Android.Os.Debug.ResetAllCounts">
   ResetAllCounts()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L429"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetAllCounts()">https://developer.android.com/reference/android/os/Debug.html#resetAllCounts()</a></p>
@@ -2110,7 +2149,7 @@ public static void ResetAllCounts()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetGlobalAllocCount" data-uid="Android.Os.Debug.ResetGlobalAllocCount">
   ResetGlobalAllocCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L437"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalAllocCount()">https://developer.android.com/reference/android/os/Debug.html#resetGlobalAllocCount()</a></p>
@@ -2138,7 +2177,7 @@ public static void ResetGlobalAllocCount()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetGlobalAllocSize" data-uid="Android.Os.Debug.ResetGlobalAllocSize">
   ResetGlobalAllocSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L445"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalAllocSize()">https://developer.android.com/reference/android/os/Debug.html#resetGlobalAllocSize()</a></p>
@@ -2166,7 +2205,7 @@ public static void ResetGlobalAllocSize()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetGlobalClassInitCount" data-uid="Android.Os.Debug.ResetGlobalClassInitCount">
   ResetGlobalClassInitCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L453"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalClassInitCount()">https://developer.android.com/reference/android/os/Debug.html#resetGlobalClassInitCount()</a></p>
@@ -2194,7 +2233,7 @@ public static void ResetGlobalClassInitCount()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetGlobalClassInitTime" data-uid="Android.Os.Debug.ResetGlobalClassInitTime">
   ResetGlobalClassInitTime()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L453"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L461"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalClassInitTime()">https://developer.android.com/reference/android/os/Debug.html#resetGlobalClassInitTime()</a></p>
@@ -2222,7 +2261,7 @@ public static void ResetGlobalClassInitTime()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetGlobalExternalAllocCount" data-uid="Android.Os.Debug.ResetGlobalExternalAllocCount">
   ResetGlobalExternalAllocCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L469"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalExternalAllocCount()">https://developer.android.com/reference/android/os/Debug.html#resetGlobalExternalAllocCount()</a></p>
@@ -2250,7 +2289,7 @@ public static void ResetGlobalExternalAllocCount()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetGlobalExternalAllocSize" data-uid="Android.Os.Debug.ResetGlobalExternalAllocSize">
   ResetGlobalExternalAllocSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L477"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalExternalAllocSize()">https://developer.android.com/reference/android/os/Debug.html#resetGlobalExternalAllocSize()</a></p>
@@ -2278,7 +2317,7 @@ public static void ResetGlobalExternalAllocSize()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetGlobalExternalFreedCount" data-uid="Android.Os.Debug.ResetGlobalExternalFreedCount">
   ResetGlobalExternalFreedCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L477"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L485"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalExternalFreedCount()">https://developer.android.com/reference/android/os/Debug.html#resetGlobalExternalFreedCount()</a></p>
@@ -2306,7 +2345,7 @@ public static void ResetGlobalExternalFreedCount()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetGlobalExternalFreedSize" data-uid="Android.Os.Debug.ResetGlobalExternalFreedSize">
   ResetGlobalExternalFreedSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L493"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalExternalFreedSize()">https://developer.android.com/reference/android/os/Debug.html#resetGlobalExternalFreedSize()</a></p>
@@ -2334,7 +2373,7 @@ public static void ResetGlobalExternalFreedSize()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetGlobalFreedCount" data-uid="Android.Os.Debug.ResetGlobalFreedCount">
   ResetGlobalFreedCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L501"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalFreedCount()">https://developer.android.com/reference/android/os/Debug.html#resetGlobalFreedCount()</a></p>
@@ -2362,7 +2401,7 @@ public static void ResetGlobalFreedCount()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetGlobalFreedSize" data-uid="Android.Os.Debug.ResetGlobalFreedSize">
   ResetGlobalFreedSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L509"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalFreedSize()">https://developer.android.com/reference/android/os/Debug.html#resetGlobalFreedSize()</a></p>
@@ -2390,7 +2429,7 @@ public static void ResetGlobalFreedSize()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetGlobalGcInvocationCount" data-uid="Android.Os.Debug.ResetGlobalGcInvocationCount">
   ResetGlobalGcInvocationCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L509"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L517"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalGcInvocationCount()">https://developer.android.com/reference/android/os/Debug.html#resetGlobalGcInvocationCount()</a></p>
@@ -2418,7 +2457,7 @@ public static void ResetGlobalGcInvocationCount()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetThreadAllocCount" data-uid="Android.Os.Debug.ResetThreadAllocCount">
   ResetThreadAllocCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L517"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L525"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetThreadAllocCount()">https://developer.android.com/reference/android/os/Debug.html#resetThreadAllocCount()</a></p>
@@ -2446,7 +2485,7 @@ public static void ResetThreadAllocCount()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetThreadAllocSize" data-uid="Android.Os.Debug.ResetThreadAllocSize">
   ResetThreadAllocSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L533"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetThreadAllocSize()">https://developer.android.com/reference/android/os/Debug.html#resetThreadAllocSize()</a></p>
@@ -2474,7 +2513,7 @@ public static void ResetThreadAllocSize()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetThreadExternalAllocCount" data-uid="Android.Os.Debug.ResetThreadExternalAllocCount">
   ResetThreadExternalAllocCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L541"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetThreadExternalAllocCount()">https://developer.android.com/reference/android/os/Debug.html#resetThreadExternalAllocCount()</a></p>
@@ -2502,7 +2541,7 @@ public static void ResetThreadExternalAllocCount()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetThreadExternalAllocSize" data-uid="Android.Os.Debug.ResetThreadExternalAllocSize">
   ResetThreadExternalAllocSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L549"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetThreadExternalAllocSize()">https://developer.android.com/reference/android/os/Debug.html#resetThreadExternalAllocSize()</a></p>
@@ -2530,7 +2569,7 @@ public static void ResetThreadExternalAllocSize()</code></pre>
 
   <h3 id="Android_Os_Debug_ResetThreadGcInvocationCount" data-uid="Android.Os.Debug.ResetThreadGcInvocationCount">
   ResetThreadGcInvocationCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L557"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#resetThreadGcInvocationCount()">https://developer.android.com/reference/android/os/Debug.html#resetThreadGcInvocationCount()</a></p>
@@ -2638,7 +2677,7 @@ public static int SetGlobalAllocationLimit(int arg0)</code></pre>
 
   <h3 id="Android_Os_Debug_StartAllocCounting" data-uid="Android.Os.Debug.StartAllocCounting">
   StartAllocCounting()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L557"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L565"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#startAllocCounting()">https://developer.android.com/reference/android/os/Debug.html#startAllocCounting()</a></p>
@@ -2666,7 +2705,7 @@ public static void StartAllocCounting()</code></pre>
 
   <h3 id="Android_Os_Debug_StartMethodTracing" data-uid="Android.Os.Debug.StartMethodTracing">
   StartMethodTracing()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L573"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#startMethodTracing()">https://developer.android.com/reference/android/os/Debug.html#startMethodTracing()</a></p>
@@ -2693,7 +2732,7 @@ public static void StartAllocCounting()</code></pre>
 
   <h3 id="Android_Os_Debug_StartMethodTracing_Java_Lang_String_" data-uid="Android.Os.Debug.StartMethodTracing(Java.Lang.String)">
   StartMethodTracing(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L600"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#startMethodTracing(java.lang.String)">https://developer.android.com/reference/android/os/Debug.html#startMethodTracing(java.lang.String)</a></p>
@@ -2726,7 +2765,7 @@ public static void StartAllocCounting()</code></pre>
 
   <h3 id="Android_Os_Debug_StartMethodTracing_Java_Lang_String_System_Int32_" data-uid="Android.Os.Debug.StartMethodTracing(Java.Lang.String,System.Int32)">
   StartMethodTracing(String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L592"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#startMethodTracing(java.lang.String,int)">https://developer.android.com/reference/android/os/Debug.html#startMethodTracing(java.lang.String,int)</a></p>
@@ -2762,7 +2801,7 @@ public static void StartAllocCounting()</code></pre>
 
   <h3 id="Android_Os_Debug_StartMethodTracing_Java_Lang_String_System_Int32_System_Int32_" data-uid="Android.Os.Debug.StartMethodTracing(Java.Lang.String,System.Int32,System.Int32)">
   StartMethodTracing(String, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L575"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L583"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#startMethodTracing(java.lang.String,int,int)">https://developer.android.com/reference/android/os/Debug.html#startMethodTracing(java.lang.String,int,int)</a></p>
@@ -2801,7 +2840,7 @@ public static void StartAllocCounting()</code></pre>
 
   <h3 id="Android_Os_Debug_StartMethodTracingSampling_Java_Lang_String_System_Int32_System_Int32_" data-uid="Android.Os.Debug.StartMethodTracingSampling(Java.Lang.String,System.Int32,System.Int32)">
   StartMethodTracingSampling(String, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L602"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L610"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#startMethodTracingSampling(java.lang.String,int,int)">https://developer.android.com/reference/android/os/Debug.html#startMethodTracingSampling(java.lang.String,int,int)</a></p>
@@ -2840,7 +2879,7 @@ public static void StartAllocCounting()</code></pre>
 
   <h3 id="Android_Os_Debug_StartNativeTracing" data-uid="Android.Os.Debug.StartNativeTracing">
   StartNativeTracing()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L609"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L617"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#startNativeTracing()">https://developer.android.com/reference/android/os/Debug.html#startNativeTracing()</a></p>
@@ -2867,7 +2906,7 @@ public static void StartAllocCounting()</code></pre>
 
   <h3 id="Android_Os_Debug_StopAllocCounting" data-uid="Android.Os.Debug.StopAllocCounting">
   StopAllocCounting()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L616"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L624"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#stopAllocCounting()">https://developer.android.com/reference/android/os/Debug.html#stopAllocCounting()</a></p>
@@ -2895,7 +2934,7 @@ public static void StopAllocCounting()</code></pre>
 
   <h3 id="Android_Os_Debug_StopMethodTracing" data-uid="Android.Os.Debug.StopMethodTracing">
   StopMethodTracing()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L624"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L632"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#stopMethodTracing()">https://developer.android.com/reference/android/os/Debug.html#stopMethodTracing()</a></p>
@@ -2922,7 +2961,7 @@ public static void StopAllocCounting()</code></pre>
 
   <h3 id="Android_Os_Debug_StopNativeTracing" data-uid="Android.Os.Debug.StopNativeTracing">
   StopNativeTracing()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L631"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L639"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#stopNativeTracing()">https://developer.android.com/reference/android/os/Debug.html#stopNativeTracing()</a></p>
@@ -2982,7 +3021,7 @@ public static void StopAllocCounting()</code></pre>
 
   <h3 id="Android_Os_Debug_WaitForDebugger" data-uid="Android.Os.Debug.WaitForDebugger">
   WaitForDebugger()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L638"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/Debug.cs/#L646"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/Debug.html#waitForDebugger()">https://developer.android.com/reference/android/os/Debug.html#waitForDebugger()</a></p>

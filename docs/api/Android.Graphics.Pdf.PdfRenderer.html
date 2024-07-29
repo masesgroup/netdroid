@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -320,6 +320,12 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -478,7 +484,7 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -494,7 +500,7 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Graphics_Pdf_PdfRenderer__ctor" data-uid="Android.Graphics.Pdf.PdfRenderer.#ctor">
   PdfRenderer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L309"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -521,7 +527,7 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Graphics_Pdf_PdfRenderer__ctor_Android_Os_ParcelFileDescriptor_" data-uid="Android.Graphics.Pdf.PdfRenderer.#ctor(Android.Os.ParcelFileDescriptor)">
   PdfRenderer(ParcelFileDescriptor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#%3Cinit%3E(android.os.ParcelFileDescriptor)">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#%3Cinit%3E(android.os.ParcelFileDescriptor)</a></p>
@@ -557,9 +563,50 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
   <a id="Android_Graphics_Pdf_PdfRenderer__ctor_" data-uid="Android.Graphics.Pdf.PdfRenderer.#ctor*"></a>
 
+  <h3 id="Android_Graphics_Pdf_PdfRenderer__ctor_Android_Os_ParcelFileDescriptor_Android_Graphics_Pdf_LoadParams_" data-uid="Android.Graphics.Pdf.PdfRenderer.#ctor(Android.Os.ParcelFileDescriptor,Android.Graphics.Pdf.LoadParams)">
+  PdfRenderer(ParcelFileDescriptor, LoadParams)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#%3Cinit%3E(android.os.ParcelFileDescriptor,android.graphics.pdf.LoadParams)">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#%3Cinit%3E(android.os.ParcelFileDescriptor,android.graphics.pdf.LoadParams)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfRenderer(ParcelFileDescriptor arg0, LoadParams arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Graphics.Pdf.LoadParams.html">LoadParams</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Pdf.LoadParams.html">LoadParams</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Graphics_Pdf_PdfRenderer__ctor_" data-uid="Android.Graphics.Pdf.PdfRenderer.#ctor*"></a>
+
   <h3 id="Android_Graphics_Pdf_PdfRenderer__ctor_System_Object___" data-uid="Android.Graphics.Pdf.PdfRenderer.#ctor(System.Object[])">
   PdfRenderer(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L313"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -595,7 +642,7 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Graphics_Pdf_PdfRenderer_BridgeClassName" data-uid="Android.Graphics.Pdf.PdfRenderer.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L321"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -623,11 +670,75 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <a id="Android_Graphics_Pdf_PdfRenderer_DOCUMENT_LINEARIZED_TYPE_LINEARIZED_" data-uid="Android.Graphics.Pdf.PdfRenderer.DOCUMENT_LINEARIZED_TYPE_LINEARIZED*"></a>
+
+  <h3 id="Android_Graphics_Pdf_PdfRenderer_DOCUMENT_LINEARIZED_TYPE_LINEARIZED" data-uid="Android.Graphics.Pdf.PdfRenderer.DOCUMENT_LINEARIZED_TYPE_LINEARIZED">
+  DOCUMENT_LINEARIZED_TYPE_LINEARIZED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#DOCUMENT_LINEARIZED_TYPE_LINEARIZED">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#DOCUMENT_LINEARIZED_TYPE_LINEARIZED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOCUMENT_LINEARIZED_TYPE_LINEARIZED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Pdf_PdfRenderer_DOCUMENT_LINEARIZED_TYPE_NON_LINEARIZED_" data-uid="Android.Graphics.Pdf.PdfRenderer.DOCUMENT_LINEARIZED_TYPE_NON_LINEARIZED*"></a>
+
+  <h3 id="Android_Graphics_Pdf_PdfRenderer_DOCUMENT_LINEARIZED_TYPE_NON_LINEARIZED" data-uid="Android.Graphics.Pdf.PdfRenderer.DOCUMENT_LINEARIZED_TYPE_NON_LINEARIZED">
+  DOCUMENT_LINEARIZED_TYPE_NON_LINEARIZED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#DOCUMENT_LINEARIZED_TYPE_NON_LINEARIZED">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#DOCUMENT_LINEARIZED_TYPE_NON_LINEARIZED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DOCUMENT_LINEARIZED_TYPE_NON_LINEARIZED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Graphics_Pdf_PdfRenderer_IsBridgeAbstract_" data-uid="Android.Graphics.Pdf.PdfRenderer.IsBridgeAbstract*"></a>
 
   <h3 id="Android_Graphics_Pdf_PdfRenderer_IsBridgeAbstract" data-uid="Android.Graphics.Pdf.PdfRenderer.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L325"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -659,7 +770,7 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Graphics_Pdf_PdfRenderer_IsBridgeCloseable" data-uid="Android.Graphics.Pdf.PdfRenderer.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L329"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -691,7 +802,7 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Graphics_Pdf_PdfRenderer_IsBridgeInterface" data-uid="Android.Graphics.Pdf.PdfRenderer.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L333"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -723,7 +834,7 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Graphics_Pdf_PdfRenderer_IsBridgeStatic" data-uid="Android.Graphics.Pdf.PdfRenderer.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/AllPackageClasses.cs/#L337"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -751,6 +862,134 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <a id="Android_Graphics_Pdf_PdfRenderer_PDF_FORM_TYPE_ACRO_FORM_" data-uid="Android.Graphics.Pdf.PdfRenderer.PDF_FORM_TYPE_ACRO_FORM*"></a>
+
+  <h3 id="Android_Graphics_Pdf_PdfRenderer_PDF_FORM_TYPE_ACRO_FORM" data-uid="Android.Graphics.Pdf.PdfRenderer.PDF_FORM_TYPE_ACRO_FORM">
+  PDF_FORM_TYPE_ACRO_FORM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#PDF_FORM_TYPE_ACRO_FORM">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#PDF_FORM_TYPE_ACRO_FORM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PDF_FORM_TYPE_ACRO_FORM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Pdf_PdfRenderer_PDF_FORM_TYPE_NONE_" data-uid="Android.Graphics.Pdf.PdfRenderer.PDF_FORM_TYPE_NONE*"></a>
+
+  <h3 id="Android_Graphics_Pdf_PdfRenderer_PDF_FORM_TYPE_NONE" data-uid="Android.Graphics.Pdf.PdfRenderer.PDF_FORM_TYPE_NONE">
+  PDF_FORM_TYPE_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#PDF_FORM_TYPE_NONE">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#PDF_FORM_TYPE_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PDF_FORM_TYPE_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Pdf_PdfRenderer_PDF_FORM_TYPE_XFA_FOREGROUND_" data-uid="Android.Graphics.Pdf.PdfRenderer.PDF_FORM_TYPE_XFA_FOREGROUND*"></a>
+
+  <h3 id="Android_Graphics_Pdf_PdfRenderer_PDF_FORM_TYPE_XFA_FOREGROUND" data-uid="Android.Graphics.Pdf.PdfRenderer.PDF_FORM_TYPE_XFA_FOREGROUND">
+  PDF_FORM_TYPE_XFA_FOREGROUND
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#PDF_FORM_TYPE_XFA_FOREGROUND">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#PDF_FORM_TYPE_XFA_FOREGROUND</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PDF_FORM_TYPE_XFA_FOREGROUND { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_Pdf_PdfRenderer_PDF_FORM_TYPE_XFA_FULL_" data-uid="Android.Graphics.Pdf.PdfRenderer.PDF_FORM_TYPE_XFA_FULL*"></a>
+
+  <h3 id="Android_Graphics_Pdf_PdfRenderer_PDF_FORM_TYPE_XFA_FULL" data-uid="Android.Graphics.Pdf.PdfRenderer.PDF_FORM_TYPE_XFA_FULL">
+  PDF_FORM_TYPE_XFA_FULL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#PDF_FORM_TYPE_XFA_FULL">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#PDF_FORM_TYPE_XFA_FULL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PDF_FORM_TYPE_XFA_FULL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -759,7 +998,7 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Graphics_Pdf_PdfRenderer_Close" data-uid="Android.Graphics.Pdf.PdfRenderer.Close">
   Close()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#close()">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#close()</a></p>
@@ -782,11 +1021,44 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <a id="Android_Graphics_Pdf_PdfRenderer_GetDocumentLinearizationType_" data-uid="Android.Graphics.Pdf.PdfRenderer.GetDocumentLinearizationType*"></a>
+
+  <h3 id="Android_Graphics_Pdf_PdfRenderer_GetDocumentLinearizationType" data-uid="Android.Graphics.Pdf.PdfRenderer.GetDocumentLinearizationType">
+  GetDocumentLinearizationType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#getDocumentLinearizationType()">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#getDocumentLinearizationType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDocumentLinearizationType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Graphics_Pdf_PdfRenderer_GetPageCount_" data-uid="Android.Graphics.Pdf.PdfRenderer.GetPageCount*"></a>
 
   <h3 id="Android_Graphics_Pdf_PdfRenderer_GetPageCount" data-uid="Android.Graphics.Pdf.PdfRenderer.GetPageCount">
   GetPageCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#getPageCount()">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#getPageCount()</a></p>
@@ -815,11 +1087,44 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <a id="Android_Graphics_Pdf_PdfRenderer_GetPdfFormType_" data-uid="Android.Graphics.Pdf.PdfRenderer.GetPdfFormType*"></a>
+
+  <h3 id="Android_Graphics_Pdf_PdfRenderer_GetPdfFormType" data-uid="Android.Graphics.Pdf.PdfRenderer.GetPdfFormType">
+  GetPdfFormType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#getPdfFormType()">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#getPdfFormType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPdfFormType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Graphics_Pdf_PdfRenderer_OpenPage_" data-uid="Android.Graphics.Pdf.PdfRenderer.OpenPage*"></a>
 
   <h3 id="Android_Graphics_Pdf_PdfRenderer_OpenPage_System_Int32_" data-uid="Android.Graphics.Pdf.PdfRenderer.OpenPage(System.Int32)">
   OpenPage(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#openPage(int)">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#openPage(int)</a></p>
@@ -858,7 +1163,7 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Android_Graphics_Pdf_PdfRenderer_ShouldScaleForPrinting" data-uid="Android.Graphics.Pdf.PdfRenderer.ShouldScaleForPrinting">
   ShouldScaleForPrinting()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#shouldScaleForPrinting()">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#shouldScaleForPrinting()</a></p>
@@ -884,6 +1189,47 @@ Class PdfRenderer  <a class="header-action link-secondary" title="View source" h
 
 
 
+
+
+
+  <a id="Android_Graphics_Pdf_PdfRenderer_Write_" data-uid="Android.Graphics.Pdf.PdfRenderer.Write*"></a>
+
+  <h3 id="Android_Graphics_Pdf_PdfRenderer_Write_Android_Os_ParcelFileDescriptor_System_Boolean_" data-uid="Android.Graphics.Pdf.PdfRenderer.Write(Android.Os.ParcelFileDescriptor,System.Boolean)">
+  Write(ParcelFileDescriptor, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/Pdf/PdfRenderer.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#write(android.os.ParcelFileDescriptor,boolean)">https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#write(android.os.ParcelFileDescriptor,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(ParcelFileDescriptor arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

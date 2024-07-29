@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class RecognizerIntent  <a class="header-action link-secondary" title="View sour
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class RecognizerIntent  <a class="header-action link-secondary" title="View sour
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class RecognizerIntent  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Speech_RecognizerIntent__ctor" data-uid="Android.Speech.RecognizerIntent.#ctor">
   RecognizerIntent()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L613"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L627"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class RecognizerIntent  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Speech_RecognizerIntent__ctor_System_Object___" data-uid="Android.Speech.RecognizerIntent.#ctor(System.Object[])">
   RecognizerIntent(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L617"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L631"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -683,7 +689,7 @@ Class RecognizerIntent  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Android_Speech_RecognizerIntent_BridgeClassName" data-uid="Android.Speech.RecognizerIntent.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L624"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L639"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -1320,11 +1326,75 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
 
 
+  <a id="Android_Speech_RecognizerIntent_EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLIS_" data-uid="Android.Speech.RecognizerIntent.EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLIS*"></a>
+
+  <h3 id="Android_Speech_RecognizerIntent_EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLIS" data-uid="Android.Speech.RecognizerIntent.EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLIS">
+  EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLIS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLIS">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLIS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_LANGUAGE_SWITCH_INITIAL_ACTIVE_DURATION_TIME_MILLIS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_RecognizerIntent_EXTRA_LANGUAGE_SWITCH_MAX_SWITCHES_" data-uid="Android.Speech.RecognizerIntent.EXTRA_LANGUAGE_SWITCH_MAX_SWITCHES*"></a>
+
+  <h3 id="Android_Speech_RecognizerIntent_EXTRA_LANGUAGE_SWITCH_MAX_SWITCHES" data-uid="Android.Speech.RecognizerIntent.EXTRA_LANGUAGE_SWITCH_MAX_SWITCHES">
+  EXTRA_LANGUAGE_SWITCH_MAX_SWITCHES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_LANGUAGE_SWITCH_MAX_SWITCHES">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_LANGUAGE_SWITCH_MAX_SWITCHES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_LANGUAGE_SWITCH_MAX_SWITCHES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Speech_RecognizerIntent_EXTRA_MASK_OFFENSIVE_WORDS_" data-uid="Android.Speech.RecognizerIntent.EXTRA_MASK_OFFENSIVE_WORDS*"></a>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_MASK_OFFENSIVE_WORDS" data-uid="Android.Speech.RecognizerIntent.EXTRA_MASK_OFFENSIVE_WORDS">
   EXTRA_MASK_OFFENSIVE_WORDS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_MASK_OFFENSIVE_WORDS">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_MASK_OFFENSIVE_WORDS</a></p>
@@ -1356,7 +1426,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_MAX_RESULTS" data-uid="Android.Speech.RecognizerIntent.EXTRA_MAX_RESULTS">
   EXTRA_MAX_RESULTS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L230"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_MAX_RESULTS">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_MAX_RESULTS</a></p>
@@ -1388,7 +1458,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_ONLY_RETURN_LANGUAGE_PREFERENCE" data-uid="Android.Speech.RecognizerIntent.EXTRA_ONLY_RETURN_LANGUAGE_PREFERENCE">
   EXTRA_ONLY_RETURN_LANGUAGE_PREFERENCE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L236"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_ONLY_RETURN_LANGUAGE_PREFERENCE">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_ONLY_RETURN_LANGUAGE_PREFERENCE</a></p>
@@ -1420,7 +1490,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_ORIGIN" data-uid="Android.Speech.RecognizerIntent.EXTRA_ORIGIN">
   EXTRA_ORIGIN
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L242"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_ORIGIN">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_ORIGIN</a></p>
@@ -1452,7 +1522,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_PARTIAL_RESULTS" data-uid="Android.Speech.RecognizerIntent.EXTRA_PARTIAL_RESULTS">
   EXTRA_PARTIAL_RESULTS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_PARTIAL_RESULTS">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_PARTIAL_RESULTS</a></p>
@@ -1484,7 +1554,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_PREFER_OFFLINE" data-uid="Android.Speech.RecognizerIntent.EXTRA_PREFER_OFFLINE">
   EXTRA_PREFER_OFFLINE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L254"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_PREFER_OFFLINE">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_PREFER_OFFLINE</a></p>
@@ -1516,7 +1586,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_PROMPT" data-uid="Android.Speech.RecognizerIntent.EXTRA_PROMPT">
   EXTRA_PROMPT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L260"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_PROMPT">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_PROMPT</a></p>
@@ -1548,7 +1618,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_REQUEST_WORD_CONFIDENCE" data-uid="Android.Speech.RecognizerIntent.EXTRA_REQUEST_WORD_CONFIDENCE">
   EXTRA_REQUEST_WORD_CONFIDENCE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L266"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_REQUEST_WORD_CONFIDENCE">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_REQUEST_WORD_CONFIDENCE</a></p>
@@ -1580,7 +1650,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_REQUEST_WORD_TIMING" data-uid="Android.Speech.RecognizerIntent.EXTRA_REQUEST_WORD_TIMING">
   EXTRA_REQUEST_WORD_TIMING
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L272"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_REQUEST_WORD_TIMING">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_REQUEST_WORD_TIMING</a></p>
@@ -1612,7 +1682,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_RESULTS" data-uid="Android.Speech.RecognizerIntent.EXTRA_RESULTS">
   EXTRA_RESULTS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L278"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_RESULTS">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_RESULTS</a></p>
@@ -1644,7 +1714,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_RESULTS_PENDINGINTENT" data-uid="Android.Speech.RecognizerIntent.EXTRA_RESULTS_PENDINGINTENT">
   EXTRA_RESULTS_PENDINGINTENT
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L284"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_RESULTS_PENDINGINTENT">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_RESULTS_PENDINGINTENT</a></p>
@@ -1676,7 +1746,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_RESULTS_PENDINGINTENT_BUNDLE" data-uid="Android.Speech.RecognizerIntent.EXTRA_RESULTS_PENDINGINTENT_BUNDLE">
   EXTRA_RESULTS_PENDINGINTENT_BUNDLE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L290"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_RESULTS_PENDINGINTENT_BUNDLE">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_RESULTS_PENDINGINTENT_BUNDLE</a></p>
@@ -1708,7 +1778,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_SECURE" data-uid="Android.Speech.RecognizerIntent.EXTRA_SECURE">
   EXTRA_SECURE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L296"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_SECURE">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_SECURE</a></p>
@@ -1740,7 +1810,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_SEGMENTED_SESSION" data-uid="Android.Speech.RecognizerIntent.EXTRA_SEGMENTED_SESSION">
   EXTRA_SEGMENTED_SESSION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L302"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_SEGMENTED_SESSION">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_SEGMENTED_SESSION</a></p>
@@ -1772,7 +1842,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS" data-uid="Android.Speech.RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS">
   EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS</a></p>
@@ -1804,7 +1874,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS" data-uid="Android.Speech.RecognizerIntent.EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS">
   EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L314"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS</a></p>
@@ -1836,7 +1906,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS" data-uid="Android.Speech.RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS">
   EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L320"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS</a></p>
@@ -1868,7 +1938,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_SUPPORTED_LANGUAGES" data-uid="Android.Speech.RecognizerIntent.EXTRA_SUPPORTED_LANGUAGES">
   EXTRA_SUPPORTED_LANGUAGES
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L326"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_SUPPORTED_LANGUAGES">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_SUPPORTED_LANGUAGES</a></p>
@@ -1900,7 +1970,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_EXTRA_WEB_SEARCH_ONLY" data-uid="Android.Speech.RecognizerIntent.EXTRA_WEB_SEARCH_ONLY">
   EXTRA_WEB_SEARCH_ONLY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L332"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_WEB_SEARCH_ONLY">https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_WEB_SEARCH_ONLY</a></p>
@@ -1932,7 +2002,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_FORMATTING_OPTIMIZE_LATENCY" data-uid="Android.Speech.RecognizerIntent.FORMATTING_OPTIMIZE_LATENCY">
   FORMATTING_OPTIMIZE_LATENCY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L338"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#FORMATTING_OPTIMIZE_LATENCY">https://developer.android.com/reference/android/speech/RecognizerIntent.html#FORMATTING_OPTIMIZE_LATENCY</a></p>
@@ -1964,7 +2034,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_FORMATTING_OPTIMIZE_QUALITY" data-uid="Android.Speech.RecognizerIntent.FORMATTING_OPTIMIZE_QUALITY">
   FORMATTING_OPTIMIZE_QUALITY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L344"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#FORMATTING_OPTIMIZE_QUALITY">https://developer.android.com/reference/android/speech/RecognizerIntent.html#FORMATTING_OPTIMIZE_QUALITY</a></p>
@@ -1996,7 +2066,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_IsBridgeAbstract" data-uid="Android.Speech.RecognizerIntent.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L643"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -2028,7 +2098,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_IsBridgeCloseable" data-uid="Android.Speech.RecognizerIntent.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L632"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L647"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -2060,7 +2130,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_IsBridgeInterface" data-uid="Android.Speech.RecognizerIntent.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L636"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L651"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -2092,7 +2162,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_IsBridgeStatic" data-uid="Android.Speech.RecognizerIntent.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L640"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/AllPackageClasses.cs/#L655"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -2124,7 +2194,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_LANGUAGE_MODEL_FREE_FORM" data-uid="Android.Speech.RecognizerIntent.LANGUAGE_MODEL_FREE_FORM">
   LANGUAGE_MODEL_FREE_FORM
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L350"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#LANGUAGE_MODEL_FREE_FORM">https://developer.android.com/reference/android/speech/RecognizerIntent.html#LANGUAGE_MODEL_FREE_FORM</a></p>
@@ -2156,7 +2226,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_LANGUAGE_MODEL_WEB_SEARCH" data-uid="Android.Speech.RecognizerIntent.LANGUAGE_MODEL_WEB_SEARCH">
   LANGUAGE_MODEL_WEB_SEARCH
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L356"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#LANGUAGE_MODEL_WEB_SEARCH">https://developer.android.com/reference/android/speech/RecognizerIntent.html#LANGUAGE_MODEL_WEB_SEARCH</a></p>
@@ -2188,7 +2258,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_LANGUAGE_SWITCH_BALANCED" data-uid="Android.Speech.RecognizerIntent.LANGUAGE_SWITCH_BALANCED">
   LANGUAGE_SWITCH_BALANCED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L362"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#LANGUAGE_SWITCH_BALANCED">https://developer.android.com/reference/android/speech/RecognizerIntent.html#LANGUAGE_SWITCH_BALANCED</a></p>
@@ -2220,7 +2290,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_LANGUAGE_SWITCH_HIGH_PRECISION" data-uid="Android.Speech.RecognizerIntent.LANGUAGE_SWITCH_HIGH_PRECISION">
   LANGUAGE_SWITCH_HIGH_PRECISION
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L368"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#LANGUAGE_SWITCH_HIGH_PRECISION">https://developer.android.com/reference/android/speech/RecognizerIntent.html#LANGUAGE_SWITCH_HIGH_PRECISION</a></p>
@@ -2252,7 +2322,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_LANGUAGE_SWITCH_QUICK_RESPONSE" data-uid="Android.Speech.RecognizerIntent.LANGUAGE_SWITCH_QUICK_RESPONSE">
   LANGUAGE_SWITCH_QUICK_RESPONSE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L374"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#LANGUAGE_SWITCH_QUICK_RESPONSE">https://developer.android.com/reference/android/speech/RecognizerIntent.html#LANGUAGE_SWITCH_QUICK_RESPONSE</a></p>
@@ -2448,7 +2518,7 @@ public static String EXTRA_AUDIO_INJECT_SOURCE { get; }</code></pre>
 
   <h3 id="Android_Speech_RecognizerIntent_GetVoiceDetailsIntent_Android_Content_Context_" data-uid="Android.Speech.RecognizerIntent.GetVoiceDetailsIntent(Android.Content.Context)">
   GetVoiceDetailsIntent(Context)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/RecognizerIntent.cs/#L386"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#getVoiceDetailsIntent(android.content.Context)">https://developer.android.com/reference/android/speech/RecognizerIntent.html#getVoiceDetailsIntent(android.content.Context)</a></p>

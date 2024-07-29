@@ -73,7 +73,7 @@
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
             <i class="bi bi-list"></i>
           </button>
 
@@ -318,6 +318,12 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
     </div>
     <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
     </div>
     <div>
@@ -476,7 +482,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
   </dd></dl>
 
@@ -492,7 +498,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter__ctor" data-uid="Android.Nfc.NfcAdapter.#ctor">
   NfcAdapter()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -519,7 +525,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter__ctor_System_Object___" data-uid="Android.Nfc.NfcAdapter.#ctor(System.Object[])">
   NfcAdapter(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -555,7 +561,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_ACTION_ADAPTER_STATE_CHANGED" data-uid="Android.Nfc.NfcAdapter.ACTION_ADAPTER_STATE_CHANGED">
   ACTION_ADAPTER_STATE_CHANGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L169"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_ADAPTER_STATE_CHANGED">https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_ADAPTER_STATE_CHANGED</a></p>
@@ -587,7 +593,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_ACTION_NDEF_DISCOVERED" data-uid="Android.Nfc.NfcAdapter.ACTION_NDEF_DISCOVERED">
   ACTION_NDEF_DISCOVERED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_NDEF_DISCOVERED">https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_NDEF_DISCOVERED</a></p>
@@ -619,7 +625,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_ACTION_PREFERRED_PAYMENT_CHANGED" data-uid="Android.Nfc.NfcAdapter.ACTION_PREFERRED_PAYMENT_CHANGED">
   ACTION_PREFERRED_PAYMENT_CHANGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_PREFERRED_PAYMENT_CHANGED">https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_PREFERRED_PAYMENT_CHANGED</a></p>
@@ -651,7 +657,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_ACTION_TAG_DISCOVERED" data-uid="Android.Nfc.NfcAdapter.ACTION_TAG_DISCOVERED">
   ACTION_TAG_DISCOVERED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_TAG_DISCOVERED">https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_TAG_DISCOVERED</a></p>
@@ -683,7 +689,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_ACTION_TECH_DISCOVERED" data-uid="Android.Nfc.NfcAdapter.ACTION_TECH_DISCOVERED">
   ACTION_TECH_DISCOVERED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_TECH_DISCOVERED">https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_TECH_DISCOVERED</a></p>
@@ -715,7 +721,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_ACTION_TRANSACTION_DETECTED" data-uid="Android.Nfc.NfcAdapter.ACTION_TRANSACTION_DETECTED">
   ACTION_TRANSACTION_DETECTED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L199"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_TRANSACTION_DETECTED">https://developer.android.com/reference/android/nfc/NfcAdapter.html#ACTION_TRANSACTION_DETECTED</a></p>
@@ -747,7 +753,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_BridgeClassName" data-uid="Android.Nfc.NfcAdapter.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
@@ -779,7 +785,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_EXTRA_ADAPTER_STATE" data-uid="Android.Nfc.NfcAdapter.EXTRA_ADAPTER_STATE">
   EXTRA_ADAPTER_STATE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L205"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_ADAPTER_STATE">https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_ADAPTER_STATE</a></p>
@@ -811,7 +817,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_EXTRA_AID" data-uid="Android.Nfc.NfcAdapter.EXTRA_AID">
   EXTRA_AID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_AID">https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_AID</a></p>
@@ -843,7 +849,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_EXTRA_DATA" data-uid="Android.Nfc.NfcAdapter.EXTRA_DATA">
   EXTRA_DATA
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L217"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_DATA">https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_DATA</a></p>
@@ -875,7 +881,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_EXTRA_ID" data-uid="Android.Nfc.NfcAdapter.EXTRA_ID">
   EXTRA_ID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L223"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_ID">https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_ID</a></p>
@@ -907,7 +913,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_EXTRA_NDEF_MESSAGES" data-uid="Android.Nfc.NfcAdapter.EXTRA_NDEF_MESSAGES">
   EXTRA_NDEF_MESSAGES
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_NDEF_MESSAGES">https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_NDEF_MESSAGES</a></p>
@@ -939,7 +945,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_EXTRA_PREFERRED_PAYMENT_CHANGED_REASON" data-uid="Android.Nfc.NfcAdapter.EXTRA_PREFERRED_PAYMENT_CHANGED_REASON">
   EXTRA_PREFERRED_PAYMENT_CHANGED_REASON
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_PREFERRED_PAYMENT_CHANGED_REASON">https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_PREFERRED_PAYMENT_CHANGED_REASON</a></p>
@@ -971,7 +977,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_EXTRA_READER_PRESENCE_CHECK_DELAY" data-uid="Android.Nfc.NfcAdapter.EXTRA_READER_PRESENCE_CHECK_DELAY">
   EXTRA_READER_PRESENCE_CHECK_DELAY
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_READER_PRESENCE_CHECK_DELAY">https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_READER_PRESENCE_CHECK_DELAY</a></p>
@@ -1003,7 +1009,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_EXTRA_SECURE_ELEMENT_NAME" data-uid="Android.Nfc.NfcAdapter.EXTRA_SECURE_ELEMENT_NAME">
   EXTRA_SECURE_ELEMENT_NAME
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_SECURE_ELEMENT_NAME">https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_SECURE_ELEMENT_NAME</a></p>
@@ -1035,7 +1041,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_EXTRA_TAG" data-uid="Android.Nfc.NfcAdapter.EXTRA_TAG">
   EXTRA_TAG
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_TAG">https://developer.android.com/reference/android/nfc/NfcAdapter.html#EXTRA_TAG</a></p>
@@ -1063,11 +1069,235 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <a id="Android_Nfc_NfcAdapter_FLAG_LISTEN_DISABLE_" data-uid="Android.Nfc.NfcAdapter.FLAG_LISTEN_DISABLE*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_FLAG_LISTEN_DISABLE" data-uid="Android.Nfc.NfcAdapter.FLAG_LISTEN_DISABLE">
+  FLAG_LISTEN_DISABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_DISABLE">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_DISABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_LISTEN_DISABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_NfcAdapter_FLAG_LISTEN_KEEP_" data-uid="Android.Nfc.NfcAdapter.FLAG_LISTEN_KEEP*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_FLAG_LISTEN_KEEP" data-uid="Android.Nfc.NfcAdapter.FLAG_LISTEN_KEEP">
+  FLAG_LISTEN_KEEP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_KEEP">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_KEEP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_LISTEN_KEEP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_NfcAdapter_FLAG_LISTEN_NFC_PASSIVE_A_" data-uid="Android.Nfc.NfcAdapter.FLAG_LISTEN_NFC_PASSIVE_A*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_FLAG_LISTEN_NFC_PASSIVE_A" data-uid="Android.Nfc.NfcAdapter.FLAG_LISTEN_NFC_PASSIVE_A">
+  FLAG_LISTEN_NFC_PASSIVE_A
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_NFC_PASSIVE_A">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_NFC_PASSIVE_A</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_LISTEN_NFC_PASSIVE_A { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_NfcAdapter_FLAG_LISTEN_NFC_PASSIVE_B_" data-uid="Android.Nfc.NfcAdapter.FLAG_LISTEN_NFC_PASSIVE_B*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_FLAG_LISTEN_NFC_PASSIVE_B" data-uid="Android.Nfc.NfcAdapter.FLAG_LISTEN_NFC_PASSIVE_B">
+  FLAG_LISTEN_NFC_PASSIVE_B
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_NFC_PASSIVE_B">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_NFC_PASSIVE_B</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_LISTEN_NFC_PASSIVE_B { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_NfcAdapter_FLAG_LISTEN_NFC_PASSIVE_F_" data-uid="Android.Nfc.NfcAdapter.FLAG_LISTEN_NFC_PASSIVE_F*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_FLAG_LISTEN_NFC_PASSIVE_F" data-uid="Android.Nfc.NfcAdapter.FLAG_LISTEN_NFC_PASSIVE_F">
+  FLAG_LISTEN_NFC_PASSIVE_F
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_NFC_PASSIVE_F">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_LISTEN_NFC_PASSIVE_F</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_LISTEN_NFC_PASSIVE_F { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_NfcAdapter_FLAG_READER_DISABLE_" data-uid="Android.Nfc.NfcAdapter.FLAG_READER_DISABLE*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_FLAG_READER_DISABLE" data-uid="Android.Nfc.NfcAdapter.FLAG_READER_DISABLE">
+  FLAG_READER_DISABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_DISABLE">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_DISABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_READER_DISABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_NfcAdapter_FLAG_READER_KEEP_" data-uid="Android.Nfc.NfcAdapter.FLAG_READER_KEEP*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_FLAG_READER_KEEP" data-uid="Android.Nfc.NfcAdapter.FLAG_READER_KEEP">
+  FLAG_READER_KEEP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_KEEP">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_KEEP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_READER_KEEP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Android_Nfc_NfcAdapter_FLAG_READER_NFC_A_" data-uid="Android.Nfc.NfcAdapter.FLAG_READER_NFC_A*"></a>
 
   <h3 id="Android_Nfc_NfcAdapter_FLAG_READER_NFC_A" data-uid="Android.Nfc.NfcAdapter.FLAG_READER_NFC_A">
   FLAG_READER_NFC_A
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_NFC_A">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_NFC_A</a></p>
@@ -1099,7 +1329,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_FLAG_READER_NFC_B" data-uid="Android.Nfc.NfcAdapter.FLAG_READER_NFC_B">
   FLAG_READER_NFC_B
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_NFC_B">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_NFC_B</a></p>
@@ -1131,7 +1361,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_FLAG_READER_NFC_BARCODE" data-uid="Android.Nfc.NfcAdapter.FLAG_READER_NFC_BARCODE">
   FLAG_READER_NFC_BARCODE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_NFC_BARCODE">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_NFC_BARCODE</a></p>
@@ -1163,7 +1393,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_FLAG_READER_NFC_F" data-uid="Android.Nfc.NfcAdapter.FLAG_READER_NFC_F">
   FLAG_READER_NFC_F
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_NFC_F">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_NFC_F</a></p>
@@ -1195,7 +1425,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_FLAG_READER_NFC_V" data-uid="Android.Nfc.NfcAdapter.FLAG_READER_NFC_V">
   FLAG_READER_NFC_V
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_NFC_V">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_NFC_V</a></p>
@@ -1227,7 +1457,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_FLAG_READER_NO_PLATFORM_SOUNDS" data-uid="Android.Nfc.NfcAdapter.FLAG_READER_NO_PLATFORM_SOUNDS">
   FLAG_READER_NO_PLATFORM_SOUNDS
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_NO_PLATFORM_SOUNDS">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_NO_PLATFORM_SOUNDS</a></p>
@@ -1259,7 +1489,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_FLAG_READER_SKIP_NDEF_CHECK" data-uid="Android.Nfc.NfcAdapter.FLAG_READER_SKIP_NDEF_CHECK">
   FLAG_READER_SKIP_NDEF_CHECK
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_SKIP_NDEF_CHECK">https://developer.android.com/reference/android/nfc/NfcAdapter.html#FLAG_READER_SKIP_NDEF_CHECK</a></p>
@@ -1291,7 +1521,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_IsBridgeAbstract" data-uid="Android.Nfc.NfcAdapter.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L207"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
@@ -1323,7 +1553,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_IsBridgeCloseable" data-uid="Android.Nfc.NfcAdapter.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
@@ -1355,7 +1585,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_IsBridgeInterface" data-uid="Android.Nfc.NfcAdapter.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
@@ -1387,7 +1617,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_IsBridgeStatic" data-uid="Android.Nfc.NfcAdapter.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/AllPackageClasses.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
@@ -1419,7 +1649,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_PREFERRED_PAYMENT_CHANGED" data-uid="Android.Nfc.NfcAdapter.PREFERRED_PAYMENT_CHANGED">
   PREFERRED_PAYMENT_CHANGED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#PREFERRED_PAYMENT_CHANGED">https://developer.android.com/reference/android/nfc/NfcAdapter.html#PREFERRED_PAYMENT_CHANGED</a></p>
@@ -1451,7 +1681,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_PREFERRED_PAYMENT_LOADED" data-uid="Android.Nfc.NfcAdapter.PREFERRED_PAYMENT_LOADED">
   PREFERRED_PAYMENT_LOADED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#PREFERRED_PAYMENT_LOADED">https://developer.android.com/reference/android/nfc/NfcAdapter.html#PREFERRED_PAYMENT_LOADED</a></p>
@@ -1483,7 +1713,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_PREFERRED_PAYMENT_UPDATED" data-uid="Android.Nfc.NfcAdapter.PREFERRED_PAYMENT_UPDATED">
   PREFERRED_PAYMENT_UPDATED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#PREFERRED_PAYMENT_UPDATED">https://developer.android.com/reference/android/nfc/NfcAdapter.html#PREFERRED_PAYMENT_UPDATED</a></p>
@@ -1515,7 +1745,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_STATE_OFF" data-uid="Android.Nfc.NfcAdapter.STATE_OFF">
   STATE_OFF
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#STATE_OFF">https://developer.android.com/reference/android/nfc/NfcAdapter.html#STATE_OFF</a></p>
@@ -1547,7 +1777,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_STATE_ON" data-uid="Android.Nfc.NfcAdapter.STATE_ON">
   STATE_ON
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#STATE_ON">https://developer.android.com/reference/android/nfc/NfcAdapter.html#STATE_ON</a></p>
@@ -1579,7 +1809,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_STATE_TURNING_OFF" data-uid="Android.Nfc.NfcAdapter.STATE_TURNING_OFF">
   STATE_TURNING_OFF
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#STATE_TURNING_OFF">https://developer.android.com/reference/android/nfc/NfcAdapter.html#STATE_TURNING_OFF</a></p>
@@ -1611,7 +1841,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_STATE_TURNING_ON" data-uid="Android.Nfc.NfcAdapter.STATE_TURNING_ON">
   STATE_TURNING_ON
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L163"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#STATE_TURNING_ON">https://developer.android.com/reference/android/nfc/NfcAdapter.html#STATE_TURNING_ON</a></p>
@@ -1647,7 +1877,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_DisableForegroundDispatch_Android_App_Activity_" data-uid="Android.Nfc.NfcAdapter.DisableForegroundDispatch(Android.App.Activity)">
   DisableForegroundDispatch(Activity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L362"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#disableForegroundDispatch(android.app.Activity)">https://developer.android.com/reference/android/nfc/NfcAdapter.html#disableForegroundDispatch(android.app.Activity)</a></p>
@@ -1680,7 +1910,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_DisableReaderMode_Android_App_Activity_" data-uid="Android.Nfc.NfcAdapter.DisableReaderMode(Android.App.Activity)">
   DisableReaderMode(Activity)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L370"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#disableReaderMode(android.app.Activity)">https://developer.android.com/reference/android/nfc/NfcAdapter.html#disableReaderMode(android.app.Activity)</a></p>
@@ -1713,7 +1943,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_EnableForegroundDispatch_Android_App_Activity_Android_App_PendingIntent_Android_Content_IntentFilter___Java_Lang_String_____" data-uid="Android.Nfc.NfcAdapter.EnableForegroundDispatch(Android.App.Activity,Android.App.PendingIntent,Android.Content.IntentFilter[],Java.Lang.String[][])">
   EnableForegroundDispatch(Activity, PendingIntent, IntentFilter[], String[][])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L381"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#enableForegroundDispatch(android.app.Activity,android.app.PendingIntent,android.content.IntentFilter[],java.lang.String[][])">https://developer.android.com/reference/android/nfc/NfcAdapter.html#enableForegroundDispatch(android.app.Activity,android.app.PendingIntent,android.content.IntentFilter[],java.lang.String[][])</a></p>
@@ -1755,7 +1985,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_EnableReaderMode_Android_App_Activity_Android_Nfc_NfcAdapter_ReaderCallback_System_Int32_Android_Os_Bundle_" data-uid="Android.Nfc.NfcAdapter.EnableReaderMode(Android.App.Activity,Android.Nfc.NfcAdapter.ReaderCallback,System.Int32,Android.Os.Bundle)">
   EnableReaderMode(Activity, ReaderCallback, int, Bundle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L392"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#enableReaderMode(android.app.Activity,android.nfc.NfcAdapter.ReaderCallback,int,android.os.Bundle)">https://developer.android.com/reference/android/nfc/NfcAdapter.html#enableReaderMode(android.app.Activity,android.nfc.NfcAdapter.ReaderCallback,int,android.os.Bundle)</a></p>
@@ -1797,7 +2027,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_GetDefaultAdapter_Android_Content_Context_" data-uid="Android.Nfc.NfcAdapter.GetDefaultAdapter(Android.Content.Context)">
   GetDefaultAdapter(Context)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L265"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#getDefaultAdapter(android.content.Context)">https://developer.android.com/reference/android/nfc/NfcAdapter.html#getDefaultAdapter(android.content.Context)</a></p>
@@ -1836,7 +2066,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_GetNfcAntennaInfo" data-uid="Android.Nfc.NfcAdapter.GetNfcAntennaInfo">
   GetNfcAntennaInfo()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L277"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#getNfcAntennaInfo()">https://developer.android.com/reference/android/nfc/NfcAdapter.html#getNfcAntennaInfo()</a></p>
@@ -1869,7 +2099,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_Ignore_Android_Nfc_Tag_System_Int32_Android_Nfc_NfcAdapter_OnTagRemovedListener_Android_Os_Handler_" data-uid="Android.Nfc.NfcAdapter.Ignore(Android.Nfc.Tag,System.Int32,Android.Nfc.NfcAdapter.OnTagRemovedListener,Android.Os.Handler)">
   Ignore(Tag, int, OnTagRemovedListener, Handler)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#ignore(android.nfc.Tag,int,android.nfc.NfcAdapter.OnTagRemovedListener,android.os.Handler)">https://developer.android.com/reference/android/nfc/NfcAdapter.html#ignore(android.nfc.Tag,int,android.nfc.NfcAdapter.OnTagRemovedListener,android.os.Handler)</a></p>
@@ -1917,7 +2147,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_IsEnabled" data-uid="Android.Nfc.NfcAdapter.IsEnabled">
   IsEnabled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L297"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isEnabled()">https://developer.android.com/reference/android/nfc/NfcAdapter.html#isEnabled()</a></p>
@@ -1946,11 +2176,143 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
 
 
+  <a id="Android_Nfc_NfcAdapter_IsObserveModeEnabled_" data-uid="Android.Nfc.NfcAdapter.IsObserveModeEnabled*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_IsObserveModeEnabled" data-uid="Android.Nfc.NfcAdapter.IsObserveModeEnabled">
+  IsObserveModeEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isObserveModeEnabled()">https://developer.android.com/reference/android/nfc/NfcAdapter.html#isObserveModeEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsObserveModeEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_NfcAdapter_IsObserveModeSupported_" data-uid="Android.Nfc.NfcAdapter.IsObserveModeSupported*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_IsObserveModeSupported" data-uid="Android.Nfc.NfcAdapter.IsObserveModeSupported">
+  IsObserveModeSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isObserveModeSupported()">https://developer.android.com/reference/android/nfc/NfcAdapter.html#isObserveModeSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsObserveModeSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_NfcAdapter_IsReaderOptionEnabled_" data-uid="Android.Nfc.NfcAdapter.IsReaderOptionEnabled*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_IsReaderOptionEnabled" data-uid="Android.Nfc.NfcAdapter.IsReaderOptionEnabled">
+  IsReaderOptionEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isReaderOptionEnabled()">https://developer.android.com/reference/android/nfc/NfcAdapter.html#isReaderOptionEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReaderOptionEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_NfcAdapter_IsReaderOptionSupported_" data-uid="Android.Nfc.NfcAdapter.IsReaderOptionSupported*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_IsReaderOptionSupported" data-uid="Android.Nfc.NfcAdapter.IsReaderOptionSupported">
+  IsReaderOptionSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isReaderOptionSupported()">https://developer.android.com/reference/android/nfc/NfcAdapter.html#isReaderOptionSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReaderOptionSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Android_Nfc_NfcAdapter_IsSecureNfcEnabled_" data-uid="Android.Nfc.NfcAdapter.IsSecureNfcEnabled*"></a>
 
   <h3 id="Android_Nfc_NfcAdapter_IsSecureNfcEnabled" data-uid="Android.Nfc.NfcAdapter.IsSecureNfcEnabled">
   IsSecureNfcEnabled()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L337"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isSecureNfcEnabled()">https://developer.android.com/reference/android/nfc/NfcAdapter.html#isSecureNfcEnabled()</a></p>
@@ -1983,7 +2345,7 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="Android_Nfc_NfcAdapter_IsSecureNfcSupported" data-uid="Android.Nfc.NfcAdapter.IsSecureNfcSupported">
   IsSecureNfcSupported()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L345"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#isSecureNfcSupported()">https://developer.android.com/reference/android/nfc/NfcAdapter.html#isSecureNfcSupported()</a></p>
@@ -1994,6 +2356,117 @@ Class NfcAdapter  <a class="header-action link-secondary" title="View source" hr
     <pre><code class="lang-csharp hljs">public bool IsSecureNfcSupported()</code></pre>
   </div>
 
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_NfcAdapter_ResetDiscoveryTechnology_" data-uid="Android.Nfc.NfcAdapter.ResetDiscoveryTechnology*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_ResetDiscoveryTechnology_Android_App_Activity_" data-uid="Android.Nfc.NfcAdapter.ResetDiscoveryTechnology(Android.App.Activity)">
+  ResetDiscoveryTechnology(Activity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#resetDiscoveryTechnology(android.app.Activity)">https://developer.android.com/reference/android/nfc/NfcAdapter.html#resetDiscoveryTechnology(android.app.Activity)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetDiscoveryTechnology(Activity arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_NfcAdapter_SetDiscoveryTechnology_" data-uid="Android.Nfc.NfcAdapter.SetDiscoveryTechnology*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_SetDiscoveryTechnology_Android_App_Activity_System_Int32_System_Int32_" data-uid="Android.Nfc.NfcAdapter.SetDiscoveryTechnology(Android.App.Activity,System.Int32,System.Int32)">
+  SetDiscoveryTechnology(Activity, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#setDiscoveryTechnology(android.app.Activity,int,int)">https://developer.android.com/reference/android/nfc/NfcAdapter.html#setDiscoveryTechnology(android.app.Activity,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDiscoveryTechnology(Activity arg0, int arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.Activity.html">Activity</a></dt>
+    <dd><p><a class="xref" href="Android.App.Activity.html">Activity</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Nfc_NfcAdapter_SetObserveModeEnabled_" data-uid="Android.Nfc.NfcAdapter.SetObserveModeEnabled*"></a>
+
+  <h3 id="Android_Nfc_NfcAdapter_SetObserveModeEnabled_System_Boolean_" data-uid="Android.Nfc.NfcAdapter.SetObserveModeEnabled(System.Boolean)">
+  SetObserveModeEnabled(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Nfc/NfcAdapter.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/nfc/NfcAdapter.html#setObserveModeEnabled(boolean)">https://developer.android.com/reference/android/nfc/NfcAdapter.html#setObserveModeEnabled(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetObserveModeEnabled(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

@@ -1,0 +1,1253 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class WifiP2pManager.WifiP2pListenerDirect | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class WifiP2pManager.WifiP2pListenerDirect | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="Direct override of  or its generic type if there is one">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect.md&amp;value=---%0Auid%3A%20Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect">
+
+
+
+  <h1 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect" class="text-break">
+Class WifiP2pManager.WifiP2pListenerDirect  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2732"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Net.html">Net</a>.<a class="xref" href="Android.Net.Wifi.html">Wifi</a>.<a class="xref" href="Android.Net.Wifi.P2p.html">P2p</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Direct override of <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html">WifiP2pManager.WifiP2pListener</a> or its generic type if there is one</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WifiP2pManager.WifiP2pListenerDirect : WifiP2pManager.WifiP2pListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<span class="xref">JVMBridgeListener</span>&gt;</div>
+      <div><span class="xref">JVMBridgeListener</span></div>
+      <div><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html">WifiP2pListener</a></div>
+      <div><span class="xref">WifiP2pManager.WifiP2pListenerDirect</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnDeviceConfigurationChangedDefault_Android_Net_Wifi_P2p_WifiP2pDevice_">WifiP2pManager.WifiP2pListener.OnDeviceConfigurationChangedDefault(WifiP2pDevice)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnOnDeviceConfigurationChanged">WifiP2pManager.WifiP2pListener.OnOnDeviceConfigurationChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnDiscoveryStateChangedDefault_System_Int32_">WifiP2pManager.WifiP2pListener.OnDiscoveryStateChangedDefault(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnOnDiscoveryStateChanged">WifiP2pManager.WifiP2pListener.OnOnDiscoveryStateChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnFrequencyChangedDefault_Android_Net_Wifi_P2p_WifiP2pInfo_Android_Net_Wifi_P2p_WifiP2pGroup_">WifiP2pManager.WifiP2pListener.OnFrequencyChangedDefault(WifiP2pInfo, WifiP2pGroup)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnOnFrequencyChanged">WifiP2pManager.WifiP2pListener.OnOnFrequencyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnGroupCreatedDefault_Android_Net_Wifi_P2p_WifiP2pInfo_Android_Net_Wifi_P2p_WifiP2pGroup_">WifiP2pManager.WifiP2pListener.OnGroupCreatedDefault(WifiP2pInfo, WifiP2pGroup)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnOnGroupCreated">WifiP2pManager.WifiP2pListener.OnOnGroupCreated</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnGroupCreatingDefault">WifiP2pManager.WifiP2pListener.OnGroupCreatingDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnOnGroupCreating">WifiP2pManager.WifiP2pListener.OnOnGroupCreating</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnGroupCreationFailedDefault_System_Int32_">WifiP2pManager.WifiP2pListener.OnGroupCreationFailedDefault(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnOnGroupCreationFailed">WifiP2pManager.WifiP2pListener.OnOnGroupCreationFailed</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnGroupNegotiationRejectedByUserDefault">WifiP2pManager.WifiP2pListener.OnGroupNegotiationRejectedByUserDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnOnGroupNegotiationRejectedByUser">WifiP2pManager.WifiP2pListener.OnOnGroupNegotiationRejectedByUser</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnGroupRemovedDefault">WifiP2pManager.WifiP2pListener.OnGroupRemovedDefault()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnOnGroupRemoved">WifiP2pManager.WifiP2pListener.OnOnGroupRemoved</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnListenStateChangedDefault_System_Int32_">WifiP2pManager.WifiP2pListener.OnListenStateChangedDefault(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnOnListenStateChanged">WifiP2pManager.WifiP2pListener.OnOnListenStateChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnP2pStateChangedDefault_System_Int32_">WifiP2pManager.WifiP2pListener.OnP2pStateChangedDefault(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnOnP2pStateChanged">WifiP2pManager.WifiP2pListener.OnOnP2pStateChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnPeerClientDisconnectedDefault_Android_Net_Wifi_P2p_WifiP2pInfo_Android_Net_Wifi_P2p_WifiP2pGroup_">WifiP2pManager.WifiP2pListener.OnPeerClientDisconnectedDefault(WifiP2pInfo, WifiP2pGroup)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnOnPeerClientDisconnected">WifiP2pManager.WifiP2pListener.OnOnPeerClientDisconnected</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnPeerClientJoinedDefault_Android_Net_Wifi_P2p_WifiP2pInfo_Android_Net_Wifi_P2p_WifiP2pGroup_">WifiP2pManager.WifiP2pListener.OnPeerClientJoinedDefault(WifiP2pInfo, WifiP2pGroup)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnOnPeerClientJoined">WifiP2pManager.WifiP2pListener.OnOnPeerClientJoined</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnPeerListChangedDefault_Android_Net_Wifi_P2p_WifiP2pDeviceList_">WifiP2pManager.WifiP2pListener.OnPeerListChangedDefault(WifiP2pDeviceList)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html#Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListener_OnOnPeerListChanged">WifiP2pManager.WifiP2pListener.OnOnPeerListChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler(string, EventHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeListener.AddEventHandler&lt;TDataClass&gt;(string, EventHandler&lt;CLRListenerEventArgs&lt;TDataClass&gt;&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeListener.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;JVMBridgeListener&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JVMBridgeListener&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;JVMBridgeListener&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorEnter()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.MonitorExit()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.NetdroidCoreExtensions.html#MASES_Netdroid_Specific_Extensions_NetdroidCoreExtensions_Class__1___0_">NetdroidCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_AutoInit_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.AutoInit*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_AutoInit" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.AutoInit">
+  AutoInit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L1448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AutoInit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_BridgeClassName_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.BridgeClassName*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_BridgeClassName" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L1460"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_IsBridgeAbstract_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_IsBridgeAbstract" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L1464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_IsBridgeCloseable_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_IsBridgeCloseable" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L1468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_IsBridgeInterface_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_IsBridgeInterface" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L1472"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_IsBridgeStatic_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_IsBridgeStatic" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L1476"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_InitializeHandlers_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.InitializeHandlers*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_InitializeHandlers" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.InitializeHandlers">
+  InitializeHandlers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L1451"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handlers initializer for <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListener.html">WifiP2pManager.WifiP2pListener</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitializeHandlers()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnDeviceConfigurationChanged_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnDeviceConfigurationChanged*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnDeviceConfigurationChanged_Android_Net_Wifi_P2p_WifiP2pDevice_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnDeviceConfigurationChanged(Android.Net.Wifi.P2p.WifiP2pDevice)">
+  OnDeviceConfigurationChanged(WifiP2pDevice)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2755"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDeviceConfigurationChanged(android.net.wifi.p2p.WifiP2pDevice)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDeviceConfigurationChanged(android.net.wifi.p2p.WifiP2pDevice)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnDeviceConfigurationChanged(WifiP2pDevice arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pDevice.html">WifiP2pDevice</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pDevice.html">WifiP2pDevice</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnDiscoveryStateChanged_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnDiscoveryStateChanged*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnDiscoveryStateChanged_System_Int32_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnDiscoveryStateChanged(System.Int32)">
+  OnDiscoveryStateChanged(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2763"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDiscoveryStateChanged(int)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onDiscoveryStateChanged(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnDiscoveryStateChanged(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnFrequencyChanged_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnFrequencyChanged*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnFrequencyChanged_Android_Net_Wifi_P2p_WifiP2pInfo_Android_Net_Wifi_P2p_WifiP2pGroup_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnFrequencyChanged(Android.Net.Wifi.P2p.WifiP2pInfo,Android.Net.Wifi.P2p.WifiP2pGroup)">
+  OnFrequencyChanged(WifiP2pInfo, WifiP2pGroup)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2772"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onFrequencyChanged(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onFrequencyChanged(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFrequencyChanged(WifiP2pInfo arg0, WifiP2pGroup arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pInfo.html">WifiP2pInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pInfo.html">WifiP2pInfo</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pGroup.html">WifiP2pGroup</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pGroup.html">WifiP2pGroup</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnGroupCreated_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnGroupCreated*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnGroupCreated_Android_Net_Wifi_P2p_WifiP2pInfo_Android_Net_Wifi_P2p_WifiP2pGroup_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnGroupCreated(Android.Net.Wifi.P2p.WifiP2pInfo,Android.Net.Wifi.P2p.WifiP2pGroup)">
+  OnGroupCreated(WifiP2pInfo, WifiP2pGroup)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2781"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreated(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreated(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnGroupCreated(WifiP2pInfo arg0, WifiP2pGroup arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pInfo.html">WifiP2pInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pInfo.html">WifiP2pInfo</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pGroup.html">WifiP2pGroup</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pGroup.html">WifiP2pGroup</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnGroupCreating_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnGroupCreating*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnGroupCreating" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnGroupCreating">
+  OnGroupCreating()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2788"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreating()">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreating()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnGroupCreating()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnGroupCreationFailed_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnGroupCreationFailed*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnGroupCreationFailed_System_Int32_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnGroupCreationFailed(System.Int32)">
+  OnGroupCreationFailed(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2796"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreationFailed(int)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupCreationFailed(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnGroupCreationFailed(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnGroupNegotiationRejectedByUser_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnGroupNegotiationRejectedByUser*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnGroupNegotiationRejectedByUser" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnGroupNegotiationRejectedByUser">
+  OnGroupNegotiationRejectedByUser()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2803"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupNegotiationRejectedByUser()">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupNegotiationRejectedByUser()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnGroupNegotiationRejectedByUser()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnGroupRemoved_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnGroupRemoved*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnGroupRemoved" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnGroupRemoved">
+  OnGroupRemoved()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2810"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupRemoved()">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onGroupRemoved()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnGroupRemoved()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnListenStateChanged_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnListenStateChanged*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnListenStateChanged_System_Int32_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnListenStateChanged(System.Int32)">
+  OnListenStateChanged(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2818"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onListenStateChanged(int)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onListenStateChanged(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnListenStateChanged(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnP2pStateChanged_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnP2pStateChanged*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnP2pStateChanged_System_Int32_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnP2pStateChanged(System.Int32)">
+  OnP2pStateChanged(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2826"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onP2pStateChanged(int)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onP2pStateChanged(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnP2pStateChanged(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnPeerClientDisconnected_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnPeerClientDisconnected*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnPeerClientDisconnected_Android_Net_Wifi_P2p_WifiP2pInfo_Android_Net_Wifi_P2p_WifiP2pGroup_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnPeerClientDisconnected(Android.Net.Wifi.P2p.WifiP2pInfo,Android.Net.Wifi.P2p.WifiP2pGroup)">
+  OnPeerClientDisconnected(WifiP2pInfo, WifiP2pGroup)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2835"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientDisconnected(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientDisconnected(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPeerClientDisconnected(WifiP2pInfo arg0, WifiP2pGroup arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pInfo.html">WifiP2pInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pInfo.html">WifiP2pInfo</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pGroup.html">WifiP2pGroup</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pGroup.html">WifiP2pGroup</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnPeerClientJoined_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnPeerClientJoined*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnPeerClientJoined_Android_Net_Wifi_P2p_WifiP2pInfo_Android_Net_Wifi_P2p_WifiP2pGroup_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnPeerClientJoined(Android.Net.Wifi.P2p.WifiP2pInfo,Android.Net.Wifi.P2p.WifiP2pGroup)">
+  OnPeerClientJoined(WifiP2pInfo, WifiP2pGroup)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2844"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientJoined(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerClientJoined(android.net.wifi.p2p.WifiP2pInfo,android.net.wifi.p2p.WifiP2pGroup)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPeerClientJoined(WifiP2pInfo arg0, WifiP2pGroup arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pInfo.html">WifiP2pInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pInfo.html">WifiP2pInfo</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pGroup.html">WifiP2pGroup</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pGroup.html">WifiP2pGroup</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnPeerListChanged_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnPeerListChanged*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WifiP2pListenerDirect_OnPeerListChanged_Android_Net_Wifi_P2p_WifiP2pDeviceList_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WifiP2pListenerDirect.OnPeerListChanged(Android.Net.Wifi.P2p.WifiP2pDeviceList)">
+  OnPeerListChanged(WifiP2pDeviceList)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2852"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerListChanged(android.net.wifi.p2p.WifiP2pDeviceList)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.html#onPeerListChanged(android.net.wifi.p2p.WifiP2pDeviceList)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPeerListChanged(WifiP2pDeviceList arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pDeviceList.html">WifiP2pDeviceList</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pDeviceList.html">WifiP2pDeviceList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L2732" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
