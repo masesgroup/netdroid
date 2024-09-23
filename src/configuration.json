@@ -1,6 +1,6 @@
 {
-  "RelativeDestinationCSharpClassPath": "net\\Netdroid\\Generated",
-  "RelativeDestinationJavaListenerPath": "jvm\\netdroid\\src\\main\\java",
+  "RelativeDestinationCSharpClassPath": "net/Netdroid/Generated",
+  "RelativeDestinationJavaListenerPath": "jvm/netdroid/src/main/java",
   "JavaListenerBasePackage": "org.mases.netdroid.generated",
   "ReflectDeprecated": true,
   "PreferMethodWithSignature": true,
