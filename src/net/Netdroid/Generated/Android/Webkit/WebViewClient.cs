@@ -40,10 +40,10 @@ namespace Android.Webkit
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WebViewClient(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Webkit
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Webkit
     public partial class WebViewClient
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#ERROR_AUTHENTICATION"/>
@@ -208,13 +208,13 @@ namespace Android.Webkit
         public static int SAFE_BROWSING_THREAT_UNWANTED_SOFTWARE { get { if (!_SAFE_BROWSING_THREAT_UNWANTED_SOFTWAREReady) { _SAFE_BROWSING_THREAT_UNWANTED_SOFTWAREContent = SGetField<int>(LocalBridgeClazz, "SAFE_BROWSING_THREAT_UNWANTED_SOFTWARE"); _SAFE_BROWSING_THREAT_UNWANTED_SOFTWAREReady = true; } return _SAFE_BROWSING_THREAT_UNWANTED_SOFTWAREContent; } }
         private static int _SAFE_BROWSING_THREAT_UNWANTED_SOFTWAREContent = default;
         private static bool _SAFE_BROWSING_THREAT_UNWANTED_SOFTWAREReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest)"/>
@@ -449,13 +449,13 @@ namespace Android.Webkit
         {
             IExecute("onUnhandledKeyEvent", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public EncoderProfiles(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region AudioProfile declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AudioProfile(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public VideoProfile(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -164,21 +164,21 @@ namespace Android.Media
     public partial class EncoderProfiles
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.html#getDefaultDurationSeconds()"/>
@@ -212,29 +212,29 @@ namespace Android.Media
         {
             return IExecuteWithSignature<Java.Util.List<Android.Media.EncoderProfiles.VideoProfile>>("getVideoProfiles", "()Ljava/util/List;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region AudioProfile implementation
         public partial class AudioProfile
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.AudioProfile.html#getBitrate()"/>
@@ -284,13 +284,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<Java.Lang.String>("getMediaType", "()Ljava/lang/String;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -299,13 +299,13 @@ namespace Android.Media
         public partial class VideoProfile
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#HDR_DOLBY_VISION"/>
@@ -355,13 +355,13 @@ namespace Android.Media
             public static int YUV_444 { get { if (!_YUV_444Ready) { _YUV_444Content = SGetField<int>(LocalBridgeClazz, "YUV_444"); _YUV_444Ready = true; } return _YUV_444Content; } }
             private static int _YUV_444Content = default;
             private static bool _YUV_444Ready = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getBitDepth()"/>
@@ -443,20 +443,20 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<Java.Lang.String>("getMediaType", "()Ljava/lang/String;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

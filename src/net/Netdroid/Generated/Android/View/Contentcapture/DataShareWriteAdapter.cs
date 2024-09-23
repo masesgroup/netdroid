@@ -35,7 +35,7 @@ namespace Android.View.Contentcapture
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public DataShareWriteAdapter() { InitializeHandlers(); }
-
+    
         const string _bridgeClassName = "org.mases.netdroid.generated.android.view.contentcapture.DataShareWriteAdapter";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Android.View.Contentcapture
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-
+    
     
         // TODO: complete the class
-
+    
     }
     #endregion
-
+    
     #region DataShareWriteAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="DataShareWriteAdapter"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Android.View.Contentcapture
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-
+    
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-
+    
         const string _bridgeClassName = "android.view.contentcapture.DataShareWriteAdapter";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Android.View.Contentcapture
     public partial interface IDataShareWriteAdapter
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Android.View.Contentcapture
     public partial class DataShareWriteAdapter : Android.View.Contentcapture.IDataShareWriteAdapter
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="DataShareWriteAdapter"/>
@@ -140,13 +140,13 @@ namespace Android.View.Contentcapture
             AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnErrorEventHandler));
 
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter.html#onRejected()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnRejected"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action OnOnRejected { get; set; } = null;
-
+        
         bool hasOverrideOnRejected = true;
         void OnRejectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -155,7 +155,7 @@ namespace Android.View.Contentcapture
             methodToExecute.Invoke();
             data.EventData.TypedEventData.HasOverride = hasOverrideOnRejected;
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter.html#onRejected()"/>
         /// </summary>
@@ -163,13 +163,13 @@ namespace Android.View.Contentcapture
         {
             hasOverrideOnRejected = false;
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter.html#onWrite(android.os.ParcelFileDescriptor)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnWrite"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Android.Os.ParcelFileDescriptor> OnOnWrite { get; set; } = null;
-
+        
         bool hasOverrideOnWrite = true;
         void OnWriteEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -178,7 +178,7 @@ namespace Android.View.Contentcapture
             methodToExecute.Invoke(data.EventData.GetAt<Android.Os.ParcelFileDescriptor>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnWrite;
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter.html#onWrite(android.os.ParcelFileDescriptor)"/>
         /// </summary>
@@ -196,13 +196,13 @@ namespace Android.View.Contentcapture
         {
             IExecuteWithSignature("onErrorDefault", "(I)V", arg0);
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter.html#onError(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<int> OnOnError { get; set; } = null;
-
+        
         bool hasOverrideOnError = true;
         void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -211,7 +211,7 @@ namespace Android.View.Contentcapture
             methodToExecute.Invoke(data.EventData.GetAt<int>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnError;
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter.html#onError(int)"/>
         /// </summary>
@@ -221,13 +221,13 @@ namespace Android.View.Contentcapture
         {
             hasOverrideOnError = false;
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -236,21 +236,21 @@ namespace Android.View.Contentcapture
     public partial class DataShareWriteAdapterDirect : Android.View.Contentcapture.IDataShareWriteAdapter
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter.html#onRejected()"/>
@@ -275,13 +275,13 @@ namespace Android.View.Contentcapture
         {
             IExecuteWithSignature("onError", "(I)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DateFormatSymbols(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -144,9 +144,9 @@ namespace Android.Icu.Text
             : base(arg0, arg1)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Text.DateFormatSymbols"/> to <see cref="Java.Io.Serializable"/>
@@ -156,9 +156,9 @@ namespace Android.Icu.Text
         /// Converter from <see cref="Android.Icu.Text.DateFormatSymbols"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Android.Icu.Text.DateFormatSymbols t) => t.Cast<Java.Lang.Cloneable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#ABBREVIATED"/>
@@ -196,9 +196,9 @@ namespace Android.Icu.Text
         public static int WIDE { get { if (!_WIDEReady) { _WIDEContent = SGetField<int>(LocalBridgeClazz, "WIDE"); _WIDEReady = true; } return _WIDEContent; } }
         private static int _WIDEContent = default;
         private static bool _WIDEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#getInstance()"/>
@@ -234,9 +234,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormatSymbols.html#getLocalPatternChars()"/>
@@ -498,13 +498,13 @@ namespace Android.Icu.Text
         {
             IExecuteWithSignature("setZoneStrings", "([[Ljava/lang/String;)V", new object[] { arg0 });
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

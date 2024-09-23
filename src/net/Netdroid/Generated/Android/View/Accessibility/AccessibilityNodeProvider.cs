@@ -42,10 +42,10 @@ namespace Android.View.Accessibility
         /// </summary>
         [global::System.Obsolete("AccessibilityNodeProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AccessibilityNodeProvider(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.View.Accessibility
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.View.Accessibility
     public partial class AccessibilityNodeProvider
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeProvider.html#HOST_VIEW_ID"/>
@@ -90,13 +90,13 @@ namespace Android.View.Accessibility
         public static int HOST_VIEW_ID { get { if (!_HOST_VIEW_IDReady) { _HOST_VIEW_IDContent = SGetField<int>(LocalBridgeClazz, "HOST_VIEW_ID"); _HOST_VIEW_IDReady = true; } return _HOST_VIEW_IDContent; } }
         private static int _HOST_VIEW_IDContent = default;
         private static bool _HOST_VIEW_IDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeProvider.html#createAccessibilityNodeInfo(int)"/>
@@ -148,13 +148,13 @@ namespace Android.View.Accessibility
         {
             IExecute("addExtraDataToAccessibilityNodeInfo", arg0, arg1, arg2, arg3);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

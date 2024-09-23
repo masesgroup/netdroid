@@ -41,10 +41,10 @@ namespace Android.Preference
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Preference(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Preference
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region BaseSavedState declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Preference
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BaseSavedState(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Preference
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -124,7 +124,7 @@ namespace Android.Preference
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnPreferenceChangeListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.preference.Preference_OnPreferenceChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -133,13 +133,13 @@ namespace Android.Preference
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnPreferenceChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnPreferenceChangeListener"/> or its generic type if there is one
@@ -150,14 +150,14 @@ namespace Android.Preference
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.preference.Preference$OnPreferenceChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -192,7 +192,7 @@ namespace Android.Preference
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnPreferenceClickListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.preference.Preference_OnPreferenceClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -201,13 +201,13 @@ namespace Android.Preference
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnPreferenceClickListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnPreferenceClickListener"/> or its generic type if there is one
@@ -218,14 +218,14 @@ namespace Android.Preference
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.preference.Preference$OnPreferenceClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -299,13 +299,13 @@ namespace Android.Preference
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#DEFAULT_ORDER"/>
@@ -314,13 +314,13 @@ namespace Android.Preference
         public static int DEFAULT_ORDER { get { if (!_DEFAULT_ORDERReady) { _DEFAULT_ORDERContent = SGetField<int>(LocalBridgeClazz, "DEFAULT_ORDER"); _DEFAULT_ORDERReady = true; } return _DEFAULT_ORDERContent; } }
         private static int _DEFAULT_ORDERContent = default;
         private static bool _DEFAULT_ORDERReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getContext()"/>
@@ -933,9 +933,9 @@ namespace Android.Preference
         {
             IExecuteWithSignature("setWidgetLayoutResource", "(I)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region BaseSavedState implementation
         public partial class BaseSavedState
@@ -959,13 +959,13 @@ namespace Android.Preference
                 : base(arg0)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/Preference.BaseSavedState.html#CREATOR"/>
@@ -974,21 +974,21 @@ namespace Android.Preference
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -997,21 +997,21 @@ namespace Android.Preference
         public partial class OnPreferenceChangeListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnPreferenceChangeListener"/>
@@ -1021,13 +1021,13 @@ namespace Android.Preference
                 AddEventHandler("onPreferenceChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnPreferenceChangeEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/preference/Preference.OnPreferenceChangeListener.html#onPreferenceChange(android.preference.Preference,java.lang.Object)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPreferenceChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.Preference.Preference, object, bool> OnOnPreferenceChange { get; set; } = null;
-
+            
             bool hasOverrideOnPreferenceChange = true;
             void OnPreferenceChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1036,7 +1036,7 @@ namespace Android.Preference
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.Preference.Preference>(0), data.EventData.GetAt<object>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnPreferenceChange, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/Preference.OnPreferenceChangeListener.html#onPreferenceChange(android.preference.Preference,java.lang.Object)"/>
             /// </summary>
@@ -1048,13 +1048,13 @@ namespace Android.Preference
             {
                 hasOverrideOnPreferenceChange = false; return default;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1063,21 +1063,21 @@ namespace Android.Preference
         public partial class OnPreferenceChangeListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/Preference.OnPreferenceChangeListener.html#onPreferenceChange(android.preference.Preference,java.lang.Object)"/>
@@ -1090,13 +1090,13 @@ namespace Android.Preference
             {
                 return IExecute<bool>("onPreferenceChange", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1105,21 +1105,21 @@ namespace Android.Preference
         public partial class OnPreferenceClickListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnPreferenceClickListener"/>
@@ -1129,13 +1129,13 @@ namespace Android.Preference
                 AddEventHandler("onPreferenceClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnPreferenceClickEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/preference/Preference.OnPreferenceClickListener.html#onPreferenceClick(android.preference.Preference)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPreferenceClick"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.Preference.Preference, bool> OnOnPreferenceClick { get; set; } = null;
-
+            
             bool hasOverrideOnPreferenceClick = true;
             void OnPreferenceClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1144,7 +1144,7 @@ namespace Android.Preference
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.Preference.Preference>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnPreferenceClick, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/Preference.OnPreferenceClickListener.html#onPreferenceClick(android.preference.Preference)"/>
             /// </summary>
@@ -1155,13 +1155,13 @@ namespace Android.Preference
             {
                 hasOverrideOnPreferenceClick = false; return default;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1170,21 +1170,21 @@ namespace Android.Preference
         public partial class OnPreferenceClickListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/Preference.OnPreferenceClickListener.html#onPreferenceClick(android.preference.Preference)"/>
@@ -1196,20 +1196,20 @@ namespace Android.Preference
             {
                 return IExecuteWithSignature<bool>("onPreferenceClick", "(Landroid/preference/Preference;)Z", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Animation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TimeAnimator(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Animation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region TimeListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Animation
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public TimeListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.animation.TimeAnimator_TimeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Animation
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region TimeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="TimeListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Animation
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.animation.TimeAnimator$TimeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -141,21 +141,21 @@ namespace Android.Animation
     public partial class TimeAnimator
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/TimeAnimator.html#setTimeListener(android.animation.TimeAnimator.TimeListener)"/>
@@ -165,29 +165,29 @@ namespace Android.Animation
         {
             IExecuteWithSignature("setTimeListener", "(Landroid/animation/TimeAnimator$TimeListener;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region TimeListener implementation
         public partial class TimeListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="TimeListener"/>
@@ -197,13 +197,13 @@ namespace Android.Animation
                 AddEventHandler("onTimeUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnTimeUpdateEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/animation/TimeAnimator.TimeListener.html#onTimeUpdate(android.animation.TimeAnimator,long,long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTimeUpdate"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Animation.TimeAnimator, long, long> OnOnTimeUpdate { get; set; } = null;
-
+            
             bool hasOverrideOnTimeUpdate = true;
             void OnTimeUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -212,7 +212,7 @@ namespace Android.Animation
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Animation.TimeAnimator>(0), data.EventData.GetAt<long>(1), data.EventData.GetAt<long>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnTimeUpdate;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/animation/TimeAnimator.TimeListener.html#onTimeUpdate(android.animation.TimeAnimator,long,long)"/>
             /// </summary>
@@ -223,13 +223,13 @@ namespace Android.Animation
             {
                 hasOverrideOnTimeUpdate = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -238,21 +238,21 @@ namespace Android.Animation
         public partial class TimeListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/animation/TimeAnimator.TimeListener.html#onTimeUpdate(android.animation.TimeAnimator,long,long)"/>
@@ -264,20 +264,20 @@ namespace Android.Animation
             {
                 IExecute("onTimeUpdate", arg0, arg1, arg2);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

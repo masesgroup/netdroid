@@ -40,10 +40,10 @@ namespace Java.Time.Format
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SignStyle(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time.Format
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Time.Format
     public partial class SignStyle
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/SignStyle.html#ALWAYS"/>
@@ -112,9 +112,9 @@ namespace Java.Time.Format
         public static Java.Time.Format.SignStyle NOT_NEGATIVE { get { if (!_NOT_NEGATIVEReady) { _NOT_NEGATIVEContent = SGetField<Java.Time.Format.SignStyle>(LocalBridgeClazz, "NOT_NEGATIVE"); _NOT_NEGATIVEReady = true; } return _NOT_NEGATIVEContent; } }
         private static Java.Time.Format.SignStyle _NOT_NEGATIVEContent = default;
         private static bool _NOT_NEGATIVEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/SignStyle.html#valueOf(java.lang.String)"/>
@@ -133,17 +133,17 @@ namespace Java.Time.Format
         {
             return SExecuteWithSignatureArray<Java.Time.Format.SignStyle>(LocalBridgeClazz, "values", "()[Ljava/time/format/SignStyle;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

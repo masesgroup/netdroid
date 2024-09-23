@@ -42,10 +42,10 @@ namespace Android.Icu.Text
         /// </summary>
         [global::System.Obsolete("LocaleDisplayNames class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LocaleDisplayNames(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region DialectHandling declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DialectHandling(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public UiListItem(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -166,17 +166,17 @@ namespace Android.Icu.Text
     public partial class LocaleDisplayNames
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.html#getInstance(android.icu.util.ULocale,android.icu.text.DisplayContext[])"/>
@@ -226,9 +226,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.LocaleDisplayNames>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Landroid/icu/text/LocaleDisplayNames;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.html#getContext(android.icu.text.DisplayContext.Type)"/>
@@ -367,21 +367,21 @@ namespace Android.Icu.Text
         {
             return IExecute<Java.Util.List<Android.Icu.Text.LocaleDisplayNames.UiListItem>>("getUiList", arg0, arg1, arg2);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region DialectHandling implementation
         public partial class DialectHandling
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.DialectHandling.html#DIALECT_NAMES"/>
@@ -395,9 +395,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.LocaleDisplayNames.DialectHandling STANDARD_NAMES { get { if (!_STANDARD_NAMESReady) { _STANDARD_NAMESContent = SGetField<Android.Icu.Text.LocaleDisplayNames.DialectHandling>(LocalBridgeClazz, "STANDARD_NAMES"); _STANDARD_NAMESReady = true; } return _STANDARD_NAMESContent; } }
             private static Android.Icu.Text.LocaleDisplayNames.DialectHandling _STANDARD_NAMESContent = default;
             private static bool _STANDARD_NAMESReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.DialectHandling.html#valueOf(java.lang.String)"/>
@@ -416,17 +416,17 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.LocaleDisplayNames.DialectHandling>(LocalBridgeClazz, "values", "()[Landroid/icu/text/LocaleDisplayNames$DialectHandling;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -446,13 +446,13 @@ namespace Android.Icu.Text
                 : base(arg0, arg1, arg2, arg3)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.UiListItem.html#minimized"/>
@@ -478,9 +478,9 @@ namespace Android.Icu.Text
             public Java.Lang.String nameInSelf { get { if (!_nameInSelfReady) { _nameInSelfContent = IGetField<Java.Lang.String>("nameInSelf"); _nameInSelfReady = true; } return _nameInSelfContent; } }
             private Java.Lang.String _nameInSelfContent = default;
             private bool _nameInSelfReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.UiListItem.html#getComparator(java.util.Comparator,boolean)"/>
@@ -492,24 +492,24 @@ namespace Android.Icu.Text
             {
                 return SExecute<Java.Util.Comparator<Android.Icu.Text.LocaleDisplayNames.UiListItem>>(LocalBridgeClazz, "getComparator", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

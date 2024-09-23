@@ -40,10 +40,10 @@ namespace Android.View.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibilityNodeInfo(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View.Accessibility
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region AccessibilityAction declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.View.Accessibility
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AccessibilityAction(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.View.Accessibility
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CollectionInfo(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,7 +150,7 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -167,10 +167,10 @@ namespace Android.View.Accessibility
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-
+            
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -191,9 +191,9 @@ namespace Android.View.Accessibility
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-
+            
                 // TODO: complete the class
-
+            
             }
             #endregion
 
@@ -216,10 +216,10 @@ namespace Android.View.Accessibility
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CollectionItemInfo(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,7 +240,7 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -257,10 +257,10 @@ namespace Android.View.Accessibility
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-
+            
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -281,9 +281,9 @@ namespace Android.View.Accessibility
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-
+            
                 // TODO: complete the class
-
+            
             }
             #endregion
 
@@ -306,10 +306,10 @@ namespace Android.View.Accessibility
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ExtraRenderingInfo(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -330,9 +330,9 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -351,10 +351,10 @@ namespace Android.View.Accessibility
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RangeInfo(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -375,9 +375,9 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -396,10 +396,10 @@ namespace Android.View.Accessibility
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public TouchDelegateInfo(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -420,9 +420,9 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -459,13 +459,13 @@ namespace Android.View.Accessibility
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#CREATOR"/>
@@ -803,9 +803,9 @@ namespace Android.View.Accessibility
         public static Java.Lang.String EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEY { get { if (!_EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEYReady) { _EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEY"); _EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEYReady = true; } return _EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEYContent; } }
         private static Java.Lang.String _EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEYContent = default;
         private static bool _EXTRA_DATA_TEXT_CHARACTER_LOCATION_KEYReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#obtain()"/>
@@ -847,9 +847,9 @@ namespace Android.View.Accessibility
         {
             return SExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>(LocalBridgeClazz, "obtain", "(Landroid/view/View;)Landroid/view/accessibility/AccessibilityNodeInfo;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getExtras()"/>
@@ -2131,9 +2131,9 @@ namespace Android.View.Accessibility
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region AccessibilityAction implementation
         public partial class AccessibilityAction
@@ -2148,13 +2148,13 @@ namespace Android.View.Accessibility
                 : base(arg0, arg1)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction.html#CREATOR"/>
@@ -2426,13 +2426,13 @@ namespace Android.View.Accessibility
             public static Android.View.Accessibility.AccessibilityNodeInfo.AccessibilityAction ACTION_SHOW_TOOLTIP { get { if (!_ACTION_SHOW_TOOLTIPReady) { _ACTION_SHOW_TOOLTIPContent = SGetField<Android.View.Accessibility.AccessibilityNodeInfo.AccessibilityAction>(LocalBridgeClazz, "ACTION_SHOW_TOOLTIP"); _ACTION_SHOW_TOOLTIPReady = true; } return _ACTION_SHOW_TOOLTIPContent; } }
             private static Android.View.Accessibility.AccessibilityNodeInfo.AccessibilityAction _ACTION_SHOW_TOOLTIPContent = default;
             private static bool _ACTION_SHOW_TOOLTIPReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction.html#describeContents()"/>
@@ -2467,13 +2467,13 @@ namespace Android.View.Accessibility
             {
                 IExecute("writeToParcel", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2503,13 +2503,13 @@ namespace Android.View.Accessibility
                 : base(arg0, arg1, arg2)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.html#SELECTION_MODE_MULTIPLE"/>
@@ -2535,9 +2535,9 @@ namespace Android.View.Accessibility
             public static int UNDEFINED { get { if (!_UNDEFINEDReady) { _UNDEFINEDContent = SGetField<int>(LocalBridgeClazz, "UNDEFINED"); _UNDEFINEDReady = true; } return _UNDEFINEDContent; } }
             private static int _UNDEFINEDContent = default;
             private static bool _UNDEFINEDReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.html#obtain(int,int,boolean,int)"/>
@@ -2564,9 +2564,9 @@ namespace Android.View.Accessibility
             {
                 return SExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo>(LocalBridgeClazz, "obtain", arg0, arg1, arg2);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.html#isHierarchical()"/>
@@ -2616,29 +2616,29 @@ namespace Android.View.Accessibility
             {
                 return IExecuteWithSignature<int>("getSelectionMode", "()I");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
             #region Builder implementation
             public partial class Builder
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
-
+            
                 #endregion
-
+            
                 #region Fields
-
+            
                 #endregion
-
+            
                 #region Static methods
-
+            
                 #endregion
-
+            
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.Builder.html#build()"/>
@@ -2702,20 +2702,20 @@ namespace Android.View.Accessibility
                 {
                     return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo.Builder>("setSelectionMode", "(I)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo$Builder;", arg0);
                 }
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2749,17 +2749,17 @@ namespace Android.View.Accessibility
                 : base(arg0, arg1, arg2, arg3, arg4)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.html#obtain(int,int,int,int,boolean,boolean)"/>
@@ -2790,9 +2790,9 @@ namespace Android.View.Accessibility
             {
                 return SExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.html#isHeading()"/>
@@ -2859,29 +2859,29 @@ namespace Android.View.Accessibility
             {
                 return IExecuteWithSignature<Java.Lang.String>("getRowTitle", "()Ljava/lang/String;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
             #region Builder implementation
             public partial class Builder
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
-
+            
                 #endregion
-
+            
                 #region Fields
-
+            
                 #endregion
-
+            
                 #region Static methods
-
+            
                 #endregion
-
+            
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.Builder.html#build()"/>
@@ -2963,20 +2963,20 @@ namespace Android.View.Accessibility
                 {
                     return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo.Builder>("setSelected", "(Z)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo$Builder;", arg0);
                 }
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2985,21 +2985,21 @@ namespace Android.View.Accessibility
         public partial class ExtraRenderingInfo
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.ExtraRenderingInfo.html#getLayoutSize()"/>
@@ -3025,13 +3025,13 @@ namespace Android.View.Accessibility
             {
                 return IExecuteWithSignature<int>("getTextSizeUnit", "()I");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3051,13 +3051,13 @@ namespace Android.View.Accessibility
                 : base(arg0, arg1, arg2, arg3)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.RangeInfo.html#RANGE_TYPE_FLOAT"/>
@@ -3077,9 +3077,9 @@ namespace Android.View.Accessibility
             public static int RANGE_TYPE_PERCENT { get { if (!_RANGE_TYPE_PERCENTReady) { _RANGE_TYPE_PERCENTContent = SGetField<int>(LocalBridgeClazz, "RANGE_TYPE_PERCENT"); _RANGE_TYPE_PERCENTReady = true; } return _RANGE_TYPE_PERCENTContent; } }
             private static int _RANGE_TYPE_PERCENTContent = default;
             private static bool _RANGE_TYPE_PERCENTReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.RangeInfo.html#obtain(int,float,float,float)"/>
@@ -3094,9 +3094,9 @@ namespace Android.View.Accessibility
             {
                 return SExecute<Android.View.Accessibility.AccessibilityNodeInfo.RangeInfo>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.RangeInfo.html#getCurrent()"/>
@@ -3130,13 +3130,13 @@ namespace Android.View.Accessibility
             {
                 return IExecuteWithSignature<int>("getType", "()I");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3153,13 +3153,13 @@ namespace Android.View.Accessibility
                 : base(arg0)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo.html#CREATOR"/>
@@ -3167,13 +3167,13 @@ namespace Android.View.Accessibility
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo.html#getRegionAt(int)"/>
@@ -3218,20 +3218,20 @@ namespace Android.View.Accessibility
             {
                 IExecute("writeToParcel", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

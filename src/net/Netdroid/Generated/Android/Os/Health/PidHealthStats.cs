@@ -40,10 +40,10 @@ namespace Android.Os.Health
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PidHealthStats(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Os.Health
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Os.Health
     public partial class PidHealthStats
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/health/PidHealthStats.html#MEASUREMENT_WAKE_NESTING_COUNT"/>
@@ -100,21 +100,21 @@ namespace Android.Os.Health
         public static int MEASUREMENT_WAKE_SUM_MS { get { if (!_MEASUREMENT_WAKE_SUM_MSReady) { _MEASUREMENT_WAKE_SUM_MSContent = SGetField<int>(LocalBridgeClazz, "MEASUREMENT_WAKE_SUM_MS"); _MEASUREMENT_WAKE_SUM_MSReady = true; } return _MEASUREMENT_WAKE_SUM_MSContent; } }
         private static int _MEASUREMENT_WAKE_SUM_MSContent = default;
         private static bool _MEASUREMENT_WAKE_SUM_MSReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

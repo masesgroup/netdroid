@@ -40,10 +40,10 @@ namespace Android.Media.Effect
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public EffectFactory(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Media.Effect
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Media.Effect
     public partial class EffectFactory
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/effect/EffectFactory.html#EFFECT_AUTOFIX"/>
@@ -244,9 +244,9 @@ namespace Android.Media.Effect
         public static Java.Lang.String EFFECT_VIGNETTE { get { if (!_EFFECT_VIGNETTEReady) { _EFFECT_VIGNETTEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EFFECT_VIGNETTE"); _EFFECT_VIGNETTEReady = true; } return _EFFECT_VIGNETTEContent; } }
         private static Java.Lang.String _EFFECT_VIGNETTEContent = default;
         private static bool _EFFECT_VIGNETTEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/effect/EffectFactory.html#isEffectSupported(java.lang.String)"/>
@@ -257,9 +257,9 @@ namespace Android.Media.Effect
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isEffectSupported", "(Ljava/lang/String;)Z", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/effect/EffectFactory.html#createEffect(java.lang.String)"/>
@@ -270,13 +270,13 @@ namespace Android.Media.Effect
         {
             return IExecuteWithSignature<Android.Media.Effect.Effect>("createEffect", "(Ljava/lang/String;)Landroid/media/effect/Effect;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

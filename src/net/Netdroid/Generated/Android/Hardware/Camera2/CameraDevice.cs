@@ -42,10 +42,10 @@ namespace Android.Hardware.Camera2
         /// </summary>
         [global::System.Obsolete("CameraDevice class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CameraDevice(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Hardware.Camera2
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region CameraDeviceSetup declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Hardware.Camera2
             /// </summary>
             [global::System.Obsolete("CameraDeviceSetup class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public CameraDeviceSetup(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Hardware.Camera2
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -132,10 +132,10 @@ namespace Android.Hardware.Camera2
             /// </summary>
             [global::System.Obsolete("StateCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public StateCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -156,9 +156,9 @@ namespace Android.Hardware.Camera2
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -170,13 +170,13 @@ namespace Android.Hardware.Camera2
     public partial class CameraDevice
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#AUDIO_RESTRICTION_NONE"/>
@@ -232,13 +232,13 @@ namespace Android.Hardware.Camera2
         public static int TEMPLATE_ZERO_SHUTTER_LAG { get { if (!_TEMPLATE_ZERO_SHUTTER_LAGReady) { _TEMPLATE_ZERO_SHUTTER_LAGContent = SGetField<int>(LocalBridgeClazz, "TEMPLATE_ZERO_SHUTTER_LAG"); _TEMPLATE_ZERO_SHUTTER_LAGReady = true; } return _TEMPLATE_ZERO_SHUTTER_LAGContent; } }
         private static int _TEMPLATE_ZERO_SHUTTER_LAGContent = default;
         private static bool _TEMPLATE_ZERO_SHUTTER_LAGReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#createCaptureRequest(int)"/>
@@ -394,29 +394,29 @@ namespace Android.Hardware.Camera2
         {
             IExecuteWithSignature("setCameraAudioRestriction", "(I)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region CameraDeviceSetup implementation
         public partial class CameraDeviceSetup
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.CameraDeviceSetup.html#getSessionCharacteristics(android.hardware.camera2.params.SessionConfiguration)"/>
@@ -466,13 +466,13 @@ namespace Android.Hardware.Camera2
             {
                 IExecute("openCamera", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -481,13 +481,13 @@ namespace Android.Hardware.Camera2
         public partial class StateCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.StateCallback.html#ERROR_CAMERA_DEVICE"/>
@@ -519,13 +519,13 @@ namespace Android.Hardware.Camera2
             public static int ERROR_MAX_CAMERAS_IN_USE { get { if (!_ERROR_MAX_CAMERAS_IN_USEReady) { _ERROR_MAX_CAMERAS_IN_USEContent = SGetField<int>(LocalBridgeClazz, "ERROR_MAX_CAMERAS_IN_USE"); _ERROR_MAX_CAMERAS_IN_USEReady = true; } return _ERROR_MAX_CAMERAS_IN_USEContent; } }
             private static int _ERROR_MAX_CAMERAS_IN_USEContent = default;
             private static bool _ERROR_MAX_CAMERAS_IN_USEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.StateCallback.html#onDisconnected(android.hardware.camera2.CameraDevice)"/>
@@ -560,20 +560,20 @@ namespace Android.Hardware.Camera2
             {
                 IExecuteWithSignature("onClosed", "(Landroid/hardware/camera2/CameraDevice;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

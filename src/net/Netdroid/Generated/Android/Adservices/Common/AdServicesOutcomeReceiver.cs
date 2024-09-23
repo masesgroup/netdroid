@@ -42,10 +42,10 @@ namespace Android.Adservices.Common
         /// </summary>
         [global::System.Obsolete("AdServicesOutcomeReceiver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AdServicesOutcomeReceiver(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Adservices.Common
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -91,10 +91,10 @@ namespace Android.Adservices.Common
         /// </summary>
         [global::System.Obsolete("AdServicesOutcomeReceiver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AdServicesOutcomeReceiver(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Android.Adservices.Common
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -125,21 +125,21 @@ namespace Android.Adservices.Common
     public partial class AdServicesOutcomeReceiver
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/common/AdServicesOutcomeReceiver.html#onResult(java.lang.Object)"/>
@@ -157,13 +157,13 @@ namespace Android.Adservices.Common
         {
             IExecuteWithSignature("onError", "(Ljava/lang/Throwable;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -175,13 +175,13 @@ namespace Android.Adservices.Common
     public partial interface IAdServicesOutcomeReceiver<R, E>
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -190,25 +190,25 @@ namespace Android.Adservices.Common
     public partial class AdServicesOutcomeReceiver<R, E> : Android.Adservices.Common.IAdServicesOutcomeReceiver<R, E>
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Adservices.Common.AdServicesOutcomeReceiver{R, E}"/> to <see cref="Android.Adservices.Common.AdServicesOutcomeReceiver"/>
         /// </summary>
         public static implicit operator Android.Adservices.Common.AdServicesOutcomeReceiver(Android.Adservices.Common.AdServicesOutcomeReceiver<R, E> t) => t.Cast<Android.Adservices.Common.AdServicesOutcomeReceiver>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/common/AdServicesOutcomeReceiver.html#onResult(java.lang.Object)"/>
@@ -226,13 +226,13 @@ namespace Android.Adservices.Common
         {
             IExecuteWithSignature("onError", "(Ljava/lang/Throwable;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

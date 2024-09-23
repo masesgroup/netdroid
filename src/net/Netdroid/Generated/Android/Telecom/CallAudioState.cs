@@ -40,10 +40,10 @@ namespace Android.Telecom
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CallAudioState(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Telecom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -84,13 +84,13 @@ namespace Android.Telecom
             : base(arg0, arg1, arg2)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallAudioState.html#CREATOR"/>
@@ -134,9 +134,9 @@ namespace Android.Telecom
         public static int ROUTE_WIRED_OR_EARPIECE { get { if (!_ROUTE_WIRED_OR_EARPIECEReady) { _ROUTE_WIRED_OR_EARPIECEContent = SGetField<int>(LocalBridgeClazz, "ROUTE_WIRED_OR_EARPIECE"); _ROUTE_WIRED_OR_EARPIECEReady = true; } return _ROUTE_WIRED_OR_EARPIECEContent; } }
         private static int _ROUTE_WIRED_OR_EARPIECEContent = default;
         private static bool _ROUTE_WIRED_OR_EARPIECEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallAudioState.html#audioRouteToString(int)"/>
@@ -147,9 +147,9 @@ namespace Android.Telecom
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "audioRouteToString", "(I)Ljava/lang/String;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallAudioState.html#getActiveBluetoothDevice()"/>
@@ -208,13 +208,13 @@ namespace Android.Telecom
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Media.Tv.Interactive
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TvInteractiveAppView(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Tv.Interactive
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region OnUnhandledInputEventListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Media.Tv.Interactive
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnUnhandledInputEventListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.tv.interactive.TvInteractiveAppView_OnUnhandledInputEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Media.Tv.Interactive
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnUnhandledInputEventListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnUnhandledInputEventListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Media.Tv.Interactive
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.media.tv.interactive.TvInteractiveAppView$OnUnhandledInputEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -150,10 +150,10 @@ namespace Android.Media.Tv.Interactive
             /// </summary>
             [global::System.Obsolete("TvInteractiveAppCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TvInteractiveAppCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -174,9 +174,9 @@ namespace Android.Media.Tv.Interactive
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -215,13 +215,13 @@ namespace Android.Media.Tv.Interactive
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#BI_INTERACTIVE_APP_KEY_ALIAS"/>
@@ -259,13 +259,13 @@ namespace Android.Media.Tv.Interactive
         public static Java.Lang.String ERROR_KEY_METHOD_NAME { get { if (!_ERROR_KEY_METHOD_NAMEReady) { _ERROR_KEY_METHOD_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ERROR_KEY_METHOD_NAME"); _ERROR_KEY_METHOD_NAMEReady = true; } return _ERROR_KEY_METHOD_NAMEContent; } }
         private static Java.Lang.String _ERROR_KEY_METHOD_NAMEContent = default;
         private static bool _ERROR_KEY_METHOD_NAMEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#getOnUnhandledInputEventListener()"/>
@@ -616,29 +616,29 @@ namespace Android.Media.Tv.Interactive
         {
             IExecuteWithSignature("stopInteractiveApp", "()V");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region OnUnhandledInputEventListener implementation
         public partial class OnUnhandledInputEventListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnUnhandledInputEventListener"/>
@@ -648,13 +648,13 @@ namespace Android.Media.Tv.Interactive
                 AddEventHandler("onUnhandledInputEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnUnhandledInputEventEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUnhandledInputEvent"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.InputEvent, bool> OnOnUnhandledInputEvent { get; set; } = null;
-
+            
             bool hasOverrideOnUnhandledInputEvent = true;
             void OnUnhandledInputEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -663,7 +663,7 @@ namespace Android.Media.Tv.Interactive
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.InputEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnUnhandledInputEvent, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
             /// </summary>
@@ -673,13 +673,13 @@ namespace Android.Media.Tv.Interactive
             {
                 hasOverrideOnUnhandledInputEvent = false; return default;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -688,21 +688,21 @@ namespace Android.Media.Tv.Interactive
         public partial class OnUnhandledInputEventListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
@@ -713,13 +713,13 @@ namespace Android.Media.Tv.Interactive
             {
                 return IExecuteWithSignature<bool>("onUnhandledInputEvent", "(Landroid/view/InputEvent;)Z", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -728,21 +728,21 @@ namespace Android.Media.Tv.Interactive
         public partial class TvInteractiveAppCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onBiInteractiveAppCreated(java.lang.String,android.net.Uri,java.lang.String)"/>
@@ -953,20 +953,20 @@ namespace Android.Media.Tv.Interactive
             {
                 IExecute("onTimeShiftCommandRequest", arg0, arg1, arg2);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

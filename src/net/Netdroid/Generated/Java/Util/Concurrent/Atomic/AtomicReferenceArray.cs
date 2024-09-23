@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent.Atomic
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AtomicReferenceArray(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -86,10 +86,10 @@ namespace Java.Util.Concurrent.Atomic
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AtomicReferenceArray(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -128,21 +128,21 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndSet(int,java.lang.Object,java.lang.Object)"/>
@@ -385,13 +385,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecute("setRelease", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -416,25 +416,25 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceArray{E}"/> to <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceArray"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Atomic.AtomicReferenceArray(Java.Util.Concurrent.Atomic.AtomicReferenceArray<E> t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicReferenceArray>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndSet(int,java.lang.Object,java.lang.Object)"/>
@@ -677,13 +677,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecute("setRelease", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

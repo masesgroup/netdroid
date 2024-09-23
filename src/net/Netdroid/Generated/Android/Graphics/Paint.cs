@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Paint(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Align declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Align(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Cap(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FontMetrics(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -216,10 +216,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FontMetricsInt(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,9 +240,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -261,10 +261,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Join(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -285,9 +285,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -306,10 +306,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Style(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -330,9 +330,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -360,13 +360,13 @@ namespace Android.Graphics
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#ANTI_ALIAS_FLAG"/>
@@ -542,13 +542,13 @@ namespace Android.Graphics
         public static int UNDERLINE_TEXT_FLAG { get { if (!_UNDERLINE_TEXT_FLAGReady) { _UNDERLINE_TEXT_FLAGContent = SGetField<int>(LocalBridgeClazz, "UNDERLINE_TEXT_FLAG"); _UNDERLINE_TEXT_FLAGReady = true; } return _UNDERLINE_TEXT_FLAGContent; } }
         private static int _UNDERLINE_TEXT_FLAGContent = default;
         private static bool _UNDERLINE_TEXT_FLAGReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Paint.html#getBlendMode()"/>
@@ -1746,21 +1746,21 @@ namespace Android.Graphics
         {
             IExecuteWithSignature("setWordSpacing", "(F)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Align implementation
         public partial class Align
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Align.html#CENTER"/>
@@ -1780,9 +1780,9 @@ namespace Android.Graphics
             public static Android.Graphics.Paint.Align RIGHT { get { if (!_RIGHTReady) { _RIGHTContent = SGetField<Android.Graphics.Paint.Align>(LocalBridgeClazz, "RIGHT"); _RIGHTReady = true; } return _RIGHTContent; } }
             private static Android.Graphics.Paint.Align _RIGHTContent = default;
             private static bool _RIGHTReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Align.html#valueOf(java.lang.String)"/>
@@ -1801,17 +1801,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Paint.Align>(LocalBridgeClazz, "values", "()[Landroid/graphics/Paint$Align;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1820,13 +1820,13 @@ namespace Android.Graphics
         public partial class Cap
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Cap.html#BUTT"/>
@@ -1846,9 +1846,9 @@ namespace Android.Graphics
             public static Android.Graphics.Paint.Cap SQUARE { get { if (!_SQUAREReady) { _SQUAREContent = SGetField<Android.Graphics.Paint.Cap>(LocalBridgeClazz, "SQUARE"); _SQUAREReady = true; } return _SQUAREContent; } }
             private static Android.Graphics.Paint.Cap _SQUAREContent = default;
             private static bool _SQUAREReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Cap.html#valueOf(java.lang.String)"/>
@@ -1867,17 +1867,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Paint.Cap>(LocalBridgeClazz, "values", "()[Landroid/graphics/Paint$Cap;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1886,13 +1886,13 @@ namespace Android.Graphics
         public partial class FontMetrics
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.FontMetrics.html#ascent"/>
@@ -1914,21 +1914,21 @@ namespace Android.Graphics
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.FontMetrics.html#top"/>
             /// </summary>
             public float top { get { return IGetField<float>("top"); } set { ISetField("top", value); } }
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1937,13 +1937,13 @@ namespace Android.Graphics
         public partial class FontMetricsInt
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.FontMetricsInt.html#ascent"/>
@@ -1965,13 +1965,13 @@ namespace Android.Graphics
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.FontMetricsInt.html#top"/>
             /// </summary>
             public int top { get { return IGetField<int>("top"); } set { ISetField("top", value); } }
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.FontMetricsInt.html#set(android.graphics.Paint.FontMetrics)"/>
@@ -1989,13 +1989,13 @@ namespace Android.Graphics
             {
                 IExecuteWithSignature("set", "(Landroid/graphics/Paint$FontMetricsInt;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2004,13 +2004,13 @@ namespace Android.Graphics
         public partial class Join
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Join.html#BEVEL"/>
@@ -2030,9 +2030,9 @@ namespace Android.Graphics
             public static Android.Graphics.Paint.Join ROUND { get { if (!_ROUNDReady) { _ROUNDContent = SGetField<Android.Graphics.Paint.Join>(LocalBridgeClazz, "ROUND"); _ROUNDReady = true; } return _ROUNDContent; } }
             private static Android.Graphics.Paint.Join _ROUNDContent = default;
             private static bool _ROUNDReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Join.html#valueOf(java.lang.String)"/>
@@ -2051,17 +2051,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Paint.Join>(LocalBridgeClazz, "values", "()[Landroid/graphics/Paint$Join;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2070,13 +2070,13 @@ namespace Android.Graphics
         public partial class Style
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Style.html#FILL"/>
@@ -2096,9 +2096,9 @@ namespace Android.Graphics
             public static Android.Graphics.Paint.Style STROKE { get { if (!_STROKEReady) { _STROKEContent = SGetField<Android.Graphics.Paint.Style>(LocalBridgeClazz, "STROKE"); _STROKEReady = true; } return _STROKEContent; } }
             private static Android.Graphics.Paint.Style _STROKEContent = default;
             private static bool _STROKEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Paint.Style.html#valueOf(java.lang.String)"/>
@@ -2117,24 +2117,24 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Paint.Style>(LocalBridgeClazz, "values", "()[Landroid/graphics/Paint$Style;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

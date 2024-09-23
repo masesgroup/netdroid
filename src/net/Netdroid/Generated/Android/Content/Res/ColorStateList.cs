@@ -40,10 +40,10 @@ namespace Android.Content.Res
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ColorStateList(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content.Res
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -83,13 +83,13 @@ namespace Android.Content.Res
             : base(arg0, arg1)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#CREATOR"/>
@@ -97,9 +97,9 @@ namespace Android.Content.Res
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#createFromXml(android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.content.res.Resources.Theme)"/>
@@ -134,11 +134,11 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
         public static Android.Content.Res.ColorStateList ValueOf(int arg0)
         {
-            return SExecuteWithSignature<Android.Content.Res.ColorStateList>(LocalBridgeClazz, "valueOf", "(I)Landroid/content/res/ColorStateList;", arg0);
+            return SExecute<Android.Content.Res.ColorStateList>(LocalBridgeClazz, "valueOf", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#withAlpha(int)"/>
@@ -147,7 +147,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
         public Android.Content.Res.ColorStateList WithAlpha(int arg0)
         {
-            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("withAlpha", "(I)Landroid/content/res/ColorStateList;", arg0);
+            return IExecute<Android.Content.Res.ColorStateList>("withAlpha", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#withLStar(float)"/>
@@ -156,7 +156,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
         public Android.Content.Res.ColorStateList WithLStar(float arg0)
         {
-            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("withLStar", "(F)Landroid/content/res/ColorStateList;", arg0);
+            return IExecute<Android.Content.Res.ColorStateList>("withLStar", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#isOpaque()"/>
@@ -164,7 +164,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool IsOpaque()
         {
-            return IExecuteWithSignature<bool>("isOpaque", "()Z");
+            return IExecute<bool>("isOpaque");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#isStateful()"/>
@@ -172,7 +172,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool IsStateful()
         {
-            return IExecuteWithSignature<bool>("isStateful", "()Z");
+            return IExecute<bool>("isStateful");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#describeContents()"/>
@@ -180,7 +180,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#getChangingConfigurations()"/>
@@ -188,7 +188,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetChangingConfigurations()
         {
-            return IExecuteWithSignature<int>("getChangingConfigurations", "()I");
+            return IExecute<int>("getChangingConfigurations");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#getColorForState(int[],int)"/>
@@ -206,7 +206,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetDefaultColor()
         {
-            return IExecuteWithSignature<int>("getDefaultColor", "()I");
+            return IExecute<int>("getDefaultColor");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#writeToParcel(android.os.Parcel,int)"/>
@@ -217,13 +217,13 @@ namespace Android.Content.Res
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TouchDelegate(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -83,13 +83,13 @@ namespace Android.View
             : base(arg0, arg1)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/TouchDelegate.html#ABOVE"/>
@@ -115,13 +115,13 @@ namespace Android.View
         public static int TO_RIGHT { get { if (!_TO_RIGHTReady) { _TO_RIGHTContent = SGetField<int>(LocalBridgeClazz, "TO_RIGHT"); _TO_RIGHTReady = true; } return _TO_RIGHTContent; } }
         private static int _TO_RIGHTContent = default;
         private static bool _TO_RIGHTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/TouchDelegate.html#getTouchDelegateInfo()"/>
@@ -149,13 +149,13 @@ namespace Android.View
         {
             return IExecuteWithSignature<bool>("onTouchExplorationHoverEvent", "(Landroid/view/MotionEvent;)Z", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

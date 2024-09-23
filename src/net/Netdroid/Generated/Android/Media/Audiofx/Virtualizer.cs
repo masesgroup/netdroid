@@ -41,10 +41,10 @@ namespace Android.Media.Audiofx
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Virtualizer(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Media.Audiofx
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region OnParameterChangeListener declaration
         /// <summary>
@@ -78,7 +78,7 @@ namespace Android.Media.Audiofx
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnParameterChangeListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.audiofx.Virtualizer_OnParameterChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -87,13 +87,13 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnParameterChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnParameterChangeListener"/> or its generic type if there is one
@@ -104,14 +104,14 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.media.audiofx.Virtualizer$OnParameterChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -151,10 +151,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Settings(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -175,9 +175,9 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -203,13 +203,13 @@ namespace Android.Media.Audiofx
             : base(arg0, arg1)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#PARAM_STRENGTH"/>
@@ -253,13 +253,13 @@ namespace Android.Media.Audiofx
         public static int VIRTUALIZATION_MODE_TRANSAURAL { get { if (!_VIRTUALIZATION_MODE_TRANSAURALReady) { _VIRTUALIZATION_MODE_TRANSAURALContent = SGetField<int>(LocalBridgeClazz, "VIRTUALIZATION_MODE_TRANSAURAL"); _VIRTUALIZATION_MODE_TRANSAURALReady = true; } return _VIRTUALIZATION_MODE_TRANSAURALContent; } }
         private static int _VIRTUALIZATION_MODE_TRANSAURALContent = default;
         private static bool _VIRTUALIZATION_MODE_TRANSAURALReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getProperties()"/>
@@ -380,29 +380,29 @@ namespace Android.Media.Audiofx
         {
             IExecuteWithSignature("setStrength", "(S)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region OnParameterChangeListener implementation
         public partial class OnParameterChangeListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnParameterChangeListener"/>
@@ -412,13 +412,13 @@ namespace Android.Media.Audiofx
                 AddEventHandler("onParameterChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnParameterChangeEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.OnParameterChangeListener.html#onParameterChange(android.media.audiofx.Virtualizer,int,int,short)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnParameterChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.Audiofx.Virtualizer, int, int, short> OnOnParameterChange { get; set; } = null;
-
+            
             bool hasOverrideOnParameterChange = true;
             void OnParameterChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -427,7 +427,7 @@ namespace Android.Media.Audiofx
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.Audiofx.Virtualizer>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<short>(3));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnParameterChange;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.OnParameterChangeListener.html#onParameterChange(android.media.audiofx.Virtualizer,int,int,short)"/>
             /// </summary>
@@ -440,13 +440,13 @@ namespace Android.Media.Audiofx
             {
                 hasOverrideOnParameterChange = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -455,21 +455,21 @@ namespace Android.Media.Audiofx
         public partial class OnParameterChangeListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.OnParameterChangeListener.html#onParameterChange(android.media.audiofx.Virtualizer,int,int,short)"/>
@@ -483,13 +483,13 @@ namespace Android.Media.Audiofx
             {
                 IExecute("onParameterChange", arg0, arg1, arg2, arg3);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -507,41 +507,41 @@ namespace Android.Media.Audiofx
                 : base(arg0)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.Settings.html#strength"/>
             /// </summary>
             [global::System.Obsolete()]
             public short strength { get { return IGetField<short>("strength"); } set { ISetField("strength", value); } }
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

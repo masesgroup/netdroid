@@ -35,7 +35,7 @@ namespace Android.Database.Sqlite
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public SQLiteTransactionListener() { InitializeHandlers(); }
-
+    
         const string _bridgeClassName = "org.mases.netdroid.generated.android.database.sqlite.SQLiteTransactionListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Android.Database.Sqlite
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-
+    
     
         // TODO: complete the class
-
+    
     }
     #endregion
-
+    
     #region SQLiteTransactionListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="SQLiteTransactionListener"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Android.Database.Sqlite
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-
+    
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-
+    
         const string _bridgeClassName = "android.database.sqlite.SQLiteTransactionListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Android.Database.Sqlite
     public partial interface ISQLiteTransactionListener
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Android.Database.Sqlite
     public partial class SQLiteTransactionListener : Android.Database.Sqlite.ISQLiteTransactionListener
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="SQLiteTransactionListener"/>
@@ -140,13 +140,13 @@ namespace Android.Database.Sqlite
             AddEventHandler("onRollback", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnRollbackEventHandler));
 
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener.html#onBegin()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnBegin"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action OnOnBegin { get; set; } = null;
-
+        
         bool hasOverrideOnBegin = true;
         void OnBeginEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -155,7 +155,7 @@ namespace Android.Database.Sqlite
             methodToExecute.Invoke();
             data.EventData.TypedEventData.HasOverride = hasOverrideOnBegin;
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener.html#onBegin()"/>
         /// </summary>
@@ -163,13 +163,13 @@ namespace Android.Database.Sqlite
         {
             hasOverrideOnBegin = false;
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener.html#onCommit()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnCommit"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action OnOnCommit { get; set; } = null;
-
+        
         bool hasOverrideOnCommit = true;
         void OnCommitEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -178,7 +178,7 @@ namespace Android.Database.Sqlite
             methodToExecute.Invoke();
             data.EventData.TypedEventData.HasOverride = hasOverrideOnCommit;
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener.html#onCommit()"/>
         /// </summary>
@@ -186,13 +186,13 @@ namespace Android.Database.Sqlite
         {
             hasOverrideOnCommit = false;
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener.html#onRollback()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnRollback"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action OnOnRollback { get; set; } = null;
-
+        
         bool hasOverrideOnRollback = true;
         void OnRollbackEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -201,7 +201,7 @@ namespace Android.Database.Sqlite
             methodToExecute.Invoke();
             data.EventData.TypedEventData.HasOverride = hasOverrideOnRollback;
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener.html#onRollback()"/>
         /// </summary>
@@ -209,13 +209,13 @@ namespace Android.Database.Sqlite
         {
             hasOverrideOnRollback = false;
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -224,21 +224,21 @@ namespace Android.Database.Sqlite
     public partial class SQLiteTransactionListenerDirect : Android.Database.Sqlite.ISQLiteTransactionListener
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener.html#onBegin()"/>
@@ -261,13 +261,13 @@ namespace Android.Database.Sqlite
         {
             IExecuteWithSignature("onRollback", "()V");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

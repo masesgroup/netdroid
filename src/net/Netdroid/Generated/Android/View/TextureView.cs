@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TextureView(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region SurfaceTextureListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public SurfaceTextureListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.TextureView_SurfaceTextureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region SurfaceTextureListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="SurfaceTextureListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.view.TextureView$SurfaceTextureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -179,21 +179,21 @@ namespace Android.View
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/TextureView.html#getBitmap()"/>
@@ -320,29 +320,29 @@ namespace Android.View
         {
             IExecuteWithSignature("unlockCanvasAndPost", "(Landroid/graphics/Canvas;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region SurfaceTextureListener implementation
         public partial class SurfaceTextureListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="SurfaceTextureListener"/>
@@ -355,13 +355,13 @@ namespace Android.View
                 AddEventHandler("onSurfaceTextureUpdated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnSurfaceTextureUpdatedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener.html#onSurfaceTextureDestroyed(android.graphics.SurfaceTexture)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSurfaceTextureDestroyed"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.Graphics.SurfaceTexture, bool> OnOnSurfaceTextureDestroyed { get; set; } = null;
-
+            
             bool hasOverrideOnSurfaceTextureDestroyed = true;
             void OnSurfaceTextureDestroyedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -370,7 +370,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.Graphics.SurfaceTexture>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnSurfaceTextureDestroyed, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener.html#onSurfaceTextureDestroyed(android.graphics.SurfaceTexture)"/>
             /// </summary>
@@ -380,13 +380,13 @@ namespace Android.View
             {
                 hasOverrideOnSurfaceTextureDestroyed = false; return default;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener.html#onSurfaceTextureAvailable(android.graphics.SurfaceTexture,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSurfaceTextureAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Graphics.SurfaceTexture, int, int> OnOnSurfaceTextureAvailable { get; set; } = null;
-
+            
             bool hasOverrideOnSurfaceTextureAvailable = true;
             void OnSurfaceTextureAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -395,7 +395,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Graphics.SurfaceTexture>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnSurfaceTextureAvailable;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener.html#onSurfaceTextureAvailable(android.graphics.SurfaceTexture,int,int)"/>
             /// </summary>
@@ -406,13 +406,13 @@ namespace Android.View
             {
                 hasOverrideOnSurfaceTextureAvailable = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener.html#onSurfaceTextureSizeChanged(android.graphics.SurfaceTexture,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSurfaceTextureSizeChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Graphics.SurfaceTexture, int, int> OnOnSurfaceTextureSizeChanged { get; set; } = null;
-
+            
             bool hasOverrideOnSurfaceTextureSizeChanged = true;
             void OnSurfaceTextureSizeChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -421,7 +421,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Graphics.SurfaceTexture>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnSurfaceTextureSizeChanged;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener.html#onSurfaceTextureSizeChanged(android.graphics.SurfaceTexture,int,int)"/>
             /// </summary>
@@ -432,13 +432,13 @@ namespace Android.View
             {
                 hasOverrideOnSurfaceTextureSizeChanged = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener.html#onSurfaceTextureUpdated(android.graphics.SurfaceTexture)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSurfaceTextureUpdated"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Graphics.SurfaceTexture> OnOnSurfaceTextureUpdated { get; set; } = null;
-
+            
             bool hasOverrideOnSurfaceTextureUpdated = true;
             void OnSurfaceTextureUpdatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -447,7 +447,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Graphics.SurfaceTexture>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnSurfaceTextureUpdated;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener.html#onSurfaceTextureUpdated(android.graphics.SurfaceTexture)"/>
             /// </summary>
@@ -456,13 +456,13 @@ namespace Android.View
             {
                 hasOverrideOnSurfaceTextureUpdated = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -471,21 +471,21 @@ namespace Android.View
         public partial class SurfaceTextureListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener.html#onSurfaceTextureDestroyed(android.graphics.SurfaceTexture)"/>
@@ -524,20 +524,20 @@ namespace Android.View
             {
                 IExecuteWithSignature("onSurfaceTextureUpdated", "(Landroid/graphics/SurfaceTexture;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

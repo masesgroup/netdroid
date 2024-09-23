@@ -40,10 +40,10 @@ namespace Android.Icu.Lang
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UScript(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region ScriptUsage declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Lang
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ScriptUsage(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Icu.Lang
     public partial class UScript
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#ADLAM"/>
@@ -1363,9 +1363,9 @@ namespace Android.Icu.Lang
         public static int ZANABAZAR_SQUARE { get { if (!_ZANABAZAR_SQUAREReady) { _ZANABAZAR_SQUAREContent = SGetField<int>(LocalBridgeClazz, "ZANABAZAR_SQUARE"); _ZANABAZAR_SQUAREReady = true; } return _ZANABAZAR_SQUAREContent; } }
         private static int _ZANABAZAR_SQUAREContent = default;
         private static bool _ZANABAZAR_SQUAREReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.html#getUsage(int)"/>
@@ -1495,25 +1495,25 @@ namespace Android.Icu.Lang
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getShortName", "(I)Ljava/lang/String;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
         #region ScriptUsage implementation
         public partial class ScriptUsage
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.ScriptUsage.html#ASPIRATIONAL"/>
@@ -1551,9 +1551,9 @@ namespace Android.Icu.Lang
             public static Android.Icu.Lang.UScript.ScriptUsage UNKNOWN { get { if (!_UNKNOWNReady) { _UNKNOWNContent = SGetField<Android.Icu.Lang.UScript.ScriptUsage>(LocalBridgeClazz, "UNKNOWN"); _UNKNOWNReady = true; } return _UNKNOWNContent; } }
             private static Android.Icu.Lang.UScript.ScriptUsage _UNKNOWNContent = default;
             private static bool _UNKNOWNReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UScript.ScriptUsage.html#valueOf(java.lang.String)"/>
@@ -1572,24 +1572,24 @@ namespace Android.Icu.Lang
             {
                 return SExecuteWithSignatureArray<Android.Icu.Lang.UScript.ScriptUsage>(LocalBridgeClazz, "values", "()[Landroid/icu/lang/UScript$ScriptUsage;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

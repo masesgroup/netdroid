@@ -42,10 +42,10 @@ namespace Android.View.Accessibility
         /// </summary>
         [global::System.Obsolete("AccessibilityRequestPreparer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AccessibilityRequestPreparer(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.View.Accessibility
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -85,13 +85,13 @@ namespace Android.View.Accessibility
             : base(arg0, arg1)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRequestPreparer.html#REQUEST_TYPE_EXTRA_DATA"/>
@@ -99,13 +99,13 @@ namespace Android.View.Accessibility
         public static int REQUEST_TYPE_EXTRA_DATA { get { if (!_REQUEST_TYPE_EXTRA_DATAReady) { _REQUEST_TYPE_EXTRA_DATAContent = SGetField<int>(LocalBridgeClazz, "REQUEST_TYPE_EXTRA_DATA"); _REQUEST_TYPE_EXTRA_DATAReady = true; } return _REQUEST_TYPE_EXTRA_DATAContent; } }
         private static int _REQUEST_TYPE_EXTRA_DATAContent = default;
         private static bool _REQUEST_TYPE_EXTRA_DATAReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRequestPreparer.html#onPrepareExtraData(int,java.lang.String,android.os.Bundle,android.os.Message)"/>
@@ -126,13 +126,13 @@ namespace Android.View.Accessibility
         {
             return IExecuteWithSignature<Android.View.View>("getView", "()Landroid/view/View;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

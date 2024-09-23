@@ -40,10 +40,10 @@ namespace Android.Content.Pm
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ApplicationInfo(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content.Pm
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -82,17 +82,17 @@ namespace Android.Content.Pm
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Content.Pm.ApplicationInfo"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.Content.Pm.ApplicationInfo t) => t.Cast<Android.Os.Parcelable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#enabled"/>
@@ -556,9 +556,9 @@ namespace Android.Content.Pm
         public static int ZEROINIT_ENABLED { get { if (!_ZEROINIT_ENABLEDReady) { _ZEROINIT_ENABLEDContent = SGetField<int>(LocalBridgeClazz, "ZEROINIT_ENABLED"); _ZEROINIT_ENABLEDReady = true; } return _ZEROINIT_ENABLEDContent; } }
         private static int _ZEROINIT_ENABLEDContent = default;
         private static bool _ZEROINIT_ENABLEDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getCategoryTitle(android.content.Context,int)"/>
@@ -570,9 +570,9 @@ namespace Android.Content.Pm
         {
             return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getCategoryTitle", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#areAttributionsUserVisible()"/>
@@ -680,13 +680,13 @@ namespace Android.Content.Pm
         {
             IExecute("dump", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

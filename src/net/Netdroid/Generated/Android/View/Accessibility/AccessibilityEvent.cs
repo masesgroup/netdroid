@@ -40,10 +40,10 @@ namespace Android.View.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibilityEvent(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.View.Accessibility
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -90,17 +90,17 @@ namespace Android.View.Accessibility
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.View.Accessibility.AccessibilityEvent"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.View.Accessibility.AccessibilityEvent t) => t.Cast<Android.Os.Parcelable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#CREATOR"/>
@@ -463,9 +463,9 @@ namespace Android.View.Accessibility
         public static int WINDOWS_CHANGE_TITLE { get { if (!_WINDOWS_CHANGE_TITLEReady) { _WINDOWS_CHANGE_TITLEContent = SGetField<int>(LocalBridgeClazz, "WINDOWS_CHANGE_TITLE"); _WINDOWS_CHANGE_TITLEReady = true; } return _WINDOWS_CHANGE_TITLEContent; } }
         private static int _WINDOWS_CHANGE_TITLEContent = default;
         private static bool _WINDOWS_CHANGE_TITLEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#obtain(android.view.accessibility.AccessibilityEvent)"/>
@@ -496,9 +496,9 @@ namespace Android.View.Accessibility
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "eventTypeToString", "(I)Ljava/lang/String;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getRecord(int)"/>
@@ -686,13 +686,13 @@ namespace Android.View.Accessibility
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Health.Connect.Datatypes
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public NutritionRecord(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Health.Connect.Datatypes
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Health.Connect.Datatypes
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Health.Connect.Datatypes
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Health.Connect.Datatypes
     public partial class NutritionRecord
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#ENERGY_FROM_FAT_TOTAL"/>
@@ -379,13 +379,13 @@ namespace Android.Health.Connect.Datatypes
         public static Android.Health.Connect.Datatypes.AggregationType ZINC_TOTAL { get { if (!_ZINC_TOTALReady) { _ZINC_TOTALContent = SGetField<Android.Health.Connect.Datatypes.AggregationType>(LocalBridgeClazz, "ZINC_TOTAL"); _ZINC_TOTALReady = true; } return _ZINC_TOTALContent; } }
         private static Android.Health.Connect.Datatypes.AggregationType _ZINC_TOTALContent = default;
         private static bool _ZINC_TOTALReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getEnergy()"/>
@@ -739,9 +739,9 @@ namespace Android.Health.Connect.Datatypes
         {
             return IExecuteWithSignature<Java.Lang.String>("getMealName", "()Ljava/lang/String;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -757,21 +757,21 @@ namespace Android.Health.Connect.Datatypes
                 : base(arg0, arg1, arg2)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.Builder.html#build()"/>
@@ -1211,20 +1211,20 @@ namespace Android.Health.Connect.Datatypes
             {
                 return IExecuteWithSignature<Android.Health.Connect.Datatypes.NutritionRecord.Builder>("setZinc", "(Landroid/health/connect/datatypes/units/Mass;)Landroid/health/connect/datatypes/NutritionRecord$Builder;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

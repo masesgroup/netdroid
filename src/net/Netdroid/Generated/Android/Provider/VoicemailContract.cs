@@ -40,10 +40,10 @@ namespace Android.Provider
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public VoicemailContract(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Provider
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Status declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Status(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Voicemails(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -164,13 +164,13 @@ namespace Android.Provider
     public partial class VoicemailContract
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/VoicemailContract.html#ACTION_FETCH_VOICEMAIL"/>
@@ -214,29 +214,29 @@ namespace Android.Provider
         public static Java.Lang.String PARAM_KEY_SOURCE_PACKAGE { get { if (!_PARAM_KEY_SOURCE_PACKAGEReady) { _PARAM_KEY_SOURCE_PACKAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PARAM_KEY_SOURCE_PACKAGE"); _PARAM_KEY_SOURCE_PACKAGEReady = true; } return _PARAM_KEY_SOURCE_PACKAGEContent; } }
         private static Java.Lang.String _PARAM_KEY_SOURCE_PACKAGEContent = default;
         private static bool _PARAM_KEY_SOURCE_PACKAGEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Status implementation
         public partial class Status
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/VoicemailContract.Status.html#CONTENT_URI"/>
@@ -424,9 +424,9 @@ namespace Android.Provider
             public static Java.Lang.String VOICEMAIL_ACCESS_URI { get { if (!_VOICEMAIL_ACCESS_URIReady) { _VOICEMAIL_ACCESS_URIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VOICEMAIL_ACCESS_URI"); _VOICEMAIL_ACCESS_URIReady = true; } return _VOICEMAIL_ACCESS_URIContent; } }
             private static Java.Lang.String _VOICEMAIL_ACCESS_URIContent = default;
             private static bool _VOICEMAIL_ACCESS_URIReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/VoicemailContract.Status.html#buildSourceUri(java.lang.String)"/>
@@ -437,17 +437,17 @@ namespace Android.Provider
             {
                 return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "buildSourceUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -456,9 +456,9 @@ namespace Android.Provider
         public partial class Voicemails : Android.Provider.IBaseColumns, Android.Provider.IOpenableColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.VoicemailContract.Voicemails"/> to <see cref="Android.Provider.BaseColumns"/>
@@ -468,9 +468,9 @@ namespace Android.Provider
             /// Converter from <see cref="Android.Provider.VoicemailContract.Voicemails"/> to <see cref="Android.Provider.OpenableColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.OpenableColumns(Android.Provider.VoicemailContract.Voicemails t) => t.Cast<Android.Provider.OpenableColumns>();
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/VoicemailContract.Voicemails.html#CONTENT_URI"/>
@@ -610,9 +610,9 @@ namespace Android.Provider
             public static Java.Lang.String TRANSCRIPTION { get { if (!_TRANSCRIPTIONReady) { _TRANSCRIPTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TRANSCRIPTION"); _TRANSCRIPTIONReady = true; } return _TRANSCRIPTIONContent; } }
             private static Java.Lang.String _TRANSCRIPTIONContent = default;
             private static bool _TRANSCRIPTIONReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/VoicemailContract.Voicemails.html#buildSourceUri(java.lang.String)"/>
@@ -623,24 +623,24 @@ namespace Android.Provider
             {
                 return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "buildSourceUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

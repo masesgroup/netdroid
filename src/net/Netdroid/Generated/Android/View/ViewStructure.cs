@@ -42,10 +42,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("ViewStructure class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ViewStructure(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region HtmlInfo declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.View
             /// </summary>
             [global::System.Obsolete("HtmlInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public HtmlInfo(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,7 +109,7 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -128,10 +128,10 @@ namespace Android.View
                 /// </summary>
                 [global::System.Obsolete("Builder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public Builder(params object[] args) : base(args) { }
-
+            
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -152,9 +152,9 @@ namespace Android.View
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-
+            
                 // TODO: complete the class
-
+            
             }
             #endregion
 
@@ -170,21 +170,21 @@ namespace Android.View
     public partial class ViewStructure
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getExtras()"/>
@@ -692,29 +692,29 @@ namespace Android.View
         {
             IExecuteWithSignature("setTextIdEntry", "(Ljava/lang/String;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region HtmlInfo implementation
         public partial class HtmlInfo
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewStructure.HtmlInfo.html#getTag()"/>
@@ -732,29 +732,29 @@ namespace Android.View
             {
                 return IExecuteWithSignature<Java.Util.List<Android.Util.Pair<Java.Lang.String, Java.Lang.String>>>("getAttributes", "()Ljava/util/List;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
             #region Builder implementation
             public partial class Builder
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
-
+            
                 #endregion
-
+            
                 #region Fields
-
+            
                 #endregion
-
+            
                 #region Static methods
-
+            
                 #endregion
-
+            
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/view/ViewStructure.HtmlInfo.Builder.html#build()"/>
@@ -774,27 +774,27 @@ namespace Android.View
                 {
                     return IExecute<Android.View.ViewStructure.HtmlInfo.Builder>("addAttribute", arg0, arg1);
                 }
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

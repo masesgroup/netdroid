@@ -42,10 +42,10 @@ namespace Android.App.Admin
         /// </summary>
         [global::System.Obsolete("PolicyUpdateReceiver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PolicyUpdateReceiver(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.App.Admin
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.App.Admin
     public partial class PolicyUpdateReceiver
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/PolicyUpdateReceiver.html#ACTION_DEVICE_POLICY_CHANGED"/>
@@ -120,13 +120,13 @@ namespace Android.App.Admin
         public static Java.Lang.String EXTRA_PERMISSION_NAME { get { if (!_EXTRA_PERMISSION_NAMEReady) { _EXTRA_PERMISSION_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PERMISSION_NAME"); _EXTRA_PERMISSION_NAMEReady = true; } return _EXTRA_PERMISSION_NAMEContent; } }
         private static Java.Lang.String _EXTRA_PERMISSION_NAMEContent = default;
         private static bool _EXTRA_PERMISSION_NAMEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/PolicyUpdateReceiver.html#onPolicyChanged(android.content.Context,java.lang.String,android.os.Bundle,android.app.admin.TargetUser,android.app.admin.PolicyUpdateResult)"/>
@@ -152,13 +152,13 @@ namespace Android.App.Admin
         {
             IExecute("onPolicySetResult", arg0, arg1, arg2, arg3, arg4);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

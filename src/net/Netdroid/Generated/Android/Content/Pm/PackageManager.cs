@@ -42,10 +42,10 @@ namespace Android.Content.Pm
         /// </summary>
         [global::System.Obsolete("PackageManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PackageManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Content.Pm
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region ApplicationInfoFlags declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ApplicationInfoFlags(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ComponentEnabledSetting(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ComponentInfoFlags(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -214,9 +214,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -230,7 +230,7 @@ namespace Android.Content.Pm
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnChecksumsReadyListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.content.pm.PackageManager_OnChecksumsReadyListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -239,13 +239,13 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnChecksumsReadyListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnChecksumsReadyListener"/> or its generic type if there is one
@@ -256,14 +256,14 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.content.pm.PackageManager$OnChecksumsReadyListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -302,10 +302,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PackageInfoFlags(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -326,9 +326,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -347,10 +347,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Property(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -371,9 +371,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -392,10 +392,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ResolveInfoFlags(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -416,9 +416,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -430,13 +430,13 @@ namespace Android.Content.Pm
     public partial class PackageManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#CERT_INPUT_RAW_X509"/>
@@ -1743,13 +1743,13 @@ namespace Android.Content.Pm
         public static long MAXIMUM_VERIFICATION_TIMEOUT { get { if (!_MAXIMUM_VERIFICATION_TIMEOUTReady) { _MAXIMUM_VERIFICATION_TIMEOUTContent = SGetField<long>(LocalBridgeClazz, "MAXIMUM_VERIFICATION_TIMEOUT"); _MAXIMUM_VERIFICATION_TIMEOUTReady = true; } return _MAXIMUM_VERIFICATION_TIMEOUTContent; } }
         private static long _MAXIMUM_VERIFICATION_TIMEOUTContent = default;
         private static bool _MAXIMUM_VERIFICATION_TIMEOUTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#parseAndroidManifest(java.io.File,java.util.function.Function)"/>
@@ -3312,25 +3312,25 @@ namespace Android.Content.Pm
         {
             IExecute("setMimeGroup", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region ApplicationInfoFlags implementation
         public partial class ApplicationInfoFlags
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ApplicationInfoFlags.html#of(long)"/>
@@ -3341,9 +3341,9 @@ namespace Android.Content.Pm
             {
                 return SExecuteWithSignature<Android.Content.Pm.PackageManager.ApplicationInfoFlags>(LocalBridgeClazz, "of", "(J)Landroid/content/pm/PackageManager$ApplicationInfoFlags;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ApplicationInfoFlags.html#getValue()"/>
@@ -3353,13 +3353,13 @@ namespace Android.Content.Pm
             {
                 return IExecuteWithSignature<long>("getValue", "()J");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3378,13 +3378,13 @@ namespace Android.Content.Pm
                 : base(arg0, arg1, arg2)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentEnabledSetting.html#CREATOR"/>
@@ -3392,13 +3392,13 @@ namespace Android.Content.Pm
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentEnabledSetting.html#getComponentName()"/>
@@ -3441,13 +3441,13 @@ namespace Android.Content.Pm
             {
                 IExecute("writeToParcel", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3456,17 +3456,17 @@ namespace Android.Content.Pm
         public partial class ComponentInfoFlags
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentInfoFlags.html#of(long)"/>
@@ -3477,9 +3477,9 @@ namespace Android.Content.Pm
             {
                 return SExecuteWithSignature<Android.Content.Pm.PackageManager.ComponentInfoFlags>(LocalBridgeClazz, "of", "(J)Landroid/content/pm/PackageManager$ComponentInfoFlags;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ComponentInfoFlags.html#getValue()"/>
@@ -3489,13 +3489,13 @@ namespace Android.Content.Pm
             {
                 return IExecuteWithSignature<long>("getValue", "()J");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3504,29 +3504,29 @@ namespace Android.Content.Pm
         public partial class NameNotFoundException
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3535,21 +3535,21 @@ namespace Android.Content.Pm
         public partial class OnChecksumsReadyListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnChecksumsReadyListener"/>
@@ -3559,13 +3559,13 @@ namespace Android.Content.Pm
                 AddEventHandler("onChecksumsReady", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnChecksumsReadyEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/content/pm/PackageManager.OnChecksumsReadyListener.html#onChecksumsReady(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnChecksumsReady"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Util.List<Android.Content.Pm.ApkChecksum>> OnOnChecksumsReady { get; set; } = null;
-
+            
             bool hasOverrideOnChecksumsReady = true;
             void OnChecksumsReadyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -3574,7 +3574,7 @@ namespace Android.Content.Pm
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Util.List<Android.Content.Pm.ApkChecksum>>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnChecksumsReady;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.OnChecksumsReadyListener.html#onChecksumsReady(java.util.List)"/>
             /// </summary>
@@ -3583,13 +3583,13 @@ namespace Android.Content.Pm
             {
                 hasOverrideOnChecksumsReady = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3598,21 +3598,21 @@ namespace Android.Content.Pm
         public partial class OnChecksumsReadyListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.OnChecksumsReadyListener.html#onChecksumsReady(java.util.List)"/>
@@ -3622,13 +3622,13 @@ namespace Android.Content.Pm
             {
                 IExecuteWithSignature("onChecksumsReady", "(Ljava/util/List;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3637,17 +3637,17 @@ namespace Android.Content.Pm
         public partial class PackageInfoFlags
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.PackageInfoFlags.html#of(long)"/>
@@ -3658,9 +3658,9 @@ namespace Android.Content.Pm
             {
                 return SExecuteWithSignature<Android.Content.Pm.PackageManager.PackageInfoFlags>(LocalBridgeClazz, "of", "(J)Landroid/content/pm/PackageManager$PackageInfoFlags;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.PackageInfoFlags.html#getValue()"/>
@@ -3670,13 +3670,13 @@ namespace Android.Content.Pm
             {
                 return IExecuteWithSignature<long>("getValue", "()J");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3685,13 +3685,13 @@ namespace Android.Content.Pm
         public partial class Property
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#CREATOR"/>
@@ -3699,13 +3699,13 @@ namespace Android.Content.Pm
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.Property.html#getBoolean()"/>
@@ -3828,13 +3828,13 @@ namespace Android.Content.Pm
             {
                 IExecute("writeToParcel", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3843,17 +3843,17 @@ namespace Android.Content.Pm
         public partial class ResolveInfoFlags
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ResolveInfoFlags.html#of(long)"/>
@@ -3864,9 +3864,9 @@ namespace Android.Content.Pm
             {
                 return SExecuteWithSignature<Android.Content.Pm.PackageManager.ResolveInfoFlags>(LocalBridgeClazz, "of", "(J)Landroid/content/pm/PackageManager$ResolveInfoFlags;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.ResolveInfoFlags.html#getValue()"/>
@@ -3876,20 +3876,20 @@ namespace Android.Content.Pm
             {
                 return IExecuteWithSignature<long>("getValue", "()J");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

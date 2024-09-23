@@ -42,10 +42,10 @@ namespace Android.View.Inputmethod
         /// </summary>
         [global::System.Obsolete("InputConnection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public InputConnection(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.View.Inputmethod
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.View.Inputmethod
     public partial interface IInputConnection
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Android.View.Inputmethod
     public partial class InputConnection : Android.View.Inputmethod.IInputConnection
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnection.html#CURSOR_UPDATE_FILTER_CHARACTER_BOUNDS"/>
@@ -198,13 +198,13 @@ namespace Android.View.Inputmethod
         public static int INPUT_CONTENT_GRANT_READ_URI_PERMISSION { get { if (!_INPUT_CONTENT_GRANT_READ_URI_PERMISSIONReady) { _INPUT_CONTENT_GRANT_READ_URI_PERMISSIONContent = SGetField<int>(LocalBridgeClazz, "INPUT_CONTENT_GRANT_READ_URI_PERMISSION"); _INPUT_CONTENT_GRANT_READ_URI_PERMISSIONReady = true; } return _INPUT_CONTENT_GRANT_READ_URI_PERMISSIONContent; } }
         private static int _INPUT_CONTENT_GRANT_READ_URI_PERMISSIONContent = default;
         private static bool _INPUT_CONTENT_GRANT_READ_URI_PERMISSIONReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnection.html#getHandler()"/>
@@ -568,13 +568,13 @@ namespace Android.View.Inputmethod
         {
             IExecute("requestTextBoundsInfo", arg0, arg1, arg2);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

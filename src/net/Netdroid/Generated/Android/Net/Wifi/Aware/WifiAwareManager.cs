@@ -40,10 +40,10 @@ namespace Android.Net.Wifi.Aware
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WifiAwareManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Net.Wifi.Aware
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Net.Wifi.Aware
     public partial class WifiAwareManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareManager.html#WIFI_AWARE_DATA_PATH_ROLE_INITIATOR"/>
@@ -124,13 +124,13 @@ namespace Android.Net.Wifi.Aware
         public static Java.Lang.String EXTRA_AWARE_RESOURCES { get { if (!_EXTRA_AWARE_RESOURCESReady) { _EXTRA_AWARE_RESOURCESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_AWARE_RESOURCES"); _EXTRA_AWARE_RESOURCESReady = true; } return _EXTRA_AWARE_RESOURCESContent; } }
         private static Java.Lang.String _EXTRA_AWARE_RESOURCESContent = default;
         private static bool _EXTRA_AWARE_RESOURCESReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareManager.html#getAvailableAwareResources()"/>
@@ -240,13 +240,13 @@ namespace Android.Net.Wifi.Aware
         {
             IExecuteWithSignature("setOpportunisticModeEnabled", "(Z)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Java.Util
         /// </summary>
         [global::System.Obsolete("List class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public List(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -90,10 +90,10 @@ namespace Java.Util
         /// </summary>
         [global::System.Obsolete("List class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public List(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -124,17 +124,17 @@ namespace Java.Util
     public partial class List
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/List.html#copyOf(java.util.Collection)"/>
@@ -297,9 +297,9 @@ namespace Java.Util
         {
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "(Ljava/lang/Object;)Ljava/util/List;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/List.html#toArray(java.lang.Object[])"/>
@@ -528,13 +528,13 @@ namespace Java.Util
         {
             IExecuteWithSignature("sort", "(Ljava/util/Comparator;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -546,13 +546,13 @@ namespace Java.Util
     public partial interface IList<E> : Java.Util.ICollection<E>
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -561,21 +561,21 @@ namespace Java.Util
     public partial class List<E> : Java.Util.IList<E>
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.List{E}"/> to <see cref="Java.Util.List"/>
         /// </summary>
         public static implicit operator Java.Util.List(Java.Util.List<E> t) => t.Cast<Java.Util.List>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/List.html#copyOf(java.util.Collection)"/>
@@ -739,9 +739,9 @@ namespace Java.Util
         {
             return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;)Ljava/util/List;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/List.html#toArray(java.lang.Object[])"/>
@@ -974,13 +974,13 @@ namespace Java.Util
         {
             IExecuteWithSignature("sort", "(Ljava/util/Comparator;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

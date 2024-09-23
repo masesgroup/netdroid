@@ -42,10 +42,10 @@ namespace Org.Xml.Sax.Ext
         /// </summary>
         [global::System.Obsolete("LexicalHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LexicalHandler(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Org.Xml.Sax.Ext
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Org.Xml.Sax.Ext
     public partial interface ILexicalHandler
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Org.Xml.Sax.Ext
     public partial class LexicalHandler : Org.Xml.Sax.Ext.ILexicalHandler
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/LexicalHandler.html#comment(char[],int,int)"/>
@@ -127,7 +127,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndCDATA()
         {
-            IExecuteWithSignature("endCDATA", "()V");
+            IExecute("endCDATA");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/LexicalHandler.html#endDTD()"/>
@@ -135,7 +135,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDTD()
         {
-            IExecuteWithSignature("endDTD", "()V");
+            IExecute("endDTD");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/LexicalHandler.html#endEntity(java.lang.String)"/>
@@ -144,7 +144,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndEntity(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("endEntity", "(Ljava/lang/String;)V", arg0);
+            IExecute("endEntity", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/LexicalHandler.html#startCDATA()"/>
@@ -152,7 +152,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartCDATA()
         {
-            IExecuteWithSignature("startCDATA", "()V");
+            IExecute("startCDATA");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/LexicalHandler.html#startDTD(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -172,15 +172,15 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartEntity(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("startEntity", "(Ljava/lang/String;)V", arg0);
+            IExecute("startEntity", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

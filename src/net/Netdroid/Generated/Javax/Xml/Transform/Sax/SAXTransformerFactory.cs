@@ -42,10 +42,10 @@ namespace Javax.Xml.Transform.Sax
         /// </summary>
         [global::System.Obsolete("SAXTransformerFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SAXTransformerFactory(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Xml.Transform.Sax
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Javax.Xml.Transform.Sax
     public partial class SAXTransformerFactory
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXTransformerFactory.html#FEATURE"/>
@@ -96,13 +96,13 @@ namespace Javax.Xml.Transform.Sax
         public static Java.Lang.String FEATURE_XMLFILTER { get { if (!_FEATURE_XMLFILTERReady) { _FEATURE_XMLFILTERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_XMLFILTER"); _FEATURE_XMLFILTERReady = true; } return _FEATURE_XMLFILTERContent; } }
         private static Java.Lang.String _FEATURE_XMLFILTERContent = default;
         private static bool _FEATURE_XMLFILTERReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXTransformerFactory.html#newTemplatesHandler()"/>
@@ -162,13 +162,13 @@ namespace Javax.Xml.Transform.Sax
         {
             return IExecuteWithSignature<Org.Xml.Sax.XMLFilter>("newXMLFilter", "(Ljavax/xml/transform/Templates;)Lorg/xml/sax/XMLFilter;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

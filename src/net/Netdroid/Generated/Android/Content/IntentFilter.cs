@@ -40,10 +40,10 @@ namespace Android.Content
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public IntentFilter(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region AuthorityEntry declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Content
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AuthorityEntry(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -122,9 +122,9 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -162,13 +162,13 @@ namespace Android.Content
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#CREATOR"/>
@@ -272,9 +272,9 @@ namespace Android.Content
         public static int SYSTEM_LOW_PRIORITY { get { if (!_SYSTEM_LOW_PRIORITYReady) { _SYSTEM_LOW_PRIORITYContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_LOW_PRIORITY"); _SYSTEM_LOW_PRIORITYReady = true; } return _SYSTEM_LOW_PRIORITYContent; } }
         private static int _SYSTEM_LOW_PRIORITYContent = default;
         private static bool _SYSTEM_LOW_PRIORITYReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#create(java.lang.String,java.lang.String)"/>
@@ -286,9 +286,9 @@ namespace Android.Content
         {
             return SExecute<Android.Content.IntentFilter>(LocalBridgeClazz, "create", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#getDataAuthority(int)"/>
@@ -779,9 +779,9 @@ namespace Android.Content
         {
             IExecuteWithSignature("writeToXml", "(Lorg/xmlpull/v1/XmlSerializer;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region AuthorityEntry implementation
         public partial class AuthorityEntry
@@ -796,21 +796,21 @@ namespace Android.Content
                 : base(arg0, arg1)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/IntentFilter.AuthorityEntry.html#getPort()"/>
@@ -837,13 +837,13 @@ namespace Android.Content
             {
                 return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -852,36 +852,36 @@ namespace Android.Content
         public partial class MalformedMimeTypeException
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

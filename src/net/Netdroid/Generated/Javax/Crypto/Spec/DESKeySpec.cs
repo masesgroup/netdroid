@@ -40,10 +40,10 @@ namespace Javax.Crypto.Spec
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DESKeySpec(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Javax.Crypto.Spec
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -93,13 +93,13 @@ namespace Javax.Crypto.Spec
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/crypto/spec/DESKeySpec.html#DES_KEY_LEN"/>
@@ -107,9 +107,9 @@ namespace Javax.Crypto.Spec
         public static int DES_KEY_LEN { get { if (!_DES_KEY_LENReady) { _DES_KEY_LENContent = SGetField<int>(LocalBridgeClazz, "DES_KEY_LEN"); _DES_KEY_LENReady = true; } return _DES_KEY_LENContent; } }
         private static int _DES_KEY_LENContent = default;
         private static bool _DES_KEY_LENReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/crypto/spec/DESKeySpec.html#isParityAdjusted(byte[],int)"/>
@@ -133,9 +133,9 @@ namespace Javax.Crypto.Spec
         {
             return SExecute<bool>(LocalBridgeClazz, "isWeak", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/crypto/spec/DESKeySpec.html#getKey()"/>
@@ -145,13 +145,13 @@ namespace Javax.Crypto.Spec
         {
             return IExecuteWithSignatureArray<byte>("getKey", "()[B");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

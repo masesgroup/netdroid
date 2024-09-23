@@ -42,10 +42,10 @@ namespace Android.Accounts
         /// </summary>
         [global::System.Obsolete("AbstractAccountAuthenticator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractAccountAuthenticator(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Accounts
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -84,13 +84,13 @@ namespace Android.Accounts
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#KEY_CUSTOM_TOKEN_EXPIRY"/>
@@ -98,13 +98,13 @@ namespace Android.Accounts
         public static Java.Lang.String KEY_CUSTOM_TOKEN_EXPIRY { get { if (!_KEY_CUSTOM_TOKEN_EXPIRYReady) { _KEY_CUSTOM_TOKEN_EXPIRYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_CUSTOM_TOKEN_EXPIRY"); _KEY_CUSTOM_TOKEN_EXPIRYReady = true; } return _KEY_CUSTOM_TOKEN_EXPIRYContent; } }
         private static Java.Lang.String _KEY_CUSTOM_TOKEN_EXPIRYContent = default;
         private static bool _KEY_CUSTOM_TOKEN_EXPIRYReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#addAccount(android.accounts.AccountAuthenticatorResponse,java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle)"/>
@@ -282,13 +282,13 @@ namespace Android.Accounts
         {
             return IExecuteWithSignature<Android.Os.IBinder>("getIBinder", "()Landroid/os/IBinder;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

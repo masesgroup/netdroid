@@ -42,10 +42,10 @@ namespace Android.Transition
         /// </summary>
         [global::System.Obsolete("Visibility class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Visibility(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Transition
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -85,13 +85,13 @@ namespace Android.Transition
             : base(arg0, arg1)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Visibility.html#MODE_IN"/>
@@ -105,13 +105,13 @@ namespace Android.Transition
         public static int MODE_OUT { get { if (!_MODE_OUTReady) { _MODE_OUTContent = SGetField<int>(LocalBridgeClazz, "MODE_OUT"); _MODE_OUTReady = true; } return _MODE_OUTContent; } }
         private static int _MODE_OUTContent = default;
         private static bool _MODE_OUTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Visibility.html#onAppear(android.view.ViewGroup,android.transition.TransitionValues,int,android.transition.TransitionValues,int)"/>
@@ -188,13 +188,13 @@ namespace Android.Transition
         {
             IExecuteWithSignature("setMode", "(I)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

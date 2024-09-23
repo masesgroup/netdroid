@@ -40,10 +40,10 @@ namespace Android.App.Admin
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DevicePolicyManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Admin
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region InstallSystemUpdateCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.App.Admin
             /// </summary>
             [global::System.Obsolete("InstallSystemUpdateCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public InstallSystemUpdateCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.App.Admin
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -123,7 +123,7 @@ namespace Android.App.Admin
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnClearApplicationUserDataListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.admin.DevicePolicyManager_OnClearApplicationUserDataListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -132,13 +132,13 @@ namespace Android.App.Admin
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnClearApplicationUserDataListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnClearApplicationUserDataListener"/> or its generic type if there is one
@@ -149,14 +149,14 @@ namespace Android.App.Admin
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.app.admin.DevicePolicyManager$OnClearApplicationUserDataListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -188,13 +188,13 @@ namespace Android.App.Admin
     public partial class DevicePolicyManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#CONTENT_PROTECTION_DISABLED"/>
@@ -1291,9 +1291,9 @@ namespace Android.App.Admin
         public static Java.Lang.String POLICY_DISABLE_SCREEN_CAPTURE { get { if (!_POLICY_DISABLE_SCREEN_CAPTUREReady) { _POLICY_DISABLE_SCREEN_CAPTUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "POLICY_DISABLE_SCREEN_CAPTURE"); _POLICY_DISABLE_SCREEN_CAPTUREReady = true; } return _POLICY_DISABLE_SCREEN_CAPTUREContent; } }
         private static Java.Lang.String _POLICY_DISABLE_SCREEN_CAPTUREContent = default;
         private static bool _POLICY_DISABLE_SCREEN_CAPTUREReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#isMtePolicyEnforced()"/>
@@ -1303,9 +1303,9 @@ namespace Android.App.Admin
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isMtePolicyEnforced", "()Z");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getParentProfileInstance(android.content.ComponentName)"/>
@@ -3979,21 +3979,21 @@ namespace Android.App.Admin
         {
             IExecuteWithSignature("wipeDevice", "(I)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region InstallSystemUpdateCallback implementation
         public partial class InstallSystemUpdateCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.InstallSystemUpdateCallback.html#UPDATE_ERROR_BATTERY_LOW"/>
@@ -4025,13 +4025,13 @@ namespace Android.App.Admin
             public static int UPDATE_ERROR_UPDATE_FILE_INVALID { get { if (!_UPDATE_ERROR_UPDATE_FILE_INVALIDReady) { _UPDATE_ERROR_UPDATE_FILE_INVALIDContent = SGetField<int>(LocalBridgeClazz, "UPDATE_ERROR_UPDATE_FILE_INVALID"); _UPDATE_ERROR_UPDATE_FILE_INVALIDReady = true; } return _UPDATE_ERROR_UPDATE_FILE_INVALIDContent; } }
             private static int _UPDATE_ERROR_UPDATE_FILE_INVALIDContent = default;
             private static bool _UPDATE_ERROR_UPDATE_FILE_INVALIDReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.InstallSystemUpdateCallback.html#onInstallUpdateError(int,java.lang.String)"/>
@@ -4042,13 +4042,13 @@ namespace Android.App.Admin
             {
                 IExecute("onInstallUpdateError", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -4057,21 +4057,21 @@ namespace Android.App.Admin
         public partial class OnClearApplicationUserDataListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnClearApplicationUserDataListener"/>
@@ -4081,13 +4081,13 @@ namespace Android.App.Admin
                 AddEventHandler("onApplicationUserDataCleared", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnApplicationUserDataClearedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener.html#onApplicationUserDataCleared(java.lang.String,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnApplicationUserDataCleared"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.String, bool> OnOnApplicationUserDataCleared { get; set; } = null;
-
+            
             bool hasOverrideOnApplicationUserDataCleared = true;
             void OnApplicationUserDataClearedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -4096,7 +4096,7 @@ namespace Android.App.Admin
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<bool>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnApplicationUserDataCleared;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener.html#onApplicationUserDataCleared(java.lang.String,boolean)"/>
             /// </summary>
@@ -4106,13 +4106,13 @@ namespace Android.App.Admin
             {
                 hasOverrideOnApplicationUserDataCleared = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -4121,21 +4121,21 @@ namespace Android.App.Admin
         public partial class OnClearApplicationUserDataListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener.html#onApplicationUserDataCleared(java.lang.String,boolean)"/>
@@ -4146,20 +4146,20 @@ namespace Android.App.Admin
             {
                 IExecute("onApplicationUserDataCleared", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

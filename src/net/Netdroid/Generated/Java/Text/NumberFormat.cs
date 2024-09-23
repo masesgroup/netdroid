@@ -42,10 +42,10 @@ namespace Java.Text
         /// </summary>
         [global::System.Obsolete("NumberFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NumberFormat(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Field declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Java.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Field(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Java.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Java.Text
     public partial class NumberFormat
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/NumberFormat.html#FRACTION_FIELD"/>
@@ -141,9 +141,9 @@ namespace Java.Text
         public static int INTEGER_FIELD { get { if (!_INTEGER_FIELDReady) { _INTEGER_FIELDContent = SGetField<int>(LocalBridgeClazz, "INTEGER_FIELD"); _INTEGER_FIELDReady = true; } return _INTEGER_FIELDContent; } }
         private static int _INTEGER_FIELDContent = default;
         private static bool _INTEGER_FIELDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/NumberFormat.html#getCurrencyInstance()"/>
@@ -246,9 +246,9 @@ namespace Java.Text
         {
             return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/NumberFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
@@ -438,21 +438,21 @@ namespace Java.Text
         {
             IExecuteWithSignature("setRoundingMode", "(Ljava/math/RoundingMode;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Field implementation
         public partial class Field
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/text/NumberFormat.Field.html#CURRENCY"/>
@@ -532,28 +532,28 @@ namespace Java.Text
             public static Java.Text.NumberFormat.Field SUFFIX { get { if (!_SUFFIXReady) { _SUFFIXContent = SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "SUFFIX"); _SUFFIXReady = true; } return _SUFFIXContent; } }
             private static Java.Text.NumberFormat.Field _SUFFIXContent = default;
             private static bool _SUFFIXReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

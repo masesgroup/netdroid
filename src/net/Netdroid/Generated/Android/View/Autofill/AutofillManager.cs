@@ -40,10 +40,10 @@ namespace Android.View.Autofill
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AutofillManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View.Autofill
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region AutofillCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.View.Autofill
             /// </summary>
             [global::System.Obsolete("AutofillCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AutofillCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.View.Autofill
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.View.Autofill
     public partial class AutofillManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#EXTRA_ASSIST_STRUCTURE"/>
@@ -159,13 +159,13 @@ namespace Android.View.Autofill
         public static Java.Lang.String EXTRA_INLINE_SUGGESTIONS_REQUEST { get { if (!_EXTRA_INLINE_SUGGESTIONS_REQUESTReady) { _EXTRA_INLINE_SUGGESTIONS_REQUESTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_INLINE_SUGGESTIONS_REQUEST"); _EXTRA_INLINE_SUGGESTIONS_REQUESTReady = true; } return _EXTRA_INLINE_SUGGESTIONS_REQUESTContent; } }
         private static Java.Lang.String _EXTRA_INLINE_SUGGESTIONS_REQUESTContent = default;
         private static bool _EXTRA_INLINE_SUGGESTIONS_REQUESTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.html#getAutofillServiceComponentName()"/>
@@ -427,21 +427,21 @@ namespace Android.View.Autofill
         {
             IExecuteWithSignature("unregisterCallback", "(Landroid/view/autofill/AutofillManager$AutofillCallback;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region AutofillCallback implementation
         public partial class AutofillCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.AutofillCallback.html#EVENT_INPUT_HIDDEN"/>
@@ -461,13 +461,13 @@ namespace Android.View.Autofill
             public static int EVENT_INPUT_UNAVAILABLE { get { if (!_EVENT_INPUT_UNAVAILABLEReady) { _EVENT_INPUT_UNAVAILABLEContent = SGetField<int>(LocalBridgeClazz, "EVENT_INPUT_UNAVAILABLE"); _EVENT_INPUT_UNAVAILABLEReady = true; } return _EVENT_INPUT_UNAVAILABLEContent; } }
             private static int _EVENT_INPUT_UNAVAILABLEContent = default;
             private static bool _EVENT_INPUT_UNAVAILABLEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/autofill/AutofillManager.AutofillCallback.html#onAutofillEvent(android.view.View,int,int)"/>
@@ -488,20 +488,20 @@ namespace Android.View.Autofill
             {
                 IExecute("onAutofillEvent", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

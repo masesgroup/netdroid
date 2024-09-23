@@ -42,10 +42,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("ActionProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ActionProvider(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region VisibilityListener declaration
         /// <summary>
@@ -78,7 +78,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public VisibilityListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.ActionProvider_VisibilityListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -87,13 +87,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region VisibilityListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="VisibilityListener"/> or its generic type if there is one
@@ -104,14 +104,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.view.ActionProvider$VisibilityListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -151,21 +151,21 @@ namespace Android.View
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ActionProvider.html#onCreateActionView()"/>
@@ -240,29 +240,29 @@ namespace Android.View
         {
             IExecuteWithSignature("setVisibilityListener", "(Landroid/view/ActionProvider$VisibilityListener;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region VisibilityListener implementation
         public partial class VisibilityListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="VisibilityListener"/>
@@ -272,13 +272,13 @@ namespace Android.View
                 AddEventHandler("onActionProviderVisibilityChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnActionProviderVisibilityChangedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/ActionProvider.VisibilityListener.html#onActionProviderVisibilityChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActionProviderVisibilityChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<bool> OnOnActionProviderVisibilityChanged { get; set; } = null;
-
+            
             bool hasOverrideOnActionProviderVisibilityChanged = true;
             void OnActionProviderVisibilityChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -287,7 +287,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<bool>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnActionProviderVisibilityChanged;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionProvider.VisibilityListener.html#onActionProviderVisibilityChanged(boolean)"/>
             /// </summary>
@@ -296,13 +296,13 @@ namespace Android.View
             {
                 hasOverrideOnActionProviderVisibilityChanged = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -311,21 +311,21 @@ namespace Android.View
         public partial class VisibilityListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionProvider.VisibilityListener.html#onActionProviderVisibilityChanged(boolean)"/>
@@ -335,20 +335,20 @@ namespace Android.View
             {
                 IExecuteWithSignature("onActionProviderVisibilityChanged", "(Z)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

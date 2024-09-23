@@ -40,10 +40,10 @@ namespace Android.Text.Format
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DateUtils(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Text.Format
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Text.Format
     public partial class DateUtils
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#FORMAT_12HOUR"/>
@@ -364,9 +364,9 @@ namespace Android.Text.Format
         public static long YEAR_IN_MILLIS { get { if (!_YEAR_IN_MILLISReady) { _YEAR_IN_MILLISContent = SGetField<long>(LocalBridgeClazz, "YEAR_IN_MILLIS"); _YEAR_IN_MILLISReady = true; } return _YEAR_IN_MILLISContent; } }
         private static long _YEAR_IN_MILLISContent = default;
         private static bool _YEAR_IN_MILLISReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#isToday(long)"/>
@@ -556,17 +556,17 @@ namespace Android.Text.Format
         {
             return SExecute<Java.Util.Formatter>(LocalBridgeClazz, "formatDateRange", arg0, arg1, arg2, arg3, arg4);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

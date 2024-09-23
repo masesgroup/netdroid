@@ -35,7 +35,7 @@ namespace Android.Speech
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public ModelDownloadListener() { InitializeHandlers(); }
-
+    
         const string _bridgeClassName = "org.mases.netdroid.generated.android.speech.ModelDownloadListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Android.Speech
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-
+    
     
         // TODO: complete the class
-
+    
     }
     #endregion
-
+    
     #region ModelDownloadListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ModelDownloadListener"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Android.Speech
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-
+    
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-
+    
         const string _bridgeClassName = "android.speech.ModelDownloadListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Android.Speech
     public partial interface IModelDownloadListener
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Android.Speech
     public partial class ModelDownloadListener : Android.Speech.IModelDownloadListener
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="ModelDownloadListener"/>
@@ -141,13 +141,13 @@ namespace Android.Speech
             AddEventHandler("onSuccess", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnSuccessEventHandler));
 
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onError(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<int> OnOnError { get; set; } = null;
-
+        
         bool hasOverrideOnError = true;
         void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -156,7 +156,7 @@ namespace Android.Speech
             methodToExecute.Invoke(data.EventData.GetAt<int>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnError;
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onError(int)"/>
         /// </summary>
@@ -165,13 +165,13 @@ namespace Android.Speech
         {
             hasOverrideOnError = false;
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onProgress(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnProgress"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<int> OnOnProgress { get; set; } = null;
-
+        
         bool hasOverrideOnProgress = true;
         void OnProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -180,7 +180,7 @@ namespace Android.Speech
             methodToExecute.Invoke(data.EventData.GetAt<int>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnProgress;
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onProgress(int)"/>
         /// </summary>
@@ -189,13 +189,13 @@ namespace Android.Speech
         {
             hasOverrideOnProgress = false;
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onScheduled()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnScheduled"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action OnOnScheduled { get; set; } = null;
-
+        
         bool hasOverrideOnScheduled = true;
         void OnScheduledEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -204,7 +204,7 @@ namespace Android.Speech
             methodToExecute.Invoke();
             data.EventData.TypedEventData.HasOverride = hasOverrideOnScheduled;
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onScheduled()"/>
         /// </summary>
@@ -212,13 +212,13 @@ namespace Android.Speech
         {
             hasOverrideOnScheduled = false;
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onSuccess()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnSuccess"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action OnOnSuccess { get; set; } = null;
-
+        
         bool hasOverrideOnSuccess = true;
         void OnSuccessEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -227,7 +227,7 @@ namespace Android.Speech
             methodToExecute.Invoke();
             data.EventData.TypedEventData.HasOverride = hasOverrideOnSuccess;
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onSuccess()"/>
         /// </summary>
@@ -235,13 +235,13 @@ namespace Android.Speech
         {
             hasOverrideOnSuccess = false;
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -250,21 +250,21 @@ namespace Android.Speech
     public partial class ModelDownloadListenerDirect : Android.Speech.IModelDownloadListener
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onError(int)"/>
@@ -296,13 +296,13 @@ namespace Android.Speech
         {
             IExecuteWithSignature("onSuccess", "()V");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.Telecom
         /// </summary>
         [global::System.Obsolete("InCallService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public InCallService(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Telecom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region VideoCall declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Telecom
             /// </summary>
             [global::System.Obsolete("VideoCall class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public VideoCall(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,7 +109,7 @@ namespace Android.Telecom
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
             #region Callback declaration
             /// <summary>
@@ -128,10 +128,10 @@ namespace Android.Telecom
                 /// </summary>
                 [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public Callback(params object[] args) : base(args) { }
-
+            
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Telecom
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-
+            
                 // TODO: complete the class
-
+            
             }
             #endregion
 
@@ -170,13 +170,13 @@ namespace Android.Telecom
     public partial class InCallService
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#SERVICE_INTERFACE"/>
@@ -184,13 +184,13 @@ namespace Android.Telecom
         public static Java.Lang.String SERVICE_INTERFACE { get { if (!_SERVICE_INTERFACEReady) { _SERVICE_INTERFACEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_INTERFACE"); _SERVICE_INTERFACEReady = true; } return _SERVICE_INTERFACEContent; } }
         private static Java.Lang.String _SERVICE_INTERFACEContent = default;
         private static bool _SERVICE_INTERFACEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#getCallAudioState()"/>
@@ -343,29 +343,29 @@ namespace Android.Telecom
         {
             IExecuteWithSignature("onSilenceRinger", "()V");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region VideoCall implementation
         public partial class VideoCall
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/InCallService.VideoCall.html#registerCallback(android.telecom.InCallService.VideoCall.Callback,android.os.Handler)"/>
@@ -470,29 +470,29 @@ namespace Android.Telecom
             {
                 IExecuteWithSignature("unregisterCallback", "(Landroid/telecom/InCallService$VideoCall$Callback;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
             #region Callback implementation
             public partial class Callback
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
-
+            
                 #endregion
-
+            
                 #region Fields
-
+            
                 #endregion
-
+            
                 #region Static methods
-
+            
                 #endregion
-
+            
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/telecom/InCallService.VideoCall.Callback.html#onCallDataUsageChanged(long)"/>
@@ -553,27 +553,27 @@ namespace Android.Telecom
                 {
                     IExecuteWithSignature("onVideoQualityChanged", "(I)V", arg0);
                 }
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

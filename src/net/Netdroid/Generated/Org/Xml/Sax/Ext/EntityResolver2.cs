@@ -42,10 +42,10 @@ namespace Org.Xml.Sax.Ext
         /// </summary>
         [global::System.Obsolete("EntityResolver2 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EntityResolver2(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Org.Xml.Sax.Ext
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Org.Xml.Sax.Ext
     public partial interface IEntityResolver2 : Org.Xml.Sax.IEntityResolver
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Org.Xml.Sax.Ext
     public partial class EntityResolver2 : Org.Xml.Sax.Ext.IEntityResolver2
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/EntityResolver2.html#getExternalSubset(java.lang.String,java.lang.String)"/>
@@ -136,13 +136,13 @@ namespace Org.Xml.Sax.Ext
         {
             return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1, arg2, arg3);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

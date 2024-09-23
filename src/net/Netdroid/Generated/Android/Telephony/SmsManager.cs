@@ -40,10 +40,10 @@ namespace Android.Telephony
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SmsManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Telephony
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region FinancialSmsCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Telephony
             /// </summary>
             [global::System.Obsolete("FinancialSmsCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public FinancialSmsCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Telephony
     public partial class SmsManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#MMS_ERROR_CONFIGURATION_ERROR"/>
@@ -1041,9 +1041,9 @@ namespace Android.Telephony
         public static Java.Lang.String MMS_CONFIG_USER_AGENT { get { if (!_MMS_CONFIG_USER_AGENTReady) { _MMS_CONFIG_USER_AGENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MMS_CONFIG_USER_AGENT"); _MMS_CONFIG_USER_AGENTReady = true; } return _MMS_CONFIG_USER_AGENTContent; } }
         private static Java.Lang.String _MMS_CONFIG_USER_AGENTContent = default;
         private static bool _MMS_CONFIG_USER_AGENTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getDefault()"/>
@@ -1072,9 +1072,9 @@ namespace Android.Telephony
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultSmsSubscriptionId", "()I");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getCarrierConfigValues()"/>
@@ -1313,29 +1313,29 @@ namespace Android.Telephony
         {
             IExecute("sendTextMessageWithoutPersisting", arg0, arg1, arg2, arg3, arg4);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region FinancialSmsCallback implementation
         public partial class FinancialSmsCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.FinancialSmsCallback.html#onFinancialSmsMessages(android.database.CursorWindow)"/>
@@ -1345,20 +1345,20 @@ namespace Android.Telephony
             {
                 IExecuteWithSignature("onFinancialSmsMessages", "(Landroid/database/CursorWindow;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

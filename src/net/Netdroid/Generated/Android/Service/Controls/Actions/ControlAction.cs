@@ -42,10 +42,10 @@ namespace Android.Service.Controls.Actions
         /// </summary>
         [global::System.Obsolete("ControlAction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ControlAction(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Service.Controls.Actions
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Service.Controls.Actions
     public partial class ControlAction
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/actions/ControlAction.html#RESPONSE_CHALLENGE_ACK"/>
@@ -150,9 +150,9 @@ namespace Android.Service.Controls.Actions
         public static int TYPE_MODE { get { if (!_TYPE_MODEReady) { _TYPE_MODEContent = SGetField<int>(LocalBridgeClazz, "TYPE_MODE"); _TYPE_MODEReady = true; } return _TYPE_MODEContent; } }
         private static int _TYPE_MODEContent = default;
         private static bool _TYPE_MODEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/actions/ControlAction.html#getErrorAction()"/>
@@ -171,9 +171,9 @@ namespace Android.Service.Controls.Actions
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isValidResponse", "(I)Z", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/actions/ControlAction.html#getActionType()"/>
@@ -199,13 +199,13 @@ namespace Android.Service.Controls.Actions
         {
             return IExecuteWithSignature<Java.Lang.String>("getTemplateId", "()Ljava/lang/String;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

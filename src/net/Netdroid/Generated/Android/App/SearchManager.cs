@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SearchManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region OnCancelListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnCancelListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.SearchManager_OnCancelListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnCancelListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnCancelListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.app.SearchManager$OnCancelListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -143,7 +143,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnDismissListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.SearchManager_OnDismissListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -152,13 +152,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnDismissListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnDismissListener"/> or its generic type if there is one
@@ -169,14 +169,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.app.SearchManager$OnDismissListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -208,13 +208,13 @@ namespace Android.App
     public partial class SearchManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SearchManager.html#MENU_KEY"/>
@@ -528,13 +528,13 @@ namespace Android.App
         public static Java.Lang.String USER_QUERY { get { if (!_USER_QUERYReady) { _USER_QUERYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USER_QUERY"); _USER_QUERYReady = true; } return _USER_QUERYContent; } }
         private static Java.Lang.String _USER_QUERYContent = default;
         private static bool _USER_QUERYReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SearchManager.html#getSearchableInfo(android.content.ComponentName)"/>
@@ -624,29 +624,29 @@ namespace Android.App
         {
             IExecute("triggerSearch", arg0, arg1, arg2);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region OnCancelListener implementation
         public partial class OnCancelListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnCancelListener"/>
@@ -656,13 +656,13 @@ namespace Android.App
                 AddEventHandler("onCancel", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnCancelEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/SearchManager.OnCancelListener.html#onCancel()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCancel"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnCancel { get; set; } = null;
-
+            
             bool hasOverrideOnCancel = true;
             void OnCancelEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -671,7 +671,7 @@ namespace Android.App
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnCancel;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/SearchManager.OnCancelListener.html#onCancel()"/>
             /// </summary>
@@ -679,13 +679,13 @@ namespace Android.App
             {
                 hasOverrideOnCancel = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -694,21 +694,21 @@ namespace Android.App
         public partial class OnCancelListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/SearchManager.OnCancelListener.html#onCancel()"/>
@@ -717,13 +717,13 @@ namespace Android.App
             {
                 IExecuteWithSignature("onCancel", "()V");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -732,21 +732,21 @@ namespace Android.App
         public partial class OnDismissListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnDismissListener"/>
@@ -756,13 +756,13 @@ namespace Android.App
                 AddEventHandler("onDismiss", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDismissEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/SearchManager.OnDismissListener.html#onDismiss()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDismiss"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnDismiss { get; set; } = null;
-
+            
             bool hasOverrideOnDismiss = true;
             void OnDismissEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -771,7 +771,7 @@ namespace Android.App
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDismiss;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/SearchManager.OnDismissListener.html#onDismiss()"/>
             /// </summary>
@@ -779,13 +779,13 @@ namespace Android.App
             {
                 hasOverrideOnDismiss = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -794,21 +794,21 @@ namespace Android.App
         public partial class OnDismissListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/SearchManager.OnDismissListener.html#onDismiss()"/>
@@ -817,20 +817,20 @@ namespace Android.App
             {
                 IExecuteWithSignature("onDismiss", "()V");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

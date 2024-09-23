@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DelayQueue(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -86,10 +86,10 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DelayQueue(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -128,25 +128,25 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.DelayQueue"/> to <see cref="Java.Util.Concurrent.BlockingQueue"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.BlockingQueue(Java.Util.Concurrent.DelayQueue t) => t.Cast<Java.Util.Concurrent.BlockingQueue>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#add(java.util.concurrent.Delayed)"/>
@@ -253,13 +253,13 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -276,9 +276,9 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.DelayQueue{E}"/> to <see cref="Java.Util.Concurrent.BlockingQueue{E}"/>
@@ -288,17 +288,17 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.DelayQueue{E}"/> to <see cref="Java.Util.Concurrent.DelayQueue"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.DelayQueue(Java.Util.Concurrent.DelayQueue<E> t) => t.Cast<Java.Util.Concurrent.DelayQueue>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html#add(java.util.concurrent.Delayed)"/>
@@ -407,13 +407,13 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

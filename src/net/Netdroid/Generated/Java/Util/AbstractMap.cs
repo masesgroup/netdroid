@@ -42,10 +42,10 @@ namespace Java.Util
         /// </summary>
         [global::System.Obsolete("AbstractMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractMap(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region SimpleEntry declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Java.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SimpleEntry(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -130,10 +130,10 @@ namespace Java.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SimpleEntry(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -154,9 +154,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -175,10 +175,10 @@ namespace Java.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SimpleImmutableEntry(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -199,9 +199,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -222,10 +222,10 @@ namespace Java.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SimpleImmutableEntry(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -246,9 +246,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -275,10 +275,10 @@ namespace Java.Util
         /// </summary>
         [global::System.Obsolete("AbstractMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractMap(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -299,7 +299,7 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -309,21 +309,21 @@ namespace Java.Util
     public partial class AbstractMap
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/AbstractMap.html#entrySet()"/>
@@ -426,9 +426,9 @@ namespace Java.Util
         {
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region SimpleEntry implementation
         public partial class SimpleEntry
@@ -451,25 +451,25 @@ namespace Java.Util
                 : base(arg0, arg1)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Java.Util.AbstractMap.SimpleEntry"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleEntry t) => t.Cast<Java.Io.Serializable>();
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/AbstractMap.SimpleEntry.html#getKey()"/>
@@ -496,13 +496,13 @@ namespace Java.Util
             {
                 return IExecuteWithSignature("setValue", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -528,9 +528,9 @@ namespace Java.Util
                 : base(arg0, arg1)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Java.Util.AbstractMap.SimpleEntry{K, V}"/> to <see cref="Java.Io.Serializable"/>
@@ -540,17 +540,17 @@ namespace Java.Util
             /// Converter from <see cref="Java.Util.AbstractMap.SimpleEntry{K, V}"/> to <see cref="Java.Util.AbstractMap.SimpleEntry"/>
             /// </summary>
             public static implicit operator Java.Util.AbstractMap.SimpleEntry(Java.Util.AbstractMap.SimpleEntry<K, V> t) => t.Cast<Java.Util.AbstractMap.SimpleEntry>();
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/AbstractMap.SimpleEntry.html#getKey()"/>
@@ -577,13 +577,13 @@ namespace Java.Util
             {
                 return IExecuteWithSignature<V>("setValue", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -609,25 +609,25 @@ namespace Java.Util
                 : base(arg0, arg1)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Java.Util.AbstractMap.SimpleImmutableEntry"/> to <see cref="Java.Io.Serializable"/>
             /// </summary>
             public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleImmutableEntry t) => t.Cast<Java.Io.Serializable>();
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/AbstractMap.SimpleImmutableEntry.html#getKey()"/>
@@ -654,13 +654,13 @@ namespace Java.Util
             {
                 return IExecuteWithSignature("setValue", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -686,9 +686,9 @@ namespace Java.Util
                 : base(arg0, arg1)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Java.Util.AbstractMap.SimpleImmutableEntry{K, V}"/> to <see cref="Java.Io.Serializable"/>
@@ -698,17 +698,17 @@ namespace Java.Util
             /// Converter from <see cref="Java.Util.AbstractMap.SimpleImmutableEntry{K, V}"/> to <see cref="Java.Util.AbstractMap.SimpleImmutableEntry"/>
             /// </summary>
             public static implicit operator Java.Util.AbstractMap.SimpleImmutableEntry(Java.Util.AbstractMap.SimpleImmutableEntry<K, V> t) => t.Cast<Java.Util.AbstractMap.SimpleImmutableEntry>();
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/AbstractMap.SimpleImmutableEntry.html#getKey()"/>
@@ -735,20 +735,20 @@ namespace Java.Util
             {
                 return IExecuteWithSignature<V>("setValue", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -757,25 +757,25 @@ namespace Java.Util
     public partial class AbstractMap<K, V>
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.AbstractMap{K, V}"/> to <see cref="Java.Util.AbstractMap"/>
         /// </summary>
         public static implicit operator Java.Util.AbstractMap(Java.Util.AbstractMap<K, V> t) => t.Cast<Java.Util.AbstractMap>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/AbstractMap.html#entrySet()"/>
@@ -880,13 +880,13 @@ namespace Java.Util
         {
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -35,7 +35,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public ToLongFunction() { InitializeHandlers(); }
-
+    
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToLongFunction";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-
+    
     
         // TODO: complete the class
-
+    
     }
     #endregion
-
+    
     #region ToLongFunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="ToLongFunction"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-
+    
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-
+    
         const string _bridgeClassName = "java.util.function.ToLongFunction";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -103,7 +103,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public ToLongFunction() { InitializeHandlers(); }
-
+    
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.ToLongFunction";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -112,13 +112,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-
+    
     
         // TODO: complete the class
     
     }
     #endregion
-
+    
     #region ToLongFunctionDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="ToLongFunction"/> or its generic type if there is one
@@ -129,14 +129,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-
+    
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-
+    
         const string _bridgeClassName = "java.util.function.ToLongFunction";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -164,21 +164,21 @@ namespace Java.Util.Function
     public partial class ToLongFunction
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="ToLongFunction"/>
@@ -188,13 +188,13 @@ namespace Java.Util.Function
             AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyAsLongEventHandler));
 
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<object, long> OnApplyAsLong { get; set; } = null;
-
+        
         bool hasOverrideApplyAsLong = true;
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -203,7 +203,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<object>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideApplyAsLong, executionResult);
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
@@ -213,13 +213,13 @@ namespace Java.Util.Function
         {
             hasOverrideApplyAsLong = false; return default;
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -228,21 +228,21 @@ namespace Java.Util.Function
     public partial class ToLongFunctionDirect
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
@@ -253,13 +253,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<long>("applyAsLong", "(Ljava/lang/Object;)J", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -271,13 +271,13 @@ namespace Java.Util.Function
     public partial interface IToLongFunction<T>
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -286,21 +286,21 @@ namespace Java.Util.Function
     public partial class ToLongFunction<T> : Java.Util.Function.IToLongFunction<T>
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="ToLongFunction"/>
@@ -310,13 +310,13 @@ namespace Java.Util.Function
             AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ApplyAsLongEventHandler));
 
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<T, long> OnApplyAsLong { get; set; } = null;
-
+        
         bool hasOverrideApplyAsLong = true;
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -325,7 +325,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<T>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideApplyAsLong, executionResult);
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
@@ -335,13 +335,13 @@ namespace Java.Util.Function
         {
             hasOverrideApplyAsLong = false; return default;
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -350,21 +350,21 @@ namespace Java.Util.Function
     public partial class ToLongFunctionDirect<T> : Java.Util.Function.IToLongFunction<T>
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
@@ -375,13 +375,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<long>("applyAsLong", "(Ljava/lang/Object;)J", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

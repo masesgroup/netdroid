@@ -42,10 +42,10 @@ namespace Android.Webkit
         /// </summary>
         [global::System.Obsolete("WebSettings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WebSettings(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Webkit
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region LayoutAlgorithm declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Webkit
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public LayoutAlgorithm(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Webkit
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PluginState(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Webkit
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RenderPriority(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -219,10 +219,10 @@ namespace Android.Webkit
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public TextSize(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -243,9 +243,9 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -264,10 +264,10 @@ namespace Android.Webkit
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ZoomDensity(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -288,9 +288,9 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -302,13 +302,13 @@ namespace Android.Webkit
     public partial class WebSettings
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#FORCE_DARK_AUTO"/>
@@ -404,9 +404,9 @@ namespace Android.Webkit
         public static int MIXED_CONTENT_NEVER_ALLOW { get { if (!_MIXED_CONTENT_NEVER_ALLOWReady) { _MIXED_CONTENT_NEVER_ALLOWContent = SGetField<int>(LocalBridgeClazz, "MIXED_CONTENT_NEVER_ALLOW"); _MIXED_CONTENT_NEVER_ALLOWReady = true; } return _MIXED_CONTENT_NEVER_ALLOWContent; } }
         private static int _MIXED_CONTENT_NEVER_ALLOWContent = default;
         private static bool _MIXED_CONTENT_NEVER_ALLOWReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultUserAgent(android.content.Context)"/>
@@ -417,9 +417,9 @@ namespace Android.Webkit
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultUserAgent", "(Landroid/content/Context;)Ljava/lang/String;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLayoutAlgorithm()"/>
@@ -1229,21 +1229,21 @@ namespace Android.Webkit
         {
             IExecuteWithSignature("setForceDark", "(I)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region LayoutAlgorithm implementation
         public partial class LayoutAlgorithm
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.LayoutAlgorithm.html#NARROW_COLUMNS"/>
@@ -1271,9 +1271,9 @@ namespace Android.Webkit
             public static Android.Webkit.WebSettings.LayoutAlgorithm TEXT_AUTOSIZING { get { if (!_TEXT_AUTOSIZINGReady) { _TEXT_AUTOSIZINGContent = SGetField<Android.Webkit.WebSettings.LayoutAlgorithm>(LocalBridgeClazz, "TEXT_AUTOSIZING"); _TEXT_AUTOSIZINGReady = true; } return _TEXT_AUTOSIZINGContent; } }
             private static Android.Webkit.WebSettings.LayoutAlgorithm _TEXT_AUTOSIZINGContent = default;
             private static bool _TEXT_AUTOSIZINGReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.LayoutAlgorithm.html#valueOf(java.lang.String)"/>
@@ -1292,17 +1292,17 @@ namespace Android.Webkit
             {
                 return SExecuteWithSignatureArray<Android.Webkit.WebSettings.LayoutAlgorithm>(LocalBridgeClazz, "values", "()[Landroid/webkit/WebSettings$LayoutAlgorithm;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1311,13 +1311,13 @@ namespace Android.Webkit
         public partial class PluginState
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.PluginState.html#OFF"/>
@@ -1337,9 +1337,9 @@ namespace Android.Webkit
             public static Android.Webkit.WebSettings.PluginState ON_DEMAND { get { if (!_ON_DEMANDReady) { _ON_DEMANDContent = SGetField<Android.Webkit.WebSettings.PluginState>(LocalBridgeClazz, "ON_DEMAND"); _ON_DEMANDReady = true; } return _ON_DEMANDContent; } }
             private static Android.Webkit.WebSettings.PluginState _ON_DEMANDContent = default;
             private static bool _ON_DEMANDReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.PluginState.html#valueOf(java.lang.String)"/>
@@ -1358,17 +1358,17 @@ namespace Android.Webkit
             {
                 return SExecuteWithSignatureArray<Android.Webkit.WebSettings.PluginState>(LocalBridgeClazz, "values", "()[Landroid/webkit/WebSettings$PluginState;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1377,13 +1377,13 @@ namespace Android.Webkit
         public partial class RenderPriority
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.RenderPriority.html#HIGH"/>
@@ -1403,9 +1403,9 @@ namespace Android.Webkit
             public static Android.Webkit.WebSettings.RenderPriority NORMAL { get { if (!_NORMALReady) { _NORMALContent = SGetField<Android.Webkit.WebSettings.RenderPriority>(LocalBridgeClazz, "NORMAL"); _NORMALReady = true; } return _NORMALContent; } }
             private static Android.Webkit.WebSettings.RenderPriority _NORMALContent = default;
             private static bool _NORMALReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.RenderPriority.html#valueOf(java.lang.String)"/>
@@ -1424,17 +1424,17 @@ namespace Android.Webkit
             {
                 return SExecuteWithSignatureArray<Android.Webkit.WebSettings.RenderPriority>(LocalBridgeClazz, "values", "()[Landroid/webkit/WebSettings$RenderPriority;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1443,13 +1443,13 @@ namespace Android.Webkit
         public partial class TextSize
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#LARGER"/>
@@ -1486,9 +1486,9 @@ namespace Android.Webkit
             public static Android.Webkit.WebSettings.TextSize SMALLEST { get { if (!_SMALLESTReady) { _SMALLESTContent = SGetField<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "SMALLEST"); _SMALLESTReady = true; } return _SMALLESTContent; } }
             private static Android.Webkit.WebSettings.TextSize _SMALLESTContent = default;
             private static bool _SMALLESTReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#valueOf(java.lang.String)"/>
@@ -1507,17 +1507,17 @@ namespace Android.Webkit
             {
                 return SExecuteWithSignatureArray<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "values", "()[Landroid/webkit/WebSettings$TextSize;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1526,13 +1526,13 @@ namespace Android.Webkit
         public partial class ZoomDensity
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.ZoomDensity.html#CLOSE"/>
@@ -1552,9 +1552,9 @@ namespace Android.Webkit
             public static Android.Webkit.WebSettings.ZoomDensity MEDIUM { get { if (!_MEDIUMReady) { _MEDIUMContent = SGetField<Android.Webkit.WebSettings.ZoomDensity>(LocalBridgeClazz, "MEDIUM"); _MEDIUMReady = true; } return _MEDIUMContent; } }
             private static Android.Webkit.WebSettings.ZoomDensity _MEDIUMContent = default;
             private static bool _MEDIUMReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.ZoomDensity.html#valueOf(java.lang.String)"/>
@@ -1573,24 +1573,24 @@ namespace Android.Webkit
             {
                 return SExecuteWithSignatureArray<Android.Webkit.WebSettings.ZoomDensity>(LocalBridgeClazz, "values", "()[Landroid/webkit/WebSettings$ZoomDensity;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

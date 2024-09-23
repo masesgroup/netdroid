@@ -42,10 +42,10 @@ namespace Android.Os
         /// </summary>
         [global::System.Obsolete("VibrationEffect class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public VibrationEffect(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Composition declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Os
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Composition(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Os
     public partial class VibrationEffect
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.html#CREATOR"/>
@@ -165,9 +165,9 @@ namespace Android.Os
         public static int EFFECT_TICK { get { if (!_EFFECT_TICKReady) { _EFFECT_TICKContent = SGetField<int>(LocalBridgeClazz, "EFFECT_TICK"); _EFFECT_TICKReady = true; } return _EFFECT_TICKContent; } }
         private static int _EFFECT_TICKContent = default;
         private static bool _EFFECT_TICKReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.html#createOneShot(long,int)"/>
@@ -217,9 +217,9 @@ namespace Android.Os
         {
             return SExecuteWithSignature<Android.Os.VibrationEffect.Composition>(LocalBridgeClazz, "startComposition", "()Landroid/os/VibrationEffect$Composition;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.html#describeContents()"/>
@@ -229,21 +229,21 @@ namespace Android.Os
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Composition implementation
         public partial class Composition
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.Composition.html#PRIMITIVE_CLICK"/>
@@ -293,13 +293,13 @@ namespace Android.Os
             public static int PRIMITIVE_TICK { get { if (!_PRIMITIVE_TICKReady) { _PRIMITIVE_TICKContent = SGetField<int>(LocalBridgeClazz, "PRIMITIVE_TICK"); _PRIMITIVE_TICKReady = true; } return _PRIMITIVE_TICKContent; } }
             private static int _PRIMITIVE_TICKContent = default;
             private static bool _PRIMITIVE_TICKReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/VibrationEffect.Composition.html#compose()"/>
@@ -339,20 +339,20 @@ namespace Android.Os
             {
                 return IExecuteWithSignature<Android.Os.VibrationEffect.Composition>("addPrimitive", "(I)Landroid/os/VibrationEffect$Composition;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

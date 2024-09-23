@@ -42,10 +42,10 @@ namespace Javax.Crypto
         /// </summary>
         [global::System.Obsolete("SecretKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SecretKey(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Crypto
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Javax.Crypto
     public partial interface ISecretKey
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -94,9 +94,9 @@ namespace Javax.Crypto
     public partial class SecretKey : Javax.Crypto.ISecretKey, Java.Security.IKey, Javax.Security.Auth.IDestroyable
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Javax.Crypto.SecretKey"/> to <see cref="Java.Security.Key"/>
@@ -106,9 +106,9 @@ namespace Javax.Crypto
         /// Converter from <see cref="Javax.Crypto.SecretKey"/> to <see cref="Javax.Security.Auth.Destroyable"/>
         /// </summary>
         public static implicit operator Javax.Security.Auth.Destroyable(Javax.Crypto.SecretKey t) => t.Cast<Javax.Security.Auth.Destroyable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/crypto/SecretKey.html#serialVersionUID"/>
@@ -117,21 +117,21 @@ namespace Javax.Crypto
         public static long serialVersionUID { get { if (!_serialVersionUIDReady) { _serialVersionUIDContent = SGetField<long>(LocalBridgeClazz, "serialVersionUID"); _serialVersionUIDReady = true; } return _serialVersionUIDContent; } }
         private static long _serialVersionUIDContent = default;
         private static bool _serialVersionUIDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

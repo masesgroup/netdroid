@@ -42,10 +42,10 @@ namespace Android.Hardware
         /// </summary>
         [global::System.Obsolete("SensorManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SensorManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Hardware
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region DynamicSensorCallback declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Hardware
             /// </summary>
             [global::System.Obsolete("DynamicSensorCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public DynamicSensorCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Hardware
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -123,13 +123,13 @@ namespace Android.Hardware
     public partial class SensorManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#GRAVITY_DEATH_STAR_I"/>
@@ -497,9 +497,9 @@ namespace Android.Hardware
         public static int SENSOR_TRICORDER { get { if (!_SENSOR_TRICORDERReady) { _SENSOR_TRICORDERContent = SGetField<int>(LocalBridgeClazz, "SENSOR_TRICORDER"); _SENSOR_TRICORDERReady = true; } return _SENSOR_TRICORDERContent; } }
         private static int _SENSOR_TRICORDERContent = default;
         private static bool _SENSOR_TRICORDERReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#getRotationMatrix(float[],float[],float[],float[])"/>
@@ -582,9 +582,9 @@ namespace Android.Hardware
         {
             SExecute(LocalBridgeClazz, "getRotationMatrixFromVector", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#getDefaultSensor(int,boolean)"/>
@@ -819,29 +819,29 @@ namespace Android.Hardware
         {
             IExecuteWithSignature("unregisterListener", "(Landroid/hardware/SensorListener;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region DynamicSensorCallback implementation
         public partial class DynamicSensorCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.DynamicSensorCallback.html#onDynamicSensorConnected(android.hardware.Sensor)"/>
@@ -859,20 +859,20 @@ namespace Android.Hardware
             {
                 IExecuteWithSignature("onDynamicSensorDisconnected", "(Landroid/hardware/Sensor;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

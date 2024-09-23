@@ -40,10 +40,10 @@ namespace Android.View.Inputmethod
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public EditorInfo(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.View.Inputmethod
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,9 +74,9 @@ namespace Android.View.Inputmethod
     public partial class EditorInfo : Android.Text.IInputType, Android.Os.IParcelable
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.View.Inputmethod.EditorInfo"/> to <see cref="Android.Text.InputType"/>
@@ -86,9 +86,9 @@ namespace Android.View.Inputmethod
         /// Converter from <see cref="Android.View.Inputmethod.EditorInfo"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.View.Inputmethod.EditorInfo t) => t.Cast<Android.Os.Parcelable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#extras"/>
@@ -268,13 +268,13 @@ namespace Android.View.Inputmethod
         public static int IME_NULL { get { if (!_IME_NULLReady) { _IME_NULLContent = SGetField<int>(LocalBridgeClazz, "IME_NULL"); _IME_NULLReady = true; } return _IME_NULLContent; } }
         private static int _IME_NULLContent = default;
         private static bool _IME_NULLReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialSurroundingText(int,int,int)"/>
@@ -435,13 +435,13 @@ namespace Android.View.Inputmethod
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

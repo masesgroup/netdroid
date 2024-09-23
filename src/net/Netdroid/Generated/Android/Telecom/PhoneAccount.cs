@@ -40,10 +40,10 @@ namespace Android.Telecom
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PhoneAccount(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Telecom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Telecom
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Telecom
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Telecom
     public partial class PhoneAccount
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#CREATOR"/>
@@ -301,9 +301,9 @@ namespace Android.Telecom
         public static Java.Lang.String SCHEME_VOICEMAIL { get { if (!_SCHEME_VOICEMAILReady) { _SCHEME_VOICEMAILContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCHEME_VOICEMAIL"); _SCHEME_VOICEMAILReady = true; } return _SCHEME_VOICEMAILContent; } }
         private static Java.Lang.String _SCHEME_VOICEMAILContent = default;
         private static bool _SCHEME_VOICEMAILReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#builder(android.telecom.PhoneAccountHandle,java.lang.CharSequence)"/>
@@ -315,9 +315,9 @@ namespace Android.Telecom
         {
             return SExecute<Android.Telecom.PhoneAccount.Builder>(LocalBridgeClazz, "builder", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.html#getIcon()"/>
@@ -466,9 +466,9 @@ namespace Android.Telecom
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -491,21 +491,21 @@ namespace Android.Telecom
                 : base(arg0, arg1)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccount.Builder.html#build()"/>
@@ -613,20 +613,20 @@ namespace Android.Telecom
             {
                 return IExecuteWithSignature<Android.Telecom.PhoneAccount.Builder>("setSupportedUriSchemes", "(Ljava/util/List;)Landroid/telecom/PhoneAccount$Builder;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

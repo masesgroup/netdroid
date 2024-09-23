@@ -42,10 +42,10 @@ namespace Android.Text.Method
         /// </summary>
         [global::System.Obsolete("MetaKeyKeyListener class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MetaKeyKeyListener(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Text.Method
     public partial class MetaKeyKeyListener
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#META_ALT_LOCKED"/>
@@ -120,9 +120,9 @@ namespace Android.Text.Method
         public static int META_SYM_ON { get { if (!_META_SYM_ONReady) { _META_SYM_ONContent = SGetField<int>(LocalBridgeClazz, "META_SYM_ON"); _META_SYM_ONReady = true; } return _META_SYM_ONContent; } }
         private static int _META_SYM_ONContent = default;
         private static bool _META_SYM_ONReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#isMetaTracker(java.lang.CharSequence,java.lang.Object)"/>
@@ -268,9 +268,9 @@ namespace Android.Text.Method
         {
             SExecuteWithSignature(LocalBridgeClazz, "resetMetaState", "(Landroid/text/Spannable;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#onKeyDown(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
@@ -316,13 +316,13 @@ namespace Android.Text.Method
         {
             IExecute("clearMetaKeyState", arg0, arg1, arg2);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

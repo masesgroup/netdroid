@@ -40,10 +40,10 @@ namespace Org.Xml.Sax.Helpers
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public NamespaceSupport(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Org.Xml.Sax.Helpers
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Org.Xml.Sax.Helpers
     public partial class NamespaceSupport
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#NSDECL"/>
@@ -94,13 +94,13 @@ namespace Org.Xml.Sax.Helpers
         public static Java.Lang.String XMLNS { get { if (!_XMLNSReady) { _XMLNSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "XMLNS"); _XMLNSReady = true; } return _XMLNSContent; } }
         private static Java.Lang.String _XMLNSContent = default;
         private static bool _XMLNSReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#declarePrefix(java.lang.String,java.lang.String)"/>
@@ -203,13 +203,13 @@ namespace Org.Xml.Sax.Helpers
         {
             IExecuteWithSignature("setNamespaceDeclUris", "(Z)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

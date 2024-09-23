@@ -40,10 +40,10 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StandardOpenOption(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Nio.File
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Nio.File
     public partial class StandardOpenOption
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Nio.File.StandardOpenOption"/> to <see cref="Java.Nio.File.OpenOption"/>
         /// </summary>
         public static implicit operator Java.Nio.File.OpenOption(Java.Nio.File.StandardOpenOption t) => t.Cast<Java.Nio.File.OpenOption>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/StandardOpenOption.html#APPEND"/>
@@ -146,9 +146,9 @@ namespace Java.Nio.File
         public static Java.Nio.File.StandardOpenOption WRITE { get { if (!_WRITEReady) { _WRITEContent = SGetField<Java.Nio.File.StandardOpenOption>(LocalBridgeClazz, "WRITE"); _WRITEReady = true; } return _WRITEContent; } }
         private static Java.Nio.File.StandardOpenOption _WRITEContent = default;
         private static bool _WRITEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/StandardOpenOption.html#valueOf(java.lang.String)"/>
@@ -167,17 +167,17 @@ namespace Java.Nio.File
         {
             return SExecuteWithSignatureArray<Java.Nio.File.StandardOpenOption>(LocalBridgeClazz, "values", "()[Ljava/nio/file/StandardOpenOption;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

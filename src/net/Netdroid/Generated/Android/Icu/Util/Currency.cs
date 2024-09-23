@@ -40,10 +40,10 @@ namespace Android.Icu.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Currency(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region CurrencyUsage declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CurrencyUsage(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Icu.Util
     public partial class Currency
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#FORMAL_SYMBOL_NAME"/>
@@ -163,9 +163,9 @@ namespace Android.Icu.Util
         public static int VARIANT_SYMBOL_NAME { get { if (!_VARIANT_SYMBOL_NAMEReady) { _VARIANT_SYMBOL_NAMEContent = SGetField<int>(LocalBridgeClazz, "VARIANT_SYMBOL_NAME"); _VARIANT_SYMBOL_NAMEReady = true; } return _VARIANT_SYMBOL_NAMEContent; } }
         private static int _VARIANT_SYMBOL_NAMEContent = default;
         private static bool _VARIANT_SYMBOL_NAMEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#fromJavaCurrency(java.util.Currency)"/>
@@ -269,9 +269,9 @@ namespace Android.Icu.Util
         {
             return SExecuteWithSignature<Java.Util.Set<Android.Icu.Util.Currency>>(LocalBridgeClazz, "getAvailableCurrencies", "()Ljava/util/Set;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Currency.html#getRoundingIncrement()"/>
@@ -420,21 +420,21 @@ namespace Android.Icu.Util
         {
             return IExecuteWithSignature<Java.Util.Currency>("toJavaCurrency", "()Ljava/util/Currency;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region CurrencyUsage implementation
         public partial class CurrencyUsage
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/Currency.CurrencyUsage.html#CASH"/>
@@ -448,9 +448,9 @@ namespace Android.Icu.Util
             public static Android.Icu.Util.Currency.CurrencyUsage STANDARD { get { if (!_STANDARDReady) { _STANDARDContent = SGetField<Android.Icu.Util.Currency.CurrencyUsage>(LocalBridgeClazz, "STANDARD"); _STANDARDReady = true; } return _STANDARDContent; } }
             private static Android.Icu.Util.Currency.CurrencyUsage _STANDARDContent = default;
             private static bool _STANDARDReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/Currency.CurrencyUsage.html#valueOf(java.lang.String)"/>
@@ -469,24 +469,24 @@ namespace Android.Icu.Util
             {
                 return SExecuteWithSignatureArray<Android.Icu.Util.Currency.CurrencyUsage>(LocalBridgeClazz, "values", "()[Landroid/icu/util/Currency$CurrencyUsage;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

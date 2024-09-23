@@ -42,10 +42,10 @@ namespace Android.Print
         /// </summary>
         [global::System.Obsolete("PrintDocumentAdapter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PrintDocumentAdapter(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Print
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region LayoutResultCallback declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Print
             /// </summary>
             [global::System.Obsolete("LayoutResultCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public LayoutResultCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Print
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -132,10 +132,10 @@ namespace Android.Print
             /// </summary>
             [global::System.Obsolete("WriteResultCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public WriteResultCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -156,9 +156,9 @@ namespace Android.Print
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -170,13 +170,13 @@ namespace Android.Print
     public partial class PrintDocumentAdapter
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#EXTRA_PRINT_PREVIEW"/>
@@ -184,13 +184,13 @@ namespace Android.Print
         public static Java.Lang.String EXTRA_PRINT_PREVIEW { get { if (!_EXTRA_PRINT_PREVIEWReady) { _EXTRA_PRINT_PREVIEWContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PRINT_PREVIEW"); _EXTRA_PRINT_PREVIEWReady = true; } return _EXTRA_PRINT_PREVIEWContent; } }
         private static Java.Lang.String _EXTRA_PRINT_PREVIEWContent = default;
         private static bool _EXTRA_PRINT_PREVIEWReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#onLayout(android.print.PrintAttributes,android.print.PrintAttributes,android.os.CancellationSignal,android.print.PrintDocumentAdapter.LayoutResultCallback,android.os.Bundle)"/>
@@ -229,29 +229,29 @@ namespace Android.Print
         {
             IExecuteWithSignature("onStart", "()V");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region LayoutResultCallback implementation
         public partial class LayoutResultCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.LayoutResultCallback.html#onLayoutCancelled()"/>
@@ -277,13 +277,13 @@ namespace Android.Print
             {
                 IExecute("onLayoutFinished", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -292,21 +292,21 @@ namespace Android.Print
         public partial class WriteResultCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.WriteResultCallback.html#onWriteCancelled()"/>
@@ -331,20 +331,20 @@ namespace Android.Print
             {
                 IExecuteWithSignature("onWriteFinished", "([Landroid/print/PageRange;)V", new object[] { arg0 });
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

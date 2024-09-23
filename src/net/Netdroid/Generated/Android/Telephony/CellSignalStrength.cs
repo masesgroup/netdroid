@@ -42,10 +42,10 @@ namespace Android.Telephony
         /// </summary>
         [global::System.Obsolete("CellSignalStrength class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CellSignalStrength(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Telephony
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Telephony
     public partial class CellSignalStrength
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrength.html#SIGNAL_STRENGTH_GOOD"/>
@@ -114,13 +114,13 @@ namespace Android.Telephony
         public static int SIGNAL_STRENGTH_POOR { get { if (!_SIGNAL_STRENGTH_POORReady) { _SIGNAL_STRENGTH_POORContent = SGetField<int>(LocalBridgeClazz, "SIGNAL_STRENGTH_POOR"); _SIGNAL_STRENGTH_POORReady = true; } return _SIGNAL_STRENGTH_POORContent; } }
         private static int _SIGNAL_STRENGTH_POORContent = default;
         private static bool _SIGNAL_STRENGTH_POORReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrength.html#getAsuLevel()"/>
@@ -146,13 +146,13 @@ namespace Android.Telephony
         {
             return IExecuteWithSignature<int>("getLevel", "()I");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

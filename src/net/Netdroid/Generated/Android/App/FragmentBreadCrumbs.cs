@@ -41,10 +41,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FragmentBreadCrumbs(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region OnBreadCrumbClickListener declaration
         /// <summary>
@@ -78,7 +78,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnBreadCrumbClickListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.FragmentBreadCrumbs_OnBreadCrumbClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -87,13 +87,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnBreadCrumbClickListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnBreadCrumbClickListener"/> or its generic type if there is one
@@ -104,14 +104,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.app.FragmentBreadCrumbs$OnBreadCrumbClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -173,21 +173,21 @@ namespace Android.App
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentBreadCrumbs.html#onBackStackChanged()"/>
@@ -245,29 +245,29 @@ namespace Android.App
         {
             IExecute("setTitle", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region OnBreadCrumbClickListener implementation
         public partial class OnBreadCrumbClickListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnBreadCrumbClickListener"/>
@@ -277,13 +277,13 @@ namespace Android.App
                 AddEventHandler("onBreadCrumbClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnBreadCrumbClickEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/FragmentBreadCrumbs.OnBreadCrumbClickListener.html#onBreadCrumbClick(android.app.FragmentManager.BackStackEntry,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnBreadCrumbClick"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.App.FragmentManager.BackStackEntry, int, bool> OnOnBreadCrumbClick { get; set; } = null;
-
+            
             bool hasOverrideOnBreadCrumbClick = true;
             void OnBreadCrumbClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -292,7 +292,7 @@ namespace Android.App
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.App.FragmentManager.BackStackEntry>(0), data.EventData.GetAt<int>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnBreadCrumbClick, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentBreadCrumbs.OnBreadCrumbClickListener.html#onBreadCrumbClick(android.app.FragmentManager.BackStackEntry,int)"/>
             /// </summary>
@@ -304,13 +304,13 @@ namespace Android.App
             {
                 hasOverrideOnBreadCrumbClick = false; return default;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -319,21 +319,21 @@ namespace Android.App
         public partial class OnBreadCrumbClickListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentBreadCrumbs.OnBreadCrumbClickListener.html#onBreadCrumbClick(android.app.FragmentManager.BackStackEntry,int)"/>
@@ -346,20 +346,20 @@ namespace Android.App
             {
                 return IExecute<bool>("onBreadCrumbClick", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

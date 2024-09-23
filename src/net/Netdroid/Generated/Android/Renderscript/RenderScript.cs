@@ -41,10 +41,10 @@ namespace Android.Renderscript
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RenderScript(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Renderscript
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region ContextType declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ContextType(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -129,10 +129,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Priority(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -153,9 +153,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -175,10 +175,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RSErrorHandler(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -199,9 +199,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -221,10 +221,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RSMessageHandler(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -245,9 +245,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -259,13 +259,13 @@ namespace Android.Renderscript
     public partial class RenderScript
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#CREATE_FLAG_LOW_LATENCY"/>
@@ -288,9 +288,9 @@ namespace Android.Renderscript
         public static int CREATE_FLAG_NONE { get { if (!_CREATE_FLAG_NONEReady) { _CREATE_FLAG_NONEContent = SGetField<int>(LocalBridgeClazz, "CREATE_FLAG_NONE"); _CREATE_FLAG_NONEReady = true; } return _CREATE_FLAG_NONEContent; } }
         private static int _CREATE_FLAG_NONEContent = default;
         private static bool _CREATE_FLAG_NONEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#create(android.content.Context,android.renderscript.RenderScript.ContextType,int)"/>
@@ -355,9 +355,9 @@ namespace Android.Renderscript
         {
             SExecuteWithSignature(LocalBridgeClazz, "releaseAllContexts", "()V");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#getErrorHandler()"/>
@@ -447,21 +447,21 @@ namespace Android.Renderscript
         {
             IExecuteWithSignature("setPriority", "(Landroid/renderscript/RenderScript$Priority;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region ContextType implementation
         public partial class ContextType
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.ContextType.html#DEBUG"/>
@@ -484,9 +484,9 @@ namespace Android.Renderscript
             public static Android.Renderscript.RenderScript.ContextType PROFILE { get { if (!_PROFILEReady) { _PROFILEContent = SGetField<Android.Renderscript.RenderScript.ContextType>(LocalBridgeClazz, "PROFILE"); _PROFILEReady = true; } return _PROFILEContent; } }
             private static Android.Renderscript.RenderScript.ContextType _PROFILEContent = default;
             private static bool _PROFILEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.ContextType.html#valueOf(java.lang.String)"/>
@@ -505,17 +505,17 @@ namespace Android.Renderscript
             {
                 return SExecuteWithSignatureArray<Android.Renderscript.RenderScript.ContextType>(LocalBridgeClazz, "values", "()[Landroid/renderscript/RenderScript$ContextType;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -524,13 +524,13 @@ namespace Android.Renderscript
         public partial class Priority
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.Priority.html#LOW"/>
@@ -546,9 +546,9 @@ namespace Android.Renderscript
             public static Android.Renderscript.RenderScript.Priority NORMAL { get { if (!_NORMALReady) { _NORMALContent = SGetField<Android.Renderscript.RenderScript.Priority>(LocalBridgeClazz, "NORMAL"); _NORMALReady = true; } return _NORMALContent; } }
             private static Android.Renderscript.RenderScript.Priority _NORMALContent = default;
             private static bool _NORMALReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.Priority.html#valueOf(java.lang.String)"/>
@@ -567,17 +567,17 @@ namespace Android.Renderscript
             {
                 return SExecuteWithSignatureArray<Android.Renderscript.RenderScript.Priority>(LocalBridgeClazz, "values", "()[Landroid/renderscript/RenderScript$Priority;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -586,21 +586,21 @@ namespace Android.Renderscript
         public partial class RSErrorHandler
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.RSErrorHandler.html#run()"/>
@@ -610,13 +610,13 @@ namespace Android.Renderscript
             {
                 IExecuteWithSignature("run", "()V");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -625,21 +625,21 @@ namespace Android.Renderscript
         public partial class RSMessageHandler
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.RSMessageHandler.html#run()"/>
@@ -649,20 +649,20 @@ namespace Android.Renderscript
             {
                 IExecuteWithSignature("run", "()V");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

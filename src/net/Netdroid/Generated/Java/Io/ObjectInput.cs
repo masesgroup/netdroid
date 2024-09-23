@@ -42,10 +42,10 @@ namespace Java.Io
         /// </summary>
         [global::System.Obsolete("ObjectInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ObjectInput(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Io
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Io
     public partial interface IObjectInput
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -94,9 +94,9 @@ namespace Java.Io
     public partial class ObjectInput : Java.Io.IObjectInput, Java.Io.IDataInput, Java.Lang.IAutoCloseable
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Io.ObjectInput"/> to <see cref="Java.Io.DataInput"/>
@@ -106,17 +106,17 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.ObjectInput"/> to <see cref="Java.Lang.AutoCloseable"/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Io.ObjectInput t) => t.Cast<Java.Lang.AutoCloseable>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/ObjectInput.html#available()"/>
@@ -186,13 +186,13 @@ namespace Java.Io
         {
             IExecuteWithSignature("close", "()V");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

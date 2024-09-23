@@ -40,10 +40,10 @@ namespace Android.Content.Pm
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PermissionGroupInfo(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content.Pm
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -83,17 +83,17 @@ namespace Android.Content.Pm
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Content.Pm.PermissionGroupInfo"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
         public static implicit operator Android.Os.Parcelable(Android.Content.Pm.PermissionGroupInfo t) => t.Cast<Android.Os.Parcelable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionGroupInfo.html#descriptionRes"/>
@@ -123,13 +123,13 @@ namespace Android.Content.Pm
         public static int FLAG_PERSONAL_INFO { get { if (!_FLAG_PERSONAL_INFOReady) { _FLAG_PERSONAL_INFOContent = SGetField<int>(LocalBridgeClazz, "FLAG_PERSONAL_INFO"); _FLAG_PERSONAL_INFOReady = true; } return _FLAG_PERSONAL_INFOContent; } }
         private static int _FLAG_PERSONAL_INFOContent = default;
         private static bool _FLAG_PERSONAL_INFOReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionGroupInfo.html#describeContents()"/>
@@ -148,13 +148,13 @@ namespace Android.Content.Pm
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("loadDescription", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

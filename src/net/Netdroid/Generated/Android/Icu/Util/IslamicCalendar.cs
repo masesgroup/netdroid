@@ -40,10 +40,10 @@ namespace Android.Icu.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public IslamicCalendar(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region CalculationType declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CalculationType(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -192,13 +192,13 @@ namespace Android.Icu.Util
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/IslamicCalendar.html#DHU_AL_HIJJAH"/>
@@ -272,13 +272,13 @@ namespace Android.Icu.Util
         public static int SHAWWAL { get { if (!_SHAWWALReady) { _SHAWWALContent = SGetField<int>(LocalBridgeClazz, "SHAWWAL"); _SHAWWALReady = true; } return _SHAWWALContent; } }
         private static int _SHAWWALContent = default;
         private static bool _SHAWWALReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/IslamicCalendar.html#getCalculationType()"/>
@@ -296,21 +296,21 @@ namespace Android.Icu.Util
         {
             IExecuteWithSignature("setCalculationType", "(Landroid/icu/util/IslamicCalendar$CalculationType;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region CalculationType implementation
         public partial class CalculationType
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/IslamicCalendar.CalculationType.html#ISLAMIC"/>
@@ -336,9 +336,9 @@ namespace Android.Icu.Util
             public static Android.Icu.Util.IslamicCalendar.CalculationType ISLAMIC_UMALQURA { get { if (!_ISLAMIC_UMALQURAReady) { _ISLAMIC_UMALQURAContent = SGetField<Android.Icu.Util.IslamicCalendar.CalculationType>(LocalBridgeClazz, "ISLAMIC_UMALQURA"); _ISLAMIC_UMALQURAReady = true; } return _ISLAMIC_UMALQURAContent; } }
             private static Android.Icu.Util.IslamicCalendar.CalculationType _ISLAMIC_UMALQURAContent = default;
             private static bool _ISLAMIC_UMALQURAReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/IslamicCalendar.CalculationType.html#valueOf(java.lang.String)"/>
@@ -357,24 +357,24 @@ namespace Android.Icu.Util
             {
                 return SExecuteWithSignatureArray<Android.Icu.Util.IslamicCalendar.CalculationType>(LocalBridgeClazz, "values", "()[Landroid/icu/util/IslamicCalendar$CalculationType;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

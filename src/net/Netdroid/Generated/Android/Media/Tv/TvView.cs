@@ -40,10 +40,10 @@ namespace Android.Media.Tv
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TvView(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Tv
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region OnUnhandledInputEventListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Media.Tv
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnUnhandledInputEventListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.tv.TvView_OnUnhandledInputEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnUnhandledInputEventListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnUnhandledInputEventListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.media.tv.TvView$OnUnhandledInputEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -150,10 +150,10 @@ namespace Android.Media.Tv
             /// </summary>
             [global::System.Obsolete("TimeShiftPositionCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TimeShiftPositionCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -174,9 +174,9 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -197,10 +197,10 @@ namespace Android.Media.Tv
             /// </summary>
             [global::System.Obsolete("TvInputCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TvInputCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -221,9 +221,9 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -262,21 +262,21 @@ namespace Android.Media.Tv
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#dispatchUnhandledInputEvent(android.view.InputEvent)"/>
@@ -503,29 +503,29 @@ namespace Android.Media.Tv
         {
             IExecute("tune", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region OnUnhandledInputEventListener implementation
         public partial class OnUnhandledInputEventListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnUnhandledInputEventListener"/>
@@ -535,13 +535,13 @@ namespace Android.Media.Tv
                 AddEventHandler("onUnhandledInputEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnUnhandledInputEventEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/tv/TvView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUnhandledInputEvent"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.InputEvent, bool> OnOnUnhandledInputEvent { get; set; } = null;
-
+            
             bool hasOverrideOnUnhandledInputEvent = true;
             void OnUnhandledInputEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -550,7 +550,7 @@ namespace Android.Media.Tv
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.InputEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnUnhandledInputEvent, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
             /// </summary>
@@ -560,13 +560,13 @@ namespace Android.Media.Tv
             {
                 hasOverrideOnUnhandledInputEvent = false; return default;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -575,21 +575,21 @@ namespace Android.Media.Tv
         public partial class OnUnhandledInputEventListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
@@ -600,13 +600,13 @@ namespace Android.Media.Tv
             {
                 return IExecuteWithSignature<bool>("onUnhandledInputEvent", "(Landroid/view/InputEvent;)Z", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -615,21 +615,21 @@ namespace Android.Media.Tv
         public partial class TimeShiftPositionCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TimeShiftPositionCallback.html#onTimeShiftCurrentPositionChanged(java.lang.String,long)"/>
@@ -649,13 +649,13 @@ namespace Android.Media.Tv
             {
                 IExecute("onTimeShiftStartPositionChanged", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -664,21 +664,21 @@ namespace Android.Media.Tv
         public partial class TvInputCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onAitInfoUpdated(java.lang.String,android.media.tv.AitInfo)"/>
@@ -860,20 +860,20 @@ namespace Android.Media.Tv
             {
                 IExecute("onVideoUnavailable", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

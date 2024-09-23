@@ -42,10 +42,10 @@ namespace Android.Telephony
         /// </summary>
         [global::System.Obsolete("CellInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CellInfo(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Telephony
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Telephony
     public partial class CellInfo
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#CREATOR"/>
@@ -126,13 +126,13 @@ namespace Android.Telephony
         public static long UNAVAILABLE_LONG { get { if (!_UNAVAILABLE_LONGReady) { _UNAVAILABLE_LONGContent = SGetField<long>(LocalBridgeClazz, "UNAVAILABLE_LONG"); _UNAVAILABLE_LONGReady = true; } return _UNAVAILABLE_LONGContent; } }
         private static long _UNAVAILABLE_LONGContent = default;
         private static bool _UNAVAILABLE_LONGReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#getCellIdentity()"/>
@@ -200,13 +200,13 @@ namespace Android.Telephony
         {
             return IExecuteWithSignature<long>("getTimestampMillis", "()J");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

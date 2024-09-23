@@ -42,10 +42,10 @@ namespace Android.Location
         /// </summary>
         [global::System.Obsolete("SettingInjectorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SettingInjectorService(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Location
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -84,13 +84,13 @@ namespace Android.Location
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/SettingInjectorService.html#ACTION_INJECTED_SETTING_CHANGED"/>
@@ -116,9 +116,9 @@ namespace Android.Location
         public static Java.Lang.String META_DATA_NAME { get { if (!_META_DATA_NAMEReady) { _META_DATA_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "META_DATA_NAME"); _META_DATA_NAMEReady = true; } return _META_DATA_NAMEContent; } }
         private static Java.Lang.String _META_DATA_NAMEContent = default;
         private static bool _META_DATA_NAMEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/SettingInjectorService.html#refreshSettings(android.content.Context)"/>
@@ -128,17 +128,17 @@ namespace Android.Location
         {
             SExecuteWithSignature(LocalBridgeClazz, "refreshSettings", "(Landroid/content/Context;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

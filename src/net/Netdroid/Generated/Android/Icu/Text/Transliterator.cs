@@ -42,10 +42,10 @@ namespace Android.Icu.Text
         /// </summary>
         [global::System.Obsolete("Transliterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Transliterator(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Position declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Position(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Icu.Text
     public partial class Transliterator
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#FORWARD"/>
@@ -141,9 +141,9 @@ namespace Android.Icu.Text
         public static int REVERSE { get { if (!_REVERSEReady) { _REVERSEContent = SGetField<int>(LocalBridgeClazz, "REVERSE"); _REVERSEReady = true; } return _REVERSEContent; } }
         private static int _REVERSEContent = default;
         private static bool _REVERSEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getInstance(java.lang.String,int)"/>
@@ -239,9 +239,9 @@ namespace Android.Icu.Text
         {
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDisplayName", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.html#getElements()"/>
@@ -392,9 +392,9 @@ namespace Android.Icu.Text
         {
             IExecuteWithSignature("setFilter", "(Landroid/icu/text/UnicodeFilter;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Position implementation
         public partial class Position
@@ -429,13 +429,13 @@ namespace Android.Icu.Text
                 : base(arg0, arg1, arg2)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.Position.html#contextLimit"/>
@@ -453,13 +453,13 @@ namespace Android.Icu.Text
             /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.Position.html#start"/>
             /// </summary>
             public int start { get { return IGetField<int>("start"); } set { ISetField("start", value); } }
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/Transliterator.Position.html#validate(int)"/>
@@ -477,20 +477,20 @@ namespace Android.Icu.Text
             {
                 IExecuteWithSignature("set", "(Landroid/icu/text/Transliterator$Position;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

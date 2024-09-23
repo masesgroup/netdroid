@@ -42,10 +42,10 @@ namespace Javax.Microedition.Khronos.Egl
         /// </summary>
         [global::System.Obsolete("EGL10 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EGL10(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Microedition.Khronos.Egl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Javax.Microedition.Khronos.Egl
     public partial interface IEGL10 : Javax.Microedition.Khronos.Egl.IEGL
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Javax.Microedition.Khronos.Egl
     public partial class EGL10 : Javax.Microedition.Khronos.Egl.IEGL10
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_ALPHA_FORMAT"/>
@@ -528,13 +528,13 @@ namespace Javax.Microedition.Khronos.Egl
         public static Javax.Microedition.Khronos.Egl.EGLSurface EGL_NO_SURFACE { get { if (!_EGL_NO_SURFACEReady) { _EGL_NO_SURFACEContent = SGetField<Javax.Microedition.Khronos.Egl.EGLSurface>(LocalBridgeClazz, "EGL_NO_SURFACE"); _EGL_NO_SURFACEReady = true; } return _EGL_NO_SURFACEContent; } }
         private static Javax.Microedition.Khronos.Egl.EGLSurface _EGL_NO_SURFACEContent = default;
         private static bool _EGL_NO_SURFACEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglChooseConfig(javax.microedition.khronos.egl.EGLDisplay,int[],javax.microedition.khronos.egl.EGLConfig[],int,int[])"/>
@@ -787,13 +787,13 @@ namespace Javax.Microedition.Khronos.Egl
         {
             return IExecuteWithSignature<Javax.Microedition.Khronos.Egl.EGLSurface>("eglGetCurrentSurface", "(I)Ljavax/microedition/khronos/egl/EGLSurface;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.App
         /// </summary>
         [global::System.Obsolete("ActionBar class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ActionBar(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region LayoutParams declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public LayoutParams(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -123,7 +123,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnMenuVisibilityListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.ActionBar_OnMenuVisibilityListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -132,13 +132,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnMenuVisibilityListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnMenuVisibilityListener"/> or its generic type if there is one
@@ -149,14 +149,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.app.ActionBar$OnMenuVisibilityListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -191,7 +191,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnNavigationListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.ActionBar_OnNavigationListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -200,13 +200,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnNavigationListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnNavigationListener"/> or its generic type if there is one
@@ -217,14 +217,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.app.ActionBar$OnNavigationListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -266,10 +266,10 @@ namespace Android.App
             /// </summary>
             [global::System.Obsolete("Tab class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Tab(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -290,9 +290,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -307,7 +307,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public TabListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.ActionBar_TabListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -316,13 +316,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region TabListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="TabListener"/> or its generic type if there is one
@@ -333,14 +333,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.app.ActionBar$TabListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -372,13 +372,13 @@ namespace Android.App
     public partial class ActionBar
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#DISPLAY_HOME_AS_UP"/>
@@ -431,13 +431,13 @@ namespace Android.App
         public static int NAVIGATION_MODE_TABS { get { if (!_NAVIGATION_MODE_TABSReady) { _NAVIGATION_MODE_TABSContent = SGetField<int>(LocalBridgeClazz, "NAVIGATION_MODE_TABS"); _NAVIGATION_MODE_TABSReady = true; } return _NAVIGATION_MODE_TABSContent; } }
         private static int _NAVIGATION_MODE_TABSContent = default;
         private static bool _NAVIGATION_MODE_TABSReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getSelectedTab()"/>
@@ -950,9 +950,9 @@ namespace Android.App
         {
             IExecuteWithSignature("setStackedBackgroundDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region LayoutParams implementation
         public partial class LayoutParams
@@ -1010,33 +1010,33 @@ namespace Android.App
                 : base(arg0)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.LayoutParams.html#gravity"/>
             /// </summary>
             public int gravity { get { return IGetField<int>("gravity"); } set { ISetField("gravity", value); } }
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1045,21 +1045,21 @@ namespace Android.App
         public partial class OnMenuVisibilityListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnMenuVisibilityListener"/>
@@ -1069,13 +1069,13 @@ namespace Android.App
                 AddEventHandler("onMenuVisibilityChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnMenuVisibilityChangedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/ActionBar.OnMenuVisibilityListener.html#onMenuVisibilityChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMenuVisibilityChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<bool> OnOnMenuVisibilityChanged { get; set; } = null;
-
+            
             bool hasOverrideOnMenuVisibilityChanged = true;
             void OnMenuVisibilityChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1084,7 +1084,7 @@ namespace Android.App
                 methodToExecute.Invoke(data.EventData.GetAt<bool>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnMenuVisibilityChanged;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.OnMenuVisibilityListener.html#onMenuVisibilityChanged(boolean)"/>
             /// </summary>
@@ -1093,13 +1093,13 @@ namespace Android.App
             {
                 hasOverrideOnMenuVisibilityChanged = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1108,21 +1108,21 @@ namespace Android.App
         public partial class OnMenuVisibilityListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.OnMenuVisibilityListener.html#onMenuVisibilityChanged(boolean)"/>
@@ -1132,13 +1132,13 @@ namespace Android.App
             {
                 IExecuteWithSignature("onMenuVisibilityChanged", "(Z)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1147,21 +1147,21 @@ namespace Android.App
         public partial class OnNavigationListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnNavigationListener"/>
@@ -1171,13 +1171,13 @@ namespace Android.App
                 AddEventHandler("onNavigationItemSelected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnNavigationItemSelectedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/ActionBar.OnNavigationListener.html#onNavigationItemSelected(int,long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnNavigationItemSelected"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<int, long, bool> OnOnNavigationItemSelected { get; set; } = null;
-
+            
             bool hasOverrideOnNavigationItemSelected = true;
             void OnNavigationItemSelectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1186,7 +1186,7 @@ namespace Android.App
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<long>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnNavigationItemSelected, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.OnNavigationListener.html#onNavigationItemSelected(int,long)"/>
             /// </summary>
@@ -1198,13 +1198,13 @@ namespace Android.App
             {
                 hasOverrideOnNavigationItemSelected = false; return default;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1213,21 +1213,21 @@ namespace Android.App
         public partial class OnNavigationListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.OnNavigationListener.html#onNavigationItemSelected(int,long)"/>
@@ -1240,13 +1240,13 @@ namespace Android.App
             {
                 return IExecute<bool>("onNavigationItemSelected", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1255,13 +1255,13 @@ namespace Android.App
         public partial class Tab
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#INVALID_POSITION"/>
@@ -1270,13 +1270,13 @@ namespace Android.App
             public static int INVALID_POSITION { get { if (!_INVALID_POSITIONReady) { _INVALID_POSITIONContent = SGetField<int>(LocalBridgeClazz, "INVALID_POSITION"); _INVALID_POSITIONReady = true; } return _INVALID_POSITIONContent; } }
             private static int _INVALID_POSITIONContent = default;
             private static bool _INVALID_POSITIONReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#setContentDescription(int)"/>
@@ -1440,13 +1440,13 @@ namespace Android.App
             {
                 IExecuteWithSignature("select", "()V");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1455,21 +1455,21 @@ namespace Android.App
         public partial class TabListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="TabListener"/>
@@ -1481,13 +1481,13 @@ namespace Android.App
                 AddEventHandler("onTabUnselected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnTabUnselectedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/ActionBar.TabListener.html#onTabReselected(android.app.ActionBar.Tab,android.app.FragmentTransaction)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTabReselected"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.App.ActionBar.Tab, Android.App.FragmentTransaction> OnOnTabReselected { get; set; } = null;
-
+            
             bool hasOverrideOnTabReselected = true;
             void OnTabReselectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1496,7 +1496,7 @@ namespace Android.App
                 methodToExecute.Invoke(data.EventData.GetAt<Android.App.ActionBar.Tab>(0), data.EventData.GetAt<Android.App.FragmentTransaction>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnTabReselected;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.TabListener.html#onTabReselected(android.app.ActionBar.Tab,android.app.FragmentTransaction)"/>
             /// </summary>
@@ -1507,13 +1507,13 @@ namespace Android.App
             {
                 hasOverrideOnTabReselected = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/ActionBar.TabListener.html#onTabSelected(android.app.ActionBar.Tab,android.app.FragmentTransaction)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTabSelected"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.App.ActionBar.Tab, Android.App.FragmentTransaction> OnOnTabSelected { get; set; } = null;
-
+            
             bool hasOverrideOnTabSelected = true;
             void OnTabSelectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1522,7 +1522,7 @@ namespace Android.App
                 methodToExecute.Invoke(data.EventData.GetAt<Android.App.ActionBar.Tab>(0), data.EventData.GetAt<Android.App.FragmentTransaction>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnTabSelected;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.TabListener.html#onTabSelected(android.app.ActionBar.Tab,android.app.FragmentTransaction)"/>
             /// </summary>
@@ -1533,13 +1533,13 @@ namespace Android.App
             {
                 hasOverrideOnTabSelected = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/ActionBar.TabListener.html#onTabUnselected(android.app.ActionBar.Tab,android.app.FragmentTransaction)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTabUnselected"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.App.ActionBar.Tab, Android.App.FragmentTransaction> OnOnTabUnselected { get; set; } = null;
-
+            
             bool hasOverrideOnTabUnselected = true;
             void OnTabUnselectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1548,7 +1548,7 @@ namespace Android.App
                 methodToExecute.Invoke(data.EventData.GetAt<Android.App.ActionBar.Tab>(0), data.EventData.GetAt<Android.App.FragmentTransaction>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnTabUnselected;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.TabListener.html#onTabUnselected(android.app.ActionBar.Tab,android.app.FragmentTransaction)"/>
             /// </summary>
@@ -1559,13 +1559,13 @@ namespace Android.App
             {
                 hasOverrideOnTabUnselected = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1574,21 +1574,21 @@ namespace Android.App
         public partial class TabListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.TabListener.html#onTabReselected(android.app.ActionBar.Tab,android.app.FragmentTransaction)"/>
@@ -1620,20 +1620,20 @@ namespace Android.App
             {
                 IExecute("onTabUnselected", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

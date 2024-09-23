@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LinkedBlockingDeque(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -86,10 +86,10 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LinkedBlockingDeque(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -136,9 +136,9 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.LinkedBlockingDeque"/> to <see cref="Java.Util.Concurrent.BlockingDeque"/>
@@ -148,17 +148,17 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.LinkedBlockingDeque"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.LinkedBlockingDeque t) => t.Cast<Java.Io.Serializable>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingDeque.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -450,13 +450,13 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("putLast", "(Ljava/lang/Object;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -481,9 +481,9 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.LinkedBlockingDeque{E}"/> to <see cref="Java.Util.Concurrent.BlockingDeque{E}"/>
@@ -497,17 +497,17 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.LinkedBlockingDeque{E}"/> to <see cref="Java.Util.Concurrent.LinkedBlockingDeque"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.LinkedBlockingDeque(Java.Util.Concurrent.LinkedBlockingDeque<E> t) => t.Cast<Java.Util.Concurrent.LinkedBlockingDeque>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingDeque.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -801,13 +801,13 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("putLast", "(Ljava/lang/Object;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

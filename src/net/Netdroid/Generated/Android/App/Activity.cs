@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Activity(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region ScreenCaptureCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.App
             /// </summary>
             [global::System.Obsolete("ScreenCaptureCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ScreenCaptureCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -121,17 +121,17 @@ namespace Android.App
     public partial class Activity : Android.Content.IComponentCallbacks2
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.App.Activity"/> to <see cref="Android.Content.ComponentCallbacks2"/>
         /// </summary>
         public static implicit operator Android.Content.ComponentCallbacks2(Android.App.Activity t) => t.Cast<Android.Content.ComponentCallbacks2>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#DEFAULT_KEYS_DIALER"/>
@@ -205,13 +205,13 @@ namespace Android.App
         public static int RESULT_OK { get { if (!_RESULT_OKReady) { _RESULT_OKContent = SGetField<int>(LocalBridgeClazz, "RESULT_OK"); _RESULT_OKReady = true; } return _RESULT_OKContent; } }
         private static int _RESULT_OKContent = default;
         private static bool _RESULT_OKReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Activity.html#findViewById(int)"/>
@@ -2455,29 +2455,29 @@ namespace Android.App
         {
             IExecuteWithSignature("unregisterScreenCaptureCallback", "(Landroid/app/Activity$ScreenCaptureCallback;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region ScreenCaptureCallback implementation
         public partial class ScreenCaptureCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Activity.ScreenCaptureCallback.html#onScreenCaptured()"/>
@@ -2486,20 +2486,20 @@ namespace Android.App
             {
                 IExecuteWithSignature("onScreenCaptured", "()V");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.Accessibilityservice
         /// </summary>
         [global::System.Obsolete("AccessibilityService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AccessibilityService(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Accessibilityservice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region GestureResultCallback declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Accessibilityservice
             /// </summary>
             [global::System.Obsolete("GestureResultCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public GestureResultCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Accessibilityservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -130,10 +130,10 @@ namespace Android.Accessibilityservice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MagnificationController(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -154,7 +154,7 @@ namespace Android.Accessibilityservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
             #region OnMagnificationChangedListener declaration
             /// <summary>
@@ -166,7 +166,7 @@ namespace Android.Accessibilityservice
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
                 /// </summary>
                 public OnMagnificationChangedListener() { InitializeHandlers(); }
-
+            
                 const string _bridgeClassName = "org.mases.netdroid.generated.android.accessibilityservice.AccessibilityService_MagnificationController_OnMagnificationChangedListener";
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -175,13 +175,13 @@ namespace Android.Accessibilityservice
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
                 /// </summary>
                 public override string BridgeClassName => _bridgeClassName;
-
+            
             
                 // TODO: complete the class
-
+            
             }
             #endregion
-
+            
             #region OnMagnificationChangedListenerDirect declaration
             /// <summary>
             /// Direct override of <see cref="OnMagnificationChangedListener"/> or its generic type if there is one
@@ -192,14 +192,14 @@ namespace Android.Accessibilityservice
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
                 /// </summary>
                 public override bool AutoInit => false;
-
+            
                 /// <inheritdoc />
                 protected override void InitializeHandlers() { }
-
+            
                 const string _bridgeClassName = "android.accessibilityservice.AccessibilityService$MagnificationController$OnMagnificationChangedListener";
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
                 /// </summary>
@@ -242,10 +242,10 @@ namespace Android.Accessibilityservice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ScreenshotResult(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -266,9 +266,9 @@ namespace Android.Accessibilityservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -287,10 +287,10 @@ namespace Android.Accessibilityservice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SoftKeyboardController(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -311,7 +311,7 @@ namespace Android.Accessibilityservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
             #region OnShowModeChangedListener declaration
             /// <summary>
@@ -323,7 +323,7 @@ namespace Android.Accessibilityservice
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
                 /// </summary>
                 public OnShowModeChangedListener() { InitializeHandlers(); }
-
+            
                 const string _bridgeClassName = "org.mases.netdroid.generated.android.accessibilityservice.AccessibilityService_SoftKeyboardController_OnShowModeChangedListener";
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -332,13 +332,13 @@ namespace Android.Accessibilityservice
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
                 /// </summary>
                 public override string BridgeClassName => _bridgeClassName;
-
+            
             
                 // TODO: complete the class
-
+            
             }
             #endregion
-
+            
             #region OnShowModeChangedListenerDirect declaration
             /// <summary>
             /// Direct override of <see cref="OnShowModeChangedListener"/> or its generic type if there is one
@@ -349,14 +349,14 @@ namespace Android.Accessibilityservice
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
                 /// </summary>
                 public override bool AutoInit => false;
-
+            
                 /// <inheritdoc />
                 protected override void InitializeHandlers() { }
-
+            
                 const string _bridgeClassName = "android.accessibilityservice.AccessibilityService$SoftKeyboardController$OnShowModeChangedListener";
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
                 /// </summary>
@@ -401,10 +401,10 @@ namespace Android.Accessibilityservice
             /// </summary>
             [global::System.Obsolete("TakeScreenshotCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TakeScreenshotCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -425,9 +425,9 @@ namespace Android.Accessibilityservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -439,13 +439,13 @@ namespace Android.Accessibilityservice
     public partial class AccessibilityService
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#ERROR_TAKE_SCREENSHOT_INTERNAL_ERROR"/>
@@ -909,13 +909,13 @@ namespace Android.Accessibilityservice
         public static Java.Lang.String SERVICE_META_DATA { get { if (!_SERVICE_META_DATAReady) { _SERVICE_META_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_META_DATA"); _SERVICE_META_DATAReady = true; } return _SERVICE_META_DATAContent; } }
         private static Java.Lang.String _SERVICE_META_DATAContent = default;
         private static bool _SERVICE_META_DATAReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#onAccessibilityEvent(android.view.accessibility.AccessibilityEvent)"/>
@@ -1239,29 +1239,29 @@ namespace Android.Accessibilityservice
         {
             IExecute("takeScreenshotOfWindow", arg0, arg1, arg2);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region GestureResultCallback implementation
         public partial class GestureResultCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.GestureResultCallback.html#onCancelled(android.accessibilityservice.GestureDescription)"/>
@@ -1279,13 +1279,13 @@ namespace Android.Accessibilityservice
             {
                 IExecuteWithSignature("onCompleted", "(Landroid/accessibilityservice/GestureDescription;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1294,21 +1294,21 @@ namespace Android.Accessibilityservice
         public partial class MagnificationController
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getMagnificationConfig()"/>
@@ -1439,29 +1439,29 @@ namespace Android.Accessibilityservice
             {
                 IExecuteWithSignature("addListener", "(Landroid/accessibilityservice/AccessibilityService$MagnificationController$OnMagnificationChangedListener;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
             #region OnMagnificationChangedListener implementation
             public partial class OnMagnificationChangedListener
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
-
+            
                 #endregion
-
+            
                 #region Fields
-
+            
                 #endregion
-
+            
                 #region Static methods
-
+            
                 #endregion
-
+            
                 #region Instance methods
                 /// <summary>
                 /// Handlers initializer for <see cref="OnMagnificationChangedListener"/>
@@ -1472,13 +1472,13 @@ namespace Android.Accessibilityservice
                     AddEventHandler("onMagnificationChanged3", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnMagnificationChanged3EventHandler));
 
                 }
-
+                
                 /// <summary>
                 /// Handler for <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,float,float,float)"/>
                 /// </summary>
                 /// <remarks>If <see cref="OnOnMagnificationChanged"/> has a value it takes precedence over corresponding class method</remarks>
                 public global::System.Action<Android.Accessibilityservice.AccessibilityService.MagnificationController, Android.Graphics.Region, float, float, float> OnOnMagnificationChanged { get; set; } = null;
-
+                
                 bool hasOverrideOnMagnificationChanged = true;
                 void OnMagnificationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
                 {
@@ -1487,7 +1487,7 @@ namespace Android.Accessibilityservice
                     methodToExecute.Invoke(data.EventData.GetAt<Android.Accessibilityservice.AccessibilityService.MagnificationController>(0), data.EventData.GetAt<Android.Graphics.Region>(1), data.EventData.GetAt<float>(2), data.EventData.GetAt<float>(3), data.EventData.GetAt<float>(4));
                     data.EventData.TypedEventData.HasOverride = hasOverrideOnMagnificationChanged;
                 }
-
+                
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,float,float,float)"/>
                 /// </summary>
@@ -1512,13 +1512,13 @@ namespace Android.Accessibilityservice
                 {
                     IExecute("onMagnificationChangedDefault", arg0, arg1, arg2);
                 }
-
+                
                 /// <summary>
                 /// Handler for <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,android.accessibilityservice.MagnificationConfig)"/>
                 /// </summary>
                 /// <remarks>If <see cref="OnOnMagnificationChanged3"/> has a value it takes precedence over corresponding class method</remarks>
                 public global::System.Action<Android.Accessibilityservice.AccessibilityService.MagnificationController, Android.Graphics.Region, Android.Accessibilityservice.MagnificationConfig> OnOnMagnificationChanged3 { get; set; } = null;
-
+                
                 bool hasOverrideOnMagnificationChanged3 = true;
                 void OnMagnificationChanged3EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
                 {
@@ -1527,7 +1527,7 @@ namespace Android.Accessibilityservice
                     methodToExecute.Invoke(data.EventData.GetAt<Android.Accessibilityservice.AccessibilityService.MagnificationController>(0), data.EventData.GetAt<Android.Graphics.Region>(1), data.EventData.GetAt<Android.Accessibilityservice.MagnificationConfig>(2));
                     data.EventData.TypedEventData.HasOverride = hasOverrideOnMagnificationChanged3;
                 }
-
+                
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,android.accessibilityservice.MagnificationConfig)"/>
                 /// </summary>
@@ -1539,13 +1539,13 @@ namespace Android.Accessibilityservice
                 {
                     hasOverrideOnMagnificationChanged3 = false;
                 }
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
@@ -1554,21 +1554,21 @@ namespace Android.Accessibilityservice
             public partial class OnMagnificationChangedListenerDirect
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
-
+            
                 #endregion
-
+            
                 #region Fields
-
+            
                 #endregion
-
+            
                 #region Static methods
-
+            
                 #endregion
-
+            
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,float,float,float)"/>
@@ -1593,20 +1593,20 @@ namespace Android.Accessibilityservice
                 {
                     IExecute("onMagnificationChanged", arg0, arg1, arg2);
                 }
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1615,21 +1615,21 @@ namespace Android.Accessibilityservice
         public partial class ScreenshotResult
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.ScreenshotResult.html#getColorSpace()"/>
@@ -1655,13 +1655,13 @@ namespace Android.Accessibilityservice
             {
                 return IExecuteWithSignature<long>("getTimestamp", "()J");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1670,13 +1670,13 @@ namespace Android.Accessibilityservice
         public partial class SoftKeyboardController
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.SoftKeyboardController.html#ENABLE_IME_FAIL_BY_ADMIN"/>
@@ -1696,13 +1696,13 @@ namespace Android.Accessibilityservice
             public static int ENABLE_IME_SUCCESS { get { if (!_ENABLE_IME_SUCCESSReady) { _ENABLE_IME_SUCCESSContent = SGetField<int>(LocalBridgeClazz, "ENABLE_IME_SUCCESS"); _ENABLE_IME_SUCCESSReady = true; } return _ENABLE_IME_SUCCESSContent; } }
             private static int _ENABLE_IME_SUCCESSContent = default;
             private static bool _ENABLE_IME_SUCCESSReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.SoftKeyboardController.html#removeOnShowModeChangedListener(android.accessibilityservice.AccessibilityService.SoftKeyboardController.OnShowModeChangedListener)"/>
@@ -1767,29 +1767,29 @@ namespace Android.Accessibilityservice
             {
                 IExecuteWithSignature("addOnShowModeChangedListener", "(Landroid/accessibilityservice/AccessibilityService$SoftKeyboardController$OnShowModeChangedListener;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
             #region OnShowModeChangedListener implementation
             public partial class OnShowModeChangedListener
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
-
+            
                 #endregion
-
+            
                 #region Fields
-
+            
                 #endregion
-
+            
                 #region Static methods
-
+            
                 #endregion
-
+            
                 #region Instance methods
                 /// <summary>
                 /// Handlers initializer for <see cref="OnShowModeChangedListener"/>
@@ -1799,13 +1799,13 @@ namespace Android.Accessibilityservice
                     AddEventHandler("onShowModeChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnShowModeChangedEventHandler));
 
                 }
-
+                
                 /// <summary>
                 /// Handler for <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.SoftKeyboardController.OnShowModeChangedListener.html#onShowModeChanged(android.accessibilityservice.AccessibilityService.SoftKeyboardController,int)"/>
                 /// </summary>
                 /// <remarks>If <see cref="OnOnShowModeChanged"/> has a value it takes precedence over corresponding class method</remarks>
                 public global::System.Action<Android.Accessibilityservice.AccessibilityService.SoftKeyboardController, int> OnOnShowModeChanged { get; set; } = null;
-
+                
                 bool hasOverrideOnShowModeChanged = true;
                 void OnShowModeChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
                 {
@@ -1814,7 +1814,7 @@ namespace Android.Accessibilityservice
                     methodToExecute.Invoke(data.EventData.GetAt<Android.Accessibilityservice.AccessibilityService.SoftKeyboardController>(0), data.EventData.GetAt<int>(1));
                     data.EventData.TypedEventData.HasOverride = hasOverrideOnShowModeChanged;
                 }
-
+                
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.SoftKeyboardController.OnShowModeChangedListener.html#onShowModeChanged(android.accessibilityservice.AccessibilityService.SoftKeyboardController,int)"/>
                 /// </summary>
@@ -1824,13 +1824,13 @@ namespace Android.Accessibilityservice
                 {
                     hasOverrideOnShowModeChanged = false;
                 }
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
@@ -1839,21 +1839,21 @@ namespace Android.Accessibilityservice
             public partial class OnShowModeChangedListenerDirect
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
-
+            
                 #endregion
-
+            
                 #region Fields
-
+            
                 #endregion
-
+            
                 #region Static methods
-
+            
                 #endregion
-
+            
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.SoftKeyboardController.OnShowModeChangedListener.html#onShowModeChanged(android.accessibilityservice.AccessibilityService.SoftKeyboardController,int)"/>
@@ -1864,20 +1864,20 @@ namespace Android.Accessibilityservice
                 {
                     IExecute("onShowModeChanged", arg0, arg1);
                 }
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1886,21 +1886,21 @@ namespace Android.Accessibilityservice
         public partial class TakeScreenshotCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.TakeScreenshotCallback.html#onFailure(int)"/>
@@ -1918,20 +1918,20 @@ namespace Android.Accessibilityservice
             {
                 IExecuteWithSignature("onSuccess", "(Landroid/accessibilityservice/AccessibilityService$ScreenshotResult;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

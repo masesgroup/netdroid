@@ -40,10 +40,10 @@ namespace Android.Service.Autofill
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FillRequest(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Service.Autofill
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Service.Autofill
     public partial class FillRequest
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#CREATOR"/>
@@ -106,13 +106,13 @@ namespace Android.Service.Autofill
         public static int FLAG_SUPPORTS_FILL_DIALOG { get { if (!_FLAG_SUPPORTS_FILL_DIALOGReady) { _FLAG_SUPPORTS_FILL_DIALOGContent = SGetField<int>(LocalBridgeClazz, "FLAG_SUPPORTS_FILL_DIALOG"); _FLAG_SUPPORTS_FILL_DIALOGReady = true; } return _FLAG_SUPPORTS_FILL_DIALOGContent; } }
         private static int _FLAG_SUPPORTS_FILL_DIALOGContent = default;
         private static bool _FLAG_SUPPORTS_FILL_DIALOGReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getDelayedFillIntentSender()"/>
@@ -187,13 +187,13 @@ namespace Android.Service.Autofill
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

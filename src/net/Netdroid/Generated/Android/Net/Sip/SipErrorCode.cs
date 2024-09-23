@@ -41,10 +41,10 @@ namespace Android.Net.Sip
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SipErrorCode(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Net.Sip
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -75,13 +75,13 @@ namespace Android.Net.Sip
     public partial class SipErrorCode
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#CLIENT_ERROR"/>
@@ -174,9 +174,9 @@ namespace Android.Net.Sip
         public static int TRANSACTION_TERMINTED { get { if (!_TRANSACTION_TERMINTEDReady) { _TRANSACTION_TERMINTEDContent = SGetField<int>(LocalBridgeClazz, "TRANSACTION_TERMINTED"); _TRANSACTION_TERMINTEDReady = true; } return _TRANSACTION_TERMINTEDContent; } }
         private static int _TRANSACTION_TERMINTEDContent = default;
         private static bool _TRANSACTION_TERMINTEDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#toString(int)"/>
@@ -188,17 +188,17 @@ namespace Android.Net.Sip
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(I)Ljava/lang/String;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

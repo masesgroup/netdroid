@@ -42,10 +42,10 @@ namespace Android.Icu.Number
         /// </summary>
         [global::System.Obsolete("NumberRangeFormatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NumberRangeFormatter(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Icu.Number
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region RangeCollapse declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Icu.Number
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RangeCollapse(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Icu.Number
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Icu.Number
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RangeIdentityFallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Icu.Number
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Icu.Number
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RangeIdentityResult(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Icu.Number
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -211,17 +211,17 @@ namespace Android.Icu.Number
     public partial class NumberRangeFormatter
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/NumberRangeFormatter.html#withLocale(android.icu.util.ULocale)"/>
@@ -249,25 +249,25 @@ namespace Android.Icu.Number
         {
             return SExecuteWithSignature<Android.Icu.Number.UnlocalizedNumberRangeFormatter>(LocalBridgeClazz, "with", "()Landroid/icu/number/UnlocalizedNumberRangeFormatter;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
         #region RangeCollapse implementation
         public partial class RangeCollapse
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/number/NumberRangeFormatter.RangeCollapse.html#ALL"/>
@@ -293,9 +293,9 @@ namespace Android.Icu.Number
             public static Android.Icu.Number.NumberRangeFormatter.RangeCollapse UNIT { get { if (!_UNITReady) { _UNITContent = SGetField<Android.Icu.Number.NumberRangeFormatter.RangeCollapse>(LocalBridgeClazz, "UNIT"); _UNITReady = true; } return _UNITContent; } }
             private static Android.Icu.Number.NumberRangeFormatter.RangeCollapse _UNITContent = default;
             private static bool _UNITReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/number/NumberRangeFormatter.RangeCollapse.html#valueOf(java.lang.String)"/>
@@ -314,17 +314,17 @@ namespace Android.Icu.Number
             {
                 return SExecuteWithSignatureArray<Android.Icu.Number.NumberRangeFormatter.RangeCollapse>(LocalBridgeClazz, "values", "()[Landroid/icu/number/NumberRangeFormatter$RangeCollapse;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -333,13 +333,13 @@ namespace Android.Icu.Number
         public partial class RangeIdentityFallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/number/NumberRangeFormatter.RangeIdentityFallback.html#APPROXIMATELY"/>
@@ -365,9 +365,9 @@ namespace Android.Icu.Number
             public static Android.Icu.Number.NumberRangeFormatter.RangeIdentityFallback SINGLE_VALUE { get { if (!_SINGLE_VALUEReady) { _SINGLE_VALUEContent = SGetField<Android.Icu.Number.NumberRangeFormatter.RangeIdentityFallback>(LocalBridgeClazz, "SINGLE_VALUE"); _SINGLE_VALUEReady = true; } return _SINGLE_VALUEContent; } }
             private static Android.Icu.Number.NumberRangeFormatter.RangeIdentityFallback _SINGLE_VALUEContent = default;
             private static bool _SINGLE_VALUEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/number/NumberRangeFormatter.RangeIdentityFallback.html#valueOf(java.lang.String)"/>
@@ -386,17 +386,17 @@ namespace Android.Icu.Number
             {
                 return SExecuteWithSignatureArray<Android.Icu.Number.NumberRangeFormatter.RangeIdentityFallback>(LocalBridgeClazz, "values", "()[Landroid/icu/number/NumberRangeFormatter$RangeIdentityFallback;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -405,13 +405,13 @@ namespace Android.Icu.Number
         public partial class RangeIdentityResult
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/number/NumberRangeFormatter.RangeIdentityResult.html#EQUAL_AFTER_ROUNDING"/>
@@ -431,9 +431,9 @@ namespace Android.Icu.Number
             public static Android.Icu.Number.NumberRangeFormatter.RangeIdentityResult NOT_EQUAL { get { if (!_NOT_EQUALReady) { _NOT_EQUALContent = SGetField<Android.Icu.Number.NumberRangeFormatter.RangeIdentityResult>(LocalBridgeClazz, "NOT_EQUAL"); _NOT_EQUALReady = true; } return _NOT_EQUALContent; } }
             private static Android.Icu.Number.NumberRangeFormatter.RangeIdentityResult _NOT_EQUALContent = default;
             private static bool _NOT_EQUALReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/number/NumberRangeFormatter.RangeIdentityResult.html#valueOf(java.lang.String)"/>
@@ -452,24 +452,24 @@ namespace Android.Icu.Number
             {
                 return SExecuteWithSignatureArray<Android.Icu.Number.NumberRangeFormatter.RangeIdentityResult>(LocalBridgeClazz, "values", "()[Landroid/icu/number/NumberRangeFormatter$RangeIdentityResult;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

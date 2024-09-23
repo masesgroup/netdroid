@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaCas(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region EventListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public EventListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.MediaCas_EventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region EventListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="EventListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.media.MediaCas$EventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -148,10 +148,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PluginDescriptor(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -172,9 +172,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -193,10 +193,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Session(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -217,9 +217,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -266,13 +266,13 @@ namespace Android.Media
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCas.html#PLUGIN_STATUS_PHYSICAL_MODULE_CHANGED"/>
@@ -400,9 +400,9 @@ namespace Android.Media
         public static int SESSION_USAGE_TIMESHIFT { get { if (!_SESSION_USAGE_TIMESHIFTReady) { _SESSION_USAGE_TIMESHIFTContent = SGetField<int>(LocalBridgeClazz, "SESSION_USAGE_TIMESHIFT"); _SESSION_USAGE_TIMESHIFTReady = true; } return _SESSION_USAGE_TIMESHIFTContent; } }
         private static int _SESSION_USAGE_TIMESHIFTContent = default;
         private static bool _SESSION_USAGE_TIMESHIFTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCas.html#enumeratePlugins()"/>
@@ -421,9 +421,9 @@ namespace Android.Media
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSystemIdSupported", "(I)Z", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCas.html#openSession()"/>
@@ -520,29 +520,29 @@ namespace Android.Media
         {
             IExecuteWithSignature("setPrivateData", "([B)V", new object[] { arg0 });
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region EventListener implementation
         public partial class EventListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="EventListener"/>
@@ -555,13 +555,13 @@ namespace Android.Media
                 AddEventHandler("onSessionEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnSessionEventEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaCas.EventListener.html#onEvent(android.media.MediaCas,int,int,byte[])"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnEvent"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.MediaCas, int, int, byte[]> OnOnEvent { get; set; } = null;
-
+            
             bool hasOverrideOnEvent = true;
             void OnEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -570,7 +570,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.MediaCas>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<byte[]>(3));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnEvent;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCas.EventListener.html#onEvent(android.media.MediaCas,int,int,byte[])"/>
             /// </summary>
@@ -593,13 +593,13 @@ namespace Android.Media
             {
                 IExecute("onPluginStatusUpdateDefault", arg0, arg1, arg2);
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaCas.EventListener.html#onPluginStatusUpdate(android.media.MediaCas,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPluginStatusUpdate"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.MediaCas, int, int> OnOnPluginStatusUpdate { get; set; } = null;
-
+            
             bool hasOverrideOnPluginStatusUpdate = true;
             void OnPluginStatusUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -608,7 +608,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.MediaCas>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnPluginStatusUpdate;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCas.EventListener.html#onPluginStatusUpdate(android.media.MediaCas,int,int)"/>
             /// </summary>
@@ -629,13 +629,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onResourceLostDefault", "(Landroid/media/MediaCas;)V", arg0);
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaCas.EventListener.html#onResourceLost(android.media.MediaCas)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnResourceLost"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.MediaCas> OnOnResourceLost { get; set; } = null;
-
+            
             bool hasOverrideOnResourceLost = true;
             void OnResourceLostEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -644,7 +644,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.MediaCas>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnResourceLost;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCas.EventListener.html#onResourceLost(android.media.MediaCas)"/>
             /// </summary>
@@ -667,13 +667,13 @@ namespace Android.Media
             {
                 IExecute("onSessionEventDefault", arg0, arg1, arg2, arg3, arg4);
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaCas.EventListener.html#onSessionEvent(android.media.MediaCas,android.media.MediaCas.Session,int,int,byte[])"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSessionEvent"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.MediaCas, Android.Media.MediaCas.Session, int, int, byte[]> OnOnSessionEvent { get; set; } = null;
-
+            
             bool hasOverrideOnSessionEvent = true;
             void OnSessionEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -682,7 +682,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.MediaCas>(0), data.EventData.GetAt<Android.Media.MediaCas.Session>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<byte[]>(4));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnSessionEvent;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCas.EventListener.html#onSessionEvent(android.media.MediaCas,android.media.MediaCas.Session,int,int,byte[])"/>
             /// </summary>
@@ -696,13 +696,13 @@ namespace Android.Media
             {
                 hasOverrideOnSessionEvent = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -711,21 +711,21 @@ namespace Android.Media
         public partial class EventListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCas.EventListener.html#onEvent(android.media.MediaCas,int,int,byte[])"/>
@@ -768,13 +768,13 @@ namespace Android.Media
             {
                 IExecute("onSessionEvent", arg0, arg1, arg2, arg3, arg4);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -783,21 +783,21 @@ namespace Android.Media
         public partial class PluginDescriptor
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCas.PluginDescriptor.html#getSystemId()"/>
@@ -815,13 +815,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -830,21 +830,21 @@ namespace Android.Media
         public partial class Session
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCas.Session.html#getSessionId()"/>
@@ -901,20 +901,20 @@ namespace Android.Media
             {
                 IExecuteWithSignature("setPrivateData", "([B)V", new object[] { arg0 });
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

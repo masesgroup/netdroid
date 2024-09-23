@@ -40,10 +40,10 @@ namespace Java.Sql
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ClientInfoStatus(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Sql
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Sql
     public partial class ClientInfoStatus
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/ClientInfoStatus.html#REASON_UNKNOWN"/>
@@ -106,9 +106,9 @@ namespace Java.Sql
         public static Java.Sql.ClientInfoStatus REASON_VALUE_TRUNCATED { get { if (!_REASON_VALUE_TRUNCATEDReady) { _REASON_VALUE_TRUNCATEDContent = SGetField<Java.Sql.ClientInfoStatus>(LocalBridgeClazz, "REASON_VALUE_TRUNCATED"); _REASON_VALUE_TRUNCATEDReady = true; } return _REASON_VALUE_TRUNCATEDContent; } }
         private static Java.Sql.ClientInfoStatus _REASON_VALUE_TRUNCATEDContent = default;
         private static bool _REASON_VALUE_TRUNCATEDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/ClientInfoStatus.html#valueOf(java.lang.String)"/>
@@ -127,17 +127,17 @@ namespace Java.Sql
         {
             return SExecuteWithSignatureArray<Java.Sql.ClientInfoStatus>(LocalBridgeClazz, "values", "()[Ljava/sql/ClientInfoStatus;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

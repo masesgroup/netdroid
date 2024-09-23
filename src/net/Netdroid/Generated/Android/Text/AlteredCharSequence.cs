@@ -41,10 +41,10 @@ namespace Android.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AlteredCharSequence(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -75,9 +75,9 @@ namespace Android.Text
     public partial class AlteredCharSequence : Java.Lang.ICharSequence, Android.Text.IGetChars
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Text.AlteredCharSequence"/> to <see cref="Java.Lang.CharSequence"/>
@@ -87,13 +87,13 @@ namespace Android.Text
         /// Converter from <see cref="Android.Text.AlteredCharSequence"/> to <see cref="Android.Text.GetChars"/>
         /// </summary>
         public static implicit operator Android.Text.GetChars(Android.Text.AlteredCharSequence t) => t.Cast<Android.Text.GetChars>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/AlteredCharSequence.html#make(java.lang.CharSequence,char[],int,int)"/>
@@ -108,9 +108,9 @@ namespace Android.Text
         {
             return SExecute<Android.Text.AlteredCharSequence>(LocalBridgeClazz, "make", arg0, arg1, arg2, arg3);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/AlteredCharSequence.html#charAt(int)"/>
@@ -154,13 +154,13 @@ namespace Android.Text
         {
             IExecute("getChars", arg0, arg1, arg2, arg3);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

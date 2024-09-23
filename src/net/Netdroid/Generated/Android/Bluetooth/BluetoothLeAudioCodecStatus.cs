@@ -40,10 +40,10 @@ namespace Android.Bluetooth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BluetoothLeAudioCodecStatus(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Bluetooth
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -87,13 +87,13 @@ namespace Android.Bluetooth
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#CREATOR"/>
@@ -107,13 +107,13 @@ namespace Android.Bluetooth
         public static Java.Lang.String EXTRA_LE_AUDIO_CODEC_STATUS { get { if (!_EXTRA_LE_AUDIO_CODEC_STATUSReady) { _EXTRA_LE_AUDIO_CODEC_STATUSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_LE_AUDIO_CODEC_STATUS"); _EXTRA_LE_AUDIO_CODEC_STATUSReady = true; } return _EXTRA_LE_AUDIO_CODEC_STATUSContent; } }
         private static Java.Lang.String _EXTRA_LE_AUDIO_CODEC_STATUSContent = default;
         private static bool _EXTRA_LE_AUDIO_CODEC_STATUSReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#getInputCodecConfig()"/>
@@ -198,13 +198,13 @@ namespace Android.Bluetooth
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Org.W3c.Dom
         /// </summary>
         [global::System.Obsolete("UserDataHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UserDataHandler(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Org.W3c.Dom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Org.W3c.Dom
     public partial interface IUserDataHandler
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Org.W3c.Dom
     public partial class UserDataHandler : Org.W3c.Dom.IUserDataHandler
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/UserDataHandler.html#NODE_ADOPTED"/>
@@ -132,13 +132,13 @@ namespace Org.W3c.Dom
         public static short NODE_RENAMED { get { if (!_NODE_RENAMEDReady) { _NODE_RENAMEDContent = SGetField<short>(LocalBridgeClazz, "NODE_RENAMED"); _NODE_RENAMEDReady = true; } return _NODE_RENAMEDContent; } }
         private static short _NODE_RENAMEDContent = default;
         private static bool _NODE_RENAMEDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/UserDataHandler.html#handle(short,java.lang.String,java.lang.Object,org.w3c.dom.Node,org.w3c.dom.Node)"/>
@@ -152,13 +152,13 @@ namespace Org.W3c.Dom
         {
             IExecute("handle", arg0, arg1, arg2, arg3, arg4);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

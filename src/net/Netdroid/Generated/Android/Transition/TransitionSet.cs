@@ -40,10 +40,10 @@ namespace Android.Transition
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TransitionSet(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Transition
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -83,13 +83,13 @@ namespace Android.Transition
             : base(arg0, arg1)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/TransitionSet.html#ORDERING_SEQUENTIAL"/>
@@ -103,13 +103,13 @@ namespace Android.Transition
         public static int ORDERING_TOGETHER { get { if (!_ORDERING_TOGETHERReady) { _ORDERING_TOGETHERContent = SGetField<int>(LocalBridgeClazz, "ORDERING_TOGETHER"); _ORDERING_TOGETHERReady = true; } return _ORDERING_TOGETHERContent; } }
         private static int _ORDERING_TOGETHERContent = default;
         private static bool _ORDERING_TOGETHERReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/TransitionSet.html#getTransitionAt(int)"/>
@@ -163,13 +163,13 @@ namespace Android.Transition
         {
             return IExecuteWithSignature<int>("getTransitionCount", "()I");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

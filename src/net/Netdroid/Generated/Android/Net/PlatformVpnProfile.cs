@@ -42,10 +42,10 @@ namespace Android.Net
         /// </summary>
         [global::System.Obsolete("PlatformVpnProfile class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PlatformVpnProfile(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Net
     public partial class PlatformVpnProfile
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/PlatformVpnProfile.html#TYPE_IKEV2_IPSEC_PSK"/>
@@ -102,13 +102,13 @@ namespace Android.Net
         public static int TYPE_IKEV2_IPSEC_USER_PASS { get { if (!_TYPE_IKEV2_IPSEC_USER_PASSReady) { _TYPE_IKEV2_IPSEC_USER_PASSContent = SGetField<int>(LocalBridgeClazz, "TYPE_IKEV2_IPSEC_USER_PASS"); _TYPE_IKEV2_IPSEC_USER_PASSReady = true; } return _TYPE_IKEV2_IPSEC_USER_PASSContent; } }
         private static int _TYPE_IKEV2_IPSEC_USER_PASSContent = default;
         private static bool _TYPE_IKEV2_IPSEC_USER_PASSReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/PlatformVpnProfile.html#areLocalRoutesExcluded()"/>
@@ -142,13 +142,13 @@ namespace Android.Net
         {
             return IExecuteWithSignature<Java.Lang.String>("getTypeString", "()Ljava/lang/String;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

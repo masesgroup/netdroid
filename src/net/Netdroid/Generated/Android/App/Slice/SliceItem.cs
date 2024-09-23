@@ -41,10 +41,10 @@ namespace Android.App.Slice
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SliceItem(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.App.Slice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -75,13 +75,13 @@ namespace Android.App.Slice
     public partial class SliceItem
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#CREATOR"/>
@@ -146,13 +146,13 @@ namespace Android.App.Slice
         public static Java.Lang.String FORMAT_TEXT { get { if (!_FORMAT_TEXTReady) { _FORMAT_TEXTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FORMAT_TEXT"); _FORMAT_TEXTReady = true; } return _FORMAT_TEXTContent; } }
         private static Java.Lang.String _FORMAT_TEXTContent = default;
         private static bool _FORMAT_TEXTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getAction()"/>
@@ -282,13 +282,13 @@ namespace Android.App.Slice
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

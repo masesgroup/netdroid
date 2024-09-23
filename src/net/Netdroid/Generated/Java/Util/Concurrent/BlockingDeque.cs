@@ -42,10 +42,10 @@ namespace Java.Util.Concurrent
         /// </summary>
         [global::System.Obsolete("BlockingDeque class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BlockingDeque(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -90,10 +90,10 @@ namespace Java.Util.Concurrent
         /// </summary>
         [global::System.Obsolete("BlockingDeque class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BlockingDeque(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -124,9 +124,9 @@ namespace Java.Util.Concurrent
     public partial class BlockingDeque
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.BlockingDeque"/> to <see cref="Java.Util.Concurrent.BlockingQueue"/>
@@ -136,17 +136,17 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.BlockingDeque"/> to <see cref="Java.Util.Deque"/>
         /// </summary>
         public static implicit operator Java.Util.Deque(Java.Util.Concurrent.BlockingDeque t) => t.Cast<Java.Util.Deque>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#add(java.lang.Object)"/>
@@ -415,13 +415,13 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("putLast", "(Ljava/lang/Object;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -433,13 +433,13 @@ namespace Java.Util.Concurrent
     public partial interface IBlockingDeque<E>
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -448,9 +448,9 @@ namespace Java.Util.Concurrent
     public partial class BlockingDeque<E> : Java.Util.Concurrent.IBlockingDeque<E>, Java.Util.Concurrent.IBlockingQueue<E>, Java.Util.IDeque<E>
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.BlockingDeque{E}"/> to <see cref="Java.Util.Concurrent.BlockingQueue{E}"/>
@@ -464,17 +464,17 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.BlockingDeque{E}"/> to <see cref="Java.Util.Concurrent.BlockingDeque"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.BlockingDeque(Java.Util.Concurrent.BlockingDeque<E> t) => t.Cast<Java.Util.Concurrent.BlockingDeque>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#add(java.lang.Object)"/>
@@ -743,13 +743,13 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("putLast", "(Ljava/lang/Object;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

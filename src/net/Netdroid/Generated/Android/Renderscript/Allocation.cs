@@ -41,10 +41,10 @@ namespace Android.Renderscript
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Allocation(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Renderscript
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region MipmapControl declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MipmapControl(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -124,7 +124,7 @@ namespace Android.Renderscript
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnBufferAvailableListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.renderscript.Allocation_OnBufferAvailableListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -133,13 +133,13 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnBufferAvailableListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnBufferAvailableListener"/> or its generic type if there is one
@@ -150,14 +150,14 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.renderscript.Allocation$OnBufferAvailableListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -189,13 +189,13 @@ namespace Android.Renderscript
     public partial class Allocation
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#USAGE_GRAPHICS_CONSTANTS"/>
@@ -253,9 +253,9 @@ namespace Android.Renderscript
         public static int USAGE_SHARED { get { if (!_USAGE_SHAREDReady) { _USAGE_SHAREDContent = SGetField<int>(LocalBridgeClazz, "USAGE_SHARED"); _USAGE_SHAREDReady = true; } return _USAGE_SHAREDContent; } }
         private static int _USAGE_SHAREDContent = default;
         private static bool _USAGE_SHAREDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#createCubemapFromBitmap(android.renderscript.RenderScript,android.graphics.Bitmap,android.renderscript.Allocation.MipmapControl,int)"/>
@@ -451,9 +451,9 @@ namespace Android.Renderscript
         {
             return SExecuteArray<Android.Renderscript.Allocation>(LocalBridgeClazz, "createAllocations", arg0, arg1, arg2, arg3);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html#getElement()"/>
@@ -1237,21 +1237,21 @@ namespace Android.Renderscript
         {
             IExecuteWithSignature("syncAll", "(I)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region MipmapControl implementation
         public partial class MipmapControl
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.MipmapControl.html#MIPMAP_FULL"/>
@@ -1274,9 +1274,9 @@ namespace Android.Renderscript
             public static Android.Renderscript.Allocation.MipmapControl MIPMAP_ON_SYNC_TO_TEXTURE { get { if (!_MIPMAP_ON_SYNC_TO_TEXTUREReady) { _MIPMAP_ON_SYNC_TO_TEXTUREContent = SGetField<Android.Renderscript.Allocation.MipmapControl>(LocalBridgeClazz, "MIPMAP_ON_SYNC_TO_TEXTURE"); _MIPMAP_ON_SYNC_TO_TEXTUREReady = true; } return _MIPMAP_ON_SYNC_TO_TEXTUREContent; } }
             private static Android.Renderscript.Allocation.MipmapControl _MIPMAP_ON_SYNC_TO_TEXTUREContent = default;
             private static bool _MIPMAP_ON_SYNC_TO_TEXTUREReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.MipmapControl.html#valueOf(java.lang.String)"/>
@@ -1295,17 +1295,17 @@ namespace Android.Renderscript
             {
                 return SExecuteWithSignatureArray<Android.Renderscript.Allocation.MipmapControl>(LocalBridgeClazz, "values", "()[Landroid/renderscript/Allocation$MipmapControl;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1314,21 +1314,21 @@ namespace Android.Renderscript
         public partial class OnBufferAvailableListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnBufferAvailableListener"/>
@@ -1338,13 +1338,13 @@ namespace Android.Renderscript
                 AddEventHandler("onBufferAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnBufferAvailableEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/renderscript/Allocation.OnBufferAvailableListener.html#onBufferAvailable(android.renderscript.Allocation)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnBufferAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Renderscript.Allocation> OnOnBufferAvailable { get; set; } = null;
-
+            
             bool hasOverrideOnBufferAvailable = true;
             void OnBufferAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1353,7 +1353,7 @@ namespace Android.Renderscript
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Renderscript.Allocation>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnBufferAvailable;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.OnBufferAvailableListener.html#onBufferAvailable(android.renderscript.Allocation)"/>
             /// </summary>
@@ -1363,13 +1363,13 @@ namespace Android.Renderscript
             {
                 hasOverrideOnBufferAvailable = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1378,21 +1378,21 @@ namespace Android.Renderscript
         public partial class OnBufferAvailableListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.OnBufferAvailableListener.html#onBufferAvailable(android.renderscript.Allocation)"/>
@@ -1403,20 +1403,20 @@ namespace Android.Renderscript
             {
                 IExecuteWithSignature("onBufferAvailable", "(Landroid/renderscript/Allocation;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

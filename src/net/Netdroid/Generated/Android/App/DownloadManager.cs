@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DownloadManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Query declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Query(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Request(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -164,13 +164,13 @@ namespace Android.App
     public partial class DownloadManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DownloadManager.html#ERROR_CANNOT_RESUME"/>
@@ -395,9 +395,9 @@ namespace Android.App
         public static Java.Lang.String INTENT_EXTRAS_SORT_BY_SIZE { get { if (!_INTENT_EXTRAS_SORT_BY_SIZEReady) { _INTENT_EXTRAS_SORT_BY_SIZEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INTENT_EXTRAS_SORT_BY_SIZE"); _INTENT_EXTRAS_SORT_BY_SIZEReady = true; } return _INTENT_EXTRAS_SORT_BY_SIZEContent; } }
         private static Java.Lang.String _INTENT_EXTRAS_SORT_BY_SIZEContent = default;
         private static bool _INTENT_EXTRAS_SORT_BY_SIZEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DownloadManager.html#getMaxBytesOverMobile(android.content.Context)"/>
@@ -417,9 +417,9 @@ namespace Android.App
         {
             return SExecuteWithSignature<Java.Lang.Long>(LocalBridgeClazz, "getRecommendedMaxBytesOverMobile", "(Landroid/content/Context;)Ljava/lang/Long;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DownloadManager.html#query(android.app.DownloadManager.Query)"/>
@@ -510,29 +510,29 @@ namespace Android.App
         {
             return IExecuteWithSignature<long>("enqueue", "(Landroid/app/DownloadManager$Request;)J", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Query implementation
         public partial class Query
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/DownloadManager.Query.html#setFilterById(long[])"/>
@@ -552,13 +552,13 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Android.App.DownloadManager.Query>("setFilterByStatus", "(I)Landroid/app/DownloadManager$Query;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -575,13 +575,13 @@ namespace Android.App
                 : base(arg0)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/DownloadManager.Request.html#NETWORK_MOBILE"/>
@@ -619,13 +619,13 @@ namespace Android.App
             public static int VISIBILITY_VISIBLE_NOTIFY_ONLY_COMPLETION { get { if (!_VISIBILITY_VISIBLE_NOTIFY_ONLY_COMPLETIONReady) { _VISIBILITY_VISIBLE_NOTIFY_ONLY_COMPLETIONContent = SGetField<int>(LocalBridgeClazz, "VISIBILITY_VISIBLE_NOTIFY_ONLY_COMPLETION"); _VISIBILITY_VISIBLE_NOTIFY_ONLY_COMPLETIONReady = true; } return _VISIBILITY_VISIBLE_NOTIFY_ONLY_COMPLETIONContent; } }
             private static int _VISIBILITY_VISIBLE_NOTIFY_ONLY_COMPLETIONContent = default;
             private static bool _VISIBILITY_VISIBLE_NOTIFY_ONLY_COMPLETIONReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/DownloadManager.Request.html#addRequestHeader(java.lang.String,java.lang.String)"/>
@@ -776,20 +776,20 @@ namespace Android.App
             {
                 IExecuteWithSignature("allowScanningByMediaScanner", "()V");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

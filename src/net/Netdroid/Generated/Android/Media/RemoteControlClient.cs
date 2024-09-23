@@ -41,10 +41,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RemoteControlClient(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region MetadataEditor declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MetadataEditor(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -124,7 +124,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnGetPlaybackPositionListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.RemoteControlClient_OnGetPlaybackPositionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -133,13 +133,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnGetPlaybackPositionListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnGetPlaybackPositionListener"/> or its generic type if there is one
@@ -150,14 +150,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.media.RemoteControlClient$OnGetPlaybackPositionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -192,7 +192,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnMetadataUpdateListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.RemoteControlClient_OnMetadataUpdateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -201,13 +201,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnMetadataUpdateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnMetadataUpdateListener"/> or its generic type if there is one
@@ -218,14 +218,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.media.RemoteControlClient$OnMetadataUpdateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -260,7 +260,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnPlaybackPositionUpdateListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.RemoteControlClient_OnPlaybackPositionUpdateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -269,13 +269,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnPlaybackPositionUpdateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnPlaybackPositionUpdateListener"/> or its generic type if there is one
@@ -286,14 +286,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.media.RemoteControlClient$OnPlaybackPositionUpdateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -344,13 +344,13 @@ namespace Android.Media
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#FLAG_KEY_MEDIA_FAST_FORWARD"/>
@@ -485,13 +485,13 @@ namespace Android.Media
         public static int PLAYSTATE_STOPPED { get { if (!_PLAYSTATE_STOPPEDReady) { _PLAYSTATE_STOPPEDContent = SGetField<int>(LocalBridgeClazz, "PLAYSTATE_STOPPED"); _PLAYSTATE_STOPPEDReady = true; } return _PLAYSTATE_STOPPEDContent; } }
         private static int _PLAYSTATE_STOPPEDContent = default;
         private static bool _PLAYSTATE_STOPPEDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.html#editMetadata(boolean)"/>
@@ -568,21 +568,21 @@ namespace Android.Media
         {
             IExecuteWithSignature("setTransportControlFlags", "(I)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region MetadataEditor implementation
         public partial class MetadataEditor
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.MetadataEditor.html#BITMAP_KEY_ARTWORK"/>
@@ -591,21 +591,21 @@ namespace Android.Media
             public static int BITMAP_KEY_ARTWORK { get { if (!_BITMAP_KEY_ARTWORKReady) { _BITMAP_KEY_ARTWORKContent = SGetField<int>(LocalBridgeClazz, "BITMAP_KEY_ARTWORK"); _BITMAP_KEY_ARTWORKReady = true; } return _BITMAP_KEY_ARTWORKContent; } }
             private static int _BITMAP_KEY_ARTWORKContent = default;
             private static bool _BITMAP_KEY_ARTWORKReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -614,21 +614,21 @@ namespace Android.Media
         public partial class OnGetPlaybackPositionListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnGetPlaybackPositionListener"/>
@@ -638,13 +638,13 @@ namespace Android.Media
                 AddEventHandler("onGetPlaybackPosition", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnGetPlaybackPositionEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnGetPlaybackPositionListener.html#onGetPlaybackPosition()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGetPlaybackPosition"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<long> OnOnGetPlaybackPosition { get; set; } = null;
-
+            
             bool hasOverrideOnGetPlaybackPosition = true;
             void OnGetPlaybackPositionEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -653,7 +653,7 @@ namespace Android.Media
                 var executionResult = methodToExecute.Invoke();
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnGetPlaybackPosition, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnGetPlaybackPositionListener.html#onGetPlaybackPosition()"/>
             /// </summary>
@@ -663,13 +663,13 @@ namespace Android.Media
             {
                 hasOverrideOnGetPlaybackPosition = false; return default;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -678,21 +678,21 @@ namespace Android.Media
         public partial class OnGetPlaybackPositionListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnGetPlaybackPositionListener.html#onGetPlaybackPosition()"/>
@@ -703,13 +703,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<long>("onGetPlaybackPosition", "()J");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -718,21 +718,21 @@ namespace Android.Media
         public partial class OnMetadataUpdateListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnMetadataUpdateListener"/>
@@ -742,13 +742,13 @@ namespace Android.Media
                 AddEventHandler("onMetadataUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnMetadataUpdateEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnMetadataUpdateListener.html#onMetadataUpdate(int,java.lang.Object)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMetadataUpdate"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int, object> OnOnMetadataUpdate { get; set; } = null;
-
+            
             bool hasOverrideOnMetadataUpdate = true;
             void OnMetadataUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -757,7 +757,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<object>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnMetadataUpdate;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnMetadataUpdateListener.html#onMetadataUpdate(int,java.lang.Object)"/>
             /// </summary>
@@ -768,13 +768,13 @@ namespace Android.Media
             {
                 hasOverrideOnMetadataUpdate = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -783,21 +783,21 @@ namespace Android.Media
         public partial class OnMetadataUpdateListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnMetadataUpdateListener.html#onMetadataUpdate(int,java.lang.Object)"/>
@@ -809,13 +809,13 @@ namespace Android.Media
             {
                 IExecute("onMetadataUpdate", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -824,21 +824,21 @@ namespace Android.Media
         public partial class OnPlaybackPositionUpdateListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnPlaybackPositionUpdateListener"/>
@@ -848,13 +848,13 @@ namespace Android.Media
                 AddEventHandler("onPlaybackPositionUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnPlaybackPositionUpdateEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnPlaybackPositionUpdateListener.html#onPlaybackPositionUpdate(long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPlaybackPositionUpdate"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<long> OnOnPlaybackPositionUpdate { get; set; } = null;
-
+            
             bool hasOverrideOnPlaybackPositionUpdate = true;
             void OnPlaybackPositionUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -863,7 +863,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<long>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnPlaybackPositionUpdate;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnPlaybackPositionUpdateListener.html#onPlaybackPositionUpdate(long)"/>
             /// </summary>
@@ -873,13 +873,13 @@ namespace Android.Media
             {
                 hasOverrideOnPlaybackPositionUpdate = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -888,21 +888,21 @@ namespace Android.Media
         public partial class OnPlaybackPositionUpdateListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/RemoteControlClient.OnPlaybackPositionUpdateListener.html#onPlaybackPositionUpdate(long)"/>
@@ -913,20 +913,20 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onPlaybackPositionUpdate", "(J)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

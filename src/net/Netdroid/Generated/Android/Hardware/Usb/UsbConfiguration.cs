@@ -40,10 +40,10 @@ namespace Android.Hardware.Usb
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UsbConfiguration(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Usb
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Hardware.Usb
     public partial class UsbConfiguration
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#CREATOR"/>
@@ -88,13 +88,13 @@ namespace Android.Hardware.Usb
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getInterface(int)"/>
@@ -103,7 +103,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Android.Hardware.Usb.UsbInterface"/></returns>
         public Android.Hardware.Usb.UsbInterface GetInterface(int arg0)
         {
-            return IExecuteWithSignature<Android.Hardware.Usb.UsbInterface>("getInterface", "(I)Landroid/hardware/usb/UsbInterface;", arg0);
+            return IExecute<Android.Hardware.Usb.UsbInterface>("getInterface", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#isRemoteWakeup()"/>
@@ -111,7 +111,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool IsRemoteWakeup()
         {
-            return IExecuteWithSignature<bool>("isRemoteWakeup", "()Z");
+            return IExecute<bool>("isRemoteWakeup");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#isSelfPowered()"/>
@@ -119,7 +119,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool IsSelfPowered()
         {
-            return IExecuteWithSignature<bool>("isSelfPowered", "()Z");
+            return IExecute<bool>("isSelfPowered");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#describeContents()"/>
@@ -127,7 +127,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getId()"/>
@@ -135,7 +135,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int GetId()
         {
-            return IExecuteWithSignature<int>("getId", "()I");
+            return IExecute<int>("getId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getInterfaceCount()"/>
@@ -143,7 +143,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int GetInterfaceCount()
         {
-            return IExecuteWithSignature<int>("getInterfaceCount", "()I");
+            return IExecute<int>("getInterfaceCount");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getMaxPower()"/>
@@ -151,7 +151,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int GetMaxPower()
         {
-            return IExecuteWithSignature<int>("getMaxPower", "()I");
+            return IExecute<int>("getMaxPower");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getName()"/>
@@ -159,7 +159,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getName");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#writeToParcel(android.os.Parcel,int)"/>
@@ -170,13 +170,13 @@ namespace Android.Hardware.Usb
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

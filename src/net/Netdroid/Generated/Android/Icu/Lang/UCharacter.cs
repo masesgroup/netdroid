@@ -40,10 +40,10 @@ namespace Android.Icu.Lang
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UCharacter(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region BidiPairedBracketType declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("BidiPairedBracketType class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public BidiPairedBracketType(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -130,10 +130,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("DecompositionType class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public DecompositionType(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -154,9 +154,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -177,10 +177,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("EastAsianWidth class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public EastAsianWidth(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -201,9 +201,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -224,10 +224,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("GraphemeClusterBreak class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public GraphemeClusterBreak(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -248,9 +248,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -271,10 +271,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("HangulSyllableType class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public HangulSyllableType(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -295,9 +295,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -318,10 +318,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("IndicPositionalCategory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public IndicPositionalCategory(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -342,9 +342,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -365,10 +365,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("IndicSyllabicCategory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public IndicSyllabicCategory(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -389,9 +389,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -412,10 +412,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("JoiningGroup class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public JoiningGroup(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -436,9 +436,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -459,10 +459,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("JoiningType class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public JoiningType(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -483,9 +483,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -506,10 +506,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("LineBreak class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public LineBreak(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -530,9 +530,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -553,10 +553,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("NumericType class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public NumericType(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -577,9 +577,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -600,10 +600,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("SentenceBreak class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SentenceBreak(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -624,9 +624,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -645,10 +645,10 @@ namespace Android.Icu.Lang
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public UnicodeBlock(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -669,9 +669,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -692,10 +692,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("VerticalOrientation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public VerticalOrientation(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -716,9 +716,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -739,10 +739,10 @@ namespace Android.Icu.Lang
             /// </summary>
             [global::System.Obsolete("WordBreak class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public WordBreak(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -763,9 +763,9 @@ namespace Android.Icu.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -777,13 +777,13 @@ namespace Android.Icu.Lang
     public partial class UCharacter
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.html#MAX_HIGH_SURROGATE"/>
@@ -905,9 +905,9 @@ namespace Android.Icu.Lang
         public static int TITLECASE_NO_LOWERCASE { get { if (!_TITLECASE_NO_LOWERCASEReady) { _TITLECASE_NO_LOWERCASEContent = SGetField<int>(LocalBridgeClazz, "TITLECASE_NO_LOWERCASE"); _TITLECASE_NO_LOWERCASEReady = true; } return _TITLECASE_NO_LOWERCASEContent; } }
         private static int _TITLECASE_NO_LOWERCASEContent = default;
         private static bool _TITLECASE_NO_LOWERCASEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.html#getTypeIterator()"/>
@@ -1896,25 +1896,25 @@ namespace Android.Icu.Lang
         {
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "toUpperCase", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
         #region BidiPairedBracketType implementation
         public partial class BidiPairedBracketType
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.BidiPairedBracketType.html#CLOSE"/>
@@ -1934,21 +1934,21 @@ namespace Android.Icu.Lang
             public static int OPEN { get { if (!_OPENReady) { _OPENContent = SGetField<int>(LocalBridgeClazz, "OPEN"); _OPENReady = true; } return _OPENContent; } }
             private static int _OPENContent = default;
             private static bool _OPENReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1957,13 +1957,13 @@ namespace Android.Icu.Lang
         public partial class DecompositionType
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.DecompositionType.html#CANONICAL"/>
@@ -2073,21 +2073,21 @@ namespace Android.Icu.Lang
             public static int WIDE { get { if (!_WIDEReady) { _WIDEContent = SGetField<int>(LocalBridgeClazz, "WIDE"); _WIDEReady = true; } return _WIDEContent; } }
             private static int _WIDEContent = default;
             private static bool _WIDEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2096,13 +2096,13 @@ namespace Android.Icu.Lang
         public partial class EastAsianWidth
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.EastAsianWidth.html#AMBIGUOUS"/>
@@ -2140,21 +2140,21 @@ namespace Android.Icu.Lang
             public static int WIDE { get { if (!_WIDEReady) { _WIDEContent = SGetField<int>(LocalBridgeClazz, "WIDE"); _WIDEReady = true; } return _WIDEContent; } }
             private static int _WIDEContent = default;
             private static bool _WIDEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2163,13 +2163,13 @@ namespace Android.Icu.Lang
         public partial class GraphemeClusterBreak
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.GraphemeClusterBreak.html#CONTROL"/>
@@ -2279,21 +2279,21 @@ namespace Android.Icu.Lang
             public static int ZWJ { get { if (!_ZWJReady) { _ZWJContent = SGetField<int>(LocalBridgeClazz, "ZWJ"); _ZWJReady = true; } return _ZWJContent; } }
             private static int _ZWJContent = default;
             private static bool _ZWJReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2302,13 +2302,13 @@ namespace Android.Icu.Lang
         public partial class HangulSyllableType
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.HangulSyllableType.html#LEADING_JAMO"/>
@@ -2346,21 +2346,21 @@ namespace Android.Icu.Lang
             public static int VOWEL_JAMO { get { if (!_VOWEL_JAMOReady) { _VOWEL_JAMOContent = SGetField<int>(LocalBridgeClazz, "VOWEL_JAMO"); _VOWEL_JAMOReady = true; } return _VOWEL_JAMOContent; } }
             private static int _VOWEL_JAMOContent = default;
             private static bool _VOWEL_JAMOReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2369,13 +2369,13 @@ namespace Android.Icu.Lang
         public partial class IndicPositionalCategory
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.IndicPositionalCategory.html#BOTTOM"/>
@@ -2473,21 +2473,21 @@ namespace Android.Icu.Lang
             public static int VISUAL_ORDER_LEFT { get { if (!_VISUAL_ORDER_LEFTReady) { _VISUAL_ORDER_LEFTContent = SGetField<int>(LocalBridgeClazz, "VISUAL_ORDER_LEFT"); _VISUAL_ORDER_LEFTReady = true; } return _VISUAL_ORDER_LEFTContent; } }
             private static int _VISUAL_ORDER_LEFTContent = default;
             private static bool _VISUAL_ORDER_LEFTReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2496,13 +2496,13 @@ namespace Android.Icu.Lang
         public partial class IndicSyllabicCategory
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.IndicSyllabicCategory.html#AVAGRAHA"/>
@@ -2720,21 +2720,21 @@ namespace Android.Icu.Lang
             public static int VOWEL_INDEPENDENT { get { if (!_VOWEL_INDEPENDENTReady) { _VOWEL_INDEPENDENTContent = SGetField<int>(LocalBridgeClazz, "VOWEL_INDEPENDENT"); _VOWEL_INDEPENDENTReady = true; } return _VOWEL_INDEPENDENTContent; } }
             private static int _VOWEL_INDEPENDENTContent = default;
             private static bool _VOWEL_INDEPENDENTReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2743,13 +2743,13 @@ namespace Android.Icu.Lang
         public partial class JoiningGroup
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.JoiningGroup.html#AFRICAN_FEH"/>
@@ -3381,21 +3381,21 @@ namespace Android.Icu.Lang
             public static int ZHAIN { get { if (!_ZHAINReady) { _ZHAINContent = SGetField<int>(LocalBridgeClazz, "ZHAIN"); _ZHAINReady = true; } return _ZHAINContent; } }
             private static int _ZHAINContent = default;
             private static bool _ZHAINReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3404,13 +3404,13 @@ namespace Android.Icu.Lang
         public partial class JoiningType
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.JoiningType.html#DUAL_JOINING"/>
@@ -3448,21 +3448,21 @@ namespace Android.Icu.Lang
             public static int TRANSPARENT { get { if (!_TRANSPARENTReady) { _TRANSPARENTContent = SGetField<int>(LocalBridgeClazz, "TRANSPARENT"); _TRANSPARENTReady = true; } return _TRANSPARENTContent; } }
             private static int _TRANSPARENTContent = default;
             private static bool _TRANSPARENTReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3471,13 +3471,13 @@ namespace Android.Icu.Lang
         public partial class LineBreak
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.LineBreak.html#AKSARA"/>
@@ -3773,21 +3773,21 @@ namespace Android.Icu.Lang
             public static int ZWSPACE { get { if (!_ZWSPACEReady) { _ZWSPACEContent = SGetField<int>(LocalBridgeClazz, "ZWSPACE"); _ZWSPACEReady = true; } return _ZWSPACEContent; } }
             private static int _ZWSPACEContent = default;
             private static bool _ZWSPACEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3796,13 +3796,13 @@ namespace Android.Icu.Lang
         public partial class NumericType
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.NumericType.html#DECIMAL"/>
@@ -3828,21 +3828,21 @@ namespace Android.Icu.Lang
             public static int NUMERIC { get { if (!_NUMERICReady) { _NUMERICContent = SGetField<int>(LocalBridgeClazz, "NUMERIC"); _NUMERICReady = true; } return _NUMERICContent; } }
             private static int _NUMERICContent = default;
             private static bool _NUMERICReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3851,13 +3851,13 @@ namespace Android.Icu.Lang
         public partial class SentenceBreak
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.SentenceBreak.html#ATERM"/>
@@ -3949,21 +3949,21 @@ namespace Android.Icu.Lang
             public static int UPPER { get { if (!_UPPERReady) { _UPPERContent = SGetField<int>(LocalBridgeClazz, "UPPER"); _UPPERReady = true; } return _UPPERContent; } }
             private static int _UPPERContent = default;
             private static bool _UPPERReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3972,13 +3972,13 @@ namespace Android.Icu.Lang
         public partial class UnicodeBlock
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.UnicodeBlock.html#ADLAM"/>
@@ -7958,9 +7958,9 @@ namespace Android.Icu.Lang
             public static int ZNAMENNY_MUSICAL_NOTATION_ID { get { if (!_ZNAMENNY_MUSICAL_NOTATION_IDReady) { _ZNAMENNY_MUSICAL_NOTATION_IDContent = SGetField<int>(LocalBridgeClazz, "ZNAMENNY_MUSICAL_NOTATION_ID"); _ZNAMENNY_MUSICAL_NOTATION_IDReady = true; } return _ZNAMENNY_MUSICAL_NOTATION_IDContent; } }
             private static int _ZNAMENNY_MUSICAL_NOTATION_IDContent = default;
             private static bool _ZNAMENNY_MUSICAL_NOTATION_IDReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.UnicodeBlock.html#forName(java.lang.String)"/>
@@ -7989,9 +7989,9 @@ namespace Android.Icu.Lang
             {
                 return SExecuteWithSignature<Android.Icu.Lang.UCharacter.UnicodeBlock>(LocalBridgeClazz, "of", "(I)Landroid/icu/lang/UCharacter$UnicodeBlock;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.UnicodeBlock.html#getID()"/>
@@ -8001,13 +8001,13 @@ namespace Android.Icu.Lang
             {
                 return IExecuteWithSignature<int>("getID", "()I");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -8016,13 +8016,13 @@ namespace Android.Icu.Lang
         public partial class VerticalOrientation
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.VerticalOrientation.html#ROTATED"/>
@@ -8048,21 +8048,21 @@ namespace Android.Icu.Lang
             public static int UPRIGHT { get { if (!_UPRIGHTReady) { _UPRIGHTContent = SGetField<int>(LocalBridgeClazz, "UPRIGHT"); _UPRIGHTReady = true; } return _UPRIGHTContent; } }
             private static int _UPRIGHTContent = default;
             private static bool _UPRIGHTReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -8071,13 +8071,13 @@ namespace Android.Icu.Lang
         public partial class WordBreak
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.WordBreak.html#ALETTER"/>
@@ -8217,28 +8217,28 @@ namespace Android.Icu.Lang
             public static int ZWJ { get { if (!_ZWJReady) { _ZWJContent = SGetField<int>(LocalBridgeClazz, "ZWJ"); _ZWJReady = true; } return _ZWJContent; } }
             private static int _ZWJContent = default;
             private static bool _ZWJReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

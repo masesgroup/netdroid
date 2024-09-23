@@ -42,10 +42,10 @@ namespace Java.Lang.Reflect
         /// </summary>
         [global::System.Obsolete("TypeVariable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TypeVariable(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Lang.Reflect
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -90,10 +90,10 @@ namespace Java.Lang.Reflect
         /// </summary>
         [global::System.Obsolete("TypeVariable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TypeVariable(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Lang.Reflect
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -124,9 +124,9 @@ namespace Java.Lang.Reflect
     public partial class TypeVariable
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Lang.Reflect.TypeVariable"/> to <see cref="Java.Lang.Reflect.Type"/>
@@ -136,17 +136,17 @@ namespace Java.Lang.Reflect
         /// Converter from <see cref="Java.Lang.Reflect.TypeVariable"/> to <see cref="Java.Lang.Reflect.AnnotatedElement"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Reflect.TypeVariable t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/TypeVariable.html#getGenericDeclaration()"/>
@@ -172,13 +172,13 @@ namespace Java.Lang.Reflect
         {
             return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -190,13 +190,13 @@ namespace Java.Lang.Reflect
     public partial interface ITypeVariable<D>
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -205,9 +205,9 @@ namespace Java.Lang.Reflect
     public partial class TypeVariable<D> : Java.Lang.Reflect.ITypeVariable<D>, Java.Lang.Reflect.IType, Java.Lang.Reflect.IAnnotatedElement
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Lang.Reflect.TypeVariable{D}"/> to <see cref="Java.Lang.Reflect.Type"/>
@@ -221,17 +221,17 @@ namespace Java.Lang.Reflect
         /// Converter from <see cref="Java.Lang.Reflect.TypeVariable{D}"/> to <see cref="Java.Lang.Reflect.TypeVariable"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.TypeVariable(Java.Lang.Reflect.TypeVariable<D> t) => t.Cast<Java.Lang.Reflect.TypeVariable>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/TypeVariable.html#getGenericDeclaration()"/>
@@ -257,13 +257,13 @@ namespace Java.Lang.Reflect
         {
             return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

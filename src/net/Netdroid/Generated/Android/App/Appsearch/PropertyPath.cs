@@ -40,10 +40,10 @@ namespace Android.App.Appsearch
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PropertyPath(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Appsearch
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region PathSegment declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App.Appsearch
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PathSegment(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App.Appsearch
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -135,21 +135,21 @@ namespace Android.App.Appsearch
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/PropertyPath.html#get(int)"/>
@@ -176,21 +176,21 @@ namespace Android.App.Appsearch
         {
             return IExecuteWithSignature<Java.Util.Iterator<Android.App.Appsearch.PropertyPath.PathSegment>>("iterator", "()Ljava/util/Iterator;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region PathSegment implementation
         public partial class PathSegment
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/PropertyPath.PathSegment.html#NON_REPEATED_CARDINALITY"/>
@@ -198,9 +198,9 @@ namespace Android.App.Appsearch
             public static int NON_REPEATED_CARDINALITY { get { if (!_NON_REPEATED_CARDINALITYReady) { _NON_REPEATED_CARDINALITYContent = SGetField<int>(LocalBridgeClazz, "NON_REPEATED_CARDINALITY"); _NON_REPEATED_CARDINALITYReady = true; } return _NON_REPEATED_CARDINALITYContent; } }
             private static int _NON_REPEATED_CARDINALITYContent = default;
             private static bool _NON_REPEATED_CARDINALITYReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/PropertyPath.PathSegment.html#create(java.lang.String,int)"/>
@@ -221,9 +221,9 @@ namespace Android.App.Appsearch
             {
                 return SExecuteWithSignature<Android.App.Appsearch.PropertyPath.PathSegment>(LocalBridgeClazz, "create", "(Ljava/lang/String;)Landroid/app/appsearch/PropertyPath$PathSegment;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/PropertyPath.PathSegment.html#getPropertyIndex()"/>
@@ -241,20 +241,20 @@ namespace Android.App.Appsearch
             {
                 return IExecuteWithSignature<Java.Lang.String>("getPropertyName", "()Ljava/lang/String;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Companion.Virtual
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public VirtualDeviceManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Companion.Virtual
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region VirtualDeviceListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Companion.Virtual
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public VirtualDeviceListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.companion.virtual.VirtualDeviceManager_VirtualDeviceListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Companion.Virtual
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region VirtualDeviceListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="VirtualDeviceListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Companion.Virtual
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.companion.virtual.VirtualDeviceManager$VirtualDeviceListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -141,21 +141,21 @@ namespace Android.Companion.Virtual
     public partial class VirtualDeviceManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDeviceManager.html#getVirtualDevice(int)"/>
@@ -191,29 +191,29 @@ namespace Android.Companion.Virtual
         {
             IExecuteWithSignature("unregisterVirtualDeviceListener", "(Landroid/companion/virtual/VirtualDeviceManager$VirtualDeviceListener;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region VirtualDeviceListener implementation
         public partial class VirtualDeviceListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="VirtualDeviceListener"/>
@@ -233,13 +233,13 @@ namespace Android.Companion.Virtual
             {
                 IExecuteWithSignature("onVirtualDeviceClosedDefault", "(I)V", arg0);
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener.html#onVirtualDeviceClosed(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnVirtualDeviceClosed"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnVirtualDeviceClosed { get; set; } = null;
-
+            
             bool hasOverrideOnVirtualDeviceClosed = true;
             void OnVirtualDeviceClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -248,7 +248,7 @@ namespace Android.Companion.Virtual
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnVirtualDeviceClosed;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener.html#onVirtualDeviceClosed(int)"/>
             /// </summary>
@@ -267,13 +267,13 @@ namespace Android.Companion.Virtual
             {
                 IExecuteWithSignature("onVirtualDeviceCreatedDefault", "(I)V", arg0);
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener.html#onVirtualDeviceCreated(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnVirtualDeviceCreated"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnVirtualDeviceCreated { get; set; } = null;
-
+            
             bool hasOverrideOnVirtualDeviceCreated = true;
             void OnVirtualDeviceCreatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -282,7 +282,7 @@ namespace Android.Companion.Virtual
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnVirtualDeviceCreated;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener.html#onVirtualDeviceCreated(int)"/>
             /// </summary>
@@ -292,13 +292,13 @@ namespace Android.Companion.Virtual
             {
                 hasOverrideOnVirtualDeviceCreated = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -307,21 +307,21 @@ namespace Android.Companion.Virtual
         public partial class VirtualDeviceListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/companion/virtual/VirtualDeviceManager.VirtualDeviceListener.html#onVirtualDeviceClosed(int)"/>
@@ -339,20 +339,20 @@ namespace Android.Companion.Virtual
             {
                 IExecuteWithSignature("onVirtualDeviceCreated", "(I)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

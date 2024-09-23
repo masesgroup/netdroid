@@ -40,10 +40,10 @@ namespace Android.Media.Midi
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MidiManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Midi
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region DeviceCallback declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media.Midi
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DeviceCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media.Midi
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -121,7 +121,7 @@ namespace Android.Media.Midi
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnDeviceOpenedListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.midi.MidiManager_OnDeviceOpenedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -130,13 +130,13 @@ namespace Android.Media.Midi
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnDeviceOpenedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnDeviceOpenedListener"/> or its generic type if there is one
@@ -147,14 +147,14 @@ namespace Android.Media.Midi
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.media.midi.MidiManager$OnDeviceOpenedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -186,13 +186,13 @@ namespace Android.Media.Midi
     public partial class MidiManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiManager.html#TRANSPORT_MIDI_BYTE_STREAM"/>
@@ -206,13 +206,13 @@ namespace Android.Media.Midi
         public static int TRANSPORT_UNIVERSAL_MIDI_PACKETS { get { if (!_TRANSPORT_UNIVERSAL_MIDI_PACKETSReady) { _TRANSPORT_UNIVERSAL_MIDI_PACKETSContent = SGetField<int>(LocalBridgeClazz, "TRANSPORT_UNIVERSAL_MIDI_PACKETS"); _TRANSPORT_UNIVERSAL_MIDI_PACKETSReady = true; } return _TRANSPORT_UNIVERSAL_MIDI_PACKETSContent; } }
         private static int _TRANSPORT_UNIVERSAL_MIDI_PACKETSContent = default;
         private static bool _TRANSPORT_UNIVERSAL_MIDI_PACKETSReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiManager.html#getDevices()"/>
@@ -280,29 +280,29 @@ namespace Android.Media.Midi
         {
             IExecuteWithSignature("unregisterDeviceCallback", "(Landroid/media/midi/MidiManager$DeviceCallback;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region DeviceCallback implementation
         public partial class DeviceCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/midi/MidiManager.DeviceCallback.html#onDeviceAdded(android.media.midi.MidiDeviceInfo)"/>
@@ -328,13 +328,13 @@ namespace Android.Media.Midi
             {
                 IExecuteWithSignature("onDeviceStatusChanged", "(Landroid/media/midi/MidiDeviceStatus;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -343,21 +343,21 @@ namespace Android.Media.Midi
         public partial class OnDeviceOpenedListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnDeviceOpenedListener"/>
@@ -367,13 +367,13 @@ namespace Android.Media.Midi
                 AddEventHandler("onDeviceOpened", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDeviceOpenedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/midi/MidiManager.OnDeviceOpenedListener.html#onDeviceOpened(android.media.midi.MidiDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDeviceOpened"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.Midi.MidiDevice> OnOnDeviceOpened { get; set; } = null;
-
+            
             bool hasOverrideOnDeviceOpened = true;
             void OnDeviceOpenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -382,7 +382,7 @@ namespace Android.Media.Midi
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.Midi.MidiDevice>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDeviceOpened;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/midi/MidiManager.OnDeviceOpenedListener.html#onDeviceOpened(android.media.midi.MidiDevice)"/>
             /// </summary>
@@ -391,13 +391,13 @@ namespace Android.Media.Midi
             {
                 hasOverrideOnDeviceOpened = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -406,21 +406,21 @@ namespace Android.Media.Midi
         public partial class OnDeviceOpenedListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/midi/MidiManager.OnDeviceOpenedListener.html#onDeviceOpened(android.media.midi.MidiDevice)"/>
@@ -430,20 +430,20 @@ namespace Android.Media.Midi
             {
                 IExecuteWithSignature("onDeviceOpened", "(Landroid/media/midi/MidiDevice;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
