@@ -16,6 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JNet;
 using System;
 using System.Collections.Generic;
 using System.Runtime;
@@ -25,7 +26,7 @@ namespace MASES.Netdroid
     /// <summary>
     /// Public entry point of <see cref="NetdroidCore{T}"/>
     /// </summary>
-    public abstract class NetdroidCore<T> : NetdroidCoreBase<T> where T : NetdroidCore<T>
+    public abstract class NetdroidCore<T> : JNetCoreBase<T> where T : NetdroidCore<T>
     {
         #region Initialization
         /// <summary>

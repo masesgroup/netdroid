@@ -15,7 +15,7 @@
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(GITHUB_SIMPLIFIED_GENERATION)' == 'true'">
-		<DefineConstants>$(DefineConstants);NETDROID_SIMPLIFIED_GENERATION</DefineConstants>
+		<DefineConstants>$(DefineConstants);JNET_SIMPLIFIED_GENERATION</DefineConstants>
 	</PropertyGroup>
 	<ItemGroup Condition="True">
 		<netdroidcore_jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
@@ -29,62 +29,52 @@
 	<ItemGroup>
 		<None Include="mases.netdroid.targets" Pack="true" PackagePath="build" />
 		<None Include="..\..\..\jars\*.jar" Pack="true" PackagePath="build\jars" />
-		<Compile Remove="Generated\Java\Util\Function\AllPackageClasses.cs" />
-		<Compile Remove="Generated\Java\Util\Function\BiConsumer.cs" />
-		<Compile Remove="Generated\Java\Util\Function\BiFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\BinaryOperator.cs" />
-		<Compile Remove="Generated\Java\Util\Function\BiPredicate.cs" />
-		<Compile Remove="Generated\Java\Util\Function\BooleanSupplier.cs" />
-		<Compile Remove="Generated\Java\Util\Function\Consumer.cs" />
-		<Compile Remove="Generated\Java\Util\Function\DoubleBinaryOperator.cs" />
-		<Compile Remove="Generated\Java\Util\Function\DoubleConsumer.cs" />
-		<Compile Remove="Generated\Java\Util\Function\DoubleFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\DoublePredicate.cs" />
-		<Compile Remove="Generated\Java\Util\Function\DoubleSupplier.cs" />
-		<Compile Remove="Generated\Java\Util\Function\DoubleToIntFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\DoubleToLongFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\DoubleUnaryOperator.cs" />
-		<Compile Remove="Generated\Java\Util\Function\Function.cs" />
-		<Compile Remove="Generated\Java\Util\Function\IntBinaryOperator.cs" />
-		<Compile Remove="Generated\Java\Util\Function\IntConsumer.cs" />
-		<Compile Remove="Generated\Java\Util\Function\IntFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\IntPredicate.cs" />
-		<Compile Remove="Generated\Java\Util\Function\IntSupplier.cs" />
-		<Compile Remove="Generated\Java\Util\Function\IntToDoubleFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\IntToLongFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\IntUnaryOperator.cs" />
-		<Compile Remove="Generated\Java\Util\Function\LongBinaryOperator.cs" />
-		<Compile Remove="Generated\Java\Util\Function\LongConsumer.cs" />
-		<Compile Remove="Generated\Java\Util\Function\LongFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\LongPredicate.cs" />
-		<Compile Remove="Generated\Java\Util\Function\LongSupplier.cs" />
-		<Compile Remove="Generated\Java\Util\Function\LongToDoubleFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\LongToIntFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\LongUnaryOperator.cs" />
-		<Compile Remove="Generated\Java\Util\Function\ObjDoubleConsumer.cs" />
-		<Compile Remove="Generated\Java\Util\Function\ObjIntConsumer.cs" />
-		<Compile Remove="Generated\Java\Util\Function\ObjLongConsumer.cs" />
-		<Compile Remove="Generated\Java\Util\Function\Predicate.cs" />
-		<Compile Remove="Generated\Java\Util\Function\Supplier.cs" />
-		<Compile Remove="Generated\Java\Util\Function\ToDoubleBiFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\ToDoubleFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\ToIntBiFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\ToIntFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\ToLongBiFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\ToLongFunction.cs" />
-		<Compile Remove="Generated\Java\Util\Function\UnaryOperator.cs" />
 		<None Include="..\..\documentation\articles\usage.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(GITHUB_SIMPLIFIED_GENERATION)' == 'true'">
 		<Compile Remove="Developed\**" />
+		<Compile Remove="DevelopedJNet\**" />
 		<Compile Remove="Generated\**" />
 		<Compile Remove="Specific\**" />
+		<Compile Remove="SpecificJNet\**" />
 		<EmbeddedResource Remove="Developed\**" />
+		<EmbeddedResource Remove="DevelopedJNet\**" />
 		<EmbeddedResource Remove="Generated\**" />
 		<EmbeddedResource Remove="Specific\**" />
+		<EmbeddedResource Remove="SpecificJNet\**" />
 		<None Remove="Developed\**" />
+		<None Remove="DevelopedJNet\**" />
 		<None Remove="Generated\**" />
 		<None Remove="Specific\**" />
+		<None Remove="SpecificJNet\**" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(GITHUB_SIMPLIFIED_GENERATION)' != 'true'">
+		<Compile Remove="Generated\Java\Util\Function\**" />
+		<None Remove="Generated\Java\Util\Function\**" />
+		<Compile Remove="DevelopedJNet\Java\Lang\*Error.cs" />
+		<None Remove="DevelopedJNet\Java\Lang\*Error.cs" />
+		<Compile Remove="DevelopedJNet\Java\Lang\*Exception.cs" />
+		<None Remove="DevelopedJNet\Java\Lang\*Exception.cs" />
+		<Compile Remove="DevelopedJNet\Java\Lang\Compiler.cs" />
+		<Compile Remove="DevelopedJNet\Java\Lang\Reflect\AccessibleObject.cs" />
+		<Compile Remove="DevelopedJNet\Java\Util\AbstractList.cs" />
+		<Compile Remove="DevelopedJNet\Java\Util\Collections.cs" />
+		<Compile Remove="DevelopedJNet\Java\Util\Date.cs" />
+		<Compile Remove="DevelopedJNet\Javax\Management\**" />
+		<Compile Remove="DevelopedJNet\Javax\Naming\**" />
+		<Compile Remove="DevelopedJNet\Javax\Swing\**" />
+		<Compile Remove="DevelopedJNet\Java\Awt\**" />
+		<Compile Remove="DevelopedJNet\Java\Beans\**" />
+		<EmbeddedResource Remove="DevelopedJNet\Javax\Management\**" />
+		<EmbeddedResource Remove="DevelopedJNet\Javax\Naming\**" />
+		<EmbeddedResource Remove="DevelopedJNet\Javax\Swing\**" />
+		<EmbeddedResource Remove="DevelopedJNet\Java\Awt\**" />
+		<EmbeddedResource Remove="DevelopedJNet\Java\Beans\**" />
+		<None Remove="DevelopedJNet\Javax\Management\**" />
+		<None Remove="DevelopedJNet\Javax\Naming\**" />
+		<None Remove="DevelopedJNet\Javax\Swing\**" />
+		<None Remove="DevelopedJNet\Java\Awt\**" />
+		<None Remove="DevelopedJNet\Java\Beans\**" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="MASES.CLIParser" Version="3.2.1" />

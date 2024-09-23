@@ -65,6 +65,11 @@ jobs:
     needs: check_changes
     if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      packages: write
+      contents: read
+      attestations: write
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:    
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -118,6 +123,7 @@ jobs:
             ghcr.io/${{ github.repository_owner }}/netdroid_sdk
 
       - name: Build and push
+        id: push
         uses: docker/build-push-action@v6
         with:
           build-args: NETDROID_DOCKER_SDK_VERSION_ARG=35
@@ -127,11 +133,26 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          provenance: true
+          sbom: true
+          
+      - name: Attest Docker Hub
+        uses: actions/attest-build-provenance@v1
+        id: attest
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/jnet
+          subject-digest: ${{ steps.push.outputs.digest }}
+          push-to-registry: true
 
   build_container_netdroid:
     needs: check_changes
     if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      packages: write
+      contents: read
+      attestations: write
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:    
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -185,6 +206,7 @@ jobs:
             ghcr.io/${{ github.repository_owner }}/netdroid
 
       - name: Build and push
+        id: push
         uses: docker/build-push-action@v6
         with:
           build-args: NETDROID_DOCKER_SDK_VERSION_ARG=35
@@ -194,6 +216,16 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          provenance: true
+          sbom: true
+          
+      - name: Attest Docker Hub
+        uses: actions/attest-build-provenance@v1
+        id: attest
+        with:
+          subject-name: ghcr.io/${{ github.repository_owner }}/jnet
+          subject-digest: ${{ steps.push.outputs.digest }}
+          push-to-registry: true
 
   # Now run "build_windows"
   build_windows:
