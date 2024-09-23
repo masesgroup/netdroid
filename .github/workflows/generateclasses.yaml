@@ -17,7 +17,7 @@ on:
         required: true
         default: false
         type: boolean
-      ContinueOnLatestJNetReflectorError:
+      ContinueOnCompilationError:
         description: 'Shall continue execution in case of failure of build from latest unpublished version of JNetReflector'
         required: true
         default: false
@@ -117,28 +117,19 @@ jobs:
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
 
-<<<<<<< Updated upstream
-=======
       - name: Pre compile
-        continue-on-error: ${{ inputs.ContinueOnLatestJNetReflectorError == true }}
+        continue-on-error: ${{ inputs.ContinueOnCompilationError == true }}
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src/net/Netdroid/Netdroid.csproj
         env:
           GITHUB_SIMPLIFIED_GENERATION: true
 
->>>>>>> Stashed changes
       - name: Try compilation of Jars
-        continue-on-error: ${{ inputs.ContinueOnLatestJNetReflectorError == true }}
-        if: ${{ inputs.UseLatestJNetReflector == true }}
+        continue-on-error: ${{ inputs.ContinueOnCompilationError == true }}
         run: mvn --file ./src/jvm/netdroid/pom.xml --no-transfer-progress package
 
       - name: Try compilation of C#
-        continue-on-error: ${{ inputs.ContinueOnLatestJNetReflectorError == true }}
-<<<<<<< Updated upstream
-        if: ${{ inputs.UseLatestJNetReflector == true }}
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\Netdroid.sln
-=======
+        continue-on-error: ${{ inputs.ContinueOnCompilationError == true }}
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src/net/Netdroid.sln
->>>>>>> Stashed changes
 
       - name: Request a PR to commit changes made with unpublished version of JNetReflector
         if: ${{ github.repository_owner == 'masesgroup' && inputs.GeneratePR == true && inputs.UseLatestJNetReflector == true }} #do not push any changes outside main repo or GeneratePR is false
