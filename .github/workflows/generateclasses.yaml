@@ -45,7 +45,7 @@ jobs:
 
       - name: Clear C# generated files
         shell: pwsh
-        run: Remove-Item ./src/net/Netdroid/Generated\* -Recurse -Force -Exclude README.md
+        run: Remove-Item ./src/net/Netdroid/Generated/* -Recurse -Force -Exclude README.md
 
       - name: Clear Java generated files
         shell: pwsh
