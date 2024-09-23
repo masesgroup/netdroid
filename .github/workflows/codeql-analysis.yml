@@ -72,7 +72,7 @@ jobs:
     needs: check_changes
     if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
     name: Analyze
-    runs-on: windows-2022
+    runs-on: ubuntu-latest
     permissions:
       actions: read
       contents: read
