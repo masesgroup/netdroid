@@ -17,7 +17,7 @@ on:
 jobs:
   build_documentation:
     # The type of runner that the job will run on
-    runs-on: windows-2022
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -32,14 +32,15 @@ jobs:
           fetch-depth: '1'
           submodules: 'true'
 
-      - name: Clear documentation folder 
-        run: Remove-Item .\docs\* -Recurse -Force -Exclude _config.yml,CNAME
+      - name: Clear documentation folder
+        shell: pwsh
+        run: Remove-Item ./docs/* -Recurse -Force -Exclude _config.yml,CNAME
 
       - run: dotnet tool update -g docfx
 
       - name: Build documentation
         run: |
-          cd src\documentation
+          cd src/documentation
           docfx
 
       - name: Extract commit SHA
