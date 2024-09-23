@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BugreportManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region BugreportCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Os
             /// </summary>
             [global::System.Obsolete("BugreportCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public BugreportCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -121,21 +121,21 @@ namespace Android.Os
     public partial class BugreportManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BugreportManager.html#cancelBugreport()"/>
@@ -154,21 +154,21 @@ namespace Android.Os
         {
             IExecute("startConnectivityBugreport", arg0, arg1, arg2);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region BugreportCallback implementation
         public partial class BugreportCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/BugreportManager.BugreportCallback.html#BUGREPORT_ERROR_ANOTHER_REPORT_IN_PROGRESS"/>
@@ -206,13 +206,13 @@ namespace Android.Os
             public static int BUGREPORT_ERROR_USER_DENIED_CONSENT { get { if (!_BUGREPORT_ERROR_USER_DENIED_CONSENTReady) { _BUGREPORT_ERROR_USER_DENIED_CONSENTContent = SGetField<int>(LocalBridgeClazz, "BUGREPORT_ERROR_USER_DENIED_CONSENT"); _BUGREPORT_ERROR_USER_DENIED_CONSENTReady = true; } return _BUGREPORT_ERROR_USER_DENIED_CONSENTContent; } }
             private static int _BUGREPORT_ERROR_USER_DENIED_CONSENTContent = default;
             private static bool _BUGREPORT_ERROR_USER_DENIED_CONSENTReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/BugreportManager.BugreportCallback.html#onEarlyReportFinished()"/>
@@ -244,20 +244,20 @@ namespace Android.Os
             {
                 IExecuteWithSignature("onProgress", "(F)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

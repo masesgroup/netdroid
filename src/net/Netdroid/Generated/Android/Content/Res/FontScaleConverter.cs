@@ -42,10 +42,10 @@ namespace Android.Content.Res
         /// </summary>
         [global::System.Obsolete("FontScaleConverter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FontScaleConverter(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Content.Res
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Content.Res
     public partial interface IFontScaleConverter
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -94,17 +94,17 @@ namespace Android.Content.Res
     public partial class FontScaleConverter : Android.Content.Res.IFontScaleConverter
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/FontScaleConverter.html#forScale(float)"/>
@@ -113,7 +113,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Content.Res.FontScaleConverter"/></returns>
         public static Android.Content.Res.FontScaleConverter ForScale(float arg0)
         {
-            return SExecuteWithSignature<Android.Content.Res.FontScaleConverter>(LocalBridgeClazz, "forScale", "(F)Landroid/content/res/FontScaleConverter;", arg0);
+            return SExecute<Android.Content.Res.FontScaleConverter>(LocalBridgeClazz, "forScale", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/FontScaleConverter.html#isNonLinearFontScalingActive(float)"/>
@@ -122,11 +122,11 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public static bool IsNonLinearFontScalingActive(float arg0)
         {
-            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isNonLinearFontScalingActive", "(F)Z", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isNonLinearFontScalingActive", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/FontScaleConverter.html#convertDpToSp(float)"/>
@@ -135,7 +135,7 @@ namespace Android.Content.Res
         /// <returns><see cref="float"/></returns>
         public float ConvertDpToSp(float arg0)
         {
-            return IExecuteWithSignature<float>("convertDpToSp", "(F)F", arg0);
+            return IExecute<float>("convertDpToSp", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/FontScaleConverter.html#convertSpToDp(float)"/>
@@ -144,15 +144,15 @@ namespace Android.Content.Res
         /// <returns><see cref="float"/></returns>
         public float ConvertSpToDp(float arg0)
         {
-            return IExecuteWithSignature<float>("convertSpToDp", "(F)F", arg0);
+            return IExecute<float>("convertSpToDp", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

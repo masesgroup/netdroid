@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AlphabeticIndex(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Bucket declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Bucket(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,7 +105,7 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
             #region LabelType declaration
             /// <summary>
@@ -122,10 +122,10 @@ namespace Android.Icu.Text
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public LabelType(params object[] args) : base(args) { }
-
+            
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -146,9 +146,9 @@ namespace Android.Icu.Text
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-
+            
                 // TODO: complete the class
-
+            
             }
             #endregion
 
@@ -172,10 +172,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Bucket(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -196,7 +196,7 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
             #region LabelType declaration
             /// <summary>
@@ -213,10 +213,10 @@ namespace Android.Icu.Text
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public LabelType(params object[] args) : base(args) { }
-
+            
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -237,9 +237,9 @@ namespace Android.Icu.Text
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-
+            
                 // TODO: complete the class
-
+            
             }
             #endregion
 
@@ -262,10 +262,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ImmutableIndex(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -286,9 +286,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -308,10 +308,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ImmutableIndex(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -332,9 +332,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -353,10 +353,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Record(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -377,9 +377,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -399,10 +399,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Record(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -423,9 +423,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -449,10 +449,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AlphabeticIndex(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -473,7 +473,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -507,21 +507,21 @@ namespace Android.Icu.Text
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#addLabels(android.icu.text.UnicodeSet)"/>
@@ -693,29 +693,29 @@ namespace Android.Icu.Text
         {
             return IExecuteWithSignature<Java.Util.List>("getBucketLabels", "()Ljava/util/List;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Bucket implementation
         public partial class Bucket
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#getLabelType()"/>
@@ -749,21 +749,21 @@ namespace Android.Icu.Text
             {
                 return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
             #region LabelType implementation
             public partial class LabelType
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
-
+            
                 #endregion
-
+            
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.LabelType.html#INFLOW"/>
@@ -789,9 +789,9 @@ namespace Android.Icu.Text
                 public static Android.Icu.Text.AlphabeticIndex.Bucket.LabelType UNDERFLOW { get { if (!_UNDERFLOWReady) { _UNDERFLOWContent = SGetField<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>(LocalBridgeClazz, "UNDERFLOW"); _UNDERFLOWReady = true; } return _UNDERFLOWContent; } }
                 private static Android.Icu.Text.AlphabeticIndex.Bucket.LabelType _UNDERFLOWContent = default;
                 private static bool _UNDERFLOWReady = false; // this is used because in case of generics 
-
+            
                 #endregion
-
+            
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.LabelType.html#valueOf(java.lang.String)"/>
@@ -810,24 +810,24 @@ namespace Android.Icu.Text
                 {
                     return SExecuteWithSignatureArray<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>(LocalBridgeClazz, "values", "()[Landroid/icu/text/AlphabeticIndex$Bucket$LabelType;");
                 }
-
+            
                 #endregion
-
+            
                 #region Instance methods
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -836,25 +836,25 @@ namespace Android.Icu.Text
         public partial class Bucket<V>
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Icu.Text.AlphabeticIndex.Bucket{V}"/> to <see cref="Android.Icu.Text.AlphabeticIndex.Bucket"/>
             /// </summary>
             public static implicit operator Android.Icu.Text.AlphabeticIndex.Bucket(Android.Icu.Text.AlphabeticIndex.Bucket<V> t) => t.Cast<Android.Icu.Text.AlphabeticIndex.Bucket>();
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#getLabelType()"/>
@@ -888,21 +888,21 @@ namespace Android.Icu.Text
             {
                 return IExecuteWithSignature<Java.Util.Iterator<Android.Icu.Text.AlphabeticIndex.Record<V>>>("iterator", "()Ljava/util/Iterator;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
             #region LabelType implementation
             public partial class LabelType
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
-
+            
                 #endregion
-
+            
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.LabelType.html#INFLOW"/>
@@ -928,9 +928,9 @@ namespace Android.Icu.Text
                 public static Android.Icu.Text.AlphabeticIndex.Bucket.LabelType UNDERFLOW { get { if (!_UNDERFLOWReady) { _UNDERFLOWContent = SGetField<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>(LocalBridgeClazz, "UNDERFLOW"); _UNDERFLOWReady = true; } return _UNDERFLOWContent; } }
                 private static Android.Icu.Text.AlphabeticIndex.Bucket.LabelType _UNDERFLOWContent = default;
                 private static bool _UNDERFLOWReady = false; // this is used because in case of generics 
-
+            
                 #endregion
-
+            
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.LabelType.html#valueOf(java.lang.String)"/>
@@ -949,24 +949,24 @@ namespace Android.Icu.Text
                 {
                     return SExecuteWithSignatureArray<Android.Icu.Text.AlphabeticIndex.Bucket.LabelType>(LocalBridgeClazz, "values", "()[Landroid/icu/text/AlphabeticIndex$Bucket$LabelType;");
                 }
-
+            
                 #endregion
-
+            
                 #region Instance methods
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -975,21 +975,21 @@ namespace Android.Icu.Text
         public partial class ImmutableIndex
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.ImmutableIndex.html#getBucket(int)"/>
@@ -1025,13 +1025,13 @@ namespace Android.Icu.Text
             {
                 return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1040,25 +1040,25 @@ namespace Android.Icu.Text
         public partial class ImmutableIndex<V>
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Icu.Text.AlphabeticIndex.ImmutableIndex{V}"/> to <see cref="Android.Icu.Text.AlphabeticIndex.ImmutableIndex"/>
             /// </summary>
             public static implicit operator Android.Icu.Text.AlphabeticIndex.ImmutableIndex(Android.Icu.Text.AlphabeticIndex.ImmutableIndex<V> t) => t.Cast<Android.Icu.Text.AlphabeticIndex.ImmutableIndex>();
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.ImmutableIndex.html#getBucket(int)"/>
@@ -1094,13 +1094,13 @@ namespace Android.Icu.Text
             {
                 return IExecuteWithSignature<Java.Util.Iterator<Android.Icu.Text.AlphabeticIndex.Bucket<V>>>("iterator", "()Ljava/util/Iterator;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1109,21 +1109,21 @@ namespace Android.Icu.Text
         public partial class Record
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Record.html#getName()"/>
@@ -1141,13 +1141,13 @@ namespace Android.Icu.Text
             {
                 return IExecuteWithSignature("getData", "()Ljava/lang/Object;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1156,25 +1156,25 @@ namespace Android.Icu.Text
         public partial class Record<V>
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Icu.Text.AlphabeticIndex.Record{V}"/> to <see cref="Android.Icu.Text.AlphabeticIndex.Record"/>
             /// </summary>
             public static implicit operator Android.Icu.Text.AlphabeticIndex.Record(Android.Icu.Text.AlphabeticIndex.Record<V> t) => t.Cast<Android.Icu.Text.AlphabeticIndex.Record>();
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Record.html#getName()"/>
@@ -1192,20 +1192,20 @@ namespace Android.Icu.Text
             {
                 return IExecuteWithSignature<V>("getData", "()Ljava/lang/Object;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -1238,25 +1238,25 @@ namespace Android.Icu.Text
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Text.AlphabeticIndex{V}"/> to <see cref="Android.Icu.Text.AlphabeticIndex"/>
         /// </summary>
         public static implicit operator Android.Icu.Text.AlphabeticIndex(Android.Icu.Text.AlphabeticIndex<V> t) => t.Cast<Android.Icu.Text.AlphabeticIndex>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#addLabels(android.icu.text.UnicodeSet)"/>
@@ -1428,13 +1428,13 @@ namespace Android.Icu.Text
         {
             return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getBucketLabels", "()Ljava/util/List;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

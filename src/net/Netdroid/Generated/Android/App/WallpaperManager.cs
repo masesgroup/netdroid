@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WallpaperManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region OnColorsChangedListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.App
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnColorsChangedListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.WallpaperManager_OnColorsChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnColorsChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnColorsChangedListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.app.WallpaperManager$OnColorsChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -141,13 +141,13 @@ namespace Android.App
     public partial class WallpaperManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#FLAG_LOCK"/>
@@ -209,9 +209,9 @@ namespace Android.App
         public static Java.Lang.String WALLPAPER_PREVIEW_META_DATA { get { if (!_WALLPAPER_PREVIEW_META_DATAReady) { _WALLPAPER_PREVIEW_META_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WALLPAPER_PREVIEW_META_DATA"); _WALLPAPER_PREVIEW_META_DATAReady = true; } return _WALLPAPER_PREVIEW_META_DATAContent; } }
         private static Java.Lang.String _WALLPAPER_PREVIEW_META_DATAContent = default;
         private static bool _WALLPAPER_PREVIEW_META_DATAReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getInstance(android.content.Context)"/>
@@ -222,9 +222,9 @@ namespace Android.App
         {
             return SExecuteWithSignature<Android.App.WallpaperManager>(LocalBridgeClazz, "getInstance", "(Landroid/content/Context;)Landroid/app/WallpaperManager;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getWallpaperColors(int)"/>
@@ -625,29 +625,29 @@ namespace Android.App
         {
             IExecute("suggestDesiredDimensions", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region OnColorsChangedListener implementation
         public partial class OnColorsChangedListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnColorsChangedListener"/>
@@ -657,13 +657,13 @@ namespace Android.App
                 AddEventHandler("onColorsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnColorsChangedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/WallpaperManager.OnColorsChangedListener.html#onColorsChanged(android.app.WallpaperColors,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnColorsChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.App.WallpaperColors, int> OnOnColorsChanged { get; set; } = null;
-
+            
             bool hasOverrideOnColorsChanged = true;
             void OnColorsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -672,7 +672,7 @@ namespace Android.App
                 methodToExecute.Invoke(data.EventData.GetAt<Android.App.WallpaperColors>(0), data.EventData.GetAt<int>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnColorsChanged;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.OnColorsChangedListener.html#onColorsChanged(android.app.WallpaperColors,int)"/>
             /// </summary>
@@ -682,13 +682,13 @@ namespace Android.App
             {
                 hasOverrideOnColorsChanged = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -697,21 +697,21 @@ namespace Android.App
         public partial class OnColorsChangedListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.OnColorsChangedListener.html#onColorsChanged(android.app.WallpaperColors,int)"/>
@@ -722,20 +722,20 @@ namespace Android.App
             {
                 IExecute("onColorsChanged", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

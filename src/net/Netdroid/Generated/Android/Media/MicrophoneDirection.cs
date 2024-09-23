@@ -42,10 +42,10 @@ namespace Android.Media
         /// </summary>
         [global::System.Obsolete("MicrophoneDirection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MicrophoneDirection(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Media
     public partial interface IMicrophoneDirection
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Android.Media
     public partial class MicrophoneDirection : Android.Media.IMicrophoneDirection
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MicrophoneDirection.html#MIC_DIRECTION_AWAY_FROM_USER"/>
@@ -126,13 +126,13 @@ namespace Android.Media
         public static int MIC_DIRECTION_UNSPECIFIED { get { if (!_MIC_DIRECTION_UNSPECIFIEDReady) { _MIC_DIRECTION_UNSPECIFIEDContent = SGetField<int>(LocalBridgeClazz, "MIC_DIRECTION_UNSPECIFIED"); _MIC_DIRECTION_UNSPECIFIEDReady = true; } return _MIC_DIRECTION_UNSPECIFIEDContent; } }
         private static int _MIC_DIRECTION_UNSPECIFIEDContent = default;
         private static bool _MIC_DIRECTION_UNSPECIFIEDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MicrophoneDirection.html#setPreferredMicrophoneDirection(int)"/>
@@ -152,13 +152,13 @@ namespace Android.Media
         {
             return IExecuteWithSignature<bool>("setPreferredMicrophoneFieldDimension", "(F)Z", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

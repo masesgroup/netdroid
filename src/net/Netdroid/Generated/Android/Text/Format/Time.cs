@@ -41,10 +41,10 @@ namespace Android.Text.Format
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Time(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Text.Format
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -93,13 +93,13 @@ namespace Android.Text.Format
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/Time.html#allDay"/>
@@ -294,9 +294,9 @@ namespace Android.Text.Format
         public static Java.Lang.String TIMEZONE_UTC { get { if (!_TIMEZONE_UTCReady) { _TIMEZONE_UTCContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TIMEZONE_UTC"); _TIMEZONE_UTCReady = true; } return _TIMEZONE_UTCContent; } }
         private static Java.Lang.String _TIMEZONE_UTCContent = default;
         private static bool _TIMEZONE_UTCReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/Time.html#isEpoch(android.text.format.Time)"/>
@@ -360,9 +360,9 @@ namespace Android.Text.Format
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getCurrentTimezone", "()Ljava/lang/String;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/Time.html#after(android.text.format.Time)"/>
@@ -551,13 +551,13 @@ namespace Android.Text.Format
         {
             IExecuteWithSignature("switchTimezone", "(Ljava/lang/String;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

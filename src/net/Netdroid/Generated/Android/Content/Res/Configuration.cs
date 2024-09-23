@@ -40,10 +40,10 @@ namespace Android.Content.Res
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Configuration(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content.Res
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -82,9 +82,9 @@ namespace Android.Content.Res
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Content.Res.Configuration"/> to <see cref="Android.Os.Parcelable"/>
@@ -94,9 +94,9 @@ namespace Android.Content.Res
         /// Converter from <see cref="Android.Content.Res.Configuration"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Content.Res.Configuration t) => t.Cast<Java.Lang.Comparable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#fontScale"/>
@@ -657,9 +657,9 @@ namespace Android.Content.Res
         public static int UI_MODE_TYPE_WATCH { get { if (!_UI_MODE_TYPE_WATCHReady) { _UI_MODE_TYPE_WATCHContent = SGetField<int>(LocalBridgeClazz, "UI_MODE_TYPE_WATCH"); _UI_MODE_TYPE_WATCHReady = true; } return _UI_MODE_TYPE_WATCHContent; } }
         private static int _UI_MODE_TYPE_WATCHContent = default;
         private static bool _UI_MODE_TYPE_WATCHReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#generateDelta(android.content.res.Configuration,android.content.res.Configuration)"/>
@@ -681,9 +681,9 @@ namespace Android.Content.Res
         {
             return SExecute<bool>(LocalBridgeClazz, "needNewResources", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#getLocales()"/>
@@ -691,7 +691,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Os.LocaleList"/></returns>
         public Android.Os.LocaleList GetLocales()
         {
-            return IExecuteWithSignature<Android.Os.LocaleList>("getLocales", "()Landroid/os/LocaleList;");
+            return IExecute<Android.Os.LocaleList>("getLocales");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#isLayoutSizeAtLeast(int)"/>
@@ -700,7 +700,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool IsLayoutSizeAtLeast(int arg0)
         {
-            return IExecuteWithSignature<bool>("isLayoutSizeAtLeast", "(I)Z", arg0);
+            return IExecute<bool>("isLayoutSizeAtLeast", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#isNightModeActive()"/>
@@ -708,7 +708,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool IsNightModeActive()
         {
-            return IExecuteWithSignature<bool>("isNightModeActive", "()Z");
+            return IExecute<bool>("isNightModeActive");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#isScreenHdr()"/>
@@ -716,7 +716,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool IsScreenHdr()
         {
-            return IExecuteWithSignature<bool>("isScreenHdr", "()Z");
+            return IExecute<bool>("isScreenHdr");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#isScreenRound()"/>
@@ -724,7 +724,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool IsScreenRound()
         {
-            return IExecuteWithSignature<bool>("isScreenRound", "()Z");
+            return IExecute<bool>("isScreenRound");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#isScreenWideColorGamut()"/>
@@ -732,7 +732,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool IsScreenWideColorGamut()
         {
-            return IExecuteWithSignature<bool>("isScreenWideColorGamut", "()Z");
+            return IExecute<bool>("isScreenWideColorGamut");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#compareTo(android.content.res.Configuration)"/>
@@ -741,7 +741,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Android.Content.Res.Configuration arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Landroid/content/res/Configuration;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#compareTo(java.lang.Object)"/>
@@ -750,7 +750,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+            return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#describeContents()"/>
@@ -758,7 +758,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#diff(android.content.res.Configuration)"/>
@@ -767,7 +767,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int Diff(Android.Content.Res.Configuration arg0)
         {
-            return IExecuteWithSignature<int>("diff", "(Landroid/content/res/Configuration;)I", arg0);
+            return IExecute<int>("diff", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#getGrammaticalGender()"/>
@@ -775,7 +775,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetGrammaticalGender()
         {
-            return IExecuteWithSignature<int>("getGrammaticalGender", "()I");
+            return IExecute<int>("getGrammaticalGender");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#getLayoutDirection()"/>
@@ -783,7 +783,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetLayoutDirection()
         {
-            return IExecuteWithSignature<int>("getLayoutDirection", "()I");
+            return IExecute<int>("getLayoutDirection");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#updateFrom(android.content.res.Configuration)"/>
@@ -792,7 +792,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int UpdateFrom(Android.Content.Res.Configuration arg0)
         {
-            return IExecuteWithSignature<int>("updateFrom", "(Landroid/content/res/Configuration;)I", arg0);
+            return IExecute<int>("updateFrom", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#readFromParcel(android.os.Parcel)"/>
@@ -800,7 +800,7 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
         public void ReadFromParcel(Android.Os.Parcel arg0)
         {
-            IExecuteWithSignature("readFromParcel", "(Landroid/os/Parcel;)V", arg0);
+            IExecute("readFromParcel", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setLayoutDirection(java.util.Locale)"/>
@@ -808,7 +808,7 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public void SetLayoutDirection(Java.Util.Locale arg0)
         {
-            IExecuteWithSignature("setLayoutDirection", "(Ljava/util/Locale;)V", arg0);
+            IExecute("setLayoutDirection", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setLocale(java.util.Locale)"/>
@@ -816,7 +816,7 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public void SetLocale(Java.Util.Locale arg0)
         {
-            IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", arg0);
+            IExecute("setLocale", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setLocales(android.os.LocaleList)"/>
@@ -824,7 +824,7 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="Android.Os.LocaleList"/></param>
         public void SetLocales(Android.Os.LocaleList arg0)
         {
-            IExecuteWithSignature("setLocales", "(Landroid/os/LocaleList;)V", arg0);
+            IExecute("setLocales", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setTo(android.content.res.Configuration)"/>
@@ -832,14 +832,14 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="Android.Content.Res.Configuration"/></param>
         public void SetTo(Android.Content.Res.Configuration arg0)
         {
-            IExecuteWithSignature("setTo", "(Landroid/content/res/Configuration;)V", arg0);
+            IExecute("setTo", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setToDefaults()"/>
         /// </summary>
         public void SetToDefaults()
         {
-            IExecuteWithSignature("setToDefaults", "()V");
+            IExecute("setToDefaults");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#writeToParcel(android.os.Parcel,int)"/>
@@ -850,13 +850,13 @@ namespace Android.Content.Res
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

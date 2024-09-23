@@ -40,10 +40,10 @@ namespace Org.Xml.Sax.Ext
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Locator2Impl(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Org.Xml.Sax.Ext
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -82,25 +82,25 @@ namespace Org.Xml.Sax.Ext
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Org.Xml.Sax.Ext.Locator2Impl"/> to <see cref="Org.Xml.Sax.Ext.Locator2"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Ext.Locator2(Org.Xml.Sax.Ext.Locator2Impl t) => t.Cast<Org.Xml.Sax.Ext.Locator2>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2Impl.html#getEncoding()"/>
@@ -108,7 +108,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetEncoding()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getEncoding");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2Impl.html#getXMLVersion()"/>
@@ -116,7 +116,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetXMLVersion()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getXMLVersion", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getXMLVersion");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2Impl.html#setEncoding(java.lang.String)"/>
@@ -124,7 +124,7 @@ namespace Org.Xml.Sax.Ext
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetEncoding(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", arg0);
+            IExecute("setEncoding", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2Impl.html#setXMLVersion(java.lang.String)"/>
@@ -132,15 +132,15 @@ namespace Org.Xml.Sax.Ext
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetXMLVersion(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("setXMLVersion", "(Ljava/lang/String;)V", arg0);
+            IExecute("setXMLVersion", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

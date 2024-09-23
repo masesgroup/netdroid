@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PowerManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region OnThermalStatusChangedListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Os
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnThermalStatusChangedListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.os.PowerManager_OnThermalStatusChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnThermalStatusChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnThermalStatusChangedListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.os.PowerManager$OnThermalStatusChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -148,10 +148,10 @@ namespace Android.Os
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public WakeLock(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -172,9 +172,9 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -188,7 +188,7 @@ namespace Android.Os
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public WakeLockStateListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.os.PowerManager_WakeLockStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -197,13 +197,13 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region WakeLockStateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="WakeLockStateListener"/> or its generic type if there is one
@@ -214,14 +214,14 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.os.PowerManager$WakeLockStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -253,13 +253,13 @@ namespace Android.Os
     public partial class PowerManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#ACQUIRE_CAUSES_WAKEUP"/>
@@ -439,13 +439,13 @@ namespace Android.Os
         public static Java.Lang.String FEATURE_WAKE_ON_LAN_IN_LOW_POWER_STANDBY { get { if (!_FEATURE_WAKE_ON_LAN_IN_LOW_POWER_STANDBYReady) { _FEATURE_WAKE_ON_LAN_IN_LOW_POWER_STANDBYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_WAKE_ON_LAN_IN_LOW_POWER_STANDBY"); _FEATURE_WAKE_ON_LAN_IN_LOW_POWER_STANDBYReady = true; } return _FEATURE_WAKE_ON_LAN_IN_LOW_POWER_STANDBYContent; } }
         private static Java.Lang.String _FEATURE_WAKE_ON_LAN_IN_LOW_POWER_STANDBYContent = default;
         private static bool _FEATURE_WAKE_ON_LAN_IN_LOW_POWER_STANDBYReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#newWakeLock(int,java.lang.String)"/>
@@ -649,29 +649,29 @@ namespace Android.Os
         {
             IExecuteWithSignature("removeThermalStatusListener", "(Landroid/os/PowerManager$OnThermalStatusChangedListener;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region OnThermalStatusChangedListener implementation
         public partial class OnThermalStatusChangedListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnThermalStatusChangedListener"/>
@@ -681,13 +681,13 @@ namespace Android.Os
                 AddEventHandler("onThermalStatusChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnThermalStatusChangedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/os/PowerManager.OnThermalStatusChangedListener.html#onThermalStatusChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnThermalStatusChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnThermalStatusChanged { get; set; } = null;
-
+            
             bool hasOverrideOnThermalStatusChanged = true;
             void OnThermalStatusChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -696,7 +696,7 @@ namespace Android.Os
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnThermalStatusChanged;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/PowerManager.OnThermalStatusChangedListener.html#onThermalStatusChanged(int)"/>
             /// </summary>
@@ -705,13 +705,13 @@ namespace Android.Os
             {
                 hasOverrideOnThermalStatusChanged = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -720,21 +720,21 @@ namespace Android.Os
         public partial class OnThermalStatusChangedListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/PowerManager.OnThermalStatusChangedListener.html#onThermalStatusChanged(int)"/>
@@ -744,13 +744,13 @@ namespace Android.Os
             {
                 IExecuteWithSignature("onThermalStatusChanged", "(I)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -759,21 +759,21 @@ namespace Android.Os
         public partial class WakeLock
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/PowerManager.WakeLock.html#isHeld()"/>
@@ -838,13 +838,13 @@ namespace Android.Os
             {
                 IExecuteWithSignature("setWorkSource", "(Landroid/os/WorkSource;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -853,21 +853,21 @@ namespace Android.Os
         public partial class WakeLockStateListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="WakeLockStateListener"/>
@@ -877,13 +877,13 @@ namespace Android.Os
                 AddEventHandler("onStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnStateChangedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/os/PowerManager.WakeLockStateListener.html#onStateChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<bool> OnOnStateChanged { get; set; } = null;
-
+            
             bool hasOverrideOnStateChanged = true;
             void OnStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -892,7 +892,7 @@ namespace Android.Os
                 methodToExecute.Invoke(data.EventData.GetAt<bool>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnStateChanged;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/PowerManager.WakeLockStateListener.html#onStateChanged(boolean)"/>
             /// </summary>
@@ -901,13 +901,13 @@ namespace Android.Os
             {
                 hasOverrideOnStateChanged = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -916,21 +916,21 @@ namespace Android.Os
         public partial class WakeLockStateListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/PowerManager.WakeLockStateListener.html#onStateChanged(boolean)"/>
@@ -940,20 +940,20 @@ namespace Android.Os
             {
                 IExecuteWithSignature("onStateChanged", "(Z)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

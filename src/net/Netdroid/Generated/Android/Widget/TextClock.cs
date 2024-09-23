@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TextClock(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -112,13 +112,13 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#DEFAULT_FORMAT_12_HOUR"/>
@@ -134,13 +134,13 @@ namespace Android.Widget
         public static Java.Lang.CharSequence DEFAULT_FORMAT_24_HOUR { get { if (!_DEFAULT_FORMAT_24_HOURReady) { _DEFAULT_FORMAT_24_HOURContent = SGetField<Java.Lang.CharSequence>(LocalBridgeClazz, "DEFAULT_FORMAT_24_HOUR"); _DEFAULT_FORMAT_24_HOURReady = true; } return _DEFAULT_FORMAT_24_HOURContent; } }
         private static Java.Lang.CharSequence _DEFAULT_FORMAT_24_HOURContent = default;
         private static bool _DEFAULT_FORMAT_24_HOURReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#is24HourModeEnabled()"/>
@@ -205,13 +205,13 @@ namespace Android.Widget
         {
             IExecuteWithSignature("setTimeZone", "(Ljava/lang/String;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

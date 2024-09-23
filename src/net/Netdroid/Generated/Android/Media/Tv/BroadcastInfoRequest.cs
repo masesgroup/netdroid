@@ -42,10 +42,10 @@ namespace Android.Media.Tv
         /// </summary>
         [global::System.Obsolete("BroadcastInfoRequest class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BroadcastInfoRequest(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Media.Tv
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Media.Tv
     public partial class BroadcastInfoRequest
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest.html#CREATOR"/>
@@ -102,13 +102,13 @@ namespace Android.Media.Tv
         public static int REQUEST_OPTION_REPEAT { get { if (!_REQUEST_OPTION_REPEATReady) { _REQUEST_OPTION_REPEATContent = SGetField<int>(LocalBridgeClazz, "REQUEST_OPTION_REPEAT"); _REQUEST_OPTION_REPEATReady = true; } return _REQUEST_OPTION_REPEATContent; } }
         private static int _REQUEST_OPTION_REPEATContent = default;
         private static bool _REQUEST_OPTION_REPEATReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoRequest.html#describeContents()"/>
@@ -151,13 +151,13 @@ namespace Android.Media.Tv
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

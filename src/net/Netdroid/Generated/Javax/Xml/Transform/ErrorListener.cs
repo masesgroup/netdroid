@@ -35,7 +35,7 @@ namespace Javax.Xml.Transform
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public ErrorListener() { InitializeHandlers(); }
-
+    
         const string _bridgeClassName = "org.mases.netdroid.generated.javax.xml.transform.ErrorListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Javax.Xml.Transform
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-
+    
     
         // TODO: complete the class
-
+    
     }
     #endregion
-
+    
     #region ErrorListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="ErrorListener"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Javax.Xml.Transform
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-
+    
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-
+    
         const string _bridgeClassName = "javax.xml.transform.ErrorListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Javax.Xml.Transform
     public partial interface IErrorListener
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Javax.Xml.Transform
     public partial class ErrorListener : Javax.Xml.Transform.IErrorListener
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="ErrorListener"/>
@@ -140,13 +140,13 @@ namespace Javax.Xml.Transform
             AddEventHandler("warning", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(WarningEventHandler));
 
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <remarks>If <see cref="OnError"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnError { get; set; } = null;
-
+        
         bool hasOverrideError = true;
         void ErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -155,7 +155,7 @@ namespace Javax.Xml.Transform
             methodToExecute.Invoke(JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
             data.EventData.TypedEventData.HasOverride = hasOverrideError;
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
         /// </summary>
@@ -165,13 +165,13 @@ namespace Javax.Xml.Transform
         {
             hasOverrideError = false;
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <remarks>If <see cref="OnFatalError"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnFatalError { get; set; } = null;
-
+        
         bool hasOverrideFatalError = true;
         void FatalErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -180,7 +180,7 @@ namespace Javax.Xml.Transform
             methodToExecute.Invoke(JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
             data.EventData.TypedEventData.HasOverride = hasOverrideFatalError;
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
         /// </summary>
@@ -190,13 +190,13 @@ namespace Javax.Xml.Transform
         {
             hasOverrideFatalError = false;
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <remarks>If <see cref="OnWarning"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnWarning { get; set; } = null;
-
+        
         bool hasOverrideWarning = true;
         void WarningEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -205,7 +205,7 @@ namespace Javax.Xml.Transform
             methodToExecute.Invoke(JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
             data.EventData.TypedEventData.HasOverride = hasOverrideWarning;
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
         /// </summary>
@@ -215,13 +215,13 @@ namespace Javax.Xml.Transform
         {
             hasOverrideWarning = false;
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -230,21 +230,21 @@ namespace Javax.Xml.Transform
     public partial class ErrorListenerDirect : Javax.Xml.Transform.IErrorListener
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
@@ -273,13 +273,13 @@ namespace Javax.Xml.Transform
         {
             IExecuteWithSignature("warning", "(Ljavax/xml/transform/TransformerException;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

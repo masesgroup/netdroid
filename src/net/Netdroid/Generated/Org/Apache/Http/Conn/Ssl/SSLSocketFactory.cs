@@ -41,10 +41,10 @@ namespace Org.Apache.Http.Conn.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SSLSocketFactory(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Org.Apache.Http.Conn.Ssl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -135,13 +135,13 @@ namespace Org.Apache.Http.Conn.Ssl
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/conn/ssl/SSLSocketFactory.html#SSL"/>
@@ -185,9 +185,9 @@ namespace Org.Apache.Http.Conn.Ssl
         public static Org.Apache.Http.Conn.Ssl.X509HostnameVerifier STRICT_HOSTNAME_VERIFIER { get { if (!_STRICT_HOSTNAME_VERIFIERReady) { _STRICT_HOSTNAME_VERIFIERContent = SGetField<Org.Apache.Http.Conn.Ssl.X509HostnameVerifier>(LocalBridgeClazz, "STRICT_HOSTNAME_VERIFIER"); _STRICT_HOSTNAME_VERIFIERReady = true; } return _STRICT_HOSTNAME_VERIFIERContent; } }
         private static Org.Apache.Http.Conn.Ssl.X509HostnameVerifier _STRICT_HOSTNAME_VERIFIERContent = default;
         private static bool _STRICT_HOSTNAME_VERIFIERReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/conn/ssl/SSLSocketFactory.html#getSocketFactory()"/>
@@ -198,9 +198,9 @@ namespace Org.Apache.Http.Conn.Ssl
         {
             return SExecuteWithSignature<Org.Apache.Http.Conn.Ssl.SSLSocketFactory>(LocalBridgeClazz, "getSocketFactory", "()Lorg/apache/http/conn/ssl/SSLSocketFactory;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/conn/ssl/SSLSocketFactory.html#isSecure(java.net.Socket)"/>
@@ -272,13 +272,13 @@ namespace Org.Apache.Http.Conn.Ssl
         {
             IExecuteWithSignature("setHostnameVerifier", "(Lorg/apache/http/conn/ssl/X509HostnameVerifier;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

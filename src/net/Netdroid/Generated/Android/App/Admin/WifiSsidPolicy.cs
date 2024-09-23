@@ -40,10 +40,10 @@ namespace Android.App.Admin
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WifiSsidPolicy(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App.Admin
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -83,13 +83,13 @@ namespace Android.App.Admin
             : base(arg0, arg1)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/WifiSsidPolicy.html#CREATOR"/>
@@ -109,13 +109,13 @@ namespace Android.App.Admin
         public static int WIFI_SSID_POLICY_TYPE_DENYLIST { get { if (!_WIFI_SSID_POLICY_TYPE_DENYLISTReady) { _WIFI_SSID_POLICY_TYPE_DENYLISTContent = SGetField<int>(LocalBridgeClazz, "WIFI_SSID_POLICY_TYPE_DENYLIST"); _WIFI_SSID_POLICY_TYPE_DENYLISTReady = true; } return _WIFI_SSID_POLICY_TYPE_DENYLISTContent; } }
         private static int _WIFI_SSID_POLICY_TYPE_DENYLISTContent = default;
         private static bool _WIFI_SSID_POLICY_TYPE_DENYLISTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/WifiSsidPolicy.html#describeContents()"/>
@@ -150,13 +150,13 @@ namespace Android.App.Admin
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

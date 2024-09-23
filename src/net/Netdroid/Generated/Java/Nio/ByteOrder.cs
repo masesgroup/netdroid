@@ -40,10 +40,10 @@ namespace Java.Nio
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ByteOrder(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Nio
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Nio
     public partial class ByteOrder
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ByteOrder.html#BIG_ENDIAN"/>
@@ -94,9 +94,9 @@ namespace Java.Nio
         public static Java.Nio.ByteOrder LITTLE_ENDIAN { get { if (!_LITTLE_ENDIANReady) { _LITTLE_ENDIANContent = SGetField<Java.Nio.ByteOrder>(LocalBridgeClazz, "LITTLE_ENDIAN"); _LITTLE_ENDIANReady = true; } return _LITTLE_ENDIANContent; } }
         private static Java.Nio.ByteOrder _LITTLE_ENDIANContent = default;
         private static bool _LITTLE_ENDIANReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/ByteOrder.html#nativeOrder()"/>
@@ -106,17 +106,17 @@ namespace Java.Nio
         {
             return SExecuteWithSignature<Java.Nio.ByteOrder>(LocalBridgeClazz, "nativeOrder", "()Ljava/nio/ByteOrder;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

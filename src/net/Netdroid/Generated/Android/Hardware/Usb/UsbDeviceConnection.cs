@@ -40,10 +40,10 @@ namespace Android.Hardware.Usb
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UsbDeviceConnection(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Usb
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Hardware.Usb
     public partial class UsbDeviceConnection
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#requestWait()"/>
@@ -96,7 +96,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Android.Hardware.Usb.UsbRequest"/></returns>
         public Android.Hardware.Usb.UsbRequest RequestWait()
         {
-            return IExecuteWithSignature<Android.Hardware.Usb.UsbRequest>("requestWait", "()Landroid/hardware/usb/UsbRequest;");
+            return IExecute<Android.Hardware.Usb.UsbRequest>("requestWait");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#requestWait(long)"/>
@@ -106,7 +106,7 @@ namespace Android.Hardware.Usb
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public Android.Hardware.Usb.UsbRequest RequestWait(long arg0)
         {
-            return IExecuteWithSignature<Android.Hardware.Usb.UsbRequest>("requestWait", "(J)Landroid/hardware/usb/UsbRequest;", arg0);
+            return IExecute<Android.Hardware.Usb.UsbRequest>("requestWait", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#claimInterface(android.hardware.usb.UsbInterface,boolean)"/>
@@ -125,7 +125,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool ReleaseInterface(Android.Hardware.Usb.UsbInterface arg0)
         {
-            return IExecuteWithSignature<bool>("releaseInterface", "(Landroid/hardware/usb/UsbInterface;)Z", arg0);
+            return IExecute<bool>("releaseInterface", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#setConfiguration(android.hardware.usb.UsbConfiguration)"/>
@@ -134,7 +134,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool SetConfiguration(Android.Hardware.Usb.UsbConfiguration arg0)
         {
-            return IExecuteWithSignature<bool>("setConfiguration", "(Landroid/hardware/usb/UsbConfiguration;)Z", arg0);
+            return IExecute<bool>("setConfiguration", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#setInterface(android.hardware.usb.UsbInterface)"/>
@@ -143,7 +143,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool SetInterface(Android.Hardware.Usb.UsbInterface arg0)
         {
-            return IExecuteWithSignature<bool>("setInterface", "(Landroid/hardware/usb/UsbInterface;)Z", arg0);
+            return IExecute<bool>("setInterface", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#getRawDescriptors()"/>
@@ -151,7 +151,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="byte"/></returns>
         public byte[] GetRawDescriptors()
         {
-            return IExecuteWithSignatureArray<byte>("getRawDescriptors", "()[B");
+            return IExecuteArray<byte>("getRawDescriptors");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#bulkTransfer(android.hardware.usb.UsbEndpoint,byte[],int,int,int)"/>
@@ -215,7 +215,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int GetFileDescriptor()
         {
-            return IExecuteWithSignature<int>("getFileDescriptor", "()I");
+            return IExecute<int>("getFileDescriptor");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#getSerial()"/>
@@ -223,22 +223,22 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetSerial()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getSerial", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getSerial");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

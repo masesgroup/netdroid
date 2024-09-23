@@ -35,7 +35,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public Function() { InitializeHandlers(); }
-
+    
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Function";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-
+    
     
         // TODO: complete the class
-
+    
     }
     #endregion
-
+    
     #region FunctionDirect declaration
     /// <summary>
     /// Direct override of <see cref="Function"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-
+    
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-
+    
         const string _bridgeClassName = "java.util.function.Function";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -104,7 +104,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public Function() { InitializeHandlers(); }
-
+    
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Function";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -113,13 +113,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-
+    
     
         // TODO: complete the class
     
     }
     #endregion
-
+    
     #region FunctionDirect<T, R> declaration
     /// <summary>
     /// Direct override of <see cref="Function"/> or its generic type if there is one
@@ -130,14 +130,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-
+    
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-
+    
         const string _bridgeClassName = "java.util.function.Function";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -165,17 +165,17 @@ namespace Java.Util.Function
     public partial class Function
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Function.html#identity()"/>
@@ -186,9 +186,9 @@ namespace Java.Util.Function
         {
             return SExecuteWithSignature<Java.Util.Function.Function>(LocalBridgeClazz, "identity", "()Ljava/util/function/Function;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="Function"/>
@@ -200,13 +200,13 @@ namespace Java.Util.Function
             AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(ComposeEventHandler));
 
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<object, object> OnApply { get; set; } = null;
-
+        
         bool hasOverrideApply = true;
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -215,7 +215,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<object>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideApply, executionResult);
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
@@ -235,13 +235,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.Function>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Function, Java.Util.Function.Function> OnAndThen { get; set; } = null;
-
+        
         bool hasOverrideAndThen = true;
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -250,7 +250,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen, executionResult);
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
@@ -271,13 +271,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.Function>("composeDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnCompose"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Function, Java.Util.Function.Function> OnCompose { get; set; } = null;
-
+        
         bool hasOverrideCompose = true;
         void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -286,7 +286,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideCompose, executionResult);
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
@@ -297,13 +297,13 @@ namespace Java.Util.Function
         {
             hasOverrideCompose = false; return default;
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -312,21 +312,21 @@ namespace Java.Util.Function
     public partial class FunctionDirect
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Function.html#apply(java.lang.Object)"/>
@@ -355,13 +355,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.FunctionDirect, Java.Util.Function.Function>("compose", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -373,13 +373,13 @@ namespace Java.Util.Function
     public partial interface IFunction<T, R>
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -388,17 +388,17 @@ namespace Java.Util.Function
     public partial class Function<T, R> : Java.Util.Function.IFunction<T, R>
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Function.html#identity()"/>
@@ -409,9 +409,9 @@ namespace Java.Util.Function
         {
             return SExecuteWithSignature<Java.Util.Function.Function<T, T>>(LocalBridgeClazz, "identity", "()Ljava/util/function/Function;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="Function"/>
@@ -423,13 +423,13 @@ namespace Java.Util.Function
             AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(Compose<V, Arg0objectSuperV, Arg0ExtendsT>EventHandler));
 
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<T, R> OnApply { get; set; } = null;
-
+        
         bool hasOverrideApply = true;
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -438,7 +438,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<T>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideApply, executionResult);
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
@@ -461,13 +461,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.Function<T, V>>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.Function<T, V>> OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> { get; set; } = null;
-
+        
         bool hasOverrideAndThen<V, Arg0objectSuperR, Arg0ExtendsV> = true;
         void AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -476,7 +476,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideAndThen<V, Arg0objectSuperR, Arg0ExtendsV>, executionResult);
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
@@ -503,13 +503,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.Function<V, R>>("composeDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
-
+        
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnCompose<V, Arg0objectSuperV, Arg0ExtendsT>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>, Java.Util.Function.Function<V, R>> OnCompose<V, Arg0objectSuperV, Arg0ExtendsT> { get; set; } = null;
-
+        
         bool hasOverrideCompose<V, Arg0objectSuperV, Arg0ExtendsT> = true;
         void Compose<V, Arg0objectSuperV, Arg0ExtendsT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -518,7 +518,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideCompose<V, Arg0objectSuperV, Arg0ExtendsT>, executionResult);
         }
-
+        
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
@@ -532,13 +532,13 @@ namespace Java.Util.Function
         {
             hasOverrideCompose<V, Arg0objectSuperV, Arg0ExtendsT> = false; return default;
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -547,21 +547,21 @@ namespace Java.Util.Function
     public partial class FunctionDirect<T, R> : Java.Util.Function.IFunction<T, R>
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Function.html#apply(java.lang.Object)"/>
@@ -596,13 +596,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.FunctionDirect<V, R>, Java.Util.Function.Function<V, R>>("compose", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

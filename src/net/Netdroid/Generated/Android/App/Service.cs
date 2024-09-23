@@ -42,10 +42,10 @@ namespace Android.App
         /// </summary>
         [global::System.Obsolete("Service class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Service(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Android.App
     public partial class Service
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.App.Service"/> to <see cref="Android.Content.ComponentCallbacks2"/>
         /// </summary>
         public static implicit operator Android.Content.ComponentCallbacks2(Android.App.Service t) => t.Cast<Android.Content.ComponentCallbacks2>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Service.html#START_CONTINUATION_MASK"/>
@@ -149,13 +149,13 @@ namespace Android.App
         public static int STOP_FOREGROUND_REMOVE { get { if (!_STOP_FOREGROUND_REMOVEReady) { _STOP_FOREGROUND_REMOVEContent = SGetField<int>(LocalBridgeClazz, "STOP_FOREGROUND_REMOVE"); _STOP_FOREGROUND_REMOVEReady = true; } return _STOP_FOREGROUND_REMOVEContent; } }
         private static int _STOP_FOREGROUND_REMOVEContent = default;
         private static bool _STOP_FOREGROUND_REMOVEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Service.html#onBind(android.content.Intent)"/>
@@ -342,13 +342,13 @@ namespace Android.App
         {
             IExecuteWithSignature("onTrimMemory", "(I)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

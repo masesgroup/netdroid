@@ -43,10 +43,10 @@ namespace Android.Media
         /// </summary>
         [global::System.Obsolete("MediaMetadataEditor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MediaMetadataEditor(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -67,9 +67,9 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -77,13 +77,13 @@ namespace Android.Media
     public partial class MediaMetadataEditor
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataEditor.html#BITMAP_KEY_ARTWORK"/>
@@ -106,13 +106,13 @@ namespace Android.Media
         public static int RATING_KEY_BY_USER { get { if (!_RATING_KEY_BY_USERReady) { _RATING_KEY_BY_USERContent = SGetField<int>(LocalBridgeClazz, "RATING_KEY_BY_USER"); _RATING_KEY_BY_USERReady = true; } return _RATING_KEY_BY_USERContent; } }
         private static int _RATING_KEY_BY_USERContent = default;
         private static bool _RATING_KEY_BY_USERReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataEditor.html#apply()"/>
@@ -252,13 +252,13 @@ namespace Android.Media
         {
             IExecuteWithSignature("removeEditableKeys", "()V");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

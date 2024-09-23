@@ -40,10 +40,10 @@ namespace Android.Webkit
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WebView(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Webkit
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region FindListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Webkit
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public FindListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.webkit.WebView_FindListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region FindListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="FindListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.webkit.WebView$FindListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -148,10 +148,10 @@ namespace Android.Webkit
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public HitTestResult(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -172,9 +172,9 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -189,7 +189,7 @@ namespace Android.Webkit
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public PictureListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.webkit.WebView_PictureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -198,13 +198,13 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region PictureListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="PictureListener"/> or its generic type if there is one
@@ -215,14 +215,14 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.webkit.WebView$PictureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -263,10 +263,10 @@ namespace Android.Webkit
             /// </summary>
             [global::System.Obsolete("VisualStateCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public VisualStateCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -287,9 +287,9 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -308,10 +308,10 @@ namespace Android.Webkit
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public WebViewTransport(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -332,9 +332,9 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -396,13 +396,13 @@ namespace Android.Webkit
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#RENDERER_PRIORITY_BOUND"/>
@@ -440,9 +440,9 @@ namespace Android.Webkit
         public static Java.Lang.String SCHEME_TEL { get { if (!_SCHEME_TELReady) { _SCHEME_TELContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCHEME_TEL"); _SCHEME_TELReady = true; } return _SCHEME_TELContent; } }
         private static Java.Lang.String _SCHEME_TELContent = default;
         private static bool _SCHEME_TELReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#getCurrentWebViewPackage()"/>
@@ -534,9 +534,9 @@ namespace Android.Webkit
         {
             SExecute(LocalBridgeClazz, "startSafeBrowsing", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#getFavicon()"/>
@@ -1356,29 +1356,29 @@ namespace Android.Webkit
         {
             IExecuteWithSignature("zoomBy", "(F)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region FindListener implementation
         public partial class FindListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="FindListener"/>
@@ -1388,13 +1388,13 @@ namespace Android.Webkit
                 AddEventHandler("onFindResultReceived", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnFindResultReceivedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/webkit/WebView.FindListener.html#onFindResultReceived(int,int,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFindResultReceived"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int, int, bool> OnOnFindResultReceived { get; set; } = null;
-
+            
             bool hasOverrideOnFindResultReceived = true;
             void OnFindResultReceivedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1403,7 +1403,7 @@ namespace Android.Webkit
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<bool>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnFindResultReceived;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebView.FindListener.html#onFindResultReceived(int,int,boolean)"/>
             /// </summary>
@@ -1414,13 +1414,13 @@ namespace Android.Webkit
             {
                 hasOverrideOnFindResultReceived = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1429,21 +1429,21 @@ namespace Android.Webkit
         public partial class FindListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebView.FindListener.html#onFindResultReceived(int,int,boolean)"/>
@@ -1455,13 +1455,13 @@ namespace Android.Webkit
             {
                 IExecute("onFindResultReceived", arg0, arg1, arg2);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1470,13 +1470,13 @@ namespace Android.Webkit
         public partial class HitTestResult
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebView.HitTestResult.html#ANCHOR_TYPE"/>
@@ -1540,13 +1540,13 @@ namespace Android.Webkit
             public static int UNKNOWN_TYPE { get { if (!_UNKNOWN_TYPEReady) { _UNKNOWN_TYPEContent = SGetField<int>(LocalBridgeClazz, "UNKNOWN_TYPE"); _UNKNOWN_TYPEReady = true; } return _UNKNOWN_TYPEContent; } }
             private static int _UNKNOWN_TYPEContent = default;
             private static bool _UNKNOWN_TYPEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebView.HitTestResult.html#getType()"/>
@@ -1564,13 +1564,13 @@ namespace Android.Webkit
             {
                 return IExecuteWithSignature<Java.Lang.String>("getExtra", "()Ljava/lang/String;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1579,21 +1579,21 @@ namespace Android.Webkit
         public partial class PictureListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="PictureListener"/>
@@ -1603,13 +1603,13 @@ namespace Android.Webkit
                 AddEventHandler("onNewPicture", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnNewPictureEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/webkit/WebView.PictureListener.html#onNewPicture(android.webkit.WebView,android.graphics.Picture)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnNewPicture"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Webkit.WebView, Android.Graphics.Picture> OnOnNewPicture { get; set; } = null;
-
+            
             bool hasOverrideOnNewPicture = true;
             void OnNewPictureEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1618,7 +1618,7 @@ namespace Android.Webkit
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Webkit.WebView>(0), data.EventData.GetAt<Android.Graphics.Picture>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnNewPicture;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebView.PictureListener.html#onNewPicture(android.webkit.WebView,android.graphics.Picture)"/>
             /// </summary>
@@ -1629,13 +1629,13 @@ namespace Android.Webkit
             {
                 hasOverrideOnNewPicture = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1644,21 +1644,21 @@ namespace Android.Webkit
         public partial class PictureListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebView.PictureListener.html#onNewPicture(android.webkit.WebView,android.graphics.Picture)"/>
@@ -1670,13 +1670,13 @@ namespace Android.Webkit
             {
                 IExecute("onNewPicture", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1685,21 +1685,21 @@ namespace Android.Webkit
         public partial class VisualStateCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebView.VisualStateCallback.html#onComplete(long)"/>
@@ -1709,13 +1709,13 @@ namespace Android.Webkit
             {
                 IExecuteWithSignature("onComplete", "(J)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1732,21 +1732,21 @@ namespace Android.Webkit
                 : base(arg0)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebView.WebViewTransport.html#getWebView()"/>
@@ -1764,20 +1764,20 @@ namespace Android.Webkit
             {
                 IExecuteWithSignature("setWebView", "(Landroid/webkit/WebView;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Media.Audiofx
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Visualizer(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Audiofx
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region MeasurementPeakRms declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MeasurementPeakRms(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -121,7 +121,7 @@ namespace Android.Media.Audiofx
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnDataCaptureListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.audiofx.Visualizer_OnDataCaptureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -130,13 +130,13 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnDataCaptureListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnDataCaptureListener"/> or its generic type if there is one
@@ -147,14 +147,14 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.media.audiofx.Visualizer$OnDataCaptureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -196,13 +196,13 @@ namespace Android.Media.Audiofx
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#ALREADY_EXISTS"/>
@@ -294,9 +294,9 @@ namespace Android.Media.Audiofx
         public static int SUCCESS { get { if (!_SUCCESSReady) { _SUCCESSContent = SGetField<int>(LocalBridgeClazz, "SUCCESS"); _SUCCESSReady = true; } return _SUCCESSContent; } }
         private static int _SUCCESSContent = default;
         private static bool _SUCCESSReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getMaxCaptureRate()"/>
@@ -314,9 +314,9 @@ namespace Android.Media.Audiofx
         {
             return SExecuteWithSignatureArray<int>(LocalBridgeClazz, "getCaptureSizeRange", "()[I");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.html#getEnabled()"/>
@@ -450,21 +450,21 @@ namespace Android.Media.Audiofx
         {
             IExecuteWithSignature("release", "()V");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region MeasurementPeakRms implementation
         public partial class MeasurementPeakRms
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.MeasurementPeakRms.html#mPeak"/>
@@ -474,21 +474,21 @@ namespace Android.Media.Audiofx
             /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.MeasurementPeakRms.html#mRms"/>
             /// </summary>
             public int mRms { get { return IGetField<int>("mRms"); } set { ISetField("mRms", value); } }
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -497,21 +497,21 @@ namespace Android.Media.Audiofx
         public partial class OnDataCaptureListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnDataCaptureListener"/>
@@ -522,13 +522,13 @@ namespace Android.Media.Audiofx
                 AddEventHandler("onWaveFormDataCapture", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnWaveFormDataCaptureEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.OnDataCaptureListener.html#onFftDataCapture(android.media.audiofx.Visualizer,byte[],int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFftDataCapture"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.Audiofx.Visualizer, byte[], int> OnOnFftDataCapture { get; set; } = null;
-
+            
             bool hasOverrideOnFftDataCapture = true;
             void OnFftDataCaptureEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -537,7 +537,7 @@ namespace Android.Media.Audiofx
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.Audiofx.Visualizer>(0), data.EventData.GetAt<byte[]>(1), data.EventData.GetAt<int>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnFftDataCapture;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.OnDataCaptureListener.html#onFftDataCapture(android.media.audiofx.Visualizer,byte[],int)"/>
             /// </summary>
@@ -548,13 +548,13 @@ namespace Android.Media.Audiofx
             {
                 hasOverrideOnFftDataCapture = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.OnDataCaptureListener.html#onWaveFormDataCapture(android.media.audiofx.Visualizer,byte[],int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnWaveFormDataCapture"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.Audiofx.Visualizer, byte[], int> OnOnWaveFormDataCapture { get; set; } = null;
-
+            
             bool hasOverrideOnWaveFormDataCapture = true;
             void OnWaveFormDataCaptureEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -563,7 +563,7 @@ namespace Android.Media.Audiofx
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.Audiofx.Visualizer>(0), data.EventData.GetAt<byte[]>(1), data.EventData.GetAt<int>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnWaveFormDataCapture;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.OnDataCaptureListener.html#onWaveFormDataCapture(android.media.audiofx.Visualizer,byte[],int)"/>
             /// </summary>
@@ -574,13 +574,13 @@ namespace Android.Media.Audiofx
             {
                 hasOverrideOnWaveFormDataCapture = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -589,21 +589,21 @@ namespace Android.Media.Audiofx
         public partial class OnDataCaptureListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/Visualizer.OnDataCaptureListener.html#onFftDataCapture(android.media.audiofx.Visualizer,byte[],int)"/>
@@ -625,20 +625,20 @@ namespace Android.Media.Audiofx
             {
                 IExecute("onWaveFormDataCapture", arg0, arg1, arg2);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

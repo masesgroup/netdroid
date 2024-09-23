@@ -40,10 +40,10 @@ namespace Java.Time
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public YearMonth(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,9 +74,9 @@ namespace Java.Time
     public partial class YearMonth : Java.Time.Temporal.ITemporal, Java.Time.Temporal.ITemporalAdjuster, Java.Lang.IComparable<Java.Time.YearMonth>, Java.Io.ISerializable
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Time.YearMonth"/> to <see cref="Java.Time.Temporal.Temporal"/>
@@ -94,13 +94,13 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.YearMonth"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.YearMonth t) => t.Cast<Java.Io.Serializable>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/YearMonth.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -176,9 +176,9 @@ namespace Java.Time
         {
             return SExecuteWithSignature<Java.Time.YearMonth>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;)Ljava/time/YearMonth;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/YearMonth.html#query(java.time.temporal.TemporalQuery)"/>
@@ -484,13 +484,13 @@ namespace Java.Time
         {
             return IExecute<long>("until", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

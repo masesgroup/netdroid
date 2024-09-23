@@ -40,10 +40,10 @@ namespace Java.Security
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CryptoPrimitive(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Security
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Security
     public partial class CryptoPrimitive
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/CryptoPrimitive.html#BLOCK_CIPHER"/>
@@ -142,9 +142,9 @@ namespace Java.Security
         public static Java.Security.CryptoPrimitive STREAM_CIPHER { get { if (!_STREAM_CIPHERReady) { _STREAM_CIPHERContent = SGetField<Java.Security.CryptoPrimitive>(LocalBridgeClazz, "STREAM_CIPHER"); _STREAM_CIPHERReady = true; } return _STREAM_CIPHERContent; } }
         private static Java.Security.CryptoPrimitive _STREAM_CIPHERContent = default;
         private static bool _STREAM_CIPHERReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/CryptoPrimitive.html#valueOf(java.lang.String)"/>
@@ -163,17 +163,17 @@ namespace Java.Security
         {
             return SExecuteWithSignatureArray<Java.Security.CryptoPrimitive>(LocalBridgeClazz, "values", "()[Ljava/security/CryptoPrimitive;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

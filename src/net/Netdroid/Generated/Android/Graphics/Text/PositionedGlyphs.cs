@@ -40,10 +40,10 @@ namespace Android.Graphics.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PositionedGlyphs(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Graphics.Text
     public partial class PositionedGlyphs
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#NO_OVERRIDE"/>
@@ -88,13 +88,13 @@ namespace Android.Graphics.Text
         public static float NO_OVERRIDE { get { if (!_NO_OVERRIDEReady) { _NO_OVERRIDEContent = SGetField<float>(LocalBridgeClazz, "NO_OVERRIDE"); _NO_OVERRIDEReady = true; } return _NO_OVERRIDEContent; } }
         private static float _NO_OVERRIDEContent = default;
         private static bool _NO_OVERRIDEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getFont(int)"/>
@@ -216,13 +216,13 @@ namespace Android.Graphics.Text
         {
             return IExecuteWithSignature<int>("glyphCount", "()I");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

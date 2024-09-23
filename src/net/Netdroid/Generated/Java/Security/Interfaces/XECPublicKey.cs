@@ -42,10 +42,10 @@ namespace Java.Security.Interfaces
         /// </summary>
         [global::System.Obsolete("XECPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XECPublicKey(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Security.Interfaces
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Security.Interfaces
     public partial interface IXECPublicKey
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -94,9 +94,9 @@ namespace Java.Security.Interfaces
     public partial class XECPublicKey : Java.Security.Interfaces.IXECPublicKey, Java.Security.Interfaces.IXECKey, Java.Security.IPublicKey
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Security.Interfaces.XECPublicKey"/> to <see cref="Java.Security.Interfaces.XECKey"/>
@@ -106,17 +106,17 @@ namespace Java.Security.Interfaces
         /// Converter from <see cref="Java.Security.Interfaces.XECPublicKey"/> to <see cref="Java.Security.PublicKey"/>
         /// </summary>
         public static implicit operator Java.Security.PublicKey(Java.Security.Interfaces.XECPublicKey t) => t.Cast<Java.Security.PublicKey>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/interfaces/XECPublicKey.html#getU()"/>
@@ -126,13 +126,13 @@ namespace Java.Security.Interfaces
         {
             return IExecuteWithSignature<Java.Math.BigInteger>("getU", "()Ljava/math/BigInteger;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

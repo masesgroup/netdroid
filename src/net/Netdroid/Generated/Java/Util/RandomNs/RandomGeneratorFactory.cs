@@ -40,10 +40,10 @@ namespace Java.Util.RandomNs
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RandomGeneratorFactory(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.RandomNs
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -86,10 +86,10 @@ namespace Java.Util.RandomNs
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RandomGeneratorFactory(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Util.RandomNs
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -120,17 +120,17 @@ namespace Java.Util.RandomNs
     public partial class RandomGeneratorFactory
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGeneratorFactory.html#of(java.lang.String)"/>
@@ -157,9 +157,9 @@ namespace Java.Util.RandomNs
         {
             return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "all", "()Ljava/util/stream/Stream;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGeneratorFactory.html#isArbitrarilyJumpable()"/>
@@ -299,13 +299,13 @@ namespace Java.Util.RandomNs
         {
             return IExecuteWithSignature<Java.Util.RandomNs.RandomGenerator>("create", "(J)Ljava/util/random/RandomGenerator;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -314,21 +314,21 @@ namespace Java.Util.RandomNs
     public partial class RandomGeneratorFactory<T>
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.RandomNs.RandomGeneratorFactory{T}"/> to <see cref="Java.Util.RandomNs.RandomGeneratorFactory"/>
         /// </summary>
         public static implicit operator Java.Util.RandomNs.RandomGeneratorFactory(Java.Util.RandomNs.RandomGeneratorFactory<T> t) => t.Cast<Java.Util.RandomNs.RandomGeneratorFactory>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGeneratorFactory.html#of(java.lang.String)"/>
@@ -355,9 +355,9 @@ namespace Java.Util.RandomNs
         {
             return SExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGeneratorFactory<Java.Util.RandomNs.RandomGenerator>>>(LocalBridgeClazz, "all", "()Ljava/util/stream/Stream;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGeneratorFactory.html#isArbitrarilyJumpable()"/>
@@ -497,13 +497,13 @@ namespace Java.Util.RandomNs
         {
             return IExecuteWithSignature<T>("create", "(J)Ljava/util/random/RandomGenerator;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

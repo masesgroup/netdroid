@@ -40,10 +40,10 @@ namespace Android.Hardware.Usb
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UsbManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Usb
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Hardware.Usb
     public partial class UsbManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#ACTION_USB_ACCESSORY_ATTACHED"/>
@@ -124,13 +124,13 @@ namespace Android.Hardware.Usb
         public static Java.Lang.String EXTRA_PERMISSION_GRANTED { get { if (!_EXTRA_PERMISSION_GRANTEDReady) { _EXTRA_PERMISSION_GRANTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PERMISSION_GRANTED"); _EXTRA_PERMISSION_GRANTEDReady = true; } return _EXTRA_PERMISSION_GRANTEDContent; } }
         private static Java.Lang.String _EXTRA_PERMISSION_GRANTEDContent = default;
         private static bool _EXTRA_PERMISSION_GRANTEDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#getAccessoryList()"/>
@@ -138,7 +138,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Android.Hardware.Usb.UsbAccessory"/></returns>
         public Android.Hardware.Usb.UsbAccessory[] GetAccessoryList()
         {
-            return IExecuteWithSignatureArray<Android.Hardware.Usb.UsbAccessory>("getAccessoryList", "()[Landroid/hardware/usb/UsbAccessory;");
+            return IExecuteArray<Android.Hardware.Usb.UsbAccessory>("getAccessoryList");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#openDevice(android.hardware.usb.UsbDevice)"/>
@@ -147,7 +147,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Android.Hardware.Usb.UsbDeviceConnection"/></returns>
         public Android.Hardware.Usb.UsbDeviceConnection OpenDevice(Android.Hardware.Usb.UsbDevice arg0)
         {
-            return IExecuteWithSignature<Android.Hardware.Usb.UsbDeviceConnection>("openDevice", "(Landroid/hardware/usb/UsbDevice;)Landroid/hardware/usb/UsbDeviceConnection;", arg0);
+            return IExecute<Android.Hardware.Usb.UsbDeviceConnection>("openDevice", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#openAccessory(android.hardware.usb.UsbAccessory)"/>
@@ -156,7 +156,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Android.Os.ParcelFileDescriptor"/></returns>
         public Android.Os.ParcelFileDescriptor OpenAccessory(Android.Hardware.Usb.UsbAccessory arg0)
         {
-            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("openAccessory", "(Landroid/hardware/usb/UsbAccessory;)Landroid/os/ParcelFileDescriptor;", arg0);
+            return IExecute<Android.Os.ParcelFileDescriptor>("openAccessory", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#hasPermission(android.hardware.usb.UsbAccessory)"/>
@@ -165,7 +165,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool HasPermission(Android.Hardware.Usb.UsbAccessory arg0)
         {
-            return IExecuteWithSignature<bool>("hasPermission", "(Landroid/hardware/usb/UsbAccessory;)Z", arg0);
+            return IExecute<bool>("hasPermission", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#hasPermission(android.hardware.usb.UsbDevice)"/>
@@ -174,7 +174,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool HasPermission(Android.Hardware.Usb.UsbDevice arg0)
         {
-            return IExecuteWithSignature<bool>("hasPermission", "(Landroid/hardware/usb/UsbDevice;)Z", arg0);
+            return IExecute<bool>("hasPermission", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#getDeviceList()"/>
@@ -182,7 +182,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Java.Util.HashMap"/></returns>
         public Java.Util.HashMap<Java.Lang.String, Android.Hardware.Usb.UsbDevice> GetDeviceList()
         {
-            return IExecuteWithSignature<Java.Util.HashMap<Java.Lang.String, Android.Hardware.Usb.UsbDevice>>("getDeviceList", "()Ljava/util/HashMap;");
+            return IExecute<Java.Util.HashMap<Java.Lang.String, Android.Hardware.Usb.UsbDevice>>("getDeviceList");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#requestPermission(android.hardware.usb.UsbAccessory,android.app.PendingIntent)"/>
@@ -202,13 +202,13 @@ namespace Android.Hardware.Usb
         {
             IExecute("requestPermission", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

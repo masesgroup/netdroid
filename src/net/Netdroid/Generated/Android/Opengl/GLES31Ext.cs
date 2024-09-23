@@ -40,10 +40,10 @@ namespace Android.Opengl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GLES31Ext(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Opengl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region DebugProcKHR declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Opengl
             /// </summary>
             [global::System.Obsolete("DebugProcKHR class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public DebugProcKHR(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Opengl
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Opengl
     public partial class GLES31Ext
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#GL_BLEND_ADVANCED_COHERENT_KHR"/>
@@ -1329,9 +1329,9 @@ namespace Android.Opengl
         public static int GL_VERTEX_ARRAY_KHR { get { if (!_GL_VERTEX_ARRAY_KHRReady) { _GL_VERTEX_ARRAY_KHRContent = SGetField<int>(LocalBridgeClazz, "GL_VERTEX_ARRAY_KHR"); _GL_VERTEX_ARRAY_KHRReady = true; } return _GL_VERTEX_ARRAY_KHRContent; } }
         private static int _GL_VERTEX_ARRAY_KHRContent = default;
         private static bool _GL_VERTEX_ARRAY_KHRReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetDebugMessageCallbackKHR()"/>
@@ -1869,33 +1869,33 @@ namespace Android.Opengl
         {
             SExecute(LocalBridgeClazz, "glTexStorage3DMultisampleOES", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
         #region DebugProcKHR implementation
         public partial class DebugProcKHR
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.DebugProcKHR.html#onMessage(int,int,int,int,java.lang.String)"/>
@@ -1909,20 +1909,20 @@ namespace Android.Opengl
             {
                 IExecute("onMessage", arg0, arg1, arg2, arg3, arg4);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

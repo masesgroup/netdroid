@@ -42,10 +42,10 @@ namespace Android.Icu.Text
         /// </summary>
         [global::System.Obsolete("Collator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Collator(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region ReorderCodes declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Icu.Text
             /// </summary>
             [global::System.Obsolete("ReorderCodes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ReorderCodes(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -123,9 +123,9 @@ namespace Android.Icu.Text
     public partial class Collator : Java.Util.IComparator<object>, Android.Icu.Util.IFreezable<Android.Icu.Text.Collator>, Java.Lang.ICloneable
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Text.Collator"/> to <see cref="Java.Util.Comparator"/>
@@ -139,9 +139,9 @@ namespace Android.Icu.Text
         /// Converter from <see cref="Android.Icu.Text.Collator"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Android.Icu.Text.Collator t) => t.Cast<Java.Lang.Cloneable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#CANONICAL_DECOMPOSITION"/>
@@ -191,9 +191,9 @@ namespace Android.Icu.Text
         public static int TERTIARY { get { if (!_TERTIARYReady) { _TERTIARYContent = SGetField<int>(LocalBridgeClazz, "TERTIARY"); _TERTIARYReady = true; } return _TERTIARYContent; } }
         private static int _TERTIARYContent = default;
         private static bool _TERTIARYReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getInstance()"/>
@@ -333,9 +333,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getCollationKey(java.lang.String)"/>
@@ -497,21 +497,21 @@ namespace Android.Icu.Text
         {
             IExecuteWithSignature("setStrength", "(I)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region ReorderCodes implementation
         public partial class ReorderCodes
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/Collator.ReorderCodes.html#CURRENCY"/>
@@ -567,28 +567,28 @@ namespace Android.Icu.Text
             public static int SYMBOL { get { if (!_SYMBOLReady) { _SYMBOLContent = SGetField<int>(LocalBridgeClazz, "SYMBOL"); _SYMBOLReady = true; } return _SYMBOLContent; } }
             private static int _SYMBOLContent = default;
             private static bool _SYMBOLReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ImageDecoder(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region DecodeException declaration
         /// <summary>
@@ -77,9 +77,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -98,10 +98,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ImageInfo(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -122,9 +122,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -138,7 +138,7 @@ namespace Android.Graphics
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnHeaderDecodedListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.graphics.ImageDecoder_OnHeaderDecodedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -147,13 +147,13 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnHeaderDecodedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnHeaderDecodedListener"/> or its generic type if there is one
@@ -164,14 +164,14 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.graphics.ImageDecoder$OnHeaderDecodedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -205,7 +205,7 @@ namespace Android.Graphics
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnPartialImageListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.graphics.ImageDecoder_OnPartialImageListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -214,13 +214,13 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnPartialImageListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnPartialImageListener"/> or its generic type if there is one
@@ -231,14 +231,14 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.graphics.ImageDecoder$OnPartialImageListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -279,10 +279,10 @@ namespace Android.Graphics
             /// </summary>
             [global::System.Obsolete("Source class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Source(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -303,9 +303,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -317,13 +317,13 @@ namespace Android.Graphics
     public partial class ImageDecoder
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#ALLOCATOR_DEFAULT"/>
@@ -361,9 +361,9 @@ namespace Android.Graphics
         public static int MEMORY_POLICY_LOW_RAM { get { if (!_MEMORY_POLICY_LOW_RAMReady) { _MEMORY_POLICY_LOW_RAMContent = SGetField<int>(LocalBridgeClazz, "MEMORY_POLICY_LOW_RAM"); _MEMORY_POLICY_LOW_RAMReady = true; } return _MEMORY_POLICY_LOW_RAMContent; } }
         private static int _MEMORY_POLICY_LOW_RAMContent = default;
         private static bool _MEMORY_POLICY_LOW_RAMReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#decodeBitmap(android.graphics.ImageDecoder.Source,android.graphics.ImageDecoder.OnHeaderDecodedListener)"/>
@@ -494,9 +494,9 @@ namespace Android.Graphics
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isMimeTypeSupported", "(Ljava/lang/String;)Z", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.html#getOnPartialImageListener()"/>
@@ -666,37 +666,37 @@ namespace Android.Graphics
         {
             IExecuteWithSignature("setUnpremultipliedRequired", "(Z)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region DecodeException implementation
         public partial class DecodeException
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -705,21 +705,21 @@ namespace Android.Graphics
         public partial class ImageInfo
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.ImageInfo.html#getColorSpace()"/>
@@ -753,13 +753,13 @@ namespace Android.Graphics
             {
                 return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -768,21 +768,21 @@ namespace Android.Graphics
         public partial class OnHeaderDecodedListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnHeaderDecodedListener"/>
@@ -792,13 +792,13 @@ namespace Android.Graphics
                 AddEventHandler("onHeaderDecoded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnHeaderDecodedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.OnHeaderDecodedListener.html#onHeaderDecoded(android.graphics.ImageDecoder,android.graphics.ImageDecoder.ImageInfo,android.graphics.ImageDecoder.Source)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnHeaderDecoded"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Graphics.ImageDecoder, Android.Graphics.ImageDecoder.ImageInfo, Android.Graphics.ImageDecoder.Source> OnOnHeaderDecoded { get; set; } = null;
-
+            
             bool hasOverrideOnHeaderDecoded = true;
             void OnHeaderDecodedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -807,7 +807,7 @@ namespace Android.Graphics
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Graphics.ImageDecoder>(0), data.EventData.GetAt<Android.Graphics.ImageDecoder.ImageInfo>(1), data.EventData.GetAt<Android.Graphics.ImageDecoder.Source>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnHeaderDecoded;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.OnHeaderDecodedListener.html#onHeaderDecoded(android.graphics.ImageDecoder,android.graphics.ImageDecoder.ImageInfo,android.graphics.ImageDecoder.Source)"/>
             /// </summary>
@@ -818,13 +818,13 @@ namespace Android.Graphics
             {
                 hasOverrideOnHeaderDecoded = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -833,21 +833,21 @@ namespace Android.Graphics
         public partial class OnHeaderDecodedListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.OnHeaderDecodedListener.html#onHeaderDecoded(android.graphics.ImageDecoder,android.graphics.ImageDecoder.ImageInfo,android.graphics.ImageDecoder.Source)"/>
@@ -859,13 +859,13 @@ namespace Android.Graphics
             {
                 IExecute("onHeaderDecoded", arg0, arg1, arg2);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -874,21 +874,21 @@ namespace Android.Graphics
         public partial class OnPartialImageListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnPartialImageListener"/>
@@ -898,13 +898,13 @@ namespace Android.Graphics
                 AddEventHandler("onPartialImage", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnPartialImageEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.OnPartialImageListener.html#onPartialImage(android.graphics.ImageDecoder.DecodeException)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPartialImage"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<MASES.JCOBridge.C2JBridge.JVMBridgeException, bool> OnOnPartialImage { get; set; } = null;
-
+            
             bool hasOverrideOnPartialImage = true;
             void OnPartialImageEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -913,7 +913,7 @@ namespace Android.Graphics
                 var executionResult = methodToExecute.Invoke(JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnPartialImage, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.OnPartialImageListener.html#onPartialImage(android.graphics.ImageDecoder.DecodeException)"/>
             /// </summary>
@@ -923,13 +923,13 @@ namespace Android.Graphics
             {
                 hasOverrideOnPartialImage = false; return default;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -938,21 +938,21 @@ namespace Android.Graphics
         public partial class OnPartialImageListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ImageDecoder.OnPartialImageListener.html#onPartialImage(android.graphics.ImageDecoder.DecodeException)"/>
@@ -963,13 +963,13 @@ namespace Android.Graphics
             {
                 return IExecuteWithSignature<bool>("onPartialImage", "(Landroid/graphics/ImageDecoder$DecodeException;)Z", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -978,36 +978,36 @@ namespace Android.Graphics
         public partial class Source
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Content.Res
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AssetManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Content.Res
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region AssetInputStream declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Content.Res
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AssetInputStream(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Content.Res
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Content.Res
     public partial class AssetManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#ACCESS_BUFFER"/>
@@ -151,13 +151,13 @@ namespace Android.Content.Res
         public static int ACCESS_UNKNOWN { get { if (!_ACCESS_UNKNOWNReady) { _ACCESS_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "ACCESS_UNKNOWN"); _ACCESS_UNKNOWNReady = true; } return _ACCESS_UNKNOWNContent; } }
         private static int _ACCESS_UNKNOWNContent = default;
         private static bool _ACCESS_UNKNOWNReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#openFd(java.lang.String)"/>
@@ -167,7 +167,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Android.Content.Res.AssetFileDescriptor OpenFd(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openFd", "(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;", arg0);
+            return IExecute<Android.Content.Res.AssetFileDescriptor>("openFd", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#openNonAssetFd(int,java.lang.String)"/>
@@ -188,7 +188,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Android.Content.Res.AssetFileDescriptor OpenNonAssetFd(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openNonAssetFd", "(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;", arg0);
+            return IExecute<Android.Content.Res.AssetFileDescriptor>("openNonAssetFd", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#openXmlResourceParser(int,java.lang.String)"/>
@@ -209,7 +209,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Android.Content.Res.XmlResourceParser OpenXmlResourceParser(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Android.Content.Res.XmlResourceParser>("openXmlResourceParser", "(Ljava/lang/String;)Landroid/content/res/XmlResourceParser;", arg0);
+            return IExecute<Android.Content.Res.XmlResourceParser>("openXmlResourceParser", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#open(java.lang.String,int)"/>
@@ -230,7 +230,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.InputStream Open(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Io.InputStream>("open", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
+            return IExecute<Java.Io.InputStream>("open", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#getLocales()"/>
@@ -238,7 +238,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetLocales()
         {
-            return IExecuteWithSignatureArray<Java.Lang.String>("getLocales", "()[Ljava/lang/String;");
+            return IExecuteArray<Java.Lang.String>("getLocales");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#list(java.lang.String)"/>
@@ -248,53 +248,53 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String[] List(Java.Lang.String arg0)
         {
-            return IExecuteWithSignatureArray<Java.Lang.String>("list", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
+            return IExecuteArray<Java.Lang.String>("list", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region AssetInputStream implementation
         public partial class AssetInputStream
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

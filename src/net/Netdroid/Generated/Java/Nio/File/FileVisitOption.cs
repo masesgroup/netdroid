@@ -40,10 +40,10 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileVisitOption(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Nio.File
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Nio.File
     public partial class FileVisitOption
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitOption.html#FOLLOW_LINKS"/>
@@ -88,9 +88,9 @@ namespace Java.Nio.File
         public static Java.Nio.File.FileVisitOption FOLLOW_LINKS { get { if (!_FOLLOW_LINKSReady) { _FOLLOW_LINKSContent = SGetField<Java.Nio.File.FileVisitOption>(LocalBridgeClazz, "FOLLOW_LINKS"); _FOLLOW_LINKSReady = true; } return _FOLLOW_LINKSContent; } }
         private static Java.Nio.File.FileVisitOption _FOLLOW_LINKSContent = default;
         private static bool _FOLLOW_LINKSReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitOption.html#valueOf(java.lang.String)"/>
@@ -109,17 +109,17 @@ namespace Java.Nio.File
         {
             return SExecuteWithSignatureArray<Java.Nio.File.FileVisitOption>(LocalBridgeClazz, "values", "()[Ljava/nio/file/FileVisitOption;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

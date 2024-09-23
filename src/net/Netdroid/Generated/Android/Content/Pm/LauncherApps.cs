@@ -40,10 +40,10 @@ namespace Android.Content.Pm
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LauncherApps(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Content.Pm
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region ArchiveCompatibilityParams declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ArchiveCompatibilityParams(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Content.Pm
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PinItemRequest(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -218,10 +218,10 @@ namespace Android.Content.Pm
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ShortcutQuery(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -242,9 +242,9 @@ namespace Android.Content.Pm
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -256,13 +256,13 @@ namespace Android.Content.Pm
     public partial class LauncherApps
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#ACTION_CONFIRM_PIN_APPWIDGET"/>
@@ -282,13 +282,13 @@ namespace Android.Content.Pm
         public static Java.Lang.String EXTRA_PIN_ITEM_REQUEST { get { if (!_EXTRA_PIN_ITEM_REQUESTReady) { _EXTRA_PIN_ITEM_REQUESTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PIN_ITEM_REQUEST"); _EXTRA_PIN_ITEM_REQUESTReady = true; } return _EXTRA_PIN_ITEM_REQUESTContent; } }
         private static Java.Lang.String _EXTRA_PIN_ITEM_REQUESTContent = default;
         private static bool _EXTRA_PIN_ITEM_REQUESTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.html#getShortcutIntent(java.lang.String,java.lang.String,android.os.Bundle,android.os.UserHandle)"/>
@@ -598,29 +598,29 @@ namespace Android.Content.Pm
         {
             IExecuteWithSignature("unregisterPackageInstallerSessionCallback", "(Landroid/content/pm/PackageInstaller$SessionCallback;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region ArchiveCompatibilityParams implementation
         public partial class ArchiveCompatibilityParams
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.ArchiveCompatibilityParams.html#setEnableIconOverlay(boolean)"/>
@@ -638,13 +638,13 @@ namespace Android.Content.Pm
             {
                 IExecuteWithSignature("setEnableUnarchivalConfirmation", "(Z)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -653,21 +653,21 @@ namespace Android.Content.Pm
         public partial class Callback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onPackageAdded(java.lang.String,android.os.UserHandle)"/>
@@ -765,13 +765,13 @@ namespace Android.Content.Pm
             {
                 IExecute("onShortcutsChanged", arg0, arg1, arg2);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -780,13 +780,13 @@ namespace Android.Content.Pm
         public partial class PinItemRequest
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.PinItemRequest.html#CREATOR"/>
@@ -806,13 +806,13 @@ namespace Android.Content.Pm
             public static int REQUEST_TYPE_SHORTCUT { get { if (!_REQUEST_TYPE_SHORTCUTReady) { _REQUEST_TYPE_SHORTCUTContent = SGetField<int>(LocalBridgeClazz, "REQUEST_TYPE_SHORTCUT"); _REQUEST_TYPE_SHORTCUTReady = true; } return _REQUEST_TYPE_SHORTCUTContent; } }
             private static int _REQUEST_TYPE_SHORTCUTContent = default;
             private static bool _REQUEST_TYPE_SHORTCUTReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.PinItemRequest.html#getAppWidgetProviderInfo(android.content.Context)"/>
@@ -889,13 +889,13 @@ namespace Android.Content.Pm
             {
                 IExecute("writeToParcel", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -904,13 +904,13 @@ namespace Android.Content.Pm
         public partial class ShortcutQuery
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.ShortcutQuery.html#FLAG_GET_KEY_FIELDS_ONLY"/>
@@ -948,13 +948,13 @@ namespace Android.Content.Pm
             public static int FLAG_MATCH_PINNED_BY_ANY_LAUNCHER { get { if (!_FLAG_MATCH_PINNED_BY_ANY_LAUNCHERReady) { _FLAG_MATCH_PINNED_BY_ANY_LAUNCHERContent = SGetField<int>(LocalBridgeClazz, "FLAG_MATCH_PINNED_BY_ANY_LAUNCHER"); _FLAG_MATCH_PINNED_BY_ANY_LAUNCHERReady = true; } return _FLAG_MATCH_PINNED_BY_ANY_LAUNCHERContent; } }
             private static int _FLAG_MATCH_PINNED_BY_ANY_LAUNCHERContent = default;
             private static bool _FLAG_MATCH_PINNED_BY_ANY_LAUNCHERReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.ShortcutQuery.html#setActivity(android.content.ComponentName)"/>
@@ -1010,20 +1010,20 @@ namespace Android.Content.Pm
             {
                 return IExecuteWithSignature<Android.Content.Pm.LauncherApps.ShortcutQuery>("setShortcutIds", "(Ljava/util/List;)Landroid/content/pm/LauncherApps$ShortcutQuery;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Org.Xml.Sax.Ext
         /// </summary>
         [global::System.Obsolete("Attributes2 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Attributes2(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Org.Xml.Sax.Ext
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Org.Xml.Sax.Ext
     public partial interface IAttributes2 : Org.Xml.Sax.IAttributes
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Org.Xml.Sax.Ext
     public partial class Attributes2 : Org.Xml.Sax.Ext.IAttributes2
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2.html#isDeclared(int)"/>
@@ -117,7 +117,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="bool"/></returns>
         public bool IsDeclared(int arg0)
         {
-            return IExecuteWithSignature<bool>("isDeclared", "(I)Z", arg0);
+            return IExecute<bool>("isDeclared", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2.html#isDeclared(java.lang.String,java.lang.String)"/>
@@ -136,7 +136,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="bool"/></returns>
         public bool IsDeclared(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("isDeclared", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("isDeclared", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2.html#isSpecified(int)"/>
@@ -145,7 +145,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="bool"/></returns>
         public bool IsSpecified(int arg0)
         {
-            return IExecuteWithSignature<bool>("isSpecified", "(I)Z", arg0);
+            return IExecute<bool>("isSpecified", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Attributes2.html#isSpecified(java.lang.String,java.lang.String)"/>
@@ -164,15 +164,15 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="bool"/></returns>
         public bool IsSpecified(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<bool>("isSpecified", "(Ljava/lang/String;)Z", arg0);
+            return IExecute<bool>("isSpecified", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

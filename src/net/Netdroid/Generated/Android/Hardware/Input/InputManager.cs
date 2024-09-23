@@ -40,10 +40,10 @@ namespace Android.Hardware.Input
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public InputManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Hardware.Input
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region InputDeviceListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Hardware.Input
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public InputDeviceListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.hardware.input.InputManager_InputDeviceListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Hardware.Input
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region InputDeviceListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="InputDeviceListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Hardware.Input
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.hardware.input.InputManager$InputDeviceListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -141,13 +141,13 @@ namespace Android.Hardware.Input
     public partial class InputManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.html#ACTION_QUERY_KEYBOARD_LAYOUTS"/>
@@ -161,13 +161,13 @@ namespace Android.Hardware.Input
         public static Java.Lang.String META_DATA_KEYBOARD_LAYOUTS { get { if (!_META_DATA_KEYBOARD_LAYOUTSReady) { _META_DATA_KEYBOARD_LAYOUTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "META_DATA_KEYBOARD_LAYOUTS"); _META_DATA_KEYBOARD_LAYOUTSReady = true; } return _META_DATA_KEYBOARD_LAYOUTSContent; } }
         private static Java.Lang.String _META_DATA_KEYBOARD_LAYOUTSContent = default;
         private static bool _META_DATA_KEYBOARD_LAYOUTSReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.html#getHostUsiVersion(android.view.Display)"/>
@@ -246,29 +246,29 @@ namespace Android.Hardware.Input
         {
             IExecuteWithSignature("unregisterInputDeviceListener", "(Landroid/hardware/input/InputManager$InputDeviceListener;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region InputDeviceListener implementation
         public partial class InputDeviceListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="InputDeviceListener"/>
@@ -280,13 +280,13 @@ namespace Android.Hardware.Input
                 AddEventHandler("onInputDeviceRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnInputDeviceRemovedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/input/InputManager.InputDeviceListener.html#onInputDeviceAdded(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnInputDeviceAdded"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnInputDeviceAdded { get; set; } = null;
-
+            
             bool hasOverrideOnInputDeviceAdded = true;
             void OnInputDeviceAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -295,7 +295,7 @@ namespace Android.Hardware.Input
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnInputDeviceAdded;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.InputDeviceListener.html#onInputDeviceAdded(int)"/>
             /// </summary>
@@ -304,13 +304,13 @@ namespace Android.Hardware.Input
             {
                 hasOverrideOnInputDeviceAdded = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/input/InputManager.InputDeviceListener.html#onInputDeviceChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnInputDeviceChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnInputDeviceChanged { get; set; } = null;
-
+            
             bool hasOverrideOnInputDeviceChanged = true;
             void OnInputDeviceChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -319,7 +319,7 @@ namespace Android.Hardware.Input
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnInputDeviceChanged;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.InputDeviceListener.html#onInputDeviceChanged(int)"/>
             /// </summary>
@@ -328,13 +328,13 @@ namespace Android.Hardware.Input
             {
                 hasOverrideOnInputDeviceChanged = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/input/InputManager.InputDeviceListener.html#onInputDeviceRemoved(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnInputDeviceRemoved"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnInputDeviceRemoved { get; set; } = null;
-
+            
             bool hasOverrideOnInputDeviceRemoved = true;
             void OnInputDeviceRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -343,7 +343,7 @@ namespace Android.Hardware.Input
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnInputDeviceRemoved;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.InputDeviceListener.html#onInputDeviceRemoved(int)"/>
             /// </summary>
@@ -352,13 +352,13 @@ namespace Android.Hardware.Input
             {
                 hasOverrideOnInputDeviceRemoved = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -367,21 +367,21 @@ namespace Android.Hardware.Input
         public partial class InputDeviceListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.InputDeviceListener.html#onInputDeviceAdded(int)"/>
@@ -407,20 +407,20 @@ namespace Android.Hardware.Input
             {
                 IExecuteWithSignature("onInputDeviceRemoved", "(I)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

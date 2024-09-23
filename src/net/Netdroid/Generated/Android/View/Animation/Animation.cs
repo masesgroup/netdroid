@@ -42,10 +42,10 @@ namespace Android.View.Animation
         /// </summary>
         [global::System.Obsolete("Animation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Animation(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View.Animation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region AnimationListener declaration
         /// <summary>
@@ -78,7 +78,7 @@ namespace Android.View.Animation
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public AnimationListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.animation.Animation_AnimationListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -87,13 +87,13 @@ namespace Android.View.Animation
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region AnimationListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="AnimationListener"/> or its generic type if there is one
@@ -104,14 +104,14 @@ namespace Android.View.Animation
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.view.animation.Animation$AnimationListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -152,13 +152,13 @@ namespace Android.View.Animation
             : base(arg0, arg1)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#ABSOLUTE"/>
@@ -220,13 +220,13 @@ namespace Android.View.Animation
         public static int ZORDER_TOP { get { if (!_ZORDER_TOPReady) { _ZORDER_TOPContent = SGetField<int>(LocalBridgeClazz, "ZORDER_TOP"); _ZORDER_TOPReady = true; } return _ZORDER_TOPContent; } }
         private static int _ZORDER_TOPContent = default;
         private static bool _ZORDER_TOPReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getInterpolator()"/>
@@ -597,29 +597,29 @@ namespace Android.View.Animation
         {
             IExecuteWithSignature("startNow", "()V");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region AnimationListener implementation
         public partial class AnimationListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="AnimationListener"/>
@@ -631,13 +631,13 @@ namespace Android.View.Animation
                 AddEventHandler("onAnimationStart", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnAnimationStartEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/animation/Animation.AnimationListener.html#onAnimationEnd(android.view.animation.Animation)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationEnd"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.Animation.Animation> OnOnAnimationEnd { get; set; } = null;
-
+            
             bool hasOverrideOnAnimationEnd = true;
             void OnAnimationEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -646,7 +646,7 @@ namespace Android.View.Animation
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.Animation.Animation>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnAnimationEnd;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/animation/Animation.AnimationListener.html#onAnimationEnd(android.view.animation.Animation)"/>
             /// </summary>
@@ -655,13 +655,13 @@ namespace Android.View.Animation
             {
                 hasOverrideOnAnimationEnd = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/animation/Animation.AnimationListener.html#onAnimationRepeat(android.view.animation.Animation)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationRepeat"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.Animation.Animation> OnOnAnimationRepeat { get; set; } = null;
-
+            
             bool hasOverrideOnAnimationRepeat = true;
             void OnAnimationRepeatEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -670,7 +670,7 @@ namespace Android.View.Animation
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.Animation.Animation>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnAnimationRepeat;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/animation/Animation.AnimationListener.html#onAnimationRepeat(android.view.animation.Animation)"/>
             /// </summary>
@@ -679,13 +679,13 @@ namespace Android.View.Animation
             {
                 hasOverrideOnAnimationRepeat = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/animation/Animation.AnimationListener.html#onAnimationStart(android.view.animation.Animation)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationStart"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.Animation.Animation> OnOnAnimationStart { get; set; } = null;
-
+            
             bool hasOverrideOnAnimationStart = true;
             void OnAnimationStartEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -694,7 +694,7 @@ namespace Android.View.Animation
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.Animation.Animation>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnAnimationStart;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/animation/Animation.AnimationListener.html#onAnimationStart(android.view.animation.Animation)"/>
             /// </summary>
@@ -703,13 +703,13 @@ namespace Android.View.Animation
             {
                 hasOverrideOnAnimationStart = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -718,21 +718,21 @@ namespace Android.View.Animation
         public partial class AnimationListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/animation/Animation.AnimationListener.html#onAnimationEnd(android.view.animation.Animation)"/>
@@ -758,20 +758,20 @@ namespace Android.View.Animation
             {
                 IExecuteWithSignature("onAnimationStart", "(Landroid/view/animation/Animation;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

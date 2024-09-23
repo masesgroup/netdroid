@@ -42,10 +42,10 @@ namespace Android.Widget
         /// </summary>
         [global::System.Obsolete("AdapterView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AdapterView(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region AdapterContextMenuInfo declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Widget
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AdapterContextMenuInfo(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -123,7 +123,7 @@ namespace Android.Widget
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnItemClickListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.AdapterView_OnItemClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -132,13 +132,13 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnItemClickListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnItemClickListener"/> or its generic type if there is one
@@ -149,14 +149,14 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.widget.AdapterView$OnItemClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -190,7 +190,7 @@ namespace Android.Widget
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnItemLongClickListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.AdapterView_OnItemLongClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -199,13 +199,13 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnItemLongClickListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnItemLongClickListener"/> or its generic type if there is one
@@ -216,14 +216,14 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.widget.AdapterView$OnItemLongClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -257,7 +257,7 @@ namespace Android.Widget
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnItemSelectedListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.AdapterView_OnItemSelectedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -266,13 +266,13 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnItemSelectedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnItemSelectedListener"/> or its generic type if there is one
@@ -283,14 +283,14 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.widget.AdapterView$OnItemSelectedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -336,10 +336,10 @@ namespace Android.Widget
         /// </summary>
         [global::System.Obsolete("AdapterView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AdapterView(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -360,7 +360,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -408,13 +408,13 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#INVALID_POSITION"/>
@@ -440,13 +440,13 @@ namespace Android.Widget
         public static long INVALID_ROW_ID { get { if (!_INVALID_ROW_IDReady) { _INVALID_ROW_IDContent = SGetField<long>(LocalBridgeClazz, "INVALID_ROW_ID"); _INVALID_ROW_IDReady = true; } return _INVALID_ROW_IDContent; } }
         private static long _INVALID_ROW_IDContent = default;
         private static bool _INVALID_ROW_IDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#getSelectedView()"/>
@@ -662,9 +662,9 @@ namespace Android.Widget
         {
             IExecuteWithSignature("setOnItemSelectedListener", "(Landroid/widget/AdapterView$OnItemSelectedListener;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region AdapterContextMenuInfo implementation
         public partial class AdapterContextMenuInfo
@@ -680,13 +680,13 @@ namespace Android.Widget
                 : base(arg0, arg1, arg2)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AdapterView.AdapterContextMenuInfo.html#targetView"/>
@@ -700,21 +700,21 @@ namespace Android.Widget
             /// <see href="https://developer.android.com/reference/android/widget/AdapterView.AdapterContextMenuInfo.html#id"/>
             /// </summary>
             public long id { get { return IGetField<long>("id"); } set { ISetField("id", value); } }
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -723,21 +723,21 @@ namespace Android.Widget
         public partial class OnItemClickListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnItemClickListener"/>
@@ -747,13 +747,13 @@ namespace Android.Widget
                 AddEventHandler("onItemClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnItemClickEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/AdapterView.OnItemClickListener.html#onItemClick(android.widget.AdapterView,android.view.View,int,long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnItemClick"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Widget.AdapterView, Android.View.View, int, long> OnOnItemClick { get; set; } = null;
-
+            
             bool hasOverrideOnItemClick = true;
             void OnItemClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -762,7 +762,7 @@ namespace Android.Widget
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Widget.AdapterView>(0), data.EventData.GetAt<Android.View.View>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<long>(3));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnItemClick;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AdapterView.OnItemClickListener.html#onItemClick(android.widget.AdapterView,android.view.View,int,long)"/>
             /// </summary>
@@ -774,13 +774,13 @@ namespace Android.Widget
             {
                 hasOverrideOnItemClick = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -789,21 +789,21 @@ namespace Android.Widget
         public partial class OnItemClickListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AdapterView.OnItemClickListener.html#onItemClick(android.widget.AdapterView,android.view.View,int,long)"/>
@@ -816,13 +816,13 @@ namespace Android.Widget
             {
                 IExecute("onItemClick", arg0, arg1, arg2, arg3);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -831,21 +831,21 @@ namespace Android.Widget
         public partial class OnItemLongClickListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnItemLongClickListener"/>
@@ -855,13 +855,13 @@ namespace Android.Widget
                 AddEventHandler("onItemLongClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnItemLongClickEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/AdapterView.OnItemLongClickListener.html#onItemLongClick(android.widget.AdapterView,android.view.View,int,long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnItemLongClick"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.Widget.AdapterView, Android.View.View, int, long, bool> OnOnItemLongClick { get; set; } = null;
-
+            
             bool hasOverrideOnItemLongClick = true;
             void OnItemLongClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -870,7 +870,7 @@ namespace Android.Widget
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.Widget.AdapterView>(0), data.EventData.GetAt<Android.View.View>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<long>(3));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnItemLongClick, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AdapterView.OnItemLongClickListener.html#onItemLongClick(android.widget.AdapterView,android.view.View,int,long)"/>
             /// </summary>
@@ -883,13 +883,13 @@ namespace Android.Widget
             {
                 hasOverrideOnItemLongClick = false; return default;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -898,21 +898,21 @@ namespace Android.Widget
         public partial class OnItemLongClickListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AdapterView.OnItemLongClickListener.html#onItemLongClick(android.widget.AdapterView,android.view.View,int,long)"/>
@@ -926,13 +926,13 @@ namespace Android.Widget
             {
                 return IExecute<bool>("onItemLongClick", arg0, arg1, arg2, arg3);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -941,21 +941,21 @@ namespace Android.Widget
         public partial class OnItemSelectedListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnItemSelectedListener"/>
@@ -966,13 +966,13 @@ namespace Android.Widget
                 AddEventHandler("onNothingSelected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnNothingSelectedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/AdapterView.OnItemSelectedListener.html#onItemSelected(android.widget.AdapterView,android.view.View,int,long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnItemSelected"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Widget.AdapterView, Android.View.View, int, long> OnOnItemSelected { get; set; } = null;
-
+            
             bool hasOverrideOnItemSelected = true;
             void OnItemSelectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -981,7 +981,7 @@ namespace Android.Widget
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Widget.AdapterView>(0), data.EventData.GetAt<Android.View.View>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<long>(3));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnItemSelected;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AdapterView.OnItemSelectedListener.html#onItemSelected(android.widget.AdapterView,android.view.View,int,long)"/>
             /// </summary>
@@ -993,13 +993,13 @@ namespace Android.Widget
             {
                 hasOverrideOnItemSelected = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/AdapterView.OnItemSelectedListener.html#onNothingSelected(android.widget.AdapterView)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnNothingSelected"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Widget.AdapterView> OnOnNothingSelected { get; set; } = null;
-
+            
             bool hasOverrideOnNothingSelected = true;
             void OnNothingSelectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1008,7 +1008,7 @@ namespace Android.Widget
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Widget.AdapterView>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnNothingSelected;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AdapterView.OnItemSelectedListener.html#onNothingSelected(android.widget.AdapterView)"/>
             /// </summary>
@@ -1017,13 +1017,13 @@ namespace Android.Widget
             {
                 hasOverrideOnNothingSelected = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1032,21 +1032,21 @@ namespace Android.Widget
         public partial class OnItemSelectedListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AdapterView.OnItemSelectedListener.html#onItemSelected(android.widget.AdapterView,android.view.View,int,long)"/>
@@ -1067,20 +1067,20 @@ namespace Android.Widget
             {
                 IExecuteWithSignature("onNothingSelected", "(Landroid/widget/AdapterView;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -1127,17 +1127,17 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Widget.AdapterView{T}"/> to <see cref="Android.Widget.AdapterView"/>
         /// </summary>
         public static implicit operator Android.Widget.AdapterView(Android.Widget.AdapterView<T> t) => t.Cast<Android.Widget.AdapterView>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#INVALID_POSITION"/>
@@ -1163,13 +1163,13 @@ namespace Android.Widget
         public static long INVALID_ROW_ID { get { if (!_INVALID_ROW_IDReady) { _INVALID_ROW_IDContent = SGetField<long>(LocalBridgeClazz, "INVALID_ROW_ID"); _INVALID_ROW_IDReady = true; } return _INVALID_ROW_IDContent; } }
         private static long _INVALID_ROW_IDContent = default;
         private static bool _INVALID_ROW_IDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#getSelectedView()"/>
@@ -1377,13 +1377,13 @@ namespace Android.Widget
         {
             IExecuteWithSignature("setOnItemSelectedListener", "(Landroid/widget/AdapterView$OnItemSelectedListener;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DisplayContext(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Type declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Type(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Icu.Text
     public partial class DisplayContext
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DisplayContext.html#CAPITALIZATION_FOR_BEGINNING_OF_SENTENCE"/>
@@ -193,9 +193,9 @@ namespace Android.Icu.Text
         public static Android.Icu.Text.DisplayContext SUBSTITUTE { get { if (!_SUBSTITUTEReady) { _SUBSTITUTEContent = SGetField<Android.Icu.Text.DisplayContext>(LocalBridgeClazz, "SUBSTITUTE"); _SUBSTITUTEReady = true; } return _SUBSTITUTEContent; } }
         private static Android.Icu.Text.DisplayContext _SUBSTITUTEContent = default;
         private static bool _SUBSTITUTEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DisplayContext.html#valueOf(java.lang.String)"/>
@@ -214,9 +214,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignatureArray<Android.Icu.Text.DisplayContext>(LocalBridgeClazz, "values", "()[Landroid/icu/text/DisplayContext;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DisplayContext.html#type()"/>
@@ -234,21 +234,21 @@ namespace Android.Icu.Text
         {
             return IExecuteWithSignature<int>("value", "()I");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Type implementation
         public partial class Type
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DisplayContext.Type.html#CAPITALIZATION"/>
@@ -274,9 +274,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.DisplayContext.Type SUBSTITUTE_HANDLING { get { if (!_SUBSTITUTE_HANDLINGReady) { _SUBSTITUTE_HANDLINGContent = SGetField<Android.Icu.Text.DisplayContext.Type>(LocalBridgeClazz, "SUBSTITUTE_HANDLING"); _SUBSTITUTE_HANDLINGReady = true; } return _SUBSTITUTE_HANDLINGContent; } }
             private static Android.Icu.Text.DisplayContext.Type _SUBSTITUTE_HANDLINGContent = default;
             private static bool _SUBSTITUTE_HANDLINGReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DisplayContext.Type.html#valueOf(java.lang.String)"/>
@@ -295,24 +295,24 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.DisplayContext.Type>(LocalBridgeClazz, "values", "()[Landroid/icu/text/DisplayContext$Type;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

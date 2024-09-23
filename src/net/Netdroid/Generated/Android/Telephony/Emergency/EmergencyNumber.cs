@@ -40,10 +40,10 @@ namespace Android.Telephony.Emergency
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public EmergencyNumber(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Telephony.Emergency
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,9 +74,9 @@ namespace Android.Telephony.Emergency
     public partial class EmergencyNumber : Android.Os.IParcelable, Java.Lang.IComparable<Android.Telephony.Emergency.EmergencyNumber>
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Telephony.Emergency.EmergencyNumber"/> to <see cref="Android.Os.Parcelable"/>
@@ -86,9 +86,9 @@ namespace Android.Telephony.Emergency
         /// Converter from <see cref="Android.Telephony.Emergency.EmergencyNumber"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Telephony.Emergency.EmergencyNumber t) => t.Cast<Java.Lang.Comparable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#CREATOR"/>
@@ -192,13 +192,13 @@ namespace Android.Telephony.Emergency
         public static int EMERGENCY_SERVICE_CATEGORY_UNSPECIFIED { get { if (!_EMERGENCY_SERVICE_CATEGORY_UNSPECIFIEDReady) { _EMERGENCY_SERVICE_CATEGORY_UNSPECIFIEDContent = SGetField<int>(LocalBridgeClazz, "EMERGENCY_SERVICE_CATEGORY_UNSPECIFIED"); _EMERGENCY_SERVICE_CATEGORY_UNSPECIFIEDReady = true; } return _EMERGENCY_SERVICE_CATEGORY_UNSPECIFIEDContent; } }
         private static int _EMERGENCY_SERVICE_CATEGORY_UNSPECIFIEDContent = default;
         private static bool _EMERGENCY_SERVICE_CATEGORY_UNSPECIFIEDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#isFromSources(int)"/>
@@ -309,13 +309,13 @@ namespace Android.Telephony.Emergency
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

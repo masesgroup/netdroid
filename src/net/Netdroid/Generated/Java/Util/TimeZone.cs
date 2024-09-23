@@ -42,10 +42,10 @@ namespace Java.Util
         /// </summary>
         [global::System.Obsolete("TimeZone class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TimeZone(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -76,9 +76,9 @@ namespace Java.Util
     public partial class TimeZone : Java.Io.ISerializable, Java.Lang.ICloneable
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.TimeZone"/> to <see cref="Java.Io.Serializable"/>
@@ -88,9 +88,9 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.TimeZone"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Util.TimeZone t) => t.Cast<Java.Lang.Cloneable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/TimeZone.html#LONG"/>
@@ -104,9 +104,9 @@ namespace Java.Util
         public static int SHORT { get { if (!_SHORTReady) { _SHORTContent = SGetField<int>(LocalBridgeClazz, "SHORT"); _SHORTReady = true; } return _SHORTContent; } }
         private static int _SHORTContent = default;
         private static bool _SHORTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/TimeZone.html#getDefault()"/>
@@ -159,9 +159,9 @@ namespace Java.Util
         {
             SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/util/TimeZone;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/TimeZone.html#inDaylightTime(java.util.Date)"/>
@@ -306,13 +306,13 @@ namespace Java.Util
         {
             IExecuteWithSignature("setID", "(Ljava/lang/String;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

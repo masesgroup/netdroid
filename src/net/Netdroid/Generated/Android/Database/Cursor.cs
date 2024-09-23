@@ -42,10 +42,10 @@ namespace Android.Database
         /// </summary>
         [global::System.Obsolete("Cursor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Cursor(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Database
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Database
     public partial interface ICursor : Java.Io.ICloseable
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Android.Database
     public partial class Cursor : Android.Database.ICursor
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/Cursor.html#FIELD_TYPE_BLOB"/>
@@ -132,13 +132,13 @@ namespace Android.Database
         public static int FIELD_TYPE_STRING { get { if (!_FIELD_TYPE_STRINGReady) { _FIELD_TYPE_STRINGContent = SGetField<int>(LocalBridgeClazz, "FIELD_TYPE_STRING"); _FIELD_TYPE_STRINGReady = true; } return _FIELD_TYPE_STRINGContent; } }
         private static int _FIELD_TYPE_STRINGContent = default;
         private static bool _FIELD_TYPE_STRINGReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/Cursor.html#getNotificationUri()"/>
@@ -503,13 +503,13 @@ namespace Android.Database
         {
             IExecute("setNotificationUris", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

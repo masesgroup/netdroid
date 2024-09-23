@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaFormat(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region QpOffsetRect declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public QpOffsetRect(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -127,13 +127,13 @@ namespace Android.Media
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#COLOR_RANGE_FULL"/>
@@ -1180,9 +1180,9 @@ namespace Android.Media
         public static Java.Lang.String MIMETYPE_VIDEO_VP9 { get { if (!_MIMETYPE_VIDEO_VP9Ready) { _MIMETYPE_VIDEO_VP9Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "MIMETYPE_VIDEO_VP9"); _MIMETYPE_VIDEO_VP9Ready = true; } return _MIMETYPE_VIDEO_VP9Content; } }
         private static Java.Lang.String _MIMETYPE_VIDEO_VP9Content = default;
         private static bool _MIMETYPE_VIDEO_VP9Ready = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#createAudioFormat(java.lang.String,int,int)"/>
@@ -1216,9 +1216,9 @@ namespace Android.Media
         {
             return SExecute<Android.Media.MediaFormat>(LocalBridgeClazz, "createVideoFormat", arg0, arg1, arg2);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#containsFeature(java.lang.String)"/>
@@ -1456,9 +1456,9 @@ namespace Android.Media
         {
             IExecute("setString", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region QpOffsetRect implementation
         public partial class QpOffsetRect
@@ -1473,17 +1473,17 @@ namespace Android.Media
                 : base(arg0, arg1)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaFormat.QpOffsetRect.html#flattenToString(java.util.List)"/>
@@ -1494,9 +1494,9 @@ namespace Android.Media
             {
                 return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "flattenToString", "(Ljava/util/List;)Ljava/lang/String;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaFormat.QpOffsetRect.html#flattenToString()"/>
@@ -1515,20 +1515,20 @@ namespace Android.Media
             {
                 IExecute("set", arg0, arg1);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

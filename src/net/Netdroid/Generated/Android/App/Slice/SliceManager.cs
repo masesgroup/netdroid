@@ -41,10 +41,10 @@ namespace Android.App.Slice
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SliceManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.App.Slice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -75,13 +75,13 @@ namespace Android.App.Slice
     public partial class SliceManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#CATEGORY_SLICE"/>
@@ -97,13 +97,13 @@ namespace Android.App.Slice
         public static Java.Lang.String SLICE_METADATA_KEY { get { if (!_SLICE_METADATA_KEYReady) { _SLICE_METADATA_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SLICE_METADATA_KEY"); _SLICE_METADATA_KEYReady = true; } return _SLICE_METADATA_KEYContent; } }
         private static Java.Lang.String _SLICE_METADATA_KEYContent = default;
         private static bool _SLICE_METADATA_KEYReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#bindSlice(android.content.Intent,java.util.Set)"/>
@@ -217,13 +217,13 @@ namespace Android.App.Slice
         {
             IExecuteWithSignature("unpinSlice", "(Landroid/net/Uri;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

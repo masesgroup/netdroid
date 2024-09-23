@@ -42,10 +42,10 @@ namespace Android.Hardware.Camera2
         /// </summary>
         [global::System.Obsolete("CameraMetadata class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CameraMetadata(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Hardware.Camera2
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -90,10 +90,10 @@ namespace Android.Hardware.Camera2
         /// </summary>
         [global::System.Obsolete("CameraMetadata class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CameraMetadata(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -114,7 +114,7 @@ namespace Android.Hardware.Camera2
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -124,13 +124,13 @@ namespace Android.Hardware.Camera2
     public partial class CameraMetadata
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#AUTOMOTIVE_LENS_FACING_EXTERIOR_FRONT"/>
@@ -1801,13 +1801,13 @@ namespace Android.Hardware.Camera2
         public static int TONEMAP_PRESET_CURVE_SRGB { get { if (!_TONEMAP_PRESET_CURVE_SRGBReady) { _TONEMAP_PRESET_CURVE_SRGBContent = SGetField<int>(LocalBridgeClazz, "TONEMAP_PRESET_CURVE_SRGB"); _TONEMAP_PRESET_CURVE_SRGBReady = true; } return _TONEMAP_PRESET_CURVE_SRGBContent; } }
         private static int _TONEMAP_PRESET_CURVE_SRGBContent = default;
         private static bool _TONEMAP_PRESET_CURVE_SRGBReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#getKeys()"/>
@@ -1817,13 +1817,13 @@ namespace Android.Hardware.Camera2
         {
             return IExecuteWithSignature<Java.Util.List>("getKeys", "()Ljava/util/List;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -1832,17 +1832,17 @@ namespace Android.Hardware.Camera2
     public partial class CameraMetadata<TKey>
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Hardware.Camera2.CameraMetadata{TKey}"/> to <see cref="Android.Hardware.Camera2.CameraMetadata"/>
         /// </summary>
         public static implicit operator Android.Hardware.Camera2.CameraMetadata(Android.Hardware.Camera2.CameraMetadata<TKey> t) => t.Cast<Android.Hardware.Camera2.CameraMetadata>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#AUTOMOTIVE_LENS_FACING_EXTERIOR_FRONT"/>
@@ -3513,13 +3513,13 @@ namespace Android.Hardware.Camera2
         public static int TONEMAP_PRESET_CURVE_SRGB { get { if (!_TONEMAP_PRESET_CURVE_SRGBReady) { _TONEMAP_PRESET_CURVE_SRGBContent = SGetField<int>(LocalBridgeClazz, "TONEMAP_PRESET_CURVE_SRGB"); _TONEMAP_PRESET_CURVE_SRGBReady = true; } return _TONEMAP_PRESET_CURVE_SRGBContent; } }
         private static int _TONEMAP_PRESET_CURVE_SRGBContent = default;
         private static bool _TONEMAP_PRESET_CURVE_SRGBReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#getKeys()"/>
@@ -3529,13 +3529,13 @@ namespace Android.Hardware.Camera2
         {
             return IExecuteWithSignature<Java.Util.List<TKey>>("getKeys", "()Ljava/util/List;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

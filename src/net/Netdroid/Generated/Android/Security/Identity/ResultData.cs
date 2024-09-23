@@ -43,10 +43,10 @@ namespace Android.Security.Identity
         /// </summary>
         [global::System.Obsolete("ResultData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ResultData(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -67,9 +67,9 @@ namespace Android.Security.Identity
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -77,13 +77,13 @@ namespace Android.Security.Identity
     public partial class ResultData
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/ResultData.html#STATUS_NO_ACCESS_CONTROL_PROFILES"/>
@@ -134,13 +134,13 @@ namespace Android.Security.Identity
         public static int STATUS_USER_AUTHENTICATION_FAILED { get { if (!_STATUS_USER_AUTHENTICATION_FAILEDReady) { _STATUS_USER_AUTHENTICATION_FAILEDContent = SGetField<int>(LocalBridgeClazz, "STATUS_USER_AUTHENTICATION_FAILED"); _STATUS_USER_AUTHENTICATION_FAILEDReady = true; } return _STATUS_USER_AUTHENTICATION_FAILEDContent; } }
         private static int _STATUS_USER_AUTHENTICATION_FAILEDContent = default;
         private static bool _STATUS_USER_AUTHENTICATION_FAILEDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/ResultData.html#getAuthenticatedData()"/>
@@ -220,13 +220,13 @@ namespace Android.Security.Identity
         {
             return IExecuteWithSignature<Java.Util.Collection<Java.Lang.String>>("getRetrievedEntryNames", "(Ljava/lang/String;)Ljava/util/Collection;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

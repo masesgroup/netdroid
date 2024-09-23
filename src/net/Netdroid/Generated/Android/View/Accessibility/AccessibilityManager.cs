@@ -40,10 +40,10 @@ namespace Android.View.Accessibility
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccessibilityManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View.Accessibility
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region AccessibilityServicesStateChangeListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.View.Accessibility
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public AccessibilityServicesStateChangeListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.accessibility.AccessibilityManager_AccessibilityServicesStateChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region AccessibilityServicesStateChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="AccessibilityServicesStateChangeListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.view.accessibility.AccessibilityManager$AccessibilityServicesStateChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -143,7 +143,7 @@ namespace Android.View.Accessibility
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public AccessibilityStateChangeListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.accessibility.AccessibilityManager_AccessibilityStateChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -152,13 +152,13 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region AccessibilityStateChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="AccessibilityStateChangeListener"/> or its generic type if there is one
@@ -169,14 +169,14 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.view.accessibility.AccessibilityManager$AccessibilityStateChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -210,7 +210,7 @@ namespace Android.View.Accessibility
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public AudioDescriptionRequestedChangeListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.accessibility.AccessibilityManager_AudioDescriptionRequestedChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -219,13 +219,13 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region AudioDescriptionRequestedChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="AudioDescriptionRequestedChangeListener"/> or its generic type if there is one
@@ -236,14 +236,14 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.view.accessibility.AccessibilityManager$AudioDescriptionRequestedChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -277,7 +277,7 @@ namespace Android.View.Accessibility
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public TouchExplorationStateChangeListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.accessibility.AccessibilityManager_TouchExplorationStateChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -286,13 +286,13 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region TouchExplorationStateChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="TouchExplorationStateChangeListener"/> or its generic type if there is one
@@ -303,14 +303,14 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.view.accessibility.AccessibilityManager$TouchExplorationStateChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -342,13 +342,13 @@ namespace Android.View.Accessibility
     public partial class AccessibilityManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#FLAG_CONTENT_CONTROLS"/>
@@ -368,9 +368,9 @@ namespace Android.View.Accessibility
         public static int FLAG_CONTENT_TEXT { get { if (!_FLAG_CONTENT_TEXTReady) { _FLAG_CONTENT_TEXTContent = SGetField<int>(LocalBridgeClazz, "FLAG_CONTENT_TEXT"); _FLAG_CONTENT_TEXTReady = true; } return _FLAG_CONTENT_TEXTContent; } }
         private static int _FLAG_CONTENT_TEXTContent = default;
         private static bool _FLAG_CONTENT_TEXTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#isAccessibilityButtonSupported()"/>
@@ -380,9 +380,9 @@ namespace Android.View.Accessibility
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isAccessibilityButtonSupported", "()Z");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#addAccessibilityStateChangeListener(android.view.accessibility.AccessibilityManager.AccessibilityStateChangeListener)"/>
@@ -597,29 +597,29 @@ namespace Android.View.Accessibility
         {
             IExecuteWithSignature("sendAccessibilityEvent", "(Landroid/view/accessibility/AccessibilityEvent;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region AccessibilityServicesStateChangeListener implementation
         public partial class AccessibilityServicesStateChangeListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="AccessibilityServicesStateChangeListener"/>
@@ -629,13 +629,13 @@ namespace Android.View.Accessibility
                 AddEventHandler("onAccessibilityServicesStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnAccessibilityServicesStateChangedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.html#onAccessibilityServicesStateChanged(android.view.accessibility.AccessibilityManager)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAccessibilityServicesStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.Accessibility.AccessibilityManager> OnOnAccessibilityServicesStateChanged { get; set; } = null;
-
+            
             bool hasOverrideOnAccessibilityServicesStateChanged = true;
             void OnAccessibilityServicesStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -644,7 +644,7 @@ namespace Android.View.Accessibility
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.Accessibility.AccessibilityManager>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnAccessibilityServicesStateChanged;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.html#onAccessibilityServicesStateChanged(android.view.accessibility.AccessibilityManager)"/>
             /// </summary>
@@ -653,13 +653,13 @@ namespace Android.View.Accessibility
             {
                 hasOverrideOnAccessibilityServicesStateChanged = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -668,21 +668,21 @@ namespace Android.View.Accessibility
         public partial class AccessibilityServicesStateChangeListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.html#onAccessibilityServicesStateChanged(android.view.accessibility.AccessibilityManager)"/>
@@ -692,13 +692,13 @@ namespace Android.View.Accessibility
             {
                 IExecuteWithSignature("onAccessibilityServicesStateChanged", "(Landroid/view/accessibility/AccessibilityManager;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -707,21 +707,21 @@ namespace Android.View.Accessibility
         public partial class AccessibilityStateChangeListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="AccessibilityStateChangeListener"/>
@@ -731,13 +731,13 @@ namespace Android.View.Accessibility
                 AddEventHandler("onAccessibilityStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnAccessibilityStateChangedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.html#onAccessibilityStateChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAccessibilityStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<bool> OnOnAccessibilityStateChanged { get; set; } = null;
-
+            
             bool hasOverrideOnAccessibilityStateChanged = true;
             void OnAccessibilityStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -746,7 +746,7 @@ namespace Android.View.Accessibility
                 methodToExecute.Invoke(data.EventData.GetAt<bool>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnAccessibilityStateChanged;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.html#onAccessibilityStateChanged(boolean)"/>
             /// </summary>
@@ -755,13 +755,13 @@ namespace Android.View.Accessibility
             {
                 hasOverrideOnAccessibilityStateChanged = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -770,21 +770,21 @@ namespace Android.View.Accessibility
         public partial class AccessibilityStateChangeListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AccessibilityStateChangeListener.html#onAccessibilityStateChanged(boolean)"/>
@@ -794,13 +794,13 @@ namespace Android.View.Accessibility
             {
                 IExecuteWithSignature("onAccessibilityStateChanged", "(Z)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -809,21 +809,21 @@ namespace Android.View.Accessibility
         public partial class AudioDescriptionRequestedChangeListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="AudioDescriptionRequestedChangeListener"/>
@@ -833,13 +833,13 @@ namespace Android.View.Accessibility
                 AddEventHandler("onAudioDescriptionRequestedChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnAudioDescriptionRequestedChangedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.html#onAudioDescriptionRequestedChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAudioDescriptionRequestedChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<bool> OnOnAudioDescriptionRequestedChanged { get; set; } = null;
-
+            
             bool hasOverrideOnAudioDescriptionRequestedChanged = true;
             void OnAudioDescriptionRequestedChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -848,7 +848,7 @@ namespace Android.View.Accessibility
                 methodToExecute.Invoke(data.EventData.GetAt<bool>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnAudioDescriptionRequestedChanged;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.html#onAudioDescriptionRequestedChanged(boolean)"/>
             /// </summary>
@@ -857,13 +857,13 @@ namespace Android.View.Accessibility
             {
                 hasOverrideOnAudioDescriptionRequestedChanged = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -872,21 +872,21 @@ namespace Android.View.Accessibility
         public partial class AudioDescriptionRequestedChangeListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.html#onAudioDescriptionRequestedChanged(boolean)"/>
@@ -896,13 +896,13 @@ namespace Android.View.Accessibility
             {
                 IExecuteWithSignature("onAudioDescriptionRequestedChanged", "(Z)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -911,21 +911,21 @@ namespace Android.View.Accessibility
         public partial class TouchExplorationStateChangeListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="TouchExplorationStateChangeListener"/>
@@ -935,13 +935,13 @@ namespace Android.View.Accessibility
                 AddEventHandler("onTouchExplorationStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnTouchExplorationStateChangedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.html#onTouchExplorationStateChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTouchExplorationStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<bool> OnOnTouchExplorationStateChanged { get; set; } = null;
-
+            
             bool hasOverrideOnTouchExplorationStateChanged = true;
             void OnTouchExplorationStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -950,7 +950,7 @@ namespace Android.View.Accessibility
                 methodToExecute.Invoke(data.EventData.GetAt<bool>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnTouchExplorationStateChanged;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.html#onTouchExplorationStateChanged(boolean)"/>
             /// </summary>
@@ -959,13 +959,13 @@ namespace Android.View.Accessibility
             {
                 hasOverrideOnTouchExplorationStateChanged = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -974,21 +974,21 @@ namespace Android.View.Accessibility
         public partial class TouchExplorationStateChangeListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.TouchExplorationStateChangeListener.html#onTouchExplorationStateChanged(boolean)"/>
@@ -998,20 +998,20 @@ namespace Android.View.Accessibility
             {
                 IExecuteWithSignature("onTouchExplorationStateChanged", "(Z)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

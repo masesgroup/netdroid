@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PopupWindow(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region OnDismissListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Widget
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnDismissListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.PopupWindow_OnDismissListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnDismissListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnDismissListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.widget.PopupWindow$OnDismissListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -217,13 +217,13 @@ namespace Android.Widget
             : base(arg0, arg1)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#INPUT_METHOD_FROM_FOCUSABLE"/>
@@ -243,13 +243,13 @@ namespace Android.Widget
         public static int INPUT_METHOD_NOT_NEEDED { get { if (!_INPUT_METHOD_NOT_NEEDEDReady) { _INPUT_METHOD_NOT_NEEDEDContent = SGetField<int>(LocalBridgeClazz, "INPUT_METHOD_NOT_NEEDED"); _INPUT_METHOD_NOT_NEEDEDReady = true; } return _INPUT_METHOD_NOT_NEEDEDContent; } }
         private static int _INPUT_METHOD_NOT_NEEDEDContent = default;
         private static bool _INPUT_METHOD_NOT_NEEDEDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#getBackground()"/>
@@ -790,29 +790,29 @@ namespace Android.Widget
         {
             IExecute("update", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region OnDismissListener implementation
         public partial class OnDismissListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnDismissListener"/>
@@ -822,13 +822,13 @@ namespace Android.Widget
                 AddEventHandler("onDismiss", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDismissEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/PopupWindow.OnDismissListener.html#onDismiss()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDismiss"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnDismiss { get; set; } = null;
-
+            
             bool hasOverrideOnDismiss = true;
             void OnDismissEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -837,7 +837,7 @@ namespace Android.Widget
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDismiss;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.OnDismissListener.html#onDismiss()"/>
             /// </summary>
@@ -845,13 +845,13 @@ namespace Android.Widget
             {
                 hasOverrideOnDismiss = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -860,21 +860,21 @@ namespace Android.Widget
         public partial class OnDismissListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.OnDismissListener.html#onDismiss()"/>
@@ -883,20 +883,20 @@ namespace Android.Widget
             {
                 IExecuteWithSignature("onDismiss", "()V");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

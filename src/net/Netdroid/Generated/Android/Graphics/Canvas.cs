@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Canvas(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region EdgeType declaration
         /// <summary>
@@ -82,10 +82,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public EdgeType(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -106,9 +106,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -127,10 +127,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public VertexMode(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -151,9 +151,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -173,13 +173,13 @@ namespace Android.Graphics
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#ALL_SAVE_FLAG"/>
@@ -187,13 +187,13 @@ namespace Android.Graphics
         public static int ALL_SAVE_FLAG { get { if (!_ALL_SAVE_FLAGReady) { _ALL_SAVE_FLAGContent = SGetField<int>(LocalBridgeClazz, "ALL_SAVE_FLAG"); _ALL_SAVE_FLAGReady = true; } return _ALL_SAVE_FLAGContent; } }
         private static int _ALL_SAVE_FLAGContent = default;
         private static bool _ALL_SAVE_FLAGReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#getDrawFilter()"/>
@@ -1394,21 +1394,21 @@ namespace Android.Graphics
         {
             IExecute("translate", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region EdgeType implementation
         public partial class EdgeType
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Canvas.EdgeType.html#AA"/>
@@ -1424,9 +1424,9 @@ namespace Android.Graphics
             public static Android.Graphics.Canvas.EdgeType BW { get { if (!_BWReady) { _BWContent = SGetField<Android.Graphics.Canvas.EdgeType>(LocalBridgeClazz, "BW"); _BWReady = true; } return _BWContent; } }
             private static Android.Graphics.Canvas.EdgeType _BWContent = default;
             private static bool _BWReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Canvas.EdgeType.html#valueOf(java.lang.String)"/>
@@ -1445,17 +1445,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Canvas.EdgeType>(LocalBridgeClazz, "values", "()[Landroid/graphics/Canvas$EdgeType;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1464,13 +1464,13 @@ namespace Android.Graphics
         public partial class VertexMode
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Canvas.VertexMode.html#TRIANGLE_FAN"/>
@@ -1490,9 +1490,9 @@ namespace Android.Graphics
             public static Android.Graphics.Canvas.VertexMode TRIANGLES { get { if (!_TRIANGLESReady) { _TRIANGLESContent = SGetField<Android.Graphics.Canvas.VertexMode>(LocalBridgeClazz, "TRIANGLES"); _TRIANGLESReady = true; } return _TRIANGLESContent; } }
             private static Android.Graphics.Canvas.VertexMode _TRIANGLESContent = default;
             private static bool _TRIANGLESReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Canvas.VertexMode.html#valueOf(java.lang.String)"/>
@@ -1511,24 +1511,24 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Canvas.VertexMode>(LocalBridgeClazz, "values", "()[Landroid/graphics/Canvas$VertexMode;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

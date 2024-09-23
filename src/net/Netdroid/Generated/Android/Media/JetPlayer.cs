@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JetPlayer(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region OnJetEventListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnJetEventListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.JetPlayer_OnJetEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnJetEventListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnJetEventListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.media.JetPlayer$OnJetEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -141,17 +141,17 @@ namespace Android.Media
     public partial class JetPlayer
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/JetPlayer.html#getJetPlayer()"/>
@@ -169,9 +169,9 @@ namespace Android.Media
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxTracks", "()I");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/JetPlayer.html#clearQueue()"/>
@@ -315,29 +315,29 @@ namespace Android.Media
         {
             IExecuteWithSignature("setEventListener", "(Landroid/media/JetPlayer$OnJetEventListener;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region OnJetEventListener implementation
         public partial class OnJetEventListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnJetEventListener"/>
@@ -350,13 +350,13 @@ namespace Android.Media
                 AddEventHandler("onJetUserIdUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnJetUserIdUpdateEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/JetPlayer.OnJetEventListener.html#onJetEvent(android.media.JetPlayer,short,byte,byte,byte,byte)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnJetEvent"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.JetPlayer, short, byte, byte, byte, byte> OnOnJetEvent { get; set; } = null;
-
+            
             bool hasOverrideOnJetEvent = true;
             void OnJetEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -365,7 +365,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.JetPlayer>(0), data.EventData.GetAt<short>(1), data.EventData.GetAt<byte>(2), data.EventData.GetAt<byte>(3), data.EventData.GetAt<byte>(4), data.EventData.GetAt<byte>(5));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnJetEvent;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/JetPlayer.OnJetEventListener.html#onJetEvent(android.media.JetPlayer,short,byte,byte,byte,byte)"/>
             /// </summary>
@@ -379,13 +379,13 @@ namespace Android.Media
             {
                 hasOverrideOnJetEvent = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/JetPlayer.OnJetEventListener.html#onJetNumQueuedSegmentUpdate(android.media.JetPlayer,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnJetNumQueuedSegmentUpdate"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.JetPlayer, int> OnOnJetNumQueuedSegmentUpdate { get; set; } = null;
-
+            
             bool hasOverrideOnJetNumQueuedSegmentUpdate = true;
             void OnJetNumQueuedSegmentUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -394,7 +394,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.JetPlayer>(0), data.EventData.GetAt<int>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnJetNumQueuedSegmentUpdate;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/JetPlayer.OnJetEventListener.html#onJetNumQueuedSegmentUpdate(android.media.JetPlayer,int)"/>
             /// </summary>
@@ -404,13 +404,13 @@ namespace Android.Media
             {
                 hasOverrideOnJetNumQueuedSegmentUpdate = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/JetPlayer.OnJetEventListener.html#onJetPauseUpdate(android.media.JetPlayer,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnJetPauseUpdate"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.JetPlayer, int> OnOnJetPauseUpdate { get; set; } = null;
-
+            
             bool hasOverrideOnJetPauseUpdate = true;
             void OnJetPauseUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -419,7 +419,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.JetPlayer>(0), data.EventData.GetAt<int>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnJetPauseUpdate;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/JetPlayer.OnJetEventListener.html#onJetPauseUpdate(android.media.JetPlayer,int)"/>
             /// </summary>
@@ -429,13 +429,13 @@ namespace Android.Media
             {
                 hasOverrideOnJetPauseUpdate = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/JetPlayer.OnJetEventListener.html#onJetUserIdUpdate(android.media.JetPlayer,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnJetUserIdUpdate"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.JetPlayer, int, int> OnOnJetUserIdUpdate { get; set; } = null;
-
+            
             bool hasOverrideOnJetUserIdUpdate = true;
             void OnJetUserIdUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -444,7 +444,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.JetPlayer>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnJetUserIdUpdate;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/JetPlayer.OnJetEventListener.html#onJetUserIdUpdate(android.media.JetPlayer,int,int)"/>
             /// </summary>
@@ -455,13 +455,13 @@ namespace Android.Media
             {
                 hasOverrideOnJetUserIdUpdate = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -470,21 +470,21 @@ namespace Android.Media
         public partial class OnJetEventListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/JetPlayer.OnJetEventListener.html#onJetEvent(android.media.JetPlayer,short,byte,byte,byte,byte)"/>
@@ -527,20 +527,20 @@ namespace Android.Media
             {
                 IExecute("onJetUserIdUpdate", arg0, arg1, arg2);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

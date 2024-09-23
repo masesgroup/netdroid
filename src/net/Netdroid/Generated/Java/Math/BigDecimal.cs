@@ -40,10 +40,10 @@ namespace Java.Math
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BigDecimal(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Math
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -216,17 +216,17 @@ namespace Java.Math
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Math.BigDecimal"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Math.BigDecimal t) => t.Cast<Java.Lang.Comparable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_CEILING"/>
@@ -302,9 +302,9 @@ namespace Java.Math
         public static Java.Math.BigDecimal ZERO { get { if (!_ZEROReady) { _ZEROContent = SGetField<Java.Math.BigDecimal>(LocalBridgeClazz, "ZERO"); _ZEROReady = true; } return _ZEROContent; } }
         private static Java.Math.BigDecimal _ZEROContent = default;
         private static bool _ZEROReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#valueOf(double)"/>
@@ -334,9 +334,9 @@ namespace Java.Math
         {
             return SExecuteWithSignature<Java.Math.BigDecimal>(LocalBridgeClazz, "valueOf", "(J)Ljava/math/BigDecimal;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#byteValueExact()"/>
@@ -808,13 +808,13 @@ namespace Java.Math
         {
             return IExecuteWithSignature<short>("shortValueExact", "()S");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

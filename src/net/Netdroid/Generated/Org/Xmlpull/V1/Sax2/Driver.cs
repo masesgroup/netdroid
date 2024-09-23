@@ -40,10 +40,10 @@ namespace Org.Xmlpull.V1.Sax2
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Driver(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Org.Xmlpull.V1.Sax2
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -83,9 +83,9 @@ namespace Org.Xmlpull.V1.Sax2
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Org.Xmlpull.V1.Sax2.Driver"/> to <see cref="Org.Xml.Sax.Locator"/>
@@ -99,17 +99,17 @@ namespace Org.Xmlpull.V1.Sax2
         /// Converter from <see cref="Org.Xmlpull.V1.Sax2.Driver"/> to <see cref="Org.Xml.Sax.Attributes"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Attributes(Org.Xmlpull.V1.Sax2.Driver t) => t.Cast<Org.Xml.Sax.Attributes>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/sax2/Driver.html#getFeature(java.lang.String)"/>
@@ -391,13 +391,13 @@ namespace Org.Xmlpull.V1.Sax2
         {
             IExecute("setProperty", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

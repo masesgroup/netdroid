@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RingtoneManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -90,13 +90,13 @@ namespace Android.Media
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#ID_COLUMN_INDEX"/>
@@ -195,9 +195,9 @@ namespace Android.Media
         public static Java.Lang.String EXTRA_RINGTONE_TYPE { get { if (!_EXTRA_RINGTONE_TYPEReady) { _EXTRA_RINGTONE_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_RINGTONE_TYPE"); _EXTRA_RINGTONE_TYPEReady = true; } return _EXTRA_RINGTONE_TYPEContent; } }
         private static Java.Lang.String _EXTRA_RINGTONE_TYPEContent = default;
         private static bool _EXTRA_RINGTONE_TYPEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#openDefaultRingtoneUri(android.content.Context,android.net.Uri)"/>
@@ -295,9 +295,9 @@ namespace Android.Media
         {
             SExecute(LocalBridgeClazz, "setActualDefaultRingtoneUri", arg0, arg1, arg2);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#getCursor()"/>
@@ -400,13 +400,13 @@ namespace Android.Media
         {
             IExecuteWithSignature("stopPreviousRingtone", "()V");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

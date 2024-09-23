@@ -40,10 +40,10 @@ namespace Android.Adservices.Ondevicepersonalization
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TrainingInterval(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Adservices.Ondevicepersonalization
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Adservices.Ondevicepersonalization
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Adservices.Ondevicepersonalization
     public partial class TrainingInterval
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/TrainingInterval.html#SCHEDULING_MODE_ONE_TIME"/>
@@ -139,13 +139,13 @@ namespace Android.Adservices.Ondevicepersonalization
         public static int SCHEDULING_MODE_RECURRENT { get { if (!_SCHEDULING_MODE_RECURRENTReady) { _SCHEDULING_MODE_RECURRENTContent = SGetField<int>(LocalBridgeClazz, "SCHEDULING_MODE_RECURRENT"); _SCHEDULING_MODE_RECURRENTReady = true; } return _SCHEDULING_MODE_RECURRENTContent; } }
         private static int _SCHEDULING_MODE_RECURRENTContent = default;
         private static bool _SCHEDULING_MODE_RECURRENTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/TrainingInterval.html#getSchedulingMode()"/>
@@ -163,29 +163,29 @@ namespace Android.Adservices.Ondevicepersonalization
         {
             return IExecuteWithSignature<Java.Time.Duration>("getMinimumInterval", "()Ljava/time/Duration;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/TrainingInterval.Builder.html#build()"/>
@@ -213,20 +213,20 @@ namespace Android.Adservices.Ondevicepersonalization
             {
                 return IExecuteWithSignature<Android.Adservices.Ondevicepersonalization.TrainingInterval.Builder>("setSchedulingMode", "(I)Landroid/adservices/ondevicepersonalization/TrainingInterval$Builder;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

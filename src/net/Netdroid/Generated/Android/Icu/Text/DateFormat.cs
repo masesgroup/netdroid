@@ -42,10 +42,10 @@ namespace Android.Icu.Text
         /// </summary>
         [global::System.Obsolete("DateFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DateFormat(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region BooleanAttribute declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BooleanAttribute(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Field(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public HourCycle(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -211,13 +211,13 @@ namespace Android.Icu.Text
     public partial class DateFormat
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#AM_PM_FIELD"/>
@@ -759,9 +759,9 @@ namespace Android.Icu.Text
         public static Java.Lang.String YEAR_QUARTER { get { if (!_YEAR_QUARTERReady) { _YEAR_QUARTERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "YEAR_QUARTER"); _YEAR_QUARTERReady = true; } return _YEAR_QUARTERContent; } }
         private static Java.Lang.String _YEAR_QUARTERContent = default;
         private static bool _YEAR_QUARTERReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getDateInstance()"/>
@@ -1123,9 +1123,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#format(android.icu.util.Calendar,java.lang.StringBuffer,java.text.FieldPosition)"/>
@@ -1304,21 +1304,21 @@ namespace Android.Icu.Text
         {
             IExecuteWithSignature("setTimeZone", "(Landroid/icu/util/TimeZone;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region BooleanAttribute implementation
         public partial class BooleanAttribute
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.BooleanAttribute.html#PARSE_ALLOW_NUMERIC"/>
@@ -1344,9 +1344,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.DateFormat.BooleanAttribute PARSE_PARTIAL_LITERAL_MATCH { get { if (!_PARSE_PARTIAL_LITERAL_MATCHReady) { _PARSE_PARTIAL_LITERAL_MATCHContent = SGetField<Android.Icu.Text.DateFormat.BooleanAttribute>(LocalBridgeClazz, "PARSE_PARTIAL_LITERAL_MATCH"); _PARSE_PARTIAL_LITERAL_MATCHReady = true; } return _PARSE_PARTIAL_LITERAL_MATCHContent; } }
             private static Android.Icu.Text.DateFormat.BooleanAttribute _PARSE_PARTIAL_LITERAL_MATCHContent = default;
             private static bool _PARSE_PARTIAL_LITERAL_MATCHReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.BooleanAttribute.html#valueOf(java.lang.String)"/>
@@ -1365,17 +1365,17 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.DateFormat.BooleanAttribute>(LocalBridgeClazz, "values", "()[Landroid/icu/text/DateFormat$BooleanAttribute;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1384,13 +1384,13 @@ namespace Android.Icu.Text
         public partial class Field
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.Field.html#AM_PM"/>
@@ -1548,9 +1548,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.DateFormat.Field YEAR_WOY { get { if (!_YEAR_WOYReady) { _YEAR_WOYContent = SGetField<Android.Icu.Text.DateFormat.Field>(LocalBridgeClazz, "YEAR_WOY"); _YEAR_WOYReady = true; } return _YEAR_WOYContent; } }
             private static Android.Icu.Text.DateFormat.Field _YEAR_WOYContent = default;
             private static bool _YEAR_WOYReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.Field.html#ofCalendarField(int)"/>
@@ -1561,9 +1561,9 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignature<Android.Icu.Text.DateFormat.Field>(LocalBridgeClazz, "ofCalendarField", "(I)Landroid/icu/text/DateFormat$Field;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.Field.html#getCalendarField()"/>
@@ -1573,13 +1573,13 @@ namespace Android.Icu.Text
             {
                 return IExecuteWithSignature<int>("getCalendarField", "()I");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1588,13 +1588,13 @@ namespace Android.Icu.Text
         public partial class HourCycle
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.HourCycle.html#HOUR_CYCLE_11"/>
@@ -1620,9 +1620,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.DateFormat.HourCycle HOUR_CYCLE_24 { get { if (!_HOUR_CYCLE_24Ready) { _HOUR_CYCLE_24Content = SGetField<Android.Icu.Text.DateFormat.HourCycle>(LocalBridgeClazz, "HOUR_CYCLE_24"); _HOUR_CYCLE_24Ready = true; } return _HOUR_CYCLE_24Content; } }
             private static Android.Icu.Text.DateFormat.HourCycle _HOUR_CYCLE_24Content = default;
             private static bool _HOUR_CYCLE_24Ready = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.HourCycle.html#valueOf(java.lang.String)"/>
@@ -1641,24 +1641,24 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.DateFormat.HourCycle>(LocalBridgeClazz, "values", "()[Landroid/icu/text/DateFormat$HourCycle;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

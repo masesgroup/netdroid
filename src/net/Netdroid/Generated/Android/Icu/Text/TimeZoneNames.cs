@@ -42,10 +42,10 @@ namespace Android.Icu.Text
         /// </summary>
         [global::System.Obsolete("TimeZoneNames class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TimeZoneNames(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region NameType declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public NameType(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -121,17 +121,17 @@ namespace Android.Icu.Text
     public partial class TimeZoneNames
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneNames.html#getInstance(android.icu.util.ULocale)"/>
@@ -160,9 +160,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.TimeZoneNames>(LocalBridgeClazz, "getTZDBInstance", "(Landroid/icu/util/ULocale;)Landroid/icu/text/TimeZoneNames;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneNames.html#getMetaZoneDisplayName(java.lang.String,android.icu.text.TimeZoneNames.NameType)"/>
@@ -241,21 +241,21 @@ namespace Android.Icu.Text
         {
             return IExecuteWithSignature<Java.Lang.String>("getExemplarLocationName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region NameType implementation
         public partial class NameType
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneNames.NameType.html#EXEMPLAR_LOCATION"/>
@@ -299,9 +299,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.TimeZoneNames.NameType SHORT_STANDARD { get { if (!_SHORT_STANDARDReady) { _SHORT_STANDARDContent = SGetField<Android.Icu.Text.TimeZoneNames.NameType>(LocalBridgeClazz, "SHORT_STANDARD"); _SHORT_STANDARDReady = true; } return _SHORT_STANDARDContent; } }
             private static Android.Icu.Text.TimeZoneNames.NameType _SHORT_STANDARDContent = default;
             private static bool _SHORT_STANDARDReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneNames.NameType.html#valueOf(java.lang.String)"/>
@@ -320,24 +320,24 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.TimeZoneNames.NameType>(LocalBridgeClazz, "values", "()[Landroid/icu/text/TimeZoneNames$NameType;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

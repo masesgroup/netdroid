@@ -42,10 +42,10 @@ namespace Java.Util.Stream
         /// </summary>
         [global::System.Obsolete("Stream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Stream(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util.Stream
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -90,10 +90,10 @@ namespace Java.Util.Stream
         /// </summary>
         [global::System.Obsolete("Stream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Stream(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Util.Stream
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -124,17 +124,17 @@ namespace Java.Util.Stream
     public partial class Stream
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#concat(java.util.stream.Stream,java.util.stream.Stream)"/>
@@ -211,9 +211,9 @@ namespace Java.Util.Stream
         {
             return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "ofNullable", "(Ljava/lang/Object;)Ljava/util/stream/Stream;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#toArray(java.util.function.IntFunction)"/>
@@ -562,13 +562,13 @@ namespace Java.Util.Stream
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream>("takeWhile", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -580,13 +580,13 @@ namespace Java.Util.Stream
     public partial interface IStream<T> : Java.Util.Stream.IBaseStream<T, Java.Util.Stream.Stream<T>>
     {
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -595,21 +595,21 @@ namespace Java.Util.Stream
     public partial class Stream<T> : Java.Util.Stream.IStream<T>
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Stream.Stream{T}"/> to <see cref="Java.Util.Stream.Stream"/>
         /// </summary>
         public static implicit operator Java.Util.Stream.Stream(Java.Util.Stream.Stream<T> t) => t.Cast<Java.Util.Stream.Stream>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#concat(java.util.stream.Stream,java.util.stream.Stream)"/>
@@ -690,9 +690,9 @@ namespace Java.Util.Stream
         {
             return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "ofNullable", "(Ljava/lang/Object;)Ljava/util/stream/Stream;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Stream.html#toArray(java.util.function.IntFunction)"/>
@@ -1086,13 +1086,13 @@ namespace Java.Util.Stream
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<T>>("takeWhile", "(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

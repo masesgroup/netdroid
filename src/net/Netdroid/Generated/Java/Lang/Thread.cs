@@ -40,10 +40,10 @@ namespace Java.Lang
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Thread(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region State declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Java.Lang
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public State(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Java.Lang
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -195,13 +195,13 @@ namespace Java.Lang
             : base(arg0, arg1)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Thread.html#MAX_PRIORITY"/>
@@ -221,9 +221,9 @@ namespace Java.Lang
         public static int NORM_PRIORITY { get { if (!_NORM_PRIORITYReady) { _NORM_PRIORITYContent = SGetField<int>(LocalBridgeClazz, "NORM_PRIORITY"); _NORM_PRIORITYReady = true; } return _NORM_PRIORITYContent; } }
         private static int _NORM_PRIORITYContent = default;
         private static bool _NORM_PRIORITYReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Thread.html#interrupted()"/>
@@ -315,9 +315,9 @@ namespace Java.Lang
         {
             SExecute(LocalBridgeClazz, "sleep", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Thread.html#isInterrupted()"/>
@@ -520,21 +520,21 @@ namespace Java.Lang
         {
             IExecuteWithSignature("setContextClassLoader", "(Ljava/lang/ClassLoader;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region State implementation
         public partial class State
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/Thread.State.html#BLOCKED"/>
@@ -572,9 +572,9 @@ namespace Java.Lang
             public static Java.Lang.Thread.State WAITING { get { if (!_WAITINGReady) { _WAITINGContent = SGetField<Java.Lang.Thread.State>(LocalBridgeClazz, "WAITING"); _WAITINGReady = true; } return _WAITINGContent; } }
             private static Java.Lang.Thread.State _WAITINGContent = default;
             private static bool _WAITINGReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/Thread.State.html#valueOf(java.lang.String)"/>
@@ -593,24 +593,24 @@ namespace Java.Lang
             {
                 return SExecuteWithSignatureArray<Java.Lang.Thread.State>(LocalBridgeClazz, "values", "()[Ljava/lang/Thread$State;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

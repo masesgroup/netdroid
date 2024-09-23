@@ -40,10 +40,10 @@ namespace Android.Icu.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ULocale(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region AvailableType declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AvailableType(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Icu.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Icu.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Icu.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Category(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Icu.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -236,9 +236,9 @@ namespace Android.Icu.Util
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Util.ULocale"/> to <see cref="Java.Io.Serializable"/>
@@ -248,9 +248,9 @@ namespace Android.Icu.Util
         /// Converter from <see cref="Android.Icu.Util.ULocale"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Icu.Util.ULocale t) => t.Cast<Java.Lang.Comparable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#CANADA"/>
@@ -396,9 +396,9 @@ namespace Android.Icu.Util
         public static char UNICODE_LOCALE_EXTENSION { get { if (!_UNICODE_LOCALE_EXTENSIONReady) { _UNICODE_LOCALE_EXTENSIONContent = SGetField<char>(LocalBridgeClazz, "UNICODE_LOCALE_EXTENSION"); _UNICODE_LOCALE_EXTENSIONReady = true; } return _UNICODE_LOCALE_EXTENSIONContent; } }
         private static char _UNICODE_LOCALE_EXTENSIONContent = default;
         private static bool _UNICODE_LOCALE_EXTENSIONReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#acceptLanguage(android.icu.util.ULocale[],android.icu.util.ULocale[],boolean[])"/>
@@ -895,9 +895,9 @@ namespace Android.Icu.Util
         {
             return SExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>(LocalBridgeClazz, "getKeywords", "(Ljava/lang/String;)Ljava/util/Iterator;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getFallback()"/>
@@ -1236,21 +1236,21 @@ namespace Android.Icu.Util
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleKeys", "()Ljava/util/Set;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region AvailableType implementation
         public partial class AvailableType
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.AvailableType.html#DEFAULT"/>
@@ -1270,9 +1270,9 @@ namespace Android.Icu.Util
             public static Android.Icu.Util.ULocale.AvailableType WITH_LEGACY_ALIASES { get { if (!_WITH_LEGACY_ALIASESReady) { _WITH_LEGACY_ALIASESContent = SGetField<Android.Icu.Util.ULocale.AvailableType>(LocalBridgeClazz, "WITH_LEGACY_ALIASES"); _WITH_LEGACY_ALIASESReady = true; } return _WITH_LEGACY_ALIASESContent; } }
             private static Android.Icu.Util.ULocale.AvailableType _WITH_LEGACY_ALIASESContent = default;
             private static bool _WITH_LEGACY_ALIASESReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.AvailableType.html#valueOf(java.lang.String)"/>
@@ -1291,17 +1291,17 @@ namespace Android.Icu.Util
             {
                 return SExecuteWithSignatureArray<Android.Icu.Util.ULocale.AvailableType>(LocalBridgeClazz, "values", "()[Landroid/icu/util/ULocale$AvailableType;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1310,21 +1310,21 @@ namespace Android.Icu.Util
         public partial class Builder
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.Builder.html#build()"/>
@@ -1442,13 +1442,13 @@ namespace Android.Icu.Util
             {
                 return IExecuteWithSignature<Android.Icu.Util.ULocale.Builder>("setVariant", "(Ljava/lang/String;)Landroid/icu/util/ULocale$Builder;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1457,13 +1457,13 @@ namespace Android.Icu.Util
         public partial class Category
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.Category.html#DISPLAY"/>
@@ -1477,9 +1477,9 @@ namespace Android.Icu.Util
             public static Android.Icu.Util.ULocale.Category FORMAT { get { if (!_FORMATReady) { _FORMATContent = SGetField<Android.Icu.Util.ULocale.Category>(LocalBridgeClazz, "FORMAT"); _FORMATReady = true; } return _FORMATContent; } }
             private static Android.Icu.Util.ULocale.Category _FORMATContent = default;
             private static bool _FORMATReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.Category.html#valueOf(java.lang.String)"/>
@@ -1498,24 +1498,24 @@ namespace Android.Icu.Util
             {
                 return SExecuteWithSignatureArray<Android.Icu.Util.ULocale.Category>(LocalBridgeClazz, "values", "()[Landroid/icu/util/ULocale$Category;");
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -41,10 +41,10 @@ namespace Android.Provider
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Contacts(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Provider
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region ContactMethods declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ContactMethods(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -131,10 +131,10 @@ namespace Android.Provider
             /// </summary>
             [global::System.Obsolete("ContactMethodsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ContactMethodsColumns(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -155,9 +155,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -177,10 +177,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Extensions(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -201,9 +201,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -225,10 +225,10 @@ namespace Android.Provider
             /// </summary>
             [global::System.Obsolete("ExtensionsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ExtensionsColumns(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -249,9 +249,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -271,10 +271,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public GroupMembership(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -295,9 +295,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -317,10 +317,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Groups(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -341,9 +341,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -365,10 +365,10 @@ namespace Android.Provider
             /// </summary>
             [global::System.Obsolete("GroupsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public GroupsColumns(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -389,9 +389,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -411,10 +411,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Intents(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -435,7 +435,7 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
             #region UI declaration
             /// <summary>
@@ -453,10 +453,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public UI(params object[] args) : base(args) { }
-
+            
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -477,9 +477,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-
+            
                 // TODO: complete the class
-
+            
             }
             #endregion
 
@@ -499,10 +499,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Insert(params object[] args) : base(args) { }
-
+            
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -523,9 +523,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-
+            
                 // TODO: complete the class
-
+            
             }
             #endregion
 
@@ -551,10 +551,10 @@ namespace Android.Provider
             /// </summary>
             [global::System.Obsolete("OrganizationColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public OrganizationColumns(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -575,9 +575,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -597,10 +597,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Organizations(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -621,9 +621,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -643,10 +643,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public People(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -667,7 +667,7 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
             #region Phones declaration
             /// <summary>
@@ -685,10 +685,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Phones(params object[] args) : base(args) { }
-
+            
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -709,9 +709,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-
+            
                 // TODO: complete the class
-
+            
             }
             #endregion
 
@@ -731,10 +731,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Extensions(params object[] args) : base(args) { }
-
+            
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -755,9 +755,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-
+            
                 // TODO: complete the class
-
+            
             }
             #endregion
 
@@ -777,10 +777,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public ContactMethods(params object[] args) : base(args) { }
-
+            
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -801,9 +801,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-
+            
                 // TODO: complete the class
-
+            
             }
             #endregion
 
@@ -829,10 +829,10 @@ namespace Android.Provider
             /// </summary>
             [global::System.Obsolete("PeopleColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public PeopleColumns(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -853,9 +853,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -875,10 +875,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Phones(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -899,9 +899,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -923,10 +923,10 @@ namespace Android.Provider
             /// </summary>
             [global::System.Obsolete("PhonesColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public PhonesColumns(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -947,9 +947,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -969,10 +969,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Photos(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -993,9 +993,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -1017,10 +1017,10 @@ namespace Android.Provider
             /// </summary>
             [global::System.Obsolete("PhotosColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public PhotosColumns(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -1041,9 +1041,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -1065,10 +1065,10 @@ namespace Android.Provider
             /// </summary>
             [global::System.Obsolete("PresenceColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public PresenceColumns(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -1089,9 +1089,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -1111,10 +1111,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Settings(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -1135,9 +1135,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -1159,10 +1159,10 @@ namespace Android.Provider
             /// </summary>
             [global::System.Obsolete("SettingsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SettingsColumns(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -1183,9 +1183,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -1197,13 +1197,13 @@ namespace Android.Provider
     public partial class Contacts
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Contacts.html#CONTENT_URI"/>
@@ -1254,33 +1254,33 @@ namespace Android.Provider
         public static Java.Lang.String AUTHORITY { get { if (!_AUTHORITYReady) { _AUTHORITYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "AUTHORITY"); _AUTHORITYReady = true; } return _AUTHORITYContent; } }
         private static Java.Lang.String _AUTHORITYContent = default;
         private static bool _AUTHORITYReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
         #region ContactMethods implementation
         public partial class ContactMethods : Android.Provider.IBaseColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.Contacts.ContactMethods"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.Contacts.ContactMethods t) => t.Cast<Android.Provider.BaseColumns>();
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.ContactMethods.html#CONTENT_EMAIL_URI"/>
@@ -1422,9 +1422,9 @@ namespace Android.Provider
             public static Java.Lang.String POSTAL_LOCATION_LONGITUDE { get { if (!_POSTAL_LOCATION_LONGITUDEReady) { _POSTAL_LOCATION_LONGITUDEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "POSTAL_LOCATION_LONGITUDE"); _POSTAL_LOCATION_LONGITUDEReady = true; } return _POSTAL_LOCATION_LONGITUDEContent; } }
             private static Java.Lang.String _POSTAL_LOCATION_LONGITUDEContent = default;
             private static bool _POSTAL_LOCATION_LONGITUDEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.ContactMethods.html#getDisplayLabel(android.content.Context,int,int,java.lang.CharSequence)"/>
@@ -1469,9 +1469,9 @@ namespace Android.Provider
             {
                 return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "encodePredefinedImProtocol", "(I)Ljava/lang/String;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.ContactMethods.html#addPostalLocation(android.content.Context,long,double,double)"/>
@@ -1485,13 +1485,13 @@ namespace Android.Provider
             {
                 IExecute("addPostalLocation", arg0, arg1, arg2, arg3);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1500,13 +1500,13 @@ namespace Android.Provider
         public partial class ContactMethodsColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.ContactMethodsColumns.html#TYPE_CUSTOM"/>
@@ -1578,21 +1578,21 @@ namespace Android.Provider
             public static Java.Lang.String TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
             private static Java.Lang.String _TYPEContent = default;
             private static bool _TYPEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1601,17 +1601,17 @@ namespace Android.Provider
         public partial class Extensions : Android.Provider.IBaseColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.Contacts.Extensions"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.Contacts.Extensions t) => t.Cast<Android.Provider.BaseColumns>();
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.Extensions.html#CONTENT_URI"/>
@@ -1648,21 +1648,21 @@ namespace Android.Provider
             public static Java.Lang.String PERSON_ID { get { if (!_PERSON_IDReady) { _PERSON_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PERSON_ID"); _PERSON_IDReady = true; } return _PERSON_IDContent; } }
             private static Java.Lang.String _PERSON_IDContent = default;
             private static bool _PERSON_IDReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1671,13 +1671,13 @@ namespace Android.Provider
         public partial class ExtensionsColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.ExtensionsColumns.html#NAME"/>
@@ -1693,21 +1693,21 @@ namespace Android.Provider
             public static Java.Lang.String VALUE { get { if (!_VALUEReady) { _VALUEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VALUE"); _VALUEReady = true; } return _VALUEContent; } }
             private static Java.Lang.String _VALUEContent = default;
             private static bool _VALUEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1716,17 +1716,17 @@ namespace Android.Provider
         public partial class GroupMembership : Android.Provider.IBaseColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.Contacts.GroupMembership"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.Contacts.GroupMembership t) => t.Cast<Android.Provider.BaseColumns>();
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.GroupMembership.html#CONTENT_URI"/>
@@ -1805,21 +1805,21 @@ namespace Android.Provider
             public static Java.Lang.String PERSON_ID { get { if (!_PERSON_IDReady) { _PERSON_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PERSON_ID"); _PERSON_IDReady = true; } return _PERSON_IDContent; } }
             private static Java.Lang.String _PERSON_IDContent = default;
             private static bool _PERSON_IDReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1828,17 +1828,17 @@ namespace Android.Provider
         public partial class Groups : Android.Provider.IBaseColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.Contacts.Groups"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.Contacts.Groups t) => t.Cast<Android.Provider.BaseColumns>();
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.Groups.html#CONTENT_URI"/>
@@ -1889,21 +1889,21 @@ namespace Android.Provider
             public static Java.Lang.String GROUP_MY_CONTACTS { get { if (!_GROUP_MY_CONTACTSReady) { _GROUP_MY_CONTACTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "GROUP_MY_CONTACTS"); _GROUP_MY_CONTACTSReady = true; } return _GROUP_MY_CONTACTSContent; } }
             private static Java.Lang.String _GROUP_MY_CONTACTSContent = default;
             private static bool _GROUP_MY_CONTACTSReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1912,13 +1912,13 @@ namespace Android.Provider
         public partial class GroupsColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.GroupsColumns.html#NAME"/>
@@ -1948,21 +1948,21 @@ namespace Android.Provider
             public static Java.Lang.String SYSTEM_ID { get { if (!_SYSTEM_IDReady) { _SYSTEM_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SYSTEM_ID"); _SYSTEM_IDReady = true; } return _SYSTEM_IDContent; } }
             private static Java.Lang.String _SYSTEM_IDContent = default;
             private static bool _SYSTEM_IDReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1971,13 +1971,13 @@ namespace Android.Provider
         public partial class Intents
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.Intents.html#ATTACH_IMAGE"/>
@@ -2028,29 +2028,29 @@ namespace Android.Provider
             public static Java.Lang.String SHOW_OR_CREATE_CONTACT { get { if (!_SHOW_OR_CREATE_CONTACTReady) { _SHOW_OR_CREATE_CONTACTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHOW_OR_CREATE_CONTACT"); _SHOW_OR_CREATE_CONTACTReady = true; } return _SHOW_OR_CREATE_CONTACTContent; } }
             private static Java.Lang.String _SHOW_OR_CREATE_CONTACTContent = default;
             private static bool _SHOW_OR_CREATE_CONTACTReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
             #region UI implementation
             public partial class UI
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
-
+            
                 #endregion
-
+            
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/Contacts.Intents.UI.html#FILTER_CONTACTS_ACTION"/>
@@ -2129,21 +2129,21 @@ namespace Android.Provider
                 public static Java.Lang.String TITLE_EXTRA_KEY { get { if (!_TITLE_EXTRA_KEYReady) { _TITLE_EXTRA_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TITLE_EXTRA_KEY"); _TITLE_EXTRA_KEYReady = true; } return _TITLE_EXTRA_KEYContent; } }
                 private static Java.Lang.String _TITLE_EXTRA_KEYContent = default;
                 private static bool _TITLE_EXTRA_KEYReady = false; // this is used because in case of generics 
-
+            
                 #endregion
-
+            
                 #region Static methods
-
+            
                 #endregion
-
+            
                 #region Instance methods
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
@@ -2152,13 +2152,13 @@ namespace Android.Provider
             public partial class Insert
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
-
+            
                 #endregion
-
+            
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/Contacts.Intents.Insert.html#ACTION"/>
@@ -2349,28 +2349,28 @@ namespace Android.Provider
                 public static Java.Lang.String TERTIARY_PHONE_TYPE { get { if (!_TERTIARY_PHONE_TYPEReady) { _TERTIARY_PHONE_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TERTIARY_PHONE_TYPE"); _TERTIARY_PHONE_TYPEReady = true; } return _TERTIARY_PHONE_TYPEContent; } }
                 private static Java.Lang.String _TERTIARY_PHONE_TYPEContent = default;
                 private static bool _TERTIARY_PHONE_TYPEReady = false; // this is used because in case of generics 
-
+            
                 #endregion
-
+            
                 #region Static methods
-
+            
                 #endregion
-
+            
                 #region Instance methods
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2379,13 +2379,13 @@ namespace Android.Provider
         public partial class OrganizationColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.OrganizationColumns.html#TYPE_CUSTOM"/>
@@ -2450,21 +2450,21 @@ namespace Android.Provider
             public static Java.Lang.String TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
             private static Java.Lang.String _TYPEContent = default;
             private static bool _TYPEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2473,17 +2473,17 @@ namespace Android.Provider
         public partial class Organizations : Android.Provider.IBaseColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.Contacts.Organizations"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.Contacts.Organizations t) => t.Cast<Android.Provider.BaseColumns>();
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.Organizations.html#CONTENT_URI"/>
@@ -2506,9 +2506,9 @@ namespace Android.Provider
             public static Java.Lang.String DEFAULT_SORT_ORDER { get { if (!_DEFAULT_SORT_ORDERReady) { _DEFAULT_SORT_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_SORT_ORDER"); _DEFAULT_SORT_ORDERReady = true; } return _DEFAULT_SORT_ORDERContent; } }
             private static Java.Lang.String _DEFAULT_SORT_ORDERContent = default;
             private static bool _DEFAULT_SORT_ORDERReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.Organizations.html#getDisplayLabel(android.content.Context,int,java.lang.CharSequence)"/>
@@ -2522,17 +2522,17 @@ namespace Android.Provider
             {
                 return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getDisplayLabel", arg0, arg1, arg2);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2541,17 +2541,17 @@ namespace Android.Provider
         public partial class People : Android.Provider.IBaseColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.Contacts.People"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.Contacts.People t) => t.Cast<Android.Provider.BaseColumns>();
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.People.html#CONTENT_FILTER_URI"/>
@@ -2616,9 +2616,9 @@ namespace Android.Provider
             public static Java.Lang.String PRIMARY_PHONE_ID { get { if (!_PRIMARY_PHONE_IDReady) { _PRIMARY_PHONE_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PRIMARY_PHONE_ID"); _PRIMARY_PHONE_IDReady = true; } return _PRIMARY_PHONE_IDContent; } }
             private static Java.Lang.String _PRIMARY_PHONE_IDContent = default;
             private static bool _PRIMARY_PHONE_IDReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.People.html#queryGroups(android.content.ContentResolver,long)"/>
@@ -2722,29 +2722,29 @@ namespace Android.Provider
             {
                 SExecute(LocalBridgeClazz, "setPhotoData", arg0, arg1, arg2);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
             #region Phones implementation
             public partial class Phones : Android.Provider.IBaseColumns
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
                 /// <summary>
                 /// Converter from <see cref="Android.Provider.Contacts.People.Phones"/> to <see cref="Android.Provider.BaseColumns"/>
                 /// </summary>
                 public static implicit operator Android.Provider.BaseColumns(Android.Provider.Contacts.People.Phones t) => t.Cast<Android.Provider.BaseColumns>();
-
+            
                 #endregion
-
+            
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/Contacts.People.Phones.html#CONTENT_DIRECTORY"/>
@@ -2760,21 +2760,21 @@ namespace Android.Provider
                 public static Java.Lang.String DEFAULT_SORT_ORDER { get { if (!_DEFAULT_SORT_ORDERReady) { _DEFAULT_SORT_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_SORT_ORDER"); _DEFAULT_SORT_ORDERReady = true; } return _DEFAULT_SORT_ORDERContent; } }
                 private static Java.Lang.String _DEFAULT_SORT_ORDERContent = default;
                 private static bool _DEFAULT_SORT_ORDERReady = false; // this is used because in case of generics 
-
+            
                 #endregion
-
+            
                 #region Static methods
-
+            
                 #endregion
-
+            
                 #region Instance methods
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
@@ -2783,17 +2783,17 @@ namespace Android.Provider
             public partial class Extensions : Android.Provider.IBaseColumns
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
                 /// <summary>
                 /// Converter from <see cref="Android.Provider.Contacts.People.Extensions"/> to <see cref="Android.Provider.BaseColumns"/>
                 /// </summary>
                 public static implicit operator Android.Provider.BaseColumns(Android.Provider.Contacts.People.Extensions t) => t.Cast<Android.Provider.BaseColumns>();
-
+            
                 #endregion
-
+            
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/Contacts.People.Extensions.html#CONTENT_DIRECTORY"/>
@@ -2816,21 +2816,21 @@ namespace Android.Provider
                 public static Java.Lang.String PERSON_ID { get { if (!_PERSON_IDReady) { _PERSON_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PERSON_ID"); _PERSON_IDReady = true; } return _PERSON_IDContent; } }
                 private static Java.Lang.String _PERSON_IDContent = default;
                 private static bool _PERSON_IDReady = false; // this is used because in case of generics 
-
+            
                 #endregion
-
+            
                 #region Static methods
-
+            
                 #endregion
-
+            
                 #region Instance methods
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
@@ -2839,17 +2839,17 @@ namespace Android.Provider
             public partial class ContactMethods : Android.Provider.IBaseColumns
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
                 /// <summary>
                 /// Converter from <see cref="Android.Provider.Contacts.People.ContactMethods"/> to <see cref="Android.Provider.BaseColumns"/>
                 /// </summary>
                 public static implicit operator Android.Provider.BaseColumns(Android.Provider.Contacts.People.ContactMethods t) => t.Cast<Android.Provider.BaseColumns>();
-
+            
                 #endregion
-
+            
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/Contacts.People.ContactMethods.html#CONTENT_DIRECTORY"/>
@@ -2865,28 +2865,28 @@ namespace Android.Provider
                 public static Java.Lang.String DEFAULT_SORT_ORDER { get { if (!_DEFAULT_SORT_ORDERReady) { _DEFAULT_SORT_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_SORT_ORDER"); _DEFAULT_SORT_ORDERReady = true; } return _DEFAULT_SORT_ORDERContent; } }
                 private static Java.Lang.String _DEFAULT_SORT_ORDERContent = default;
                 private static bool _DEFAULT_SORT_ORDERReady = false; // this is used because in case of generics 
-
+            
                 #endregion
-
+            
                 #region Static methods
-
+            
                 #endregion
-
+            
                 #region Instance methods
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2895,13 +2895,13 @@ namespace Android.Provider
         public partial class PeopleColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.PeopleColumns.html#CUSTOM_RINGTONE"/>
@@ -2973,21 +2973,21 @@ namespace Android.Provider
             public static Java.Lang.String TIMES_CONTACTED { get { if (!_TIMES_CONTACTEDReady) { _TIMES_CONTACTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TIMES_CONTACTED"); _TIMES_CONTACTEDReady = true; } return _TIMES_CONTACTEDContent; } }
             private static Java.Lang.String _TIMES_CONTACTEDContent = default;
             private static bool _TIMES_CONTACTEDReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -2996,17 +2996,17 @@ namespace Android.Provider
         public partial class Phones : Android.Provider.IBaseColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.Contacts.Phones"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.Contacts.Phones t) => t.Cast<Android.Provider.BaseColumns>();
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.Phones.html#CONTENT_FILTER_URL"/>
@@ -3050,9 +3050,9 @@ namespace Android.Provider
             public static Java.Lang.String PERSON_ID { get { if (!_PERSON_IDReady) { _PERSON_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PERSON_ID"); _PERSON_IDReady = true; } return _PERSON_IDContent; } }
             private static Java.Lang.String _PERSON_IDContent = default;
             private static bool _PERSON_IDReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.Phones.html#getDisplayLabel(android.content.Context,int,java.lang.CharSequence,java.lang.CharSequence[])"/>
@@ -3079,17 +3079,17 @@ namespace Android.Provider
             {
                 return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getDisplayLabel", arg0, arg1, arg2);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3098,13 +3098,13 @@ namespace Android.Provider
         public partial class PhonesColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.PhonesColumns.html#TYPE_CUSTOM"/>
@@ -3197,21 +3197,21 @@ namespace Android.Provider
             public static Java.Lang.String TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
             private static Java.Lang.String _TYPEContent = default;
             private static bool _TYPEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3220,17 +3220,17 @@ namespace Android.Provider
         public partial class Photos : Android.Provider.IBaseColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.Contacts.Photos"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.Contacts.Photos t) => t.Cast<Android.Provider.BaseColumns>();
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.Photos.html#CONTENT_URI"/>
@@ -3253,21 +3253,21 @@ namespace Android.Provider
             public static Java.Lang.String DEFAULT_SORT_ORDER { get { if (!_DEFAULT_SORT_ORDERReady) { _DEFAULT_SORT_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_SORT_ORDER"); _DEFAULT_SORT_ORDERReady = true; } return _DEFAULT_SORT_ORDERContent; } }
             private static Java.Lang.String _DEFAULT_SORT_ORDERContent = default;
             private static bool _DEFAULT_SORT_ORDERReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3276,13 +3276,13 @@ namespace Android.Provider
         public partial class PhotosColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.PhotosColumns.html#DATA"/>
@@ -3326,21 +3326,21 @@ namespace Android.Provider
             public static Java.Lang.String SYNC_ERROR { get { if (!_SYNC_ERRORReady) { _SYNC_ERRORContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SYNC_ERROR"); _SYNC_ERRORReady = true; } return _SYNC_ERRORContent; } }
             private static Java.Lang.String _SYNC_ERRORContent = default;
             private static bool _SYNC_ERRORReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3349,13 +3349,13 @@ namespace Android.Provider
         public partial class PresenceColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.PresenceColumns.html#AVAILABLE"/>
@@ -3441,21 +3441,21 @@ namespace Android.Provider
             public static Java.Lang.String PRIORITY { get { if (!_PRIORITYReady) { _PRIORITYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PRIORITY"); _PRIORITYReady = true; } return _PRIORITYContent; } }
             private static Java.Lang.String _PRIORITYContent = default;
             private static bool _PRIORITYReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3464,17 +3464,17 @@ namespace Android.Provider
         public partial class Settings : Android.Provider.IBaseColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.Contacts.Settings"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.Contacts.Settings t) => t.Cast<Android.Provider.BaseColumns>();
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.Settings.html#CONTENT_URI"/>
@@ -3504,9 +3504,9 @@ namespace Android.Provider
             public static Java.Lang.String SYNC_EVERYTHING { get { if (!_SYNC_EVERYTHINGReady) { _SYNC_EVERYTHINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SYNC_EVERYTHING"); _SYNC_EVERYTHINGReady = true; } return _SYNC_EVERYTHINGContent; } }
             private static Java.Lang.String _SYNC_EVERYTHINGContent = default;
             private static bool _SYNC_EVERYTHINGReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.Settings.html#getSetting(android.content.ContentResolver,java.lang.String,java.lang.String)"/>
@@ -3532,17 +3532,17 @@ namespace Android.Provider
             {
                 SExecute(LocalBridgeClazz, "setSetting", arg0, arg1, arg2, arg3);
             }
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -3551,13 +3551,13 @@ namespace Android.Provider
         public partial class SettingsColumns
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Contacts.SettingsColumns.html#_SYNC_ACCOUNT"/>
@@ -3587,28 +3587,28 @@ namespace Android.Provider
             public static Java.Lang.String VALUE { get { if (!_VALUEReady) { _VALUEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VALUE"); _VALUEReady = true; } return _VALUEContent; } }
             private static Java.Lang.String _VALUEContent = default;
             private static bool _VALUEReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

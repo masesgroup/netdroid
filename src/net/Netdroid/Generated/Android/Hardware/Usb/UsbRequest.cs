@@ -40,10 +40,10 @@ namespace Android.Hardware.Usb
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UsbRequest(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Usb
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Hardware.Usb
     public partial class UsbRequest
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#getEndpoint()"/>
@@ -96,7 +96,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Android.Hardware.Usb.UsbEndpoint"/></returns>
         public Android.Hardware.Usb.UsbEndpoint GetEndpoint()
         {
-            return IExecuteWithSignature<Android.Hardware.Usb.UsbEndpoint>("getEndpoint", "()Landroid/hardware/usb/UsbEndpoint;");
+            return IExecute<Android.Hardware.Usb.UsbEndpoint>("getEndpoint");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#cancel()"/>
@@ -104,7 +104,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool Cancel()
         {
-            return IExecuteWithSignature<bool>("cancel", "()Z");
+            return IExecute<bool>("cancel");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#initialize(android.hardware.usb.UsbDeviceConnection,android.hardware.usb.UsbEndpoint)"/>
@@ -134,7 +134,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool Queue(Java.Nio.ByteBuffer arg0)
         {
-            return IExecuteWithSignature<bool>("queue", "(Ljava/nio/ByteBuffer;)Z", arg0);
+            return IExecute<bool>("queue", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#getClientData()"/>
@@ -142,14 +142,14 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="object"/></returns>
         public object GetClientData()
         {
-            return IExecuteWithSignature("getClientData", "()Ljava/lang/Object;");
+            return IExecute("getClientData");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#setClientData(java.lang.Object)"/>
@@ -157,15 +157,15 @@ namespace Android.Hardware.Usb
         /// <param name="arg0"><see cref="object"/></param>
         public void SetClientData(object arg0)
         {
-            IExecuteWithSignature("setClientData", "(Ljava/lang/Object;)V", arg0);
+            IExecute("setClientData", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

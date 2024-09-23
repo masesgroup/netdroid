@@ -40,10 +40,10 @@ namespace Javax.Security.Auth.X500
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public X500Principal(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Javax.Security.Auth.X500
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -107,9 +107,9 @@ namespace Javax.Security.Auth.X500
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Javax.Security.Auth.X500.X500Principal"/> to <see cref="Java.Security.Principal"/>
@@ -119,9 +119,9 @@ namespace Javax.Security.Auth.X500
         /// Converter from <see cref="Javax.Security.Auth.X500.X500Principal"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Javax.Security.Auth.X500.X500Principal t) => t.Cast<Java.Io.Serializable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html#CANONICAL"/>
@@ -141,13 +141,13 @@ namespace Javax.Security.Auth.X500
         public static Java.Lang.String RFC2253 { get { if (!_RFC2253Ready) { _RFC2253Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "RFC2253"); _RFC2253Ready = true; } return _RFC2253Content; } }
         private static Java.Lang.String _RFC2253Content = default;
         private static bool _RFC2253Ready = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html#getEncoded()"/>
@@ -184,13 +184,13 @@ namespace Javax.Security.Auth.X500
         {
             return IExecuteWithSignature<Java.Lang.String>("getName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

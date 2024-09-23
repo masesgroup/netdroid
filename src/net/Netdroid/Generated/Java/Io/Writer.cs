@@ -42,10 +42,10 @@ namespace Java.Io
         /// </summary>
         [global::System.Obsolete("Writer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Writer(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Io
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -76,9 +76,9 @@ namespace Java.Io
     public partial class Writer : Java.Lang.IAppendable, Java.Io.ICloseable, Java.Io.IFlushable
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Io.Writer"/> to <see cref="Java.Lang.Appendable"/>
@@ -92,13 +92,13 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.Writer"/> to <see cref="Java.Io.Flushable"/>
         /// </summary>
         public static implicit operator Java.Io.Flushable(Java.Io.Writer t) => t.Cast<Java.Io.Flushable>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/Writer.html#nullWriter()"/>
@@ -108,9 +108,9 @@ namespace Java.Io
         {
             return SExecuteWithSignature<Java.Io.Writer>(LocalBridgeClazz, "nullWriter", "()Ljava/io/Writer;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/Writer.html#close()"/>
@@ -209,13 +209,13 @@ namespace Java.Io
         {
             IExecuteWithSignature("write", "(Ljava/lang/String;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

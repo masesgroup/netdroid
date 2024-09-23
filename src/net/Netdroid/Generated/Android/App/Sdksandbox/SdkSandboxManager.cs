@@ -40,10 +40,10 @@ namespace Android.App.Sdksandbox
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SdkSandboxManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Sdksandbox
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region SdkSandboxProcessDeathCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.App.Sdksandbox
             /// </summary>
             [global::System.Obsolete("SdkSandboxProcessDeathCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SdkSandboxProcessDeathCallback(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.App.Sdksandbox
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.App.Sdksandbox
     public partial class SdkSandboxManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#LOAD_SDK_ALREADY_LOADED"/>
@@ -230,9 +230,9 @@ namespace Android.App.Sdksandbox
         public static Java.Lang.String SDK_SANDBOX_SERVICE { get { if (!_SDK_SANDBOX_SERVICEReady) { _SDK_SANDBOX_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SDK_SANDBOX_SERVICE"); _SDK_SANDBOX_SERVICEReady = true; } return _SDK_SANDBOX_SERVICEContent; } }
         private static Java.Lang.String _SDK_SANDBOX_SERVICEContent = default;
         private static bool _SDK_SANDBOX_SERVICEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#getSdkSandboxState()"/>
@@ -242,9 +242,9 @@ namespace Android.App.Sdksandbox
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getSdkSandboxState", "()I");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#getAppOwnedSdkSandboxInterfaces()"/>
@@ -359,29 +359,29 @@ namespace Android.App.Sdksandbox
         {
             IExecuteWithSignature("unregisterAppOwnedSdkSandboxInterface", "(Ljava/lang/String;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region SdkSandboxProcessDeathCallback implementation
         public partial class SdkSandboxProcessDeathCallback
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.SdkSandboxProcessDeathCallback.html#onSdkSandboxDied()"/>
@@ -390,20 +390,20 @@ namespace Android.App.Sdksandbox
             {
                 IExecuteWithSignature("onSdkSandboxDied", "()V");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Nfc.Cardemulation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public NfcFCardEmulation(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Nfc.Cardemulation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Nfc.Cardemulation
     public partial class NfcFCardEmulation
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/NfcFCardEmulation.html#getInstance(android.nfc.NfcAdapter)"/>
@@ -95,9 +95,9 @@ namespace Android.Nfc.Cardemulation
         {
             return SExecuteWithSignature<Android.Nfc.Cardemulation.NfcFCardEmulation>(LocalBridgeClazz, "getInstance", "(Landroid/nfc/NfcAdapter;)Landroid/nfc/cardemulation/NfcFCardEmulation;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/cardemulation/NfcFCardEmulation.html#disableService(android.app.Activity)"/>
@@ -172,13 +172,13 @@ namespace Android.Nfc.Cardemulation
         {
             return IExecuteWithSignature<Java.Lang.String>("getSystemCodeForService", "(Landroid/content/ComponentName;)Ljava/lang/String;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

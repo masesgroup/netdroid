@@ -40,10 +40,10 @@ namespace Android.Hardware.Camera2
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CameraCharacteristics(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Hardware.Camera2
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Key declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Hardware.Camera2
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Key(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Hardware.Camera2
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -127,10 +127,10 @@ namespace Android.Hardware.Camera2
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Key(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -151,9 +151,9 @@ namespace Android.Hardware.Camera2
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -165,13 +165,13 @@ namespace Android.Hardware.Camera2
     public partial class CameraCharacteristics
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#SENSOR_OPTICAL_BLACK_REGIONS"/>
@@ -906,13 +906,13 @@ namespace Android.Hardware.Camera2
         public static Android.Hardware.Camera2.CameraCharacteristics.Key SCALER_AVAILABLE_STREAM_USE_CASES { get { if (!_SCALER_AVAILABLE_STREAM_USE_CASESReady) { _SCALER_AVAILABLE_STREAM_USE_CASESContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "SCALER_AVAILABLE_STREAM_USE_CASES"); _SCALER_AVAILABLE_STREAM_USE_CASESReady = true; } return _SCALER_AVAILABLE_STREAM_USE_CASESContent; } }
         private static Android.Hardware.Camera2.CameraCharacteristics.Key _SCALER_AVAILABLE_STREAM_USE_CASESContent = default;
         private static bool _SCALER_AVAILABLE_STREAM_USE_CASESReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#get(android.hardware.camera2.CameraCharacteristics.Key)"/>
@@ -989,9 +989,9 @@ namespace Android.Hardware.Camera2
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getPhysicalCameraIds", "()Ljava/util/Set;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Key implementation
         public partial class Key
@@ -1006,21 +1006,21 @@ namespace Android.Hardware.Camera2
                 : base(arg0, arg1)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.Key.html#getName()"/>
@@ -1030,13 +1030,13 @@ namespace Android.Hardware.Camera2
             {
                 return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -1054,25 +1054,25 @@ namespace Android.Hardware.Camera2
                 : base(arg0, arg1)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Hardware.Camera2.CameraCharacteristics.Key{T}"/> to <see cref="Android.Hardware.Camera2.CameraCharacteristics.Key"/>
             /// </summary>
             public static implicit operator Android.Hardware.Camera2.CameraCharacteristics.Key(Android.Hardware.Camera2.CameraCharacteristics.Key<T> t) => t.Cast<Android.Hardware.Camera2.CameraCharacteristics.Key>();
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.Key.html#getName()"/>
@@ -1082,20 +1082,20 @@ namespace Android.Hardware.Camera2
             {
                 return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Java.Time.Format
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DecimalStyle(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time.Format
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Time.Format
     public partial class DecimalStyle
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#STANDARD"/>
@@ -88,9 +88,9 @@ namespace Java.Time.Format
         public static Java.Time.Format.DecimalStyle STANDARD { get { if (!_STANDARDReady) { _STANDARDContent = SGetField<Java.Time.Format.DecimalStyle>(LocalBridgeClazz, "STANDARD"); _STANDARDReady = true; } return _STANDARDContent; } }
         private static Java.Time.Format.DecimalStyle _STANDARDContent = default;
         private static bool _STANDARDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#of(java.util.Locale)"/>
@@ -117,9 +117,9 @@ namespace Java.Time.Format
         {
             return SExecuteWithSignature<Java.Util.Set<Java.Util.Locale>>(LocalBridgeClazz, "getAvailableLocales", "()Ljava/util/Set;");
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#getDecimalSeparator()"/>
@@ -189,13 +189,13 @@ namespace Java.Time.Format
         {
             return IExecuteWithSignature<Java.Time.Format.DecimalStyle>("withZeroDigit", "(C)Ljava/time/format/DecimalStyle;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

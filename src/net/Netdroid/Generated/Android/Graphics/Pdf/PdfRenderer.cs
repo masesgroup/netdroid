@@ -40,10 +40,10 @@ namespace Android.Graphics.Pdf
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PdfRenderer(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics.Pdf
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Page declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics.Pdf
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Page(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics.Pdf
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -138,13 +138,13 @@ namespace Android.Graphics.Pdf
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#DOCUMENT_LINEARIZED_TYPE_LINEARIZED"/>
@@ -182,13 +182,13 @@ namespace Android.Graphics.Pdf
         public static int PDF_FORM_TYPE_XFA_FULL { get { if (!_PDF_FORM_TYPE_XFA_FULLReady) { _PDF_FORM_TYPE_XFA_FULLContent = SGetField<int>(LocalBridgeClazz, "PDF_FORM_TYPE_XFA_FULL"); _PDF_FORM_TYPE_XFA_FULLReady = true; } return _PDF_FORM_TYPE_XFA_FULLContent; } }
         private static int _PDF_FORM_TYPE_XFA_FULLContent = default;
         private static bool _PDF_FORM_TYPE_XFA_FULLReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#openPage(int)"/>
@@ -248,21 +248,21 @@ namespace Android.Graphics.Pdf
         {
             IExecute("write", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Page implementation
         public partial class Page
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.Page.html#RENDER_MODE_FOR_DISPLAY"/>
@@ -276,13 +276,13 @@ namespace Android.Graphics.Pdf
             public static int RENDER_MODE_FOR_PRINT { get { if (!_RENDER_MODE_FOR_PRINTReady) { _RENDER_MODE_FOR_PRINTContent = SGetField<int>(LocalBridgeClazz, "RENDER_MODE_FOR_PRINT"); _RENDER_MODE_FOR_PRINTReady = true; } return _RENDER_MODE_FOR_PRINTContent; } }
             private static int _RENDER_MODE_FOR_PRINTContent = default;
             private static bool _RENDER_MODE_FOR_PRINTReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.Page.html#getFormWidgetInfoAtIndex(int)"/>
@@ -433,20 +433,20 @@ namespace Android.Graphics.Pdf
             {
                 IExecute("render", arg0, arg1, arg2, arg3);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Net.Wifi.Aware
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Characteristics(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Net.Wifi.Aware
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Net.Wifi.Aware
     public partial class Characteristics
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#CREATOR"/>
@@ -130,13 +130,13 @@ namespace Android.Net.Wifi.Aware
         public static int WIFI_AWARE_CIPHER_SUITE_NONE { get { if (!_WIFI_AWARE_CIPHER_SUITE_NONEReady) { _WIFI_AWARE_CIPHER_SUITE_NONEContent = SGetField<int>(LocalBridgeClazz, "WIFI_AWARE_CIPHER_SUITE_NONE"); _WIFI_AWARE_CIPHER_SUITE_NONEReady = true; } return _WIFI_AWARE_CIPHER_SUITE_NONEContent; } }
         private static int _WIFI_AWARE_CIPHER_SUITE_NONEContent = default;
         private static bool _WIFI_AWARE_CIPHER_SUITE_NONEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#isAwarePairingSupported()"/>
@@ -251,13 +251,13 @@ namespace Android.Net.Wifi.Aware
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

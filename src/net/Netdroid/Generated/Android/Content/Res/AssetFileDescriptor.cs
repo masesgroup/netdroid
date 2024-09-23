@@ -40,10 +40,10 @@ namespace Android.Content.Res
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AssetFileDescriptor(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Content.Res
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region AutoCloseInputStream declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Content.Res
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AutoCloseInputStream(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Content.Res
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Content.Res
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public AutoCloseOutputStream(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Content.Res
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -185,9 +185,9 @@ namespace Android.Content.Res
             : base(arg0, arg1, arg2)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Content.Res.AssetFileDescriptor"/> to <see cref="Android.Os.Parcelable"/>
@@ -197,9 +197,9 @@ namespace Android.Content.Res
         /// Converter from <see cref="Android.Content.Res.AssetFileDescriptor"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Android.Content.Res.AssetFileDescriptor t) => t.Cast<Java.Io.Closeable>();
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#CREATOR"/>
@@ -213,13 +213,13 @@ namespace Android.Content.Res
         public static long UNKNOWN_LENGTH { get { if (!_UNKNOWN_LENGTHReady) { _UNKNOWN_LENGTHContent = SGetField<long>(LocalBridgeClazz, "UNKNOWN_LENGTH"); _UNKNOWN_LENGTHReady = true; } return _UNKNOWN_LENGTHContent; } }
         private static long _UNKNOWN_LENGTHContent = default;
         private static bool _UNKNOWN_LENGTHReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#getExtras()"/>
@@ -227,7 +227,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Os.Bundle"/></returns>
         public Android.Os.Bundle GetExtras()
         {
-            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
+            return IExecute<Android.Os.Bundle>("getExtras");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#getParcelFileDescriptor()"/>
@@ -235,7 +235,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Os.ParcelFileDescriptor"/></returns>
         public Android.Os.ParcelFileDescriptor GetParcelFileDescriptor()
         {
-            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("getParcelFileDescriptor", "()Landroid/os/ParcelFileDescriptor;");
+            return IExecute<Android.Os.ParcelFileDescriptor>("getParcelFileDescriptor");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#describeContents()"/>
@@ -243,7 +243,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#getFileDescriptor()"/>
@@ -251,7 +251,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
         public Java.Io.FileDescriptor GetFileDescriptor()
         {
-            return IExecuteWithSignature<Java.Io.FileDescriptor>("getFileDescriptor", "()Ljava/io/FileDescriptor;");
+            return IExecute<Java.Io.FileDescriptor>("getFileDescriptor");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#createInputStream()"/>
@@ -260,7 +260,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.FileInputStream CreateInputStream()
         {
-            return IExecuteWithSignature<Java.Io.FileInputStream>("createInputStream", "()Ljava/io/FileInputStream;");
+            return IExecute<Java.Io.FileInputStream>("createInputStream");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#createOutputStream()"/>
@@ -269,7 +269,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.FileOutputStream CreateOutputStream()
         {
-            return IExecuteWithSignature<Java.Io.FileOutputStream>("createOutputStream", "()Ljava/io/FileOutputStream;");
+            return IExecute<Java.Io.FileOutputStream>("createOutputStream");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#getDeclaredLength()"/>
@@ -277,7 +277,7 @@ namespace Android.Content.Res
         /// <returns><see cref="long"/></returns>
         public long GetDeclaredLength()
         {
-            return IExecuteWithSignature<long>("getDeclaredLength", "()J");
+            return IExecute<long>("getDeclaredLength");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#getLength()"/>
@@ -285,7 +285,7 @@ namespace Android.Content.Res
         /// <returns><see cref="long"/></returns>
         public long GetLength()
         {
-            return IExecuteWithSignature<long>("getLength", "()J");
+            return IExecute<long>("getLength");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#getStartOffset()"/>
@@ -293,7 +293,7 @@ namespace Android.Content.Res
         /// <returns><see cref="long"/></returns>
         public long GetStartOffset()
         {
-            return IExecuteWithSignature<long>("getStartOffset", "()J");
+            return IExecute<long>("getStartOffset");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#close()"/>
@@ -301,7 +301,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecuteWithSignature("close", "()V");
+            IExecute("close");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#writeToParcel(android.os.Parcel,int)"/>
@@ -312,9 +312,9 @@ namespace Android.Content.Res
         {
             IExecute("writeToParcel", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region AutoCloseInputStream implementation
         public partial class AutoCloseInputStream
@@ -329,29 +329,29 @@ namespace Android.Content.Res
                 : base(arg0)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -369,36 +369,36 @@ namespace Android.Content.Res
                 : base(arg0)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

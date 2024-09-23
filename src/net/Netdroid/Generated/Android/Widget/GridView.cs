@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GridView(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -112,13 +112,13 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridView.html#AUTO_FIT"/>
@@ -150,13 +150,13 @@ namespace Android.Widget
         public static int STRETCH_SPACING_UNIFORM { get { if (!_STRETCH_SPACING_UNIFORMReady) { _STRETCH_SPACING_UNIFORMContent = SGetField<int>(LocalBridgeClazz, "STRETCH_SPACING_UNIFORM"); _STRETCH_SPACING_UNIFORMReady = true; } return _STRETCH_SPACING_UNIFORMContent; } }
         private static int _STRETCH_SPACING_UNIFORMContent = default;
         private static bool _STRETCH_SPACING_UNIFORMReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getColumnWidth()"/>
@@ -278,13 +278,13 @@ namespace Android.Widget
         {
             IExecuteWithSignature("smoothScrollByOffset", "(I)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

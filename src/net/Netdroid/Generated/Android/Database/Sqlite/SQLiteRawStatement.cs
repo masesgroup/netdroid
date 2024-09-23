@@ -40,10 +40,10 @@ namespace Android.Database.Sqlite
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SQLiteRawStatement(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Database.Sqlite
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Database.Sqlite
     public partial class SQLiteRawStatement
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteRawStatement.html#SQLITE_DATA_TYPE_BLOB"/>
@@ -112,13 +112,13 @@ namespace Android.Database.Sqlite
         public static int SQLITE_DATA_TYPE_TEXT { get { if (!_SQLITE_DATA_TYPE_TEXTReady) { _SQLITE_DATA_TYPE_TEXTContent = SGetField<int>(LocalBridgeClazz, "SQLITE_DATA_TYPE_TEXT"); _SQLITE_DATA_TYPE_TEXTReady = true; } return _SQLITE_DATA_TYPE_TEXTContent; } }
         private static int _SQLITE_DATA_TYPE_TEXTContent = default;
         private static bool _SQLITE_DATA_TYPE_TEXTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteRawStatement.html#isOpen()"/>
@@ -340,13 +340,13 @@ namespace Android.Database.Sqlite
         {
             IExecuteWithSignature("reset", "()V");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

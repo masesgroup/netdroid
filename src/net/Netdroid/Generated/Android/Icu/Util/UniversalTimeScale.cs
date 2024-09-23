@@ -40,10 +40,10 @@ namespace Android.Icu.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UniversalTimeScale(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Icu.Util
     public partial class UniversalTimeScale
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#DB2_TIME"/>
@@ -191,9 +191,9 @@ namespace Android.Icu.Util
         public static int WINDOWS_FILE_TIME { get { if (!_WINDOWS_FILE_TIMEReady) { _WINDOWS_FILE_TIMEContent = SGetField<int>(LocalBridgeClazz, "WINDOWS_FILE_TIME"); _WINDOWS_FILE_TIMEReady = true; } return _WINDOWS_FILE_TIMEContent; } }
         private static int _WINDOWS_FILE_TIMEContent = default;
         private static bool _WINDOWS_FILE_TIMEReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#bigDecimalFrom(android.icu.math.BigDecimal,int)"/>
@@ -275,17 +275,17 @@ namespace Android.Icu.Util
         {
             return SExecute<long>(LocalBridgeClazz, "toLong", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

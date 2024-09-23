@@ -40,10 +40,10 @@ namespace Android.Hardware.Display
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DisplayManager(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Hardware.Display
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region DisplayListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Hardware.Display
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public DisplayListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.hardware.display.DisplayManager_DisplayListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Hardware.Display
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region DisplayListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="DisplayListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Hardware.Display
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.hardware.display.DisplayManager$DisplayListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -141,13 +141,13 @@ namespace Android.Hardware.Display
     public partial class DisplayManager
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#MATCH_CONTENT_FRAMERATE_ALWAYS"/>
@@ -209,13 +209,13 @@ namespace Android.Hardware.Display
         public static Java.Lang.String DISPLAY_CATEGORY_PRESENTATION { get { if (!_DISPLAY_CATEGORY_PRESENTATIONReady) { _DISPLAY_CATEGORY_PRESENTATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISPLAY_CATEGORY_PRESENTATION"); _DISPLAY_CATEGORY_PRESENTATIONReady = true; } return _DISPLAY_CATEGORY_PRESENTATIONContent; } }
         private static Java.Lang.String _DISPLAY_CATEGORY_PRESENTATIONContent = default;
         private static bool _DISPLAY_CATEGORY_PRESENTATIONReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#getHdrConversionMode()"/>
@@ -326,29 +326,29 @@ namespace Android.Hardware.Display
         {
             IExecuteWithSignature("unregisterDisplayListener", "(Landroid/hardware/display/DisplayManager$DisplayListener;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region DisplayListener implementation
         public partial class DisplayListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="DisplayListener"/>
@@ -360,13 +360,13 @@ namespace Android.Hardware.Display
                 AddEventHandler("onDisplayRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnDisplayRemovedEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.DisplayListener.html#onDisplayAdded(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDisplayAdded"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnDisplayAdded { get; set; } = null;
-
+            
             bool hasOverrideOnDisplayAdded = true;
             void OnDisplayAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -375,7 +375,7 @@ namespace Android.Hardware.Display
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDisplayAdded;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.DisplayListener.html#onDisplayAdded(int)"/>
             /// </summary>
@@ -384,13 +384,13 @@ namespace Android.Hardware.Display
             {
                 hasOverrideOnDisplayAdded = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.DisplayListener.html#onDisplayChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDisplayChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnDisplayChanged { get; set; } = null;
-
+            
             bool hasOverrideOnDisplayChanged = true;
             void OnDisplayChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -399,7 +399,7 @@ namespace Android.Hardware.Display
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDisplayChanged;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.DisplayListener.html#onDisplayChanged(int)"/>
             /// </summary>
@@ -408,13 +408,13 @@ namespace Android.Hardware.Display
             {
                 hasOverrideOnDisplayChanged = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.DisplayListener.html#onDisplayRemoved(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDisplayRemoved"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnDisplayRemoved { get; set; } = null;
-
+            
             bool hasOverrideOnDisplayRemoved = true;
             void OnDisplayRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -423,7 +423,7 @@ namespace Android.Hardware.Display
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnDisplayRemoved;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.DisplayListener.html#onDisplayRemoved(int)"/>
             /// </summary>
@@ -432,13 +432,13 @@ namespace Android.Hardware.Display
             {
                 hasOverrideOnDisplayRemoved = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -447,21 +447,21 @@ namespace Android.Hardware.Display
         public partial class DisplayListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.DisplayListener.html#onDisplayAdded(int)"/>
@@ -487,20 +487,20 @@ namespace Android.Hardware.Display
             {
                 IExecuteWithSignature("onDisplayRemoved", "(I)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

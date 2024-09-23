@@ -42,10 +42,10 @@ namespace Android.Media.Tv.Interactive
         /// </summary>
         [global::System.Obsolete("TvInteractiveAppService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TvInteractiveAppService(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Media.Tv.Interactive
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Session declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Media.Tv.Interactive
             /// </summary>
             [global::System.Obsolete("Session class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Session(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Media.Tv.Interactive
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
-
+        
         }
         #endregion
 
@@ -123,13 +123,13 @@ namespace Android.Media.Tv.Interactive
     public partial class TvInteractiveAppService
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.html#COMMAND_PARAMETER_VALUE_STOP_MODE_BLANK"/>
@@ -293,13 +293,13 @@ namespace Android.Media.Tv.Interactive
         public static Java.Lang.String TIME_SHIFT_COMMAND_TYPE_SET_PLAYBACK_PARAMS { get { if (!_TIME_SHIFT_COMMAND_TYPE_SET_PLAYBACK_PARAMSReady) { _TIME_SHIFT_COMMAND_TYPE_SET_PLAYBACK_PARAMSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TIME_SHIFT_COMMAND_TYPE_SET_PLAYBACK_PARAMS"); _TIME_SHIFT_COMMAND_TYPE_SET_PLAYBACK_PARAMSReady = true; } return _TIME_SHIFT_COMMAND_TYPE_SET_PLAYBACK_PARAMSContent; } }
         private static Java.Lang.String _TIME_SHIFT_COMMAND_TYPE_SET_PLAYBACK_PARAMSContent = default;
         private static bool _TIME_SHIFT_COMMAND_TYPE_SET_PLAYBACK_PARAMSReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.html#onCreateSession(java.lang.String,int)"/>
@@ -345,9 +345,9 @@ namespace Android.Media.Tv.Interactive
         {
             IExecuteWithSignature("onUnregisterAppLinkInfo", "(Landroid/media/tv/interactive/AppLinkInfo;)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Session implementation
         public partial class Session
@@ -361,21 +361,21 @@ namespace Android.Media.Tv.Interactive
                 : base(arg0)
             {
             }
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppService.Session.html#onSetSurface(android.view.Surface)"/>
@@ -1071,20 +1071,20 @@ namespace Android.Media.Tv.Interactive
             {
                 IExecuteWithSignature("setVideoBounds", "(Landroid/graphics/Rect;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

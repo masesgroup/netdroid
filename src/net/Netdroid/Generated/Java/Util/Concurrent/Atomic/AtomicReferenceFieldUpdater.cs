@@ -42,10 +42,10 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         [global::System.Obsolete("AtomicReferenceFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicReferenceFieldUpdater(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -91,10 +91,10 @@ namespace Java.Util.Concurrent.Atomic
         /// </summary>
         [global::System.Obsolete("AtomicReferenceFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicReferenceFieldUpdater(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
     
     }
@@ -125,17 +125,17 @@ namespace Java.Util.Concurrent.Atomic
     public partial class AtomicReferenceFieldUpdater
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#newUpdater(java.lang.Class,java.lang.Class,java.lang.String)"/>
@@ -148,9 +148,9 @@ namespace Java.Util.Concurrent.Atomic
         {
             return SExecute<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater>(LocalBridgeClazz, "newUpdater", arg0, arg1, arg2);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -253,13 +253,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             return IExecute("getAndSet", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
@@ -268,21 +268,21 @@ namespace Java.Util.Concurrent.Atomic
     public partial class AtomicReferenceFieldUpdater<T, V>
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater{T, V}"/> to <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater(Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<T, V> t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater>();
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#newUpdater(java.lang.Class,java.lang.Class,java.lang.String)"/>
@@ -297,9 +297,9 @@ namespace Java.Util.Concurrent.Atomic
         {
             return SExecute<Java.Util.Concurrent.Atomic.AtomicReferenceFieldUpdater<U, W>>(LocalBridgeClazz, "newUpdater", arg0, arg1, arg2);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -402,13 +402,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             return IExecute<V>("getAndSet", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

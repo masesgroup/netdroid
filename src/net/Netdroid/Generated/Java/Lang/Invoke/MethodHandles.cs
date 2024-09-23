@@ -40,10 +40,10 @@ namespace Java.Lang.Invoke
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MethodHandles(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Lang.Invoke
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region Lookup declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Java.Lang.Invoke
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Lookup(params object[] args) : base(args) { }
-
+        
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,7 +105,7 @@ namespace Java.Lang.Invoke
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-
+        
             // TODO: complete the class
             #region ClassOption declaration
             /// <summary>
@@ -122,10 +122,10 @@ namespace Java.Lang.Invoke
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public ClassOption(params object[] args) : base(args) { }
-
+            
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+            
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -146,9 +146,9 @@ namespace Java.Lang.Invoke
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-
+            
                 // TODO: complete the class
-
+            
             }
             #endregion
 
@@ -164,17 +164,17 @@ namespace Java.Lang.Invoke
     public partial class MethodHandles
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#reflectAs(java.lang.Class,java.lang.invoke.MethodHandle)"/>
@@ -643,25 +643,25 @@ namespace Java.Lang.Invoke
         {
             return SExecute<Java.Lang.Invoke.VarHandle>(LocalBridgeClazz, "byteBufferViewVarHandle", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Instance methods
-
+    
         #endregion
-
+    
         #region Nested classes
         #region Lookup implementation
         public partial class Lookup
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#MODULE"/>
@@ -705,13 +705,13 @@ namespace Java.Lang.Invoke
             public static int UNCONDITIONAL { get { if (!_UNCONDITIONALReady) { _UNCONDITIONALContent = SGetField<int>(LocalBridgeClazz, "UNCONDITIONAL"); _UNCONDITIONALReady = true; } return _UNCONDITIONALContent; } }
             private static int _UNCONDITIONALContent = default;
             private static bool _UNCONDITIONALReady = false; // this is used because in case of generics 
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#hasFullPrivilegeAccess()"/>
@@ -1051,21 +1051,21 @@ namespace Java.Lang.Invoke
             {
                 return IExecuteWithSignature<Java.Lang.Invoke.VarHandle>("unreflectVarHandle", "(Ljava/lang/reflect/Field;)Ljava/lang/invoke/VarHandle;", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
             #region ClassOption implementation
             public partial class ClassOption
             {
                 #region Constructors
-
+            
                 #endregion
-
+            
                 #region Class/Interface conversion operators
-
+            
                 #endregion
-
+            
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.ClassOption.html#NESTMATE"/>
@@ -1079,9 +1079,9 @@ namespace Java.Lang.Invoke
                 public static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption STRONG { get { if (!_STRONGReady) { _STRONGContent = SGetField<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "STRONG"); _STRONGReady = true; } return _STRONGContent; } }
                 private static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption _STRONGContent = default;
                 private static bool _STRONGReady = false; // this is used because in case of generics 
-
+            
                 #endregion
-
+            
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.ClassOption.html#valueOf(java.lang.String)"/>
@@ -1100,31 +1100,31 @@ namespace Java.Lang.Invoke
                 {
                     return SExecuteWithSignatureArray<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "values", "()[Ljava/lang/invoke/MethodHandles$Lookup$ClassOption;");
                 }
-
+            
                 #endregion
-
+            
                 #region Instance methods
-
+            
                 #endregion
-
+            
                 #region Nested classes
-
+            
                 #endregion
-
+            
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

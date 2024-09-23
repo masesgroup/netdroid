@@ -40,10 +40,10 @@ namespace Android.Animation
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LayoutTransition(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Animation
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region TransitionListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Animation
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public TransitionListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.animation.LayoutTransition_TransitionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Animation
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region TransitionListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="TransitionListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Animation
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.animation.LayoutTransition$TransitionListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -141,13 +141,13 @@ namespace Android.Animation
     public partial class LayoutTransition
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/LayoutTransition.html#APPEARING"/>
@@ -179,13 +179,13 @@ namespace Android.Animation
         public static int DISAPPEARING { get { if (!_DISAPPEARINGReady) { _DISAPPEARINGContent = SGetField<int>(LocalBridgeClazz, "DISAPPEARING"); _DISAPPEARINGReady = true; } return _DISAPPEARINGContent; } }
         private static int _DISAPPEARINGContent = default;
         private static bool _DISAPPEARINGReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/LayoutTransition.html#getAnimator(int)"/>
@@ -416,29 +416,29 @@ namespace Android.Animation
         {
             IExecute("showChild", arg0, arg1);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region TransitionListener implementation
         public partial class TransitionListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="TransitionListener"/>
@@ -449,13 +449,13 @@ namespace Android.Animation
                 AddEventHandler("startTransition", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(StartTransitionEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/animation/LayoutTransition.TransitionListener.html#endTransition(android.animation.LayoutTransition,android.view.ViewGroup,android.view.View,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnEndTransition"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Animation.LayoutTransition, Android.View.ViewGroup, Android.View.View, int> OnEndTransition { get; set; } = null;
-
+            
             bool hasOverrideEndTransition = true;
             void EndTransitionEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -464,7 +464,7 @@ namespace Android.Animation
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Animation.LayoutTransition>(0), data.EventData.GetAt<Android.View.ViewGroup>(1), data.EventData.GetAt<Android.View.View>(2), data.EventData.GetAt<int>(3));
                 data.EventData.TypedEventData.HasOverride = hasOverrideEndTransition;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/animation/LayoutTransition.TransitionListener.html#endTransition(android.animation.LayoutTransition,android.view.ViewGroup,android.view.View,int)"/>
             /// </summary>
@@ -476,13 +476,13 @@ namespace Android.Animation
             {
                 hasOverrideEndTransition = false;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/animation/LayoutTransition.TransitionListener.html#startTransition(android.animation.LayoutTransition,android.view.ViewGroup,android.view.View,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnStartTransition"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Animation.LayoutTransition, Android.View.ViewGroup, Android.View.View, int> OnStartTransition { get; set; } = null;
-
+            
             bool hasOverrideStartTransition = true;
             void StartTransitionEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -491,7 +491,7 @@ namespace Android.Animation
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Animation.LayoutTransition>(0), data.EventData.GetAt<Android.View.ViewGroup>(1), data.EventData.GetAt<Android.View.View>(2), data.EventData.GetAt<int>(3));
                 data.EventData.TypedEventData.HasOverride = hasOverrideStartTransition;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/animation/LayoutTransition.TransitionListener.html#startTransition(android.animation.LayoutTransition,android.view.ViewGroup,android.view.View,int)"/>
             /// </summary>
@@ -503,13 +503,13 @@ namespace Android.Animation
             {
                 hasOverrideStartTransition = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -518,21 +518,21 @@ namespace Android.Animation
         public partial class TransitionListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/animation/LayoutTransition.TransitionListener.html#endTransition(android.animation.LayoutTransition,android.view.ViewGroup,android.view.View,int)"/>
@@ -556,20 +556,20 @@ namespace Android.Animation
             {
                 IExecute("startTransition", arg0, arg1, arg2, arg3);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

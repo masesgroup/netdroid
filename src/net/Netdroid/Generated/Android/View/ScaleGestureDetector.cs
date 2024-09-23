@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ScaleGestureDetector(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
         #region OnScaleGestureListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnScaleGestureListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.ScaleGestureDetector_OnScaleGestureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region OnScaleGestureListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnScaleGestureListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.view.ScaleGestureDetector$OnScaleGestureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -143,7 +143,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public SimpleOnScaleGestureListener() { InitializeHandlers(); }
-
+        
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.ScaleGestureDetector_SimpleOnScaleGestureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -152,13 +152,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-
+        
         
             // TODO: complete the class
-
+        
         }
         #endregion
-
+        
         #region SimpleOnScaleGestureListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="SimpleOnScaleGestureListener"/> or its generic type if there is one
@@ -169,14 +169,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-
+        
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-
+        
             const string _bridgeClassName = "android.view.ScaleGestureDetector$SimpleOnScaleGestureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+        
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -227,21 +227,21 @@ namespace Android.View
             : base(arg0, arg1)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#isInProgress()"/>
@@ -380,29 +380,29 @@ namespace Android.View
         {
             IExecuteWithSignature("setStylusScaleEnabled", "(Z)V", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
         #region OnScaleGestureListener implementation
         public partial class OnScaleGestureListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnScaleGestureListener"/>
@@ -414,13 +414,13 @@ namespace Android.View
                 AddEventHandler("onScaleEnd", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnScaleEndEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.OnScaleGestureListener.html#onScale(android.view.ScaleGestureDetector)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScale"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.ScaleGestureDetector, bool> OnOnScale { get; set; } = null;
-
+            
             bool hasOverrideOnScale = true;
             void OnScaleEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -429,7 +429,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.ScaleGestureDetector>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnScale, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.OnScaleGestureListener.html#onScale(android.view.ScaleGestureDetector)"/>
             /// </summary>
@@ -439,13 +439,13 @@ namespace Android.View
             {
                 hasOverrideOnScale = false; return default;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.OnScaleGestureListener.html#onScaleBegin(android.view.ScaleGestureDetector)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScaleBegin"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.ScaleGestureDetector, bool> OnOnScaleBegin { get; set; } = null;
-
+            
             bool hasOverrideOnScaleBegin = true;
             void OnScaleBeginEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -454,7 +454,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.ScaleGestureDetector>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnScaleBegin, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.OnScaleGestureListener.html#onScaleBegin(android.view.ScaleGestureDetector)"/>
             /// </summary>
@@ -464,13 +464,13 @@ namespace Android.View
             {
                 hasOverrideOnScaleBegin = false; return default;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.OnScaleGestureListener.html#onScaleEnd(android.view.ScaleGestureDetector)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScaleEnd"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.ScaleGestureDetector> OnOnScaleEnd { get; set; } = null;
-
+            
             bool hasOverrideOnScaleEnd = true;
             void OnScaleEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -479,7 +479,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.ScaleGestureDetector>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnScaleEnd;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.OnScaleGestureListener.html#onScaleEnd(android.view.ScaleGestureDetector)"/>
             /// </summary>
@@ -488,13 +488,13 @@ namespace Android.View
             {
                 hasOverrideOnScaleEnd = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -503,21 +503,21 @@ namespace Android.View
         public partial class OnScaleGestureListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.OnScaleGestureListener.html#onScale(android.view.ScaleGestureDetector)"/>
@@ -545,13 +545,13 @@ namespace Android.View
             {
                 IExecuteWithSignature("onScaleEnd", "(Landroid/view/ScaleGestureDetector;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -560,21 +560,21 @@ namespace Android.View
         public partial class SimpleOnScaleGestureListener
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="SimpleOnScaleGestureListener"/>
@@ -586,13 +586,13 @@ namespace Android.View
                 AddEventHandler("onScaleEnd", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnScaleEndEventHandler));
 
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.SimpleOnScaleGestureListener.html#onScale(android.view.ScaleGestureDetector)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScale"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.ScaleGestureDetector, bool> OnOnScale { get; set; } = null;
-
+            
             bool hasOverrideOnScale = true;
             void OnScaleEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -601,7 +601,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.ScaleGestureDetector>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnScale, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.SimpleOnScaleGestureListener.html#onScale(android.view.ScaleGestureDetector)"/>
             /// </summary>
@@ -611,13 +611,13 @@ namespace Android.View
             {
                 hasOverrideOnScale = false; return default;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.SimpleOnScaleGestureListener.html#onScaleBegin(android.view.ScaleGestureDetector)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScaleBegin"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.ScaleGestureDetector, bool> OnOnScaleBegin { get; set; } = null;
-
+            
             bool hasOverrideOnScaleBegin = true;
             void OnScaleBeginEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -626,7 +626,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.ScaleGestureDetector>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnScaleBegin, executionResult);
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.SimpleOnScaleGestureListener.html#onScaleBegin(android.view.ScaleGestureDetector)"/>
             /// </summary>
@@ -636,13 +636,13 @@ namespace Android.View
             {
                 hasOverrideOnScaleBegin = false; return default;
             }
-
+            
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.SimpleOnScaleGestureListener.html#onScaleEnd(android.view.ScaleGestureDetector)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScaleEnd"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.ScaleGestureDetector> OnOnScaleEnd { get; set; } = null;
-
+            
             bool hasOverrideOnScaleEnd = true;
             void OnScaleEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -651,7 +651,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.ScaleGestureDetector>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnScaleEnd;
             }
-
+            
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.SimpleOnScaleGestureListener.html#onScaleEnd(android.view.ScaleGestureDetector)"/>
             /// </summary>
@@ -660,13 +660,13 @@ namespace Android.View
             {
                 hasOverrideOnScaleEnd = false;
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
@@ -675,21 +675,21 @@ namespace Android.View
         public partial class SimpleOnScaleGestureListenerDirect
         {
             #region Constructors
-
+        
             #endregion
-
+        
             #region Class/Interface conversion operators
-
+        
             #endregion
-
+        
             #region Fields
-
+        
             #endregion
-
+        
             #region Static methods
-
+        
             #endregion
-
+        
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.SimpleOnScaleGestureListener.html#onScale(android.view.ScaleGestureDetector)"/>
@@ -717,20 +717,20 @@ namespace Android.View
             {
                 IExecuteWithSignature("onScaleEnd", "(Landroid/view/ScaleGestureDetector;)V", arg0);
             }
-
+        
             #endregion
-
+        
             #region Nested classes
-
+        
             #endregion
-
+        
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

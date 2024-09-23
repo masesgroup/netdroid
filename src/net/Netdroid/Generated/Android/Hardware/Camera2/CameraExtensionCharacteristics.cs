@@ -40,10 +40,10 @@ namespace Android.Hardware.Camera2
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CameraExtensionCharacteristics(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Camera2
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Hardware.Camera2
     public partial class CameraExtensionCharacteristics
     {
         #region Constructors
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#EXTENSION_AUTOMATIC"/>
@@ -119,13 +119,13 @@ namespace Android.Hardware.Camera2
         public static int EXTENSION_NIGHT { get { if (!_EXTENSION_NIGHTReady) { _EXTENSION_NIGHTContent = SGetField<int>(LocalBridgeClazz, "EXTENSION_NIGHT"); _EXTENSION_NIGHTReady = true; } return _EXTENSION_NIGHTContent; } }
         private static int _EXTENSION_NIGHTContent = default;
         private static bool _EXTENSION_NIGHTReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#getExtensionSupportedSizes(int,java.lang.Class)"/>
@@ -222,13 +222,13 @@ namespace Android.Hardware.Camera2
         {
             return IExecuteWithSignature<Java.Util.Set<Android.Hardware.Camera2.CaptureResult.Key>>("getAvailableCaptureResultKeys", "(I)Ljava/util/Set;", arg0);
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion

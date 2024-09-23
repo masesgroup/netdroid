@@ -40,10 +40,10 @@ namespace Android.Net.Http
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SslError(params object[] args) : base(args) { }
-
+    
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
+    
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Net.Http
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
+    
         // TODO: complete the class
-
+    
     }
     #endregion
 
@@ -114,13 +114,13 @@ namespace Android.Net.Http
             : base(arg0, arg1)
         {
         }
-
+    
         #endregion
-
+    
         #region Class/Interface conversion operators
-
+    
         #endregion
-
+    
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#SSL_DATE_INVALID"/>
@@ -165,13 +165,13 @@ namespace Android.Net.Http
         public static int SSL_UNTRUSTED { get { if (!_SSL_UNTRUSTEDReady) { _SSL_UNTRUSTEDContent = SGetField<int>(LocalBridgeClazz, "SSL_UNTRUSTED"); _SSL_UNTRUSTEDReady = true; } return _SSL_UNTRUSTEDContent; } }
         private static int _SSL_UNTRUSTEDContent = default;
         private static bool _SSL_UNTRUSTEDReady = false; // this is used because in case of generics 
-
+    
         #endregion
-
+    
         #region Static methods
-
+    
         #endregion
-
+    
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#getCertificate()"/>
@@ -215,13 +215,13 @@ namespace Android.Net.Http
         {
             return IExecuteWithSignature<Java.Lang.String>("getUrl", "()Ljava/lang/String;");
         }
-
+    
         #endregion
-
+    
         #region Nested classes
-
+    
         #endregion
-
+    
         // TODO: complete the class
     }
     #endregion
