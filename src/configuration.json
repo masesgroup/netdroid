@@ -61,7 +61,10 @@
     "android.text.method.DialerKeyListener",
     "android.text.method.DigitsKeyListener",
     "android.text.method.MetaKeyKeyListener",
+	"android.text.method.MultiTapKeyListener",
+	"android.text.method.NumberKeyListener",
     "android.text.method.QwertyKeyListener",
+	"android.text.method.TextKeyListener",
     "android.text.method.TimeKeyListener",
     "android.widget.ArrayAdapter",
     "android.widget.CursorTreeAdapter",
@@ -71,19 +74,16 @@
     "android.widget.SimpleCursorAdapter",
     "android.widget.SimpleCursorTreeAdapter",
     "android.widget.SimpleExpandableListAdapter",
+	"android.view.OrientationListener",
     "android.view.OrientationEventListener",
     "android.view.accessibility.CaptioningManager$CaptioningChangeListener",
+    "android.widget.CursorAdapter",
+    "android.widget.SimpleAdapter",
     "org.xml.sax.helpers.XMLReaderAdapter"
   ],
   "ClassesManuallyDeveloped": [
     "java.util.Comparator",
-    "java.util.EventListener",
-    "android.text.method.TextKeyListener",
-    "android.text.method.MultiTapKeyListener",
-    "android.text.method.NumberKeyListener",
-    "android.view.OrientationListener",
-    "android.widget.CursorAdapter",
-    "android.widget.SimpleAdapter"
+    "java.util.EventListener"
   ],
   "ClassesToAvoid": [
     "android.content.pm.ApplicationInfo$DisplayNameComparator",
