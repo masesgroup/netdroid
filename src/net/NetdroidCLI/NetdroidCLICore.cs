@@ -134,7 +134,7 @@ namespace MASES.NetdroidCLI
 
             List<string> namespaceList = new List<string>();
 
-            var netdroidAssembly = typeof(NetdroidCoreBase<>).Assembly;
+            var netdroidAssembly = typeof(NetdroidCore<>).Assembly;
             foreach (var item in netdroidAssembly.GetExportedTypes())
             {
                 if (item.IsPublic)

@@ -38,7 +38,7 @@ namespace MASES.NetdroidCLI
 
                 if (NetdroidCLICore.Interactive)
                 {
-                    ScriptOptions options = ScriptOptions.Default.WithReferences(typeof(NetdroidCoreBase<>).Assembly)
+                    ScriptOptions options = ScriptOptions.Default.WithReferences(typeof(NetdroidCore<>).Assembly)
                                                                  .WithImports(NetdroidCLICore.NamespaceList);
                     ScriptState<object> state = null;
                     while (true)
@@ -85,7 +85,7 @@ namespace MASES.NetdroidCLI
 
                     var scriptCode = File.ReadAllText(NetdroidCLICore.Script);
 
-                    ScriptOptions options = ScriptOptions.Default.WithReferences(typeof(NetdroidCoreBase<>).Assembly)
+                    ScriptOptions options = ScriptOptions.Default.WithReferences(typeof(NetdroidCore<>).Assembly)
                                                                  .WithImports(NetdroidCLICore.NamespaceList);
 
                     var script = CSharpScript.Create(scriptCode, options);
