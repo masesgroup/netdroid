@@ -116,7 +116,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetEncoding()
         {
-            return IExecute<Java.Lang.String>("getEncoding");
+            return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2.html#getXMLVersion()"/>
@@ -124,7 +124,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetXMLVersion()
         {
-            return IExecute<Java.Lang.String>("getXMLVersion");
+            return IExecuteWithSignature<Java.Lang.String>("getXMLVersion", "()Ljava/lang/String;");
         }
     
         #endregion

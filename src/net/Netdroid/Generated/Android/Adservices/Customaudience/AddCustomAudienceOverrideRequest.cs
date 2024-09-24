@@ -152,7 +152,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Adservices.Common.AdSelectionSignals"/></returns>
         public Android.Adservices.Common.AdSelectionSignals GetTrustedBiddingSignals()
         {
-            return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getTrustedBiddingSignals", "()Landroid/adservices/common/AdSelectionSignals;");
+            return IExecute<Android.Adservices.Common.AdSelectionSignals>("getTrustedBiddingSignals");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.html#getBuyer()"/>
@@ -160,7 +160,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Adservices.Common.AdTechIdentifier"/></returns>
         public Android.Adservices.Common.AdTechIdentifier GetBuyer()
         {
-            return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getBuyer", "()Landroid/adservices/common/AdTechIdentifier;");
+            return IExecute<Android.Adservices.Common.AdTechIdentifier>("getBuyer");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.html#getBiddingLogicJs()"/>
@@ -168,7 +168,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetBiddingLogicJs()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getBiddingLogicJs", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getBiddingLogicJs");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.html#getName()"/>
@@ -176,7 +176,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getName");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/AddCustomAudienceOverrideRequest.html#getBiddingLogicJsVersion()"/>
@@ -184,7 +184,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="long"/></returns>
         public long GetBiddingLogicJsVersion()
         {
-            return IExecuteWithSignature<long>("getBiddingLogicJsVersion", "()J");
+            return IExecute<long>("getBiddingLogicJsVersion");
         }
     
         #endregion

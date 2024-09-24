@@ -167,7 +167,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Android.Content.Res.AssetFileDescriptor OpenFd(Java.Lang.String arg0)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("openFd", arg0);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openFd", "(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#openNonAssetFd(int,java.lang.String)"/>
@@ -188,7 +188,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Android.Content.Res.AssetFileDescriptor OpenNonAssetFd(Java.Lang.String arg0)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("openNonAssetFd", arg0);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openNonAssetFd", "(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#openXmlResourceParser(int,java.lang.String)"/>
@@ -209,7 +209,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Android.Content.Res.XmlResourceParser OpenXmlResourceParser(Java.Lang.String arg0)
         {
-            return IExecute<Android.Content.Res.XmlResourceParser>("openXmlResourceParser", arg0);
+            return IExecuteWithSignature<Android.Content.Res.XmlResourceParser>("openXmlResourceParser", "(Ljava/lang/String;)Landroid/content/res/XmlResourceParser;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#open(java.lang.String,int)"/>
@@ -230,7 +230,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.InputStream Open(Java.Lang.String arg0)
         {
-            return IExecute<Java.Io.InputStream>("open", arg0);
+            return IExecuteWithSignature<Java.Io.InputStream>("open", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#getLocales()"/>
@@ -238,7 +238,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetLocales()
         {
-            return IExecuteArray<Java.Lang.String>("getLocales");
+            return IExecuteWithSignatureArray<Java.Lang.String>("getLocales", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#list(java.lang.String)"/>
@@ -248,14 +248,14 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.String[] List(Java.Lang.String arg0)
         {
-            return IExecuteArray<Java.Lang.String>("list", arg0);
+            return IExecuteWithSignatureArray<Java.Lang.String>("list", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
     
         #endregion

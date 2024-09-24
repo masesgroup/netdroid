@@ -96,7 +96,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Android.Hardware.Usb.UsbRequest"/></returns>
         public Android.Hardware.Usb.UsbRequest RequestWait()
         {
-            return IExecute<Android.Hardware.Usb.UsbRequest>("requestWait");
+            return IExecuteWithSignature<Android.Hardware.Usb.UsbRequest>("requestWait", "()Landroid/hardware/usb/UsbRequest;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#requestWait(long)"/>
@@ -106,7 +106,7 @@ namespace Android.Hardware.Usb
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public Android.Hardware.Usb.UsbRequest RequestWait(long arg0)
         {
-            return IExecute<Android.Hardware.Usb.UsbRequest>("requestWait", arg0);
+            return IExecuteWithSignature<Android.Hardware.Usb.UsbRequest>("requestWait", "(J)Landroid/hardware/usb/UsbRequest;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#claimInterface(android.hardware.usb.UsbInterface,boolean)"/>
@@ -125,7 +125,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool ReleaseInterface(Android.Hardware.Usb.UsbInterface arg0)
         {
-            return IExecute<bool>("releaseInterface", arg0);
+            return IExecuteWithSignature<bool>("releaseInterface", "(Landroid/hardware/usb/UsbInterface;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#setConfiguration(android.hardware.usb.UsbConfiguration)"/>
@@ -134,7 +134,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool SetConfiguration(Android.Hardware.Usb.UsbConfiguration arg0)
         {
-            return IExecute<bool>("setConfiguration", arg0);
+            return IExecuteWithSignature<bool>("setConfiguration", "(Landroid/hardware/usb/UsbConfiguration;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#setInterface(android.hardware.usb.UsbInterface)"/>
@@ -143,7 +143,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool SetInterface(Android.Hardware.Usb.UsbInterface arg0)
         {
-            return IExecute<bool>("setInterface", arg0);
+            return IExecuteWithSignature<bool>("setInterface", "(Landroid/hardware/usb/UsbInterface;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#getRawDescriptors()"/>
@@ -151,7 +151,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="byte"/></returns>
         public byte[] GetRawDescriptors()
         {
-            return IExecuteArray<byte>("getRawDescriptors");
+            return IExecuteWithSignatureArray<byte>("getRawDescriptors", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#bulkTransfer(android.hardware.usb.UsbEndpoint,byte[],int,int,int)"/>
@@ -215,7 +215,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int GetFileDescriptor()
         {
-            return IExecute<int>("getFileDescriptor");
+            return IExecuteWithSignature<int>("getFileDescriptor", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#getSerial()"/>
@@ -223,14 +223,14 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetSerial()
         {
-            return IExecute<Java.Lang.String>("getSerial");
+            return IExecuteWithSignature<Java.Lang.String>("getSerial", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
     
         #endregion

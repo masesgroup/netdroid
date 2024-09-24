@@ -342,14 +342,6 @@ namespace Android.Widget
             return IExecuteWithSignature<Android.Widget.CursorAdapter>("getSuggestionsAdapter", "()Landroid/widget/CursorAdapter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getSuggestionsAdapter()"/>
-        /// </summary>
-        /// <returns><see cref="Android.Widget.CursorAdapter"/></returns>
-        public Android.Widget.CursorAdapter GetSuggestionsAdapterDirect()
-        {
-            return IExecuteWithSignature<Android.Widget.CursorAdapterDirect, Android.Widget.CursorAdapter>("getSuggestionsAdapter", "()Landroid/widget/CursorAdapter;");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#isIconfiedByDefault()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

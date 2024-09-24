@@ -97,7 +97,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
         public Android.Content.Res.ColorStateList GetColorStateList(int arg0)
         {
-            return IExecute<Android.Content.Res.ColorStateList>("getColorStateList", arg0);
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getColorStateList", "(I)Landroid/content/res/ColorStateList;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getResources()"/>
@@ -105,7 +105,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Content.Res.Resources"/></returns>
         public Android.Content.Res.Resources GetResources()
         {
-            return IExecute<Android.Content.Res.Resources>("getResources");
+            return IExecuteWithSignature<Android.Content.Res.Resources>("getResources", "()Landroid/content/res/Resources;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getDrawable(int)"/>
@@ -114,7 +114,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetDrawable(int arg0)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getDrawable", arg0);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "(I)Landroid/graphics/drawable/Drawable;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getFont(int)"/>
@@ -123,7 +123,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Graphics.Typeface"/></returns>
         public Android.Graphics.Typeface GetFont(int arg0)
         {
-            return IExecute<Android.Graphics.Typeface>("getFont", arg0);
+            return IExecuteWithSignature<Android.Graphics.Typeface>("getFont", "(I)Landroid/graphics/Typeface;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#peekValue(int)"/>
@@ -132,7 +132,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Util.TypedValue"/></returns>
         public Android.Util.TypedValue PeekValue(int arg0)
         {
-            return IExecute<Android.Util.TypedValue>("peekValue", arg0);
+            return IExecuteWithSignature<Android.Util.TypedValue>("peekValue", "(I)Landroid/util/TypedValue;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getBoolean(int,boolean)"/>
@@ -161,7 +161,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool HasValue(int arg0)
         {
-            return IExecute<bool>("hasValue", arg0);
+            return IExecuteWithSignature<bool>("hasValue", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#hasValueOrEmpty(int)"/>
@@ -170,7 +170,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool HasValueOrEmpty(int arg0)
         {
-            return IExecute<bool>("hasValueOrEmpty", arg0);
+            return IExecuteWithSignature<bool>("hasValueOrEmpty", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getDimension(int,float)"/>
@@ -210,7 +210,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetChangingConfigurations()
         {
-            return IExecute<int>("getChangingConfigurations");
+            return IExecuteWithSignature<int>("getChangingConfigurations", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getColor(int,int)"/>
@@ -249,7 +249,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetIndex(int arg0)
         {
-            return IExecute<int>("getIndex", arg0);
+            return IExecuteWithSignature<int>("getIndex", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getIndexCount()"/>
@@ -257,7 +257,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetIndexCount()
         {
-            return IExecute<int>("getIndexCount");
+            return IExecuteWithSignature<int>("getIndexCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getInt(int,int)"/>
@@ -326,7 +326,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetType(int arg0)
         {
-            return IExecute<int>("getType", arg0);
+            return IExecuteWithSignature<int>("getType", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#length()"/>
@@ -334,7 +334,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int Length()
         {
-            return IExecute<int>("length");
+            return IExecuteWithSignature<int>("length", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getText(int)"/>
@@ -343,7 +343,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence GetText(int arg0)
         {
-            return IExecute<Java.Lang.CharSequence>("getText", arg0);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "(I)Ljava/lang/CharSequence;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getTextArray(int)"/>
@@ -352,7 +352,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence[] GetTextArray(int arg0)
         {
-            return IExecuteArray<Java.Lang.CharSequence>("getTextArray", arg0);
+            return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getTextArray", "(I)[Ljava/lang/CharSequence;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getNonResourceString(int)"/>
@@ -361,7 +361,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetNonResourceString(int arg0)
         {
-            return IExecute<Java.Lang.String>("getNonResourceString", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getNonResourceString", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getPositionDescription()"/>
@@ -369,7 +369,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetPositionDescription()
         {
-            return IExecute<Java.Lang.String>("getPositionDescription");
+            return IExecuteWithSignature<Java.Lang.String>("getPositionDescription", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getString(int)"/>
@@ -378,21 +378,21 @@ namespace Android.Content.Res
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetString(int arg0)
         {
-            return IExecute<Java.Lang.String>("getString", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getString", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#recycle()"/>
         /// </summary>
         public void Recycle()
         {
-            IExecute("recycle");
+            IExecuteWithSignature("recycle", "()V");
         }
     
         #endregion

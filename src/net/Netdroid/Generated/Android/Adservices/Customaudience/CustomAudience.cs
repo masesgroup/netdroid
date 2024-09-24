@@ -153,7 +153,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Adservices.Common.AdSelectionSignals"/></returns>
         public Android.Adservices.Common.AdSelectionSignals GetUserBiddingSignals()
         {
-            return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getUserBiddingSignals", "()Landroid/adservices/common/AdSelectionSignals;");
+            return IExecute<Android.Adservices.Common.AdSelectionSignals>("getUserBiddingSignals");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getBuyer()"/>
@@ -161,7 +161,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Adservices.Common.AdTechIdentifier"/></returns>
         public Android.Adservices.Common.AdTechIdentifier GetBuyer()
         {
-            return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getBuyer", "()Landroid/adservices/common/AdTechIdentifier;");
+            return IExecute<Android.Adservices.Common.AdTechIdentifier>("getBuyer");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getTrustedBiddingData()"/>
@@ -169,7 +169,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Adservices.Customaudience.TrustedBiddingData"/></returns>
         public Android.Adservices.Customaudience.TrustedBiddingData GetTrustedBiddingData()
         {
-            return IExecuteWithSignature<Android.Adservices.Customaudience.TrustedBiddingData>("getTrustedBiddingData", "()Landroid/adservices/customaudience/TrustedBiddingData;");
+            return IExecute<Android.Adservices.Customaudience.TrustedBiddingData>("getTrustedBiddingData");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getBiddingLogicUri()"/>
@@ -177,7 +177,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public Android.Net.Uri GetBiddingLogicUri()
         {
-            return IExecuteWithSignature<Android.Net.Uri>("getBiddingLogicUri", "()Landroid/net/Uri;");
+            return IExecute<Android.Net.Uri>("getBiddingLogicUri");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getDailyUpdateUri()"/>
@@ -185,7 +185,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public Android.Net.Uri GetDailyUpdateUri()
         {
-            return IExecuteWithSignature<Android.Net.Uri>("getDailyUpdateUri", "()Landroid/net/Uri;");
+            return IExecute<Android.Net.Uri>("getDailyUpdateUri");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#describeContents()"/>
@@ -193,7 +193,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getAuctionServerRequestFlags()"/>
@@ -201,7 +201,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="int"/></returns>
         public int GetAuctionServerRequestFlags()
         {
-            return IExecuteWithSignature<int>("getAuctionServerRequestFlags", "()I");
+            return IExecute<int>("getAuctionServerRequestFlags");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getName()"/>
@@ -209,7 +209,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getName");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getActivationTime()"/>
@@ -217,7 +217,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant GetActivationTime()
         {
-            return IExecuteWithSignature<Java.Time.Instant>("getActivationTime", "()Ljava/time/Instant;");
+            return IExecute<Java.Time.Instant>("getActivationTime");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getExpirationTime()"/>
@@ -225,7 +225,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant GetExpirationTime()
         {
-            return IExecuteWithSignature<Java.Time.Instant>("getExpirationTime", "()Ljava/time/Instant;");
+            return IExecute<Java.Time.Instant>("getExpirationTime");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#getAds()"/>
@@ -233,7 +233,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Adservices.Common.AdData> GetAds()
         {
-            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.AdData>>("getAds", "()Ljava/util/List;");
+            return IExecute<Java.Util.List<Android.Adservices.Common.AdData>>("getAds");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudience.html#writeToParcel(android.os.Parcel,int)"/>

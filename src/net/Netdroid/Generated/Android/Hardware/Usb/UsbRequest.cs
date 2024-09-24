@@ -96,7 +96,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Android.Hardware.Usb.UsbEndpoint"/></returns>
         public Android.Hardware.Usb.UsbEndpoint GetEndpoint()
         {
-            return IExecute<Android.Hardware.Usb.UsbEndpoint>("getEndpoint");
+            return IExecuteWithSignature<Android.Hardware.Usb.UsbEndpoint>("getEndpoint", "()Landroid/hardware/usb/UsbEndpoint;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#cancel()"/>
@@ -104,7 +104,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool Cancel()
         {
-            return IExecute<bool>("cancel");
+            return IExecuteWithSignature<bool>("cancel", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#initialize(android.hardware.usb.UsbDeviceConnection,android.hardware.usb.UsbEndpoint)"/>
@@ -134,7 +134,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool Queue(Java.Nio.ByteBuffer arg0)
         {
-            return IExecute<bool>("queue", arg0);
+            return IExecuteWithSignature<bool>("queue", "(Ljava/nio/ByteBuffer;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#getClientData()"/>
@@ -142,14 +142,14 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="object"/></returns>
         public object GetClientData()
         {
-            return IExecute("getClientData");
+            return IExecuteWithSignature("getClientData", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#setClientData(java.lang.Object)"/>
@@ -157,7 +157,7 @@ namespace Android.Hardware.Usb
         /// <param name="arg0"><see cref="object"/></param>
         public void SetClientData(object arg0)
         {
-            IExecute("setClientData", arg0);
+            IExecuteWithSignature("setClientData", "(Ljava/lang/Object;)V", arg0);
         }
     
         #endregion

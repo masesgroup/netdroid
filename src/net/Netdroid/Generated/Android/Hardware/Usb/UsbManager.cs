@@ -138,7 +138,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Android.Hardware.Usb.UsbAccessory"/></returns>
         public Android.Hardware.Usb.UsbAccessory[] GetAccessoryList()
         {
-            return IExecuteArray<Android.Hardware.Usb.UsbAccessory>("getAccessoryList");
+            return IExecuteWithSignatureArray<Android.Hardware.Usb.UsbAccessory>("getAccessoryList", "()[Landroid/hardware/usb/UsbAccessory;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#openDevice(android.hardware.usb.UsbDevice)"/>
@@ -147,7 +147,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Android.Hardware.Usb.UsbDeviceConnection"/></returns>
         public Android.Hardware.Usb.UsbDeviceConnection OpenDevice(Android.Hardware.Usb.UsbDevice arg0)
         {
-            return IExecute<Android.Hardware.Usb.UsbDeviceConnection>("openDevice", arg0);
+            return IExecuteWithSignature<Android.Hardware.Usb.UsbDeviceConnection>("openDevice", "(Landroid/hardware/usb/UsbDevice;)Landroid/hardware/usb/UsbDeviceConnection;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#openAccessory(android.hardware.usb.UsbAccessory)"/>
@@ -156,7 +156,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Android.Os.ParcelFileDescriptor"/></returns>
         public Android.Os.ParcelFileDescriptor OpenAccessory(Android.Hardware.Usb.UsbAccessory arg0)
         {
-            return IExecute<Android.Os.ParcelFileDescriptor>("openAccessory", arg0);
+            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("openAccessory", "(Landroid/hardware/usb/UsbAccessory;)Landroid/os/ParcelFileDescriptor;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#hasPermission(android.hardware.usb.UsbAccessory)"/>
@@ -165,7 +165,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool HasPermission(Android.Hardware.Usb.UsbAccessory arg0)
         {
-            return IExecute<bool>("hasPermission", arg0);
+            return IExecuteWithSignature<bool>("hasPermission", "(Landroid/hardware/usb/UsbAccessory;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#hasPermission(android.hardware.usb.UsbDevice)"/>
@@ -174,7 +174,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool HasPermission(Android.Hardware.Usb.UsbDevice arg0)
         {
-            return IExecute<bool>("hasPermission", arg0);
+            return IExecuteWithSignature<bool>("hasPermission", "(Landroid/hardware/usb/UsbDevice;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#getDeviceList()"/>
@@ -182,7 +182,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Java.Util.HashMap"/></returns>
         public Java.Util.HashMap<Java.Lang.String, Android.Hardware.Usb.UsbDevice> GetDeviceList()
         {
-            return IExecute<Java.Util.HashMap<Java.Lang.String, Android.Hardware.Usb.UsbDevice>>("getDeviceList");
+            return IExecuteWithSignature<Java.Util.HashMap<Java.Lang.String, Android.Hardware.Usb.UsbDevice>>("getDeviceList", "()Ljava/util/HashMap;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#requestPermission(android.hardware.usb.UsbAccessory,android.app.PendingIntent)"/>

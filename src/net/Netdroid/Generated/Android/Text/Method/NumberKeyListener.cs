@@ -23,23 +23,25 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.Content.Res
+namespace Android.Text.Method
 {
-    #region ObbScanner declaration
+    #region NumberKeyListener declaration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/android/content/res/ObbScanner.html"/>
+    /// <see href="https://developer.android.com/reference/android/text/method/NumberKeyListener.html"/>
     /// </summary>
-    public partial class ObbScanner : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObbScanner>
+    public partial class NumberKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NumberKeyListener>
     {
-        const string _bridgeClassName = "android.content.res.ObbScanner";
+        const string _bridgeClassName = "android.text.method.NumberKeyListener";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ObbScanner() { }
+        [global::System.Obsolete("NumberKeyListener class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public NumberKeyListener() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ObbScanner(params object[] args) : base(args) { }
+        [global::System.Obsolete("NumberKeyListener class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public NumberKeyListener(params object[] args) : base(args) { }
     
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -51,7 +53,7 @@ namespace Android.Content.Res
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsBridgeAbstract => false;
+        public override bool IsBridgeAbstract => true;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
@@ -70,14 +72,18 @@ namespace Android.Content.Res
     }
     #endregion
 
-    #region ObbScanner implementation
-    public partial class ObbScanner
+    #region NumberKeyListener implementation
+    public partial class NumberKeyListener
     {
         #region Constructors
     
         #endregion
     
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Android.Text.Method.NumberKeyListener"/> to <see cref="Android.Text.InputFilter"/>
+        /// </summary>
+        public static implicit operator Android.Text.InputFilter(Android.Text.Method.NumberKeyListener t) => t.Cast<Android.Text.InputFilter>();
     
         #endregion
     
@@ -86,20 +92,24 @@ namespace Android.Content.Res
         #endregion
     
         #region Static methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/ObbScanner.html#getObbInfo(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Android.Content.Res.ObbInfo"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public static Android.Content.Res.ObbInfo GetObbInfo(Java.Lang.String arg0)
-        {
-            return SExecuteWithSignature<Android.Content.Res.ObbInfo>(LocalBridgeClazz, "getObbInfo", "(Ljava/lang/String;)Landroid/content/res/ObbInfo;", arg0);
-        }
     
         #endregion
     
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/method/NumberKeyListener.html#filter(java.lang.CharSequence,int,int,android.text.Spanned,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Android.Text.Spanned"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence Filter(Java.Lang.CharSequence arg0, int arg1, int arg2, Android.Text.Spanned arg3, int arg4, int arg5)
+        {
+            return IExecute<Java.Lang.CharSequence>("filter", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
     
         #endregion
     

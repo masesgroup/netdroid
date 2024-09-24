@@ -113,7 +113,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Content.Res.FontScaleConverter"/></returns>
         public static Android.Content.Res.FontScaleConverter ForScale(float arg0)
         {
-            return SExecute<Android.Content.Res.FontScaleConverter>(LocalBridgeClazz, "forScale", arg0);
+            return SExecuteWithSignature<Android.Content.Res.FontScaleConverter>(LocalBridgeClazz, "forScale", "(F)Landroid/content/res/FontScaleConverter;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/FontScaleConverter.html#isNonLinearFontScalingActive(float)"/>
@@ -122,7 +122,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public static bool IsNonLinearFontScalingActive(float arg0)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isNonLinearFontScalingActive", arg0);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isNonLinearFontScalingActive", "(F)Z", arg0);
         }
     
         #endregion
@@ -135,7 +135,7 @@ namespace Android.Content.Res
         /// <returns><see cref="float"/></returns>
         public float ConvertDpToSp(float arg0)
         {
-            return IExecute<float>("convertDpToSp", arg0);
+            return IExecuteWithSignature<float>("convertDpToSp", "(F)F", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/FontScaleConverter.html#convertSpToDp(float)"/>
@@ -144,7 +144,7 @@ namespace Android.Content.Res
         /// <returns><see cref="float"/></returns>
         public float ConvertSpToDp(float arg0)
         {
-            return IExecute<float>("convertSpToDp", arg0);
+            return IExecuteWithSignature<float>("convertSpToDp", "(F)F", arg0);
         }
     
         #endregion
