@@ -140,7 +140,7 @@ jobs:
         uses: actions/attest-build-provenance@v1
         id: attest
         with:
-          subject-name: ghcr.io/${{ github.repository_owner }}/jnet
+          subject-name: ghcr.io/${{ github.repository_owner }}/netdroid_sdk
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
 
@@ -223,12 +223,12 @@ jobs:
         uses: actions/attest-build-provenance@v1
         id: attest
         with:
-          subject-name: ghcr.io/${{ github.repository_owner }}/jnet
+          subject-name: ghcr.io/${{ github.repository_owner }}/netdroid
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
 
-  # Now run "build_windows"
-  build_windows:
+  # Now run "build_project"
+  build_project:
     needs: check_changes
     if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
     # The type of runner that the job will run on
