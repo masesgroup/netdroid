@@ -31,7 +31,7 @@
     "org.mases",
     "org.slf4j"
   ],
-  "ClassesWithCallback": [
+  "ClassesWithCallbacks": [
     {
       "ClassName": "android.app.Activity",
       "Patterns": [
