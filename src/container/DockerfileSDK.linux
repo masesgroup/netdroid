@@ -3,12 +3,12 @@ ARG TARGETARCH
 WORKDIR /app
 
 # Copy everything
-COPY ./src/net ./
+COPY ./src ./
 ENV NETDROID_DOCKER_BUILD_ACTIONS=true
 # Restore as distinct layers
-RUN dotnet restore Netdroid.sln -a $TARGETARCH
+RUN dotnet restore ./net/Netdroid.sln -a $TARGETARCH
 # Build and publish a release
-RUN dotnet publish ./NetdroidCLI/NetdroidCLI.csproj --self-contained -p:PublishReadyToRun=true --framework net8.0 -c Release -o out -a $TARGETARCH
+RUN dotnet publish ./net/NetdroidCLI/NetdroidCLI.csproj --self-contained -p:PublishReadyToRun=true --framework net8.0 -c Release -o out -a $TARGETARCH
 
 # Build runtime image
 FROM ubuntu:22.04
