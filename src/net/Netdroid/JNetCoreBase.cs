@@ -1,1 +1,1 @@
-../../../3dparty/JNet/src/net/JNet/JNetCoreBase.cs
+../../3dparty/JNet/src/net/JNet/JNetCoreBase.cs
