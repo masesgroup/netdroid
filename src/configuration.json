@@ -31,6 +31,14 @@
     "org.mases",
     "org.slf4j"
   ],
+  "ClassesWithCallback": [
+    {
+      "ClassName": "android.app.Activity",
+      "Patterns": [
+        "on*"
+      ]
+    }
+  ],
   "ClassesToBeListener": [
     "android.hardware.SensorEventListener2",
     "android.media.MediaScannerConnection$MediaScannerConnectionClient",
@@ -61,10 +69,10 @@
     "android.text.method.DialerKeyListener",
     "android.text.method.DigitsKeyListener",
     "android.text.method.MetaKeyKeyListener",
-	"android.text.method.MultiTapKeyListener",
-	"android.text.method.NumberKeyListener",
+    "android.text.method.MultiTapKeyListener",
+    "android.text.method.NumberKeyListener",
     "android.text.method.QwertyKeyListener",
-	"android.text.method.TextKeyListener",
+    "android.text.method.TextKeyListener",
     "android.text.method.TimeKeyListener",
     "android.widget.ArrayAdapter",
     "android.widget.CursorTreeAdapter",
@@ -74,7 +82,7 @@
     "android.widget.SimpleCursorAdapter",
     "android.widget.SimpleCursorTreeAdapter",
     "android.widget.SimpleExpandableListAdapter",
-	"android.view.OrientationListener",
+    "android.view.OrientationListener",
     "android.view.OrientationEventListener",
     "android.view.accessibility.CaptioningManager$CaptioningChangeListener",
     "android.widget.CursorAdapter",
@@ -88,7 +96,7 @@
   "ClassesToAvoid": [
     "android.content.pm.ApplicationInfo$DisplayNameComparator",
     "android.content.pm.PackageItemInfo$DisplayNameComparator",
-    "android.content.pm.ResolveInfo$DisplayNameComparator",	
+    "android.content.pm.ResolveInfo$DisplayNameComparator",
     "android.net.TransportInfo",
     "android.util.Range",
     "java.io.ObjectInputFilter",
