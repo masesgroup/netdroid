@@ -103,7 +103,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Android.Hardware.Usb.UsbEndpoint"/></returns>
         public Android.Hardware.Usb.UsbEndpoint GetEndpoint(int arg0)
         {
-            return IExecute<Android.Hardware.Usb.UsbEndpoint>("getEndpoint", arg0);
+            return IExecuteWithSignature<Android.Hardware.Usb.UsbEndpoint>("getEndpoint", "(I)Landroid/hardware/usb/UsbEndpoint;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbInterface.html#describeContents()"/>
@@ -111,7 +111,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecute<int>("describeContents");
+            return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbInterface.html#getAlternateSetting()"/>
@@ -119,7 +119,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int GetAlternateSetting()
         {
-            return IExecute<int>("getAlternateSetting");
+            return IExecuteWithSignature<int>("getAlternateSetting", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbInterface.html#getEndpointCount()"/>
@@ -127,7 +127,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int GetEndpointCount()
         {
-            return IExecute<int>("getEndpointCount");
+            return IExecuteWithSignature<int>("getEndpointCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbInterface.html#getId()"/>
@@ -135,7 +135,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int GetId()
         {
-            return IExecute<int>("getId");
+            return IExecuteWithSignature<int>("getId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbInterface.html#getInterfaceClass()"/>
@@ -143,7 +143,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int GetInterfaceClass()
         {
-            return IExecute<int>("getInterfaceClass");
+            return IExecuteWithSignature<int>("getInterfaceClass", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbInterface.html#getInterfaceProtocol()"/>
@@ -151,7 +151,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int GetInterfaceProtocol()
         {
-            return IExecute<int>("getInterfaceProtocol");
+            return IExecuteWithSignature<int>("getInterfaceProtocol", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbInterface.html#getInterfaceSubclass()"/>
@@ -167,7 +167,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName()
         {
-            return IExecute<Java.Lang.String>("getName");
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbInterface.html#writeToParcel(android.os.Parcel,int)"/>

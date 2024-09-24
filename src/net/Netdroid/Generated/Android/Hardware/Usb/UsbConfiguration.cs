@@ -103,7 +103,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Android.Hardware.Usb.UsbInterface"/></returns>
         public Android.Hardware.Usb.UsbInterface GetInterface(int arg0)
         {
-            return IExecute<Android.Hardware.Usb.UsbInterface>("getInterface", arg0);
+            return IExecuteWithSignature<Android.Hardware.Usb.UsbInterface>("getInterface", "(I)Landroid/hardware/usb/UsbInterface;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#isRemoteWakeup()"/>
@@ -111,7 +111,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool IsRemoteWakeup()
         {
-            return IExecute<bool>("isRemoteWakeup");
+            return IExecuteWithSignature<bool>("isRemoteWakeup", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#isSelfPowered()"/>
@@ -119,7 +119,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="bool"/></returns>
         public bool IsSelfPowered()
         {
-            return IExecute<bool>("isSelfPowered");
+            return IExecuteWithSignature<bool>("isSelfPowered", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#describeContents()"/>
@@ -127,7 +127,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecute<int>("describeContents");
+            return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getId()"/>
@@ -135,7 +135,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int GetId()
         {
-            return IExecute<int>("getId");
+            return IExecuteWithSignature<int>("getId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getInterfaceCount()"/>
@@ -143,7 +143,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int GetInterfaceCount()
         {
-            return IExecute<int>("getInterfaceCount");
+            return IExecuteWithSignature<int>("getInterfaceCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getMaxPower()"/>
@@ -151,7 +151,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="int"/></returns>
         public int GetMaxPower()
         {
-            return IExecute<int>("getMaxPower");
+            return IExecuteWithSignature<int>("getMaxPower", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getName()"/>
@@ -159,7 +159,7 @@ namespace Android.Hardware.Usb
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName()
         {
-            return IExecute<Java.Lang.String>("getName");
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#writeToParcel(android.os.Parcel,int)"/>

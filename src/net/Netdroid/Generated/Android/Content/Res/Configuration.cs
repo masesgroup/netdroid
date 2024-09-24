@@ -691,7 +691,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Os.LocaleList"/></returns>
         public Android.Os.LocaleList GetLocales()
         {
-            return IExecute<Android.Os.LocaleList>("getLocales");
+            return IExecuteWithSignature<Android.Os.LocaleList>("getLocales", "()Landroid/os/LocaleList;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#isLayoutSizeAtLeast(int)"/>
@@ -700,7 +700,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool IsLayoutSizeAtLeast(int arg0)
         {
-            return IExecute<bool>("isLayoutSizeAtLeast", arg0);
+            return IExecuteWithSignature<bool>("isLayoutSizeAtLeast", "(I)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#isNightModeActive()"/>
@@ -708,7 +708,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool IsNightModeActive()
         {
-            return IExecute<bool>("isNightModeActive");
+            return IExecuteWithSignature<bool>("isNightModeActive", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#isScreenHdr()"/>
@@ -716,7 +716,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool IsScreenHdr()
         {
-            return IExecute<bool>("isScreenHdr");
+            return IExecuteWithSignature<bool>("isScreenHdr", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#isScreenRound()"/>
@@ -724,7 +724,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool IsScreenRound()
         {
-            return IExecute<bool>("isScreenRound");
+            return IExecuteWithSignature<bool>("isScreenRound", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#isScreenWideColorGamut()"/>
@@ -732,7 +732,7 @@ namespace Android.Content.Res
         /// <returns><see cref="bool"/></returns>
         public bool IsScreenWideColorGamut()
         {
-            return IExecute<bool>("isScreenWideColorGamut");
+            return IExecuteWithSignature<bool>("isScreenWideColorGamut", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#compareTo(android.content.res.Configuration)"/>
@@ -741,7 +741,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int CompareTo(Android.Content.Res.Configuration arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Landroid/content/res/Configuration;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#compareTo(java.lang.Object)"/>
@@ -750,7 +750,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
-            return IExecute<int>("compareTo", arg0);
+            return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#describeContents()"/>
@@ -758,7 +758,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecute<int>("describeContents");
+            return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#diff(android.content.res.Configuration)"/>
@@ -767,7 +767,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int Diff(Android.Content.Res.Configuration arg0)
         {
-            return IExecute<int>("diff", arg0);
+            return IExecuteWithSignature<int>("diff", "(Landroid/content/res/Configuration;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#getGrammaticalGender()"/>
@@ -775,7 +775,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetGrammaticalGender()
         {
-            return IExecute<int>("getGrammaticalGender");
+            return IExecuteWithSignature<int>("getGrammaticalGender", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#getLayoutDirection()"/>
@@ -783,7 +783,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int GetLayoutDirection()
         {
-            return IExecute<int>("getLayoutDirection");
+            return IExecuteWithSignature<int>("getLayoutDirection", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#updateFrom(android.content.res.Configuration)"/>
@@ -792,7 +792,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int UpdateFrom(Android.Content.Res.Configuration arg0)
         {
-            return IExecute<int>("updateFrom", arg0);
+            return IExecuteWithSignature<int>("updateFrom", "(Landroid/content/res/Configuration;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#readFromParcel(android.os.Parcel)"/>
@@ -800,7 +800,7 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
         public void ReadFromParcel(Android.Os.Parcel arg0)
         {
-            IExecute("readFromParcel", arg0);
+            IExecuteWithSignature("readFromParcel", "(Landroid/os/Parcel;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setLayoutDirection(java.util.Locale)"/>
@@ -808,7 +808,7 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public void SetLayoutDirection(Java.Util.Locale arg0)
         {
-            IExecute("setLayoutDirection", arg0);
+            IExecuteWithSignature("setLayoutDirection", "(Ljava/util/Locale;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setLocale(java.util.Locale)"/>
@@ -816,7 +816,7 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public void SetLocale(Java.Util.Locale arg0)
         {
-            IExecute("setLocale", arg0);
+            IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setLocales(android.os.LocaleList)"/>
@@ -824,7 +824,7 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="Android.Os.LocaleList"/></param>
         public void SetLocales(Android.Os.LocaleList arg0)
         {
-            IExecute("setLocales", arg0);
+            IExecuteWithSignature("setLocales", "(Landroid/os/LocaleList;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setTo(android.content.res.Configuration)"/>
@@ -832,14 +832,14 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="Android.Content.Res.Configuration"/></param>
         public void SetTo(Android.Content.Res.Configuration arg0)
         {
-            IExecute("setTo", arg0);
+            IExecuteWithSignature("setTo", "(Landroid/content/res/Configuration;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#setToDefaults()"/>
         /// </summary>
         public void SetToDefaults()
         {
-            IExecute("setToDefaults");
+            IExecuteWithSignature("setToDefaults", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#writeToParcel(android.os.Parcel,int)"/>

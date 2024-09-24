@@ -129,14 +129,14 @@ namespace Android.Content.Res
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeNamespace(int arg0)
         {
-            return IExecute<Java.Lang.String>("getAttributeNamespace", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeNamespace", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/XmlResourceParser.html#close()"/>
         /// </summary>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
     
         #endregion

@@ -147,7 +147,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Adservices.Common.AdSelectionSignals"/></returns>
         public Android.Adservices.Common.AdSelectionSignals GetUserBiddingSignals()
         {
-            return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getUserBiddingSignals", "()Landroid/adservices/common/AdSelectionSignals;");
+            return IExecute<Android.Adservices.Common.AdSelectionSignals>("getUserBiddingSignals");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience.html#describeContents()"/>
@@ -155,7 +155,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience.html#getName()"/>
@@ -163,7 +163,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getName");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience.html#getActivationTime()"/>
@@ -171,7 +171,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant GetActivationTime()
         {
-            return IExecuteWithSignature<Java.Time.Instant>("getActivationTime", "()Ljava/time/Instant;");
+            return IExecute<Java.Time.Instant>("getActivationTime");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience.html#getExpirationTime()"/>
@@ -179,7 +179,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant GetExpirationTime()
         {
-            return IExecuteWithSignature<Java.Time.Instant>("getExpirationTime", "()Ljava/time/Instant;");
+            return IExecute<Java.Time.Instant>("getExpirationTime");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/PartialCustomAudience.html#writeToParcel(android.os.Parcel,int)"/>

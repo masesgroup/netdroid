@@ -141,7 +141,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public Android.Net.Uri GetUpdateUri()
         {
-            return IExecuteWithSignature<Android.Net.Uri>("getUpdateUri", "()Landroid/net/Uri;");
+            return IExecute<Android.Net.Uri>("getUpdateUri");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/ScheduleCustomAudienceUpdateRequest.html#getMinDelay()"/>
@@ -149,7 +149,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Time.Duration"/></returns>
         public Java.Time.Duration GetMinDelay()
         {
-            return IExecuteWithSignature<Java.Time.Duration>("getMinDelay", "()Ljava/time/Duration;");
+            return IExecute<Java.Time.Duration>("getMinDelay");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/ScheduleCustomAudienceUpdateRequest.html#getPartialCustomAudienceList()"/>
@@ -157,7 +157,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Adservices.Customaudience.PartialCustomAudience> GetPartialCustomAudienceList()
         {
-            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Customaudience.PartialCustomAudience>>("getPartialCustomAudienceList", "()Ljava/util/List;");
+            return IExecute<Java.Util.List<Android.Adservices.Customaudience.PartialCustomAudience>>("getPartialCustomAudienceList");
         }
     
         #endregion

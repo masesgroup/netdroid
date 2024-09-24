@@ -108,7 +108,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetEncoding()
         {
-            return IExecute<Java.Lang.String>("getEncoding");
+            return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2Impl.html#getXMLVersion()"/>
@@ -116,7 +116,7 @@ namespace Org.Xml.Sax.Ext
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetXMLVersion()
         {
-            return IExecute<Java.Lang.String>("getXMLVersion");
+            return IExecuteWithSignature<Java.Lang.String>("getXMLVersion", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2Impl.html#setEncoding(java.lang.String)"/>
@@ -124,7 +124,7 @@ namespace Org.Xml.Sax.Ext
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetEncoding(Java.Lang.String arg0)
         {
-            IExecute("setEncoding", arg0);
+            IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2Impl.html#setXMLVersion(java.lang.String)"/>
@@ -132,7 +132,7 @@ namespace Org.Xml.Sax.Ext
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetXMLVersion(Java.Lang.String arg0)
         {
-            IExecute("setXMLVersion", arg0);
+            IExecuteWithSignature("setXMLVersion", "(Ljava/lang/String;)V", arg0);
         }
     
         #endregion

@@ -124,7 +124,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecute<int>("describeContents");
+            return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ObbInfo.html#writeToParcel(android.os.Parcel,int)"/>

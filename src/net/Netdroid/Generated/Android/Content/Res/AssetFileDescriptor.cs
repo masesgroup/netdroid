@@ -227,7 +227,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Os.Bundle"/></returns>
         public Android.Os.Bundle GetExtras()
         {
-            return IExecute<Android.Os.Bundle>("getExtras");
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#getParcelFileDescriptor()"/>
@@ -235,7 +235,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Os.ParcelFileDescriptor"/></returns>
         public Android.Os.ParcelFileDescriptor GetParcelFileDescriptor()
         {
-            return IExecute<Android.Os.ParcelFileDescriptor>("getParcelFileDescriptor");
+            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("getParcelFileDescriptor", "()Landroid/os/ParcelFileDescriptor;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#describeContents()"/>
@@ -243,7 +243,7 @@ namespace Android.Content.Res
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecute<int>("describeContents");
+            return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#getFileDescriptor()"/>
@@ -251,7 +251,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
         public Java.Io.FileDescriptor GetFileDescriptor()
         {
-            return IExecute<Java.Io.FileDescriptor>("getFileDescriptor");
+            return IExecuteWithSignature<Java.Io.FileDescriptor>("getFileDescriptor", "()Ljava/io/FileDescriptor;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#createInputStream()"/>
@@ -260,7 +260,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.FileInputStream CreateInputStream()
         {
-            return IExecute<Java.Io.FileInputStream>("createInputStream");
+            return IExecuteWithSignature<Java.Io.FileInputStream>("createInputStream", "()Ljava/io/FileInputStream;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#createOutputStream()"/>
@@ -269,7 +269,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public Java.Io.FileOutputStream CreateOutputStream()
         {
-            return IExecute<Java.Io.FileOutputStream>("createOutputStream");
+            return IExecuteWithSignature<Java.Io.FileOutputStream>("createOutputStream", "()Ljava/io/FileOutputStream;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#getDeclaredLength()"/>
@@ -277,7 +277,7 @@ namespace Android.Content.Res
         /// <returns><see cref="long"/></returns>
         public long GetDeclaredLength()
         {
-            return IExecute<long>("getDeclaredLength");
+            return IExecuteWithSignature<long>("getDeclaredLength", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#getLength()"/>
@@ -285,7 +285,7 @@ namespace Android.Content.Res
         /// <returns><see cref="long"/></returns>
         public long GetLength()
         {
-            return IExecute<long>("getLength");
+            return IExecuteWithSignature<long>("getLength", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#getStartOffset()"/>
@@ -293,7 +293,7 @@ namespace Android.Content.Res
         /// <returns><see cref="long"/></returns>
         public long GetStartOffset()
         {
-            return IExecute<long>("getStartOffset");
+            return IExecuteWithSignature<long>("getStartOffset", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#close()"/>
@@ -301,7 +301,7 @@ namespace Android.Content.Res
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
         {
-            IExecute("close");
+            IExecuteWithSignature("close", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetFileDescriptor.html#writeToParcel(android.os.Parcel,int)"/>
