@@ -105,7 +105,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public Java.Util.Prefs.Preferences GetChild()
         {
-            return IExecute<Java.Util.Prefs.Preferences>("getChild");
+            return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getChild", "()Ljava/util/prefs/Preferences;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeEvent.html#getParent()"/>
@@ -113,7 +113,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public Java.Util.Prefs.Preferences GetParent()
         {
-            return IExecute<Java.Util.Prefs.Preferences>("getParent");
+            return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getParent", "()Ljava/util/prefs/Preferences;");
         }
     
         #endregion

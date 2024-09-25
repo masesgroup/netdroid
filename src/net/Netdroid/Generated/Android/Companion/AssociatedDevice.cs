@@ -102,7 +102,7 @@ namespace Android.Companion
         /// <returns><see cref="Android.Bluetooth.BluetoothDevice"/></returns>
         public Android.Bluetooth.BluetoothDevice GetBluetoothDevice()
         {
-            return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getBluetoothDevice", "()Landroid/bluetooth/BluetoothDevice;");
+            return IExecute<Android.Bluetooth.BluetoothDevice>("getBluetoothDevice");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociatedDevice.html#getBleDevice()"/>
@@ -110,7 +110,7 @@ namespace Android.Companion
         /// <returns><see cref="Android.Bluetooth.Le.ScanResult"/></returns>
         public Android.Bluetooth.Le.ScanResult GetBleDevice()
         {
-            return IExecuteWithSignature<Android.Bluetooth.Le.ScanResult>("getBleDevice", "()Landroid/bluetooth/le/ScanResult;");
+            return IExecute<Android.Bluetooth.Le.ScanResult>("getBleDevice");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociatedDevice.html#getWifiDevice()"/>
@@ -118,7 +118,7 @@ namespace Android.Companion
         /// <returns><see cref="Android.Net.Wifi.ScanResult"/></returns>
         public Android.Net.Wifi.ScanResult GetWifiDevice()
         {
-            return IExecuteWithSignature<Android.Net.Wifi.ScanResult>("getWifiDevice", "()Landroid/net/wifi/ScanResult;");
+            return IExecute<Android.Net.Wifi.ScanResult>("getWifiDevice");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociatedDevice.html#describeContents()"/>
@@ -126,7 +126,7 @@ namespace Android.Companion
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociatedDevice.html#writeToParcel(android.os.Parcel,int)"/>

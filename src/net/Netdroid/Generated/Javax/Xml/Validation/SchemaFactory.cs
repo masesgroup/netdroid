@@ -94,7 +94,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Javax.Xml.Validation.SchemaFactory"/></returns>
         public static Javax.Xml.Validation.SchemaFactory NewDefaultInstance()
         {
-            return SExecute<Javax.Xml.Validation.SchemaFactory>(LocalBridgeClazz, "newDefaultInstance");
+            return SExecuteWithSignature<Javax.Xml.Validation.SchemaFactory>(LocalBridgeClazz, "newDefaultInstance", "()Ljavax/xml/validation/SchemaFactory;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html#newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
@@ -114,7 +114,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Javax.Xml.Validation.SchemaFactory"/></returns>
         public static Javax.Xml.Validation.SchemaFactory NewInstance(Java.Lang.String arg0)
         {
-            return SExecute<Javax.Xml.Validation.SchemaFactory>(LocalBridgeClazz, "newInstance", arg0);
+            return SExecuteWithSignature<Javax.Xml.Validation.SchemaFactory>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;)Ljavax/xml/validation/SchemaFactory;", arg0);
         }
     
         #endregion
@@ -127,7 +127,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="bool"/></returns>
         public bool IsSchemaLanguageSupported(Java.Lang.String arg0)
         {
-            return IExecute<bool>("isSchemaLanguageSupported", arg0);
+            return IExecuteWithSignature<bool>("isSchemaLanguageSupported", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html#newSchema()"/>
@@ -136,7 +136,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public Javax.Xml.Validation.Schema NewSchema()
         {
-            return IExecute<Javax.Xml.Validation.Schema>("newSchema");
+            return IExecuteWithSignature<Javax.Xml.Validation.Schema>("newSchema", "()Ljavax/xml/validation/Schema;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html#newSchema(javax.xml.transform.Source[])"/>
@@ -146,7 +146,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public Javax.Xml.Validation.Schema NewSchema(Javax.Xml.Transform.Source[] arg0)
         {
-            return IExecute<Javax.Xml.Validation.Schema>("newSchema", new object[] { arg0 });
+            return IExecuteWithSignature<Javax.Xml.Validation.Schema>("newSchema", "([Ljavax/xml/transform/Source;)Ljavax/xml/validation/Schema;", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html#getResourceResolver()"/>
@@ -154,7 +154,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Org.W3c.Dom.Ls.LSResourceResolver"/></returns>
         public Org.W3c.Dom.Ls.LSResourceResolver GetResourceResolver()
         {
-            return IExecute<Org.W3c.Dom.Ls.LSResourceResolver>("getResourceResolver");
+            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSResourceResolver>("getResourceResolver", "()Lorg/w3c/dom/ls/LSResourceResolver;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html#getErrorHandler()"/>
@@ -162,7 +162,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Org.Xml.Sax.ErrorHandler"/></returns>
         public Org.Xml.Sax.ErrorHandler GetErrorHandler()
         {
-            return IExecute<Org.Xml.Sax.ErrorHandler>("getErrorHandler");
+            return IExecuteWithSignature<Org.Xml.Sax.ErrorHandler>("getErrorHandler", "()Lorg/xml/sax/ErrorHandler;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
@@ -170,7 +170,7 @@ namespace Javax.Xml.Validation
         /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
         public void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
         {
-            IExecute("setErrorHandler", arg0);
+            IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html#setResourceResolver(org.w3c.dom.ls.LSResourceResolver)"/>
@@ -178,7 +178,7 @@ namespace Javax.Xml.Validation
         /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSResourceResolver"/></param>
         public void SetResourceResolver(Org.W3c.Dom.Ls.LSResourceResolver arg0)
         {
-            IExecute("setResourceResolver", arg0);
+            IExecuteWithSignature("setResourceResolver", "(Lorg/w3c/dom/ls/LSResourceResolver;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html#getFeature(java.lang.String)"/>
@@ -189,7 +189,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public bool GetFeature(Java.Lang.String arg0)
         {
-            return IExecute<bool>("getFeature", arg0);
+            return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html#getProperty(java.lang.String)"/>
@@ -200,7 +200,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecute("getProperty", arg0);
+            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html#newSchema(java.io.File)"/>
@@ -210,7 +210,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public Javax.Xml.Validation.Schema NewSchema(Java.Io.File arg0)
         {
-            return IExecute<Javax.Xml.Validation.Schema>("newSchema", arg0);
+            return IExecuteWithSignature<Javax.Xml.Validation.Schema>("newSchema", "(Ljava/io/File;)Ljavax/xml/validation/Schema;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html#newSchema(java.net.URL)"/>
@@ -220,7 +220,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public Javax.Xml.Validation.Schema NewSchema(Java.Net.URL arg0)
         {
-            return IExecute<Javax.Xml.Validation.Schema>("newSchema", arg0);
+            return IExecuteWithSignature<Javax.Xml.Validation.Schema>("newSchema", "(Ljava/net/URL;)Ljavax/xml/validation/Schema;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html#newSchema(javax.xml.transform.Source)"/>
@@ -230,7 +230,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public Javax.Xml.Validation.Schema NewSchema(Javax.Xml.Transform.Source arg0)
         {
-            return IExecute<Javax.Xml.Validation.Schema>("newSchema", arg0);
+            return IExecuteWithSignature<Javax.Xml.Validation.Schema>("newSchema", "(Ljavax/xml/transform/Source;)Ljavax/xml/validation/Schema;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactory.html#setFeature(java.lang.String,boolean)"/>

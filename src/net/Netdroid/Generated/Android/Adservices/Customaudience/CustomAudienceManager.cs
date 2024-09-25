@@ -93,7 +93,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Adservices.Customaudience.CustomAudienceManager"/></returns>
         public static Android.Adservices.Customaudience.CustomAudienceManager Get(Android.Content.Context arg0)
         {
-            return SExecute<Android.Adservices.Customaudience.CustomAudienceManager>(LocalBridgeClazz, "get", arg0);
+            return SExecuteWithSignature<Android.Adservices.Customaudience.CustomAudienceManager>(LocalBridgeClazz, "get", "(Landroid/content/Context;)Landroid/adservices/customaudience/CustomAudienceManager;", arg0);
         }
     
         #endregion
@@ -105,7 +105,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Adservices.Customaudience.TestCustomAudienceManager"/></returns>
         public Android.Adservices.Customaudience.TestCustomAudienceManager GetTestCustomAudienceManager()
         {
-            return IExecute<Android.Adservices.Customaudience.TestCustomAudienceManager>("getTestCustomAudienceManager");
+            return IExecuteWithSignature<Android.Adservices.Customaudience.TestCustomAudienceManager>("getTestCustomAudienceManager", "()Landroid/adservices/customaudience/TestCustomAudienceManager;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/CustomAudienceManager.html#fetchAndJoinCustomAudience(android.adservices.customaudience.FetchAndJoinCustomAudienceRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>

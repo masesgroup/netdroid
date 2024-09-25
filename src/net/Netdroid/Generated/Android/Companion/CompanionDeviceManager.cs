@@ -192,7 +192,7 @@ namespace Android.Companion
         /// <returns><see cref="Android.Content.IntentSender"/></returns>
         public Android.Content.IntentSender BuildAssociationCancellationIntent()
         {
-            return IExecuteWithSignature<Android.Content.IntentSender>("buildAssociationCancellationIntent", "()Landroid/content/IntentSender;");
+            return IExecute<Android.Content.IntentSender>("buildAssociationCancellationIntent");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#buildPermissionTransferUserConsentIntent(int)"/>
@@ -202,7 +202,7 @@ namespace Android.Companion
         /// <exception cref="Android.Companion.DeviceNotAssociatedException"/>
         public Android.Content.IntentSender BuildPermissionTransferUserConsentIntent(int arg0)
         {
-            return IExecuteWithSignature<Android.Content.IntentSender>("buildPermissionTransferUserConsentIntent", "(I)Landroid/content/IntentSender;", arg0);
+            return IExecute<Android.Content.IntentSender>("buildPermissionTransferUserConsentIntent", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#hasNotificationAccess(android.content.ComponentName)"/>
@@ -212,7 +212,7 @@ namespace Android.Companion
         [global::System.Obsolete()]
         public bool HasNotificationAccess(Android.Content.ComponentName arg0)
         {
-            return IExecuteWithSignature<bool>("hasNotificationAccess", "(Landroid/content/ComponentName;)Z", arg0);
+            return IExecute<bool>("hasNotificationAccess", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#isPermissionTransferUserConsented(int)"/>
@@ -221,7 +221,7 @@ namespace Android.Companion
         /// <returns><see cref="bool"/></returns>
         public bool IsPermissionTransferUserConsented(int arg0)
         {
-            return IExecuteWithSignature<bool>("isPermissionTransferUserConsented", "(I)Z", arg0);
+            return IExecute<bool>("isPermissionTransferUserConsented", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#getMyAssociations()"/>
@@ -229,7 +229,7 @@ namespace Android.Companion
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Companion.AssociationInfo> GetMyAssociations()
         {
-            return IExecuteWithSignature<Java.Util.List<Android.Companion.AssociationInfo>>("getMyAssociations", "()Ljava/util/List;");
+            return IExecute<Java.Util.List<Android.Companion.AssociationInfo>>("getMyAssociations");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#getAssociations()"/>
@@ -238,7 +238,7 @@ namespace Android.Companion
         [global::System.Obsolete()]
         public Java.Util.List<Java.Lang.String> GetAssociations()
         {
-            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAssociations", "()Ljava/util/List;");
+            return IExecute<Java.Util.List<Java.Lang.String>>("getAssociations");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#associate(android.companion.AssociationRequest,android.companion.CompanionDeviceManager.Callback,android.os.Handler)"/>
@@ -278,7 +278,7 @@ namespace Android.Companion
         /// <exception cref="Android.Companion.DeviceNotAssociatedException"/>
         public void DetachSystemDataTransport(int arg0)
         {
-            IExecuteWithSignature("detachSystemDataTransport", "(I)V", arg0);
+            IExecute("detachSystemDataTransport", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#disableSystemDataSyncForTypes(int,int)"/>
@@ -295,7 +295,7 @@ namespace Android.Companion
         /// <param name="arg0"><see cref="int"/></param>
         public void Disassociate(int arg0)
         {
-            IExecuteWithSignature("disassociate", "(I)V", arg0);
+            IExecute("disassociate", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#disassociate(java.lang.String)"/>
@@ -304,7 +304,7 @@ namespace Android.Companion
         [global::System.Obsolete()]
         public void Disassociate(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("disassociate", "(Ljava/lang/String;)V", arg0);
+            IExecute("disassociate", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#enableSystemDataSyncForTypes(int,int)"/>
@@ -321,7 +321,7 @@ namespace Android.Companion
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
         public void RequestNotificationAccess(Android.Content.ComponentName arg0)
         {
-            IExecuteWithSignature("requestNotificationAccess", "(Landroid/content/ComponentName;)V", arg0);
+            IExecute("requestNotificationAccess", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#startObservingDevicePresence(java.lang.String)"/>
@@ -330,7 +330,7 @@ namespace Android.Companion
         /// <exception cref="Android.Companion.DeviceNotAssociatedException"/>
         public void StartObservingDevicePresence(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("startObservingDevicePresence", "(Ljava/lang/String;)V", arg0);
+            IExecute("startObservingDevicePresence", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#startSystemDataTransfer(int,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -350,7 +350,7 @@ namespace Android.Companion
         /// <exception cref="Android.Companion.DeviceNotAssociatedException"/>
         public void StopObservingDevicePresence(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("stopObservingDevicePresence", "(Ljava/lang/String;)V", arg0);
+            IExecute("stopObservingDevicePresence", arg0);
         }
     
         #endregion

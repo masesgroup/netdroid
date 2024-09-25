@@ -150,7 +150,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Adservices.Common.AdTechIdentifier"/></returns>
         public Android.Adservices.Common.AdTechIdentifier GetBuyer()
         {
-            return IExecute<Android.Adservices.Common.AdTechIdentifier>("getBuyer");
+            return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getBuyer", "()Landroid/adservices/common/AdTechIdentifier;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest.html#getName()"/>
@@ -158,7 +158,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName()
         {
-            return IExecute<Java.Lang.String>("getName");
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
     
         #endregion

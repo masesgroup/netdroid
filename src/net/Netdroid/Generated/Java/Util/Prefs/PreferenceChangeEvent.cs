@@ -106,7 +106,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetKey()
         {
-            return IExecute<Java.Lang.String>("getKey");
+            return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeEvent.html#getNewValue()"/>
@@ -114,7 +114,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetNewValue()
         {
-            return IExecute<Java.Lang.String>("getNewValue");
+            return IExecuteWithSignature<Java.Lang.String>("getNewValue", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeEvent.html#getNode()"/>
@@ -122,7 +122,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public Java.Util.Prefs.Preferences GetNode()
         {
-            return IExecute<Java.Util.Prefs.Preferences>("getNode");
+            return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getNode", "()Ljava/util/prefs/Preferences;");
         }
     
         #endregion

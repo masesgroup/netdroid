@@ -116,7 +116,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public Java.Util.Prefs.Preferences SystemRoot()
         {
-            return IExecute<Java.Util.Prefs.Preferences>("systemRoot");
+            return IExecuteWithSignature<Java.Util.Prefs.Preferences>("systemRoot", "()Ljava/util/prefs/Preferences;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/prefs/PreferencesFactory.html#userRoot()"/>
@@ -124,7 +124,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public Java.Util.Prefs.Preferences UserRoot()
         {
-            return IExecute<Java.Util.Prefs.Preferences>("userRoot");
+            return IExecuteWithSignature<Java.Util.Prefs.Preferences>("userRoot", "()Ljava/util/prefs/Preferences;");
         }
     
         #endregion

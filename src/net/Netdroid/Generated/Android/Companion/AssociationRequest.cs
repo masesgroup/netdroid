@@ -183,7 +183,7 @@ namespace Android.Companion
         /// <returns><see cref="bool"/></returns>
         public bool IsForceConfirmation()
         {
-            return IExecuteWithSignature<bool>("isForceConfirmation", "()Z");
+            return IExecute<bool>("isForceConfirmation");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationRequest.html#isSelfManaged()"/>
@@ -191,7 +191,7 @@ namespace Android.Companion
         /// <returns><see cref="bool"/></returns>
         public bool IsSelfManaged()
         {
-            return IExecuteWithSignature<bool>("isSelfManaged", "()Z");
+            return IExecute<bool>("isSelfManaged");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationRequest.html#isSingleDevice()"/>
@@ -199,7 +199,7 @@ namespace Android.Companion
         /// <returns><see cref="bool"/></returns>
         public bool IsSingleDevice()
         {
-            return IExecuteWithSignature<bool>("isSingleDevice", "()Z");
+            return IExecute<bool>("isSingleDevice");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationRequest.html#describeContents()"/>
@@ -207,7 +207,7 @@ namespace Android.Companion
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationRequest.html#getDisplayName()"/>
@@ -215,7 +215,7 @@ namespace Android.Companion
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence GetDisplayName()
         {
-            return IExecuteWithSignature<Java.Lang.CharSequence>("getDisplayName", "()Ljava/lang/CharSequence;");
+            return IExecute<Java.Lang.CharSequence>("getDisplayName");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationRequest.html#getDeviceProfile()"/>
@@ -223,7 +223,7 @@ namespace Android.Companion
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDeviceProfile()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDeviceProfile", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getDeviceProfile");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationRequest.html#writeToParcel(android.os.Parcel,int)"/>

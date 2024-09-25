@@ -98,7 +98,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Javax.Xml.Validation.Validator"/></returns>
         public Javax.Xml.Validation.Validator NewValidator()
         {
-            return IExecute<Javax.Xml.Validation.Validator>("newValidator");
+            return IExecuteWithSignature<Javax.Xml.Validation.Validator>("newValidator", "()Ljavax/xml/validation/Validator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/Schema.html#newValidatorHandler()"/>
@@ -106,7 +106,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Javax.Xml.Validation.ValidatorHandler"/></returns>
         public Javax.Xml.Validation.ValidatorHandler NewValidatorHandler()
         {
-            return IExecute<Javax.Xml.Validation.ValidatorHandler>("newValidatorHandler");
+            return IExecuteWithSignature<Javax.Xml.Validation.ValidatorHandler>("newValidatorHandler", "()Ljavax/xml/validation/ValidatorHandler;");
         }
     
         #endregion

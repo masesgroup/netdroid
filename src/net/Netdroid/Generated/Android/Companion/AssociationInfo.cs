@@ -102,7 +102,7 @@ namespace Android.Companion
         /// <returns><see cref="Android.Companion.AssociatedDevice"/></returns>
         public Android.Companion.AssociatedDevice GetAssociatedDevice()
         {
-            return IExecuteWithSignature<Android.Companion.AssociatedDevice>("getAssociatedDevice", "()Landroid/companion/AssociatedDevice;");
+            return IExecute<Android.Companion.AssociatedDevice>("getAssociatedDevice");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getDeviceMacAddress()"/>
@@ -110,7 +110,7 @@ namespace Android.Companion
         /// <returns><see cref="Android.Net.MacAddress"/></returns>
         public Android.Net.MacAddress GetDeviceMacAddress()
         {
-            return IExecuteWithSignature<Android.Net.MacAddress>("getDeviceMacAddress", "()Landroid/net/MacAddress;");
+            return IExecute<Android.Net.MacAddress>("getDeviceMacAddress");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#isSelfManaged()"/>
@@ -118,7 +118,7 @@ namespace Android.Companion
         /// <returns><see cref="bool"/></returns>
         public bool IsSelfManaged()
         {
-            return IExecuteWithSignature<bool>("isSelfManaged", "()Z");
+            return IExecute<bool>("isSelfManaged");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#describeContents()"/>
@@ -126,7 +126,7 @@ namespace Android.Companion
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecuteWithSignature<int>("describeContents", "()I");
+            return IExecute<int>("describeContents");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getId()"/>
@@ -134,7 +134,7 @@ namespace Android.Companion
         /// <returns><see cref="int"/></returns>
         public int GetId()
         {
-            return IExecuteWithSignature<int>("getId", "()I");
+            return IExecute<int>("getId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getSystemDataSyncFlags()"/>
@@ -142,7 +142,7 @@ namespace Android.Companion
         /// <returns><see cref="int"/></returns>
         public int GetSystemDataSyncFlags()
         {
-            return IExecuteWithSignature<int>("getSystemDataSyncFlags", "()I");
+            return IExecute<int>("getSystemDataSyncFlags");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getDisplayName()"/>
@@ -150,7 +150,7 @@ namespace Android.Companion
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence GetDisplayName()
         {
-            return IExecuteWithSignature<Java.Lang.CharSequence>("getDisplayName", "()Ljava/lang/CharSequence;");
+            return IExecute<Java.Lang.CharSequence>("getDisplayName");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getDeviceProfile()"/>
@@ -158,7 +158,7 @@ namespace Android.Companion
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDeviceProfile()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getDeviceProfile", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getDeviceProfile");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#writeToParcel(android.os.Parcel,int)"/>

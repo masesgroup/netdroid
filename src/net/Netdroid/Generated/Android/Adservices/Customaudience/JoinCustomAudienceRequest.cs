@@ -141,7 +141,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Adservices.Customaudience.CustomAudience"/></returns>
         public Android.Adservices.Customaudience.CustomAudience GetCustomAudience()
         {
-            return IExecute<Android.Adservices.Customaudience.CustomAudience>("getCustomAudience");
+            return IExecuteWithSignature<Android.Adservices.Customaudience.CustomAudience>("getCustomAudience", "()Landroid/adservices/customaudience/CustomAudience;");
         }
     
         #endregion

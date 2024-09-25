@@ -199,7 +199,7 @@ namespace Java.Util.Prefs
         /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeEvent"/></param>
         public override void PreferenceChange(Java.Util.Prefs.PreferenceChangeEvent arg0)
         {
-            IExecute("preferenceChange", arg0);
+            IExecuteWithSignature("preferenceChange", "(Ljava/util/prefs/PreferenceChangeEvent;)V", arg0);
         }
     
         #endregion

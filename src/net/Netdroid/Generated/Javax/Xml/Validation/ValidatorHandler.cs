@@ -98,7 +98,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Javax.Xml.Validation.TypeInfoProvider"/></returns>
         public Javax.Xml.Validation.TypeInfoProvider GetTypeInfoProvider()
         {
-            return IExecute<Javax.Xml.Validation.TypeInfoProvider>("getTypeInfoProvider");
+            return IExecuteWithSignature<Javax.Xml.Validation.TypeInfoProvider>("getTypeInfoProvider", "()Ljavax/xml/validation/TypeInfoProvider;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/ValidatorHandler.html#getResourceResolver()"/>
@@ -106,7 +106,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Org.W3c.Dom.Ls.LSResourceResolver"/></returns>
         public Org.W3c.Dom.Ls.LSResourceResolver GetResourceResolver()
         {
-            return IExecute<Org.W3c.Dom.Ls.LSResourceResolver>("getResourceResolver");
+            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSResourceResolver>("getResourceResolver", "()Lorg/w3c/dom/ls/LSResourceResolver;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/ValidatorHandler.html#getContentHandler()"/>
@@ -114,7 +114,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Org.Xml.Sax.ContentHandler"/></returns>
         public Org.Xml.Sax.ContentHandler GetContentHandler()
         {
-            return IExecute<Org.Xml.Sax.ContentHandler>("getContentHandler");
+            return IExecuteWithSignature<Org.Xml.Sax.ContentHandler>("getContentHandler", "()Lorg/xml/sax/ContentHandler;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/ValidatorHandler.html#getErrorHandler()"/>
@@ -122,7 +122,7 @@ namespace Javax.Xml.Validation
         /// <returns><see cref="Org.Xml.Sax.ErrorHandler"/></returns>
         public Org.Xml.Sax.ErrorHandler GetErrorHandler()
         {
-            return IExecute<Org.Xml.Sax.ErrorHandler>("getErrorHandler");
+            return IExecuteWithSignature<Org.Xml.Sax.ErrorHandler>("getErrorHandler", "()Lorg/xml/sax/ErrorHandler;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/ValidatorHandler.html#setContentHandler(org.xml.sax.ContentHandler)"/>
@@ -130,7 +130,7 @@ namespace Javax.Xml.Validation
         /// <param name="arg0"><see cref="Org.Xml.Sax.ContentHandler"/></param>
         public void SetContentHandler(Org.Xml.Sax.ContentHandler arg0)
         {
-            IExecute("setContentHandler", arg0);
+            IExecuteWithSignature("setContentHandler", "(Lorg/xml/sax/ContentHandler;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/ValidatorHandler.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
@@ -138,7 +138,7 @@ namespace Javax.Xml.Validation
         /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
         public void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
         {
-            IExecute("setErrorHandler", arg0);
+            IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/ValidatorHandler.html#setResourceResolver(org.w3c.dom.ls.LSResourceResolver)"/>
@@ -146,7 +146,7 @@ namespace Javax.Xml.Validation
         /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSResourceResolver"/></param>
         public void SetResourceResolver(Org.W3c.Dom.Ls.LSResourceResolver arg0)
         {
-            IExecute("setResourceResolver", arg0);
+            IExecuteWithSignature("setResourceResolver", "(Lorg/w3c/dom/ls/LSResourceResolver;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/ValidatorHandler.html#getFeature(java.lang.String)"/>
@@ -157,7 +157,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public bool GetFeature(Java.Lang.String arg0)
         {
-            return IExecute<bool>("getFeature", arg0);
+            return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/ValidatorHandler.html#getProperty(java.lang.String)"/>
@@ -168,7 +168,7 @@ namespace Javax.Xml.Validation
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public object GetProperty(Java.Lang.String arg0)
         {
-            return IExecute("getProperty", arg0);
+            return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/validation/ValidatorHandler.html#setFeature(java.lang.String,boolean)"/>

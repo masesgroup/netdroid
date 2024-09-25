@@ -147,7 +147,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public Android.Net.Uri GetTrustedBiddingUri()
         {
-            return IExecute<Android.Net.Uri>("getTrustedBiddingUri");
+            return IExecuteWithSignature<Android.Net.Uri>("getTrustedBiddingUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/TrustedBiddingData.html#describeContents()"/>
@@ -155,7 +155,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
-            return IExecute<int>("describeContents");
+            return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/TrustedBiddingData.html#getTrustedBiddingKeys()"/>
@@ -163,7 +163,7 @@ namespace Android.Adservices.Customaudience
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.String> GetTrustedBiddingKeys()
         {
-            return IExecute<Java.Util.List<Java.Lang.String>>("getTrustedBiddingKeys");
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getTrustedBiddingKeys", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/TrustedBiddingData.html#writeToParcel(android.os.Parcel,int)"/>
