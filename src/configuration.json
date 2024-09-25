@@ -37,6 +37,36 @@
       "Patterns": [
         "on*"
       ]
+    },
+    {
+      "ClassName": "android.app.NativeActivity",
+      "Patterns": [
+        "on*"
+      ]
+    },
+    {
+      "ClassName": "android.app.ListActivity",
+      "Patterns": [
+        "on*"
+      ]
+    },
+    {
+      "ClassName": "android.app.ExpandableListActivity",
+      "Patterns": [
+        "on*"
+      ]
+    },
+    {
+      "ClassName": "android.app.AliasActivity",
+      "Patterns": [
+        "on*"
+      ]
+    },
+    {
+      "ClassName": "android.app.ActivityGroup",
+      "Patterns": [
+        "on*"
+      ]
     }
   ],
   "ClassesToBeListener": [
