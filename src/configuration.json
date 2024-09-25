@@ -35,37 +35,37 @@
     {
       "ClassName": "android.app.Activity",
       "Patterns": [
-        "on*"
+        "^on*"
       ]
     },
     {
       "ClassName": "android.app.NativeActivity",
       "Patterns": [
-        "on*"
+        "^on*"
       ]
     },
     {
       "ClassName": "android.app.ListActivity",
       "Patterns": [
-        "on*"
+        "^on*"
       ]
     },
     {
       "ClassName": "android.app.ExpandableListActivity",
       "Patterns": [
-        "on*"
+        "^on*"
       ]
     },
     {
       "ClassName": "android.app.AliasActivity",
       "Patterns": [
-        "on*"
+        "^on*"
       ]
     },
     {
       "ClassName": "android.app.ActivityGroup",
       "Patterns": [
-        "on*"
+        "^on*"
       ]
     }
   ],
