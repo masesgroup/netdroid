@@ -55,6 +55,13 @@ jobs:
         if: ${{ inputs.UseLatestJNetReflector == true }}
         run: dotnet build --no-incremental --configuration Release JNet/src/net/JNetReflector/JNetReflector.csproj
 
+      - name: Set up Apache Maven Central
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 11 # needed version 11 11 following https://stackoverflow.com/questions/13113142/gmaven-build-fails-with-an-api-incompatibility-was-encountered and https://github.com/actions/runner-images/issues/10636
+          cache: 'maven'
+
       - name: Create Jars of JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == true }}
         run: mvn "-Djcobridgepath=../../../binReflector/net8.0/JCOBridge.jar" --file ./JNet/src/jvm/jnet/pom.xml --no-transfer-progress package
