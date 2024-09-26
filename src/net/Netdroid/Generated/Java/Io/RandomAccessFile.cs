@@ -40,10 +40,10 @@ namespace Java.Io
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RandomAccessFile(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Io
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -94,9 +94,9 @@ namespace Java.Io
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Io.RandomAccessFile"/> to <see cref="Java.Io.DataOutput"/>
@@ -110,17 +110,17 @@ namespace Java.Io
         /// Converter from <see cref="Java.Io.RandomAccessFile"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Io.RandomAccessFile t) => t.Cast<Java.Io.Closeable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readBoolean()"/>
@@ -256,7 +256,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("readFully", arg0, arg1, arg2);
+            IExecuteWithSignature("readFully", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#readFully(byte[])"/>
@@ -385,7 +385,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("read", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("read", "([BII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#read(byte[])"/>
@@ -460,7 +460,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("write", arg0, arg1, arg2);
+            IExecuteWithSignature("write", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#write(byte[])"/>
@@ -480,13 +480,13 @@ namespace Java.Io
         {
             IExecuteWithSignature("write", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

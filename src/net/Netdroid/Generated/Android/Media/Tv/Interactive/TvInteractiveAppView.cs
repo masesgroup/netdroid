@@ -40,10 +40,10 @@ namespace Android.Media.Tv.Interactive
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TvInteractiveAppView(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Tv.Interactive
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnUnhandledInputEventListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Media.Tv.Interactive
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnUnhandledInputEventListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.tv.interactive.TvInteractiveAppView_OnUnhandledInputEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Media.Tv.Interactive
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnUnhandledInputEventListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnUnhandledInputEventListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Media.Tv.Interactive
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.tv.interactive.TvInteractiveAppView$OnUnhandledInputEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -150,10 +150,10 @@ namespace Android.Media.Tv.Interactive
             /// </summary>
             [global::System.Obsolete("TvInteractiveAppCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TvInteractiveAppCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -174,9 +174,9 @@ namespace Android.Media.Tv.Interactive
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -215,13 +215,13 @@ namespace Android.Media.Tv.Interactive
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#BI_INTERACTIVE_APP_KEY_ALIAS"/>
@@ -259,13 +259,13 @@ namespace Android.Media.Tv.Interactive
         public static Java.Lang.String ERROR_KEY_METHOD_NAME { get { if (!_ERROR_KEY_METHOD_NAMEReady) { _ERROR_KEY_METHOD_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ERROR_KEY_METHOD_NAME"); _ERROR_KEY_METHOD_NAMEReady = true; } return _ERROR_KEY_METHOD_NAMEContent; } }
         private static Java.Lang.String _ERROR_KEY_METHOD_NAMEContent = default;
         private static bool _ERROR_KEY_METHOD_NAMEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#getOnUnhandledInputEventListener()"/>
@@ -331,7 +331,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void CreateBiInteractiveApp(Android.Net.Uri arg0, Android.Os.Bundle arg1)
         {
-            IExecute("createBiInteractiveApp", arg0, arg1);
+            IExecuteWithSignature("createBiInteractiveApp", "(Landroid/net/Uri;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#destroyBiInteractiveApp(java.lang.String)"/>
@@ -348,7 +348,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void NotifyError(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            IExecute("notifyError", arg0, arg1);
+            IExecuteWithSignature("notifyError", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#notifyRecordingScheduled(java.lang.String,java.lang.String)"/>
@@ -357,7 +357,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void NotifyRecordingScheduled(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("notifyRecordingScheduled", arg0, arg1);
+            IExecuteWithSignature("notifyRecordingScheduled", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#notifyRecordingStarted(java.lang.String,java.lang.String)"/>
@@ -366,7 +366,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void NotifyRecordingStarted(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("notifyRecordingStarted", arg0, arg1);
+            IExecuteWithSignature("notifyRecordingStarted", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#notifyRecordingStopped(java.lang.String)"/>
@@ -383,7 +383,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="long"/></param>
         public void NotifyTimeShiftCurrentPositionChanged(Java.Lang.String arg0, long arg1)
         {
-            IExecute("notifyTimeShiftCurrentPositionChanged", arg0, arg1);
+            IExecuteWithSignature("notifyTimeShiftCurrentPositionChanged", "(Ljava/lang/String;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#notifyTimeShiftPlaybackParams(android.media.PlaybackParams)"/>
@@ -400,7 +400,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="long"/></param>
         public void NotifyTimeShiftStartPositionChanged(Java.Lang.String arg0, long arg1)
         {
-            IExecute("notifyTimeShiftStartPositionChanged", arg0, arg1);
+            IExecuteWithSignature("notifyTimeShiftStartPositionChanged", "(Ljava/lang/String;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#notifyTimeShiftStatusChanged(java.lang.String,int)"/>
@@ -409,7 +409,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="int"/></param>
         public void NotifyTimeShiftStatusChanged(Java.Lang.String arg0, int arg1)
         {
-            IExecute("notifyTimeShiftStatusChanged", arg0, arg1);
+            IExecuteWithSignature("notifyTimeShiftStatusChanged", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#notifyTvMessage(int,android.os.Bundle)"/>
@@ -418,7 +418,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void NotifyTvMessage(int arg0, Android.Os.Bundle arg1)
         {
-            IExecute("notifyTvMessage", arg0, arg1);
+            IExecuteWithSignature("notifyTvMessage", "(ILandroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#onAttachedToWindow()"/>
@@ -444,7 +444,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg4"><see cref="int"/></param>
         public void OnLayout(bool arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("onLayout", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("onLayout", "(ZIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#onMeasure(int,int)"/>
@@ -453,7 +453,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="int"/></param>
         public void OnMeasure(int arg0, int arg1)
         {
-            IExecute("onMeasure", arg0, arg1);
+            IExecuteWithSignature("onMeasure", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#onVisibilityChanged(android.view.View,int)"/>
@@ -462,7 +462,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="int"/></param>
         public void OnVisibilityChanged(Android.View.View arg0, int arg1)
         {
-            IExecute("onVisibilityChanged", arg0, arg1);
+            IExecuteWithSignature("onVisibilityChanged", "(Landroid/view/View;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#prepareInteractiveApp(java.lang.String,int)"/>
@@ -471,7 +471,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="int"/></param>
         public void PrepareInteractiveApp(Java.Lang.String arg0, int arg1)
         {
-            IExecute("prepareInteractiveApp", arg0, arg1);
+            IExecuteWithSignature("prepareInteractiveApp", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#reset()"/>
@@ -534,7 +534,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="byte"/></param>
         public void SendSigningResult(Java.Lang.String arg0, byte[] arg1)
         {
-            IExecute("sendSigningResult", arg0, arg1);
+            IExecuteWithSignature("sendSigningResult", "(Ljava/lang/String;[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#sendStreamVolume(float)"/>
@@ -583,7 +583,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="Android.Media.Tv.Interactive.TvInteractiveAppView.TvInteractiveAppCallback"/></param>
         public void SetCallback(Java.Util.Concurrent.Executor arg0, Android.Media.Tv.Interactive.TvInteractiveAppView.TvInteractiveAppCallback arg1)
         {
-            IExecute("setCallback", arg0, arg1);
+            IExecuteWithSignature("setCallback", "(Ljava/util/concurrent/Executor;Landroid/media/tv/interactive/TvInteractiveAppView$TvInteractiveAppCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#setOnUnhandledInputEventListener(java.util.concurrent.Executor,android.media.tv.interactive.TvInteractiveAppView.OnUnhandledInputEventListener)"/>
@@ -592,7 +592,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="Android.Media.Tv.Interactive.TvInteractiveAppView.OnUnhandledInputEventListener"/></param>
         public void SetOnUnhandledInputEventListener(Java.Util.Concurrent.Executor arg0, Android.Media.Tv.Interactive.TvInteractiveAppView.OnUnhandledInputEventListener arg1)
         {
-            IExecute("setOnUnhandledInputEventListener", arg0, arg1);
+            IExecuteWithSignature("setOnUnhandledInputEventListener", "(Ljava/util/concurrent/Executor;Landroid/media/tv/interactive/TvInteractiveAppView$OnUnhandledInputEventListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#setTeletextAppEnabled(boolean)"/>
@@ -616,29 +616,29 @@ namespace Android.Media.Tv.Interactive
         {
             IExecuteWithSignature("stopInteractiveApp", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnUnhandledInputEventListener implementation
         public partial class OnUnhandledInputEventListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnUnhandledInputEventListener"/>
@@ -648,13 +648,13 @@ namespace Android.Media.Tv.Interactive
                 AddEventHandler("onUnhandledInputEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnUnhandledInputEventEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUnhandledInputEvent"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.InputEvent, bool> OnOnUnhandledInputEvent { get; set; } = null;
-            
+
             bool hasOverrideOnUnhandledInputEvent = true;
             void OnUnhandledInputEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -663,7 +663,7 @@ namespace Android.Media.Tv.Interactive
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.InputEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnUnhandledInputEvent, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
             /// </summary>
@@ -673,13 +673,13 @@ namespace Android.Media.Tv.Interactive
             {
                 hasOverrideOnUnhandledInputEvent = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -688,21 +688,21 @@ namespace Android.Media.Tv.Interactive
         public partial class OnUnhandledInputEventListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
@@ -713,13 +713,13 @@ namespace Android.Media.Tv.Interactive
             {
                 return IExecuteWithSignature<bool>("onUnhandledInputEvent", "(Landroid/view/InputEvent;)Z", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -728,21 +728,21 @@ namespace Android.Media.Tv.Interactive
         public partial class TvInteractiveAppCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onBiInteractiveAppCreated(java.lang.String,android.net.Uri,java.lang.String)"/>
@@ -752,7 +752,7 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg2"><see cref="Java.Lang.String"/></param>
             public void OnBiInteractiveAppCreated(Java.Lang.String arg0, Android.Net.Uri arg1, Java.Lang.String arg2)
             {
-                IExecute("onBiInteractiveAppCreated", arg0, arg1, arg2);
+                IExecuteWithSignature("onBiInteractiveAppCreated", "(Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onPlaybackCommandRequest(java.lang.String,java.lang.String,android.os.Bundle)"/>
@@ -762,7 +762,7 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
             public void OnPlaybackCommandRequest(Java.Lang.String arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
             {
-                IExecute("onPlaybackCommandRequest", arg0, arg1, arg2);
+                IExecuteWithSignature("onPlaybackCommandRequest", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onRequestAvailableSpeeds(java.lang.String)"/>
@@ -815,7 +815,7 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg5"><see cref="Android.Os.Bundle"/></param>
             public void OnRequestScheduleRecording(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Net.Uri arg3, Android.Net.Uri arg4, Android.Os.Bundle arg5)
             {
-                IExecute("onRequestScheduleRecording", arg0, arg1, arg2, arg3, arg4, arg5);
+                IExecuteWithSignature("onRequestScheduleRecording", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Landroid/net/Uri;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onRequestScheduleRecording(java.lang.String,java.lang.String,java.lang.String,android.net.Uri,long,long,int,android.os.Bundle)"/>
@@ -830,7 +830,7 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg7"><see cref="Android.Os.Bundle"/></param>
             public void OnRequestScheduleRecording(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Net.Uri arg3, long arg4, long arg5, int arg6, Android.Os.Bundle arg7)
             {
-                IExecute("onRequestScheduleRecording", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+                IExecuteWithSignature("onRequestScheduleRecording", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;JJILandroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onRequestSigning(java.lang.String,java.lang.String,java.lang.String,java.lang.String,byte[])"/>
@@ -842,7 +842,7 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg4"><see cref="byte"/></param>
             public void OnRequestSigning(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, byte[] arg4)
             {
-                IExecute("onRequestSigning", arg0, arg1, arg2, arg3, arg4);
+                IExecuteWithSignature("onRequestSigning", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[B)V", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onRequestStartRecording(java.lang.String,java.lang.String,android.net.Uri)"/>
@@ -852,7 +852,7 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg2"><see cref="Android.Net.Uri"/></param>
             public void OnRequestStartRecording(Java.Lang.String arg0, Java.Lang.String arg1, Android.Net.Uri arg2)
             {
-                IExecute("onRequestStartRecording", arg0, arg1, arg2);
+                IExecuteWithSignature("onRequestStartRecording", "(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onRequestStopRecording(java.lang.String,java.lang.String)"/>
@@ -861,7 +861,7 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public void OnRequestStopRecording(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                IExecute("onRequestStopRecording", arg0, arg1);
+                IExecuteWithSignature("onRequestStopRecording", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onRequestStreamVolume(java.lang.String)"/>
@@ -894,7 +894,7 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public void OnRequestTvRecordingInfo(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                IExecute("onRequestTvRecordingInfo", arg0, arg1);
+                IExecuteWithSignature("onRequestTvRecordingInfo", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onRequestTvRecordingInfoList(java.lang.String,int)"/>
@@ -903,7 +903,7 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg1"><see cref="int"/></param>
             public void OnRequestTvRecordingInfoList(Java.Lang.String arg0, int arg1)
             {
-                IExecute("onRequestTvRecordingInfoList", arg0, arg1);
+                IExecuteWithSignature("onRequestTvRecordingInfoList", "(Ljava/lang/String;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onSetTvRecordingInfo(java.lang.String,java.lang.String,android.media.tv.TvRecordingInfo)"/>
@@ -913,7 +913,7 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg2"><see cref="Android.Media.Tv.TvRecordingInfo"/></param>
             public void OnSetTvRecordingInfo(Java.Lang.String arg0, Java.Lang.String arg1, Android.Media.Tv.TvRecordingInfo arg2)
             {
-                IExecute("onSetTvRecordingInfo", arg0, arg1, arg2);
+                IExecuteWithSignature("onSetTvRecordingInfo", "(Ljava/lang/String;Ljava/lang/String;Landroid/media/tv/TvRecordingInfo;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onSetVideoBounds(java.lang.String,android.graphics.Rect)"/>
@@ -922,7 +922,7 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg1"><see cref="Android.Graphics.Rect"/></param>
             public void OnSetVideoBounds(Java.Lang.String arg0, Android.Graphics.Rect arg1)
             {
-                IExecute("onSetVideoBounds", arg0, arg1);
+                IExecuteWithSignature("onSetVideoBounds", "(Ljava/lang/String;Landroid/graphics/Rect;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onStateChanged(java.lang.String,int,int)"/>
@@ -932,7 +932,7 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg2"><see cref="int"/></param>
             public void OnStateChanged(Java.Lang.String arg0, int arg1, int arg2)
             {
-                IExecute("onStateChanged", arg0, arg1, arg2);
+                IExecuteWithSignature("onStateChanged", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onTeletextAppStateChanged(java.lang.String,int)"/>
@@ -941,7 +941,7 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg1"><see cref="int"/></param>
             public void OnTeletextAppStateChanged(Java.Lang.String arg0, int arg1)
             {
-                IExecute("onTeletextAppStateChanged", arg0, arg1);
+                IExecuteWithSignature("onTeletextAppStateChanged", "(Ljava/lang/String;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.html#onTimeShiftCommandRequest(java.lang.String,java.lang.String,android.os.Bundle)"/>
@@ -951,22 +951,22 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
             public void OnTimeShiftCommandRequest(Java.Lang.String arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
             {
-                IExecute("onTimeShiftCommandRequest", arg0, arg1, arg2);
+                IExecuteWithSignature("onTimeShiftCommandRequest", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

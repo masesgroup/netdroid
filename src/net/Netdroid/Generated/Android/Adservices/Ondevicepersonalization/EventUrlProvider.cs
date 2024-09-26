@@ -40,10 +40,10 @@ namespace Android.Adservices.Ondevicepersonalization
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public EventUrlProvider(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Adservices.Ondevicepersonalization
     public partial class EventUrlProvider
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/EventUrlProvider.html#createEventTrackingUrlWithRedirect(android.os.PersistableBundle,android.net.Uri)"/>
@@ -98,7 +98,7 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public Android.Net.Uri CreateEventTrackingUrlWithRedirect(Android.Os.PersistableBundle arg0, Android.Net.Uri arg1)
         {
-            return IExecute<Android.Net.Uri>("createEventTrackingUrlWithRedirect", arg0, arg1);
+            return IExecuteWithSignature<Android.Net.Uri>("createEventTrackingUrlWithRedirect", "(Landroid/os/PersistableBundle;Landroid/net/Uri;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/EventUrlProvider.html#createEventTrackingUrlWithResponse(android.os.PersistableBundle,byte[],java.lang.String)"/>
@@ -109,15 +109,15 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public Android.Net.Uri CreateEventTrackingUrlWithResponse(Android.Os.PersistableBundle arg0, byte[] arg1, Java.Lang.String arg2)
         {
-            return IExecute<Android.Net.Uri>("createEventTrackingUrlWithResponse", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Net.Uri>("createEventTrackingUrlWithResponse", "(Landroid/os/PersistableBundle;[BLjava/lang/String;)Landroid/net/Uri;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

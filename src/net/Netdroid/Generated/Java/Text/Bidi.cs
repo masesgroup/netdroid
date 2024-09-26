@@ -40,10 +40,10 @@ namespace Java.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Bidi(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -104,13 +104,13 @@ namespace Java.Text
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/Bidi.html#DIRECTION_DEFAULT_LEFT_TO_RIGHT"/>
@@ -136,9 +136,9 @@ namespace Java.Text
         public static int DIRECTION_RIGHT_TO_LEFT { get { if (!_DIRECTION_RIGHT_TO_LEFTReady) { _DIRECTION_RIGHT_TO_LEFTContent = SGetField<int>(LocalBridgeClazz, "DIRECTION_RIGHT_TO_LEFT"); _DIRECTION_RIGHT_TO_LEFTReady = true; } return _DIRECTION_RIGHT_TO_LEFTContent; } }
         private static int _DIRECTION_RIGHT_TO_LEFTContent = default;
         private static bool _DIRECTION_RIGHT_TO_LEFTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/Bidi.html#requiresBidi(char[],int,int)"/>
@@ -149,7 +149,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public static bool RequiresBidi(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "requiresBidi", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "requiresBidi", "([CII)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/Bidi.html#reorderVisually(byte[],int,java.lang.Object[],int,int)"/>
@@ -161,11 +161,11 @@ namespace Java.Text
         /// <param name="arg4"><see cref="int"/></param>
         public static void ReorderVisually(byte[] arg0, int arg1, object[] arg2, int arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "reorderVisually", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "reorderVisually", "([BI[Ljava/lang/Object;II)V", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/Bidi.html#baseIsLeftToRight()"/>
@@ -267,15 +267,15 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.Bidi"/></returns>
         public Java.Text.Bidi CreateLineBidi(int arg0, int arg1)
         {
-            return IExecute<Java.Text.Bidi>("createLineBidi", arg0, arg1);
+            return IExecuteWithSignature<Java.Text.Bidi>("createLineBidi", "(II)Ljava/text/Bidi;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Net
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DnsResolver(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Net
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -131,10 +131,10 @@ namespace Android.Net
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -155,9 +155,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -172,9 +172,9 @@ namespace Android.Net
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -186,13 +186,13 @@ namespace Android.Net
     public partial class DnsResolver
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/DnsResolver.html#CLASS_IN"/>
@@ -248,9 +248,9 @@ namespace Android.Net
         public static int TYPE_AAAA { get { if (!_TYPE_AAAAReady) { _TYPE_AAAAContent = SGetField<int>(LocalBridgeClazz, "TYPE_AAAA"); _TYPE_AAAAReady = true; } return _TYPE_AAAAContent; } }
         private static int _TYPE_AAAAContent = default;
         private static bool _TYPE_AAAAReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/DnsResolver.html#getInstance()"/>
@@ -260,9 +260,9 @@ namespace Android.Net
         {
             return SExecuteWithSignature<Android.Net.DnsResolver>(LocalBridgeClazz, "getInstance", "()Landroid/net/DnsResolver;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/DnsResolver.html#query(android.net.Network,java.lang.String,int,int,java.util.concurrent.Executor,android.os.CancellationSignal,android.net.DnsResolver.Callback)"/>
@@ -277,7 +277,7 @@ namespace Android.Net
         /// <typeparam name="Arg6objectSuperJava_Util_List_Java_Net_InetAddress_"><see cref="Java.Util.List{Java.Net.InetAddress}"/></typeparam>
         public void Query<Arg6objectSuperJava_Util_List_Java_Net_InetAddress_>(Android.Net.Network arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Util.Concurrent.Executor arg4, Android.Os.CancellationSignal arg5, Android.Net.DnsResolver.Callback<Arg6objectSuperJava_Util_List_Java_Net_InetAddress_> arg6) where Arg6objectSuperJava_Util_List_Java_Net_InetAddress_ : Java.Util.List<Java.Net.InetAddress>
         {
-            IExecute("query", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("query", "(Landroid/net/Network;Ljava/lang/String;IILjava/util/concurrent/Executor;Landroid/os/CancellationSignal;Landroid/net/DnsResolver$Callback;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/DnsResolver.html#query(android.net.Network,java.lang.String,int,java.util.concurrent.Executor,android.os.CancellationSignal,android.net.DnsResolver.Callback)"/>
@@ -291,7 +291,7 @@ namespace Android.Net
         /// <typeparam name="Arg5objectSuperJava_Util_List_Java_Net_InetAddress_"><see cref="Java.Util.List{Java.Net.InetAddress}"/></typeparam>
         public void Query<Arg5objectSuperJava_Util_List_Java_Net_InetAddress_>(Android.Net.Network arg0, Java.Lang.String arg1, int arg2, Java.Util.Concurrent.Executor arg3, Android.Os.CancellationSignal arg4, Android.Net.DnsResolver.Callback<Arg5objectSuperJava_Util_List_Java_Net_InetAddress_> arg5) where Arg5objectSuperJava_Util_List_Java_Net_InetAddress_ : Java.Util.List<Java.Net.InetAddress>
         {
-            IExecute("query", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("query", "(Landroid/net/Network;Ljava/lang/String;ILjava/util/concurrent/Executor;Landroid/os/CancellationSignal;Landroid/net/DnsResolver$Callback;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/DnsResolver.html#rawQuery(android.net.Network,byte[],int,java.util.concurrent.Executor,android.os.CancellationSignal,android.net.DnsResolver.Callback)"/>
@@ -304,7 +304,7 @@ namespace Android.Net
         /// <param name="arg5"><see cref="Android.Net.DnsResolver.Callback"/></param>
         public void RawQuery(Android.Net.Network arg0, byte[] arg1, int arg2, Java.Util.Concurrent.Executor arg3, Android.Os.CancellationSignal arg4, Android.Net.DnsResolver.Callback<byte[]> arg5)
         {
-            IExecute("rawQuery", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("rawQuery", "(Landroid/net/Network;[BILjava/util/concurrent/Executor;Landroid/os/CancellationSignal;Landroid/net/DnsResolver$Callback;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/DnsResolver.html#rawQuery(android.net.Network,java.lang.String,int,int,int,java.util.concurrent.Executor,android.os.CancellationSignal,android.net.DnsResolver.Callback)"/>
@@ -319,31 +319,31 @@ namespace Android.Net
         /// <param name="arg7"><see cref="Android.Net.DnsResolver.Callback"/></param>
         public void RawQuery(Android.Net.Network arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4, Java.Util.Concurrent.Executor arg5, Android.Os.CancellationSignal arg6, Android.Net.DnsResolver.Callback<byte[]> arg7)
         {
-            IExecute("rawQuery", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("rawQuery", "(Landroid/net/Network;Ljava/lang/String;IIILjava/util/concurrent/Executor;Landroid/os/CancellationSignal;Landroid/net/DnsResolver$Callback;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/DnsResolver.Callback.html#onAnswer(java.lang.Object,int)"/>
@@ -352,7 +352,7 @@ namespace Android.Net
             /// <param name="arg1"><see cref="int"/></param>
             public void OnAnswer(object arg0, int arg1)
             {
-                IExecute("onAnswer", arg0, arg1);
+                IExecuteWithSignature("onAnswer", "(Ljava/lang/Object;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/DnsResolver.Callback.html#onError(android.net.DnsResolver.DnsException)"/>
@@ -362,13 +362,13 @@ namespace Android.Net
             {
                 IExecuteWithSignature("onError", "(Landroid/net/DnsResolver$DnsException;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -377,25 +377,25 @@ namespace Android.Net
         public partial class Callback<T>
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Net.DnsResolver.Callback{T}"/> to <see cref="Android.Net.DnsResolver.Callback"/>
             /// </summary>
             public static implicit operator Android.Net.DnsResolver.Callback(Android.Net.DnsResolver.Callback<T> t) => t.Cast<Android.Net.DnsResolver.Callback>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/DnsResolver.Callback.html#onAnswer(java.lang.Object,int)"/>
@@ -404,7 +404,7 @@ namespace Android.Net
             /// <param name="arg1"><see cref="int"/></param>
             public void OnAnswer(T arg0, int arg1)
             {
-                IExecute("onAnswer", arg0, arg1);
+                IExecuteWithSignature("onAnswer", "(Ljava/lang/Object;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/DnsResolver.Callback.html#onError(android.net.DnsResolver.DnsException)"/>
@@ -414,13 +414,13 @@ namespace Android.Net
             {
                 IExecuteWithSignature("onError", "(Landroid/net/DnsResolver$DnsException;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -429,36 +429,36 @@ namespace Android.Net
         public partial class DnsException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

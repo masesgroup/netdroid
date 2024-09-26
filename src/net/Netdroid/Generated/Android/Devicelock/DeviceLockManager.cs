@@ -40,10 +40,10 @@ namespace Android.Devicelock
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DeviceLockManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Devicelock
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Devicelock
     public partial class DeviceLockManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/devicelock/DeviceLockManager.html#DEVICE_LOCK_ROLE_FINANCING"/>
@@ -88,13 +88,13 @@ namespace Android.Devicelock
         public static int DEVICE_LOCK_ROLE_FINANCING { get { if (!_DEVICE_LOCK_ROLE_FINANCINGReady) { _DEVICE_LOCK_ROLE_FINANCINGContent = SGetField<int>(LocalBridgeClazz, "DEVICE_LOCK_ROLE_FINANCING"); _DEVICE_LOCK_ROLE_FINANCINGReady = true; } return _DEVICE_LOCK_ROLE_FINANCINGContent; } }
         private static int _DEVICE_LOCK_ROLE_FINANCINGContent = default;
         private static bool _DEVICE_LOCK_ROLE_FINANCINGReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/devicelock/DeviceLockManager.html#getDeviceId(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -103,7 +103,7 @@ namespace Android.Devicelock
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void GetDeviceId(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<Android.Devicelock.DeviceId, Java.Lang.Exception> arg1)
         {
-            IExecute("getDeviceId", arg0, arg1);
+            IExecuteWithSignature("getDeviceId", "(Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/devicelock/DeviceLockManager.html#getKioskApps(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -112,7 +112,7 @@ namespace Android.Devicelock
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void GetKioskApps(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<Java.Util.Map<Java.Lang.Integer, Java.Lang.String>, Java.Lang.Exception> arg1)
         {
-            IExecute("getKioskApps", arg0, arg1);
+            IExecuteWithSignature("getKioskApps", "(Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/devicelock/DeviceLockManager.html#isDeviceLocked(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -121,7 +121,7 @@ namespace Android.Devicelock
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void IsDeviceLocked(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<Java.Lang.Boolean, Java.Lang.Exception> arg1)
         {
-            IExecute("isDeviceLocked", arg0, arg1);
+            IExecuteWithSignature("isDeviceLocked", "(Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/devicelock/DeviceLockManager.html#lockDevice(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -130,7 +130,7 @@ namespace Android.Devicelock
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void LockDevice(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<Java.Lang.Void, Java.Lang.Exception> arg1)
         {
-            IExecute("lockDevice", arg0, arg1);
+            IExecuteWithSignature("lockDevice", "(Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/devicelock/DeviceLockManager.html#unlockDevice(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -139,15 +139,15 @@ namespace Android.Devicelock
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void UnlockDevice(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<Java.Lang.Void, Java.Lang.Exception> arg1)
         {
-            IExecute("unlockDevice", arg0, arg1);
+            IExecuteWithSignature("unlockDevice", "(Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.Text.Style
         /// </summary>
         [global::System.Obsolete("LineBackgroundSpan class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LineBackgroundSpan(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Text.Style
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Standard declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Text.Style
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Standard(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Text.Style
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -124,13 +124,13 @@ namespace Android.Text.Style
     public partial interface ILineBackgroundSpan : Android.Text.Style.IParagraphStyle
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -139,21 +139,21 @@ namespace Android.Text.Style
     public partial class LineBackgroundSpan : Android.Text.Style.ILineBackgroundSpan
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.html#drawBackground(android.graphics.Canvas,android.graphics.Paint,int,int,int,int,int,java.lang.CharSequence,int,int,int)"/>
@@ -171,11 +171,11 @@ namespace Android.Text.Style
         /// <param name="arg10"><see cref="int"/></param>
         public void DrawBackground(Android.Graphics.Canvas arg0, Android.Graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Lang.CharSequence arg7, int arg8, int arg9, int arg10)
         {
-            IExecute("drawBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+            IExecuteWithSignature("drawBackground", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;III)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Standard implementation
         public partial class Standard : Android.Text.Style.ILineBackgroundSpan, Android.Text.IParcelableSpan
@@ -197,9 +197,9 @@ namespace Android.Text.Style
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Text.Style.LineBackgroundSpan.Standard"/> to <see cref="Android.Text.Style.LineBackgroundSpan"/>
@@ -209,17 +209,17 @@ namespace Android.Text.Style
             /// Converter from <see cref="Android.Text.Style.LineBackgroundSpan.Standard"/> to <see cref="Android.Text.ParcelableSpan"/>
             /// </summary>
             public static implicit operator Android.Text.ParcelableSpan(Android.Text.Style.LineBackgroundSpan.Standard t) => t.Cast<Android.Text.ParcelableSpan>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.Standard.html#getColor()"/>
@@ -261,7 +261,7 @@ namespace Android.Text.Style
             /// <param name="arg10"><see cref="int"/></param>
             public void DrawBackground(Android.Graphics.Canvas arg0, Android.Graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Lang.CharSequence arg7, int arg8, int arg9, int arg10)
             {
-                IExecute("drawBackground", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+                IExecuteWithSignature("drawBackground", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;III)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.Standard.html#writeToParcel(android.os.Parcel,int)"/>
@@ -270,22 +270,22 @@ namespace Android.Text.Style
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

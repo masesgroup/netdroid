@@ -40,10 +40,10 @@ namespace Android.App.Backup
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileBackupHelper(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App.Backup
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -83,21 +83,21 @@ namespace Android.App.Backup
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/FileBackupHelper.html#performBackup(android.os.ParcelFileDescriptor,android.app.backup.BackupDataOutput,android.os.ParcelFileDescriptor)"/>
@@ -107,7 +107,7 @@ namespace Android.App.Backup
         /// <param name="arg2"><see cref="Android.Os.ParcelFileDescriptor"/></param>
         public void PerformBackup(Android.Os.ParcelFileDescriptor arg0, Android.App.Backup.BackupDataOutput arg1, Android.Os.ParcelFileDescriptor arg2)
         {
-            IExecute("performBackup", arg0, arg1, arg2);
+            IExecuteWithSignature("performBackup", "(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/FileBackupHelper.html#restoreEntity(android.app.backup.BackupDataInputStream)"/>
@@ -125,13 +125,13 @@ namespace Android.App.Backup
         {
             IExecuteWithSignature("writeNewStateDescription", "(Landroid/os/ParcelFileDescriptor;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

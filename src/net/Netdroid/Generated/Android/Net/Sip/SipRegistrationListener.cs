@@ -36,7 +36,7 @@ namespace Android.Net.Sip
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public SipRegistrationListener() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.android.net.sip.SipRegistrationListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -45,13 +45,13 @@ namespace Android.Net.Sip
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region SipRegistrationListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="SipRegistrationListener"/> or its generic type if there is one
@@ -62,14 +62,14 @@ namespace Android.Net.Sip
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "android.net.sip.SipRegistrationListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -100,13 +100,13 @@ namespace Android.Net.Sip
     public partial interface ISipRegistrationListener
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -115,21 +115,21 @@ namespace Android.Net.Sip
     public partial class SipRegistrationListener : Android.Net.Sip.ISipRegistrationListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="SipRegistrationListener"/>
@@ -141,13 +141,13 @@ namespace Android.Net.Sip
             AddEventHandler("onRegistrationFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnRegistrationFailedEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html#onRegistering(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnRegistering"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String> OnOnRegistering { get; set; } = null;
-        
+
         bool hasOverrideOnRegistering = true;
         void OnRegisteringEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -156,7 +156,7 @@ namespace Android.Net.Sip
             methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnRegistering;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html#onRegistering(java.lang.String)"/>
         /// </summary>
@@ -166,13 +166,13 @@ namespace Android.Net.Sip
         {
             hasOverrideOnRegistering = false;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html#onRegistrationDone(java.lang.String,long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnRegistrationDone"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String, long> OnOnRegistrationDone { get; set; } = null;
-        
+
         bool hasOverrideOnRegistrationDone = true;
         void OnRegistrationDoneEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -181,7 +181,7 @@ namespace Android.Net.Sip
             methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<long>(1));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnRegistrationDone;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html#onRegistrationDone(java.lang.String,long)"/>
         /// </summary>
@@ -192,13 +192,13 @@ namespace Android.Net.Sip
         {
             hasOverrideOnRegistrationDone = false;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html#onRegistrationFailed(java.lang.String,int,java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnRegistrationFailed"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String, int, Java.Lang.String> OnOnRegistrationFailed { get; set; } = null;
-        
+
         bool hasOverrideOnRegistrationFailed = true;
         void OnRegistrationFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -207,7 +207,7 @@ namespace Android.Net.Sip
             methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<Java.Lang.String>(2));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnRegistrationFailed;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html#onRegistrationFailed(java.lang.String,int,java.lang.String)"/>
         /// </summary>
@@ -219,13 +219,13 @@ namespace Android.Net.Sip
         {
             hasOverrideOnRegistrationFailed = false;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -234,21 +234,21 @@ namespace Android.Net.Sip
     public partial class SipRegistrationListenerDirect : Android.Net.Sip.ISipRegistrationListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html#onRegistering(java.lang.String)"/>
@@ -267,7 +267,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public override void OnRegistrationDone(Java.Lang.String arg0, long arg1)
         {
-            IExecute("onRegistrationDone", arg0, arg1);
+            IExecuteWithSignature("onRegistrationDone", "(Ljava/lang/String;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html#onRegistrationFailed(java.lang.String,int,java.lang.String)"/>
@@ -278,15 +278,15 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public override void OnRegistrationFailed(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            IExecute("onRegistrationFailed", arg0, arg1, arg2);
+            IExecuteWithSignature("onRegistrationFailed", "(Ljava/lang/String;ILjava/lang/String;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

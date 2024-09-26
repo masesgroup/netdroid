@@ -40,10 +40,10 @@ namespace Java.Math
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BigDecimal(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Math
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -216,17 +216,17 @@ namespace Java.Math
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Math.BigDecimal"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Math.BigDecimal t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#ROUND_CEILING"/>
@@ -302,9 +302,9 @@ namespace Java.Math
         public static Java.Math.BigDecimal ZERO { get { if (!_ZEROReady) { _ZEROContent = SGetField<Java.Math.BigDecimal>(LocalBridgeClazz, "ZERO"); _ZEROReady = true; } return _ZEROContent; } }
         private static Java.Math.BigDecimal _ZEROContent = default;
         private static bool _ZEROReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#valueOf(double)"/>
@@ -323,7 +323,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public static Java.Math.BigDecimal ValueOf(long arg0, int arg1)
         {
-            return SExecute<Java.Math.BigDecimal>(LocalBridgeClazz, "valueOf", arg0, arg1);
+            return SExecuteWithSignature<Java.Math.BigDecimal>(LocalBridgeClazz, "valueOf", "(JI)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#valueOf(long)"/>
@@ -334,9 +334,9 @@ namespace Java.Math
         {
             return SExecuteWithSignature<Java.Math.BigDecimal>(LocalBridgeClazz, "valueOf", "(J)Ljava/math/BigDecimal;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#byteValueExact()"/>
@@ -437,7 +437,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Add(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("add", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("add", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#add(java.math.BigDecimal)"/>
@@ -458,7 +458,7 @@ namespace Java.Math
         [global::System.Obsolete()]
         public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("divide", "(Ljava/math/BigDecimal;II)Ljava/math/BigDecimal;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,int,java.math.RoundingMode)"/>
@@ -469,7 +469,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, int arg1, Java.Math.RoundingMode arg2)
         {
-            return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("divide", "(Ljava/math/BigDecimal;ILjava/math/RoundingMode;)Ljava/math/BigDecimal;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,int)"/>
@@ -480,7 +480,7 @@ namespace Java.Math
         [global::System.Obsolete()]
         public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, int arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("divide", "(Ljava/math/BigDecimal;I)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,java.math.MathContext)"/>
@@ -490,7 +490,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("divide", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal,java.math.RoundingMode)"/>
@@ -500,7 +500,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, Java.Math.RoundingMode arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("divide", "(Ljava/math/BigDecimal;Ljava/math/RoundingMode;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#divide(java.math.BigDecimal)"/>
@@ -519,7 +519,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal DivideToIntegralValue(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("divideToIntegralValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("divideToIntegralValue", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#divideToIntegralValue(java.math.BigDecimal)"/>
@@ -574,7 +574,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Multiply(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("multiply", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("multiply", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#multiply(java.math.BigDecimal)"/>
@@ -627,7 +627,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Pow(int arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("pow", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("pow", "(ILjava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#pow(int)"/>
@@ -646,7 +646,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Remainder(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("remainder", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("remainder", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#remainder(java.math.BigDecimal)"/>
@@ -684,7 +684,7 @@ namespace Java.Math
         [global::System.Obsolete()]
         public Java.Math.BigDecimal SetScale(int arg0, int arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("setScale", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("setScale", "(II)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#setScale(int,java.math.RoundingMode)"/>
@@ -694,7 +694,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal SetScale(int arg0, Java.Math.RoundingMode arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("setScale", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("setScale", "(ILjava/math/RoundingMode;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#setScale(int)"/>
@@ -730,7 +730,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal Subtract(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecute<Java.Math.BigDecimal>("subtract", arg0, arg1);
+            return IExecuteWithSignature<Java.Math.BigDecimal>("subtract", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#subtract(java.math.BigDecimal)"/>
@@ -757,7 +757,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal[] DivideAndRemainder(Java.Math.BigDecimal arg0, Java.Math.MathContext arg1)
         {
-            return IExecuteArray<Java.Math.BigDecimal>("divideAndRemainder", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Math.BigDecimal>("divideAndRemainder", "(Ljava/math/BigDecimal;Ljava/math/MathContext;)[Ljava/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html#divideAndRemainder(java.math.BigDecimal)"/>
@@ -808,13 +808,13 @@ namespace Java.Math
         {
             return IExecuteWithSignature<short>("shortValueExact", "()S");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

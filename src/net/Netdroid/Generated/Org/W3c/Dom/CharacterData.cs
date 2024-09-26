@@ -42,10 +42,10 @@ namespace Org.W3c.Dom
         /// </summary>
         [global::System.Obsolete("CharacterData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharacterData(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Org.W3c.Dom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Org.W3c.Dom
     public partial interface ICharacterData : Org.W3c.Dom.INode
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Org.W3c.Dom
     public partial class CharacterData : Org.W3c.Dom.ICharacterData
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html#getLength()"/>
@@ -136,7 +136,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Java.Lang.String SubstringData(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("substringData", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("substringData", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html#appendData(java.lang.String)"/>
@@ -155,7 +155,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void DeleteData(int arg0, int arg1)
         {
-            IExecute("deleteData", arg0, arg1);
+            IExecuteWithSignature("deleteData", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html#insertData(int,java.lang.String)"/>
@@ -165,7 +165,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void InsertData(int arg0, Java.Lang.String arg1)
         {
-            IExecute("insertData", arg0, arg1);
+            IExecuteWithSignature("insertData", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html#replaceData(int,int,java.lang.String)"/>
@@ -176,7 +176,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void ReplaceData(int arg0, int arg1, Java.Lang.String arg2)
         {
-            IExecute("replaceData", arg0, arg1, arg2);
+            IExecuteWithSignature("replaceData", "(IILjava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html#setData(java.lang.String)"/>
@@ -187,13 +187,13 @@ namespace Org.W3c.Dom
         {
             IExecuteWithSignature("setData", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

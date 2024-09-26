@@ -40,10 +40,10 @@ namespace Java.Util.Stream
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Collectors(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Stream
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Util.Stream
     public partial class Collectors
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#collectingAndThen(java.util.stream.Collector,java.util.function.Function)"/>
@@ -98,7 +98,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, A, RR> CollectingAndThen<T, A, RR, R>(Java.Util.Stream.Collector<T, A, R> arg0, Java.Util.Function.Function<R, RR> arg1)
         {
-            return SExecute<Java.Util.Stream.Collector<T, A, RR>>(LocalBridgeClazz, "collectingAndThen", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, A, RR>>(LocalBridgeClazz, "collectingAndThen", "(Ljava/util/stream/Collector;Ljava/util/function/Function;)Ljava/util/stream/Collector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#filtering(java.util.function.Predicate,java.util.stream.Collector)"/>
@@ -113,7 +113,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, R> Filtering<T, R, Arg0objectSuperT, Arg1objectSuperT, A>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, R> arg1) where Arg0objectSuperT : T where Arg1objectSuperT : T
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, R>>(LocalBridgeClazz, "filtering", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, R>>(LocalBridgeClazz, "filtering", "(Ljava/util/function/Predicate;Ljava/util/stream/Collector;)Ljava/util/stream/Collector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#toCollection(java.util.function.Supplier)"/>
@@ -124,7 +124,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, C> ToCollection<T, C>(Java.Util.Function.Supplier<C> arg0) where C : Java.Util.Collection<T>
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, C>>(LocalBridgeClazz, "toCollection", arg0);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, C>>(LocalBridgeClazz, "toCollection", "(Ljava/util/function/Supplier;)Ljava/util/stream/Collector;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#partitioningBy(java.util.function.Predicate,java.util.stream.Collector)"/>
@@ -139,7 +139,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Map<Java.Lang.Boolean, D>> PartitioningBy<T, D, Arg0objectSuperT, Arg1objectSuperT, A>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT : T where Arg1objectSuperT : T
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<Java.Lang.Boolean, D>>>(LocalBridgeClazz, "partitioningBy", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Map<Java.Lang.Boolean, D>>>(LocalBridgeClazz, "partitioningBy", "(Ljava/util/function/Predicate;Ljava/util/stream/Collector;)Ljava/util/stream/Collector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#groupingByConcurrent(java.util.function.Function,java.util.function.Supplier,java.util.stream.Collector)"/>
@@ -158,7 +158,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, M> GroupingByConcurrent<T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Supplier<M> arg1, Java.Util.Stream.Collector<Arg2objectSuperT, A, D> arg2) where M : Java.Util.Concurrent.ConcurrentMap<K, D> where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg2objectSuperT : T
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, M>>(LocalBridgeClazz, "groupingByConcurrent", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, M>>(LocalBridgeClazz, "groupingByConcurrent", "(Ljava/util/function/Function;Ljava/util/function/Supplier;Ljava/util/stream/Collector;)Ljava/util/stream/Collector;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#groupingByConcurrent(java.util.function.Function,java.util.stream.Collector)"/>
@@ -175,7 +175,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, D>> GroupingByConcurrent<T, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, D>>>(LocalBridgeClazz, "groupingByConcurrent", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, D>>>(LocalBridgeClazz, "groupingByConcurrent", "(Ljava/util/function/Function;Ljava/util/stream/Collector;)Ljava/util/stream/Collector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#groupingBy(java.util.function.Function,java.util.stream.Collector)"/>
@@ -192,7 +192,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, D>> GroupingBy<T, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, D>>>(LocalBridgeClazz, "groupingBy", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, D>>>(LocalBridgeClazz, "groupingBy", "(Ljava/util/function/Function;Ljava/util/stream/Collector;)Ljava/util/stream/Collector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#groupingBy(java.util.function.Function,java.util.function.Supplier,java.util.stream.Collector)"/>
@@ -211,7 +211,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, M> GroupingBy<T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Supplier<M> arg1, Java.Util.Stream.Collector<Arg2objectSuperT, A, D> arg2) where M : Java.Util.Map<K, D> where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg2objectSuperT : T
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, M>>(LocalBridgeClazz, "groupingBy", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, M>>(LocalBridgeClazz, "groupingBy", "(Ljava/util/function/Function;Ljava/util/function/Supplier;Ljava/util/stream/Collector;)Ljava/util/stream/Collector;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#toConcurrentMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator,java.util.function.Supplier)"/>
@@ -231,7 +231,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, M> ToConcurrentMap<T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2, Java.Util.Function.Supplier<M> arg3) where M : Java.Util.Concurrent.ConcurrentMap<K, U> where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, M>>(LocalBridgeClazz, "toConcurrentMap", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, M>>(LocalBridgeClazz, "toConcurrentMap", "(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/BinaryOperator;Ljava/util/function/Supplier;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#toMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator,java.util.function.Supplier)"/>
@@ -251,7 +251,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, M> ToMap<T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2, Java.Util.Function.Supplier<M> arg3) where M : Java.Util.Map<K, U> where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, M>>(LocalBridgeClazz, "toMap", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, M>>(LocalBridgeClazz, "toMap", "(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/BinaryOperator;Ljava/util/function/Supplier;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#toConcurrentMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator)"/>
@@ -269,7 +269,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, U>> ToConcurrentMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, U>>>(LocalBridgeClazz, "toConcurrentMap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, U>>>(LocalBridgeClazz, "toConcurrentMap", "(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/BinaryOperator;)Ljava/util/stream/Collector;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#toConcurrentMap(java.util.function.Function,java.util.function.Function)"/>
@@ -286,7 +286,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, U>> ToConcurrentMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, U>>>(LocalBridgeClazz, "toConcurrentMap", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, U>>>(LocalBridgeClazz, "toConcurrentMap", "(Ljava/util/function/Function;Ljava/util/function/Function;)Ljava/util/stream/Collector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#toMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator)"/>
@@ -304,7 +304,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>> ToMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toMap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toMap", "(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/BinaryOperator;)Ljava/util/stream/Collector;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#toMap(java.util.function.Function,java.util.function.Function)"/>
@@ -321,7 +321,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>> ToMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toMap", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toMap", "(Ljava/util/function/Function;Ljava/util/function/Function;)Ljava/util/stream/Collector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#toUnmodifiableMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator)"/>
@@ -339,7 +339,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>> ToUnmodifiableMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toUnmodifiableMap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toUnmodifiableMap", "(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/BinaryOperator;)Ljava/util/stream/Collector;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#toUnmodifiableMap(java.util.function.Function,java.util.function.Function)"/>
@@ -356,7 +356,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>> ToUnmodifiableMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toUnmodifiableMap", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toUnmodifiableMap", "(Ljava/util/function/Function;Ljava/util/function/Function;)Ljava/util/stream/Collector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#groupingByConcurrent(java.util.function.Function)"/>
@@ -369,7 +369,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, Java.Util.List<T>>> GroupingByConcurrent<T, K, Arg0objectSuperT, Arg0ExtendsK>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0) where Arg0objectSuperT : T where Arg0ExtendsK : K
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, Java.Util.List<T>>>>(LocalBridgeClazz, "groupingByConcurrent", arg0);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, Java.Util.List<T>>>>(LocalBridgeClazz, "groupingByConcurrent", "(Ljava/util/function/Function;)Ljava/util/stream/Collector;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#groupingBy(java.util.function.Function)"/>
@@ -382,7 +382,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, Java.Util.List<T>>> GroupingBy<T, K, Arg0objectSuperT, Arg0ExtendsK>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0) where Arg0objectSuperT : T where Arg0ExtendsK : K
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, Java.Util.List<T>>>>(LocalBridgeClazz, "groupingBy", arg0);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, Java.Util.List<T>>>>(LocalBridgeClazz, "groupingBy", "(Ljava/util/function/Function;)Ljava/util/stream/Collector;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#teeing(java.util.stream.Collector,java.util.stream.Collector,java.util.function.BiFunction)"/>
@@ -401,7 +401,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, R> Teeing<T, R, Arg0objectSuperT, R1, Arg1objectSuperT, R2, Arg2objectSuperR1, Arg2objectSuperR2>(Java.Util.Stream.Collector<Arg0objectSuperT, object, R1> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, object, R2> arg1, Java.Util.Function.BiFunction<Arg2objectSuperR1, Arg2objectSuperR2, R> arg2) where Arg0objectSuperT : T where Arg1objectSuperT : T where Arg2objectSuperR1 : R1 where Arg2objectSuperR2 : R2
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, R>>(LocalBridgeClazz, "teeing", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, R>>(LocalBridgeClazz, "teeing", "(Ljava/util/stream/Collector;Ljava/util/stream/Collector;Ljava/util/function/BiFunction;)Ljava/util/stream/Collector;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#flatMapping(java.util.function.Function,java.util.stream.Collector)"/>
@@ -419,7 +419,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, R> FlatMapping<T, R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_, Arg0ExtendsU, U, Arg1objectSuperU, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_> arg0, Java.Util.Stream.Collector<Arg1objectSuperU, A, R> arg1) where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_ : Java.Util.Stream.Stream<Arg0ExtendsU> where Arg0ExtendsU : U where Arg1objectSuperU : U
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, R>>(LocalBridgeClazz, "flatMapping", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, R>>(LocalBridgeClazz, "flatMapping", "(Ljava/util/function/Function;Ljava/util/stream/Collector;)Ljava/util/stream/Collector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#mapping(java.util.function.Function,java.util.stream.Collector)"/>
@@ -436,7 +436,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, R> Mapping<T, R, Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0, Java.Util.Stream.Collector<Arg1objectSuperU, A, R> arg1) where Arg0objectSuperT : T where Arg0ExtendsU : U where Arg1objectSuperU : U
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, R>>(LocalBridgeClazz, "mapping", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, R>>(LocalBridgeClazz, "mapping", "(Ljava/util/function/Function;Ljava/util/stream/Collector;)Ljava/util/stream/Collector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#reducing(java.lang.Object,java.util.function.Function,java.util.function.BinaryOperator)"/>
@@ -451,7 +451,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, U> Reducing<T, U, Arg1objectSuperT, Arg1ExtendsU>(U arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg1objectSuperT : T where Arg1ExtendsU : U
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, U>>(LocalBridgeClazz, "reducing", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, U>>(LocalBridgeClazz, "reducing", "(Ljava/lang/Object;Ljava/util/function/Function;Ljava/util/function/BinaryOperator;)Ljava/util/stream/Collector;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#averagingDouble(java.util.function.ToDoubleFunction)"/>
@@ -649,7 +649,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, object, T> Reducing<T>(T arg0, Java.Util.Function.BinaryOperator<T> arg1)
         {
-            return SExecute<Java.Util.Stream.Collector<T, object, T>>(LocalBridgeClazz, "reducing", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<T, object, T>>(LocalBridgeClazz, "reducing", "(Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/util/stream/Collector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#joining()"/>
@@ -668,7 +668,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<Java.Lang.CharSequence, object, Java.Lang.String> Joining(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
         {
-            return SExecute<Java.Util.Stream.Collector<Java.Lang.CharSequence, object, Java.Lang.String>>(LocalBridgeClazz, "joining", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.Collector<Java.Lang.CharSequence, object, Java.Lang.String>>(LocalBridgeClazz, "joining", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/util/stream/Collector;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#joining(java.lang.CharSequence)"/>
@@ -679,17 +679,17 @@ namespace Java.Util.Stream
         {
             return SExecuteWithSignature<Java.Util.Stream.Collector<Java.Lang.CharSequence, object, Java.Lang.String>>(LocalBridgeClazz, "joining", "(Ljava/lang/CharSequence;)Ljava/util/stream/Collector;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

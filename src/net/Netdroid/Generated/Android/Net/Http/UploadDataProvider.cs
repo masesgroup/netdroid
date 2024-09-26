@@ -42,10 +42,10 @@ namespace Android.Net.Http
         /// </summary>
         [global::System.Obsolete("UploadDataProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UploadDataProvider(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Net.Http
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Android.Net.Http
     public partial class UploadDataProvider
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/UploadDataProvider.html#getLength()"/>
@@ -109,7 +109,7 @@ namespace Android.Net.Http
         /// <exception cref="Java.Io.IOException"/>
         public void Read(Android.Net.Http.UploadDataSink arg0, Java.Nio.ByteBuffer arg1)
         {
-            IExecute("read", arg0, arg1);
+            IExecuteWithSignature("read", "(Landroid/net/http/UploadDataSink;Ljava/nio/ByteBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/UploadDataProvider.html#rewind(android.net.http.UploadDataSink)"/>
@@ -128,13 +128,13 @@ namespace Android.Net.Http
         {
             IExecuteWithSignature("close", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent.Atomic
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AtomicReference(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -86,10 +86,10 @@ namespace Java.Util.Concurrent.Atomic
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AtomicReference(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -128,21 +128,21 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndSet(java.lang.Object,java.lang.Object)"/>
@@ -152,7 +152,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(object arg0, object arg1)
         {
-            return IExecute<bool>("compareAndSet", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object)"/>
@@ -163,7 +163,7 @@ namespace Java.Util.Concurrent.Atomic
         [global::System.Obsolete()]
         public bool WeakCompareAndSet(object arg0, object arg1)
         {
-            return IExecute<bool>("weakCompareAndSet", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetAcquire(java.lang.Object,java.lang.Object)"/>
@@ -173,7 +173,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetAcquire(object arg0, object arg1)
         {
-            return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetAcquire", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetPlain(java.lang.Object,java.lang.Object)"/>
@@ -183,7 +183,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetPlain(object arg0, object arg1)
         {
-            return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetPlain", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetRelease(java.lang.Object,java.lang.Object)"/>
@@ -193,7 +193,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetRelease(object arg0, object arg1)
         {
-            return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetRelease", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetVolatile(java.lang.Object,java.lang.Object)"/>
@@ -203,7 +203,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetVolatile(object arg0, object arg1)
         {
-            return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetVolatile", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#accumulateAndGet(java.lang.Object,java.util.function.BinaryOperator)"/>
@@ -213,7 +213,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object AccumulateAndGet(object arg0, Java.Util.Function.BinaryOperator arg1)
         {
-            return IExecute("accumulateAndGet", arg0, arg1);
+            return IExecuteWithSignature("accumulateAndGet", "(Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndExchange(java.lang.Object,java.lang.Object)"/>
@@ -223,7 +223,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object CompareAndExchange(object arg0, object arg1)
         {
-            return IExecute("compareAndExchange", arg0, arg1);
+            return IExecuteWithSignature("compareAndExchange", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeAcquire(java.lang.Object,java.lang.Object)"/>
@@ -233,7 +233,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object CompareAndExchangeAcquire(object arg0, object arg1)
         {
-            return IExecute("compareAndExchangeAcquire", arg0, arg1);
+            return IExecuteWithSignature("compareAndExchangeAcquire", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeRelease(java.lang.Object,java.lang.Object)"/>
@@ -243,7 +243,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object CompareAndExchangeRelease(object arg0, object arg1)
         {
-            return IExecute("compareAndExchangeRelease", arg0, arg1);
+            return IExecuteWithSignature("compareAndExchangeRelease", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#get()"/>
@@ -269,7 +269,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="object"/></returns>
         public object GetAndAccumulate(object arg0, Java.Util.Function.BinaryOperator arg1)
         {
-            return IExecute("getAndAccumulate", arg0, arg1);
+            return IExecuteWithSignature("getAndAccumulate", "(Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getAndSet(java.lang.Object)"/>
@@ -354,13 +354,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecuteWithSignature("setRelease", "(Ljava/lang/Object;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -377,25 +377,25 @@ namespace Java.Util.Concurrent.Atomic
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicReference{V}"/> to <see cref="Java.Util.Concurrent.Atomic.AtomicReference"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.Atomic.AtomicReference(Java.Util.Concurrent.Atomic.AtomicReference<V> t) => t.Cast<Java.Util.Concurrent.Atomic.AtomicReference>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndSet(java.lang.Object,java.lang.Object)"/>
@@ -405,7 +405,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(V arg0, V arg1)
         {
-            return IExecute<bool>("compareAndSet", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object)"/>
@@ -416,7 +416,7 @@ namespace Java.Util.Concurrent.Atomic
         [global::System.Obsolete()]
         public bool WeakCompareAndSet(V arg0, V arg1)
         {
-            return IExecute<bool>("weakCompareAndSet", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSet", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetAcquire(java.lang.Object,java.lang.Object)"/>
@@ -426,7 +426,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetAcquire(V arg0, V arg1)
         {
-            return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetAcquire", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetPlain(java.lang.Object,java.lang.Object)"/>
@@ -436,7 +436,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetPlain(V arg0, V arg1)
         {
-            return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetPlain", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetRelease(java.lang.Object,java.lang.Object)"/>
@@ -446,7 +446,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetRelease(V arg0, V arg1)
         {
-            return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetRelease", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetVolatile(java.lang.Object,java.lang.Object)"/>
@@ -456,7 +456,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetVolatile(V arg0, V arg1)
         {
-            return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetVolatile", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#accumulateAndGet(java.lang.Object,java.util.function.BinaryOperator)"/>
@@ -466,7 +466,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="V"/></returns>
         public V AccumulateAndGet(V arg0, Java.Util.Function.BinaryOperator<V> arg1)
         {
-            return IExecute<V>("accumulateAndGet", arg0, arg1);
+            return IExecuteWithSignature<V>("accumulateAndGet", "(Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndExchange(java.lang.Object,java.lang.Object)"/>
@@ -476,7 +476,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="V"/></returns>
         public V CompareAndExchange(V arg0, V arg1)
         {
-            return IExecute<V>("compareAndExchange", arg0, arg1);
+            return IExecuteWithSignature<V>("compareAndExchange", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeAcquire(java.lang.Object,java.lang.Object)"/>
@@ -486,7 +486,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="V"/></returns>
         public V CompareAndExchangeAcquire(V arg0, V arg1)
         {
-            return IExecute<V>("compareAndExchangeAcquire", arg0, arg1);
+            return IExecuteWithSignature<V>("compareAndExchangeAcquire", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#compareAndExchangeRelease(java.lang.Object,java.lang.Object)"/>
@@ -496,7 +496,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="V"/></returns>
         public V CompareAndExchangeRelease(V arg0, V arg1)
         {
-            return IExecute<V>("compareAndExchangeRelease", arg0, arg1);
+            return IExecuteWithSignature<V>("compareAndExchangeRelease", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#get()"/>
@@ -522,7 +522,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><typeparamref name="V"/></returns>
         public V GetAndAccumulate(V arg0, Java.Util.Function.BinaryOperator<V> arg1)
         {
-            return IExecute<V>("getAndAccumulate", arg0, arg1);
+            return IExecuteWithSignature<V>("getAndAccumulate", "(Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html#getAndSet(java.lang.Object)"/>
@@ -607,13 +607,13 @@ namespace Java.Util.Concurrent.Atomic
         {
             IExecuteWithSignature("setRelease", "(Ljava/lang/Object;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

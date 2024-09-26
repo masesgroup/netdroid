@@ -40,10 +40,10 @@ namespace Android.Hardware.Camera2
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DngCreator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Camera2
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -83,13 +83,13 @@ namespace Android.Hardware.Camera2
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/DngCreator.html#MAX_THUMBNAIL_DIMENSION"/>
@@ -97,13 +97,13 @@ namespace Android.Hardware.Camera2
         public static int MAX_THUMBNAIL_DIMENSION { get { if (!_MAX_THUMBNAIL_DIMENSIONReady) { _MAX_THUMBNAIL_DIMENSIONContent = SGetField<int>(LocalBridgeClazz, "MAX_THUMBNAIL_DIMENSION"); _MAX_THUMBNAIL_DIMENSIONReady = true; } return _MAX_THUMBNAIL_DIMENSIONContent; } }
         private static int _MAX_THUMBNAIL_DIMENSIONContent = default;
         private static bool _MAX_THUMBNAIL_DIMENSIONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/DngCreator.html#setDescription(java.lang.String)"/>
@@ -167,7 +167,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Java.Io.IOException"/>
         public void WriteByteBuffer(Java.Io.OutputStream arg0, Android.Util.Size arg1, Java.Nio.ByteBuffer arg2, long arg3)
         {
-            IExecute("writeByteBuffer", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("writeByteBuffer", "(Ljava/io/OutputStream;Landroid/util/Size;Ljava/nio/ByteBuffer;J)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/DngCreator.html#writeImage(java.io.OutputStream,android.media.Image)"/>
@@ -177,7 +177,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Java.Io.IOException"/>
         public void WriteImage(Java.Io.OutputStream arg0, Android.Media.Image arg1)
         {
-            IExecute("writeImage", arg0, arg1);
+            IExecuteWithSignature("writeImage", "(Ljava/io/OutputStream;Landroid/media/Image;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/DngCreator.html#writeInputStream(java.io.OutputStream,android.util.Size,java.io.InputStream,long)"/>
@@ -189,15 +189,15 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Java.Io.IOException"/>
         public void WriteInputStream(Java.Io.OutputStream arg0, Android.Util.Size arg1, Java.Io.InputStream arg2, long arg3)
         {
-            IExecute("writeInputStream", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("writeInputStream", "(Ljava/io/OutputStream;Landroid/util/Size;Ljava/io/InputStream;J)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

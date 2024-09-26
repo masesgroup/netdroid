@@ -40,10 +40,10 @@ namespace Android.Telephony.Ims
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ImsRcsManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Telephony.Ims
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Telephony.Ims
     public partial class ImsRcsManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRcsManager.html#CAPABILITY_TYPE_NONE"/>
@@ -106,13 +106,13 @@ namespace Android.Telephony.Ims
         public static Java.Lang.String ACTION_SHOW_CAPABILITY_DISCOVERY_OPT_IN { get { if (!_ACTION_SHOW_CAPABILITY_DISCOVERY_OPT_INReady) { _ACTION_SHOW_CAPABILITY_DISCOVERY_OPT_INContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_SHOW_CAPABILITY_DISCOVERY_OPT_IN"); _ACTION_SHOW_CAPABILITY_DISCOVERY_OPT_INReady = true; } return _ACTION_SHOW_CAPABILITY_DISCOVERY_OPT_INContent; } }
         private static Java.Lang.String _ACTION_SHOW_CAPABILITY_DISCOVERY_OPT_INContent = default;
         private static bool _ACTION_SHOW_CAPABILITY_DISCOVERY_OPT_INReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRcsManager.html#getUceAdapter()"/>
@@ -129,7 +129,7 @@ namespace Android.Telephony.Ims
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void GetRegistrationState(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Lang.Integer> arg1)
         {
-            IExecute("getRegistrationState", arg0, arg1);
+            IExecuteWithSignature("getRegistrationState", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRcsManager.html#getRegistrationTransportType(java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -138,7 +138,7 @@ namespace Android.Telephony.Ims
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void GetRegistrationTransportType(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Lang.Integer> arg1)
         {
-            IExecute("getRegistrationTransportType", arg0, arg1);
+            IExecuteWithSignature("getRegistrationTransportType", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRcsManager.html#registerImsRegistrationCallback(java.util.concurrent.Executor,android.telephony.ims.RegistrationManager.RegistrationCallback)"/>
@@ -148,7 +148,7 @@ namespace Android.Telephony.Ims
         /// <exception cref="Android.Telephony.Ims.ImsException"/>
         public void RegisterImsRegistrationCallback(Java.Util.Concurrent.Executor arg0, Android.Telephony.Ims.RegistrationManager.RegistrationCallback arg1)
         {
-            IExecute("registerImsRegistrationCallback", arg0, arg1);
+            IExecuteWithSignature("registerImsRegistrationCallback", "(Ljava/util/concurrent/Executor;Landroid/telephony/ims/RegistrationManager$RegistrationCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRcsManager.html#registerImsStateCallback(java.util.concurrent.Executor,android.telephony.ims.ImsStateCallback)"/>
@@ -158,7 +158,7 @@ namespace Android.Telephony.Ims
         /// <exception cref="Android.Telephony.Ims.ImsException"/>
         public void RegisterImsStateCallback(Java.Util.Concurrent.Executor arg0, Android.Telephony.Ims.ImsStateCallback arg1)
         {
-            IExecute("registerImsStateCallback", arg0, arg1);
+            IExecuteWithSignature("registerImsStateCallback", "(Ljava/util/concurrent/Executor;Landroid/telephony/ims/ImsStateCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRcsManager.html#unregisterImsRegistrationCallback(android.telephony.ims.RegistrationManager.RegistrationCallback)"/>
@@ -176,13 +176,13 @@ namespace Android.Telephony.Ims
         {
             IExecuteWithSignature("unregisterImsStateCallback", "(Landroid/telephony/ims/ImsStateCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

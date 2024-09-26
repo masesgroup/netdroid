@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaMetadata(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Media
     public partial class MediaMetadata
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.html#CREATOR"/>
@@ -307,13 +307,13 @@ namespace Android.Media
         public static Java.Lang.String METADATA_KEY_YEAR { get { if (!_METADATA_KEY_YEARReady) { _METADATA_KEY_YEARContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "METADATA_KEY_YEAR"); _METADATA_KEY_YEARReady = true; } return _METADATA_KEY_YEARContent; } }
         private static Java.Lang.String _METADATA_KEY_YEARContent = default;
         private static bool _METADATA_KEY_YEARReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.html#getBitmap(java.lang.String)"/>
@@ -416,11 +416,11 @@ namespace Android.Media
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -434,21 +434,21 @@ namespace Android.Media
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.Builder.html#build()"/>
@@ -466,7 +466,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaMetadata.Builder"/></returns>
             public Android.Media.MediaMetadata.Builder PutBitmap(Java.Lang.String arg0, Android.Graphics.Bitmap arg1)
             {
-                return IExecute<Android.Media.MediaMetadata.Builder>("putBitmap", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.MediaMetadata.Builder>("putBitmap", "(Ljava/lang/String;Landroid/graphics/Bitmap;)Landroid/media/MediaMetadata$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.Builder.html#putLong(java.lang.String,long)"/>
@@ -476,7 +476,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaMetadata.Builder"/></returns>
             public Android.Media.MediaMetadata.Builder PutLong(Java.Lang.String arg0, long arg1)
             {
-                return IExecute<Android.Media.MediaMetadata.Builder>("putLong", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.MediaMetadata.Builder>("putLong", "(Ljava/lang/String;J)Landroid/media/MediaMetadata$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.Builder.html#putRating(java.lang.String,android.media.Rating)"/>
@@ -486,7 +486,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaMetadata.Builder"/></returns>
             public Android.Media.MediaMetadata.Builder PutRating(Java.Lang.String arg0, Android.Media.Rating arg1)
             {
-                return IExecute<Android.Media.MediaMetadata.Builder>("putRating", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.MediaMetadata.Builder>("putRating", "(Ljava/lang/String;Landroid/media/Rating;)Landroid/media/MediaMetadata$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.Builder.html#putString(java.lang.String,java.lang.String)"/>
@@ -496,7 +496,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaMetadata.Builder"/></returns>
             public Android.Media.MediaMetadata.Builder PutString(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<Android.Media.MediaMetadata.Builder>("putString", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.MediaMetadata.Builder>("putString", "(Ljava/lang/String;Ljava/lang/String;)Landroid/media/MediaMetadata$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.Builder.html#putText(java.lang.String,java.lang.CharSequence)"/>
@@ -506,7 +506,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaMetadata.Builder"/></returns>
             public Android.Media.MediaMetadata.Builder PutText(Java.Lang.String arg0, Java.Lang.CharSequence arg1)
             {
-                return IExecute<Android.Media.MediaMetadata.Builder>("putText", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.MediaMetadata.Builder>("putText", "(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/media/MediaMetadata$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.Builder.html#setBitmapDimensionLimit(int)"/>
@@ -517,20 +517,20 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<Android.Media.MediaMetadata.Builder>("setBitmapDimensionLimit", "(I)Landroid/media/MediaMetadata$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

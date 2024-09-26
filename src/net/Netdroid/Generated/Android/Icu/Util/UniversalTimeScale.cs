@@ -40,10 +40,10 @@ namespace Android.Icu.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UniversalTimeScale(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Icu.Util
     public partial class UniversalTimeScale
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#DB2_TIME"/>
@@ -191,9 +191,9 @@ namespace Android.Icu.Util
         public static int WINDOWS_FILE_TIME { get { if (!_WINDOWS_FILE_TIMEReady) { _WINDOWS_FILE_TIMEContent = SGetField<int>(LocalBridgeClazz, "WINDOWS_FILE_TIME"); _WINDOWS_FILE_TIMEReady = true; } return _WINDOWS_FILE_TIMEContent; } }
         private static int _WINDOWS_FILE_TIMEContent = default;
         private static bool _WINDOWS_FILE_TIMEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#bigDecimalFrom(android.icu.math.BigDecimal,int)"/>
@@ -203,7 +203,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public static Android.Icu.Math.BigDecimal BigDecimalFrom(Android.Icu.Math.BigDecimal arg0, int arg1)
         {
-            return SExecute<Android.Icu.Math.BigDecimal>(LocalBridgeClazz, "bigDecimalFrom", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Math.BigDecimal>(LocalBridgeClazz, "bigDecimalFrom", "(Landroid/icu/math/BigDecimal;I)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#bigDecimalFrom(double,int)"/>
@@ -213,7 +213,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public static Android.Icu.Math.BigDecimal BigDecimalFrom(double arg0, int arg1)
         {
-            return SExecute<Android.Icu.Math.BigDecimal>(LocalBridgeClazz, "bigDecimalFrom", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Math.BigDecimal>(LocalBridgeClazz, "bigDecimalFrom", "(DI)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#bigDecimalFrom(long,int)"/>
@@ -223,7 +223,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public static Android.Icu.Math.BigDecimal BigDecimalFrom(long arg0, int arg1)
         {
-            return SExecute<Android.Icu.Math.BigDecimal>(LocalBridgeClazz, "bigDecimalFrom", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Math.BigDecimal>(LocalBridgeClazz, "bigDecimalFrom", "(JI)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#toBigDecimal(android.icu.math.BigDecimal,int)"/>
@@ -233,7 +233,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public static Android.Icu.Math.BigDecimal ToBigDecimal(Android.Icu.Math.BigDecimal arg0, int arg1)
         {
-            return SExecute<Android.Icu.Math.BigDecimal>(LocalBridgeClazz, "toBigDecimal", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Math.BigDecimal>(LocalBridgeClazz, "toBigDecimal", "(Landroid/icu/math/BigDecimal;I)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#toBigDecimal(long,int)"/>
@@ -243,7 +243,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Math.BigDecimal"/></returns>
         public static Android.Icu.Math.BigDecimal ToBigDecimal(long arg0, int arg1)
         {
-            return SExecute<Android.Icu.Math.BigDecimal>(LocalBridgeClazz, "toBigDecimal", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Math.BigDecimal>(LocalBridgeClazz, "toBigDecimal", "(JI)Landroid/icu/math/BigDecimal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#from(long,int)"/>
@@ -253,7 +253,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="long"/></returns>
         public static long From(long arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "from", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "from", "(JI)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#getTimeScaleValue(int,int)"/>
@@ -263,7 +263,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="long"/></returns>
         public static long GetTimeScaleValue(int arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "getTimeScaleValue", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getTimeScaleValue", "(II)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#toLong(long,int)"/>
@@ -273,19 +273,19 @@ namespace Android.Icu.Util
         /// <returns><see cref="long"/></returns>
         public static long ToLong(long arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "toLong", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "toLong", "(JI)J", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

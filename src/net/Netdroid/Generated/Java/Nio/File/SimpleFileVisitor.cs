@@ -40,10 +40,10 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SimpleFileVisitor(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Nio.File
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -86,10 +86,10 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SimpleFileVisitor(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Nio.File
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -120,21 +120,21 @@ namespace Java.Nio.File
     public partial class SimpleFileVisitor
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SimpleFileVisitor.html#postVisitDirectory(java.lang.Object,java.io.IOException)"/>
@@ -145,7 +145,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.FileVisitResult PostVisitDirectory(object arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
-            return IExecute<Java.Nio.File.FileVisitResult>("postVisitDirectory", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("postVisitDirectory", "(Ljava/lang/Object;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SimpleFileVisitor.html#preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
@@ -156,7 +156,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.FileVisitResult PreVisitDirectory(object arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1)
         {
-            return IExecute<Java.Nio.File.FileVisitResult>("preVisitDirectory", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("preVisitDirectory", "(Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SimpleFileVisitor.html#visitFile(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
@@ -167,7 +167,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.FileVisitResult VisitFile(object arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1)
         {
-            return IExecute<Java.Nio.File.FileVisitResult>("visitFile", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("visitFile", "(Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SimpleFileVisitor.html#visitFileFailed(java.lang.Object,java.io.IOException)"/>
@@ -178,15 +178,15 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.FileVisitResult VisitFileFailed(object arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
-            return IExecute<Java.Nio.File.FileVisitResult>("visitFileFailed", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("visitFileFailed", "(Ljava/lang/Object;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -195,25 +195,25 @@ namespace Java.Nio.File
     public partial class SimpleFileVisitor<T>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Nio.File.SimpleFileVisitor{T}"/> to <see cref="Java.Nio.File.SimpleFileVisitor"/>
         /// </summary>
         public static implicit operator Java.Nio.File.SimpleFileVisitor(Java.Nio.File.SimpleFileVisitor<T> t) => t.Cast<Java.Nio.File.SimpleFileVisitor>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SimpleFileVisitor.html#postVisitDirectory(java.lang.Object,java.io.IOException)"/>
@@ -224,7 +224,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.FileVisitResult PostVisitDirectory(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
-            return IExecute<Java.Nio.File.FileVisitResult>("postVisitDirectory", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("postVisitDirectory", "(Ljava/lang/Object;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SimpleFileVisitor.html#preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
@@ -235,7 +235,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.FileVisitResult PreVisitDirectory(T arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1)
         {
-            return IExecute<Java.Nio.File.FileVisitResult>("preVisitDirectory", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("preVisitDirectory", "(Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SimpleFileVisitor.html#visitFile(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
@@ -246,7 +246,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.FileVisitResult VisitFile(T arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1)
         {
-            return IExecute<Java.Nio.File.FileVisitResult>("visitFile", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("visitFile", "(Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SimpleFileVisitor.html#visitFileFailed(java.lang.Object,java.io.IOException)"/>
@@ -257,15 +257,15 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.FileVisitResult VisitFileFailed(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
-            return IExecute<Java.Nio.File.FileVisitResult>("visitFileFailed", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.File.FileVisitResult>("visitFileFailed", "(Ljava/lang/Object;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

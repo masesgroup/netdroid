@@ -42,10 +42,10 @@ namespace Android.Icu.Util
         /// </summary>
         [global::System.Obsolete("ValueIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ValueIterator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Icu.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Element declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Icu.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Element(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Icu.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -124,13 +124,13 @@ namespace Android.Icu.Util
     public partial interface IValueIterator
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -139,21 +139,21 @@ namespace Android.Icu.Util
     public partial class ValueIterator : Android.Icu.Util.IValueIterator
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ValueIterator.html#next(android.icu.util.ValueIterator.Element)"/>
@@ -178,23 +178,23 @@ namespace Android.Icu.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void SetRange(int arg0, int arg1)
         {
-            IExecute("setRange", arg0, arg1);
+            IExecuteWithSignature("setRange", "(II)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Element implementation
         public partial class Element
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/ValueIterator.Element.html#integer"/>
@@ -204,28 +204,28 @@ namespace Android.Icu.Util
             /// <see href="https://developer.android.com/reference/android/icu/util/ValueIterator.Element.html#value"/>
             /// </summary>
             public object value { get { return IGetField("value"); } set { ISetField("value", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

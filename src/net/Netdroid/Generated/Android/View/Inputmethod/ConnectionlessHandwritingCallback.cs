@@ -42,10 +42,10 @@ namespace Android.View.Inputmethod
         /// </summary>
         [global::System.Obsolete("ConnectionlessHandwritingCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConnectionlessHandwritingCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.View.Inputmethod
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.View.Inputmethod
     public partial interface IConnectionlessHandwritingCallback
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Android.View.Inputmethod
     public partial class ConnectionlessHandwritingCallback : Android.View.Inputmethod.IConnectionlessHandwritingCallback
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/ConnectionlessHandwritingCallback.html#CONNECTIONLESS_HANDWRITING_ERROR_NO_TEXT_RECOGNIZED"/>
@@ -120,13 +120,13 @@ namespace Android.View.Inputmethod
         public static int CONNECTIONLESS_HANDWRITING_ERROR_UNSUPPORTED { get { if (!_CONNECTIONLESS_HANDWRITING_ERROR_UNSUPPORTEDReady) { _CONNECTIONLESS_HANDWRITING_ERROR_UNSUPPORTEDContent = SGetField<int>(LocalBridgeClazz, "CONNECTIONLESS_HANDWRITING_ERROR_UNSUPPORTED"); _CONNECTIONLESS_HANDWRITING_ERROR_UNSUPPORTEDReady = true; } return _CONNECTIONLESS_HANDWRITING_ERROR_UNSUPPORTEDContent; } }
         private static int _CONNECTIONLESS_HANDWRITING_ERROR_UNSUPPORTEDContent = default;
         private static bool _CONNECTIONLESS_HANDWRITING_ERROR_UNSUPPORTEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/ConnectionlessHandwritingCallback.html#onError(int)"/>
@@ -144,13 +144,13 @@ namespace Android.View.Inputmethod
         {
             IExecuteWithSignature("onResult", "(Ljava/lang/CharSequence;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.Util
         /// </summary>
         [global::System.Obsolete("IntProperty class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IntProperty(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,10 +90,10 @@ namespace Android.Util
         /// </summary>
         [global::System.Obsolete("IntProperty class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IntProperty(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -114,7 +114,7 @@ namespace Android.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -132,21 +132,21 @@ namespace Android.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/IntProperty.html#setValue(java.lang.Object,int)"/>
@@ -155,7 +155,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void SetValue(object arg0, int arg1)
         {
-            IExecute("setValue", arg0, arg1);
+            IExecuteWithSignature("setValue", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/IntProperty.html#set(java.lang.Object,java.lang.Integer)"/>
@@ -164,15 +164,15 @@ namespace Android.Util
         /// <param name="arg1"><see cref="Java.Lang.Integer"/></param>
         public void Set(object arg0, Java.Lang.Integer arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;Ljava/lang/Integer;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -189,25 +189,25 @@ namespace Android.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Util.IntProperty{T}"/> to <see cref="Android.Util.IntProperty"/>
         /// </summary>
         public static implicit operator Android.Util.IntProperty(Android.Util.IntProperty<T> t) => t.Cast<Android.Util.IntProperty>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/IntProperty.html#setValue(java.lang.Object,int)"/>
@@ -216,7 +216,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void SetValue(T arg0, int arg1)
         {
-            IExecute("setValue", arg0, arg1);
+            IExecuteWithSignature("setValue", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/IntProperty.html#set(java.lang.Object,java.lang.Integer)"/>
@@ -225,15 +225,15 @@ namespace Android.Util
         /// <param name="arg1"><see cref="Java.Lang.Integer"/></param>
         public void Set(T arg0, Java.Lang.Integer arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(Ljava/lang/Object;Ljava/lang/Integer;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

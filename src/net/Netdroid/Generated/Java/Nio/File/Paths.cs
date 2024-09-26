@@ -40,10 +40,10 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Paths(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Nio.File
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Nio.File
     public partial class Paths
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/Paths.html#get(java.lang.String,java.lang.String[])"/>
@@ -94,7 +94,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public static Java.Nio.File.Path Get(Java.Lang.String arg0, params Java.Lang.String[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "get", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "get", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Java.Nio.File.Path>(LocalBridgeClazz, "get", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", arg0); else return SExecuteWithSignature<Java.Nio.File.Path>(LocalBridgeClazz, "get", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/Paths.html#get(java.net.URI)"/>
@@ -105,17 +105,17 @@ namespace Java.Nio.File
         {
             return SExecuteWithSignature<Java.Nio.File.Path>(LocalBridgeClazz, "get", "(Ljava/net/URI;)Ljava/nio/file/Path;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

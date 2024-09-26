@@ -40,10 +40,10 @@ namespace Android.Database
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DatabaseUtils(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Database
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region InsertHelper declaration
         /// <summary>
@@ -82,10 +82,10 @@ namespace Android.Database
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public InsertHelper(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -106,9 +106,9 @@ namespace Android.Database
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -120,13 +120,13 @@ namespace Android.Database
     public partial class DatabaseUtils
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#STATEMENT_ABORT"/>
@@ -188,9 +188,9 @@ namespace Android.Database
         public static int STATEMENT_UPDATE { get { if (!_STATEMENT_UPDATEReady) { _STATEMENT_UPDATEContent = SGetField<int>(LocalBridgeClazz, "STATEMENT_UPDATE"); _STATEMENT_UPDATEReady = true; } return _STATEMENT_UPDATEContent; } }
         private static int _STATEMENT_UPDATEContent = default;
         private static bool _STATEMENT_UPDATEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#blobFileDescriptorForQuery(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String[])"/>
@@ -201,7 +201,7 @@ namespace Android.Database
         /// <returns><see cref="Android.Os.ParcelFileDescriptor"/></returns>
         public static Android.Os.ParcelFileDescriptor BlobFileDescriptorForQuery(Android.Database.Sqlite.SQLiteDatabase arg0, Java.Lang.String arg1, Java.Lang.String[] arg2)
         {
-            return SExecute<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "blobFileDescriptorForQuery", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "blobFileDescriptorForQuery", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#blobFileDescriptorForQuery(android.database.sqlite.SQLiteStatement,java.lang.String[])"/>
@@ -211,7 +211,7 @@ namespace Android.Database
         /// <returns><see cref="Android.Os.ParcelFileDescriptor"/></returns>
         public static Android.Os.ParcelFileDescriptor BlobFileDescriptorForQuery(Android.Database.Sqlite.SQLiteStatement arg0, Java.Lang.String[] arg1)
         {
-            return SExecute<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "blobFileDescriptorForQuery", arg0, arg1);
+            return SExecuteWithSignature<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "blobFileDescriptorForQuery", "(Landroid/database/sqlite/SQLiteStatement;[Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#appendValueToSql(java.lang.StringBuilder,java.lang.Object)"/>
@@ -220,7 +220,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="object"/></param>
         public static void AppendValueToSql(Java.Lang.StringBuilder arg0, object arg1)
         {
-            SExecute(LocalBridgeClazz, "appendValueToSql", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "appendValueToSql", "(Ljava/lang/StringBuilder;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#readExceptionFromParcel(android.os.Parcel)"/>
@@ -237,7 +237,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Java.Lang.Exception"/></param>
         public static void WriteExceptionToParcel(Android.Os.Parcel arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
-            SExecute(LocalBridgeClazz, "writeExceptionToParcel", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "writeExceptionToParcel", "(Landroid/os/Parcel;Ljava/lang/Exception;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#getSqlStatementType(java.lang.String)"/>
@@ -256,7 +256,7 @@ namespace Android.Database
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ConcatenateWhere(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "concatenateWhere", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "concatenateWhere", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCurrentRowToString(android.database.Cursor)"/>
@@ -312,7 +312,7 @@ namespace Android.Database
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String StringForQuery(Android.Database.Sqlite.SQLiteDatabase arg0, Java.Lang.String arg1, Java.Lang.String[] arg2)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "stringForQuery", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "stringForQuery", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#stringForQuery(android.database.sqlite.SQLiteStatement,java.lang.String[])"/>
@@ -322,7 +322,7 @@ namespace Android.Database
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String StringForQuery(Android.Database.Sqlite.SQLiteStatement arg0, Java.Lang.String[] arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "stringForQuery", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "stringForQuery", "(Landroid/database/sqlite/SQLiteStatement;[Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#appendSelectionArgs(java.lang.String[],java.lang.String[])"/>
@@ -332,7 +332,7 @@ namespace Android.Database
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String[] AppendSelectionArgs(Java.Lang.String[] arg0, Java.Lang.String[] arg1)
         {
-            return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "appendSelectionArgs", arg0, arg1);
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "appendSelectionArgs", "([Ljava/lang/String;[Ljava/lang/String;)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#longForQuery(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String[])"/>
@@ -343,7 +343,7 @@ namespace Android.Database
         /// <returns><see cref="long"/></returns>
         public static long LongForQuery(Android.Database.Sqlite.SQLiteDatabase arg0, Java.Lang.String arg1, Java.Lang.String[] arg2)
         {
-            return SExecute<long>(LocalBridgeClazz, "longForQuery", arg0, arg1, arg2);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "longForQuery", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#longForQuery(android.database.sqlite.SQLiteStatement,java.lang.String[])"/>
@@ -353,7 +353,7 @@ namespace Android.Database
         /// <returns><see cref="long"/></returns>
         public static long LongForQuery(Android.Database.Sqlite.SQLiteStatement arg0, Java.Lang.String[] arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "longForQuery", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "longForQuery", "(Landroid/database/sqlite/SQLiteStatement;[Ljava/lang/String;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#queryNumEntries(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String,java.lang.String[])"/>
@@ -365,7 +365,7 @@ namespace Android.Database
         /// <returns><see cref="long"/></returns>
         public static long QueryNumEntries(Android.Database.Sqlite.SQLiteDatabase arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String[] arg3)
         {
-            return SExecute<long>(LocalBridgeClazz, "queryNumEntries", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "queryNumEntries", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)J", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#queryNumEntries(android.database.sqlite.SQLiteDatabase,java.lang.String,java.lang.String)"/>
@@ -376,7 +376,7 @@ namespace Android.Database
         /// <returns><see cref="long"/></returns>
         public static long QueryNumEntries(Android.Database.Sqlite.SQLiteDatabase arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<long>(LocalBridgeClazz, "queryNumEntries", arg0, arg1, arg2);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "queryNumEntries", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#queryNumEntries(android.database.sqlite.SQLiteDatabase,java.lang.String)"/>
@@ -386,7 +386,7 @@ namespace Android.Database
         /// <returns><see cref="long"/></returns>
         public static long QueryNumEntries(Android.Database.Sqlite.SQLiteDatabase arg0, Java.Lang.String arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "queryNumEntries", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "queryNumEntries", "(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#appendEscapedSQLString(java.lang.StringBuilder,java.lang.String)"/>
@@ -395,7 +395,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public static void AppendEscapedSQLString(Java.Lang.StringBuilder arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "appendEscapedSQLString", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "appendEscapedSQLString", "(Ljava/lang/StringBuilder;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#bindObjectToProgram(android.database.sqlite.SQLiteProgram,int,java.lang.Object)"/>
@@ -405,7 +405,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="object"/></param>
         public static void BindObjectToProgram(Android.Database.Sqlite.SQLiteProgram arg0, int arg1, object arg2)
         {
-            SExecute(LocalBridgeClazz, "bindObjectToProgram", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "bindObjectToProgram", "(Landroid/database/sqlite/SQLiteProgram;ILjava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#createDbFromSqlStatements(android.content.Context,java.lang.String,int,java.lang.String)"/>
@@ -416,7 +416,7 @@ namespace Android.Database
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public static void CreateDbFromSqlStatements(Android.Content.Context arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3)
         {
-            SExecute(LocalBridgeClazz, "createDbFromSqlStatements", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "createDbFromSqlStatements", "(Landroid/content/Context;Ljava/lang/String;ILjava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorDoubleToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues,java.lang.String)"/>
@@ -427,7 +427,7 @@ namespace Android.Database
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public static void CursorDoubleToContentValues(Android.Database.Cursor arg0, Java.Lang.String arg1, Android.Content.ContentValues arg2, Java.Lang.String arg3)
         {
-            SExecute(LocalBridgeClazz, "cursorDoubleToContentValues", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorDoubleToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorDoubleToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)"/>
@@ -437,7 +437,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public static void CursorDoubleToContentValuesIfPresent(Android.Database.Cursor arg0, Android.Content.ContentValues arg1, Java.Lang.String arg2)
         {
-            SExecute(LocalBridgeClazz, "cursorDoubleToContentValuesIfPresent", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorDoubleToContentValuesIfPresent", "(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorDoubleToCursorValues(android.database.Cursor,java.lang.String,android.content.ContentValues)"/>
@@ -447,7 +447,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="Android.Content.ContentValues"/></param>
         public static void CursorDoubleToCursorValues(Android.Database.Cursor arg0, Java.Lang.String arg1, Android.Content.ContentValues arg2)
         {
-            SExecute(LocalBridgeClazz, "cursorDoubleToCursorValues", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorDoubleToCursorValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorFloatToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)"/>
@@ -457,7 +457,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public static void CursorFloatToContentValuesIfPresent(Android.Database.Cursor arg0, Android.Content.ContentValues arg1, Java.Lang.String arg2)
         {
-            SExecute(LocalBridgeClazz, "cursorFloatToContentValuesIfPresent", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorFloatToContentValuesIfPresent", "(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorIntToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues,java.lang.String)"/>
@@ -468,7 +468,7 @@ namespace Android.Database
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public static void CursorIntToContentValues(Android.Database.Cursor arg0, Java.Lang.String arg1, Android.Content.ContentValues arg2, Java.Lang.String arg3)
         {
-            SExecute(LocalBridgeClazz, "cursorIntToContentValues", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorIntToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorIntToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues)"/>
@@ -478,7 +478,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="Android.Content.ContentValues"/></param>
         public static void CursorIntToContentValues(Android.Database.Cursor arg0, Java.Lang.String arg1, Android.Content.ContentValues arg2)
         {
-            SExecute(LocalBridgeClazz, "cursorIntToContentValues", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorIntToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorIntToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)"/>
@@ -488,7 +488,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public static void CursorIntToContentValuesIfPresent(Android.Database.Cursor arg0, Android.Content.ContentValues arg1, Java.Lang.String arg2)
         {
-            SExecute(LocalBridgeClazz, "cursorIntToContentValuesIfPresent", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorIntToContentValuesIfPresent", "(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorLongToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues,java.lang.String)"/>
@@ -499,7 +499,7 @@ namespace Android.Database
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public static void CursorLongToContentValues(Android.Database.Cursor arg0, Java.Lang.String arg1, Android.Content.ContentValues arg2, Java.Lang.String arg3)
         {
-            SExecute(LocalBridgeClazz, "cursorLongToContentValues", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorLongToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorLongToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues)"/>
@@ -509,7 +509,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="Android.Content.ContentValues"/></param>
         public static void CursorLongToContentValues(Android.Database.Cursor arg0, Java.Lang.String arg1, Android.Content.ContentValues arg2)
         {
-            SExecute(LocalBridgeClazz, "cursorLongToContentValues", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorLongToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorLongToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)"/>
@@ -519,7 +519,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public static void CursorLongToContentValuesIfPresent(Android.Database.Cursor arg0, Android.Content.ContentValues arg1, Java.Lang.String arg2)
         {
-            SExecute(LocalBridgeClazz, "cursorLongToContentValuesIfPresent", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorLongToContentValuesIfPresent", "(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorRowToContentValues(android.database.Cursor,android.content.ContentValues)"/>
@@ -528,7 +528,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Android.Content.ContentValues"/></param>
         public static void CursorRowToContentValues(Android.Database.Cursor arg0, Android.Content.ContentValues arg1)
         {
-            SExecute(LocalBridgeClazz, "cursorRowToContentValues", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorRowToContentValues", "(Landroid/database/Cursor;Landroid/content/ContentValues;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorShortToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)"/>
@@ -538,7 +538,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public static void CursorShortToContentValuesIfPresent(Android.Database.Cursor arg0, Android.Content.ContentValues arg1, Java.Lang.String arg2)
         {
-            SExecute(LocalBridgeClazz, "cursorShortToContentValuesIfPresent", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorShortToContentValuesIfPresent", "(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorStringToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues,java.lang.String)"/>
@@ -549,7 +549,7 @@ namespace Android.Database
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public static void CursorStringToContentValues(Android.Database.Cursor arg0, Java.Lang.String arg1, Android.Content.ContentValues arg2, Java.Lang.String arg3)
         {
-            SExecute(LocalBridgeClazz, "cursorStringToContentValues", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorStringToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorStringToContentValues(android.database.Cursor,java.lang.String,android.content.ContentValues)"/>
@@ -559,7 +559,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="Android.Content.ContentValues"/></param>
         public static void CursorStringToContentValues(Android.Database.Cursor arg0, Java.Lang.String arg1, Android.Content.ContentValues arg2)
         {
-            SExecute(LocalBridgeClazz, "cursorStringToContentValues", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorStringToContentValues", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorStringToContentValuesIfPresent(android.database.Cursor,android.content.ContentValues,java.lang.String)"/>
@@ -569,7 +569,7 @@ namespace Android.Database
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public static void CursorStringToContentValuesIfPresent(Android.Database.Cursor arg0, Android.Content.ContentValues arg1, Java.Lang.String arg2)
         {
-            SExecute(LocalBridgeClazz, "cursorStringToContentValuesIfPresent", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorStringToContentValuesIfPresent", "(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorStringToInsertHelper(android.database.Cursor,java.lang.String,android.database.DatabaseUtils.InsertHelper,int)"/>
@@ -580,7 +580,7 @@ namespace Android.Database
         /// <param name="arg3"><see cref="int"/></param>
         public static void CursorStringToInsertHelper(Android.Database.Cursor arg0, Java.Lang.String arg1, Android.Database.DatabaseUtils.InsertHelper arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "cursorStringToInsertHelper", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "cursorStringToInsertHelper", "(Landroid/database/Cursor;Ljava/lang/String;Landroid/database/DatabaseUtils$InsertHelper;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCurrentRow(android.database.Cursor,java.io.PrintStream)"/>
@@ -589,7 +589,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Java.Io.PrintStream"/></param>
         public static void DumpCurrentRow(Android.Database.Cursor arg0, Java.Io.PrintStream arg1)
         {
-            SExecute(LocalBridgeClazz, "dumpCurrentRow", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "dumpCurrentRow", "(Landroid/database/Cursor;Ljava/io/PrintStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCurrentRow(android.database.Cursor,java.lang.StringBuilder)"/>
@@ -598,7 +598,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Java.Lang.StringBuilder"/></param>
         public static void DumpCurrentRow(Android.Database.Cursor arg0, Java.Lang.StringBuilder arg1)
         {
-            SExecute(LocalBridgeClazz, "dumpCurrentRow", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "dumpCurrentRow", "(Landroid/database/Cursor;Ljava/lang/StringBuilder;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCurrentRow(android.database.Cursor)"/>
@@ -615,7 +615,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Java.Io.PrintStream"/></param>
         public static void DumpCursor(Android.Database.Cursor arg0, Java.Io.PrintStream arg1)
         {
-            SExecute(LocalBridgeClazz, "dumpCursor", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "dumpCursor", "(Landroid/database/Cursor;Ljava/io/PrintStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCursor(android.database.Cursor,java.lang.StringBuilder)"/>
@@ -624,7 +624,7 @@ namespace Android.Database
         /// <param name="arg1"><see cref="Java.Lang.StringBuilder"/></param>
         public static void DumpCursor(Android.Database.Cursor arg0, Java.Lang.StringBuilder arg1)
         {
-            SExecute(LocalBridgeClazz, "dumpCursor", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "dumpCursor", "(Landroid/database/Cursor;Ljava/lang/StringBuilder;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCursor(android.database.Cursor)"/>
@@ -652,13 +652,13 @@ namespace Android.Database
         {
             SExecuteWithSignature(LocalBridgeClazz, "readExceptionWithOperationApplicationExceptionFromParcel", "(Landroid/os/Parcel;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region InsertHelper implementation
         public partial class InsertHelper
@@ -674,21 +674,21 @@ namespace Android.Database
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#getColumnIndex(java.lang.String)"/>
@@ -737,7 +737,7 @@ namespace Android.Database
             [global::System.Obsolete()]
             public void Bind(int arg0, bool arg1)
             {
-                IExecute("bind", arg0, arg1);
+                IExecuteWithSignature("bind", "(IZ)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bind(int,byte[])"/>
@@ -747,7 +747,7 @@ namespace Android.Database
             [global::System.Obsolete()]
             public void Bind(int arg0, byte[] arg1)
             {
-                IExecute("bind", arg0, arg1);
+                IExecuteWithSignature("bind", "(I[B)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bind(int,double)"/>
@@ -757,7 +757,7 @@ namespace Android.Database
             [global::System.Obsolete()]
             public void Bind(int arg0, double arg1)
             {
-                IExecute("bind", arg0, arg1);
+                IExecuteWithSignature("bind", "(ID)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bind(int,float)"/>
@@ -767,7 +767,7 @@ namespace Android.Database
             [global::System.Obsolete()]
             public void Bind(int arg0, float arg1)
             {
-                IExecute("bind", arg0, arg1);
+                IExecuteWithSignature("bind", "(IF)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bind(int,int)"/>
@@ -777,7 +777,7 @@ namespace Android.Database
             [global::System.Obsolete()]
             public void Bind(int arg0, int arg1)
             {
-                IExecute("bind", arg0, arg1);
+                IExecuteWithSignature("bind", "(II)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bind(int,java.lang.String)"/>
@@ -787,7 +787,7 @@ namespace Android.Database
             [global::System.Obsolete()]
             public void Bind(int arg0, Java.Lang.String arg1)
             {
-                IExecute("bind", arg0, arg1);
+                IExecuteWithSignature("bind", "(ILjava/lang/String;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bind(int,long)"/>
@@ -797,7 +797,7 @@ namespace Android.Database
             [global::System.Obsolete()]
             public void Bind(int arg0, long arg1)
             {
-                IExecute("bind", arg0, arg1);
+                IExecuteWithSignature("bind", "(IJ)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bindNull(int)"/>
@@ -832,20 +832,20 @@ namespace Android.Database
             {
                 IExecuteWithSignature("prepareForReplace", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

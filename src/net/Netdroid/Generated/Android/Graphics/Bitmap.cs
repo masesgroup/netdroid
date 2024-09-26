@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Bitmap(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region CompressFormat declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CompressFormat(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Config(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -164,13 +164,13 @@ namespace Android.Graphics
     public partial class Bitmap
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#CREATOR"/>
@@ -184,9 +184,9 @@ namespace Android.Graphics
         public static int DENSITY_NONE { get { if (!_DENSITY_NONEReady) { _DENSITY_NONEContent = SGetField<int>(LocalBridgeClazz, "DENSITY_NONE"); _DENSITY_NONEReady = true; } return _DENSITY_NONEContent; } }
         private static int _DENSITY_NONEContent = default;
         private static bool _DENSITY_NONEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createBitmap(android.graphics.Bitmap,int,int,int,int,android.graphics.Matrix,boolean)"/>
@@ -201,7 +201,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateBitmap(Android.Graphics.Bitmap arg0, int arg1, int arg2, int arg3, int arg4, Android.Graphics.Matrix arg5, bool arg6)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", "(Landroid/graphics/Bitmap;IIIILandroid/graphics/Matrix;Z)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createBitmap(android.graphics.Bitmap,int,int,int,int)"/>
@@ -214,7 +214,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateBitmap(Android.Graphics.Bitmap arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", "(Landroid/graphics/Bitmap;IIII)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createBitmap(android.graphics.Bitmap)"/>
@@ -235,7 +235,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateBitmap(Android.Graphics.Picture arg0, int arg1, int arg2, Android.Graphics.Bitmap.Config arg3)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", "(Landroid/graphics/Picture;IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createBitmap(android.graphics.Picture)"/>
@@ -258,7 +258,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateBitmap(Android.Util.DisplayMetrics arg0, int arg1, int arg2, Android.Graphics.Bitmap.Config arg3, bool arg4, Android.Graphics.ColorSpace arg5)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", "(Landroid/util/DisplayMetrics;IILandroid/graphics/Bitmap$Config;ZLandroid/graphics/ColorSpace;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createBitmap(android.util.DisplayMetrics,int,int,android.graphics.Bitmap.Config,boolean)"/>
@@ -271,7 +271,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateBitmap(Android.Util.DisplayMetrics arg0, int arg1, int arg2, Android.Graphics.Bitmap.Config arg3, bool arg4)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", "(Landroid/util/DisplayMetrics;IILandroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createBitmap(android.util.DisplayMetrics,int,int,android.graphics.Bitmap.Config)"/>
@@ -283,7 +283,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateBitmap(Android.Util.DisplayMetrics arg0, int arg1, int arg2, Android.Graphics.Bitmap.Config arg3)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", "(Landroid/util/DisplayMetrics;IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createBitmap(android.util.DisplayMetrics,int[],int,int,android.graphics.Bitmap.Config)"/>
@@ -296,7 +296,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateBitmap(Android.Util.DisplayMetrics arg0, int[] arg1, int arg2, int arg3, Android.Graphics.Bitmap.Config arg4)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", "(Landroid/util/DisplayMetrics;[IIILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createBitmap(android.util.DisplayMetrics,int[],int,int,int,int,android.graphics.Bitmap.Config)"/>
@@ -311,7 +311,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateBitmap(Android.Util.DisplayMetrics arg0, int[] arg1, int arg2, int arg3, int arg4, int arg5, Android.Graphics.Bitmap.Config arg6)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", "(Landroid/util/DisplayMetrics;[IIIIILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createBitmap(int,int,android.graphics.Bitmap.Config,boolean,android.graphics.ColorSpace)"/>
@@ -324,7 +324,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateBitmap(int arg0, int arg1, Android.Graphics.Bitmap.Config arg2, bool arg3, Android.Graphics.ColorSpace arg4)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", "(IILandroid/graphics/Bitmap$Config;ZLandroid/graphics/ColorSpace;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createBitmap(int,int,android.graphics.Bitmap.Config,boolean)"/>
@@ -336,7 +336,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateBitmap(int arg0, int arg1, Android.Graphics.Bitmap.Config arg2, bool arg3)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", "(IILandroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createBitmap(int,int,android.graphics.Bitmap.Config)"/>
@@ -347,7 +347,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateBitmap(int arg0, int arg1, Android.Graphics.Bitmap.Config arg2)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", "(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createBitmap(int[],int,int,android.graphics.Bitmap.Config)"/>
@@ -359,7 +359,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateBitmap(int[] arg0, int arg1, int arg2, Android.Graphics.Bitmap.Config arg3)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", "([IIILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createBitmap(int[],int,int,int,int,android.graphics.Bitmap.Config)"/>
@@ -373,7 +373,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateBitmap(int[] arg0, int arg1, int arg2, int arg3, int arg4, Android.Graphics.Bitmap.Config arg5)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createBitmap", "([IIIIILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#createScaledBitmap(android.graphics.Bitmap,int,int,boolean)"/>
@@ -385,7 +385,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap CreateScaledBitmap(Android.Graphics.Bitmap arg0, int arg1, int arg2, bool arg3)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createScaledBitmap", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "createScaledBitmap", "(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#wrapHardwareBuffer(android.hardware.HardwareBuffer,android.graphics.ColorSpace)"/>
@@ -395,11 +395,11 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public static Android.Graphics.Bitmap WrapHardwareBuffer(Android.Hardware.HardwareBuffer arg0, Android.Graphics.ColorSpace arg1)
         {
-            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "wrapHardwareBuffer", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "wrapHardwareBuffer", "(Landroid/hardware/HardwareBuffer;Landroid/graphics/ColorSpace;)Landroid/graphics/Bitmap;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#asShared()"/>
@@ -417,7 +417,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public Android.Graphics.Bitmap Copy(Android.Graphics.Bitmap.Config arg0, bool arg1)
         {
-            return IExecute<Android.Graphics.Bitmap>("copy", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("copy", "(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#extractAlpha()"/>
@@ -435,7 +435,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public Android.Graphics.Bitmap ExtractAlpha(Android.Graphics.Paint arg0, int[] arg1)
         {
-            return IExecute<Android.Graphics.Bitmap>("extractAlpha", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("extractAlpha", "(Landroid/graphics/Paint;[I)Landroid/graphics/Bitmap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getConfig()"/>
@@ -453,7 +453,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.Color"/></returns>
         public Android.Graphics.Color GetColor(int arg0, int arg1)
         {
-            return IExecute<Android.Graphics.Color>("getColor", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Color>("getColor", "(II)Landroid/graphics/Color;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getColorSpace()"/>
@@ -488,7 +488,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool Compress(Android.Graphics.Bitmap.CompressFormat arg0, int arg1, Java.Io.OutputStream arg2)
         {
-            return IExecute<bool>("compress", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("compress", "(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#hasAlpha()"/>
@@ -611,7 +611,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int GetPixel(int arg0, int arg1)
         {
-            return IExecute<int>("getPixel", arg0, arg1);
+            return IExecuteWithSignature<int>("getPixel", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#getRowBytes()"/>
@@ -727,7 +727,7 @@ namespace Android.Graphics
         /// <param name="arg6"><see cref="int"/></param>
         public void GetPixels(int[] arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
-            IExecute("getPixels", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("getPixels", "([IIIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#prepareToDraw()"/>
@@ -744,7 +744,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="Android.Graphics.Bitmap.Config"/></param>
         public void Reconfigure(int arg0, int arg1, Android.Graphics.Bitmap.Config arg2)
         {
-            IExecute("reconfigure", arg0, arg1, arg2);
+            IExecuteWithSignature("reconfigure", "(IILandroid/graphics/Bitmap$Config;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#recycle()"/>
@@ -817,7 +817,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="int"/></param>
         public void SetPixel(int arg0, int arg1, int arg2)
         {
-            IExecute("setPixel", arg0, arg1, arg2);
+            IExecuteWithSignature("setPixel", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setPixels(int[],int,int,int,int,int,int)"/>
@@ -831,7 +831,7 @@ namespace Android.Graphics
         /// <param name="arg6"><see cref="int"/></param>
         public void SetPixels(int[] arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
         {
-            IExecute("setPixels", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("setPixels", "([IIIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.html#setPremultiplied(boolean)"/>
@@ -856,23 +856,23 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region CompressFormat implementation
         public partial class CompressFormat
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.CompressFormat.html#JPEG"/>
@@ -905,9 +905,9 @@ namespace Android.Graphics
             public static Android.Graphics.Bitmap.CompressFormat WEBP_LOSSY { get { if (!_WEBP_LOSSYReady) { _WEBP_LOSSYContent = SGetField<Android.Graphics.Bitmap.CompressFormat>(LocalBridgeClazz, "WEBP_LOSSY"); _WEBP_LOSSYReady = true; } return _WEBP_LOSSYContent; } }
             private static Android.Graphics.Bitmap.CompressFormat _WEBP_LOSSYContent = default;
             private static bool _WEBP_LOSSYReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.CompressFormat.html#valueOf(java.lang.String)"/>
@@ -926,17 +926,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Bitmap.CompressFormat>(LocalBridgeClazz, "values", "()[Landroid/graphics/Bitmap$CompressFormat;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -945,13 +945,13 @@ namespace Android.Graphics
         public partial class Config
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.Config.html#ALPHA_8"/>
@@ -996,9 +996,9 @@ namespace Android.Graphics
             public static Android.Graphics.Bitmap.Config RGBA_F16 { get { if (!_RGBA_F16Ready) { _RGBA_F16Content = SGetField<Android.Graphics.Bitmap.Config>(LocalBridgeClazz, "RGBA_F16"); _RGBA_F16Ready = true; } return _RGBA_F16Content; } }
             private static Android.Graphics.Bitmap.Config _RGBA_F16Content = default;
             private static bool _RGBA_F16Ready = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.Config.html#valueOf(java.lang.String)"/>
@@ -1017,24 +1017,24 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Bitmap.Config>(LocalBridgeClazz, "values", "()[Landroid/graphics/Bitmap$Config;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

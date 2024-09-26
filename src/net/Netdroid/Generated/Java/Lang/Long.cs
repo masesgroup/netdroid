@@ -40,10 +40,10 @@ namespace Java.Lang
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Long(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -93,17 +93,17 @@ namespace Java.Lang
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Lang.Long"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Long t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#BYTES"/>
@@ -135,9 +135,9 @@ namespace Java.Lang
         public static long MIN_VALUE { get { if (!_MIN_VALUEReady) { _MIN_VALUEContent = SGetField<long>(LocalBridgeClazz, "MIN_VALUE"); _MIN_VALUEReady = true; } return _MIN_VALUEContent; } }
         private static long _MIN_VALUEContent = default;
         private static bool _MIN_VALUEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#bitCount(long)"/>
@@ -156,7 +156,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(long arg0, long arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(JJ)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#compareUnsigned(long,long)"/>
@@ -166,7 +166,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(long arg0, long arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compareUnsigned", "(JJ)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#hashCode(long)"/>
@@ -222,7 +222,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Long"/></returns>
         public static Java.Lang.Long GetLong(Java.Lang.String arg0, Java.Lang.Long arg1)
         {
-            return SExecute<Java.Lang.Long>(LocalBridgeClazz, "getLong", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Long>(LocalBridgeClazz, "getLong", "(Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/Long;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#getLong(java.lang.String,long)"/>
@@ -232,7 +232,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Long"/></returns>
         public static Java.Lang.Long GetLong(Java.Lang.String arg0, long arg1)
         {
-            return SExecute<Java.Lang.Long>(LocalBridgeClazz, "getLong", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Long>(LocalBridgeClazz, "getLong", "(Ljava/lang/String;J)Ljava/lang/Long;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#getLong(java.lang.String)"/>
@@ -252,7 +252,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Lang.Long ValueOf(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Lang.Long>(LocalBridgeClazz, "valueOf", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Long>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;I)Ljava/lang/Long;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#valueOf(java.lang.String)"/>
@@ -308,7 +308,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(long arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(JI)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#toString(long)"/>
@@ -327,7 +327,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToUnsignedString(long arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toUnsignedString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toUnsignedString", "(JI)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#toUnsignedString(long)"/>
@@ -346,7 +346,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long DivideUnsigned(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "divideUnsigned", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "divideUnsigned", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#highestOneBit(long)"/>
@@ -374,7 +374,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Max(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "max", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#min(long,long)"/>
@@ -384,7 +384,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Min(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "min", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "min", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#parseLong(java.lang.CharSequence,int,int,int)"/>
@@ -397,7 +397,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseLong(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<long>(LocalBridgeClazz, "parseLong", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "parseLong", "(Ljava/lang/CharSequence;III)J", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#parseLong(java.lang.String,int)"/>
@@ -408,7 +408,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseLong(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "parseLong", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "parseLong", "(Ljava/lang/String;I)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#parseLong(java.lang.String)"/>
@@ -431,7 +431,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseUnsignedLong(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<long>(LocalBridgeClazz, "parseUnsignedLong", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "parseUnsignedLong", "(Ljava/lang/CharSequence;III)J", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#parseUnsignedLong(java.lang.String,int)"/>
@@ -442,7 +442,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static long ParseUnsignedLong(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "parseUnsignedLong", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "parseUnsignedLong", "(Ljava/lang/String;I)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#parseUnsignedLong(java.lang.String)"/>
@@ -462,7 +462,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long RemainderUnsigned(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "remainderUnsigned", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "remainderUnsigned", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#reverse(long)"/>
@@ -490,7 +490,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long RotateLeft(long arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "rotateLeft", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "rotateLeft", "(JI)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#rotateRight(long,int)"/>
@@ -500,7 +500,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long RotateRight(long arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "rotateRight", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "rotateRight", "(JI)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#sum(long,long)"/>
@@ -510,11 +510,11 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Sum(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "sum", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "sum", "(JJ)J", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Long.html#compareTo(java.lang.Long)"/>
@@ -552,13 +552,13 @@ namespace Java.Lang
         {
             return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Long>>("describeConstable", "()Ljava/util/Optional;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

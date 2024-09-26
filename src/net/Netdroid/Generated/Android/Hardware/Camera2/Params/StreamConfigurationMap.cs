@@ -40,10 +40,10 @@ namespace Android.Hardware.Camera2.Params
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StreamConfigurationMap(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Camera2.Params
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Hardware.Camera2.Params
     public partial class StreamConfigurationMap
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#isOutputSupportedFor(java.lang.Class)"/>
@@ -95,9 +95,9 @@ namespace Android.Hardware.Camera2.Params
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isOutputSupportedFor", "(Ljava/lang/Class;)Z", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#getOutputSizes(java.lang.Class)"/>
@@ -116,7 +116,7 @@ namespace Android.Hardware.Camera2.Params
         /// <returns><see cref="long"/></returns>
         public long GetOutputMinFrameDuration(Java.Lang.Class arg0, Android.Util.Size arg1)
         {
-            return IExecute<long>("getOutputMinFrameDuration", arg0, arg1);
+            return IExecuteWithSignature<long>("getOutputMinFrameDuration", "(Ljava/lang/Class;Landroid/util/Size;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#getOutputStallDuration(java.lang.Class,android.util.Size)"/>
@@ -126,7 +126,7 @@ namespace Android.Hardware.Camera2.Params
         /// <returns><see cref="long"/></returns>
         public long GetOutputStallDuration(Java.Lang.Class arg0, Android.Util.Size arg1)
         {
-            return IExecute<long>("getOutputStallDuration", arg0, arg1);
+            return IExecuteWithSignature<long>("getOutputStallDuration", "(Ljava/lang/Class;Landroid/util/Size;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#getHighResolutionOutputSizes(int)"/>
@@ -214,7 +214,7 @@ namespace Android.Hardware.Camera2.Params
         /// <returns><see cref="long"/></returns>
         public long GetOutputMinFrameDuration(int arg0, Android.Util.Size arg1)
         {
-            return IExecute<long>("getOutputMinFrameDuration", arg0, arg1);
+            return IExecuteWithSignature<long>("getOutputMinFrameDuration", "(ILandroid/util/Size;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#getOutputStallDuration(int,android.util.Size)"/>
@@ -224,15 +224,15 @@ namespace Android.Hardware.Camera2.Params
         /// <returns><see cref="long"/></returns>
         public long GetOutputStallDuration(int arg0, Android.Util.Size arg1)
         {
-            return IExecute<long>("getOutputStallDuration", arg0, arg1);
+            return IExecuteWithSignature<long>("getOutputStallDuration", "(ILandroid/util/Size;)J", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

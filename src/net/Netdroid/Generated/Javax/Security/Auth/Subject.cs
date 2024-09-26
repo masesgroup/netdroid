@@ -40,10 +40,10 @@ namespace Javax.Security.Auth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Subject(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Javax.Security.Auth
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -85,17 +85,17 @@ namespace Javax.Security.Auth
             : base(arg0, arg1, arg2, arg3)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedAction)"/>
@@ -106,7 +106,7 @@ namespace Javax.Security.Auth
         /// <returns><typeparamref name="T"/></returns>
         public static T DoAs<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction<T> arg1)
         {
-            return SExecute<T>(LocalBridgeClazz, "doAs", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doAs", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedAction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedExceptionAction)"/>
@@ -118,7 +118,7 @@ namespace Javax.Security.Auth
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoAs<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction<T> arg1)
         {
-            return SExecute<T>(LocalBridgeClazz, "doAs", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doAs", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedAction,java.security.AccessControlContext)"/>
@@ -131,7 +131,7 @@ namespace Javax.Security.Auth
         [global::System.Obsolete()]
         public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction<T> arg1, Java.Security.AccessControlContext arg2)
         {
-            return SExecute<T>(LocalBridgeClazz, "doAsPrivileged", arg0, arg1, arg2);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doAsPrivileged", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedExceptionAction,java.security.AccessControlContext)"/>
@@ -145,7 +145,7 @@ namespace Javax.Security.Auth
         [global::System.Obsolete()]
         public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction<T> arg1, Java.Security.AccessControlContext arg2)
         {
-            return SExecute<T>(LocalBridgeClazz, "doAsPrivileged", arg0, arg1, arg2);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doAsPrivileged", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#getSubject(java.security.AccessControlContext)"/>
@@ -157,9 +157,9 @@ namespace Javax.Security.Auth
         {
             return SExecuteWithSignature<Javax.Security.Auth.Subject>(LocalBridgeClazz, "getSubject", "(Ljava/security/AccessControlContext;)Ljavax/security/auth/Subject;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#getPrincipals(java.lang.Class)"/>
@@ -230,13 +230,13 @@ namespace Javax.Security.Auth
         {
             IExecuteWithSignature("setReadOnly", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

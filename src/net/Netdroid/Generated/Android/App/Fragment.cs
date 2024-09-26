@@ -41,10 +41,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Fragment(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region InstantiationException declaration
         /// <summary>
@@ -79,9 +79,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -101,10 +101,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SavedState(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -125,9 +125,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -139,21 +139,21 @@ namespace Android.App
     public partial class Fragment : Android.Content.IComponentCallbacks2
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.App.Fragment"/> to <see cref="Android.Content.ComponentCallbacks2"/>
         /// </summary>
         public static implicit operator Android.Content.ComponentCallbacks2(Android.App.Fragment t) => t.Cast<Android.Content.ComponentCallbacks2>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#instantiate(android.content.Context,java.lang.String,android.os.Bundle)"/>
@@ -165,7 +165,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public static Android.App.Fragment Instantiate(Android.Content.Context arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            return SExecute<Android.App.Fragment>(LocalBridgeClazz, "instantiate", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.App.Fragment>(LocalBridgeClazz, "instantiate", "(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;)Landroid/app/Fragment;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#instantiate(android.content.Context,java.lang.String)"/>
@@ -176,11 +176,11 @@ namespace Android.App
         [global::System.Obsolete()]
         public static Android.App.Fragment Instantiate(Android.Content.Context arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.App.Fragment>(LocalBridgeClazz, "instantiate", arg0, arg1);
+            return SExecuteWithSignature<Android.App.Fragment>(LocalBridgeClazz, "instantiate", "(Landroid/content/Context;Ljava/lang/String;)Landroid/app/Fragment;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onCreateAnimator(int,boolean,int)"/>
@@ -192,7 +192,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.Animation.Animator OnCreateAnimator(int arg0, bool arg1, int arg2)
         {
-            return IExecute<Android.Animation.Animator>("onCreateAnimator", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Animation.Animator>("onCreateAnimator", "(IZI)Landroid/animation/Animator;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getLoaderManager()"/>
@@ -295,7 +295,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.View.View OnCreateView(Android.View.LayoutInflater arg0, Android.View.ViewGroup arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.View.View>("onCreateView", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.View.View>("onCreateView", "(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getAllowEnterTransitionOverlap()"/>
@@ -553,7 +553,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Java.Lang.String GetString(int arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Lang.String>("getString", arg0); else return IExecute<Java.Lang.String>("getString", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.String>("getString", "(I[Ljava/lang/Object;)Ljava/lang/String;", arg0); else return IExecuteWithSignature<Java.Lang.String>("getString", "(I[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getString(int)"/>
@@ -582,7 +582,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void RequestPermissions(Java.Lang.String[] arg0, int arg1)
         {
-            IExecute("requestPermissions", arg0, arg1);
+            IExecuteWithSignature("requestPermissions", "([Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])"/>
@@ -594,7 +594,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void Dump(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Io.PrintWriter arg2, Java.Lang.String[] arg3)
         {
-            IExecute("dump", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("dump", "(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onActivityCreated(android.os.Bundle)"/>
@@ -614,7 +614,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnActivityResult(int arg0, int arg1, Android.Content.Intent arg2)
         {
-            IExecute("onActivityResult", arg0, arg1, arg2);
+            IExecuteWithSignature("onActivityResult", "(IILandroid/content/Intent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onAttach(android.app.Activity)"/>
@@ -670,7 +670,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnCreateContextMenu(Android.View.ContextMenu arg0, Android.View.View arg1, Android.View.ContextMenu.ContextMenuInfo arg2)
         {
-            IExecute("onCreateContextMenu", arg0, arg1, arg2);
+            IExecuteWithSignature("onCreateContextMenu", "(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater)"/>
@@ -680,7 +680,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnCreateOptionsMenu(Android.View.Menu arg0, Android.View.MenuInflater arg1)
         {
-            IExecute("onCreateOptionsMenu", arg0, arg1);
+            IExecuteWithSignature("onCreateOptionsMenu", "(Landroid/view/Menu;Landroid/view/MenuInflater;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onDestroy()"/>
@@ -732,7 +732,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnInflate(Android.App.Activity arg0, Android.Util.AttributeSet arg1, Android.Os.Bundle arg2)
         {
-            IExecute("onInflate", arg0, arg1, arg2);
+            IExecuteWithSignature("onInflate", "(Landroid/app/Activity;Landroid/util/AttributeSet;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onInflate(android.content.Context,android.util.AttributeSet,android.os.Bundle)"/>
@@ -743,7 +743,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnInflate(Android.Content.Context arg0, Android.Util.AttributeSet arg1, Android.Os.Bundle arg2)
         {
-            IExecute("onInflate", arg0, arg1, arg2);
+            IExecuteWithSignature("onInflate", "(Landroid/content/Context;Landroid/util/AttributeSet;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onInflate(android.util.AttributeSet,android.os.Bundle)"/>
@@ -753,7 +753,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnInflate(Android.Util.AttributeSet arg0, Android.Os.Bundle arg1)
         {
-            IExecute("onInflate", arg0, arg1);
+            IExecuteWithSignature("onInflate", "(Landroid/util/AttributeSet;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onLowMemory()"/>
@@ -771,7 +771,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnMultiWindowModeChanged(bool arg0, Android.Content.Res.Configuration arg1)
         {
-            IExecute("onMultiWindowModeChanged", arg0, arg1);
+            IExecuteWithSignature("onMultiWindowModeChanged", "(ZLandroid/content/res/Configuration;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onMultiWindowModeChanged(boolean)"/>
@@ -807,7 +807,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnPictureInPictureModeChanged(bool arg0, Android.Content.Res.Configuration arg1)
         {
-            IExecute("onPictureInPictureModeChanged", arg0, arg1);
+            IExecuteWithSignature("onPictureInPictureModeChanged", "(ZLandroid/content/res/Configuration;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onPictureInPictureModeChanged(boolean)"/>
@@ -836,7 +836,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnRequestPermissionsResult(int arg0, Java.Lang.String[] arg1, int[] arg2)
         {
-            IExecute("onRequestPermissionsResult", arg0, arg1, arg2);
+            IExecuteWithSignature("onRequestPermissionsResult", "(I[Ljava/lang/String;[I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onResume()"/>
@@ -888,7 +888,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnViewCreated(Android.View.View arg0, Android.Os.Bundle arg1)
         {
-            IExecute("onViewCreated", arg0, arg1);
+            IExecuteWithSignature("onViewCreated", "(Landroid/view/View;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onViewStateRestored(android.os.Bundle)"/>
@@ -1059,7 +1059,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void SetTargetFragment(Android.App.Fragment arg0, int arg1)
         {
-            IExecute("setTargetFragment", arg0, arg1);
+            IExecuteWithSignature("setTargetFragment", "(Landroid/app/Fragment;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setUserVisibleHint(boolean)"/>
@@ -1078,7 +1078,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void StartActivity(Android.Content.Intent arg0, Android.Os.Bundle arg1)
         {
-            IExecute("startActivity", arg0, arg1);
+            IExecuteWithSignature("startActivity", "(Landroid/content/Intent;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#startActivity(android.content.Intent)"/>
@@ -1098,7 +1098,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void StartActivityForResult(Android.Content.Intent arg0, int arg1, Android.Os.Bundle arg2)
         {
-            IExecute("startActivityForResult", arg0, arg1, arg2);
+            IExecuteWithSignature("startActivityForResult", "(Landroid/content/Intent;ILandroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#startActivityForResult(android.content.Intent,int)"/>
@@ -1108,7 +1108,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void StartActivityForResult(Android.Content.Intent arg0, int arg1)
         {
-            IExecute("startActivityForResult", arg0, arg1);
+            IExecuteWithSignature("startActivityForResult", "(Landroid/content/Intent;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#startIntentSenderForResult(android.content.IntentSender,int,android.content.Intent,int,int,int,android.os.Bundle)"/>
@@ -1124,7 +1124,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void StartIntentSenderForResult(Android.Content.IntentSender arg0, int arg1, Android.Content.Intent arg2, int arg3, int arg4, int arg5, Android.Os.Bundle arg6)
         {
-            IExecute("startIntentSenderForResult", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("startIntentSenderForResult", "(Landroid/content/IntentSender;ILandroid/content/Intent;IIILandroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#startPostponedEnterTransition()"/>
@@ -1143,37 +1143,37 @@ namespace Android.App
         {
             IExecuteWithSignature("unregisterForContextMenu", "(Landroid/view/View;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region InstantiationException implementation
         public partial class InstantiationException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1182,13 +1182,13 @@ namespace Android.App
         public partial class SavedState
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Fragment.SavedState.html#CREATOR"/>
@@ -1197,13 +1197,13 @@ namespace Android.App
             public static Android.Os.Parcelable.ClassLoaderCreator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.ClassLoaderCreator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.ClassLoaderCreator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Fragment.SavedState.html#describeContents()"/>
@@ -1222,22 +1222,22 @@ namespace Android.App
             [global::System.Obsolete()]
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

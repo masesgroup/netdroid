@@ -42,10 +42,10 @@ namespace Java.Net
         /// </summary>
         [global::System.Obsolete("URLConnection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public URLConnection(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Java.Net
     public partial class URLConnection
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getDefaultAllowUserInteraction()"/>
@@ -166,7 +166,7 @@ namespace Java.Net
         [global::System.Obsolete()]
         public static void SetDefaultRequestProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "setDefaultRequestProperty", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setDefaultRequestProperty", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setDefaultUseCaches(java.lang.String,boolean)"/>
@@ -175,7 +175,7 @@ namespace Java.Net
         /// <param name="arg1"><see cref="bool"/></param>
         public static void SetDefaultUseCaches(Java.Lang.String arg0, bool arg1)
         {
-            SExecute(LocalBridgeClazz, "setDefaultUseCaches", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setDefaultUseCaches", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setFileNameMap(java.net.FileNameMap)"/>
@@ -185,9 +185,9 @@ namespace Java.Net
         {
             SExecuteWithSignature(LocalBridgeClazz, "setFileNameMap", "(Ljava/net/FileNameMap;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#connect()"/>
@@ -261,7 +261,7 @@ namespace Java.Net
         /// <returns><see cref="int"/></returns>
         public int GetHeaderFieldInt(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("getHeaderFieldInt", arg0, arg1);
+            return IExecuteWithSignature<int>("getHeaderFieldInt", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getReadTimeout()"/>
@@ -425,7 +425,7 @@ namespace Java.Net
         /// <returns><see cref="long"/></returns>
         public long GetHeaderFieldDate(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<long>("getHeaderFieldDate", arg0, arg1);
+            return IExecuteWithSignature<long>("getHeaderFieldDate", "(Ljava/lang/String;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getHeaderFieldLong(java.lang.String,long)"/>
@@ -435,7 +435,7 @@ namespace Java.Net
         /// <returns><see cref="long"/></returns>
         public long GetHeaderFieldLong(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<long>("getHeaderFieldLong", arg0, arg1);
+            return IExecuteWithSignature<long>("getHeaderFieldLong", "(Ljava/lang/String;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#getIfModifiedSince()"/>
@@ -460,7 +460,7 @@ namespace Java.Net
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void AddRequestProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("addRequestProperty", arg0, arg1);
+            IExecuteWithSignature("addRequestProperty", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setAllowUserInteraction(boolean)"/>
@@ -525,7 +525,7 @@ namespace Java.Net
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetRequestProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setRequestProperty", arg0, arg1);
+            IExecuteWithSignature("setRequestProperty", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/URLConnection.html#setUseCaches(boolean)"/>
@@ -535,13 +535,13 @@ namespace Java.Net
         {
             IExecuteWithSignature("setUseCaches", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Graphics.Drawable
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ShapeDrawable(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics.Drawable
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ShaderFactory declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Graphics.Drawable
             /// </summary>
             [global::System.Obsolete("ShaderFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ShaderFactory(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Graphics.Drawable
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -129,21 +129,21 @@ namespace Android.Graphics.Drawable
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html#getShaderFactory()"/>
@@ -202,7 +202,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg3"><see cref="int"/></param>
         public void SetPadding(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setPadding", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setPadding", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.html#setShaderFactory(android.graphics.drawable.ShapeDrawable.ShaderFactory)"/>
@@ -220,29 +220,29 @@ namespace Android.Graphics.Drawable
         {
             IExecuteWithSignature("setShape", "(Landroid/graphics/drawable/shapes/Shape;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ShaderFactory implementation
         public partial class ShaderFactory
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/ShapeDrawable.ShaderFactory.html#resize(int,int)"/>
@@ -252,22 +252,22 @@ namespace Android.Graphics.Drawable
             /// <returns><see cref="Android.Graphics.Shader"/></returns>
             public Android.Graphics.Shader Resize(int arg0, int arg1)
             {
-                return IExecute<Android.Graphics.Shader>("resize", arg0, arg1);
+                return IExecuteWithSignature<Android.Graphics.Shader>("resize", "(II)Landroid/graphics/Shader;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

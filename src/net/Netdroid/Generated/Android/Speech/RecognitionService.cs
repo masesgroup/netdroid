@@ -42,10 +42,10 @@ namespace Android.Speech
         /// </summary>
         [global::System.Obsolete("RecognitionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RecognitionService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Speech
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Speech
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Speech
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Speech
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SupportCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Speech
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -166,13 +166,13 @@ namespace Android.Speech
     public partial class RecognitionService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.html#SERVICE_INTERFACE"/>
@@ -186,13 +186,13 @@ namespace Android.Speech
         public static Java.Lang.String SERVICE_META_DATA { get { if (!_SERVICE_META_DATAReady) { _SERVICE_META_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_META_DATA"); _SERVICE_META_DATAReady = true; } return _SERVICE_META_DATAContent; } }
         private static Java.Lang.String _SERVICE_META_DATAContent = default;
         private static bool _SERVICE_META_DATAReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.html#getMaxConcurrentSessionsCount()"/>
@@ -210,7 +210,7 @@ namespace Android.Speech
         /// <param name="arg2"><see cref="Android.Speech.RecognitionService.SupportCallback"/></param>
         public void OnCheckRecognitionSupport(Android.Content.Intent arg0, Android.Content.AttributionSource arg1, Android.Speech.RecognitionService.SupportCallback arg2)
         {
-            IExecute("onCheckRecognitionSupport", arg0, arg1, arg2);
+            IExecuteWithSignature("onCheckRecognitionSupport", "(Landroid/content/Intent;Landroid/content/AttributionSource;Landroid/speech/RecognitionService$SupportCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.html#onCheckRecognitionSupport(android.content.Intent,android.speech.RecognitionService.SupportCallback)"/>
@@ -219,7 +219,7 @@ namespace Android.Speech
         /// <param name="arg1"><see cref="Android.Speech.RecognitionService.SupportCallback"/></param>
         public void OnCheckRecognitionSupport(Android.Content.Intent arg0, Android.Speech.RecognitionService.SupportCallback arg1)
         {
-            IExecute("onCheckRecognitionSupport", arg0, arg1);
+            IExecuteWithSignature("onCheckRecognitionSupport", "(Landroid/content/Intent;Landroid/speech/RecognitionService$SupportCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.html#onTriggerModelDownload(android.content.Intent,android.content.AttributionSource,android.speech.ModelDownloadListener)"/>
@@ -229,7 +229,7 @@ namespace Android.Speech
         /// <param name="arg2"><see cref="Android.Speech.ModelDownloadListener"/></param>
         public void OnTriggerModelDownload(Android.Content.Intent arg0, Android.Content.AttributionSource arg1, Android.Speech.ModelDownloadListener arg2)
         {
-            IExecute("onTriggerModelDownload", arg0, arg1, arg2);
+            IExecuteWithSignature("onTriggerModelDownload", "(Landroid/content/Intent;Landroid/content/AttributionSource;Landroid/speech/ModelDownloadListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.html#onTriggerModelDownload(android.content.Intent,android.content.AttributionSource)"/>
@@ -238,7 +238,7 @@ namespace Android.Speech
         /// <param name="arg1"><see cref="Android.Content.AttributionSource"/></param>
         public void OnTriggerModelDownload(Android.Content.Intent arg0, Android.Content.AttributionSource arg1)
         {
-            IExecute("onTriggerModelDownload", arg0, arg1);
+            IExecuteWithSignature("onTriggerModelDownload", "(Landroid/content/Intent;Landroid/content/AttributionSource;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.html#onTriggerModelDownload(android.content.Intent)"/>
@@ -248,29 +248,29 @@ namespace Android.Speech
         {
             IExecuteWithSignature("onTriggerModelDownload", "(Landroid/content/Intent;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.Callback.html#getCallingAttributionSource()"/>
@@ -383,13 +383,13 @@ namespace Android.Speech
             {
                 IExecuteWithSignature("segmentResults", "(Landroid/os/Bundle;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -398,21 +398,21 @@ namespace Android.Speech
         public partial class SupportCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.SupportCallback.html#onError(int)"/>
@@ -430,20 +430,20 @@ namespace Android.Speech
             {
                 IExecuteWithSignature("onSupportResult", "(Landroid/speech/RecognitionSupport;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

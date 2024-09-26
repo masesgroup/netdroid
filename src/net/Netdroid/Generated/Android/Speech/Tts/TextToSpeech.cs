@@ -40,10 +40,10 @@ namespace Android.Speech.Tts
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TextToSpeech(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Speech.Tts
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Engine declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Speech.Tts
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Engine(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Speech.Tts
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Speech.Tts
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public EngineInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Speech.Tts
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -166,7 +166,7 @@ namespace Android.Speech.Tts
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnInitListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.speech.tts.TextToSpeech_OnInitListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -175,13 +175,13 @@ namespace Android.Speech.Tts
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnInitListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnInitListener"/> or its generic type if there is one
@@ -192,14 +192,14 @@ namespace Android.Speech.Tts
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.speech.tts.TextToSpeech$OnInitListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -234,7 +234,7 @@ namespace Android.Speech.Tts
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnUtteranceCompletedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.speech.tts.TextToSpeech_OnUtteranceCompletedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -243,13 +243,13 @@ namespace Android.Speech.Tts
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnUtteranceCompletedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnUtteranceCompletedListener"/> or its generic type if there is one
@@ -260,14 +260,14 @@ namespace Android.Speech.Tts
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.speech.tts.TextToSpeech$OnUtteranceCompletedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -318,13 +318,13 @@ namespace Android.Speech.Tts
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#ERROR"/>
@@ -434,9 +434,9 @@ namespace Android.Speech.Tts
         public static Java.Lang.String ACTION_TTS_QUEUE_PROCESSING_COMPLETED { get { if (!_ACTION_TTS_QUEUE_PROCESSING_COMPLETEDReady) { _ACTION_TTS_QUEUE_PROCESSING_COMPLETEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_TTS_QUEUE_PROCESSING_COMPLETED"); _ACTION_TTS_QUEUE_PROCESSING_COMPLETEDReady = true; } return _ACTION_TTS_QUEUE_PROCESSING_COMPLETEDContent; } }
         private static Java.Lang.String _ACTION_TTS_QUEUE_PROCESSING_COMPLETEDContent = default;
         private static bool _ACTION_TTS_QUEUE_PROCESSING_COMPLETEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getMaxSpeechInputLength()"/>
@@ -446,9 +446,9 @@ namespace Android.Speech.Tts
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxSpeechInputLength", "()I");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getDefaultVoice()"/>
@@ -491,7 +491,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="int"/></returns>
         public int AddEarcon(Java.Lang.String arg0, Android.Net.Uri arg1)
         {
-            return IExecute<int>("addEarcon", arg0, arg1);
+            return IExecuteWithSignature<int>("addEarcon", "(Ljava/lang/String;Landroid/net/Uri;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#addEarcon(java.lang.String,java.io.File)"/>
@@ -501,7 +501,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="int"/></returns>
         public int AddEarcon(Java.Lang.String arg0, Java.Io.File arg1)
         {
-            return IExecute<int>("addEarcon", arg0, arg1);
+            return IExecuteWithSignature<int>("addEarcon", "(Ljava/lang/String;Ljava/io/File;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#addEarcon(java.lang.String,java.lang.String,int)"/>
@@ -512,7 +512,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="int"/></returns>
         public int AddEarcon(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<int>("addEarcon", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("addEarcon", "(Ljava/lang/String;Ljava/lang/String;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#addEarcon(java.lang.String,java.lang.String)"/>
@@ -523,7 +523,7 @@ namespace Android.Speech.Tts
         [global::System.Obsolete()]
         public int AddEarcon(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("addEarcon", arg0, arg1);
+            return IExecuteWithSignature<int>("addEarcon", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#addSpeech(java.lang.CharSequence,android.net.Uri)"/>
@@ -533,7 +533,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="int"/></returns>
         public int AddSpeech(Java.Lang.CharSequence arg0, Android.Net.Uri arg1)
         {
-            return IExecute<int>("addSpeech", arg0, arg1);
+            return IExecuteWithSignature<int>("addSpeech", "(Ljava/lang/CharSequence;Landroid/net/Uri;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#addSpeech(java.lang.CharSequence,java.io.File)"/>
@@ -543,7 +543,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="int"/></returns>
         public int AddSpeech(Java.Lang.CharSequence arg0, Java.Io.File arg1)
         {
-            return IExecute<int>("addSpeech", arg0, arg1);
+            return IExecuteWithSignature<int>("addSpeech", "(Ljava/lang/CharSequence;Ljava/io/File;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#addSpeech(java.lang.CharSequence,java.lang.String,int)"/>
@@ -554,7 +554,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="int"/></returns>
         public int AddSpeech(Java.Lang.CharSequence arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<int>("addSpeech", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("addSpeech", "(Ljava/lang/CharSequence;Ljava/lang/String;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#addSpeech(java.lang.String,java.lang.String,int)"/>
@@ -565,7 +565,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="int"/></returns>
         public int AddSpeech(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<int>("addSpeech", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("addSpeech", "(Ljava/lang/String;Ljava/lang/String;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#addSpeech(java.lang.String,java.lang.String)"/>
@@ -575,7 +575,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="int"/></returns>
         public int AddSpeech(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("addSpeech", arg0, arg1);
+            return IExecuteWithSignature<int>("addSpeech", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#isLanguageAvailable(java.util.Locale)"/>
@@ -596,7 +596,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="int"/></returns>
         public int PlayEarcon(Java.Lang.String arg0, int arg1, Android.Os.Bundle arg2, Java.Lang.String arg3)
         {
-            return IExecute<int>("playEarcon", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("playEarcon", "(Ljava/lang/String;ILandroid/os/Bundle;Ljava/lang/String;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#playEarcon(java.lang.String,int,java.util.HashMap)"/>
@@ -608,7 +608,7 @@ namespace Android.Speech.Tts
         [global::System.Obsolete()]
         public int PlayEarcon(Java.Lang.String arg0, int arg1, Java.Util.HashMap<Java.Lang.String, Java.Lang.String> arg2)
         {
-            return IExecute<int>("playEarcon", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("playEarcon", "(Ljava/lang/String;ILjava/util/HashMap;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#playSilence(long,int,java.util.HashMap)"/>
@@ -620,7 +620,7 @@ namespace Android.Speech.Tts
         [global::System.Obsolete()]
         public int PlaySilence(long arg0, int arg1, Java.Util.HashMap<Java.Lang.String, Java.Lang.String> arg2)
         {
-            return IExecute<int>("playSilence", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("playSilence", "(JILjava/util/HashMap;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#playSilentUtterance(long,int,java.lang.String)"/>
@@ -631,7 +631,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="int"/></returns>
         public int PlaySilentUtterance(long arg0, int arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("playSilentUtterance", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("playSilentUtterance", "(JILjava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#setAudioAttributes(android.media.AudioAttributes)"/>
@@ -717,7 +717,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="int"/></returns>
         public int Speak(Java.Lang.CharSequence arg0, int arg1, Android.Os.Bundle arg2, Java.Lang.String arg3)
         {
-            return IExecute<int>("speak", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("speak", "(Ljava/lang/CharSequence;ILandroid/os/Bundle;Ljava/lang/String;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#speak(java.lang.String,int,java.util.HashMap)"/>
@@ -729,7 +729,7 @@ namespace Android.Speech.Tts
         [global::System.Obsolete()]
         public int Speak(Java.Lang.String arg0, int arg1, Java.Util.HashMap<Java.Lang.String, Java.Lang.String> arg2)
         {
-            return IExecute<int>("speak", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("speak", "(Ljava/lang/String;ILjava/util/HashMap;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#stop()"/>
@@ -749,7 +749,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="int"/></returns>
         public int SynthesizeToFile(Java.Lang.CharSequence arg0, Android.Os.Bundle arg1, Android.Os.ParcelFileDescriptor arg2, Java.Lang.String arg3)
         {
-            return IExecute<int>("synthesizeToFile", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("synthesizeToFile", "(Ljava/lang/CharSequence;Landroid/os/Bundle;Landroid/os/ParcelFileDescriptor;Ljava/lang/String;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#synthesizeToFile(java.lang.CharSequence,android.os.Bundle,java.io.File,java.lang.String)"/>
@@ -761,7 +761,7 @@ namespace Android.Speech.Tts
         /// <returns><see cref="int"/></returns>
         public int SynthesizeToFile(Java.Lang.CharSequence arg0, Android.Os.Bundle arg1, Java.Io.File arg2, Java.Lang.String arg3)
         {
-            return IExecute<int>("synthesizeToFile", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("synthesizeToFile", "(Ljava/lang/CharSequence;Landroid/os/Bundle;Ljava/io/File;Ljava/lang/String;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#synthesizeToFile(java.lang.String,java.util.HashMap,java.lang.String)"/>
@@ -773,7 +773,7 @@ namespace Android.Speech.Tts
         [global::System.Obsolete()]
         public int SynthesizeToFile(Java.Lang.String arg0, Java.Util.HashMap<Java.Lang.String, Java.Lang.String> arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("synthesizeToFile", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("synthesizeToFile", "(Ljava/lang/String;Ljava/util/HashMap;Ljava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getDefaultEngine()"/>
@@ -842,9 +842,9 @@ namespace Android.Speech.Tts
         {
             IExecuteWithSignature("shutdown", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Engine implementation
         public partial class Engine
@@ -858,13 +858,13 @@ namespace Android.Speech.Tts
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_BAD_DATA"/>
@@ -1056,21 +1056,21 @@ namespace Android.Speech.Tts
             public static Java.Lang.String SERVICE_META_DATA { get { if (!_SERVICE_META_DATAReady) { _SERVICE_META_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_META_DATA"); _SERVICE_META_DATAReady = true; } return _SERVICE_META_DATAContent; } }
             private static Java.Lang.String _SERVICE_META_DATAContent = default;
             private static bool _SERVICE_META_DATAReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1079,13 +1079,13 @@ namespace Android.Speech.Tts
         public partial class EngineInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.EngineInfo.html#icon"/>
@@ -1099,21 +1099,21 @@ namespace Android.Speech.Tts
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.EngineInfo.html#name"/>
             /// </summary>
             public Java.Lang.String name { get { return IGetField<Java.Lang.String>("name"); } set { ISetField("name", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1122,21 +1122,21 @@ namespace Android.Speech.Tts
         public partial class OnInitListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnInitListener"/>
@@ -1146,13 +1146,13 @@ namespace Android.Speech.Tts
                 AddEventHandler("onInit", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnInitEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.OnInitListener.html#onInit(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnInit"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnInit { get; set; } = null;
-            
+
             bool hasOverrideOnInit = true;
             void OnInitEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1161,7 +1161,7 @@ namespace Android.Speech.Tts
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnInit;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.OnInitListener.html#onInit(int)"/>
             /// </summary>
@@ -1170,13 +1170,13 @@ namespace Android.Speech.Tts
             {
                 hasOverrideOnInit = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1185,21 +1185,21 @@ namespace Android.Speech.Tts
         public partial class OnInitListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.OnInitListener.html#onInit(int)"/>
@@ -1209,13 +1209,13 @@ namespace Android.Speech.Tts
             {
                 IExecuteWithSignature("onInit", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1224,21 +1224,21 @@ namespace Android.Speech.Tts
         public partial class OnUtteranceCompletedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnUtteranceCompletedListener"/>
@@ -1248,13 +1248,13 @@ namespace Android.Speech.Tts
                 AddEventHandler("onUtteranceCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnUtteranceCompletedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.OnUtteranceCompletedListener.html#onUtteranceCompleted(java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUtteranceCompleted"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.String> OnOnUtteranceCompleted { get; set; } = null;
-            
+
             bool hasOverrideOnUtteranceCompleted = true;
             void OnUtteranceCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1263,7 +1263,7 @@ namespace Android.Speech.Tts
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnUtteranceCompleted;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.OnUtteranceCompletedListener.html#onUtteranceCompleted(java.lang.String)"/>
             /// </summary>
@@ -1273,13 +1273,13 @@ namespace Android.Speech.Tts
             {
                 hasOverrideOnUtteranceCompleted = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1288,21 +1288,21 @@ namespace Android.Speech.Tts
         public partial class OnUtteranceCompletedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.OnUtteranceCompletedListener.html#onUtteranceCompleted(java.lang.String)"/>
@@ -1313,20 +1313,20 @@ namespace Android.Speech.Tts
             {
                 IExecuteWithSignature("onUtteranceCompleted", "(Ljava/lang/String;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

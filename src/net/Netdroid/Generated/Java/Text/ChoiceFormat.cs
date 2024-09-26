@@ -40,10 +40,10 @@ namespace Java.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ChoiceFormat(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -91,17 +91,17 @@ namespace Java.Text
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html#nextDouble(double,boolean)"/>
@@ -111,7 +111,7 @@ namespace Java.Text
         /// <returns><see cref="double"/></returns>
         public static double NextDouble(double arg0, bool arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "nextDouble", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "nextDouble", "(DZ)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html#nextDouble(double)"/>
@@ -131,9 +131,9 @@ namespace Java.Text
         {
             return SExecuteWithSignature<double>(LocalBridgeClazz, "previousDouble", "(D)D", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html#getLimits()"/>
@@ -174,15 +174,15 @@ namespace Java.Text
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetChoices(double[] arg0, Java.Lang.String[] arg1)
         {
-            IExecute("setChoices", arg0, arg1);
+            IExecuteWithSignature("setChoices", "([D[Ljava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Java.Nio.Channels
         /// </summary>
         [global::System.Obsolete("FileLock class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileLock(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Nio.Channels
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Java.Nio.Channels
     public partial class FileLock
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileLock.html#isValid()"/>
@@ -124,7 +124,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool Overlaps(long arg0, long arg1)
         {
-            return IExecute<bool>("overlaps", arg0, arg1);
+            return IExecuteWithSignature<bool>("overlaps", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileLock.html#channel()"/>
@@ -166,13 +166,13 @@ namespace Java.Nio.Channels
         {
             return IExecuteWithSignature<Java.Nio.Channels.Channel>("acquiredBy", "()Ljava/nio/channels/Channel;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

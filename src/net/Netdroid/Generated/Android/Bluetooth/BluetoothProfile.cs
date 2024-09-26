@@ -42,10 +42,10 @@ namespace Android.Bluetooth
         /// </summary>
         [global::System.Obsolete("BluetoothProfile class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BluetoothProfile(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Bluetooth
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ServiceListener declaration
         /// <summary>
@@ -78,7 +78,7 @@ namespace Android.Bluetooth
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public ServiceListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.bluetooth.BluetoothProfile_ServiceListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -87,13 +87,13 @@ namespace Android.Bluetooth
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region ServiceListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="ServiceListener"/> or its generic type if there is one
@@ -104,14 +104,14 @@ namespace Android.Bluetooth
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.bluetooth.BluetoothProfile$ServiceListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -146,13 +146,13 @@ namespace Android.Bluetooth
     public partial interface IBluetoothProfile
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -161,13 +161,13 @@ namespace Android.Bluetooth
     public partial class BluetoothProfile : Android.Bluetooth.IBluetoothProfile
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.html#A2DP"/>
@@ -272,13 +272,13 @@ namespace Android.Bluetooth
         public static Java.Lang.String EXTRA_STATE { get { if (!_EXTRA_STATEReady) { _EXTRA_STATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_STATE"); _EXTRA_STATEReady = true; } return _EXTRA_STATEContent; } }
         private static Java.Lang.String _EXTRA_STATEContent = default;
         private static bool _EXTRA_STATEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.html#getConnectionState(android.bluetooth.BluetoothDevice)"/>
@@ -306,29 +306,29 @@ namespace Android.Bluetooth
         {
             return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getDevicesMatchingConnectionStates", "([I)Ljava/util/List;", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ServiceListener implementation
         public partial class ServiceListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="ServiceListener"/>
@@ -339,13 +339,13 @@ namespace Android.Bluetooth
                 AddEventHandler("onServiceDisconnected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnServiceDisconnectedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.ServiceListener.html#onServiceConnected(int,android.bluetooth.BluetoothProfile)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnServiceConnected"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int, Android.Bluetooth.BluetoothProfile> OnOnServiceConnected { get; set; } = null;
-            
+
             bool hasOverrideOnServiceConnected = true;
             void OnServiceConnectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -354,7 +354,7 @@ namespace Android.Bluetooth
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<Android.Bluetooth.BluetoothProfile>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnServiceConnected;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.ServiceListener.html#onServiceConnected(int,android.bluetooth.BluetoothProfile)"/>
             /// </summary>
@@ -364,13 +364,13 @@ namespace Android.Bluetooth
             {
                 hasOverrideOnServiceConnected = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.ServiceListener.html#onServiceDisconnected(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnServiceDisconnected"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnServiceDisconnected { get; set; } = null;
-            
+
             bool hasOverrideOnServiceDisconnected = true;
             void OnServiceDisconnectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -379,7 +379,7 @@ namespace Android.Bluetooth
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnServiceDisconnected;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.ServiceListener.html#onServiceDisconnected(int)"/>
             /// </summary>
@@ -388,13 +388,13 @@ namespace Android.Bluetooth
             {
                 hasOverrideOnServiceDisconnected = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -403,21 +403,21 @@ namespace Android.Bluetooth
         public partial class ServiceListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.ServiceListener.html#onServiceConnected(int,android.bluetooth.BluetoothProfile)"/>
@@ -426,7 +426,7 @@ namespace Android.Bluetooth
             /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothProfile"/></param>
             public override void OnServiceConnected(int arg0, Android.Bluetooth.BluetoothProfile arg1)
             {
-                IExecute("onServiceConnected", arg0, arg1);
+                IExecuteWithSignature("onServiceConnected", "(ILandroid/bluetooth/BluetoothProfile;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.ServiceListener.html#onServiceDisconnected(int)"/>
@@ -436,20 +436,20 @@ namespace Android.Bluetooth
             {
                 IExecuteWithSignature("onServiceDisconnected", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

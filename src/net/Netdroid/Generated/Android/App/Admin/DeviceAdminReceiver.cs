@@ -40,10 +40,10 @@ namespace Android.App.Admin
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DeviceAdminReceiver(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App.Admin
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.App.Admin
     public partial class DeviceAdminReceiver
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#BUGREPORT_FAILURE_FAILED_COMPLETING"/>
@@ -196,13 +196,13 @@ namespace Android.App.Admin
         public static Java.Lang.String EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLE { get { if (!_EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLEReady) { _EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLE"); _EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLEReady = true; } return _EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLEContent; } }
         private static Java.Lang.String _EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLEContent = default;
         private static bool _EXTRA_TRANSFER_OWNERSHIP_ADMIN_EXTRAS_BUNDLEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#getManager(android.content.Context)"/>
@@ -230,7 +230,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence OnDisableRequested(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("onDisableRequested", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("onDisableRequested", "(Landroid/content/Context;Landroid/content/Intent;)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onChoosePrivateKeyAlias(android.content.Context,android.content.Intent,int,android.net.Uri,java.lang.String)"/>
@@ -243,7 +243,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String OnChoosePrivateKeyAlias(Android.Content.Context arg0, Android.Content.Intent arg1, int arg2, Android.Net.Uri arg3, Java.Lang.String arg4)
         {
-            return IExecute<Java.Lang.String>("onChoosePrivateKeyAlias", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Lang.String>("onChoosePrivateKeyAlias", "(Landroid/content/Context;Landroid/content/Intent;ILandroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onBugreportFailed(android.content.Context,android.content.Intent,int)"/>
@@ -253,7 +253,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="int"/></param>
         public void OnBugreportFailed(Android.Content.Context arg0, Android.Content.Intent arg1, int arg2)
         {
-            IExecute("onBugreportFailed", arg0, arg1, arg2);
+            IExecuteWithSignature("onBugreportFailed", "(Landroid/content/Context;Landroid/content/Intent;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onBugreportShared(android.content.Context,android.content.Intent,java.lang.String)"/>
@@ -263,7 +263,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void OnBugreportShared(Android.Content.Context arg0, Android.Content.Intent arg1, Java.Lang.String arg2)
         {
-            IExecute("onBugreportShared", arg0, arg1, arg2);
+            IExecuteWithSignature("onBugreportShared", "(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onBugreportSharingDeclined(android.content.Context,android.content.Intent)"/>
@@ -272,7 +272,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         public void OnBugreportSharingDeclined(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onBugreportSharingDeclined", arg0, arg1);
+            IExecuteWithSignature("onBugreportSharingDeclined", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onComplianceAcknowledgementRequired(android.content.Context,android.content.Intent)"/>
@@ -281,7 +281,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         public void OnComplianceAcknowledgementRequired(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onComplianceAcknowledgementRequired", arg0, arg1);
+            IExecuteWithSignature("onComplianceAcknowledgementRequired", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onDisabled(android.content.Context,android.content.Intent)"/>
@@ -290,7 +290,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         public void OnDisabled(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onDisabled", arg0, arg1);
+            IExecuteWithSignature("onDisabled", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onEnabled(android.content.Context,android.content.Intent)"/>
@@ -299,7 +299,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         public void OnEnabled(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onEnabled", arg0, arg1);
+            IExecuteWithSignature("onEnabled", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onLockTaskModeEntering(android.content.Context,android.content.Intent,java.lang.String)"/>
@@ -309,7 +309,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void OnLockTaskModeEntering(Android.Content.Context arg0, Android.Content.Intent arg1, Java.Lang.String arg2)
         {
-            IExecute("onLockTaskModeEntering", arg0, arg1, arg2);
+            IExecuteWithSignature("onLockTaskModeEntering", "(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onLockTaskModeExiting(android.content.Context,android.content.Intent)"/>
@@ -318,7 +318,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         public void OnLockTaskModeExiting(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onLockTaskModeExiting", arg0, arg1);
+            IExecuteWithSignature("onLockTaskModeExiting", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onNetworkLogsAvailable(android.content.Context,android.content.Intent,long,int)"/>
@@ -329,7 +329,7 @@ namespace Android.App.Admin
         /// <param name="arg3"><see cref="int"/></param>
         public void OnNetworkLogsAvailable(Android.Content.Context arg0, Android.Content.Intent arg1, long arg2, int arg3)
         {
-            IExecute("onNetworkLogsAvailable", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onNetworkLogsAvailable", "(Landroid/content/Context;Landroid/content/Intent;JI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onOperationSafetyStateChanged(android.content.Context,int,boolean)"/>
@@ -339,7 +339,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="bool"/></param>
         public void OnOperationSafetyStateChanged(Android.Content.Context arg0, int arg1, bool arg2)
         {
-            IExecute("onOperationSafetyStateChanged", arg0, arg1, arg2);
+            IExecuteWithSignature("onOperationSafetyStateChanged", "(Landroid/content/Context;IZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordChanged(android.content.Context,android.content.Intent,android.os.UserHandle)"/>
@@ -349,7 +349,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Android.Os.UserHandle"/></param>
         public void OnPasswordChanged(Android.Content.Context arg0, Android.Content.Intent arg1, Android.Os.UserHandle arg2)
         {
-            IExecute("onPasswordChanged", arg0, arg1, arg2);
+            IExecuteWithSignature("onPasswordChanged", "(Landroid/content/Context;Landroid/content/Intent;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordChanged(android.content.Context,android.content.Intent)"/>
@@ -359,7 +359,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void OnPasswordChanged(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onPasswordChanged", arg0, arg1);
+            IExecuteWithSignature("onPasswordChanged", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordExpiring(android.content.Context,android.content.Intent,android.os.UserHandle)"/>
@@ -369,7 +369,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Android.Os.UserHandle"/></param>
         public void OnPasswordExpiring(Android.Content.Context arg0, Android.Content.Intent arg1, Android.Os.UserHandle arg2)
         {
-            IExecute("onPasswordExpiring", arg0, arg1, arg2);
+            IExecuteWithSignature("onPasswordExpiring", "(Landroid/content/Context;Landroid/content/Intent;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordExpiring(android.content.Context,android.content.Intent)"/>
@@ -379,7 +379,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void OnPasswordExpiring(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onPasswordExpiring", arg0, arg1);
+            IExecuteWithSignature("onPasswordExpiring", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordFailed(android.content.Context,android.content.Intent,android.os.UserHandle)"/>
@@ -389,7 +389,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Android.Os.UserHandle"/></param>
         public void OnPasswordFailed(Android.Content.Context arg0, Android.Content.Intent arg1, Android.Os.UserHandle arg2)
         {
-            IExecute("onPasswordFailed", arg0, arg1, arg2);
+            IExecuteWithSignature("onPasswordFailed", "(Landroid/content/Context;Landroid/content/Intent;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordFailed(android.content.Context,android.content.Intent)"/>
@@ -399,7 +399,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void OnPasswordFailed(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onPasswordFailed", arg0, arg1);
+            IExecuteWithSignature("onPasswordFailed", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordSucceeded(android.content.Context,android.content.Intent,android.os.UserHandle)"/>
@@ -409,7 +409,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Android.Os.UserHandle"/></param>
         public void OnPasswordSucceeded(Android.Content.Context arg0, Android.Content.Intent arg1, Android.Os.UserHandle arg2)
         {
-            IExecute("onPasswordSucceeded", arg0, arg1, arg2);
+            IExecuteWithSignature("onPasswordSucceeded", "(Landroid/content/Context;Landroid/content/Intent;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordSucceeded(android.content.Context,android.content.Intent)"/>
@@ -419,7 +419,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void OnPasswordSucceeded(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onPasswordSucceeded", arg0, arg1);
+            IExecuteWithSignature("onPasswordSucceeded", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onProfileProvisioningComplete(android.content.Context,android.content.Intent)"/>
@@ -428,7 +428,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         public void OnProfileProvisioningComplete(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onProfileProvisioningComplete", arg0, arg1);
+            IExecuteWithSignature("onProfileProvisioningComplete", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onReadyForUserInitialization(android.content.Context,android.content.Intent)"/>
@@ -438,7 +438,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void OnReadyForUserInitialization(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onReadyForUserInitialization", arg0, arg1);
+            IExecuteWithSignature("onReadyForUserInitialization", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onSecurityLogsAvailable(android.content.Context,android.content.Intent)"/>
@@ -447,7 +447,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         public void OnSecurityLogsAvailable(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
-            IExecute("onSecurityLogsAvailable", arg0, arg1);
+            IExecuteWithSignature("onSecurityLogsAvailable", "(Landroid/content/Context;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onSystemUpdatePending(android.content.Context,android.content.Intent,long)"/>
@@ -457,7 +457,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="long"/></param>
         public void OnSystemUpdatePending(Android.Content.Context arg0, Android.Content.Intent arg1, long arg2)
         {
-            IExecute("onSystemUpdatePending", arg0, arg1, arg2);
+            IExecuteWithSignature("onSystemUpdatePending", "(Landroid/content/Context;Landroid/content/Intent;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onTransferAffiliatedProfileOwnershipComplete(android.content.Context,android.os.UserHandle)"/>
@@ -466,7 +466,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
         public void OnTransferAffiliatedProfileOwnershipComplete(Android.Content.Context arg0, Android.Os.UserHandle arg1)
         {
-            IExecute("onTransferAffiliatedProfileOwnershipComplete", arg0, arg1);
+            IExecuteWithSignature("onTransferAffiliatedProfileOwnershipComplete", "(Landroid/content/Context;Landroid/os/UserHandle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onTransferOwnershipComplete(android.content.Context,android.os.PersistableBundle)"/>
@@ -475,7 +475,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.Os.PersistableBundle"/></param>
         public void OnTransferOwnershipComplete(Android.Content.Context arg0, Android.Os.PersistableBundle arg1)
         {
-            IExecute("onTransferOwnershipComplete", arg0, arg1);
+            IExecuteWithSignature("onTransferOwnershipComplete", "(Landroid/content/Context;Landroid/os/PersistableBundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserAdded(android.content.Context,android.content.Intent,android.os.UserHandle)"/>
@@ -485,7 +485,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Android.Os.UserHandle"/></param>
         public void OnUserAdded(Android.Content.Context arg0, Android.Content.Intent arg1, Android.Os.UserHandle arg2)
         {
-            IExecute("onUserAdded", arg0, arg1, arg2);
+            IExecuteWithSignature("onUserAdded", "(Landroid/content/Context;Landroid/content/Intent;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserRemoved(android.content.Context,android.content.Intent,android.os.UserHandle)"/>
@@ -495,7 +495,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Android.Os.UserHandle"/></param>
         public void OnUserRemoved(Android.Content.Context arg0, Android.Content.Intent arg1, Android.Os.UserHandle arg2)
         {
-            IExecute("onUserRemoved", arg0, arg1, arg2);
+            IExecuteWithSignature("onUserRemoved", "(Landroid/content/Context;Landroid/content/Intent;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserStarted(android.content.Context,android.content.Intent,android.os.UserHandle)"/>
@@ -505,7 +505,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Android.Os.UserHandle"/></param>
         public void OnUserStarted(Android.Content.Context arg0, Android.Content.Intent arg1, Android.Os.UserHandle arg2)
         {
-            IExecute("onUserStarted", arg0, arg1, arg2);
+            IExecuteWithSignature("onUserStarted", "(Landroid/content/Context;Landroid/content/Intent;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserStopped(android.content.Context,android.content.Intent,android.os.UserHandle)"/>
@@ -515,7 +515,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Android.Os.UserHandle"/></param>
         public void OnUserStopped(Android.Content.Context arg0, Android.Content.Intent arg1, Android.Os.UserHandle arg2)
         {
-            IExecute("onUserStopped", arg0, arg1, arg2);
+            IExecuteWithSignature("onUserStopped", "(Landroid/content/Context;Landroid/content/Intent;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onUserSwitched(android.content.Context,android.content.Intent,android.os.UserHandle)"/>
@@ -525,15 +525,15 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Android.Os.UserHandle"/></param>
         public void OnUserSwitched(Android.Content.Context arg0, Android.Content.Intent arg1, Android.Os.UserHandle arg2)
         {
-            IExecute("onUserSwitched", arg0, arg1, arg2);
+            IExecuteWithSignature("onUserSwitched", "(Landroid/content/Context;Landroid/content/Intent;Landroid/os/UserHandle;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

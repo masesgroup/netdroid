@@ -40,10 +40,10 @@ namespace Android.Media.Tv
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TvContract(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Tv
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region BaseTvColumns declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Media.Tv
             /// </summary>
             [global::System.Obsolete("BaseTvColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public BaseTvColumns(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Media.Tv
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Channels(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,7 +152,7 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Logo declaration
             /// <summary>
@@ -169,10 +169,10 @@ namespace Android.Media.Tv
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Logo(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -193,9 +193,9 @@ namespace Android.Media.Tv
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -218,10 +218,10 @@ namespace Android.Media.Tv
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PreviewPrograms(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -242,9 +242,9 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -263,10 +263,10 @@ namespace Android.Media.Tv
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Programs(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -287,7 +287,7 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Genres declaration
             /// <summary>
@@ -304,10 +304,10 @@ namespace Android.Media.Tv
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Genres(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -328,9 +328,9 @@ namespace Android.Media.Tv
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -353,10 +353,10 @@ namespace Android.Media.Tv
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RecordedPrograms(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -377,9 +377,9 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -398,10 +398,10 @@ namespace Android.Media.Tv
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public WatchNextPrograms(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -422,9 +422,9 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -436,13 +436,13 @@ namespace Android.Media.Tv
     public partial class TvContract
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.html#ACTION_INITIALIZE_PROGRAMS"/>
@@ -498,9 +498,9 @@ namespace Android.Media.Tv
         public static Java.Lang.String EXTRA_WATCH_NEXT_PROGRAM_ID { get { if (!_EXTRA_WATCH_NEXT_PROGRAM_IDReady) { _EXTRA_WATCH_NEXT_PROGRAM_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_WATCH_NEXT_PROGRAM_ID"); _EXTRA_WATCH_NEXT_PROGRAM_IDReady = true; } return _EXTRA_WATCH_NEXT_PROGRAM_IDContent; } }
         private static Java.Lang.String _EXTRA_WATCH_NEXT_PROGRAM_IDContent = default;
         private static bool _EXTRA_WATCH_NEXT_PROGRAM_IDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.html#buildChannelLogoUri(android.net.Uri)"/>
@@ -583,7 +583,7 @@ namespace Android.Media.Tv
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri BuildProgramsUriForChannel(Android.Net.Uri arg0, long arg1, long arg2)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "buildProgramsUriForChannel", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "buildProgramsUriForChannel", "(Landroid/net/Uri;JJ)Landroid/net/Uri;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.html#buildProgramsUriForChannel(android.net.Uri)"/>
@@ -603,7 +603,7 @@ namespace Android.Media.Tv
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri BuildProgramsUriForChannel(long arg0, long arg1, long arg2)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "buildProgramsUriForChannel", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "buildProgramsUriForChannel", "(JJJ)Landroid/net/Uri;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.html#buildProgramsUriForChannel(long)"/>
@@ -702,27 +702,27 @@ namespace Android.Media.Tv
         /// <param name="arg1"><see cref="long"/></param>
         public static void RequestChannelBrowsable(Android.Content.Context arg0, long arg1)
         {
-            SExecute(LocalBridgeClazz, "requestChannelBrowsable", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "requestChannelBrowsable", "(Landroid/content/Context;J)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region BaseTvColumns implementation
         public partial class BaseTvColumns
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.BaseTvColumns.html#COLUMN_PACKAGE_NAME"/>
@@ -730,21 +730,21 @@ namespace Android.Media.Tv
             public static Java.Lang.String COLUMN_PACKAGE_NAME { get { if (!_COLUMN_PACKAGE_NAMEReady) { _COLUMN_PACKAGE_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_PACKAGE_NAME"); _COLUMN_PACKAGE_NAMEReady = true; } return _COLUMN_PACKAGE_NAMEContent; } }
             private static Java.Lang.String _COLUMN_PACKAGE_NAMEContent = default;
             private static bool _COLUMN_PACKAGE_NAMEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -753,13 +753,13 @@ namespace Android.Media.Tv
         public partial class Channels
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Channels.html#CONTENT_URI"/>
@@ -1253,9 +1253,9 @@ namespace Android.Media.Tv
             public static Java.Lang.String VIDEO_RESOLUTION_UHD { get { if (!_VIDEO_RESOLUTION_UHDReady) { _VIDEO_RESOLUTION_UHDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VIDEO_RESOLUTION_UHD"); _VIDEO_RESOLUTION_UHDReady = true; } return _VIDEO_RESOLUTION_UHDContent; } }
             private static Java.Lang.String _VIDEO_RESOLUTION_UHDContent = default;
             private static bool _VIDEO_RESOLUTION_UHDReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Channels.html#getVideoResolution(java.lang.String)"/>
@@ -1266,25 +1266,25 @@ namespace Android.Media.Tv
             {
                 return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getVideoResolution", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Logo implementation
             public partial class Logo
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Channels.Logo.html#CONTENT_DIRECTORY"/>
@@ -1292,28 +1292,28 @@ namespace Android.Media.Tv
                 public static Java.Lang.String CONTENT_DIRECTORY { get { if (!_CONTENT_DIRECTORYReady) { _CONTENT_DIRECTORYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONTENT_DIRECTORY"); _CONTENT_DIRECTORYReady = true; } return _CONTENT_DIRECTORYContent; } }
                 private static Java.Lang.String _CONTENT_DIRECTORYContent = default;
                 private static bool _CONTENT_DIRECTORYReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1322,13 +1322,13 @@ namespace Android.Media.Tv
         public partial class PreviewPrograms
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#CONTENT_URI"/>
@@ -1828,21 +1828,21 @@ namespace Android.Media.Tv
             public static Java.Lang.String CONTENT_TYPE { get { if (!_CONTENT_TYPEReady) { _CONTENT_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONTENT_TYPE"); _CONTENT_TYPEReady = true; } return _CONTENT_TYPEContent; } }
             private static Java.Lang.String _CONTENT_TYPEContent = default;
             private static bool _CONTENT_TYPEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1851,13 +1851,13 @@ namespace Android.Media.Tv
         public partial class Programs
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Programs.html#CONTENT_URI"/>
@@ -2119,29 +2119,29 @@ namespace Android.Media.Tv
             public static Java.Lang.String CONTENT_TYPE { get { if (!_CONTENT_TYPEReady) { _CONTENT_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONTENT_TYPE"); _CONTENT_TYPEReady = true; } return _CONTENT_TYPEContent; } }
             private static Java.Lang.String _CONTENT_TYPEContent = default;
             private static bool _CONTENT_TYPEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Genres implementation
             public partial class Genres
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Programs.Genres.html#ANIMAL_WILDLIFE"/>
@@ -2245,9 +2245,9 @@ namespace Android.Media.Tv
                 public static Java.Lang.String TRAVEL { get { if (!_TRAVELReady) { _TRAVELContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TRAVEL"); _TRAVELReady = true; } return _TRAVELContent; } }
                 private static Java.Lang.String _TRAVELContent = default;
                 private static bool _TRAVELReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Programs.Genres.html#isCanonical(java.lang.String)"/>
@@ -2276,24 +2276,24 @@ namespace Android.Media.Tv
                 {
                     return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "decode", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2302,13 +2302,13 @@ namespace Android.Media.Tv
         public partial class RecordedPrograms
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.RecordedPrograms.html#CONTENT_URI"/>
@@ -2562,21 +2562,21 @@ namespace Android.Media.Tv
             public static Java.Lang.String CONTENT_TYPE { get { if (!_CONTENT_TYPEReady) { _CONTENT_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONTENT_TYPE"); _CONTENT_TYPEReady = true; } return _CONTENT_TYPEContent; } }
             private static Java.Lang.String _CONTENT_TYPEContent = default;
             private static bool _CONTENT_TYPEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2585,13 +2585,13 @@ namespace Android.Media.Tv
         public partial class WatchNextPrograms
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.WatchNextPrograms.html#CONTENT_URI"/>
@@ -3115,28 +3115,28 @@ namespace Android.Media.Tv
             public static Java.Lang.String CONTENT_TYPE { get { if (!_CONTENT_TYPEReady) { _CONTENT_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONTENT_TYPE"); _CONTENT_TYPEReady = true; } return _CONTENT_TYPEContent; } }
             private static Java.Lang.String _CONTENT_TYPEContent = default;
             private static bool _CONTENT_TYPEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

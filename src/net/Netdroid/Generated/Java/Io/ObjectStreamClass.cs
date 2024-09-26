@@ -40,10 +40,10 @@ namespace Java.Io
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ObjectStreamClass(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Io
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Io
     public partial class ObjectStreamClass
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/ObjectStreamClass.html#NO_FIELDS"/>
@@ -88,9 +88,9 @@ namespace Java.Io
         public static Java.Io.ObjectStreamField[] NO_FIELDS { get { if (!_NO_FIELDSReady) { _NO_FIELDSContent = SGetFieldArray<Java.Io.ObjectStreamField>(LocalBridgeClazz, "NO_FIELDS"); _NO_FIELDSReady = true; } return _NO_FIELDSContent; } }
         private static Java.Io.ObjectStreamField[] _NO_FIELDSContent = default;
         private static bool _NO_FIELDSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/ObjectStreamClass.html#lookup(java.lang.Class)"/>
@@ -110,9 +110,9 @@ namespace Java.Io
         {
             return SExecuteWithSignature<Java.Io.ObjectStreamClass>(LocalBridgeClazz, "lookupAny", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/ObjectStreamClass.html#getField(java.lang.String)"/>
@@ -155,13 +155,13 @@ namespace Java.Io
         {
             return IExecuteWithSignature<long>("getSerialVersionUID", "()J");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Location
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LocationManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Location
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Location
     public partial class LocationManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#ACTION_GNSS_CAPABILITIES_CHANGED"/>
@@ -185,13 +185,13 @@ namespace Android.Location
         public static Java.Lang.String PROVIDERS_CHANGED_ACTION { get { if (!_PROVIDERS_CHANGED_ACTIONReady) { _PROVIDERS_CHANGED_ACTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROVIDERS_CHANGED_ACTION"); _PROVIDERS_CHANGED_ACTIONReady = true; } return _PROVIDERS_CHANGED_ACTIONContent; } }
         private static Java.Lang.String _PROVIDERS_CHANGED_ACTIONContent = default;
         private static bool _PROVIDERS_CHANGED_ACTIONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssCapabilities()"/>
@@ -267,7 +267,7 @@ namespace Android.Location
         /// <returns><see cref="bool"/></returns>
         public bool AddNmeaListener(Android.Location.OnNmeaMessageListener arg0, Android.Os.Handler arg1)
         {
-            return IExecute<bool>("addNmeaListener", arg0, arg1);
+            return IExecuteWithSignature<bool>("addNmeaListener", "(Landroid/location/OnNmeaMessageListener;Landroid/os/Handler;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#addNmeaListener(android.location.OnNmeaMessageListener)"/>
@@ -287,7 +287,7 @@ namespace Android.Location
         /// <returns><see cref="bool"/></returns>
         public bool AddNmeaListener(Java.Util.Concurrent.Executor arg0, Android.Location.OnNmeaMessageListener arg1)
         {
-            return IExecute<bool>("addNmeaListener", arg0, arg1);
+            return IExecuteWithSignature<bool>("addNmeaListener", "(Ljava/util/concurrent/Executor;Landroid/location/OnNmeaMessageListener;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#hasProvider(java.lang.String)"/>
@@ -323,7 +323,7 @@ namespace Android.Location
         /// <returns><see cref="bool"/></returns>
         public bool RegisterAntennaInfoListener(Java.Util.Concurrent.Executor arg0, Android.Location.GnssAntennaInfo.Listener arg1)
         {
-            return IExecute<bool>("registerAntennaInfoListener", arg0, arg1);
+            return IExecuteWithSignature<bool>("registerAntennaInfoListener", "(Ljava/util/concurrent/Executor;Landroid/location/GnssAntennaInfo$Listener;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssMeasurementsCallback(android.location.GnssMeasurementRequest,java.util.concurrent.Executor,android.location.GnssMeasurementsEvent.Callback)"/>
@@ -334,7 +334,7 @@ namespace Android.Location
         /// <returns><see cref="bool"/></returns>
         public bool RegisterGnssMeasurementsCallback(Android.Location.GnssMeasurementRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Location.GnssMeasurementsEvent.Callback arg2)
         {
-            return IExecute<bool>("registerGnssMeasurementsCallback", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("registerGnssMeasurementsCallback", "(Landroid/location/GnssMeasurementRequest;Ljava/util/concurrent/Executor;Landroid/location/GnssMeasurementsEvent$Callback;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssMeasurementsCallback(android.location.GnssMeasurementsEvent.Callback,android.os.Handler)"/>
@@ -344,7 +344,7 @@ namespace Android.Location
         /// <returns><see cref="bool"/></returns>
         public bool RegisterGnssMeasurementsCallback(Android.Location.GnssMeasurementsEvent.Callback arg0, Android.Os.Handler arg1)
         {
-            return IExecute<bool>("registerGnssMeasurementsCallback", arg0, arg1);
+            return IExecuteWithSignature<bool>("registerGnssMeasurementsCallback", "(Landroid/location/GnssMeasurementsEvent$Callback;Landroid/os/Handler;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssMeasurementsCallback(android.location.GnssMeasurementsEvent.Callback)"/>
@@ -364,7 +364,7 @@ namespace Android.Location
         /// <returns><see cref="bool"/></returns>
         public bool RegisterGnssMeasurementsCallback(Java.Util.Concurrent.Executor arg0, Android.Location.GnssMeasurementsEvent.Callback arg1)
         {
-            return IExecute<bool>("registerGnssMeasurementsCallback", arg0, arg1);
+            return IExecuteWithSignature<bool>("registerGnssMeasurementsCallback", "(Ljava/util/concurrent/Executor;Landroid/location/GnssMeasurementsEvent$Callback;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssNavigationMessageCallback(android.location.GnssNavigationMessage.Callback,android.os.Handler)"/>
@@ -374,7 +374,7 @@ namespace Android.Location
         /// <returns><see cref="bool"/></returns>
         public bool RegisterGnssNavigationMessageCallback(Android.Location.GnssNavigationMessage.Callback arg0, Android.Os.Handler arg1)
         {
-            return IExecute<bool>("registerGnssNavigationMessageCallback", arg0, arg1);
+            return IExecuteWithSignature<bool>("registerGnssNavigationMessageCallback", "(Landroid/location/GnssNavigationMessage$Callback;Landroid/os/Handler;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssNavigationMessageCallback(android.location.GnssNavigationMessage.Callback)"/>
@@ -394,7 +394,7 @@ namespace Android.Location
         /// <returns><see cref="bool"/></returns>
         public bool RegisterGnssNavigationMessageCallback(Java.Util.Concurrent.Executor arg0, Android.Location.GnssNavigationMessage.Callback arg1)
         {
-            return IExecute<bool>("registerGnssNavigationMessageCallback", arg0, arg1);
+            return IExecuteWithSignature<bool>("registerGnssNavigationMessageCallback", "(Ljava/util/concurrent/Executor;Landroid/location/GnssNavigationMessage$Callback;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssStatusCallback(android.location.GnssStatus.Callback,android.os.Handler)"/>
@@ -404,7 +404,7 @@ namespace Android.Location
         /// <returns><see cref="bool"/></returns>
         public bool RegisterGnssStatusCallback(Android.Location.GnssStatus.Callback arg0, Android.Os.Handler arg1)
         {
-            return IExecute<bool>("registerGnssStatusCallback", arg0, arg1);
+            return IExecuteWithSignature<bool>("registerGnssStatusCallback", "(Landroid/location/GnssStatus$Callback;Landroid/os/Handler;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssStatusCallback(android.location.GnssStatus.Callback)"/>
@@ -424,7 +424,7 @@ namespace Android.Location
         /// <returns><see cref="bool"/></returns>
         public bool RegisterGnssStatusCallback(Java.Util.Concurrent.Executor arg0, Android.Location.GnssStatus.Callback arg1)
         {
-            return IExecute<bool>("registerGnssStatusCallback", arg0, arg1);
+            return IExecuteWithSignature<bool>("registerGnssStatusCallback", "(Ljava/util/concurrent/Executor;Landroid/location/GnssStatus$Callback;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#sendExtraCommand(java.lang.String,java.lang.String,android.os.Bundle)"/>
@@ -435,7 +435,7 @@ namespace Android.Location
         /// <returns><see cref="bool"/></returns>
         public bool SendExtraCommand(Java.Lang.String arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<bool>("sendExtraCommand", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("sendExtraCommand", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssYearOfHardware()"/>
@@ -454,7 +454,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public Java.Lang.String GetBestProvider(Android.Location.Criteria arg0, bool arg1)
         {
-            return IExecute<Java.Lang.String>("getBestProvider", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getBestProvider", "(Landroid/location/Criteria;Z)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssHardwareModelName()"/>
@@ -489,7 +489,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public Java.Util.List<Java.Lang.String> GetProviders(Android.Location.Criteria arg0, bool arg1)
         {
-            return IExecute<Java.Util.List<Java.Lang.String>>("getProviders", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getProviders", "(Landroid/location/Criteria;Z)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getProviders(boolean)"/>
@@ -510,7 +510,7 @@ namespace Android.Location
         /// <param name="arg4"><see cref="Android.App.PendingIntent"/></param>
         public void AddProximityAlert(double arg0, double arg1, float arg2, long arg3, Android.App.PendingIntent arg4)
         {
-            IExecute("addProximityAlert", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("addProximityAlert", "(DDFJLandroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#addTestProvider(java.lang.String,android.location.provider.ProviderProperties,java.util.Set)"/>
@@ -520,7 +520,7 @@ namespace Android.Location
         /// <param name="arg2"><see cref="Java.Util.Set"/></param>
         public void AddTestProvider(Java.Lang.String arg0, Android.Location.Provider.ProviderProperties arg1, Java.Util.Set<Java.Lang.String> arg2)
         {
-            IExecute("addTestProvider", arg0, arg1, arg2);
+            IExecuteWithSignature("addTestProvider", "(Ljava/lang/String;Landroid/location/provider/ProviderProperties;Ljava/util/Set;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#addTestProvider(java.lang.String,android.location.provider.ProviderProperties)"/>
@@ -529,7 +529,7 @@ namespace Android.Location
         /// <param name="arg1"><see cref="Android.Location.Provider.ProviderProperties"/></param>
         public void AddTestProvider(Java.Lang.String arg0, Android.Location.Provider.ProviderProperties arg1)
         {
-            IExecute("addTestProvider", arg0, arg1);
+            IExecuteWithSignature("addTestProvider", "(Ljava/lang/String;Landroid/location/provider/ProviderProperties;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#addTestProvider(java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean,int,int)"/>
@@ -546,7 +546,7 @@ namespace Android.Location
         /// <param name="arg9"><see cref="int"/></param>
         public void AddTestProvider(Java.Lang.String arg0, bool arg1, bool arg2, bool arg3, bool arg4, bool arg5, bool arg6, bool arg7, int arg8, int arg9)
         {
-            IExecute("addTestProvider", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            IExecuteWithSignature("addTestProvider", "(Ljava/lang/String;ZZZZZZZII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#clearTestProviderEnabled(java.lang.String)"/>
@@ -585,7 +585,7 @@ namespace Android.Location
         /// <param name="arg4"><see cref="Java.Util.Function.Consumer"/></param>
         public void GetCurrentLocation(Java.Lang.String arg0, Android.Location.LocationRequest arg1, Android.Os.CancellationSignal arg2, Java.Util.Concurrent.Executor arg3, Java.Util.Function.Consumer<Android.Location.Location> arg4)
         {
-            IExecute("getCurrentLocation", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("getCurrentLocation", "(Ljava/lang/String;Landroid/location/LocationRequest;Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getCurrentLocation(java.lang.String,android.os.CancellationSignal,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -596,7 +596,7 @@ namespace Android.Location
         /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
         public void GetCurrentLocation(Java.Lang.String arg0, Android.Os.CancellationSignal arg1, Java.Util.Concurrent.Executor arg2, Java.Util.Function.Consumer<Android.Location.Location> arg3)
         {
-            IExecute("getCurrentLocation", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("getCurrentLocation", "(Ljava/lang/String;Landroid/os/CancellationSignal;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#removeGpsStatusListener(android.location.GpsStatus.Listener)"/>
@@ -664,7 +664,7 @@ namespace Android.Location
         /// <param name="arg2"><see cref="int"/></param>
         public void RequestFlush(Java.Lang.String arg0, Android.App.PendingIntent arg1, int arg2)
         {
-            IExecute("requestFlush", arg0, arg1, arg2);
+            IExecuteWithSignature("requestFlush", "(Ljava/lang/String;Landroid/app/PendingIntent;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestFlush(java.lang.String,android.location.LocationListener,int)"/>
@@ -674,7 +674,7 @@ namespace Android.Location
         /// <param name="arg2"><see cref="int"/></param>
         public void RequestFlush(Java.Lang.String arg0, Android.Location.LocationListener arg1, int arg2)
         {
-            IExecute("requestFlush", arg0, arg1, arg2);
+            IExecuteWithSignature("requestFlush", "(Ljava/lang/String;Landroid/location/LocationListener;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,android.location.LocationRequest,android.app.PendingIntent)"/>
@@ -684,7 +684,7 @@ namespace Android.Location
         /// <param name="arg2"><see cref="Android.App.PendingIntent"/></param>
         public void RequestLocationUpdates(Java.Lang.String arg0, Android.Location.LocationRequest arg1, Android.App.PendingIntent arg2)
         {
-            IExecute("requestLocationUpdates", arg0, arg1, arg2);
+            IExecuteWithSignature("requestLocationUpdates", "(Ljava/lang/String;Landroid/location/LocationRequest;Landroid/app/PendingIntent;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,android.location.LocationRequest,java.util.concurrent.Executor,android.location.LocationListener)"/>
@@ -695,7 +695,7 @@ namespace Android.Location
         /// <param name="arg3"><see cref="Android.Location.LocationListener"/></param>
         public void RequestLocationUpdates(Java.Lang.String arg0, Android.Location.LocationRequest arg1, Java.Util.Concurrent.Executor arg2, Android.Location.LocationListener arg3)
         {
-            IExecute("requestLocationUpdates", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("requestLocationUpdates", "(Ljava/lang/String;Landroid/location/LocationRequest;Ljava/util/concurrent/Executor;Landroid/location/LocationListener;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,long,float,android.app.PendingIntent)"/>
@@ -706,7 +706,7 @@ namespace Android.Location
         /// <param name="arg3"><see cref="Android.App.PendingIntent"/></param>
         public void RequestLocationUpdates(Java.Lang.String arg0, long arg1, float arg2, Android.App.PendingIntent arg3)
         {
-            IExecute("requestLocationUpdates", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("requestLocationUpdates", "(Ljava/lang/String;JFLandroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener,android.os.Looper)"/>
@@ -718,7 +718,7 @@ namespace Android.Location
         /// <param name="arg4"><see cref="Android.Os.Looper"/></param>
         public void RequestLocationUpdates(Java.Lang.String arg0, long arg1, float arg2, Android.Location.LocationListener arg3, Android.Os.Looper arg4)
         {
-            IExecute("requestLocationUpdates", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("requestLocationUpdates", "(Ljava/lang/String;JFLandroid/location/LocationListener;Landroid/os/Looper;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener)"/>
@@ -729,7 +729,7 @@ namespace Android.Location
         /// <param name="arg3"><see cref="Android.Location.LocationListener"/></param>
         public void RequestLocationUpdates(Java.Lang.String arg0, long arg1, float arg2, Android.Location.LocationListener arg3)
         {
-            IExecute("requestLocationUpdates", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("requestLocationUpdates", "(Ljava/lang/String;JFLandroid/location/LocationListener;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,long,float,java.util.concurrent.Executor,android.location.LocationListener)"/>
@@ -741,7 +741,7 @@ namespace Android.Location
         /// <param name="arg4"><see cref="Android.Location.LocationListener"/></param>
         public void RequestLocationUpdates(Java.Lang.String arg0, long arg1, float arg2, Java.Util.Concurrent.Executor arg3, Android.Location.LocationListener arg4)
         {
-            IExecute("requestLocationUpdates", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("requestLocationUpdates", "(Ljava/lang/String;JFLjava/util/concurrent/Executor;Landroid/location/LocationListener;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(long,float,android.location.Criteria,android.app.PendingIntent)"/>
@@ -753,7 +753,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public void RequestLocationUpdates(long arg0, float arg1, Android.Location.Criteria arg2, Android.App.PendingIntent arg3)
         {
-            IExecute("requestLocationUpdates", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("requestLocationUpdates", "(JFLandroid/location/Criteria;Landroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(long,float,android.location.Criteria,android.location.LocationListener,android.os.Looper)"/>
@@ -766,7 +766,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public void RequestLocationUpdates(long arg0, float arg1, Android.Location.Criteria arg2, Android.Location.LocationListener arg3, Android.Os.Looper arg4)
         {
-            IExecute("requestLocationUpdates", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("requestLocationUpdates", "(JFLandroid/location/Criteria;Landroid/location/LocationListener;Landroid/os/Looper;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(long,float,android.location.Criteria,java.util.concurrent.Executor,android.location.LocationListener)"/>
@@ -779,7 +779,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public void RequestLocationUpdates(long arg0, float arg1, Android.Location.Criteria arg2, Java.Util.Concurrent.Executor arg3, Android.Location.LocationListener arg4)
         {
-            IExecute("requestLocationUpdates", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("requestLocationUpdates", "(JFLandroid/location/Criteria;Ljava/util/concurrent/Executor;Landroid/location/LocationListener;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestSingleUpdate(android.location.Criteria,android.app.PendingIntent)"/>
@@ -789,7 +789,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public void RequestSingleUpdate(Android.Location.Criteria arg0, Android.App.PendingIntent arg1)
         {
-            IExecute("requestSingleUpdate", arg0, arg1);
+            IExecuteWithSignature("requestSingleUpdate", "(Landroid/location/Criteria;Landroid/app/PendingIntent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestSingleUpdate(android.location.Criteria,android.location.LocationListener,android.os.Looper)"/>
@@ -800,7 +800,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public void RequestSingleUpdate(Android.Location.Criteria arg0, Android.Location.LocationListener arg1, Android.Os.Looper arg2)
         {
-            IExecute("requestSingleUpdate", arg0, arg1, arg2);
+            IExecuteWithSignature("requestSingleUpdate", "(Landroid/location/Criteria;Landroid/location/LocationListener;Landroid/os/Looper;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestSingleUpdate(java.lang.String,android.app.PendingIntent)"/>
@@ -810,7 +810,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public void RequestSingleUpdate(Java.Lang.String arg0, Android.App.PendingIntent arg1)
         {
-            IExecute("requestSingleUpdate", arg0, arg1);
+            IExecuteWithSignature("requestSingleUpdate", "(Ljava/lang/String;Landroid/app/PendingIntent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#requestSingleUpdate(java.lang.String,android.location.LocationListener,android.os.Looper)"/>
@@ -821,7 +821,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public void RequestSingleUpdate(Java.Lang.String arg0, Android.Location.LocationListener arg1, Android.Os.Looper arg2)
         {
-            IExecute("requestSingleUpdate", arg0, arg1, arg2);
+            IExecuteWithSignature("requestSingleUpdate", "(Ljava/lang/String;Landroid/location/LocationListener;Landroid/os/Looper;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#setTestProviderEnabled(java.lang.String,boolean)"/>
@@ -830,7 +830,7 @@ namespace Android.Location
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetTestProviderEnabled(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setTestProviderEnabled", arg0, arg1);
+            IExecuteWithSignature("setTestProviderEnabled", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#setTestProviderLocation(java.lang.String,android.location.Location)"/>
@@ -839,7 +839,7 @@ namespace Android.Location
         /// <param name="arg1"><see cref="Android.Location.Location"/></param>
         public void SetTestProviderLocation(Java.Lang.String arg0, Android.Location.Location arg1)
         {
-            IExecute("setTestProviderLocation", arg0, arg1);
+            IExecuteWithSignature("setTestProviderLocation", "(Ljava/lang/String;Landroid/location/Location;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#setTestProviderStatus(java.lang.String,int,android.os.Bundle,long)"/>
@@ -851,7 +851,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public void SetTestProviderStatus(Java.Lang.String arg0, int arg1, Android.Os.Bundle arg2, long arg3)
         {
-            IExecute("setTestProviderStatus", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setTestProviderStatus", "(Ljava/lang/String;ILandroid/os/Bundle;J)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#unregisterAntennaInfoListener(android.location.GnssAntennaInfo.Listener)"/>
@@ -885,13 +885,13 @@ namespace Android.Location
         {
             IExecuteWithSignature("unregisterGnssStatusCallback", "(Landroid/location/GnssStatus$Callback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

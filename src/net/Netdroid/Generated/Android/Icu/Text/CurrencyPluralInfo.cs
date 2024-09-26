@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CurrencyPluralInfo(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,9 +90,9 @@ namespace Android.Icu.Text
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Text.CurrencyPluralInfo"/> to <see cref="Java.Lang.Cloneable"/>
@@ -102,13 +102,13 @@ namespace Android.Icu.Text
         /// Converter from <see cref="Android.Icu.Text.CurrencyPluralInfo"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Android.Icu.Text.CurrencyPluralInfo t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#getInstance()"/>
@@ -136,9 +136,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.CurrencyPluralInfo>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Landroid/icu/text/CurrencyPluralInfo;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#getPluralRules()"/>
@@ -172,7 +172,7 @@ namespace Android.Icu.Text
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetCurrencyPluralPattern(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setCurrencyPluralPattern", arg0, arg1);
+            IExecuteWithSignature("setCurrencyPluralPattern", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/CurrencyPluralInfo.html#setLocale(android.icu.util.ULocale)"/>
@@ -190,13 +190,13 @@ namespace Android.Icu.Text
         {
             IExecuteWithSignature("setPluralRules", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

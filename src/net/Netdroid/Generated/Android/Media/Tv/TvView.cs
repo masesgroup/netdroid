@@ -40,10 +40,10 @@ namespace Android.Media.Tv
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TvView(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Tv
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnUnhandledInputEventListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Media.Tv
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnUnhandledInputEventListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.tv.TvView_OnUnhandledInputEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnUnhandledInputEventListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnUnhandledInputEventListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.tv.TvView$OnUnhandledInputEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -150,10 +150,10 @@ namespace Android.Media.Tv
             /// </summary>
             [global::System.Obsolete("TimeShiftPositionCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TimeShiftPositionCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -174,9 +174,9 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -197,10 +197,10 @@ namespace Android.Media.Tv
             /// </summary>
             [global::System.Obsolete("TvInputCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TvInputCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -221,9 +221,9 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -262,21 +262,21 @@ namespace Android.Media.Tv
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#dispatchUnhandledInputEvent(android.view.InputEvent)"/>
@@ -344,7 +344,7 @@ namespace Android.Media.Tv
         /// <param name="arg1"><see cref="int"/></param>
         public void SelectAudioPresentation(int arg0, int arg1)
         {
-            IExecute("selectAudioPresentation", arg0, arg1);
+            IExecuteWithSignature("selectAudioPresentation", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#selectTrack(int,java.lang.String)"/>
@@ -353,7 +353,7 @@ namespace Android.Media.Tv
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SelectTrack(int arg0, Java.Lang.String arg1)
         {
-            IExecute("selectTrack", arg0, arg1);
+            IExecuteWithSignature("selectTrack", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#sendAppPrivateCommand(java.lang.String,android.os.Bundle)"/>
@@ -362,7 +362,7 @@ namespace Android.Media.Tv
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void SendAppPrivateCommand(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            IExecute("sendAppPrivateCommand", arg0, arg1);
+            IExecuteWithSignature("sendAppPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#setCallback(android.media.tv.TvView.TvInputCallback)"/>
@@ -419,7 +419,7 @@ namespace Android.Media.Tv
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetTvMessageEnabled(int arg0, bool arg1)
         {
-            IExecute("setTvMessageEnabled", arg0, arg1);
+            IExecuteWithSignature("setTvMessageEnabled", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#setZOrderMediaOverlay(boolean)"/>
@@ -451,7 +451,7 @@ namespace Android.Media.Tv
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
         public void TimeShiftPlay(Java.Lang.String arg0, Android.Net.Uri arg1)
         {
-            IExecute("timeShiftPlay", arg0, arg1);
+            IExecuteWithSignature("timeShiftPlay", "(Ljava/lang/String;Landroid/net/Uri;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#timeShiftResume()"/>
@@ -492,7 +492,7 @@ namespace Android.Media.Tv
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         public void Tune(Java.Lang.String arg0, Android.Net.Uri arg1, Android.Os.Bundle arg2)
         {
-            IExecute("tune", arg0, arg1, arg2);
+            IExecuteWithSignature("tune", "(Ljava/lang/String;Landroid/net/Uri;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#tune(java.lang.String,android.net.Uri)"/>
@@ -501,31 +501,31 @@ namespace Android.Media.Tv
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
         public void Tune(Java.Lang.String arg0, Android.Net.Uri arg1)
         {
-            IExecute("tune", arg0, arg1);
+            IExecuteWithSignature("tune", "(Ljava/lang/String;Landroid/net/Uri;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnUnhandledInputEventListener implementation
         public partial class OnUnhandledInputEventListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnUnhandledInputEventListener"/>
@@ -535,13 +535,13 @@ namespace Android.Media.Tv
                 AddEventHandler("onUnhandledInputEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnUnhandledInputEventEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/tv/TvView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUnhandledInputEvent"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.InputEvent, bool> OnOnUnhandledInputEvent { get; set; } = null;
-            
+
             bool hasOverrideOnUnhandledInputEvent = true;
             void OnUnhandledInputEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -550,7 +550,7 @@ namespace Android.Media.Tv
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.InputEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnUnhandledInputEvent, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
             /// </summary>
@@ -560,13 +560,13 @@ namespace Android.Media.Tv
             {
                 hasOverrideOnUnhandledInputEvent = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -575,21 +575,21 @@ namespace Android.Media.Tv
         public partial class OnUnhandledInputEventListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
@@ -600,13 +600,13 @@ namespace Android.Media.Tv
             {
                 return IExecuteWithSignature<bool>("onUnhandledInputEvent", "(Landroid/view/InputEvent;)Z", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -615,21 +615,21 @@ namespace Android.Media.Tv
         public partial class TimeShiftPositionCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TimeShiftPositionCallback.html#onTimeShiftCurrentPositionChanged(java.lang.String,long)"/>
@@ -638,7 +638,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="long"/></param>
             public void OnTimeShiftCurrentPositionChanged(Java.Lang.String arg0, long arg1)
             {
-                IExecute("onTimeShiftCurrentPositionChanged", arg0, arg1);
+                IExecuteWithSignature("onTimeShiftCurrentPositionChanged", "(Ljava/lang/String;J)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TimeShiftPositionCallback.html#onTimeShiftStartPositionChanged(java.lang.String,long)"/>
@@ -647,15 +647,15 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="long"/></param>
             public void OnTimeShiftStartPositionChanged(Java.Lang.String arg0, long arg1)
             {
-                IExecute("onTimeShiftStartPositionChanged", arg0, arg1);
+                IExecuteWithSignature("onTimeShiftStartPositionChanged", "(Ljava/lang/String;J)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -664,21 +664,21 @@ namespace Android.Media.Tv
         public partial class TvInputCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onAitInfoUpdated(java.lang.String,android.media.tv.AitInfo)"/>
@@ -687,7 +687,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="Android.Media.Tv.AitInfo"/></param>
             public void OnAitInfoUpdated(Java.Lang.String arg0, Android.Media.Tv.AitInfo arg1)
             {
-                IExecute("onAitInfoUpdated", arg0, arg1);
+                IExecuteWithSignature("onAitInfoUpdated", "(Ljava/lang/String;Landroid/media/tv/AitInfo;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onAudioPresentationsChanged(java.lang.String,java.util.List)"/>
@@ -696,7 +696,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="Java.Util.List"/></param>
             public void OnAudioPresentationsChanged(Java.Lang.String arg0, Java.Util.List<Android.Media.AudioPresentation> arg1)
             {
-                IExecute("onAudioPresentationsChanged", arg0, arg1);
+                IExecuteWithSignature("onAudioPresentationsChanged", "(Ljava/lang/String;Ljava/util/List;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onAudioPresentationSelected(java.lang.String,int,int)"/>
@@ -706,7 +706,7 @@ namespace Android.Media.Tv
             /// <param name="arg2"><see cref="int"/></param>
             public void OnAudioPresentationSelected(Java.Lang.String arg0, int arg1, int arg2)
             {
-                IExecute("onAudioPresentationSelected", arg0, arg1, arg2);
+                IExecuteWithSignature("onAudioPresentationSelected", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onAvailableSpeeds(java.lang.String,float[])"/>
@@ -715,7 +715,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="float"/></param>
             public void OnAvailableSpeeds(Java.Lang.String arg0, float[] arg1)
             {
-                IExecute("onAvailableSpeeds", arg0, arg1);
+                IExecuteWithSignature("onAvailableSpeeds", "(Ljava/lang/String;[F)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onChannelRetuned(java.lang.String,android.net.Uri)"/>
@@ -724,7 +724,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
             public void OnChannelRetuned(Java.Lang.String arg0, Android.Net.Uri arg1)
             {
-                IExecute("onChannelRetuned", arg0, arg1);
+                IExecuteWithSignature("onChannelRetuned", "(Ljava/lang/String;Landroid/net/Uri;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onConnectionFailed(java.lang.String)"/>
@@ -749,7 +749,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="Android.Media.Tv.TvContentRating"/></param>
             public void OnContentBlocked(Java.Lang.String arg0, Android.Media.Tv.TvContentRating arg1)
             {
-                IExecute("onContentBlocked", arg0, arg1);
+                IExecuteWithSignature("onContentBlocked", "(Ljava/lang/String;Landroid/media/tv/TvContentRating;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onCueingMessageAvailability(java.lang.String,boolean)"/>
@@ -758,7 +758,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="bool"/></param>
             public void OnCueingMessageAvailability(Java.Lang.String arg0, bool arg1)
             {
-                IExecute("onCueingMessageAvailability", arg0, arg1);
+                IExecuteWithSignature("onCueingMessageAvailability", "(Ljava/lang/String;Z)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onDisconnected(java.lang.String)"/>
@@ -775,7 +775,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="int"/></param>
             public void OnSignalStrengthUpdated(Java.Lang.String arg0, int arg1)
             {
-                IExecute("onSignalStrengthUpdated", arg0, arg1);
+                IExecuteWithSignature("onSignalStrengthUpdated", "(Ljava/lang/String;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onTimeShiftMode(java.lang.String,int)"/>
@@ -784,7 +784,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="int"/></param>
             public void OnTimeShiftMode(Java.Lang.String arg0, int arg1)
             {
-                IExecute("onTimeShiftMode", arg0, arg1);
+                IExecuteWithSignature("onTimeShiftMode", "(Ljava/lang/String;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onTimeShiftStatusChanged(java.lang.String,int)"/>
@@ -793,7 +793,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="int"/></param>
             public void OnTimeShiftStatusChanged(Java.Lang.String arg0, int arg1)
             {
-                IExecute("onTimeShiftStatusChanged", arg0, arg1);
+                IExecuteWithSignature("onTimeShiftStatusChanged", "(Ljava/lang/String;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onTracksChanged(java.lang.String,java.util.List)"/>
@@ -802,7 +802,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="Java.Util.List"/></param>
             public void OnTracksChanged(Java.Lang.String arg0, Java.Util.List<Android.Media.Tv.TvTrackInfo> arg1)
             {
-                IExecute("onTracksChanged", arg0, arg1);
+                IExecuteWithSignature("onTracksChanged", "(Ljava/lang/String;Ljava/util/List;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onTrackSelected(java.lang.String,int,java.lang.String)"/>
@@ -812,7 +812,7 @@ namespace Android.Media.Tv
             /// <param name="arg2"><see cref="Java.Lang.String"/></param>
             public void OnTrackSelected(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
             {
-                IExecute("onTrackSelected", arg0, arg1, arg2);
+                IExecuteWithSignature("onTrackSelected", "(Ljava/lang/String;ILjava/lang/String;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onTuned(java.lang.String,android.net.Uri)"/>
@@ -821,7 +821,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
             public void OnTuned(Java.Lang.String arg0, Android.Net.Uri arg1)
             {
-                IExecute("onTuned", arg0, arg1);
+                IExecuteWithSignature("onTuned", "(Ljava/lang/String;Landroid/net/Uri;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onTvMessage(java.lang.String,int,android.os.Bundle)"/>
@@ -831,7 +831,7 @@ namespace Android.Media.Tv
             /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
             public void OnTvMessage(Java.Lang.String arg0, int arg1, Android.Os.Bundle arg2)
             {
-                IExecute("onTvMessage", arg0, arg1, arg2);
+                IExecuteWithSignature("onTvMessage", "(Ljava/lang/String;ILandroid/os/Bundle;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onVideoAvailable(java.lang.String)"/>
@@ -849,7 +849,7 @@ namespace Android.Media.Tv
             /// <param name="arg2"><see cref="int"/></param>
             public void OnVideoSizeChanged(Java.Lang.String arg0, int arg1, int arg2)
             {
-                IExecute("onVideoSizeChanged", arg0, arg1, arg2);
+                IExecuteWithSignature("onVideoSizeChanged", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvView.TvInputCallback.html#onVideoUnavailable(java.lang.String,int)"/>
@@ -858,22 +858,22 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="int"/></param>
             public void OnVideoUnavailable(Java.Lang.String arg0, int arg1)
             {
-                IExecute("onVideoUnavailable", arg0, arg1);
+                IExecuteWithSignature("onVideoUnavailable", "(Ljava/lang/String;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

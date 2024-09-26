@@ -40,10 +40,10 @@ namespace Android.Webkit
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GeolocationPermissions(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Webkit
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Webkit
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Webkit
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,17 +121,17 @@ namespace Android.Webkit
     public partial class GeolocationPermissions
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/GeolocationPermissions.html#getInstance()"/>
@@ -141,9 +141,9 @@ namespace Android.Webkit
         {
             return SExecuteWithSignature<Android.Webkit.GeolocationPermissions>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/GeolocationPermissions;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/GeolocationPermissions.html#allow(java.lang.String)"/>
@@ -175,7 +175,7 @@ namespace Android.Webkit
         /// <param name="arg1"><see cref="Android.Webkit.ValueCallback"/></param>
         public void GetAllowed(Java.Lang.String arg0, Android.Webkit.ValueCallback<Java.Lang.Boolean> arg1)
         {
-            IExecute("getAllowed", arg0, arg1);
+            IExecuteWithSignature("getAllowed", "(Ljava/lang/String;Landroid/webkit/ValueCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/GeolocationPermissions.html#getOrigins(android.webkit.ValueCallback)"/>
@@ -185,29 +185,29 @@ namespace Android.Webkit
         {
             IExecuteWithSignature("getOrigins", "(Landroid/webkit/ValueCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/GeolocationPermissions.Callback.html#invoke(java.lang.String,boolean,boolean)"/>
@@ -217,22 +217,22 @@ namespace Android.Webkit
             /// <param name="arg2"><see cref="bool"/></param>
             public void Invoke(Java.Lang.String arg0, bool arg1, bool arg2)
             {
-                IExecute("invoke", arg0, arg1, arg2);
+                IExecuteWithSignature("invoke", "(Ljava/lang/String;ZZ)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

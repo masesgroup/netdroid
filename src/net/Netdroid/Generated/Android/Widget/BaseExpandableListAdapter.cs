@@ -35,7 +35,7 @@ namespace Android.Widget
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public BaseExpandableListAdapter() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.BaseExpandableListAdapter";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region BaseExpandableListAdapterDirect declaration
     /// <summary>
     /// Direct override of <see cref="BaseExpandableListAdapter"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "android.widget.BaseExpandableListAdapter";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -96,21 +96,21 @@ namespace Android.Widget
     public partial class BaseExpandableListAdapter : Android.Widget.IExpandableListAdapter, Android.Widget.IHeterogeneousExpandableList
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="BaseExpandableListAdapter"/>
@@ -143,13 +143,13 @@ namespace Android.Widget
             AddEventHandler("unregisterDataSetObserver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(UnregisterDataSetObserverEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetChildView"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, int, bool, Android.View.View, Android.View.ViewGroup, Android.View.View> OnGetChildView { get; set; } = null;
-        
+
         bool hasOverrideGetChildView = true;
         void GetChildViewEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -158,7 +158,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<bool>(2), data.EventData.GetAt<Android.View.View>(3), data.EventData.GetAt<Android.View.ViewGroup>(4));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetChildView, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)"/>
         /// </summary>
@@ -172,13 +172,13 @@ namespace Android.Widget
         {
             hasOverrideGetChildView = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupView(int,boolean,android.view.View,android.view.ViewGroup)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetGroupView"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, bool, Android.View.View, Android.View.ViewGroup, Android.View.View> OnGetGroupView { get; set; } = null;
-        
+
         bool hasOverrideGetGroupView = true;
         void GetGroupViewEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -187,7 +187,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<bool>(1), data.EventData.GetAt<Android.View.View>(2), data.EventData.GetAt<Android.View.ViewGroup>(3));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetGroupView, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupView(int,boolean,android.view.View,android.view.ViewGroup)"/>
         /// </summary>
@@ -200,13 +200,13 @@ namespace Android.Widget
         {
             hasOverrideGetGroupView = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#hasStableIds()"/>
         /// </summary>
         /// <remarks>If <see cref="OnHasStableIds"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<bool> OnHasStableIds { get; set; } = null;
-        
+
         bool hasOverrideHasStableIds = true;
         void HasStableIdsEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -215,7 +215,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideHasStableIds, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#hasStableIds()"/>
         /// </summary>
@@ -224,13 +224,13 @@ namespace Android.Widget
         {
             hasOverrideHasStableIds = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isChildSelectable(int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnIsChildSelectable"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, int, bool> OnIsChildSelectable { get; set; } = null;
-        
+
         bool hasOverrideIsChildSelectable = true;
         void IsChildSelectableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -239,7 +239,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
             data.EventData.TypedEventData.SetReturnData(hasOverrideIsChildSelectable, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#isChildSelectable(int,int)"/>
         /// </summary>
@@ -250,13 +250,13 @@ namespace Android.Widget
         {
             hasOverrideIsChildSelectable = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildrenCount(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetChildrenCount"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, int> OnGetChildrenCount { get; set; } = null;
-        
+
         bool hasOverrideGetChildrenCount = true;
         void GetChildrenCountEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -265,7 +265,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetChildrenCount, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildrenCount(int)"/>
         /// </summary>
@@ -275,13 +275,13 @@ namespace Android.Widget
         {
             hasOverrideGetChildrenCount = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetGroupCount"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int> OnGetGroupCount { get; set; } = null;
-        
+
         bool hasOverrideGetGroupCount = true;
         void GetGroupCountEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -290,7 +290,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetGroupCount, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupCount()"/>
         /// </summary>
@@ -299,13 +299,13 @@ namespace Android.Widget
         {
             hasOverrideGetGroupCount = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChild(int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetChild"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, int, object> OnGetChild { get; set; } = null;
-        
+
         bool hasOverrideGetChild = true;
         void GetChildEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -314,7 +314,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetChild, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChild(int,int)"/>
         /// </summary>
@@ -325,13 +325,13 @@ namespace Android.Widget
         {
             hasOverrideGetChild = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroup(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetGroup"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, object> OnGetGroup { get; set; } = null;
-        
+
         bool hasOverrideGetGroup = true;
         void GetGroupEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -340,7 +340,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetGroup, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroup(int)"/>
         /// </summary>
@@ -350,13 +350,13 @@ namespace Android.Widget
         {
             hasOverrideGetGroup = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildId(int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetChildId"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, int, long> OnGetChildId { get; set; } = null;
-        
+
         bool hasOverrideGetChildId = true;
         void GetChildIdEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -365,7 +365,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetChildId, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildId(int,int)"/>
         /// </summary>
@@ -376,13 +376,13 @@ namespace Android.Widget
         {
             hasOverrideGetChildId = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupId(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetGroupId"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, long> OnGetGroupId { get; set; } = null;
-        
+
         bool hasOverrideGetGroupId = true;
         void GetGroupIdEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -391,7 +391,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetGroupId, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getGroupId(int)"/>
         /// </summary>
@@ -401,13 +401,13 @@ namespace Android.Widget
         {
             hasOverrideGetGroupId = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#areAllItemsEnabled()"/>
         /// </summary>
         /// <remarks>If <see cref="OnAreAllItemsEnabled"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<bool> OnAreAllItemsEnabled { get; set; } = null;
-        
+
         bool hasOverrideAreAllItemsEnabled = true;
         void AreAllItemsEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -416,7 +416,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideAreAllItemsEnabled, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#areAllItemsEnabled()"/>
         /// </summary>
@@ -425,13 +425,13 @@ namespace Android.Widget
         {
             hasOverrideAreAllItemsEnabled = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#isEmpty()"/>
         /// </summary>
         /// <remarks>If <see cref="OnIsEmpty"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<bool> OnIsEmpty { get; set; } = null;
-        
+
         bool hasOverrideIsEmpty = true;
         void IsEmptyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -440,7 +440,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideIsEmpty, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#isEmpty()"/>
         /// </summary>
@@ -449,13 +449,13 @@ namespace Android.Widget
         {
             hasOverrideIsEmpty = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getChildType(int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetChildType"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, int, int> OnGetChildType { get; set; } = null;
-        
+
         bool hasOverrideGetChildType = true;
         void GetChildTypeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -464,7 +464,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetChildType, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getChildType(int,int)"/>
         /// </summary>
@@ -475,13 +475,13 @@ namespace Android.Widget
         {
             hasOverrideGetChildType = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getChildTypeCount()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetChildTypeCount"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int> OnGetChildTypeCount { get; set; } = null;
-        
+
         bool hasOverrideGetChildTypeCount = true;
         void GetChildTypeCountEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -490,7 +490,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetChildTypeCount, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getChildTypeCount()"/>
         /// </summary>
@@ -499,13 +499,13 @@ namespace Android.Widget
         {
             hasOverrideGetChildTypeCount = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getGroupType(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetGroupType"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int, int> OnGetGroupType { get; set; } = null;
-        
+
         bool hasOverrideGetGroupType = true;
         void GetGroupTypeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -514,7 +514,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<int>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetGroupType, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getGroupType(int)"/>
         /// </summary>
@@ -524,13 +524,13 @@ namespace Android.Widget
         {
             hasOverrideGetGroupType = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getGroupTypeCount()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetGroupTypeCount"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<int> OnGetGroupTypeCount { get; set; } = null;
-        
+
         bool hasOverrideGetGroupTypeCount = true;
         void GetGroupTypeCountEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -539,7 +539,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetGroupTypeCount, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getGroupTypeCount()"/>
         /// </summary>
@@ -548,13 +548,13 @@ namespace Android.Widget
         {
             hasOverrideGetGroupTypeCount = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getCombinedChildId(long,long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetCombinedChildId"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<long, long, long> OnGetCombinedChildId { get; set; } = null;
-        
+
         bool hasOverrideGetCombinedChildId = true;
         void GetCombinedChildIdEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -563,7 +563,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<long>(0), data.EventData.GetAt<long>(1));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetCombinedChildId, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getCombinedChildId(long,long)"/>
         /// </summary>
@@ -574,13 +574,13 @@ namespace Android.Widget
         {
             hasOverrideGetCombinedChildId = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getCombinedGroupId(long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetCombinedGroupId"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<long, long> OnGetCombinedGroupId { get; set; } = null;
-        
+
         bool hasOverrideGetCombinedGroupId = true;
         void GetCombinedGroupIdEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -589,7 +589,7 @@ namespace Android.Widget
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<long>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetCombinedGroupId, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getCombinedGroupId(long)"/>
         /// </summary>
@@ -599,13 +599,13 @@ namespace Android.Widget
         {
             hasOverrideGetCombinedGroupId = false; return default;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#notifyDataSetChanged()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNotifyDataSetChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action OnNotifyDataSetChanged { get; set; } = null;
-        
+
         bool hasOverrideNotifyDataSetChanged = true;
         void NotifyDataSetChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -614,7 +614,7 @@ namespace Android.Widget
             methodToExecute.Invoke();
             data.EventData.TypedEventData.HasOverride = hasOverrideNotifyDataSetChanged;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#notifyDataSetChanged()"/>
         /// </summary>
@@ -622,13 +622,13 @@ namespace Android.Widget
         {
             hasOverrideNotifyDataSetChanged = false;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#notifyDataSetInvalidated()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNotifyDataSetInvalidated"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action OnNotifyDataSetInvalidated { get; set; } = null;
-        
+
         bool hasOverrideNotifyDataSetInvalidated = true;
         void NotifyDataSetInvalidatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -637,7 +637,7 @@ namespace Android.Widget
             methodToExecute.Invoke();
             data.EventData.TypedEventData.HasOverride = hasOverrideNotifyDataSetInvalidated;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#notifyDataSetInvalidated()"/>
         /// </summary>
@@ -645,13 +645,13 @@ namespace Android.Widget
         {
             hasOverrideNotifyDataSetInvalidated = false;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#onGroupCollapsed(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnGroupCollapsed"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<int> OnOnGroupCollapsed { get; set; } = null;
-        
+
         bool hasOverrideOnGroupCollapsed = true;
         void OnGroupCollapsedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -660,7 +660,7 @@ namespace Android.Widget
             methodToExecute.Invoke(data.EventData.GetAt<int>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnGroupCollapsed;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#onGroupCollapsed(int)"/>
         /// </summary>
@@ -669,13 +669,13 @@ namespace Android.Widget
         {
             hasOverrideOnGroupCollapsed = false;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#onGroupExpanded(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnGroupExpanded"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<int> OnOnGroupExpanded { get; set; } = null;
-        
+
         bool hasOverrideOnGroupExpanded = true;
         void OnGroupExpandedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -684,7 +684,7 @@ namespace Android.Widget
             methodToExecute.Invoke(data.EventData.GetAt<int>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnGroupExpanded;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#onGroupExpanded(int)"/>
         /// </summary>
@@ -693,13 +693,13 @@ namespace Android.Widget
         {
             hasOverrideOnGroupExpanded = false;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#registerDataSetObserver(android.database.DataSetObserver)"/>
         /// </summary>
         /// <remarks>If <see cref="OnRegisterDataSetObserver"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Android.Database.DataSetObserver> OnRegisterDataSetObserver { get; set; } = null;
-        
+
         bool hasOverrideRegisterDataSetObserver = true;
         void RegisterDataSetObserverEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -708,7 +708,7 @@ namespace Android.Widget
             methodToExecute.Invoke(data.EventData.GetAt<Android.Database.DataSetObserver>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideRegisterDataSetObserver;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#registerDataSetObserver(android.database.DataSetObserver)"/>
         /// </summary>
@@ -717,13 +717,13 @@ namespace Android.Widget
         {
             hasOverrideRegisterDataSetObserver = false;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)"/>
         /// </summary>
         /// <remarks>If <see cref="OnUnregisterDataSetObserver"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Android.Database.DataSetObserver> OnUnregisterDataSetObserver { get; set; } = null;
-        
+
         bool hasOverrideUnregisterDataSetObserver = true;
         void UnregisterDataSetObserverEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -732,7 +732,7 @@ namespace Android.Widget
             methodToExecute.Invoke(data.EventData.GetAt<Android.Database.DataSetObserver>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideUnregisterDataSetObserver;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)"/>
         /// </summary>
@@ -741,13 +741,13 @@ namespace Android.Widget
         {
             hasOverrideUnregisterDataSetObserver = false;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -756,21 +756,21 @@ namespace Android.Widget
     public partial class BaseExpandableListAdapterDirect : Android.Widget.IExpandableListAdapter, Android.Widget.IHeterogeneousExpandableList
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListAdapter.html#getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)"/>
@@ -894,7 +894,7 @@ namespace Android.Widget
         /// <returns><see cref="int"/></returns>
         public override int GetChildType(int arg0, int arg1)
         {
-            return IExecute<int>("getChildType", arg0, arg1);
+            return IExecuteWithSignature<int>("getChildType", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getChildTypeCount()"/>
@@ -929,7 +929,7 @@ namespace Android.Widget
         /// <returns><see cref="long"/></returns>
         public override long GetCombinedChildId(long arg0, long arg1)
         {
-            return IExecute<long>("getCombinedChildId", arg0, arg1);
+            return IExecuteWithSignature<long>("getCombinedChildId", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseExpandableListAdapter.html#getCombinedGroupId(long)"/>
@@ -986,13 +986,13 @@ namespace Android.Widget
         {
             IExecuteWithSignature("unregisterDataSetObserver", "(Landroid/database/DataSetObserver;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

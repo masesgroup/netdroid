@@ -42,10 +42,10 @@ namespace Android.Media.Tv
         /// </summary>
         [global::System.Obsolete("TvInputService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TvInputService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Media.Tv
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region HardwareSession declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Media.Tv
             /// </summary>
             [global::System.Obsolete("HardwareSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public HardwareSession(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -132,10 +132,10 @@ namespace Android.Media.Tv
             /// </summary>
             [global::System.Obsolete("RecordingSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public RecordingSession(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -156,9 +156,9 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -179,10 +179,10 @@ namespace Android.Media.Tv
             /// </summary>
             [global::System.Obsolete("Session class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Session(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -203,9 +203,9 @@ namespace Android.Media.Tv
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -217,13 +217,13 @@ namespace Android.Media.Tv
     public partial class TvInputService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.html#PRIORITY_HINT_USE_CASE_TYPE_BACKGROUND"/>
@@ -267,13 +267,13 @@ namespace Android.Media.Tv
         public static Java.Lang.String SERVICE_META_DATA { get { if (!_SERVICE_META_DATAReady) { _SERVICE_META_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_META_DATA"); _SERVICE_META_DATAReady = true; } return _SERVICE_META_DATAContent; } }
         private static Java.Lang.String _SERVICE_META_DATAContent = default;
         private static bool _SERVICE_META_DATAReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.html#onCreateSession(java.lang.String)"/>
@@ -292,7 +292,7 @@ namespace Android.Media.Tv
         /// <returns><see cref="Android.Media.Tv.TvInputService.RecordingSession"/></returns>
         public Android.Media.Tv.TvInputService.RecordingSession OnCreateRecordingSession(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Media.Tv.TvInputService.RecordingSession>("onCreateRecordingSession", arg0, arg1);
+            return IExecuteWithSignature<Android.Media.Tv.TvInputService.RecordingSession>("onCreateRecordingSession", "(Ljava/lang/String;Ljava/lang/String;)Landroid/media/tv/TvInputService$RecordingSession;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.html#onCreateRecordingSession(java.lang.String)"/>
@@ -312,7 +312,7 @@ namespace Android.Media.Tv
         /// <returns><see cref="Android.Media.Tv.TvInputService.Session"/></returns>
         public Android.Media.Tv.TvInputService.Session OnCreateSession(Java.Lang.String arg0, Java.Lang.String arg1, Android.Content.AttributionSource arg2)
         {
-            return IExecute<Android.Media.Tv.TvInputService.Session>("onCreateSession", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Media.Tv.TvInputService.Session>("onCreateSession", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/AttributionSource;)Landroid/media/tv/TvInputService$Session;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.html#onCreateSession(java.lang.String,java.lang.String)"/>
@@ -322,11 +322,11 @@ namespace Android.Media.Tv
         /// <returns><see cref="Android.Media.Tv.TvInputService.Session"/></returns>
         public Android.Media.Tv.TvInputService.Session OnCreateSession(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Media.Tv.TvInputService.Session>("onCreateSession", arg0, arg1);
+            return IExecuteWithSignature<Android.Media.Tv.TvInputService.Session>("onCreateSession", "(Ljava/lang/String;Ljava/lang/String;)Landroid/media/tv/TvInputService$Session;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region HardwareSession implementation
         public partial class HardwareSession
@@ -340,21 +340,21 @@ namespace Android.Media.Tv
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.HardwareSession.html#getHardwareInputId()"/>
@@ -379,13 +379,13 @@ namespace Android.Media.Tv
             {
                 IExecuteWithSignature("onHardwareVideoUnavailable", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -402,21 +402,21 @@ namespace Android.Media.Tv
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.RecordingSession.html#onRelease()"/>
@@ -479,7 +479,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnAppPrivateCommand(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onAppPrivateCommand", arg0, arg1);
+                IExecuteWithSignature("onAppPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.RecordingSession.html#onPauseRecording(android.os.Bundle)"/>
@@ -504,7 +504,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnStartRecording(Android.Net.Uri arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onStartRecording", arg0, arg1);
+                IExecuteWithSignature("onStartRecording", "(Landroid/net/Uri;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.RecordingSession.html#onTune(android.net.Uri,android.os.Bundle)"/>
@@ -513,15 +513,15 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnTune(Android.Net.Uri arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onTune", arg0, arg1);
+                IExecuteWithSignature("onTune", "(Landroid/net/Uri;Landroid/os/Bundle;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -538,21 +538,21 @@ namespace Android.Media.Tv
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onSetSurface(android.view.Surface)"/>
@@ -620,7 +620,7 @@ namespace Android.Media.Tv
             /// <returns><see cref="bool"/></returns>
             public bool OnKeyDown(int arg0, Android.View.KeyEvent arg1)
             {
-                return IExecute<bool>("onKeyDown", arg0, arg1);
+                return IExecuteWithSignature<bool>("onKeyDown", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onKeyLongPress(int,android.view.KeyEvent)"/>
@@ -630,7 +630,7 @@ namespace Android.Media.Tv
             /// <returns><see cref="bool"/></returns>
             public bool OnKeyLongPress(int arg0, Android.View.KeyEvent arg1)
             {
-                return IExecute<bool>("onKeyLongPress", arg0, arg1);
+                return IExecuteWithSignature<bool>("onKeyLongPress", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onKeyMultiple(int,int,android.view.KeyEvent)"/>
@@ -641,7 +641,7 @@ namespace Android.Media.Tv
             /// <returns><see cref="bool"/></returns>
             public bool OnKeyMultiple(int arg0, int arg1, Android.View.KeyEvent arg2)
             {
-                return IExecute<bool>("onKeyMultiple", arg0, arg1, arg2);
+                return IExecuteWithSignature<bool>("onKeyMultiple", "(IILandroid/view/KeyEvent;)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onKeyUp(int,android.view.KeyEvent)"/>
@@ -651,7 +651,7 @@ namespace Android.Media.Tv
             /// <returns><see cref="bool"/></returns>
             public bool OnKeyUp(int arg0, Android.View.KeyEvent arg1)
             {
-                return IExecute<bool>("onKeyUp", arg0, arg1);
+                return IExecuteWithSignature<bool>("onKeyUp", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onSelectAudioPresentation(int,int)"/>
@@ -661,7 +661,7 @@ namespace Android.Media.Tv
             /// <returns><see cref="bool"/></returns>
             public bool OnSelectAudioPresentation(int arg0, int arg1)
             {
-                return IExecute<bool>("onSelectAudioPresentation", arg0, arg1);
+                return IExecuteWithSignature<bool>("onSelectAudioPresentation", "(II)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onSelectTrack(int,java.lang.String)"/>
@@ -671,7 +671,7 @@ namespace Android.Media.Tv
             /// <returns><see cref="bool"/></returns>
             public bool OnSelectTrack(int arg0, Java.Lang.String arg1)
             {
-                return IExecute<bool>("onSelectTrack", arg0, arg1);
+                return IExecuteWithSignature<bool>("onSelectTrack", "(ILjava/lang/String;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onTouchEvent(android.view.MotionEvent)"/>
@@ -699,7 +699,7 @@ namespace Android.Media.Tv
             /// <returns><see cref="bool"/></returns>
             public bool OnTune(Android.Net.Uri arg0, Android.Os.Bundle arg1)
             {
-                return IExecute<bool>("onTune", arg0, arg1);
+                return IExecuteWithSignature<bool>("onTune", "(Landroid/net/Uri;Landroid/os/Bundle;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onTimeShiftGetCurrentPosition()"/>
@@ -726,7 +726,7 @@ namespace Android.Media.Tv
             /// <param name="arg3"><see cref="int"/></param>
             public void LayoutSurface(int arg0, int arg1, int arg2, int arg3)
             {
-                IExecute("layoutSurface", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("layoutSurface", "(IIII)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#notifyAdBufferConsumed(android.media.tv.AdBuffer)"/>
@@ -767,7 +767,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="int"/></param>
             public void NotifyAudioPresentationSelected(int arg0, int arg1)
             {
-                IExecute("notifyAudioPresentationSelected", arg0, arg1);
+                IExecuteWithSignature("notifyAudioPresentationSelected", "(II)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#notifyAvailableSpeeds(float[])"/>
@@ -855,7 +855,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public void NotifyTrackSelected(int arg0, Java.Lang.String arg1)
             {
-                IExecute("notifyTrackSelected", arg0, arg1);
+                IExecuteWithSignature("notifyTrackSelected", "(ILjava/lang/String;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#notifyTuned(android.net.Uri)"/>
@@ -872,7 +872,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void NotifyTvMessage(int arg0, Android.Os.Bundle arg1)
             {
-                IExecute("notifyTvMessage", arg0, arg1);
+                IExecuteWithSignature("notifyTvMessage", "(ILandroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#notifyVideoAvailable()"/>
@@ -904,7 +904,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnAppPrivateCommand(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onAppPrivateCommand", arg0, arg1);
+                IExecuteWithSignature("onAppPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onOverlayViewSizeChanged(int,int)"/>
@@ -913,7 +913,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="int"/></param>
             public void OnOverlayViewSizeChanged(int arg0, int arg1)
             {
-                IExecute("onOverlayViewSizeChanged", arg0, arg1);
+                IExecuteWithSignature("onOverlayViewSizeChanged", "(II)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onRemoveBroadcastInfo(int)"/>
@@ -954,7 +954,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="bool"/></param>
             public void OnSetTvMessageEnabled(int arg0, bool arg1)
             {
-                IExecute("onSetTvMessageEnabled", arg0, arg1);
+                IExecuteWithSignature("onSetTvMessageEnabled", "(IZ)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onSurfaceChanged(int,int,int)"/>
@@ -964,7 +964,7 @@ namespace Android.Media.Tv
             /// <param name="arg2"><see cref="int"/></param>
             public void OnSurfaceChanged(int arg0, int arg1, int arg2)
             {
-                IExecute("onSurfaceChanged", arg0, arg1, arg2);
+                IExecuteWithSignature("onSurfaceChanged", "(III)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onTimeShiftPause()"/>
@@ -1019,7 +1019,7 @@ namespace Android.Media.Tv
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnTvMessage(int arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onTvMessage", arg0, arg1);
+                IExecuteWithSignature("onTvMessage", "(ILandroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.Session.html#onUnblockContent(android.media.tv.TvContentRating)"/>
@@ -1037,20 +1037,20 @@ namespace Android.Media.Tv
             {
                 IExecuteWithSignature("setOverlayViewEnabled", "(Z)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

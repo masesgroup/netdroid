@@ -40,10 +40,10 @@ namespace Org.Json
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JSONArray(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Org.Json
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -109,21 +109,21 @@ namespace Org.Json
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONArray.html#getBoolean(int)"/>
@@ -152,7 +152,7 @@ namespace Org.Json
         /// <returns><see cref="bool"/></returns>
         public bool OptBoolean(int arg0, bool arg1)
         {
-            return IExecute<bool>("optBoolean", arg0, arg1);
+            return IExecuteWithSignature<bool>("optBoolean", "(IZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONArray.html#optBoolean(int)"/>
@@ -181,7 +181,7 @@ namespace Org.Json
         /// <returns><see cref="double"/></returns>
         public double OptDouble(int arg0, double arg1)
         {
-            return IExecute<double>("optDouble", arg0, arg1);
+            return IExecuteWithSignature<double>("optDouble", "(ID)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONArray.html#optDouble(int)"/>
@@ -218,7 +218,7 @@ namespace Org.Json
         /// <returns><see cref="int"/></returns>
         public int OptInt(int arg0, int arg1)
         {
-            return IExecute<int>("optInt", arg0, arg1);
+            return IExecuteWithSignature<int>("optInt", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONArray.html#optInt(int)"/>
@@ -285,7 +285,7 @@ namespace Org.Json
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String OptString(int arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("optString", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("optString", "(ILjava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONArray.html#optString(int)"/>
@@ -324,7 +324,7 @@ namespace Org.Json
         /// <returns><see cref="long"/></returns>
         public long OptLong(int arg0, long arg1)
         {
-            return IExecute<long>("optLong", arg0, arg1);
+            return IExecuteWithSignature<long>("optLong", "(IJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONArray.html#optLong(int)"/>
@@ -382,7 +382,7 @@ namespace Org.Json
         /// <exception cref="Org.Json.JSONException"/>
         public Org.Json.JSONArray Put(int arg0, bool arg1)
         {
-            return IExecute<Org.Json.JSONArray>("put", arg0, arg1);
+            return IExecuteWithSignature<Org.Json.JSONArray>("put", "(IZ)Lorg/json/JSONArray;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONArray.html#put(int,double)"/>
@@ -393,7 +393,7 @@ namespace Org.Json
         /// <exception cref="Org.Json.JSONException"/>
         public Org.Json.JSONArray Put(int arg0, double arg1)
         {
-            return IExecute<Org.Json.JSONArray>("put", arg0, arg1);
+            return IExecuteWithSignature<Org.Json.JSONArray>("put", "(ID)Lorg/json/JSONArray;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONArray.html#put(int,int)"/>
@@ -404,7 +404,7 @@ namespace Org.Json
         /// <exception cref="Org.Json.JSONException"/>
         public Org.Json.JSONArray Put(int arg0, int arg1)
         {
-            return IExecute<Org.Json.JSONArray>("put", arg0, arg1);
+            return IExecuteWithSignature<Org.Json.JSONArray>("put", "(II)Lorg/json/JSONArray;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONArray.html#put(int,java.lang.Object)"/>
@@ -415,7 +415,7 @@ namespace Org.Json
         /// <exception cref="Org.Json.JSONException"/>
         public Org.Json.JSONArray Put(int arg0, object arg1)
         {
-            return IExecute<Org.Json.JSONArray>("put", arg0, arg1);
+            return IExecuteWithSignature<Org.Json.JSONArray>("put", "(ILjava/lang/Object;)Lorg/json/JSONArray;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONArray.html#put(int,long)"/>
@@ -426,7 +426,7 @@ namespace Org.Json
         /// <exception cref="Org.Json.JSONException"/>
         public Org.Json.JSONArray Put(int arg0, long arg1)
         {
-            return IExecute<Org.Json.JSONArray>("put", arg0, arg1);
+            return IExecuteWithSignature<Org.Json.JSONArray>("put", "(IJ)Lorg/json/JSONArray;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONArray.html#put(int)"/>
@@ -484,13 +484,13 @@ namespace Org.Json
         {
             return IExecuteWithSignature<Org.Json.JSONObject>("toJSONObject", "(Lorg/json/JSONArray;)Lorg/json/JSONObject;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

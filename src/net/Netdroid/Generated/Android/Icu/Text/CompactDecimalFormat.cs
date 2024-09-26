@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CompactDecimalFormat(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region CompactStyle declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Icu.Text
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CompactStyle(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Icu.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,17 +119,17 @@ namespace Android.Icu.Text
     public partial class CompactDecimalFormat
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/CompactDecimalFormat.html#getInstance(android.icu.util.ULocale,android.icu.text.CompactDecimalFormat.CompactStyle)"/>
@@ -139,7 +139,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.CompactDecimalFormat"/></returns>
         public static Android.Icu.Text.CompactDecimalFormat GetInstance(Android.Icu.Util.ULocale arg0, Android.Icu.Text.CompactDecimalFormat.CompactStyle arg1)
         {
-            return SExecute<Android.Icu.Text.CompactDecimalFormat>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Text.CompactDecimalFormat>(LocalBridgeClazz, "getInstance", "(Landroid/icu/util/ULocale;Landroid/icu/text/CompactDecimalFormat$CompactStyle;)Landroid/icu/text/CompactDecimalFormat;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/CompactDecimalFormat.html#getInstance(java.util.Locale,android.icu.text.CompactDecimalFormat.CompactStyle)"/>
@@ -149,27 +149,27 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.CompactDecimalFormat"/></returns>
         public static Android.Icu.Text.CompactDecimalFormat GetInstance(Java.Util.Locale arg0, Android.Icu.Text.CompactDecimalFormat.CompactStyle arg1)
         {
-            return SExecute<Android.Icu.Text.CompactDecimalFormat>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Text.CompactDecimalFormat>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;Landroid/icu/text/CompactDecimalFormat$CompactStyle;)Landroid/icu/text/CompactDecimalFormat;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region CompactStyle implementation
         public partial class CompactStyle
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/CompactDecimalFormat.CompactStyle.html#LONG"/>
@@ -183,9 +183,9 @@ namespace Android.Icu.Text
             public static Android.Icu.Text.CompactDecimalFormat.CompactStyle SHORT { get { if (!_SHORTReady) { _SHORTContent = SGetField<Android.Icu.Text.CompactDecimalFormat.CompactStyle>(LocalBridgeClazz, "SHORT"); _SHORTReady = true; } return _SHORTContent; } }
             private static Android.Icu.Text.CompactDecimalFormat.CompactStyle _SHORTContent = default;
             private static bool _SHORTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/CompactDecimalFormat.CompactStyle.html#valueOf(java.lang.String)"/>
@@ -204,24 +204,24 @@ namespace Android.Icu.Text
             {
                 return SExecuteWithSignatureArray<Android.Icu.Text.CompactDecimalFormat.CompactStyle>(LocalBridgeClazz, "values", "()[Landroid/icu/text/CompactDecimalFormat$CompactStyle;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

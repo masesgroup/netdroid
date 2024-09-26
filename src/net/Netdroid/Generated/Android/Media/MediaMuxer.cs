@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaMuxer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OutputFormat declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public OutputFormat(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -139,21 +139,21 @@ namespace Android.Media
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMuxer.html#addTrack(android.media.MediaFormat)"/>
@@ -178,7 +178,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="float"/></param>
         public void SetLocation(float arg0, float arg1)
         {
-            IExecute("setLocation", arg0, arg1);
+            IExecuteWithSignature("setLocation", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMuxer.html#setOrientationHint(int)"/>
@@ -210,23 +210,23 @@ namespace Android.Media
         /// <param name="arg2"><see cref="Android.Media.MediaCodec.BufferInfo"/></param>
         public void WriteSampleData(int arg0, Java.Nio.ByteBuffer arg1, Android.Media.MediaCodec.BufferInfo arg2)
         {
-            IExecute("writeSampleData", arg0, arg1, arg2);
+            IExecuteWithSignature("writeSampleData", "(ILjava/nio/ByteBuffer;Landroid/media/MediaCodec$BufferInfo;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OutputFormat implementation
         public partial class OutputFormat
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaMuxer.OutputFormat.html#MUXER_OUTPUT_3GPP"/>
@@ -258,28 +258,28 @@ namespace Android.Media
             public static int MUXER_OUTPUT_WEBM { get { if (!_MUXER_OUTPUT_WEBMReady) { _MUXER_OUTPUT_WEBMContent = SGetField<int>(LocalBridgeClazz, "MUXER_OUTPUT_WEBM"); _MUXER_OUTPUT_WEBMReady = true; } return _MUXER_OUTPUT_WEBMContent; } }
             private static int _MUXER_OUTPUT_WEBMContent = default;
             private static bool _MUXER_OUTPUT_WEBMReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

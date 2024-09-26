@@ -40,10 +40,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Spliterators(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AbstractDoubleSpliterator declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Java.Util
             /// </summary>
             [global::System.Obsolete("AbstractDoubleSpliterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AbstractDoubleSpliterator(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -130,10 +130,10 @@ namespace Java.Util
             /// </summary>
             [global::System.Obsolete("AbstractIntSpliterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AbstractIntSpliterator(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -154,9 +154,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -177,10 +177,10 @@ namespace Java.Util
             /// </summary>
             [global::System.Obsolete("AbstractLongSpliterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AbstractLongSpliterator(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -201,9 +201,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -224,10 +224,10 @@ namespace Java.Util
             /// </summary>
             [global::System.Obsolete("AbstractSpliterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AbstractSpliterator(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -248,9 +248,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -272,10 +272,10 @@ namespace Java.Util
             /// </summary>
             [global::System.Obsolete("AbstractSpliterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AbstractSpliterator(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -296,9 +296,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -310,17 +310,17 @@ namespace Java.Util
     public partial class Spliterators
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#iterator(java.util.Spliterator)"/>
@@ -353,7 +353,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> Spliterator<T>(object[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", "([Ljava/lang/Object;III)Ljava/util/Spliterator;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#spliterator(java.lang.Object[],int)"/>
@@ -364,7 +364,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> Spliterator<T>(object[] arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", "([Ljava/lang/Object;I)Ljava/util/Spliterator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#spliterator(java.util.Collection,int)"/>
@@ -376,7 +376,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> Spliterator<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0, int arg1) where Arg0ExtendsT : T
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", "(Ljava/util/Collection;I)Ljava/util/Spliterator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#spliterator(java.util.Iterator,long,int)"/>
@@ -389,7 +389,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> Spliterator<T, Arg0ExtendsT>(Java.Util.Iterator<Arg0ExtendsT> arg0, long arg1, int arg2) where Arg0ExtendsT : T
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", "(Ljava/util/Iterator;JI)Ljava/util/Spliterator;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#spliteratorUnknownSize(java.util.Iterator,int)"/>
@@ -401,7 +401,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> SpliteratorUnknownSize<T, Arg0ExtendsT>(Java.Util.Iterator<Arg0ExtendsT> arg0, int arg1) where Arg0ExtendsT : T
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliteratorUnknownSize", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliteratorUnknownSize", "(Ljava/util/Iterator;I)Ljava/util/Spliterator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#iterator(java.util.Spliterator.OfDouble)"/>
@@ -448,7 +448,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
         public static Java.Util.Spliterator.OfDouble Spliterator(double[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", "([DIII)Ljava/util/Spliterator$OfDouble;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#spliterator(double[],int)"/>
@@ -458,7 +458,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
         public static Java.Util.Spliterator.OfDouble Spliterator(double[] arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", "([DI)Ljava/util/Spliterator$OfDouble;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#spliterator(java.util.PrimitiveIterator.OfDouble,long,int)"/>
@@ -469,7 +469,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
         public static Java.Util.Spliterator.OfDouble Spliterator(Java.Util.PrimitiveIterator.OfDouble arg0, long arg1, int arg2)
         {
-            return SExecute<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", "(Ljava/util/PrimitiveIterator$OfDouble;JI)Ljava/util/Spliterator$OfDouble;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#spliteratorUnknownSize(java.util.PrimitiveIterator.OfDouble,int)"/>
@@ -479,7 +479,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
         public static Java.Util.Spliterator.OfDouble SpliteratorUnknownSize(Java.Util.PrimitiveIterator.OfDouble arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliteratorUnknownSize", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliteratorUnknownSize", "(Ljava/util/PrimitiveIterator$OfDouble;I)Ljava/util/Spliterator$OfDouble;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#emptyIntSpliterator()"/>
@@ -499,7 +499,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
         public static Java.Util.Spliterator.OfInt Spliterator(int[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", "([IIII)Ljava/util/Spliterator$OfInt;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#spliterator(int[],int)"/>
@@ -509,7 +509,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
         public static Java.Util.Spliterator.OfInt Spliterator(int[] arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", "([II)Ljava/util/Spliterator$OfInt;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#spliterator(java.util.PrimitiveIterator.OfInt,long,int)"/>
@@ -520,7 +520,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
         public static Java.Util.Spliterator.OfInt Spliterator(Java.Util.PrimitiveIterator.OfInt arg0, long arg1, int arg2)
         {
-            return SExecute<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", "(Ljava/util/PrimitiveIterator$OfInt;JI)Ljava/util/Spliterator$OfInt;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#spliteratorUnknownSize(java.util.PrimitiveIterator.OfInt,int)"/>
@@ -530,7 +530,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
         public static Java.Util.Spliterator.OfInt SpliteratorUnknownSize(Java.Util.PrimitiveIterator.OfInt arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliteratorUnknownSize", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliteratorUnknownSize", "(Ljava/util/PrimitiveIterator$OfInt;I)Ljava/util/Spliterator$OfInt;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#emptyLongSpliterator()"/>
@@ -549,7 +549,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
         public static Java.Util.Spliterator.OfLong Spliterator(Java.Util.PrimitiveIterator.OfLong arg0, long arg1, int arg2)
         {
-            return SExecute<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", "(Ljava/util/PrimitiveIterator$OfLong;JI)Ljava/util/Spliterator$OfLong;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#spliterator(long[],int,int,int)"/>
@@ -561,7 +561,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
         public static Java.Util.Spliterator.OfLong Spliterator(long[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", "([JIII)Ljava/util/Spliterator$OfLong;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#spliterator(long[],int)"/>
@@ -571,7 +571,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
         public static Java.Util.Spliterator.OfLong Spliterator(long[] arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", "([JI)Ljava/util/Spliterator$OfLong;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Spliterators.html#spliteratorUnknownSize(java.util.PrimitiveIterator.OfLong,int)"/>
@@ -581,35 +581,35 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
         public static Java.Util.Spliterator.OfLong SpliteratorUnknownSize(Java.Util.PrimitiveIterator.OfLong arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliteratorUnknownSize", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliteratorUnknownSize", "(Ljava/util/PrimitiveIterator$OfLong;I)Ljava/util/Spliterator$OfLong;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AbstractDoubleSpliterator implementation
         public partial class AbstractDoubleSpliterator
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Spliterators.AbstractDoubleSpliterator.html#characteristics()"/>
@@ -635,13 +635,13 @@ namespace Java.Util
             {
                 return IExecuteWithSignature<long>("estimateSize", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -650,21 +650,21 @@ namespace Java.Util
         public partial class AbstractIntSpliterator
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Spliterators.AbstractIntSpliterator.html#characteristics()"/>
@@ -690,13 +690,13 @@ namespace Java.Util
             {
                 return IExecuteWithSignature<long>("estimateSize", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -705,21 +705,21 @@ namespace Java.Util
         public partial class AbstractLongSpliterator
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Spliterators.AbstractLongSpliterator.html#characteristics()"/>
@@ -745,13 +745,13 @@ namespace Java.Util
             {
                 return IExecuteWithSignature<long>("estimateSize", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -760,21 +760,21 @@ namespace Java.Util
         public partial class AbstractSpliterator
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Spliterators.AbstractSpliterator.html#characteristics()"/>
@@ -800,13 +800,13 @@ namespace Java.Util
             {
                 return IExecuteWithSignature<long>("estimateSize", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -815,25 +815,25 @@ namespace Java.Util
         public partial class AbstractSpliterator<T>
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Java.Util.Spliterators.AbstractSpliterator{T}"/> to <see cref="Java.Util.Spliterators.AbstractSpliterator"/>
             /// </summary>
             public static implicit operator Java.Util.Spliterators.AbstractSpliterator(Java.Util.Spliterators.AbstractSpliterator<T> t) => t.Cast<Java.Util.Spliterators.AbstractSpliterator>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Spliterators.AbstractSpliterator.html#characteristics()"/>
@@ -859,20 +859,20 @@ namespace Java.Util
             {
                 return IExecuteWithSignature<long>("estimateSize", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

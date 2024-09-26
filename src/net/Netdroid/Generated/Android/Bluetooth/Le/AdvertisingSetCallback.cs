@@ -42,10 +42,10 @@ namespace Android.Bluetooth.Le
         /// </summary>
         [global::System.Obsolete("AdvertisingSetCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AdvertisingSetCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Bluetooth.Le
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Bluetooth.Le
     public partial class AdvertisingSetCallback
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetCallback.html#ADVERTISE_FAILED_ALREADY_STARTED"/>
@@ -120,13 +120,13 @@ namespace Android.Bluetooth.Le
         public static int ADVERTISE_SUCCESS { get { if (!_ADVERTISE_SUCCESSReady) { _ADVERTISE_SUCCESSContent = SGetField<int>(LocalBridgeClazz, "ADVERTISE_SUCCESS"); _ADVERTISE_SUCCESSReady = true; } return _ADVERTISE_SUCCESSContent; } }
         private static int _ADVERTISE_SUCCESSContent = default;
         private static bool _ADVERTISE_SUCCESSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetCallback.html#onAdvertisingDataSet(android.bluetooth.le.AdvertisingSet,int)"/>
@@ -135,7 +135,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg1"><see cref="int"/></param>
         public void OnAdvertisingDataSet(Android.Bluetooth.Le.AdvertisingSet arg0, int arg1)
         {
-            IExecute("onAdvertisingDataSet", arg0, arg1);
+            IExecuteWithSignature("onAdvertisingDataSet", "(Landroid/bluetooth/le/AdvertisingSet;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetCallback.html#onAdvertisingEnabled(android.bluetooth.le.AdvertisingSet,boolean,int)"/>
@@ -145,7 +145,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg2"><see cref="int"/></param>
         public void OnAdvertisingEnabled(Android.Bluetooth.Le.AdvertisingSet arg0, bool arg1, int arg2)
         {
-            IExecute("onAdvertisingEnabled", arg0, arg1, arg2);
+            IExecuteWithSignature("onAdvertisingEnabled", "(Landroid/bluetooth/le/AdvertisingSet;ZI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetCallback.html#onAdvertisingParametersUpdated(android.bluetooth.le.AdvertisingSet,int,int)"/>
@@ -155,7 +155,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg2"><see cref="int"/></param>
         public void OnAdvertisingParametersUpdated(Android.Bluetooth.Le.AdvertisingSet arg0, int arg1, int arg2)
         {
-            IExecute("onAdvertisingParametersUpdated", arg0, arg1, arg2);
+            IExecuteWithSignature("onAdvertisingParametersUpdated", "(Landroid/bluetooth/le/AdvertisingSet;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetCallback.html#onAdvertisingSetStarted(android.bluetooth.le.AdvertisingSet,int,int)"/>
@@ -165,7 +165,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg2"><see cref="int"/></param>
         public void OnAdvertisingSetStarted(Android.Bluetooth.Le.AdvertisingSet arg0, int arg1, int arg2)
         {
-            IExecute("onAdvertisingSetStarted", arg0, arg1, arg2);
+            IExecuteWithSignature("onAdvertisingSetStarted", "(Landroid/bluetooth/le/AdvertisingSet;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetCallback.html#onAdvertisingSetStopped(android.bluetooth.le.AdvertisingSet)"/>
@@ -182,7 +182,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg1"><see cref="int"/></param>
         public void OnPeriodicAdvertisingDataSet(Android.Bluetooth.Le.AdvertisingSet arg0, int arg1)
         {
-            IExecute("onPeriodicAdvertisingDataSet", arg0, arg1);
+            IExecuteWithSignature("onPeriodicAdvertisingDataSet", "(Landroid/bluetooth/le/AdvertisingSet;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetCallback.html#onPeriodicAdvertisingEnabled(android.bluetooth.le.AdvertisingSet,boolean,int)"/>
@@ -192,7 +192,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg2"><see cref="int"/></param>
         public void OnPeriodicAdvertisingEnabled(Android.Bluetooth.Le.AdvertisingSet arg0, bool arg1, int arg2)
         {
-            IExecute("onPeriodicAdvertisingEnabled", arg0, arg1, arg2);
+            IExecuteWithSignature("onPeriodicAdvertisingEnabled", "(Landroid/bluetooth/le/AdvertisingSet;ZI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetCallback.html#onPeriodicAdvertisingParametersUpdated(android.bluetooth.le.AdvertisingSet,int)"/>
@@ -201,7 +201,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg1"><see cref="int"/></param>
         public void OnPeriodicAdvertisingParametersUpdated(Android.Bluetooth.Le.AdvertisingSet arg0, int arg1)
         {
-            IExecute("onPeriodicAdvertisingParametersUpdated", arg0, arg1);
+            IExecuteWithSignature("onPeriodicAdvertisingParametersUpdated", "(Landroid/bluetooth/le/AdvertisingSet;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetCallback.html#onScanResponseDataSet(android.bluetooth.le.AdvertisingSet,int)"/>
@@ -210,15 +210,15 @@ namespace Android.Bluetooth.Le
         /// <param name="arg1"><see cref="int"/></param>
         public void OnScanResponseDataSet(Android.Bluetooth.Le.AdvertisingSet arg0, int arg1)
         {
-            IExecute("onScanResponseDataSet", arg0, arg1);
+            IExecuteWithSignature("onScanResponseDataSet", "(Landroid/bluetooth/le/AdvertisingSet;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

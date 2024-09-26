@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Outline(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Android.Graphics
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#canClip()"/>
@@ -146,7 +146,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="int"/></param>
         public void Offset(int arg0, int arg1)
         {
-            IExecute("offset", arg0, arg1);
+            IExecuteWithSignature("offset", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#set(android.graphics.Outline)"/>
@@ -197,7 +197,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="int"/></param>
         public void SetOval(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setOval", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setOval", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#setPath(android.graphics.Path)"/>
@@ -224,7 +224,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="int"/></param>
         public void SetRect(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setRect", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setRect", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#setRoundRect(android.graphics.Rect,float)"/>
@@ -233,7 +233,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void SetRoundRect(Android.Graphics.Rect arg0, float arg1)
         {
-            IExecute("setRoundRect", arg0, arg1);
+            IExecuteWithSignature("setRoundRect", "(Landroid/graphics/Rect;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#setRoundRect(int,int,int,int,float)"/>
@@ -245,15 +245,15 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="float"/></param>
         public void SetRoundRect(int arg0, int arg1, int arg2, int arg3, float arg4)
         {
-            IExecute("setRoundRect", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setRoundRect", "(IIIIF)V", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

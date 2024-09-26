@@ -40,10 +40,10 @@ namespace Android.App.Admin
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DevicePolicyManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Admin
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region InstallSystemUpdateCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.App.Admin
             /// </summary>
             [global::System.Obsolete("InstallSystemUpdateCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public InstallSystemUpdateCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.App.Admin
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -123,7 +123,7 @@ namespace Android.App.Admin
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnClearApplicationUserDataListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.app.admin.DevicePolicyManager_OnClearApplicationUserDataListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -132,13 +132,13 @@ namespace Android.App.Admin
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnClearApplicationUserDataListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnClearApplicationUserDataListener"/> or its generic type if there is one
@@ -149,14 +149,14 @@ namespace Android.App.Admin
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.app.admin.DevicePolicyManager$OnClearApplicationUserDataListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -188,13 +188,13 @@ namespace Android.App.Admin
     public partial class DevicePolicyManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#CONTENT_PROTECTION_DISABLED"/>
@@ -1291,9 +1291,9 @@ namespace Android.App.Admin
         public static Java.Lang.String POLICY_DISABLE_SCREEN_CAPTURE { get { if (!_POLICY_DISABLE_SCREEN_CAPTUREReady) { _POLICY_DISABLE_SCREEN_CAPTUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "POLICY_DISABLE_SCREEN_CAPTURE"); _POLICY_DISABLE_SCREEN_CAPTUREReady = true; } return _POLICY_DISABLE_SCREEN_CAPTUREContent; } }
         private static Java.Lang.String _POLICY_DISABLE_SCREEN_CAPTUREContent = default;
         private static bool _POLICY_DISABLE_SCREEN_CAPTUREReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#isMtePolicyEnforced()"/>
@@ -1303,9 +1303,9 @@ namespace Android.App.Admin
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isMtePolicyEnforced", "()Z");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getParentProfileInstance(android.content.ComponentName)"/>
@@ -1407,7 +1407,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Android.Os.Bundle"/></returns>
         public Android.Os.Bundle GetApplicationRestrictions(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Os.Bundle>("getApplicationRestrictions", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.Bundle>("getApplicationRestrictions", "(Landroid/content/ComponentName;Ljava/lang/String;)Landroid/os/Bundle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getUserRestrictions(android.content.ComponentName)"/>
@@ -1445,7 +1445,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Android.Os.UserHandle"/></returns>
         public Android.Os.UserHandle CreateAndManageUser(Android.Content.ComponentName arg0, Java.Lang.String arg1, Android.Content.ComponentName arg2, Android.Os.PersistableBundle arg3, int arg4)
         {
-            return IExecute<Android.Os.UserHandle>("createAndManageUser", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Os.UserHandle>("createAndManageUser", "(Landroid/content/ComponentName;Ljava/lang/String;Landroid/content/ComponentName;Landroid/os/PersistableBundle;I)Landroid/os/UserHandle;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#generateKeyPair(android.content.ComponentName,java.lang.String,android.security.keystore.KeyGenParameterSpec,int)"/>
@@ -1457,7 +1457,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Android.Security.AttestedKeyPair"/></returns>
         public Android.Security.AttestedKeyPair GenerateKeyPair(Android.Content.ComponentName arg0, Java.Lang.String arg1, Android.Security.Keystore.KeyGenParameterSpec arg2, int arg3)
         {
-            return IExecute<Android.Security.AttestedKeyPair>("generateKeyPair", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Security.AttestedKeyPair>("generateKeyPair", "(Landroid/content/ComponentName;Ljava/lang/String;Landroid/security/keystore/KeyGenParameterSpec;I)Landroid/security/AttestedKeyPair;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#addCrossProfileWidgetProvider(android.content.ComponentName,java.lang.String)"/>
@@ -1467,7 +1467,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool AddCrossProfileWidgetProvider(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("addCrossProfileWidgetProvider", arg0, arg1);
+            return IExecuteWithSignature<bool>("addCrossProfileWidgetProvider", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#bindDeviceAdminServiceAsUser(android.content.ComponentName,android.content.Intent,android.content.ServiceConnection,android.content.Context.BindServiceFlags,android.os.UserHandle)"/>
@@ -1480,7 +1480,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool BindDeviceAdminServiceAsUser(Android.Content.ComponentName arg0, Android.Content.Intent arg1, Android.Content.ServiceConnection arg2, Android.Content.Context.BindServiceFlags arg3, Android.Os.UserHandle arg4)
         {
-            return IExecute<bool>("bindDeviceAdminServiceAsUser", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("bindDeviceAdminServiceAsUser", "(Landroid/content/ComponentName;Landroid/content/Intent;Landroid/content/ServiceConnection;Landroid/content/Context$BindServiceFlags;Landroid/os/UserHandle;)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#bindDeviceAdminServiceAsUser(android.content.ComponentName,android.content.Intent,android.content.ServiceConnection,int,android.os.UserHandle)"/>
@@ -1493,7 +1493,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool BindDeviceAdminServiceAsUser(Android.Content.ComponentName arg0, Android.Content.Intent arg1, Android.Content.ServiceConnection arg2, int arg3, Android.Os.UserHandle arg4)
         {
-            return IExecute<bool>("bindDeviceAdminServiceAsUser", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("bindDeviceAdminServiceAsUser", "(Landroid/content/ComponentName;Landroid/content/Intent;Landroid/content/ServiceConnection;ILandroid/os/UserHandle;)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#canAdminGrantSensorsPermissions()"/>
@@ -1613,7 +1613,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool GrantKeyPairToApp(Android.Content.ComponentName arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<bool>("grantKeyPairToApp", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("grantKeyPairToApp", "(Landroid/content/ComponentName;Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#grantKeyPairToWifiAuth(java.lang.String)"/>
@@ -1632,7 +1632,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool HasCaCertInstalled(Android.Content.ComponentName arg0, byte[] arg1)
         {
-            return IExecute<bool>("hasCaCertInstalled", arg0, arg1);
+            return IExecuteWithSignature<bool>("hasCaCertInstalled", "(Landroid/content/ComponentName;[B)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#hasGrantedPolicy(android.content.ComponentName,int)"/>
@@ -1642,7 +1642,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool HasGrantedPolicy(Android.Content.ComponentName arg0, int arg1)
         {
-            return IExecute<bool>("hasGrantedPolicy", arg0, arg1);
+            return IExecuteWithSignature<bool>("hasGrantedPolicy", "(Landroid/content/ComponentName;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#hasKeyPair(java.lang.String)"/>
@@ -1670,7 +1670,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool InstallCaCert(Android.Content.ComponentName arg0, byte[] arg1)
         {
-            return IExecute<bool>("installCaCert", arg0, arg1);
+            return IExecuteWithSignature<bool>("installCaCert", "(Landroid/content/ComponentName;[B)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#installExistingPackage(android.content.ComponentName,java.lang.String)"/>
@@ -1680,7 +1680,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool InstallExistingPackage(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("installExistingPackage", arg0, arg1);
+            return IExecuteWithSignature<bool>("installExistingPackage", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#installKeyPair(android.content.ComponentName,java.security.PrivateKey,java.security.cert.Certificate,java.lang.String)"/>
@@ -1692,7 +1692,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool InstallKeyPair(Android.Content.ComponentName arg0, Java.Security.PrivateKey arg1, Java.Security.Cert.Certificate arg2, Java.Lang.String arg3)
         {
-            return IExecute<bool>("installKeyPair", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("installKeyPair", "(Landroid/content/ComponentName;Ljava/security/PrivateKey;Ljava/security/cert/Certificate;Ljava/lang/String;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#installKeyPair(android.content.ComponentName,java.security.PrivateKey,java.security.cert.Certificate[],java.lang.String,boolean)"/>
@@ -1705,7 +1705,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool InstallKeyPair(Android.Content.ComponentName arg0, Java.Security.PrivateKey arg1, Java.Security.Cert.Certificate[] arg2, Java.Lang.String arg3, bool arg4)
         {
-            return IExecute<bool>("installKeyPair", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("installKeyPair", "(Landroid/content/ComponentName;Ljava/security/PrivateKey;[Ljava/security/cert/Certificate;Ljava/lang/String;Z)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#installKeyPair(android.content.ComponentName,java.security.PrivateKey,java.security.cert.Certificate[],java.lang.String,int)"/>
@@ -1718,7 +1718,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool InstallKeyPair(Android.Content.ComponentName arg0, Java.Security.PrivateKey arg1, Java.Security.Cert.Certificate[] arg2, Java.Lang.String arg3, int arg4)
         {
-            return IExecute<bool>("installKeyPair", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("installKeyPair", "(Landroid/content/ComponentName;Ljava/security/PrivateKey;[Ljava/security/cert/Certificate;Ljava/lang/String;I)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#isActivePasswordSufficient()"/>
@@ -1770,7 +1770,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool IsApplicationHidden(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isApplicationHidden", arg0, arg1);
+            return IExecuteWithSignature<bool>("isApplicationHidden", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#isBackupServiceEnabled(android.content.ComponentName)"/>
@@ -1920,7 +1920,7 @@ namespace Android.App.Admin
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public bool IsPackageSuspended(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isPackageSuspended", arg0, arg1);
+            return IExecuteWithSignature<bool>("isPackageSuspended", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#isPreferentialNetworkServiceEnabled()"/>
@@ -1991,7 +1991,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool IsUninstallBlocked(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isUninstallBlocked", arg0, arg1);
+            return IExecuteWithSignature<bool>("isUninstallBlocked", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#isUniqueDeviceAttestationSupported()"/>
@@ -2026,7 +2026,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool RemoveCrossProfileWidgetProvider(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("removeCrossProfileWidgetProvider", arg0, arg1);
+            return IExecuteWithSignature<bool>("removeCrossProfileWidgetProvider", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#removeKeyPair(android.content.ComponentName,java.lang.String)"/>
@@ -2036,7 +2036,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool RemoveKeyPair(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("removeKeyPair", arg0, arg1);
+            return IExecuteWithSignature<bool>("removeKeyPair", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#removeOverrideApn(android.content.ComponentName,int)"/>
@@ -2046,7 +2046,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool RemoveOverrideApn(Android.Content.ComponentName arg0, int arg1)
         {
-            return IExecute<bool>("removeOverrideApn", arg0, arg1);
+            return IExecuteWithSignature<bool>("removeOverrideApn", "(Landroid/content/ComponentName;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#removeUser(android.content.ComponentName,android.os.UserHandle)"/>
@@ -2056,7 +2056,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool RemoveUser(Android.Content.ComponentName arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<bool>("removeUser", arg0, arg1);
+            return IExecuteWithSignature<bool>("removeUser", "(Landroid/content/ComponentName;Landroid/os/UserHandle;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#requestBugreport(android.content.ComponentName)"/>
@@ -2076,7 +2076,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public bool ResetPassword(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<bool>("resetPassword", arg0, arg1);
+            return IExecuteWithSignature<bool>("resetPassword", "(Ljava/lang/String;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#resetPasswordWithToken(android.content.ComponentName,java.lang.String,byte[],int)"/>
@@ -2088,7 +2088,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool ResetPasswordWithToken(Android.Content.ComponentName arg0, Java.Lang.String arg1, byte[] arg2, int arg3)
         {
-            return IExecute<bool>("resetPasswordWithToken", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("resetPasswordWithToken", "(Landroid/content/ComponentName;Ljava/lang/String;[BI)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#revokeKeyPairFromApp(android.content.ComponentName,java.lang.String,java.lang.String)"/>
@@ -2099,7 +2099,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool RevokeKeyPairFromApp(Android.Content.ComponentName arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<bool>("revokeKeyPairFromApp", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("revokeKeyPairFromApp", "(Landroid/content/ComponentName;Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#revokeKeyPairFromWifiAuth(java.lang.String)"/>
@@ -2119,7 +2119,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool SetApplicationHidden(Android.Content.ComponentName arg0, Java.Lang.String arg1, bool arg2)
         {
-            return IExecute<bool>("setApplicationHidden", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("setApplicationHidden", "(Landroid/content/ComponentName;Ljava/lang/String;Z)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setKeyguardDisabled(android.content.ComponentName,boolean)"/>
@@ -2129,7 +2129,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool SetKeyguardDisabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            return IExecute<bool>("setKeyguardDisabled", arg0, arg1);
+            return IExecuteWithSignature<bool>("setKeyguardDisabled", "(Landroid/content/ComponentName;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setKeyPairCertificate(android.content.ComponentName,java.lang.String,java.util.List,boolean)"/>
@@ -2141,7 +2141,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool SetKeyPairCertificate(Android.Content.ComponentName arg0, Java.Lang.String arg1, Java.Util.List<Java.Security.Cert.Certificate> arg2, bool arg3)
         {
-            return IExecute<bool>("setKeyPairCertificate", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("setKeyPairCertificate", "(Landroid/content/ComponentName;Ljava/lang/String;Ljava/util/List;Z)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPermissionGrantState(android.content.ComponentName,java.lang.String,java.lang.String,int)"/>
@@ -2153,7 +2153,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool SetPermissionGrantState(Android.Content.ComponentName arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3)
         {
-            return IExecute<bool>("setPermissionGrantState", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("setPermissionGrantState", "(Landroid/content/ComponentName;Ljava/lang/String;Ljava/lang/String;I)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPermittedAccessibilityServices(android.content.ComponentName,java.util.List)"/>
@@ -2163,7 +2163,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool SetPermittedAccessibilityServices(Android.Content.ComponentName arg0, Java.Util.List<Java.Lang.String> arg1)
         {
-            return IExecute<bool>("setPermittedAccessibilityServices", arg0, arg1);
+            return IExecuteWithSignature<bool>("setPermittedAccessibilityServices", "(Landroid/content/ComponentName;Ljava/util/List;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPermittedCrossProfileNotificationListeners(android.content.ComponentName,java.util.List)"/>
@@ -2173,7 +2173,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool SetPermittedCrossProfileNotificationListeners(Android.Content.ComponentName arg0, Java.Util.List<Java.Lang.String> arg1)
         {
-            return IExecute<bool>("setPermittedCrossProfileNotificationListeners", arg0, arg1);
+            return IExecuteWithSignature<bool>("setPermittedCrossProfileNotificationListeners", "(Landroid/content/ComponentName;Ljava/util/List;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPermittedInputMethods(android.content.ComponentName,java.util.List)"/>
@@ -2183,7 +2183,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool SetPermittedInputMethods(Android.Content.ComponentName arg0, Java.Util.List<Java.Lang.String> arg1)
         {
-            return IExecute<bool>("setPermittedInputMethods", arg0, arg1);
+            return IExecuteWithSignature<bool>("setPermittedInputMethods", "(Landroid/content/ComponentName;Ljava/util/List;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setResetPasswordToken(android.content.ComponentName,byte[])"/>
@@ -2193,7 +2193,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool SetResetPasswordToken(Android.Content.ComponentName arg0, byte[] arg1)
         {
-            return IExecute<bool>("setResetPasswordToken", arg0, arg1);
+            return IExecuteWithSignature<bool>("setResetPasswordToken", "(Landroid/content/ComponentName;[B)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setStatusBarDisabled(android.content.ComponentName,boolean)"/>
@@ -2203,7 +2203,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool SetStatusBarDisabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            return IExecute<bool>("setStatusBarDisabled", arg0, arg1);
+            return IExecuteWithSignature<bool>("setStatusBarDisabled", "(Landroid/content/ComponentName;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setTime(android.content.ComponentName,long)"/>
@@ -2213,7 +2213,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool SetTime(Android.Content.ComponentName arg0, long arg1)
         {
-            return IExecute<bool>("setTime", arg0, arg1);
+            return IExecuteWithSignature<bool>("setTime", "(Landroid/content/ComponentName;J)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setTimeZone(android.content.ComponentName,java.lang.String)"/>
@@ -2223,7 +2223,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool SetTimeZone(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("setTimeZone", arg0, arg1);
+            return IExecuteWithSignature<bool>("setTimeZone", "(Landroid/content/ComponentName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#switchUser(android.content.ComponentName,android.os.UserHandle)"/>
@@ -2233,7 +2233,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool SwitchUser(Android.Content.ComponentName arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<bool>("switchUser", arg0, arg1);
+            return IExecuteWithSignature<bool>("switchUser", "(Landroid/content/ComponentName;Landroid/os/UserHandle;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#updateOverrideApn(android.content.ComponentName,int,android.telephony.data.ApnSetting)"/>
@@ -2244,7 +2244,7 @@ namespace Android.App.Admin
         /// <returns><see cref="bool"/></returns>
         public bool UpdateOverrideApn(Android.Content.ComponentName arg0, int arg1, Android.Telephony.Data.ApnSetting arg2)
         {
-            return IExecute<bool>("updateOverrideApn", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("updateOverrideApn", "(Landroid/content/ComponentName;ILandroid/telephony/data/ApnSetting;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#addOverrideApn(android.content.ComponentName,android.telephony.data.ApnSetting)"/>
@@ -2254,7 +2254,7 @@ namespace Android.App.Admin
         /// <returns><see cref="int"/></returns>
         public int AddOverrideApn(Android.Content.ComponentName arg0, Android.Telephony.Data.ApnSetting arg1)
         {
-            return IExecute<int>("addOverrideApn", arg0, arg1);
+            return IExecuteWithSignature<int>("addOverrideApn", "(Landroid/content/ComponentName;Landroid/telephony/data/ApnSetting;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#enableSystemApp(android.content.ComponentName,android.content.Intent)"/>
@@ -2264,7 +2264,7 @@ namespace Android.App.Admin
         /// <returns><see cref="int"/></returns>
         public int EnableSystemApp(Android.Content.ComponentName arg0, Android.Content.Intent arg1)
         {
-            return IExecute<int>("enableSystemApp", arg0, arg1);
+            return IExecuteWithSignature<int>("enableSystemApp", "(Landroid/content/ComponentName;Landroid/content/Intent;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getContentProtectionPolicy(android.content.ComponentName)"/>
@@ -2476,7 +2476,7 @@ namespace Android.App.Admin
         /// <returns><see cref="int"/></returns>
         public int GetPermissionGrantState(Android.Content.ComponentName arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<int>("getPermissionGrantState", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getPermissionGrantState", "(Landroid/content/ComponentName;Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getPermissionPolicy(android.content.ComponentName)"/>
@@ -2538,7 +2538,7 @@ namespace Android.App.Admin
         /// <returns><see cref="int"/></returns>
         public int SetGlobalPrivateDnsModeSpecifiedHost(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("setGlobalPrivateDnsModeSpecifiedHost", arg0, arg1);
+            return IExecuteWithSignature<int>("setGlobalPrivateDnsModeSpecifiedHost", "(Landroid/content/ComponentName;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setStorageEncryption(android.content.ComponentName,boolean)"/>
@@ -2549,7 +2549,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public int SetStorageEncryption(Android.Content.ComponentName arg0, bool arg1)
         {
-            return IExecute<int>("setStorageEncryption", arg0, arg1);
+            return IExecuteWithSignature<int>("setStorageEncryption", "(Landroid/content/ComponentName;Z)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#startUserInBackground(android.content.ComponentName,android.os.UserHandle)"/>
@@ -2559,7 +2559,7 @@ namespace Android.App.Admin
         /// <returns><see cref="int"/></returns>
         public int StartUserInBackground(Android.Content.ComponentName arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<int>("startUserInBackground", arg0, arg1);
+            return IExecuteWithSignature<int>("startUserInBackground", "(Landroid/content/ComponentName;Landroid/os/UserHandle;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#stopUser(android.content.ComponentName,android.os.UserHandle)"/>
@@ -2569,7 +2569,7 @@ namespace Android.App.Admin
         /// <returns><see cref="int"/></returns>
         public int StopUser(Android.Content.ComponentName arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<int>("stopUser", arg0, arg1);
+            return IExecuteWithSignature<int>("stopUser", "(Landroid/content/ComponentName;Landroid/os/UserHandle;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getDeviceOwnerLockScreenInfo()"/>
@@ -2714,7 +2714,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] SetPackagesSuspended(Android.Content.ComponentName arg0, Java.Lang.String[] arg1, bool arg2)
         {
-            return IExecuteArray<Java.Lang.String>("setPackagesSuspended", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<Java.Lang.String>("setPackagesSuspended", "(Landroid/content/ComponentName;[Ljava/lang/String;Z)[Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#retrieveNetworkLogs(android.content.ComponentName,long)"/>
@@ -2724,7 +2724,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.App.Admin.NetworkEvent> RetrieveNetworkLogs(Android.Content.ComponentName arg0, long arg1)
         {
-            return IExecute<Java.Util.List<Android.App.Admin.NetworkEvent>>("retrieveNetworkLogs", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.App.Admin.NetworkEvent>>("retrieveNetworkLogs", "(Landroid/content/ComponentName;J)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getPreferentialNetworkServiceConfigs()"/>
@@ -2768,7 +2768,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Os.PersistableBundle> GetTrustAgentConfiguration(Android.Content.ComponentName arg0, Android.Content.ComponentName arg1)
         {
-            return IExecute<Java.Util.List<Android.Os.PersistableBundle>>("getTrustAgentConfiguration", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Os.PersistableBundle>>("getTrustAgentConfiguration", "(Landroid/content/ComponentName;Landroid/content/ComponentName;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getBindDeviceAdminTargetUsers(android.content.ComponentName)"/>
@@ -2831,7 +2831,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.String> GetDelegatedScopes(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Util.List<Java.Lang.String>>("getDelegatedScopes", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getDelegatedScopes", "(Landroid/content/ComponentName;Ljava/lang/String;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getDelegatePackages(android.content.ComponentName,java.lang.String)"/>
@@ -2841,7 +2841,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.String> GetDelegatePackages(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Util.List<Java.Lang.String>>("getDelegatePackages", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getDelegatePackages", "(Landroid/content/ComponentName;Ljava/lang/String;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getKeepUninstalledPackages(android.content.ComponentName)"/>
@@ -2905,7 +2905,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Lang.String> SetMeteredDataDisabledPackages(Android.Content.ComponentName arg0, Java.Util.List<Java.Lang.String> arg1)
         {
-            return IExecute<Java.Util.List<Java.Lang.String>>("setMeteredDataDisabledPackages", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("setMeteredDataDisabledPackages", "(Landroid/content/ComponentName;Ljava/util/List;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getKeyPairGrants(java.lang.String)"/>
@@ -3021,7 +3021,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="int"/></param>
         public void AddCrossProfileIntentFilter(Android.Content.ComponentName arg0, Android.Content.IntentFilter arg1, int arg2)
         {
-            IExecute("addCrossProfileIntentFilter", arg0, arg1, arg2);
+            IExecuteWithSignature("addCrossProfileIntentFilter", "(Landroid/content/ComponentName;Landroid/content/IntentFilter;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#addPersistentPreferredActivity(android.content.ComponentName,android.content.IntentFilter,android.content.ComponentName)"/>
@@ -3031,7 +3031,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Android.Content.ComponentName"/></param>
         public void AddPersistentPreferredActivity(Android.Content.ComponentName arg0, Android.Content.IntentFilter arg1, Android.Content.ComponentName arg2)
         {
-            IExecute("addPersistentPreferredActivity", arg0, arg1, arg2);
+            IExecuteWithSignature("addPersistentPreferredActivity", "(Landroid/content/ComponentName;Landroid/content/IntentFilter;Landroid/content/ComponentName;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#addUserRestriction(android.content.ComponentName,java.lang.String)"/>
@@ -3040,7 +3040,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void AddUserRestriction(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            IExecute("addUserRestriction", arg0, arg1);
+            IExecuteWithSignature("addUserRestriction", "(Landroid/content/ComponentName;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#addUserRestrictionGlobally(java.lang.String)"/>
@@ -3059,7 +3059,7 @@ namespace Android.App.Admin
         /// <param name="arg3"><see cref="Android.App.Admin.DevicePolicyManager.OnClearApplicationUserDataListener"/></param>
         public void ClearApplicationUserData(Android.Content.ComponentName arg0, Java.Lang.String arg1, Java.Util.Concurrent.Executor arg2, Android.App.Admin.DevicePolicyManager.OnClearApplicationUserDataListener arg3)
         {
-            IExecute("clearApplicationUserData", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("clearApplicationUserData", "(Landroid/content/ComponentName;Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/app/admin/DevicePolicyManager$OnClearApplicationUserDataListener;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#clearCrossProfileIntentFilters(android.content.ComponentName)"/>
@@ -3085,7 +3085,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void ClearPackagePersistentPreferredActivities(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            IExecute("clearPackagePersistentPreferredActivities", arg0, arg1);
+            IExecuteWithSignature("clearPackagePersistentPreferredActivities", "(Landroid/content/ComponentName;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#clearProfileOwner(android.content.ComponentName)"/>
@@ -3103,7 +3103,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void ClearUserRestriction(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            IExecute("clearUserRestriction", arg0, arg1);
+            IExecuteWithSignature("clearUserRestriction", "(Landroid/content/ComponentName;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#enableSystemApp(android.content.ComponentName,java.lang.String)"/>
@@ -3112,7 +3112,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void EnableSystemApp(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            IExecute("enableSystemApp", arg0, arg1);
+            IExecuteWithSignature("enableSystemApp", "(Landroid/content/ComponentName;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#installSystemUpdate(android.content.ComponentName,android.net.Uri,java.util.concurrent.Executor,android.app.admin.DevicePolicyManager.InstallSystemUpdateCallback)"/>
@@ -3123,7 +3123,7 @@ namespace Android.App.Admin
         /// <param name="arg3"><see cref="Android.App.Admin.DevicePolicyManager.InstallSystemUpdateCallback"/></param>
         public void InstallSystemUpdate(Android.Content.ComponentName arg0, Android.Net.Uri arg1, Java.Util.Concurrent.Executor arg2, Android.App.Admin.DevicePolicyManager.InstallSystemUpdateCallback arg3)
         {
-            IExecute("installSystemUpdate", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("installSystemUpdate", "(Landroid/content/ComponentName;Landroid/net/Uri;Ljava/util/concurrent/Executor;Landroid/app/admin/DevicePolicyManager$InstallSystemUpdateCallback;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#lockNow()"/>
@@ -3164,7 +3164,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="bool"/></param>
         public void SetAccountManagementDisabled(Android.Content.ComponentName arg0, Java.Lang.String arg1, bool arg2)
         {
-            IExecute("setAccountManagementDisabled", arg0, arg1, arg2);
+            IExecuteWithSignature("setAccountManagementDisabled", "(Landroid/content/ComponentName;Ljava/lang/String;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setAffiliationIds(android.content.ComponentName,java.util.Set)"/>
@@ -3173,7 +3173,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
         public void SetAffiliationIds(Android.Content.ComponentName arg0, Java.Util.Set<Java.Lang.String> arg1)
         {
-            IExecute("setAffiliationIds", arg0, arg1);
+            IExecuteWithSignature("setAffiliationIds", "(Landroid/content/ComponentName;Ljava/util/Set;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setAlwaysOnVpnPackage(android.content.ComponentName,java.lang.String,boolean,java.util.Set)"/>
@@ -3185,7 +3185,7 @@ namespace Android.App.Admin
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public void SetAlwaysOnVpnPackage(Android.Content.ComponentName arg0, Java.Lang.String arg1, bool arg2, Java.Util.Set<Java.Lang.String> arg3)
         {
-            IExecute("setAlwaysOnVpnPackage", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setAlwaysOnVpnPackage", "(Landroid/content/ComponentName;Ljava/lang/String;ZLjava/util/Set;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setAlwaysOnVpnPackage(android.content.ComponentName,java.lang.String,boolean)"/>
@@ -3196,7 +3196,7 @@ namespace Android.App.Admin
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public void SetAlwaysOnVpnPackage(Android.Content.ComponentName arg0, Java.Lang.String arg1, bool arg2)
         {
-            IExecute("setAlwaysOnVpnPackage", arg0, arg1, arg2);
+            IExecuteWithSignature("setAlwaysOnVpnPackage", "(Landroid/content/ComponentName;Ljava/lang/String;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setApplicationRestrictions(android.content.ComponentName,java.lang.String,android.os.Bundle)"/>
@@ -3206,7 +3206,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         public void SetApplicationRestrictions(Android.Content.ComponentName arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            IExecute("setApplicationRestrictions", arg0, arg1, arg2);
+            IExecuteWithSignature("setApplicationRestrictions", "(Landroid/content/ComponentName;Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setApplicationRestrictionsManagingPackage(android.content.ComponentName,java.lang.String)"/>
@@ -3217,7 +3217,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetApplicationRestrictionsManagingPackage(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            IExecute("setApplicationRestrictionsManagingPackage", arg0, arg1);
+            IExecuteWithSignature("setApplicationRestrictionsManagingPackage", "(Landroid/content/ComponentName;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setAutoTimeEnabled(android.content.ComponentName,boolean)"/>
@@ -3226,7 +3226,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetAutoTimeEnabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setAutoTimeEnabled", arg0, arg1);
+            IExecuteWithSignature("setAutoTimeEnabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setAutoTimeRequired(android.content.ComponentName,boolean)"/>
@@ -3236,7 +3236,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetAutoTimeRequired(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setAutoTimeRequired", arg0, arg1);
+            IExecuteWithSignature("setAutoTimeRequired", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setAutoTimeZoneEnabled(android.content.ComponentName,boolean)"/>
@@ -3245,7 +3245,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetAutoTimeZoneEnabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setAutoTimeZoneEnabled", arg0, arg1);
+            IExecuteWithSignature("setAutoTimeZoneEnabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setBackupServiceEnabled(android.content.ComponentName,boolean)"/>
@@ -3254,7 +3254,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetBackupServiceEnabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setBackupServiceEnabled", arg0, arg1);
+            IExecuteWithSignature("setBackupServiceEnabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setBluetoothContactSharingDisabled(android.content.ComponentName,boolean)"/>
@@ -3263,7 +3263,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetBluetoothContactSharingDisabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setBluetoothContactSharingDisabled", arg0, arg1);
+            IExecuteWithSignature("setBluetoothContactSharingDisabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCameraDisabled(android.content.ComponentName,boolean)"/>
@@ -3272,7 +3272,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetCameraDisabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setCameraDisabled", arg0, arg1);
+            IExecuteWithSignature("setCameraDisabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCertInstallerPackage(android.content.ComponentName,java.lang.String)"/>
@@ -3283,7 +3283,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetCertInstallerPackage(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            IExecute("setCertInstallerPackage", arg0, arg1);
+            IExecuteWithSignature("setCertInstallerPackage", "(Landroid/content/ComponentName;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCommonCriteriaModeEnabled(android.content.ComponentName,boolean)"/>
@@ -3292,7 +3292,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetCommonCriteriaModeEnabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setCommonCriteriaModeEnabled", arg0, arg1);
+            IExecuteWithSignature("setCommonCriteriaModeEnabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setConfiguredNetworksLockdownState(android.content.ComponentName,boolean)"/>
@@ -3301,7 +3301,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetConfiguredNetworksLockdownState(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setConfiguredNetworksLockdownState", arg0, arg1);
+            IExecuteWithSignature("setConfiguredNetworksLockdownState", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setContentProtectionPolicy(android.content.ComponentName,int)"/>
@@ -3310,7 +3310,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="int"/></param>
         public void SetContentProtectionPolicy(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setContentProtectionPolicy", arg0, arg1);
+            IExecuteWithSignature("setContentProtectionPolicy", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCredentialManagerPolicy(android.app.admin.PackagePolicy)"/>
@@ -3328,7 +3328,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetCrossProfileCalendarPackages(Android.Content.ComponentName arg0, Java.Util.Set<Java.Lang.String> arg1)
         {
-            IExecute("setCrossProfileCalendarPackages", arg0, arg1);
+            IExecuteWithSignature("setCrossProfileCalendarPackages", "(Landroid/content/ComponentName;Ljava/util/Set;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCrossProfileCallerIdDisabled(android.content.ComponentName,boolean)"/>
@@ -3338,7 +3338,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetCrossProfileCallerIdDisabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setCrossProfileCallerIdDisabled", arg0, arg1);
+            IExecuteWithSignature("setCrossProfileCallerIdDisabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCrossProfileContactsSearchDisabled(android.content.ComponentName,boolean)"/>
@@ -3348,7 +3348,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetCrossProfileContactsSearchDisabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setCrossProfileContactsSearchDisabled", arg0, arg1);
+            IExecuteWithSignature("setCrossProfileContactsSearchDisabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCrossProfilePackages(android.content.ComponentName,java.util.Set)"/>
@@ -3357,7 +3357,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
         public void SetCrossProfilePackages(Android.Content.ComponentName arg0, Java.Util.Set<Java.Lang.String> arg1)
         {
-            IExecute("setCrossProfilePackages", arg0, arg1);
+            IExecuteWithSignature("setCrossProfilePackages", "(Landroid/content/ComponentName;Ljava/util/Set;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setDefaultDialerApplication(java.lang.String)"/>
@@ -3374,7 +3374,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetDefaultSmsApplication(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            IExecute("setDefaultSmsApplication", arg0, arg1);
+            IExecuteWithSignature("setDefaultSmsApplication", "(Landroid/content/ComponentName;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setDelegatedScopes(android.content.ComponentName,java.lang.String,java.util.List)"/>
@@ -3384,7 +3384,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
         public void SetDelegatedScopes(Android.Content.ComponentName arg0, Java.Lang.String arg1, Java.Util.List<Java.Lang.String> arg2)
         {
-            IExecute("setDelegatedScopes", arg0, arg1, arg2);
+            IExecuteWithSignature("setDelegatedScopes", "(Landroid/content/ComponentName;Ljava/lang/String;Ljava/util/List;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setDeviceOwnerLockScreenInfo(android.content.ComponentName,java.lang.CharSequence)"/>
@@ -3393,7 +3393,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void SetDeviceOwnerLockScreenInfo(Android.Content.ComponentName arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("setDeviceOwnerLockScreenInfo", arg0, arg1);
+            IExecuteWithSignature("setDeviceOwnerLockScreenInfo", "(Landroid/content/ComponentName;Ljava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setEndUserSessionMessage(android.content.ComponentName,java.lang.CharSequence)"/>
@@ -3402,7 +3402,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void SetEndUserSessionMessage(Android.Content.ComponentName arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("setEndUserSessionMessage", arg0, arg1);
+            IExecuteWithSignature("setEndUserSessionMessage", "(Landroid/content/ComponentName;Ljava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setFactoryResetProtectionPolicy(android.content.ComponentName,android.app.admin.FactoryResetProtectionPolicy)"/>
@@ -3411,7 +3411,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.App.Admin.FactoryResetProtectionPolicy"/></param>
         public void SetFactoryResetProtectionPolicy(Android.Content.ComponentName arg0, Android.App.Admin.FactoryResetProtectionPolicy arg1)
         {
-            IExecute("setFactoryResetProtectionPolicy", arg0, arg1);
+            IExecuteWithSignature("setFactoryResetProtectionPolicy", "(Landroid/content/ComponentName;Landroid/app/admin/FactoryResetProtectionPolicy;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setGlobalSetting(android.content.ComponentName,java.lang.String,java.lang.String)"/>
@@ -3421,7 +3421,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void SetGlobalSetting(Android.Content.ComponentName arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("setGlobalSetting", arg0, arg1, arg2);
+            IExecuteWithSignature("setGlobalSetting", "(Landroid/content/ComponentName;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setKeepUninstalledPackages(android.content.ComponentName,java.util.List)"/>
@@ -3430,7 +3430,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         public void SetKeepUninstalledPackages(Android.Content.ComponentName arg0, Java.Util.List<Java.Lang.String> arg1)
         {
-            IExecute("setKeepUninstalledPackages", arg0, arg1);
+            IExecuteWithSignature("setKeepUninstalledPackages", "(Landroid/content/ComponentName;Ljava/util/List;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setKeyguardDisabledFeatures(android.content.ComponentName,int)"/>
@@ -3439,7 +3439,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="int"/></param>
         public void SetKeyguardDisabledFeatures(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setKeyguardDisabledFeatures", arg0, arg1);
+            IExecuteWithSignature("setKeyguardDisabledFeatures", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setLocationEnabled(android.content.ComponentName,boolean)"/>
@@ -3448,7 +3448,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetLocationEnabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setLocationEnabled", arg0, arg1);
+            IExecuteWithSignature("setLocationEnabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setLockTaskFeatures(android.content.ComponentName,int)"/>
@@ -3457,7 +3457,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLockTaskFeatures(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setLockTaskFeatures", arg0, arg1);
+            IExecuteWithSignature("setLockTaskFeatures", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setLockTaskPackages(android.content.ComponentName,java.lang.String[])"/>
@@ -3467,7 +3467,7 @@ namespace Android.App.Admin
         /// <exception cref="Java.Lang.SecurityException"/>
         public void SetLockTaskPackages(Android.Content.ComponentName arg0, Java.Lang.String[] arg1)
         {
-            IExecute("setLockTaskPackages", arg0, arg1);
+            IExecuteWithSignature("setLockTaskPackages", "(Landroid/content/ComponentName;[Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setLogoutEnabled(android.content.ComponentName,boolean)"/>
@@ -3476,7 +3476,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetLogoutEnabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setLogoutEnabled", arg0, arg1);
+            IExecuteWithSignature("setLogoutEnabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setLongSupportMessage(android.content.ComponentName,java.lang.CharSequence)"/>
@@ -3485,7 +3485,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void SetLongSupportMessage(Android.Content.ComponentName arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("setLongSupportMessage", arg0, arg1);
+            IExecuteWithSignature("setLongSupportMessage", "(Landroid/content/ComponentName;Ljava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setManagedProfileCallerIdAccessPolicy(android.app.admin.PackagePolicy)"/>
@@ -3510,7 +3510,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="long"/></param>
         public void SetManagedProfileMaximumTimeOff(Android.Content.ComponentName arg0, long arg1)
         {
-            IExecute("setManagedProfileMaximumTimeOff", arg0, arg1);
+            IExecuteWithSignature("setManagedProfileMaximumTimeOff", "(Landroid/content/ComponentName;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setManagedSubscriptionsPolicy(android.app.admin.ManagedSubscriptionsPolicy)"/>
@@ -3527,7 +3527,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetMasterVolumeMuted(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setMasterVolumeMuted", arg0, arg1);
+            IExecuteWithSignature("setMasterVolumeMuted", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setMaximumFailedPasswordsForWipe(android.content.ComponentName,int)"/>
@@ -3536,7 +3536,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="int"/></param>
         public void SetMaximumFailedPasswordsForWipe(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setMaximumFailedPasswordsForWipe", arg0, arg1);
+            IExecuteWithSignature("setMaximumFailedPasswordsForWipe", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setMaximumTimeToLock(android.content.ComponentName,long)"/>
@@ -3545,7 +3545,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="long"/></param>
         public void SetMaximumTimeToLock(Android.Content.ComponentName arg0, long arg1)
         {
-            IExecute("setMaximumTimeToLock", arg0, arg1);
+            IExecuteWithSignature("setMaximumTimeToLock", "(Landroid/content/ComponentName;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setMinimumRequiredWifiSecurityLevel(int)"/>
@@ -3586,7 +3586,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetNetworkLoggingEnabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setNetworkLoggingEnabled", arg0, arg1);
+            IExecuteWithSignature("setNetworkLoggingEnabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setOrganizationColor(android.content.ComponentName,int)"/>
@@ -3596,7 +3596,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetOrganizationColor(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setOrganizationColor", arg0, arg1);
+            IExecuteWithSignature("setOrganizationColor", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setOrganizationId(java.lang.String)"/>
@@ -3613,7 +3613,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void SetOrganizationName(Android.Content.ComponentName arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("setOrganizationName", arg0, arg1);
+            IExecuteWithSignature("setOrganizationName", "(Landroid/content/ComponentName;Ljava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setOverrideApnsEnabled(android.content.ComponentName,boolean)"/>
@@ -3622,7 +3622,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetOverrideApnsEnabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setOverrideApnsEnabled", arg0, arg1);
+            IExecuteWithSignature("setOverrideApnsEnabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordExpirationTimeout(android.content.ComponentName,long)"/>
@@ -3631,7 +3631,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="long"/></param>
         public void SetPasswordExpirationTimeout(Android.Content.ComponentName arg0, long arg1)
         {
-            IExecute("setPasswordExpirationTimeout", arg0, arg1);
+            IExecuteWithSignature("setPasswordExpirationTimeout", "(Landroid/content/ComponentName;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordHistoryLength(android.content.ComponentName,int)"/>
@@ -3640,7 +3640,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="int"/></param>
         public void SetPasswordHistoryLength(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setPasswordHistoryLength", arg0, arg1);
+            IExecuteWithSignature("setPasswordHistoryLength", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumLength(android.content.ComponentName,int)"/>
@@ -3650,7 +3650,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetPasswordMinimumLength(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setPasswordMinimumLength", arg0, arg1);
+            IExecuteWithSignature("setPasswordMinimumLength", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumLetters(android.content.ComponentName,int)"/>
@@ -3660,7 +3660,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetPasswordMinimumLetters(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setPasswordMinimumLetters", arg0, arg1);
+            IExecuteWithSignature("setPasswordMinimumLetters", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumLowerCase(android.content.ComponentName,int)"/>
@@ -3670,7 +3670,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetPasswordMinimumLowerCase(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setPasswordMinimumLowerCase", arg0, arg1);
+            IExecuteWithSignature("setPasswordMinimumLowerCase", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumNonLetter(android.content.ComponentName,int)"/>
@@ -3680,7 +3680,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetPasswordMinimumNonLetter(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setPasswordMinimumNonLetter", arg0, arg1);
+            IExecuteWithSignature("setPasswordMinimumNonLetter", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumNumeric(android.content.ComponentName,int)"/>
@@ -3690,7 +3690,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetPasswordMinimumNumeric(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setPasswordMinimumNumeric", arg0, arg1);
+            IExecuteWithSignature("setPasswordMinimumNumeric", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumSymbols(android.content.ComponentName,int)"/>
@@ -3700,7 +3700,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetPasswordMinimumSymbols(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setPasswordMinimumSymbols", arg0, arg1);
+            IExecuteWithSignature("setPasswordMinimumSymbols", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumUpperCase(android.content.ComponentName,int)"/>
@@ -3710,7 +3710,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetPasswordMinimumUpperCase(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setPasswordMinimumUpperCase", arg0, arg1);
+            IExecuteWithSignature("setPasswordMinimumUpperCase", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordQuality(android.content.ComponentName,int)"/>
@@ -3720,7 +3720,7 @@ namespace Android.App.Admin
         [global::System.Obsolete()]
         public void SetPasswordQuality(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setPasswordQuality", arg0, arg1);
+            IExecuteWithSignature("setPasswordQuality", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPermissionPolicy(android.content.ComponentName,int)"/>
@@ -3729,7 +3729,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="int"/></param>
         public void SetPermissionPolicy(Android.Content.ComponentName arg0, int arg1)
         {
-            IExecute("setPermissionPolicy", arg0, arg1);
+            IExecuteWithSignature("setPermissionPolicy", "(Landroid/content/ComponentName;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPersonalAppsSuspended(android.content.ComponentName,boolean)"/>
@@ -3738,7 +3738,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetPersonalAppsSuspended(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setPersonalAppsSuspended", arg0, arg1);
+            IExecuteWithSignature("setPersonalAppsSuspended", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPreferentialNetworkServiceConfigs(java.util.List)"/>
@@ -3771,7 +3771,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetProfileName(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
-            IExecute("setProfileName", arg0, arg1);
+            IExecuteWithSignature("setProfileName", "(Landroid/content/ComponentName;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,android.net.ProxyInfo)"/>
@@ -3780,7 +3780,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.Net.ProxyInfo"/></param>
         public void SetRecommendedGlobalProxy(Android.Content.ComponentName arg0, Android.Net.ProxyInfo arg1)
         {
-            IExecute("setRecommendedGlobalProxy", arg0, arg1);
+            IExecuteWithSignature("setRecommendedGlobalProxy", "(Landroid/content/ComponentName;Landroid/net/ProxyInfo;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRequiredPasswordComplexity(int)"/>
@@ -3797,7 +3797,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="long"/></param>
         public void SetRequiredStrongAuthTimeout(Android.Content.ComponentName arg0, long arg1)
         {
-            IExecute("setRequiredStrongAuthTimeout", arg0, arg1);
+            IExecuteWithSignature("setRequiredStrongAuthTimeout", "(Landroid/content/ComponentName;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRestrictionsProvider(android.content.ComponentName,android.content.ComponentName)"/>
@@ -3806,7 +3806,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.Content.ComponentName"/></param>
         public void SetRestrictionsProvider(Android.Content.ComponentName arg0, Android.Content.ComponentName arg1)
         {
-            IExecute("setRestrictionsProvider", arg0, arg1);
+            IExecuteWithSignature("setRestrictionsProvider", "(Landroid/content/ComponentName;Landroid/content/ComponentName;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setScreenCaptureDisabled(android.content.ComponentName,boolean)"/>
@@ -3815,7 +3815,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetScreenCaptureDisabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setScreenCaptureDisabled", arg0, arg1);
+            IExecuteWithSignature("setScreenCaptureDisabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setSecureSetting(android.content.ComponentName,java.lang.String,java.lang.String)"/>
@@ -3825,7 +3825,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void SetSecureSetting(Android.Content.ComponentName arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("setSecureSetting", arg0, arg1, arg2);
+            IExecuteWithSignature("setSecureSetting", "(Landroid/content/ComponentName;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setSecurityLoggingEnabled(android.content.ComponentName,boolean)"/>
@@ -3834,7 +3834,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetSecurityLoggingEnabled(Android.Content.ComponentName arg0, bool arg1)
         {
-            IExecute("setSecurityLoggingEnabled", arg0, arg1);
+            IExecuteWithSignature("setSecurityLoggingEnabled", "(Landroid/content/ComponentName;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setShortSupportMessage(android.content.ComponentName,java.lang.CharSequence)"/>
@@ -3843,7 +3843,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void SetShortSupportMessage(Android.Content.ComponentName arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("setShortSupportMessage", arg0, arg1);
+            IExecuteWithSignature("setShortSupportMessage", "(Landroid/content/ComponentName;Ljava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setStartUserSessionMessage(android.content.ComponentName,java.lang.CharSequence)"/>
@@ -3852,7 +3852,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void SetStartUserSessionMessage(Android.Content.ComponentName arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("setStartUserSessionMessage", arg0, arg1);
+            IExecuteWithSignature("setStartUserSessionMessage", "(Landroid/content/ComponentName;Ljava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setSystemSetting(android.content.ComponentName,java.lang.String,java.lang.String)"/>
@@ -3862,7 +3862,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void SetSystemSetting(Android.Content.ComponentName arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("setSystemSetting", arg0, arg1, arg2);
+            IExecuteWithSignature("setSystemSetting", "(Landroid/content/ComponentName;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setSystemUpdatePolicy(android.content.ComponentName,android.app.admin.SystemUpdatePolicy)"/>
@@ -3871,7 +3871,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.App.Admin.SystemUpdatePolicy"/></param>
         public void SetSystemUpdatePolicy(Android.Content.ComponentName arg0, Android.App.Admin.SystemUpdatePolicy arg1)
         {
-            IExecute("setSystemUpdatePolicy", arg0, arg1);
+            IExecuteWithSignature("setSystemUpdatePolicy", "(Landroid/content/ComponentName;Landroid/app/admin/SystemUpdatePolicy;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setTrustAgentConfiguration(android.content.ComponentName,android.content.ComponentName,android.os.PersistableBundle)"/>
@@ -3881,7 +3881,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Android.Os.PersistableBundle"/></param>
         public void SetTrustAgentConfiguration(Android.Content.ComponentName arg0, Android.Content.ComponentName arg1, Android.Os.PersistableBundle arg2)
         {
-            IExecute("setTrustAgentConfiguration", arg0, arg1, arg2);
+            IExecuteWithSignature("setTrustAgentConfiguration", "(Landroid/content/ComponentName;Landroid/content/ComponentName;Landroid/os/PersistableBundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setUninstallBlocked(android.content.ComponentName,java.lang.String,boolean)"/>
@@ -3891,7 +3891,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="bool"/></param>
         public void SetUninstallBlocked(Android.Content.ComponentName arg0, Java.Lang.String arg1, bool arg2)
         {
-            IExecute("setUninstallBlocked", arg0, arg1, arg2);
+            IExecuteWithSignature("setUninstallBlocked", "(Landroid/content/ComponentName;Ljava/lang/String;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setUsbDataSignalingEnabled(boolean)"/>
@@ -3908,7 +3908,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         public void SetUserControlDisabledPackages(Android.Content.ComponentName arg0, Java.Util.List<Java.Lang.String> arg1)
         {
-            IExecute("setUserControlDisabledPackages", arg0, arg1);
+            IExecuteWithSignature("setUserControlDisabledPackages", "(Landroid/content/ComponentName;Ljava/util/List;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setUserIcon(android.content.ComponentName,android.graphics.Bitmap)"/>
@@ -3917,7 +3917,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
         public void SetUserIcon(Android.Content.ComponentName arg0, Android.Graphics.Bitmap arg1)
         {
-            IExecute("setUserIcon", arg0, arg1);
+            IExecuteWithSignature("setUserIcon", "(Landroid/content/ComponentName;Landroid/graphics/Bitmap;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setWifiSsidPolicy(android.app.admin.WifiSsidPolicy)"/>
@@ -3935,7 +3935,7 @@ namespace Android.App.Admin
         /// <param name="arg2"><see cref="Android.Os.PersistableBundle"/></param>
         public void TransferOwnership(Android.Content.ComponentName arg0, Android.Content.ComponentName arg1, Android.Os.PersistableBundle arg2)
         {
-            IExecute("transferOwnership", arg0, arg1, arg2);
+            IExecuteWithSignature("transferOwnership", "(Landroid/content/ComponentName;Landroid/content/ComponentName;Landroid/os/PersistableBundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#uninstallAllUserCaCerts(android.content.ComponentName)"/>
@@ -3952,7 +3952,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="byte"/></param>
         public void UninstallCaCert(Android.Content.ComponentName arg0, byte[] arg1)
         {
-            IExecute("uninstallCaCert", arg0, arg1);
+            IExecuteWithSignature("uninstallCaCert", "(Landroid/content/ComponentName;[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#wipeData(int,java.lang.CharSequence)"/>
@@ -3961,7 +3961,7 @@ namespace Android.App.Admin
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void WipeData(int arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("wipeData", arg0, arg1);
+            IExecuteWithSignature("wipeData", "(ILjava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#wipeData(int)"/>
@@ -3979,21 +3979,21 @@ namespace Android.App.Admin
         {
             IExecuteWithSignature("wipeDevice", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region InstallSystemUpdateCallback implementation
         public partial class InstallSystemUpdateCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.InstallSystemUpdateCallback.html#UPDATE_ERROR_BATTERY_LOW"/>
@@ -4025,13 +4025,13 @@ namespace Android.App.Admin
             public static int UPDATE_ERROR_UPDATE_FILE_INVALID { get { if (!_UPDATE_ERROR_UPDATE_FILE_INVALIDReady) { _UPDATE_ERROR_UPDATE_FILE_INVALIDContent = SGetField<int>(LocalBridgeClazz, "UPDATE_ERROR_UPDATE_FILE_INVALID"); _UPDATE_ERROR_UPDATE_FILE_INVALIDReady = true; } return _UPDATE_ERROR_UPDATE_FILE_INVALIDContent; } }
             private static int _UPDATE_ERROR_UPDATE_FILE_INVALIDContent = default;
             private static bool _UPDATE_ERROR_UPDATE_FILE_INVALIDReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.InstallSystemUpdateCallback.html#onInstallUpdateError(int,java.lang.String)"/>
@@ -4040,15 +4040,15 @@ namespace Android.App.Admin
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public void OnInstallUpdateError(int arg0, Java.Lang.String arg1)
             {
-                IExecute("onInstallUpdateError", arg0, arg1);
+                IExecuteWithSignature("onInstallUpdateError", "(ILjava/lang/String;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4057,21 +4057,21 @@ namespace Android.App.Admin
         public partial class OnClearApplicationUserDataListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnClearApplicationUserDataListener"/>
@@ -4081,13 +4081,13 @@ namespace Android.App.Admin
                 AddEventHandler("onApplicationUserDataCleared", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnApplicationUserDataClearedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener.html#onApplicationUserDataCleared(java.lang.String,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnApplicationUserDataCleared"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.String, bool> OnOnApplicationUserDataCleared { get; set; } = null;
-            
+
             bool hasOverrideOnApplicationUserDataCleared = true;
             void OnApplicationUserDataClearedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -4096,7 +4096,7 @@ namespace Android.App.Admin
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<bool>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnApplicationUserDataCleared;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener.html#onApplicationUserDataCleared(java.lang.String,boolean)"/>
             /// </summary>
@@ -4106,13 +4106,13 @@ namespace Android.App.Admin
             {
                 hasOverrideOnApplicationUserDataCleared = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4121,21 +4121,21 @@ namespace Android.App.Admin
         public partial class OnClearApplicationUserDataListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener.html#onApplicationUserDataCleared(java.lang.String,boolean)"/>
@@ -4144,22 +4144,22 @@ namespace Android.App.Admin
             /// <param name="arg1"><see cref="bool"/></param>
             public override void OnApplicationUserDataCleared(Java.Lang.String arg0, bool arg1)
             {
-                IExecute("onApplicationUserDataCleared", arg0, arg1);
+                IExecuteWithSignature("onApplicationUserDataCleared", "(Ljava/lang/String;Z)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

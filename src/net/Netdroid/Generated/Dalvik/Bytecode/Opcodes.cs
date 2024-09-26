@@ -42,10 +42,10 @@ namespace Dalvik.Bytecode
         /// </summary>
         [global::System.Obsolete("Opcodes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Opcodes(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Dalvik.Bytecode
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Dalvik.Bytecode
     public partial interface IOpcodes
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Dalvik.Bytecode
     public partial class Opcodes : Dalvik.Bytecode.IOpcodes
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_ADD_DOUBLE"/>
@@ -1813,21 +1813,21 @@ namespace Dalvik.Bytecode
         public static int OP_XOR_LONG_2ADDR { get { if (!_OP_XOR_LONG_2ADDRReady) { _OP_XOR_LONG_2ADDRContent = SGetField<int>(LocalBridgeClazz, "OP_XOR_LONG_2ADDR"); _OP_XOR_LONG_2ADDRReady = true; } return _OP_XOR_LONG_2ADDRContent; } }
         private static int _OP_XOR_LONG_2ADDRContent = default;
         private static bool _OP_XOR_LONG_2ADDRReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

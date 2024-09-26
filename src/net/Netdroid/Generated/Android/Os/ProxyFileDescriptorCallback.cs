@@ -42,10 +42,10 @@ namespace Android.Os
         /// </summary>
         [global::System.Obsolete("ProxyFileDescriptorCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ProxyFileDescriptorCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Android.Os
     public partial class ProxyFileDescriptorCallback
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ProxyFileDescriptorCallback.html#onRelease()"/>
@@ -109,7 +109,7 @@ namespace Android.Os
         /// <exception cref="Android.System.ErrnoException"/>
         public int OnRead(long arg0, int arg1, byte[] arg2)
         {
-            return IExecute<int>("onRead", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("onRead", "(JI[B)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ProxyFileDescriptorCallback.html#onWrite(long,int,byte[])"/>
@@ -121,7 +121,7 @@ namespace Android.Os
         /// <exception cref="Android.System.ErrnoException"/>
         public int OnWrite(long arg0, int arg1, byte[] arg2)
         {
-            return IExecute<int>("onWrite", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("onWrite", "(JI[B)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ProxyFileDescriptorCallback.html#onGetSize()"/>
@@ -140,13 +140,13 @@ namespace Android.Os
         {
             IExecuteWithSignature("onFsync", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

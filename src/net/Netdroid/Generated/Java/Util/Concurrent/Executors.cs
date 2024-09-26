@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Executors(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Util.Concurrent
     public partial class Executors
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/Executors.html#callable(java.lang.Runnable,java.lang.Object)"/>
@@ -95,7 +95,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
         public static Java.Util.Concurrent.Callable<T> Callable<T>(Java.Lang.Runnable arg0, T arg1)
         {
-            return SExecute<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "callable", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "callable", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Callable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/Executors.html#privilegedCallable(java.util.concurrent.Callable)"/>
@@ -171,7 +171,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewFixedThreadPool(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
         {
-            return SExecute<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newFixedThreadPool", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newFixedThreadPool", "(ILjava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/Executors.html#newFixedThreadPool(int)"/>
@@ -233,7 +233,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledExecutorService"/></returns>
         public static Java.Util.Concurrent.ScheduledExecutorService NewScheduledThreadPool(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
         {
-            return SExecute<Java.Util.Concurrent.ScheduledExecutorService>(LocalBridgeClazz, "newScheduledThreadPool", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Concurrent.ScheduledExecutorService>(LocalBridgeClazz, "newScheduledThreadPool", "(ILjava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ScheduledExecutorService;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/Executors.html#newScheduledThreadPool(int)"/>
@@ -287,17 +287,17 @@ namespace Java.Util.Concurrent
         {
             return SExecuteWithSignature<Java.Util.Concurrent.ThreadFactory>(LocalBridgeClazz, "privilegedThreadFactory", "()Ljava/util/concurrent/ThreadFactory;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

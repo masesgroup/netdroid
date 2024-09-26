@@ -42,10 +42,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("AttachedSurfaceControl class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AttachedSurfaceControl(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnBufferTransformHintChangedListener declaration
         /// <summary>
@@ -78,7 +78,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnBufferTransformHintChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.AttachedSurfaceControl_OnBufferTransformHintChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -87,13 +87,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnBufferTransformHintChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnBufferTransformHintChangedListener"/> or its generic type if there is one
@@ -104,14 +104,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.AttachedSurfaceControl$OnBufferTransformHintChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -146,13 +146,13 @@ namespace Android.View
     public partial interface IAttachedSurfaceControl
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -161,21 +161,21 @@ namespace Android.View
     public partial class AttachedSurfaceControl : Android.View.IAttachedSurfaceControl
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#buildReparentTransaction(android.view.SurfaceControl)"/>
@@ -243,29 +243,29 @@ namespace Android.View
         {
             IExecuteWithSignature("setTouchableRegion", "(Landroid/graphics/Region;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnBufferTransformHintChangedListener implementation
         public partial class OnBufferTransformHintChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnBufferTransformHintChangedListener"/>
@@ -275,13 +275,13 @@ namespace Android.View
                 AddEventHandler("onBufferTransformHintChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnBufferTransformHintChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.OnBufferTransformHintChangedListener.html#onBufferTransformHintChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnBufferTransformHintChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnBufferTransformHintChanged { get; set; } = null;
-            
+
             bool hasOverrideOnBufferTransformHintChanged = true;
             void OnBufferTransformHintChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -290,7 +290,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnBufferTransformHintChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.OnBufferTransformHintChangedListener.html#onBufferTransformHintChanged(int)"/>
             /// </summary>
@@ -299,13 +299,13 @@ namespace Android.View
             {
                 hasOverrideOnBufferTransformHintChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -314,21 +314,21 @@ namespace Android.View
         public partial class OnBufferTransformHintChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.OnBufferTransformHintChangedListener.html#onBufferTransformHintChanged(int)"/>
@@ -338,20 +338,20 @@ namespace Android.View
             {
                 IExecuteWithSignature("onBufferTransformHintChanged", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

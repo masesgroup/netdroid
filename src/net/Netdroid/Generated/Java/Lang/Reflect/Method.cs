@@ -40,10 +40,10 @@ namespace Java.Lang.Reflect
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Method(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Lang.Reflect
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Java.Lang.Reflect
     public partial class Method
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Method.html#isBridge()"/>
@@ -133,7 +133,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.Reflect.InvocationTargetException"/>
         public object Invoke(object arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute("invoke", arg0); else return IExecute("invoke", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature("invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", arg0); else return IExecuteWithSignature("invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Method.html#getGenericReturnType()"/>
@@ -143,13 +143,13 @@ namespace Java.Lang.Reflect
         {
             return IExecuteWithSignature<Java.Lang.Reflect.Type>("getGenericReturnType", "()Ljava/lang/reflect/Type;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

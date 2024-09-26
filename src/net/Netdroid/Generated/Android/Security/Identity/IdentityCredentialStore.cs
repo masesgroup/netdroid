@@ -42,10 +42,10 @@ namespace Android.Security.Identity
         /// </summary>
         [global::System.Obsolete("IdentityCredentialStore class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IdentityCredentialStore(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Security.Identity
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Security.Identity
     public partial class IdentityCredentialStore
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredentialStore.html#CIPHERSUITE_ECDHE_HKDF_ECDSA_WITH_AES_256_GCM_SHA256"/>
@@ -90,9 +90,9 @@ namespace Android.Security.Identity
         public static int CIPHERSUITE_ECDHE_HKDF_ECDSA_WITH_AES_256_GCM_SHA256 { get { if (!_CIPHERSUITE_ECDHE_HKDF_ECDSA_WITH_AES_256_GCM_SHA256Ready) { _CIPHERSUITE_ECDHE_HKDF_ECDSA_WITH_AES_256_GCM_SHA256Content = SGetField<int>(LocalBridgeClazz, "CIPHERSUITE_ECDHE_HKDF_ECDSA_WITH_AES_256_GCM_SHA256"); _CIPHERSUITE_ECDHE_HKDF_ECDSA_WITH_AES_256_GCM_SHA256Ready = true; } return _CIPHERSUITE_ECDHE_HKDF_ECDSA_WITH_AES_256_GCM_SHA256Content; } }
         private static int _CIPHERSUITE_ECDHE_HKDF_ECDSA_WITH_AES_256_GCM_SHA256Content = default;
         private static bool _CIPHERSUITE_ECDHE_HKDF_ECDSA_WITH_AES_256_GCM_SHA256Ready = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredentialStore.html#getDirectAccessInstance(android.content.Context)"/>
@@ -112,9 +112,9 @@ namespace Android.Security.Identity
         {
             return SExecuteWithSignature<Android.Security.Identity.IdentityCredentialStore>(LocalBridgeClazz, "getInstance", "(Landroid/content/Context;)Landroid/security/identity/IdentityCredentialStore;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredentialStore.html#getCredentialByName(java.lang.String,int)"/>
@@ -125,7 +125,7 @@ namespace Android.Security.Identity
         /// <exception cref="Android.Security.Identity.CipherSuiteNotSupportedException"/>
         public Android.Security.Identity.IdentityCredential GetCredentialByName(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Security.Identity.IdentityCredential>("getCredentialByName", arg0, arg1);
+            return IExecuteWithSignature<Android.Security.Identity.IdentityCredential>("getCredentialByName", "(Ljava/lang/String;I)Landroid/security/identity/IdentityCredential;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredentialStore.html#createCredential(java.lang.String,java.lang.String)"/>
@@ -137,7 +137,7 @@ namespace Android.Security.Identity
         /// <exception cref="Android.Security.Identity.DocTypeNotSupportedException"/>
         public Android.Security.Identity.WritableIdentityCredential CreateCredential(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Security.Identity.WritableIdentityCredential>("createCredential", arg0, arg1);
+            return IExecuteWithSignature<Android.Security.Identity.WritableIdentityCredential>("createCredential", "(Ljava/lang/String;Ljava/lang/String;)Landroid/security/identity/WritableIdentityCredential;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredentialStore.html#deleteCredentialByName(java.lang.String)"/>
@@ -167,13 +167,13 @@ namespace Android.Security.Identity
         {
             return IExecuteWithSignature<Android.Security.Identity.PresentationSession>("createPresentationSession", "(I)Landroid/security/identity/PresentationSession;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

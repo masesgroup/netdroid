@@ -40,10 +40,10 @@ namespace Android.Graphics.Drawable
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LayerDrawable(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics.Drawable
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,13 +82,13 @@ namespace Android.Graphics.Drawable
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#INSET_UNDEFINED"/>
@@ -108,13 +108,13 @@ namespace Android.Graphics.Drawable
         public static int PADDING_MODE_STACK { get { if (!_PADDING_MODE_STACKReady) { _PADDING_MODE_STACKContent = SGetField<int>(LocalBridgeClazz, "PADDING_MODE_STACK"); _PADDING_MODE_STACKReady = true; } return _PADDING_MODE_STACKContent; } }
         private static int _PADDING_MODE_STACKContent = default;
         private static bool _PADDING_MODE_STACKReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#findDrawableByLayerId(int)"/>
@@ -142,7 +142,7 @@ namespace Android.Graphics.Drawable
         /// <returns><see cref="bool"/></returns>
         public bool SetDrawableByLayerId(int arg0, Android.Graphics.Drawable.Drawable arg1)
         {
-            return IExecute<bool>("setDrawableByLayerId", arg0, arg1);
+            return IExecuteWithSignature<bool>("setDrawableByLayerId", "(ILandroid/graphics/drawable/Drawable;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#addLayer(android.graphics.drawable.Drawable)"/>
@@ -332,7 +332,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg2"><see cref="long"/></param>
         public void ScheduleDrawable(Android.Graphics.Drawable.Drawable arg0, Java.Lang.Runnable arg1, long arg2)
         {
-            IExecute("scheduleDrawable", arg0, arg1, arg2);
+            IExecuteWithSignature("scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setDrawable(int,android.graphics.drawable.Drawable)"/>
@@ -341,7 +341,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="Android.Graphics.Drawable.Drawable"/></param>
         public void SetDrawable(int arg0, Android.Graphics.Drawable.Drawable arg1)
         {
-            IExecute("setDrawable", arg0, arg1);
+            IExecuteWithSignature("setDrawable", "(ILandroid/graphics/drawable/Drawable;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setId(int,int)"/>
@@ -350,7 +350,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void SetId(int arg0, int arg1)
         {
-            IExecute("setId", arg0, arg1);
+            IExecuteWithSignature("setId", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerGravity(int,int)"/>
@@ -359,7 +359,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLayerGravity(int arg0, int arg1)
         {
-            IExecute("setLayerGravity", arg0, arg1);
+            IExecuteWithSignature("setLayerGravity", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerHeight(int,int)"/>
@@ -368,7 +368,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLayerHeight(int arg0, int arg1)
         {
-            IExecute("setLayerHeight", arg0, arg1);
+            IExecuteWithSignature("setLayerHeight", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInset(int,int,int,int,int)"/>
@@ -380,7 +380,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg4"><see cref="int"/></param>
         public void SetLayerInset(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("setLayerInset", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setLayerInset", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetBottom(int,int)"/>
@@ -389,7 +389,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLayerInsetBottom(int arg0, int arg1)
         {
-            IExecute("setLayerInsetBottom", arg0, arg1);
+            IExecuteWithSignature("setLayerInsetBottom", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetEnd(int,int)"/>
@@ -398,7 +398,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLayerInsetEnd(int arg0, int arg1)
         {
-            IExecute("setLayerInsetEnd", arg0, arg1);
+            IExecuteWithSignature("setLayerInsetEnd", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetLeft(int,int)"/>
@@ -407,7 +407,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLayerInsetLeft(int arg0, int arg1)
         {
-            IExecute("setLayerInsetLeft", arg0, arg1);
+            IExecuteWithSignature("setLayerInsetLeft", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetRelative(int,int,int,int,int)"/>
@@ -419,7 +419,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg4"><see cref="int"/></param>
         public void SetLayerInsetRelative(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("setLayerInsetRelative", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setLayerInsetRelative", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetRight(int,int)"/>
@@ -428,7 +428,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLayerInsetRight(int arg0, int arg1)
         {
-            IExecute("setLayerInsetRight", arg0, arg1);
+            IExecuteWithSignature("setLayerInsetRight", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetStart(int,int)"/>
@@ -437,7 +437,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLayerInsetStart(int arg0, int arg1)
         {
-            IExecute("setLayerInsetStart", arg0, arg1);
+            IExecuteWithSignature("setLayerInsetStart", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerInsetTop(int,int)"/>
@@ -446,7 +446,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLayerInsetTop(int arg0, int arg1)
         {
-            IExecute("setLayerInsetTop", arg0, arg1);
+            IExecuteWithSignature("setLayerInsetTop", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerSize(int,int,int)"/>
@@ -456,7 +456,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg2"><see cref="int"/></param>
         public void SetLayerSize(int arg0, int arg1, int arg2)
         {
-            IExecute("setLayerSize", arg0, arg1, arg2);
+            IExecuteWithSignature("setLayerSize", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setLayerWidth(int,int)"/>
@@ -465,7 +465,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLayerWidth(int arg0, int arg1)
         {
-            IExecute("setLayerWidth", arg0, arg1);
+            IExecuteWithSignature("setLayerWidth", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setOpacity(int)"/>
@@ -484,7 +484,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg3"><see cref="int"/></param>
         public void SetPadding(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setPadding", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setPadding", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#setPaddingMode(int)"/>
@@ -503,7 +503,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg3"><see cref="int"/></param>
         public void SetPaddingRelative(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setPaddingRelative", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setPaddingRelative", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/LayerDrawable.html#unscheduleDrawable(android.graphics.drawable.Drawable,java.lang.Runnable)"/>
@@ -512,15 +512,15 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         public void UnscheduleDrawable(Android.Graphics.Drawable.Drawable arg0, Java.Lang.Runnable arg1)
         {
-            IExecute("unscheduleDrawable", arg0, arg1);
+            IExecuteWithSignature("unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

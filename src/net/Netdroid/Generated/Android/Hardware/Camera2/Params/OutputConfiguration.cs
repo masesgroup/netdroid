@@ -40,10 +40,10 @@ namespace Android.Hardware.Camera2.Params
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public OutputConfiguration(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Camera2.Params
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -140,13 +140,13 @@ namespace Android.Hardware.Camera2.Params
             : base(arg0, arg1, arg2)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#CREATOR"/>
@@ -214,9 +214,9 @@ namespace Android.Hardware.Camera2.Params
         public static int TIMESTAMP_BASE_SENSOR { get { if (!_TIMESTAMP_BASE_SENSORReady) { _TIMESTAMP_BASE_SENSORContent = SGetField<int>(LocalBridgeClazz, "TIMESTAMP_BASE_SENSOR"); _TIMESTAMP_BASE_SENSORReady = true; } return _TIMESTAMP_BASE_SENSORContent; } }
         private static int _TIMESTAMP_BASE_SENSORContent = default;
         private static bool _TIMESTAMP_BASE_SENSORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#createInstancesForMultiResolutionOutput(android.hardware.camera2.MultiResolutionImageReader)"/>
@@ -235,7 +235,7 @@ namespace Android.Hardware.Camera2.Params
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration> CreateInstancesForMultiResolutionOutput(Java.Util.Collection<Android.Hardware.Camera2.Params.MultiResolutionStreamInfo> arg0, int arg1)
         {
-            return SExecute<Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration>>(LocalBridgeClazz, "createInstancesForMultiResolutionOutput", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration>>(LocalBridgeClazz, "createInstancesForMultiResolutionOutput", "(Ljava/util/Collection;I)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#setSurfacesForMultiResolutionOutput(java.util.Collection,android.hardware.camera2.MultiResolutionImageReader)"/>
@@ -244,11 +244,11 @@ namespace Android.Hardware.Camera2.Params
         /// <param name="arg1"><see cref="Android.Hardware.Camera2.MultiResolutionImageReader"/></param>
         public static void SetSurfacesForMultiResolutionOutput(Java.Util.Collection<Android.Hardware.Camera2.Params.OutputConfiguration> arg0, Android.Hardware.Camera2.MultiResolutionImageReader arg1)
         {
-            SExecute(LocalBridgeClazz, "setSurfacesForMultiResolutionOutput", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setSurfacesForMultiResolutionOutput", "(Ljava/util/Collection;Landroid/hardware/camera2/MultiResolutionImageReader;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/OutputConfiguration.html#getSurface()"/>
@@ -424,15 +424,15 @@ namespace Android.Hardware.Camera2.Params
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

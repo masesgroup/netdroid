@@ -40,10 +40,10 @@ namespace Android.Appwidget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AppWidgetHostView(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Appwidget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -92,17 +92,17 @@ namespace Android.Appwidget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#getDefaultPaddingForWidget(android.content.Context,android.content.ComponentName,android.graphics.Rect)"/>
@@ -113,11 +113,11 @@ namespace Android.Appwidget
         /// <returns><see cref="Android.Graphics.Rect"/></returns>
         public static Android.Graphics.Rect GetDefaultPaddingForWidget(Android.Content.Context arg0, Android.Content.ComponentName arg1, Android.Graphics.Rect arg2)
         {
-            return SExecute<Android.Graphics.Rect>(LocalBridgeClazz, "getDefaultPaddingForWidget", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Rect>(LocalBridgeClazz, "getDefaultPaddingForWidget", "(Landroid/content/Context;Landroid/content/ComponentName;Landroid/graphics/Rect;)Landroid/graphics/Rect;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#getAppWidgetInfo()"/>
@@ -149,7 +149,7 @@ namespace Android.Appwidget
         /// <param name="arg1"><see cref="Android.Appwidget.AppWidgetProviderInfo"/></param>
         public void SetAppWidget(int arg0, Android.Appwidget.AppWidgetProviderInfo arg1)
         {
-            IExecute("setAppWidget", arg0, arg1);
+            IExecuteWithSignature("setAppWidget", "(ILandroid/appwidget/AppWidgetProviderInfo;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#setColorResources(android.util.SparseIntArray)"/>
@@ -202,7 +202,7 @@ namespace Android.Appwidget
         [global::System.Obsolete()]
         public void UpdateAppWidgetSize(Android.Os.Bundle arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("updateAppWidgetSize", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("updateAppWidgetSize", "(Landroid/os/Bundle;IIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#updateAppWidgetSize(android.os.Bundle,java.util.List)"/>
@@ -211,15 +211,15 @@ namespace Android.Appwidget
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         public void UpdateAppWidgetSize(Android.Os.Bundle arg0, Java.Util.List<Android.Util.SizeF> arg1)
         {
-            IExecute("updateAppWidgetSize", arg0, arg1);
+            IExecuteWithSignature("updateAppWidgetSize", "(Landroid/os/Bundle;Ljava/util/List;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

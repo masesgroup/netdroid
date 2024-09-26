@@ -42,10 +42,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("Window class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Window(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.View
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -125,7 +125,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnFrameMetricsAvailableListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.Window_OnFrameMetricsAvailableListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -134,13 +134,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnFrameMetricsAvailableListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnFrameMetricsAvailableListener"/> or its generic type if there is one
@@ -151,14 +151,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.Window$OnFrameMetricsAvailableListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -192,7 +192,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnRestrictedCaptionAreaChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.Window_OnRestrictedCaptionAreaChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -201,13 +201,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnRestrictedCaptionAreaChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnRestrictedCaptionAreaChangedListener"/> or its generic type if there is one
@@ -218,14 +218,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.Window$OnRestrictedCaptionAreaChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -265,13 +265,13 @@ namespace Android.View
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#DECOR_CAPTION_SHADE_AUTO"/>
@@ -452,9 +452,9 @@ namespace Android.View
         public static Java.Lang.String STATUS_BAR_BACKGROUND_TRANSITION_NAME { get { if (!_STATUS_BAR_BACKGROUND_TRANSITION_NAMEReady) { _STATUS_BAR_BACKGROUND_TRANSITION_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STATUS_BAR_BACKGROUND_TRANSITION_NAME"); _STATUS_BAR_BACKGROUND_TRANSITION_NAMEReady = true; } return _STATUS_BAR_BACKGROUND_TRANSITION_NAMEContent; } }
         private static Java.Lang.String _STATUS_BAR_BACKGROUND_TRANSITION_NAMEContent = default;
         private static bool _STATUS_BAR_BACKGROUND_TRANSITION_NAMEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#getDefaultFeatures(android.content.Context)"/>
@@ -465,9 +465,9 @@ namespace Android.View
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultFeatures", "(Landroid/content/Context;)I", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#findViewById(int)"/>
@@ -535,7 +535,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool IsShortcutKey(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("isShortcutKey", arg0, arg1);
+            return IExecuteWithSignature<bool>("isShortcutKey", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#performContextMenuIdentifierAction(int,int)"/>
@@ -545,7 +545,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool PerformContextMenuIdentifierAction(int arg0, int arg1)
         {
-            return IExecute<bool>("performContextMenuIdentifierAction", arg0, arg1);
+            return IExecuteWithSignature<bool>("performContextMenuIdentifierAction", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#performPanelIdentifierAction(int,int,int)"/>
@@ -556,7 +556,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool PerformPanelIdentifierAction(int arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("performPanelIdentifierAction", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("performPanelIdentifierAction", "(III)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#performPanelShortcut(int,int,android.view.KeyEvent,int)"/>
@@ -568,7 +568,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool PerformPanelShortcut(int arg0, int arg1, Android.View.KeyEvent arg2, int arg3)
         {
-            return IExecute<bool>("performPanelShortcut", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("performPanelShortcut", "(IILandroid/view/KeyEvent;I)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#superDispatchGenericMotionEvent(android.view.MotionEvent)"/>
@@ -648,7 +648,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
         public void AddContentView(Android.View.View arg0, Android.View.ViewGroup.LayoutParams arg1)
         {
-            IExecute("addContentView", arg0, arg1);
+            IExecuteWithSignature("addContentView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#closeAllPanels()"/>
@@ -688,7 +688,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.View.KeyEvent"/></param>
         public void OpenPanel(int arg0, Android.View.KeyEvent arg1)
         {
-            IExecute("openPanel", arg0, arg1);
+            IExecuteWithSignature("openPanel", "(ILandroid/view/KeyEvent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#restoreHierarchyState(android.os.Bundle)"/>
@@ -713,7 +713,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.Graphics.Drawable.Drawable"/></param>
         public void SetChildDrawable(int arg0, Android.Graphics.Drawable.Drawable arg1)
         {
-            IExecute("setChildDrawable", arg0, arg1);
+            IExecuteWithSignature("setChildDrawable", "(ILandroid/graphics/drawable/Drawable;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setChildInt(int,int)"/>
@@ -722,7 +722,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void SetChildInt(int arg0, int arg1)
         {
-            IExecute("setChildInt", arg0, arg1);
+            IExecuteWithSignature("setChildInt", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setContentView(android.view.View,android.view.ViewGroup.LayoutParams)"/>
@@ -731,7 +731,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
         public void SetContentView(Android.View.View arg0, Android.View.ViewGroup.LayoutParams arg1)
         {
-            IExecute("setContentView", arg0, arg1);
+            IExecuteWithSignature("setContentView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setContentView(android.view.View)"/>
@@ -764,7 +764,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.Graphics.Drawable.Drawable"/></param>
         public void SetFeatureDrawable(int arg0, Android.Graphics.Drawable.Drawable arg1)
         {
-            IExecute("setFeatureDrawable", arg0, arg1);
+            IExecuteWithSignature("setFeatureDrawable", "(ILandroid/graphics/drawable/Drawable;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setFeatureDrawableAlpha(int,int)"/>
@@ -773,7 +773,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void SetFeatureDrawableAlpha(int arg0, int arg1)
         {
-            IExecute("setFeatureDrawableAlpha", arg0, arg1);
+            IExecuteWithSignature("setFeatureDrawableAlpha", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setFeatureDrawableResource(int,int)"/>
@@ -782,7 +782,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void SetFeatureDrawableResource(int arg0, int arg1)
         {
-            IExecute("setFeatureDrawableResource", arg0, arg1);
+            IExecuteWithSignature("setFeatureDrawableResource", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setFeatureDrawableUri(int,android.net.Uri)"/>
@@ -791,7 +791,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
         public void SetFeatureDrawableUri(int arg0, Android.Net.Uri arg1)
         {
-            IExecute("setFeatureDrawableUri", arg0, arg1);
+            IExecuteWithSignature("setFeatureDrawableUri", "(ILandroid/net/Uri;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setFeatureInt(int,int)"/>
@@ -800,7 +800,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void SetFeatureInt(int arg0, int arg1)
         {
-            IExecute("setFeatureInt", arg0, arg1);
+            IExecuteWithSignature("setFeatureInt", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setNavigationBarColor(int)"/>
@@ -884,7 +884,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.View.KeyEvent"/></param>
         public void TogglePanel(int arg0, Android.View.KeyEvent arg1)
         {
-            IExecute("togglePanel", arg0, arg1);
+            IExecuteWithSignature("togglePanel", "(ILandroid/view/KeyEvent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#getMediaController()"/>
@@ -1162,7 +1162,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void AddOnFrameMetricsAvailableListener(Android.View.Window.OnFrameMetricsAvailableListener arg0, Android.Os.Handler arg1)
         {
-            IExecute("addOnFrameMetricsAvailableListener", arg0, arg1);
+            IExecuteWithSignature("addOnFrameMetricsAvailableListener", "(Landroid/view/Window$OnFrameMetricsAvailableListener;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#makeActive()"/>
@@ -1396,7 +1396,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void SetFlags(int arg0, int arg1)
         {
-            IExecute("setFlags", arg0, arg1);
+            IExecuteWithSignature("setFlags", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setFormat(int)"/>
@@ -1445,7 +1445,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLayout(int arg0, int arg1)
         {
-            IExecute("setLayout", arg0, arg1);
+            IExecuteWithSignature("setLayout", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setLocalFocus(boolean,boolean)"/>
@@ -1454,7 +1454,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetLocalFocus(bool arg0, bool arg1)
         {
-            IExecute("setLocalFocus", arg0, arg1);
+            IExecuteWithSignature("setLocalFocus", "(ZZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setLogo(int)"/>
@@ -1617,7 +1617,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void SetUiOptions(int arg0, int arg1)
         {
-            IExecute("setUiOptions", arg0, arg1);
+            IExecuteWithSignature("setUiOptions", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setUiOptions(int)"/>
@@ -1644,7 +1644,7 @@ namespace Android.View
         /// <param name="arg3"><see cref="bool"/></param>
         public void SetWindowManager(Android.View.WindowManager arg0, Android.Os.IBinder arg1, Java.Lang.String arg2, bool arg3)
         {
-            IExecute("setWindowManager", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setWindowManager", "(Landroid/view/WindowManager;Landroid/os/IBinder;Ljava/lang/String;Z)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setWindowManager(android.view.WindowManager,android.os.IBinder,java.lang.String)"/>
@@ -1654,7 +1654,7 @@ namespace Android.View
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void SetWindowManager(Android.View.WindowManager arg0, Android.Os.IBinder arg1, Java.Lang.String arg2)
         {
-            IExecute("setWindowManager", arg0, arg1, arg2);
+            IExecuteWithSignature("setWindowManager", "(Landroid/view/WindowManager;Landroid/os/IBinder;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#unregisterScrollCaptureCallback(android.view.ScrollCaptureCallback)"/>
@@ -1664,29 +1664,29 @@ namespace Android.View
         {
             IExecuteWithSignature("unregisterScrollCaptureCallback", "(Landroid/view/ScrollCaptureCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Window.Callback.html#onWindowStartingActionMode(android.view.ActionMode.Callback,int)"/>
@@ -1696,7 +1696,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.ActionMode"/></returns>
             public Android.View.ActionMode OnWindowStartingActionMode(Android.View.ActionMode.Callback arg0, int arg1)
             {
-                return IExecute<Android.View.ActionMode>("onWindowStartingActionMode", arg0, arg1);
+                return IExecuteWithSignature<Android.View.ActionMode>("onWindowStartingActionMode", "(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Window.Callback.html#onWindowStartingActionMode(android.view.ActionMode.Callback)"/>
@@ -1778,7 +1778,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool OnCreatePanelMenu(int arg0, Android.View.Menu arg1)
             {
-                return IExecute<bool>("onCreatePanelMenu", arg0, arg1);
+                return IExecuteWithSignature<bool>("onCreatePanelMenu", "(ILandroid/view/Menu;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Window.Callback.html#onMenuItemSelected(int,android.view.MenuItem)"/>
@@ -1788,7 +1788,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool OnMenuItemSelected(int arg0, Android.View.MenuItem arg1)
             {
-                return IExecute<bool>("onMenuItemSelected", arg0, arg1);
+                return IExecuteWithSignature<bool>("onMenuItemSelected", "(ILandroid/view/MenuItem;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Window.Callback.html#onMenuOpened(int,android.view.Menu)"/>
@@ -1798,7 +1798,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool OnMenuOpened(int arg0, Android.View.Menu arg1)
             {
-                return IExecute<bool>("onMenuOpened", arg0, arg1);
+                return IExecuteWithSignature<bool>("onMenuOpened", "(ILandroid/view/Menu;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Window.Callback.html#onPreparePanel(int,android.view.View,android.view.Menu)"/>
@@ -1809,7 +1809,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool OnPreparePanel(int arg0, Android.View.View arg1, Android.View.Menu arg2)
             {
-                return IExecute<bool>("onPreparePanel", arg0, arg1, arg2);
+                return IExecuteWithSignature<bool>("onPreparePanel", "(ILandroid/view/View;Landroid/view/Menu;)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Window.Callback.html#onSearchRequested()"/>
@@ -1872,7 +1872,7 @@ namespace Android.View
             /// <param name="arg1"><see cref="Android.View.Menu"/></param>
             public void OnPanelClosed(int arg0, Android.View.Menu arg1)
             {
-                IExecute("onPanelClosed", arg0, arg1);
+                IExecuteWithSignature("onPanelClosed", "(ILandroid/view/Menu;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Window.Callback.html#onWindowAttributesChanged(android.view.WindowManager.LayoutParams)"/>
@@ -1906,15 +1906,15 @@ namespace Android.View
             /// <param name="arg2"><see cref="int"/></param>
             public void OnProvideKeyboardShortcuts(Java.Util.List<Android.View.KeyboardShortcutGroup> arg0, Android.View.Menu arg1, int arg2)
             {
-                IExecute("onProvideKeyboardShortcuts", arg0, arg1, arg2);
+                IExecuteWithSignature("onProvideKeyboardShortcuts", "(Ljava/util/List;Landroid/view/Menu;I)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1923,21 +1923,21 @@ namespace Android.View
         public partial class OnFrameMetricsAvailableListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnFrameMetricsAvailableListener"/>
@@ -1947,13 +1947,13 @@ namespace Android.View
                 AddEventHandler("onFrameMetricsAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnFrameMetricsAvailableEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/Window.OnFrameMetricsAvailableListener.html#onFrameMetricsAvailable(android.view.Window,android.view.FrameMetrics,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFrameMetricsAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.Window, Android.View.FrameMetrics, int> OnOnFrameMetricsAvailable { get; set; } = null;
-            
+
             bool hasOverrideOnFrameMetricsAvailable = true;
             void OnFrameMetricsAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1962,7 +1962,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.Window>(0), data.EventData.GetAt<Android.View.FrameMetrics>(1), data.EventData.GetAt<int>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnFrameMetricsAvailable;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Window.OnFrameMetricsAvailableListener.html#onFrameMetricsAvailable(android.view.Window,android.view.FrameMetrics,int)"/>
             /// </summary>
@@ -1973,13 +1973,13 @@ namespace Android.View
             {
                 hasOverrideOnFrameMetricsAvailable = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1988,21 +1988,21 @@ namespace Android.View
         public partial class OnFrameMetricsAvailableListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Window.OnFrameMetricsAvailableListener.html#onFrameMetricsAvailable(android.view.Window,android.view.FrameMetrics,int)"/>
@@ -2012,15 +2012,15 @@ namespace Android.View
             /// <param name="arg2"><see cref="int"/></param>
             public override void OnFrameMetricsAvailable(Android.View.Window arg0, Android.View.FrameMetrics arg1, int arg2)
             {
-                IExecute("onFrameMetricsAvailable", arg0, arg1, arg2);
+                IExecuteWithSignature("onFrameMetricsAvailable", "(Landroid/view/Window;Landroid/view/FrameMetrics;I)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2029,21 +2029,21 @@ namespace Android.View
         public partial class OnRestrictedCaptionAreaChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnRestrictedCaptionAreaChangedListener"/>
@@ -2053,13 +2053,13 @@ namespace Android.View
                 AddEventHandler("onRestrictedCaptionAreaChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnRestrictedCaptionAreaChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/Window.OnRestrictedCaptionAreaChangedListener.html#onRestrictedCaptionAreaChanged(android.graphics.Rect)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRestrictedCaptionAreaChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Graphics.Rect> OnOnRestrictedCaptionAreaChanged { get; set; } = null;
-            
+
             bool hasOverrideOnRestrictedCaptionAreaChanged = true;
             void OnRestrictedCaptionAreaChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2068,7 +2068,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Graphics.Rect>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnRestrictedCaptionAreaChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Window.OnRestrictedCaptionAreaChangedListener.html#onRestrictedCaptionAreaChanged(android.graphics.Rect)"/>
             /// </summary>
@@ -2077,13 +2077,13 @@ namespace Android.View
             {
                 hasOverrideOnRestrictedCaptionAreaChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2092,21 +2092,21 @@ namespace Android.View
         public partial class OnRestrictedCaptionAreaChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Window.OnRestrictedCaptionAreaChangedListener.html#onRestrictedCaptionAreaChanged(android.graphics.Rect)"/>
@@ -2116,20 +2116,20 @@ namespace Android.View
             {
                 IExecuteWithSignature("onRestrictedCaptionAreaChanged", "(Landroid/graphics/Rect;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

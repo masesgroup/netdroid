@@ -41,10 +41,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FragmentController(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,17 +75,17 @@ namespace Android.App
     public partial class FragmentController
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentController.html#createController(android.app.FragmentHostCallback)"/>
@@ -97,9 +97,9 @@ namespace Android.App
         {
             return SExecuteWithSignature<Android.App.FragmentController>(LocalBridgeClazz, "createController", "(Landroid/app/FragmentHostCallback;)Landroid/app/FragmentController;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentController.html#findFragmentByWho(java.lang.String)"/>
@@ -167,7 +167,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.View.View OnCreateView(Android.View.View arg0, Java.Lang.String arg1, Android.Content.Context arg2, Android.Util.AttributeSet arg3)
         {
-            return IExecute<Android.View.View>("onCreateView", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.View.View>("onCreateView", "(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentController.html#dispatchContextItemSelected(android.view.MenuItem)"/>
@@ -188,7 +188,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public bool DispatchCreateOptionsMenu(Android.View.Menu arg0, Android.View.MenuInflater arg1)
         {
-            return IExecute<bool>("dispatchCreateOptionsMenu", arg0, arg1);
+            return IExecuteWithSignature<bool>("dispatchCreateOptionsMenu", "(Landroid/view/Menu;Landroid/view/MenuInflater;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentController.html#dispatchOptionsItemSelected(android.view.MenuItem)"/>
@@ -294,7 +294,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void DispatchMultiWindowModeChanged(bool arg0, Android.Content.Res.Configuration arg1)
         {
-            IExecute("dispatchMultiWindowModeChanged", arg0, arg1);
+            IExecuteWithSignature("dispatchMultiWindowModeChanged", "(ZLandroid/content/res/Configuration;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentController.html#dispatchMultiWindowModeChanged(boolean)"/>
@@ -330,7 +330,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void DispatchPictureInPictureModeChanged(bool arg0, Android.Content.Res.Configuration arg1)
         {
-            IExecute("dispatchPictureInPictureModeChanged", arg0, arg1);
+            IExecuteWithSignature("dispatchPictureInPictureModeChanged", "(ZLandroid/content/res/Configuration;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentController.html#dispatchPictureInPictureModeChanged(boolean)"/>
@@ -409,7 +409,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void DumpLoaders(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Io.PrintWriter arg2, Java.Lang.String[] arg3)
         {
-            IExecute("dumpLoaders", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("dumpLoaders", "(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentController.html#noteStateNotSaved()"/>
@@ -435,7 +435,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void RestoreAllState(Android.Os.Parcelable arg0, Android.App.FragmentManagerNonConfig arg1)
         {
-            IExecute("restoreAllState", arg0, arg1);
+            IExecuteWithSignature("restoreAllState", "(Landroid/os/Parcelable;Landroid/app/FragmentManagerNonConfig;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentController.html#restoreAllState(android.os.Parcelable,java.util.List)"/>
@@ -445,7 +445,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void RestoreAllState(Android.Os.Parcelable arg0, Java.Util.List<Android.App.Fragment> arg1)
         {
-            IExecute("restoreAllState", arg0, arg1);
+            IExecuteWithSignature("restoreAllState", "(Landroid/os/Parcelable;Ljava/util/List;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentController.html#restoreLoaderNonConfig(android.util.ArrayMap)"/>
@@ -456,13 +456,13 @@ namespace Android.App
         {
             IExecuteWithSignature("restoreLoaderNonConfig", "(Landroid/util/ArrayMap;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

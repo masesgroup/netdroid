@@ -40,10 +40,10 @@ namespace Android.Content
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RestrictionsManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Content
     public partial class RestrictionsManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionsManager.html#RESULT_APPROVED"/>
@@ -262,9 +262,9 @@ namespace Android.Content
         public static Java.Lang.String RESPONSE_KEY_RESULT { get { if (!_RESPONSE_KEY_RESULTReady) { _RESPONSE_KEY_RESULTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RESPONSE_KEY_RESULT"); _RESPONSE_KEY_RESULTReady = true; } return _RESPONSE_KEY_RESULTContent; } }
         private static Java.Lang.String _RESPONSE_KEY_RESULTContent = default;
         private static bool _RESPONSE_KEY_RESULTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionsManager.html#convertRestrictionsToBundle(java.util.List)"/>
@@ -275,9 +275,9 @@ namespace Android.Content
         {
             return SExecuteWithSignature<Android.Os.Bundle>(LocalBridgeClazz, "convertRestrictionsToBundle", "(Ljava/util/List;)Landroid/os/Bundle;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionsManager.html#createLocalApprovalIntent()"/>
@@ -327,7 +327,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Android.Os.PersistableBundle"/></param>
         public void NotifyPermissionResponse(Java.Lang.String arg0, Android.Os.PersistableBundle arg1)
         {
-            IExecute("notifyPermissionResponse", arg0, arg1);
+            IExecuteWithSignature("notifyPermissionResponse", "(Ljava/lang/String;Landroid/os/PersistableBundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionsManager.html#requestPermission(java.lang.String,java.lang.String,android.os.PersistableBundle)"/>
@@ -337,15 +337,15 @@ namespace Android.Content
         /// <param name="arg2"><see cref="Android.Os.PersistableBundle"/></param>
         public void RequestPermission(Java.Lang.String arg0, Java.Lang.String arg1, Android.Os.PersistableBundle arg2)
         {
-            IExecute("requestPermission", arg0, arg1, arg2);
+            IExecuteWithSignature("requestPermission", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/PersistableBundle;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

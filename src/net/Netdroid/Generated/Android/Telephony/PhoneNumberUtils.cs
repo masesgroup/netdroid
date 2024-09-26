@@ -40,10 +40,10 @@ namespace Android.Telephony
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PhoneNumberUtils(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Telephony
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Telephony
     public partial class PhoneNumberUtils
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#PAUSE"/>
@@ -142,9 +142,9 @@ namespace Android.Telephony
         public static int TOA_Unknown { get { if (!_TOA_UnknownReady) { _TOA_UnknownContent = SGetField<int>(LocalBridgeClazz, "TOA_Unknown"); _TOA_UnknownReady = true; } return _TOA_UnknownContent; } }
         private static int _TOA_UnknownContent = default;
         private static bool _TOA_UnknownReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#createTtsSpan(java.lang.String)"/>
@@ -164,7 +164,7 @@ namespace Android.Telephony
         /// <returns><see cref="bool"/></returns>
         public static bool AreSamePhoneNumber(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "areSamePhoneNumber", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "areSamePhoneNumber", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#compare(android.content.Context,java.lang.String,java.lang.String)"/>
@@ -176,7 +176,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public static bool Compare(Android.Content.Context arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "compare", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "compare", "(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#compare(java.lang.String,java.lang.String)"/>
@@ -187,7 +187,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public static bool Compare(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "compare", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#isEmergencyNumber(java.lang.String)"/>
@@ -226,7 +226,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public static bool IsLocalEmergencyNumber(Android.Content.Context arg0, Java.Lang.String arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isLocalEmergencyNumber", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLocalEmergencyNumber", "(Landroid/content/Context;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#isVoiceMailNumber(java.lang.String)"/>
@@ -281,7 +281,7 @@ namespace Android.Telephony
         /// <returns><see cref="byte"/></returns>
         public static byte[] NumberToCalledPartyBCD(Java.Lang.String arg0, int arg1)
         {
-            return SExecuteArray<byte>(LocalBridgeClazz, "numberToCalledPartyBCD", arg0, arg1);
+            return SExecuteWithSignatureArray<byte>(LocalBridgeClazz, "numberToCalledPartyBCD", "(Ljava/lang/String;I)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#numberToCalledPartyBCD(java.lang.String)"/>
@@ -376,7 +376,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String CalledPartyBCDFragmentToString(byte[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "calledPartyBCDFragmentToString", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "calledPartyBCDFragmentToString", "([BIII)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#calledPartyBCDFragmentToString(byte[],int,int)"/>
@@ -388,7 +388,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public static Java.Lang.String CalledPartyBCDFragmentToString(byte[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "calledPartyBCDFragmentToString", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "calledPartyBCDFragmentToString", "([BII)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#calledPartyBCDToString(byte[],int,int,int)"/>
@@ -400,7 +400,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String CalledPartyBCDToString(byte[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "calledPartyBCDToString", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "calledPartyBCDToString", "([BIII)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#calledPartyBCDToString(byte[],int,int)"/>
@@ -412,7 +412,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public static Java.Lang.String CalledPartyBCDToString(byte[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "calledPartyBCDToString", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "calledPartyBCDToString", "([BII)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#convertKeypadLettersToDigits(java.lang.String)"/>
@@ -450,7 +450,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String FormatNumber(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "formatNumber", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "formatNumber", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#formatNumber(java.lang.String,java.lang.String)"/>
@@ -460,7 +460,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String FormatNumber(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "formatNumber", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "formatNumber", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#formatNumber(java.lang.String)"/>
@@ -480,7 +480,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String FormatNumberToE164(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "formatNumberToE164", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "formatNumberToE164", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#formatNumberToRFC3966(java.lang.String,java.lang.String)"/>
@@ -490,7 +490,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String FormatNumberToRFC3966(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "formatNumberToRFC3966", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "formatNumberToRFC3966", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#getNumberFromIntent(android.content.Intent,android.content.Context)"/>
@@ -500,7 +500,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetNumberFromIntent(Android.Content.Intent arg0, Android.Content.Context arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getNumberFromIntent", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getNumberFromIntent", "(Landroid/content/Intent;Landroid/content/Context;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#getStrippedReversed(java.lang.String)"/>
@@ -537,7 +537,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String StringFromStringAndTOA(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "stringFromStringAndTOA", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "stringFromStringAndTOA", "(Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#stripSeparators(java.lang.String)"/>
@@ -565,7 +565,7 @@ namespace Android.Telephony
         /// <param name="arg2"><see cref="int"/></param>
         public static void AddTtsSpan(Android.Text.Spannable arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "addTtsSpan", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "addTtsSpan", "(Landroid/text/Spannable;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#formatJapaneseNumber(android.text.Editable)"/>
@@ -593,19 +593,19 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public static void FormatNumber(Android.Text.Editable arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "formatNumber", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "formatNumber", "(Landroid/text/Editable;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

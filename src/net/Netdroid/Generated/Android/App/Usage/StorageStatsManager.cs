@@ -40,10 +40,10 @@ namespace Android.App.Usage
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StorageStatsManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App.Usage
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.App.Usage
     public partial class StorageStatsManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/StorageStatsManager.html#queryExternalStatsForUser(java.util.UUID,android.os.UserHandle)"/>
@@ -99,7 +99,7 @@ namespace Android.App.Usage
         /// <exception cref="Java.Io.IOException"/>
         public Android.App.Usage.ExternalStorageStats QueryExternalStatsForUser(Java.Util.UUID arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<Android.App.Usage.ExternalStorageStats>("queryExternalStatsForUser", arg0, arg1);
+            return IExecuteWithSignature<Android.App.Usage.ExternalStorageStats>("queryExternalStatsForUser", "(Ljava/util/UUID;Landroid/os/UserHandle;)Landroid/app/usage/ExternalStorageStats;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/StorageStatsManager.html#queryStatsForPackage(java.util.UUID,java.lang.String,android.os.UserHandle)"/>
@@ -112,7 +112,7 @@ namespace Android.App.Usage
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.App.Usage.StorageStats QueryStatsForPackage(Java.Util.UUID arg0, Java.Lang.String arg1, Android.Os.UserHandle arg2)
         {
-            return IExecute<Android.App.Usage.StorageStats>("queryStatsForPackage", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.App.Usage.StorageStats>("queryStatsForPackage", "(Ljava/util/UUID;Ljava/lang/String;Landroid/os/UserHandle;)Landroid/app/usage/StorageStats;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/StorageStatsManager.html#queryStatsForUid(java.util.UUID,int)"/>
@@ -123,7 +123,7 @@ namespace Android.App.Usage
         /// <exception cref="Java.Io.IOException"/>
         public Android.App.Usage.StorageStats QueryStatsForUid(Java.Util.UUID arg0, int arg1)
         {
-            return IExecute<Android.App.Usage.StorageStats>("queryStatsForUid", arg0, arg1);
+            return IExecuteWithSignature<Android.App.Usage.StorageStats>("queryStatsForUid", "(Ljava/util/UUID;I)Landroid/app/usage/StorageStats;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/StorageStatsManager.html#queryStatsForUser(java.util.UUID,android.os.UserHandle)"/>
@@ -134,7 +134,7 @@ namespace Android.App.Usage
         /// <exception cref="Java.Io.IOException"/>
         public Android.App.Usage.StorageStats QueryStatsForUser(Java.Util.UUID arg0, Android.Os.UserHandle arg1)
         {
-            return IExecute<Android.App.Usage.StorageStats>("queryStatsForUser", arg0, arg1);
+            return IExecuteWithSignature<Android.App.Usage.StorageStats>("queryStatsForUser", "(Ljava/util/UUID;Landroid/os/UserHandle;)Landroid/app/usage/StorageStats;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/StorageStatsManager.html#getFreeBytes(java.util.UUID)"/>
@@ -156,13 +156,13 @@ namespace Android.App.Usage
         {
             return IExecuteWithSignature<long>("getTotalBytes", "(Ljava/util/UUID;)J", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

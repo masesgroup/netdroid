@@ -35,7 +35,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public BooleanSupplier() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.BooleanSupplier";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region BooleanSupplierDirect declaration
     /// <summary>
     /// Direct override of <see cref="BooleanSupplier"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "java.util.function.BooleanSupplier";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Java.Util.Function
     public partial interface IBooleanSupplier
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Java.Util.Function
     public partial class BooleanSupplier : Java.Util.Function.IBooleanSupplier
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="BooleanSupplier"/>
@@ -138,13 +138,13 @@ namespace Java.Util.Function
             AddEventHandler("getAsBoolean", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(GetAsBooleanEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetAsBoolean"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<bool> OnGetAsBoolean { get; set; } = null;
-        
+
         bool hasOverrideGetAsBoolean = true;
         void GetAsBooleanEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -153,7 +153,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideGetAsBoolean, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
         /// </summary>
@@ -162,13 +162,13 @@ namespace Java.Util.Function
         {
             hasOverrideGetAsBoolean = false; return default;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -177,21 +177,21 @@ namespace Java.Util.Function
     public partial class BooleanSupplierDirect : Java.Util.Function.IBooleanSupplier
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
@@ -201,13 +201,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<bool>("getAsBoolean", "()Z");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

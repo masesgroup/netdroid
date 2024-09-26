@@ -40,10 +40,10 @@ namespace Android.Accessibilityservice
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TouchInteractionController(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Accessibilityservice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Accessibilityservice
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Accessibilityservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Accessibilityservice
     public partial class TouchInteractionController
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController.html#STATE_CLEAR"/>
@@ -159,9 +159,9 @@ namespace Android.Accessibilityservice
         public static int STATE_TOUCH_INTERACTING { get { if (!_STATE_TOUCH_INTERACTINGReady) { _STATE_TOUCH_INTERACTINGContent = SGetField<int>(LocalBridgeClazz, "STATE_TOUCH_INTERACTING"); _STATE_TOUCH_INTERACTINGReady = true; } return _STATE_TOUCH_INTERACTINGContent; } }
         private static int _STATE_TOUCH_INTERACTINGContent = default;
         private static bool _STATE_TOUCH_INTERACTINGReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController.html#stateToString(int)"/>
@@ -172,9 +172,9 @@ namespace Android.Accessibilityservice
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "stateToString", "(I)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController.html#unregisterCallback(android.accessibilityservice.TouchInteractionController.Callback)"/>
@@ -230,7 +230,7 @@ namespace Android.Accessibilityservice
         /// <param name="arg1"><see cref="Android.Accessibilityservice.TouchInteractionController.Callback"/></param>
         public void RegisterCallback(Java.Util.Concurrent.Executor arg0, Android.Accessibilityservice.TouchInteractionController.Callback arg1)
         {
-            IExecute("registerCallback", arg0, arg1);
+            IExecuteWithSignature("registerCallback", "(Ljava/util/concurrent/Executor;Landroid/accessibilityservice/TouchInteractionController$Callback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController.html#requestDelegating()"/>
@@ -261,29 +261,29 @@ namespace Android.Accessibilityservice
         {
             IExecuteWithSignature("unregisterAllCallbacks", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/TouchInteractionController.Callback.html#onMotionEvent(android.view.MotionEvent)"/>
@@ -301,20 +301,20 @@ namespace Android.Accessibilityservice
             {
                 IExecuteWithSignature("onStateChanged", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

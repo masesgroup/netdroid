@@ -43,10 +43,10 @@ namespace Android.App
         /// </summary>
         [global::System.Obsolete("FragmentHostCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FragmentHostCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -67,9 +67,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -92,10 +92,10 @@ namespace Android.App
         /// </summary>
         [global::System.Obsolete("FragmentHostCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FragmentHostCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -116,7 +116,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -137,21 +137,21 @@ namespace Android.App
             : base(arg0, arg1, arg2)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onGetHost()"/>
@@ -227,7 +227,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnDump(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Io.PrintWriter arg2, Java.Lang.String[] arg3)
         {
-            IExecute("onDump", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onDump", "(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onInvalidateOptionsMenu()"/>
@@ -246,7 +246,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnRequestPermissionsFromFragment(Android.App.Fragment arg0, Java.Lang.String[] arg1, int arg2)
         {
-            IExecute("onRequestPermissionsFromFragment", arg0, arg1, arg2);
+            IExecuteWithSignature("onRequestPermissionsFromFragment", "(Landroid/app/Fragment;[Ljava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onStartActivityFromFragment(android.app.Fragment,android.content.Intent,int,android.os.Bundle)"/>
@@ -258,7 +258,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnStartActivityFromFragment(Android.App.Fragment arg0, Android.Content.Intent arg1, int arg2, Android.Os.Bundle arg3)
         {
-            IExecute("onStartActivityFromFragment", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onStartActivityFromFragment", "(Landroid/app/Fragment;Landroid/content/Intent;ILandroid/os/Bundle;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onStartIntentSenderFromFragment(android.app.Fragment,android.content.IntentSender,int,android.content.Intent,int,int,int,android.os.Bundle)"/>
@@ -275,15 +275,15 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnStartIntentSenderFromFragment(Android.App.Fragment arg0, Android.Content.IntentSender arg1, int arg2, Android.Content.Intent arg3, int arg4, int arg5, int arg6, Android.Os.Bundle arg7)
         {
-            IExecute("onStartIntentSenderFromFragment", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("onStartIntentSenderFromFragment", "(Landroid/app/Fragment;Landroid/content/IntentSender;ILandroid/content/Intent;IIILandroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -303,25 +303,25 @@ namespace Android.App
             : base(arg0, arg1, arg2)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.App.FragmentHostCallback{E}"/> to <see cref="Android.App.FragmentHostCallback"/>
         /// </summary>
         public static implicit operator Android.App.FragmentHostCallback(Android.App.FragmentHostCallback<E> t) => t.Cast<Android.App.FragmentHostCallback>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onGetHost()"/>
@@ -397,7 +397,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnDump(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Io.PrintWriter arg2, Java.Lang.String[] arg3)
         {
-            IExecute("onDump", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onDump", "(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onInvalidateOptionsMenu()"/>
@@ -416,7 +416,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnRequestPermissionsFromFragment(Android.App.Fragment arg0, Java.Lang.String[] arg1, int arg2)
         {
-            IExecute("onRequestPermissionsFromFragment", arg0, arg1, arg2);
+            IExecuteWithSignature("onRequestPermissionsFromFragment", "(Landroid/app/Fragment;[Ljava/lang/String;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onStartActivityFromFragment(android.app.Fragment,android.content.Intent,int,android.os.Bundle)"/>
@@ -428,7 +428,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnStartActivityFromFragment(Android.App.Fragment arg0, Android.Content.Intent arg1, int arg2, Android.Os.Bundle arg3)
         {
-            IExecute("onStartActivityFromFragment", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onStartActivityFromFragment", "(Landroid/app/Fragment;Landroid/content/Intent;ILandroid/os/Bundle;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onStartIntentSenderFromFragment(android.app.Fragment,android.content.IntentSender,int,android.content.Intent,int,int,int,android.os.Bundle)"/>
@@ -445,15 +445,15 @@ namespace Android.App
         [global::System.Obsolete()]
         public void OnStartIntentSenderFromFragment(Android.App.Fragment arg0, Android.Content.IntentSender arg1, int arg2, Android.Content.Intent arg3, int arg4, int arg5, int arg6, Android.Os.Bundle arg7)
         {
-            IExecute("onStartIntentSenderFromFragment", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("onStartIntentSenderFromFragment", "(Landroid/app/Fragment;Landroid/content/IntentSender;ILandroid/content/Intent;IIILandroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.Text.Style
         /// </summary>
         [global::System.Obsolete("LineHeightSpan class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LineHeightSpan(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Text.Style
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Standard declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Text.Style
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Standard(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Text.Style
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -130,10 +130,10 @@ namespace Android.Text.Style
             /// </summary>
             [global::System.Obsolete("WithDensity class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public WithDensity(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -154,9 +154,9 @@ namespace Android.Text.Style
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,13 +171,13 @@ namespace Android.Text.Style
     public partial interface ILineHeightSpan
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -186,9 +186,9 @@ namespace Android.Text.Style
     public partial class LineHeightSpan : Android.Text.Style.ILineHeightSpan, Android.Text.Style.IParagraphStyle, Android.Text.Style.IWrapTogetherSpan
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Text.Style.LineHeightSpan"/> to <see cref="Android.Text.Style.ParagraphStyle"/>
@@ -198,17 +198,17 @@ namespace Android.Text.Style
         /// Converter from <see cref="Android.Text.Style.LineHeightSpan"/> to <see cref="Android.Text.Style.WrapTogetherSpan"/>
         /// </summary>
         public static implicit operator Android.Text.Style.WrapTogetherSpan(Android.Text.Style.LineHeightSpan t) => t.Cast<Android.Text.Style.WrapTogetherSpan>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.html#chooseHeight(java.lang.CharSequence,int,int,int,int,android.graphics.Paint.FontMetricsInt)"/>
@@ -221,11 +221,11 @@ namespace Android.Text.Style
         /// <param name="arg5"><see cref="Android.Graphics.Paint.FontMetricsInt"/></param>
         public void ChooseHeight(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, Android.Graphics.Paint.FontMetricsInt arg5)
         {
-            IExecute("chooseHeight", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Standard implementation
         public partial class Standard : Android.Text.Style.ILineHeightSpan, Android.Text.IParcelableSpan
@@ -247,9 +247,9 @@ namespace Android.Text.Style
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Text.Style.LineHeightSpan.Standard"/> to <see cref="Android.Text.Style.LineHeightSpan"/>
@@ -259,17 +259,17 @@ namespace Android.Text.Style
             /// Converter from <see cref="Android.Text.Style.LineHeightSpan.Standard"/> to <see cref="Android.Text.ParcelableSpan"/>
             /// </summary>
             public static implicit operator Android.Text.ParcelableSpan(Android.Text.Style.LineHeightSpan.Standard t) => t.Cast<Android.Text.ParcelableSpan>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.Standard.html#describeContents()"/>
@@ -306,7 +306,7 @@ namespace Android.Text.Style
             /// <param name="arg5"><see cref="Android.Graphics.Paint.FontMetricsInt"/></param>
             public void ChooseHeight(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, Android.Graphics.Paint.FontMetricsInt arg5)
             {
-                IExecute("chooseHeight", arg0, arg1, arg2, arg3, arg4, arg5);
+                IExecuteWithSignature("chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.Standard.html#writeToParcel(android.os.Parcel,int)"/>
@@ -315,15 +315,15 @@ namespace Android.Text.Style
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -332,21 +332,21 @@ namespace Android.Text.Style
         public partial class WithDensity
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineHeightSpan.WithDensity.html#chooseHeight(java.lang.CharSequence,int,int,int,int,android.graphics.Paint.FontMetricsInt,android.text.TextPaint)"/>
@@ -360,22 +360,22 @@ namespace Android.Text.Style
             /// <param name="arg6"><see cref="Android.Text.TextPaint"/></param>
             public void ChooseHeight(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, Android.Graphics.Paint.FontMetricsInt arg5, Android.Text.TextPaint arg6)
             {
-                IExecute("chooseHeight", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+                IExecuteWithSignature("chooseHeight", "(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;Landroid/text/TextPaint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

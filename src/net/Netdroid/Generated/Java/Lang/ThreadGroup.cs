@@ -40,10 +40,10 @@ namespace Java.Lang
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ThreadGroup(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -91,21 +91,21 @@ namespace Java.Lang
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/ThreadGroup.html#allowThreadSuspension(boolean)"/>
@@ -247,7 +247,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int Enumerate(Java.Lang.Thread[] arg0, bool arg1)
         {
-            return IExecute<int>("enumerate", arg0, arg1);
+            return IExecuteWithSignature<int>("enumerate", "([Ljava/lang/Thread;Z)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/ThreadGroup.html#enumerate(java.lang.Thread[])"/>
@@ -266,7 +266,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int Enumerate(Java.Lang.ThreadGroup[] arg0, bool arg1)
         {
-            return IExecute<int>("enumerate", arg0, arg1);
+            return IExecuteWithSignature<int>("enumerate", "([Ljava/lang/ThreadGroup;Z)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/ThreadGroup.html#enumerate(java.lang.ThreadGroup[])"/>
@@ -300,15 +300,15 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
         public void UncaughtException(Java.Lang.Thread arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
-            IExecute("uncaughtException", arg0, arg1);
+            IExecuteWithSignature("uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

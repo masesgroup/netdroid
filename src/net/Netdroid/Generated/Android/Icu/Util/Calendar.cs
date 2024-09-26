@@ -42,10 +42,10 @@ namespace Android.Icu.Util
         /// </summary>
         [global::System.Obsolete("Calendar class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Calendar(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Icu.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region WeekData declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Icu.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public WeekData(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Icu.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,9 +121,9 @@ namespace Android.Icu.Util
     public partial class Calendar : Java.Io.ISerializable, Java.Lang.ICloneable, Java.Lang.IComparable<Android.Icu.Util.Calendar>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Icu.Util.Calendar"/> to <see cref="Java.Io.Serializable"/>
@@ -137,9 +137,9 @@ namespace Android.Icu.Util
         /// Converter from <see cref="Android.Icu.Util.Calendar"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Icu.Util.Calendar t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#AM"/>
@@ -435,9 +435,9 @@ namespace Android.Icu.Util
         public static int ZONE_OFFSET { get { if (!_ZONE_OFFSETReady) { _ZONE_OFFSETContent = SGetField<int>(LocalBridgeClazz, "ZONE_OFFSET"); _ZONE_OFFSETReady = true; } return _ZONE_OFFSETContent; } }
         private static int _ZONE_OFFSETContent = default;
         private static bool _ZONE_OFFSETReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getInstance()"/>
@@ -455,7 +455,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Util.Calendar"/></returns>
         public static Android.Icu.Util.Calendar GetInstance(Android.Icu.Util.TimeZone arg0, Android.Icu.Util.ULocale arg1)
         {
-            return SExecute<Android.Icu.Util.Calendar>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Util.Calendar>(LocalBridgeClazz, "getInstance", "(Landroid/icu/util/TimeZone;Landroid/icu/util/ULocale;)Landroid/icu/util/Calendar;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getInstance(android.icu.util.TimeZone,java.util.Locale)"/>
@@ -465,7 +465,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Util.Calendar"/></returns>
         public static Android.Icu.Util.Calendar GetInstance(Android.Icu.Util.TimeZone arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Android.Icu.Util.Calendar>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Android.Icu.Util.Calendar>(LocalBridgeClazz, "getInstance", "(Landroid/icu/util/TimeZone;Ljava/util/Locale;)Landroid/icu/util/Calendar;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getInstance(android.icu.util.TimeZone)"/>
@@ -512,7 +512,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String[] GetKeywordValuesForLocale(Java.Lang.String arg0, Android.Icu.Util.ULocale arg1, bool arg2)
         {
-            return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "getKeywordValuesForLocale", arg0, arg1, arg2);
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getKeywordValuesForLocale", "(Ljava/lang/String;Landroid/icu/util/ULocale;Z)[Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getAvailableLocales()"/>
@@ -522,9 +522,9 @@ namespace Android.Icu.Util
         {
             return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getDateTimeFormat(int,int,android.icu.util.ULocale)"/>
@@ -535,7 +535,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Text.DateFormat"/></returns>
         public Android.Icu.Text.DateFormat GetDateTimeFormat(int arg0, int arg1, Android.Icu.Util.ULocale arg2)
         {
-            return IExecute<Android.Icu.Text.DateFormat>("getDateTimeFormat", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Icu.Text.DateFormat>("getDateTimeFormat", "(IILandroid/icu/util/ULocale;)Landroid/icu/text/DateFormat;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getDateTimeFormat(int,int,java.util.Locale)"/>
@@ -546,7 +546,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="Android.Icu.Text.DateFormat"/></returns>
         public Android.Icu.Text.DateFormat GetDateTimeFormat(int arg0, int arg1, Java.Util.Locale arg2)
         {
-            return IExecute<Android.Icu.Text.DateFormat>("getDateTimeFormat", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Icu.Text.DateFormat>("getDateTimeFormat", "(IILjava/util/Locale;)Landroid/icu/text/DateFormat;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setWeekData(android.icu.util.Calendar.WeekData)"/>
@@ -717,7 +717,7 @@ namespace Android.Icu.Util
         /// <param name="arg1"><see cref="bool"/></param>
         public void Roll(int arg0, bool arg1)
         {
-            IExecute("roll", arg0, arg1);
+            IExecuteWithSignature("roll", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#set(int,int,int,int,int,int)"/>
@@ -730,7 +730,7 @@ namespace Android.Icu.Util
         /// <param name="arg5"><see cref="int"/></param>
         public void Set(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("set", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("set", "(IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#set(int,int,int,int,int)"/>
@@ -742,7 +742,7 @@ namespace Android.Icu.Util
         /// <param name="arg4"><see cref="int"/></param>
         public void Set(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("set", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("set", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#set(int,int,int)"/>
@@ -752,7 +752,7 @@ namespace Android.Icu.Util
         /// <param name="arg2"><see cref="int"/></param>
         public void Set(int arg0, int arg1, int arg2)
         {
-            IExecute("set", arg0, arg1, arg2);
+            IExecuteWithSignature("set", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#set(int,int)"/>
@@ -761,7 +761,7 @@ namespace Android.Icu.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void Set(int arg0, int arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setTime(java.util.Date)"/>
@@ -797,7 +797,7 @@ namespace Android.Icu.Util
         /// <returns><see cref="int"/></returns>
         public int FieldDifference(Java.Util.Date arg0, int arg1)
         {
-            return IExecute<int>("fieldDifference", arg0, arg1);
+            return IExecuteWithSignature<int>("fieldDifference", "(Ljava/util/Date;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#getActualMaximum(int)"/>
@@ -890,7 +890,7 @@ namespace Android.Icu.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void Add(int arg0, int arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#roll(int,int)"/>
@@ -899,7 +899,7 @@ namespace Android.Icu.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void Roll(int arg0, int arg1)
         {
-            IExecute("roll", arg0, arg1);
+            IExecuteWithSignature("roll", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.html#setFirstDayOfWeek(int)"/>
@@ -957,9 +957,9 @@ namespace Android.Icu.Util
         {
             IExecuteWithSignature("setTimeZone", "(Landroid/icu/util/TimeZone;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region WeekData implementation
         public partial class WeekData
@@ -978,13 +978,13 @@ namespace Android.Icu.Util
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/util/Calendar.WeekData.html#firstDayOfWeek"/>
@@ -1022,28 +1022,28 @@ namespace Android.Icu.Util
             public int weekendOnsetMillis { get { if (!_weekendOnsetMillisReady) { _weekendOnsetMillisContent = IGetField<int>("weekendOnsetMillis"); _weekendOnsetMillisReady = true; } return _weekendOnsetMillisContent; } }
             private int _weekendOnsetMillisContent = default;
             private bool _weekendOnsetMillisReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

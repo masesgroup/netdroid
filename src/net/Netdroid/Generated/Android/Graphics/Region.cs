@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Region(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Op declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Op(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -146,13 +146,13 @@ namespace Android.Graphics
             : base(arg0, arg1, arg2, arg3)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#CREATOR"/>
@@ -160,13 +160,13 @@ namespace Android.Graphics
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#getBoundaryPath()"/>
@@ -211,7 +211,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool OpMethod(Android.Graphics.Rect arg0, Android.Graphics.Region arg1, Android.Graphics.Region.Op arg2)
         {
-            return IExecute<bool>("op", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("op", "(Landroid/graphics/Rect;Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#op(android.graphics.Rect,android.graphics.Region.Op)"/>
@@ -221,7 +221,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool OpMethod(Android.Graphics.Rect arg0, Android.Graphics.Region.Op arg1)
         {
-            return IExecute<bool>("op", arg0, arg1);
+            return IExecuteWithSignature<bool>("op", "(Landroid/graphics/Rect;Landroid/graphics/Region$Op;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#op(android.graphics.Region,android.graphics.Region,android.graphics.Region.Op)"/>
@@ -232,7 +232,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool OpMethod(Android.Graphics.Region arg0, Android.Graphics.Region arg1, Android.Graphics.Region.Op arg2)
         {
-            return IExecute<bool>("op", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("op", "(Landroid/graphics/Region;Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#op(android.graphics.Region,android.graphics.Region.Op)"/>
@@ -242,7 +242,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool OpMethod(Android.Graphics.Region arg0, Android.Graphics.Region.Op arg1)
         {
-            return IExecute<bool>("op", arg0, arg1);
+            return IExecuteWithSignature<bool>("op", "(Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#op(int,int,int,int,android.graphics.Region.Op)"/>
@@ -255,7 +255,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool OpMethod(int arg0, int arg1, int arg2, int arg3, Android.Graphics.Region.Op arg4)
         {
-            return IExecute<bool>("op", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("op", "(IIIILandroid/graphics/Region$Op;)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#quickContains(android.graphics.Rect)"/>
@@ -303,7 +303,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool Set(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("set", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("set", "(IIII)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#setPath(android.graphics.Path,android.graphics.Region)"/>
@@ -313,7 +313,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool SetPath(Android.Graphics.Path arg0, Android.Graphics.Region arg1)
         {
-            return IExecute<bool>("setPath", arg0, arg1);
+            return IExecuteWithSignature<bool>("setPath", "(Landroid/graphics/Path;Landroid/graphics/Region;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#union(android.graphics.Rect)"/>
@@ -340,7 +340,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool Contains(int arg0, int arg1)
         {
-            return IExecute<bool>("contains", arg0, arg1);
+            return IExecuteWithSignature<bool>("contains", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#isComplex()"/>
@@ -376,7 +376,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool QuickContains(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("quickContains", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("quickContains", "(IIII)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#quickReject(android.graphics.Region)"/>
@@ -397,7 +397,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool QuickReject(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("quickReject", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("quickReject", "(IIII)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#translate(int,int,android.graphics.Region)"/>
@@ -407,7 +407,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="Android.Graphics.Region"/></param>
         public void Translate(int arg0, int arg1, Android.Graphics.Region arg2)
         {
-            IExecute("translate", arg0, arg1, arg2);
+            IExecuteWithSignature("translate", "(IILandroid/graphics/Region;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#setEmpty()"/>
@@ -423,7 +423,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="int"/></param>
         public void Translate(int arg0, int arg1)
         {
-            IExecute("translate", arg0, arg1);
+            IExecuteWithSignature("translate", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#writeToParcel(android.os.Parcel,int)"/>
@@ -432,23 +432,23 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Op implementation
         public partial class Op
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Region.Op.html#DIFFERENCE"/>
@@ -486,9 +486,9 @@ namespace Android.Graphics
             public static Android.Graphics.Region.Op XOR { get { if (!_XORReady) { _XORContent = SGetField<Android.Graphics.Region.Op>(LocalBridgeClazz, "XOR"); _XORReady = true; } return _XORContent; } }
             private static Android.Graphics.Region.Op _XORContent = default;
             private static bool _XORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Region.Op.html#valueOf(java.lang.String)"/>
@@ -507,24 +507,24 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Region.Op>(LocalBridgeClazz, "values", "()[Landroid/graphics/Region$Op;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

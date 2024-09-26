@@ -40,10 +40,10 @@ namespace Android.Service.Dreams
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DreamService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Service.Dreams
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Service.Dreams
     public partial class DreamService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#DREAM_META_DATA"/>
@@ -94,13 +94,13 @@ namespace Android.Service.Dreams
         public static Java.Lang.String SERVICE_INTERFACE { get { if (!_SERVICE_INTERFACEReady) { _SERVICE_INTERFACEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_INTERFACE"); _SERVICE_INTERFACEReady = true; } return _SERVICE_INTERFACEContent; } }
         private static Java.Lang.String _SERVICE_INTERFACEContent = default;
         private static bool _SERVICE_INTERFACEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#findViewById(int)"/>
@@ -120,7 +120,7 @@ namespace Android.Service.Dreams
         /// <returns><see cref="Android.View.ActionMode"/></returns>
         public Android.View.ActionMode OnWindowStartingActionMode(Android.View.ActionMode.Callback arg0, int arg1)
         {
-            return IExecute<Android.View.ActionMode>("onWindowStartingActionMode", arg0, arg1);
+            return IExecuteWithSignature<Android.View.ActionMode>("onWindowStartingActionMode", "(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#onWindowStartingActionMode(android.view.ActionMode.Callback)"/>
@@ -242,7 +242,7 @@ namespace Android.Service.Dreams
         /// <returns><see cref="bool"/></returns>
         public bool OnCreatePanelMenu(int arg0, Android.View.Menu arg1)
         {
-            return IExecute<bool>("onCreatePanelMenu", arg0, arg1);
+            return IExecuteWithSignature<bool>("onCreatePanelMenu", "(ILandroid/view/Menu;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#onMenuItemSelected(int,android.view.MenuItem)"/>
@@ -252,7 +252,7 @@ namespace Android.Service.Dreams
         /// <returns><see cref="bool"/></returns>
         public bool OnMenuItemSelected(int arg0, Android.View.MenuItem arg1)
         {
-            return IExecute<bool>("onMenuItemSelected", arg0, arg1);
+            return IExecuteWithSignature<bool>("onMenuItemSelected", "(ILandroid/view/MenuItem;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#onMenuOpened(int,android.view.Menu)"/>
@@ -262,7 +262,7 @@ namespace Android.Service.Dreams
         /// <returns><see cref="bool"/></returns>
         public bool OnMenuOpened(int arg0, Android.View.Menu arg1)
         {
-            return IExecute<bool>("onMenuOpened", arg0, arg1);
+            return IExecuteWithSignature<bool>("onMenuOpened", "(ILandroid/view/Menu;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#onPreparePanel(int,android.view.View,android.view.Menu)"/>
@@ -273,7 +273,7 @@ namespace Android.Service.Dreams
         /// <returns><see cref="bool"/></returns>
         public bool OnPreparePanel(int arg0, Android.View.View arg1, Android.View.Menu arg2)
         {
-            return IExecute<bool>("onPreparePanel", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onPreparePanel", "(ILandroid/view/View;Landroid/view/Menu;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#onSearchRequested()"/>
@@ -323,7 +323,7 @@ namespace Android.Service.Dreams
         /// <param name="arg1"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
         public void AddContentView(Android.View.View arg0, Android.View.ViewGroup.LayoutParams arg1)
         {
-            IExecute("addContentView", arg0, arg1);
+            IExecuteWithSignature("addContentView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#onActionModeFinished(android.view.ActionMode)"/>
@@ -383,7 +383,7 @@ namespace Android.Service.Dreams
         /// <param name="arg1"><see cref="Android.View.Menu"/></param>
         public void OnPanelClosed(int arg0, Android.View.Menu arg1)
         {
-            IExecute("onPanelClosed", arg0, arg1);
+            IExecuteWithSignature("onPanelClosed", "(ILandroid/view/Menu;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#onWakeUp()"/>
@@ -415,7 +415,7 @@ namespace Android.Service.Dreams
         /// <param name="arg1"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
         public void SetContentView(Android.View.View arg0, Android.View.ViewGroup.LayoutParams arg1)
         {
-            IExecute("setContentView", arg0, arg1);
+            IExecuteWithSignature("setContentView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/dreams/DreamService.html#setContentView(android.view.View)"/>
@@ -457,13 +457,13 @@ namespace Android.Service.Dreams
         {
             IExecuteWithSignature("setScreenBright", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

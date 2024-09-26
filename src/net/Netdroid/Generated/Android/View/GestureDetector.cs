@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GestureDetector(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnContextClickListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnContextClickListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.GestureDetector_OnContextClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnContextClickListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnContextClickListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.GestureDetector$OnContextClickListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -143,7 +143,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnDoubleTapListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.GestureDetector_OnDoubleTapListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -152,13 +152,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnDoubleTapListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnDoubleTapListener"/> or its generic type if there is one
@@ -169,14 +169,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.GestureDetector$OnDoubleTapListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -210,7 +210,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnGestureListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.GestureDetector_OnGestureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -219,13 +219,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnGestureListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnGestureListener"/> or its generic type if there is one
@@ -236,14 +236,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.GestureDetector$OnGestureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -277,7 +277,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public SimpleOnGestureListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.GestureDetector_SimpleOnGestureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -286,13 +286,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region SimpleOnGestureListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="SimpleOnGestureListener"/> or its generic type if there is one
@@ -303,14 +303,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.GestureDetector$SimpleOnGestureListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -391,21 +391,21 @@ namespace Android.View
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/GestureDetector.html#isLongpressEnabled()"/>
@@ -457,29 +457,29 @@ namespace Android.View
         {
             IExecuteWithSignature("setOnDoubleTapListener", "(Landroid/view/GestureDetector$OnDoubleTapListener;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnContextClickListener implementation
         public partial class OnContextClickListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnContextClickListener"/>
@@ -489,13 +489,13 @@ namespace Android.View
                 AddEventHandler("onContextClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnContextClickEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnContextClickListener.html#onContextClick(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnContextClick"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, bool> OnOnContextClick { get; set; } = null;
-            
+
             bool hasOverrideOnContextClick = true;
             void OnContextClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -504,7 +504,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnContextClick, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnContextClickListener.html#onContextClick(android.view.MotionEvent)"/>
             /// </summary>
@@ -514,13 +514,13 @@ namespace Android.View
             {
                 hasOverrideOnContextClick = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -529,21 +529,21 @@ namespace Android.View
         public partial class OnContextClickListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnContextClickListener.html#onContextClick(android.view.MotionEvent)"/>
@@ -554,13 +554,13 @@ namespace Android.View
             {
                 return IExecuteWithSignature<bool>("onContextClick", "(Landroid/view/MotionEvent;)Z", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -569,21 +569,21 @@ namespace Android.View
         public partial class OnDoubleTapListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnDoubleTapListener"/>
@@ -595,13 +595,13 @@ namespace Android.View
                 AddEventHandler("onSingleTapConfirmed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnSingleTapConfirmedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnDoubleTapListener.html#onDoubleTap(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDoubleTap"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, bool> OnOnDoubleTap { get; set; } = null;
-            
+
             bool hasOverrideOnDoubleTap = true;
             void OnDoubleTapEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -610,7 +610,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnDoubleTap, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnDoubleTapListener.html#onDoubleTap(android.view.MotionEvent)"/>
             /// </summary>
@@ -620,13 +620,13 @@ namespace Android.View
             {
                 hasOverrideOnDoubleTap = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnDoubleTapListener.html#onDoubleTapEvent(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDoubleTapEvent"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, bool> OnOnDoubleTapEvent { get; set; } = null;
-            
+
             bool hasOverrideOnDoubleTapEvent = true;
             void OnDoubleTapEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -635,7 +635,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnDoubleTapEvent, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnDoubleTapListener.html#onDoubleTapEvent(android.view.MotionEvent)"/>
             /// </summary>
@@ -645,13 +645,13 @@ namespace Android.View
             {
                 hasOverrideOnDoubleTapEvent = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnDoubleTapListener.html#onSingleTapConfirmed(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSingleTapConfirmed"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, bool> OnOnSingleTapConfirmed { get; set; } = null;
-            
+
             bool hasOverrideOnSingleTapConfirmed = true;
             void OnSingleTapConfirmedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -660,7 +660,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnSingleTapConfirmed, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnDoubleTapListener.html#onSingleTapConfirmed(android.view.MotionEvent)"/>
             /// </summary>
@@ -670,13 +670,13 @@ namespace Android.View
             {
                 hasOverrideOnSingleTapConfirmed = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -685,21 +685,21 @@ namespace Android.View
         public partial class OnDoubleTapListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnDoubleTapListener.html#onDoubleTap(android.view.MotionEvent)"/>
@@ -728,13 +728,13 @@ namespace Android.View
             {
                 return IExecuteWithSignature<bool>("onSingleTapConfirmed", "(Landroid/view/MotionEvent;)Z", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -743,21 +743,21 @@ namespace Android.View
         public partial class OnGestureListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnGestureListener"/>
@@ -772,13 +772,13 @@ namespace Android.View
                 AddEventHandler("onShowPress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnShowPressEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onDown(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDown"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, bool> OnOnDown { get; set; } = null;
-            
+
             bool hasOverrideOnDown = true;
             void OnDownEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -787,7 +787,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnDown, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onDown(android.view.MotionEvent)"/>
             /// </summary>
@@ -797,13 +797,13 @@ namespace Android.View
             {
                 hasOverrideOnDown = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFling"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, Android.View.MotionEvent, float, float, bool> OnOnFling { get; set; } = null;
-            
+
             bool hasOverrideOnFling = true;
             void OnFlingEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -812,7 +812,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0), data.EventData.GetAt<Android.View.MotionEvent>(1), data.EventData.GetAt<float>(2), data.EventData.GetAt<float>(3));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnFling, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
             /// </summary>
@@ -825,13 +825,13 @@ namespace Android.View
             {
                 hasOverrideOnFling = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScroll"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, Android.View.MotionEvent, float, float, bool> OnOnScroll { get; set; } = null;
-            
+
             bool hasOverrideOnScroll = true;
             void OnScrollEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -840,7 +840,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0), data.EventData.GetAt<Android.View.MotionEvent>(1), data.EventData.GetAt<float>(2), data.EventData.GetAt<float>(3));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnScroll, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
             /// </summary>
@@ -853,13 +853,13 @@ namespace Android.View
             {
                 hasOverrideOnScroll = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onSingleTapUp(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSingleTapUp"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, bool> OnOnSingleTapUp { get; set; } = null;
-            
+
             bool hasOverrideOnSingleTapUp = true;
             void OnSingleTapUpEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -868,7 +868,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnSingleTapUp, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onSingleTapUp(android.view.MotionEvent)"/>
             /// </summary>
@@ -878,13 +878,13 @@ namespace Android.View
             {
                 hasOverrideOnSingleTapUp = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onLongPress(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLongPress"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.MotionEvent> OnOnLongPress { get; set; } = null;
-            
+
             bool hasOverrideOnLongPress = true;
             void OnLongPressEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -893,7 +893,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnLongPress;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onLongPress(android.view.MotionEvent)"/>
             /// </summary>
@@ -902,13 +902,13 @@ namespace Android.View
             {
                 hasOverrideOnLongPress = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onShowPress(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnShowPress"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.MotionEvent> OnOnShowPress { get; set; } = null;
-            
+
             bool hasOverrideOnShowPress = true;
             void OnShowPressEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -917,7 +917,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnShowPress;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onShowPress(android.view.MotionEvent)"/>
             /// </summary>
@@ -926,13 +926,13 @@ namespace Android.View
             {
                 hasOverrideOnShowPress = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -941,21 +941,21 @@ namespace Android.View
         public partial class OnGestureListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onDown(android.view.MotionEvent)"/>
@@ -976,7 +976,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public override bool OnFling(Android.View.MotionEvent arg0, Android.View.MotionEvent arg1, float arg2, float arg3)
             {
-                return IExecute<bool>("onFling", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<bool>("onFling", "(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
@@ -988,7 +988,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public override bool OnScroll(Android.View.MotionEvent arg0, Android.View.MotionEvent arg1, float arg2, float arg3)
             {
-                return IExecute<bool>("onScroll", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<bool>("onScroll", "(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.OnGestureListener.html#onSingleTapUp(android.view.MotionEvent)"/>
@@ -1015,13 +1015,13 @@ namespace Android.View
             {
                 IExecuteWithSignature("onShowPress", "(Landroid/view/MotionEvent;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1030,21 +1030,21 @@ namespace Android.View
         public partial class SimpleOnGestureListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="SimpleOnGestureListener"/>
@@ -1063,13 +1063,13 @@ namespace Android.View
                 AddEventHandler("onShowPress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnShowPressEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onContextClick(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnContextClick"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, bool> OnOnContextClick { get; set; } = null;
-            
+
             bool hasOverrideOnContextClick = true;
             void OnContextClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1078,7 +1078,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnContextClick, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onContextClick(android.view.MotionEvent)"/>
             /// </summary>
@@ -1088,13 +1088,13 @@ namespace Android.View
             {
                 hasOverrideOnContextClick = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onDoubleTap(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDoubleTap"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, bool> OnOnDoubleTap { get; set; } = null;
-            
+
             bool hasOverrideOnDoubleTap = true;
             void OnDoubleTapEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1103,7 +1103,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnDoubleTap, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onDoubleTap(android.view.MotionEvent)"/>
             /// </summary>
@@ -1113,13 +1113,13 @@ namespace Android.View
             {
                 hasOverrideOnDoubleTap = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onDoubleTapEvent(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDoubleTapEvent"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, bool> OnOnDoubleTapEvent { get; set; } = null;
-            
+
             bool hasOverrideOnDoubleTapEvent = true;
             void OnDoubleTapEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1128,7 +1128,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnDoubleTapEvent, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onDoubleTapEvent(android.view.MotionEvent)"/>
             /// </summary>
@@ -1138,13 +1138,13 @@ namespace Android.View
             {
                 hasOverrideOnDoubleTapEvent = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onDown(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDown"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, bool> OnOnDown { get; set; } = null;
-            
+
             bool hasOverrideOnDown = true;
             void OnDownEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1153,7 +1153,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnDown, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onDown(android.view.MotionEvent)"/>
             /// </summary>
@@ -1163,13 +1163,13 @@ namespace Android.View
             {
                 hasOverrideOnDown = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFling"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, Android.View.MotionEvent, float, float, bool> OnOnFling { get; set; } = null;
-            
+
             bool hasOverrideOnFling = true;
             void OnFlingEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1178,7 +1178,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0), data.EventData.GetAt<Android.View.MotionEvent>(1), data.EventData.GetAt<float>(2), data.EventData.GetAt<float>(3));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnFling, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
             /// </summary>
@@ -1191,13 +1191,13 @@ namespace Android.View
             {
                 hasOverrideOnFling = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScroll"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, Android.View.MotionEvent, float, float, bool> OnOnScroll { get; set; } = null;
-            
+
             bool hasOverrideOnScroll = true;
             void OnScrollEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1206,7 +1206,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0), data.EventData.GetAt<Android.View.MotionEvent>(1), data.EventData.GetAt<float>(2), data.EventData.GetAt<float>(3));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnScroll, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
             /// </summary>
@@ -1219,13 +1219,13 @@ namespace Android.View
             {
                 hasOverrideOnScroll = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onSingleTapConfirmed(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSingleTapConfirmed"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, bool> OnOnSingleTapConfirmed { get; set; } = null;
-            
+
             bool hasOverrideOnSingleTapConfirmed = true;
             void OnSingleTapConfirmedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1234,7 +1234,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnSingleTapConfirmed, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onSingleTapConfirmed(android.view.MotionEvent)"/>
             /// </summary>
@@ -1244,13 +1244,13 @@ namespace Android.View
             {
                 hasOverrideOnSingleTapConfirmed = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onSingleTapUp(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSingleTapUp"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Android.View.MotionEvent, bool> OnOnSingleTapUp { get; set; } = null;
-            
+
             bool hasOverrideOnSingleTapUp = true;
             void OnSingleTapUpEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1259,7 +1259,7 @@ namespace Android.View
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnSingleTapUp, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onSingleTapUp(android.view.MotionEvent)"/>
             /// </summary>
@@ -1269,13 +1269,13 @@ namespace Android.View
             {
                 hasOverrideOnSingleTapUp = false; return default;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onLongPress(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLongPress"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.MotionEvent> OnOnLongPress { get; set; } = null;
-            
+
             bool hasOverrideOnLongPress = true;
             void OnLongPressEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1284,7 +1284,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnLongPress;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onLongPress(android.view.MotionEvent)"/>
             /// </summary>
@@ -1293,13 +1293,13 @@ namespace Android.View
             {
                 hasOverrideOnLongPress = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onShowPress(android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnShowPress"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.MotionEvent> OnOnShowPress { get; set; } = null;
-            
+
             bool hasOverrideOnShowPress = true;
             void OnShowPressEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1308,7 +1308,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.MotionEvent>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnShowPress;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onShowPress(android.view.MotionEvent)"/>
             /// </summary>
@@ -1317,13 +1317,13 @@ namespace Android.View
             {
                 hasOverrideOnShowPress = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1332,21 +1332,21 @@ namespace Android.View
         public partial class SimpleOnGestureListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onContextClick(android.view.MotionEvent)"/>
@@ -1394,7 +1394,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public override bool OnFling(Android.View.MotionEvent arg0, Android.View.MotionEvent arg1, float arg2, float arg3)
             {
-                return IExecute<bool>("onFling", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<bool>("onFling", "(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)"/>
@@ -1406,7 +1406,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public override bool OnScroll(Android.View.MotionEvent arg0, Android.View.MotionEvent arg1, float arg2, float arg3)
             {
-                return IExecute<bool>("onScroll", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<bool>("onScroll", "(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/GestureDetector.SimpleOnGestureListener.html#onSingleTapConfirmed(android.view.MotionEvent)"/>
@@ -1442,20 +1442,20 @@ namespace Android.View
             {
                 IExecuteWithSignature("onShowPress", "(Landroid/view/MotionEvent;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

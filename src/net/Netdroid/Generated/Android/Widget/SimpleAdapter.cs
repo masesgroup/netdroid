@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SimpleAdapter(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ViewBinder declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Widget
             /// </summary>
             [global::System.Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ViewBinder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -133,9 +133,9 @@ namespace Android.Widget
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Widget.SimpleAdapter"/> to <see cref="Android.Widget.Filterable"/>
@@ -145,17 +145,17 @@ namespace Android.Widget
         /// Converter from <see cref="Android.Widget.SimpleAdapter"/> to <see cref="Android.Widget.ThemedSpinnerAdapter"/>
         /// </summary>
         public static implicit operator Android.Widget.ThemedSpinnerAdapter(Android.Widget.SimpleAdapter t) => t.Cast<Android.Widget.ThemedSpinnerAdapter>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#getDropDownViewTheme()"/>
@@ -212,7 +212,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="int"/></param>
         public void SetViewImage(Android.Widget.ImageView arg0, int arg1)
         {
-            IExecute("setViewImage", arg0, arg1);
+            IExecuteWithSignature("setViewImage", "(Landroid/widget/ImageView;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewImage(android.widget.ImageView,java.lang.String)"/>
@@ -221,7 +221,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetViewImage(Android.Widget.ImageView arg0, Java.Lang.String arg1)
         {
-            IExecute("setViewImage", arg0, arg1);
+            IExecuteWithSignature("setViewImage", "(Landroid/widget/ImageView;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleAdapter.html#setViewText(android.widget.TextView,java.lang.String)"/>
@@ -230,31 +230,31 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetViewText(Android.Widget.TextView arg0, Java.Lang.String arg1)
         {
-            IExecute("setViewText", arg0, arg1);
+            IExecuteWithSignature("setViewText", "(Landroid/widget/TextView;Ljava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ViewBinder implementation
         public partial class ViewBinder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SimpleAdapter.ViewBinder.html#setViewValue(android.view.View,java.lang.Object,java.lang.String)"/>
@@ -265,22 +265,22 @@ namespace Android.Widget
             /// <returns><see cref="bool"/></returns>
             public bool SetViewValue(Android.View.View arg0, object arg1, Java.Lang.String arg2)
             {
-                return IExecute<bool>("setViewValue", arg0, arg1, arg2);
+                return IExecuteWithSignature<bool>("setViewValue", "(Landroid/view/View;Ljava/lang/Object;Ljava/lang/String;)Z", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

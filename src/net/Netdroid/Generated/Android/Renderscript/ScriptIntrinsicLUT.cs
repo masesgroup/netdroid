@@ -41,10 +41,10 @@ namespace Android.Renderscript
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ScriptIntrinsicLUT(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Renderscript
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,17 +75,17 @@ namespace Android.Renderscript
     public partial class ScriptIntrinsicLUT
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicLUT.html#create(android.renderscript.RenderScript,android.renderscript.Element)"/>
@@ -96,11 +96,11 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public static Android.Renderscript.ScriptIntrinsicLUT Create(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element arg1)
         {
-            return SExecute<Android.Renderscript.ScriptIntrinsicLUT>(LocalBridgeClazz, "create", arg0, arg1);
+            return SExecuteWithSignature<Android.Renderscript.ScriptIntrinsicLUT>(LocalBridgeClazz, "create", "(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;)Landroid/renderscript/ScriptIntrinsicLUT;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicLUT.html#getKernelID()"/>
@@ -120,7 +120,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEach(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEach", arg0, arg1, arg2);
+            IExecuteWithSignature("forEach", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicLUT.html#forEach(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -130,7 +130,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEach(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEach", arg0, arg1);
+            IExecuteWithSignature("forEach", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicLUT.html#setAlpha(int,int)"/>
@@ -140,7 +140,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SetAlpha(int arg0, int arg1)
         {
-            IExecute("setAlpha", arg0, arg1);
+            IExecuteWithSignature("setAlpha", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicLUT.html#setBlue(int,int)"/>
@@ -150,7 +150,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SetBlue(int arg0, int arg1)
         {
-            IExecute("setBlue", arg0, arg1);
+            IExecuteWithSignature("setBlue", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicLUT.html#setGreen(int,int)"/>
@@ -160,7 +160,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SetGreen(int arg0, int arg1)
         {
-            IExecute("setGreen", arg0, arg1);
+            IExecuteWithSignature("setGreen", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicLUT.html#setRed(int,int)"/>
@@ -170,15 +170,15 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void SetRed(int arg0, int arg1)
         {
-            IExecute("setRed", arg0, arg1);
+            IExecuteWithSignature("setRed", "(II)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

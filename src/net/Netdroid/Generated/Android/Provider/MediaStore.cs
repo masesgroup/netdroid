@@ -40,10 +40,10 @@ namespace Android.Provider
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaStore(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Provider
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Audio declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Audio(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,7 +105,7 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Radio declaration
             /// <summary>
@@ -122,10 +122,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Radio(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -146,9 +146,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -170,10 +170,10 @@ namespace Android.Provider
                 /// </summary>
                 [global::System.Obsolete("PlaylistsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public PlaylistsColumns(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -194,9 +194,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -216,10 +216,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Playlists(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -240,7 +240,7 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
                 #region Members declaration
                 /// <summary>
@@ -258,10 +258,10 @@ namespace Android.Provider
                     /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                     /// </summary>
                     public Members(params object[] args) : base(args) { }
-                
+
                     private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                     private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-                
+
                     /// <summary>
                     /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                     /// </summary>
@@ -282,9 +282,9 @@ namespace Android.Provider
                     /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                     /// </summary>
                     public override bool IsBridgeStatic => true;
-                
+
                     // TODO: complete the class
-                
+
                 }
                 #endregion
 
@@ -307,10 +307,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Media(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -331,9 +331,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -354,10 +354,10 @@ namespace Android.Provider
                 /// </summary>
                 [global::System.Obsolete("GenresColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public GenresColumns(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -378,9 +378,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -399,10 +399,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Genres(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -423,7 +423,7 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
                 #region Members declaration
                 /// <summary>
@@ -440,10 +440,10 @@ namespace Android.Provider
                     /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                     /// </summary>
                     public Members(params object[] args) : base(args) { }
-                
+
                     private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                     private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-                
+
                     /// <summary>
                     /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                     /// </summary>
@@ -464,9 +464,9 @@ namespace Android.Provider
                     /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                     /// </summary>
                     public override bool IsBridgeStatic => true;
-                
+
                     // TODO: complete the class
-                
+
                 }
                 #endregion
 
@@ -491,10 +491,10 @@ namespace Android.Provider
                 /// </summary>
                 [global::System.Obsolete("AudioColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public AudioColumns(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -515,9 +515,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -536,10 +536,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Artists(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -560,7 +560,7 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
                 #region Albums declaration
                 /// <summary>
@@ -577,10 +577,10 @@ namespace Android.Provider
                     /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                     /// </summary>
                     public Albums(params object[] args) : base(args) { }
-                
+
                     private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                     private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-                
+
                     /// <summary>
                     /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                     /// </summary>
@@ -601,9 +601,9 @@ namespace Android.Provider
                     /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                     /// </summary>
                     public override bool IsBridgeStatic => true;
-                
+
                     // TODO: complete the class
-                
+
                 }
                 #endregion
 
@@ -628,10 +628,10 @@ namespace Android.Provider
                 /// </summary>
                 [global::System.Obsolete("ArtistColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public ArtistColumns(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -652,9 +652,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -673,10 +673,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Albums(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -697,9 +697,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -720,10 +720,10 @@ namespace Android.Provider
                 /// </summary>
                 [global::System.Obsolete("AlbumColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public AlbumColumns(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -744,9 +744,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -771,10 +771,10 @@ namespace Android.Provider
             /// </summary>
             [global::System.Obsolete("DownloadColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public DownloadColumns(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -795,9 +795,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -816,10 +816,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Downloads(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -840,9 +840,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -861,10 +861,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Files(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -885,7 +885,7 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region FileColumns declaration
             /// <summary>
@@ -904,10 +904,10 @@ namespace Android.Provider
                 /// </summary>
                 [global::System.Obsolete("FileColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public FileColumns(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -928,9 +928,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -953,10 +953,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Images(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -977,7 +977,7 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Thumbnails declaration
             /// <summary>
@@ -995,10 +995,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Thumbnails(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -1019,9 +1019,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -1040,10 +1040,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Media(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -1064,9 +1064,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -1087,10 +1087,10 @@ namespace Android.Provider
                 /// </summary>
                 [global::System.Obsolete("ImageColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public ImageColumns(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -1111,9 +1111,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -1138,10 +1138,10 @@ namespace Android.Provider
             /// </summary>
             [global::System.Obsolete("MediaColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public MediaColumns(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -1162,9 +1162,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -1183,10 +1183,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PickerMediaColumns(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -1207,9 +1207,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -1228,10 +1228,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Video(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -1252,7 +1252,7 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region VideoColumns declaration
             /// <summary>
@@ -1271,10 +1271,10 @@ namespace Android.Provider
                 /// </summary>
                 [global::System.Obsolete("VideoColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public VideoColumns(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -1295,9 +1295,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -1317,10 +1317,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Thumbnails(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -1341,9 +1341,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -1362,10 +1362,10 @@ namespace Android.Provider
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Media(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -1386,9 +1386,9 @@ namespace Android.Provider
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -1404,13 +1404,13 @@ namespace Android.Provider
     public partial class MediaStore
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#AUTHORITY_URI"/>
@@ -1780,9 +1780,9 @@ namespace Android.Provider
         public static Java.Lang.String VOLUME_INTERNAL { get { if (!_VOLUME_INTERNALReady) { _VOLUME_INTERNALContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VOLUME_INTERNAL"); _VOLUME_INTERNALReady = true; } return _VOLUME_INTERNALContent; } }
         private static Java.Lang.String _VOLUME_INTERNALContent = default;
         private static bool _VOLUME_INTERNALReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#createDeleteRequest(android.content.ContentResolver,java.util.Collection)"/>
@@ -1792,7 +1792,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public static Android.App.PendingIntent CreateDeleteRequest(Android.Content.ContentResolver arg0, Java.Util.Collection<Android.Net.Uri> arg1)
         {
-            return SExecute<Android.App.PendingIntent>(LocalBridgeClazz, "createDeleteRequest", arg0, arg1);
+            return SExecuteWithSignature<Android.App.PendingIntent>(LocalBridgeClazz, "createDeleteRequest", "(Landroid/content/ContentResolver;Ljava/util/Collection;)Landroid/app/PendingIntent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#createFavoriteRequest(android.content.ContentResolver,java.util.Collection,boolean)"/>
@@ -1803,7 +1803,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public static Android.App.PendingIntent CreateFavoriteRequest(Android.Content.ContentResolver arg0, Java.Util.Collection<Android.Net.Uri> arg1, bool arg2)
         {
-            return SExecute<Android.App.PendingIntent>(LocalBridgeClazz, "createFavoriteRequest", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.App.PendingIntent>(LocalBridgeClazz, "createFavoriteRequest", "(Landroid/content/ContentResolver;Ljava/util/Collection;Z)Landroid/app/PendingIntent;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#createTrashRequest(android.content.ContentResolver,java.util.Collection,boolean)"/>
@@ -1814,7 +1814,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public static Android.App.PendingIntent CreateTrashRequest(Android.Content.ContentResolver arg0, Java.Util.Collection<Android.Net.Uri> arg1, bool arg2)
         {
-            return SExecute<Android.App.PendingIntent>(LocalBridgeClazz, "createTrashRequest", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.App.PendingIntent>(LocalBridgeClazz, "createTrashRequest", "(Landroid/content/ContentResolver;Ljava/util/Collection;Z)Landroid/app/PendingIntent;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#createWriteRequest(android.content.ContentResolver,java.util.Collection)"/>
@@ -1824,7 +1824,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public static Android.App.PendingIntent CreateWriteRequest(Android.Content.ContentResolver arg0, Java.Util.Collection<Android.Net.Uri> arg1)
         {
-            return SExecute<Android.App.PendingIntent>(LocalBridgeClazz, "createWriteRequest", arg0, arg1);
+            return SExecuteWithSignature<Android.App.PendingIntent>(LocalBridgeClazz, "createWriteRequest", "(Landroid/content/ContentResolver;Ljava/util/Collection;)Landroid/app/PendingIntent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#getDocumentUri(android.content.Context,android.net.Uri)"/>
@@ -1834,7 +1834,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri GetDocumentUri(Android.Content.Context arg0, Android.Net.Uri arg1)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getDocumentUri", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getDocumentUri", "(Landroid/content/Context;Landroid/net/Uri;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#getMediaScannerUri()"/>
@@ -1852,7 +1852,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri GetMediaUri(Android.Content.Context arg0, Android.Net.Uri arg1)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getMediaUri", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getMediaUri", "(Landroid/content/Context;Landroid/net/Uri;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#getRedactedUri(android.content.ContentResolver,android.net.Uri)"/>
@@ -1862,7 +1862,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri GetRedactedUri(Android.Content.ContentResolver arg0, Android.Net.Uri arg1)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getRedactedUri", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getRedactedUri", "(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#setIncludePending(android.net.Uri)"/>
@@ -1892,7 +1892,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.IOException"/>
         public static Android.Os.ParcelFileDescriptor GetOriginalMediaFormatFileDescriptor(Android.Content.Context arg0, Android.Os.ParcelFileDescriptor arg1)
         {
-            return SExecute<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "getOriginalMediaFormatFileDescriptor", arg0, arg1);
+            return SExecuteWithSignature<Android.Os.ParcelFileDescriptor>(LocalBridgeClazz, "getOriginalMediaFormatFileDescriptor", "(Landroid/content/Context;Landroid/os/ParcelFileDescriptor;)Landroid/os/ParcelFileDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#canManageMedia(android.content.Context)"/>
@@ -1920,7 +1920,7 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public static bool IsCurrentCloudMediaProviderAuthority(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isCurrentCloudMediaProviderAuthority", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isCurrentCloudMediaProviderAuthority", "(Landroid/content/ContentResolver;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#isCurrentSystemGallery(android.content.ContentResolver,int,java.lang.String)"/>
@@ -1931,7 +1931,7 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public static bool IsCurrentSystemGallery(Android.Content.ContentResolver arg0, int arg1, Java.Lang.String arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isCurrentSystemGallery", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isCurrentSystemGallery", "(Landroid/content/ContentResolver;ILjava/lang/String;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#isSupportedCloudMediaProviderAuthority(android.content.ContentResolver,java.lang.String)"/>
@@ -1941,7 +1941,7 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public static bool IsSupportedCloudMediaProviderAuthority(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isSupportedCloudMediaProviderAuthority", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSupportedCloudMediaProviderAuthority", "(Landroid/content/ContentResolver;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#getPickImagesMaxLimit()"/>
@@ -1959,7 +1959,7 @@ namespace Android.Provider
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetVersion(Android.Content.Context arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getVersion", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getVersion", "(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#getVersion(android.content.Context)"/>
@@ -1987,7 +1987,7 @@ namespace Android.Provider
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Android.Net.Uri> GetRedactedUri(Android.Content.ContentResolver arg0, Java.Util.List<Android.Net.Uri> arg1)
         {
-            return SExecute<Java.Util.List<Android.Net.Uri>>(LocalBridgeClazz, "getRedactedUri", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.List<Android.Net.Uri>>(LocalBridgeClazz, "getRedactedUri", "(Landroid/content/ContentResolver;Ljava/util/List;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#getExternalVolumeNames(android.content.Context)"/>
@@ -2015,7 +2015,7 @@ namespace Android.Provider
         /// <returns><see cref="long"/></returns>
         public static long GetGeneration(Android.Content.Context arg0, Java.Lang.String arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "getGeneration", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getGeneration", "(Landroid/content/Context;Ljava/lang/String;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#notifyCloudMediaChangedEvent(android.content.ContentResolver,java.lang.String,java.lang.String)"/>
@@ -2026,31 +2026,31 @@ namespace Android.Provider
         /// <exception cref="Java.Lang.SecurityException"/>
         public static void NotifyCloudMediaChangedEvent(Android.Content.ContentResolver arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            SExecute(LocalBridgeClazz, "notifyCloudMediaChangedEvent", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "notifyCloudMediaChangedEvent", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Audio implementation
         public partial class Audio
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.html#keyFor(java.lang.String)"/>
@@ -2062,25 +2062,25 @@ namespace Android.Provider
             {
                 return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "keyFor", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Radio implementation
             public partial class Radio
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Radio.html#ENTRY_CONTENT_TYPE"/>
@@ -2088,21 +2088,21 @@ namespace Android.Provider
                 public static Java.Lang.String ENTRY_CONTENT_TYPE { get { if (!_ENTRY_CONTENT_TYPEReady) { _ENTRY_CONTENT_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ENTRY_CONTENT_TYPE"); _ENTRY_CONTENT_TYPEReady = true; } return _ENTRY_CONTENT_TYPEContent; } }
                 private static Java.Lang.String _ENTRY_CONTENT_TYPEContent = default;
                 private static bool _ENTRY_CONTENT_TYPEReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -2111,13 +2111,13 @@ namespace Android.Provider
             public partial class PlaylistsColumns
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.PlaylistsColumns.html#DATA"/>
@@ -2147,21 +2147,21 @@ namespace Android.Provider
                 public static Java.Lang.String NAME { get { if (!_NAMEReady) { _NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NAME"); _NAMEReady = true; } return _NAMEContent; } }
                 private static Java.Lang.String _NAMEContent = default;
                 private static bool _NAMEReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -2170,17 +2170,17 @@ namespace Android.Provider
             public partial class Playlists : Android.Provider.IBaseColumns
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
                 /// <summary>
                 /// Converter from <see cref="Android.Provider.MediaStore.Audio.Playlists"/> to <see cref="Android.Provider.BaseColumns"/>
                 /// </summary>
                 public static implicit operator Android.Provider.BaseColumns(Android.Provider.MediaStore.Audio.Playlists t) => t.Cast<Android.Provider.BaseColumns>();
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.html#EXTERNAL_CONTENT_URI"/>
@@ -2217,9 +2217,9 @@ namespace Android.Provider
                 public static Java.Lang.String ENTRY_CONTENT_TYPE { get { if (!_ENTRY_CONTENT_TYPEReady) { _ENTRY_CONTENT_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ENTRY_CONTENT_TYPE"); _ENTRY_CONTENT_TYPEReady = true; } return _ENTRY_CONTENT_TYPEContent; } }
                 private static Java.Lang.String _ENTRY_CONTENT_TYPEContent = default;
                 private static bool _ENTRY_CONTENT_TYPEReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.html#getContentUri(java.lang.String)"/>
@@ -2231,25 +2231,25 @@ namespace Android.Provider
                 {
                     return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
                 #region Members implementation
                 public partial class Members
                 {
                     #region Constructors
-                
+
                     #endregion
-                
+
                     #region Class/Interface conversion operators
-                
+
                     #endregion
-                
+
                     #region Fields
                     /// <summary>
                     /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.Members.html#_ID"/>
@@ -2293,9 +2293,9 @@ namespace Android.Provider
                     public static Java.Lang.String PLAYLIST_ID { get { if (!_PLAYLIST_IDReady) { _PLAYLIST_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PLAYLIST_ID"); _PLAYLIST_IDReady = true; } return _PLAYLIST_IDContent; } }
                     private static Java.Lang.String _PLAYLIST_IDContent = default;
                     private static bool _PLAYLIST_IDReady = false; // this is used because in case of generics 
-                
+
                     #endregion
-                
+
                     #region Static methods
                     /// <summary>
                     /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.Members.html#getContentUri(java.lang.String,long)"/>
@@ -2306,7 +2306,7 @@ namespace Android.Provider
                     [global::System.Obsolete()]
                     public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
                     {
-                        return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
+                        return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
                     }
                     /// <summary>
                     /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.Members.html#moveItem(android.content.ContentResolver,long,int,int)"/>
@@ -2319,26 +2319,26 @@ namespace Android.Provider
                     [global::System.Obsolete()]
                     public static bool MoveItem(Android.Content.ContentResolver arg0, long arg1, int arg2, int arg3)
                     {
-                        return SExecute<bool>(LocalBridgeClazz, "moveItem", arg0, arg1, arg2, arg3);
+                        return SExecuteWithSignature<bool>(LocalBridgeClazz, "moveItem", "(Landroid/content/ContentResolver;JII)Z", arg0, arg1, arg2, arg3);
                     }
-                
+
                     #endregion
-                
+
                     #region Instance methods
-                
+
                     #endregion
-                
+
                     #region Nested classes
-                
+
                     #endregion
-                
+
                     // TODO: complete the class
                 }
                 #endregion
 
             
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -2347,13 +2347,13 @@ namespace Android.Provider
             public partial class Media
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Media.html#EXTERNAL_CONTENT_URI"/>
@@ -2397,9 +2397,9 @@ namespace Android.Provider
                 public static Java.Lang.String RECORD_SOUND_ACTION { get { if (!_RECORD_SOUND_ACTIONReady) { _RECORD_SOUND_ACTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RECORD_SOUND_ACTION"); _RECORD_SOUND_ACTIONReady = true; } return _RECORD_SOUND_ACTIONContent; } }
                 private static Java.Lang.String _RECORD_SOUND_ACTIONContent = default;
                 private static bool _RECORD_SOUND_ACTIONReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Media.html#getContentUri(java.lang.String,long)"/>
@@ -2409,7 +2409,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
                 {
-                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
+                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Media.html#getContentUri(java.lang.String)"/>
@@ -2430,17 +2430,17 @@ namespace Android.Provider
                 {
                     return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUriForPath", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -2449,13 +2449,13 @@ namespace Android.Provider
             public partial class GenresColumns
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.GenresColumns.html#NAME"/>
@@ -2463,21 +2463,21 @@ namespace Android.Provider
                 public static Java.Lang.String NAME { get { if (!_NAMEReady) { _NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NAME"); _NAMEReady = true; } return _NAMEContent; } }
                 private static Java.Lang.String _NAMEContent = default;
                 private static bool _NAMEReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -2486,17 +2486,17 @@ namespace Android.Provider
             public partial class Genres : Android.Provider.IBaseColumns
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
                 /// <summary>
                 /// Converter from <see cref="Android.Provider.MediaStore.Audio.Genres"/> to <see cref="Android.Provider.BaseColumns"/>
                 /// </summary>
                 public static implicit operator Android.Provider.BaseColumns(Android.Provider.MediaStore.Audio.Genres t) => t.Cast<Android.Provider.BaseColumns>();
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Genres.html#EXTERNAL_CONTENT_URI"/>
@@ -2528,9 +2528,9 @@ namespace Android.Provider
                 public static Java.Lang.String ENTRY_CONTENT_TYPE { get { if (!_ENTRY_CONTENT_TYPEReady) { _ENTRY_CONTENT_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ENTRY_CONTENT_TYPE"); _ENTRY_CONTENT_TYPEReady = true; } return _ENTRY_CONTENT_TYPEContent; } }
                 private static Java.Lang.String _ENTRY_CONTENT_TYPEContent = default;
                 private static bool _ENTRY_CONTENT_TYPEReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Genres.html#getContentUri(java.lang.String)"/>
@@ -2549,27 +2549,27 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUriForAudioId(Java.Lang.String arg0, int arg1)
                 {
-                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUriForAudioId", arg0, arg1);
+                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUriForAudioId", "(Ljava/lang/String;I)Landroid/net/Uri;", arg0, arg1);
                 }
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
                 #region Members implementation
                 public partial class Members
                 {
                     #region Constructors
-                
+
                     #endregion
-                
+
                     #region Class/Interface conversion operators
-                
+
                     #endregion
-                
+
                     #region Fields
                     /// <summary>
                     /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Genres.Members.html#AUDIO_ID"/>
@@ -2595,9 +2595,9 @@ namespace Android.Provider
                     public static Java.Lang.String GENRE_ID { get { if (!_GENRE_IDReady) { _GENRE_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "GENRE_ID"); _GENRE_IDReady = true; } return _GENRE_IDContent; } }
                     private static Java.Lang.String _GENRE_IDContent = default;
                     private static bool _GENRE_IDReady = false; // this is used because in case of generics 
-                
+
                     #endregion
-                
+
                     #region Static methods
                     /// <summary>
                     /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Genres.Members.html#getContentUri(java.lang.String,long)"/>
@@ -2607,26 +2607,26 @@ namespace Android.Provider
                     /// <returns><see cref="Android.Net.Uri"/></returns>
                     public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
                     {
-                        return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
+                        return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
                     }
-                
+
                     #endregion
-                
+
                     #region Instance methods
-                
+
                     #endregion
-                
+
                     #region Nested classes
-                
+
                     #endregion
-                
+
                     // TODO: complete the class
                 }
                 #endregion
 
             
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -2635,13 +2635,13 @@ namespace Android.Provider
             public partial class AudioColumns
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AudioColumns.html#ALBUM_ID"/>
@@ -2761,21 +2761,21 @@ namespace Android.Provider
                 public static Java.Lang.String YEAR { get { if (!_YEARReady) { _YEARContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "YEAR"); _YEARReady = true; } return _YEARContent; } }
                 private static Java.Lang.String _YEARContent = default;
                 private static bool _YEARReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -2784,17 +2784,17 @@ namespace Android.Provider
             public partial class Artists : Android.Provider.IBaseColumns
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
                 /// <summary>
                 /// Converter from <see cref="Android.Provider.MediaStore.Audio.Artists"/> to <see cref="Android.Provider.BaseColumns"/>
                 /// </summary>
                 public static implicit operator Android.Provider.BaseColumns(Android.Provider.MediaStore.Audio.Artists t) => t.Cast<Android.Provider.BaseColumns>();
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Artists.html#EXTERNAL_CONTENT_URI"/>
@@ -2826,9 +2826,9 @@ namespace Android.Provider
                 public static Java.Lang.String ENTRY_CONTENT_TYPE { get { if (!_ENTRY_CONTENT_TYPEReady) { _ENTRY_CONTENT_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ENTRY_CONTENT_TYPE"); _ENTRY_CONTENT_TYPEReady = true; } return _ENTRY_CONTENT_TYPEContent; } }
                 private static Java.Lang.String _ENTRY_CONTENT_TYPEContent = default;
                 private static bool _ENTRY_CONTENT_TYPEReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Artists.html#getContentUri(java.lang.String)"/>
@@ -2839,33 +2839,33 @@ namespace Android.Provider
                 {
                     return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
                 #region Albums implementation
                 public partial class Albums : Android.Provider.IBaseColumns
                 {
                     #region Constructors
-                
+
                     #endregion
-                
+
                     #region Class/Interface conversion operators
                     /// <summary>
                     /// Converter from <see cref="Android.Provider.MediaStore.Audio.Artists.Albums"/> to <see cref="Android.Provider.BaseColumns"/>
                     /// </summary>
                     public static implicit operator Android.Provider.BaseColumns(Android.Provider.MediaStore.Audio.Artists.Albums t) => t.Cast<Android.Provider.BaseColumns>();
-                
+
                     #endregion
-                
+
                     #region Fields
-                
+
                     #endregion
-                
+
                     #region Static methods
                     /// <summary>
                     /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Artists.Albums.html#getContentUri(java.lang.String,long)"/>
@@ -2875,26 +2875,26 @@ namespace Android.Provider
                     /// <returns><see cref="Android.Net.Uri"/></returns>
                     public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
                     {
-                        return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
+                        return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
                     }
-                
+
                     #endregion
-                
+
                     #region Instance methods
-                
+
                     #endregion
-                
+
                     #region Nested classes
-                
+
                     #endregion
-                
+
                     // TODO: complete the class
                 }
                 #endregion
 
             
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -2903,13 +2903,13 @@ namespace Android.Provider
             public partial class ArtistColumns
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.ArtistColumns.html#ARTIST"/>
@@ -2936,21 +2936,21 @@ namespace Android.Provider
                 public static Java.Lang.String NUMBER_OF_TRACKS { get { if (!_NUMBER_OF_TRACKSReady) { _NUMBER_OF_TRACKSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NUMBER_OF_TRACKS"); _NUMBER_OF_TRACKSReady = true; } return _NUMBER_OF_TRACKSContent; } }
                 private static Java.Lang.String _NUMBER_OF_TRACKSContent = default;
                 private static bool _NUMBER_OF_TRACKSReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -2959,17 +2959,17 @@ namespace Android.Provider
             public partial class Albums : Android.Provider.IBaseColumns
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
                 /// <summary>
                 /// Converter from <see cref="Android.Provider.MediaStore.Audio.Albums"/> to <see cref="Android.Provider.BaseColumns"/>
                 /// </summary>
                 public static implicit operator Android.Provider.BaseColumns(Android.Provider.MediaStore.Audio.Albums t) => t.Cast<Android.Provider.BaseColumns>();
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Albums.html#EXTERNAL_CONTENT_URI"/>
@@ -3001,9 +3001,9 @@ namespace Android.Provider
                 public static Java.Lang.String ENTRY_CONTENT_TYPE { get { if (!_ENTRY_CONTENT_TYPEReady) { _ENTRY_CONTENT_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ENTRY_CONTENT_TYPE"); _ENTRY_CONTENT_TYPEReady = true; } return _ENTRY_CONTENT_TYPEContent; } }
                 private static Java.Lang.String _ENTRY_CONTENT_TYPEContent = default;
                 private static bool _ENTRY_CONTENT_TYPEReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Albums.html#getContentUri(java.lang.String)"/>
@@ -3014,17 +3014,17 @@ namespace Android.Provider
                 {
                     return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -3033,13 +3033,13 @@ namespace Android.Provider
             public partial class AlbumColumns
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AlbumColumns.html#ALBUM"/>
@@ -3110,28 +3110,28 @@ namespace Android.Provider
                 public static Java.Lang.String NUMBER_OF_SONGS_FOR_ARTIST { get { if (!_NUMBER_OF_SONGS_FOR_ARTISTReady) { _NUMBER_OF_SONGS_FOR_ARTISTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NUMBER_OF_SONGS_FOR_ARTIST"); _NUMBER_OF_SONGS_FOR_ARTISTReady = true; } return _NUMBER_OF_SONGS_FOR_ARTISTContent; } }
                 private static Java.Lang.String _NUMBER_OF_SONGS_FOR_ARTISTContent = default;
                 private static bool _NUMBER_OF_SONGS_FOR_ARTISTReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3140,13 +3140,13 @@ namespace Android.Provider
         public partial class DownloadColumns
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/MediaStore.DownloadColumns.html#DOWNLOAD_URI"/>
@@ -3160,21 +3160,21 @@ namespace Android.Provider
             public static Java.Lang.String REFERER_URI { get { if (!_REFERER_URIReady) { _REFERER_URIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "REFERER_URI"); _REFERER_URIReady = true; } return _REFERER_URIContent; } }
             private static Java.Lang.String _REFERER_URIContent = default;
             private static bool _REFERER_URIReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3183,13 +3183,13 @@ namespace Android.Provider
         public partial class Downloads
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Downloads.html#EXTERNAL_CONTENT_URI"/>
@@ -3209,9 +3209,9 @@ namespace Android.Provider
             public static Java.Lang.String CONTENT_TYPE { get { if (!_CONTENT_TYPEReady) { _CONTENT_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONTENT_TYPE"); _CONTENT_TYPEReady = true; } return _CONTENT_TYPEContent; } }
             private static Java.Lang.String _CONTENT_TYPEContent = default;
             private static bool _CONTENT_TYPEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Downloads.html#getContentUri(java.lang.String,long)"/>
@@ -3221,7 +3221,7 @@ namespace Android.Provider
             /// <returns><see cref="Android.Net.Uri"/></returns>
             public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
             {
-                return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
+                return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Downloads.html#getContentUri(java.lang.String)"/>
@@ -3232,17 +3232,17 @@ namespace Android.Provider
             {
                 return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3251,17 +3251,17 @@ namespace Android.Provider
         public partial class Files
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Files.html#getContentUri(java.lang.String,long)"/>
@@ -3271,7 +3271,7 @@ namespace Android.Provider
             /// <returns><see cref="Android.Net.Uri"/></returns>
             public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
             {
-                return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
+                return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Files.html#getContentUri(java.lang.String)"/>
@@ -3282,25 +3282,25 @@ namespace Android.Provider
             {
                 return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
             #region FileColumns implementation
             public partial class FileColumns
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Files.FileColumns.html#MEDIA_TYPE_AUDIO"/>
@@ -3363,28 +3363,28 @@ namespace Android.Provider
                 public static Java.Lang.String PARENT { get { if (!_PARENTReady) { _PARENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PARENT"); _PARENTReady = true; } return _PARENTContent; } }
                 private static Java.Lang.String _PARENTContent = default;
                 private static bool _PARENTReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3393,37 +3393,37 @@ namespace Android.Provider
         public partial class Images
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Thumbnails implementation
             public partial class Thumbnails
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#EXTERNAL_CONTENT_URI"/>
@@ -3509,9 +3509,9 @@ namespace Android.Provider
                 public static Java.Lang.String WIDTH { get { if (!_WIDTHReady) { _WIDTHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIDTH"); _WIDTHReady = true; } return _WIDTHContent; } }
                 private static Java.Lang.String _WIDTHContent = default;
                 private static bool _WIDTHReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#getThumbnail(android.content.ContentResolver,long,int,android.graphics.BitmapFactory.Options)"/>
@@ -3524,7 +3524,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Graphics.Bitmap GetThumbnail(Android.Content.ContentResolver arg0, long arg1, int arg2, Android.Graphics.BitmapFactory.Options arg3)
                 {
-                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", arg0, arg1, arg2, arg3);
+                    return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", "(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#getThumbnail(android.content.ContentResolver,long,long,int,android.graphics.BitmapFactory.Options)"/>
@@ -3538,7 +3538,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Graphics.Bitmap GetThumbnail(Android.Content.ContentResolver arg0, long arg1, long arg2, int arg3, Android.Graphics.BitmapFactory.Options arg4)
                 {
-                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", arg0, arg1, arg2, arg3, arg4);
+                    return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", "(Landroid/content/ContentResolver;JJILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#getContentUri(java.lang.String)"/>
@@ -3570,7 +3570,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2)
                 {
-                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2);
+                    return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#queryMiniThumbnail(android.content.ContentResolver,long,int,java.lang.String[])"/>
@@ -3583,7 +3583,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Database.Cursor QueryMiniThumbnail(Android.Content.ContentResolver arg0, long arg1, int arg2, Java.Lang.String[] arg3)
                 {
-                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "queryMiniThumbnail", arg0, arg1, arg2, arg3);
+                    return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "queryMiniThumbnail", "(Landroid/content/ContentResolver;JI[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#queryMiniThumbnails(android.content.ContentResolver,android.net.Uri,int,java.lang.String[])"/>
@@ -3596,7 +3596,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Database.Cursor QueryMiniThumbnails(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, int arg2, Java.Lang.String[] arg3)
                 {
-                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "queryMiniThumbnails", arg0, arg1, arg2, arg3);
+                    return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "queryMiniThumbnails", "(Landroid/content/ContentResolver;Landroid/net/Uri;I[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#cancelThumbnailRequest(android.content.ContentResolver,long,long)"/>
@@ -3607,7 +3607,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static void CancelThumbnailRequest(Android.Content.ContentResolver arg0, long arg1, long arg2)
                 {
-                    SExecute(LocalBridgeClazz, "cancelThumbnailRequest", arg0, arg1, arg2);
+                    SExecuteWithSignature(LocalBridgeClazz, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;JJ)V", arg0, arg1, arg2);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#cancelThumbnailRequest(android.content.ContentResolver,long)"/>
@@ -3617,19 +3617,19 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static void CancelThumbnailRequest(Android.Content.ContentResolver arg0, long arg1)
                 {
-                    SExecute(LocalBridgeClazz, "cancelThumbnailRequest", arg0, arg1);
+                    SExecuteWithSignature(LocalBridgeClazz, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;J)V", arg0, arg1);
                 }
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -3638,13 +3638,13 @@ namespace Android.Provider
             public partial class Media
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#EXTERNAL_CONTENT_URI"/>
@@ -3670,9 +3670,9 @@ namespace Android.Provider
                 public static Java.Lang.String DEFAULT_SORT_ORDER { get { if (!_DEFAULT_SORT_ORDERReady) { _DEFAULT_SORT_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_SORT_ORDER"); _DEFAULT_SORT_ORDERReady = true; } return _DEFAULT_SORT_ORDERContent; } }
                 private static Java.Lang.String _DEFAULT_SORT_ORDERContent = default;
                 private static bool _DEFAULT_SORT_ORDERReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#query(android.content.ContentResolver,android.net.Uri,java.lang.String[],java.lang.String,java.lang.String)"/>
@@ -3686,7 +3686,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2, Java.Lang.String arg3, Java.Lang.String arg4)
                 {
-                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2, arg3, arg4);
+                    return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#query(android.content.ContentResolver,android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"/>
@@ -3701,7 +3701,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2, Java.Lang.String arg3, Java.Lang.String[] arg4, Java.Lang.String arg5)
                 {
-                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2, arg3, arg4, arg5);
+                    return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4, arg5);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#query(android.content.ContentResolver,android.net.Uri,java.lang.String[])"/>
@@ -3713,7 +3713,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2)
                 {
-                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2);
+                    return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#getBitmap(android.content.ContentResolver,android.net.Uri)"/>
@@ -3726,7 +3726,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Graphics.Bitmap GetBitmap(Android.Content.ContentResolver arg0, Android.Net.Uri arg1)
                 {
-                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getBitmap", arg0, arg1);
+                    return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "getBitmap", "(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/graphics/Bitmap;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#getContentUri(java.lang.String,long)"/>
@@ -3736,7 +3736,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
                 {
-                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
+                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#getContentUri(java.lang.String)"/>
@@ -3758,7 +3758,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Java.Lang.String InsertImage(Android.Content.ContentResolver arg0, Android.Graphics.Bitmap arg1, Java.Lang.String arg2, Java.Lang.String arg3)
                 {
-                    return SExecute<Java.Lang.String>(LocalBridgeClazz, "insertImage", arg0, arg1, arg2, arg3);
+                    return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "insertImage", "(Landroid/content/ContentResolver;Landroid/graphics/Bitmap;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2, arg3);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#insertImage(android.content.ContentResolver,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -3772,19 +3772,19 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Java.Lang.String InsertImage(Android.Content.ContentResolver arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
                 {
-                    return SExecute<Java.Lang.String>(LocalBridgeClazz, "insertImage", arg0, arg1, arg2, arg3);
+                    return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "insertImage", "(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2, arg3);
                 }
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -3793,13 +3793,13 @@ namespace Android.Provider
             public partial class ImageColumns
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.ImageColumns.html#DESCRIPTION"/>
@@ -3865,28 +3865,28 @@ namespace Android.Provider
                 public static Java.Lang.String SCENE_CAPTURE_TYPE { get { if (!_SCENE_CAPTURE_TYPEReady) { _SCENE_CAPTURE_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SCENE_CAPTURE_TYPE"); _SCENE_CAPTURE_TYPEReady = true; } return _SCENE_CAPTURE_TYPEContent; } }
                 private static Java.Lang.String _SCENE_CAPTURE_TYPEContent = default;
                 private static bool _SCENE_CAPTURE_TYPEReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -3895,13 +3895,13 @@ namespace Android.Provider
         public partial class MediaColumns
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/MediaStore.MediaColumns.html#ALBUM"/>
@@ -4167,21 +4167,21 @@ namespace Android.Provider
             public static Java.Lang.String YEAR { get { if (!_YEARReady) { _YEARContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "YEAR"); _YEARReady = true; } return _YEARContent; } }
             private static Java.Lang.String _YEARContent = default;
             private static bool _YEARReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4190,13 +4190,13 @@ namespace Android.Provider
         public partial class PickerMediaColumns
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/MediaStore.PickerMediaColumns.html#DATA"/>
@@ -4252,21 +4252,21 @@ namespace Android.Provider
             public static Java.Lang.String WIDTH { get { if (!_WIDTHReady) { _WIDTHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIDTH"); _WIDTHReady = true; } return _WIDTHContent; } }
             private static Java.Lang.String _WIDTHContent = default;
             private static bool _WIDTHReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -4275,13 +4275,13 @@ namespace Android.Provider
         public partial class Video
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.html#DEFAULT_SORT_ORDER"/>
@@ -4289,9 +4289,9 @@ namespace Android.Provider
             public static Java.Lang.String DEFAULT_SORT_ORDER { get { if (!_DEFAULT_SORT_ORDERReady) { _DEFAULT_SORT_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_SORT_ORDER"); _DEFAULT_SORT_ORDERReady = true; } return _DEFAULT_SORT_ORDERContent; } }
             private static Java.Lang.String _DEFAULT_SORT_ORDERContent = default;
             private static bool _DEFAULT_SORT_ORDERReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.html#query(android.content.ContentResolver,android.net.Uri,java.lang.String[])"/>
@@ -4303,27 +4303,27 @@ namespace Android.Provider
             [global::System.Obsolete()]
             public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2)
             {
-                return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2);
+                return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
             #region VideoColumns implementation
             public partial class VideoColumns
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.VideoColumns.html#BOOKMARK"/>
@@ -4400,21 +4400,21 @@ namespace Android.Provider
                 public static Java.Lang.String TAGS { get { if (!_TAGSReady) { _TAGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAGS"); _TAGSReady = true; } return _TAGSContent; } }
                 private static Java.Lang.String _TAGSContent = default;
                 private static bool _TAGSReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -4423,13 +4423,13 @@ namespace Android.Provider
             public partial class Thumbnails
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#EXTERNAL_CONTENT_URI"/>
@@ -4508,9 +4508,9 @@ namespace Android.Provider
                 public static Java.Lang.String WIDTH { get { if (!_WIDTHReady) { _WIDTHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIDTH"); _WIDTHReady = true; } return _WIDTHContent; } }
                 private static Java.Lang.String _WIDTHContent = default;
                 private static bool _WIDTHReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#getThumbnail(android.content.ContentResolver,long,int,android.graphics.BitmapFactory.Options)"/>
@@ -4523,7 +4523,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Graphics.Bitmap GetThumbnail(Android.Content.ContentResolver arg0, long arg1, int arg2, Android.Graphics.BitmapFactory.Options arg3)
                 {
-                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", arg0, arg1, arg2, arg3);
+                    return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", "(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#getThumbnail(android.content.ContentResolver,long,long,int,android.graphics.BitmapFactory.Options)"/>
@@ -4537,7 +4537,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Graphics.Bitmap GetThumbnail(Android.Content.ContentResolver arg0, long arg1, long arg2, int arg3, Android.Graphics.BitmapFactory.Options arg4)
                 {
-                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", arg0, arg1, arg2, arg3, arg4);
+                    return SExecuteWithSignature<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", "(Landroid/content/ContentResolver;JJILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#getContentUri(java.lang.String)"/>
@@ -4568,7 +4568,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static void CancelThumbnailRequest(Android.Content.ContentResolver arg0, long arg1, long arg2)
                 {
-                    SExecute(LocalBridgeClazz, "cancelThumbnailRequest", arg0, arg1, arg2);
+                    SExecuteWithSignature(LocalBridgeClazz, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;JJ)V", arg0, arg1, arg2);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#cancelThumbnailRequest(android.content.ContentResolver,long)"/>
@@ -4578,19 +4578,19 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static void CancelThumbnailRequest(Android.Content.ContentResolver arg0, long arg1)
                 {
-                    SExecute(LocalBridgeClazz, "cancelThumbnailRequest", arg0, arg1);
+                    SExecuteWithSignature(LocalBridgeClazz, "cancelThumbnailRequest", "(Landroid/content/ContentResolver;J)V", arg0, arg1);
                 }
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
@@ -4599,13 +4599,13 @@ namespace Android.Provider
             public partial class Media
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Media.html#EXTERNAL_CONTENT_URI"/>
@@ -4631,9 +4631,9 @@ namespace Android.Provider
                 public static Java.Lang.String DEFAULT_SORT_ORDER { get { if (!_DEFAULT_SORT_ORDERReady) { _DEFAULT_SORT_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_SORT_ORDER"); _DEFAULT_SORT_ORDERReady = true; } return _DEFAULT_SORT_ORDERContent; } }
                 private static Java.Lang.String _DEFAULT_SORT_ORDERContent = default;
                 private static bool _DEFAULT_SORT_ORDERReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Media.html#getContentUri(java.lang.String,long)"/>
@@ -4643,7 +4643,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
                 {
-                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
+                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Media.html#getContentUri(java.lang.String)"/>
@@ -4654,31 +4654,31 @@ namespace Android.Provider
                 {
                     return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

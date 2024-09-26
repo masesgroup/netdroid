@@ -41,10 +41,10 @@ namespace Android.Renderscript
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ScriptIntrinsicBlend(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Renderscript
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,17 +75,17 @@ namespace Android.Renderscript
     public partial class ScriptIntrinsicBlend
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#create(android.renderscript.RenderScript,android.renderscript.Element)"/>
@@ -96,11 +96,11 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public static Android.Renderscript.ScriptIntrinsicBlend Create(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element arg1)
         {
-            return SExecute<Android.Renderscript.ScriptIntrinsicBlend>(LocalBridgeClazz, "create", arg0, arg1);
+            return SExecuteWithSignature<Android.Renderscript.ScriptIntrinsicBlend>(LocalBridgeClazz, "create", "(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;)Landroid/renderscript/ScriptIntrinsicBlend;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDAdd()"/>
@@ -246,7 +246,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachAdd(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachAdd", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachAdd", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachAdd(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -256,7 +256,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachAdd(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachAdd", arg0, arg1);
+            IExecuteWithSignature("forEachAdd", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachClear(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -267,7 +267,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachClear(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachClear", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachClear", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachClear(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -277,7 +277,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachClear(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachClear", arg0, arg1);
+            IExecuteWithSignature("forEachClear", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachDst(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -288,7 +288,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachDst(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachDst", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachDst", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachDst(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -298,7 +298,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachDst(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachDst", arg0, arg1);
+            IExecuteWithSignature("forEachDst", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachDstAtop(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -309,7 +309,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachDstAtop(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachDstAtop", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachDstAtop", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachDstAtop(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -319,7 +319,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachDstAtop(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachDstAtop", arg0, arg1);
+            IExecuteWithSignature("forEachDstAtop", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachDstIn(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -330,7 +330,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachDstIn(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachDstIn", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachDstIn", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachDstIn(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -340,7 +340,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachDstIn(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachDstIn", arg0, arg1);
+            IExecuteWithSignature("forEachDstIn", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachDstOut(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -351,7 +351,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachDstOut(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachDstOut", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachDstOut", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachDstOut(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -361,7 +361,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachDstOut(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachDstOut", arg0, arg1);
+            IExecuteWithSignature("forEachDstOut", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachDstOver(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -372,7 +372,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachDstOver(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachDstOver", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachDstOver", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachDstOver(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -382,7 +382,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachDstOver(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachDstOver", arg0, arg1);
+            IExecuteWithSignature("forEachDstOver", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachMultiply(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -393,7 +393,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachMultiply(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachMultiply", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachMultiply", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachMultiply(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -403,7 +403,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachMultiply(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachMultiply", arg0, arg1);
+            IExecuteWithSignature("forEachMultiply", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachSrc(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -414,7 +414,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachSrc(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachSrc", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachSrc", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachSrc(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -424,7 +424,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachSrc(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachSrc", arg0, arg1);
+            IExecuteWithSignature("forEachSrc", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachSrcAtop(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -435,7 +435,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachSrcAtop(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachSrcAtop", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachSrcAtop", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachSrcAtop(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -445,7 +445,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachSrcAtop(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachSrcAtop", arg0, arg1);
+            IExecuteWithSignature("forEachSrcAtop", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachSrcIn(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -456,7 +456,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachSrcIn(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachSrcIn", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachSrcIn", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachSrcIn(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -466,7 +466,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachSrcIn(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachSrcIn", arg0, arg1);
+            IExecuteWithSignature("forEachSrcIn", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachSrcOut(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -477,7 +477,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachSrcOut(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachSrcOut", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachSrcOut", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachSrcOut(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -487,7 +487,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachSrcOut(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachSrcOut", arg0, arg1);
+            IExecuteWithSignature("forEachSrcOut", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachSrcOver(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -498,7 +498,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachSrcOver(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachSrcOver", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachSrcOver", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachSrcOver(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -508,7 +508,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachSrcOver(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachSrcOver", arg0, arg1);
+            IExecuteWithSignature("forEachSrcOver", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachSubtract(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -519,7 +519,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachSubtract(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachSubtract", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachSubtract", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachSubtract(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -529,7 +529,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachSubtract(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachSubtract", arg0, arg1);
+            IExecuteWithSignature("forEachSubtract", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachXor(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -540,7 +540,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachXor(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
-            IExecute("forEachXor", arg0, arg1, arg2);
+            IExecuteWithSignature("forEachXor", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/Script$LaunchOptions;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachXor(android.renderscript.Allocation,android.renderscript.Allocation)"/>
@@ -550,15 +550,15 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public void ForEachXor(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
-            IExecute("forEachXor", arg0, arg1);
+            IExecuteWithSignature("forEachXor", "(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

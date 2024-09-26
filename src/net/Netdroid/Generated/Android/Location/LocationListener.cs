@@ -35,7 +35,7 @@ namespace Android.Location
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public LocationListener() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.android.location.LocationListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Android.Location
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region LocationListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="LocationListener"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Android.Location
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "android.location.LocationListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Android.Location
     public partial interface ILocationListener
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Android.Location
     public partial class LocationListener : Android.Location.ILocationListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="LocationListener"/>
@@ -143,13 +143,13 @@ namespace Android.Location
             AddEventHandler("onStatusChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnStatusChangedEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/location/LocationListener.html#onLocationChanged(android.location.Location)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnLocationChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Android.Location.Location> OnOnLocationChanged { get; set; } = null;
-        
+
         bool hasOverrideOnLocationChanged = true;
         void OnLocationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -158,7 +158,7 @@ namespace Android.Location
             methodToExecute.Invoke(data.EventData.GetAt<Android.Location.Location>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnLocationChanged;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onLocationChanged(android.location.Location)"/>
         /// </summary>
@@ -176,13 +176,13 @@ namespace Android.Location
         {
             IExecuteWithSignature("onFlushCompleteDefault", "(I)V", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/location/LocationListener.html#onFlushComplete(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnFlushComplete"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<int> OnOnFlushComplete { get; set; } = null;
-        
+
         bool hasOverrideOnFlushComplete = true;
         void OnFlushCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -191,7 +191,7 @@ namespace Android.Location
             methodToExecute.Invoke(data.EventData.GetAt<int>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnFlushComplete;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onFlushComplete(int)"/>
         /// </summary>
@@ -210,13 +210,13 @@ namespace Android.Location
         {
             IExecuteWithSignature("onLocationChangedDefault", "(Ljava/util/List;)V", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/location/LocationListener.html#onLocationChanged(java.util.List)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnLocationChanged1"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Util.List<Android.Location.Location>> OnOnLocationChanged1 { get; set; } = null;
-        
+
         bool hasOverrideOnLocationChanged1 = true;
         void OnLocationChanged1EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -225,7 +225,7 @@ namespace Android.Location
             methodToExecute.Invoke(data.EventData.GetAt<Java.Util.List<Android.Location.Location>>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnLocationChanged1;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onLocationChanged(java.util.List)"/>
         /// </summary>
@@ -244,13 +244,13 @@ namespace Android.Location
         {
             IExecuteWithSignature("onProviderDisabledDefault", "(Ljava/lang/String;)V", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/location/LocationListener.html#onProviderDisabled(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnProviderDisabled"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String> OnOnProviderDisabled { get; set; } = null;
-        
+
         bool hasOverrideOnProviderDisabled = true;
         void OnProviderDisabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -259,7 +259,7 @@ namespace Android.Location
             methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnProviderDisabled;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onProviderDisabled(java.lang.String)"/>
         /// </summary>
@@ -278,13 +278,13 @@ namespace Android.Location
         {
             IExecuteWithSignature("onProviderEnabledDefault", "(Ljava/lang/String;)V", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/location/LocationListener.html#onProviderEnabled(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnProviderEnabled"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String> OnOnProviderEnabled { get; set; } = null;
-        
+
         bool hasOverrideOnProviderEnabled = true;
         void OnProviderEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -293,7 +293,7 @@ namespace Android.Location
             methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnProviderEnabled;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onProviderEnabled(java.lang.String)"/>
         /// </summary>
@@ -313,15 +313,15 @@ namespace Android.Location
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public void OnStatusChangedDefault(Java.Lang.String arg0, int arg1, Android.Os.Bundle arg2)
         {
-            IExecute("onStatusChangedDefault", arg0, arg1, arg2);
+            IExecuteWithSignature("onStatusChangedDefault", "(Ljava/lang/String;ILandroid/os/Bundle;)V", arg0, arg1, arg2);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/location/LocationListener.html#onStatusChanged(java.lang.String,int,android.os.Bundle)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnStatusChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Lang.String, int, Android.Os.Bundle> OnOnStatusChanged { get; set; } = null;
-        
+
         bool hasOverrideOnStatusChanged = true;
         void OnStatusChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -330,7 +330,7 @@ namespace Android.Location
             methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<Android.Os.Bundle>(2));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnStatusChanged;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onStatusChanged(java.lang.String,int,android.os.Bundle)"/>
         /// </summary>
@@ -343,13 +343,13 @@ namespace Android.Location
         {
             hasOverrideOnStatusChanged = false;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -358,21 +358,21 @@ namespace Android.Location
     public partial class LocationListenerDirect : Android.Location.ILocationListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onLocationChanged(android.location.Location)"/>
@@ -423,15 +423,15 @@ namespace Android.Location
         [global::System.Obsolete()]
         public override void OnStatusChanged(Java.Lang.String arg0, int arg1, Android.Os.Bundle arg2)
         {
-            IExecute("onStatusChanged", arg0, arg1, arg2);
+            IExecuteWithSignature("onStatusChanged", "(Ljava/lang/String;ILandroid/os/Bundle;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

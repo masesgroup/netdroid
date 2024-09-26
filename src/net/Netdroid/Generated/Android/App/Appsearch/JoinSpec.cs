@@ -40,10 +40,10 @@ namespace Android.App.Appsearch
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JoinSpec(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Appsearch
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App.Appsearch
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App.Appsearch
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.App.Appsearch
     public partial class JoinSpec
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#CREATOR"/>
@@ -169,13 +169,13 @@ namespace Android.App.Appsearch
         public static int AGGREGATION_SCORING_SUM_RANKING_SIGNAL { get { if (!_AGGREGATION_SCORING_SUM_RANKING_SIGNALReady) { _AGGREGATION_SCORING_SUM_RANKING_SIGNALContent = SGetField<int>(LocalBridgeClazz, "AGGREGATION_SCORING_SUM_RANKING_SIGNAL"); _AGGREGATION_SCORING_SUM_RANKING_SIGNALReady = true; } return _AGGREGATION_SCORING_SUM_RANKING_SIGNALContent; } }
         private static int _AGGREGATION_SCORING_SUM_RANKING_SIGNALContent = default;
         private static bool _AGGREGATION_SCORING_SUM_RANKING_SIGNALReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#getNestedSearchSpec()"/>
@@ -232,11 +232,11 @@ namespace Android.App.Appsearch
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -250,21 +250,21 @@ namespace Android.App.Appsearch
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.Builder.html#build()"/>
@@ -300,22 +300,22 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.JoinSpec.Builder"/></returns>
             public Android.App.Appsearch.JoinSpec.Builder SetNestedSearch(Java.Lang.String arg0, Android.App.Appsearch.SearchSpec arg1)
             {
-                return IExecute<Android.App.Appsearch.JoinSpec.Builder>("setNestedSearch", arg0, arg1);
+                return IExecuteWithSignature<Android.App.Appsearch.JoinSpec.Builder>("setNestedSearch", "(Ljava/lang/String;Landroid/app/appsearch/SearchSpec;)Landroid/app/appsearch/JoinSpec$Builder;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

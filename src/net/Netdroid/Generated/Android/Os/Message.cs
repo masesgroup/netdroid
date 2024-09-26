@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Message(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Os
     public partial class Message
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Message.html#replyTo"/>
@@ -112,9 +112,9 @@ namespace Android.Os
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Message.html#obtain()"/>
@@ -135,7 +135,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Os.Message"/></returns>
         public static Android.Os.Message Obtain(Android.Os.Handler arg0, int arg1, int arg2, int arg3, object arg4)
         {
-            return SExecute<Android.Os.Message>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.Os.Message>(LocalBridgeClazz, "obtain", "(Landroid/os/Handler;IIILjava/lang/Object;)Landroid/os/Message;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Message.html#obtain(android.os.Handler,int,int,int)"/>
@@ -147,7 +147,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Os.Message"/></returns>
         public static Android.Os.Message Obtain(Android.Os.Handler arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Android.Os.Message>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Os.Message>(LocalBridgeClazz, "obtain", "(Landroid/os/Handler;III)Landroid/os/Message;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Message.html#obtain(android.os.Handler,int,java.lang.Object)"/>
@@ -158,7 +158,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Os.Message"/></returns>
         public static Android.Os.Message Obtain(Android.Os.Handler arg0, int arg1, object arg2)
         {
-            return SExecute<Android.Os.Message>(LocalBridgeClazz, "obtain", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Os.Message>(LocalBridgeClazz, "obtain", "(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Message.html#obtain(android.os.Handler,int)"/>
@@ -168,7 +168,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Os.Message"/></returns>
         public static Android.Os.Message Obtain(Android.Os.Handler arg0, int arg1)
         {
-            return SExecute<Android.Os.Message>(LocalBridgeClazz, "obtain", arg0, arg1);
+            return SExecuteWithSignature<Android.Os.Message>(LocalBridgeClazz, "obtain", "(Landroid/os/Handler;I)Landroid/os/Message;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Message.html#obtain(android.os.Handler,java.lang.Runnable)"/>
@@ -178,7 +178,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Os.Message"/></returns>
         public static Android.Os.Message Obtain(Android.Os.Handler arg0, Java.Lang.Runnable arg1)
         {
-            return SExecute<Android.Os.Message>(LocalBridgeClazz, "obtain", arg0, arg1);
+            return SExecuteWithSignature<Android.Os.Message>(LocalBridgeClazz, "obtain", "(Landroid/os/Handler;Ljava/lang/Runnable;)Landroid/os/Message;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Message.html#obtain(android.os.Handler)"/>
@@ -198,9 +198,9 @@ namespace Android.Os
         {
             return SExecuteWithSignature<Android.Os.Message>(LocalBridgeClazz, "obtain", "(Landroid/os/Message;)Landroid/os/Message;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Message.html#getData()"/>
@@ -311,15 +311,15 @@ namespace Android.Os
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

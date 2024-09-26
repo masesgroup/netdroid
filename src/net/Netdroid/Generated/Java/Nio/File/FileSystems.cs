@@ -40,10 +40,10 @@ namespace Java.Nio.File
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public FileSystems(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Nio.File
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Nio.File
     public partial class FileSystems
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#getDefault()"/>
@@ -113,7 +113,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map<Java.Lang.String, object> arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", "(Ljava/net/URI;Ljava/util/Map;Ljava/lang/ClassLoader;)Ljava/nio/file/FileSystem;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#newFileSystem(java.net.URI,java.util.Map)"/>
@@ -124,7 +124,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map<Java.Lang.String, object> arg1)
         {
-            return SExecute<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", arg0, arg1);
+            return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", "(Ljava/net/URI;Ljava/util/Map;)Ljava/nio/file/FileSystem;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.lang.ClassLoader)"/>
@@ -135,7 +135,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.FileSystem NewFileSystem(Java.Nio.File.Path arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", arg0, arg1);
+            return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", "(Ljava/nio/file/Path;Ljava/lang/ClassLoader;)Ljava/nio/file/FileSystem;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.util.Map,java.lang.ClassLoader)"/>
@@ -147,7 +147,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.FileSystem NewFileSystem(Java.Nio.File.Path arg0, Java.Util.Map<Java.Lang.String, object> arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", "(Ljava/nio/file/Path;Ljava/util/Map;Ljava/lang/ClassLoader;)Ljava/nio/file/FileSystem;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.util.Map)"/>
@@ -158,7 +158,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.FileSystem NewFileSystem(Java.Nio.File.Path arg0, Java.Util.Map<Java.Lang.String, object> arg1)
         {
-            return SExecute<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", arg0, arg1);
+            return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", "(Ljava/nio/file/Path;Ljava/util/Map;)Ljava/nio/file/FileSystem;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path)"/>
@@ -170,17 +170,17 @@ namespace Java.Nio.File
         {
             return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", "(Ljava/nio/file/Path;)Ljava/nio/file/FileSystem;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

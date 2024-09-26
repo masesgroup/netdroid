@@ -42,10 +42,10 @@ namespace Javax.Microedition.Khronos.Opengles
         /// </summary>
         [global::System.Obsolete("GL10Ext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public GL10Ext(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Javax.Microedition.Khronos.Opengles
     public partial interface IGL10Ext : Javax.Microedition.Khronos.Opengles.IGL
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Javax.Microedition.Khronos.Opengles
     public partial class GL10Ext : Javax.Microedition.Khronos.Opengles.IGL10Ext
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL10Ext.html#glQueryMatrixxOES(int[],int,int[],int)"/>
@@ -120,7 +120,7 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <returns><see cref="int"/></returns>
         public int GlQueryMatrixxOES(int[] arg0, int arg1, int[] arg2, int arg3)
         {
-            return IExecute<int>("glQueryMatrixxOES", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("glQueryMatrixxOES", "([II[II)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL10Ext.html#glQueryMatrixxOES(java.nio.IntBuffer,java.nio.IntBuffer)"/>
@@ -130,15 +130,15 @@ namespace Javax.Microedition.Khronos.Opengles
         /// <returns><see cref="int"/></returns>
         public int GlQueryMatrixxOES(Java.Nio.IntBuffer arg0, Java.Nio.IntBuffer arg1)
         {
-            return IExecute<int>("glQueryMatrixxOES", arg0, arg1);
+            return IExecuteWithSignature<int>("glQueryMatrixxOES", "(Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)I", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

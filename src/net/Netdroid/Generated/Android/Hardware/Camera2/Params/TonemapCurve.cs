@@ -40,10 +40,10 @@ namespace Android.Hardware.Camera2.Params
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TonemapCurve(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Camera2.Params
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -84,13 +84,13 @@ namespace Android.Hardware.Camera2.Params
             : base(arg0, arg1, arg2)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/TonemapCurve.html#LEVEL_BLACK"/>
@@ -128,13 +128,13 @@ namespace Android.Hardware.Camera2.Params
         public static int POINT_SIZE { get { if (!_POINT_SIZEReady) { _POINT_SIZEContent = SGetField<int>(LocalBridgeClazz, "POINT_SIZE"); _POINT_SIZEReady = true; } return _POINT_SIZEContent; } }
         private static int _POINT_SIZEContent = default;
         private static bool _POINT_SIZEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/TonemapCurve.html#getPoint(int,int)"/>
@@ -144,7 +144,7 @@ namespace Android.Hardware.Camera2.Params
         /// <returns><see cref="Android.Graphics.PointF"/></returns>
         public Android.Graphics.PointF GetPoint(int arg0, int arg1)
         {
-            return IExecute<Android.Graphics.PointF>("getPoint", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.PointF>("getPoint", "(II)Landroid/graphics/PointF;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/TonemapCurve.html#getPointCount(int)"/>
@@ -163,15 +163,15 @@ namespace Android.Hardware.Camera2.Params
         /// <param name="arg2"><see cref="int"/></param>
         public void CopyColorCurve(int arg0, float[] arg1, int arg2)
         {
-            IExecute("copyColorCurve", arg0, arg1, arg2);
+            IExecuteWithSignature("copyColorCurve", "(I[FI)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

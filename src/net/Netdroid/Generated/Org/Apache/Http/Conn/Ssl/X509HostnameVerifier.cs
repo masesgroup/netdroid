@@ -43,10 +43,10 @@ namespace Org.Apache.Http.Conn.Ssl
         /// </summary>
         [global::System.Obsolete("X509HostnameVerifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public X509HostnameVerifier(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -67,9 +67,9 @@ namespace Org.Apache.Http.Conn.Ssl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -80,13 +80,13 @@ namespace Org.Apache.Http.Conn.Ssl
     public partial interface IX509HostnameVerifier : Javax.Net.Ssl.IHostnameVerifier
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -95,21 +95,21 @@ namespace Org.Apache.Http.Conn.Ssl
     public partial class X509HostnameVerifier : Org.Apache.Http.Conn.Ssl.IX509HostnameVerifier
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/conn/ssl/X509HostnameVerifier.html#verify(java.lang.String,javax.net.ssl.SSLSession)"/>
@@ -120,7 +120,7 @@ namespace Org.Apache.Http.Conn.Ssl
         [global::System.Obsolete()]
         public bool Verify(Java.Lang.String arg0, Javax.Net.Ssl.SSLSession arg1)
         {
-            return IExecute<bool>("verify", arg0, arg1);
+            return IExecuteWithSignature<bool>("verify", "(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/conn/ssl/X509HostnameVerifier.html#verify(java.lang.String,java.lang.String[],java.lang.String[])"/>
@@ -132,7 +132,7 @@ namespace Org.Apache.Http.Conn.Ssl
         [global::System.Obsolete()]
         public void Verify(Java.Lang.String arg0, Java.Lang.String[] arg1, Java.Lang.String[] arg2)
         {
-            IExecute("verify", arg0, arg1, arg2);
+            IExecuteWithSignature("verify", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/conn/ssl/X509HostnameVerifier.html#verify(java.lang.String,java.security.cert.X509Certificate)"/>
@@ -143,7 +143,7 @@ namespace Org.Apache.Http.Conn.Ssl
         [global::System.Obsolete()]
         public void Verify(Java.Lang.String arg0, Java.Security.Cert.X509Certificate arg1)
         {
-            IExecute("verify", arg0, arg1);
+            IExecuteWithSignature("verify", "(Ljava/lang/String;Ljava/security/cert/X509Certificate;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/conn/ssl/X509HostnameVerifier.html#verify(java.lang.String,javax.net.ssl.SSLSocket)"/>
@@ -154,15 +154,15 @@ namespace Org.Apache.Http.Conn.Ssl
         [global::System.Obsolete()]
         public void Verify(Java.Lang.String arg0, Javax.Net.Ssl.SSLSocket arg1)
         {
-            IExecute("verify", arg0, arg1);
+            IExecuteWithSignature("verify", "(Ljava/lang/String;Ljavax/net/ssl/SSLSocket;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

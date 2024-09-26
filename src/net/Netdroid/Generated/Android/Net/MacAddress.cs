@@ -40,10 +40,10 @@ namespace Android.Net
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MacAddress(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Net
     public partial class MacAddress
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/MacAddress.html#BROADCAST_ADDRESS"/>
@@ -112,9 +112,9 @@ namespace Android.Net
         public static int TYPE_UNICAST { get { if (!_TYPE_UNICASTReady) { _TYPE_UNICASTContent = SGetField<int>(LocalBridgeClazz, "TYPE_UNICAST"); _TYPE_UNICASTReady = true; } return _TYPE_UNICASTContent; } }
         private static int _TYPE_UNICASTContent = default;
         private static bool _TYPE_UNICASTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/MacAddress.html#fromBytes(byte[])"/>
@@ -134,9 +134,9 @@ namespace Android.Net
         {
             return SExecuteWithSignature<Android.Net.MacAddress>(LocalBridgeClazz, "fromString", "(Ljava/lang/String;)Landroid/net/MacAddress;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/MacAddress.html#isLocallyAssigned()"/>
@@ -154,7 +154,7 @@ namespace Android.Net
         /// <returns><see cref="bool"/></returns>
         public bool Matches(Android.Net.MacAddress arg0, Android.Net.MacAddress arg1)
         {
-            return IExecute<bool>("matches", arg0, arg1);
+            return IExecuteWithSignature<bool>("matches", "(Landroid/net/MacAddress;Landroid/net/MacAddress;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/MacAddress.html#toByteArray()"/>
@@ -203,15 +203,15 @@ namespace Android.Net
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

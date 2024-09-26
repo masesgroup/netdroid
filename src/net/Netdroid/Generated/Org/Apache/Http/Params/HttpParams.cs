@@ -43,10 +43,10 @@ namespace Org.Apache.Http.Params
         /// </summary>
         [global::System.Obsolete("HttpParams class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public HttpParams(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -67,9 +67,9 @@ namespace Org.Apache.Http.Params
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -80,13 +80,13 @@ namespace Org.Apache.Http.Params
     public partial interface IHttpParams
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -95,21 +95,21 @@ namespace Org.Apache.Http.Params
     public partial class HttpParams : Org.Apache.Http.Params.IHttpParams
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpParams.html#getBooleanParameter(java.lang.String,boolean)"/>
@@ -120,7 +120,7 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public bool GetBooleanParameter(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<bool>("getBooleanParameter", arg0, arg1);
+            return IExecuteWithSignature<bool>("getBooleanParameter", "(Ljava/lang/String;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpParams.html#isParameterFalse(java.lang.String)"/>
@@ -161,7 +161,7 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public double GetDoubleParameter(Java.Lang.String arg0, double arg1)
         {
-            return IExecute<double>("getDoubleParameter", arg0, arg1);
+            return IExecuteWithSignature<double>("getDoubleParameter", "(Ljava/lang/String;D)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpParams.html#getIntParameter(java.lang.String,int)"/>
@@ -172,7 +172,7 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public int GetIntParameter(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("getIntParameter", arg0, arg1);
+            return IExecuteWithSignature<int>("getIntParameter", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpParams.html#getParameter(java.lang.String)"/>
@@ -193,7 +193,7 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public long GetLongParameter(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<long>("getLongParameter", arg0, arg1);
+            return IExecuteWithSignature<long>("getLongParameter", "(Ljava/lang/String;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpParams.html#copy()"/>
@@ -213,7 +213,7 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public Org.Apache.Http.Params.HttpParams SetBooleanParameter(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<Org.Apache.Http.Params.HttpParams>("setBooleanParameter", arg0, arg1);
+            return IExecuteWithSignature<Org.Apache.Http.Params.HttpParams>("setBooleanParameter", "(Ljava/lang/String;Z)Lorg/apache/http/params/HttpParams;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpParams.html#setDoubleParameter(java.lang.String,double)"/>
@@ -224,7 +224,7 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public Org.Apache.Http.Params.HttpParams SetDoubleParameter(Java.Lang.String arg0, double arg1)
         {
-            return IExecute<Org.Apache.Http.Params.HttpParams>("setDoubleParameter", arg0, arg1);
+            return IExecuteWithSignature<Org.Apache.Http.Params.HttpParams>("setDoubleParameter", "(Ljava/lang/String;D)Lorg/apache/http/params/HttpParams;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpParams.html#setIntParameter(java.lang.String,int)"/>
@@ -235,7 +235,7 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public Org.Apache.Http.Params.HttpParams SetIntParameter(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Org.Apache.Http.Params.HttpParams>("setIntParameter", arg0, arg1);
+            return IExecuteWithSignature<Org.Apache.Http.Params.HttpParams>("setIntParameter", "(Ljava/lang/String;I)Lorg/apache/http/params/HttpParams;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpParams.html#setLongParameter(java.lang.String,long)"/>
@@ -246,7 +246,7 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public Org.Apache.Http.Params.HttpParams SetLongParameter(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<Org.Apache.Http.Params.HttpParams>("setLongParameter", arg0, arg1);
+            return IExecuteWithSignature<Org.Apache.Http.Params.HttpParams>("setLongParameter", "(Ljava/lang/String;J)Lorg/apache/http/params/HttpParams;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpParams.html#setParameter(java.lang.String,java.lang.Object)"/>
@@ -257,15 +257,15 @@ namespace Org.Apache.Http.Params
         [global::System.Obsolete()]
         public Org.Apache.Http.Params.HttpParams SetParameter(Java.Lang.String arg0, object arg1)
         {
-            return IExecute<Org.Apache.Http.Params.HttpParams>("setParameter", arg0, arg1);
+            return IExecuteWithSignature<Org.Apache.Http.Params.HttpParams>("setParameter", "(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/http/params/HttpParams;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

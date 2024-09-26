@@ -40,10 +40,10 @@ namespace Java.Lang.Reflect
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Proxy(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Lang.Reflect
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Lang.Reflect
     public partial class Proxy
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Proxy.html#isProxyClass(java.lang.Class)"/>
@@ -105,7 +105,7 @@ namespace Java.Lang.Reflect
         [global::System.Obsolete()]
         public static Java.Lang.Class GetProxyClass(Java.Lang.ClassLoader arg0, params Java.Lang.Class[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Lang.Class>(LocalBridgeClazz, "getProxyClass", arg0); else return SExecute<Java.Lang.Class>(LocalBridgeClazz, "getProxyClass", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "getProxyClass", "(Ljava/lang/ClassLoader;[Ljava/lang/Class;)Ljava/lang/Class;", arg0); else return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "getProxyClass", "(Ljava/lang/ClassLoader;[Ljava/lang/Class;)Ljava/lang/Class;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Proxy.html#newProxyInstance(java.lang.ClassLoader,java.lang.Class[],java.lang.reflect.InvocationHandler)"/>
@@ -116,7 +116,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="object"/></returns>
         public static object NewProxyInstance(Java.Lang.ClassLoader arg0, Java.Lang.Class[] arg1, Java.Lang.Reflect.InvocationHandler arg2)
         {
-            return SExecute(LocalBridgeClazz, "newProxyInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature(LocalBridgeClazz, "newProxyInstance", "(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Proxy.html#getInvocationHandler(java.lang.Object)"/>
@@ -128,17 +128,17 @@ namespace Java.Lang.Reflect
         {
             return SExecuteWithSignature<Java.Lang.Reflect.InvocationHandler>(LocalBridgeClazz, "getInvocationHandler", "(Ljava/lang/Object;)Ljava/lang/reflect/InvocationHandler;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

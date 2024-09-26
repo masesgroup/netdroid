@@ -40,10 +40,10 @@ namespace Android.Accounts
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AccountManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Accounts
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Accounts
     public partial class AccountManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#ERROR_CODE_BAD_ARGUMENTS"/>
@@ -329,9 +329,9 @@ namespace Android.Accounts
         public static Java.Lang.String PACKAGE_NAME_KEY_LEGACY_VISIBLE { get { if (!_PACKAGE_NAME_KEY_LEGACY_VISIBLEReady) { _PACKAGE_NAME_KEY_LEGACY_VISIBLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PACKAGE_NAME_KEY_LEGACY_VISIBLE"); _PACKAGE_NAME_KEY_LEGACY_VISIBLEReady = true; } return _PACKAGE_NAME_KEY_LEGACY_VISIBLEContent; } }
         private static Java.Lang.String _PACKAGE_NAME_KEY_LEGACY_VISIBLEContent = default;
         private static bool _PACKAGE_NAME_KEY_LEGACY_VISIBLEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#get(android.content.Context)"/>
@@ -357,7 +357,7 @@ namespace Android.Accounts
         [global::System.Obsolete()]
         public static Android.Content.Intent NewChooseAccountIntent(Android.Accounts.Account arg0, Java.Util.ArrayList<Android.Accounts.Account> arg1, Java.Lang.String[] arg2, bool arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String[] arg6, Android.Os.Bundle arg7)
         {
-            return SExecute<Android.Content.Intent>(LocalBridgeClazz, "newChooseAccountIntent", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<Android.Content.Intent>(LocalBridgeClazz, "newChooseAccountIntent", "(Landroid/accounts/Account;Ljava/util/ArrayList;[Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#newChooseAccountIntent(android.accounts.Account,java.util.List,java.lang.String[],java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle)"/>
@@ -372,11 +372,11 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public static Android.Content.Intent NewChooseAccountIntent(Android.Accounts.Account arg0, Java.Util.List<Android.Accounts.Account> arg1, Java.Lang.String[] arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String[] arg5, Android.Os.Bundle arg6)
         {
-            return SExecute<Android.Content.Intent>(LocalBridgeClazz, "newChooseAccountIntent", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature<Android.Content.Intent>(LocalBridgeClazz, "newChooseAccountIntent", "(Landroid/accounts/Account;Ljava/util/List;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAccounts()"/>
@@ -403,7 +403,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.Account"/></returns>
         public Android.Accounts.Account[] GetAccountsByTypeForPackage(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecuteArray<Android.Accounts.Account>("getAccountsByTypeForPackage", arg0, arg1);
+            return IExecuteWithSignatureArray<Android.Accounts.Account>("getAccountsByTypeForPackage", "(Ljava/lang/String;Ljava/lang/String;)[Landroid/accounts/Account;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountsByTypeAndFeatures(java.lang.String,java.lang.String[],android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -415,7 +415,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Android.Accounts.Account[]> GetAccountsByTypeAndFeatures(Java.Lang.String arg0, Java.Lang.String[] arg1, Android.Accounts.AccountManagerCallback<Android.Accounts.Account[]> arg2, Android.Os.Handler arg3)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Accounts.Account[]>>("getAccountsByTypeAndFeatures", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Accounts.Account[]>>("getAccountsByTypeAndFeatures", "(Ljava/lang/String;[Ljava/lang/String;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#renameAccount(android.accounts.Account,java.lang.String,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -427,7 +427,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Android.Accounts.Account> RenameAccount(Android.Accounts.Account arg0, Java.Lang.String arg1, Android.Accounts.AccountManagerCallback<Android.Accounts.Account> arg2, Android.Os.Handler arg3)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Accounts.Account>>("renameAccount", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Accounts.Account>>("renameAccount", "(Landroid/accounts/Account;Ljava/lang/String;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#addAccount(java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -442,7 +442,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> AddAccount(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Android.Os.Bundle arg3, Android.App.Activity arg4, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg5, Android.Os.Handler arg6)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("addAccount", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("addAccount", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#confirmCredentials(android.accounts.Account,android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -455,7 +455,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> ConfirmCredentials(Android.Accounts.Account arg0, Android.Os.Bundle arg1, Android.App.Activity arg2, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg3, Android.Os.Handler arg4)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("confirmCredentials", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("confirmCredentials", "(Landroid/accounts/Account;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#editProperties(java.lang.String,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -467,7 +467,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> EditProperties(Java.Lang.String arg0, Android.App.Activity arg1, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg2, Android.Os.Handler arg3)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("editProperties", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("editProperties", "(Ljava/lang/String;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#finishSession(android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -479,7 +479,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> FinishSession(Android.Os.Bundle arg0, Android.App.Activity arg1, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg2, Android.Os.Handler arg3)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("finishSession", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("finishSession", "(Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthToken(android.accounts.Account,java.lang.String,android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -493,7 +493,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> GetAuthToken(Android.Accounts.Account arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, Android.App.Activity arg3, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg4, Android.Os.Handler arg5)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("getAuthToken", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("getAuthToken", "(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthToken(android.accounts.Account,java.lang.String,android.os.Bundle,boolean,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -507,7 +507,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> GetAuthToken(Android.Accounts.Account arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, bool arg3, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg4, Android.Os.Handler arg5)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("getAuthToken", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("getAuthToken", "(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;ZLandroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthToken(android.accounts.Account,java.lang.String,boolean,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -521,7 +521,7 @@ namespace Android.Accounts
         [global::System.Obsolete()]
         public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> GetAuthToken(Android.Accounts.Account arg0, Java.Lang.String arg1, bool arg2, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg3, Android.Os.Handler arg4)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("getAuthToken", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("getAuthToken", "(Landroid/accounts/Account;Ljava/lang/String;ZLandroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthTokenByFeatures(java.lang.String,java.lang.String,java.lang.String[],android.app.Activity,android.os.Bundle,android.os.Bundle,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -537,7 +537,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> GetAuthTokenByFeatures(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Android.App.Activity arg3, Android.Os.Bundle arg4, Android.Os.Bundle arg5, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg6, Android.Os.Handler arg7)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("getAuthTokenByFeatures", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("getAuthTokenByFeatures", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/app/Activity;Landroid/os/Bundle;Landroid/os/Bundle;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#removeAccount(android.accounts.Account,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -549,7 +549,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> RemoveAccount(Android.Accounts.Account arg0, Android.App.Activity arg1, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg2, Android.Os.Handler arg3)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("removeAccount", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("removeAccount", "(Landroid/accounts/Account;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#startAddAccountSession(java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -564,7 +564,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> StartAddAccountSession(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Android.Os.Bundle arg3, Android.App.Activity arg4, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg5, Android.Os.Handler arg6)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("startAddAccountSession", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("startAddAccountSession", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#startUpdateCredentialsSession(android.accounts.Account,java.lang.String,android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -578,7 +578,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> StartUpdateCredentialsSession(Android.Accounts.Account arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, Android.App.Activity arg3, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg4, Android.Os.Handler arg5)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("startUpdateCredentialsSession", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("startUpdateCredentialsSession", "(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#updateCredentials(android.accounts.Account,java.lang.String,android.os.Bundle,android.app.Activity,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -592,7 +592,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> UpdateCredentials(Android.Accounts.Account arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, Android.App.Activity arg3, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg4, Android.Os.Handler arg5)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("updateCredentials", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("updateCredentials", "(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#hasFeatures(android.accounts.Account,java.lang.String[],android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -604,7 +604,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Java.Lang.Boolean> HasFeatures(Android.Accounts.Account arg0, Java.Lang.String[] arg1, Android.Accounts.AccountManagerCallback<Java.Lang.Boolean> arg2, Android.Os.Handler arg3)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Java.Lang.Boolean>>("hasFeatures", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Java.Lang.Boolean>>("hasFeatures", "(Landroid/accounts/Account;[Ljava/lang/String;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#isCredentialsUpdateSuggested(android.accounts.Account,java.lang.String,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -616,7 +616,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
         public Android.Accounts.AccountManagerFuture<Java.Lang.Boolean> IsCredentialsUpdateSuggested(Android.Accounts.Account arg0, Java.Lang.String arg1, Android.Accounts.AccountManagerCallback<Java.Lang.Boolean> arg2, Android.Os.Handler arg3)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Java.Lang.Boolean>>("isCredentialsUpdateSuggested", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Java.Lang.Boolean>>("isCredentialsUpdateSuggested", "(Landroid/accounts/Account;Ljava/lang/String;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#removeAccount(android.accounts.Account,android.accounts.AccountManagerCallback,android.os.Handler)"/>
@@ -628,7 +628,7 @@ namespace Android.Accounts
         [global::System.Obsolete()]
         public Android.Accounts.AccountManagerFuture<Java.Lang.Boolean> RemoveAccount(Android.Accounts.Account arg0, Android.Accounts.AccountManagerCallback<Java.Lang.Boolean> arg1, Android.Os.Handler arg2)
         {
-            return IExecute<Android.Accounts.AccountManagerFuture<Java.Lang.Boolean>>("removeAccount", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Accounts.AccountManagerFuture<Java.Lang.Boolean>>("removeAccount", "(Landroid/accounts/Account;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthenticatorTypes()"/>
@@ -648,7 +648,7 @@ namespace Android.Accounts
         /// <returns><see cref="bool"/></returns>
         public bool AddAccountExplicitly(Android.Accounts.Account arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, Java.Util.Map<Java.Lang.String, Java.Lang.Integer> arg3)
         {
-            return IExecute<bool>("addAccountExplicitly", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("addAccountExplicitly", "(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;Ljava/util/Map;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#addAccountExplicitly(android.accounts.Account,java.lang.String,android.os.Bundle)"/>
@@ -659,7 +659,7 @@ namespace Android.Accounts
         /// <returns><see cref="bool"/></returns>
         public bool AddAccountExplicitly(Android.Accounts.Account arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<bool>("addAccountExplicitly", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("addAccountExplicitly", "(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#notifyAccountAuthenticated(android.accounts.Account)"/>
@@ -688,7 +688,7 @@ namespace Android.Accounts
         /// <returns><see cref="bool"/></returns>
         public bool SetAccountVisibility(Android.Accounts.Account arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<bool>("setAccountVisibility", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("setAccountVisibility", "(Landroid/accounts/Account;Ljava/lang/String;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountVisibility(android.accounts.Account,java.lang.String)"/>
@@ -698,7 +698,7 @@ namespace Android.Accounts
         /// <returns><see cref="int"/></returns>
         public int GetAccountVisibility(Android.Accounts.Account arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("getAccountVisibility", arg0, arg1);
+            return IExecuteWithSignature<int>("getAccountVisibility", "(Landroid/accounts/Account;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#blockingGetAuthToken(android.accounts.Account,java.lang.String,boolean)"/>
@@ -712,7 +712,7 @@ namespace Android.Accounts
         /// <exception cref="Android.Accounts.OperationCanceledException"/>
         public Java.Lang.String BlockingGetAuthToken(Android.Accounts.Account arg0, Java.Lang.String arg1, bool arg2)
         {
-            return IExecute<Java.Lang.String>("blockingGetAuthToken", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("blockingGetAuthToken", "(Landroid/accounts/Account;Ljava/lang/String;Z)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getPassword(android.accounts.Account)"/>
@@ -740,7 +740,7 @@ namespace Android.Accounts
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetUserData(Android.Accounts.Account arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getUserData", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getUserData", "(Landroid/accounts/Account;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#peekAuthToken(android.accounts.Account,java.lang.String)"/>
@@ -750,7 +750,7 @@ namespace Android.Accounts
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String PeekAuthToken(Android.Accounts.Account arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("peekAuthToken", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("peekAuthToken", "(Landroid/accounts/Account;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAccountsAndVisibilityForPackage(java.lang.String,java.lang.String)"/>
@@ -760,7 +760,7 @@ namespace Android.Accounts
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<Android.Accounts.Account, Java.Lang.Integer> GetAccountsAndVisibilityForPackage(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Util.Map<Android.Accounts.Account, Java.Lang.Integer>>("getAccountsAndVisibilityForPackage", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Map<Android.Accounts.Account, Java.Lang.Integer>>("getAccountsAndVisibilityForPackage", "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getPackagesAndVisibilityForAccount(android.accounts.Account)"/>
@@ -780,7 +780,7 @@ namespace Android.Accounts
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void AddOnAccountsUpdatedListener(Android.Accounts.OnAccountsUpdateListener arg0, Android.Os.Handler arg1, bool arg2, Java.Lang.String[] arg3)
         {
-            IExecute("addOnAccountsUpdatedListener", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("addOnAccountsUpdatedListener", "(Landroid/accounts/OnAccountsUpdateListener;Landroid/os/Handler;Z[Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener,android.os.Handler,boolean)"/>
@@ -790,7 +790,7 @@ namespace Android.Accounts
         /// <param name="arg2"><see cref="bool"/></param>
         public void AddOnAccountsUpdatedListener(Android.Accounts.OnAccountsUpdateListener arg0, Android.Os.Handler arg1, bool arg2)
         {
-            IExecute("addOnAccountsUpdatedListener", arg0, arg1, arg2);
+            IExecuteWithSignature("addOnAccountsUpdatedListener", "(Landroid/accounts/OnAccountsUpdateListener;Landroid/os/Handler;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#clearPassword(android.accounts.Account)"/>
@@ -807,7 +807,7 @@ namespace Android.Accounts
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void InvalidateAuthToken(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("invalidateAuthToken", arg0, arg1);
+            IExecuteWithSignature("invalidateAuthToken", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#removeOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener)"/>
@@ -825,7 +825,7 @@ namespace Android.Accounts
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void SetAuthToken(Android.Accounts.Account arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("setAuthToken", arg0, arg1, arg2);
+            IExecuteWithSignature("setAuthToken", "(Landroid/accounts/Account;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#setPassword(android.accounts.Account,java.lang.String)"/>
@@ -834,7 +834,7 @@ namespace Android.Accounts
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetPassword(Android.Accounts.Account arg0, Java.Lang.String arg1)
         {
-            IExecute("setPassword", arg0, arg1);
+            IExecuteWithSignature("setPassword", "(Landroid/accounts/Account;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#setUserData(android.accounts.Account,java.lang.String,java.lang.String)"/>
@@ -844,15 +844,15 @@ namespace Android.Accounts
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void SetUserData(Android.Accounts.Account arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("setUserData", arg0, arg1, arg2);
+            IExecuteWithSignature("setUserData", "(Landroid/accounts/Account;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

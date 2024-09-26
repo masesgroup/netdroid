@@ -42,10 +42,10 @@ namespace Java.Text
         /// </summary>
         [global::System.Obsolete("Collator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Collator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,9 +76,9 @@ namespace Java.Text
     public partial class Collator : Java.Util.IComparator<object>, Java.Lang.ICloneable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Text.Collator"/> to <see cref="Java.Util.Comparator"/>
@@ -88,9 +88,9 @@ namespace Java.Text
         /// Converter from <see cref="Java.Text.Collator"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.Collator t) => t.Cast<Java.Lang.Cloneable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/Collator.html#CANONICAL_DECOMPOSITION"/>
@@ -134,9 +134,9 @@ namespace Java.Text
         public static int TERTIARY { get { if (!_TERTIARYReady) { _TERTIARYContent = SGetField<int>(LocalBridgeClazz, "TERTIARY"); _TERTIARYReady = true; } return _TERTIARYContent; } }
         private static int _TERTIARYContent = default;
         private static bool _TERTIARYReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/Collator.html#getInstance(java.util.Locale)"/>
@@ -163,9 +163,9 @@ namespace Java.Text
         {
             return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/Collator.html#compare(java.lang.String,java.lang.String)"/>
@@ -175,7 +175,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int Compare(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("compare", arg0, arg1);
+            return IExecuteWithSignature<int>("compare", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/Collator.html#getCollationKey(java.lang.String)"/>
@@ -194,7 +194,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public bool Equals(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("equals", arg0, arg1);
+            return IExecuteWithSignature<bool>("equals", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/Collator.html#compare(java.lang.Object,java.lang.Object)"/>
@@ -204,7 +204,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int Compare(object arg0, object arg1)
         {
-            return IExecute<int>("compare", arg0, arg1);
+            return IExecuteWithSignature<int>("compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/Collator.html#getDecomposition()"/>
@@ -238,13 +238,13 @@ namespace Java.Text
         {
             IExecuteWithSignature("setStrength", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

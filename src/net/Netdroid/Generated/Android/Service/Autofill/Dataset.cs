@@ -40,10 +40,10 @@ namespace Android.Service.Autofill
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Dataset(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Service.Autofill
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Service.Autofill
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Service.Autofill
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Service.Autofill
     public partial class Dataset
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.html#CREATOR"/>
@@ -133,13 +133,13 @@ namespace Android.Service.Autofill
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.html#describeContents()"/>
@@ -156,11 +156,11 @@ namespace Android.Service.Autofill
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -183,21 +183,21 @@ namespace Android.Service.Autofill
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.Builder.html#build()"/>
@@ -224,7 +224,7 @@ namespace Android.Service.Autofill
             /// <returns><see cref="Android.Service.Autofill.Dataset.Builder"/></returns>
             public Android.Service.Autofill.Dataset.Builder SetField(Android.View.Autofill.AutofillId arg0, Android.Service.Autofill.Field arg1)
             {
-                return IExecute<Android.Service.Autofill.Dataset.Builder>("setField", arg0, arg1);
+                return IExecuteWithSignature<Android.Service.Autofill.Dataset.Builder>("setField", "(Landroid/view/autofill/AutofillId;Landroid/service/autofill/Field;)Landroid/service/autofill/Dataset$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.Builder.html#setField(java.lang.String,android.service.autofill.Field)"/>
@@ -234,7 +234,7 @@ namespace Android.Service.Autofill
             /// <returns><see cref="Android.Service.Autofill.Dataset.Builder"/></returns>
             public Android.Service.Autofill.Dataset.Builder SetField(Java.Lang.String arg0, Android.Service.Autofill.Field arg1)
             {
-                return IExecute<Android.Service.Autofill.Dataset.Builder>("setField", arg0, arg1);
+                return IExecuteWithSignature<Android.Service.Autofill.Dataset.Builder>("setField", "(Ljava/lang/String;Landroid/service/autofill/Field;)Landroid/service/autofill/Dataset$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.Builder.html#setFieldForAllHints(android.service.autofill.Field)"/>
@@ -263,7 +263,7 @@ namespace Android.Service.Autofill
             [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetInlinePresentation(Android.Service.Autofill.InlinePresentation arg0, Android.Service.Autofill.InlinePresentation arg1)
             {
-                return IExecute<Android.Service.Autofill.Dataset.Builder>("setInlinePresentation", arg0, arg1);
+                return IExecuteWithSignature<Android.Service.Autofill.Dataset.Builder>("setInlinePresentation", "(Landroid/service/autofill/InlinePresentation;Landroid/service/autofill/InlinePresentation;)Landroid/service/autofill/Dataset$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.Builder.html#setInlinePresentation(android.service.autofill.InlinePresentation)"/>
@@ -287,7 +287,7 @@ namespace Android.Service.Autofill
             [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Android.Widget.RemoteViews arg2, Android.Service.Autofill.InlinePresentation arg3, Android.Service.Autofill.InlinePresentation arg4)
             {
-                return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2, arg3, arg4);
+                return IExecuteWithSignature<Android.Service.Autofill.Dataset.Builder>("setValue", "(Landroid/view/autofill/AutofillId;Landroid/view/autofill/AutofillValue;Landroid/widget/RemoteViews;Landroid/service/autofill/InlinePresentation;Landroid/service/autofill/InlinePresentation;)Landroid/service/autofill/Dataset$Builder;", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.Builder.html#setValue(android.view.autofill.AutofillId,android.view.autofill.AutofillValue,android.widget.RemoteViews,android.service.autofill.InlinePresentation)"/>
@@ -300,7 +300,7 @@ namespace Android.Service.Autofill
             [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Android.Widget.RemoteViews arg2, Android.Service.Autofill.InlinePresentation arg3)
             {
-                return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.Service.Autofill.Dataset.Builder>("setValue", "(Landroid/view/autofill/AutofillId;Landroid/view/autofill/AutofillValue;Landroid/widget/RemoteViews;Landroid/service/autofill/InlinePresentation;)Landroid/service/autofill/Dataset$Builder;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.Builder.html#setValue(android.view.autofill.AutofillId,android.view.autofill.AutofillValue,android.widget.RemoteViews)"/>
@@ -312,7 +312,7 @@ namespace Android.Service.Autofill
             [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Android.Widget.RemoteViews arg2)
             {
-                return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.Service.Autofill.Dataset.Builder>("setValue", "(Landroid/view/autofill/AutofillId;Landroid/view/autofill/AutofillValue;Landroid/widget/RemoteViews;)Landroid/service/autofill/Dataset$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.Builder.html#setValue(android.view.autofill.AutofillId,android.view.autofill.AutofillValue,java.util.regex.Pattern,android.widget.RemoteViews,android.service.autofill.InlinePresentation,android.service.autofill.InlinePresentation)"/>
@@ -327,7 +327,7 @@ namespace Android.Service.Autofill
             [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Java.Util.Regex.Pattern arg2, Android.Widget.RemoteViews arg3, Android.Service.Autofill.InlinePresentation arg4, Android.Service.Autofill.InlinePresentation arg5)
             {
-                return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2, arg3, arg4, arg5);
+                return IExecuteWithSignature<Android.Service.Autofill.Dataset.Builder>("setValue", "(Landroid/view/autofill/AutofillId;Landroid/view/autofill/AutofillValue;Ljava/util/regex/Pattern;Landroid/widget/RemoteViews;Landroid/service/autofill/InlinePresentation;Landroid/service/autofill/InlinePresentation;)Landroid/service/autofill/Dataset$Builder;", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.Builder.html#setValue(android.view.autofill.AutofillId,android.view.autofill.AutofillValue,java.util.regex.Pattern,android.widget.RemoteViews,android.service.autofill.InlinePresentation)"/>
@@ -341,7 +341,7 @@ namespace Android.Service.Autofill
             [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Java.Util.Regex.Pattern arg2, Android.Widget.RemoteViews arg3, Android.Service.Autofill.InlinePresentation arg4)
             {
-                return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2, arg3, arg4);
+                return IExecuteWithSignature<Android.Service.Autofill.Dataset.Builder>("setValue", "(Landroid/view/autofill/AutofillId;Landroid/view/autofill/AutofillValue;Ljava/util/regex/Pattern;Landroid/widget/RemoteViews;Landroid/service/autofill/InlinePresentation;)Landroid/service/autofill/Dataset$Builder;", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.Builder.html#setValue(android.view.autofill.AutofillId,android.view.autofill.AutofillValue,java.util.regex.Pattern,android.widget.RemoteViews)"/>
@@ -354,7 +354,7 @@ namespace Android.Service.Autofill
             [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Java.Util.Regex.Pattern arg2, Android.Widget.RemoteViews arg3)
             {
-                return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.Service.Autofill.Dataset.Builder>("setValue", "(Landroid/view/autofill/AutofillId;Landroid/view/autofill/AutofillValue;Ljava/util/regex/Pattern;Landroid/widget/RemoteViews;)Landroid/service/autofill/Dataset$Builder;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.Builder.html#setValue(android.view.autofill.AutofillId,android.view.autofill.AutofillValue,java.util.regex.Pattern)"/>
@@ -366,7 +366,7 @@ namespace Android.Service.Autofill
             [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Java.Util.Regex.Pattern arg2)
             {
-                return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.Service.Autofill.Dataset.Builder>("setValue", "(Landroid/view/autofill/AutofillId;Landroid/view/autofill/AutofillValue;Ljava/util/regex/Pattern;)Landroid/service/autofill/Dataset$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.Builder.html#setValue(android.view.autofill.AutofillId,android.view.autofill.AutofillValue)"/>
@@ -377,22 +377,22 @@ namespace Android.Service.Autofill
             [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1)
             {
-                return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1);
+                return IExecuteWithSignature<Android.Service.Autofill.Dataset.Builder>("setValue", "(Landroid/view/autofill/AutofillId;Landroid/view/autofill/AutofillValue;)Landroid/service/autofill/Dataset$Builder;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

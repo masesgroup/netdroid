@@ -42,10 +42,10 @@ namespace Android.Graphics
         /// </summary>
         [global::System.Obsolete("ColorSpace class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ColorSpace(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Adaptation declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Adaptation(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Connector(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Model(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -218,10 +218,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Named(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -242,9 +242,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -263,10 +263,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public RenderIntent(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -287,9 +287,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -308,10 +308,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Rgb(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -332,7 +332,7 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region TransferParameters declaration
             /// <summary>
@@ -349,10 +349,10 @@ namespace Android.Graphics
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public TransferParameters(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -373,9 +373,9 @@ namespace Android.Graphics
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -391,13 +391,13 @@ namespace Android.Graphics
     public partial class ColorSpace
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#ILLUMINANT_A"/>
@@ -465,9 +465,9 @@ namespace Android.Graphics
         public static int MIN_ID { get { if (!_MIN_IDReady) { _MIN_IDContent = SGetField<int>(LocalBridgeClazz, "MIN_ID"); _MIN_IDReady = true; } return _MIN_IDContent; } }
         private static int _MIN_IDContent = default;
         private static bool _MIN_IDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#adapt(android.graphics.ColorSpace,float[],android.graphics.ColorSpace.Adaptation)"/>
@@ -478,7 +478,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
         public static Android.Graphics.ColorSpace Adapt(Android.Graphics.ColorSpace arg0, float[] arg1, Android.Graphics.ColorSpace.Adaptation arg2)
         {
-            return SExecute<Android.Graphics.ColorSpace>(LocalBridgeClazz, "adapt", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.ColorSpace>(LocalBridgeClazz, "adapt", "(Landroid/graphics/ColorSpace;[FLandroid/graphics/ColorSpace$Adaptation;)Landroid/graphics/ColorSpace;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#adapt(android.graphics.ColorSpace,float[])"/>
@@ -488,7 +488,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
         public static Android.Graphics.ColorSpace Adapt(Android.Graphics.ColorSpace arg0, float[] arg1)
         {
-            return SExecute<Android.Graphics.ColorSpace>(LocalBridgeClazz, "adapt", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.ColorSpace>(LocalBridgeClazz, "adapt", "(Landroid/graphics/ColorSpace;[F)Landroid/graphics/ColorSpace;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#get(android.graphics.ColorSpace.Named)"/>
@@ -516,7 +516,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
         public static Android.Graphics.ColorSpace Match(float[] arg0, Android.Graphics.ColorSpace.Rgb.TransferParameters arg1)
         {
-            return SExecute<Android.Graphics.ColorSpace>(LocalBridgeClazz, "match", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.ColorSpace>(LocalBridgeClazz, "match", "([FLandroid/graphics/ColorSpace$Rgb$TransferParameters;)Landroid/graphics/ColorSpace;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#connect(android.graphics.ColorSpace,android.graphics.ColorSpace,android.graphics.ColorSpace.RenderIntent)"/>
@@ -527,7 +527,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.ColorSpace.Connector"/></returns>
         public static Android.Graphics.ColorSpace.Connector Connect(Android.Graphics.ColorSpace arg0, Android.Graphics.ColorSpace arg1, Android.Graphics.ColorSpace.RenderIntent arg2)
         {
-            return SExecute<Android.Graphics.ColorSpace.Connector>(LocalBridgeClazz, "connect", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.ColorSpace.Connector>(LocalBridgeClazz, "connect", "(Landroid/graphics/ColorSpace;Landroid/graphics/ColorSpace;Landroid/graphics/ColorSpace$RenderIntent;)Landroid/graphics/ColorSpace$Connector;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#connect(android.graphics.ColorSpace,android.graphics.ColorSpace)"/>
@@ -537,7 +537,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.ColorSpace.Connector"/></returns>
         public static Android.Graphics.ColorSpace.Connector Connect(Android.Graphics.ColorSpace arg0, Android.Graphics.ColorSpace arg1)
         {
-            return SExecute<Android.Graphics.ColorSpace.Connector>(LocalBridgeClazz, "connect", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.ColorSpace.Connector>(LocalBridgeClazz, "connect", "(Landroid/graphics/ColorSpace;Landroid/graphics/ColorSpace;)Landroid/graphics/ColorSpace$Connector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#connect(android.graphics.ColorSpace,android.graphics.ColorSpace.RenderIntent)"/>
@@ -547,7 +547,7 @@ namespace Android.Graphics
         /// <returns><see cref="Android.Graphics.ColorSpace.Connector"/></returns>
         public static Android.Graphics.ColorSpace.Connector Connect(Android.Graphics.ColorSpace arg0, Android.Graphics.ColorSpace.RenderIntent arg1)
         {
-            return SExecute<Android.Graphics.ColorSpace.Connector>(LocalBridgeClazz, "connect", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.ColorSpace.Connector>(LocalBridgeClazz, "connect", "(Landroid/graphics/ColorSpace;Landroid/graphics/ColorSpace$RenderIntent;)Landroid/graphics/ColorSpace$Connector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#connect(android.graphics.ColorSpace)"/>
@@ -576,11 +576,11 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public static float[] ChromaticAdaptation(Android.Graphics.ColorSpace.Adaptation arg0, float[] arg1, float[] arg2)
         {
-            return SExecuteArray<float>(LocalBridgeClazz, "chromaticAdaptation", arg0, arg1, arg2);
+            return SExecuteWithSignatureArray<float>(LocalBridgeClazz, "chromaticAdaptation", "(Landroid/graphics/ColorSpace$Adaptation;[F[F)[F", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#isWideGamut()"/>
@@ -651,7 +651,7 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public float[] FromXyz(float arg0, float arg1, float arg2)
         {
-            return IExecuteArray<float>("fromXyz", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<float>("fromXyz", "(FFF)[F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#toXyz(float,float,float)"/>
@@ -662,7 +662,7 @@ namespace Android.Graphics
         /// <returns><see cref="float"/></returns>
         public float[] ToXyz(float arg0, float arg1, float arg2)
         {
-            return IExecuteArray<float>("toXyz", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<float>("toXyz", "(FFF)[F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#getComponentCount()"/>
@@ -696,21 +696,21 @@ namespace Android.Graphics
         {
             return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Adaptation implementation
         public partial class Adaptation
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Adaptation.html#BRADFORD"/>
@@ -730,9 +730,9 @@ namespace Android.Graphics
             public static Android.Graphics.ColorSpace.Adaptation VON_KRIES { get { if (!_VON_KRIESReady) { _VON_KRIESContent = SGetField<Android.Graphics.ColorSpace.Adaptation>(LocalBridgeClazz, "VON_KRIES"); _VON_KRIESReady = true; } return _VON_KRIESContent; } }
             private static Android.Graphics.ColorSpace.Adaptation _VON_KRIESContent = default;
             private static bool _VON_KRIESReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Adaptation.html#valueOf(java.lang.String)"/>
@@ -751,17 +751,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.ColorSpace.Adaptation>(LocalBridgeClazz, "values", "()[Landroid/graphics/ColorSpace$Adaptation;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -770,21 +770,21 @@ namespace Android.Graphics
         public partial class Connector
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Connector.html#getDestination()"/>
@@ -819,7 +819,7 @@ namespace Android.Graphics
             /// <returns><see cref="float"/></returns>
             public float[] Transform(float arg0, float arg1, float arg2)
             {
-                return IExecuteArray<float>("transform", arg0, arg1, arg2);
+                return IExecuteWithSignatureArray<float>("transform", "(FFF)[F", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Connector.html#transform(float[])"/>
@@ -830,13 +830,13 @@ namespace Android.Graphics
             {
                 return IExecuteWithSignatureArray<float>("transform", "([F)[F", new object[] { arg0 });
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -845,13 +845,13 @@ namespace Android.Graphics
         public partial class Model
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Model.html#CMYK"/>
@@ -877,9 +877,9 @@ namespace Android.Graphics
             public static Android.Graphics.ColorSpace.Model XYZ { get { if (!_XYZReady) { _XYZContent = SGetField<Android.Graphics.ColorSpace.Model>(LocalBridgeClazz, "XYZ"); _XYZReady = true; } return _XYZContent; } }
             private static Android.Graphics.ColorSpace.Model _XYZContent = default;
             private static bool _XYZReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Model.html#valueOf(java.lang.String)"/>
@@ -898,9 +898,9 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.ColorSpace.Model>(LocalBridgeClazz, "values", "()[Landroid/graphics/ColorSpace$Model;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Model.html#getComponentCount()"/>
@@ -910,13 +910,13 @@ namespace Android.Graphics
             {
                 return IExecuteWithSignature<int>("getComponentCount", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -925,13 +925,13 @@ namespace Android.Graphics
         public partial class Named
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Named.html#ACES"/>
@@ -1041,9 +1041,9 @@ namespace Android.Graphics
             public static Android.Graphics.ColorSpace.Named SRGB { get { if (!_SRGBReady) { _SRGBContent = SGetField<Android.Graphics.ColorSpace.Named>(LocalBridgeClazz, "SRGB"); _SRGBReady = true; } return _SRGBContent; } }
             private static Android.Graphics.ColorSpace.Named _SRGBContent = default;
             private static bool _SRGBReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Named.html#valueOf(java.lang.String)"/>
@@ -1062,17 +1062,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.ColorSpace.Named>(LocalBridgeClazz, "values", "()[Landroid/graphics/ColorSpace$Named;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1081,13 +1081,13 @@ namespace Android.Graphics
         public partial class RenderIntent
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.RenderIntent.html#ABSOLUTE"/>
@@ -1113,9 +1113,9 @@ namespace Android.Graphics
             public static Android.Graphics.ColorSpace.RenderIntent SATURATION { get { if (!_SATURATIONReady) { _SATURATIONContent = SGetField<Android.Graphics.ColorSpace.RenderIntent>(LocalBridgeClazz, "SATURATION"); _SATURATIONReady = true; } return _SATURATIONContent; } }
             private static Android.Graphics.ColorSpace.RenderIntent _SATURATIONContent = default;
             private static bool _SATURATIONReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.RenderIntent.html#valueOf(java.lang.String)"/>
@@ -1134,17 +1134,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.ColorSpace.RenderIntent>(LocalBridgeClazz, "values", "()[Landroid/graphics/ColorSpace$RenderIntent;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1220,21 +1220,21 @@ namespace Android.Graphics
                 : base(arg0, arg1, arg2, arg3)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getTransferParameters()"/>
@@ -1253,7 +1253,7 @@ namespace Android.Graphics
             /// <returns><see cref="float"/></returns>
             public float[] FromLinear(float arg0, float arg1, float arg2)
             {
-                return IExecuteArray<float>("fromLinear", arg0, arg1, arg2);
+                return IExecuteWithSignatureArray<float>("fromLinear", "(FFF)[F", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#fromLinear(float[])"/>
@@ -1341,7 +1341,7 @@ namespace Android.Graphics
             /// <returns><see cref="float"/></returns>
             public float[] ToLinear(float arg0, float arg1, float arg2)
             {
-                return IExecuteArray<float>("toLinear", arg0, arg1, arg2);
+                return IExecuteWithSignatureArray<float>("toLinear", "(FFF)[F", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#toLinear(float[])"/>
@@ -1384,9 +1384,9 @@ namespace Android.Graphics
             {
                 return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperatorDirect, Java.Util.Function.DoubleUnaryOperator>("getOetf", "()Ljava/util/function/DoubleUnaryOperator;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region TransferParameters implementation
             public partial class TransferParameters
@@ -1418,13 +1418,13 @@ namespace Android.Graphics
                     : base(arg0, arg1, arg2, arg3, arg4)
                 {
                 }
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.TransferParameters.html#a"/>
@@ -1468,35 +1468,35 @@ namespace Android.Graphics
                 public double g { get { if (!_gReady) { _gContent = IGetField<double>("g"); _gReady = true; } return _gContent; } }
                 private double _gContent = default;
                 private bool _gReady = false; // this is used because in case of generics 
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

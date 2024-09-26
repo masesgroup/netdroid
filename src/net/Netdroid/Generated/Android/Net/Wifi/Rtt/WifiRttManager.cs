@@ -40,10 +40,10 @@ namespace Android.Net.Wifi.Rtt
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WifiRttManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Net.Wifi.Rtt
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Net.Wifi.Rtt
     public partial class WifiRttManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/WifiRttManager.html#ACTION_WIFI_RTT_STATE_CHANGED"/>
@@ -118,13 +118,13 @@ namespace Android.Net.Wifi.Rtt
         public static Java.Lang.String CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDER { get { if (!_CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDERReady) { _CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDER"); _CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDERReady = true; } return _CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDERContent; } }
         private static Java.Lang.String _CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDERContent = default;
         private static bool _CHARACTERISTICS_KEY_BOOLEAN_STA_RESPONDERReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/WifiRttManager.html#getRttCharacteristics()"/>
@@ -150,15 +150,15 @@ namespace Android.Net.Wifi.Rtt
         /// <param name="arg2"><see cref="Android.Net.Wifi.Rtt.RangingResultCallback"/></param>
         public void StartRanging(Android.Net.Wifi.Rtt.RangingRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Net.Wifi.Rtt.RangingResultCallback arg2)
         {
-            IExecute("startRanging", arg0, arg1, arg2);
+            IExecuteWithSignature("startRanging", "(Landroid/net/wifi/rtt/RangingRequest;Ljava/util/concurrent/Executor;Landroid/net/wifi/rtt/RangingResultCallback;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Opengl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GLES31(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Opengl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Opengl
     public partial class GLES31
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#GL_ACTIVE_ATOMIC_COUNTER_BUFFERS"/>
@@ -1120,9 +1120,9 @@ namespace Android.Opengl
         public static int GL_WRITE_ONLY { get { if (!_GL_WRITE_ONLYReady) { _GL_WRITE_ONLYContent = SGetField<int>(LocalBridgeClazz, "GL_WRITE_ONLY"); _GL_WRITE_ONLYReady = true; } return _GL_WRITE_ONLYContent; } }
         private static int _GL_WRITE_ONLYContent = default;
         private static bool _GL_WRITE_ONLYReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glIsProgramPipeline(int)"/>
@@ -1141,7 +1141,7 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int GlCreateShaderProgramv(int arg0, Java.Lang.String[] arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "glCreateShaderProgramv", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "glCreateShaderProgramv", "(I[Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetProgramResourceIndex(int,int,java.lang.String)"/>
@@ -1152,7 +1152,7 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int GlGetProgramResourceIndex(int arg0, int arg1, Java.Lang.String arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "glGetProgramResourceIndex", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "glGetProgramResourceIndex", "(IILjava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetProgramResourceLocation(int,int,java.lang.String)"/>
@@ -1163,7 +1163,7 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int GlGetProgramResourceLocation(int arg0, int arg1, Java.Lang.String arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "glGetProgramResourceLocation", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "glGetProgramResourceLocation", "(IILjava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetProgramPipelineInfoLog(int)"/>
@@ -1183,7 +1183,7 @@ namespace Android.Opengl
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GlGetProgramResourceName(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "glGetProgramResourceName", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "glGetProgramResourceName", "(III)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glActiveShaderProgram(int,int)"/>
@@ -1192,7 +1192,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlActiveShaderProgram(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glActiveShaderProgram", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glActiveShaderProgram", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glBindImageTexture(int,int,int,boolean,int,int,int)"/>
@@ -1206,7 +1206,7 @@ namespace Android.Opengl
         /// <param name="arg6"><see cref="int"/></param>
         public static void GlBindImageTexture(int arg0, int arg1, int arg2, bool arg3, int arg4, int arg5, int arg6)
         {
-            SExecute(LocalBridgeClazz, "glBindImageTexture", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            SExecuteWithSignature(LocalBridgeClazz, "glBindImageTexture", "(IIIZIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glBindProgramPipeline(int)"/>
@@ -1225,7 +1225,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlBindVertexBuffer(int arg0, int arg1, long arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glBindVertexBuffer", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glBindVertexBuffer", "(IIJI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glDeleteProgramPipelines(int,int[],int)"/>
@@ -1235,7 +1235,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlDeleteProgramPipelines(int arg0, int[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glDeleteProgramPipelines", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glDeleteProgramPipelines", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glDeleteProgramPipelines(int,java.nio.IntBuffer)"/>
@@ -1244,7 +1244,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlDeleteProgramPipelines(int arg0, Java.Nio.IntBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glDeleteProgramPipelines", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glDeleteProgramPipelines", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glDispatchCompute(int,int,int)"/>
@@ -1254,7 +1254,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlDispatchCompute(int arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glDispatchCompute", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glDispatchCompute", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glDispatchComputeIndirect(long)"/>
@@ -1271,7 +1271,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="long"/></param>
         public static void GlDrawArraysIndirect(int arg0, long arg1)
         {
-            SExecute(LocalBridgeClazz, "glDrawArraysIndirect", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glDrawArraysIndirect", "(IJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glDrawElementsIndirect(int,int,long)"/>
@@ -1281,7 +1281,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="long"/></param>
         public static void GlDrawElementsIndirect(int arg0, int arg1, long arg2)
         {
-            SExecute(LocalBridgeClazz, "glDrawElementsIndirect", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glDrawElementsIndirect", "(IIJ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glFramebufferParameteri(int,int,int)"/>
@@ -1291,7 +1291,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlFramebufferParameteri(int arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glFramebufferParameteri", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glFramebufferParameteri", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGenProgramPipelines(int,int[],int)"/>
@@ -1301,7 +1301,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlGenProgramPipelines(int arg0, int[] arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glGenProgramPipelines", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGenProgramPipelines", "(I[II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGenProgramPipelines(int,java.nio.IntBuffer)"/>
@@ -1310,7 +1310,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGenProgramPipelines(int arg0, Java.Nio.IntBuffer arg1)
         {
-            SExecute(LocalBridgeClazz, "glGenProgramPipelines", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glGenProgramPipelines", "(ILjava/nio/IntBuffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetBooleani_v(int,int,boolean[],int)"/>
@@ -1321,7 +1321,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetBooleani_v(int arg0, int arg1, bool[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetBooleani_v", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetBooleani_v", "(II[ZI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetBooleani_v(int,int,java.nio.IntBuffer)"/>
@@ -1331,7 +1331,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetBooleani_v(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetBooleani_v", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetBooleani_v", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetFramebufferParameteriv(int,int,int[],int)"/>
@@ -1342,7 +1342,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetFramebufferParameteriv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetFramebufferParameteriv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetFramebufferParameteriv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetFramebufferParameteriv(int,int,java.nio.IntBuffer)"/>
@@ -1352,7 +1352,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetFramebufferParameteriv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetFramebufferParameteriv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetFramebufferParameteriv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetMultisamplefv(int,int,float[],int)"/>
@@ -1363,7 +1363,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetMultisamplefv(int arg0, int arg1, float[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetMultisamplefv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetMultisamplefv", "(II[FI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetMultisamplefv(int,int,java.nio.FloatBuffer)"/>
@@ -1373,7 +1373,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlGetMultisamplefv(int arg0, int arg1, Java.Nio.FloatBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetMultisamplefv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetMultisamplefv", "(IILjava/nio/FloatBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetProgramInterfaceiv(int,int,int,int[],int)"/>
@@ -1385,7 +1385,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlGetProgramInterfaceiv(int arg0, int arg1, int arg2, int[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glGetProgramInterfaceiv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetProgramInterfaceiv", "(III[II)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetProgramInterfaceiv(int,int,int,java.nio.IntBuffer)"/>
@@ -1396,7 +1396,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetProgramInterfaceiv(int arg0, int arg1, int arg2, Java.Nio.IntBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetProgramInterfaceiv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetProgramInterfaceiv", "(IIILjava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetProgramPipelineiv(int,int,int[],int)"/>
@@ -1407,7 +1407,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetProgramPipelineiv(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetProgramPipelineiv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetProgramPipelineiv", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetProgramPipelineiv(int,int,java.nio.IntBuffer)"/>
@@ -1417,7 +1417,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetProgramPipelineiv(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetProgramPipelineiv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetProgramPipelineiv", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetProgramResourceiv(int,int,int,int,int[],int,int,int[],int,int[],int)"/>
@@ -1435,7 +1435,7 @@ namespace Android.Opengl
         /// <param name="arg10"><see cref="int"/></param>
         public static void GlGetProgramResourceiv(int arg0, int arg1, int arg2, int arg3, int[] arg4, int arg5, int arg6, int[] arg7, int arg8, int[] arg9, int arg10)
         {
-            SExecute(LocalBridgeClazz, "glGetProgramResourceiv", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetProgramResourceiv", "(IIII[III[II[II)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetProgramResourceiv(int,int,int,int,java.nio.IntBuffer,int,java.nio.IntBuffer,java.nio.IntBuffer)"/>
@@ -1450,7 +1450,7 @@ namespace Android.Opengl
         /// <param name="arg7"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetProgramResourceiv(int arg0, int arg1, int arg2, int arg3, Java.Nio.IntBuffer arg4, int arg5, Java.Nio.IntBuffer arg6, Java.Nio.IntBuffer arg7)
         {
-            SExecute(LocalBridgeClazz, "glGetProgramResourceiv", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetProgramResourceiv", "(IIIILjava/nio/IntBuffer;ILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetTexLevelParameterfv(int,int,int,float[],int)"/>
@@ -1462,7 +1462,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlGetTexLevelParameterfv(int arg0, int arg1, int arg2, float[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glGetTexLevelParameterfv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetTexLevelParameterfv", "(III[FI)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetTexLevelParameterfv(int,int,int,java.nio.FloatBuffer)"/>
@@ -1473,7 +1473,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlGetTexLevelParameterfv(int arg0, int arg1, int arg2, Java.Nio.FloatBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetTexLevelParameterfv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetTexLevelParameterfv", "(IIILjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetTexLevelParameteriv(int,int,int,int[],int)"/>
@@ -1485,7 +1485,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlGetTexLevelParameteriv(int arg0, int arg1, int arg2, int[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glGetTexLevelParameteriv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetTexLevelParameteriv", "(III[II)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glGetTexLevelParameteriv(int,int,int,java.nio.IntBuffer)"/>
@@ -1496,7 +1496,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetTexLevelParameteriv(int arg0, int arg1, int arg2, Java.Nio.IntBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetTexLevelParameteriv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetTexLevelParameteriv", "(IIILjava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glMemoryBarrier(int)"/>
@@ -1522,7 +1522,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="float"/></param>
         public static void GlProgramUniform1f(int arg0, int arg1, float arg2)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform1f", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform1f", "(IIF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform1fv(int,int,int,float[],int)"/>
@@ -1534,7 +1534,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform1fv(int arg0, int arg1, int arg2, float[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform1fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform1fv", "(III[FI)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform1fv(int,int,int,java.nio.FloatBuffer)"/>
@@ -1545,7 +1545,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlProgramUniform1fv(int arg0, int arg1, int arg2, Java.Nio.FloatBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform1fv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform1fv", "(IIILjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform1i(int,int,int)"/>
@@ -1555,7 +1555,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlProgramUniform1i(int arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform1i", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform1i", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform1iv(int,int,int,int[],int)"/>
@@ -1567,7 +1567,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform1iv(int arg0, int arg1, int arg2, int[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform1iv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform1iv", "(III[II)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform1iv(int,int,int,java.nio.IntBuffer)"/>
@@ -1578,7 +1578,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlProgramUniform1iv(int arg0, int arg1, int arg2, Java.Nio.IntBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform1iv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform1iv", "(IIILjava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform1ui(int,int,int)"/>
@@ -1588,7 +1588,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlProgramUniform1ui(int arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform1ui", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform1ui", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform1uiv(int,int,int,int[],int)"/>
@@ -1600,7 +1600,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform1uiv(int arg0, int arg1, int arg2, int[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform1uiv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform1uiv", "(III[II)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform1uiv(int,int,int,java.nio.IntBuffer)"/>
@@ -1611,7 +1611,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlProgramUniform1uiv(int arg0, int arg1, int arg2, Java.Nio.IntBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform1uiv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform1uiv", "(IIILjava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform2f(int,int,float,float)"/>
@@ -1622,7 +1622,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="float"/></param>
         public static void GlProgramUniform2f(int arg0, int arg1, float arg2, float arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform2f", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform2f", "(IIFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform2fv(int,int,int,float[],int)"/>
@@ -1634,7 +1634,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform2fv(int arg0, int arg1, int arg2, float[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform2fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform2fv", "(III[FI)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform2fv(int,int,int,java.nio.FloatBuffer)"/>
@@ -1645,7 +1645,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlProgramUniform2fv(int arg0, int arg1, int arg2, Java.Nio.FloatBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform2fv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform2fv", "(IIILjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform2i(int,int,int,int)"/>
@@ -1656,7 +1656,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlProgramUniform2i(int arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform2i", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform2i", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform2iv(int,int,int,int[],int)"/>
@@ -1668,7 +1668,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform2iv(int arg0, int arg1, int arg2, int[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform2iv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform2iv", "(III[II)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform2iv(int,int,int,java.nio.IntBuffer)"/>
@@ -1679,7 +1679,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlProgramUniform2iv(int arg0, int arg1, int arg2, Java.Nio.IntBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform2iv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform2iv", "(IIILjava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform2ui(int,int,int,int)"/>
@@ -1690,7 +1690,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlProgramUniform2ui(int arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform2ui", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform2ui", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform2uiv(int,int,int,int[],int)"/>
@@ -1702,7 +1702,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform2uiv(int arg0, int arg1, int arg2, int[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform2uiv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform2uiv", "(III[II)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform2uiv(int,int,int,java.nio.IntBuffer)"/>
@@ -1713,7 +1713,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlProgramUniform2uiv(int arg0, int arg1, int arg2, Java.Nio.IntBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform2uiv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform2uiv", "(IIILjava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform3f(int,int,float,float,float)"/>
@@ -1725,7 +1725,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="float"/></param>
         public static void GlProgramUniform3f(int arg0, int arg1, float arg2, float arg3, float arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform3f", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform3f", "(IIFFF)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform3fv(int,int,int,float[],int)"/>
@@ -1737,7 +1737,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform3fv(int arg0, int arg1, int arg2, float[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform3fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform3fv", "(III[FI)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform3fv(int,int,int,java.nio.FloatBuffer)"/>
@@ -1748,7 +1748,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlProgramUniform3fv(int arg0, int arg1, int arg2, Java.Nio.FloatBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform3fv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform3fv", "(IIILjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform3i(int,int,int,int,int)"/>
@@ -1760,7 +1760,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform3i(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform3i", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform3i", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform3iv(int,int,int,int[],int)"/>
@@ -1772,7 +1772,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform3iv(int arg0, int arg1, int arg2, int[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform3iv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform3iv", "(III[II)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform3iv(int,int,int,java.nio.IntBuffer)"/>
@@ -1783,7 +1783,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlProgramUniform3iv(int arg0, int arg1, int arg2, Java.Nio.IntBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform3iv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform3iv", "(IIILjava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform3ui(int,int,int,int,int)"/>
@@ -1795,7 +1795,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform3ui(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform3ui", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform3ui", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform3uiv(int,int,int,int[],int)"/>
@@ -1807,7 +1807,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform3uiv(int arg0, int arg1, int arg2, int[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform3uiv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform3uiv", "(III[II)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform3uiv(int,int,int,java.nio.IntBuffer)"/>
@@ -1818,7 +1818,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlProgramUniform3uiv(int arg0, int arg1, int arg2, Java.Nio.IntBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform3uiv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform3uiv", "(IIILjava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform4f(int,int,float,float,float,float)"/>
@@ -1831,7 +1831,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="float"/></param>
         public static void GlProgramUniform4f(int arg0, int arg1, float arg2, float arg3, float arg4, float arg5)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform4f", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform4f", "(IIFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform4fv(int,int,int,float[],int)"/>
@@ -1843,7 +1843,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform4fv(int arg0, int arg1, int arg2, float[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform4fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform4fv", "(III[FI)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform4fv(int,int,int,java.nio.FloatBuffer)"/>
@@ -1854,7 +1854,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlProgramUniform4fv(int arg0, int arg1, int arg2, Java.Nio.FloatBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform4fv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform4fv", "(IIILjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform4i(int,int,int,int,int,int)"/>
@@ -1867,7 +1867,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlProgramUniform4i(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform4i", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform4i", "(IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform4iv(int,int,int,int[],int)"/>
@@ -1879,7 +1879,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform4iv(int arg0, int arg1, int arg2, int[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform4iv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform4iv", "(III[II)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform4iv(int,int,int,java.nio.IntBuffer)"/>
@@ -1890,7 +1890,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlProgramUniform4iv(int arg0, int arg1, int arg2, Java.Nio.IntBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform4iv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform4iv", "(IIILjava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform4ui(int,int,int,int,int,int)"/>
@@ -1903,7 +1903,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlProgramUniform4ui(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform4ui", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform4ui", "(IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform4uiv(int,int,int,int[],int)"/>
@@ -1915,7 +1915,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlProgramUniform4uiv(int arg0, int arg1, int arg2, int[] arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform4uiv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform4uiv", "(III[II)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniform4uiv(int,int,int,java.nio.IntBuffer)"/>
@@ -1926,7 +1926,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlProgramUniform4uiv(int arg0, int arg1, int arg2, Java.Nio.IntBuffer arg3)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniform4uiv", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniform4uiv", "(IIILjava/nio/IntBuffer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix2fv(int,int,int,boolean,float[],int)"/>
@@ -1939,7 +1939,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlProgramUniformMatrix2fv(int arg0, int arg1, int arg2, bool arg3, float[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix2fv", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix2fv", "(IIIZ[FI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix2fv(int,int,int,boolean,java.nio.FloatBuffer)"/>
@@ -1951,7 +1951,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlProgramUniformMatrix2fv(int arg0, int arg1, int arg2, bool arg3, Java.Nio.FloatBuffer arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix2fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix2fv", "(IIIZLjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix2x3fv(int,int,int,boolean,float[],int)"/>
@@ -1964,7 +1964,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlProgramUniformMatrix2x3fv(int arg0, int arg1, int arg2, bool arg3, float[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix2x3fv", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix2x3fv", "(IIIZ[FI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix2x3fv(int,int,int,boolean,java.nio.FloatBuffer)"/>
@@ -1976,7 +1976,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlProgramUniformMatrix2x3fv(int arg0, int arg1, int arg2, bool arg3, Java.Nio.FloatBuffer arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix2x3fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix2x3fv", "(IIIZLjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix2x4fv(int,int,int,boolean,float[],int)"/>
@@ -1989,7 +1989,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlProgramUniformMatrix2x4fv(int arg0, int arg1, int arg2, bool arg3, float[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix2x4fv", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix2x4fv", "(IIIZ[FI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix2x4fv(int,int,int,boolean,java.nio.FloatBuffer)"/>
@@ -2001,7 +2001,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlProgramUniformMatrix2x4fv(int arg0, int arg1, int arg2, bool arg3, Java.Nio.FloatBuffer arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix2x4fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix2x4fv", "(IIIZLjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix3fv(int,int,int,boolean,float[],int)"/>
@@ -2014,7 +2014,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlProgramUniformMatrix3fv(int arg0, int arg1, int arg2, bool arg3, float[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix3fv", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix3fv", "(IIIZ[FI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix3fv(int,int,int,boolean,java.nio.FloatBuffer)"/>
@@ -2026,7 +2026,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlProgramUniformMatrix3fv(int arg0, int arg1, int arg2, bool arg3, Java.Nio.FloatBuffer arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix3fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix3fv", "(IIIZLjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix3x2fv(int,int,int,boolean,float[],int)"/>
@@ -2039,7 +2039,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlProgramUniformMatrix3x2fv(int arg0, int arg1, int arg2, bool arg3, float[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix3x2fv", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix3x2fv", "(IIIZ[FI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix3x2fv(int,int,int,boolean,java.nio.FloatBuffer)"/>
@@ -2051,7 +2051,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlProgramUniformMatrix3x2fv(int arg0, int arg1, int arg2, bool arg3, Java.Nio.FloatBuffer arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix3x2fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix3x2fv", "(IIIZLjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix3x4fv(int,int,int,boolean,float[],int)"/>
@@ -2064,7 +2064,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlProgramUniformMatrix3x4fv(int arg0, int arg1, int arg2, bool arg3, float[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix3x4fv", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix3x4fv", "(IIIZ[FI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix3x4fv(int,int,int,boolean,java.nio.FloatBuffer)"/>
@@ -2076,7 +2076,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlProgramUniformMatrix3x4fv(int arg0, int arg1, int arg2, bool arg3, Java.Nio.FloatBuffer arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix3x4fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix3x4fv", "(IIIZLjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix4fv(int,int,int,boolean,float[],int)"/>
@@ -2089,7 +2089,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlProgramUniformMatrix4fv(int arg0, int arg1, int arg2, bool arg3, float[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix4fv", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix4fv", "(IIIZ[FI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix4fv(int,int,int,boolean,java.nio.FloatBuffer)"/>
@@ -2101,7 +2101,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlProgramUniformMatrix4fv(int arg0, int arg1, int arg2, bool arg3, Java.Nio.FloatBuffer arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix4fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix4fv", "(IIIZLjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix4x2fv(int,int,int,boolean,float[],int)"/>
@@ -2114,7 +2114,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlProgramUniformMatrix4x2fv(int arg0, int arg1, int arg2, bool arg3, float[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix4x2fv", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix4x2fv", "(IIIZ[FI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix4x2fv(int,int,int,boolean,java.nio.FloatBuffer)"/>
@@ -2126,7 +2126,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlProgramUniformMatrix4x2fv(int arg0, int arg1, int arg2, bool arg3, Java.Nio.FloatBuffer arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix4x2fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix4x2fv", "(IIIZLjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix4x3fv(int,int,int,boolean,float[],int)"/>
@@ -2139,7 +2139,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void GlProgramUniformMatrix4x3fv(int arg0, int arg1, int arg2, bool arg3, float[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix4x3fv", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix4x3fv", "(IIIZ[FI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glProgramUniformMatrix4x3fv(int,int,int,boolean,java.nio.FloatBuffer)"/>
@@ -2151,7 +2151,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="Java.Nio.FloatBuffer"/></param>
         public static void GlProgramUniformMatrix4x3fv(int arg0, int arg1, int arg2, bool arg3, Java.Nio.FloatBuffer arg4)
         {
-            SExecute(LocalBridgeClazz, "glProgramUniformMatrix4x3fv", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glProgramUniformMatrix4x3fv", "(IIIZLjava/nio/FloatBuffer;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glSampleMaski(int,int)"/>
@@ -2160,7 +2160,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlSampleMaski(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glSampleMaski", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glSampleMaski", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glTexStorage2DMultisample(int,int,int,int,int,boolean)"/>
@@ -2173,7 +2173,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="bool"/></param>
         public static void GlTexStorage2DMultisample(int arg0, int arg1, int arg2, int arg3, int arg4, bool arg5)
         {
-            SExecute(LocalBridgeClazz, "glTexStorage2DMultisample", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexStorage2DMultisample", "(IIIIIZ)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glUseProgramStages(int,int,int)"/>
@@ -2183,7 +2183,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlUseProgramStages(int arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glUseProgramStages", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glUseProgramStages", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glValidateProgramPipeline(int)"/>
@@ -2200,7 +2200,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlVertexAttribBinding(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttribBinding", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttribBinding", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glVertexAttribFormat(int,int,int,boolean,int)"/>
@@ -2212,7 +2212,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlVertexAttribFormat(int arg0, int arg1, int arg2, bool arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttribFormat", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttribFormat", "(IIIZI)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glVertexAttribIFormat(int,int,int,int)"/>
@@ -2223,7 +2223,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlVertexAttribIFormat(int arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glVertexAttribIFormat", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexAttribIFormat", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31.html#glVertexBindingDivisor(int,int)"/>
@@ -2232,19 +2232,19 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlVertexBindingDivisor(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glVertexBindingDivisor", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glVertexBindingDivisor", "(II)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

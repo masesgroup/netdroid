@@ -40,10 +40,10 @@ namespace Android.Bluetooth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BluetoothGatt(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Bluetooth
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Bluetooth
     public partial class BluetoothGatt
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#CONNECTION_PRIORITY_BALANCED"/>
@@ -178,13 +178,13 @@ namespace Android.Bluetooth
         public static int GATT_WRITE_NOT_PERMITTED { get { if (!_GATT_WRITE_NOT_PERMITTEDReady) { _GATT_WRITE_NOT_PERMITTEDContent = SGetField<int>(LocalBridgeClazz, "GATT_WRITE_NOT_PERMITTED"); _GATT_WRITE_NOT_PERMITTEDReady = true; } return _GATT_WRITE_NOT_PERMITTEDContent; } }
         private static int _GATT_WRITE_NOT_PERMITTEDContent = default;
         private static bool _GATT_WRITE_NOT_PERMITTEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getDevice()"/>
@@ -287,7 +287,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="bool"/></returns>
         public bool SetCharacteristicNotification(Android.Bluetooth.BluetoothGattCharacteristic arg0, bool arg1)
         {
-            return IExecute<bool>("setCharacteristicNotification", arg0, arg1);
+            return IExecuteWithSignature<bool>("setCharacteristicNotification", "(Landroid/bluetooth/BluetoothGattCharacteristic;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic)"/>
@@ -328,7 +328,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="int"/></returns>
         public int WriteCharacteristic(Android.Bluetooth.BluetoothGattCharacteristic arg0, byte[] arg1, int arg2)
         {
-            return IExecute<int>("writeCharacteristic", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("writeCharacteristic", "(Landroid/bluetooth/BluetoothGattCharacteristic;[BI)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeDescriptor(android.bluetooth.BluetoothGattDescriptor,byte[])"/>
@@ -338,7 +338,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="int"/></returns>
         public int WriteDescriptor(Android.Bluetooth.BluetoothGattDescriptor arg0, byte[] arg1)
         {
-            return IExecute<int>("writeDescriptor", arg0, arg1);
+            return IExecuteWithSignature<int>("writeDescriptor", "(Landroid/bluetooth/BluetoothGattDescriptor;[B)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getConnectedDevices()"/>
@@ -412,15 +412,15 @@ namespace Android.Bluetooth
         /// <param name="arg2"><see cref="int"/></param>
         public void SetPreferredPhy(int arg0, int arg1, int arg2)
         {
-            IExecute("setPreferredPhy", arg0, arg1, arg2);
+            IExecuteWithSignature("setPreferredPhy", "(III)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

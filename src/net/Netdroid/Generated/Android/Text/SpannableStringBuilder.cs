@@ -40,10 +40,10 @@ namespace Android.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SpannableStringBuilder(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -92,9 +92,9 @@ namespace Android.Text
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Text.SpannableStringBuilder"/> to <see cref="Java.Lang.CharSequence"/>
@@ -116,13 +116,13 @@ namespace Android.Text
         /// Converter from <see cref="Android.Text.SpannableStringBuilder"/> to <see cref="Java.Lang.Appendable"/>
         /// </summary>
         public static implicit operator Java.Lang.Appendable(Android.Text.SpannableStringBuilder t) => t.Cast<Java.Lang.Appendable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#valueOf(java.lang.CharSequence)"/>
@@ -133,9 +133,9 @@ namespace Android.Text
         {
             return SExecuteWithSignature<Android.Text.SpannableStringBuilder>(LocalBridgeClazz, "valueOf", "(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#getSpans(int,int,java.lang.Class)"/>
@@ -147,7 +147,7 @@ namespace Android.Text
         /// <returns><typeparamref name="T"/></returns>
         public T[] GetSpans<T>(int arg0, int arg1, Java.Lang.Class arg2)
         {
-            return IExecuteArray<T>("getSpans", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<T>("getSpans", "(IILjava/lang/Class;)[Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#delete(int,int)"/>
@@ -157,7 +157,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.Editable"/></returns>
         public Android.Text.Editable Delete(int arg0, int arg1)
         {
-            return IExecute<Android.Text.Editable>("delete", arg0, arg1);
+            return IExecuteWithSignature<Android.Text.Editable>("delete", "(II)Landroid/text/Editable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#insert(int,java.lang.CharSequence,int,int)"/>
@@ -169,7 +169,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.Editable"/></returns>
         public Android.Text.Editable Insert(int arg0, Java.Lang.CharSequence arg1, int arg2, int arg3)
         {
-            return IExecute<Android.Text.Editable>("insert", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Text.Editable>("insert", "(ILjava/lang/CharSequence;II)Landroid/text/Editable;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#insert(int,java.lang.CharSequence)"/>
@@ -179,7 +179,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.Editable"/></returns>
         public Android.Text.Editable Insert(int arg0, Java.Lang.CharSequence arg1)
         {
-            return IExecute<Android.Text.Editable>("insert", arg0, arg1);
+            return IExecuteWithSignature<Android.Text.Editable>("insert", "(ILjava/lang/CharSequence;)Landroid/text/Editable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#replace(int,int,java.lang.CharSequence,int,int)"/>
@@ -192,7 +192,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.Editable"/></returns>
         public Android.Text.Editable Replace(int arg0, int arg1, Java.Lang.CharSequence arg2, int arg3, int arg4)
         {
-            return IExecute<Android.Text.Editable>("replace", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Text.Editable>("replace", "(IILjava/lang/CharSequence;II)Landroid/text/Editable;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#replace(int,int,java.lang.CharSequence)"/>
@@ -203,7 +203,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.Editable"/></returns>
         public Android.Text.Editable Replace(int arg0, int arg1, Java.Lang.CharSequence arg2)
         {
-            return IExecute<Android.Text.Editable>("replace", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Text.Editable>("replace", "(IILjava/lang/CharSequence;)Landroid/text/Editable;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#getFilters()"/>
@@ -222,7 +222,7 @@ namespace Android.Text
         /// <returns><see cref="Android.Text.SpannableStringBuilder"/></returns>
         public Android.Text.SpannableStringBuilder Append(Java.Lang.CharSequence arg0, object arg1, int arg2)
         {
-            return IExecute<Android.Text.SpannableStringBuilder>("append", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Text.SpannableStringBuilder>("append", "(Ljava/lang/CharSequence;Ljava/lang/Object;I)Landroid/text/SpannableStringBuilder;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#charAt(int)"/>
@@ -273,7 +273,7 @@ namespace Android.Text
         [global::System.Obsolete()]
         public int GetTextRunCursor(int arg0, int arg1, int arg2, int arg3, int arg4, Android.Graphics.Paint arg5)
         {
-            return IExecute<int>("getTextRunCursor", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<int>("getTextRunCursor", "(IIIIILandroid/graphics/Paint;)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#getTextWatcherDepth()"/>
@@ -300,7 +300,7 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public int NextSpanTransition(int arg0, int arg1, Java.Lang.Class arg2)
         {
-            return IExecute<int>("nextSpanTransition", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("nextSpanTransition", "(IILjava/lang/Class;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#subSequence(int,int)"/>
@@ -310,7 +310,7 @@ namespace Android.Text
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence SubSequence(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("subSequence", "(II)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#clear()"/>
@@ -335,7 +335,7 @@ namespace Android.Text
         /// <param name="arg3"><see cref="int"/></param>
         public void GetChars(int arg0, int arg1, char[] arg2, int arg3)
         {
-            IExecute("getChars", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("getChars", "(II[CI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#removeSpan(java.lang.Object)"/>
@@ -362,15 +362,15 @@ namespace Android.Text
         /// <param name="arg3"><see cref="int"/></param>
         public void SetSpan(object arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setSpan", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setSpan", "(Ljava/lang/Object;III)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

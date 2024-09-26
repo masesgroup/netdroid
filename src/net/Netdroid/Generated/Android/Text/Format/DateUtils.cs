@@ -40,10 +40,10 @@ namespace Android.Text.Format
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DateUtils(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Text.Format
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Text.Format
     public partial class DateUtils
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#FORMAT_12HOUR"/>
@@ -364,9 +364,9 @@ namespace Android.Text.Format
         public static long YEAR_IN_MILLIS { get { if (!_YEAR_IN_MILLISReady) { _YEAR_IN_MILLISContent = SGetField<long>(LocalBridgeClazz, "YEAR_IN_MILLIS"); _YEAR_IN_MILLISReady = true; } return _YEAR_IN_MILLISContent; } }
         private static long _YEAR_IN_MILLISContent = default;
         private static bool _YEAR_IN_MILLISReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#isToday(long)"/>
@@ -387,7 +387,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence FormatSameDayTime(long arg0, long arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "formatSameDayTime", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "formatSameDayTime", "(JJII)Ljava/lang/CharSequence;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#getRelativeDateTimeString(android.content.Context,long,long,long,int)"/>
@@ -400,7 +400,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence GetRelativeDateTimeString(Android.Content.Context arg0, long arg1, long arg2, long arg3, int arg4)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getRelativeDateTimeString", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getRelativeDateTimeString", "(Landroid/content/Context;JJJI)Ljava/lang/CharSequence;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#getRelativeTimeSpanString(android.content.Context,long,boolean)"/>
@@ -411,7 +411,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence GetRelativeTimeSpanString(Android.Content.Context arg0, long arg1, bool arg2)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getRelativeTimeSpanString", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getRelativeTimeSpanString", "(Landroid/content/Context;JZ)Ljava/lang/CharSequence;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#getRelativeTimeSpanString(android.content.Context,long)"/>
@@ -421,7 +421,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence GetRelativeTimeSpanString(Android.Content.Context arg0, long arg1)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getRelativeTimeSpanString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getRelativeTimeSpanString", "(Landroid/content/Context;J)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#getRelativeTimeSpanString(long,long,long,int)"/>
@@ -433,7 +433,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence GetRelativeTimeSpanString(long arg0, long arg1, long arg2, int arg3)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getRelativeTimeSpanString", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getRelativeTimeSpanString", "(JJJI)Ljava/lang/CharSequence;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#getRelativeTimeSpanString(long,long,long)"/>
@@ -444,7 +444,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public static Java.Lang.CharSequence GetRelativeTimeSpanString(long arg0, long arg1, long arg2)
         {
-            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getRelativeTimeSpanString", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.CharSequence>(LocalBridgeClazz, "getRelativeTimeSpanString", "(JJJ)Ljava/lang/CharSequence;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#getRelativeTimeSpanString(long)"/>
@@ -465,7 +465,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String FormatDateRange(Android.Content.Context arg0, long arg1, long arg2, int arg3)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "formatDateRange", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "formatDateRange", "(Landroid/content/Context;JJI)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#formatDateTime(android.content.Context,long,int)"/>
@@ -476,7 +476,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String FormatDateTime(Android.Content.Context arg0, long arg1, int arg2)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "formatDateTime", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "formatDateTime", "(Landroid/content/Context;JI)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#formatElapsedTime(java.lang.StringBuilder,long)"/>
@@ -486,7 +486,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String FormatElapsedTime(Java.Lang.StringBuilder arg0, long arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "formatElapsedTime", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "formatElapsedTime", "(Ljava/lang/StringBuilder;J)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#formatElapsedTime(long)"/>
@@ -516,7 +516,7 @@ namespace Android.Text.Format
         [global::System.Obsolete()]
         public static Java.Lang.String GetDayOfWeekString(int arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDayOfWeekString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDayOfWeekString", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#getMonthString(int,int)"/>
@@ -527,7 +527,7 @@ namespace Android.Text.Format
         [global::System.Obsolete()]
         public static Java.Lang.String GetMonthString(int arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getMonthString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getMonthString", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#formatDateRange(android.content.Context,java.util.Formatter,long,long,int,java.lang.String)"/>
@@ -541,7 +541,7 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Util.Formatter"/></returns>
         public static Java.Util.Formatter FormatDateRange(Android.Content.Context arg0, Java.Util.Formatter arg1, long arg2, long arg3, int arg4, Java.Lang.String arg5)
         {
-            return SExecute<Java.Util.Formatter>(LocalBridgeClazz, "formatDateRange", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Util.Formatter>(LocalBridgeClazz, "formatDateRange", "(Landroid/content/Context;Ljava/util/Formatter;JJILjava/lang/String;)Ljava/util/Formatter;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#formatDateRange(android.content.Context,java.util.Formatter,long,long,int)"/>
@@ -554,19 +554,19 @@ namespace Android.Text.Format
         /// <returns><see cref="Java.Util.Formatter"/></returns>
         public static Java.Util.Formatter FormatDateRange(Android.Content.Context arg0, Java.Util.Formatter arg1, long arg2, long arg3, int arg4)
         {
-            return SExecute<Java.Util.Formatter>(LocalBridgeClazz, "formatDateRange", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Util.Formatter>(LocalBridgeClazz, "formatDateRange", "(Landroid/content/Context;Ljava/util/Formatter;JJI)Ljava/util/Formatter;", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Os.Storage
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StorageManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Os.Storage
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region StorageVolumeCallback declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Os.Storage
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public StorageVolumeCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Os.Storage
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Os.Storage
     public partial class StorageManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#ACTION_CLEAR_APP_CACHE"/>
@@ -157,13 +157,13 @@ namespace Android.Os.Storage
         public static Java.Util.UUID UUID_DEFAULT { get { if (!_UUID_DEFAULTReady) { _UUID_DEFAULTContent = SGetField<Java.Util.UUID>(LocalBridgeClazz, "UUID_DEFAULT"); _UUID_DEFAULTReady = true; } return _UUID_DEFAULTContent; } }
         private static Java.Util.UUID _UUID_DEFAULTContent = default;
         private static bool _UUID_DEFAULTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getManageSpaceActivityIntent(java.lang.String,int)"/>
@@ -173,7 +173,7 @@ namespace Android.Os.Storage
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public Android.App.PendingIntent GetManageSpaceActivityIntent(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.App.PendingIntent>("getManageSpaceActivityIntent", arg0, arg1);
+            return IExecuteWithSignature<Android.App.PendingIntent>("getManageSpaceActivityIntent", "(Ljava/lang/String;I)Landroid/app/PendingIntent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#openProxyFileDescriptor(int,android.os.ProxyFileDescriptorCallback,android.os.Handler)"/>
@@ -185,7 +185,7 @@ namespace Android.Os.Storage
         /// <exception cref="Java.Io.IOException"/>
         public Android.Os.ParcelFileDescriptor OpenProxyFileDescriptor(int arg0, Android.Os.ProxyFileDescriptorCallback arg1, Android.Os.Handler arg2)
         {
-            return IExecute<Android.Os.ParcelFileDescriptor>("openProxyFileDescriptor", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("openProxyFileDescriptor", "(ILandroid/os/ProxyFileDescriptorCallback;Landroid/os/Handler;)Landroid/os/ParcelFileDescriptor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getPrimaryStorageVolume()"/>
@@ -277,7 +277,7 @@ namespace Android.Os.Storage
         /// <returns><see cref="bool"/></returns>
         public bool MountObb(Java.Lang.String arg0, Java.Lang.String arg1, Android.Os.Storage.OnObbStateChangeListener arg2)
         {
-            return IExecute<bool>("mountObb", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("mountObb", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/storage/OnObbStateChangeListener;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#unmountObb(java.lang.String,boolean,android.os.storage.OnObbStateChangeListener)"/>
@@ -288,7 +288,7 @@ namespace Android.Os.Storage
         /// <returns><see cref="bool"/></returns>
         public bool UnmountObb(Java.Lang.String arg0, bool arg1, Android.Os.Storage.OnObbStateChangeListener arg2)
         {
-            return IExecute<bool>("unmountObb", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("unmountObb", "(Ljava/lang/String;ZLandroid/os/storage/OnObbStateChangeListener;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#getMountedObbPath(java.lang.String)"/>
@@ -371,7 +371,7 @@ namespace Android.Os.Storage
         /// <exception cref="Java.Io.IOException"/>
         public void AllocateBytes(Java.Io.FileDescriptor arg0, long arg1)
         {
-            IExecute("allocateBytes", arg0, arg1);
+            IExecuteWithSignature("allocateBytes", "(Ljava/io/FileDescriptor;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#allocateBytes(java.util.UUID,long)"/>
@@ -381,7 +381,7 @@ namespace Android.Os.Storage
         /// <exception cref="Java.Io.IOException"/>
         public void AllocateBytes(Java.Util.UUID arg0, long arg1)
         {
-            IExecute("allocateBytes", arg0, arg1);
+            IExecuteWithSignature("allocateBytes", "(Ljava/util/UUID;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#registerStorageVolumeCallback(java.util.concurrent.Executor,android.os.storage.StorageManager.StorageVolumeCallback)"/>
@@ -390,7 +390,7 @@ namespace Android.Os.Storage
         /// <param name="arg1"><see cref="Android.Os.Storage.StorageManager.StorageVolumeCallback"/></param>
         public void RegisterStorageVolumeCallback(Java.Util.Concurrent.Executor arg0, Android.Os.Storage.StorageManager.StorageVolumeCallback arg1)
         {
-            IExecute("registerStorageVolumeCallback", arg0, arg1);
+            IExecuteWithSignature("registerStorageVolumeCallback", "(Ljava/util/concurrent/Executor;Landroid/os/storage/StorageManager$StorageVolumeCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#setCacheBehaviorGroup(java.io.File,boolean)"/>
@@ -400,7 +400,7 @@ namespace Android.Os.Storage
         /// <exception cref="Java.Io.IOException"/>
         public void SetCacheBehaviorGroup(Java.Io.File arg0, bool arg1)
         {
-            IExecute("setCacheBehaviorGroup", arg0, arg1);
+            IExecuteWithSignature("setCacheBehaviorGroup", "(Ljava/io/File;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#setCacheBehaviorTombstone(java.io.File,boolean)"/>
@@ -410,7 +410,7 @@ namespace Android.Os.Storage
         /// <exception cref="Java.Io.IOException"/>
         public void SetCacheBehaviorTombstone(Java.Io.File arg0, bool arg1)
         {
-            IExecute("setCacheBehaviorTombstone", arg0, arg1);
+            IExecuteWithSignature("setCacheBehaviorTombstone", "(Ljava/io/File;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.html#unregisterStorageVolumeCallback(android.os.storage.StorageManager.StorageVolumeCallback)"/>
@@ -420,29 +420,29 @@ namespace Android.Os.Storage
         {
             IExecuteWithSignature("unregisterStorageVolumeCallback", "(Landroid/os/storage/StorageManager$StorageVolumeCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region StorageVolumeCallback implementation
         public partial class StorageVolumeCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/storage/StorageManager.StorageVolumeCallback.html#onStateChanged(android.os.storage.StorageVolume)"/>
@@ -452,20 +452,20 @@ namespace Android.Os.Storage
             {
                 IExecuteWithSignature("onStateChanged", "(Landroid/os/storage/StorageVolume;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

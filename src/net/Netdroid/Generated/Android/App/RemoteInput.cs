@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RemoteInput(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.App
     public partial class RemoteInput
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#CREATOR"/>
@@ -175,9 +175,9 @@ namespace Android.App
         public static Java.Lang.String RESULTS_CLIP_LABEL { get { if (!_RESULTS_CLIP_LABELReady) { _RESULTS_CLIP_LABELContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RESULTS_CLIP_LABEL"); _RESULTS_CLIP_LABELReady = true; } return _RESULTS_CLIP_LABELContent; } }
         private static Java.Lang.String _RESULTS_CLIP_LABELContent = default;
         private static bool _RESULTS_CLIP_LABELReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getResultsFromIntent(android.content.Intent)"/>
@@ -205,7 +205,7 @@ namespace Android.App
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<Java.Lang.String, Android.Net.Uri> GetDataResultsFromIntent(Android.Content.Intent arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Util.Map<Java.Lang.String, Android.Net.Uri>>(LocalBridgeClazz, "getDataResultsFromIntent", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.Net.Uri>>(LocalBridgeClazz, "getDataResultsFromIntent", "(Landroid/content/Intent;Ljava/lang/String;)Ljava/util/Map;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#addDataResultToIntent(android.app.RemoteInput,android.content.Intent,java.util.Map)"/>
@@ -215,7 +215,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
         public static void AddDataResultToIntent(Android.App.RemoteInput arg0, Android.Content.Intent arg1, Java.Util.Map<Java.Lang.String, Android.Net.Uri> arg2)
         {
-            SExecute(LocalBridgeClazz, "addDataResultToIntent", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "addDataResultToIntent", "(Landroid/app/RemoteInput;Landroid/content/Intent;Ljava/util/Map;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#addResultsToIntent(android.app.RemoteInput[],android.content.Intent,android.os.Bundle)"/>
@@ -225,7 +225,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         public static void AddResultsToIntent(Android.App.RemoteInput[] arg0, Android.Content.Intent arg1, Android.Os.Bundle arg2)
         {
-            SExecute(LocalBridgeClazz, "addResultsToIntent", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "addResultsToIntent", "([Landroid/app/RemoteInput;Landroid/content/Intent;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#setResultsSource(android.content.Intent,int)"/>
@@ -234,11 +234,11 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         public static void SetResultsSource(Android.Content.Intent arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "setResultsSource", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setResultsSource", "(Landroid/content/Intent;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/RemoteInput.html#getExtras()"/>
@@ -319,11 +319,11 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -337,21 +337,21 @@ namespace Android.App
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/RemoteInput.Builder.html#build()"/>
@@ -378,7 +378,7 @@ namespace Android.App
             /// <returns><see cref="Android.App.RemoteInput.Builder"/></returns>
             public Android.App.RemoteInput.Builder SetAllowDataType(Java.Lang.String arg0, bool arg1)
             {
-                return IExecute<Android.App.RemoteInput.Builder>("setAllowDataType", arg0, arg1);
+                return IExecuteWithSignature<Android.App.RemoteInput.Builder>("setAllowDataType", "(Ljava/lang/String;Z)Landroid/app/RemoteInput$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/RemoteInput.Builder.html#setAllowFreeFormInput(boolean)"/>
@@ -424,20 +424,20 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Java.Util.Logging
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Logger(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Logging
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Util.Logging
     public partial class Logger
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#GLOBAL_LOGGER_NAME"/>
@@ -95,9 +95,9 @@ namespace Java.Util.Logging
         public static Java.Util.Logging.Logger global { get { if (!_globalReady) { _globalContent = SGetField<Java.Util.Logging.Logger>(LocalBridgeClazz, "global"); _globalReady = true; } return _globalContent; } }
         private static Java.Util.Logging.Logger _globalContent = default;
         private static bool _globalReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#getGlobal()"/>
@@ -132,7 +132,7 @@ namespace Java.Util.Logging
         /// <returns><see cref="Java.Util.Logging.Logger"/></returns>
         public static Java.Util.Logging.Logger GetLogger(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Util.Logging.Logger>(LocalBridgeClazz, "getLogger", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Logging.Logger>(LocalBridgeClazz, "getLogger", "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/logging/Logger;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#getLogger(java.lang.String)"/>
@@ -143,9 +143,9 @@ namespace Java.Util.Logging
         {
             return SExecuteWithSignature<Java.Util.Logging.Logger>(LocalBridgeClazz, "getLogger", "(Ljava/lang/String;)Ljava/util/logging/Logger;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#getUseParentHandlers()"/>
@@ -253,7 +253,7 @@ namespace Java.Util.Logging
         /// <param name="arg2"><see cref="object"/></param>
         public void Entering(Java.Lang.String arg0, Java.Lang.String arg1, object arg2)
         {
-            IExecute("entering", arg0, arg1, arg2);
+            IExecuteWithSignature("entering", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#entering(java.lang.String,java.lang.String,java.lang.Object[])"/>
@@ -263,7 +263,7 @@ namespace Java.Util.Logging
         /// <param name="arg2"><see cref="object"/></param>
         public void Entering(Java.Lang.String arg0, Java.Lang.String arg1, object[] arg2)
         {
-            IExecute("entering", arg0, arg1, arg2);
+            IExecuteWithSignature("entering", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#entering(java.lang.String,java.lang.String)"/>
@@ -272,7 +272,7 @@ namespace Java.Util.Logging
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void Entering(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("entering", arg0, arg1);
+            IExecuteWithSignature("entering", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#exiting(java.lang.String,java.lang.String,java.lang.Object)"/>
@@ -282,7 +282,7 @@ namespace Java.Util.Logging
         /// <param name="arg2"><see cref="object"/></param>
         public void Exiting(Java.Lang.String arg0, Java.Lang.String arg1, object arg2)
         {
-            IExecute("exiting", arg0, arg1, arg2);
+            IExecuteWithSignature("exiting", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#exiting(java.lang.String,java.lang.String)"/>
@@ -291,7 +291,7 @@ namespace Java.Util.Logging
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void Exiting(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("exiting", arg0, arg1);
+            IExecuteWithSignature("exiting", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#fine(java.lang.String)"/>
@@ -365,7 +365,7 @@ namespace Java.Util.Logging
         /// <param name="arg2"><see cref="object"/></param>
         public void Log(Java.Util.Logging.Level arg0, Java.Lang.String arg1, object arg2)
         {
-            IExecute("log", arg0, arg1, arg2);
+            IExecuteWithSignature("log", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#log(java.util.logging.Level,java.lang.String,java.lang.Object[])"/>
@@ -375,7 +375,7 @@ namespace Java.Util.Logging
         /// <param name="arg2"><see cref="object"/></param>
         public void Log(Java.Util.Logging.Level arg0, Java.Lang.String arg1, object[] arg2)
         {
-            IExecute("log", arg0, arg1, arg2);
+            IExecuteWithSignature("log", "(Ljava/util/logging/Level;Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#log(java.util.logging.Level,java.lang.String,java.lang.Throwable)"/>
@@ -385,7 +385,7 @@ namespace Java.Util.Logging
         /// <param name="arg2"><see cref="Java.Lang.Throwable"/></param>
         public void Log(Java.Util.Logging.Level arg0, Java.Lang.String arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
-            IExecute("log", arg0, arg1, arg2);
+            IExecuteWithSignature("log", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#log(java.util.logging.Level,java.lang.String)"/>
@@ -394,7 +394,7 @@ namespace Java.Util.Logging
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void Log(Java.Util.Logging.Level arg0, Java.Lang.String arg1)
         {
-            IExecute("log", arg0, arg1);
+            IExecuteWithSignature("log", "(Ljava/util/logging/Level;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#log(java.util.logging.Level,java.lang.Throwable,java.util.function.Supplier)"/>
@@ -404,7 +404,7 @@ namespace Java.Util.Logging
         /// <param name="arg2"><see cref="Java.Util.Function.Supplier"/></param>
         public void Log(Java.Util.Logging.Level arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1, Java.Util.Function.Supplier<Java.Lang.String> arg2)
         {
-            IExecute("log", arg0, arg1, arg2);
+            IExecuteWithSignature("log", "(Ljava/util/logging/Level;Ljava/lang/Throwable;Ljava/util/function/Supplier;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#log(java.util.logging.Level,java.util.function.Supplier)"/>
@@ -413,7 +413,7 @@ namespace Java.Util.Logging
         /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
         public void Log(Java.Util.Logging.Level arg0, Java.Util.Function.Supplier<Java.Lang.String> arg1)
         {
-            IExecute("log", arg0, arg1);
+            IExecuteWithSignature("log", "(Ljava/util/logging/Level;Ljava/util/function/Supplier;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#log(java.util.logging.LogRecord)"/>
@@ -433,7 +433,7 @@ namespace Java.Util.Logging
         /// <param name="arg4"><see cref="object"/></param>
         public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, object arg4)
         {
-            IExecute("logp", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("logp", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[])"/>
@@ -445,7 +445,7 @@ namespace Java.Util.Logging
         /// <param name="arg4"><see cref="object"/></param>
         public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, object[] arg4)
         {
-            IExecute("logp", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("logp", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.Throwable)"/>
@@ -457,7 +457,7 @@ namespace Java.Util.Logging
         /// <param name="arg4"><see cref="Java.Lang.Throwable"/></param>
         public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, MASES.JCOBridge.C2JBridge.JVMBridgeException arg4)
         {
-            IExecute("logp", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("logp", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -468,7 +468,7 @@ namespace Java.Util.Logging
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            IExecute("logp", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("logp", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.Throwable,java.util.function.Supplier)"/>
@@ -480,7 +480,7 @@ namespace Java.Util.Logging
         /// <param name="arg4"><see cref="Java.Util.Function.Supplier"/></param>
         public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, MASES.JCOBridge.C2JBridge.JVMBridgeException arg3, Java.Util.Function.Supplier<Java.Lang.String> arg4)
         {
-            IExecute("logp", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("logp", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Ljava/util/function/Supplier;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#logp(java.util.logging.Level,java.lang.String,java.lang.String,java.util.function.Supplier)"/>
@@ -491,7 +491,7 @@ namespace Java.Util.Logging
         /// <param name="arg3"><see cref="Java.Util.Function.Supplier"/></param>
         public void Logp(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Util.Function.Supplier<Java.Lang.String> arg3)
         {
-            IExecute("logp", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("logp", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Supplier;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object)"/>
@@ -505,7 +505,7 @@ namespace Java.Util.Logging
         [global::System.Obsolete()]
         public void Logrb(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, object arg5)
         {
-            IExecute("logrb", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[])"/>
@@ -519,7 +519,7 @@ namespace Java.Util.Logging
         [global::System.Obsolete()]
         public void Logrb(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, object[] arg5)
         {
-            IExecute("logrb", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Throwable)"/>
@@ -533,7 +533,7 @@ namespace Java.Util.Logging
         [global::System.Obsolete()]
         public void Logrb(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, MASES.JCOBridge.C2JBridge.JVMBridgeException arg5)
         {
-            IExecute("logrb", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -546,7 +546,7 @@ namespace Java.Util.Logging
         [global::System.Obsolete()]
         public void Logrb(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            IExecute("logrb", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.util.ResourceBundle,java.lang.String,java.lang.Object[])"/>
@@ -559,7 +559,7 @@ namespace Java.Util.Logging
         /// <param name="arg5"><see cref="object"/></param>
         public void Logrb(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Util.ResourceBundle arg3, Java.Lang.String arg4, params object[] arg5)
         {
-            if (arg5.Length == 0) IExecute("logrb", arg0, arg1, arg2, arg3, arg4); else IExecute("logrb", arg0, arg1, arg2, arg3, arg4, arg5);
+            if (arg5.Length == 0) IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/util/ResourceBundle;Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4); else IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/util/ResourceBundle;Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.lang.String,java.lang.String,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)"/>
@@ -572,7 +572,7 @@ namespace Java.Util.Logging
         /// <param name="arg5"><see cref="Java.Lang.Throwable"/></param>
         public void Logrb(Java.Util.Logging.Level arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Util.ResourceBundle arg3, Java.Lang.String arg4, MASES.JCOBridge.C2JBridge.JVMBridgeException arg5)
         {
-            IExecute("logrb", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/util/ResourceBundle;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.util.ResourceBundle,java.lang.String,java.lang.Object[])"/>
@@ -583,7 +583,7 @@ namespace Java.Util.Logging
         /// <param name="arg3"><see cref="object"/></param>
         public void Logrb(Java.Util.Logging.Level arg0, Java.Util.ResourceBundle arg1, Java.Lang.String arg2, params object[] arg3)
         {
-            if (arg3.Length == 0) IExecute("logrb", arg0, arg1, arg2); else IExecute("logrb", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/util/ResourceBundle;Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1, arg2); else IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/util/ResourceBundle;Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#logrb(java.util.logging.Level,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)"/>
@@ -594,7 +594,7 @@ namespace Java.Util.Logging
         /// <param name="arg3"><see cref="Java.Lang.Throwable"/></param>
         public void Logrb(Java.Util.Logging.Level arg0, Java.Util.ResourceBundle arg1, Java.Lang.String arg2, MASES.JCOBridge.C2JBridge.JVMBridgeException arg3)
         {
-            IExecute("logrb", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("logrb", "(Ljava/util/logging/Level;Ljava/util/ResourceBundle;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#removeHandler(java.util.logging.Handler)"/>
@@ -671,7 +671,7 @@ namespace Java.Util.Logging
         /// <param name="arg2"><see cref="Java.Lang.Throwable"/></param>
         public void Throwing(Java.Lang.String arg0, Java.Lang.String arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
-            IExecute("throwing", arg0, arg1, arg2);
+            IExecuteWithSignature("throwing", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html#warning(java.lang.String)"/>
@@ -689,13 +689,13 @@ namespace Java.Util.Logging
         {
             IExecuteWithSignature("warning", "(Ljava/util/function/Supplier;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

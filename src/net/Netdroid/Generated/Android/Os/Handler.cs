@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Handler(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Os
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -147,17 +147,17 @@ namespace Android.Os
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#createAsync(android.os.Looper,android.os.Handler.Callback)"/>
@@ -167,7 +167,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Os.Handler"/></returns>
         public static Android.Os.Handler CreateAsync(Android.Os.Looper arg0, Android.Os.Handler.Callback arg1)
         {
-            return SExecute<Android.Os.Handler>(LocalBridgeClazz, "createAsync", arg0, arg1);
+            return SExecuteWithSignature<Android.Os.Handler>(LocalBridgeClazz, "createAsync", "(Landroid/os/Looper;Landroid/os/Handler$Callback;)Landroid/os/Handler;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#createAsync(android.os.Looper)"/>
@@ -178,9 +178,9 @@ namespace Android.Os
         {
             return SExecuteWithSignature<Android.Os.Handler>(LocalBridgeClazz, "createAsync", "(Landroid/os/Looper;)Landroid/os/Handler;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#sendMessageAtTime(android.os.Message,long)"/>
@@ -190,7 +190,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool SendMessageAtTime(Android.Os.Message arg0, long arg1)
         {
-            return IExecute<bool>("sendMessageAtTime", arg0, arg1);
+            return IExecuteWithSignature<bool>("sendMessageAtTime", "(Landroid/os/Message;J)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#getLooper()"/>
@@ -218,7 +218,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Os.Message"/></returns>
         public Android.Os.Message ObtainMessage(int arg0, int arg1, int arg2, object arg3)
         {
-            return IExecute<Android.Os.Message>("obtainMessage", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Os.Message>("obtainMessage", "(IIILjava/lang/Object;)Landroid/os/Message;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#obtainMessage(int,int,int)"/>
@@ -229,7 +229,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Os.Message"/></returns>
         public Android.Os.Message ObtainMessage(int arg0, int arg1, int arg2)
         {
-            return IExecute<Android.Os.Message>("obtainMessage", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Os.Message>("obtainMessage", "(III)Landroid/os/Message;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#obtainMessage(int,java.lang.Object)"/>
@@ -239,7 +239,7 @@ namespace Android.Os
         /// <returns><see cref="Android.Os.Message"/></returns>
         public Android.Os.Message ObtainMessage(int arg0, object arg1)
         {
-            return IExecute<Android.Os.Message>("obtainMessage", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.Message>("obtainMessage", "(ILjava/lang/Object;)Landroid/os/Message;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#obtainMessage(int)"/>
@@ -267,7 +267,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool HasMessages(int arg0, object arg1)
         {
-            return IExecute<bool>("hasMessages", arg0, arg1);
+            return IExecuteWithSignature<bool>("hasMessages", "(ILjava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#hasMessages(int)"/>
@@ -305,7 +305,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool PostAtTime(Java.Lang.Runnable arg0, object arg1, long arg2)
         {
-            return IExecute<bool>("postAtTime", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("postAtTime", "(Ljava/lang/Runnable;Ljava/lang/Object;J)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#postAtTime(java.lang.Runnable,long)"/>
@@ -315,7 +315,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool PostAtTime(Java.Lang.Runnable arg0, long arg1)
         {
-            return IExecute<bool>("postAtTime", arg0, arg1);
+            return IExecuteWithSignature<bool>("postAtTime", "(Ljava/lang/Runnable;J)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#postDelayed(java.lang.Runnable,java.lang.Object,long)"/>
@@ -326,7 +326,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool PostDelayed(Java.Lang.Runnable arg0, object arg1, long arg2)
         {
-            return IExecute<bool>("postDelayed", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("postDelayed", "(Ljava/lang/Runnable;Ljava/lang/Object;J)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#postDelayed(java.lang.Runnable,long)"/>
@@ -336,7 +336,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool PostDelayed(Java.Lang.Runnable arg0, long arg1)
         {
-            return IExecute<bool>("postDelayed", arg0, arg1);
+            return IExecuteWithSignature<bool>("postDelayed", "(Ljava/lang/Runnable;J)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#sendEmptyMessage(int)"/>
@@ -355,7 +355,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool SendEmptyMessageAtTime(int arg0, long arg1)
         {
-            return IExecute<bool>("sendEmptyMessageAtTime", arg0, arg1);
+            return IExecuteWithSignature<bool>("sendEmptyMessageAtTime", "(IJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#sendEmptyMessageDelayed(int,long)"/>
@@ -365,7 +365,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool SendEmptyMessageDelayed(int arg0, long arg1)
         {
-            return IExecute<bool>("sendEmptyMessageDelayed", arg0, arg1);
+            return IExecuteWithSignature<bool>("sendEmptyMessageDelayed", "(IJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#sendMessage(android.os.Message)"/>
@@ -393,7 +393,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool SendMessageDelayed(Android.Os.Message arg0, long arg1)
         {
-            return IExecute<bool>("sendMessageDelayed", arg0, arg1);
+            return IExecuteWithSignature<bool>("sendMessageDelayed", "(Landroid/os/Message;J)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#dump(android.util.Printer,java.lang.String)"/>
@@ -402,7 +402,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void Dump(Android.Util.Printer arg0, Java.Lang.String arg1)
         {
-            IExecute("dump", arg0, arg1);
+            IExecuteWithSignature("dump", "(Landroid/util/Printer;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#removeCallbacks(java.lang.Runnable,java.lang.Object)"/>
@@ -411,7 +411,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="object"/></param>
         public void RemoveCallbacks(Java.Lang.Runnable arg0, object arg1)
         {
-            IExecute("removeCallbacks", arg0, arg1);
+            IExecuteWithSignature("removeCallbacks", "(Ljava/lang/Runnable;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#removeCallbacks(java.lang.Runnable)"/>
@@ -436,7 +436,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="object"/></param>
         public void RemoveMessages(int arg0, object arg1)
         {
-            IExecute("removeMessages", arg0, arg1);
+            IExecuteWithSignature("removeMessages", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#removeMessages(int)"/>
@@ -471,29 +471,29 @@ namespace Android.Os
         {
             IExecuteWithSignature("handleMessage", "(Landroid/os/Message;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/Handler.Callback.html#handleMessage(android.os.Message)"/>
@@ -504,20 +504,20 @@ namespace Android.Os
             {
                 return IExecuteWithSignature<bool>("handleMessage", "(Landroid/os/Message;)Z", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

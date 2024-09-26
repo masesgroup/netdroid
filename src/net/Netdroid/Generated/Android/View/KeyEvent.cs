@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public KeyEvent(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.View
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DispatcherState(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -278,13 +278,13 @@ namespace Android.View
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#CREATOR"/>
@@ -2425,9 +2425,9 @@ namespace Android.View
         public static int META_SYM_ON { get { if (!_META_SYM_ONReady) { _META_SYM_ONContent = SGetField<int>(LocalBridgeClazz, "META_SYM_ON"); _META_SYM_ONReady = true; } return _META_SYM_ONContent; } }
         private static int _META_SYM_ONContent = default;
         private static bool _META_SYM_ONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#changeAction(android.view.KeyEvent,int)"/>
@@ -2437,7 +2437,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.KeyEvent"/></returns>
         public static Android.View.KeyEvent ChangeAction(Android.View.KeyEvent arg0, int arg1)
         {
-            return SExecute<Android.View.KeyEvent>(LocalBridgeClazz, "changeAction", arg0, arg1);
+            return SExecuteWithSignature<Android.View.KeyEvent>(LocalBridgeClazz, "changeAction", "(Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#changeFlags(android.view.KeyEvent,int)"/>
@@ -2447,7 +2447,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.KeyEvent"/></returns>
         public static Android.View.KeyEvent ChangeFlags(Android.View.KeyEvent arg0, int arg1)
         {
-            return SExecute<Android.View.KeyEvent>(LocalBridgeClazz, "changeFlags", arg0, arg1);
+            return SExecuteWithSignature<Android.View.KeyEvent>(LocalBridgeClazz, "changeFlags", "(Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#changeTimeRepeat(android.view.KeyEvent,long,int,int)"/>
@@ -2459,7 +2459,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.KeyEvent"/></returns>
         public static Android.View.KeyEvent ChangeTimeRepeat(Android.View.KeyEvent arg0, long arg1, int arg2, int arg3)
         {
-            return SExecute<Android.View.KeyEvent>(LocalBridgeClazz, "changeTimeRepeat", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.View.KeyEvent>(LocalBridgeClazz, "changeTimeRepeat", "(Landroid/view/KeyEvent;JII)Landroid/view/KeyEvent;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#changeTimeRepeat(android.view.KeyEvent,long,int)"/>
@@ -2470,7 +2470,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.KeyEvent"/></returns>
         public static Android.View.KeyEvent ChangeTimeRepeat(Android.View.KeyEvent arg0, long arg1, int arg2)
         {
-            return SExecute<Android.View.KeyEvent>(LocalBridgeClazz, "changeTimeRepeat", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.View.KeyEvent>(LocalBridgeClazz, "changeTimeRepeat", "(Landroid/view/KeyEvent;JI)Landroid/view/KeyEvent;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#isModifierKey(int)"/>
@@ -2489,7 +2489,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public static bool MetaStateHasModifiers(int arg0, int arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "metaStateHasModifiers", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "metaStateHasModifiers", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#metaStateHasNoModifiers(int)"/>
@@ -2526,7 +2526,7 @@ namespace Android.View
         /// <returns><see cref="int"/></returns>
         public static int GetDeadChar(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getDeadChar", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getDeadChar", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getMaxKeyCode()"/>
@@ -2571,9 +2571,9 @@ namespace Android.View
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "keyCodeToString", "(I)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getKeyData(android.view.KeyCharacterMap.KeyData)"/>
@@ -2609,7 +2609,7 @@ namespace Android.View
         /// <returns><see cref="char"/></returns>
         public char GetMatch(char[] arg0, int arg1)
         {
-            return IExecute<char>("getMatch", arg0, arg1);
+            return IExecuteWithSignature<char>("getMatch", "([CI)C", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getMatch(char[])"/>
@@ -2645,7 +2645,7 @@ namespace Android.View
         /// <returns><see cref="bool"/></returns>
         public bool Dispatch(Android.View.KeyEvent.Callback arg0, Android.View.KeyEvent.DispatcherState arg1, object arg2)
         {
-            return IExecute<bool>("dispatch", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("dispatch", "(Landroid/view/KeyEvent$Callback;Landroid/view/KeyEvent$DispatcherState;Ljava/lang/Object;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#dispatch(android.view.KeyEvent.Callback)"/>
@@ -2883,29 +2883,29 @@ namespace Android.View
         {
             return IExecuteWithSignature<int>("getUnicodeChar", "(I)I", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/KeyEvent.Callback.html#onKeyDown(int,android.view.KeyEvent)"/>
@@ -2915,7 +2915,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool OnKeyDown(int arg0, Android.View.KeyEvent arg1)
             {
-                return IExecute<bool>("onKeyDown", arg0, arg1);
+                return IExecuteWithSignature<bool>("onKeyDown", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/KeyEvent.Callback.html#onKeyLongPress(int,android.view.KeyEvent)"/>
@@ -2925,7 +2925,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool OnKeyLongPress(int arg0, Android.View.KeyEvent arg1)
             {
-                return IExecute<bool>("onKeyLongPress", arg0, arg1);
+                return IExecuteWithSignature<bool>("onKeyLongPress", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/KeyEvent.Callback.html#onKeyMultiple(int,int,android.view.KeyEvent)"/>
@@ -2936,7 +2936,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool OnKeyMultiple(int arg0, int arg1, Android.View.KeyEvent arg2)
             {
-                return IExecute<bool>("onKeyMultiple", arg0, arg1, arg2);
+                return IExecuteWithSignature<bool>("onKeyMultiple", "(IILandroid/view/KeyEvent;)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/KeyEvent.Callback.html#onKeyUp(int,android.view.KeyEvent)"/>
@@ -2946,15 +2946,15 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool OnKeyUp(int arg0, Android.View.KeyEvent arg1)
             {
-                return IExecute<bool>("onKeyUp", arg0, arg1);
+                return IExecuteWithSignature<bool>("onKeyUp", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2963,21 +2963,21 @@ namespace Android.View
         public partial class DispatcherState
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/KeyEvent.DispatcherState.html#isTracking(android.view.KeyEvent)"/>
@@ -3026,22 +3026,22 @@ namespace Android.View
             /// <param name="arg1"><see cref="object"/></param>
             public void StartTracking(Android.View.KeyEvent arg0, object arg1)
             {
-                IExecute("startTracking", arg0, arg1);
+                IExecuteWithSignature("startTracking", "(Landroid/view/KeyEvent;Ljava/lang/Object;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

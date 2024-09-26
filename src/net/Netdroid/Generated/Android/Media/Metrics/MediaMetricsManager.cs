@@ -40,10 +40,10 @@ namespace Android.Media.Metrics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaMetricsManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Media.Metrics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Media.Metrics
     public partial class MediaMetricsManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/metrics/MediaMetricsManager.html#INVALID_TIMESTAMP"/>
@@ -88,13 +88,13 @@ namespace Android.Media.Metrics
         public static long INVALID_TIMESTAMP { get { if (!_INVALID_TIMESTAMPReady) { _INVALID_TIMESTAMPContent = SGetField<long>(LocalBridgeClazz, "INVALID_TIMESTAMP"); _INVALID_TIMESTAMPReady = true; } return _INVALID_TIMESTAMPContent; } }
         private static long _INVALID_TIMESTAMPContent = default;
         private static bool _INVALID_TIMESTAMPReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/metrics/MediaMetricsManager.html#createBundleSession()"/>
@@ -144,13 +144,13 @@ namespace Android.Media.Metrics
         {
             IExecuteWithSignature("releaseSessionId", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

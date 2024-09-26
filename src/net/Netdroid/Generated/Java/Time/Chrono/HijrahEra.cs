@@ -40,10 +40,10 @@ namespace Java.Time.Chrono
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HijrahEra(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time.Chrono
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Time.Chrono
     public partial class HijrahEra
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Time.Chrono.HijrahEra"/> to <see cref="Java.Time.Chrono.Era"/>
         /// </summary>
         public static implicit operator Java.Time.Chrono.Era(Java.Time.Chrono.HijrahEra t) => t.Cast<Java.Time.Chrono.Era>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahEra.html#AH"/>
@@ -92,9 +92,9 @@ namespace Java.Time.Chrono
         public static Java.Time.Chrono.HijrahEra AH { get { if (!_AHReady) { _AHContent = SGetField<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "AH"); _AHReady = true; } return _AHContent; } }
         private static Java.Time.Chrono.HijrahEra _AHContent = default;
         private static bool _AHReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahEra.html#of(int)"/>
@@ -122,9 +122,9 @@ namespace Java.Time.Chrono
         {
             return SExecuteWithSignatureArray<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "values", "()[Ljava/time/chrono/HijrahEra;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahEra.html#getValue()"/>
@@ -142,7 +142,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/time/format/TextStyle;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahEra.html#range(java.time.temporal.TemporalField)"/>
@@ -153,13 +153,13 @@ namespace Java.Time.Chrono
         {
             return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

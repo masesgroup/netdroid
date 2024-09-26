@@ -42,10 +42,10 @@ namespace Android.Text.Method
         /// </summary>
         [global::System.Obsolete("ReplacementTransformationMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ReplacementTransformationMethod(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Android.Text.Method
     public partial class ReplacementTransformationMethod
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/ReplacementTransformationMethod.html#getTransformation(java.lang.CharSequence,android.view.View)"/>
@@ -100,7 +100,7 @@ namespace Android.Text.Method
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence GetTransformation(Java.Lang.CharSequence arg0, Android.View.View arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("getTransformation", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTransformation", "(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/ReplacementTransformationMethod.html#onFocusChanged(android.view.View,java.lang.CharSequence,boolean,int,android.graphics.Rect)"/>
@@ -112,15 +112,15 @@ namespace Android.Text.Method
         /// <param name="arg4"><see cref="Android.Graphics.Rect"/></param>
         public void OnFocusChanged(Android.View.View arg0, Java.Lang.CharSequence arg1, bool arg2, int arg3, Android.Graphics.Rect arg4)
         {
-            IExecute("onFocusChanged", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("onFocusChanged", "(Landroid/view/View;Ljava/lang/CharSequence;ZILandroid/graphics/Rect;)V", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

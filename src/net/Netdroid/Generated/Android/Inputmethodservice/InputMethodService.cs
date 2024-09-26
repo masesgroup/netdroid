@@ -40,10 +40,10 @@ namespace Android.Inputmethodservice
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public InputMethodService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Inputmethodservice
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region InputMethodImpl declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Inputmethodservice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public InputMethodImpl(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Inputmethodservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Inputmethodservice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public InputMethodSessionImpl(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Inputmethodservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Inputmethodservice
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Insets(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Inputmethodservice
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -209,13 +209,13 @@ namespace Android.Inputmethodservice
     public partial class InputMethodService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#BACK_DISPOSITION_ADJUST_NOTHING"/>
@@ -243,9 +243,9 @@ namespace Android.Inputmethodservice
         public static int BACK_DISPOSITION_WILL_NOT_DISMISS { get { if (!_BACK_DISPOSITION_WILL_NOT_DISMISSReady) { _BACK_DISPOSITION_WILL_NOT_DISMISSContent = SGetField<int>(LocalBridgeClazz, "BACK_DISPOSITION_WILL_NOT_DISMISS"); _BACK_DISPOSITION_WILL_NOT_DISMISSReady = true; } return _BACK_DISPOSITION_WILL_NOT_DISMISSContent; } }
         private static int _BACK_DISPOSITION_WILL_NOT_DISMISSContent = default;
         private static bool _BACK_DISPOSITION_WILL_NOT_DISMISSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getStylusHandwritingIdleTimeoutMax()"/>
@@ -255,9 +255,9 @@ namespace Android.Inputmethodservice
         {
             return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "getStylusHandwritingIdleTimeoutMax", "()Ljava/time/Duration;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getWindow()"/>
@@ -423,7 +423,7 @@ namespace Android.Inputmethodservice
         /// <returns><see cref="bool"/></returns>
         public bool OnShowInputRequested(int arg0, bool arg1)
         {
-            return IExecute<bool>("onShowInputRequested", arg0, arg1);
+            return IExecuteWithSignature<bool>("onShowInputRequested", "(IZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartConnectionlessStylusHandwriting(int,android.view.inputmethod.CursorAnchorInfo)"/>
@@ -433,7 +433,7 @@ namespace Android.Inputmethodservice
         /// <returns><see cref="bool"/></returns>
         public bool OnStartConnectionlessStylusHandwriting(int arg0, Android.View.Inputmethod.CursorAnchorInfo arg1)
         {
-            return IExecute<bool>("onStartConnectionlessStylusHandwriting", arg0, arg1);
+            return IExecuteWithSignature<bool>("onStartConnectionlessStylusHandwriting", "(ILandroid/view/inputmethod/CursorAnchorInfo;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartStylusHandwriting()"/>
@@ -531,7 +531,7 @@ namespace Android.Inputmethodservice
         /// <param name="arg1"><see cref="Android.View.Inputmethod.InputMethodSubtype"/></param>
         public void SwitchInputMethod(Java.Lang.String arg0, Android.View.Inputmethod.InputMethodSubtype arg1)
         {
-            IExecute("switchInputMethod", arg0, arg1);
+            IExecuteWithSignature("switchInputMethod", "(Ljava/lang/String;Landroid/view/inputmethod/InputMethodSubtype;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getBackDisposition()"/>
@@ -596,7 +596,7 @@ namespace Android.Inputmethodservice
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void OnAppPrivateCommand(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            IExecute("onAppPrivateCommand", arg0, arg1);
+            IExecuteWithSignature("onAppPrivateCommand", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onBindInput()"/>
@@ -621,7 +621,7 @@ namespace Android.Inputmethodservice
         /// <param name="arg2"><see cref="bool"/></param>
         public void OnConfigureWindow(Android.View.Window arg0, bool arg1, bool arg2)
         {
-            IExecute("onConfigureWindow", arg0, arg1, arg2);
+            IExecuteWithSignature("onConfigureWindow", "(Landroid/view/Window;ZZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onDisplayCompletions(android.view.inputmethod.CompletionInfo[])"/>
@@ -638,7 +638,7 @@ namespace Android.Inputmethodservice
         /// <param name="arg1"><see cref="int"/></param>
         public void OnExtractedCursorMovement(int arg0, int arg1)
         {
-            IExecute("onExtractedCursorMovement", arg0, arg1);
+            IExecuteWithSignature("onExtractedCursorMovement", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onExtractedSelectionChanged(int,int)"/>
@@ -647,7 +647,7 @@ namespace Android.Inputmethodservice
         /// <param name="arg1"><see cref="int"/></param>
         public void OnExtractedSelectionChanged(int arg0, int arg1)
         {
-            IExecute("onExtractedSelectionChanged", arg0, arg1);
+            IExecuteWithSignature("onExtractedSelectionChanged", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onExtractedTextClicked()"/>
@@ -715,7 +715,7 @@ namespace Android.Inputmethodservice
         /// <param name="arg1"><see cref="bool"/></param>
         public void OnStartCandidatesView(Android.View.Inputmethod.EditorInfo arg0, bool arg1)
         {
-            IExecute("onStartCandidatesView", arg0, arg1);
+            IExecuteWithSignature("onStartCandidatesView", "(Landroid/view/inputmethod/EditorInfo;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartInput(android.view.inputmethod.EditorInfo,boolean)"/>
@@ -724,7 +724,7 @@ namespace Android.Inputmethodservice
         /// <param name="arg1"><see cref="bool"/></param>
         public void OnStartInput(Android.View.Inputmethod.EditorInfo arg0, bool arg1)
         {
-            IExecute("onStartInput", arg0, arg1);
+            IExecuteWithSignature("onStartInput", "(Landroid/view/inputmethod/EditorInfo;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStartInputView(android.view.inputmethod.EditorInfo,boolean)"/>
@@ -733,7 +733,7 @@ namespace Android.Inputmethodservice
         /// <param name="arg1"><see cref="bool"/></param>
         public void OnStartInputView(Android.View.Inputmethod.EditorInfo arg0, bool arg1)
         {
-            IExecute("onStartInputView", arg0, arg1);
+            IExecuteWithSignature("onStartInputView", "(Landroid/view/inputmethod/EditorInfo;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onStylusHandwritingMotionEvent(android.view.MotionEvent)"/>
@@ -782,7 +782,7 @@ namespace Android.Inputmethodservice
         /// <param name="arg1"><see cref="Android.View.Inputmethod.ExtractedText"/></param>
         public void OnUpdateExtractedText(int arg0, Android.View.Inputmethod.ExtractedText arg1)
         {
-            IExecute("onUpdateExtractedText", arg0, arg1);
+            IExecuteWithSignature("onUpdateExtractedText", "(ILandroid/view/inputmethod/ExtractedText;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateExtractingViews(android.view.inputmethod.EditorInfo)"/>
@@ -811,7 +811,7 @@ namespace Android.Inputmethodservice
         /// <param name="arg5"><see cref="int"/></param>
         public void OnUpdateSelection(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("onUpdateSelection", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("onUpdateSelection", "(IIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onViewClicked(boolean)"/>
@@ -946,9 +946,9 @@ namespace Android.Inputmethodservice
         {
             IExecuteWithSignature("updateInputViewShown", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region InputMethodImpl implementation
         public partial class InputMethodImpl
@@ -962,29 +962,29 @@ namespace Android.Inputmethodservice
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1001,29 +1001,29 @@ namespace Android.Inputmethodservice
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1032,13 +1032,13 @@ namespace Android.Inputmethodservice
         public partial class Insets
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.Insets.html#touchableRegion"/>
@@ -1082,28 +1082,28 @@ namespace Android.Inputmethodservice
             public static int TOUCHABLE_INSETS_VISIBLE { get { if (!_TOUCHABLE_INSETS_VISIBLEReady) { _TOUCHABLE_INSETS_VISIBLEContent = SGetField<int>(LocalBridgeClazz, "TOUCHABLE_INSETS_VISIBLE"); _TOUCHABLE_INSETS_VISIBLEReady = true; } return _TOUCHABLE_INSETS_VISIBLEContent; } }
             private static int _TOUCHABLE_INSETS_VISIBLEContent = default;
             private static bool _TOUCHABLE_INSETS_VISIBLEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

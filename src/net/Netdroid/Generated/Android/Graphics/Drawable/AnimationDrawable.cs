@@ -40,10 +40,10 @@ namespace Android.Graphics.Drawable
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AnimationDrawable(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Graphics.Drawable
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,9 +74,9 @@ namespace Android.Graphics.Drawable
     public partial class AnimationDrawable : Java.Lang.IRunnable, Android.Graphics.Drawable.IAnimatable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Graphics.Drawable.AnimationDrawable"/> to <see cref="Java.Lang.Runnable"/>
@@ -86,17 +86,17 @@ namespace Android.Graphics.Drawable
         /// Converter from <see cref="Android.Graphics.Drawable.AnimationDrawable"/> to <see cref="Android.Graphics.Drawable.Animatable"/>
         /// </summary>
         public static implicit operator Android.Graphics.Drawable.Animatable(Android.Graphics.Drawable.AnimationDrawable t) => t.Cast<Android.Graphics.Drawable.Animatable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/AnimationDrawable.html#getFrame(int)"/>
@@ -147,7 +147,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="int"/></param>
         public void AddFrame(Android.Graphics.Drawable.Drawable arg0, int arg1)
         {
-            IExecute("addFrame", arg0, arg1);
+            IExecuteWithSignature("addFrame", "(Landroid/graphics/drawable/Drawable;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/AnimationDrawable.html#run()"/>
@@ -178,13 +178,13 @@ namespace Android.Graphics.Drawable
         {
             IExecuteWithSignature("stop", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

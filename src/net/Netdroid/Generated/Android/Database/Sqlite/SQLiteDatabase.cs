@@ -40,10 +40,10 @@ namespace Android.Database.Sqlite
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SQLiteDatabase(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Database.Sqlite
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region CursorFactory declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Database.Sqlite
             /// </summary>
             [global::System.Obsolete("CursorFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public CursorFactory(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Database.Sqlite
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Database.Sqlite
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public OpenParams(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,7 +152,7 @@ namespace Android.Database.Sqlite
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Builder declaration
             /// <summary>
@@ -169,10 +169,10 @@ namespace Android.Database.Sqlite
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Builder(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -193,9 +193,9 @@ namespace Android.Database.Sqlite
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -211,13 +211,13 @@ namespace Android.Database.Sqlite
     public partial class SQLiteDatabase
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#CONFLICT_ABORT"/>
@@ -357,9 +357,9 @@ namespace Android.Database.Sqlite
         public static Java.Lang.String SYNC_MODE_OFF { get { if (!_SYNC_MODE_OFFReady) { _SYNC_MODE_OFFContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SYNC_MODE_OFF"); _SYNC_MODE_OFFReady = true; } return _SYNC_MODE_OFFContent; } }
         private static Java.Lang.String _SYNC_MODE_OFFContent = default;
         private static bool _SYNC_MODE_OFFReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#create(android.database.sqlite.SQLiteDatabase.CursorFactory)"/>
@@ -387,7 +387,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase"/></returns>
         public static Android.Database.Sqlite.SQLiteDatabase OpenDatabase(Java.Io.File arg0, Android.Database.Sqlite.SQLiteDatabase.OpenParams arg1)
         {
-            return SExecute<Android.Database.Sqlite.SQLiteDatabase>(LocalBridgeClazz, "openDatabase", arg0, arg1);
+            return SExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>(LocalBridgeClazz, "openDatabase", "(Ljava/io/File;Landroid/database/sqlite/SQLiteDatabase$OpenParams;)Landroid/database/sqlite/SQLiteDatabase;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase.CursorFactory,int,android.database.DatabaseErrorHandler)"/>
@@ -399,7 +399,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase"/></returns>
         public static Android.Database.Sqlite.SQLiteDatabase OpenDatabase(Java.Lang.String arg0, Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg1, int arg2, Android.Database.DatabaseErrorHandler arg3)
         {
-            return SExecute<Android.Database.Sqlite.SQLiteDatabase>(LocalBridgeClazz, "openDatabase", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>(LocalBridgeClazz, "openDatabase", "(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;ILandroid/database/DatabaseErrorHandler;)Landroid/database/sqlite/SQLiteDatabase;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase.CursorFactory,int)"/>
@@ -410,7 +410,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase"/></returns>
         public static Android.Database.Sqlite.SQLiteDatabase OpenDatabase(Java.Lang.String arg0, Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg1, int arg2)
         {
-            return SExecute<Android.Database.Sqlite.SQLiteDatabase>(LocalBridgeClazz, "openDatabase", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>(LocalBridgeClazz, "openDatabase", "(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)Landroid/database/sqlite/SQLiteDatabase;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openOrCreateDatabase(java.io.File,android.database.sqlite.SQLiteDatabase.CursorFactory)"/>
@@ -420,7 +420,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase"/></returns>
         public static Android.Database.Sqlite.SQLiteDatabase OpenOrCreateDatabase(Java.Io.File arg0, Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg1)
         {
-            return SExecute<Android.Database.Sqlite.SQLiteDatabase>(LocalBridgeClazz, "openOrCreateDatabase", arg0, arg1);
+            return SExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>(LocalBridgeClazz, "openOrCreateDatabase", "(Ljava/io/File;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openOrCreateDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase.CursorFactory,android.database.DatabaseErrorHandler)"/>
@@ -431,7 +431,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase"/></returns>
         public static Android.Database.Sqlite.SQLiteDatabase OpenOrCreateDatabase(Java.Lang.String arg0, Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg1, Android.Database.DatabaseErrorHandler arg2)
         {
-            return SExecute<Android.Database.Sqlite.SQLiteDatabase>(LocalBridgeClazz, "openOrCreateDatabase", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>(LocalBridgeClazz, "openOrCreateDatabase", "(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;Landroid/database/DatabaseErrorHandler;)Landroid/database/sqlite/SQLiteDatabase;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#openOrCreateDatabase(java.lang.String,android.database.sqlite.SQLiteDatabase.CursorFactory)"/>
@@ -441,7 +441,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase"/></returns>
         public static Android.Database.Sqlite.SQLiteDatabase OpenOrCreateDatabase(Java.Lang.String arg0, Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg1)
         {
-            return SExecute<Android.Database.Sqlite.SQLiteDatabase>(LocalBridgeClazz, "openOrCreateDatabase", arg0, arg1);
+            return SExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>(LocalBridgeClazz, "openOrCreateDatabase", "(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#deleteDatabase(java.io.File)"/>
@@ -469,9 +469,9 @@ namespace Android.Database.Sqlite
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "findEditTable", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query(boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,android.os.CancellationSignal)"/>
@@ -489,7 +489,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor Query(bool arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String arg3, Java.Lang.String[] arg4, Java.Lang.String arg5, Java.Lang.String arg6, Java.Lang.String arg7, Java.Lang.String arg8, Android.Os.CancellationSignal arg9)
         {
-            return IExecute<Android.Database.Cursor>("query", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return IExecuteWithSignature<Android.Database.Cursor>("query", "(ZLjava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query(boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -506,7 +506,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor Query(bool arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String arg3, Java.Lang.String[] arg4, Java.Lang.String arg5, Java.Lang.String arg6, Java.Lang.String arg7, Java.Lang.String arg8)
         {
-            return IExecute<Android.Database.Cursor>("query", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return IExecuteWithSignature<Android.Database.Cursor>("query", "(ZLjava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -522,7 +522,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor Query(Java.Lang.String arg0, Java.Lang.String[] arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6, Java.Lang.String arg7)
         {
-            return IExecute<Android.Database.Cursor>("query", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return IExecuteWithSignature<Android.Database.Cursor>("query", "(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)"/>
@@ -537,7 +537,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor Query(Java.Lang.String arg0, Java.Lang.String[] arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
         {
-            return IExecute<Android.Database.Cursor>("query", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<Android.Database.Cursor>("query", "(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#queryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,android.os.CancellationSignal)"/>
@@ -556,7 +556,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor QueryWithFactory(Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg0, bool arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String[] arg5, Java.Lang.String arg6, Java.Lang.String arg7, Java.Lang.String arg8, Java.Lang.String arg9, Android.Os.CancellationSignal arg10)
         {
-            return IExecute<Android.Database.Cursor>("queryWithFactory", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+            return IExecuteWithSignature<Android.Database.Cursor>("queryWithFactory", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;ZLjava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#queryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -574,7 +574,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor QueryWithFactory(Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg0, bool arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String[] arg5, Java.Lang.String arg6, Java.Lang.String arg7, Java.Lang.String arg8, Java.Lang.String arg9)
         {
-            return IExecute<Android.Database.Cursor>("queryWithFactory", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return IExecuteWithSignature<Android.Database.Cursor>("queryWithFactory", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;ZLjava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#rawQuery(java.lang.String,java.lang.String[],android.os.CancellationSignal)"/>
@@ -585,7 +585,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor RawQuery(Java.Lang.String arg0, Java.Lang.String[] arg1, Android.Os.CancellationSignal arg2)
         {
-            return IExecute<Android.Database.Cursor>("rawQuery", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Database.Cursor>("rawQuery", "(Ljava/lang/String;[Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#rawQuery(java.lang.String,java.lang.String[])"/>
@@ -595,7 +595,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor RawQuery(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<Android.Database.Cursor>("rawQuery", arg0, arg1);
+            return IExecuteWithSignature<Android.Database.Cursor>("rawQuery", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#rawQueryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)"/>
@@ -608,7 +608,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor RawQueryWithFactory(Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String arg3, Android.Os.CancellationSignal arg4)
         {
-            return IExecute<Android.Database.Cursor>("rawQueryWithFactory", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Database.Cursor>("rawQueryWithFactory", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#rawQueryWithFactory(android.database.sqlite.SQLiteDatabase.CursorFactory,java.lang.String,java.lang.String[],java.lang.String)"/>
@@ -620,7 +620,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor RawQueryWithFactory(Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String arg3)
         {
-            return IExecute<Android.Database.Cursor>("rawQueryWithFactory", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Database.Cursor>("rawQueryWithFactory", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#createRawStatement(java.lang.String)"/>
@@ -750,7 +750,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="int"/></returns>
         public int Delete(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2)
         {
-            return IExecute<int>("delete", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("delete", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getVersion()"/>
@@ -770,7 +770,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="int"/></returns>
         public int Update(Java.Lang.String arg0, Android.Content.ContentValues arg1, Java.Lang.String arg2, Java.Lang.String[] arg3)
         {
-            return IExecute<int>("update", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("update", "(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#updateWithOnConflict(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[],int)"/>
@@ -783,7 +783,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="int"/></returns>
         public int UpdateWithOnConflict(Java.Lang.String arg0, Android.Content.ContentValues arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, int arg4)
         {
-            return IExecute<int>("updateWithOnConflict", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("updateWithOnConflict", "(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;I)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#getPath()"/>
@@ -859,7 +859,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="long"/></returns>
         public long Insert(Java.Lang.String arg0, Java.Lang.String arg1, Android.Content.ContentValues arg2)
         {
-            return IExecute<long>("insert", arg0, arg1, arg2);
+            return IExecuteWithSignature<long>("insert", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#insertOrThrow(java.lang.String,java.lang.String,android.content.ContentValues)"/>
@@ -871,7 +871,7 @@ namespace Android.Database.Sqlite
         /// <exception cref="Android.Database.SQLException"/>
         public long InsertOrThrow(Java.Lang.String arg0, Java.Lang.String arg1, Android.Content.ContentValues arg2)
         {
-            return IExecute<long>("insertOrThrow", arg0, arg1, arg2);
+            return IExecuteWithSignature<long>("insertOrThrow", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#insertWithOnConflict(java.lang.String,java.lang.String,android.content.ContentValues,int)"/>
@@ -883,7 +883,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="long"/></returns>
         public long InsertWithOnConflict(Java.Lang.String arg0, Java.Lang.String arg1, Android.Content.ContentValues arg2, int arg3)
         {
-            return IExecute<long>("insertWithOnConflict", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<long>("insertWithOnConflict", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;I)J", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#replace(java.lang.String,java.lang.String,android.content.ContentValues)"/>
@@ -894,7 +894,7 @@ namespace Android.Database.Sqlite
         /// <returns><see cref="long"/></returns>
         public long Replace(Java.Lang.String arg0, Java.Lang.String arg1, Android.Content.ContentValues arg2)
         {
-            return IExecute<long>("replace", arg0, arg1, arg2);
+            return IExecuteWithSignature<long>("replace", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#replaceOrThrow(java.lang.String,java.lang.String,android.content.ContentValues)"/>
@@ -906,7 +906,7 @@ namespace Android.Database.Sqlite
         /// <exception cref="Android.Database.SQLException"/>
         public long ReplaceOrThrow(Java.Lang.String arg0, Java.Lang.String arg1, Android.Content.ContentValues arg2)
         {
-            return IExecute<long>("replaceOrThrow", arg0, arg1, arg2);
+            return IExecuteWithSignature<long>("replaceOrThrow", "(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setMaximumSize(long)"/>
@@ -984,7 +984,7 @@ namespace Android.Database.Sqlite
         /// <exception cref="Android.Database.SQLException"/>
         public void ExecPerConnectionSQL(Java.Lang.String arg0, object[] arg1)
         {
-            IExecute("execPerConnectionSQL", arg0, arg1);
+            IExecuteWithSignature("execPerConnectionSQL", "(Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#execSQL(java.lang.String,java.lang.Object[])"/>
@@ -994,7 +994,7 @@ namespace Android.Database.Sqlite
         /// <exception cref="Android.Database.SQLException"/>
         public void ExecSQL(Java.Lang.String arg0, object[] arg1)
         {
-            IExecute("execSQL", arg0, arg1);
+            IExecuteWithSignature("execSQL", "(Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#execSQL(java.lang.String)"/>
@@ -1014,7 +1014,7 @@ namespace Android.Database.Sqlite
         [global::System.Obsolete()]
         public void MarkTableSyncable(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("markTableSyncable", arg0, arg1, arg2);
+            IExecuteWithSignature("markTableSyncable", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#markTableSyncable(java.lang.String,java.lang.String)"/>
@@ -1024,7 +1024,7 @@ namespace Android.Database.Sqlite
         [global::System.Obsolete()]
         public void MarkTableSyncable(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("markTableSyncable", arg0, arg1);
+            IExecuteWithSignature("markTableSyncable", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setCustomAggregateFunction(java.lang.String,java.util.function.BinaryOperator)"/>
@@ -1034,7 +1034,7 @@ namespace Android.Database.Sqlite
         /// <exception cref="Android.Database.Sqlite.SQLiteException"/>
         public void SetCustomAggregateFunction(Java.Lang.String arg0, Java.Util.Function.BinaryOperator<Java.Lang.String> arg1)
         {
-            IExecute("setCustomAggregateFunction", arg0, arg1);
+            IExecuteWithSignature("setCustomAggregateFunction", "(Ljava/lang/String;Ljava/util/function/BinaryOperator;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setCustomScalarFunction(java.lang.String,java.util.function.UnaryOperator)"/>
@@ -1044,7 +1044,7 @@ namespace Android.Database.Sqlite
         /// <exception cref="Android.Database.Sqlite.SQLiteException"/>
         public void SetCustomScalarFunction(Java.Lang.String arg0, Java.Util.Function.UnaryOperator<Java.Lang.String> arg1)
         {
-            IExecute("setCustomScalarFunction", arg0, arg1);
+            IExecuteWithSignature("setCustomScalarFunction", "(Ljava/lang/String;Ljava/util/function/UnaryOperator;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.html#setForeignKeyConstraintsEnabled(boolean)"/>
@@ -1109,31 +1109,31 @@ namespace Android.Database.Sqlite
         /// <param name="arg1"><see cref="Android.Os.CancellationSignal"/></param>
         public void ValidateSql(Java.Lang.String arg0, Android.Os.CancellationSignal arg1)
         {
-            IExecute("validateSql", arg0, arg1);
+            IExecuteWithSignature("validateSql", "(Ljava/lang/String;Landroid/os/CancellationSignal;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region CursorFactory implementation
         public partial class CursorFactory
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.CursorFactory.html#newCursor(android.database.sqlite.SQLiteDatabase,android.database.sqlite.SQLiteCursorDriver,java.lang.String,android.database.sqlite.SQLiteQuery)"/>
@@ -1145,15 +1145,15 @@ namespace Android.Database.Sqlite
             /// <returns><see cref="Android.Database.Cursor"/></returns>
             public Android.Database.Cursor NewCursor(Android.Database.Sqlite.SQLiteDatabase arg0, Android.Database.Sqlite.SQLiteCursorDriver arg1, Java.Lang.String arg2, Android.Database.Sqlite.SQLiteQuery arg3)
             {
-                return IExecute<Android.Database.Cursor>("newCursor", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.Database.Cursor>("newCursor", "(Landroid/database/sqlite/SQLiteDatabase;Landroid/database/sqlite/SQLiteCursorDriver;Ljava/lang/String;Landroid/database/sqlite/SQLiteQuery;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1162,21 +1162,21 @@ namespace Android.Database.Sqlite
         public partial class OpenParams
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.html#getErrorHandler()"/>
@@ -1242,9 +1242,9 @@ namespace Android.Database.Sqlite
             {
                 return IExecuteWithSignature<long>("getIdleConnectionTimeout", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Builder implementation
             public partial class Builder
@@ -1258,21 +1258,21 @@ namespace Android.Database.Sqlite
                     : base(arg0)
                 {
                 }
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.Builder.html#build()"/>
@@ -1345,7 +1345,7 @@ namespace Android.Database.Sqlite
                 /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder"/></returns>
                 public Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder SetLookasideConfig(int arg0, int arg1)
                 {
-                    return IExecute<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setLookasideConfig", arg0, arg1);
+                    return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setLookasideConfig", "(II)Landroid/database/sqlite/SQLiteDatabase$OpenParams$Builder;", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteDatabase.OpenParams.Builder.html#setOpenFlags(int)"/>
@@ -1365,27 +1365,27 @@ namespace Android.Database.Sqlite
                 {
                     return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.OpenParams.Builder>("setSynchronousMode", "(Ljava/lang/String;)Landroid/database/sqlite/SQLiteDatabase$OpenParams$Builder;", arg0);
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

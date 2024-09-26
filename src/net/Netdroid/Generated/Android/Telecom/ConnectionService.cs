@@ -42,10 +42,10 @@ namespace Android.Telecom
         /// </summary>
         [global::System.Obsolete("ConnectionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConnectionService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Telecom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.Telecom
     public partial class ConnectionService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#SERVICE_INTERFACE"/>
@@ -90,13 +90,13 @@ namespace Android.Telecom
         public static Java.Lang.String SERVICE_INTERFACE { get { if (!_SERVICE_INTERFACEReady) { _SERVICE_INTERFACEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_INTERFACE"); _SERVICE_INTERFACEReady = true; } return _SERVICE_INTERFACEContent; } }
         private static Java.Lang.String _SERVICE_INTERFACEContent = default;
         private static bool _SERVICE_INTERFACEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#onCreateIncomingConference(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
@@ -106,7 +106,7 @@ namespace Android.Telecom
         /// <returns><see cref="Android.Telecom.Conference"/></returns>
         public Android.Telecom.Conference OnCreateIncomingConference(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            return IExecute<Android.Telecom.Conference>("onCreateIncomingConference", arg0, arg1);
+            return IExecuteWithSignature<Android.Telecom.Conference>("onCreateIncomingConference", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/Conference;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#onCreateOutgoingConference(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
@@ -116,7 +116,7 @@ namespace Android.Telecom
         /// <returns><see cref="Android.Telecom.Conference"/></returns>
         public Android.Telecom.Conference OnCreateOutgoingConference(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            return IExecute<Android.Telecom.Conference>("onCreateOutgoingConference", arg0, arg1);
+            return IExecuteWithSignature<Android.Telecom.Conference>("onCreateOutgoingConference", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/Conference;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#onCreateIncomingConnection(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
@@ -126,7 +126,7 @@ namespace Android.Telecom
         /// <returns><see cref="Android.Telecom.Connection"/></returns>
         public Android.Telecom.Connection OnCreateIncomingConnection(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            return IExecute<Android.Telecom.Connection>("onCreateIncomingConnection", arg0, arg1);
+            return IExecuteWithSignature<Android.Telecom.Connection>("onCreateIncomingConnection", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/Connection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#onCreateIncomingHandoverConnection(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
@@ -136,7 +136,7 @@ namespace Android.Telecom
         /// <returns><see cref="Android.Telecom.Connection"/></returns>
         public Android.Telecom.Connection OnCreateIncomingHandoverConnection(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            return IExecute<Android.Telecom.Connection>("onCreateIncomingHandoverConnection", arg0, arg1);
+            return IExecuteWithSignature<Android.Telecom.Connection>("onCreateIncomingHandoverConnection", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/Connection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
@@ -146,7 +146,7 @@ namespace Android.Telecom
         /// <returns><see cref="Android.Telecom.Connection"/></returns>
         public Android.Telecom.Connection OnCreateOutgoingConnection(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            return IExecute<Android.Telecom.Connection>("onCreateOutgoingConnection", arg0, arg1);
+            return IExecuteWithSignature<Android.Telecom.Connection>("onCreateOutgoingConnection", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/Connection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#onCreateOutgoingHandoverConnection(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
@@ -156,7 +156,7 @@ namespace Android.Telecom
         /// <returns><see cref="Android.Telecom.Connection"/></returns>
         public Android.Telecom.Connection OnCreateOutgoingHandoverConnection(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            return IExecute<Android.Telecom.Connection>("onCreateOutgoingHandoverConnection", arg0, arg1);
+            return IExecuteWithSignature<Android.Telecom.Connection>("onCreateOutgoingHandoverConnection", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/Connection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#createRemoteIncomingConference(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
@@ -166,7 +166,7 @@ namespace Android.Telecom
         /// <returns><see cref="Android.Telecom.RemoteConference"/></returns>
         public Android.Telecom.RemoteConference CreateRemoteIncomingConference(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            return IExecute<Android.Telecom.RemoteConference>("createRemoteIncomingConference", arg0, arg1);
+            return IExecuteWithSignature<Android.Telecom.RemoteConference>("createRemoteIncomingConference", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/RemoteConference;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#createRemoteOutgoingConference(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
@@ -176,7 +176,7 @@ namespace Android.Telecom
         /// <returns><see cref="Android.Telecom.RemoteConference"/></returns>
         public Android.Telecom.RemoteConference CreateRemoteOutgoingConference(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            return IExecute<Android.Telecom.RemoteConference>("createRemoteOutgoingConference", arg0, arg1);
+            return IExecuteWithSignature<Android.Telecom.RemoteConference>("createRemoteOutgoingConference", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/RemoteConference;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#createRemoteIncomingConnection(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
@@ -186,7 +186,7 @@ namespace Android.Telecom
         /// <returns><see cref="Android.Telecom.RemoteConnection"/></returns>
         public Android.Telecom.RemoteConnection CreateRemoteIncomingConnection(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            return IExecute<Android.Telecom.RemoteConnection>("createRemoteIncomingConnection", arg0, arg1);
+            return IExecuteWithSignature<Android.Telecom.RemoteConnection>("createRemoteIncomingConnection", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/RemoteConnection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#createRemoteOutgoingConnection(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
@@ -196,7 +196,7 @@ namespace Android.Telecom
         /// <returns><see cref="Android.Telecom.RemoteConnection"/></returns>
         public Android.Telecom.RemoteConnection CreateRemoteOutgoingConnection(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            return IExecute<Android.Telecom.RemoteConnection>("createRemoteOutgoingConnection", arg0, arg1);
+            return IExecuteWithSignature<Android.Telecom.RemoteConnection>("createRemoteOutgoingConnection", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/RemoteConnection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#getAllConferences()"/>
@@ -229,7 +229,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Telecom.Connection"/></param>
         public void AddExistingConnection(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.Connection arg1)
         {
-            IExecute("addExistingConnection", arg0, arg1);
+            IExecuteWithSignature("addExistingConnection", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/Connection;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#conferenceRemoteConnections(android.telecom.RemoteConnection,android.telecom.RemoteConnection)"/>
@@ -238,7 +238,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Telecom.RemoteConnection"/></param>
         public void ConferenceRemoteConnections(Android.Telecom.RemoteConnection arg0, Android.Telecom.RemoteConnection arg1)
         {
-            IExecute("conferenceRemoteConnections", arg0, arg1);
+            IExecuteWithSignature("conferenceRemoteConnections", "(Landroid/telecom/RemoteConnection;Landroid/telecom/RemoteConnection;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#connectionServiceFocusReleased()"/>
@@ -254,7 +254,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Telecom.Connection"/></param>
         public void OnConference(Android.Telecom.Connection arg0, Android.Telecom.Connection arg1)
         {
-            IExecute("onConference", arg0, arg1);
+            IExecuteWithSignature("onConference", "(Landroid/telecom/Connection;Landroid/telecom/Connection;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#onConnectionServiceFocusGained()"/>
@@ -277,7 +277,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Telecom.ConnectionRequest"/></param>
         public void OnCreateIncomingConferenceFailed(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            IExecute("onCreateIncomingConferenceFailed", arg0, arg1);
+            IExecuteWithSignature("onCreateIncomingConferenceFailed", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#onCreateIncomingConnectionFailed(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
@@ -286,7 +286,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Telecom.ConnectionRequest"/></param>
         public void OnCreateIncomingConnectionFailed(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            IExecute("onCreateIncomingConnectionFailed", arg0, arg1);
+            IExecuteWithSignature("onCreateIncomingConnectionFailed", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#onCreateOutgoingConferenceFailed(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
@@ -295,7 +295,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Telecom.ConnectionRequest"/></param>
         public void OnCreateOutgoingConferenceFailed(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            IExecute("onCreateOutgoingConferenceFailed", arg0, arg1);
+            IExecuteWithSignature("onCreateOutgoingConferenceFailed", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#onCreateOutgoingConnectionFailed(android.telecom.PhoneAccountHandle,android.telecom.ConnectionRequest)"/>
@@ -304,7 +304,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Telecom.ConnectionRequest"/></param>
         public void OnCreateOutgoingConnectionFailed(Android.Telecom.PhoneAccountHandle arg0, Android.Telecom.ConnectionRequest arg1)
         {
-            IExecute("onCreateOutgoingConnectionFailed", arg0, arg1);
+            IExecuteWithSignature("onCreateOutgoingConnectionFailed", "(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#onHandoverFailed(android.telecom.ConnectionRequest,int)"/>
@@ -313,7 +313,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="int"/></param>
         public void OnHandoverFailed(Android.Telecom.ConnectionRequest arg0, int arg1)
         {
-            IExecute("onHandoverFailed", arg0, arg1);
+            IExecuteWithSignature("onHandoverFailed", "(Landroid/telecom/ConnectionRequest;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionService.html#onRemoteConferenceAdded(android.telecom.RemoteConference)"/>
@@ -331,13 +331,13 @@ namespace Android.Telecom
         {
             IExecuteWithSignature("onRemoteExistingConnectionAdded", "(Landroid/telecom/RemoteConnection;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

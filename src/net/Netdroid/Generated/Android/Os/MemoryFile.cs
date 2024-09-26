@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MemoryFile(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -84,21 +84,21 @@ namespace Android.Os
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/MemoryFile.html#isPurgingAllowed()"/>
@@ -128,7 +128,7 @@ namespace Android.Os
         /// <exception cref="Java.Io.IOException"/>
         public int ReadBytes(byte[] arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<int>("readBytes", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("readBytes", "([BIII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/MemoryFile.html#getInputStream()"/>
@@ -174,15 +174,15 @@ namespace Android.Os
         /// <exception cref="Java.Io.IOException"/>
         public void WriteBytes(byte[] arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("writeBytes", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("writeBytes", "([BIII)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

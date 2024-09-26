@@ -41,10 +41,10 @@ namespace Android.Net.Sip
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SipAudioCall(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Net.Sip
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Listener declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Net.Sip
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Listener(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Net.Sip
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -131,21 +131,21 @@ namespace Android.Net.Sip
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#getLocalProfile()"/>
@@ -220,7 +220,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public void AttachCall(Android.Net.Sip.SipSession arg0, Java.Lang.String arg1)
         {
-            IExecute("attachCall", arg0, arg1);
+            IExecuteWithSignature("attachCall", "(Landroid/net/sip/SipSession;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#close()"/>
@@ -269,7 +269,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public void MakeCall(Android.Net.Sip.SipProfile arg0, Android.Net.Sip.SipSession arg1, int arg2)
         {
-            IExecute("makeCall", arg0, arg1, arg2);
+            IExecuteWithSignature("makeCall", "(Landroid/net/sip/SipProfile;Landroid/net/sip/SipSession;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#sendDtmf(int,android.os.Message)"/>
@@ -279,7 +279,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public void SendDtmf(int arg0, Android.Os.Message arg1)
         {
-            IExecute("sendDtmf", arg0, arg1);
+            IExecuteWithSignature("sendDtmf", "(ILandroid/os/Message;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#sendDtmf(int)"/>
@@ -298,7 +298,7 @@ namespace Android.Net.Sip
         [global::System.Obsolete()]
         public void SetListener(Android.Net.Sip.SipAudioCall.Listener arg0, bool arg1)
         {
-            IExecute("setListener", arg0, arg1);
+            IExecuteWithSignature("setListener", "(Landroid/net/sip/SipAudioCall$Listener;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html#setListener(android.net.sip.SipAudioCall.Listener)"/>
@@ -334,29 +334,29 @@ namespace Android.Net.Sip
         {
             IExecuteWithSignature("toggleMute", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Listener implementation
         public partial class Listener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onCallBusy(android.net.sip.SipAudioCall)"/>
@@ -421,7 +421,7 @@ namespace Android.Net.Sip
             [global::System.Obsolete()]
             public void OnError(Android.Net.Sip.SipAudioCall arg0, int arg1, Java.Lang.String arg2)
             {
-                IExecute("onError", arg0, arg1, arg2);
+                IExecuteWithSignature("onError", "(Landroid/net/sip/SipAudioCall;ILjava/lang/String;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onReadyToCall(android.net.sip.SipAudioCall)"/>
@@ -440,7 +440,7 @@ namespace Android.Net.Sip
             [global::System.Obsolete()]
             public void OnRinging(Android.Net.Sip.SipAudioCall arg0, Android.Net.Sip.SipProfile arg1)
             {
-                IExecute("onRinging", arg0, arg1);
+                IExecuteWithSignature("onRinging", "(Landroid/net/sip/SipAudioCall;Landroid/net/sip/SipProfile;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html#onRingingBack(android.net.sip.SipAudioCall)"/>
@@ -451,20 +451,20 @@ namespace Android.Net.Sip
             {
                 IExecuteWithSignature("onRingingBack", "(Landroid/net/sip/SipAudioCall;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

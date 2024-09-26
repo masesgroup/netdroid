@@ -42,10 +42,10 @@ namespace Java.Util
         /// </summary>
         [global::System.Obsolete("NavigableSet class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NavigableSet(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,10 +90,10 @@ namespace Java.Util
         /// </summary>
         [global::System.Obsolete("NavigableSet class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NavigableSet(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -124,21 +124,21 @@ namespace Java.Util
     public partial class NavigableSet
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#ceiling(java.lang.Object)"/>
@@ -224,7 +224,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet HeadSet(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableSet>("headSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableSet>("headSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
@@ -236,7 +236,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet SubSet(object arg0, bool arg1, object arg2, bool arg3)
         {
-            return IExecute<Java.Util.NavigableSet>("subSet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.NavigableSet>("subSet", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#tailSet(java.lang.Object,boolean)"/>
@@ -246,7 +246,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet TailSet(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableSet>("tailSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableSet>("tailSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#headSet(java.lang.Object)"/>
@@ -265,7 +265,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet SubSet(object arg0, object arg1)
         {
-            return IExecute<Java.Util.SortedSet>("subSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedSet>("subSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#tailSet(java.lang.Object)"/>
@@ -276,13 +276,13 @@ namespace Java.Util
         {
             return IExecuteWithSignature<Java.Util.SortedSet>("tailSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -294,13 +294,13 @@ namespace Java.Util
     public partial interface INavigableSet<E> : Java.Util.ISortedSet<E>
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -309,25 +309,25 @@ namespace Java.Util
     public partial class NavigableSet<E> : Java.Util.INavigableSet<E>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.NavigableSet{E}"/> to <see cref="Java.Util.NavigableSet"/>
         /// </summary>
         public static implicit operator Java.Util.NavigableSet(Java.Util.NavigableSet<E> t) => t.Cast<Java.Util.NavigableSet>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#ceiling(java.lang.Object)"/>
@@ -413,7 +413,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<E> HeadSet(E arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableSet<E>>("headSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableSet<E>>("headSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
@@ -425,7 +425,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<E> SubSet(E arg0, bool arg1, E arg2, bool arg3)
         {
-            return IExecute<Java.Util.NavigableSet<E>>("subSet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.NavigableSet<E>>("subSet", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#tailSet(java.lang.Object,boolean)"/>
@@ -435,7 +435,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<E> TailSet(E arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableSet<E>>("tailSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableSet<E>>("tailSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#headSet(java.lang.Object)"/>
@@ -454,7 +454,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet<E> SubSet(E arg0, E arg1)
         {
-            return IExecute<Java.Util.SortedSet<E>>("subSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedSet<E>>("subSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#tailSet(java.lang.Object)"/>
@@ -465,13 +465,13 @@ namespace Java.Util
         {
             return IExecuteWithSignature<Java.Util.SortedSet<E>>("tailSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

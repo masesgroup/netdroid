@@ -42,10 +42,10 @@ namespace Java.Net
         /// </summary>
         [global::System.Obsolete("CookiePolicy class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CookiePolicy(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Net
     public partial interface ICookiePolicy
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Java.Net
     public partial class CookiePolicy : Java.Net.ICookiePolicy
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/CookiePolicy.html#ACCEPT_ALL"/>
@@ -120,13 +120,13 @@ namespace Java.Net
         public static Java.Net.CookiePolicy ACCEPT_ORIGINAL_SERVER { get { if (!_ACCEPT_ORIGINAL_SERVERReady) { _ACCEPT_ORIGINAL_SERVERContent = SGetField<Java.Net.CookiePolicy>(LocalBridgeClazz, "ACCEPT_ORIGINAL_SERVER"); _ACCEPT_ORIGINAL_SERVERReady = true; } return _ACCEPT_ORIGINAL_SERVERContent; } }
         private static Java.Net.CookiePolicy _ACCEPT_ORIGINAL_SERVERContent = default;
         private static bool _ACCEPT_ORIGINAL_SERVERReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/CookiePolicy.html#shouldAccept(java.net.URI,java.net.HttpCookie)"/>
@@ -136,15 +136,15 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool ShouldAccept(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
-            return IExecute<bool>("shouldAccept", arg0, arg1);
+            return IExecuteWithSignature<bool>("shouldAccept", "(Ljava/net/URI;Ljava/net/HttpCookie;)Z", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.App.Appsearch
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GenericDocument(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App.Appsearch
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App.Appsearch
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App.Appsearch
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -127,10 +127,10 @@ namespace Android.App.Appsearch
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -151,9 +151,9 @@ namespace Android.App.Appsearch
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -165,17 +165,17 @@ namespace Android.App.Appsearch
     public partial class GenericDocument
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getMaxIndexedProperties()"/>
@@ -185,9 +185,9 @@ namespace Android.App.Appsearch
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxIndexedProperties", "()I");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getPropertyDocument(java.lang.String)"/>
@@ -362,9 +362,9 @@ namespace Android.App.Appsearch
         {
             return IExecuteWithSignatureArray<long>("getPropertyLongArray", "(Ljava/lang/String;)[J", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -388,21 +388,21 @@ namespace Android.App.Appsearch
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#build()"/>
@@ -456,7 +456,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.GenericDocument.Builder"/></returns>
             public Android.App.Appsearch.GenericDocument.Builder SetPropertyBoolean(Java.Lang.String arg0, params bool[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyBoolean", arg0); else return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyBoolean", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyBoolean", "(Ljava/lang/String;[Z)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyBoolean", "(Ljava/lang/String;[Z)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyBytes(java.lang.String,byte[][])"/>
@@ -466,7 +466,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.GenericDocument.Builder"/></returns>
             public Android.App.Appsearch.GenericDocument.Builder SetPropertyBytes(Java.Lang.String arg0, params byte[][] arg1)
             {
-                if (arg1.Length == 0) return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyBytes", arg0); else return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyBytes", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyBytes", "(Ljava/lang/String;[[B)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyBytes", "(Ljava/lang/String;[[B)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyDocument(java.lang.String,android.app.appsearch.GenericDocument[])"/>
@@ -476,7 +476,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.GenericDocument.Builder"/></returns>
             public Android.App.Appsearch.GenericDocument.Builder SetPropertyDocument(Java.Lang.String arg0, params Android.App.Appsearch.GenericDocument[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyDocument", arg0); else return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyDocument", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyDocument", "(Ljava/lang/String;[Landroid/app/appsearch/GenericDocument;)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyDocument", "(Ljava/lang/String;[Landroid/app/appsearch/GenericDocument;)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyDouble(java.lang.String,double[])"/>
@@ -486,7 +486,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.GenericDocument.Builder"/></returns>
             public Android.App.Appsearch.GenericDocument.Builder SetPropertyDouble(Java.Lang.String arg0, params double[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyDouble", arg0); else return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyDouble", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyDouble", "(Ljava/lang/String;[D)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyDouble", "(Ljava/lang/String;[D)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyLong(java.lang.String,long[])"/>
@@ -496,7 +496,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.GenericDocument.Builder"/></returns>
             public Android.App.Appsearch.GenericDocument.Builder SetPropertyLong(Java.Lang.String arg0, params long[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyLong", arg0); else return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyLong", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyLong", "(Ljava/lang/String;[J)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyLong", "(Ljava/lang/String;[J)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyString(java.lang.String,java.lang.String[])"/>
@@ -506,7 +506,7 @@ namespace Android.App.Appsearch
             /// <returns><see cref="Android.App.Appsearch.GenericDocument.Builder"/></returns>
             public Android.App.Appsearch.GenericDocument.Builder SetPropertyString(Java.Lang.String arg0, params Java.Lang.String[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyString", arg0); else return IExecute<Android.App.Appsearch.GenericDocument.Builder>("setPropertyString", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyString", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setPropertyString", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setSchemaType(java.lang.String)"/>
@@ -535,13 +535,13 @@ namespace Android.App.Appsearch
             {
                 return IExecuteWithSignature<Android.App.Appsearch.GenericDocument.Builder>("setTtlMillis", "(J)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -568,25 +568,25 @@ namespace Android.App.Appsearch
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.App.Appsearch.GenericDocument.Builder{BuilderType}"/> to <see cref="Android.App.Appsearch.GenericDocument.Builder"/>
             /// </summary>
             public static implicit operator Android.App.Appsearch.GenericDocument.Builder(Android.App.Appsearch.GenericDocument.Builder<BuilderType> t) => t.Cast<Android.App.Appsearch.GenericDocument.Builder>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#build()"/>
@@ -640,7 +640,7 @@ namespace Android.App.Appsearch
             /// <returns><typeparamref name="BuilderType"/></returns>
             public BuilderType SetPropertyBoolean(Java.Lang.String arg0, params bool[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<BuilderType>("setPropertyBoolean", arg0); else return IExecute<BuilderType>("setPropertyBoolean", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<BuilderType>("setPropertyBoolean", "(Ljava/lang/String;[Z)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<BuilderType>("setPropertyBoolean", "(Ljava/lang/String;[Z)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyBytes(java.lang.String,byte[][])"/>
@@ -650,7 +650,7 @@ namespace Android.App.Appsearch
             /// <returns><typeparamref name="BuilderType"/></returns>
             public BuilderType SetPropertyBytes(Java.Lang.String arg0, params byte[][] arg1)
             {
-                if (arg1.Length == 0) return IExecute<BuilderType>("setPropertyBytes", arg0); else return IExecute<BuilderType>("setPropertyBytes", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<BuilderType>("setPropertyBytes", "(Ljava/lang/String;[[B)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<BuilderType>("setPropertyBytes", "(Ljava/lang/String;[[B)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyDocument(java.lang.String,android.app.appsearch.GenericDocument[])"/>
@@ -660,7 +660,7 @@ namespace Android.App.Appsearch
             /// <returns><typeparamref name="BuilderType"/></returns>
             public BuilderType SetPropertyDocument(Java.Lang.String arg0, params Android.App.Appsearch.GenericDocument[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<BuilderType>("setPropertyDocument", arg0); else return IExecute<BuilderType>("setPropertyDocument", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<BuilderType>("setPropertyDocument", "(Ljava/lang/String;[Landroid/app/appsearch/GenericDocument;)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<BuilderType>("setPropertyDocument", "(Ljava/lang/String;[Landroid/app/appsearch/GenericDocument;)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyDouble(java.lang.String,double[])"/>
@@ -670,7 +670,7 @@ namespace Android.App.Appsearch
             /// <returns><typeparamref name="BuilderType"/></returns>
             public BuilderType SetPropertyDouble(Java.Lang.String arg0, params double[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<BuilderType>("setPropertyDouble", arg0); else return IExecute<BuilderType>("setPropertyDouble", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<BuilderType>("setPropertyDouble", "(Ljava/lang/String;[D)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<BuilderType>("setPropertyDouble", "(Ljava/lang/String;[D)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyLong(java.lang.String,long[])"/>
@@ -680,7 +680,7 @@ namespace Android.App.Appsearch
             /// <returns><typeparamref name="BuilderType"/></returns>
             public BuilderType SetPropertyLong(Java.Lang.String arg0, params long[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<BuilderType>("setPropertyLong", arg0); else return IExecute<BuilderType>("setPropertyLong", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<BuilderType>("setPropertyLong", "(Ljava/lang/String;[J)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<BuilderType>("setPropertyLong", "(Ljava/lang/String;[J)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setPropertyString(java.lang.String,java.lang.String[])"/>
@@ -690,7 +690,7 @@ namespace Android.App.Appsearch
             /// <returns><typeparamref name="BuilderType"/></returns>
             public BuilderType SetPropertyString(Java.Lang.String arg0, params Java.Lang.String[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<BuilderType>("setPropertyString", arg0); else return IExecute<BuilderType>("setPropertyString", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<BuilderType>("setPropertyString", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0); else return IExecuteWithSignature<BuilderType>("setPropertyString", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/app/appsearch/GenericDocument$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.Builder.html#setSchemaType(java.lang.String)"/>
@@ -719,20 +719,20 @@ namespace Android.App.Appsearch
             {
                 return IExecuteWithSignature<BuilderType>("setTtlMillis", "(J)Landroid/app/appsearch/GenericDocument$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

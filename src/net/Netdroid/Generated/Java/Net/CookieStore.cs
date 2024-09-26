@@ -42,10 +42,10 @@ namespace Java.Net
         /// </summary>
         [global::System.Obsolete("CookieStore class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CookieStore(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Net
     public partial interface ICookieStore
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Java.Net
     public partial class CookieStore : Java.Net.ICookieStore
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/CookieStore.html#remove(java.net.URI,java.net.HttpCookie)"/>
@@ -118,7 +118,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool Remove(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
-            return IExecute<bool>("remove", arg0, arg1);
+            return IExecuteWithSignature<bool>("remove", "(Ljava/net/URI;Ljava/net/HttpCookie;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/CookieStore.html#removeAll()"/>
@@ -160,15 +160,15 @@ namespace Java.Net
         /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
         public void Add(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(Ljava/net/URI;Ljava/net/HttpCookie;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

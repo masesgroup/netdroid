@@ -40,10 +40,10 @@ namespace Android.Location
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Geocoder(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Location
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region GeocodeListener declaration
         /// <summary>
@@ -76,7 +76,7 @@ namespace Android.Location
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public GeocodeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.location.Geocoder_GeocodeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -85,13 +85,13 @@ namespace Android.Location
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region GeocodeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="GeocodeListener"/> or its generic type if there is one
@@ -102,14 +102,14 @@ namespace Android.Location
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.location.Geocoder$GeocodeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -158,17 +158,17 @@ namespace Android.Location
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Geocoder.html#isPresent()"/>
@@ -178,9 +178,9 @@ namespace Android.Location
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isPresent", "()Z");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Geocoder.html#getFromLocation(double,double,int)"/>
@@ -193,7 +193,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public Java.Util.List<Android.Location.Address> GetFromLocation(double arg0, double arg1, int arg2)
         {
-            return IExecute<Java.Util.List<Android.Location.Address>>("getFromLocation", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.List<Android.Location.Address>>("getFromLocation", "(DDI)Ljava/util/List;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Geocoder.html#getFromLocationName(java.lang.String,int,double,double,double,double)"/>
@@ -209,7 +209,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public Java.Util.List<Android.Location.Address> GetFromLocationName(Java.Lang.String arg0, int arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            return IExecute<Java.Util.List<Android.Location.Address>>("getFromLocationName", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Java.Util.List<Android.Location.Address>>("getFromLocationName", "(Ljava/lang/String;IDDDD)Ljava/util/List;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Geocoder.html#getFromLocationName(java.lang.String,int)"/>
@@ -221,7 +221,7 @@ namespace Android.Location
         [global::System.Obsolete()]
         public Java.Util.List<Android.Location.Address> GetFromLocationName(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Util.List<Android.Location.Address>>("getFromLocationName", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Location.Address>>("getFromLocationName", "(Ljava/lang/String;I)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Geocoder.html#getFromLocation(double,double,int,android.location.Geocoder.GeocodeListener)"/>
@@ -232,7 +232,7 @@ namespace Android.Location
         /// <param name="arg3"><see cref="Android.Location.Geocoder.GeocodeListener"/></param>
         public void GetFromLocation(double arg0, double arg1, int arg2, Android.Location.Geocoder.GeocodeListener arg3)
         {
-            IExecute("getFromLocation", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("getFromLocation", "(DDILandroid/location/Geocoder$GeocodeListener;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Geocoder.html#getFromLocationName(java.lang.String,int,android.location.Geocoder.GeocodeListener)"/>
@@ -242,7 +242,7 @@ namespace Android.Location
         /// <param name="arg2"><see cref="Android.Location.Geocoder.GeocodeListener"/></param>
         public void GetFromLocationName(Java.Lang.String arg0, int arg1, Android.Location.Geocoder.GeocodeListener arg2)
         {
-            IExecute("getFromLocationName", arg0, arg1, arg2);
+            IExecuteWithSignature("getFromLocationName", "(Ljava/lang/String;ILandroid/location/Geocoder$GeocodeListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Geocoder.html#getFromLocationName(java.lang.String,int,double,double,double,double,android.location.Geocoder.GeocodeListener)"/>
@@ -256,31 +256,31 @@ namespace Android.Location
         /// <param name="arg6"><see cref="Android.Location.Geocoder.GeocodeListener"/></param>
         public void GetFromLocationName(Java.Lang.String arg0, int arg1, double arg2, double arg3, double arg4, double arg5, Android.Location.Geocoder.GeocodeListener arg6)
         {
-            IExecute("getFromLocationName", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("getFromLocationName", "(Ljava/lang/String;IDDDDLandroid/location/Geocoder$GeocodeListener;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region GeocodeListener implementation
         public partial class GeocodeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="GeocodeListener"/>
@@ -291,13 +291,13 @@ namespace Android.Location
                 AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnErrorEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/location/Geocoder.GeocodeListener.html#onGeocode(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGeocode"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Util.List<Android.Location.Address>> OnOnGeocode { get; set; } = null;
-            
+
             bool hasOverrideOnGeocode = true;
             void OnGeocodeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -306,7 +306,7 @@ namespace Android.Location
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Util.List<Android.Location.Address>>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnGeocode;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/location/Geocoder.GeocodeListener.html#onGeocode(java.util.List)"/>
             /// </summary>
@@ -324,13 +324,13 @@ namespace Android.Location
             {
                 IExecuteWithSignature("onErrorDefault", "(Ljava/lang/String;)V", arg0);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/location/Geocoder.GeocodeListener.html#onError(java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Java.Lang.String> OnOnError { get; set; } = null;
-            
+
             bool hasOverrideOnError = true;
             void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -339,7 +339,7 @@ namespace Android.Location
                 methodToExecute.Invoke(data.EventData.GetAt<Java.Lang.String>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnError;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/location/Geocoder.GeocodeListener.html#onError(java.lang.String)"/>
             /// </summary>
@@ -349,13 +349,13 @@ namespace Android.Location
             {
                 hasOverrideOnError = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -364,21 +364,21 @@ namespace Android.Location
         public partial class GeocodeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/location/Geocoder.GeocodeListener.html#onGeocode(java.util.List)"/>
@@ -396,20 +396,20 @@ namespace Android.Location
             {
                 IExecuteWithSignature("onError", "(Ljava/lang/String;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Bluetooth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BluetoothAdapter(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Bluetooth
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region LeScanCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Bluetooth
             /// </summary>
             [global::System.Obsolete("LeScanCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public LeScanCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Bluetooth
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Bluetooth
     public partial class BluetoothAdapter
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ERROR"/>
@@ -297,9 +297,9 @@ namespace Android.Bluetooth
         public static Java.Lang.String EXTRA_STATE { get { if (!_EXTRA_STATEReady) { _EXTRA_STATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_STATE"); _EXTRA_STATEReady = true; } return _EXTRA_STATEContent; } }
         private static Java.Lang.String _EXTRA_STATEContent = default;
         private static bool _EXTRA_STATEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#checkBluetoothAddress(java.lang.String)"/>
@@ -319,9 +319,9 @@ namespace Android.Bluetooth
         {
             return SExecuteWithSignature<Android.Bluetooth.BluetoothAdapter>(LocalBridgeClazz, "getDefaultAdapter", "()Landroid/bluetooth/BluetoothAdapter;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteDevice(byte[])"/>
@@ -349,7 +349,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="Android.Bluetooth.BluetoothDevice"/></returns>
         public Android.Bluetooth.BluetoothDevice GetRemoteLeDevice(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Bluetooth.BluetoothDevice>("getRemoteLeDevice", arg0, arg1);
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getRemoteLeDevice", "(Ljava/lang/String;I)Landroid/bluetooth/BluetoothDevice;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureL2capChannel()"/>
@@ -369,7 +369,7 @@ namespace Android.Bluetooth
         /// <exception cref="Java.Io.IOException"/>
         public Android.Bluetooth.BluetoothServerSocket ListenUsingInsecureRfcommWithServiceRecord(Java.Lang.String arg0, Java.Util.UUID arg1)
         {
-            return IExecute<Android.Bluetooth.BluetoothServerSocket>("listenUsingInsecureRfcommWithServiceRecord", arg0, arg1);
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothServerSocket>("listenUsingInsecureRfcommWithServiceRecord", "(Ljava/lang/String;Ljava/util/UUID;)Landroid/bluetooth/BluetoothServerSocket;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingL2capChannel()"/>
@@ -389,7 +389,7 @@ namespace Android.Bluetooth
         /// <exception cref="Java.Io.IOException"/>
         public Android.Bluetooth.BluetoothServerSocket ListenUsingRfcommWithServiceRecord(Java.Lang.String arg0, Java.Util.UUID arg1)
         {
-            return IExecute<Android.Bluetooth.BluetoothServerSocket>("listenUsingRfcommWithServiceRecord", arg0, arg1);
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothServerSocket>("listenUsingRfcommWithServiceRecord", "(Ljava/lang/String;Ljava/util/UUID;)Landroid/bluetooth/BluetoothServerSocket;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBluetoothLeAdvertiser()"/>
@@ -442,7 +442,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="bool"/></returns>
         public bool GetProfileProxy(Android.Content.Context arg0, Android.Bluetooth.BluetoothProfile.ServiceListener arg1, int arg2)
         {
-            return IExecute<bool>("getProfileProxy", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("getProfileProxy", "(Landroid/content/Context;Landroid/bluetooth/BluetoothProfile$ServiceListener;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isDiscovering()"/>
@@ -552,7 +552,7 @@ namespace Android.Bluetooth
         [global::System.Obsolete()]
         public bool StartLeScan(Java.Util.UUID[] arg0, Android.Bluetooth.BluetoothAdapter.LeScanCallback arg1)
         {
-            return IExecute<bool>("startLeScan", arg0, arg1);
+            return IExecuteWithSignature<bool>("startLeScan", "([Ljava/util/UUID;Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getLeMaximumAdvertisingDataLength()"/>
@@ -658,7 +658,7 @@ namespace Android.Bluetooth
         /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothProfile"/></param>
         public void CloseProfileProxy(int arg0, Android.Bluetooth.BluetoothProfile arg1)
         {
-            IExecute("closeProfileProxy", arg0, arg1);
+            IExecuteWithSignature("closeProfileProxy", "(ILandroid/bluetooth/BluetoothProfile;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#stopLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
@@ -669,29 +669,29 @@ namespace Android.Bluetooth
         {
             IExecuteWithSignature("stopLeScan", "(Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region LeScanCallback implementation
         public partial class LeScanCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.LeScanCallback.html#onLeScan(android.bluetooth.BluetoothDevice,int,byte[])"/>
@@ -701,22 +701,22 @@ namespace Android.Bluetooth
             /// <param name="arg2"><see cref="byte"/></param>
             public void OnLeScan(Android.Bluetooth.BluetoothDevice arg0, int arg1, byte[] arg2)
             {
-                IExecute("onLeScan", arg0, arg1, arg2);
+                IExecuteWithSignature("onLeScan", "(Landroid/bluetooth/BluetoothDevice;I[B)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

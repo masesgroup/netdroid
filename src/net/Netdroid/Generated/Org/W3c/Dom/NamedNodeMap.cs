@@ -42,10 +42,10 @@ namespace Org.W3c.Dom
         /// </summary>
         [global::System.Obsolete("NamedNodeMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NamedNodeMap(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Org.W3c.Dom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Org.W3c.Dom
     public partial interface INamedNodeMap
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Org.W3c.Dom
     public partial class NamedNodeMap : Org.W3c.Dom.INamedNodeMap
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/NamedNodeMap.html#getLength()"/>
@@ -136,7 +136,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node GetNamedItemNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.Node>("getNamedItemNS", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("getNamedItemNS", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Node;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/NamedNodeMap.html#item(int)"/>
@@ -166,7 +166,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node RemoveNamedItemNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.Node>("removeNamedItemNS", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("removeNamedItemNS", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Node;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/NamedNodeMap.html#setNamedItem(org.w3c.dom.Node)"/>
@@ -188,13 +188,13 @@ namespace Org.W3c.Dom
         {
             return IExecuteWithSignature<Org.W3c.Dom.Node>("setNamedItemNS", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

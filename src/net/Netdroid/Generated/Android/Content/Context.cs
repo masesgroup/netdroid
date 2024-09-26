@@ -42,10 +42,10 @@ namespace Android.Content
         /// </summary>
         [global::System.Obsolete("Context class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Context(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region BindServiceFlags declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Content
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BindServiceFlags(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Content
     public partial class Context
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#BIND_ABOVE_CLIENT"/>
@@ -889,13 +889,13 @@ namespace Android.Content
         public static long BIND_EXTERNAL_SERVICE_LONG { get { if (!_BIND_EXTERNAL_SERVICE_LONGReady) { _BIND_EXTERNAL_SERVICE_LONGContent = SGetField<long>(LocalBridgeClazz, "BIND_EXTERNAL_SERVICE_LONG"); _BIND_EXTERNAL_SERVICE_LONGReady = true; } return _BIND_EXTERNAL_SERVICE_LONGContent; } }
         private static long _BIND_EXTERNAL_SERVICE_LONGContent = default;
         private static bool _BIND_EXTERNAL_SERVICE_LONGReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#startForegroundService(android.content.Intent)"/>
@@ -968,7 +968,7 @@ namespace Android.Content
         /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
         public Android.Content.Context CreatePackageContext(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Content.Context>("createPackageContext", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Context>("createPackageContext", "(Ljava/lang/String;I)Landroid/content/Context;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getApplicationContext()"/>
@@ -987,7 +987,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent RegisterReceiver(Android.Content.BroadcastReceiver arg0, Android.Content.IntentFilter arg1, int arg2)
         {
-            return IExecute<Android.Content.Intent>("registerReceiver", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Content.Intent>("registerReceiver", "(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter,java.lang.String,android.os.Handler,int)"/>
@@ -1000,7 +1000,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent RegisterReceiver(Android.Content.BroadcastReceiver arg0, Android.Content.IntentFilter arg1, Java.Lang.String arg2, Android.Os.Handler arg3, int arg4)
         {
-            return IExecute<Android.Content.Intent>("registerReceiver", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Content.Intent>("registerReceiver", "(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;I)Landroid/content/Intent;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter,java.lang.String,android.os.Handler)"/>
@@ -1012,7 +1012,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent RegisterReceiver(Android.Content.BroadcastReceiver arg0, Android.Content.IntentFilter arg1, Java.Lang.String arg2, Android.Os.Handler arg3)
         {
-            return IExecute<Android.Content.Intent>("registerReceiver", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Content.Intent>("registerReceiver", "(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)"/>
@@ -1022,7 +1022,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent RegisterReceiver(Android.Content.BroadcastReceiver arg0, Android.Content.IntentFilter arg1)
         {
-            return IExecute<Android.Content.Intent>("registerReceiver", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Intent>("registerReceiver", "(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getApplicationInfo()"/>
@@ -1072,7 +1072,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.SharedPreferences"/></returns>
         public Android.Content.SharedPreferences GetSharedPreferences(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Content.SharedPreferences>("getSharedPreferences", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.SharedPreferences>("getSharedPreferences", "(Ljava/lang/String;I)Landroid/content/SharedPreferences;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#openOrCreateDatabase(java.lang.String,int,android.database.sqlite.SQLiteDatabase.CursorFactory,android.database.DatabaseErrorHandler)"/>
@@ -1084,7 +1084,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase"/></returns>
         public Android.Database.Sqlite.SQLiteDatabase OpenOrCreateDatabase(Java.Lang.String arg0, int arg1, Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg2, Android.Database.DatabaseErrorHandler arg3)
         {
-            return IExecute<Android.Database.Sqlite.SQLiteDatabase>("openOrCreateDatabase", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>("openOrCreateDatabase", "(Ljava/lang/String;ILandroid/database/sqlite/SQLiteDatabase$CursorFactory;Landroid/database/DatabaseErrorHandler;)Landroid/database/sqlite/SQLiteDatabase;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#openOrCreateDatabase(java.lang.String,int,android.database.sqlite.SQLiteDatabase.CursorFactory)"/>
@@ -1095,7 +1095,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase"/></returns>
         public Android.Database.Sqlite.SQLiteDatabase OpenOrCreateDatabase(Java.Lang.String arg0, int arg1, Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg2)
         {
-            return IExecute<Android.Database.Sqlite.SQLiteDatabase>("openOrCreateDatabase", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>("openOrCreateDatabase", "(Ljava/lang/String;ILandroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getWallpaper()"/>
@@ -1132,7 +1132,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool BindService(Android.Content.Intent arg0, Android.Content.ServiceConnection arg1, int arg2)
         {
-            return IExecute<bool>("bindService", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("bindService", "(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#deleteDatabase(java.lang.String)"/>
@@ -1177,7 +1177,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool MoveDatabaseFrom(Android.Content.Context arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("moveDatabaseFrom", arg0, arg1);
+            return IExecuteWithSignature<bool>("moveDatabaseFrom", "(Landroid/content/Context;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#moveSharedPreferencesFrom(android.content.Context,java.lang.String)"/>
@@ -1187,7 +1187,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool MoveSharedPreferencesFrom(Android.Content.Context arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("moveSharedPreferencesFrom", arg0, arg1);
+            return IExecuteWithSignature<bool>("moveSharedPreferencesFrom", "(Landroid/content/Context;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#startInstrumentation(android.content.ComponentName,java.lang.String,android.os.Bundle)"/>
@@ -1198,7 +1198,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool StartInstrumentation(Android.Content.ComponentName arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<bool>("startInstrumentation", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("startInstrumentation", "(Landroid/content/ComponentName;Ljava/lang/String;Landroid/os/Bundle;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#stopService(android.content.Intent)"/>
@@ -1226,7 +1226,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int CheckCallingOrSelfUriPermission(Android.Net.Uri arg0, int arg1)
         {
-            return IExecute<int>("checkCallingOrSelfUriPermission", arg0, arg1);
+            return IExecuteWithSignature<int>("checkCallingOrSelfUriPermission", "(Landroid/net/Uri;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#checkCallingPermission(java.lang.String)"/>
@@ -1245,7 +1245,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int CheckCallingUriPermission(Android.Net.Uri arg0, int arg1)
         {
-            return IExecute<int>("checkCallingUriPermission", arg0, arg1);
+            return IExecuteWithSignature<int>("checkCallingUriPermission", "(Landroid/net/Uri;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#checkPermission(java.lang.String,int,int)"/>
@@ -1256,7 +1256,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int CheckPermission(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return IExecute<int>("checkPermission", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("checkPermission", "(Ljava/lang/String;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#checkSelfPermission(java.lang.String)"/>
@@ -1277,7 +1277,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int CheckUriPermission(Android.Net.Uri arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<int>("checkUriPermission", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("checkUriPermission", "(Landroid/net/Uri;III)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#checkUriPermission(android.net.Uri,java.lang.String,java.lang.String,int,int,int)"/>
@@ -1291,7 +1291,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int CheckUriPermission(Android.Net.Uri arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3, int arg4, int arg5)
         {
-            return IExecute<int>("checkUriPermission", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<int>("checkUriPermission", "(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;III)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getWallpaperDesiredMinimumHeight()"/>
@@ -1352,7 +1352,7 @@ namespace Android.Content
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File GetDir(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Io.File>("getDir", arg0, arg1);
+            return IExecuteWithSignature<Java.Io.File>("getDir", "(Ljava/lang/String;I)Ljava/io/File;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getExternalCacheDir()"/>
@@ -1457,7 +1457,7 @@ namespace Android.Content
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Java.Io.FileOutputStream OpenFileOutput(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Io.FileOutputStream>("openFileOutput", arg0, arg1);
+            return IExecuteWithSignature<Java.Io.FileOutputStream>("openFileOutput", "(Ljava/lang/String;I)Ljava/io/FileOutputStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getClassLoader()"/>
@@ -1541,7 +1541,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void EnforceCallingOrSelfPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("enforceCallingOrSelfPermission", arg0, arg1);
+            IExecuteWithSignature("enforceCallingOrSelfPermission", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#enforceCallingOrSelfUriPermission(android.net.Uri,int,java.lang.String)"/>
@@ -1551,7 +1551,7 @@ namespace Android.Content
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void EnforceCallingOrSelfUriPermission(Android.Net.Uri arg0, int arg1, Java.Lang.String arg2)
         {
-            IExecute("enforceCallingOrSelfUriPermission", arg0, arg1, arg2);
+            IExecuteWithSignature("enforceCallingOrSelfUriPermission", "(Landroid/net/Uri;ILjava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#enforceCallingPermission(java.lang.String,java.lang.String)"/>
@@ -1560,7 +1560,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void EnforceCallingPermission(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("enforceCallingPermission", arg0, arg1);
+            IExecuteWithSignature("enforceCallingPermission", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#enforceCallingUriPermission(android.net.Uri,int,java.lang.String)"/>
@@ -1570,7 +1570,7 @@ namespace Android.Content
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void EnforceCallingUriPermission(Android.Net.Uri arg0, int arg1, Java.Lang.String arg2)
         {
-            IExecute("enforceCallingUriPermission", arg0, arg1, arg2);
+            IExecuteWithSignature("enforceCallingUriPermission", "(Landroid/net/Uri;ILjava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#enforcePermission(java.lang.String,int,int,java.lang.String)"/>
@@ -1581,7 +1581,7 @@ namespace Android.Content
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void EnforcePermission(Java.Lang.String arg0, int arg1, int arg2, Java.Lang.String arg3)
         {
-            IExecute("enforcePermission", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("enforcePermission", "(Ljava/lang/String;IILjava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#enforceUriPermission(android.net.Uri,int,int,int,java.lang.String)"/>
@@ -1593,7 +1593,7 @@ namespace Android.Content
         /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         public void EnforceUriPermission(Android.Net.Uri arg0, int arg1, int arg2, int arg3, Java.Lang.String arg4)
         {
-            IExecute("enforceUriPermission", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("enforceUriPermission", "(Landroid/net/Uri;IIILjava/lang/String;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#enforceUriPermission(android.net.Uri,java.lang.String,java.lang.String,int,int,int,java.lang.String)"/>
@@ -1607,7 +1607,7 @@ namespace Android.Content
         /// <param name="arg6"><see cref="Java.Lang.String"/></param>
         public void EnforceUriPermission(Android.Net.Uri arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3, int arg4, int arg5, Java.Lang.String arg6)
         {
-            IExecute("enforceUriPermission", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("enforceUriPermission", "(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;IIILjava/lang/String;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#grantUriPermission(java.lang.String,android.net.Uri,int)"/>
@@ -1617,7 +1617,7 @@ namespace Android.Content
         /// <param name="arg2"><see cref="int"/></param>
         public void GrantUriPermission(Java.Lang.String arg0, Android.Net.Uri arg1, int arg2)
         {
-            IExecute("grantUriPermission", arg0, arg1, arg2);
+            IExecuteWithSignature("grantUriPermission", "(Ljava/lang/String;Landroid/net/Uri;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#removeStickyBroadcast(android.content.Intent)"/>
@@ -1636,7 +1636,7 @@ namespace Android.Content
         [global::System.Obsolete()]
         public void RemoveStickyBroadcastAsUser(Android.Content.Intent arg0, Android.Os.UserHandle arg1)
         {
-            IExecute("removeStickyBroadcastAsUser", arg0, arg1);
+            IExecuteWithSignature("removeStickyBroadcastAsUser", "(Landroid/content/Intent;Landroid/os/UserHandle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#revokeUriPermission(android.net.Uri,int)"/>
@@ -1645,7 +1645,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="int"/></param>
         public void RevokeUriPermission(Android.Net.Uri arg0, int arg1)
         {
-            IExecute("revokeUriPermission", arg0, arg1);
+            IExecuteWithSignature("revokeUriPermission", "(Landroid/net/Uri;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#revokeUriPermission(java.lang.String,android.net.Uri,int)"/>
@@ -1655,7 +1655,7 @@ namespace Android.Content
         /// <param name="arg2"><see cref="int"/></param>
         public void RevokeUriPermission(Java.Lang.String arg0, Android.Net.Uri arg1, int arg2)
         {
-            IExecute("revokeUriPermission", arg0, arg1, arg2);
+            IExecuteWithSignature("revokeUriPermission", "(Ljava/lang/String;Landroid/net/Uri;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendBroadcast(android.content.Intent,java.lang.String)"/>
@@ -1664,7 +1664,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SendBroadcast(Android.Content.Intent arg0, Java.Lang.String arg1)
         {
-            IExecute("sendBroadcast", arg0, arg1);
+            IExecuteWithSignature("sendBroadcast", "(Landroid/content/Intent;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendBroadcast(android.content.Intent)"/>
@@ -1682,7 +1682,7 @@ namespace Android.Content
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void SendBroadcastAsUser(Android.Content.Intent arg0, Android.Os.UserHandle arg1, Java.Lang.String arg2)
         {
-            IExecute("sendBroadcastAsUser", arg0, arg1, arg2);
+            IExecuteWithSignature("sendBroadcastAsUser", "(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendBroadcastAsUser(android.content.Intent,android.os.UserHandle)"/>
@@ -1691,7 +1691,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
         public void SendBroadcastAsUser(Android.Content.Intent arg0, Android.Os.UserHandle arg1)
         {
-            IExecute("sendBroadcastAsUser", arg0, arg1);
+            IExecuteWithSignature("sendBroadcastAsUser", "(Landroid/content/Intent;Landroid/os/UserHandle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendOrderedBroadcast(android.content.Intent,java.lang.String,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)"/>
@@ -1705,7 +1705,7 @@ namespace Android.Content
         /// <param name="arg6"><see cref="Android.Os.Bundle"/></param>
         public void SendOrderedBroadcast(Android.Content.Intent arg0, Java.Lang.String arg1, Android.Content.BroadcastReceiver arg2, Android.Os.Handler arg3, int arg4, Java.Lang.String arg5, Android.Os.Bundle arg6)
         {
-            IExecute("sendOrderedBroadcast", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("sendOrderedBroadcast", "(Landroid/content/Intent;Ljava/lang/String;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendOrderedBroadcast(android.content.Intent,java.lang.String)"/>
@@ -1714,7 +1714,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SendOrderedBroadcast(Android.Content.Intent arg0, Java.Lang.String arg1)
         {
-            IExecute("sendOrderedBroadcast", arg0, arg1);
+            IExecuteWithSignature("sendOrderedBroadcast", "(Landroid/content/Intent;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendOrderedBroadcastAsUser(android.content.Intent,android.os.UserHandle,java.lang.String,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)"/>
@@ -1729,7 +1729,7 @@ namespace Android.Content
         /// <param name="arg7"><see cref="Android.Os.Bundle"/></param>
         public void SendOrderedBroadcastAsUser(Android.Content.Intent arg0, Android.Os.UserHandle arg1, Java.Lang.String arg2, Android.Content.BroadcastReceiver arg3, Android.Os.Handler arg4, int arg5, Java.Lang.String arg6, Android.Os.Bundle arg7)
         {
-            IExecute("sendOrderedBroadcastAsUser", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("sendOrderedBroadcastAsUser", "(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendStickyBroadcast(android.content.Intent)"/>
@@ -1748,7 +1748,7 @@ namespace Android.Content
         [global::System.Obsolete()]
         public void SendStickyBroadcastAsUser(Android.Content.Intent arg0, Android.Os.UserHandle arg1)
         {
-            IExecute("sendStickyBroadcastAsUser", arg0, arg1);
+            IExecuteWithSignature("sendStickyBroadcastAsUser", "(Landroid/content/Intent;Landroid/os/UserHandle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendStickyOrderedBroadcast(android.content.Intent,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)"/>
@@ -1762,7 +1762,7 @@ namespace Android.Content
         [global::System.Obsolete()]
         public void SendStickyOrderedBroadcast(Android.Content.Intent arg0, Android.Content.BroadcastReceiver arg1, Android.Os.Handler arg2, int arg3, Java.Lang.String arg4, Android.Os.Bundle arg5)
         {
-            IExecute("sendStickyOrderedBroadcast", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("sendStickyOrderedBroadcast", "(Landroid/content/Intent;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendStickyOrderedBroadcastAsUser(android.content.Intent,android.os.UserHandle,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)"/>
@@ -1777,7 +1777,7 @@ namespace Android.Content
         [global::System.Obsolete()]
         public void SendStickyOrderedBroadcastAsUser(Android.Content.Intent arg0, Android.Os.UserHandle arg1, Android.Content.BroadcastReceiver arg2, Android.Os.Handler arg3, int arg4, Java.Lang.String arg5, Android.Os.Bundle arg6)
         {
-            IExecute("sendStickyOrderedBroadcastAsUser", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("sendStickyOrderedBroadcastAsUser", "(Landroid/content/Intent;Landroid/os/UserHandle;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#setTheme(int)"/>
@@ -1814,7 +1814,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void StartActivities(Android.Content.Intent[] arg0, Android.Os.Bundle arg1)
         {
-            IExecute("startActivities", arg0, arg1);
+            IExecuteWithSignature("startActivities", "([Landroid/content/Intent;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#startActivities(android.content.Intent[])"/>
@@ -1831,7 +1831,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void StartActivity(Android.Content.Intent arg0, Android.Os.Bundle arg1)
         {
-            IExecute("startActivity", arg0, arg1);
+            IExecuteWithSignature("startActivity", "(Landroid/content/Intent;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#startActivity(android.content.Intent)"/>
@@ -1853,7 +1853,7 @@ namespace Android.Content
         /// <exception cref="Android.Content.IntentSender.SendIntentException"/>
         public void StartIntentSender(Android.Content.IntentSender arg0, Android.Content.Intent arg1, int arg2, int arg3, int arg4, Android.Os.Bundle arg5)
         {
-            IExecute("startIntentSender", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("startIntentSender", "(Landroid/content/IntentSender;Landroid/content/Intent;IIILandroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#startIntentSender(android.content.IntentSender,android.content.Intent,int,int,int)"/>
@@ -1866,7 +1866,7 @@ namespace Android.Content
         /// <exception cref="Android.Content.IntentSender.SendIntentException"/>
         public void StartIntentSender(Android.Content.IntentSender arg0, Android.Content.Intent arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("startIntentSender", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("startIntentSender", "(Landroid/content/IntentSender;Landroid/content/Intent;III)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#unbindService(android.content.ServiceConnection)"/>
@@ -1928,7 +1928,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Context"/></returns>
         public Android.Content.Context CreateWindowContext(Android.View.Display arg0, int arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.Content.Context>("createWindowContext", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Content.Context>("createWindowContext", "(Landroid/view/Display;ILandroid/os/Bundle;)Landroid/content/Context;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#createWindowContext(int,android.os.Bundle)"/>
@@ -1938,7 +1938,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Context"/></returns>
         public Android.Content.Context CreateWindowContext(int arg0, Android.Os.Bundle arg1)
         {
-            return IExecute<Android.Content.Context>("createWindowContext", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Context>("createWindowContext", "(ILandroid/os/Bundle;)Landroid/content/Context;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getParams()"/>
@@ -1967,7 +1967,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool BindIsolatedService(Android.Content.Intent arg0, Android.Content.Context.BindServiceFlags arg1, Java.Lang.String arg2, Java.Util.Concurrent.Executor arg3, Android.Content.ServiceConnection arg4)
         {
-            return IExecute<bool>("bindIsolatedService", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("bindIsolatedService", "(Landroid/content/Intent;Landroid/content/Context$BindServiceFlags;Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/content/ServiceConnection;)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#bindIsolatedService(android.content.Intent,int,java.lang.String,java.util.concurrent.Executor,android.content.ServiceConnection)"/>
@@ -1980,7 +1980,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool BindIsolatedService(Android.Content.Intent arg0, int arg1, Java.Lang.String arg2, Java.Util.Concurrent.Executor arg3, Android.Content.ServiceConnection arg4)
         {
-            return IExecute<bool>("bindIsolatedService", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("bindIsolatedService", "(Landroid/content/Intent;ILjava/lang/String;Ljava/util/concurrent/Executor;Landroid/content/ServiceConnection;)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#bindService(android.content.Intent,android.content.Context.BindServiceFlags,java.util.concurrent.Executor,android.content.ServiceConnection)"/>
@@ -1992,7 +1992,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool BindService(Android.Content.Intent arg0, Android.Content.Context.BindServiceFlags arg1, Java.Util.Concurrent.Executor arg2, Android.Content.ServiceConnection arg3)
         {
-            return IExecute<bool>("bindService", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("bindService", "(Landroid/content/Intent;Landroid/content/Context$BindServiceFlags;Ljava/util/concurrent/Executor;Landroid/content/ServiceConnection;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#bindService(android.content.Intent,android.content.ServiceConnection,android.content.Context.BindServiceFlags)"/>
@@ -2003,7 +2003,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool BindService(Android.Content.Intent arg0, Android.Content.ServiceConnection arg1, Android.Content.Context.BindServiceFlags arg2)
         {
-            return IExecute<bool>("bindService", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("bindService", "(Landroid/content/Intent;Landroid/content/ServiceConnection;Landroid/content/Context$BindServiceFlags;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#bindService(android.content.Intent,int,java.util.concurrent.Executor,android.content.ServiceConnection)"/>
@@ -2015,7 +2015,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool BindService(Android.Content.Intent arg0, int arg1, Java.Util.Concurrent.Executor arg2, Android.Content.ServiceConnection arg3)
         {
-            return IExecute<bool>("bindService", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("bindService", "(Landroid/content/Intent;ILjava/util/concurrent/Executor;Landroid/content/ServiceConnection;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#bindServiceAsUser(android.content.Intent,android.content.ServiceConnection,android.content.Context.BindServiceFlags,android.os.UserHandle)"/>
@@ -2027,7 +2027,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool BindServiceAsUser(Android.Content.Intent arg0, Android.Content.ServiceConnection arg1, Android.Content.Context.BindServiceFlags arg2, Android.Os.UserHandle arg3)
         {
-            return IExecute<bool>("bindServiceAsUser", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("bindServiceAsUser", "(Landroid/content/Intent;Landroid/content/ServiceConnection;Landroid/content/Context$BindServiceFlags;Landroid/os/UserHandle;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#bindServiceAsUser(android.content.Intent,android.content.ServiceConnection,int,android.os.UserHandle)"/>
@@ -2039,7 +2039,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool BindServiceAsUser(Android.Content.Intent arg0, Android.Content.ServiceConnection arg1, int arg2, Android.Os.UserHandle arg3)
         {
-            return IExecute<bool>("bindServiceAsUser", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("bindServiceAsUser", "(Landroid/content/Intent;Landroid/content/ServiceConnection;ILandroid/os/UserHandle;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#isRestricted()"/>
@@ -2086,7 +2086,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Res.TypedArray"/></returns>
         public Android.Content.Res.TypedArray ObtainStyledAttributes(Android.Util.AttributeSet arg0, int[] arg1, int arg2, int arg3)
         {
-            return IExecute<Android.Content.Res.TypedArray>("obtainStyledAttributes", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Content.Res.TypedArray>("obtainStyledAttributes", "(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#obtainStyledAttributes(android.util.AttributeSet,int[])"/>
@@ -2096,7 +2096,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.Res.TypedArray"/></returns>
         public Android.Content.Res.TypedArray ObtainStyledAttributes(Android.Util.AttributeSet arg0, int[] arg1)
         {
-            return IExecute<Android.Content.Res.TypedArray>("obtainStyledAttributes", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Res.TypedArray>("obtainStyledAttributes", "(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#obtainStyledAttributes(int,int[])"/>
@@ -2107,7 +2107,7 @@ namespace Android.Content
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
         public Android.Content.Res.TypedArray ObtainStyledAttributes(int arg0, int[] arg1)
         {
-            return IExecute<Android.Content.Res.TypedArray>("obtainStyledAttributes", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Res.TypedArray>("obtainStyledAttributes", "(I[I)Landroid/content/res/TypedArray;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#obtainStyledAttributes(int[])"/>
@@ -2153,7 +2153,7 @@ namespace Android.Content
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetString(int arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Lang.String>("getString", arg0); else return IExecute<Java.Lang.String>("getString", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.String>("getString", "(I[Ljava/lang/Object;)Ljava/lang/String;", arg0); else return IExecuteWithSignature<Java.Lang.String>("getString", "(I[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getString(int)"/>
@@ -2174,7 +2174,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int CheckContentUriPermissionFull(Android.Net.Uri arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<int>("checkContentUriPermissionFull", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("checkContentUriPermissionFull", "(Landroid/net/Uri;III)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getDeviceId()"/>
@@ -2192,7 +2192,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int[] CheckCallingOrSelfUriPermissions(Java.Util.List<Android.Net.Uri> arg0, int arg1)
         {
-            return IExecuteArray<int>("checkCallingOrSelfUriPermissions", arg0, arg1);
+            return IExecuteWithSignatureArray<int>("checkCallingOrSelfUriPermissions", "(Ljava/util/List;I)[I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#checkCallingUriPermissions(java.util.List,int)"/>
@@ -2202,7 +2202,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int[] CheckCallingUriPermissions(Java.Util.List<Android.Net.Uri> arg0, int arg1)
         {
-            return IExecuteArray<int>("checkCallingUriPermissions", arg0, arg1);
+            return IExecuteWithSignatureArray<int>("checkCallingUriPermissions", "(Ljava/util/List;I)[I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#checkUriPermissions(java.util.List,int,int,int)"/>
@@ -2214,7 +2214,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int[] CheckUriPermissions(Java.Util.List<Android.Net.Uri> arg0, int arg1, int arg2, int arg3)
         {
-            return IExecuteArray<int>("checkUriPermissions", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignatureArray<int>("checkUriPermissions", "(Ljava/util/List;III)[I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getAttributionTag()"/>
@@ -2255,7 +2255,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Java.Util.Function.IntConsumer"/></param>
         public void RegisterDeviceIdChangeListener(Java.Util.Concurrent.Executor arg0, Java.Util.Function.IntConsumer arg1)
         {
-            IExecute("registerDeviceIdChangeListener", arg0, arg1);
+            IExecuteWithSignature("registerDeviceIdChangeListener", "(Ljava/util/concurrent/Executor;Ljava/util/function/IntConsumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#revokeSelfPermissionOnKill(java.lang.String)"/>
@@ -2281,7 +2281,7 @@ namespace Android.Content
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         public void SendBroadcast(Android.Content.Intent arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            IExecute("sendBroadcast", arg0, arg1, arg2);
+            IExecuteWithSignature("sendBroadcast", "(Landroid/content/Intent;Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendBroadcastWithMultiplePermissions(android.content.Intent,java.lang.String[])"/>
@@ -2290,7 +2290,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SendBroadcastWithMultiplePermissions(Android.Content.Intent arg0, Java.Lang.String[] arg1)
         {
-            IExecute("sendBroadcastWithMultiplePermissions", arg0, arg1);
+            IExecuteWithSignature("sendBroadcastWithMultiplePermissions", "(Landroid/content/Intent;[Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendOrderedBroadcast(android.content.Intent,java.lang.String,android.os.Bundle,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)"/>
@@ -2305,7 +2305,7 @@ namespace Android.Content
         /// <param name="arg7"><see cref="Android.Os.Bundle"/></param>
         public void SendOrderedBroadcast(Android.Content.Intent arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, Android.Content.BroadcastReceiver arg3, Android.Os.Handler arg4, int arg5, Java.Lang.String arg6, Android.Os.Bundle arg7)
         {
-            IExecute("sendOrderedBroadcast", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("sendOrderedBroadcast", "(Landroid/content/Intent;Ljava/lang/String;Landroid/os/Bundle;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendOrderedBroadcast(android.content.Intent,java.lang.String,android.os.Bundle)"/>
@@ -2315,7 +2315,7 @@ namespace Android.Content
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         public void SendOrderedBroadcast(Android.Content.Intent arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            IExecute("sendOrderedBroadcast", arg0, arg1, arg2);
+            IExecuteWithSignature("sendOrderedBroadcast", "(Landroid/content/Intent;Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendOrderedBroadcast(android.content.Intent,java.lang.String,java.lang.String,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)"/>
@@ -2330,7 +2330,7 @@ namespace Android.Content
         /// <param name="arg7"><see cref="Android.Os.Bundle"/></param>
         public void SendOrderedBroadcast(Android.Content.Intent arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Content.BroadcastReceiver arg3, Android.Os.Handler arg4, int arg5, Java.Lang.String arg6, Android.Os.Bundle arg7)
         {
-            IExecute("sendOrderedBroadcast", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("sendOrderedBroadcast", "(Landroid/content/Intent;Ljava/lang/String;Ljava/lang/String;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendStickyBroadcast(android.content.Intent,android.os.Bundle)"/>
@@ -2340,7 +2340,7 @@ namespace Android.Content
         [global::System.Obsolete()]
         public void SendStickyBroadcast(Android.Content.Intent arg0, Android.Os.Bundle arg1)
         {
-            IExecute("sendStickyBroadcast", arg0, arg1);
+            IExecuteWithSignature("sendStickyBroadcast", "(Landroid/content/Intent;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#unregisterComponentCallbacks(android.content.ComponentCallbacks)"/>
@@ -2366,27 +2366,27 @@ namespace Android.Content
         /// <param name="arg2"><see cref="int"/></param>
         public void UpdateServiceGroup(Android.Content.ServiceConnection arg0, int arg1, int arg2)
         {
-            IExecute("updateServiceGroup", arg0, arg1, arg2);
+            IExecuteWithSignature("updateServiceGroup", "(Landroid/content/ServiceConnection;II)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region BindServiceFlags implementation
         public partial class BindServiceFlags
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/Context.BindServiceFlags.html#of(long)"/>
@@ -2397,24 +2397,24 @@ namespace Android.Content
             {
                 return SExecuteWithSignature<Android.Content.Context.BindServiceFlags>(LocalBridgeClazz, "of", "(J)Landroid/content/Context$BindServiceFlags;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Org.Xmlpull.V1
         /// </summary>
         [global::System.Obsolete("XmlSerializer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XmlSerializer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Org.Xmlpull.V1
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Org.Xmlpull.V1
     public partial interface IXmlSerializer
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Org.Xmlpull.V1
     public partial class XmlSerializer : Org.Xmlpull.V1.IXmlSerializer
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#getFeature(java.lang.String)"/>
@@ -161,7 +161,7 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public Java.Lang.String GetPrefix(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<Java.Lang.String>("getPrefix", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getPrefix", "(Ljava/lang/String;Z)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#attribute(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -175,7 +175,7 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public Org.Xmlpull.V1.XmlSerializer Attribute(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Org.Xmlpull.V1.XmlSerializer>("attribute", arg0, arg1, arg2);
+            return IExecuteWithSignature<Org.Xmlpull.V1.XmlSerializer>("attribute", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#endTag(java.lang.String,java.lang.String)"/>
@@ -188,7 +188,7 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public Org.Xmlpull.V1.XmlSerializer EndTag(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.Xmlpull.V1.XmlSerializer>("endTag", arg0, arg1);
+            return IExecuteWithSignature<Org.Xmlpull.V1.XmlSerializer>("endTag", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#startTag(java.lang.String,java.lang.String)"/>
@@ -201,7 +201,7 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public Org.Xmlpull.V1.XmlSerializer StartTag(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.Xmlpull.V1.XmlSerializer>("startTag", arg0, arg1);
+            return IExecuteWithSignature<Org.Xmlpull.V1.XmlSerializer>("startTag", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#text(char[],int,int)"/>
@@ -215,7 +215,7 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public Org.Xmlpull.V1.XmlSerializer Text(char[] arg0, int arg1, int arg2)
         {
-            return IExecute<Org.Xmlpull.V1.XmlSerializer>("text", arg0, arg1, arg2);
+            return IExecuteWithSignature<Org.Xmlpull.V1.XmlSerializer>("text", "([CII)Lorg/xmlpull/v1/XmlSerializer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#text(java.lang.String)"/>
@@ -322,7 +322,7 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setFeature", arg0, arg1);
+            IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#setOutput(java.io.OutputStream,java.lang.String)"/>
@@ -334,7 +334,7 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void SetOutput(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         {
-            IExecute("setOutput", arg0, arg1);
+            IExecuteWithSignature("setOutput", "(Ljava/io/OutputStream;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#setOutput(java.io.Writer)"/>
@@ -357,7 +357,7 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void SetPrefix(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setPrefix", arg0, arg1);
+            IExecuteWithSignature("setPrefix", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#setProperty(java.lang.String,java.lang.Object)"/>
@@ -368,7 +368,7 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void SetProperty(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setProperty", arg0, arg1);
+            IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#startDocument(java.lang.String,java.lang.Boolean)"/>
@@ -380,15 +380,15 @@ namespace Org.Xmlpull.V1
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void StartDocument(Java.Lang.String arg0, Java.Lang.Boolean arg1)
         {
-            IExecute("startDocument", arg0, arg1);
+            IExecuteWithSignature("startDocument", "(Ljava/lang/String;Ljava/lang/Boolean;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

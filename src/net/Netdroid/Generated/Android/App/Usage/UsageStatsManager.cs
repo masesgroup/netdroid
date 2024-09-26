@@ -40,10 +40,10 @@ namespace Android.App.Usage
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public UsageStatsManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App.Usage
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.App.Usage
     public partial class UsageStatsManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#INTERVAL_BEST"/>
@@ -154,13 +154,13 @@ namespace Android.App.Usage
         public static Java.Lang.String EXTRA_EVENT_CATEGORY { get { if (!_EXTRA_EVENT_CATEGORYReady) { _EXTRA_EVENT_CATEGORYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_EVENT_CATEGORY"); _EXTRA_EVENT_CATEGORYReady = true; } return _EXTRA_EVENT_CATEGORYContent; } }
         private static Java.Lang.String _EXTRA_EVENT_CATEGORYContent = default;
         private static bool _EXTRA_EVENT_CATEGORYReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEvents(android.app.usage.UsageEventsQuery)"/>
@@ -179,7 +179,7 @@ namespace Android.App.Usage
         /// <returns><see cref="Android.App.Usage.UsageEvents"/></returns>
         public Android.App.Usage.UsageEvents QueryEvents(long arg0, long arg1)
         {
-            return IExecute<Android.App.Usage.UsageEvents>("queryEvents", arg0, arg1);
+            return IExecuteWithSignature<Android.App.Usage.UsageEvents>("queryEvents", "(JJ)Landroid/app/usage/UsageEvents;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEventsForSelf(long,long)"/>
@@ -189,7 +189,7 @@ namespace Android.App.Usage
         /// <returns><see cref="Android.App.Usage.UsageEvents"/></returns>
         public Android.App.Usage.UsageEvents QueryEventsForSelf(long arg0, long arg1)
         {
-            return IExecute<Android.App.Usage.UsageEvents>("queryEventsForSelf", arg0, arg1);
+            return IExecuteWithSignature<Android.App.Usage.UsageEvents>("queryEventsForSelf", "(JJ)Landroid/app/usage/UsageEvents;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#isAppInactive(java.lang.String)"/>
@@ -217,7 +217,7 @@ namespace Android.App.Usage
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.App.Usage.ConfigurationStats> QueryConfigurations(int arg0, long arg1, long arg2)
         {
-            return IExecute<Java.Util.List<Android.App.Usage.ConfigurationStats>>("queryConfigurations", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.List<Android.App.Usage.ConfigurationStats>>("queryConfigurations", "(IJJ)Ljava/util/List;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEventStats(int,long,long)"/>
@@ -228,7 +228,7 @@ namespace Android.App.Usage
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.App.Usage.EventStats> QueryEventStats(int arg0, long arg1, long arg2)
         {
-            return IExecute<Java.Util.List<Android.App.Usage.EventStats>>("queryEventStats", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.List<Android.App.Usage.EventStats>>("queryEventStats", "(IJJ)Ljava/util/List;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryUsageStats(int,long,long)"/>
@@ -239,7 +239,7 @@ namespace Android.App.Usage
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.App.Usage.UsageStats> QueryUsageStats(int arg0, long arg1, long arg2)
         {
-            return IExecute<Java.Util.List<Android.App.Usage.UsageStats>>("queryUsageStats", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.List<Android.App.Usage.UsageStats>>("queryUsageStats", "(IJJ)Ljava/util/List;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryAndAggregateUsageStats(long,long)"/>
@@ -249,15 +249,15 @@ namespace Android.App.Usage
         /// <returns><see cref="Java.Util.Map"/></returns>
         public Java.Util.Map<Java.Lang.String, Android.App.Usage.UsageStats> QueryAndAggregateUsageStats(long arg0, long arg1)
         {
-            return IExecute<Java.Util.Map<Java.Lang.String, Android.App.Usage.UsageStats>>("queryAndAggregateUsageStats", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.App.Usage.UsageStats>>("queryAndAggregateUsageStats", "(JJ)Ljava/util/Map;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

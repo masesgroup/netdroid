@@ -40,10 +40,10 @@ namespace Android.Telecom
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CallControl(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Telecom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Telecom
     public partial class CallControl
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallControl.html#getCallId()"/>
@@ -106,7 +106,7 @@ namespace Android.Telecom
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void Answer(int arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Telecom.CallException> arg2)
         {
-            IExecute("answer", arg0, arg1, arg2);
+            IExecuteWithSignature("answer", "(ILjava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallControl.html#disconnect(android.telecom.DisconnectCause,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -116,7 +116,7 @@ namespace Android.Telecom
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void Disconnect(Android.Telecom.DisconnectCause arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Telecom.CallException> arg2)
         {
-            IExecute("disconnect", arg0, arg1, arg2);
+            IExecuteWithSignature("disconnect", "(Landroid/telecom/DisconnectCause;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallControl.html#requestCallEndpointChange(android.telecom.CallEndpoint,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -126,7 +126,7 @@ namespace Android.Telecom
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void RequestCallEndpointChange(Android.Telecom.CallEndpoint arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Telecom.CallException> arg2)
         {
-            IExecute("requestCallEndpointChange", arg0, arg1, arg2);
+            IExecuteWithSignature("requestCallEndpointChange", "(Landroid/telecom/CallEndpoint;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallControl.html#requestMuteState(boolean,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -136,7 +136,7 @@ namespace Android.Telecom
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void RequestMuteState(bool arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Telecom.CallException> arg2)
         {
-            IExecute("requestMuteState", arg0, arg1, arg2);
+            IExecuteWithSignature("requestMuteState", "(ZLjava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallControl.html#requestVideoState(int,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -146,7 +146,7 @@ namespace Android.Telecom
         /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void RequestVideoState(int arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Telecom.CallException> arg2)
         {
-            IExecute("requestVideoState", arg0, arg1, arg2);
+            IExecuteWithSignature("requestVideoState", "(ILjava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallControl.html#sendEvent(java.lang.String,android.os.Bundle)"/>
@@ -155,7 +155,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void SendEvent(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            IExecute("sendEvent", arg0, arg1);
+            IExecuteWithSignature("sendEvent", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallControl.html#setActive(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -164,7 +164,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void SetActive(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Telecom.CallException> arg1)
         {
-            IExecute("setActive", arg0, arg1);
+            IExecuteWithSignature("setActive", "(Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallControl.html#setInactive(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -173,7 +173,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void SetInactive(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Telecom.CallException> arg1)
         {
-            IExecute("setInactive", arg0, arg1);
+            IExecuteWithSignature("setInactive", "(Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallControl.html#startCallStreaming(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -182,15 +182,15 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void StartCallStreaming(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Telecom.CallException> arg1)
         {
-            IExecute("startCallStreaming", arg0, arg1);
+            IExecuteWithSignature("startCallStreaming", "(Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

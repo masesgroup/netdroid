@@ -40,10 +40,10 @@ namespace Android.Hardware.Camera2.Params
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RggbChannelVector(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Camera2.Params
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -85,13 +85,13 @@ namespace Android.Hardware.Camera2.Params
             : base(arg0, arg1, arg2, arg3)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RggbChannelVector.html#BLUE"/>
@@ -123,13 +123,13 @@ namespace Android.Hardware.Camera2.Params
         public static int RED { get { if (!_REDReady) { _REDContent = SGetField<int>(LocalBridgeClazz, "RED"); _REDReady = true; } return _REDContent; } }
         private static int _REDContent = default;
         private static bool _REDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RggbChannelVector.html#getBlue()"/>
@@ -179,15 +179,15 @@ namespace Android.Hardware.Camera2.Params
         /// <param name="arg1"><see cref="int"/></param>
         public void CopyTo(float[] arg0, int arg1)
         {
-            IExecute("copyTo", arg0, arg1);
+            IExecuteWithSignature("copyTo", "([FI)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

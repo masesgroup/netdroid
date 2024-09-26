@@ -40,10 +40,10 @@ namespace Android.Opengl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public EGL15(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Opengl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Opengl
     public partial class EGL15
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGL15.html#EGL_NO_CONTEXT"/>
@@ -364,9 +364,9 @@ namespace Android.Opengl
         public static long EGL_FOREVER { get { if (!_EGL_FOREVERReady) { _EGL_FOREVERContent = SGetField<long>(LocalBridgeClazz, "EGL_FOREVER"); _EGL_FOREVERReady = true; } return _EGL_FOREVERContent; } }
         private static long _EGL_FOREVERContent = default;
         private static bool _EGL_FOREVERReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGL15.html#eglGetPlatformDisplay(int,long,long[],int)"/>
@@ -378,7 +378,7 @@ namespace Android.Opengl
         /// <returns><see cref="Android.Opengl.EGLDisplay"/></returns>
         public static Android.Opengl.EGLDisplay EglGetPlatformDisplay(int arg0, long arg1, long[] arg2, int arg3)
         {
-            return SExecute<Android.Opengl.EGLDisplay>(LocalBridgeClazz, "eglGetPlatformDisplay", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Opengl.EGLDisplay>(LocalBridgeClazz, "eglGetPlatformDisplay", "(IJ[JI)Landroid/opengl/EGLDisplay;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGL15.html#eglCreateImage(android.opengl.EGLDisplay,android.opengl.EGLContext,int,long,long[],int)"/>
@@ -392,7 +392,7 @@ namespace Android.Opengl
         /// <returns><see cref="Android.Opengl.EGLImage"/></returns>
         public static Android.Opengl.EGLImage EglCreateImage(Android.Opengl.EGLDisplay arg0, Android.Opengl.EGLContext arg1, int arg2, long arg3, long[] arg4, int arg5)
         {
-            return SExecute<Android.Opengl.EGLImage>(LocalBridgeClazz, "eglCreateImage", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Android.Opengl.EGLImage>(LocalBridgeClazz, "eglCreateImage", "(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLContext;IJ[JI)Landroid/opengl/EGLImage;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGL15.html#eglCreatePlatformPixmapSurface(android.opengl.EGLDisplay,android.opengl.EGLConfig,java.nio.Buffer,long[],int)"/>
@@ -405,7 +405,7 @@ namespace Android.Opengl
         /// <returns><see cref="Android.Opengl.EGLSurface"/></returns>
         public static Android.Opengl.EGLSurface EglCreatePlatformPixmapSurface(Android.Opengl.EGLDisplay arg0, Android.Opengl.EGLConfig arg1, Java.Nio.Buffer arg2, long[] arg3, int arg4)
         {
-            return SExecute<Android.Opengl.EGLSurface>(LocalBridgeClazz, "eglCreatePlatformPixmapSurface", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.Opengl.EGLSurface>(LocalBridgeClazz, "eglCreatePlatformPixmapSurface", "(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLConfig;Ljava/nio/Buffer;[JI)Landroid/opengl/EGLSurface;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGL15.html#eglCreatePlatformWindowSurface(android.opengl.EGLDisplay,android.opengl.EGLConfig,java.nio.Buffer,long[],int)"/>
@@ -418,7 +418,7 @@ namespace Android.Opengl
         /// <returns><see cref="Android.Opengl.EGLSurface"/></returns>
         public static Android.Opengl.EGLSurface EglCreatePlatformWindowSurface(Android.Opengl.EGLDisplay arg0, Android.Opengl.EGLConfig arg1, Java.Nio.Buffer arg2, long[] arg3, int arg4)
         {
-            return SExecute<Android.Opengl.EGLSurface>(LocalBridgeClazz, "eglCreatePlatformWindowSurface", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.Opengl.EGLSurface>(LocalBridgeClazz, "eglCreatePlatformWindowSurface", "(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLConfig;Ljava/nio/Buffer;[JI)Landroid/opengl/EGLSurface;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGL15.html#eglCreateSync(android.opengl.EGLDisplay,int,long[],int)"/>
@@ -430,7 +430,7 @@ namespace Android.Opengl
         /// <returns><see cref="Android.Opengl.EGLSync"/></returns>
         public static Android.Opengl.EGLSync EglCreateSync(Android.Opengl.EGLDisplay arg0, int arg1, long[] arg2, int arg3)
         {
-            return SExecute<Android.Opengl.EGLSync>(LocalBridgeClazz, "eglCreateSync", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Opengl.EGLSync>(LocalBridgeClazz, "eglCreateSync", "(Landroid/opengl/EGLDisplay;I[JI)Landroid/opengl/EGLSync;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGL15.html#eglDestroyImage(android.opengl.EGLDisplay,android.opengl.EGLImage)"/>
@@ -440,7 +440,7 @@ namespace Android.Opengl
         /// <returns><see cref="bool"/></returns>
         public static bool EglDestroyImage(Android.Opengl.EGLDisplay arg0, Android.Opengl.EGLImage arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "eglDestroyImage", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "eglDestroyImage", "(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLImage;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGL15.html#eglDestroySync(android.opengl.EGLDisplay,android.opengl.EGLSync)"/>
@@ -450,7 +450,7 @@ namespace Android.Opengl
         /// <returns><see cref="bool"/></returns>
         public static bool EglDestroySync(Android.Opengl.EGLDisplay arg0, Android.Opengl.EGLSync arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "eglDestroySync", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "eglDestroySync", "(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLSync;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGL15.html#eglGetSyncAttrib(android.opengl.EGLDisplay,android.opengl.EGLSync,int,long[],int)"/>
@@ -463,7 +463,7 @@ namespace Android.Opengl
         /// <returns><see cref="bool"/></returns>
         public static bool EglGetSyncAttrib(Android.Opengl.EGLDisplay arg0, Android.Opengl.EGLSync arg1, int arg2, long[] arg3, int arg4)
         {
-            return SExecute<bool>(LocalBridgeClazz, "eglGetSyncAttrib", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "eglGetSyncAttrib", "(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLSync;I[JI)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGL15.html#eglWaitSync(android.opengl.EGLDisplay,android.opengl.EGLSync,int)"/>
@@ -474,7 +474,7 @@ namespace Android.Opengl
         /// <returns><see cref="bool"/></returns>
         public static bool EglWaitSync(Android.Opengl.EGLDisplay arg0, Android.Opengl.EGLSync arg1, int arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "eglWaitSync", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "eglWaitSync", "(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLSync;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/EGL15.html#eglClientWaitSync(android.opengl.EGLDisplay,android.opengl.EGLSync,int,long)"/>
@@ -486,19 +486,19 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int EglClientWaitSync(Android.Opengl.EGLDisplay arg0, Android.Opengl.EGLSync arg1, int arg2, long arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "eglClientWaitSync", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "eglClientWaitSync", "(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLSync;IJ)I", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

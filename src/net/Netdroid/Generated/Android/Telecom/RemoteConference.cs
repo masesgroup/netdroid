@@ -40,10 +40,10 @@ namespace Android.Telecom
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RemoteConference(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Telecom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Telecom
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Telecom
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,21 +121,21 @@ namespace Android.Telecom
     public partial class RemoteConference
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getExtras()"/>
@@ -229,7 +229,7 @@ namespace Android.Telecom
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void RegisterCallback(Android.Telecom.RemoteConference.Callback arg0, Android.Os.Handler arg1)
         {
-            IExecute("registerCallback", arg0, arg1);
+            IExecuteWithSignature("registerCallback", "(Landroid/telecom/RemoteConference$Callback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#registerCallback(android.telecom.RemoteConference.Callback)"/>
@@ -284,29 +284,29 @@ namespace Android.Telecom
         {
             IExecuteWithSignature("unregisterCallback", "(Landroid/telecom/RemoteConference$Callback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.Callback.html#onConferenceableConnectionsChanged(android.telecom.RemoteConference,java.util.List)"/>
@@ -315,7 +315,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="Java.Util.List"/></param>
             public void OnConferenceableConnectionsChanged(Android.Telecom.RemoteConference arg0, Java.Util.List<Android.Telecom.RemoteConnection> arg1)
             {
-                IExecute("onConferenceableConnectionsChanged", arg0, arg1);
+                IExecuteWithSignature("onConferenceableConnectionsChanged", "(Landroid/telecom/RemoteConference;Ljava/util/List;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.Callback.html#onConnectionAdded(android.telecom.RemoteConference,android.telecom.RemoteConnection)"/>
@@ -324,7 +324,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="Android.Telecom.RemoteConnection"/></param>
             public void OnConnectionAdded(Android.Telecom.RemoteConference arg0, Android.Telecom.RemoteConnection arg1)
             {
-                IExecute("onConnectionAdded", arg0, arg1);
+                IExecuteWithSignature("onConnectionAdded", "(Landroid/telecom/RemoteConference;Landroid/telecom/RemoteConnection;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.Callback.html#onConnectionCapabilitiesChanged(android.telecom.RemoteConference,int)"/>
@@ -333,7 +333,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="int"/></param>
             public void OnConnectionCapabilitiesChanged(Android.Telecom.RemoteConference arg0, int arg1)
             {
-                IExecute("onConnectionCapabilitiesChanged", arg0, arg1);
+                IExecuteWithSignature("onConnectionCapabilitiesChanged", "(Landroid/telecom/RemoteConference;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.Callback.html#onConnectionPropertiesChanged(android.telecom.RemoteConference,int)"/>
@@ -342,7 +342,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="int"/></param>
             public void OnConnectionPropertiesChanged(Android.Telecom.RemoteConference arg0, int arg1)
             {
-                IExecute("onConnectionPropertiesChanged", arg0, arg1);
+                IExecuteWithSignature("onConnectionPropertiesChanged", "(Landroid/telecom/RemoteConference;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.Callback.html#onConnectionRemoved(android.telecom.RemoteConference,android.telecom.RemoteConnection)"/>
@@ -351,7 +351,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="Android.Telecom.RemoteConnection"/></param>
             public void OnConnectionRemoved(Android.Telecom.RemoteConference arg0, Android.Telecom.RemoteConnection arg1)
             {
-                IExecute("onConnectionRemoved", arg0, arg1);
+                IExecuteWithSignature("onConnectionRemoved", "(Landroid/telecom/RemoteConference;Landroid/telecom/RemoteConnection;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.Callback.html#onDestroyed(android.telecom.RemoteConference)"/>
@@ -368,7 +368,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="Android.Telecom.DisconnectCause"/></param>
             public void OnDisconnected(Android.Telecom.RemoteConference arg0, Android.Telecom.DisconnectCause arg1)
             {
-                IExecute("onDisconnected", arg0, arg1);
+                IExecuteWithSignature("onDisconnected", "(Landroid/telecom/RemoteConference;Landroid/telecom/DisconnectCause;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.Callback.html#onExtrasChanged(android.telecom.RemoteConference,android.os.Bundle)"/>
@@ -377,7 +377,7 @@ namespace Android.Telecom
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnExtrasChanged(Android.Telecom.RemoteConference arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onExtrasChanged", arg0, arg1);
+                IExecuteWithSignature("onExtrasChanged", "(Landroid/telecom/RemoteConference;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.Callback.html#onStateChanged(android.telecom.RemoteConference,int,int)"/>
@@ -387,22 +387,22 @@ namespace Android.Telecom
             /// <param name="arg2"><see cref="int"/></param>
             public void OnStateChanged(Android.Telecom.RemoteConference arg0, int arg1, int arg2)
             {
-                IExecute("onStateChanged", arg0, arg1, arg2);
+                IExecuteWithSignature("onStateChanged", "(Landroid/telecom/RemoteConference;II)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

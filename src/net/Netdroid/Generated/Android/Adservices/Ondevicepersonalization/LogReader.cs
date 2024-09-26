@@ -40,10 +40,10 @@ namespace Android.Adservices.Ondevicepersonalization
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LogReader(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Adservices.Ondevicepersonalization
     public partial class LogReader
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/LogReader.html#getJoinedEvents(java.time.Instant,java.time.Instant)"/>
@@ -98,7 +98,7 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Adservices.Ondevicepersonalization.EventLogRecord> GetJoinedEvents(Java.Time.Instant arg0, Java.Time.Instant arg1)
         {
-            return IExecute<Java.Util.List<Android.Adservices.Ondevicepersonalization.EventLogRecord>>("getJoinedEvents", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Ondevicepersonalization.EventLogRecord>>("getJoinedEvents", "(Ljava/time/Instant;Ljava/time/Instant;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/ondevicepersonalization/LogReader.html#getRequests(java.time.Instant,java.time.Instant)"/>
@@ -108,15 +108,15 @@ namespace Android.Adservices.Ondevicepersonalization
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Adservices.Ondevicepersonalization.RequestLogRecord> GetRequests(Java.Time.Instant arg0, Java.Time.Instant arg1)
         {
-            return IExecute<Java.Util.List<Android.Adservices.Ondevicepersonalization.RequestLogRecord>>("getRequests", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Ondevicepersonalization.RequestLogRecord>>("getRequests", "(Ljava/time/Instant;Ljava/time/Instant;)Ljava/util/List;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

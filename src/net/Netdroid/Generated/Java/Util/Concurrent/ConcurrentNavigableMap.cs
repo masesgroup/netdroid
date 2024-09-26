@@ -42,10 +42,10 @@ namespace Java.Util.Concurrent
         /// </summary>
         [global::System.Obsolete("ConcurrentNavigableMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConcurrentNavigableMap(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -91,10 +91,10 @@ namespace Java.Util.Concurrent
         /// </summary>
         [global::System.Obsolete("ConcurrentNavigableMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConcurrentNavigableMap(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -115,7 +115,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -125,9 +125,9 @@ namespace Java.Util.Concurrent
     public partial class ConcurrentNavigableMap
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/> to <see cref="Java.Util.Concurrent.ConcurrentMap"/>
@@ -137,17 +137,17 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/> to <see cref="Java.Util.NavigableMap"/>
         /// </summary>
         public static implicit operator Java.Util.NavigableMap(Java.Util.Concurrent.ConcurrentNavigableMap t) => t.Cast<Java.Util.NavigableMap>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#descendingKeySet()"/>
@@ -181,7 +181,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap HeadMap(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableMap>("headMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableMap>("headMap", "(Ljava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
@@ -193,7 +193,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap SubMap(object arg0, bool arg1, object arg2, bool arg3)
         {
-            return IExecute<Java.Util.NavigableMap>("subMap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.NavigableMap>("subMap", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object,boolean)"/>
@@ -203,7 +203,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap TailMap(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableMap>("tailMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableMap>("tailMap", "(Ljava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#keySet()"/>
@@ -230,7 +230,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap SubMap(object arg0, object arg1)
         {
-            return IExecute<Java.Util.SortedMap>("subMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedMap>("subMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object)"/>
@@ -241,13 +241,13 @@ namespace Java.Util.Concurrent
         {
             return IExecuteWithSignature<Java.Util.SortedMap>("tailMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -259,13 +259,13 @@ namespace Java.Util.Concurrent
     public partial interface IConcurrentNavigableMap<K, V>
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -274,9 +274,9 @@ namespace Java.Util.Concurrent
     public partial class ConcurrentNavigableMap<K, V> : Java.Util.Concurrent.IConcurrentNavigableMap<K, V>, Java.Util.Concurrent.IConcurrentMap<K, V>, Java.Util.INavigableMap<K, V>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentNavigableMap{K, V}"/> to <see cref="Java.Util.Concurrent.ConcurrentMap{K, V}"/>
@@ -290,17 +290,17 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.ConcurrentNavigableMap{K, V}"/> to <see cref="Java.Util.Concurrent.ConcurrentNavigableMap"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.ConcurrentNavigableMap(Java.Util.Concurrent.ConcurrentNavigableMap<K, V> t) => t.Cast<Java.Util.Concurrent.ConcurrentNavigableMap>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#descendingKeySet()"/>
@@ -334,7 +334,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap HeadMap(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableMap>("headMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableMap>("headMap", "(Ljava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
@@ -346,7 +346,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap SubMap(object arg0, bool arg1, object arg2, bool arg3)
         {
-            return IExecute<Java.Util.NavigableMap>("subMap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.NavigableMap>("subMap", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object,boolean)"/>
@@ -356,7 +356,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap TailMap(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableMap>("tailMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableMap>("tailMap", "(Ljava/lang/Object;Z)Ljava/util/NavigableMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#keySet()"/>
@@ -383,7 +383,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public Java.Util.SortedMap SubMap(object arg0, object arg1)
         {
-            return IExecute<Java.Util.SortedMap>("subMap", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedMap>("subMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object)"/>
@@ -394,13 +394,13 @@ namespace Java.Util.Concurrent
         {
             return IExecuteWithSignature<Java.Util.SortedMap>("tailMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

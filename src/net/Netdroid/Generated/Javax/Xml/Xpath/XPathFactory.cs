@@ -42,10 +42,10 @@ namespace Javax.Xml.Xpath
         /// </summary>
         [global::System.Obsolete("XPathFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPathFactory(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Xml.Xpath
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Javax.Xml.Xpath
     public partial class XPathFactory
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathFactory.html#DEFAULT_OBJECT_MODEL_URI"/>
@@ -96,9 +96,9 @@ namespace Javax.Xml.Xpath
         public static Java.Lang.String DEFAULT_PROPERTY_NAME { get { if (!_DEFAULT_PROPERTY_NAMEReady) { _DEFAULT_PROPERTY_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_PROPERTY_NAME"); _DEFAULT_PROPERTY_NAMEReady = true; } return _DEFAULT_PROPERTY_NAMEContent; } }
         private static Java.Lang.String _DEFAULT_PROPERTY_NAMEContent = default;
         private static bool _DEFAULT_PROPERTY_NAMEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathFactory.html#newDefaultInstance()"/>
@@ -126,7 +126,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
         public static Javax.Xml.Xpath.XPathFactory NewInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)Ljavax/xml/xpath/XPathFactory;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathFactory.html#newInstance(java.lang.String)"/>
@@ -138,9 +138,9 @@ namespace Javax.Xml.Xpath
         {
             return SExecuteWithSignature<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;)Ljavax/xml/xpath/XPathFactory;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathFactory.html#getFeature(java.lang.String)"/>
@@ -177,7 +177,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathFactoryConfigurationException"/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setFeature", arg0, arg1);
+            IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathFactory.html#setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver)"/>
@@ -195,13 +195,13 @@ namespace Javax.Xml.Xpath
         {
             IExecuteWithSignature("setXPathVariableResolver", "(Ljavax/xml/xpath/XPathVariableResolver;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

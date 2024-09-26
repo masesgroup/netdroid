@@ -40,10 +40,10 @@ namespace Android.Graphics.Pdf
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PdfRendererPreV(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics.Pdf
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Page declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics.Pdf
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Page(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics.Pdf
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -138,13 +138,13 @@ namespace Android.Graphics.Pdf
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRendererPreV.html#DOCUMENT_LINEARIZED_TYPE_LINEARIZED"/>
@@ -182,13 +182,13 @@ namespace Android.Graphics.Pdf
         public static int PDF_FORM_TYPE_XFA_FULL { get { if (!_PDF_FORM_TYPE_XFA_FULLReady) { _PDF_FORM_TYPE_XFA_FULLContent = SGetField<int>(LocalBridgeClazz, "PDF_FORM_TYPE_XFA_FULL"); _PDF_FORM_TYPE_XFA_FULLReady = true; } return _PDF_FORM_TYPE_XFA_FULLContent; } }
         private static int _PDF_FORM_TYPE_XFA_FULLContent = default;
         private static bool _PDF_FORM_TYPE_XFA_FULLReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRendererPreV.html#openPage(int)"/>
@@ -238,31 +238,31 @@ namespace Android.Graphics.Pdf
         /// <exception cref="Java.Io.IOException"/>
         public void Write(Android.Os.ParcelFileDescriptor arg0, bool arg1)
         {
-            IExecute("write", arg0, arg1);
+            IExecuteWithSignature("write", "(Landroid/os/ParcelFileDescriptor;Z)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Page implementation
         public partial class Page
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRendererPreV.Page.html#getFormWidgetInfoAtIndex(int)"/>
@@ -281,7 +281,7 @@ namespace Android.Graphics.Pdf
             /// <returns><see cref="Android.Graphics.Pdf.Models.FormWidgetInfo"/></returns>
             public Android.Graphics.Pdf.Models.FormWidgetInfo GetFormWidgetInfoAtPosition(int arg0, int arg1)
             {
-                return IExecute<Android.Graphics.Pdf.Models.FormWidgetInfo>("getFormWidgetInfoAtPosition", arg0, arg1);
+                return IExecuteWithSignature<Android.Graphics.Pdf.Models.FormWidgetInfo>("getFormWidgetInfoAtPosition", "(II)Landroid/graphics/pdf/models/FormWidgetInfo;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRendererPreV.Page.html#selectContent(android.graphics.pdf.models.selection.SelectionBoundary,android.graphics.pdf.models.selection.SelectionBoundary)"/>
@@ -291,7 +291,7 @@ namespace Android.Graphics.Pdf
             /// <returns><see cref="Android.Graphics.Pdf.Models.Selection.PageSelection"/></returns>
             public Android.Graphics.Pdf.Models.Selection.PageSelection SelectContent(Android.Graphics.Pdf.Models.Selection.SelectionBoundary arg0, Android.Graphics.Pdf.Models.Selection.SelectionBoundary arg1)
             {
-                return IExecute<Android.Graphics.Pdf.Models.Selection.PageSelection>("selectContent", arg0, arg1);
+                return IExecuteWithSignature<Android.Graphics.Pdf.Models.Selection.PageSelection>("selectContent", "(Landroid/graphics/pdf/models/selection/SelectionBoundary;Landroid/graphics/pdf/models/selection/SelectionBoundary;)Landroid/graphics/pdf/models/selection/PageSelection;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRendererPreV.Page.html#getHeight()"/>
@@ -400,22 +400,22 @@ namespace Android.Graphics.Pdf
             /// <param name="arg3"><see cref="Android.Graphics.Pdf.RenderParams"/></param>
             public void Render(Android.Graphics.Bitmap arg0, Android.Graphics.Rect arg1, Android.Graphics.Matrix arg2, Android.Graphics.Pdf.RenderParams arg3)
             {
-                IExecute("render", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("render", "(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Matrix;Landroid/graphics/pdf/RenderParams;)V", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

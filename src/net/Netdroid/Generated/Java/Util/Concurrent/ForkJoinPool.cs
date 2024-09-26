@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ForkJoinPool(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ForkJoinWorkerThreadFactory declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Java.Util.Concurrent
             /// </summary>
             [global::System.Obsolete("ForkJoinWorkerThreadFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ForkJoinWorkerThreadFactory(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Java.Util.Concurrent
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -130,10 +130,10 @@ namespace Java.Util.Concurrent
             /// </summary>
             [global::System.Obsolete("ManagedBlocker class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ManagedBlocker(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -154,9 +154,9 @@ namespace Java.Util.Concurrent
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -176,13 +176,13 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#defaultForkJoinWorkerThreadFactory"/>
@@ -190,9 +190,9 @@ namespace Java.Util.Concurrent
         public static Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory defaultForkJoinWorkerThreadFactory { get { if (!_defaultForkJoinWorkerThreadFactoryReady) { _defaultForkJoinWorkerThreadFactoryContent = SGetField<Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory>(LocalBridgeClazz, "defaultForkJoinWorkerThreadFactory"); _defaultForkJoinWorkerThreadFactoryReady = true; } return _defaultForkJoinWorkerThreadFactoryContent; } }
         private static Java.Util.Concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory _defaultForkJoinWorkerThreadFactoryContent = default;
         private static bool _defaultForkJoinWorkerThreadFactoryReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#getCommonPoolParallelism()"/>
@@ -219,9 +219,9 @@ namespace Java.Util.Concurrent
         {
             SExecuteWithSignature(LocalBridgeClazz, "managedBlock", "(Ljava/util/concurrent/ForkJoinPool$ManagedBlocker;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#submit(java.util.concurrent.ForkJoinTask)"/>
@@ -251,7 +251,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool AwaitQuiescence(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<bool>("awaitQuiescence", arg0, arg1);
+            return IExecuteWithSignature<bool>("awaitQuiescence", "(JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html#getAsyncMode()"/>
@@ -357,29 +357,29 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("execute", "(Ljava/util/concurrent/ForkJoinTask;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ForkJoinWorkerThreadFactory implementation
         public partial class ForkJoinWorkerThreadFactory
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.html#newThread(java.util.concurrent.ForkJoinPool)"/>
@@ -390,13 +390,13 @@ namespace Java.Util.Concurrent
             {
                 return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinWorkerThread>("newThread", "(Ljava/util/concurrent/ForkJoinPool;)Ljava/util/concurrent/ForkJoinWorkerThread;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -405,21 +405,21 @@ namespace Java.Util.Concurrent
         public partial class ManagedBlocker
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.ManagedBlocker.html#block()"/>
@@ -438,20 +438,20 @@ namespace Java.Util.Concurrent
             {
                 return IExecuteWithSignature<bool>("isReleasable", "()Z");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

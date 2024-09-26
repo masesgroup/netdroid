@@ -42,10 +42,10 @@ namespace Java.Sql
         /// </summary>
         [global::System.Obsolete("Connection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Connection(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Sql
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Sql
     public partial interface IConnection
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,9 +94,9 @@ namespace Java.Sql
     public partial class Connection : Java.Sql.IConnection, Java.Sql.IWrapper, Java.Lang.IAutoCloseable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Sql.Connection"/> to <see cref="Java.Sql.Wrapper"/>
@@ -106,9 +106,9 @@ namespace Java.Sql
         /// Converter from <see cref="Java.Sql.Connection"/> to <see cref="Java.Lang.AutoCloseable"/>
         /// </summary>
         public static implicit operator Java.Lang.AutoCloseable(Java.Sql.Connection t) => t.Cast<Java.Lang.AutoCloseable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#TRANSACTION_NONE"/>
@@ -140,13 +140,13 @@ namespace Java.Sql
         public static int TRANSACTION_SERIALIZABLE { get { if (!_TRANSACTION_SERIALIZABLEReady) { _TRANSACTION_SERIALIZABLEContent = SGetField<int>(LocalBridgeClazz, "TRANSACTION_SERIALIZABLE"); _TRANSACTION_SERIALIZABLEReady = true; } return _TRANSACTION_SERIALIZABLEContent; } }
         private static int _TRANSACTION_SERIALIZABLEContent = default;
         private static bool _TRANSACTION_SERIALIZABLEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#getAutoCommit()"/>
@@ -259,7 +259,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Array CreateArrayOf(Java.Lang.String arg0, object[] arg1)
         {
-            return IExecute<Java.Sql.Array>("createArrayOf", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Array>("createArrayOf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/sql/Array;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#createBlob()"/>
@@ -281,7 +281,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Sql.CallableStatement>("prepareCall", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Sql.CallableStatement>("prepareCall", "(Ljava/lang/String;III)Ljava/sql/CallableStatement;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareCall(java.lang.String,int,int)"/>
@@ -293,7 +293,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Sql.CallableStatement>("prepareCall", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.CallableStatement>("prepareCall", "(Ljava/lang/String;II)Ljava/sql/CallableStatement;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareCall(java.lang.String)"/>
@@ -343,7 +343,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;III)Ljava/sql/PreparedStatement;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareStatement(java.lang.String,int,int)"/>
@@ -355,7 +355,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;II)Ljava/sql/PreparedStatement;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareStatement(java.lang.String,int)"/>
@@ -366,7 +366,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;I)Ljava/sql/PreparedStatement;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareStatement(java.lang.String,int[])"/>
@@ -377,7 +377,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int[] arg1)
         {
-            return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;[I)Ljava/sql/PreparedStatement;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareStatement(java.lang.String,java.lang.String[])"/>
@@ -388,7 +388,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/sql/PreparedStatement;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareStatement(java.lang.String)"/>
@@ -456,7 +456,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Statement CreateStatement(int arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Sql.Statement>("createStatement", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.Statement>("createStatement", "(III)Ljava/sql/Statement;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#createStatement(int,int)"/>
@@ -467,7 +467,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Statement CreateStatement(int arg0, int arg1)
         {
-            return IExecute<Java.Sql.Statement>("createStatement", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Statement>("createStatement", "(II)Ljava/sql/Statement;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#createStruct(java.lang.String,java.lang.Object[])"/>
@@ -478,7 +478,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Struct CreateStruct(Java.Lang.String arg0, object[] arg1)
         {
-            return IExecute<Java.Sql.Struct>("createStruct", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Struct>("createStruct", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/sql/Struct;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#getTypeMap()"/>
@@ -583,7 +583,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLClientInfoException"/>
         public void SetClientInfo(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setClientInfo", arg0, arg1);
+            IExecuteWithSignature("setClientInfo", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setClientInfo(java.util.Properties)"/>
@@ -611,7 +611,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNetworkTimeout(Java.Util.Concurrent.Executor arg0, int arg1)
         {
-            IExecute("setNetworkTimeout", arg0, arg1);
+            IExecuteWithSignature("setNetworkTimeout", "(Ljava/util/concurrent/Executor;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setReadOnly(boolean)"/>
@@ -665,13 +665,13 @@ namespace Java.Sql
         {
             IExecuteWithSignature("endRequest", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Java.Util.Regex
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Pattern(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Regex
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Util.Regex
     public partial class Pattern
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/regex/Pattern.html#CANON_EQ"/>
@@ -136,9 +136,9 @@ namespace Java.Util.Regex
         public static int UNIX_LINES { get { if (!_UNIX_LINESReady) { _UNIX_LINESContent = SGetField<int>(LocalBridgeClazz, "UNIX_LINES"); _UNIX_LINESReady = true; } return _UNIX_LINESContent; } }
         private static int _UNIX_LINESContent = default;
         private static bool _UNIX_LINESReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/regex/Pattern.html#matches(java.lang.String,java.lang.CharSequence)"/>
@@ -148,7 +148,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="bool"/></returns>
         public static bool Matches(Java.Lang.String arg0, Java.Lang.CharSequence arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "matches", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "matches", "(Ljava/lang/String;Ljava/lang/CharSequence;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/regex/Pattern.html#quote(java.lang.String)"/>
@@ -167,7 +167,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Util.Regex.Pattern"/></returns>
         public static Java.Util.Regex.Pattern Compile(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Util.Regex.Pattern>(LocalBridgeClazz, "compile", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Regex.Pattern>(LocalBridgeClazz, "compile", "(Ljava/lang/String;I)Ljava/util/regex/Pattern;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/regex/Pattern.html#compile(java.lang.String)"/>
@@ -178,9 +178,9 @@ namespace Java.Util.Regex
         {
             return SExecuteWithSignature<Java.Util.Regex.Pattern>(LocalBridgeClazz, "compile", "(Ljava/lang/String;)Ljava/util/regex/Pattern;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/regex/Pattern.html#flags()"/>
@@ -206,7 +206,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] Split(Java.Lang.CharSequence arg0, int arg1)
         {
-            return IExecuteArray<Java.Lang.String>("split", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("split", "(Ljava/lang/CharSequence;I)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/regex/Pattern.html#split(java.lang.CharSequence)"/>
@@ -267,13 +267,13 @@ namespace Java.Util.Regex
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.String>>("splitAsStream", "(Ljava/lang/CharSequence;)Ljava/util/stream/Stream;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

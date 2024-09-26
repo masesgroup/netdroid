@@ -40,10 +40,10 @@ namespace Java.Time.Chrono
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public IsoEra(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time.Chrono
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Time.Chrono
     public partial class IsoEra
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Time.Chrono.IsoEra"/> to <see cref="Java.Time.Chrono.Era"/>
         /// </summary>
         public static implicit operator Java.Time.Chrono.Era(Java.Time.Chrono.IsoEra t) => t.Cast<Java.Time.Chrono.Era>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/IsoEra.html#BCE"/>
@@ -98,9 +98,9 @@ namespace Java.Time.Chrono
         public static Java.Time.Chrono.IsoEra CE { get { if (!_CEReady) { _CEContent = SGetField<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "CE"); _CEReady = true; } return _CEContent; } }
         private static Java.Time.Chrono.IsoEra _CEContent = default;
         private static bool _CEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/IsoEra.html#of(int)"/>
@@ -128,9 +128,9 @@ namespace Java.Time.Chrono
         {
             return SExecuteWithSignatureArray<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "values", "()[Ljava/time/chrono/IsoEra;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/IsoEra.html#getValue()"/>
@@ -140,13 +140,13 @@ namespace Java.Time.Chrono
         {
             return IExecuteWithSignature<int>("getValue", "()I");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

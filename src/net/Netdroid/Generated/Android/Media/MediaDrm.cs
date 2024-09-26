@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaDrm(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region CryptoSession declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CryptoSession(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ErrorCodes(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public KeyRequest(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -216,10 +216,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public KeyStatus(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,9 +240,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -261,10 +261,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public LogMessage(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -285,9 +285,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -302,9 +302,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -323,10 +323,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MetricsConstants(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -347,9 +347,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -363,7 +363,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnEventListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.MediaDrm_OnEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -372,13 +372,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnEventListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnEventListener"/> or its generic type if there is one
@@ -389,14 +389,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.MediaDrm$OnEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -430,7 +430,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnExpirationUpdateListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.MediaDrm_OnExpirationUpdateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -439,13 +439,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnExpirationUpdateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnExpirationUpdateListener"/> or its generic type if there is one
@@ -456,14 +456,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.MediaDrm$OnExpirationUpdateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -497,7 +497,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnKeyStatusChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.MediaDrm_OnKeyStatusChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -506,13 +506,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnKeyStatusChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnKeyStatusChangeListener"/> or its generic type if there is one
@@ -523,14 +523,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.MediaDrm$OnKeyStatusChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -564,7 +564,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnSessionLostStateListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.MediaDrm_OnSessionLostStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -573,13 +573,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnSessionLostStateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnSessionLostStateListener"/> or its generic type if there is one
@@ -590,14 +590,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.MediaDrm$OnSessionLostStateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -636,10 +636,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PlaybackComponent(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -660,9 +660,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -681,10 +681,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ProvisionRequest(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -705,9 +705,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -722,9 +722,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -745,13 +745,13 @@ namespace Android.Media
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_KEY_EXPIRED"/>
@@ -935,9 +935,9 @@ namespace Android.Media
         public static Java.Lang.String PROPERTY_VERSION { get { if (!_PROPERTY_VERSIONReady) { _PROPERTY_VERSIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROPERTY_VERSION"); _PROPERTY_VERSIONReady = true; } return _PROPERTY_VERSIONContent; } }
         private static Java.Lang.String _PROPERTY_VERSIONContent = default;
         private static bool _PROPERTY_VERSIONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#isCryptoSchemeSupported(java.util.UUID,java.lang.String,int)"/>
@@ -948,7 +948,7 @@ namespace Android.Media
         /// <returns><see cref="bool"/></returns>
         public static bool IsCryptoSchemeSupported(Java.Util.UUID arg0, Java.Lang.String arg1, int arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isCryptoSchemeSupported", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isCryptoSchemeSupported", "(Ljava/util/UUID;Ljava/lang/String;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#isCryptoSchemeSupported(java.util.UUID,java.lang.String)"/>
@@ -958,7 +958,7 @@ namespace Android.Media
         /// <returns><see cref="bool"/></returns>
         public static bool IsCryptoSchemeSupported(Java.Util.UUID arg0, Java.Lang.String arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isCryptoSchemeSupported", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isCryptoSchemeSupported", "(Ljava/util/UUID;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#isCryptoSchemeSupported(java.util.UUID)"/>
@@ -985,9 +985,9 @@ namespace Android.Media
         {
             return SExecuteWithSignature<Java.Util.List<Java.Util.UUID>>(LocalBridgeClazz, "getSupportedCryptoSchemes", "()Ljava/util/List;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getCryptoSession(byte[],java.lang.String,java.lang.String)"/>
@@ -998,7 +998,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Media.MediaDrm.CryptoSession"/></returns>
         public Android.Media.MediaDrm.CryptoSession GetCryptoSession(byte[] arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Android.Media.MediaDrm.CryptoSession>("getCryptoSession", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Media.MediaDrm.CryptoSession>("getCryptoSession", "([BLjava/lang/String;Ljava/lang/String;)Landroid/media/MediaDrm$CryptoSession;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getKeyRequest(byte[],byte[],java.lang.String,int,java.util.HashMap)"/>
@@ -1012,7 +1012,7 @@ namespace Android.Media
         /// <exception cref="Android.Media.NotProvisionedException"/>
         public Android.Media.MediaDrm.KeyRequest GetKeyRequest(byte[] arg0, byte[] arg1, Java.Lang.String arg2, int arg3, Java.Util.HashMap<Java.Lang.String, Java.Lang.String> arg4)
         {
-            return IExecute<Android.Media.MediaDrm.KeyRequest>("getKeyRequest", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Media.MediaDrm.KeyRequest>("getKeyRequest", "([B[BLjava/lang/String;ILjava/util/HashMap;)Landroid/media/MediaDrm$KeyRequest;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getPlaybackComponent(byte[])"/>
@@ -1077,7 +1077,7 @@ namespace Android.Media
         /// <returns><see cref="bool"/></returns>
         public bool RequiresSecureDecoder(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<bool>("requiresSecureDecoder", arg0, arg1);
+            return IExecuteWithSignature<bool>("requiresSecureDecoder", "(Ljava/lang/String;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getPropertyByteArray(java.lang.String)"/>
@@ -1108,7 +1108,7 @@ namespace Android.Media
         /// <exception cref="Android.Media.NotProvisionedException"/>
         public byte[] ProvideKeyResponse(byte[] arg0, byte[] arg1)
         {
-            return IExecuteArray<byte>("provideKeyResponse", arg0, arg1);
+            return IExecuteWithSignatureArray<byte>("provideKeyResponse", "([B[B)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getConnectedHdcpLevel()"/>
@@ -1261,7 +1261,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="byte"/></param>
         public void RestoreKeys(byte[] arg0, byte[] arg1)
         {
-            IExecute("restoreKeys", arg0, arg1);
+            IExecuteWithSignature("restoreKeys", "([B[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#setPropertyByteArray(java.lang.String,byte[])"/>
@@ -1270,7 +1270,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="byte"/></param>
         public void SetPropertyByteArray(Java.Lang.String arg0, byte[] arg1)
         {
-            IExecute("setPropertyByteArray", arg0, arg1);
+            IExecuteWithSignature("setPropertyByteArray", "(Ljava/lang/String;[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#setPropertyString(java.lang.String,java.lang.String)"/>
@@ -1279,7 +1279,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetPropertyString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setPropertyString", arg0, arg1);
+            IExecuteWithSignature("setPropertyString", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#clearOnEventListener()"/>
@@ -1356,7 +1356,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void SetOnEventListener(Android.Media.MediaDrm.OnEventListener arg0, Android.Os.Handler arg1)
         {
-            IExecute("setOnEventListener", arg0, arg1);
+            IExecuteWithSignature("setOnEventListener", "(Landroid/media/MediaDrm$OnEventListener;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnEventListener(android.media.MediaDrm.OnEventListener)"/>
@@ -1373,7 +1373,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.MediaDrm.OnEventListener"/></param>
         public void SetOnEventListener(Java.Util.Concurrent.Executor arg0, Android.Media.MediaDrm.OnEventListener arg1)
         {
-            IExecute("setOnEventListener", arg0, arg1);
+            IExecuteWithSignature("setOnEventListener", "(Ljava/util/concurrent/Executor;Landroid/media/MediaDrm$OnEventListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnExpirationUpdateListener(android.media.MediaDrm.OnExpirationUpdateListener,android.os.Handler)"/>
@@ -1382,7 +1382,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void SetOnExpirationUpdateListener(Android.Media.MediaDrm.OnExpirationUpdateListener arg0, Android.Os.Handler arg1)
         {
-            IExecute("setOnExpirationUpdateListener", arg0, arg1);
+            IExecuteWithSignature("setOnExpirationUpdateListener", "(Landroid/media/MediaDrm$OnExpirationUpdateListener;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnExpirationUpdateListener(java.util.concurrent.Executor,android.media.MediaDrm.OnExpirationUpdateListener)"/>
@@ -1391,7 +1391,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.MediaDrm.OnExpirationUpdateListener"/></param>
         public void SetOnExpirationUpdateListener(Java.Util.Concurrent.Executor arg0, Android.Media.MediaDrm.OnExpirationUpdateListener arg1)
         {
-            IExecute("setOnExpirationUpdateListener", arg0, arg1);
+            IExecuteWithSignature("setOnExpirationUpdateListener", "(Ljava/util/concurrent/Executor;Landroid/media/MediaDrm$OnExpirationUpdateListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnKeyStatusChangeListener(android.media.MediaDrm.OnKeyStatusChangeListener,android.os.Handler)"/>
@@ -1400,7 +1400,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void SetOnKeyStatusChangeListener(Android.Media.MediaDrm.OnKeyStatusChangeListener arg0, Android.Os.Handler arg1)
         {
-            IExecute("setOnKeyStatusChangeListener", arg0, arg1);
+            IExecuteWithSignature("setOnKeyStatusChangeListener", "(Landroid/media/MediaDrm$OnKeyStatusChangeListener;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnKeyStatusChangeListener(java.util.concurrent.Executor,android.media.MediaDrm.OnKeyStatusChangeListener)"/>
@@ -1409,7 +1409,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.MediaDrm.OnKeyStatusChangeListener"/></param>
         public void SetOnKeyStatusChangeListener(Java.Util.Concurrent.Executor arg0, Android.Media.MediaDrm.OnKeyStatusChangeListener arg1)
         {
-            IExecute("setOnKeyStatusChangeListener", arg0, arg1);
+            IExecuteWithSignature("setOnKeyStatusChangeListener", "(Ljava/util/concurrent/Executor;Landroid/media/MediaDrm$OnKeyStatusChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnSessionLostStateListener(android.media.MediaDrm.OnSessionLostStateListener,android.os.Handler)"/>
@@ -1418,7 +1418,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void SetOnSessionLostStateListener(Android.Media.MediaDrm.OnSessionLostStateListener arg0, Android.Os.Handler arg1)
         {
-            IExecute("setOnSessionLostStateListener", arg0, arg1);
+            IExecuteWithSignature("setOnSessionLostStateListener", "(Landroid/media/MediaDrm$OnSessionLostStateListener;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnSessionLostStateListener(java.util.concurrent.Executor,android.media.MediaDrm.OnSessionLostStateListener)"/>
@@ -1427,31 +1427,31 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.MediaDrm.OnSessionLostStateListener"/></param>
         public void SetOnSessionLostStateListener(Java.Util.Concurrent.Executor arg0, Android.Media.MediaDrm.OnSessionLostStateListener arg1)
         {
-            IExecute("setOnSessionLostStateListener", arg0, arg1);
+            IExecuteWithSignature("setOnSessionLostStateListener", "(Ljava/util/concurrent/Executor;Landroid/media/MediaDrm$OnSessionLostStateListener;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region CryptoSession implementation
         public partial class CryptoSession
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.CryptoSession.html#verify(byte[],byte[],byte[])"/>
@@ -1462,7 +1462,7 @@ namespace Android.Media
             /// <returns><see cref="bool"/></returns>
             public bool Verify(byte[] arg0, byte[] arg1, byte[] arg2)
             {
-                return IExecute<bool>("verify", arg0, arg1, arg2);
+                return IExecuteWithSignature<bool>("verify", "([B[B[B)Z", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.CryptoSession.html#decrypt(byte[],byte[],byte[])"/>
@@ -1473,7 +1473,7 @@ namespace Android.Media
             /// <returns><see cref="byte"/></returns>
             public byte[] Decrypt(byte[] arg0, byte[] arg1, byte[] arg2)
             {
-                return IExecuteArray<byte>("decrypt", arg0, arg1, arg2);
+                return IExecuteWithSignatureArray<byte>("decrypt", "([B[B[B)[B", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.CryptoSession.html#encrypt(byte[],byte[],byte[])"/>
@@ -1484,7 +1484,7 @@ namespace Android.Media
             /// <returns><see cref="byte"/></returns>
             public byte[] Encrypt(byte[] arg0, byte[] arg1, byte[] arg2)
             {
-                return IExecuteArray<byte>("encrypt", arg0, arg1, arg2);
+                return IExecuteWithSignatureArray<byte>("encrypt", "([B[B[B)[B", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.CryptoSession.html#sign(byte[],byte[])"/>
@@ -1494,15 +1494,15 @@ namespace Android.Media
             /// <returns><see cref="byte"/></returns>
             public byte[] Sign(byte[] arg0, byte[] arg1)
             {
-                return IExecuteArray<byte>("sign", arg0, arg1);
+                return IExecuteWithSignatureArray<byte>("sign", "([B[B)[B", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1511,13 +1511,13 @@ namespace Android.Media
         public partial class ErrorCodes
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.ErrorCodes.html#ERROR_CERTIFICATE_MALFORMED"/>
@@ -1723,21 +1723,21 @@ namespace Android.Media
             public static int ERROR_ZERO_SUBSAMPLES { get { if (!_ERROR_ZERO_SUBSAMPLESReady) { _ERROR_ZERO_SUBSAMPLESContent = SGetField<int>(LocalBridgeClazz, "ERROR_ZERO_SUBSAMPLES"); _ERROR_ZERO_SUBSAMPLESReady = true; } return _ERROR_ZERO_SUBSAMPLESContent; } }
             private static int _ERROR_ZERO_SUBSAMPLESContent = default;
             private static bool _ERROR_ZERO_SUBSAMPLESReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1746,13 +1746,13 @@ namespace Android.Media
         public partial class KeyRequest
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyRequest.html#REQUEST_TYPE_INITIAL"/>
@@ -1784,13 +1784,13 @@ namespace Android.Media
             public static int REQUEST_TYPE_UPDATE { get { if (!_REQUEST_TYPE_UPDATEReady) { _REQUEST_TYPE_UPDATEContent = SGetField<int>(LocalBridgeClazz, "REQUEST_TYPE_UPDATE"); _REQUEST_TYPE_UPDATEReady = true; } return _REQUEST_TYPE_UPDATEContent; } }
             private static int _REQUEST_TYPE_UPDATEContent = default;
             private static bool _REQUEST_TYPE_UPDATEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyRequest.html#getData()"/>
@@ -1816,13 +1816,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<Java.Lang.String>("getDefaultUrl", "()Ljava/lang/String;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1831,13 +1831,13 @@ namespace Android.Media
         public partial class KeyStatus
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyStatus.html#STATUS_EXPIRED"/>
@@ -1875,13 +1875,13 @@ namespace Android.Media
             public static int STATUS_USABLE_IN_FUTURE { get { if (!_STATUS_USABLE_IN_FUTUREReady) { _STATUS_USABLE_IN_FUTUREContent = SGetField<int>(LocalBridgeClazz, "STATUS_USABLE_IN_FUTURE"); _STATUS_USABLE_IN_FUTUREReady = true; } return _STATUS_USABLE_IN_FUTUREContent; } }
             private static int _STATUS_USABLE_IN_FUTUREContent = default;
             private static bool _STATUS_USABLE_IN_FUTUREReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.KeyStatus.html#getKeyId()"/>
@@ -1899,13 +1899,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<int>("getStatusCode", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1914,21 +1914,21 @@ namespace Android.Media
         public partial class LogMessage
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.LogMessage.html#getPriority()"/>
@@ -1954,13 +1954,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<long>("getTimestampMillis", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1969,29 +1969,29 @@ namespace Android.Media
         public partial class MediaDrmStateException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2000,13 +2000,13 @@ namespace Android.Media
         public partial class MetricsConstants
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.MetricsConstants.html#CLOSE_SESSION_ERROR_COUNT"/>
@@ -2218,21 +2218,21 @@ namespace Android.Media
             public static Java.Lang.String SESSION_START_TIMES_MS { get { if (!_SESSION_START_TIMES_MSReady) { _SESSION_START_TIMES_MSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SESSION_START_TIMES_MS"); _SESSION_START_TIMES_MSReady = true; } return _SESSION_START_TIMES_MSContent; } }
             private static Java.Lang.String _SESSION_START_TIMES_MSContent = default;
             private static bool _SESSION_START_TIMES_MSReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2241,21 +2241,21 @@ namespace Android.Media
         public partial class OnEventListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnEventListener"/>
@@ -2265,13 +2265,13 @@ namespace Android.Media
                 AddEventHandler("onEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnEventEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaDrm.OnEventListener.html#onEvent(android.media.MediaDrm,byte[],int,int,byte[])"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnEvent"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.MediaDrm, byte[], int, int, byte[]> OnOnEvent { get; set; } = null;
-            
+
             bool hasOverrideOnEvent = true;
             void OnEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2280,7 +2280,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.MediaDrm>(0), data.EventData.GetAt<byte[]>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<byte[]>(4));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnEvent;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.OnEventListener.html#onEvent(android.media.MediaDrm,byte[],int,int,byte[])"/>
             /// </summary>
@@ -2293,13 +2293,13 @@ namespace Android.Media
             {
                 hasOverrideOnEvent = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2308,21 +2308,21 @@ namespace Android.Media
         public partial class OnEventListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.OnEventListener.html#onEvent(android.media.MediaDrm,byte[],int,int,byte[])"/>
@@ -2334,15 +2334,15 @@ namespace Android.Media
             /// <param name="arg4"><see cref="byte"/></param>
             public override void OnEvent(Android.Media.MediaDrm arg0, byte[] arg1, int arg2, int arg3, byte[] arg4)
             {
-                IExecute("onEvent", arg0, arg1, arg2, arg3, arg4);
+                IExecuteWithSignature("onEvent", "(Landroid/media/MediaDrm;[BII[B)V", arg0, arg1, arg2, arg3, arg4);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2351,21 +2351,21 @@ namespace Android.Media
         public partial class OnExpirationUpdateListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnExpirationUpdateListener"/>
@@ -2375,13 +2375,13 @@ namespace Android.Media
                 AddEventHandler("onExpirationUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnExpirationUpdateEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaDrm.OnExpirationUpdateListener.html#onExpirationUpdate(android.media.MediaDrm,byte[],long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnExpirationUpdate"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.MediaDrm, byte[], long> OnOnExpirationUpdate { get; set; } = null;
-            
+
             bool hasOverrideOnExpirationUpdate = true;
             void OnExpirationUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2390,7 +2390,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.MediaDrm>(0), data.EventData.GetAt<byte[]>(1), data.EventData.GetAt<long>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnExpirationUpdate;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.OnExpirationUpdateListener.html#onExpirationUpdate(android.media.MediaDrm,byte[],long)"/>
             /// </summary>
@@ -2401,13 +2401,13 @@ namespace Android.Media
             {
                 hasOverrideOnExpirationUpdate = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2416,21 +2416,21 @@ namespace Android.Media
         public partial class OnExpirationUpdateListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.OnExpirationUpdateListener.html#onExpirationUpdate(android.media.MediaDrm,byte[],long)"/>
@@ -2440,15 +2440,15 @@ namespace Android.Media
             /// <param name="arg2"><see cref="long"/></param>
             public override void OnExpirationUpdate(Android.Media.MediaDrm arg0, byte[] arg1, long arg2)
             {
-                IExecute("onExpirationUpdate", arg0, arg1, arg2);
+                IExecuteWithSignature("onExpirationUpdate", "(Landroid/media/MediaDrm;[BJ)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2457,21 +2457,21 @@ namespace Android.Media
         public partial class OnKeyStatusChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnKeyStatusChangeListener"/>
@@ -2481,13 +2481,13 @@ namespace Android.Media
                 AddEventHandler("onKeyStatusChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnKeyStatusChangeEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaDrm.OnKeyStatusChangeListener.html#onKeyStatusChange(android.media.MediaDrm,byte[],java.util.List,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnKeyStatusChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.MediaDrm, byte[], Java.Util.List<Android.Media.MediaDrm.KeyStatus>, bool> OnOnKeyStatusChange { get; set; } = null;
-            
+
             bool hasOverrideOnKeyStatusChange = true;
             void OnKeyStatusChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2496,7 +2496,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.MediaDrm>(0), data.EventData.GetAt<byte[]>(1), data.EventData.GetAt<Java.Util.List<Android.Media.MediaDrm.KeyStatus>>(2), data.EventData.GetAt<bool>(3));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnKeyStatusChange;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.OnKeyStatusChangeListener.html#onKeyStatusChange(android.media.MediaDrm,byte[],java.util.List,boolean)"/>
             /// </summary>
@@ -2508,13 +2508,13 @@ namespace Android.Media
             {
                 hasOverrideOnKeyStatusChange = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2523,21 +2523,21 @@ namespace Android.Media
         public partial class OnKeyStatusChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.OnKeyStatusChangeListener.html#onKeyStatusChange(android.media.MediaDrm,byte[],java.util.List,boolean)"/>
@@ -2548,15 +2548,15 @@ namespace Android.Media
             /// <param name="arg3"><see cref="bool"/></param>
             public override void OnKeyStatusChange(Android.Media.MediaDrm arg0, byte[] arg1, Java.Util.List<Android.Media.MediaDrm.KeyStatus> arg2, bool arg3)
             {
-                IExecute("onKeyStatusChange", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onKeyStatusChange", "(Landroid/media/MediaDrm;[BLjava/util/List;Z)V", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2565,21 +2565,21 @@ namespace Android.Media
         public partial class OnSessionLostStateListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnSessionLostStateListener"/>
@@ -2589,13 +2589,13 @@ namespace Android.Media
                 AddEventHandler("onSessionLostState", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnSessionLostStateEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaDrm.OnSessionLostStateListener.html#onSessionLostState(android.media.MediaDrm,byte[])"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSessionLostState"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.MediaDrm, byte[]> OnOnSessionLostState { get; set; } = null;
-            
+
             bool hasOverrideOnSessionLostState = true;
             void OnSessionLostStateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2604,7 +2604,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.MediaDrm>(0), data.EventData.GetAt<byte[]>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnSessionLostState;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.OnSessionLostStateListener.html#onSessionLostState(android.media.MediaDrm,byte[])"/>
             /// </summary>
@@ -2614,13 +2614,13 @@ namespace Android.Media
             {
                 hasOverrideOnSessionLostState = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2629,21 +2629,21 @@ namespace Android.Media
         public partial class OnSessionLostStateListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.OnSessionLostStateListener.html#onSessionLostState(android.media.MediaDrm,byte[])"/>
@@ -2652,15 +2652,15 @@ namespace Android.Media
             /// <param name="arg1"><see cref="byte"/></param>
             public override void OnSessionLostState(Android.Media.MediaDrm arg0, byte[] arg1)
             {
-                IExecute("onSessionLostState", arg0, arg1);
+                IExecuteWithSignature("onSessionLostState", "(Landroid/media/MediaDrm;[B)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2669,21 +2669,21 @@ namespace Android.Media
         public partial class PlaybackComponent
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.PlaybackComponent.html#getLogSessionId()"/>
@@ -2701,13 +2701,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("setLogSessionId", "(Landroid/media/metrics/LogSessionId;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2716,21 +2716,21 @@ namespace Android.Media
         public partial class ProvisionRequest
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaDrm.ProvisionRequest.html#getData()"/>
@@ -2748,13 +2748,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<Java.Lang.String>("getDefaultUrl", "()Ljava/lang/String;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2763,36 +2763,36 @@ namespace Android.Media
         public partial class SessionException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

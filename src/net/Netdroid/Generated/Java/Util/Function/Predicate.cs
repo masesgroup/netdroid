@@ -35,7 +35,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public Predicate() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Predicate";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region PredicateDirect declaration
     /// <summary>
     /// Direct override of <see cref="Predicate"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "java.util.function.Predicate";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -103,7 +103,7 @@ namespace Java.Util.Function
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public Predicate() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.java.util.function.Predicate";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -112,13 +112,13 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
     
     }
     #endregion
-    
+
     #region PredicateDirect<T> declaration
     /// <summary>
     /// Direct override of <see cref="Predicate"/> or its generic type if there is one
@@ -129,14 +129,14 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "java.util.function.Predicate";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -164,17 +164,17 @@ namespace Java.Util.Function
     public partial class Predicate
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
@@ -196,9 +196,9 @@ namespace Java.Util.Function
         {
             return SExecuteWithSignature<Java.Util.Function.Predicate>(LocalBridgeClazz, "not", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="Predicate"/>
@@ -211,13 +211,13 @@ namespace Java.Util.Function
             AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OrEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<object, bool> OnTest { get; set; } = null;
-        
+
         bool hasOverrideTest = true;
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -226,7 +226,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<object>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideTest, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
@@ -246,13 +246,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.Predicate>("andDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnAnd { get; set; } = null;
-        
+
         bool hasOverrideAnd = true;
         void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -261,7 +261,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Predicate>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideAnd, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
@@ -281,13 +281,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.Predicate>("negateDefault", "()Ljava/util/function/Predicate;");
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#negate()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Predicate> OnNegate { get; set; } = null;
-        
+
         bool hasOverrideNegate = true;
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -296,7 +296,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideNegate, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#negate()"/>
         /// </summary>
@@ -316,13 +316,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.Predicate>("orDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnOr { get; set; } = null;
-        
+
         bool hasOverrideOr = true;
         void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -331,7 +331,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Predicate>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideOr, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
@@ -342,13 +342,13 @@ namespace Java.Util.Function
         {
             hasOverrideOr = false; return default;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -357,21 +357,21 @@ namespace Java.Util.Function
     public partial class PredicateDirect
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#test(java.lang.Object)"/>
@@ -408,13 +408,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect, Java.Util.Function.Predicate>("or", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -426,13 +426,13 @@ namespace Java.Util.Function
     public partial interface IPredicate<T>
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -441,17 +441,17 @@ namespace Java.Util.Function
     public partial class Predicate<T> : Java.Util.Function.IPredicate<T>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#isEqual(java.lang.Object)"/>
@@ -474,9 +474,9 @@ namespace Java.Util.Function
         {
             return SExecuteWithSignature<Java.Util.Function.Predicate<T>>(LocalBridgeClazz, "not", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="Predicate"/>
@@ -489,13 +489,13 @@ namespace Java.Util.Function
             AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(Or<Arg0objectSuperT>EventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<T, bool> OnTest { get; set; } = null;
-        
+
         bool hasOverrideTest = true;
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -504,7 +504,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<T>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideTest, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
@@ -525,13 +525,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("andDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAnd<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnAnd<Arg0objectSuperT> { get; set; } = null;
-        
+
         bool hasOverrideAnd<Arg0objectSuperT> = true;
         void And<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -540,7 +540,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Predicate<Arg0objectSuperT>>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideAnd<Arg0objectSuperT>, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
@@ -561,13 +561,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("negateDefault", "()Ljava/util/function/Predicate;");
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#negate()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Predicate<T>> OnNegate { get; set; } = null;
-        
+
         bool hasOverrideNegate = true;
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -576,7 +576,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke();
             data.EventData.TypedEventData.SetReturnData(hasOverrideNegate, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#negate()"/>
         /// </summary>
@@ -597,13 +597,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.Predicate<T>>("orDefault", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOr<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnOr<Arg0objectSuperT> { get; set; } = null;
-        
+
         bool hasOverrideOr<Arg0objectSuperT> = true;
         void Or<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -612,7 +612,7 @@ namespace Java.Util.Function
             var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Util.Function.Predicate<Arg0objectSuperT>>(0));
             data.EventData.TypedEventData.SetReturnData(hasOverrideOr<Arg0objectSuperT>, executionResult);
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
@@ -624,13 +624,13 @@ namespace Java.Util.Function
         {
             hasOverrideOr<Arg0objectSuperT> = false; return default;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -639,21 +639,21 @@ namespace Java.Util.Function
     public partial class PredicateDirect<T> : Java.Util.Function.IPredicate<T>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/Predicate.html#test(java.lang.Object)"/>
@@ -692,13 +692,13 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.PredicateDirect<T>, Java.Util.Function.Predicate<T>>("or", "(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

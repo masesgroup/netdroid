@@ -42,10 +42,10 @@ namespace Java.Nio
         /// </summary>
         [global::System.Obsolete("CharBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharBuffer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Nio
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,9 +76,9 @@ namespace Java.Nio
     public partial class CharBuffer : Java.Lang.IComparable<Java.Nio.CharBuffer>, Java.Lang.IAppendable, Java.Lang.ICharSequence, Java.Lang.IReadable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Nio.CharBuffer"/> to <see cref="Java.Lang.Comparable"/>
@@ -96,13 +96,13 @@ namespace Java.Nio
         /// Converter from <see cref="Java.Nio.CharBuffer"/> to <see cref="Java.Lang.Readable"/>
         /// </summary>
         public static implicit operator Java.Lang.Readable(Java.Nio.CharBuffer t) => t.Cast<Java.Lang.Readable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#allocate(int)"/>
@@ -122,7 +122,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public static Java.Nio.CharBuffer Wrap(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.CharBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.CharBuffer>(LocalBridgeClazz, "wrap", "([CII)Ljava/nio/CharBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#wrap(char[])"/>
@@ -142,7 +142,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public static Java.Nio.CharBuffer Wrap(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.CharBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.CharBuffer>(LocalBridgeClazz, "wrap", "(Ljava/lang/CharSequence;II)Ljava/nio/CharBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#wrap(java.lang.CharSequence)"/>
@@ -153,9 +153,9 @@ namespace Java.Nio
         {
             return SExecuteWithSignature<Java.Nio.CharBuffer>(LocalBridgeClazz, "wrap", "(Ljava/lang/CharSequence;)Ljava/nio/CharBuffer;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#get()"/>
@@ -215,7 +215,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Put(int arg0, char arg1)
         {
-            return IExecute<Java.Nio.CharBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.CharBuffer>("put", "(IC)Ljava/nio/CharBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#isEmpty()"/>
@@ -317,7 +317,7 @@ namespace Java.Nio
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Appendable Append(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Lang.Appendable>("append", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Appendable>("append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#append(java.lang.CharSequence)"/>
@@ -337,7 +337,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence SubSequence(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("subSequence", "(II)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#get(char[],int,int)"/>
@@ -348,7 +348,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Get(char[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.CharBuffer>("get", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.CharBuffer>("get", "([CII)Ljava/nio/CharBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#get(char[])"/>
@@ -369,7 +369,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Get(int arg0, char[] arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.CharBuffer>("get", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.CharBuffer>("get", "(I[CII)Ljava/nio/CharBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#get(int,char[])"/>
@@ -379,7 +379,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Get(int arg0, char[] arg1)
         {
-            return IExecute<Java.Nio.CharBuffer>("get", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.CharBuffer>("get", "(I[C)Ljava/nio/CharBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#put(char[],int,int)"/>
@@ -390,7 +390,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Put(char[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.CharBuffer>("put", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.CharBuffer>("put", "([CII)Ljava/nio/CharBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#put(int,char[],int,int)"/>
@@ -402,7 +402,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Put(int arg0, char[] arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.CharBuffer>("put", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.CharBuffer>("put", "(I[CII)Ljava/nio/CharBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#put(int,char[])"/>
@@ -412,7 +412,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Put(int arg0, char[] arg1)
         {
-            return IExecute<Java.Nio.CharBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.CharBuffer>("put", "(I[C)Ljava/nio/CharBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#put(int,java.nio.CharBuffer,int,int)"/>
@@ -424,7 +424,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Put(int arg0, Java.Nio.CharBuffer arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Nio.CharBuffer>("put", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Nio.CharBuffer>("put", "(ILjava/nio/CharBuffer;II)Ljava/nio/CharBuffer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#put(java.lang.String,int,int)"/>
@@ -435,7 +435,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer Put(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.CharBuffer>("put", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.CharBuffer>("put", "(Ljava/lang/String;II)Ljava/nio/CharBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#put(java.nio.CharBuffer)"/>
@@ -454,13 +454,13 @@ namespace Java.Nio
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("chars", "()Ljava/util/stream/IntStream;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

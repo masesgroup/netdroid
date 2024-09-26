@@ -40,10 +40,10 @@ namespace Android.Os
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MessageQueue(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region IdleHandler declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Os
             /// </summary>
             [global::System.Obsolete("IdleHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public IdleHandler(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -123,7 +123,7 @@ namespace Android.Os
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnFileDescriptorEventListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.os.MessageQueue_OnFileDescriptorEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -132,13 +132,13 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnFileDescriptorEventListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnFileDescriptorEventListener"/> or its generic type if there is one
@@ -149,14 +149,14 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.os.MessageQueue$OnFileDescriptorEventListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -188,21 +188,21 @@ namespace Android.Os
     public partial class MessageQueue
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/MessageQueue.html#isIdle()"/>
@@ -228,7 +228,7 @@ namespace Android.Os
         /// <param name="arg2"><see cref="Android.Os.MessageQueue.OnFileDescriptorEventListener"/></param>
         public void AddOnFileDescriptorEventListener(Java.Io.FileDescriptor arg0, int arg1, Android.Os.MessageQueue.OnFileDescriptorEventListener arg2)
         {
-            IExecute("addOnFileDescriptorEventListener", arg0, arg1, arg2);
+            IExecuteWithSignature("addOnFileDescriptorEventListener", "(Ljava/io/FileDescriptor;ILandroid/os/MessageQueue$OnFileDescriptorEventListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/MessageQueue.html#removeIdleHandler(android.os.MessageQueue.IdleHandler)"/>
@@ -246,29 +246,29 @@ namespace Android.Os
         {
             IExecuteWithSignature("removeOnFileDescriptorEventListener", "(Ljava/io/FileDescriptor;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region IdleHandler implementation
         public partial class IdleHandler
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/MessageQueue.IdleHandler.html#queueIdle()"/>
@@ -278,13 +278,13 @@ namespace Android.Os
             {
                 return IExecuteWithSignature<bool>("queueIdle", "()Z");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -293,21 +293,21 @@ namespace Android.Os
         public partial class OnFileDescriptorEventListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnFileDescriptorEventListener"/>
@@ -317,13 +317,13 @@ namespace Android.Os
                 AddEventHandler("onFileDescriptorEvents", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnFileDescriptorEventsEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/os/MessageQueue.OnFileDescriptorEventListener.html#onFileDescriptorEvents(java.io.FileDescriptor,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFileDescriptorEvents"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Func<Java.Io.FileDescriptor, int, int> OnOnFileDescriptorEvents { get; set; } = null;
-            
+
             bool hasOverrideOnFileDescriptorEvents = true;
             void OnFileDescriptorEventsEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -332,7 +332,7 @@ namespace Android.Os
                 var executionResult = methodToExecute.Invoke(data.EventData.GetAt<Java.Io.FileDescriptor>(0), data.EventData.GetAt<int>(1));
                 data.EventData.TypedEventData.SetReturnData(hasOverrideOnFileDescriptorEvents, executionResult);
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/MessageQueue.OnFileDescriptorEventListener.html#onFileDescriptorEvents(java.io.FileDescriptor,int)"/>
             /// </summary>
@@ -343,13 +343,13 @@ namespace Android.Os
             {
                 hasOverrideOnFileDescriptorEvents = false; return default;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -358,21 +358,21 @@ namespace Android.Os
         public partial class OnFileDescriptorEventListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/MessageQueue.OnFileDescriptorEventListener.html#onFileDescriptorEvents(java.io.FileDescriptor,int)"/>
@@ -382,22 +382,22 @@ namespace Android.Os
             /// <returns><see cref="int"/></returns>
             public override int OnFileDescriptorEvents(Java.Io.FileDescriptor arg0, int arg1)
             {
-                return IExecute<int>("onFileDescriptorEvents", arg0, arg1);
+                return IExecuteWithSignature<int>("onFileDescriptorEvents", "(Ljava/io/FileDescriptor;I)I", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

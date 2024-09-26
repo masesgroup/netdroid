@@ -42,10 +42,10 @@ namespace Java.Security.Interfaces
         /// </summary>
         [global::System.Obsolete("ECPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ECPrivateKey(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Security.Interfaces
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Security.Interfaces
     public partial interface IECPrivateKey
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,9 +94,9 @@ namespace Java.Security.Interfaces
     public partial class ECPrivateKey : Java.Security.Interfaces.IECPrivateKey, Java.Security.IPrivateKey, Java.Security.Interfaces.IECKey
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Security.Interfaces.ECPrivateKey"/> to <see cref="Java.Security.PrivateKey"/>
@@ -106,9 +106,9 @@ namespace Java.Security.Interfaces
         /// Converter from <see cref="Java.Security.Interfaces.ECPrivateKey"/> to <see cref="Java.Security.Interfaces.ECKey"/>
         /// </summary>
         public static implicit operator Java.Security.Interfaces.ECKey(Java.Security.Interfaces.ECPrivateKey t) => t.Cast<Java.Security.Interfaces.ECKey>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/interfaces/ECPrivateKey.html#serialVersionUID"/>
@@ -117,13 +117,13 @@ namespace Java.Security.Interfaces
         public static long serialVersionUID { get { if (!_serialVersionUIDReady) { _serialVersionUIDContent = SGetField<long>(LocalBridgeClazz, "serialVersionUID"); _serialVersionUIDReady = true; } return _serialVersionUIDContent; } }
         private static long _serialVersionUIDContent = default;
         private static bool _serialVersionUIDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/interfaces/ECPrivateKey.html#getS()"/>
@@ -133,13 +133,13 @@ namespace Java.Security.Interfaces
         {
             return IExecuteWithSignature<Java.Math.BigInteger>("getS", "()Ljava/math/BigInteger;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.Webkit
         /// </summary>
         [global::System.Obsolete("WebViewDatabase class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WebViewDatabase(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Webkit
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Android.Webkit
     public partial class WebViewDatabase
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#getInstance(android.content.Context)"/>
@@ -97,9 +97,9 @@ namespace Android.Webkit
         {
             return SExecuteWithSignature<Android.Webkit.WebViewDatabase>(LocalBridgeClazz, "getInstance", "(Landroid/content/Context;)Landroid/webkit/WebViewDatabase;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#hasFormData()"/>
@@ -135,7 +135,7 @@ namespace Android.Webkit
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetHttpAuthUsernamePassword(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecuteArray<Java.Lang.String>("getHttpAuthUsernamePassword", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getHttpAuthUsernamePassword", "(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#clearFormData()"/>
@@ -169,15 +169,15 @@ namespace Android.Webkit
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void SetHttpAuthUsernamePassword(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            IExecute("setHttpAuthUsernamePassword", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setHttpAuthUsernamePassword", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

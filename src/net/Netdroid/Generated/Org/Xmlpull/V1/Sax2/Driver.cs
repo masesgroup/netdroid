@@ -40,10 +40,10 @@ namespace Org.Xmlpull.V1.Sax2
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Driver(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Org.Xmlpull.V1.Sax2
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -83,9 +83,9 @@ namespace Org.Xmlpull.V1.Sax2
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Org.Xmlpull.V1.Sax2.Driver"/> to <see cref="Org.Xml.Sax.Locator"/>
@@ -99,17 +99,17 @@ namespace Org.Xmlpull.V1.Sax2
         /// Converter from <see cref="Org.Xmlpull.V1.Sax2.Driver"/> to <see cref="Org.Xml.Sax.Attributes"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.Attributes(Org.Xmlpull.V1.Sax2.Driver t) => t.Cast<Org.Xml.Sax.Attributes>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/sax2/Driver.html#getFeature(java.lang.String)"/>
@@ -138,7 +138,7 @@ namespace Org.Xmlpull.V1.Sax2
         /// <returns><see cref="int"/></returns>
         public int GetIndex(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("getIndex", arg0, arg1);
+            return IExecuteWithSignature<int>("getIndex", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/sax2/Driver.html#getIndex(java.lang.String)"/>
@@ -227,7 +227,7 @@ namespace Org.Xmlpull.V1.Sax2
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetType(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getType", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getType", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/sax2/Driver.html#getType(java.lang.String)"/>
@@ -264,7 +264,7 @@ namespace Org.Xmlpull.V1.Sax2
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/sax2/Driver.html#getValue(java.lang.String)"/>
@@ -378,7 +378,7 @@ namespace Org.Xmlpull.V1.Sax2
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setFeature", arg0, arg1);
+            IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/sax2/Driver.html#setProperty(java.lang.String,java.lang.Object)"/>
@@ -389,15 +389,15 @@ namespace Org.Xmlpull.V1.Sax2
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetProperty(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setProperty", arg0, arg1);
+            IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

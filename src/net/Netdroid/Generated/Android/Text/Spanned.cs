@@ -42,10 +42,10 @@ namespace Android.Text
         /// </summary>
         [global::System.Obsolete("Spanned class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Spanned(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.Text
     public partial interface ISpanned : Java.Lang.ICharSequence
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Android.Text
     public partial class Spanned : Android.Text.ISpanned
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Spanned.html#SPAN_COMPOSING"/>
@@ -198,13 +198,13 @@ namespace Android.Text
         public static int SPAN_USER_SHIFT { get { if (!_SPAN_USER_SHIFTReady) { _SPAN_USER_SHIFTContent = SGetField<int>(LocalBridgeClazz, "SPAN_USER_SHIFT"); _SPAN_USER_SHIFTReady = true; } return _SPAN_USER_SHIFTContent; } }
         private static int _SPAN_USER_SHIFTContent = default;
         private static bool _SPAN_USER_SHIFTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Spanned.html#getSpans(int,int,java.lang.Class)"/>
@@ -216,7 +216,7 @@ namespace Android.Text
         /// <returns><typeparamref name="T"/></returns>
         public T[] GetSpans<T>(int arg0, int arg1, Java.Lang.Class arg2)
         {
-            return IExecuteArray<T>("getSpans", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<T>("getSpans", "(IILjava/lang/Class;)[Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Spanned.html#getSpanEnd(java.lang.Object)"/>
@@ -254,15 +254,15 @@ namespace Android.Text
         /// <returns><see cref="int"/></returns>
         public int NextSpanTransition(int arg0, int arg1, Java.Lang.Class arg2)
         {
-            return IExecute<int>("nextSpanTransition", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("nextSpanTransition", "(IILjava/lang/Class;)I", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

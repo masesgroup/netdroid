@@ -42,10 +42,10 @@ namespace Android.Content
         /// </summary>
         [global::System.Obsolete("ContentProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ContentProvider(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region CallingIdentity declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Content
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CallingIdentity(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -130,10 +130,10 @@ namespace Android.Content
             /// </summary>
             [global::System.Obsolete("PipeDataWriter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public PipeDataWriter(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -154,9 +154,9 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -178,10 +178,10 @@ namespace Android.Content
             /// </summary>
             [global::System.Obsolete("PipeDataWriter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public PipeDataWriter(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -202,9 +202,9 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -216,21 +216,21 @@ namespace Android.Content
     public partial class ContentProvider
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#openPipeHelper(android.net.Uri,java.lang.String,android.os.Bundle,java.lang.Object,android.content.ContentProvider.PipeDataWriter)"/>
@@ -245,7 +245,7 @@ namespace Android.Content
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Os.ParcelFileDescriptor OpenPipeHelper<T>(Android.Net.Uri arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, T arg3, Android.Content.ContentProvider.PipeDataWriter<T> arg4)
         {
-            return IExecute<Android.Os.ParcelFileDescriptor>("openPipeHelper", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("openPipeHelper", "(Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/Object;Landroid/content/ContentProvider$PipeDataWriter;)Landroid/os/ParcelFileDescriptor;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"/>
@@ -258,7 +258,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor Query(Android.Net.Uri arg0, Java.Lang.String[] arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, Java.Lang.String arg4)
         {
-            return IExecute<Android.Database.Cursor>("query", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Database.Cursor>("query", "(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#insert(android.net.Uri,android.content.ContentValues)"/>
@@ -268,7 +268,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public Android.Net.Uri Insert(Android.Net.Uri arg0, Android.Content.ContentValues arg1)
         {
-            return IExecute<Android.Net.Uri>("insert", arg0, arg1);
+            return IExecuteWithSignature<Android.Net.Uri>("insert", "(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#onCreate()"/>
@@ -287,7 +287,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int Delete(Android.Net.Uri arg0, Java.Lang.String arg1, Java.Lang.String[] arg2)
         {
-            return IExecute<int>("delete", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("delete", "(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"/>
@@ -299,7 +299,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int Update(Android.Net.Uri arg0, Android.Content.ContentValues arg1, Java.Lang.String arg2, Java.Lang.String[] arg3)
         {
-            return IExecute<int>("update", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("update", "(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getType(android.net.Uri)"/>
@@ -319,7 +319,7 @@ namespace Android.Content
         /// <exception cref="Android.Content.OperationApplicationException"/>
         public Android.Content.ContentProviderResult[] ApplyBatch(Java.Lang.String arg0, Java.Util.ArrayList<Android.Content.ContentProviderOperation> arg1)
         {
-            return IExecuteArray<Android.Content.ContentProviderResult>("applyBatch", arg0, arg1);
+            return IExecuteWithSignatureArray<Android.Content.ContentProviderResult>("applyBatch", "(Ljava/lang/String;Ljava/util/ArrayList;)[Landroid/content/ContentProviderResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#applyBatch(java.util.ArrayList)"/>
@@ -341,7 +341,7 @@ namespace Android.Content
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Content.Res.AssetFileDescriptor OpenAssetFile(Android.Net.Uri arg0, Java.Lang.String arg1, Android.Os.CancellationSignal arg2)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("openAssetFile", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openAssetFile", "(Landroid/net/Uri;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#openAssetFile(android.net.Uri,java.lang.String)"/>
@@ -352,7 +352,7 @@ namespace Android.Content
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Content.Res.AssetFileDescriptor OpenAssetFile(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("openAssetFile", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openAssetFile", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#openTypedAssetFile(android.net.Uri,java.lang.String,android.os.Bundle,android.os.CancellationSignal)"/>
@@ -365,7 +365,7 @@ namespace Android.Content
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Content.Res.AssetFileDescriptor OpenTypedAssetFile(Android.Net.Uri arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, Android.Os.CancellationSignal arg3)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("openTypedAssetFile", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openTypedAssetFile", "(Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#openTypedAssetFile(android.net.Uri,java.lang.String,android.os.Bundle)"/>
@@ -377,7 +377,7 @@ namespace Android.Content
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Content.Res.AssetFileDescriptor OpenTypedAssetFile(Android.Net.Uri arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("openTypedAssetFile", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openTypedAssetFile", "(Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#query(android.net.Uri,java.lang.String[],android.os.Bundle,android.os.CancellationSignal)"/>
@@ -389,7 +389,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor Query(Android.Net.Uri arg0, Java.Lang.String[] arg1, Android.Os.Bundle arg2, Android.Os.CancellationSignal arg3)
         {
-            return IExecute<Android.Database.Cursor>("query", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Database.Cursor>("query", "(Landroid/net/Uri;[Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)"/>
@@ -403,7 +403,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Database.Cursor"/></returns>
         public Android.Database.Cursor Query(Android.Net.Uri arg0, Java.Lang.String[] arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Android.Os.CancellationSignal arg5)
         {
-            return IExecute<Android.Database.Cursor>("query", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Android.Database.Cursor>("query", "(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#canonicalize(android.net.Uri)"/>
@@ -423,7 +423,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public Android.Net.Uri Insert(Android.Net.Uri arg0, Android.Content.ContentValues arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.Net.Uri>("insert", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Net.Uri>("insert", "(Landroid/net/Uri;Landroid/content/ContentValues;Landroid/os/Bundle;)Landroid/net/Uri;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#uncanonicalize(android.net.Uri)"/>
@@ -443,7 +443,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Os.Bundle"/></returns>
         public Android.Os.Bundle Call(Java.Lang.String arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.Os.Bundle>("call", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Os.Bundle>("call", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#call(java.lang.String,java.lang.String,java.lang.String,android.os.Bundle)"/>
@@ -455,7 +455,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Os.Bundle"/></returns>
         public Android.Os.Bundle Call(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Os.Bundle arg3)
         {
-            return IExecute<Android.Os.Bundle>("call", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Os.Bundle>("call", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#openFile(android.net.Uri,java.lang.String,android.os.CancellationSignal)"/>
@@ -467,7 +467,7 @@ namespace Android.Content
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Os.ParcelFileDescriptor OpenFile(Android.Net.Uri arg0, Java.Lang.String arg1, Android.Os.CancellationSignal arg2)
         {
-            return IExecute<Android.Os.ParcelFileDescriptor>("openFile", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("openFile", "(Landroid/net/Uri;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/os/ParcelFileDescriptor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#openFile(android.net.Uri,java.lang.String)"/>
@@ -478,7 +478,7 @@ namespace Android.Content
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Os.ParcelFileDescriptor OpenFile(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Os.ParcelFileDescriptor>("openFile", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("openFile", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#refresh(android.net.Uri,android.os.Bundle,android.os.CancellationSignal)"/>
@@ -489,7 +489,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool Refresh(Android.Net.Uri arg0, Android.Os.Bundle arg1, Android.Os.CancellationSignal arg2)
         {
-            return IExecute<bool>("refresh", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("refresh", "(Landroid/net/Uri;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getCallingAttributionSource()"/>
@@ -587,7 +587,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int BulkInsert(Android.Net.Uri arg0, Android.Content.ContentValues[] arg1)
         {
-            return IExecute<int>("bulkInsert", arg0, arg1);
+            return IExecuteWithSignature<int>("bulkInsert", "(Landroid/net/Uri;[Landroid/content/ContentValues;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#delete(android.net.Uri,android.os.Bundle)"/>
@@ -597,7 +597,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int Delete(Android.Net.Uri arg0, Android.Os.Bundle arg1)
         {
-            return IExecute<int>("delete", arg0, arg1);
+            return IExecuteWithSignature<int>("delete", "(Landroid/net/Uri;Landroid/os/Bundle;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#update(android.net.Uri,android.content.ContentValues,android.os.Bundle)"/>
@@ -608,7 +608,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int Update(Android.Net.Uri arg0, Android.Content.ContentValues arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<int>("update", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("update", "(Landroid/net/Uri;Landroid/content/ContentValues;Landroid/os/Bundle;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getTypeAnonymous(android.net.Uri)"/>
@@ -627,7 +627,7 @@ namespace Android.Content
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetStreamTypes(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
-            return IExecuteArray<Java.Lang.String>("getStreamTypes", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getStreamTypes", "(Landroid/net/Uri;Ljava/lang/String;)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#attachInfo(android.content.Context,android.content.pm.ProviderInfo)"/>
@@ -636,7 +636,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Android.Content.Pm.ProviderInfo"/></param>
         public void AttachInfo(Android.Content.Context arg0, Android.Content.Pm.ProviderInfo arg1)
         {
-            IExecute("attachInfo", arg0, arg1);
+            IExecuteWithSignature("attachInfo", "(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#dump(java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])"/>
@@ -646,7 +646,7 @@ namespace Android.Content
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void Dump(Java.Io.FileDescriptor arg0, Java.Io.PrintWriter arg1, Java.Lang.String[] arg2)
         {
-            IExecute("dump", arg0, arg1, arg2);
+            IExecuteWithSignature("dump", "(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#onCallingPackageChanged()"/>
@@ -685,37 +685,37 @@ namespace Android.Content
         {
             IExecuteWithSignature("shutdown", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region CallingIdentity implementation
         public partial class CallingIdentity
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -724,21 +724,21 @@ namespace Android.Content
         public partial class PipeDataWriter
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ContentProvider.PipeDataWriter.html#writeDataToPipe(android.os.ParcelFileDescriptor,android.net.Uri,java.lang.String,android.os.Bundle,java.lang.Object)"/>
@@ -750,15 +750,15 @@ namespace Android.Content
             /// <param name="arg4"><see cref="object"/></param>
             public void WriteDataToPipe(Android.Os.ParcelFileDescriptor arg0, Android.Net.Uri arg1, Java.Lang.String arg2, Android.Os.Bundle arg3, object arg4)
             {
-                IExecute("writeDataToPipe", arg0, arg1, arg2, arg3, arg4);
+                IExecuteWithSignature("writeDataToPipe", "(Landroid/os/ParcelFileDescriptor;Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -767,25 +767,25 @@ namespace Android.Content
         public partial class PipeDataWriter<T>
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Content.ContentProvider.PipeDataWriter{T}"/> to <see cref="Android.Content.ContentProvider.PipeDataWriter"/>
             /// </summary>
             public static implicit operator Android.Content.ContentProvider.PipeDataWriter(Android.Content.ContentProvider.PipeDataWriter<T> t) => t.Cast<Android.Content.ContentProvider.PipeDataWriter>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/ContentProvider.PipeDataWriter.html#writeDataToPipe(android.os.ParcelFileDescriptor,android.net.Uri,java.lang.String,android.os.Bundle,java.lang.Object)"/>
@@ -797,22 +797,22 @@ namespace Android.Content
             /// <param name="arg4"><typeparamref name="T"/></param>
             public void WriteDataToPipe(Android.Os.ParcelFileDescriptor arg0, Android.Net.Uri arg1, Java.Lang.String arg2, Android.Os.Bundle arg3, T arg4)
             {
-                IExecute("writeDataToPipe", arg0, arg1, arg2, arg3, arg4);
+                IExecuteWithSignature("writeDataToPipe", "(Landroid/os/ParcelFileDescriptor;Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

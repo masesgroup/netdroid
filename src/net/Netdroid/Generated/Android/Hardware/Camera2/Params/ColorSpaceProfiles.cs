@@ -40,10 +40,10 @@ namespace Android.Hardware.Camera2.Params
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ColorSpaceProfiles(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Hardware.Camera2.Params
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,13 +82,13 @@ namespace Android.Hardware.Camera2.Params
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ColorSpaceProfiles.html#UNSPECIFIED"/>
@@ -96,13 +96,13 @@ namespace Android.Hardware.Camera2.Params
         public static int UNSPECIFIED { get { if (!_UNSPECIFIEDReady) { _UNSPECIFIEDContent = SGetField<int>(LocalBridgeClazz, "UNSPECIFIED"); _UNSPECIFIEDReady = true; } return _UNSPECIFIEDContent; } }
         private static int _UNSPECIFIEDContent = default;
         private static bool _UNSPECIFIEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ColorSpaceProfiles.html#getSupportedColorSpaces(int)"/>
@@ -121,7 +121,7 @@ namespace Android.Hardware.Camera2.Params
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Android.Graphics.ColorSpace.Named> GetSupportedColorSpacesForDynamicRange(int arg0, long arg1)
         {
-            return IExecute<Java.Util.Set<Android.Graphics.ColorSpace.Named>>("getSupportedColorSpacesForDynamicRange", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Set<Android.Graphics.ColorSpace.Named>>("getSupportedColorSpacesForDynamicRange", "(IJ)Ljava/util/Set;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ColorSpaceProfiles.html#getSupportedImageFormatsForColorSpace(android.graphics.ColorSpace.Named)"/>
@@ -140,15 +140,15 @@ namespace Android.Hardware.Camera2.Params
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.Long> GetSupportedDynamicRangeProfiles(Android.Graphics.ColorSpace.Named arg0, int arg1)
         {
-            return IExecute<Java.Util.Set<Java.Lang.Long>>("getSupportedDynamicRangeProfiles", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Long>>("getSupportedDynamicRangeProfiles", "(Landroid/graphics/ColorSpace$Named;I)Ljava/util/Set;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

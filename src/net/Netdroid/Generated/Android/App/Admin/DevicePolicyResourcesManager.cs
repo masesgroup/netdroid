@@ -40,10 +40,10 @@ namespace Android.App.Admin
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public DevicePolicyResourcesManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App.Admin
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.App.Admin
     public partial class DevicePolicyResourcesManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyResourcesManager.html#getDrawable(java.lang.String,java.lang.String,java.lang.String,java.util.function.Supplier)"/>
@@ -100,7 +100,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetDrawable(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Util.Function.Supplier<Android.Graphics.Drawable.Drawable> arg3)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getDrawable", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Supplier;)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyResourcesManager.html#getDrawable(java.lang.String,java.lang.String,java.util.function.Supplier)"/>
@@ -111,7 +111,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetDrawable(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.Function.Supplier<Android.Graphics.Drawable.Drawable> arg2)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getDrawable", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Supplier;)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyResourcesManager.html#getDrawableForDensity(java.lang.String,java.lang.String,int,java.util.function.Supplier)"/>
@@ -123,7 +123,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetDrawableForDensity(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Util.Function.Supplier<Android.Graphics.Drawable.Drawable> arg3)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getDrawableForDensity", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawableForDensity", "(Ljava/lang/String;Ljava/lang/String;ILjava/util/function/Supplier;)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyResourcesManager.html#getDrawableForDensity(java.lang.String,java.lang.String,java.lang.String,int,java.util.function.Supplier)"/>
@@ -136,7 +136,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable GetDrawableForDensity(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3, Java.Util.Function.Supplier<Android.Graphics.Drawable.Drawable> arg4)
         {
-            return IExecute<Android.Graphics.Drawable.Drawable>("getDrawableForDensity", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawableForDensity", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/util/function/Supplier;)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyResourcesManager.html#getDrawableAsIcon(java.lang.String,java.lang.String,android.graphics.drawable.Icon)"/>
@@ -147,7 +147,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
         public Android.Graphics.Drawable.Icon GetDrawableAsIcon(Java.Lang.String arg0, Java.Lang.String arg1, Android.Graphics.Drawable.Icon arg2)
         {
-            return IExecute<Android.Graphics.Drawable.Icon>("getDrawableAsIcon", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getDrawableAsIcon", "(Ljava/lang/String;Ljava/lang/String;Landroid/graphics/drawable/Icon;)Landroid/graphics/drawable/Icon;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyResourcesManager.html#getDrawableAsIcon(java.lang.String,java.lang.String,java.lang.String,android.graphics.drawable.Icon)"/>
@@ -159,7 +159,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
         public Android.Graphics.Drawable.Icon GetDrawableAsIcon(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Graphics.Drawable.Icon arg3)
         {
-            return IExecute<Android.Graphics.Drawable.Icon>("getDrawableAsIcon", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getDrawableAsIcon", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/drawable/Icon;)Landroid/graphics/drawable/Icon;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyResourcesManager.html#getString(java.lang.String,java.util.function.Supplier,java.lang.Object[])"/>
@@ -170,7 +170,7 @@ namespace Android.App.Admin
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetString(Java.Lang.String arg0, Java.Util.Function.Supplier<Java.Lang.String> arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Lang.String>("getString", arg0, arg1); else return IExecute<Java.Lang.String>("getString", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;Ljava/util/function/Supplier;[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1); else return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;Ljava/util/function/Supplier;[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyResourcesManager.html#getString(java.lang.String,java.util.function.Supplier)"/>
@@ -180,15 +180,15 @@ namespace Android.App.Admin
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetString(Java.Lang.String arg0, Java.Util.Function.Supplier<Java.Lang.String> arg1)
         {
-            return IExecute<Java.Lang.String>("getString", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;Ljava/util/function/Supplier;)Ljava/lang/String;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

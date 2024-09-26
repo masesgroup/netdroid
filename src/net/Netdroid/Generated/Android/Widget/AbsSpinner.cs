@@ -42,10 +42,10 @@ namespace Android.Widget
         /// </summary>
         [global::System.Obsolete("AbsSpinner class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbsSpinner(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -114,21 +114,21 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsSpinner.html#onSaveInstanceState()"/>
@@ -146,7 +146,7 @@ namespace Android.Widget
         /// <returns><see cref="int"/></returns>
         public int PointToPosition(int arg0, int arg1)
         {
-            return IExecute<int>("pointToPosition", arg0, arg1);
+            return IExecuteWithSignature<int>("pointToPosition", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsSpinner.html#onRestoreInstanceState(android.os.Parcelable)"/>
@@ -171,15 +171,15 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetSelection(int arg0, bool arg1)
         {
-            IExecute("setSelection", arg0, arg1);
+            IExecuteWithSignature("setSelection", "(IZ)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

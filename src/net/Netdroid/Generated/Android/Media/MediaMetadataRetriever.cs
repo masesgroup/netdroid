@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaMetadataRetriever(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region BitmapParams declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BitmapParams(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Media
     public partial class MediaMetadataRetriever
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#METADATA_KEY_ALBUM"/>
@@ -391,13 +391,13 @@ namespace Android.Media
         public static int OPTION_PREVIOUS_SYNC { get { if (!_OPTION_PREVIOUS_SYNCReady) { _OPTION_PREVIOUS_SYNCContent = SGetField<int>(LocalBridgeClazz, "OPTION_PREVIOUS_SYNC"); _OPTION_PREVIOUS_SYNCReady = true; } return _OPTION_PREVIOUS_SYNCContent; } }
         private static int _OPTION_PREVIOUS_SYNCContent = default;
         private static bool _OPTION_PREVIOUS_SYNCReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getFrameAtIndex(int,android.media.MediaMetadataRetriever.BitmapParams)"/>
@@ -407,7 +407,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public Android.Graphics.Bitmap GetFrameAtIndex(int arg0, Android.Media.MediaMetadataRetriever.BitmapParams arg1)
         {
-            return IExecute<Android.Graphics.Bitmap>("getFrameAtIndex", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getFrameAtIndex", "(ILandroid/media/MediaMetadataRetriever$BitmapParams;)Landroid/graphics/Bitmap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getFrameAtIndex(int)"/>
@@ -435,7 +435,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public Android.Graphics.Bitmap GetFrameAtTime(long arg0, int arg1, Android.Media.MediaMetadataRetriever.BitmapParams arg2)
         {
-            return IExecute<Android.Graphics.Bitmap>("getFrameAtTime", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getFrameAtTime", "(JILandroid/media/MediaMetadataRetriever$BitmapParams;)Landroid/graphics/Bitmap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getFrameAtTime(long,int)"/>
@@ -445,7 +445,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public Android.Graphics.Bitmap GetFrameAtTime(long arg0, int arg1)
         {
-            return IExecute<Android.Graphics.Bitmap>("getFrameAtTime", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getFrameAtTime", "(JI)Landroid/graphics/Bitmap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getFrameAtTime(long)"/>
@@ -464,7 +464,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public Android.Graphics.Bitmap GetImageAtIndex(int arg0, Android.Media.MediaMetadataRetriever.BitmapParams arg1)
         {
-            return IExecute<Android.Graphics.Bitmap>("getImageAtIndex", arg0, arg1);
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getImageAtIndex", "(ILandroid/media/MediaMetadataRetriever$BitmapParams;)Landroid/graphics/Bitmap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getImageAtIndex(int)"/>
@@ -503,7 +503,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public Android.Graphics.Bitmap GetScaledFrameAtTime(long arg0, int arg1, int arg2, int arg3, Android.Media.MediaMetadataRetriever.BitmapParams arg4)
         {
-            return IExecute<Android.Graphics.Bitmap>("getScaledFrameAtTime", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getScaledFrameAtTime", "(JIIILandroid/media/MediaMetadataRetriever$BitmapParams;)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getScaledFrameAtTime(long,int,int,int)"/>
@@ -515,7 +515,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public Android.Graphics.Bitmap GetScaledFrameAtTime(long arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Android.Graphics.Bitmap>("getScaledFrameAtTime", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getScaledFrameAtTime", "(JIII)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getEmbeddedPicture()"/>
@@ -543,7 +543,7 @@ namespace Android.Media
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Graphics.Bitmap> GetFramesAtIndex(int arg0, int arg1, Android.Media.MediaMetadataRetriever.BitmapParams arg2)
         {
-            return IExecute<Java.Util.List<Android.Graphics.Bitmap>>("getFramesAtIndex", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.List<Android.Graphics.Bitmap>>("getFramesAtIndex", "(IILandroid/media/MediaMetadataRetriever$BitmapParams;)Ljava/util/List;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getFramesAtIndex(int,int)"/>
@@ -553,7 +553,7 @@ namespace Android.Media
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Android.Graphics.Bitmap> GetFramesAtIndex(int arg0, int arg1)
         {
-            return IExecute<Java.Util.List<Android.Graphics.Bitmap>>("getFramesAtIndex", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.List<Android.Graphics.Bitmap>>("getFramesAtIndex", "(II)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#release()"/>
@@ -580,7 +580,7 @@ namespace Android.Media
         /// <exception cref="Java.Lang.SecurityException"/>
         public void SetDataSource(Android.Content.Context arg0, Android.Net.Uri arg1)
         {
-            IExecute("setDataSource", arg0, arg1);
+            IExecuteWithSignature("setDataSource", "(Landroid/content/Context;Landroid/net/Uri;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#setDataSource(android.media.MediaDataSource)"/>
@@ -600,7 +600,7 @@ namespace Android.Media
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetDataSource(Java.Io.FileDescriptor arg0, long arg1, long arg2)
         {
-            IExecute("setDataSource", arg0, arg1, arg2);
+            IExecuteWithSignature("setDataSource", "(Ljava/io/FileDescriptor;JJ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#setDataSource(java.io.FileDescriptor)"/>
@@ -619,7 +619,7 @@ namespace Android.Media
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetDataSource(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1)
         {
-            IExecute("setDataSource", arg0, arg1);
+            IExecuteWithSignature("setDataSource", "(Ljava/lang/String;Ljava/util/Map;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#setDataSource(java.lang.String)"/>
@@ -630,29 +630,29 @@ namespace Android.Media
         {
             IExecuteWithSignature("setDataSource", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region BitmapParams implementation
         public partial class BitmapParams
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.BitmapParams.html#getActualConfig()"/>
@@ -678,20 +678,20 @@ namespace Android.Media
             {
                 IExecuteWithSignature("setPreferredConfig", "(Landroid/graphics/Bitmap$Config;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

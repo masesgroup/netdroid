@@ -40,10 +40,10 @@ namespace Org.Json
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public JSONObject(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Org.Json
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -110,13 +110,13 @@ namespace Org.Json
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#NULL"/>
@@ -124,9 +124,9 @@ namespace Org.Json
         public static object NULL { get { if (!_NULLReady) { _NULLContent = SGetField(LocalBridgeClazz, "NULL"); _NULLReady = true; } return _NULLContent; } }
         private static object _NULLContent = default;
         private static bool _NULLReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#wrap(java.lang.Object)"/>
@@ -156,9 +156,9 @@ namespace Org.Json
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "quote", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#getBoolean(java.lang.String)"/>
@@ -196,7 +196,7 @@ namespace Org.Json
         /// <returns><see cref="bool"/></returns>
         public bool OptBoolean(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<bool>("optBoolean", arg0, arg1);
+            return IExecuteWithSignature<bool>("optBoolean", "(Ljava/lang/String;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#optBoolean(java.lang.String)"/>
@@ -225,7 +225,7 @@ namespace Org.Json
         /// <returns><see cref="double"/></returns>
         public double OptDouble(Java.Lang.String arg0, double arg1)
         {
-            return IExecute<double>("optDouble", arg0, arg1);
+            return IExecuteWithSignature<double>("optDouble", "(Ljava/lang/String;D)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#optDouble(java.lang.String)"/>
@@ -262,7 +262,7 @@ namespace Org.Json
         /// <returns><see cref="int"/></returns>
         public int OptInt(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("optInt", arg0, arg1);
+            return IExecuteWithSignature<int>("optInt", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#optInt(java.lang.String)"/>
@@ -319,7 +319,7 @@ namespace Org.Json
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String OptString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("optString", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("optString", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#optString(java.lang.String)"/>
@@ -366,7 +366,7 @@ namespace Org.Json
         /// <returns><see cref="long"/></returns>
         public long OptLong(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<long>("optLong", arg0, arg1);
+            return IExecuteWithSignature<long>("optLong", "(Ljava/lang/String;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#optLong(java.lang.String)"/>
@@ -423,7 +423,7 @@ namespace Org.Json
         /// <exception cref="Org.Json.JSONException"/>
         public Org.Json.JSONObject Accumulate(Java.Lang.String arg0, object arg1)
         {
-            return IExecute<Org.Json.JSONObject>("accumulate", arg0, arg1);
+            return IExecuteWithSignature<Org.Json.JSONObject>("accumulate", "(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#append(java.lang.String,java.lang.Object)"/>
@@ -434,7 +434,7 @@ namespace Org.Json
         /// <exception cref="Org.Json.JSONException"/>
         public Org.Json.JSONObject Append(Java.Lang.String arg0, object arg1)
         {
-            return IExecute<Org.Json.JSONObject>("append", arg0, arg1);
+            return IExecuteWithSignature<Org.Json.JSONObject>("append", "(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#getJSONObject(java.lang.String)"/>
@@ -464,7 +464,7 @@ namespace Org.Json
         /// <exception cref="Org.Json.JSONException"/>
         public Org.Json.JSONObject Put(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<Org.Json.JSONObject>("put", arg0, arg1);
+            return IExecuteWithSignature<Org.Json.JSONObject>("put", "(Ljava/lang/String;Z)Lorg/json/JSONObject;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#put(java.lang.String,double)"/>
@@ -475,7 +475,7 @@ namespace Org.Json
         /// <exception cref="Org.Json.JSONException"/>
         public Org.Json.JSONObject Put(Java.Lang.String arg0, double arg1)
         {
-            return IExecute<Org.Json.JSONObject>("put", arg0, arg1);
+            return IExecuteWithSignature<Org.Json.JSONObject>("put", "(Ljava/lang/String;D)Lorg/json/JSONObject;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#put(java.lang.String,int)"/>
@@ -486,7 +486,7 @@ namespace Org.Json
         /// <exception cref="Org.Json.JSONException"/>
         public Org.Json.JSONObject Put(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Org.Json.JSONObject>("put", arg0, arg1);
+            return IExecuteWithSignature<Org.Json.JSONObject>("put", "(Ljava/lang/String;I)Lorg/json/JSONObject;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#put(java.lang.String,java.lang.Object)"/>
@@ -497,7 +497,7 @@ namespace Org.Json
         /// <exception cref="Org.Json.JSONException"/>
         public Org.Json.JSONObject Put(Java.Lang.String arg0, object arg1)
         {
-            return IExecute<Org.Json.JSONObject>("put", arg0, arg1);
+            return IExecuteWithSignature<Org.Json.JSONObject>("put", "(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#put(java.lang.String,long)"/>
@@ -508,7 +508,7 @@ namespace Org.Json
         /// <exception cref="Org.Json.JSONException"/>
         public Org.Json.JSONObject Put(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<Org.Json.JSONObject>("put", arg0, arg1);
+            return IExecuteWithSignature<Org.Json.JSONObject>("put", "(Ljava/lang/String;J)Lorg/json/JSONObject;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#putOpt(java.lang.String,java.lang.Object)"/>
@@ -519,15 +519,15 @@ namespace Org.Json
         /// <exception cref="Org.Json.JSONException"/>
         public Org.Json.JSONObject PutOpt(Java.Lang.String arg0, object arg1)
         {
-            return IExecute<Org.Json.JSONObject>("putOpt", arg0, arg1);
+            return IExecuteWithSignature<Org.Json.JSONObject>("putOpt", "(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SparseBooleanArray(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,21 +82,21 @@ namespace Android.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#clone()"/>
@@ -114,7 +114,7 @@ namespace Android.Util
         /// <returns><see cref="bool"/></returns>
         public bool Get(int arg0, bool arg1)
         {
-            return IExecute<bool>("get", arg0, arg1);
+            return IExecuteWithSignature<bool>("get", "(IZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#get(int)"/>
@@ -176,7 +176,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="bool"/></param>
         public void Append(int arg0, bool arg1)
         {
-            IExecute("append", arg0, arg1);
+            IExecuteWithSignature("append", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#clear()"/>
@@ -200,7 +200,7 @@ namespace Android.Util
         /// <param name="arg1"><see cref="bool"/></param>
         public void Put(int arg0, bool arg1)
         {
-            IExecute("put", arg0, arg1);
+            IExecuteWithSignature("put", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SparseBooleanArray.html#removeAt(int)"/>
@@ -217,15 +217,15 @@ namespace Android.Util
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetValueAt(int arg0, bool arg1)
         {
-            IExecute("setValueAt", arg0, arg1);
+            IExecuteWithSignature("setValueAt", "(IZ)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Java.Io
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public StreamTokenizer(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Io
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -91,13 +91,13 @@ namespace Java.Io
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#nval"/>
@@ -135,13 +135,13 @@ namespace Java.Io
         public static int TT_WORD { get { if (!_TT_WORDReady) { _TT_WORDContent = SGetField<int>(LocalBridgeClazz, "TT_WORD"); _TT_WORDReady = true; } return _TT_WORDContent; } }
         private static int _TT_WORDContent = default;
         private static bool _TT_WORDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#lineno()"/>
@@ -199,7 +199,7 @@ namespace Java.Io
         /// <param name="arg1"><see cref="int"/></param>
         public void OrdinaryChars(int arg0, int arg1)
         {
-            IExecute("ordinaryChars", arg0, arg1);
+            IExecuteWithSignature("ordinaryChars", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#parseNumbers()"/>
@@ -253,7 +253,7 @@ namespace Java.Io
         /// <param name="arg1"><see cref="int"/></param>
         public void WhitespaceChars(int arg0, int arg1)
         {
-            IExecute("whitespaceChars", arg0, arg1);
+            IExecuteWithSignature("whitespaceChars", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#wordChars(int,int)"/>
@@ -262,15 +262,15 @@ namespace Java.Io
         /// <param name="arg1"><see cref="int"/></param>
         public void WordChars(int arg0, int arg1)
         {
-            IExecute("wordChars", arg0, arg1);
+            IExecuteWithSignature("wordChars", "(II)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

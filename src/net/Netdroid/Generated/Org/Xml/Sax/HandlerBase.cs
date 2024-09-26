@@ -41,10 +41,10 @@ namespace Org.Xml.Sax
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HandlerBase(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Org.Xml.Sax
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,9 +75,9 @@ namespace Org.Xml.Sax
     public partial class HandlerBase : Org.Xml.Sax.IEntityResolver, Org.Xml.Sax.IDTDHandler, Org.Xml.Sax.IDocumentHandler, Org.Xml.Sax.IErrorHandler
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Org.Xml.Sax.HandlerBase"/> to <see cref="Org.Xml.Sax.EntityResolver"/>
@@ -95,17 +95,17 @@ namespace Org.Xml.Sax
         /// Converter from <see cref="Org.Xml.Sax.HandlerBase"/> to <see cref="Org.Xml.Sax.ErrorHandler"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.ErrorHandler(Org.Xml.Sax.HandlerBase t) => t.Cast<Org.Xml.Sax.ErrorHandler>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#resolveEntity(java.lang.String,java.lang.String)"/>
@@ -116,7 +116,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public Org.Xml.Sax.InputSource ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1);
+            return IExecuteWithSignature<Org.Xml.Sax.InputSource>("resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#characters(char[],int,int)"/>
@@ -127,7 +127,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Characters(char[] arg0, int arg1, int arg2)
         {
-            IExecute("characters", arg0, arg1, arg2);
+            IExecuteWithSignature("characters", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#endDocument()"/>
@@ -173,7 +173,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void IgnorableWhitespace(char[] arg0, int arg1, int arg2)
         {
-            IExecute("ignorableWhitespace", arg0, arg1, arg2);
+            IExecuteWithSignature("ignorableWhitespace", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#notationDecl(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -183,7 +183,7 @@ namespace Org.Xml.Sax
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void NotationDecl(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("notationDecl", arg0, arg1, arg2);
+            IExecuteWithSignature("notationDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#processingInstruction(java.lang.String,java.lang.String)"/>
@@ -193,7 +193,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void ProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("processingInstruction", arg0, arg1);
+            IExecuteWithSignature("processingInstruction", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#setDocumentLocator(org.xml.sax.Locator)"/>
@@ -219,7 +219,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartElement(Java.Lang.String arg0, Org.Xml.Sax.AttributeList arg1)
         {
-            IExecute("startElement", arg0, arg1);
+            IExecuteWithSignature("startElement", "(Ljava/lang/String;Lorg/xml/sax/AttributeList;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#unparsedEntityDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -230,7 +230,7 @@ namespace Org.Xml.Sax
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void UnparsedEntityDecl(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            IExecute("unparsedEntityDecl", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("unparsedEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#warning(org.xml.sax.SAXParseException)"/>
@@ -241,13 +241,13 @@ namespace Org.Xml.Sax
         {
             IExecuteWithSignature("warning", "(Lorg/xml/sax/SAXParseException;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

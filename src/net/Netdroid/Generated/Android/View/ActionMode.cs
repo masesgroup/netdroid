@@ -42,10 +42,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("ActionMode class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ActionMode(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.View
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -132,10 +132,10 @@ namespace Android.View
             /// </summary>
             [global::System.Obsolete("Callback2 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback2(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -156,9 +156,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -170,13 +170,13 @@ namespace Android.View
     public partial class ActionMode
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#DEFAULT_HIDE_DURATION"/>
@@ -196,13 +196,13 @@ namespace Android.View
         public static int TYPE_PRIMARY { get { if (!_TYPE_PRIMARYReady) { _TYPE_PRIMARYContent = SGetField<int>(LocalBridgeClazz, "TYPE_PRIMARY"); _TYPE_PRIMARYReady = true; } return _TYPE_PRIMARYContent; } }
         private static int _TYPE_PRIMARYContent = default;
         private static bool _TYPE_PRIMARYReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ActionMode.html#getMenu()"/>
@@ -377,29 +377,29 @@ namespace Android.View
         {
             IExecuteWithSignature("setType", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onActionItemClicked(android.view.ActionMode,android.view.MenuItem)"/>
@@ -409,7 +409,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool OnActionItemClicked(Android.View.ActionMode arg0, Android.View.MenuItem arg1)
             {
-                return IExecute<bool>("onActionItemClicked", arg0, arg1);
+                return IExecuteWithSignature<bool>("onActionItemClicked", "(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onCreateActionMode(android.view.ActionMode,android.view.Menu)"/>
@@ -419,7 +419,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool OnCreateActionMode(Android.View.ActionMode arg0, Android.View.Menu arg1)
             {
-                return IExecute<bool>("onCreateActionMode", arg0, arg1);
+                return IExecuteWithSignature<bool>("onCreateActionMode", "(Landroid/view/ActionMode;Landroid/view/Menu;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onPrepareActionMode(android.view.ActionMode,android.view.Menu)"/>
@@ -429,7 +429,7 @@ namespace Android.View
             /// <returns><see cref="bool"/></returns>
             public bool OnPrepareActionMode(Android.View.ActionMode arg0, Android.View.Menu arg1)
             {
-                return IExecute<bool>("onPrepareActionMode", arg0, arg1);
+                return IExecuteWithSignature<bool>("onPrepareActionMode", "(Landroid/view/ActionMode;Landroid/view/Menu;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionMode.Callback.html#onDestroyActionMode(android.view.ActionMode)"/>
@@ -439,13 +439,13 @@ namespace Android.View
             {
                 IExecuteWithSignature("onDestroyActionMode", "(Landroid/view/ActionMode;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -454,21 +454,21 @@ namespace Android.View
         public partial class Callback2
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ActionMode.Callback2.html#onGetContentRect(android.view.ActionMode,android.view.View,android.graphics.Rect)"/>
@@ -478,22 +478,22 @@ namespace Android.View
             /// <param name="arg2"><see cref="Android.Graphics.Rect"/></param>
             public void OnGetContentRect(Android.View.ActionMode arg0, Android.View.View arg1, Android.Graphics.Rect arg2)
             {
-                IExecute("onGetContentRect", arg0, arg1, arg2);
+                IExecuteWithSignature("onGetContentRect", "(Landroid/view/ActionMode;Landroid/view/View;Landroid/graphics/Rect;)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

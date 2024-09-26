@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Dialog(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -91,25 +91,25 @@ namespace Android.App
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.App.Dialog"/> to <see cref="Android.Content.DialogInterface"/>
         /// </summary>
         public static implicit operator Android.Content.DialogInterface(Android.App.Dialog t) => t.Cast<Android.Content.DialogInterface>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#findViewById(int)"/>
@@ -145,7 +145,7 @@ namespace Android.App
         /// <returns><see cref="Android.View.ActionMode"/></returns>
         public Android.View.ActionMode OnWindowStartingActionMode(Android.View.ActionMode.Callback arg0, int arg1)
         {
-            return IExecute<Android.View.ActionMode>("onWindowStartingActionMode", arg0, arg1);
+            return IExecuteWithSignature<Android.View.ActionMode>("onWindowStartingActionMode", "(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onWindowStartingActionMode(android.view.ActionMode.Callback)"/>
@@ -285,7 +285,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool OnCreatePanelMenu(int arg0, Android.View.Menu arg1)
         {
-            return IExecute<bool>("onCreatePanelMenu", arg0, arg1);
+            return IExecuteWithSignature<bool>("onCreatePanelMenu", "(ILandroid/view/Menu;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onGenericMotionEvent(android.view.MotionEvent)"/>
@@ -304,7 +304,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyDown(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("onKeyDown", arg0, arg1);
+            return IExecuteWithSignature<bool>("onKeyDown", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onKeyLongPress(int,android.view.KeyEvent)"/>
@@ -314,7 +314,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyLongPress(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("onKeyLongPress", arg0, arg1);
+            return IExecuteWithSignature<bool>("onKeyLongPress", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onKeyMultiple(int,int,android.view.KeyEvent)"/>
@@ -325,7 +325,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyMultiple(int arg0, int arg1, Android.View.KeyEvent arg2)
         {
-            return IExecute<bool>("onKeyMultiple", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onKeyMultiple", "(IILandroid/view/KeyEvent;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onKeyShortcut(int,android.view.KeyEvent)"/>
@@ -335,7 +335,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyShortcut(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("onKeyShortcut", arg0, arg1);
+            return IExecuteWithSignature<bool>("onKeyShortcut", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onKeyUp(int,android.view.KeyEvent)"/>
@@ -345,7 +345,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool OnKeyUp(int arg0, Android.View.KeyEvent arg1)
         {
-            return IExecute<bool>("onKeyUp", arg0, arg1);
+            return IExecuteWithSignature<bool>("onKeyUp", "(ILandroid/view/KeyEvent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onMenuItemSelected(int,android.view.MenuItem)"/>
@@ -355,7 +355,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool OnMenuItemSelected(int arg0, Android.View.MenuItem arg1)
         {
-            return IExecute<bool>("onMenuItemSelected", arg0, arg1);
+            return IExecuteWithSignature<bool>("onMenuItemSelected", "(ILandroid/view/MenuItem;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onMenuOpened(int,android.view.Menu)"/>
@@ -365,7 +365,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool OnMenuOpened(int arg0, Android.View.Menu arg1)
         {
-            return IExecute<bool>("onMenuOpened", arg0, arg1);
+            return IExecuteWithSignature<bool>("onMenuOpened", "(ILandroid/view/Menu;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onOptionsItemSelected(android.view.MenuItem)"/>
@@ -394,7 +394,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool OnPreparePanel(int arg0, Android.View.View arg1, Android.View.Menu arg2)
         {
-            return IExecute<bool>("onPreparePanel", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("onPreparePanel", "(ILandroid/view/View;Landroid/view/Menu;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onSearchRequested()"/>
@@ -489,7 +489,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Graphics.Drawable.Drawable"/></param>
         public void SetFeatureDrawable(int arg0, Android.Graphics.Drawable.Drawable arg1)
         {
-            IExecute("setFeatureDrawable", arg0, arg1);
+            IExecuteWithSignature("setFeatureDrawable", "(ILandroid/graphics/drawable/Drawable;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#setFeatureDrawableAlpha(int,int)"/>
@@ -498,7 +498,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         public void SetFeatureDrawableAlpha(int arg0, int arg1)
         {
-            IExecute("setFeatureDrawableAlpha", arg0, arg1);
+            IExecuteWithSignature("setFeatureDrawableAlpha", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#setFeatureDrawableResource(int,int)"/>
@@ -507,7 +507,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         public void SetFeatureDrawableResource(int arg0, int arg1)
         {
-            IExecute("setFeatureDrawableResource", arg0, arg1);
+            IExecuteWithSignature("setFeatureDrawableResource", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#setFeatureDrawableUri(int,android.net.Uri)"/>
@@ -516,7 +516,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
         public void SetFeatureDrawableUri(int arg0, Android.Net.Uri arg1)
         {
-            IExecute("setFeatureDrawableUri", arg0, arg1);
+            IExecuteWithSignature("setFeatureDrawableUri", "(ILandroid/net/Uri;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#setOwnerActivity(android.app.Activity)"/>
@@ -541,7 +541,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
         public void AddContentView(Android.View.View arg0, Android.View.ViewGroup.LayoutParams arg1)
         {
-            IExecute("addContentView", arg0, arg1);
+            IExecuteWithSignature("addContentView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#cancel()"/>
@@ -639,7 +639,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.View.ContextMenu.ContextMenuInfo"/></param>
         public void OnCreateContextMenu(Android.View.ContextMenu arg0, Android.View.View arg1, Android.View.ContextMenu.ContextMenuInfo arg2)
         {
-            IExecute("onCreateContextMenu", arg0, arg1, arg2);
+            IExecuteWithSignature("onCreateContextMenu", "(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onDetachedFromWindow()"/>
@@ -663,7 +663,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.View.Menu"/></param>
         public void OnPanelClosed(int arg0, Android.View.Menu arg1)
         {
-            IExecute("onPanelClosed", arg0, arg1);
+            IExecuteWithSignature("onPanelClosed", "(ILandroid/view/Menu;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onRestoreInstanceState(android.os.Bundle)"/>
@@ -743,7 +743,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
         public void SetContentView(Android.View.View arg0, Android.View.ViewGroup.LayoutParams arg1)
         {
-            IExecute("setContentView", arg0, arg1);
+            IExecuteWithSignature("setContentView", "(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#setContentView(android.view.View)"/>
@@ -840,13 +840,13 @@ namespace Android.App
         {
             IExecuteWithSignature("unregisterForContextMenu", "(Landroid/view/View;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

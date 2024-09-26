@@ -40,10 +40,10 @@ namespace Javax.Net.Ssl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SSLContext(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Javax.Net.Ssl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Javax.Net.Ssl
     public partial class SSLContext
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getDefault()"/>
@@ -105,7 +105,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Net.Ssl.SSLContext GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/net/ssl/SSLContext;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -116,7 +116,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Net.Ssl.SSLContext GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljavax/net/ssl/SSLContext;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getInstance(java.lang.String)"/>
@@ -136,9 +136,9 @@ namespace Javax.Net.Ssl
         {
             SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljavax/net/ssl/SSLContext;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getProtocol()"/>
@@ -172,7 +172,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="Javax.Net.Ssl.SSLEngine"/></returns>
         public Javax.Net.Ssl.SSLEngine CreateSSLEngine(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngine>("createSSLEngine", arg0, arg1);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngine>("createSSLEngine", "(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getDefaultSSLParameters()"/>
@@ -231,15 +231,15 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.KeyManagementException"/>
         public void Init(Javax.Net.Ssl.KeyManager[] arg0, Javax.Net.Ssl.TrustManager[] arg1, Java.Security.SecureRandom arg2)
         {
-            IExecute("init", arg0, arg1, arg2);
+            IExecuteWithSignature("init", "([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

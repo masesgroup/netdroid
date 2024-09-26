@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PointerIcon(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.View
     public partial class PointerIcon
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PointerIcon.html#CREATOR"/>
@@ -233,9 +233,9 @@ namespace Android.View
         public static int TYPE_ZOOM_OUT { get { if (!_TYPE_ZOOM_OUTReady) { _TYPE_ZOOM_OUTContent = SGetField<int>(LocalBridgeClazz, "TYPE_ZOOM_OUT"); _TYPE_ZOOM_OUTReady = true; } return _TYPE_ZOOM_OUTContent; } }
         private static int _TYPE_ZOOM_OUTContent = default;
         private static bool _TYPE_ZOOM_OUTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PointerIcon.html#create(android.graphics.Bitmap,float,float)"/>
@@ -246,7 +246,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.PointerIcon"/></returns>
         public static Android.View.PointerIcon Create(Android.Graphics.Bitmap arg0, float arg1, float arg2)
         {
-            return SExecute<Android.View.PointerIcon>(LocalBridgeClazz, "create", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.View.PointerIcon>(LocalBridgeClazz, "create", "(Landroid/graphics/Bitmap;FF)Landroid/view/PointerIcon;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PointerIcon.html#getSystemIcon(android.content.Context,int)"/>
@@ -256,7 +256,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.PointerIcon"/></returns>
         public static Android.View.PointerIcon GetSystemIcon(Android.Content.Context arg0, int arg1)
         {
-            return SExecute<Android.View.PointerIcon>(LocalBridgeClazz, "getSystemIcon", arg0, arg1);
+            return SExecuteWithSignature<Android.View.PointerIcon>(LocalBridgeClazz, "getSystemIcon", "(Landroid/content/Context;I)Landroid/view/PointerIcon;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PointerIcon.html#load(android.content.res.Resources,int)"/>
@@ -266,11 +266,11 @@ namespace Android.View
         /// <returns><see cref="Android.View.PointerIcon"/></returns>
         public static Android.View.PointerIcon Load(Android.Content.Res.Resources arg0, int arg1)
         {
-            return SExecute<Android.View.PointerIcon>(LocalBridgeClazz, "load", arg0, arg1);
+            return SExecuteWithSignature<Android.View.PointerIcon>(LocalBridgeClazz, "load", "(Landroid/content/res/Resources;I)Landroid/view/PointerIcon;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/PointerIcon.html#describeContents()"/>
@@ -287,15 +287,15 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

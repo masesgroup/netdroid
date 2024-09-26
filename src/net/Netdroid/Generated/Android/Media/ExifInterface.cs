@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ExifInterface(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -120,13 +120,13 @@ namespace Android.Media
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#ORIENTATION_FLIP_HORIZONTAL"/>
@@ -1068,9 +1068,9 @@ namespace Android.Media
         public static Java.Lang.String TAG_Y_RESOLUTION { get { if (!_TAG_Y_RESOLUTIONReady) { _TAG_Y_RESOLUTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG_Y_RESOLUTION"); _TAG_Y_RESOLUTIONReady = true; } return _TAG_Y_RESOLUTIONContent; } }
         private static Java.Lang.String _TAG_Y_RESOLUTIONContent = default;
         private static bool _TAG_Y_RESOLUTIONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#isSupportedMimeType(java.lang.String)"/>
@@ -1081,9 +1081,9 @@ namespace Android.Media
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSupportedMimeType", "(Ljava/lang/String;)Z", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getThumbnailBitmap()"/>
@@ -1169,7 +1169,7 @@ namespace Android.Media
         /// <returns><see cref="double"/></returns>
         public double GetAttributeDouble(Java.Lang.String arg0, double arg1)
         {
-            return IExecute<double>("getAttributeDouble", arg0, arg1);
+            return IExecuteWithSignature<double>("getAttributeDouble", "(Ljava/lang/String;D)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getAttributeInt(java.lang.String,int)"/>
@@ -1179,7 +1179,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int GetAttributeInt(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("getAttributeInt", arg0, arg1);
+            return IExecuteWithSignature<int>("getAttributeInt", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getAttribute(java.lang.String)"/>
@@ -1254,15 +1254,15 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetAttribute(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setAttribute", arg0, arg1);
+            IExecuteWithSignature("setAttribute", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

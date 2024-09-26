@@ -42,10 +42,10 @@ namespace Android.Content
         /// </summary>
         [global::System.Obsolete("SharedPreferences class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SharedPreferences(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Editor declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Content
             /// </summary>
             [global::System.Obsolete("Editor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Editor(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -125,7 +125,7 @@ namespace Android.Content
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnSharedPreferenceChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.content.SharedPreferences_OnSharedPreferenceChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -134,13 +134,13 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnSharedPreferenceChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnSharedPreferenceChangeListener"/> or its generic type if there is one
@@ -151,14 +151,14 @@ namespace Android.Content
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.content.SharedPreferences$OnSharedPreferenceChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -193,13 +193,13 @@ namespace Android.Content
     public partial interface ISharedPreferences
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -208,21 +208,21 @@ namespace Android.Content
     public partial class SharedPreferences : Android.Content.ISharedPreferences
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.html#edit()"/>
@@ -249,7 +249,7 @@ namespace Android.Content
         /// <returns><see cref="bool"/></returns>
         public bool GetBoolean(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<bool>("getBoolean", arg0, arg1);
+            return IExecuteWithSignature<bool>("getBoolean", "(Ljava/lang/String;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.html#getFloat(java.lang.String,float)"/>
@@ -259,7 +259,7 @@ namespace Android.Content
         /// <returns><see cref="float"/></returns>
         public float GetFloat(Java.Lang.String arg0, float arg1)
         {
-            return IExecute<float>("getFloat", arg0, arg1);
+            return IExecuteWithSignature<float>("getFloat", "(Ljava/lang/String;F)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.html#getInt(java.lang.String,int)"/>
@@ -269,7 +269,7 @@ namespace Android.Content
         /// <returns><see cref="int"/></returns>
         public int GetInt(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("getInt", arg0, arg1);
+            return IExecuteWithSignature<int>("getInt", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.html#getString(java.lang.String,java.lang.String)"/>
@@ -279,7 +279,7 @@ namespace Android.Content
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getString", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.html#getAll()"/>
@@ -297,7 +297,7 @@ namespace Android.Content
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> GetStringSet(Java.Lang.String arg0, Java.Util.Set<Java.Lang.String> arg1)
         {
-            return IExecute<Java.Util.Set<Java.Lang.String>>("getStringSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getStringSet", "(Ljava/lang/String;Ljava/util/Set;)Ljava/util/Set;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.html#getLong(java.lang.String,long)"/>
@@ -307,7 +307,7 @@ namespace Android.Content
         /// <returns><see cref="long"/></returns>
         public long GetLong(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<long>("getLong", arg0, arg1);
+            return IExecuteWithSignature<long>("getLong", "(Ljava/lang/String;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.html#registerOnSharedPreferenceChangeListener(android.content.SharedPreferences.OnSharedPreferenceChangeListener)"/>
@@ -325,29 +325,29 @@ namespace Android.Content
         {
             IExecuteWithSignature("unregisterOnSharedPreferenceChangeListener", "(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Editor implementation
         public partial class Editor
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.Editor.html#clear()"/>
@@ -365,7 +365,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.SharedPreferences.Editor"/></returns>
             public Android.Content.SharedPreferences.Editor PutBoolean(Java.Lang.String arg0, bool arg1)
             {
-                return IExecute<Android.Content.SharedPreferences.Editor>("putBoolean", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.SharedPreferences.Editor>("putBoolean", "(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.Editor.html#putFloat(java.lang.String,float)"/>
@@ -375,7 +375,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.SharedPreferences.Editor"/></returns>
             public Android.Content.SharedPreferences.Editor PutFloat(Java.Lang.String arg0, float arg1)
             {
-                return IExecute<Android.Content.SharedPreferences.Editor>("putFloat", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.SharedPreferences.Editor>("putFloat", "(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.Editor.html#putInt(java.lang.String,int)"/>
@@ -385,7 +385,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.SharedPreferences.Editor"/></returns>
             public Android.Content.SharedPreferences.Editor PutInt(Java.Lang.String arg0, int arg1)
             {
-                return IExecute<Android.Content.SharedPreferences.Editor>("putInt", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.SharedPreferences.Editor>("putInt", "(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.Editor.html#putLong(java.lang.String,long)"/>
@@ -395,7 +395,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.SharedPreferences.Editor"/></returns>
             public Android.Content.SharedPreferences.Editor PutLong(Java.Lang.String arg0, long arg1)
             {
-                return IExecute<Android.Content.SharedPreferences.Editor>("putLong", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.SharedPreferences.Editor>("putLong", "(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.Editor.html#putString(java.lang.String,java.lang.String)"/>
@@ -405,7 +405,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.SharedPreferences.Editor"/></returns>
             public Android.Content.SharedPreferences.Editor PutString(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<Android.Content.SharedPreferences.Editor>("putString", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.SharedPreferences.Editor>("putString", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.Editor.html#putStringSet(java.lang.String,java.util.Set)"/>
@@ -415,7 +415,7 @@ namespace Android.Content
             /// <returns><see cref="Android.Content.SharedPreferences.Editor"/></returns>
             public Android.Content.SharedPreferences.Editor PutStringSet(Java.Lang.String arg0, Java.Util.Set<Java.Lang.String> arg1)
             {
-                return IExecute<Android.Content.SharedPreferences.Editor>("putStringSet", arg0, arg1);
+                return IExecuteWithSignature<Android.Content.SharedPreferences.Editor>("putStringSet", "(Ljava/lang/String;Ljava/util/Set;)Landroid/content/SharedPreferences$Editor;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.Editor.html#remove(java.lang.String)"/>
@@ -441,13 +441,13 @@ namespace Android.Content
             {
                 IExecuteWithSignature("apply", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -456,21 +456,21 @@ namespace Android.Content
         public partial class OnSharedPreferenceChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnSharedPreferenceChangeListener"/>
@@ -480,13 +480,13 @@ namespace Android.Content
                 AddEventHandler("onSharedPreferenceChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnSharedPreferenceChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/content/SharedPreferences.OnSharedPreferenceChangeListener.html#onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSharedPreferenceChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Content.SharedPreferences, Java.Lang.String> OnOnSharedPreferenceChanged { get; set; } = null;
-            
+
             bool hasOverrideOnSharedPreferenceChanged = true;
             void OnSharedPreferenceChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -495,7 +495,7 @@ namespace Android.Content
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Content.SharedPreferences>(0), data.EventData.GetAt<Java.Lang.String>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnSharedPreferenceChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.OnSharedPreferenceChangeListener.html#onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)"/>
             /// </summary>
@@ -505,13 +505,13 @@ namespace Android.Content
             {
                 hasOverrideOnSharedPreferenceChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -520,21 +520,21 @@ namespace Android.Content
         public partial class OnSharedPreferenceChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/SharedPreferences.OnSharedPreferenceChangeListener.html#onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)"/>
@@ -543,22 +543,22 @@ namespace Android.Content
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public override void OnSharedPreferenceChanged(Android.Content.SharedPreferences arg0, Java.Lang.String arg1)
             {
-                IExecute("onSharedPreferenceChanged", arg0, arg1);
+                IExecuteWithSignature("onSharedPreferenceChanged", "(Landroid/content/SharedPreferences;Ljava/lang/String;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

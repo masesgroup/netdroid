@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public NumberPicker(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Formatter declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Widget
             /// </summary>
             [global::System.Obsolete("Formatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Formatter(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -123,7 +123,7 @@ namespace Android.Widget
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnScrollListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.NumberPicker_OnScrollListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -132,13 +132,13 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnScrollListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnScrollListener"/> or its generic type if there is one
@@ -149,14 +149,14 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.widget.NumberPicker$OnScrollListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -190,7 +190,7 @@ namespace Android.Widget
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnValueChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.NumberPicker_OnValueChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -199,13 +199,13 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnValueChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnValueChangeListener"/> or its generic type if there is one
@@ -216,14 +216,14 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.widget.NumberPicker$OnValueChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -293,21 +293,21 @@ namespace Android.Widget
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getWrapSelectorWheel()"/>
@@ -469,29 +469,29 @@ namespace Android.Widget
         {
             IExecuteWithSignature("setWrapSelectorWheel", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Formatter implementation
         public partial class Formatter
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.Formatter.html#format(int)"/>
@@ -502,13 +502,13 @@ namespace Android.Widget
             {
                 return IExecuteWithSignature<Java.Lang.String>("format", "(I)Ljava/lang/String;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -517,21 +517,21 @@ namespace Android.Widget
         public partial class OnScrollListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnScrollListener"/>
@@ -541,13 +541,13 @@ namespace Android.Widget
                 AddEventHandler("onScrollStateChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnScrollStateChangeEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/NumberPicker.OnScrollListener.html#onScrollStateChange(android.widget.NumberPicker,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScrollStateChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Widget.NumberPicker, int> OnOnScrollStateChange { get; set; } = null;
-            
+
             bool hasOverrideOnScrollStateChange = true;
             void OnScrollStateChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -556,7 +556,7 @@ namespace Android.Widget
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Widget.NumberPicker>(0), data.EventData.GetAt<int>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnScrollStateChange;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.OnScrollListener.html#onScrollStateChange(android.widget.NumberPicker,int)"/>
             /// </summary>
@@ -566,13 +566,13 @@ namespace Android.Widget
             {
                 hasOverrideOnScrollStateChange = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -581,21 +581,21 @@ namespace Android.Widget
         public partial class OnScrollListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.OnScrollListener.html#onScrollStateChange(android.widget.NumberPicker,int)"/>
@@ -604,15 +604,15 @@ namespace Android.Widget
             /// <param name="arg1"><see cref="int"/></param>
             public override void OnScrollStateChange(Android.Widget.NumberPicker arg0, int arg1)
             {
-                IExecute("onScrollStateChange", arg0, arg1);
+                IExecuteWithSignature("onScrollStateChange", "(Landroid/widget/NumberPicker;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -621,21 +621,21 @@ namespace Android.Widget
         public partial class OnValueChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnValueChangeListener"/>
@@ -645,13 +645,13 @@ namespace Android.Widget
                 AddEventHandler("onValueChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnValueChangeEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/widget/NumberPicker.OnValueChangeListener.html#onValueChange(android.widget.NumberPicker,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnValueChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Widget.NumberPicker, int, int> OnOnValueChange { get; set; } = null;
-            
+
             bool hasOverrideOnValueChange = true;
             void OnValueChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -660,7 +660,7 @@ namespace Android.Widget
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Widget.NumberPicker>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnValueChange;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.OnValueChangeListener.html#onValueChange(android.widget.NumberPicker,int,int)"/>
             /// </summary>
@@ -671,13 +671,13 @@ namespace Android.Widget
             {
                 hasOverrideOnValueChange = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -686,21 +686,21 @@ namespace Android.Widget
         public partial class OnValueChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.OnValueChangeListener.html#onValueChange(android.widget.NumberPicker,int,int)"/>
@@ -710,22 +710,22 @@ namespace Android.Widget
             /// <param name="arg2"><see cref="int"/></param>
             public override void OnValueChange(Android.Widget.NumberPicker arg0, int arg1, int arg2)
             {
-                IExecute("onValueChange", arg0, arg1, arg2);
+                IExecuteWithSignature("onValueChange", "(Landroid/widget/NumberPicker;II)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

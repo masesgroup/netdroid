@@ -40,10 +40,10 @@ namespace Android.Opengl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ETC1(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Opengl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Opengl
     public partial class ETC1
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/ETC1.html#DECODED_BLOCK_SIZE"/>
@@ -106,9 +106,9 @@ namespace Android.Opengl
         public static int ETC1_RGB8_OES { get { if (!_ETC1_RGB8_OESReady) { _ETC1_RGB8_OESContent = SGetField<int>(LocalBridgeClazz, "ETC1_RGB8_OES"); _ETC1_RGB8_OESReady = true; } return _ETC1_RGB8_OESContent; } }
         private static int _ETC1_RGB8_OESContent = default;
         private static bool _ETC1_RGB8_OESReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/ETC1.html#isValid(java.nio.Buffer)"/>
@@ -127,7 +127,7 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int GetEncodedDataSize(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "getEncodedDataSize", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getEncodedDataSize", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/ETC1.html#getHeight(java.nio.Buffer)"/>
@@ -154,7 +154,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Nio.Buffer"/></param>
         public static void DecodeBlock(Java.Nio.Buffer arg0, Java.Nio.Buffer arg1)
         {
-            SExecute(LocalBridgeClazz, "decodeBlock", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "decodeBlock", "(Ljava/nio/Buffer;Ljava/nio/Buffer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/ETC1.html#decodeImage(java.nio.Buffer,java.nio.Buffer,int,int,int,int)"/>
@@ -167,7 +167,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="int"/></param>
         public static void DecodeImage(Java.Nio.Buffer arg0, Java.Nio.Buffer arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "decodeImage", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "decodeImage", "(Ljava/nio/Buffer;Ljava/nio/Buffer;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/ETC1.html#encodeBlock(java.nio.Buffer,int,java.nio.Buffer)"/>
@@ -177,7 +177,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.Buffer"/></param>
         public static void EncodeBlock(Java.Nio.Buffer arg0, int arg1, Java.Nio.Buffer arg2)
         {
-            SExecute(LocalBridgeClazz, "encodeBlock", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "encodeBlock", "(Ljava/nio/Buffer;ILjava/nio/Buffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/ETC1.html#encodeImage(java.nio.Buffer,int,int,int,int,java.nio.Buffer)"/>
@@ -190,7 +190,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="Java.Nio.Buffer"/></param>
         public static void EncodeImage(Java.Nio.Buffer arg0, int arg1, int arg2, int arg3, int arg4, Java.Nio.Buffer arg5)
         {
-            SExecute(LocalBridgeClazz, "encodeImage", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "encodeImage", "(Ljava/nio/Buffer;IIIILjava/nio/Buffer;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/ETC1.html#formatHeader(java.nio.Buffer,int,int)"/>
@@ -200,19 +200,19 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void FormatHeader(Java.Nio.Buffer arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "formatHeader", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "formatHeader", "(Ljava/nio/Buffer;II)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

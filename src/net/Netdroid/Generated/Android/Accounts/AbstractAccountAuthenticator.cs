@@ -42,10 +42,10 @@ namespace Android.Accounts
         /// </summary>
         [global::System.Obsolete("AbstractAccountAuthenticator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractAccountAuthenticator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Accounts
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -84,13 +84,13 @@ namespace Android.Accounts
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#KEY_CUSTOM_TOKEN_EXPIRY"/>
@@ -98,13 +98,13 @@ namespace Android.Accounts
         public static Java.Lang.String KEY_CUSTOM_TOKEN_EXPIRY { get { if (!_KEY_CUSTOM_TOKEN_EXPIRYReady) { _KEY_CUSTOM_TOKEN_EXPIRYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_CUSTOM_TOKEN_EXPIRY"); _KEY_CUSTOM_TOKEN_EXPIRYReady = true; } return _KEY_CUSTOM_TOKEN_EXPIRYContent; } }
         private static Java.Lang.String _KEY_CUSTOM_TOKEN_EXPIRYContent = default;
         private static bool _KEY_CUSTOM_TOKEN_EXPIRYReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#addAccount(android.accounts.AccountAuthenticatorResponse,java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle)"/>
@@ -118,7 +118,7 @@ namespace Android.Accounts
         /// <exception cref="Android.Accounts.NetworkErrorException"/>
         public Android.Os.Bundle AddAccount(Android.Accounts.AccountAuthenticatorResponse arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, Android.Os.Bundle arg4)
         {
-            return IExecute<Android.Os.Bundle>("addAccount", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Os.Bundle>("addAccount", "(Landroid/accounts/AccountAuthenticatorResponse;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#confirmCredentials(android.accounts.AccountAuthenticatorResponse,android.accounts.Account,android.os.Bundle)"/>
@@ -130,7 +130,7 @@ namespace Android.Accounts
         /// <exception cref="Android.Accounts.NetworkErrorException"/>
         public Android.Os.Bundle ConfirmCredentials(Android.Accounts.AccountAuthenticatorResponse arg0, Android.Accounts.Account arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.Os.Bundle>("confirmCredentials", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Os.Bundle>("confirmCredentials", "(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#editProperties(android.accounts.AccountAuthenticatorResponse,java.lang.String)"/>
@@ -140,7 +140,7 @@ namespace Android.Accounts
         /// <returns><see cref="Android.Os.Bundle"/></returns>
         public Android.Os.Bundle EditProperties(Android.Accounts.AccountAuthenticatorResponse arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Os.Bundle>("editProperties", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.Bundle>("editProperties", "(Landroid/accounts/AccountAuthenticatorResponse;Ljava/lang/String;)Landroid/os/Bundle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#getAuthToken(android.accounts.AccountAuthenticatorResponse,android.accounts.Account,java.lang.String,android.os.Bundle)"/>
@@ -153,7 +153,7 @@ namespace Android.Accounts
         /// <exception cref="Android.Accounts.NetworkErrorException"/>
         public Android.Os.Bundle GetAuthToken(Android.Accounts.AccountAuthenticatorResponse arg0, Android.Accounts.Account arg1, Java.Lang.String arg2, Android.Os.Bundle arg3)
         {
-            return IExecute<Android.Os.Bundle>("getAuthToken", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Os.Bundle>("getAuthToken", "(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#hasFeatures(android.accounts.AccountAuthenticatorResponse,android.accounts.Account,java.lang.String[])"/>
@@ -165,7 +165,7 @@ namespace Android.Accounts
         /// <exception cref="Android.Accounts.NetworkErrorException"/>
         public Android.Os.Bundle HasFeatures(Android.Accounts.AccountAuthenticatorResponse arg0, Android.Accounts.Account arg1, Java.Lang.String[] arg2)
         {
-            return IExecute<Android.Os.Bundle>("hasFeatures", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Os.Bundle>("hasFeatures", "(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;[Ljava/lang/String;)Landroid/os/Bundle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#updateCredentials(android.accounts.AccountAuthenticatorResponse,android.accounts.Account,java.lang.String,android.os.Bundle)"/>
@@ -178,7 +178,7 @@ namespace Android.Accounts
         /// <exception cref="Android.Accounts.NetworkErrorException"/>
         public Android.Os.Bundle UpdateCredentials(Android.Accounts.AccountAuthenticatorResponse arg0, Android.Accounts.Account arg1, Java.Lang.String arg2, Android.Os.Bundle arg3)
         {
-            return IExecute<Android.Os.Bundle>("updateCredentials", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Os.Bundle>("updateCredentials", "(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#getAuthTokenLabel(java.lang.String)"/>
@@ -199,7 +199,7 @@ namespace Android.Accounts
         /// <exception cref="Android.Accounts.NetworkErrorException"/>
         public Android.Os.Bundle AddAccountFromCredentials(Android.Accounts.AccountAuthenticatorResponse arg0, Android.Accounts.Account arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.Os.Bundle>("addAccountFromCredentials", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Os.Bundle>("addAccountFromCredentials", "(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#finishSession(android.accounts.AccountAuthenticatorResponse,java.lang.String,android.os.Bundle)"/>
@@ -211,7 +211,7 @@ namespace Android.Accounts
         /// <exception cref="Android.Accounts.NetworkErrorException"/>
         public Android.Os.Bundle FinishSession(Android.Accounts.AccountAuthenticatorResponse arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.Os.Bundle>("finishSession", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Os.Bundle>("finishSession", "(Landroid/accounts/AccountAuthenticatorResponse;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#getAccountCredentialsForCloning(android.accounts.AccountAuthenticatorResponse,android.accounts.Account)"/>
@@ -222,7 +222,7 @@ namespace Android.Accounts
         /// <exception cref="Android.Accounts.NetworkErrorException"/>
         public Android.Os.Bundle GetAccountCredentialsForCloning(Android.Accounts.AccountAuthenticatorResponse arg0, Android.Accounts.Account arg1)
         {
-            return IExecute<Android.Os.Bundle>("getAccountCredentialsForCloning", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.Bundle>("getAccountCredentialsForCloning", "(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;)Landroid/os/Bundle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#getAccountRemovalAllowed(android.accounts.AccountAuthenticatorResponse,android.accounts.Account)"/>
@@ -233,7 +233,7 @@ namespace Android.Accounts
         /// <exception cref="Android.Accounts.NetworkErrorException"/>
         public Android.Os.Bundle GetAccountRemovalAllowed(Android.Accounts.AccountAuthenticatorResponse arg0, Android.Accounts.Account arg1)
         {
-            return IExecute<Android.Os.Bundle>("getAccountRemovalAllowed", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.Bundle>("getAccountRemovalAllowed", "(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;)Landroid/os/Bundle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#isCredentialsUpdateSuggested(android.accounts.AccountAuthenticatorResponse,android.accounts.Account,java.lang.String)"/>
@@ -245,7 +245,7 @@ namespace Android.Accounts
         /// <exception cref="Android.Accounts.NetworkErrorException"/>
         public Android.Os.Bundle IsCredentialsUpdateSuggested(Android.Accounts.AccountAuthenticatorResponse arg0, Android.Accounts.Account arg1, Java.Lang.String arg2)
         {
-            return IExecute<Android.Os.Bundle>("isCredentialsUpdateSuggested", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Os.Bundle>("isCredentialsUpdateSuggested", "(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;Ljava/lang/String;)Landroid/os/Bundle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#startAddAccountSession(android.accounts.AccountAuthenticatorResponse,java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle)"/>
@@ -259,7 +259,7 @@ namespace Android.Accounts
         /// <exception cref="Android.Accounts.NetworkErrorException"/>
         public Android.Os.Bundle StartAddAccountSession(Android.Accounts.AccountAuthenticatorResponse arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, Android.Os.Bundle arg4)
         {
-            return IExecute<Android.Os.Bundle>("startAddAccountSession", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Os.Bundle>("startAddAccountSession", "(Landroid/accounts/AccountAuthenticatorResponse;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#startUpdateCredentialsSession(android.accounts.AccountAuthenticatorResponse,android.accounts.Account,java.lang.String,android.os.Bundle)"/>
@@ -272,7 +272,7 @@ namespace Android.Accounts
         /// <exception cref="Android.Accounts.NetworkErrorException"/>
         public Android.Os.Bundle StartUpdateCredentialsSession(Android.Accounts.AccountAuthenticatorResponse arg0, Android.Accounts.Account arg1, Java.Lang.String arg2, Android.Os.Bundle arg3)
         {
-            return IExecute<Android.Os.Bundle>("startUpdateCredentialsSession", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Os.Bundle>("startUpdateCredentialsSession", "(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#getIBinder()"/>
@@ -282,13 +282,13 @@ namespace Android.Accounts
         {
             return IExecuteWithSignature<Android.Os.IBinder>("getIBinder", "()Landroid/os/IBinder;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

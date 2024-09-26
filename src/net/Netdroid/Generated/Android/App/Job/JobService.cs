@@ -42,10 +42,10 @@ namespace Android.App.Job
         /// </summary>
         [global::System.Obsolete("JobService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public JobService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.App.Job
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Android.App.Job
     public partial class JobService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobService.html#JOB_END_NOTIFICATION_POLICY_DETACH"/>
@@ -102,13 +102,13 @@ namespace Android.App.Job
         public static Java.Lang.String PERMISSION_BIND { get { if (!_PERMISSION_BINDReady) { _PERMISSION_BINDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PERMISSION_BIND"); _PERMISSION_BINDReady = true; } return _PERMISSION_BINDContent; } }
         private static Java.Lang.String _PERMISSION_BINDContent = default;
         private static bool _PERMISSION_BINDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobService.html#onStartJob(android.app.job.JobParameters)"/>
@@ -135,7 +135,7 @@ namespace Android.App.Job
         /// <param name="arg1"><see cref="bool"/></param>
         public void JobFinished(Android.App.Job.JobParameters arg0, bool arg1)
         {
-            IExecute("jobFinished", arg0, arg1);
+            IExecuteWithSignature("jobFinished", "(Landroid/app/job/JobParameters;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobService.html#setNotification(android.app.job.JobParameters,int,android.app.Notification,int)"/>
@@ -146,7 +146,7 @@ namespace Android.App.Job
         /// <param name="arg3"><see cref="int"/></param>
         public void SetNotification(Android.App.Job.JobParameters arg0, int arg1, Android.App.Notification arg2, int arg3)
         {
-            IExecute("setNotification", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setNotification", "(Landroid/app/job/JobParameters;ILandroid/app/Notification;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobService.html#updateEstimatedNetworkBytes(android.app.job.JobParameters,android.app.job.JobWorkItem,long,long)"/>
@@ -157,7 +157,7 @@ namespace Android.App.Job
         /// <param name="arg3"><see cref="long"/></param>
         public void UpdateEstimatedNetworkBytes(Android.App.Job.JobParameters arg0, Android.App.Job.JobWorkItem arg1, long arg2, long arg3)
         {
-            IExecute("updateEstimatedNetworkBytes", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("updateEstimatedNetworkBytes", "(Landroid/app/job/JobParameters;Landroid/app/job/JobWorkItem;JJ)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobService.html#updateEstimatedNetworkBytes(android.app.job.JobParameters,long,long)"/>
@@ -167,7 +167,7 @@ namespace Android.App.Job
         /// <param name="arg2"><see cref="long"/></param>
         public void UpdateEstimatedNetworkBytes(Android.App.Job.JobParameters arg0, long arg1, long arg2)
         {
-            IExecute("updateEstimatedNetworkBytes", arg0, arg1, arg2);
+            IExecuteWithSignature("updateEstimatedNetworkBytes", "(Landroid/app/job/JobParameters;JJ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobService.html#updateTransferredNetworkBytes(android.app.job.JobParameters,android.app.job.JobWorkItem,long,long)"/>
@@ -178,7 +178,7 @@ namespace Android.App.Job
         /// <param name="arg3"><see cref="long"/></param>
         public void UpdateTransferredNetworkBytes(Android.App.Job.JobParameters arg0, Android.App.Job.JobWorkItem arg1, long arg2, long arg3)
         {
-            IExecute("updateTransferredNetworkBytes", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("updateTransferredNetworkBytes", "(Landroid/app/job/JobParameters;Landroid/app/job/JobWorkItem;JJ)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobService.html#updateTransferredNetworkBytes(android.app.job.JobParameters,long,long)"/>
@@ -188,7 +188,7 @@ namespace Android.App.Job
         /// <param name="arg2"><see cref="long"/></param>
         public void UpdateTransferredNetworkBytes(Android.App.Job.JobParameters arg0, long arg1, long arg2)
         {
-            IExecute("updateTransferredNetworkBytes", arg0, arg1, arg2);
+            IExecuteWithSignature("updateTransferredNetworkBytes", "(Landroid/app/job/JobParameters;JJ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobService.html#onNetworkChanged(android.app.job.JobParameters)"/>
@@ -198,13 +198,13 @@ namespace Android.App.Job
         {
             IExecuteWithSignature("onNetworkChanged", "(Landroid/app/job/JobParameters;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

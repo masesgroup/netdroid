@@ -42,10 +42,10 @@ namespace Android.Net.Http
         /// </summary>
         [global::System.Obsolete("UrlRequest class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UrlRequest(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Net.Http
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Net.Http
             /// </summary>
             [global::System.Obsolete("Builder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Net.Http
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -132,10 +132,10 @@ namespace Android.Net.Http
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -156,9 +156,9 @@ namespace Android.Net.Http
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -177,10 +177,10 @@ namespace Android.Net.Http
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Status(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -201,9 +201,9 @@ namespace Android.Net.Http
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -217,7 +217,7 @@ namespace Android.Net.Http
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public StatusListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.net.http.UrlRequest_StatusListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -226,13 +226,13 @@ namespace Android.Net.Http
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region StatusListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="StatusListener"/> or its generic type if there is one
@@ -243,14 +243,14 @@ namespace Android.Net.Http
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.net.http.UrlRequest$StatusListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -282,13 +282,13 @@ namespace Android.Net.Http
     public partial class UrlRequest
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#REQUEST_PRIORITY_HIGHEST"/>
@@ -320,13 +320,13 @@ namespace Android.Net.Http
         public static int REQUEST_PRIORITY_MEDIUM { get { if (!_REQUEST_PRIORITY_MEDIUMReady) { _REQUEST_PRIORITY_MEDIUMContent = SGetField<int>(LocalBridgeClazz, "REQUEST_PRIORITY_MEDIUM"); _REQUEST_PRIORITY_MEDIUMReady = true; } return _REQUEST_PRIORITY_MEDIUMContent; } }
         private static int _REQUEST_PRIORITY_MEDIUMContent = default;
         private static bool _REQUEST_PRIORITY_MEDIUMReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#getHeaders()"/>
@@ -445,29 +445,29 @@ namespace Android.Net.Http
         {
             IExecuteWithSignature("start", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.Builder.html#build()"/>
@@ -485,7 +485,7 @@ namespace Android.Net.Http
             /// <returns><see cref="Android.Net.Http.UrlRequest.Builder"/></returns>
             public Android.Net.Http.UrlRequest.Builder AddHeader(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<Android.Net.Http.UrlRequest.Builder>("addHeader", arg0, arg1);
+                return IExecuteWithSignature<Android.Net.Http.UrlRequest.Builder>("addHeader", "(Ljava/lang/String;Ljava/lang/String;)Landroid/net/http/UrlRequest$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.Builder.html#bindToNetwork(android.net.Network)"/>
@@ -558,15 +558,15 @@ namespace Android.Net.Http
             /// <returns><see cref="Android.Net.Http.UrlRequest.Builder"/></returns>
             public Android.Net.Http.UrlRequest.Builder SetUploadDataProvider(Android.Net.Http.UploadDataProvider arg0, Java.Util.Concurrent.Executor arg1)
             {
-                return IExecute<Android.Net.Http.UrlRequest.Builder>("setUploadDataProvider", arg0, arg1);
+                return IExecuteWithSignature<Android.Net.Http.UrlRequest.Builder>("setUploadDataProvider", "(Landroid/net/http/UploadDataProvider;Ljava/util/concurrent/Executor;)Landroid/net/http/UrlRequest$Builder;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -575,21 +575,21 @@ namespace Android.Net.Http
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.Callback.html#onCanceled(android.net.http.UrlRequest,android.net.http.UrlResponseInfo)"/>
@@ -598,7 +598,7 @@ namespace Android.Net.Http
             /// <param name="arg1"><see cref="Android.Net.Http.UrlResponseInfo"/></param>
             public void OnCanceled(Android.Net.Http.UrlRequest arg0, Android.Net.Http.UrlResponseInfo arg1)
             {
-                IExecute("onCanceled", arg0, arg1);
+                IExecuteWithSignature("onCanceled", "(Landroid/net/http/UrlRequest;Landroid/net/http/UrlResponseInfo;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.Callback.html#onFailed(android.net.http.UrlRequest,android.net.http.UrlResponseInfo,android.net.http.HttpException)"/>
@@ -608,7 +608,7 @@ namespace Android.Net.Http
             /// <param name="arg2"><see cref="Android.Net.Http.HttpException"/></param>
             public void OnFailed(Android.Net.Http.UrlRequest arg0, Android.Net.Http.UrlResponseInfo arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
             {
-                IExecute("onFailed", arg0, arg1, arg2);
+                IExecuteWithSignature("onFailed", "(Landroid/net/http/UrlRequest;Landroid/net/http/UrlResponseInfo;Landroid/net/http/HttpException;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.Callback.html#onReadCompleted(android.net.http.UrlRequest,android.net.http.UrlResponseInfo,java.nio.ByteBuffer)"/>
@@ -619,7 +619,7 @@ namespace Android.Net.Http
             /// <exception cref="Java.Lang.Exception"/>
             public void OnReadCompleted(Android.Net.Http.UrlRequest arg0, Android.Net.Http.UrlResponseInfo arg1, Java.Nio.ByteBuffer arg2)
             {
-                IExecute("onReadCompleted", arg0, arg1, arg2);
+                IExecuteWithSignature("onReadCompleted", "(Landroid/net/http/UrlRequest;Landroid/net/http/UrlResponseInfo;Ljava/nio/ByteBuffer;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.Callback.html#onRedirectReceived(android.net.http.UrlRequest,android.net.http.UrlResponseInfo,java.lang.String)"/>
@@ -630,7 +630,7 @@ namespace Android.Net.Http
             /// <exception cref="Java.Lang.Exception"/>
             public void OnRedirectReceived(Android.Net.Http.UrlRequest arg0, Android.Net.Http.UrlResponseInfo arg1, Java.Lang.String arg2)
             {
-                IExecute("onRedirectReceived", arg0, arg1, arg2);
+                IExecuteWithSignature("onRedirectReceived", "(Landroid/net/http/UrlRequest;Landroid/net/http/UrlResponseInfo;Ljava/lang/String;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.Callback.html#onResponseStarted(android.net.http.UrlRequest,android.net.http.UrlResponseInfo)"/>
@@ -640,7 +640,7 @@ namespace Android.Net.Http
             /// <exception cref="Java.Lang.Exception"/>
             public void OnResponseStarted(Android.Net.Http.UrlRequest arg0, Android.Net.Http.UrlResponseInfo arg1)
             {
-                IExecute("onResponseStarted", arg0, arg1);
+                IExecuteWithSignature("onResponseStarted", "(Landroid/net/http/UrlRequest;Landroid/net/http/UrlResponseInfo;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.Callback.html#onSucceeded(android.net.http.UrlRequest,android.net.http.UrlResponseInfo)"/>
@@ -649,15 +649,15 @@ namespace Android.Net.Http
             /// <param name="arg1"><see cref="Android.Net.Http.UrlResponseInfo"/></param>
             public void OnSucceeded(Android.Net.Http.UrlRequest arg0, Android.Net.Http.UrlResponseInfo arg1)
             {
-                IExecute("onSucceeded", arg0, arg1);
+                IExecuteWithSignature("onSucceeded", "(Landroid/net/http/UrlRequest;Landroid/net/http/UrlResponseInfo;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -666,13 +666,13 @@ namespace Android.Net.Http
         public partial class Status
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.Status.html#CONNECTING"/>
@@ -770,21 +770,21 @@ namespace Android.Net.Http
             public static int WAITING_FOR_STALLED_SOCKET_POOL { get { if (!_WAITING_FOR_STALLED_SOCKET_POOLReady) { _WAITING_FOR_STALLED_SOCKET_POOLContent = SGetField<int>(LocalBridgeClazz, "WAITING_FOR_STALLED_SOCKET_POOL"); _WAITING_FOR_STALLED_SOCKET_POOLReady = true; } return _WAITING_FOR_STALLED_SOCKET_POOLContent; } }
             private static int _WAITING_FOR_STALLED_SOCKET_POOLContent = default;
             private static bool _WAITING_FOR_STALLED_SOCKET_POOLReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -793,21 +793,21 @@ namespace Android.Net.Http
         public partial class StatusListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="StatusListener"/>
@@ -817,13 +817,13 @@ namespace Android.Net.Http
                 AddEventHandler("onStatus", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnStatusEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/net/http/UrlRequest.StatusListener.html#onStatus(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnStatus"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<int> OnOnStatus { get; set; } = null;
-            
+
             bool hasOverrideOnStatus = true;
             void OnStatusEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -832,7 +832,7 @@ namespace Android.Net.Http
                 methodToExecute.Invoke(data.EventData.GetAt<int>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnStatus;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.StatusListener.html#onStatus(int)"/>
             /// </summary>
@@ -841,13 +841,13 @@ namespace Android.Net.Http
             {
                 hasOverrideOnStatus = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -856,21 +856,21 @@ namespace Android.Net.Http
         public partial class StatusListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.StatusListener.html#onStatus(int)"/>
@@ -880,20 +880,20 @@ namespace Android.Net.Http
             {
                 IExecuteWithSignature("onStatus", "(I)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.Bluetooth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BluetoothHidDevice(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Bluetooth
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Bluetooth
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Bluetooth
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Bluetooth
     public partial class BluetoothHidDevice
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDevice.html#ERROR_RSP_INVALID_PARAM"/>
@@ -267,13 +267,13 @@ namespace Android.Bluetooth
         public static Java.Lang.String ACTION_CONNECTION_STATE_CHANGED { get { if (!_ACTION_CONNECTION_STATE_CHANGEDReady) { _ACTION_CONNECTION_STATE_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_CONNECTION_STATE_CHANGED"); _ACTION_CONNECTION_STATE_CHANGEDReady = true; } return _ACTION_CONNECTION_STATE_CHANGEDContent; } }
         private static Java.Lang.String _ACTION_CONNECTION_STATE_CHANGEDContent = default;
         private static bool _ACTION_CONNECTION_STATE_CHANGEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDevice.html#connect(android.bluetooth.BluetoothDevice)"/>
@@ -304,7 +304,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="bool"/></returns>
         public bool RegisterApp(Android.Bluetooth.BluetoothHidDeviceAppSdpSettings arg0, Android.Bluetooth.BluetoothHidDeviceAppQosSettings arg1, Android.Bluetooth.BluetoothHidDeviceAppQosSettings arg2, Java.Util.Concurrent.Executor arg3, Android.Bluetooth.BluetoothHidDevice.Callback arg4)
         {
-            return IExecute<bool>("registerApp", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("registerApp", "(Landroid/bluetooth/BluetoothHidDeviceAppSdpSettings;Landroid/bluetooth/BluetoothHidDeviceAppQosSettings;Landroid/bluetooth/BluetoothHidDeviceAppQosSettings;Ljava/util/concurrent/Executor;Landroid/bluetooth/BluetoothHidDevice$Callback;)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDevice.html#replyReport(android.bluetooth.BluetoothDevice,byte,byte,byte[])"/>
@@ -316,7 +316,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="bool"/></returns>
         public bool ReplyReport(Android.Bluetooth.BluetoothDevice arg0, byte arg1, byte arg2, byte[] arg3)
         {
-            return IExecute<bool>("replyReport", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("replyReport", "(Landroid/bluetooth/BluetoothDevice;BB[B)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDevice.html#reportError(android.bluetooth.BluetoothDevice,byte)"/>
@@ -326,7 +326,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="bool"/></returns>
         public bool ReportError(Android.Bluetooth.BluetoothDevice arg0, byte arg1)
         {
-            return IExecute<bool>("reportError", arg0, arg1);
+            return IExecuteWithSignature<bool>("reportError", "(Landroid/bluetooth/BluetoothDevice;B)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDevice.html#sendReport(android.bluetooth.BluetoothDevice,int,byte[])"/>
@@ -337,7 +337,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="bool"/></returns>
         public bool SendReport(Android.Bluetooth.BluetoothDevice arg0, int arg1, byte[] arg2)
         {
-            return IExecute<bool>("sendReport", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("sendReport", "(Landroid/bluetooth/BluetoothDevice;I[B)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDevice.html#unregisterApp()"/>
@@ -373,29 +373,29 @@ namespace Android.Bluetooth
         {
             return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getDevicesMatchingConnectionStates", "([I)Ljava/util/List;", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDevice.Callback.html#onAppStatusChanged(android.bluetooth.BluetoothDevice,boolean)"/>
@@ -404,7 +404,7 @@ namespace Android.Bluetooth
             /// <param name="arg1"><see cref="bool"/></param>
             public void OnAppStatusChanged(Android.Bluetooth.BluetoothDevice arg0, bool arg1)
             {
-                IExecute("onAppStatusChanged", arg0, arg1);
+                IExecuteWithSignature("onAppStatusChanged", "(Landroid/bluetooth/BluetoothDevice;Z)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDevice.Callback.html#onConnectionStateChanged(android.bluetooth.BluetoothDevice,int)"/>
@@ -413,7 +413,7 @@ namespace Android.Bluetooth
             /// <param name="arg1"><see cref="int"/></param>
             public void OnConnectionStateChanged(Android.Bluetooth.BluetoothDevice arg0, int arg1)
             {
-                IExecute("onConnectionStateChanged", arg0, arg1);
+                IExecuteWithSignature("onConnectionStateChanged", "(Landroid/bluetooth/BluetoothDevice;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDevice.Callback.html#onGetReport(android.bluetooth.BluetoothDevice,byte,byte,int)"/>
@@ -424,7 +424,7 @@ namespace Android.Bluetooth
             /// <param name="arg3"><see cref="int"/></param>
             public void OnGetReport(Android.Bluetooth.BluetoothDevice arg0, byte arg1, byte arg2, int arg3)
             {
-                IExecute("onGetReport", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onGetReport", "(Landroid/bluetooth/BluetoothDevice;BBI)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDevice.Callback.html#onInterruptData(android.bluetooth.BluetoothDevice,byte,byte[])"/>
@@ -434,7 +434,7 @@ namespace Android.Bluetooth
             /// <param name="arg2"><see cref="byte"/></param>
             public void OnInterruptData(Android.Bluetooth.BluetoothDevice arg0, byte arg1, byte[] arg2)
             {
-                IExecute("onInterruptData", arg0, arg1, arg2);
+                IExecuteWithSignature("onInterruptData", "(Landroid/bluetooth/BluetoothDevice;B[B)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDevice.Callback.html#onSetProtocol(android.bluetooth.BluetoothDevice,byte)"/>
@@ -443,7 +443,7 @@ namespace Android.Bluetooth
             /// <param name="arg1"><see cref="byte"/></param>
             public void OnSetProtocol(Android.Bluetooth.BluetoothDevice arg0, byte arg1)
             {
-                IExecute("onSetProtocol", arg0, arg1);
+                IExecuteWithSignature("onSetProtocol", "(Landroid/bluetooth/BluetoothDevice;B)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDevice.Callback.html#onSetReport(android.bluetooth.BluetoothDevice,byte,byte,byte[])"/>
@@ -454,7 +454,7 @@ namespace Android.Bluetooth
             /// <param name="arg3"><see cref="byte"/></param>
             public void OnSetReport(Android.Bluetooth.BluetoothDevice arg0, byte arg1, byte arg2, byte[] arg3)
             {
-                IExecute("onSetReport", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onSetReport", "(Landroid/bluetooth/BluetoothDevice;BB[B)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDevice.Callback.html#onVirtualCableUnplug(android.bluetooth.BluetoothDevice)"/>
@@ -464,20 +464,20 @@ namespace Android.Bluetooth
             {
                 IExecuteWithSignature("onVirtualCableUnplug", "(Landroid/bluetooth/BluetoothDevice;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Java.Util.Concurrent
         /// </summary>
         [global::System.Obsolete("CompletionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompletionService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,10 +90,10 @@ namespace Java.Util.Concurrent
         /// </summary>
         [global::System.Obsolete("CompletionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompletionService(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -124,21 +124,21 @@ namespace Java.Util.Concurrent
     public partial class CompletionService
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#poll()"/>
@@ -157,7 +157,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Util.Concurrent.Future Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<Java.Util.Concurrent.Future>("poll", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
@@ -167,7 +167,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future Submit(Java.Lang.Runnable arg0, object arg1)
         {
-            return IExecute<Java.Util.Concurrent.Future>("submit", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future>("submit", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#submit(java.util.concurrent.Callable)"/>
@@ -187,13 +187,13 @@ namespace Java.Util.Concurrent
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Future>("take", "()Ljava/util/concurrent/Future;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -205,13 +205,13 @@ namespace Java.Util.Concurrent
     public partial interface ICompletionService<V>
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -220,25 +220,25 @@ namespace Java.Util.Concurrent
     public partial class CompletionService<V> : Java.Util.Concurrent.ICompletionService<V>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.CompletionService{V}"/> to <see cref="Java.Util.Concurrent.CompletionService"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.CompletionService(Java.Util.Concurrent.CompletionService<V> t) => t.Cast<Java.Util.Concurrent.CompletionService>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#poll()"/>
@@ -257,7 +257,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public Java.Util.Concurrent.Future<V> Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<Java.Util.Concurrent.Future<V>>("poll", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
@@ -267,7 +267,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<V> Submit(Java.Lang.Runnable arg0, V arg1)
         {
-            return IExecute<Java.Util.Concurrent.Future<V>>("submit", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("submit", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#submit(java.util.concurrent.Callable)"/>
@@ -287,13 +287,13 @@ namespace Java.Util.Concurrent
         {
             return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("take", "()Ljava/util/concurrent/Future;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

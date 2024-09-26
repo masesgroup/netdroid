@@ -40,10 +40,10 @@ namespace Android.Content
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ContentProviderClient(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Content
     public partial class ContentProviderClient
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#getLocalContentProvider()"/>
@@ -108,7 +108,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Content.ContentProviderResult[] ApplyBatch(Java.Lang.String arg0, Java.Util.ArrayList<Android.Content.ContentProviderOperation> arg1)
         {
-            return IExecuteArray<Android.Content.ContentProviderResult>("applyBatch", arg0, arg1);
+            return IExecuteWithSignatureArray<Android.Content.ContentProviderResult>("applyBatch", "(Ljava/lang/String;Ljava/util/ArrayList;)[Landroid/content/ContentProviderResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#applyBatch(java.util.ArrayList)"/>
@@ -132,7 +132,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Content.Res.AssetFileDescriptor OpenAssetFile(Android.Net.Uri arg0, Java.Lang.String arg1, Android.Os.CancellationSignal arg2)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("openAssetFile", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openAssetFile", "(Landroid/net/Uri;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#openAssetFile(android.net.Uri,java.lang.String)"/>
@@ -144,7 +144,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Content.Res.AssetFileDescriptor OpenAssetFile(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("openAssetFile", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openAssetFile", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#query(android.net.Uri,java.lang.String[],android.os.Bundle,android.os.CancellationSignal)"/>
@@ -157,7 +157,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Database.Cursor Query(Android.Net.Uri arg0, Java.Lang.String[] arg1, Android.Os.Bundle arg2, Android.Os.CancellationSignal arg3)
         {
-            return IExecute<Android.Database.Cursor>("query", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Database.Cursor>("query", "(Landroid/net/Uri;[Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)"/>
@@ -172,7 +172,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Database.Cursor Query(Android.Net.Uri arg0, Java.Lang.String[] arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Android.Os.CancellationSignal arg5)
         {
-            return IExecute<Android.Database.Cursor>("query", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Android.Database.Cursor>("query", "(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"/>
@@ -186,7 +186,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Database.Cursor Query(Android.Net.Uri arg0, Java.Lang.String[] arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, Java.Lang.String arg4)
         {
-            return IExecute<Android.Database.Cursor>("query", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Database.Cursor>("query", "(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#insert(android.net.Uri,android.content.ContentValues,android.os.Bundle)"/>
@@ -198,7 +198,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Net.Uri Insert(Android.Net.Uri arg0, Android.Content.ContentValues arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.Net.Uri>("insert", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Net.Uri>("insert", "(Landroid/net/Uri;Landroid/content/ContentValues;Landroid/os/Bundle;)Landroid/net/Uri;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#insert(android.net.Uri,android.content.ContentValues)"/>
@@ -209,7 +209,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Net.Uri Insert(Android.Net.Uri arg0, Android.Content.ContentValues arg1)
         {
-            return IExecute<Android.Net.Uri>("insert", arg0, arg1);
+            return IExecuteWithSignature<Android.Net.Uri>("insert", "(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#call(java.lang.String,java.lang.String,android.os.Bundle)"/>
@@ -221,7 +221,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Os.Bundle Call(Java.Lang.String arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.Os.Bundle>("call", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Os.Bundle>("call", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#call(java.lang.String,java.lang.String,java.lang.String,android.os.Bundle)"/>
@@ -234,7 +234,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Os.Bundle Call(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Os.Bundle arg3)
         {
-            return IExecute<Android.Os.Bundle>("call", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Os.Bundle>("call", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#openFile(android.net.Uri,java.lang.String,android.os.CancellationSignal)"/>
@@ -247,7 +247,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Os.ParcelFileDescriptor OpenFile(Android.Net.Uri arg0, Java.Lang.String arg1, Android.Os.CancellationSignal arg2)
         {
-            return IExecute<Android.Os.ParcelFileDescriptor>("openFile", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("openFile", "(Landroid/net/Uri;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/os/ParcelFileDescriptor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#openFile(android.net.Uri,java.lang.String)"/>
@@ -259,7 +259,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Os.ParcelFileDescriptor OpenFile(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Os.ParcelFileDescriptor>("openFile", arg0, arg1);
+            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("openFile", "(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#refresh(android.net.Uri,android.os.Bundle,android.os.CancellationSignal)"/>
@@ -271,7 +271,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public bool Refresh(Android.Net.Uri arg0, Android.Os.Bundle arg1, Android.Os.CancellationSignal arg2)
         {
-            return IExecute<bool>("refresh", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("refresh", "(Landroid/net/Uri;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#release()"/>
@@ -294,7 +294,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Content.Res.AssetFileDescriptor OpenTypedAssetFile(Android.Net.Uri arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, Android.Os.CancellationSignal arg3)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("openTypedAssetFile", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openTypedAssetFile", "(Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#openTypedAssetFileDescriptor(android.net.Uri,java.lang.String,android.os.Bundle,android.os.CancellationSignal)"/>
@@ -308,7 +308,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Content.Res.AssetFileDescriptor OpenTypedAssetFileDescriptor(Android.Net.Uri arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, Android.Os.CancellationSignal arg3)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("openTypedAssetFileDescriptor", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openTypedAssetFileDescriptor", "(Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#openTypedAssetFileDescriptor(android.net.Uri,java.lang.String,android.os.Bundle)"/>
@@ -321,7 +321,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Android.Content.Res.AssetFileDescriptor OpenTypedAssetFileDescriptor(Android.Net.Uri arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("openTypedAssetFileDescriptor", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openTypedAssetFileDescriptor", "(Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#canonicalize(android.net.Uri)"/>
@@ -352,7 +352,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public int BulkInsert(Android.Net.Uri arg0, Android.Content.ContentValues[] arg1)
         {
-            return IExecute<int>("bulkInsert", arg0, arg1);
+            return IExecuteWithSignature<int>("bulkInsert", "(Landroid/net/Uri;[Landroid/content/ContentValues;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#delete(android.net.Uri,android.os.Bundle)"/>
@@ -363,7 +363,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public int Delete(Android.Net.Uri arg0, Android.Os.Bundle arg1)
         {
-            return IExecute<int>("delete", arg0, arg1);
+            return IExecuteWithSignature<int>("delete", "(Landroid/net/Uri;Landroid/os/Bundle;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#delete(android.net.Uri,java.lang.String,java.lang.String[])"/>
@@ -375,7 +375,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public int Delete(Android.Net.Uri arg0, Java.Lang.String arg1, Java.Lang.String[] arg2)
         {
-            return IExecute<int>("delete", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("delete", "(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#update(android.net.Uri,android.content.ContentValues,android.os.Bundle)"/>
@@ -387,7 +387,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public int Update(Android.Net.Uri arg0, Android.Content.ContentValues arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<int>("update", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("update", "(Landroid/net/Uri;Landroid/content/ContentValues;Landroid/os/Bundle;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"/>
@@ -400,7 +400,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public int Update(Android.Net.Uri arg0, Android.Content.ContentValues arg1, Java.Lang.String arg2, Java.Lang.String[] arg3)
         {
-            return IExecute<int>("update", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("update", "(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#getType(android.net.Uri)"/>
@@ -421,7 +421,7 @@ namespace Android.Content
         /// <exception cref="Android.Os.RemoteException"/>
         public Java.Lang.String[] GetStreamTypes(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
-            return IExecuteArray<Java.Lang.String>("getStreamTypes", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getStreamTypes", "(Landroid/net/Uri;Ljava/lang/String;)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#close()"/>
@@ -430,13 +430,13 @@ namespace Android.Content
         {
             IExecuteWithSignature("close", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

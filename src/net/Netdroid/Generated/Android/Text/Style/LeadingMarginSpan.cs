@@ -42,10 +42,10 @@ namespace Android.Text.Style
         /// </summary>
         [global::System.Obsolete("LeadingMarginSpan class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LeadingMarginSpan(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Text.Style
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region LeadingMarginSpan2 declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Text.Style
             /// </summary>
             [global::System.Obsolete("LeadingMarginSpan2 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public LeadingMarginSpan2(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Text.Style
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -130,10 +130,10 @@ namespace Android.Text.Style
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Standard(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -154,9 +154,9 @@ namespace Android.Text.Style
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,13 +171,13 @@ namespace Android.Text.Style
     public partial interface ILeadingMarginSpan : Android.Text.Style.IParagraphStyle
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -186,21 +186,21 @@ namespace Android.Text.Style
     public partial class LeadingMarginSpan : Android.Text.Style.ILeadingMarginSpan
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/LeadingMarginSpan.html#getLeadingMargin(boolean)"/>
@@ -228,19 +228,19 @@ namespace Android.Text.Style
         /// <param name="arg11"><see cref="Android.Text.Layout"/></param>
         public void DrawLeadingMargin(Android.Graphics.Canvas arg0, Android.Graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Lang.CharSequence arg7, int arg8, int arg9, bool arg10, Android.Text.Layout arg11)
         {
-            IExecute("drawLeadingMargin", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+            IExecuteWithSignature("drawLeadingMargin", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;IIZLandroid/text/Layout;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region LeadingMarginSpan2 implementation
         public partial class LeadingMarginSpan2 : Android.Text.Style.ILeadingMarginSpan, Android.Text.Style.IWrapTogetherSpan
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Text.Style.LeadingMarginSpan.LeadingMarginSpan2"/> to <see cref="Android.Text.Style.LeadingMarginSpan"/>
@@ -250,17 +250,17 @@ namespace Android.Text.Style
             /// Converter from <see cref="Android.Text.Style.LeadingMarginSpan.LeadingMarginSpan2"/> to <see cref="Android.Text.Style.WrapTogetherSpan"/>
             /// </summary>
             public static implicit operator Android.Text.Style.WrapTogetherSpan(Android.Text.Style.LeadingMarginSpan.LeadingMarginSpan2 t) => t.Cast<Android.Text.Style.WrapTogetherSpan>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LeadingMarginSpan.LeadingMarginSpan2.html#getLeadingMarginLineCount()"/>
@@ -270,13 +270,13 @@ namespace Android.Text.Style
             {
                 return IExecuteWithSignature<int>("getLeadingMarginLineCount", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -310,9 +310,9 @@ namespace Android.Text.Style
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Text.Style.LeadingMarginSpan.Standard"/> to <see cref="Android.Text.Style.LeadingMarginSpan"/>
@@ -322,17 +322,17 @@ namespace Android.Text.Style
             /// Converter from <see cref="Android.Text.Style.LeadingMarginSpan.Standard"/> to <see cref="Android.Text.ParcelableSpan"/>
             /// </summary>
             public static implicit operator Android.Text.ParcelableSpan(Android.Text.Style.LeadingMarginSpan.Standard t) => t.Cast<Android.Text.ParcelableSpan>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LeadingMarginSpan.Standard.html#describeContents()"/>
@@ -376,7 +376,7 @@ namespace Android.Text.Style
             /// <param name="arg11"><see cref="Android.Text.Layout"/></param>
             public void DrawLeadingMargin(Android.Graphics.Canvas arg0, Android.Graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Lang.CharSequence arg7, int arg8, int arg9, bool arg10, Android.Text.Layout arg11)
             {
-                IExecute("drawLeadingMargin", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+                IExecuteWithSignature("drawLeadingMargin", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;IIZLandroid/text/Layout;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LeadingMarginSpan.Standard.html#writeToParcel(android.os.Parcel,int)"/>
@@ -385,22 +385,22 @@ namespace Android.Text.Style
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

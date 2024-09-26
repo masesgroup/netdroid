@@ -42,10 +42,10 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         [global::System.Obsolete("UserDefinedFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UserDefinedFileAttributeView(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Nio.File.Attribute
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Nio.File.Attribute
     public partial interface IUserDefinedFileAttributeView : Java.Nio.File.Attribute.IFileAttributeView
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Java.Nio.File.Attribute
     public partial class UserDefinedFileAttributeView : Java.Nio.File.Attribute.IUserDefinedFileAttributeView
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/attribute/UserDefinedFileAttributeView.html#read(java.lang.String,java.nio.ByteBuffer)"/>
@@ -119,7 +119,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public int Read(Java.Lang.String arg0, Java.Nio.ByteBuffer arg1)
         {
-            return IExecute<int>("read", arg0, arg1);
+            return IExecuteWithSignature<int>("read", "(Ljava/lang/String;Ljava/nio/ByteBuffer;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/attribute/UserDefinedFileAttributeView.html#size(java.lang.String)"/>
@@ -140,7 +140,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public int Write(Java.Lang.String arg0, Java.Nio.ByteBuffer arg1)
         {
-            return IExecute<int>("write", arg0, arg1);
+            return IExecuteWithSignature<int>("write", "(Ljava/lang/String;Ljava/nio/ByteBuffer;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/attribute/UserDefinedFileAttributeView.html#name()"/>
@@ -168,13 +168,13 @@ namespace Java.Nio.File.Attribute
         {
             IExecuteWithSignature("delete", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

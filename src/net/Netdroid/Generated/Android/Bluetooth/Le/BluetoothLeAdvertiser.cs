@@ -40,10 +40,10 @@ namespace Android.Bluetooth.Le
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BluetoothLeAdvertiser(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Bluetooth.Le
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Bluetooth.Le
     public partial class BluetoothLeAdvertiser
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/BluetoothLeAdvertiser.html#startAdvertising(android.bluetooth.le.AdvertiseSettings,android.bluetooth.le.AdvertiseData,android.bluetooth.le.AdvertiseCallback)"/>
@@ -98,7 +98,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg2"><see cref="Android.Bluetooth.Le.AdvertiseCallback"/></param>
         public void StartAdvertising(Android.Bluetooth.Le.AdvertiseSettings arg0, Android.Bluetooth.Le.AdvertiseData arg1, Android.Bluetooth.Le.AdvertiseCallback arg2)
         {
-            IExecute("startAdvertising", arg0, arg1, arg2);
+            IExecuteWithSignature("startAdvertising", "(Landroid/bluetooth/le/AdvertiseSettings;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/BluetoothLeAdvertiser.html#startAdvertising(android.bluetooth.le.AdvertiseSettings,android.bluetooth.le.AdvertiseData,android.bluetooth.le.AdvertiseData,android.bluetooth.le.AdvertiseCallback)"/>
@@ -109,7 +109,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg3"><see cref="Android.Bluetooth.Le.AdvertiseCallback"/></param>
         public void StartAdvertising(Android.Bluetooth.Le.AdvertiseSettings arg0, Android.Bluetooth.Le.AdvertiseData arg1, Android.Bluetooth.Le.AdvertiseData arg2, Android.Bluetooth.Le.AdvertiseCallback arg3)
         {
-            IExecute("startAdvertising", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startAdvertising", "(Landroid/bluetooth/le/AdvertiseSettings;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseCallback;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/BluetoothLeAdvertiser.html#startAdvertisingSet(android.bluetooth.le.AdvertisingSetParameters,android.bluetooth.le.AdvertiseData,android.bluetooth.le.AdvertiseData,android.bluetooth.le.PeriodicAdvertisingParameters,android.bluetooth.le.AdvertiseData,android.bluetooth.le.AdvertisingSetCallback,android.os.Handler)"/>
@@ -123,7 +123,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg6"><see cref="Android.Os.Handler"/></param>
         public void StartAdvertisingSet(Android.Bluetooth.Le.AdvertisingSetParameters arg0, Android.Bluetooth.Le.AdvertiseData arg1, Android.Bluetooth.Le.AdvertiseData arg2, Android.Bluetooth.Le.PeriodicAdvertisingParameters arg3, Android.Bluetooth.Le.AdvertiseData arg4, Android.Bluetooth.Le.AdvertisingSetCallback arg5, Android.Os.Handler arg6)
         {
-            IExecute("startAdvertisingSet", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("startAdvertisingSet", "(Landroid/bluetooth/le/AdvertisingSetParameters;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/PeriodicAdvertisingParameters;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertisingSetCallback;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/BluetoothLeAdvertiser.html#startAdvertisingSet(android.bluetooth.le.AdvertisingSetParameters,android.bluetooth.le.AdvertiseData,android.bluetooth.le.AdvertiseData,android.bluetooth.le.PeriodicAdvertisingParameters,android.bluetooth.le.AdvertiseData,android.bluetooth.le.AdvertisingSetCallback)"/>
@@ -136,7 +136,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg5"><see cref="Android.Bluetooth.Le.AdvertisingSetCallback"/></param>
         public void StartAdvertisingSet(Android.Bluetooth.Le.AdvertisingSetParameters arg0, Android.Bluetooth.Le.AdvertiseData arg1, Android.Bluetooth.Le.AdvertiseData arg2, Android.Bluetooth.Le.PeriodicAdvertisingParameters arg3, Android.Bluetooth.Le.AdvertiseData arg4, Android.Bluetooth.Le.AdvertisingSetCallback arg5)
         {
-            IExecute("startAdvertisingSet", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("startAdvertisingSet", "(Landroid/bluetooth/le/AdvertisingSetParameters;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/PeriodicAdvertisingParameters;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertisingSetCallback;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/BluetoothLeAdvertiser.html#startAdvertisingSet(android.bluetooth.le.AdvertisingSetParameters,android.bluetooth.le.AdvertiseData,android.bluetooth.le.AdvertiseData,android.bluetooth.le.PeriodicAdvertisingParameters,android.bluetooth.le.AdvertiseData,int,int,android.bluetooth.le.AdvertisingSetCallback,android.os.Handler)"/>
@@ -152,7 +152,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg8"><see cref="Android.Os.Handler"/></param>
         public void StartAdvertisingSet(Android.Bluetooth.Le.AdvertisingSetParameters arg0, Android.Bluetooth.Le.AdvertiseData arg1, Android.Bluetooth.Le.AdvertiseData arg2, Android.Bluetooth.Le.PeriodicAdvertisingParameters arg3, Android.Bluetooth.Le.AdvertiseData arg4, int arg5, int arg6, Android.Bluetooth.Le.AdvertisingSetCallback arg7, Android.Os.Handler arg8)
         {
-            IExecute("startAdvertisingSet", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecuteWithSignature("startAdvertisingSet", "(Landroid/bluetooth/le/AdvertisingSetParameters;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/PeriodicAdvertisingParameters;Landroid/bluetooth/le/AdvertiseData;IILandroid/bluetooth/le/AdvertisingSetCallback;Landroid/os/Handler;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/BluetoothLeAdvertiser.html#startAdvertisingSet(android.bluetooth.le.AdvertisingSetParameters,android.bluetooth.le.AdvertiseData,android.bluetooth.le.AdvertiseData,android.bluetooth.le.PeriodicAdvertisingParameters,android.bluetooth.le.AdvertiseData,int,int,android.bluetooth.le.AdvertisingSetCallback)"/>
@@ -167,7 +167,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg7"><see cref="Android.Bluetooth.Le.AdvertisingSetCallback"/></param>
         public void StartAdvertisingSet(Android.Bluetooth.Le.AdvertisingSetParameters arg0, Android.Bluetooth.Le.AdvertiseData arg1, Android.Bluetooth.Le.AdvertiseData arg2, Android.Bluetooth.Le.PeriodicAdvertisingParameters arg3, Android.Bluetooth.Le.AdvertiseData arg4, int arg5, int arg6, Android.Bluetooth.Le.AdvertisingSetCallback arg7)
         {
-            IExecute("startAdvertisingSet", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("startAdvertisingSet", "(Landroid/bluetooth/le/AdvertisingSetParameters;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/AdvertiseData;Landroid/bluetooth/le/PeriodicAdvertisingParameters;Landroid/bluetooth/le/AdvertiseData;IILandroid/bluetooth/le/AdvertisingSetCallback;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/BluetoothLeAdvertiser.html#stopAdvertising(android.bluetooth.le.AdvertiseCallback)"/>
@@ -185,13 +185,13 @@ namespace Android.Bluetooth.Le
         {
             IExecuteWithSignature("stopAdvertisingSet", "(Landroid/bluetooth/le/AdvertisingSetCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

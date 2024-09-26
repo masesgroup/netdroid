@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaCodec(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region BufferInfo declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public BufferInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Media
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -169,9 +169,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -186,9 +186,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -207,10 +207,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CryptoInfo(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -231,7 +231,7 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Pattern declaration
             /// <summary>
@@ -248,10 +248,10 @@ namespace Android.Media
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
                 public Pattern(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -272,9 +272,9 @@ namespace Android.Media
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -293,9 +293,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -310,9 +310,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -331,10 +331,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public LinearBlock(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -355,9 +355,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -376,10 +376,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MetricsConstants(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -400,9 +400,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -416,7 +416,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnFirstTunnelFrameReadyListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.MediaCodec_OnFirstTunnelFrameReadyListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -425,13 +425,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnFirstTunnelFrameReadyListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnFirstTunnelFrameReadyListener"/> or its generic type if there is one
@@ -442,14 +442,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.MediaCodec$OnFirstTunnelFrameReadyListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -483,7 +483,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnFrameRenderedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.MediaCodec_OnFrameRenderedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -492,13 +492,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnFrameRenderedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnFrameRenderedListener"/> or its generic type if there is one
@@ -509,14 +509,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.MediaCodec$OnFrameRenderedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -555,10 +555,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public OutputFrame(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -579,9 +579,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -600,10 +600,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ParameterDescriptor(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -624,9 +624,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -645,10 +645,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public QueueRequest(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -669,9 +669,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -683,13 +683,13 @@ namespace Android.Media
     public partial class MediaCodec
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_CODEC_CONFIG"/>
@@ -861,9 +861,9 @@ namespace Android.Media
         public static Java.Lang.String PARAMETER_KEY_VIDEO_BITRATE { get { if (!_PARAMETER_KEY_VIDEO_BITRATEReady) { _PARAMETER_KEY_VIDEO_BITRATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PARAMETER_KEY_VIDEO_BITRATE"); _PARAMETER_KEY_VIDEO_BITRATEReady = true; } return _PARAMETER_KEY_VIDEO_BITRATEContent; } }
         private static Java.Lang.String _PARAMETER_KEY_VIDEO_BITRATEContent = default;
         private static bool _PARAMETER_KEY_VIDEO_BITRATEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#mapHardwareBuffer(android.hardware.HardwareBuffer)"/>
@@ -912,9 +912,9 @@ namespace Android.Media
         {
             return SExecuteWithSignature<Android.View.Surface>(LocalBridgeClazz, "createPersistentInputSurface", "()Landroid/view/Surface;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getInputImage(int)"/>
@@ -1019,7 +1019,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int DequeueOutputBuffer(Android.Media.MediaCodec.BufferInfo arg0, long arg1)
         {
-            return IExecute<int>("dequeueOutputBuffer", arg0, arg1);
+            return IExecuteWithSignature<int>("dequeueOutputBuffer", "(Landroid/media/MediaCodec$BufferInfo;J)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getName()"/>
@@ -1113,7 +1113,7 @@ namespace Android.Media
         /// <param name="arg3"><see cref="int"/></param>
         public void Configure(Android.Media.MediaFormat arg0, Android.View.Surface arg1, Android.Media.MediaCrypto arg2, int arg3)
         {
-            IExecute("configure", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("configure", "(Landroid/media/MediaFormat;Landroid/view/Surface;Landroid/media/MediaCrypto;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#configure(android.media.MediaFormat,android.view.Surface,int,android.media.MediaDescrambler)"/>
@@ -1124,7 +1124,7 @@ namespace Android.Media
         /// <param name="arg3"><see cref="Android.Media.MediaDescrambler"/></param>
         public void Configure(Android.Media.MediaFormat arg0, Android.View.Surface arg1, int arg2, Android.Media.MediaDescrambler arg3)
         {
-            IExecute("configure", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("configure", "(Landroid/media/MediaFormat;Landroid/view/Surface;ILandroid/media/MediaDescrambler;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#detachOutputSurface()"/>
@@ -1151,7 +1151,7 @@ namespace Android.Media
         /// <exception cref="Android.Media.MediaCodec.CryptoException"/>
         public void QueueInputBuffer(int arg0, int arg1, int arg2, long arg3, int arg4)
         {
-            IExecute("queueInputBuffer", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("queueInputBuffer", "(IIIJI)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#queueInputBuffers(int,java.util.ArrayDeque)"/>
@@ -1160,7 +1160,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Java.Util.ArrayDeque"/></param>
         public void QueueInputBuffers(int arg0, Java.Util.ArrayDeque<Android.Media.MediaCodec.BufferInfo> arg1)
         {
-            IExecute("queueInputBuffers", arg0, arg1);
+            IExecuteWithSignature("queueInputBuffers", "(ILjava/util/ArrayDeque;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#queueSecureInputBuffer(int,int,android.media.MediaCodec.CryptoInfo,long,int)"/>
@@ -1173,7 +1173,7 @@ namespace Android.Media
         /// <exception cref="Android.Media.MediaCodec.CryptoException"/>
         public void QueueSecureInputBuffer(int arg0, int arg1, Android.Media.MediaCodec.CryptoInfo arg2, long arg3, int arg4)
         {
-            IExecute("queueSecureInputBuffer", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("queueSecureInputBuffer", "(IILandroid/media/MediaCodec$CryptoInfo;JI)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#queueSecureInputBuffers(int,java.util.ArrayDeque,java.util.ArrayDeque)"/>
@@ -1183,7 +1183,7 @@ namespace Android.Media
         /// <param name="arg2"><see cref="Java.Util.ArrayDeque"/></param>
         public void QueueSecureInputBuffers(int arg0, Java.Util.ArrayDeque<Android.Media.MediaCodec.BufferInfo> arg1, Java.Util.ArrayDeque<Android.Media.MediaCodec.CryptoInfo> arg2)
         {
-            IExecute("queueSecureInputBuffers", arg0, arg1, arg2);
+            IExecuteWithSignature("queueSecureInputBuffers", "(ILjava/util/ArrayDeque;Ljava/util/ArrayDeque;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#release()"/>
@@ -1199,7 +1199,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="bool"/></param>
         public void ReleaseOutputBuffer(int arg0, bool arg1)
         {
-            IExecute("releaseOutputBuffer", arg0, arg1);
+            IExecuteWithSignature("releaseOutputBuffer", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#releaseOutputBuffer(int,long)"/>
@@ -1208,7 +1208,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="long"/></param>
         public void ReleaseOutputBuffer(int arg0, long arg1)
         {
-            IExecute("releaseOutputBuffer", arg0, arg1);
+            IExecuteWithSignature("releaseOutputBuffer", "(IJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#reset()"/>
@@ -1232,7 +1232,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void SetCallback(Android.Media.MediaCodec.Callback arg0, Android.Os.Handler arg1)
         {
-            IExecute("setCallback", arg0, arg1);
+            IExecuteWithSignature("setCallback", "(Landroid/media/MediaCodec$Callback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#setCallback(android.media.MediaCodec.Callback)"/>
@@ -1257,7 +1257,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.MediaCodec.OnFirstTunnelFrameReadyListener"/></param>
         public void SetOnFirstTunnelFrameReadyListener(Android.Os.Handler arg0, Android.Media.MediaCodec.OnFirstTunnelFrameReadyListener arg1)
         {
-            IExecute("setOnFirstTunnelFrameReadyListener", arg0, arg1);
+            IExecuteWithSignature("setOnFirstTunnelFrameReadyListener", "(Landroid/os/Handler;Landroid/media/MediaCodec$OnFirstTunnelFrameReadyListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#setOnFrameRenderedListener(android.media.MediaCodec.OnFrameRenderedListener,android.os.Handler)"/>
@@ -1266,7 +1266,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void SetOnFrameRenderedListener(Android.Media.MediaCodec.OnFrameRenderedListener arg0, Android.Os.Handler arg1)
         {
-            IExecute("setOnFrameRenderedListener", arg0, arg1);
+            IExecuteWithSignature("setOnFrameRenderedListener", "(Landroid/media/MediaCodec$OnFrameRenderedListener;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#setOutputSurface(android.view.Surface)"/>
@@ -1314,21 +1314,21 @@ namespace Android.Media
         {
             IExecuteWithSignature("unsubscribeFromVendorParameters", "(Ljava/util/List;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region BufferInfo implementation
         public partial class BufferInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.BufferInfo.html#flags"/>
@@ -1346,13 +1346,13 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.BufferInfo.html#presentationTimeUs"/>
             /// </summary>
             public long presentationTimeUs { get { return IGetField<long>("presentationTimeUs"); } set { ISetField("presentationTimeUs", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.BufferInfo.html#set(int,int,long,int)"/>
@@ -1363,15 +1363,15 @@ namespace Android.Media
             /// <param name="arg3"><see cref="int"/></param>
             public void Set(int arg0, int arg1, long arg2, int arg3)
             {
-                IExecute("set", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("set", "(IIJI)V", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1380,21 +1380,21 @@ namespace Android.Media
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.Callback.html#onError(android.media.MediaCodec,android.media.MediaCodec.CodecException)"/>
@@ -1403,7 +1403,7 @@ namespace Android.Media
             /// <param name="arg1"><see cref="Android.Media.MediaCodec.CodecException"/></param>
             public void OnError(Android.Media.MediaCodec arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
-                IExecute("onError", arg0, arg1);
+                IExecuteWithSignature("onError", "(Landroid/media/MediaCodec;Landroid/media/MediaCodec$CodecException;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.Callback.html#onInputBufferAvailable(android.media.MediaCodec,int)"/>
@@ -1412,7 +1412,7 @@ namespace Android.Media
             /// <param name="arg1"><see cref="int"/></param>
             public void OnInputBufferAvailable(Android.Media.MediaCodec arg0, int arg1)
             {
-                IExecute("onInputBufferAvailable", arg0, arg1);
+                IExecuteWithSignature("onInputBufferAvailable", "(Landroid/media/MediaCodec;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.Callback.html#onOutputBufferAvailable(android.media.MediaCodec,int,android.media.MediaCodec.BufferInfo)"/>
@@ -1422,7 +1422,7 @@ namespace Android.Media
             /// <param name="arg2"><see cref="Android.Media.MediaCodec.BufferInfo"/></param>
             public void OnOutputBufferAvailable(Android.Media.MediaCodec arg0, int arg1, Android.Media.MediaCodec.BufferInfo arg2)
             {
-                IExecute("onOutputBufferAvailable", arg0, arg1, arg2);
+                IExecuteWithSignature("onOutputBufferAvailable", "(Landroid/media/MediaCodec;ILandroid/media/MediaCodec$BufferInfo;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.Callback.html#onOutputFormatChanged(android.media.MediaCodec,android.media.MediaFormat)"/>
@@ -1431,7 +1431,7 @@ namespace Android.Media
             /// <param name="arg1"><see cref="Android.Media.MediaFormat"/></param>
             public void OnOutputFormatChanged(Android.Media.MediaCodec arg0, Android.Media.MediaFormat arg1)
             {
-                IExecute("onOutputFormatChanged", arg0, arg1);
+                IExecuteWithSignature("onOutputFormatChanged", "(Landroid/media/MediaCodec;Landroid/media/MediaFormat;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.Callback.html#onCryptoError(android.media.MediaCodec,android.media.MediaCodec.CryptoException)"/>
@@ -1440,7 +1440,7 @@ namespace Android.Media
             /// <param name="arg1"><see cref="Android.Media.MediaCodec.CryptoException"/></param>
             public void OnCryptoError(Android.Media.MediaCodec arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
-                IExecute("onCryptoError", arg0, arg1);
+                IExecuteWithSignature("onCryptoError", "(Landroid/media/MediaCodec;Landroid/media/MediaCodec$CryptoException;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.Callback.html#onOutputBuffersAvailable(android.media.MediaCodec,int,java.util.ArrayDeque)"/>
@@ -1450,15 +1450,15 @@ namespace Android.Media
             /// <param name="arg2"><see cref="Java.Util.ArrayDeque"/></param>
             public void OnOutputBuffersAvailable(Android.Media.MediaCodec arg0, int arg1, Java.Util.ArrayDeque<Android.Media.MediaCodec.BufferInfo> arg2)
             {
-                IExecute("onOutputBuffersAvailable", arg0, arg1, arg2);
+                IExecuteWithSignature("onOutputBuffersAvailable", "(Landroid/media/MediaCodec;ILjava/util/ArrayDeque;)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1467,29 +1467,29 @@ namespace Android.Media
         public partial class CodecException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1498,29 +1498,29 @@ namespace Android.Media
         public partial class CryptoException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1529,13 +1529,13 @@ namespace Android.Media
         public partial class CryptoInfo
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.html#iv"/>
@@ -1561,13 +1561,13 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.html#numBytesOfEncryptedData"/>
             /// </summary>
             public int[] numBytesOfEncryptedData { get { return IGetFieldArray<int>("numBytesOfEncryptedData"); } set { ISetField("numBytesOfEncryptedData", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.html#getPattern()"/>
@@ -1588,7 +1588,7 @@ namespace Android.Media
             /// <param name="arg5"><see cref="int"/></param>
             public void Set(int arg0, int[] arg1, int[] arg2, byte[] arg3, byte[] arg4, int arg5)
             {
-                IExecute("set", arg0, arg1, arg2, arg3, arg4, arg5);
+                IExecuteWithSignature("set", "(I[I[I[B[BI)V", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.html#setPattern(android.media.MediaCodec.CryptoInfo.Pattern)"/>
@@ -1598,9 +1598,9 @@ namespace Android.Media
             {
                 IExecuteWithSignature("setPattern", "(Landroid/media/MediaCodec$CryptoInfo$Pattern;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Pattern implementation
             public partial class Pattern
@@ -1615,21 +1615,21 @@ namespace Android.Media
                     : base(arg0, arg1)
                 {
                 }
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.Pattern.html#getEncryptBlocks()"/>
@@ -1654,22 +1654,22 @@ namespace Android.Media
                 /// <param name="arg1"><see cref="int"/></param>
                 public void Set(int arg0, int arg1)
                 {
-                    IExecute("set", arg0, arg1);
+                    IExecuteWithSignature("set", "(II)V", arg0, arg1);
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1678,29 +1678,29 @@ namespace Android.Media
         public partial class IncompatibleWithBlockModelException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1709,29 +1709,29 @@ namespace Android.Media
         public partial class InvalidBufferFlagsException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1740,17 +1740,17 @@ namespace Android.Media
         public partial class LinearBlock
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.LinearBlock.html#obtain(int,java.lang.String[])"/>
@@ -1760,7 +1760,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaCodec.LinearBlock"/></returns>
             public static Android.Media.MediaCodec.LinearBlock Obtain(int arg0, Java.Lang.String[] arg1)
             {
-                return SExecute<Android.Media.MediaCodec.LinearBlock>(LocalBridgeClazz, "obtain", arg0, arg1);
+                return SExecuteWithSignature<Android.Media.MediaCodec.LinearBlock>(LocalBridgeClazz, "obtain", "(I[Ljava/lang/String;)Landroid/media/MediaCodec$LinearBlock;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.LinearBlock.html#isCodecCopyFreeCompatible(java.lang.String[])"/>
@@ -1771,9 +1771,9 @@ namespace Android.Media
             {
                 return SExecuteWithSignature<bool>(LocalBridgeClazz, "isCodecCopyFreeCompatible", "([Ljava/lang/String;)Z", new object[] { arg0 });
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.LinearBlock.html#isMappable()"/>
@@ -1798,13 +1798,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("recycle", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1813,13 +1813,13 @@ namespace Android.Media
         public partial class MetricsConstants
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.MetricsConstants.html#CODEC"/>
@@ -1881,21 +1881,21 @@ namespace Android.Media
             public static Java.Lang.String WIDTH { get { if (!_WIDTHReady) { _WIDTHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIDTH"); _WIDTHReady = true; } return _WIDTHContent; } }
             private static Java.Lang.String _WIDTHContent = default;
             private static bool _WIDTHReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1904,21 +1904,21 @@ namespace Android.Media
         public partial class OnFirstTunnelFrameReadyListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnFirstTunnelFrameReadyListener"/>
@@ -1928,13 +1928,13 @@ namespace Android.Media
                 AddEventHandler("onFirstTunnelFrameReady", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnFirstTunnelFrameReadyEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaCodec.OnFirstTunnelFrameReadyListener.html#onFirstTunnelFrameReady(android.media.MediaCodec)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFirstTunnelFrameReady"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.MediaCodec> OnOnFirstTunnelFrameReady { get; set; } = null;
-            
+
             bool hasOverrideOnFirstTunnelFrameReady = true;
             void OnFirstTunnelFrameReadyEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1943,7 +1943,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.MediaCodec>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnFirstTunnelFrameReady;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OnFirstTunnelFrameReadyListener.html#onFirstTunnelFrameReady(android.media.MediaCodec)"/>
             /// </summary>
@@ -1952,13 +1952,13 @@ namespace Android.Media
             {
                 hasOverrideOnFirstTunnelFrameReady = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1967,21 +1967,21 @@ namespace Android.Media
         public partial class OnFirstTunnelFrameReadyListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OnFirstTunnelFrameReadyListener.html#onFirstTunnelFrameReady(android.media.MediaCodec)"/>
@@ -1991,13 +1991,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onFirstTunnelFrameReady", "(Landroid/media/MediaCodec;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2006,21 +2006,21 @@ namespace Android.Media
         public partial class OnFrameRenderedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnFrameRenderedListener"/>
@@ -2030,13 +2030,13 @@ namespace Android.Media
                 AddEventHandler("onFrameRendered", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnFrameRenderedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaCodec.OnFrameRenderedListener.html#onFrameRendered(android.media.MediaCodec,long,long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFrameRendered"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.MediaCodec, long, long> OnOnFrameRendered { get; set; } = null;
-            
+
             bool hasOverrideOnFrameRendered = true;
             void OnFrameRenderedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -2045,7 +2045,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.MediaCodec>(0), data.EventData.GetAt<long>(1), data.EventData.GetAt<long>(2));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnFrameRendered;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OnFrameRenderedListener.html#onFrameRendered(android.media.MediaCodec,long,long)"/>
             /// </summary>
@@ -2056,13 +2056,13 @@ namespace Android.Media
             {
                 hasOverrideOnFrameRendered = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2071,21 +2071,21 @@ namespace Android.Media
         public partial class OnFrameRenderedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OnFrameRenderedListener.html#onFrameRendered(android.media.MediaCodec,long,long)"/>
@@ -2095,15 +2095,15 @@ namespace Android.Media
             /// <param name="arg2"><see cref="long"/></param>
             public override void OnFrameRendered(Android.Media.MediaCodec arg0, long arg1, long arg2)
             {
-                IExecute("onFrameRendered", arg0, arg1, arg2);
+                IExecuteWithSignature("onFrameRendered", "(Landroid/media/MediaCodec;JJ)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2112,21 +2112,21 @@ namespace Android.Media
         public partial class OutputFrame
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getHardwareBuffer()"/>
@@ -2184,13 +2184,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<long>("getPresentationTimeUs", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2199,21 +2199,21 @@ namespace Android.Media
         public partial class ParameterDescriptor
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.ParameterDescriptor.html#getType()"/>
@@ -2231,13 +2231,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2246,21 +2246,21 @@ namespace Android.Media
         public partial class QueueRequest
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.QueueRequest.html#setByteBufferParameter(java.lang.String,java.nio.ByteBuffer)"/>
@@ -2270,7 +2270,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaCodec.QueueRequest"/></returns>
             public Android.Media.MediaCodec.QueueRequest SetByteBufferParameter(Java.Lang.String arg0, Java.Nio.ByteBuffer arg1)
             {
-                return IExecute<Android.Media.MediaCodec.QueueRequest>("setByteBufferParameter", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.MediaCodec.QueueRequest>("setByteBufferParameter", "(Ljava/lang/String;Ljava/nio/ByteBuffer;)Landroid/media/MediaCodec$QueueRequest;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.QueueRequest.html#setEncryptedLinearBlock(android.media.MediaCodec.LinearBlock,int,int,android.media.MediaCodec.CryptoInfo)"/>
@@ -2282,7 +2282,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaCodec.QueueRequest"/></returns>
             public Android.Media.MediaCodec.QueueRequest SetEncryptedLinearBlock(Android.Media.MediaCodec.LinearBlock arg0, int arg1, int arg2, Android.Media.MediaCodec.CryptoInfo arg3)
             {
-                return IExecute<Android.Media.MediaCodec.QueueRequest>("setEncryptedLinearBlock", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.Media.MediaCodec.QueueRequest>("setEncryptedLinearBlock", "(Landroid/media/MediaCodec$LinearBlock;IILandroid/media/MediaCodec$CryptoInfo;)Landroid/media/MediaCodec$QueueRequest;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.QueueRequest.html#setFlags(int)"/>
@@ -2301,7 +2301,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaCodec.QueueRequest"/></returns>
             public Android.Media.MediaCodec.QueueRequest SetFloatParameter(Java.Lang.String arg0, float arg1)
             {
-                return IExecute<Android.Media.MediaCodec.QueueRequest>("setFloatParameter", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.MediaCodec.QueueRequest>("setFloatParameter", "(Ljava/lang/String;F)Landroid/media/MediaCodec$QueueRequest;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.QueueRequest.html#setHardwareBuffer(android.hardware.HardwareBuffer)"/>
@@ -2320,7 +2320,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaCodec.QueueRequest"/></returns>
             public Android.Media.MediaCodec.QueueRequest SetIntegerParameter(Java.Lang.String arg0, int arg1)
             {
-                return IExecute<Android.Media.MediaCodec.QueueRequest>("setIntegerParameter", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.MediaCodec.QueueRequest>("setIntegerParameter", "(Ljava/lang/String;I)Landroid/media/MediaCodec$QueueRequest;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.QueueRequest.html#setLinearBlock(android.media.MediaCodec.LinearBlock,int,int)"/>
@@ -2331,7 +2331,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaCodec.QueueRequest"/></returns>
             public Android.Media.MediaCodec.QueueRequest SetLinearBlock(Android.Media.MediaCodec.LinearBlock arg0, int arg1, int arg2)
             {
-                return IExecute<Android.Media.MediaCodec.QueueRequest>("setLinearBlock", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.Media.MediaCodec.QueueRequest>("setLinearBlock", "(Landroid/media/MediaCodec$LinearBlock;II)Landroid/media/MediaCodec$QueueRequest;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.QueueRequest.html#setLongParameter(java.lang.String,long)"/>
@@ -2341,7 +2341,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaCodec.QueueRequest"/></returns>
             public Android.Media.MediaCodec.QueueRequest SetLongParameter(Java.Lang.String arg0, long arg1)
             {
-                return IExecute<Android.Media.MediaCodec.QueueRequest>("setLongParameter", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.MediaCodec.QueueRequest>("setLongParameter", "(Ljava/lang/String;J)Landroid/media/MediaCodec$QueueRequest;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.QueueRequest.html#setMultiFrameEncryptedLinearBlock(android.media.MediaCodec.LinearBlock,java.util.ArrayDeque,java.util.ArrayDeque)"/>
@@ -2352,7 +2352,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaCodec.QueueRequest"/></returns>
             public Android.Media.MediaCodec.QueueRequest SetMultiFrameEncryptedLinearBlock(Android.Media.MediaCodec.LinearBlock arg0, Java.Util.ArrayDeque<Android.Media.MediaCodec.BufferInfo> arg1, Java.Util.ArrayDeque<Android.Media.MediaCodec.CryptoInfo> arg2)
             {
-                return IExecute<Android.Media.MediaCodec.QueueRequest>("setMultiFrameEncryptedLinearBlock", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.Media.MediaCodec.QueueRequest>("setMultiFrameEncryptedLinearBlock", "(Landroid/media/MediaCodec$LinearBlock;Ljava/util/ArrayDeque;Ljava/util/ArrayDeque;)Landroid/media/MediaCodec$QueueRequest;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.QueueRequest.html#setMultiFrameLinearBlock(android.media.MediaCodec.LinearBlock,java.util.ArrayDeque)"/>
@@ -2362,7 +2362,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaCodec.QueueRequest"/></returns>
             public Android.Media.MediaCodec.QueueRequest SetMultiFrameLinearBlock(Android.Media.MediaCodec.LinearBlock arg0, Java.Util.ArrayDeque<Android.Media.MediaCodec.BufferInfo> arg1)
             {
-                return IExecute<Android.Media.MediaCodec.QueueRequest>("setMultiFrameLinearBlock", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.MediaCodec.QueueRequest>("setMultiFrameLinearBlock", "(Landroid/media/MediaCodec$LinearBlock;Ljava/util/ArrayDeque;)Landroid/media/MediaCodec$QueueRequest;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.QueueRequest.html#setPresentationTimeUs(long)"/>
@@ -2381,7 +2381,7 @@ namespace Android.Media
             /// <returns><see cref="Android.Media.MediaCodec.QueueRequest"/></returns>
             public Android.Media.MediaCodec.QueueRequest SetStringParameter(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<Android.Media.MediaCodec.QueueRequest>("setStringParameter", arg0, arg1);
+                return IExecuteWithSignature<Android.Media.MediaCodec.QueueRequest>("setStringParameter", "(Ljava/lang/String;Ljava/lang/String;)Landroid/media/MediaCodec$QueueRequest;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.QueueRequest.html#queue()"/>
@@ -2390,20 +2390,20 @@ namespace Android.Media
             {
                 IExecuteWithSignature("queue", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

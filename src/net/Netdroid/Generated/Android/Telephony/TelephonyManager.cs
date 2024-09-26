@@ -40,10 +40,10 @@ namespace Android.Telephony
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TelephonyManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Telephony
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region CallComposerException declaration
         /// <summary>
@@ -77,9 +77,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -100,10 +100,10 @@ namespace Android.Telephony
             /// </summary>
             [global::System.Obsolete("CellInfoCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public CellInfoCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -124,9 +124,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -141,9 +141,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -158,9 +158,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -175,9 +175,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -198,10 +198,10 @@ namespace Android.Telephony
             /// </summary>
             [global::System.Obsolete("UssdResponseCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public UssdResponseCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -222,9 +222,9 @@ namespace Android.Telephony
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -236,13 +236,13 @@ namespace Android.Telephony
     public partial class TelephonyManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#ALLOWED_NETWORK_TYPES_REASON_CARRIER"/>
@@ -1441,9 +1441,9 @@ namespace Android.Telephony
         public static long NETWORK_TYPE_BITMASK_UNKNOWN { get { if (!_NETWORK_TYPE_BITMASK_UNKNOWNReady) { _NETWORK_TYPE_BITMASK_UNKNOWNContent = SGetField<long>(LocalBridgeClazz, "NETWORK_TYPE_BITMASK_UNKNOWN"); _NETWORK_TYPE_BITMASK_UNKNOWNReady = true; } return _NETWORK_TYPE_BITMASK_UNKNOWNContent; } }
         private static long _NETWORK_TYPE_BITMASK_UNKNOWNContent = default;
         private static bool _NETWORK_TYPE_BITMASK_UNKNOWNReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getMaximumCallComposerPictureSize()"/>
@@ -1453,9 +1453,9 @@ namespace Android.Telephony
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getMaximumCallComposerPictureSize", "()J");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getVoicemailRingtoneUri(android.telecom.PhoneAccountHandle)"/>
@@ -1499,7 +1499,7 @@ namespace Android.Telephony
         /// <returns><see cref="Android.Telephony.IccOpenLogicalChannelResponse"/></returns>
         public Android.Telephony.IccOpenLogicalChannelResponse IccOpenLogicalChannel(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Android.Telephony.IccOpenLogicalChannelResponse>("iccOpenLogicalChannel", arg0, arg1);
+            return IExecuteWithSignature<Android.Telephony.IccOpenLogicalChannelResponse>("iccOpenLogicalChannel", "(Ljava/lang/String;I)Landroid/telephony/IccOpenLogicalChannelResponse;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#iccOpenLogicalChannel(java.lang.String)"/>
@@ -1520,7 +1520,7 @@ namespace Android.Telephony
         /// <returns><see cref="Android.Telephony.NetworkScan"/></returns>
         public Android.Telephony.NetworkScan RequestNetworkScan(Android.Telephony.NetworkScanRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Telephony.TelephonyScanManager.NetworkScanCallback arg2)
         {
-            return IExecute<Android.Telephony.NetworkScan>("requestNetworkScan", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Telephony.NetworkScan>("requestNetworkScan", "(Landroid/telephony/NetworkScanRequest;Ljava/util/concurrent/Executor;Landroid/telephony/TelephonyScanManager$NetworkScanCallback;)Landroid/telephony/NetworkScan;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#requestNetworkScan(int,android.telephony.NetworkScanRequest,java.util.concurrent.Executor,android.telephony.TelephonyScanManager.NetworkScanCallback)"/>
@@ -1532,7 +1532,7 @@ namespace Android.Telephony
         /// <returns><see cref="Android.Telephony.NetworkScan"/></returns>
         public Android.Telephony.NetworkScan RequestNetworkScan(int arg0, Android.Telephony.NetworkScanRequest arg1, Java.Util.Concurrent.Executor arg2, Android.Telephony.TelephonyScanManager.NetworkScanCallback arg3)
         {
-            return IExecute<Android.Telephony.NetworkScan>("requestNetworkScan", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Telephony.NetworkScan>("requestNetworkScan", "(ILandroid/telephony/NetworkScanRequest;Ljava/util/concurrent/Executor;Landroid/telephony/TelephonyScanManager$NetworkScanCallback;)Landroid/telephony/NetworkScan;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getServiceState()"/>
@@ -1804,7 +1804,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public bool SetLine1NumberForDisplay(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("setLine1NumberForDisplay", arg0, arg1);
+            return IExecuteWithSignature<bool>("setLine1NumberForDisplay", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setNetworkSelectionModeManual(java.lang.String,boolean,int)"/>
@@ -1815,7 +1815,7 @@ namespace Android.Telephony
         /// <returns><see cref="bool"/></returns>
         public bool SetNetworkSelectionModeManual(Java.Lang.String arg0, bool arg1, int arg2)
         {
-            return IExecute<bool>("setNetworkSelectionModeManual", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("setNetworkSelectionModeManual", "(Ljava/lang/String;ZI)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setNetworkSelectionModeManual(java.lang.String,boolean)"/>
@@ -1825,7 +1825,7 @@ namespace Android.Telephony
         /// <returns><see cref="bool"/></returns>
         public bool SetNetworkSelectionModeManual(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<bool>("setNetworkSelectionModeManual", arg0, arg1);
+            return IExecuteWithSignature<bool>("setNetworkSelectionModeManual", "(Ljava/lang/String;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setOperatorBrandOverride(java.lang.String)"/>
@@ -1852,7 +1852,7 @@ namespace Android.Telephony
         /// <returns><see cref="bool"/></returns>
         public bool SetVoiceMailNumber(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("setVoiceMailNumber", arg0, arg1);
+            return IExecuteWithSignature<bool>("setVoiceMailNumber", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#iccExchangeSimIO(int,int,int,int,int,java.lang.String)"/>
@@ -1866,7 +1866,7 @@ namespace Android.Telephony
         /// <returns><see cref="byte"/></returns>
         public byte[] IccExchangeSimIO(int arg0, int arg1, int arg2, int arg3, int arg4, Java.Lang.String arg5)
         {
-            return IExecuteArray<byte>("iccExchangeSimIO", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignatureArray<byte>("iccExchangeSimIO", "(IIIIILjava/lang/String;)[B", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getActiveModemCount()"/>
@@ -2126,7 +2126,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetIccAuthentication(int arg0, int arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Lang.String>("getIccAuthentication", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("getIccAuthentication", "(IILjava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getImei()"/>
@@ -2362,7 +2362,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String IccTransmitApduBasicChannel(int arg0, int arg1, int arg2, int arg3, int arg4, Java.Lang.String arg5)
         {
-            return IExecute<Java.Lang.String>("iccTransmitApduBasicChannel", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Java.Lang.String>("iccTransmitApduBasicChannel", "(IIIIILjava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#iccTransmitApduLogicalChannel(int,int,int,int,int,int,java.lang.String)"/>
@@ -2377,7 +2377,7 @@ namespace Android.Telephony
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String IccTransmitApduLogicalChannel(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, Java.Lang.String arg6)
         {
-            return IExecute<Java.Lang.String>("iccTransmitApduLogicalChannel", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<Java.Lang.String>("iccTransmitApduLogicalChannel", "(IIIIIILjava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#sendEnvelopeWithStatus(java.lang.String)"/>
@@ -2469,7 +2469,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
         public void GetCarrierRestrictionStatus(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Lang.Integer> arg1)
         {
-            IExecute("getCarrierRestrictionStatus", arg0, arg1);
+            IExecuteWithSignature("getCarrierRestrictionStatus", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getNetworkSlicingConfiguration(java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -2478,7 +2478,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void GetNetworkSlicingConfiguration(Java.Util.Concurrent.Executor arg0, Android.Os.OutcomeReceiver<Android.Telephony.Data.NetworkSlicingConfig, Android.Telephony.TelephonyManager.NetworkSlicingException> arg1)
         {
-            IExecute("getNetworkSlicingConfiguration", arg0, arg1);
+            IExecuteWithSignature("getNetworkSlicingConfiguration", "(Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#listen(android.telephony.PhoneStateListener,int)"/>
@@ -2488,7 +2488,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public void Listen(Android.Telephony.PhoneStateListener arg0, int arg1)
         {
-            IExecute("listen", arg0, arg1);
+            IExecuteWithSignature("listen", "(Landroid/telephony/PhoneStateListener;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#purchasePremiumCapability(int,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -2498,7 +2498,7 @@ namespace Android.Telephony
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public void PurchasePremiumCapability(int arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Java.Lang.Integer> arg2)
         {
-            IExecute("purchasePremiumCapability", arg0, arg1, arg2);
+            IExecuteWithSignature("purchasePremiumCapability", "(ILjava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#rebootModem()"/>
@@ -2515,7 +2515,7 @@ namespace Android.Telephony
         /// <param name="arg2"><see cref="Android.Telephony.TelephonyCallback"/></param>
         public void RegisterTelephonyCallback(int arg0, Java.Util.Concurrent.Executor arg1, Android.Telephony.TelephonyCallback arg2)
         {
-            IExecute("registerTelephonyCallback", arg0, arg1, arg2);
+            IExecuteWithSignature("registerTelephonyCallback", "(ILjava/util/concurrent/Executor;Landroid/telephony/TelephonyCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#registerTelephonyCallback(java.util.concurrent.Executor,android.telephony.TelephonyCallback)"/>
@@ -2524,7 +2524,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Android.Telephony.TelephonyCallback"/></param>
         public void RegisterTelephonyCallback(Java.Util.Concurrent.Executor arg0, Android.Telephony.TelephonyCallback arg1)
         {
-            IExecute("registerTelephonyCallback", arg0, arg1);
+            IExecuteWithSignature("registerTelephonyCallback", "(Ljava/util/concurrent/Executor;Landroid/telephony/TelephonyCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#requestCellInfoUpdate(java.util.concurrent.Executor,android.telephony.TelephonyManager.CellInfoCallback)"/>
@@ -2533,7 +2533,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="Android.Telephony.TelephonyManager.CellInfoCallback"/></param>
         public void RequestCellInfoUpdate(Java.Util.Concurrent.Executor arg0, Android.Telephony.TelephonyManager.CellInfoCallback arg1)
         {
-            IExecute("requestCellInfoUpdate", arg0, arg1);
+            IExecuteWithSignature("requestCellInfoUpdate", "(Ljava/util/concurrent/Executor;Landroid/telephony/TelephonyManager$CellInfoCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#sendDialerSpecialCode(java.lang.String)"/>
@@ -2551,7 +2551,7 @@ namespace Android.Telephony
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         public void SendUssdRequest(Java.Lang.String arg0, Android.Telephony.TelephonyManager.UssdResponseCallback arg1, Android.Os.Handler arg2)
         {
-            IExecute("sendUssdRequest", arg0, arg1, arg2);
+            IExecuteWithSignature("sendUssdRequest", "(Ljava/lang/String;Landroid/telephony/TelephonyManager$UssdResponseCallback;Landroid/os/Handler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#sendVisualVoicemailSms(java.lang.String,int,java.lang.String,android.app.PendingIntent)"/>
@@ -2562,7 +2562,7 @@ namespace Android.Telephony
         /// <param name="arg3"><see cref="Android.App.PendingIntent"/></param>
         public void SendVisualVoicemailSms(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Android.App.PendingIntent arg3)
         {
-            IExecute("sendVisualVoicemailSms", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("sendVisualVoicemailSms", "(Ljava/lang/String;ILjava/lang/String;Landroid/app/PendingIntent;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setAllowedNetworkTypesForReason(int,long)"/>
@@ -2571,7 +2571,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="long"/></param>
         public void SetAllowedNetworkTypesForReason(int arg0, long arg1)
         {
-            IExecute("setAllowedNetworkTypesForReason", arg0, arg1);
+            IExecuteWithSignature("setAllowedNetworkTypesForReason", "(IJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setCallComposerStatus(int)"/>
@@ -2597,7 +2597,7 @@ namespace Android.Telephony
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetDataEnabledForReason(int arg0, bool arg1)
         {
-            IExecute("setDataEnabledForReason", arg0, arg1);
+            IExecuteWithSignature("setDataEnabledForReason", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setNetworkSelectionModeAutomatic()"/>
@@ -2615,7 +2615,7 @@ namespace Android.Telephony
         /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
         public void SetPreferredOpportunisticDataSubscription(int arg0, bool arg1, Java.Util.Concurrent.Executor arg2, Java.Util.Function.Consumer<Java.Lang.Integer> arg3)
         {
-            IExecute("setPreferredOpportunisticDataSubscription", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setPreferredOpportunisticDataSubscription", "(IZLjava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setSignalStrengthUpdateRequest(android.telephony.SignalStrengthUpdateRequest)"/>
@@ -2641,7 +2641,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public void SetVoicemailRingtoneUri(Android.Telecom.PhoneAccountHandle arg0, Android.Net.Uri arg1)
         {
-            IExecute("setVoicemailRingtoneUri", arg0, arg1);
+            IExecuteWithSignature("setVoicemailRingtoneUri", "(Landroid/telecom/PhoneAccountHandle;Landroid/net/Uri;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setVoicemailVibrationEnabled(android.telecom.PhoneAccountHandle,boolean)"/>
@@ -2651,7 +2651,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public void SetVoicemailVibrationEnabled(Android.Telecom.PhoneAccountHandle arg0, bool arg1)
         {
-            IExecute("setVoicemailVibrationEnabled", arg0, arg1);
+            IExecuteWithSignature("setVoicemailVibrationEnabled", "(Landroid/telecom/PhoneAccountHandle;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#switchMultiSimConfig(int)"/>
@@ -2677,7 +2677,7 @@ namespace Android.Telephony
         /// <param name="arg2"><see cref="Java.Util.Function.Consumer"/></param>
         public void UpdateAvailableNetworks(Java.Util.List<Android.Telephony.AvailableNetworkInfo> arg0, Java.Util.Concurrent.Executor arg1, Java.Util.Function.Consumer<Java.Lang.Integer> arg2)
         {
-            IExecute("updateAvailableNetworks", arg0, arg1, arg2);
+            IExecuteWithSignature("updateAvailableNetworks", "(Ljava/util/List;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#uploadCallComposerPicture(java.io.InputStream,java.lang.String,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -2688,7 +2688,7 @@ namespace Android.Telephony
         /// <param name="arg3"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void UploadCallComposerPicture(Java.Io.InputStream arg0, Java.Lang.String arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<Android.Os.ParcelUuid, Android.Telephony.TelephonyManager.CallComposerException> arg3)
         {
-            IExecute("uploadCallComposerPicture", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("uploadCallComposerPicture", "(Ljava/io/InputStream;Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#uploadCallComposerPicture(java.nio.file.Path,java.lang.String,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
@@ -2699,39 +2699,39 @@ namespace Android.Telephony
         /// <param name="arg3"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void UploadCallComposerPicture(Java.Nio.File.Path arg0, Java.Lang.String arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<Android.Os.ParcelUuid, Android.Telephony.TelephonyManager.CallComposerException> arg3)
         {
-            IExecute("uploadCallComposerPicture", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("uploadCallComposerPicture", "(Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region CallComposerException implementation
         public partial class CallComposerException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2740,13 +2740,13 @@ namespace Android.Telephony
         public partial class CellInfoCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.CellInfoCallback.html#ERROR_MODEM_ERROR"/>
@@ -2760,13 +2760,13 @@ namespace Android.Telephony
             public static int ERROR_TIMEOUT { get { if (!_ERROR_TIMEOUTReady) { _ERROR_TIMEOUTContent = SGetField<int>(LocalBridgeClazz, "ERROR_TIMEOUT"); _ERROR_TIMEOUTReady = true; } return _ERROR_TIMEOUTContent; } }
             private static int _ERROR_TIMEOUTContent = default;
             private static bool _ERROR_TIMEOUTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.CellInfoCallback.html#onCellInfo(java.util.List)"/>
@@ -2783,15 +2783,15 @@ namespace Android.Telephony
             /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
             public void OnError(int arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
-                IExecute("onError", arg0, arg1);
+                IExecuteWithSignature("onError", "(ILjava/lang/Throwable;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2800,29 +2800,29 @@ namespace Android.Telephony
         public partial class ModemErrorException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2831,29 +2831,29 @@ namespace Android.Telephony
         public partial class NetworkSlicingException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2862,29 +2862,29 @@ namespace Android.Telephony
         public partial class TimeoutException
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -2893,21 +2893,21 @@ namespace Android.Telephony
         public partial class UssdResponseCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.UssdResponseCallback.html#onReceiveUssdResponse(android.telephony.TelephonyManager,java.lang.String,java.lang.CharSequence)"/>
@@ -2917,7 +2917,7 @@ namespace Android.Telephony
             /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
             public void OnReceiveUssdResponse(Android.Telephony.TelephonyManager arg0, Java.Lang.String arg1, Java.Lang.CharSequence arg2)
             {
-                IExecute("onReceiveUssdResponse", arg0, arg1, arg2);
+                IExecuteWithSignature("onReceiveUssdResponse", "(Landroid/telephony/TelephonyManager;Ljava/lang/String;Ljava/lang/CharSequence;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.UssdResponseCallback.html#onReceiveUssdResponseFailed(android.telephony.TelephonyManager,java.lang.String,int)"/>
@@ -2927,22 +2927,22 @@ namespace Android.Telephony
             /// <param name="arg2"><see cref="int"/></param>
             public void OnReceiveUssdResponseFailed(Android.Telephony.TelephonyManager arg0, Java.Lang.String arg1, int arg2)
             {
-                IExecute("onReceiveUssdResponseFailed", arg0, arg1, arg2);
+                IExecuteWithSignature("onReceiveUssdResponseFailed", "(Landroid/telephony/TelephonyManager;Ljava/lang/String;I)V", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

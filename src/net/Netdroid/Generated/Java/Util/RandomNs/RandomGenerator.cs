@@ -42,10 +42,10 @@ namespace Java.Util.RandomNs
         /// </summary>
         [global::System.Obsolete("RandomGenerator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RandomGenerator(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util.RandomNs
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ArbitrarilyJumpableGenerator declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Java.Util.RandomNs
             /// </summary>
             [global::System.Obsolete("ArbitrarilyJumpableGenerator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ArbitrarilyJumpableGenerator(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Java.Util.RandomNs
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -132,10 +132,10 @@ namespace Java.Util.RandomNs
             /// </summary>
             [global::System.Obsolete("JumpableGenerator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public JumpableGenerator(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -156,9 +156,9 @@ namespace Java.Util.RandomNs
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -179,10 +179,10 @@ namespace Java.Util.RandomNs
             /// </summary>
             [global::System.Obsolete("LeapableGenerator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public LeapableGenerator(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -203,9 +203,9 @@ namespace Java.Util.RandomNs
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -226,10 +226,10 @@ namespace Java.Util.RandomNs
             /// </summary>
             [global::System.Obsolete("SplittableGenerator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SplittableGenerator(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -250,9 +250,9 @@ namespace Java.Util.RandomNs
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -273,10 +273,10 @@ namespace Java.Util.RandomNs
             /// </summary>
             [global::System.Obsolete("StreamableGenerator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public StreamableGenerator(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -297,9 +297,9 @@ namespace Java.Util.RandomNs
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -314,13 +314,13 @@ namespace Java.Util.RandomNs
     public partial interface IRandomGenerator
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -329,17 +329,17 @@ namespace Java.Util.RandomNs
     public partial class RandomGenerator : Java.Util.RandomNs.IRandomGenerator
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.html#getDefault()"/>
@@ -358,9 +358,9 @@ namespace Java.Util.RandomNs
         {
             return SExecuteWithSignature<Java.Util.RandomNs.RandomGenerator>(LocalBridgeClazz, "of", "(Ljava/lang/String;)Ljava/util/random/RandomGenerator;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.html#nextLong()"/>
@@ -402,7 +402,7 @@ namespace Java.Util.RandomNs
         /// <returns><see cref="double"/></returns>
         public double NextDouble(double arg0, double arg1)
         {
-            return IExecute<double>("nextDouble", arg0, arg1);
+            return IExecuteWithSignature<double>("nextDouble", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.html#nextDouble(double)"/>
@@ -437,7 +437,7 @@ namespace Java.Util.RandomNs
         /// <returns><see cref="double"/></returns>
         public double NextGaussian(double arg0, double arg1)
         {
-            return IExecute<double>("nextGaussian", arg0, arg1);
+            return IExecuteWithSignature<double>("nextGaussian", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.html#nextFloat()"/>
@@ -455,7 +455,7 @@ namespace Java.Util.RandomNs
         /// <returns><see cref="float"/></returns>
         public float NextFloat(float arg0, float arg1)
         {
-            return IExecute<float>("nextFloat", arg0, arg1);
+            return IExecuteWithSignature<float>("nextFloat", "(FF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.html#nextFloat(float)"/>
@@ -482,7 +482,7 @@ namespace Java.Util.RandomNs
         /// <returns><see cref="int"/></returns>
         public int NextInt(int arg0, int arg1)
         {
-            return IExecute<int>("nextInt", arg0, arg1);
+            return IExecuteWithSignature<int>("nextInt", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.html#nextInt(int)"/>
@@ -509,7 +509,7 @@ namespace Java.Util.RandomNs
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles(double arg0, double arg1)
         {
-            return IExecute<Java.Util.Stream.DoubleStream>("doubles", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "(DD)Ljava/util/stream/DoubleStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.html#doubles(long,double,double)"/>
@@ -520,7 +520,7 @@ namespace Java.Util.RandomNs
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Doubles(long arg0, double arg1, double arg2)
         {
-            return IExecute<Java.Util.Stream.DoubleStream>("doubles", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("doubles", "(JDD)Ljava/util/stream/DoubleStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.html#doubles(long)"/>
@@ -547,7 +547,7 @@ namespace Java.Util.RandomNs
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints(int arg0, int arg1)
         {
-            return IExecute<Java.Util.Stream.IntStream>("ints", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "(II)Ljava/util/stream/IntStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.html#ints(long,int,int)"/>
@@ -558,7 +558,7 @@ namespace Java.Util.RandomNs
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Ints(long arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Util.Stream.IntStream>("ints", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Stream.IntStream>("ints", "(JII)Ljava/util/stream/IntStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.html#ints(long)"/>
@@ -586,7 +586,7 @@ namespace Java.Util.RandomNs
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs(long arg0, long arg1, long arg2)
         {
-            return IExecute<Java.Util.Stream.LongStream>("longs", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "(JJJ)Ljava/util/stream/LongStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.html#longs(long,long)"/>
@@ -596,7 +596,7 @@ namespace Java.Util.RandomNs
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Longs(long arg0, long arg1)
         {
-            return IExecute<Java.Util.Stream.LongStream>("longs", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Stream.LongStream>("longs", "(JJ)Ljava/util/stream/LongStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.html#longs(long)"/>
@@ -615,7 +615,7 @@ namespace Java.Util.RandomNs
         /// <returns><see cref="long"/></returns>
         public long NextLong(long arg0, long arg1)
         {
-            return IExecute<long>("nextLong", arg0, arg1);
+            return IExecuteWithSignature<long>("nextLong", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.html#nextLong(long)"/>
@@ -634,29 +634,29 @@ namespace Java.Util.RandomNs
         {
             IExecuteWithSignature("nextBytes", "([B)V", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ArbitrarilyJumpableGenerator implementation
         public partial class ArbitrarilyJumpableGenerator
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.ArbitrarilyJumpableGenerator.html#jump(double)"/>
@@ -708,7 +708,7 @@ namespace Java.Util.RandomNs
             /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
             public Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGenerator.ArbitrarilyJumpableGenerator> Jumps(long arg0, double arg1)
             {
-                return IExecute<Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGenerator.ArbitrarilyJumpableGenerator>>("jumps", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGenerator.ArbitrarilyJumpableGenerator>>("jumps", "(JD)Ljava/util/stream/Stream;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.ArbitrarilyJumpableGenerator.html#jump()"/>
@@ -724,13 +724,13 @@ namespace Java.Util.RandomNs
             {
                 IExecuteWithSignature("leap", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -739,21 +739,21 @@ namespace Java.Util.RandomNs
         public partial class JumpableGenerator
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.JumpableGenerator.html#jumpDistance()"/>
@@ -820,13 +820,13 @@ namespace Java.Util.RandomNs
             {
                 return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGenerator>>("rngs", "(J)Ljava/util/stream/Stream;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -835,21 +835,21 @@ namespace Java.Util.RandomNs
         public partial class LeapableGenerator
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.LeapableGenerator.html#leapDistance()"/>
@@ -899,13 +899,13 @@ namespace Java.Util.RandomNs
             {
                 return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGenerator.JumpableGenerator>>("leaps", "(J)Ljava/util/stream/Stream;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -914,21 +914,21 @@ namespace Java.Util.RandomNs
         public partial class SplittableGenerator
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.SplittableGenerator.html#split()"/>
@@ -964,7 +964,7 @@ namespace Java.Util.RandomNs
             /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
             public Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGenerator.SplittableGenerator> Splits(long arg0, Java.Util.RandomNs.RandomGenerator.SplittableGenerator arg1)
             {
-                return IExecute<Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGenerator.SplittableGenerator>>("splits", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGenerator.SplittableGenerator>>("splits", "(JLjava/util/random/RandomGenerator$SplittableGenerator;)Ljava/util/stream/Stream;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.SplittableGenerator.html#splits(long)"/>
@@ -1000,13 +1000,13 @@ namespace Java.Util.RandomNs
             {
                 return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGenerator.SplittableGenerator>>("splits", "()Ljava/util/stream/Stream;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1015,21 +1015,21 @@ namespace Java.Util.RandomNs
         public partial class StreamableGenerator
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/random/RandomGenerator.StreamableGenerator.html#rngs()"/>
@@ -1048,20 +1048,20 @@ namespace Java.Util.RandomNs
             {
                 return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.RandomNs.RandomGenerator>>("rngs", "(J)Ljava/util/stream/Stream;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

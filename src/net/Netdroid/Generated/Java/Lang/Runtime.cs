@@ -40,10 +40,10 @@ namespace Java.Lang
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Runtime(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Lang
     public partial class Runtime
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#getRuntime()"/>
@@ -94,9 +94,9 @@ namespace Java.Lang
         {
             return SExecuteWithSignature<Java.Lang.Runtime>(LocalBridgeClazz, "getRuntime", "()Ljava/lang/Runtime;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#removeShutdownHook(java.lang.Thread)"/>
@@ -117,7 +117,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Process Exec(Java.Lang.String arg0, Java.Lang.String[] arg1, Java.Io.File arg2)
         {
-            return IExecute<Java.Lang.Process>("exec", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Process>("exec", "(Ljava/lang/String;[Ljava/lang/String;Ljava/io/File;)Ljava/lang/Process;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#exec(java.lang.String,java.lang.String[])"/>
@@ -128,7 +128,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Process Exec(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<Java.Lang.Process>("exec", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Process>("exec", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/Process;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#exec(java.lang.String)"/>
@@ -150,7 +150,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Process Exec(Java.Lang.String[] arg0, Java.Lang.String[] arg1, Java.Io.File arg2)
         {
-            return IExecute<Java.Lang.Process>("exec", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Process>("exec", "([Ljava/lang/String;[Ljava/lang/String;Ljava/io/File;)Ljava/lang/Process;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#exec(java.lang.String[],java.lang.String[])"/>
@@ -161,7 +161,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Process Exec(Java.Lang.String[] arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<Java.Lang.Process>("exec", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Process>("exec", "([Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/Process;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#exec(java.lang.String[])"/>
@@ -259,13 +259,13 @@ namespace Java.Lang
         {
             IExecuteWithSignature("runFinalization", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

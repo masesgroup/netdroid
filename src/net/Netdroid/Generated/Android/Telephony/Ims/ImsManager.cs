@@ -40,10 +40,10 @@ namespace Android.Telephony.Ims
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ImsManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Telephony.Ims
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Telephony.Ims
     public partial class ImsManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsManager.html#ACTION_WFC_IMS_REGISTRATION_ERROR"/>
@@ -100,13 +100,13 @@ namespace Android.Telephony.Ims
         public static Java.Lang.String EXTRA_WFC_REGISTRATION_FAILURE_TITLE { get { if (!_EXTRA_WFC_REGISTRATION_FAILURE_TITLEReady) { _EXTRA_WFC_REGISTRATION_FAILURE_TITLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_WFC_REGISTRATION_FAILURE_TITLE"); _EXTRA_WFC_REGISTRATION_FAILURE_TITLEReady = true; } return _EXTRA_WFC_REGISTRATION_FAILURE_TITLEContent; } }
         private static Java.Lang.String _EXTRA_WFC_REGISTRATION_FAILURE_TITLEContent = default;
         private static bool _EXTRA_WFC_REGISTRATION_FAILURE_TITLEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsManager.html#getImsMmTelManager(int)"/>
@@ -135,13 +135,13 @@ namespace Android.Telephony.Ims
         {
             return IExecuteWithSignature<Android.Telephony.Ims.ProvisioningManager>("getProvisioningManager", "(I)Landroid/telephony/ims/ProvisioningManager;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

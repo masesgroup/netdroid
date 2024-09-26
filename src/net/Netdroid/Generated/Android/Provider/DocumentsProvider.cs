@@ -42,10 +42,10 @@ namespace Android.Provider
         /// </summary>
         [global::System.Obsolete("DocumentsProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DocumentsProvider(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Provider
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Android.Provider
     public partial class DocumentsProvider
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryChildDocuments(java.lang.String,java.lang.String[],java.lang.String)"/>
@@ -102,7 +102,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Database.Cursor QueryChildDocuments(Java.Lang.String arg0, Java.Lang.String[] arg1, Java.Lang.String arg2)
         {
-            return IExecute<Android.Database.Cursor>("queryChildDocuments", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Database.Cursor>("queryChildDocuments", "(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryDocument(java.lang.String,java.lang.String[])"/>
@@ -113,7 +113,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Database.Cursor QueryDocument(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<Android.Database.Cursor>("queryDocument", arg0, arg1);
+            return IExecuteWithSignature<Android.Database.Cursor>("queryDocument", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryRoots(java.lang.String[])"/>
@@ -135,7 +135,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Os.ParcelFileDescriptor OpenDocument(Java.Lang.String arg0, Java.Lang.String arg1, Android.Os.CancellationSignal arg2)
         {
-            return IExecute<Android.Os.ParcelFileDescriptor>("openDocument", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("openDocument", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/os/ParcelFileDescriptor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#createWebLinkIntent(java.lang.String,android.os.Bundle)"/>
@@ -146,7 +146,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Content.IntentSender CreateWebLinkIntent(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            return IExecute<Android.Content.IntentSender>("createWebLinkIntent", arg0, arg1);
+            return IExecuteWithSignature<Android.Content.IntentSender>("createWebLinkIntent", "(Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/IntentSender;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#openDocumentThumbnail(java.lang.String,android.graphics.Point,android.os.CancellationSignal)"/>
@@ -158,7 +158,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Content.Res.AssetFileDescriptor OpenDocumentThumbnail(Java.Lang.String arg0, Android.Graphics.Point arg1, Android.Os.CancellationSignal arg2)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("openDocumentThumbnail", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openDocumentThumbnail", "(Ljava/lang/String;Landroid/graphics/Point;Landroid/os/CancellationSignal;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#openTypedDocument(java.lang.String,java.lang.String,android.os.Bundle,android.os.CancellationSignal)"/>
@@ -171,7 +171,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Content.Res.AssetFileDescriptor OpenTypedDocument(Java.Lang.String arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, Android.Os.CancellationSignal arg3)
         {
-            return IExecute<Android.Content.Res.AssetFileDescriptor>("openTypedDocument", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>("openTypedDocument", "(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryChildDocuments(java.lang.String,java.lang.String[],android.os.Bundle)"/>
@@ -183,7 +183,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Database.Cursor QueryChildDocuments(Java.Lang.String arg0, Java.Lang.String[] arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.Database.Cursor>("queryChildDocuments", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Database.Cursor>("queryChildDocuments", "(Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;)Landroid/database/Cursor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryRecentDocuments(java.lang.String,java.lang.String[],android.os.Bundle,android.os.CancellationSignal)"/>
@@ -196,7 +196,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Database.Cursor QueryRecentDocuments(Java.Lang.String arg0, Java.Lang.String[] arg1, Android.Os.Bundle arg2, Android.Os.CancellationSignal arg3)
         {
-            return IExecute<Android.Database.Cursor>("queryRecentDocuments", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Database.Cursor>("queryRecentDocuments", "(Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryRecentDocuments(java.lang.String,java.lang.String[])"/>
@@ -207,7 +207,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Database.Cursor QueryRecentDocuments(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<Android.Database.Cursor>("queryRecentDocuments", arg0, arg1);
+            return IExecuteWithSignature<Android.Database.Cursor>("queryRecentDocuments", "(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#querySearchDocuments(java.lang.String,java.lang.String,java.lang.String[])"/>
@@ -219,7 +219,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Database.Cursor QuerySearchDocuments(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String[] arg2)
         {
-            return IExecute<Android.Database.Cursor>("querySearchDocuments", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Database.Cursor>("querySearchDocuments", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#querySearchDocuments(java.lang.String,java.lang.String[],android.os.Bundle)"/>
@@ -231,7 +231,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Database.Cursor QuerySearchDocuments(Java.Lang.String arg0, Java.Lang.String[] arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.Database.Cursor>("querySearchDocuments", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Database.Cursor>("querySearchDocuments", "(Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;)Landroid/database/Cursor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#getDocumentMetadata(java.lang.String)"/>
@@ -252,7 +252,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Android.Provider.DocumentsContract.Path FindDocumentPath(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Provider.DocumentsContract.Path>("findDocumentPath", arg0, arg1);
+            return IExecuteWithSignature<Android.Provider.DocumentsContract.Path>("findDocumentPath", "(Ljava/lang/String;Ljava/lang/String;)Landroid/provider/DocumentsContract$Path;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#isChildDocument(java.lang.String,java.lang.String)"/>
@@ -262,7 +262,7 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public bool IsChildDocument(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isChildDocument", arg0, arg1);
+            return IExecuteWithSignature<bool>("isChildDocument", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#revokeDocumentPermission(java.lang.String)"/>
@@ -281,7 +281,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Java.Lang.String CopyDocument(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("copyDocument", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("copyDocument", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#createDocument(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -293,7 +293,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Java.Lang.String CreateDocument(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Lang.String>("createDocument", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("createDocument", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#getDocumentType(java.lang.String)"/>
@@ -315,7 +315,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Java.Lang.String MoveDocument(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Lang.String>("moveDocument", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("moveDocument", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#renameDocument(java.lang.String,java.lang.String)"/>
@@ -326,7 +326,7 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public Java.Lang.String RenameDocument(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("renameDocument", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("renameDocument", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#getDocumentStreamTypes(java.lang.String,java.lang.String)"/>
@@ -336,7 +336,7 @@ namespace Android.Provider
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetDocumentStreamTypes(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecuteArray<Java.Lang.String>("getDocumentStreamTypes", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getDocumentStreamTypes", "(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#deleteDocument(java.lang.String)"/>
@@ -363,15 +363,15 @@ namespace Android.Provider
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public void RemoveDocument(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("removeDocument", arg0, arg1);
+            IExecuteWithSignature("removeDocument", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

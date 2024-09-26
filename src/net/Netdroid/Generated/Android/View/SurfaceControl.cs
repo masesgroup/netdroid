@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SurfaceControl(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Transaction(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -166,7 +166,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public TransactionCommittedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.SurfaceControl_TransactionCommittedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -175,13 +175,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region TransactionCommittedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="TransactionCommittedListener"/> or its generic type if there is one
@@ -192,14 +192,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.SurfaceControl$TransactionCommittedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -238,10 +238,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public TransactionStats(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -262,9 +262,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -284,10 +284,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public TrustedPresentationThresholds(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -308,9 +308,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -322,13 +322,13 @@ namespace Android.View
     public partial class SurfaceControl
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.html#CREATOR"/>
@@ -372,13 +372,13 @@ namespace Android.View
         public static int BUFFER_TRANSFORM_ROTATE_90 { get { if (!_BUFFER_TRANSFORM_ROTATE_90Ready) { _BUFFER_TRANSFORM_ROTATE_90Content = SGetField<int>(LocalBridgeClazz, "BUFFER_TRANSFORM_ROTATE_90"); _BUFFER_TRANSFORM_ROTATE_90Ready = true; } return _BUFFER_TRANSFORM_ROTATE_90Content; } }
         private static int _BUFFER_TRANSFORM_ROTATE_90Content = default;
         private static bool _BUFFER_TRANSFORM_ROTATE_90Ready = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.html#isValid()"/>
@@ -418,31 +418,31 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Builder.html#build()"/>
@@ -460,7 +460,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Builder"/></returns>
             public Android.View.SurfaceControl.Builder SetBufferSize(int arg0, int arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Builder>("setBufferSize", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Builder>("setBufferSize", "(II)Landroid/view/SurfaceControl$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Builder.html#setFormat(int)"/>
@@ -507,13 +507,13 @@ namespace Android.View
             {
                 return IExecuteWithSignature<Android.View.SurfaceControl.Builder>("setParent", "(Landroid/view/SurfaceControl;)Landroid/view/SurfaceControl$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -522,9 +522,9 @@ namespace Android.View
         public partial class Transaction : Java.Io.ICloseable, Android.Os.IParcelable
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.View.SurfaceControl.Transaction"/> to <see cref="Java.Io.Closeable"/>
@@ -534,9 +534,9 @@ namespace Android.View
             /// Converter from <see cref="Android.View.SurfaceControl.Transaction"/> to <see cref="Android.Os.Parcelable"/>
             /// </summary>
             public static implicit operator Android.Os.Parcelable(Android.View.SurfaceControl.Transaction t) => t.Cast<Android.Os.Parcelable>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#CREATOR"/>
@@ -544,13 +544,13 @@ namespace Android.View
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#addTransactionCommittedListener(java.util.concurrent.Executor,android.view.SurfaceControl.TransactionCommittedListener)"/>
@@ -560,7 +560,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction AddTransactionCommittedListener(Java.Util.Concurrent.Executor arg0, Android.View.SurfaceControl.TransactionCommittedListener arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("addTransactionCommittedListener", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("addTransactionCommittedListener", "(Ljava/util/concurrent/Executor;Landroid/view/SurfaceControl$TransactionCommittedListener;)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#addTransactionCompletedListener(java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -570,7 +570,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction AddTransactionCompletedListener(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Android.View.SurfaceControl.TransactionStats> arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("addTransactionCompletedListener", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("addTransactionCompletedListener", "(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#clearFrameRate(android.view.SurfaceControl)"/>
@@ -608,7 +608,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction Reparent(Android.View.SurfaceControl arg0, Android.View.SurfaceControl arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("reparent", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("reparent", "(Landroid/view/SurfaceControl;Landroid/view/SurfaceControl;)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setAlpha(android.view.SurfaceControl,float)"/>
@@ -618,7 +618,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetAlpha(Android.View.SurfaceControl arg0, float arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setAlpha", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setAlpha", "(Landroid/view/SurfaceControl;F)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBuffer(android.view.SurfaceControl,android.hardware.HardwareBuffer,android.hardware.SyncFence,java.util.function.Consumer)"/>
@@ -630,7 +630,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetBuffer(Android.View.SurfaceControl arg0, Android.Hardware.HardwareBuffer arg1, Android.Hardware.SyncFence arg2, Java.Util.Function.Consumer<Android.Hardware.SyncFence> arg3)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setBuffer", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setBuffer", "(Landroid/view/SurfaceControl;Landroid/hardware/HardwareBuffer;Landroid/hardware/SyncFence;Ljava/util/function/Consumer;)Landroid/view/SurfaceControl$Transaction;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBuffer(android.view.SurfaceControl,android.hardware.HardwareBuffer,android.hardware.SyncFence)"/>
@@ -641,7 +641,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetBuffer(Android.View.SurfaceControl arg0, Android.Hardware.HardwareBuffer arg1, Android.Hardware.SyncFence arg2)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setBuffer", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setBuffer", "(Landroid/view/SurfaceControl;Landroid/hardware/HardwareBuffer;Landroid/hardware/SyncFence;)Landroid/view/SurfaceControl$Transaction;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBuffer(android.view.SurfaceControl,android.hardware.HardwareBuffer)"/>
@@ -651,7 +651,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetBuffer(Android.View.SurfaceControl arg0, Android.Hardware.HardwareBuffer arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setBuffer", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setBuffer", "(Landroid/view/SurfaceControl;Landroid/hardware/HardwareBuffer;)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBufferSize(android.view.SurfaceControl,int,int)"/>
@@ -662,7 +662,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetBufferSize(Android.View.SurfaceControl arg0, int arg1, int arg2)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setBufferSize", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setBufferSize", "(Landroid/view/SurfaceControl;II)Landroid/view/SurfaceControl$Transaction;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setBufferTransform(android.view.SurfaceControl,int)"/>
@@ -672,7 +672,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetBufferTransform(Android.View.SurfaceControl arg0, int arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setBufferTransform", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setBufferTransform", "(Landroid/view/SurfaceControl;I)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setCrop(android.view.SurfaceControl,android.graphics.Rect)"/>
@@ -682,7 +682,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetCrop(Android.View.SurfaceControl arg0, Android.Graphics.Rect arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setCrop", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setCrop", "(Landroid/view/SurfaceControl;Landroid/graphics/Rect;)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setDamageRegion(android.view.SurfaceControl,android.graphics.Region)"/>
@@ -692,7 +692,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetDamageRegion(Android.View.SurfaceControl arg0, Android.Graphics.Region arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setDamageRegion", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setDamageRegion", "(Landroid/view/SurfaceControl;Landroid/graphics/Region;)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setDataSpace(android.view.SurfaceControl,int)"/>
@@ -702,7 +702,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetDataSpace(Android.View.SurfaceControl arg0, int arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setDataSpace", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setDataSpace", "(Landroid/view/SurfaceControl;I)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setDesiredHdrHeadroom(android.view.SurfaceControl,float)"/>
@@ -712,7 +712,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetDesiredHdrHeadroom(Android.View.SurfaceControl arg0, float arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setDesiredHdrHeadroom", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setDesiredHdrHeadroom", "(Landroid/view/SurfaceControl;F)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setDesiredPresentTimeNanos(long)"/>
@@ -732,7 +732,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetExtendedRangeBrightness(Android.View.SurfaceControl arg0, float arg1, float arg2)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setExtendedRangeBrightness", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setExtendedRangeBrightness", "(Landroid/view/SurfaceControl;FF)Landroid/view/SurfaceControl$Transaction;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setFrameRate(android.view.SurfaceControl,float,int,int)"/>
@@ -744,7 +744,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetFrameRate(Android.View.SurfaceControl arg0, float arg1, int arg2, int arg3)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setFrameRate", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setFrameRate", "(Landroid/view/SurfaceControl;FII)Landroid/view/SurfaceControl$Transaction;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setFrameRate(android.view.SurfaceControl,float,int)"/>
@@ -755,7 +755,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetFrameRate(Android.View.SurfaceControl arg0, float arg1, int arg2)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setFrameRate", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setFrameRate", "(Landroid/view/SurfaceControl;FI)Landroid/view/SurfaceControl$Transaction;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setFrameTimeline(long)"/>
@@ -777,7 +777,7 @@ namespace Android.View
             [global::System.Obsolete()]
             public Android.View.SurfaceControl.Transaction SetGeometry(Android.View.SurfaceControl arg0, Android.Graphics.Rect arg1, Android.Graphics.Rect arg2, int arg3)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setGeometry", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setGeometry", "(Landroid/view/SurfaceControl;Landroid/graphics/Rect;Landroid/graphics/Rect;I)Landroid/view/SurfaceControl$Transaction;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setLayer(android.view.SurfaceControl,int)"/>
@@ -787,7 +787,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetLayer(Android.View.SurfaceControl arg0, int arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setLayer", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setLayer", "(Landroid/view/SurfaceControl;I)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setOpaque(android.view.SurfaceControl,boolean)"/>
@@ -797,7 +797,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetOpaque(Android.View.SurfaceControl arg0, bool arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setOpaque", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setOpaque", "(Landroid/view/SurfaceControl;Z)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setPosition(android.view.SurfaceControl,float,float)"/>
@@ -808,7 +808,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetPosition(Android.View.SurfaceControl arg0, float arg1, float arg2)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setPosition", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setPosition", "(Landroid/view/SurfaceControl;FF)Landroid/view/SurfaceControl$Transaction;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setScale(android.view.SurfaceControl,float,float)"/>
@@ -819,7 +819,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetScale(Android.View.SurfaceControl arg0, float arg1, float arg2)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setScale", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setScale", "(Landroid/view/SurfaceControl;FF)Landroid/view/SurfaceControl$Transaction;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setTrustedPresentationCallback(android.view.SurfaceControl,android.view.SurfaceControl.TrustedPresentationThresholds,java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -832,7 +832,7 @@ namespace Android.View
             [global::System.Obsolete()]
             public Android.View.SurfaceControl.Transaction SetTrustedPresentationCallback(Android.View.SurfaceControl arg0, Android.View.SurfaceControl.TrustedPresentationThresholds arg1, Java.Util.Concurrent.Executor arg2, Java.Util.Function.Consumer<Java.Lang.Boolean> arg3)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setTrustedPresentationCallback", arg0, arg1, arg2, arg3);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setTrustedPresentationCallback", "(Landroid/view/SurfaceControl;Landroid/view/SurfaceControl$TrustedPresentationThresholds;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)Landroid/view/SurfaceControl$Transaction;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setVisibility(android.view.SurfaceControl,boolean)"/>
@@ -842,7 +842,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
             public Android.View.SurfaceControl.Transaction SetVisibility(Android.View.SurfaceControl arg0, bool arg1)
             {
-                return IExecute<Android.View.SurfaceControl.Transaction>("setVisibility", arg0, arg1);
+                return IExecuteWithSignature<Android.View.SurfaceControl.Transaction>("setVisibility", "(Landroid/view/SurfaceControl;Z)Landroid/view/SurfaceControl$Transaction;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#describeContents()"/>
@@ -873,15 +873,15 @@ namespace Android.View
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -890,21 +890,21 @@ namespace Android.View
         public partial class TransactionCommittedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="TransactionCommittedListener"/>
@@ -914,13 +914,13 @@ namespace Android.View
                 AddEventHandler("onTransactionCommitted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnTransactionCommittedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/SurfaceControl.TransactionCommittedListener.html#onTransactionCommitted()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTransactionCommitted"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action OnOnTransactionCommitted { get; set; } = null;
-            
+
             bool hasOverrideOnTransactionCommitted = true;
             void OnTransactionCommittedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -929,7 +929,7 @@ namespace Android.View
                 methodToExecute.Invoke();
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnTransactionCommitted;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.TransactionCommittedListener.html#onTransactionCommitted()"/>
             /// </summary>
@@ -937,13 +937,13 @@ namespace Android.View
             {
                 hasOverrideOnTransactionCommitted = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -952,21 +952,21 @@ namespace Android.View
         public partial class TransactionCommittedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.TransactionCommittedListener.html#onTransactionCommitted()"/>
@@ -975,13 +975,13 @@ namespace Android.View
             {
                 IExecuteWithSignature("onTransactionCommitted", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -990,21 +990,21 @@ namespace Android.View
         public partial class TransactionStats
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.TransactionStats.html#getPresentFence()"/>
@@ -1022,13 +1022,13 @@ namespace Android.View
             {
                 return IExecuteWithSignature<long>("getLatchTimeNanos", "()J");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1048,36 +1048,36 @@ namespace Android.View
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

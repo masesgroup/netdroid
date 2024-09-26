@@ -40,10 +40,10 @@ namespace Android.View
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WindowInsets(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Side(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.View
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Type(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -217,13 +217,13 @@ namespace Android.View
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#CONSUMED"/>
@@ -231,13 +231,13 @@ namespace Android.View
         public static Android.View.WindowInsets CONSUMED { get { if (!_CONSUMEDReady) { _CONSUMEDContent = SGetField<Android.View.WindowInsets>(LocalBridgeClazz, "CONSUMED"); _CONSUMEDReady = true; } return _CONSUMEDContent; } }
         private static Android.View.WindowInsets _CONSUMEDContent = default;
         private static bool _CONSUMEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#getInsets(int)"/>
@@ -389,7 +389,7 @@ namespace Android.View
         /// <returns><see cref="Android.View.WindowInsets"/></returns>
         public Android.View.WindowInsets Inset(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Android.View.WindowInsets>("inset", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.View.WindowInsets>("inset", "(IIII)Landroid/view/WindowInsets;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#replaceSystemWindowInsets(android.graphics.Rect)"/>
@@ -412,7 +412,7 @@ namespace Android.View
         [global::System.Obsolete()]
         public Android.View.WindowInsets ReplaceSystemWindowInsets(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Android.View.WindowInsets>("replaceSystemWindowInsets", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.View.WindowInsets>("replaceSystemWindowInsets", "(IIII)Landroid/view/WindowInsets;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsets.html#hasInsets()"/>
@@ -555,9 +555,9 @@ namespace Android.View
         {
             return IExecuteWithSignature<Java.Util.List<Android.Graphics.Rect>>("getBoundingRectsIgnoringVisibility", "(I)Ljava/util/List;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -571,21 +571,21 @@ namespace Android.View
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Builder.html#build()"/>
@@ -603,7 +603,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
             public Android.View.WindowInsets.Builder SetBoundingRects(int arg0, Java.Util.List<Android.Graphics.Rect> arg1)
             {
-                return IExecute<Android.View.WindowInsets.Builder>("setBoundingRects", arg0, arg1);
+                return IExecuteWithSignature<Android.View.WindowInsets.Builder>("setBoundingRects", "(ILjava/util/List;)Landroid/view/WindowInsets$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Builder.html#setBoundingRectsIgnoringVisibility(int,java.util.List)"/>
@@ -613,7 +613,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
             public Android.View.WindowInsets.Builder SetBoundingRectsIgnoringVisibility(int arg0, Java.Util.List<Android.Graphics.Rect> arg1)
             {
-                return IExecute<Android.View.WindowInsets.Builder>("setBoundingRectsIgnoringVisibility", arg0, arg1);
+                return IExecuteWithSignature<Android.View.WindowInsets.Builder>("setBoundingRectsIgnoringVisibility", "(ILjava/util/List;)Landroid/view/WindowInsets$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Builder.html#setDisplayCutout(android.view.DisplayCutout)"/>
@@ -641,7 +641,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
             public Android.View.WindowInsets.Builder SetFrame(int arg0, int arg1)
             {
-                return IExecute<Android.View.WindowInsets.Builder>("setFrame", arg0, arg1);
+                return IExecuteWithSignature<Android.View.WindowInsets.Builder>("setFrame", "(II)Landroid/view/WindowInsets$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Builder.html#setInsets(int,android.graphics.Insets)"/>
@@ -651,7 +651,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
             public Android.View.WindowInsets.Builder SetInsets(int arg0, Android.Graphics.Insets arg1)
             {
-                return IExecute<Android.View.WindowInsets.Builder>("setInsets", arg0, arg1);
+                return IExecuteWithSignature<Android.View.WindowInsets.Builder>("setInsets", "(ILandroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Builder.html#setInsetsIgnoringVisibility(int,android.graphics.Insets)"/>
@@ -662,7 +662,7 @@ namespace Android.View
             /// <exception cref="Java.Lang.IllegalArgumentException"/>
             public Android.View.WindowInsets.Builder SetInsetsIgnoringVisibility(int arg0, Android.Graphics.Insets arg1)
             {
-                return IExecute<Android.View.WindowInsets.Builder>("setInsetsIgnoringVisibility", arg0, arg1);
+                return IExecuteWithSignature<Android.View.WindowInsets.Builder>("setInsetsIgnoringVisibility", "(ILandroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Builder.html#setMandatorySystemGestureInsets(android.graphics.Insets)"/>
@@ -691,7 +691,7 @@ namespace Android.View
             /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
             public Android.View.WindowInsets.Builder SetRoundedCorner(int arg0, Android.View.RoundedCorner arg1)
             {
-                return IExecute<Android.View.WindowInsets.Builder>("setRoundedCorner", arg0, arg1);
+                return IExecuteWithSignature<Android.View.WindowInsets.Builder>("setRoundedCorner", "(ILandroid/view/RoundedCorner;)Landroid/view/WindowInsets$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Builder.html#setStableInsets(android.graphics.Insets)"/>
@@ -741,15 +741,15 @@ namespace Android.View
             /// <returns><see cref="Android.View.WindowInsets.Builder"/></returns>
             public Android.View.WindowInsets.Builder SetVisible(int arg0, bool arg1)
             {
-                return IExecute<Android.View.WindowInsets.Builder>("setVisible", arg0, arg1);
+                return IExecuteWithSignature<Android.View.WindowInsets.Builder>("setVisible", "(IZ)Landroid/view/WindowInsets$Builder;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -758,13 +758,13 @@ namespace Android.View
         public partial class Side
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Side.html#BOTTOM"/>
@@ -790,9 +790,9 @@ namespace Android.View
             public static int TOP { get { if (!_TOPReady) { _TOPContent = SGetField<int>(LocalBridgeClazz, "TOP"); _TOPReady = true; } return _TOPContent; } }
             private static int _TOPContent = default;
             private static bool _TOPReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Side.html#all()"/>
@@ -802,17 +802,17 @@ namespace Android.View
             {
                 return SExecuteWithSignature<int>(LocalBridgeClazz, "all", "()I");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -821,17 +821,17 @@ namespace Android.View
         public partial class Type
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsets.Type.html#captionBar()"/>
@@ -913,24 +913,24 @@ namespace Android.View
             {
                 return SExecuteWithSignature<int>(LocalBridgeClazz, "tappableElement", "()I");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

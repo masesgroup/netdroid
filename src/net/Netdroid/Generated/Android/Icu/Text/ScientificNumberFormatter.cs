@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ScientificNumberFormatter(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Icu.Text
     public partial class ScientificNumberFormatter
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/ScientificNumberFormatter.html#getMarkupInstance(android.icu.text.DecimalFormat,java.lang.String,java.lang.String)"/>
@@ -95,7 +95,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.ScientificNumberFormatter"/></returns>
         public static Android.Icu.Text.ScientificNumberFormatter GetMarkupInstance(Android.Icu.Text.DecimalFormat arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<Android.Icu.Text.ScientificNumberFormatter>(LocalBridgeClazz, "getMarkupInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Icu.Text.ScientificNumberFormatter>(LocalBridgeClazz, "getMarkupInstance", "(Landroid/icu/text/DecimalFormat;Ljava/lang/String;Ljava/lang/String;)Landroid/icu/text/ScientificNumberFormatter;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/ScientificNumberFormatter.html#getMarkupInstance(android.icu.util.ULocale,java.lang.String,java.lang.String)"/>
@@ -106,7 +106,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.ScientificNumberFormatter"/></returns>
         public static Android.Icu.Text.ScientificNumberFormatter GetMarkupInstance(Android.Icu.Util.ULocale arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<Android.Icu.Text.ScientificNumberFormatter>(LocalBridgeClazz, "getMarkupInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Icu.Text.ScientificNumberFormatter>(LocalBridgeClazz, "getMarkupInstance", "(Landroid/icu/util/ULocale;Ljava/lang/String;Ljava/lang/String;)Landroid/icu/text/ScientificNumberFormatter;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/ScientificNumberFormatter.html#getSuperscriptInstance(android.icu.text.DecimalFormat)"/>
@@ -126,9 +126,9 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.ScientificNumberFormatter>(LocalBridgeClazz, "getSuperscriptInstance", "(Landroid/icu/util/ULocale;)Landroid/icu/text/ScientificNumberFormatter;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/ScientificNumberFormatter.html#format(java.lang.Object)"/>
@@ -139,13 +139,13 @@ namespace Android.Icu.Text
         {
             return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

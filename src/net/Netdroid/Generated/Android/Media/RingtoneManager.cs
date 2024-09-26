@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public RingtoneManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,13 +90,13 @@ namespace Android.Media
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#ID_COLUMN_INDEX"/>
@@ -195,9 +195,9 @@ namespace Android.Media
         public static Java.Lang.String EXTRA_RINGTONE_TYPE { get { if (!_EXTRA_RINGTONE_TYPEReady) { _EXTRA_RINGTONE_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_RINGTONE_TYPE"); _EXTRA_RINGTONE_TYPEReady = true; } return _EXTRA_RINGTONE_TYPEContent; } }
         private static Java.Lang.String _EXTRA_RINGTONE_TYPEContent = default;
         private static bool _EXTRA_RINGTONE_TYPEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#openDefaultRingtoneUri(android.content.Context,android.net.Uri)"/>
@@ -208,7 +208,7 @@ namespace Android.Media
         /// <exception cref="Java.Io.FileNotFoundException"/>
         public static Android.Content.Res.AssetFileDescriptor OpenDefaultRingtoneUri(Android.Content.Context arg0, Android.Net.Uri arg1)
         {
-            return SExecute<Android.Content.Res.AssetFileDescriptor>(LocalBridgeClazz, "openDefaultRingtoneUri", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.Res.AssetFileDescriptor>(LocalBridgeClazz, "openDefaultRingtoneUri", "(Landroid/content/Context;Landroid/net/Uri;)Landroid/content/res/AssetFileDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#getRingtone(android.content.Context,android.net.Uri)"/>
@@ -218,7 +218,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Media.Ringtone"/></returns>
         public static Android.Media.Ringtone GetRingtone(Android.Content.Context arg0, Android.Net.Uri arg1)
         {
-            return SExecute<Android.Media.Ringtone>(LocalBridgeClazz, "getRingtone", arg0, arg1);
+            return SExecuteWithSignature<Android.Media.Ringtone>(LocalBridgeClazz, "getRingtone", "(Landroid/content/Context;Landroid/net/Uri;)Landroid/media/Ringtone;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#getActualDefaultRingtoneUri(android.content.Context,int)"/>
@@ -228,7 +228,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Net.Uri"/></returns>
         public static Android.Net.Uri GetActualDefaultRingtoneUri(Android.Content.Context arg0, int arg1)
         {
-            return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getActualDefaultRingtoneUri", arg0, arg1);
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getActualDefaultRingtoneUri", "(Landroid/content/Context;I)Landroid/net/Uri;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#getDefaultUri(int)"/>
@@ -256,7 +256,7 @@ namespace Android.Media
         /// <returns><see cref="bool"/></returns>
         public static bool HasHapticChannels(Android.Content.Context arg0, Android.Net.Uri arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "hasHapticChannels", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "hasHapticChannels", "(Landroid/content/Context;Landroid/net/Uri;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#hasHapticChannels(android.net.Uri)"/>
@@ -293,11 +293,11 @@ namespace Android.Media
         /// <param name="arg2"><see cref="Android.Net.Uri"/></param>
         public static void SetActualDefaultRingtoneUri(Android.Content.Context arg0, int arg1, Android.Net.Uri arg2)
         {
-            SExecute(LocalBridgeClazz, "setActualDefaultRingtoneUri", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "setActualDefaultRingtoneUri", "(Landroid/content/Context;ILandroid/net/Uri;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#getCursor()"/>
@@ -400,13 +400,13 @@ namespace Android.Media
         {
             IExecuteWithSignature("stopPreviousRingtone", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

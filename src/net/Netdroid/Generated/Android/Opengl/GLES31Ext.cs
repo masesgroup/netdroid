@@ -40,10 +40,10 @@ namespace Android.Opengl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GLES31Ext(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Opengl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region DebugProcKHR declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Opengl
             /// </summary>
             [global::System.Obsolete("DebugProcKHR class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public DebugProcKHR(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Opengl
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Opengl
     public partial class GLES31Ext
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#GL_BLEND_ADVANCED_COHERENT_KHR"/>
@@ -1329,9 +1329,9 @@ namespace Android.Opengl
         public static int GL_VERTEX_ARRAY_KHR { get { if (!_GL_VERTEX_ARRAY_KHRReady) { _GL_VERTEX_ARRAY_KHRContent = SGetField<int>(LocalBridgeClazz, "GL_VERTEX_ARRAY_KHR"); _GL_VERTEX_ARRAY_KHRReady = true; } return _GL_VERTEX_ARRAY_KHRContent; } }
         private static int _GL_VERTEX_ARRAY_KHRContent = default;
         private static bool _GL_VERTEX_ARRAY_KHRReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetDebugMessageCallbackKHR()"/>
@@ -1349,7 +1349,7 @@ namespace Android.Opengl
         /// <returns><see cref="bool"/></returns>
         public static bool GlIsEnablediEXT(int arg0, int arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "glIsEnablediEXT", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "glIsEnablediEXT", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetDebugMessageLogKHR(int,int,int[],int,int[],int,int[],int,int[],int,int[],int,byte[],int)"/>
@@ -1371,7 +1371,7 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int GlGetDebugMessageLogKHR(int arg0, int arg1, int[] arg2, int arg3, int[] arg4, int arg5, int[] arg6, int arg7, int[] arg8, int arg9, int[] arg10, int arg11, byte[] arg12, int arg13)
         {
-            return SExecute<int>(LocalBridgeClazz, "glGetDebugMessageLogKHR", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "glGetDebugMessageLogKHR", "(II[II[II[II[II[II[BI)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetDebugMessageLogKHR(int,java.nio.IntBuffer,java.nio.IntBuffer,java.nio.IntBuffer,java.nio.IntBuffer,java.nio.IntBuffer,java.nio.ByteBuffer)"/>
@@ -1386,7 +1386,7 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int GlGetDebugMessageLogKHR(int arg0, Java.Nio.IntBuffer arg1, Java.Nio.IntBuffer arg2, Java.Nio.IntBuffer arg3, Java.Nio.IntBuffer arg4, Java.Nio.IntBuffer arg5, Java.Nio.ByteBuffer arg6)
         {
-            return SExecute<int>(LocalBridgeClazz, "glGetDebugMessageLogKHR", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "glGetDebugMessageLogKHR", "(ILjava/nio/IntBuffer;Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;Ljava/nio/ByteBuffer;)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetObjectLabelKHR(int,int)"/>
@@ -1396,7 +1396,7 @@ namespace Android.Opengl
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GlGetObjectLabelKHR(int arg0, int arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "glGetObjectLabelKHR", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "glGetObjectLabelKHR", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetObjectPtrLabelKHR(long)"/>
@@ -1422,7 +1422,7 @@ namespace Android.Opengl
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String[] GlGetDebugMessageLogKHR(int arg0, int[] arg1, int arg2, int[] arg3, int arg4, int[] arg5, int arg6, int[] arg7, int arg8)
         {
-            return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "glGetDebugMessageLogKHR", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "glGetDebugMessageLogKHR", "(I[II[II[II[II)[Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetDebugMessageLogKHR(int,java.nio.IntBuffer,java.nio.IntBuffer,java.nio.IntBuffer,java.nio.IntBuffer)"/>
@@ -1435,7 +1435,7 @@ namespace Android.Opengl
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String[] GlGetDebugMessageLogKHR(int arg0, Java.Nio.IntBuffer arg1, Java.Nio.IntBuffer arg2, Java.Nio.IntBuffer arg3, Java.Nio.IntBuffer arg4)
         {
-            return SExecuteArray<Java.Lang.String>(LocalBridgeClazz, "glGetDebugMessageLogKHR", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "glGetDebugMessageLogKHR", "(ILjava/nio/IntBuffer;Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)[Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glBlendBarrierKHR()"/>
@@ -1451,7 +1451,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlBlendEquationiEXT(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glBlendEquationiEXT", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glBlendEquationiEXT", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glBlendEquationSeparateiEXT(int,int,int)"/>
@@ -1461,7 +1461,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlBlendEquationSeparateiEXT(int arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glBlendEquationSeparateiEXT", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glBlendEquationSeparateiEXT", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glBlendFunciEXT(int,int,int)"/>
@@ -1471,7 +1471,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlBlendFunciEXT(int arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glBlendFunciEXT", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glBlendFunciEXT", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glBlendFuncSeparateiEXT(int,int,int,int,int)"/>
@@ -1483,7 +1483,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlBlendFuncSeparateiEXT(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glBlendFuncSeparateiEXT", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glBlendFuncSeparateiEXT", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glColorMaskiEXT(int,boolean,boolean,boolean,boolean)"/>
@@ -1495,7 +1495,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="bool"/></param>
         public static void GlColorMaskiEXT(int arg0, bool arg1, bool arg2, bool arg3, bool arg4)
         {
-            SExecute(LocalBridgeClazz, "glColorMaskiEXT", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glColorMaskiEXT", "(IZZZZ)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glCopyImageSubDataEXT(int,int,int,int,int,int,int,int,int,int,int,int,int,int,int)"/>
@@ -1517,7 +1517,7 @@ namespace Android.Opengl
         /// <param name="arg14"><see cref="int"/></param>
         public static void GlCopyImageSubDataEXT(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, int arg11, int arg12, int arg13, int arg14)
         {
-            SExecute(LocalBridgeClazz, "glCopyImageSubDataEXT", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);
+            SExecuteWithSignature(LocalBridgeClazz, "glCopyImageSubDataEXT", "(IIIIIIIIIIIIIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glDebugMessageCallbackKHR(android.opengl.GLES31Ext.DebugProcKHR)"/>
@@ -1539,7 +1539,7 @@ namespace Android.Opengl
         /// <param name="arg6"><see cref="bool"/></param>
         public static void GlDebugMessageControlKHR(int arg0, int arg1, int arg2, int arg3, int[] arg4, int arg5, bool arg6)
         {
-            SExecute(LocalBridgeClazz, "glDebugMessageControlKHR", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            SExecuteWithSignature(LocalBridgeClazz, "glDebugMessageControlKHR", "(IIII[IIZ)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glDebugMessageControlKHR(int,int,int,int,java.nio.IntBuffer,boolean)"/>
@@ -1552,7 +1552,7 @@ namespace Android.Opengl
         /// <param name="arg5"><see cref="bool"/></param>
         public static void GlDebugMessageControlKHR(int arg0, int arg1, int arg2, int arg3, Java.Nio.IntBuffer arg4, bool arg5)
         {
-            SExecute(LocalBridgeClazz, "glDebugMessageControlKHR", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "glDebugMessageControlKHR", "(IIIILjava/nio/IntBuffer;Z)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glDebugMessageInsertKHR(int,int,int,int,java.lang.String)"/>
@@ -1564,7 +1564,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         public static void GlDebugMessageInsertKHR(int arg0, int arg1, int arg2, int arg3, Java.Lang.String arg4)
         {
-            SExecute(LocalBridgeClazz, "glDebugMessageInsertKHR", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glDebugMessageInsertKHR", "(IIIILjava/lang/String;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glDisableiEXT(int,int)"/>
@@ -1573,7 +1573,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlDisableiEXT(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glDisableiEXT", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glDisableiEXT", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glEnableiEXT(int,int)"/>
@@ -1582,7 +1582,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlEnableiEXT(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glEnableiEXT", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glEnableiEXT", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glFramebufferTextureEXT(int,int,int,int)"/>
@@ -1593,7 +1593,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlFramebufferTextureEXT(int arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glFramebufferTextureEXT", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glFramebufferTextureEXT", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetSamplerParameterIivEXT(int,int,int[],int)"/>
@@ -1604,7 +1604,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetSamplerParameterIivEXT(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetSamplerParameterIivEXT", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetSamplerParameterIivEXT", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetSamplerParameterIivEXT(int,int,java.nio.IntBuffer)"/>
@@ -1614,7 +1614,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetSamplerParameterIivEXT(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetSamplerParameterIivEXT", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetSamplerParameterIivEXT", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetSamplerParameterIuivEXT(int,int,int[],int)"/>
@@ -1625,7 +1625,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetSamplerParameterIuivEXT(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetSamplerParameterIuivEXT", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetSamplerParameterIuivEXT", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetSamplerParameterIuivEXT(int,int,java.nio.IntBuffer)"/>
@@ -1635,7 +1635,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetSamplerParameterIuivEXT(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetSamplerParameterIuivEXT", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetSamplerParameterIuivEXT", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetTexParameterIivEXT(int,int,int[],int)"/>
@@ -1646,7 +1646,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetTexParameterIivEXT(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetTexParameterIivEXT", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetTexParameterIivEXT", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetTexParameterIivEXT(int,int,java.nio.IntBuffer)"/>
@@ -1656,7 +1656,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetTexParameterIivEXT(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetTexParameterIivEXT", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetTexParameterIivEXT", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetTexParameterIuivEXT(int,int,int[],int)"/>
@@ -1667,7 +1667,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlGetTexParameterIuivEXT(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glGetTexParameterIuivEXT", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetTexParameterIuivEXT", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glGetTexParameterIuivEXT(int,int,java.nio.IntBuffer)"/>
@@ -1677,7 +1677,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlGetTexParameterIuivEXT(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glGetTexParameterIuivEXT", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glGetTexParameterIuivEXT", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glMinSampleShadingOES(float)"/>
@@ -1696,7 +1696,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public static void GlObjectLabelKHR(int arg0, int arg1, int arg2, Java.Lang.String arg3)
         {
-            SExecute(LocalBridgeClazz, "glObjectLabelKHR", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glObjectLabelKHR", "(IIILjava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glObjectPtrLabelKHR(long,java.lang.String)"/>
@@ -1705,7 +1705,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public static void GlObjectPtrLabelKHR(long arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "glObjectPtrLabelKHR", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glObjectPtrLabelKHR", "(JLjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glPatchParameteriEXT(int,int)"/>
@@ -1714,7 +1714,7 @@ namespace Android.Opengl
         /// <param name="arg1"><see cref="int"/></param>
         public static void GlPatchParameteriEXT(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "glPatchParameteriEXT", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "glPatchParameteriEXT", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glPopDebugGroupKHR()"/>
@@ -1736,7 +1736,7 @@ namespace Android.Opengl
         /// <param name="arg7"><see cref="float"/></param>
         public static void GlPrimitiveBoundingBoxEXT(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7)
         {
-            SExecute(LocalBridgeClazz, "glPrimitiveBoundingBoxEXT", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            SExecuteWithSignature(LocalBridgeClazz, "glPrimitiveBoundingBoxEXT", "(FFFFFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glPushDebugGroupKHR(int,int,int,java.lang.String)"/>
@@ -1747,7 +1747,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public static void GlPushDebugGroupKHR(int arg0, int arg1, int arg2, Java.Lang.String arg3)
         {
-            SExecute(LocalBridgeClazz, "glPushDebugGroupKHR", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glPushDebugGroupKHR", "(IIILjava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glSamplerParameterIivEXT(int,int,int[],int)"/>
@@ -1758,7 +1758,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlSamplerParameterIivEXT(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glSamplerParameterIivEXT", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glSamplerParameterIivEXT", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glSamplerParameterIivEXT(int,int,java.nio.IntBuffer)"/>
@@ -1768,7 +1768,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlSamplerParameterIivEXT(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glSamplerParameterIivEXT", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glSamplerParameterIivEXT", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glSamplerParameterIuivEXT(int,int,int[],int)"/>
@@ -1779,7 +1779,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlSamplerParameterIuivEXT(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glSamplerParameterIuivEXT", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glSamplerParameterIuivEXT", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glSamplerParameterIuivEXT(int,int,java.nio.IntBuffer)"/>
@@ -1789,7 +1789,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlSamplerParameterIuivEXT(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glSamplerParameterIuivEXT", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glSamplerParameterIuivEXT", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glTexBufferEXT(int,int,int)"/>
@@ -1799,7 +1799,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="int"/></param>
         public static void GlTexBufferEXT(int arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "glTexBufferEXT", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexBufferEXT", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glTexBufferRangeEXT(int,int,int,int,int)"/>
@@ -1811,7 +1811,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="int"/></param>
         public static void GlTexBufferRangeEXT(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            SExecute(LocalBridgeClazz, "glTexBufferRangeEXT", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexBufferRangeEXT", "(IIIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glTexParameterIivEXT(int,int,int[],int)"/>
@@ -1822,7 +1822,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlTexParameterIivEXT(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glTexParameterIivEXT", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexParameterIivEXT", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glTexParameterIivEXT(int,int,java.nio.IntBuffer)"/>
@@ -1832,7 +1832,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlTexParameterIivEXT(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glTexParameterIivEXT", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexParameterIivEXT", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glTexParameterIuivEXT(int,int,int[],int)"/>
@@ -1843,7 +1843,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         public static void GlTexParameterIuivEXT(int arg0, int arg1, int[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "glTexParameterIuivEXT", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexParameterIuivEXT", "(II[II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glTexParameterIuivEXT(int,int,java.nio.IntBuffer)"/>
@@ -1853,7 +1853,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="Java.Nio.IntBuffer"/></param>
         public static void GlTexParameterIuivEXT(int arg0, int arg1, Java.Nio.IntBuffer arg2)
         {
-            SExecute(LocalBridgeClazz, "glTexParameterIuivEXT", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexParameterIuivEXT", "(IILjava/nio/IntBuffer;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.html#glTexStorage3DMultisampleOES(int,int,int,int,int,int,boolean)"/>
@@ -1867,35 +1867,35 @@ namespace Android.Opengl
         /// <param name="arg6"><see cref="bool"/></param>
         public static void GlTexStorage3DMultisampleOES(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6)
         {
-            SExecute(LocalBridgeClazz, "glTexStorage3DMultisampleOES", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            SExecuteWithSignature(LocalBridgeClazz, "glTexStorage3DMultisampleOES", "(IIIIIIZ)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region DebugProcKHR implementation
         public partial class DebugProcKHR
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/opengl/GLES31Ext.DebugProcKHR.html#onMessage(int,int,int,int,java.lang.String)"/>
@@ -1907,22 +1907,22 @@ namespace Android.Opengl
             /// <param name="arg4"><see cref="Java.Lang.String"/></param>
             public void OnMessage(int arg0, int arg1, int arg2, int arg3, Java.Lang.String arg4)
             {
-                IExecute("onMessage", arg0, arg1, arg2, arg3, arg4);
+                IExecuteWithSignature("onMessage", "(IIIILjava/lang/String;)V", arg0, arg1, arg2, arg3, arg4);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Java.Time
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Period(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,9 +74,9 @@ namespace Java.Time
     public partial class Period : Java.Time.Chrono.IChronoPeriod, Java.Io.ISerializable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Time.Period"/> to <see cref="Java.Time.Chrono.ChronoPeriod"/>
@@ -86,9 +86,9 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.Period"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.Period t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/Period.html#ZERO"/>
@@ -96,9 +96,9 @@ namespace Java.Time
         public static Java.Time.Period ZERO { get { if (!_ZEROReady) { _ZEROContent = SGetField<Java.Time.Period>(LocalBridgeClazz, "ZERO"); _ZEROReady = true; } return _ZEROContent; } }
         private static Java.Time.Period _ZEROContent = default;
         private static bool _ZEROReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/Period.html#between(java.time.LocalDate,java.time.LocalDate)"/>
@@ -108,7 +108,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Period"/></returns>
         public static Java.Time.Period Between(Java.Time.LocalDate arg0, Java.Time.LocalDate arg1)
         {
-            return SExecute<Java.Time.Period>(LocalBridgeClazz, "between", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Period>(LocalBridgeClazz, "between", "(Ljava/time/LocalDate;Ljava/time/LocalDate;)Ljava/time/Period;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/Period.html#from(java.time.temporal.TemporalAmount)"/>
@@ -128,7 +128,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Period"/></returns>
         public static Java.Time.Period Of(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Time.Period>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.Period>(LocalBridgeClazz, "of", "(III)Ljava/time/Period;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/Period.html#ofDays(int)"/>
@@ -175,9 +175,9 @@ namespace Java.Time
         {
             return SExecuteWithSignature<Java.Time.Period>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;)Ljava/time/Period;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/Period.html#isNegative()"/>
@@ -394,13 +394,13 @@ namespace Java.Time
         {
             return IExecuteWithSignature<long>("toTotalMonths", "()J");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

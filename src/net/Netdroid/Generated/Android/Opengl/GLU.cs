@@ -40,10 +40,10 @@ namespace Android.Opengl
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public GLU(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Opengl
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Opengl
     public partial class GLU
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLU.html#gluProject(float,float,float,float[],int,float[],int,int[],int,float[],int)"/>
@@ -103,7 +103,7 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int GluProject(float arg0, float arg1, float arg2, float[] arg3, int arg4, float[] arg5, int arg6, int[] arg7, int arg8, float[] arg9, int arg10)
         {
-            return SExecute<int>(LocalBridgeClazz, "gluProject", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "gluProject", "(FFF[FI[FI[II[FI)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLU.html#gluUnProject(float,float,float,float[],int,float[],int,int[],int,float[],int)"/>
@@ -122,7 +122,7 @@ namespace Android.Opengl
         /// <returns><see cref="int"/></returns>
         public static int GluUnProject(float arg0, float arg1, float arg2, float[] arg3, int arg4, float[] arg5, int arg6, int[] arg7, int arg8, float[] arg9, int arg10)
         {
-            return SExecute<int>(LocalBridgeClazz, "gluUnProject", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "gluUnProject", "(FFF[FI[FI[II[FI)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLU.html#gluErrorString(int)"/>
@@ -148,7 +148,7 @@ namespace Android.Opengl
         /// <param name="arg9"><see cref="float"/></param>
         public static void GluLookAt(Javax.Microedition.Khronos.Opengles.GL10 arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)
         {
-            SExecute(LocalBridgeClazz, "gluLookAt", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            SExecuteWithSignature(LocalBridgeClazz, "gluLookAt", "(Ljavax/microedition/khronos/opengles/GL10;FFFFFFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLU.html#gluOrtho2D(javax.microedition.khronos.opengles.GL10,float,float,float,float)"/>
@@ -160,7 +160,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="float"/></param>
         public static void GluOrtho2D(Javax.Microedition.Khronos.Opengles.GL10 arg0, float arg1, float arg2, float arg3, float arg4)
         {
-            SExecute(LocalBridgeClazz, "gluOrtho2D", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "gluOrtho2D", "(Ljavax/microedition/khronos/opengles/GL10;FFFF)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLU.html#gluPerspective(javax.microedition.khronos.opengles.GL10,float,float,float,float)"/>
@@ -172,19 +172,19 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="float"/></param>
         public static void GluPerspective(Javax.Microedition.Khronos.Opengles.GL10 arg0, float arg1, float arg2, float arg3, float arg4)
         {
-            SExecute(LocalBridgeClazz, "gluPerspective", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "gluPerspective", "(Ljavax/microedition/khronos/opengles/GL10;FFFF)V", arg0, arg1, arg2, arg3, arg4);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

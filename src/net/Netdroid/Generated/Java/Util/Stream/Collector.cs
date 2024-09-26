@@ -42,10 +42,10 @@ namespace Java.Util.Stream
         /// </summary>
         [global::System.Obsolete("Collector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Collector(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Util.Stream
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Characteristics declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Java.Util.Stream
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Characteristics(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Java.Util.Stream
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -137,10 +137,10 @@ namespace Java.Util.Stream
         /// </summary>
         [global::System.Obsolete("Collector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Collector(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -161,7 +161,7 @@ namespace Java.Util.Stream
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -171,17 +171,17 @@ namespace Java.Util.Stream
     public partial class Collector
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.function.Function,java.util.stream.Collector.Characteristics[])"/>
@@ -194,7 +194,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector Of(Java.Util.Function.Supplier arg0, Java.Util.Function.BiConsumer arg1, Java.Util.Function.BinaryOperator arg2, Java.Util.Function.Function arg3, params Java.Util.Stream.Collector.Characteristics[] arg4)
         {
-            if (arg4.Length == 0) return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3); else return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4);
+            if (arg4.Length == 0) return SExecuteWithSignature<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;Ljava/util/function/Function;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3); else return SExecuteWithSignature<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;Ljava/util/function/Function;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.stream.Collector.Characteristics[])"/>
@@ -206,11 +206,11 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector Of(Java.Util.Function.Supplier arg0, Java.Util.Function.BiConsumer arg1, Java.Util.Function.BinaryOperator arg2, params Java.Util.Stream.Collector.Characteristics[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", arg0, arg1, arg2); else return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecuteWithSignature<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2); else return SExecuteWithSignature<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#accumulator()"/>
@@ -284,21 +284,21 @@ namespace Java.Util.Stream
         {
             return IExecuteWithSignature<Java.Util.Set>("characteristics", "()Ljava/util/Set;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Characteristics implementation
         public partial class Characteristics
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/stream/Collector.Characteristics.html#CONCURRENT"/>
@@ -318,9 +318,9 @@ namespace Java.Util.Stream
             public static Java.Util.Stream.Collector.Characteristics UNORDERED { get { if (!_UNORDEREDReady) { _UNORDEREDContent = SGetField<Java.Util.Stream.Collector.Characteristics>(LocalBridgeClazz, "UNORDERED"); _UNORDEREDReady = true; } return _UNORDEREDContent; } }
             private static Java.Util.Stream.Collector.Characteristics _UNORDEREDContent = default;
             private static bool _UNORDEREDReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/stream/Collector.Characteristics.html#valueOf(java.lang.String)"/>
@@ -339,24 +339,24 @@ namespace Java.Util.Stream
             {
                 return SExecuteWithSignatureArray<Java.Util.Stream.Collector.Characteristics>(LocalBridgeClazz, "values", "()[Ljava/util/stream/Collector$Characteristics;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -368,13 +368,13 @@ namespace Java.Util.Stream
     public partial interface ICollector<T, A, R>
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -383,21 +383,21 @@ namespace Java.Util.Stream
     public partial class Collector<T, A, R> : Java.Util.Stream.ICollector<T, A, R>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Stream.Collector{T, A, R}"/> to <see cref="Java.Util.Stream.Collector"/>
         /// </summary>
         public static implicit operator Java.Util.Stream.Collector(Java.Util.Stream.Collector<T, A, R> t) => t.Cast<Java.Util.Stream.Collector>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.function.Function,java.util.stream.Collector.Characteristics[])"/>
@@ -410,7 +410,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, A, R> Of(Java.Util.Function.Supplier<A> arg0, Java.Util.Function.BiConsumer<A, T> arg1, Java.Util.Function.BinaryOperator<A> arg2, Java.Util.Function.Function<A, R> arg3, params Java.Util.Stream.Collector.Characteristics[] arg4)
         {
-            if (arg4.Length == 0) return SExecute<Java.Util.Stream.Collector<T, A, R>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3); else return SExecute<Java.Util.Stream.Collector<T, A, R>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4);
+            if (arg4.Length == 0) return SExecuteWithSignature<Java.Util.Stream.Collector<T, A, R>>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;Ljava/util/function/Function;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3); else return SExecuteWithSignature<Java.Util.Stream.Collector<T, A, R>>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;Ljava/util/function/Function;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.stream.Collector.Characteristics[])"/>
@@ -422,11 +422,11 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, R, R> Of(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.BiConsumer<R, T> arg1, Java.Util.Function.BinaryOperator<R> arg2, params Java.Util.Stream.Collector.Characteristics[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Java.Util.Stream.Collector<T, R, R>>(LocalBridgeClazz, "of", arg0, arg1, arg2); else return SExecute<Java.Util.Stream.Collector<T, R, R>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecuteWithSignature<Java.Util.Stream.Collector<T, R, R>>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2); else return SExecuteWithSignature<Java.Util.Stream.Collector<T, R, R>>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#accumulator()"/>
@@ -500,13 +500,13 @@ namespace Java.Util.Stream
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Util.Stream.Collector.Characteristics>>("characteristics", "()Ljava/util/Set;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

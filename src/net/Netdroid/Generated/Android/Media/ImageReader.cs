@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ImageReader(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,7 +121,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnImageAvailableListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.ImageReader_OnImageAvailableListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -130,13 +130,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnImageAvailableListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnImageAvailableListener"/> or its generic type if there is one
@@ -147,14 +147,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.ImageReader$OnImageAvailableListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -186,17 +186,17 @@ namespace Android.Media
     public partial class ImageReader
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#newInstance(int,int,int,int,long)"/>
@@ -209,7 +209,7 @@ namespace Android.Media
         /// <returns><see cref="Android.Media.ImageReader"/></returns>
         public static Android.Media.ImageReader NewInstance(int arg0, int arg1, int arg2, int arg3, long arg4)
         {
-            return SExecute<Android.Media.ImageReader>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.Media.ImageReader>(LocalBridgeClazz, "newInstance", "(IIIIJ)Landroid/media/ImageReader;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#newInstance(int,int,int,int)"/>
@@ -221,11 +221,11 @@ namespace Android.Media
         /// <returns><see cref="Android.Media.ImageReader"/></returns>
         public static Android.Media.ImageReader NewInstance(int arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Android.Media.ImageReader>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Media.ImageReader>(LocalBridgeClazz, "newInstance", "(IIII)Landroid/media/ImageReader;", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#acquireLatestImage()"/>
@@ -328,11 +328,11 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void SetOnImageAvailableListener(Android.Media.ImageReader.OnImageAvailableListener arg0, Android.Os.Handler arg1)
         {
-            IExecute("setOnImageAvailableListener", arg0, arg1);
+            IExecuteWithSignature("setOnImageAvailableListener", "(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -347,21 +347,21 @@ namespace Android.Media
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/ImageReader.Builder.html#build()"/>
@@ -416,13 +416,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<Android.Media.ImageReader.Builder>("setUsage", "(J)Landroid/media/ImageReader$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -431,21 +431,21 @@ namespace Android.Media
         public partial class OnImageAvailableListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnImageAvailableListener"/>
@@ -455,13 +455,13 @@ namespace Android.Media
                 AddEventHandler("onImageAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnImageAvailableEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/ImageReader.OnImageAvailableListener.html#onImageAvailable(android.media.ImageReader)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnImageAvailable"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.ImageReader> OnOnImageAvailable { get; set; } = null;
-            
+
             bool hasOverrideOnImageAvailable = true;
             void OnImageAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -470,7 +470,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.ImageReader>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnImageAvailable;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/ImageReader.OnImageAvailableListener.html#onImageAvailable(android.media.ImageReader)"/>
             /// </summary>
@@ -479,13 +479,13 @@ namespace Android.Media
             {
                 hasOverrideOnImageAvailable = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -494,21 +494,21 @@ namespace Android.Media
         public partial class OnImageAvailableListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/ImageReader.OnImageAvailableListener.html#onImageAvailable(android.media.ImageReader)"/>
@@ -518,20 +518,20 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onImageAvailable", "(Landroid/media/ImageReader;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

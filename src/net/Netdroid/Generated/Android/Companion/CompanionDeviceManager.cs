@@ -40,10 +40,10 @@ namespace Android.Companion
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CompanionDeviceManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Companion
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Companion
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Companion
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Companion
     public partial class CompanionDeviceManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#FLAG_CALL_METADATA"/>
@@ -178,13 +178,13 @@ namespace Android.Companion
         public static Java.Lang.String EXTRA_DEVICE { get { if (!_EXTRA_DEVICEReady) { _EXTRA_DEVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_DEVICE"); _EXTRA_DEVICEReady = true; } return _EXTRA_DEVICEContent; } }
         private static Java.Lang.String _EXTRA_DEVICEContent = default;
         private static bool _EXTRA_DEVICEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#buildAssociationCancellationIntent()"/>
@@ -248,7 +248,7 @@ namespace Android.Companion
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         public void Associate(Android.Companion.AssociationRequest arg0, Android.Companion.CompanionDeviceManager.Callback arg1, Android.Os.Handler arg2)
         {
-            IExecute("associate", arg0, arg1, arg2);
+            IExecuteWithSignature("associate", "(Landroid/companion/AssociationRequest;Landroid/companion/CompanionDeviceManager$Callback;Landroid/os/Handler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#associate(android.companion.AssociationRequest,java.util.concurrent.Executor,android.companion.CompanionDeviceManager.Callback)"/>
@@ -258,7 +258,7 @@ namespace Android.Companion
         /// <param name="arg2"><see cref="Android.Companion.CompanionDeviceManager.Callback"/></param>
         public void Associate(Android.Companion.AssociationRequest arg0, Java.Util.Concurrent.Executor arg1, Android.Companion.CompanionDeviceManager.Callback arg2)
         {
-            IExecute("associate", arg0, arg1, arg2);
+            IExecuteWithSignature("associate", "(Landroid/companion/AssociationRequest;Ljava/util/concurrent/Executor;Landroid/companion/CompanionDeviceManager$Callback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#attachSystemDataTransport(int,java.io.InputStream,java.io.OutputStream)"/>
@@ -269,7 +269,7 @@ namespace Android.Companion
         /// <exception cref="Android.Companion.DeviceNotAssociatedException"/>
         public void AttachSystemDataTransport(int arg0, Java.Io.InputStream arg1, Java.Io.OutputStream arg2)
         {
-            IExecute("attachSystemDataTransport", arg0, arg1, arg2);
+            IExecuteWithSignature("attachSystemDataTransport", "(ILjava/io/InputStream;Ljava/io/OutputStream;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#detachSystemDataTransport(int)"/>
@@ -287,7 +287,7 @@ namespace Android.Companion
         /// <param name="arg1"><see cref="int"/></param>
         public void DisableSystemDataSyncForTypes(int arg0, int arg1)
         {
-            IExecute("disableSystemDataSyncForTypes", arg0, arg1);
+            IExecuteWithSignature("disableSystemDataSyncForTypes", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#disassociate(int)"/>
@@ -313,7 +313,7 @@ namespace Android.Companion
         /// <param name="arg1"><see cref="int"/></param>
         public void EnableSystemDataSyncForTypes(int arg0, int arg1)
         {
-            IExecute("enableSystemDataSyncForTypes", arg0, arg1);
+            IExecuteWithSignature("enableSystemDataSyncForTypes", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#requestNotificationAccess(android.content.ComponentName)"/>
@@ -341,7 +341,7 @@ namespace Android.Companion
         /// <exception cref="Android.Companion.DeviceNotAssociatedException"/>
         public void StartSystemDataTransfer(int arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Companion.CompanionException> arg2)
         {
-            IExecute("startSystemDataTransfer", arg0, arg1, arg2);
+            IExecuteWithSignature("startSystemDataTransfer", "(ILjava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#stopObservingDevicePresence(java.lang.String)"/>
@@ -352,29 +352,29 @@ namespace Android.Companion
         {
             IExecuteWithSignature("stopObservingDevicePresence", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.Callback.html#onFailure(java.lang.CharSequence)"/>
@@ -409,20 +409,20 @@ namespace Android.Companion
             {
                 IExecuteWithSignature("onDeviceFound", "(Landroid/content/IntentSender;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

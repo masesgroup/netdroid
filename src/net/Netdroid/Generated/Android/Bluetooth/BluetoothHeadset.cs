@@ -40,10 +40,10 @@ namespace Android.Bluetooth
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public BluetoothHeadset(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Bluetooth
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Bluetooth
     public partial class BluetoothHeadset
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHeadset.html#AT_CMD_TYPE_ACTION"/>
@@ -178,13 +178,13 @@ namespace Android.Bluetooth
         public static Java.Lang.String VENDOR_SPECIFIC_HEADSET_EVENT_COMPANY_ID_CATEGORY { get { if (!_VENDOR_SPECIFIC_HEADSET_EVENT_COMPANY_ID_CATEGORYReady) { _VENDOR_SPECIFIC_HEADSET_EVENT_COMPANY_ID_CATEGORYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VENDOR_SPECIFIC_HEADSET_EVENT_COMPANY_ID_CATEGORY"); _VENDOR_SPECIFIC_HEADSET_EVENT_COMPANY_ID_CATEGORYReady = true; } return _VENDOR_SPECIFIC_HEADSET_EVENT_COMPANY_ID_CATEGORYContent; } }
         private static Java.Lang.String _VENDOR_SPECIFIC_HEADSET_EVENT_COMPANY_ID_CATEGORYContent = default;
         private static bool _VENDOR_SPECIFIC_HEADSET_EVENT_COMPANY_ID_CATEGORYReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHeadset.html#isAudioConnected(android.bluetooth.BluetoothDevice)"/>
@@ -222,7 +222,7 @@ namespace Android.Bluetooth
         /// <returns><see cref="bool"/></returns>
         public bool SendVendorSpecificResultCode(Android.Bluetooth.BluetoothDevice arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<bool>("sendVendorSpecificResultCode", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("sendVendorSpecificResultCode", "(Landroid/bluetooth/BluetoothDevice;Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHeadset.html#startVoiceRecognition(android.bluetooth.BluetoothDevice)"/>
@@ -268,13 +268,13 @@ namespace Android.Bluetooth
         {
             return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getDevicesMatchingConnectionStates", "([I)Ljava/util/List;", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

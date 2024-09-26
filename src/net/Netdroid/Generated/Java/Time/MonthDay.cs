@@ -40,10 +40,10 @@ namespace Java.Time
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MonthDay(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,9 +74,9 @@ namespace Java.Time
     public partial class MonthDay : Java.Time.Temporal.ITemporalAccessor, Java.Time.Temporal.ITemporalAdjuster, Java.Lang.IComparable<Java.Time.MonthDay>, Java.Io.ISerializable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Time.MonthDay"/> to <see cref="Java.Time.Temporal.TemporalAccessor"/>
@@ -94,13 +94,13 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.MonthDay"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Time.MonthDay t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -145,7 +145,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Of(int arg0, int arg1)
         {
-            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.MonthDay>(LocalBridgeClazz, "of", "(II)Ljava/time/MonthDay;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#of(java.time.Month,int)"/>
@@ -155,7 +155,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Of(Java.Time.Month arg0, int arg1)
         {
-            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.MonthDay>(LocalBridgeClazz, "of", "(Ljava/time/Month;I)Ljava/time/MonthDay;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
@@ -165,7 +165,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Parse(Java.Lang.CharSequence arg0, Java.Time.Format.DateTimeFormatter arg1)
         {
-            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "parse", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.MonthDay>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;Ljava/time/format/DateTimeFormatter;)Ljava/time/MonthDay;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#parse(java.lang.CharSequence)"/>
@@ -176,9 +176,9 @@ namespace Java.Time
         {
             return SExecuteWithSignature<Java.Time.MonthDay>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;)Ljava/time/MonthDay;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/MonthDay.html#query(java.time.temporal.TemporalQuery)"/>
@@ -349,13 +349,13 @@ namespace Java.Time
         {
             return IExecuteWithSignature<long>("getLong", "(Ljava/time/temporal/TemporalField;)J", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

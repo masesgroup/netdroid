@@ -42,10 +42,10 @@ namespace Android.Webkit
         /// </summary>
         [global::System.Obsolete("TracingController class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TracingController(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Webkit
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Android.Webkit
     public partial class TracingController
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/TracingController.html#getInstance()"/>
@@ -96,9 +96,9 @@ namespace Android.Webkit
         {
             return SExecuteWithSignature<Android.Webkit.TracingController>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/TracingController;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/TracingController.html#isTracing()"/>
@@ -116,7 +116,7 @@ namespace Android.Webkit
         /// <returns><see cref="bool"/></returns>
         public bool Stop(Java.Io.OutputStream arg0, Java.Util.Concurrent.Executor arg1)
         {
-            return IExecute<bool>("stop", arg0, arg1);
+            return IExecuteWithSignature<bool>("stop", "(Ljava/io/OutputStream;Ljava/util/concurrent/Executor;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/TracingController.html#start(android.webkit.TracingConfig)"/>
@@ -126,13 +126,13 @@ namespace Android.Webkit
         {
             IExecuteWithSignature("start", "(Landroid/webkit/TracingConfig;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

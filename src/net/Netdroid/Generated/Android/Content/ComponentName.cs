@@ -40,10 +40,10 @@ namespace Android.Content
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ComponentName(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -109,9 +109,9 @@ namespace Android.Content
             : base(arg0, arg1)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Content.ComponentName"/> to <see cref="Android.Os.Parcelable"/>
@@ -125,9 +125,9 @@ namespace Android.Content
         /// Converter from <see cref="Android.Content.ComponentName"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Android.Content.ComponentName t) => t.Cast<Java.Lang.Comparable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentName.html#CREATOR"/>
@@ -135,9 +135,9 @@ namespace Android.Content
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentName.html#createRelative(android.content.Context,java.lang.String)"/>
@@ -147,7 +147,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.ComponentName"/></returns>
         public static Android.Content.ComponentName CreateRelative(Android.Content.Context arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Content.ComponentName>(LocalBridgeClazz, "createRelative", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.ComponentName>(LocalBridgeClazz, "createRelative", "(Landroid/content/Context;Ljava/lang/String;)Landroid/content/ComponentName;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentName.html#createRelative(java.lang.String,java.lang.String)"/>
@@ -157,7 +157,7 @@ namespace Android.Content
         /// <returns><see cref="Android.Content.ComponentName"/></returns>
         public static Android.Content.ComponentName CreateRelative(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Content.ComponentName>(LocalBridgeClazz, "createRelative", arg0, arg1);
+            return SExecuteWithSignature<Android.Content.ComponentName>(LocalBridgeClazz, "createRelative", "(Ljava/lang/String;Ljava/lang/String;)Landroid/content/ComponentName;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentName.html#readFromParcel(android.os.Parcel)"/>
@@ -184,11 +184,11 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Android.Os.Parcel"/></param>
         public static void WriteToParcel(Android.Content.ComponentName arg0, Android.Os.Parcel arg1)
         {
-            SExecute(LocalBridgeClazz, "writeToParcel", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "writeToParcel", "(Landroid/content/ComponentName;Landroid/os/Parcel;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ComponentName.html#clone()"/>
@@ -279,15 +279,15 @@ namespace Android.Content
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

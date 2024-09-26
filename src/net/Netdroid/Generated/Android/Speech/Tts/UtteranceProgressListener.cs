@@ -42,10 +42,10 @@ namespace Android.Speech.Tts
         /// </summary>
         [global::System.Obsolete("UtteranceProgressListener class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UtteranceProgressListener(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Speech.Tts
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Android.Speech.Tts
     public partial class UtteranceProgressListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/UtteranceProgressListener.html#onDone(java.lang.String)"/>
@@ -124,7 +124,7 @@ namespace Android.Speech.Tts
         /// <param name="arg1"><see cref="byte"/></param>
         public void OnAudioAvailable(Java.Lang.String arg0, byte[] arg1)
         {
-            IExecute("onAudioAvailable", arg0, arg1);
+            IExecuteWithSignature("onAudioAvailable", "(Ljava/lang/String;[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/UtteranceProgressListener.html#onBeginSynthesis(java.lang.String,int,int,int)"/>
@@ -135,7 +135,7 @@ namespace Android.Speech.Tts
         /// <param name="arg3"><see cref="int"/></param>
         public void OnBeginSynthesis(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("onBeginSynthesis", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onBeginSynthesis", "(Ljava/lang/String;III)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/UtteranceProgressListener.html#onError(java.lang.String,int)"/>
@@ -144,7 +144,7 @@ namespace Android.Speech.Tts
         /// <param name="arg1"><see cref="int"/></param>
         public void OnError(Java.Lang.String arg0, int arg1)
         {
-            IExecute("onError", arg0, arg1);
+            IExecuteWithSignature("onError", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/UtteranceProgressListener.html#onRangeStart(java.lang.String,int,int,int)"/>
@@ -155,7 +155,7 @@ namespace Android.Speech.Tts
         /// <param name="arg3"><see cref="int"/></param>
         public void OnRangeStart(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("onRangeStart", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("onRangeStart", "(Ljava/lang/String;III)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/UtteranceProgressListener.html#onStop(java.lang.String,boolean)"/>
@@ -164,15 +164,15 @@ namespace Android.Speech.Tts
         /// <param name="arg1"><see cref="bool"/></param>
         public void OnStop(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("onStop", arg0, arg1);
+            IExecuteWithSignature("onStop", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

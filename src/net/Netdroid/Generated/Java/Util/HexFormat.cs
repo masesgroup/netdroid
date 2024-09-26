@@ -40,10 +40,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public HexFormat(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Util
     public partial class HexFormat
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#isHexDigit(int)"/>
@@ -113,7 +113,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int FromHexDigits(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "fromHexDigits", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "fromHexDigits", "(Ljava/lang/CharSequence;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#fromHexDigits(java.lang.CharSequence)"/>
@@ -150,7 +150,7 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public static long FromHexDigitsToLong(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return SExecute<long>(LocalBridgeClazz, "fromHexDigitsToLong", arg0, arg1, arg2);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "fromHexDigitsToLong", "(Ljava/lang/CharSequence;II)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#fromHexDigitsToLong(java.lang.CharSequence)"/>
@@ -161,9 +161,9 @@ namespace Java.Util
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "fromHexDigitsToLong", "(Ljava/lang/CharSequence;)J", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#formatHex(java.lang.Appendable,byte[],int,int)"/>
@@ -176,7 +176,7 @@ namespace Java.Util
         /// <returns><typeparamref name="A"/></returns>
         public A FormatHex<A>(A arg0, byte[] arg1, int arg2, int arg3) where A : Java.Lang.IAppendable, new()
         {
-            return IExecute<A>("formatHex", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<A>("formatHex", "(Ljava/lang/Appendable;[BII)Ljava/lang/Appendable;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#formatHex(java.lang.Appendable,byte[])"/>
@@ -187,7 +187,7 @@ namespace Java.Util
         /// <returns><typeparamref name="A"/></returns>
         public A FormatHex<A>(A arg0, byte[] arg1) where A : Java.Lang.IAppendable, new()
         {
-            return IExecute<A>("formatHex", arg0, arg1);
+            return IExecuteWithSignature<A>("formatHex", "(Ljava/lang/Appendable;[B)Ljava/lang/Appendable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#toHexDigits(java.lang.Appendable,byte)"/>
@@ -198,7 +198,7 @@ namespace Java.Util
         /// <returns><typeparamref name="A"/></returns>
         public A ToHexDigits<A>(A arg0, byte arg1) where A : Java.Lang.IAppendable, new()
         {
-            return IExecute<A>("toHexDigits", arg0, arg1);
+            return IExecuteWithSignature<A>("toHexDigits", "(Ljava/lang/Appendable;B)Ljava/lang/Appendable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#isUpperCase()"/>
@@ -217,7 +217,7 @@ namespace Java.Util
         /// <returns><see cref="byte"/></returns>
         public byte[] ParseHex(char[] arg0, int arg1, int arg2)
         {
-            return IExecuteArray<byte>("parseHex", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<byte>("parseHex", "([CII)[B", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#parseHex(java.lang.CharSequence,int,int)"/>
@@ -228,7 +228,7 @@ namespace Java.Util
         /// <returns><see cref="byte"/></returns>
         public byte[] ParseHex(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return IExecuteArray<byte>("parseHex", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<byte>("parseHex", "(Ljava/lang/CharSequence;II)[B", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#parseHex(java.lang.CharSequence)"/>
@@ -274,7 +274,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String FormatHex(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Lang.String>("formatHex", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("formatHex", "([BII)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#formatHex(byte[])"/>
@@ -336,7 +336,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToHexDigits(long arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("toHexDigits", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("toHexDigits", "(JI)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/HexFormat.html#toHexDigits(long)"/>
@@ -399,13 +399,13 @@ namespace Java.Util
         {
             return IExecuteWithSignature<Java.Util.HexFormat>("withUpperCase", "()Ljava/util/HexFormat;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

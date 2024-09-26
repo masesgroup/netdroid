@@ -40,10 +40,10 @@ namespace Android.Telephony
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MbmsStreamingSession(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Telephony
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.Telephony
     public partial class MbmsStreamingSession
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/MbmsStreamingSession.html#create(android.content.Context,java.util.concurrent.Executor,android.telephony.mbms.MbmsStreamingSessionCallback)"/>
@@ -95,7 +95,7 @@ namespace Android.Telephony
         /// <returns><see cref="Android.Telephony.MbmsStreamingSession"/></returns>
         public static Android.Telephony.MbmsStreamingSession Create(Android.Content.Context arg0, Java.Util.Concurrent.Executor arg1, Android.Telephony.Mbms.MbmsStreamingSessionCallback arg2)
         {
-            return SExecute<Android.Telephony.MbmsStreamingSession>(LocalBridgeClazz, "create", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Telephony.MbmsStreamingSession>(LocalBridgeClazz, "create", "(Landroid/content/Context;Ljava/util/concurrent/Executor;Landroid/telephony/mbms/MbmsStreamingSessionCallback;)Landroid/telephony/MbmsStreamingSession;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/MbmsStreamingSession.html#create(android.content.Context,java.util.concurrent.Executor,int,android.telephony.mbms.MbmsStreamingSessionCallback)"/>
@@ -107,11 +107,11 @@ namespace Android.Telephony
         /// <returns><see cref="Android.Telephony.MbmsStreamingSession"/></returns>
         public static Android.Telephony.MbmsStreamingSession Create(Android.Content.Context arg0, Java.Util.Concurrent.Executor arg1, int arg2, Android.Telephony.Mbms.MbmsStreamingSessionCallback arg3)
         {
-            return SExecute<Android.Telephony.MbmsStreamingSession>(LocalBridgeClazz, "create", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Telephony.MbmsStreamingSession>(LocalBridgeClazz, "create", "(Landroid/content/Context;Ljava/util/concurrent/Executor;ILandroid/telephony/mbms/MbmsStreamingSessionCallback;)Landroid/telephony/MbmsStreamingSession;", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/MbmsStreamingSession.html#startStreaming(android.telephony.mbms.StreamingServiceInfo,java.util.concurrent.Executor,android.telephony.mbms.StreamingServiceCallback)"/>
@@ -122,7 +122,7 @@ namespace Android.Telephony
         /// <returns><see cref="Android.Telephony.Mbms.StreamingService"/></returns>
         public Android.Telephony.Mbms.StreamingService StartStreaming(Android.Telephony.Mbms.StreamingServiceInfo arg0, Java.Util.Concurrent.Executor arg1, Android.Telephony.Mbms.StreamingServiceCallback arg2)
         {
-            return IExecute<Android.Telephony.Mbms.StreamingService>("startStreaming", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Telephony.Mbms.StreamingService>("startStreaming", "(Landroid/telephony/mbms/StreamingServiceInfo;Ljava/util/concurrent/Executor;Landroid/telephony/mbms/StreamingServiceCallback;)Landroid/telephony/mbms/StreamingService;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/MbmsStreamingSession.html#close()"/>
@@ -139,13 +139,13 @@ namespace Android.Telephony
         {
             IExecuteWithSignature("requestUpdateStreamingServices", "(Ljava/util/List;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Java.Net
         /// </summary>
         [global::System.Obsolete("HttpURLConnection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public HttpURLConnection(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,13 +76,13 @@ namespace Java.Net
     public partial class HttpURLConnection
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/HttpURLConnection.html#HTTP_ACCEPTED"/>
@@ -301,9 +301,9 @@ namespace Java.Net
         public static int HTTP_VERSION { get { if (!_HTTP_VERSIONReady) { _HTTP_VERSIONContent = SGetField<int>(LocalBridgeClazz, "HTTP_VERSION"); _HTTP_VERSIONReady = true; } return _HTTP_VERSIONContent; } }
         private static int _HTTP_VERSIONContent = default;
         private static bool _HTTP_VERSIONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/HttpURLConnection.html#getFollowRedirects()"/>
@@ -321,9 +321,9 @@ namespace Java.Net
         {
             SExecuteWithSignature(LocalBridgeClazz, "setFollowRedirects", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/HttpURLConnection.html#usingProxy()"/>
@@ -431,13 +431,13 @@ namespace Java.Net
         {
             IExecuteWithSignature("setRequestMethod", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

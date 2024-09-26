@@ -40,10 +40,10 @@ namespace Java.Security
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public KeyStore(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Security
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Java.Security
             /// </summary>
             [global::System.Obsolete("Builder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Java.Security
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CallbackHandlerProtection(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -175,10 +175,10 @@ namespace Java.Security
             /// </summary>
             [global::System.Obsolete("Entry class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Entry(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -199,7 +199,7 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
             #region Attribute declaration
             /// <summary>
@@ -218,10 +218,10 @@ namespace Java.Security
                 /// </summary>
                 [global::System.Obsolete("Attribute class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
                 public Attribute(params object[] args) : base(args) { }
-            
+
                 private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
                 private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-            
+
                 /// <summary>
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
                 /// </summary>
@@ -242,9 +242,9 @@ namespace Java.Security
                 /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
                 /// </summary>
                 public override bool IsBridgeStatic => true;
-            
+
                 // TODO: complete the class
-            
+
             }
             #endregion
 
@@ -269,10 +269,10 @@ namespace Java.Security
             /// </summary>
             [global::System.Obsolete("LoadStoreParameter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public LoadStoreParameter(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -293,9 +293,9 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -314,10 +314,10 @@ namespace Java.Security
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PasswordProtection(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -338,9 +338,9 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -359,10 +359,10 @@ namespace Java.Security
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PrivateKeyEntry(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -383,9 +383,9 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -406,10 +406,10 @@ namespace Java.Security
             /// </summary>
             [global::System.Obsolete("ProtectionParameter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ProtectionParameter(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -430,9 +430,9 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -451,10 +451,10 @@ namespace Java.Security
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SecretKeyEntry(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -475,9 +475,9 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -496,10 +496,10 @@ namespace Java.Security
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public TrustedCertificateEntry(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -520,9 +520,9 @@ namespace Java.Security
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -534,17 +534,17 @@ namespace Java.Security
     public partial class KeyStore
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getDefaultType()"/>
@@ -566,7 +566,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public static Java.Security.KeyStore GetInstance(Java.Io.File arg0, char[] arg1)
         {
-            return SExecute<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", "(Ljava/io/File;[C)Ljava/security/KeyStore;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getInstance(java.io.File,java.security.KeyStore.LoadStoreParameter)"/>
@@ -580,7 +580,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public static Java.Security.KeyStore GetInstance(Java.Io.File arg0, Java.Security.KeyStore.LoadStoreParameter arg1)
         {
-            return SExecute<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", "(Ljava/io/File;Ljava/security/KeyStore$LoadStoreParameter;)Ljava/security/KeyStore;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -592,7 +592,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.KeyStore GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/KeyStore;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -603,7 +603,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public static Java.Security.KeyStore GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/KeyStore;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getInstance(java.lang.String)"/>
@@ -615,9 +615,9 @@ namespace Java.Security
         {
             return SExecuteWithSignature<Java.Security.KeyStore>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/KeyStore;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#containsAlias(java.lang.String)"/>
@@ -638,7 +638,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public bool EntryInstanceOf(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
-            return IExecute<bool>("entryInstanceOf", arg0, arg1);
+            return IExecuteWithSignature<bool>("entryInstanceOf", "(Ljava/lang/String;Ljava/lang/Class;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#isCertificateEntry(java.lang.String)"/>
@@ -718,7 +718,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.UnrecoverableKeyException"/>
         public Java.Security.Key GetKey(Java.Lang.String arg0, char[] arg1)
         {
-            return IExecute<Java.Security.Key>("getKey", arg0, arg1);
+            return IExecuteWithSignature<Java.Security.Key>("getKey", "(Ljava/lang/String;[C)Ljava/security/Key;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getEntry(java.lang.String,java.security.KeyStore.ProtectionParameter)"/>
@@ -731,7 +731,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public Java.Security.KeyStore.Entry GetEntry(Java.Lang.String arg0, Java.Security.KeyStore.ProtectionParameter arg1)
         {
-            return IExecute<Java.Security.KeyStore.Entry>("getEntry", arg0, arg1);
+            return IExecuteWithSignature<Java.Security.KeyStore.Entry>("getEntry", "(Ljava/lang/String;Ljava/security/KeyStore$ProtectionParameter;)Ljava/security/KeyStore$Entry;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#getProvider()"/>
@@ -779,7 +779,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void Load(Java.Io.InputStream arg0, char[] arg1)
         {
-            IExecute("load", arg0, arg1);
+            IExecuteWithSignature("load", "(Ljava/io/InputStream;[C)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#load(java.security.KeyStore.LoadStoreParameter)"/>
@@ -800,7 +800,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void SetCertificateEntry(Java.Lang.String arg0, Java.Security.Cert.Certificate arg1)
         {
-            IExecute("setCertificateEntry", arg0, arg1);
+            IExecuteWithSignature("setCertificateEntry", "(Ljava/lang/String;Ljava/security/cert/Certificate;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#setEntry(java.lang.String,java.security.KeyStore.Entry,java.security.KeyStore.ProtectionParameter)"/>
@@ -811,7 +811,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void SetEntry(Java.Lang.String arg0, Java.Security.KeyStore.Entry arg1, Java.Security.KeyStore.ProtectionParameter arg2)
         {
-            IExecute("setEntry", arg0, arg1, arg2);
+            IExecuteWithSignature("setEntry", "(Ljava/lang/String;Ljava/security/KeyStore$Entry;Ljava/security/KeyStore$ProtectionParameter;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#setKeyEntry(java.lang.String,byte[],java.security.cert.Certificate[])"/>
@@ -822,7 +822,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void SetKeyEntry(Java.Lang.String arg0, byte[] arg1, Java.Security.Cert.Certificate[] arg2)
         {
-            IExecute("setKeyEntry", arg0, arg1, arg2);
+            IExecuteWithSignature("setKeyEntry", "(Ljava/lang/String;[B[Ljava/security/cert/Certificate;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#setKeyEntry(java.lang.String,java.security.Key,char[],java.security.cert.Certificate[])"/>
@@ -834,7 +834,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void SetKeyEntry(Java.Lang.String arg0, Java.Security.Key arg1, char[] arg2, Java.Security.Cert.Certificate[] arg3)
         {
-            IExecute("setKeyEntry", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setKeyEntry", "(Ljava/lang/String;Ljava/security/Key;[C[Ljava/security/cert/Certificate;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#store(java.io.OutputStream,char[])"/>
@@ -847,7 +847,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void Store(Java.Io.OutputStream arg0, char[] arg1)
         {
-            IExecute("store", arg0, arg1);
+            IExecuteWithSignature("store", "(Ljava/io/OutputStream;[C)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/KeyStore.html#store(java.security.KeyStore.LoadStoreParameter)"/>
@@ -861,25 +861,25 @@ namespace Java.Security
         {
             IExecuteWithSignature("store", "(Ljava/security/KeyStore$LoadStoreParameter;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/KeyStore.Builder.html#newInstance(java.io.File,java.security.KeyStore.ProtectionParameter)"/>
@@ -889,7 +889,7 @@ namespace Java.Security
             /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
             public static Java.Security.KeyStore.Builder NewInstance(Java.Io.File arg0, Java.Security.KeyStore.ProtectionParameter arg1)
             {
-                return SExecute<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", arg0, arg1);
+                return SExecuteWithSignature<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", "(Ljava/io/File;Ljava/security/KeyStore$ProtectionParameter;)Ljava/security/KeyStore$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/KeyStore.Builder.html#newInstance(java.lang.String,java.security.Provider,java.io.File,java.security.KeyStore.ProtectionParameter)"/>
@@ -901,7 +901,7 @@ namespace Java.Security
             /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
             public static Java.Security.KeyStore.Builder NewInstance(Java.Lang.String arg0, Java.Security.Provider arg1, Java.Io.File arg2, Java.Security.KeyStore.ProtectionParameter arg3)
             {
-                return SExecute<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2, arg3);
+                return SExecuteWithSignature<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;Ljava/security/Provider;Ljava/io/File;Ljava/security/KeyStore$ProtectionParameter;)Ljava/security/KeyStore$Builder;", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/KeyStore.Builder.html#newInstance(java.lang.String,java.security.Provider,java.security.KeyStore.ProtectionParameter)"/>
@@ -912,7 +912,7 @@ namespace Java.Security
             /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
             public static Java.Security.KeyStore.Builder NewInstance(Java.Lang.String arg0, Java.Security.Provider arg1, Java.Security.KeyStore.ProtectionParameter arg2)
             {
-                return SExecute<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2);
+                return SExecuteWithSignature<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;Ljava/security/Provider;Ljava/security/KeyStore$ProtectionParameter;)Ljava/security/KeyStore$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/KeyStore.Builder.html#newInstance(java.security.KeyStore,java.security.KeyStore.ProtectionParameter)"/>
@@ -922,11 +922,11 @@ namespace Java.Security
             /// <returns><see cref="Java.Security.KeyStore.Builder"/></returns>
             public static Java.Security.KeyStore.Builder NewInstance(Java.Security.KeyStore arg0, Java.Security.KeyStore.ProtectionParameter arg1)
             {
-                return SExecute<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", arg0, arg1);
+                return SExecuteWithSignature<Java.Security.KeyStore.Builder>(LocalBridgeClazz, "newInstance", "(Ljava/security/KeyStore;Ljava/security/KeyStore$ProtectionParameter;)Ljava/security/KeyStore$Builder;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/KeyStore.Builder.html#getKeyStore()"/>
@@ -947,13 +947,13 @@ namespace Java.Security
             {
                 return IExecuteWithSignature<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter", "(Ljava/lang/String;)Ljava/security/KeyStore$ProtectionParameter;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -970,21 +970,21 @@ namespace Java.Security
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/KeyStore.CallbackHandlerProtection.html#getCallbackHandler()"/>
@@ -994,13 +994,13 @@ namespace Java.Security
             {
                 return IExecuteWithSignature<Javax.Security.Auth.Callback.CallbackHandler>("getCallbackHandler", "()Ljavax/security/auth/callback/CallbackHandler;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1009,21 +1009,21 @@ namespace Java.Security
         public partial class Entry
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/KeyStore.Entry.html#getAttributes()"/>
@@ -1033,29 +1033,29 @@ namespace Java.Security
             {
                 return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
             #region Attribute implementation
             public partial class Attribute
             {
                 #region Constructors
-            
+
                 #endregion
-            
+
                 #region Class/Interface conversion operators
-            
+
                 #endregion
-            
+
                 #region Fields
-            
+
                 #endregion
-            
+
                 #region Static methods
-            
+
                 #endregion
-            
+
                 #region Instance methods
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/java/security/KeyStore.Entry.Attribute.html#getName()"/>
@@ -1073,20 +1073,20 @@ namespace Java.Security
                 {
                     return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;");
                 }
-            
+
                 #endregion
-            
+
                 #region Nested classes
-            
+
                 #endregion
-            
+
                 // TODO: complete the class
             }
             #endregion
 
         
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1095,21 +1095,21 @@ namespace Java.Security
         public partial class LoadStoreParameter
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/KeyStore.LoadStoreParameter.html#getProtectionParameter()"/>
@@ -1119,13 +1119,13 @@ namespace Java.Security
             {
                 return IExecuteWithSignature<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter", "()Ljava/security/KeyStore$ProtectionParameter;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1152,25 +1152,25 @@ namespace Java.Security
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Java.Security.KeyStore.PasswordProtection"/> to <see cref="Javax.Security.Auth.Destroyable"/>
             /// </summary>
             public static implicit operator Javax.Security.Auth.Destroyable(Java.Security.KeyStore.PasswordProtection t) => t.Cast<Javax.Security.Auth.Destroyable>();
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/KeyStore.PasswordProtection.html#getProtectionAlgorithm()"/>
@@ -1212,13 +1212,13 @@ namespace Java.Security
             {
                 IExecuteWithSignature("destroy", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1246,21 +1246,21 @@ namespace Java.Security
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/KeyStore.PrivateKeyEntry.html#getCertificate()"/>
@@ -1294,13 +1294,13 @@ namespace Java.Security
             {
                 return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1309,29 +1309,29 @@ namespace Java.Security
         public partial class ProtectionParameter
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1357,21 +1357,21 @@ namespace Java.Security
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/KeyStore.SecretKeyEntry.html#getAttributes()"/>
@@ -1389,13 +1389,13 @@ namespace Java.Security
             {
                 return IExecuteWithSignature<Javax.Crypto.SecretKey>("getSecretKey", "()Ljavax/crypto/SecretKey;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1421,21 +1421,21 @@ namespace Java.Security
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/security/KeyStore.TrustedCertificateEntry.html#getTrustedCertificate()"/>
@@ -1453,20 +1453,20 @@ namespace Java.Security
             {
                 return IExecuteWithSignature<Java.Util.Set<Java.Security.KeyStore.Entry.Attribute>>("getAttributes", "()Ljava/util/Set;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

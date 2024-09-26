@@ -40,10 +40,10 @@ namespace Android.Hardware.Camera2
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CameraManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Hardware.Camera2
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region AvailabilityCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Hardware.Camera2
             /// </summary>
             [global::System.Obsolete("AvailabilityCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AvailabilityCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Hardware.Camera2
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -130,10 +130,10 @@ namespace Android.Hardware.Camera2
             /// </summary>
             [global::System.Obsolete("TorchCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TorchCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -154,9 +154,9 @@ namespace Android.Hardware.Camera2
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -168,21 +168,21 @@ namespace Android.Hardware.Camera2
     public partial class CameraManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#getCameraCharacteristics(java.lang.String)"/>
@@ -271,7 +271,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
         public void OpenCamera(Java.Lang.String arg0, Android.Hardware.Camera2.CameraDevice.StateCallback arg1, Android.Os.Handler arg2)
         {
-            IExecute("openCamera", arg0, arg1, arg2);
+            IExecuteWithSignature("openCamera", "(Ljava/lang/String;Landroid/hardware/camera2/CameraDevice$StateCallback;Landroid/os/Handler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#openCamera(java.lang.String,java.util.concurrent.Executor,android.hardware.camera2.CameraDevice.StateCallback)"/>
@@ -282,7 +282,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
         public void OpenCamera(Java.Lang.String arg0, Java.Util.Concurrent.Executor arg1, Android.Hardware.Camera2.CameraDevice.StateCallback arg2)
         {
-            IExecute("openCamera", arg0, arg1, arg2);
+            IExecuteWithSignature("openCamera", "(Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraDevice$StateCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#registerAvailabilityCallback(android.hardware.camera2.CameraManager.AvailabilityCallback,android.os.Handler)"/>
@@ -291,7 +291,7 @@ namespace Android.Hardware.Camera2
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void RegisterAvailabilityCallback(Android.Hardware.Camera2.CameraManager.AvailabilityCallback arg0, Android.Os.Handler arg1)
         {
-            IExecute("registerAvailabilityCallback", arg0, arg1);
+            IExecuteWithSignature("registerAvailabilityCallback", "(Landroid/hardware/camera2/CameraManager$AvailabilityCallback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#registerAvailabilityCallback(java.util.concurrent.Executor,android.hardware.camera2.CameraManager.AvailabilityCallback)"/>
@@ -300,7 +300,7 @@ namespace Android.Hardware.Camera2
         /// <param name="arg1"><see cref="Android.Hardware.Camera2.CameraManager.AvailabilityCallback"/></param>
         public void RegisterAvailabilityCallback(Java.Util.Concurrent.Executor arg0, Android.Hardware.Camera2.CameraManager.AvailabilityCallback arg1)
         {
-            IExecute("registerAvailabilityCallback", arg0, arg1);
+            IExecuteWithSignature("registerAvailabilityCallback", "(Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraManager$AvailabilityCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#registerTorchCallback(android.hardware.camera2.CameraManager.TorchCallback,android.os.Handler)"/>
@@ -309,7 +309,7 @@ namespace Android.Hardware.Camera2
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void RegisterTorchCallback(Android.Hardware.Camera2.CameraManager.TorchCallback arg0, Android.Os.Handler arg1)
         {
-            IExecute("registerTorchCallback", arg0, arg1);
+            IExecuteWithSignature("registerTorchCallback", "(Landroid/hardware/camera2/CameraManager$TorchCallback;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#registerTorchCallback(java.util.concurrent.Executor,android.hardware.camera2.CameraManager.TorchCallback)"/>
@@ -318,7 +318,7 @@ namespace Android.Hardware.Camera2
         /// <param name="arg1"><see cref="Android.Hardware.Camera2.CameraManager.TorchCallback"/></param>
         public void RegisterTorchCallback(Java.Util.Concurrent.Executor arg0, Android.Hardware.Camera2.CameraManager.TorchCallback arg1)
         {
-            IExecute("registerTorchCallback", arg0, arg1);
+            IExecuteWithSignature("registerTorchCallback", "(Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraManager$TorchCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#setTorchMode(java.lang.String,boolean)"/>
@@ -328,7 +328,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
         public void SetTorchMode(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setTorchMode", arg0, arg1);
+            IExecuteWithSignature("setTorchMode", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#turnOnTorchWithStrengthLevel(java.lang.String,int)"/>
@@ -338,7 +338,7 @@ namespace Android.Hardware.Camera2
         /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
         public void TurnOnTorchWithStrengthLevel(Java.Lang.String arg0, int arg1)
         {
-            IExecute("turnOnTorchWithStrengthLevel", arg0, arg1);
+            IExecuteWithSignature("turnOnTorchWithStrengthLevel", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#unregisterAvailabilityCallback(android.hardware.camera2.CameraManager.AvailabilityCallback)"/>
@@ -356,29 +356,29 @@ namespace Android.Hardware.Camera2
         {
             IExecuteWithSignature("unregisterTorchCallback", "(Landroid/hardware/camera2/CameraManager$TorchCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region AvailabilityCallback implementation
         public partial class AvailabilityCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.AvailabilityCallback.html#onCameraAccessPrioritiesChanged()"/>
@@ -410,7 +410,7 @@ namespace Android.Hardware.Camera2
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public void OnPhysicalCameraAvailable(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                IExecute("onPhysicalCameraAvailable", arg0, arg1);
+                IExecuteWithSignature("onPhysicalCameraAvailable", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.AvailabilityCallback.html#onPhysicalCameraUnavailable(java.lang.String,java.lang.String)"/>
@@ -419,15 +419,15 @@ namespace Android.Hardware.Camera2
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             public void OnPhysicalCameraUnavailable(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                IExecute("onPhysicalCameraUnavailable", arg0, arg1);
+                IExecuteWithSignature("onPhysicalCameraUnavailable", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -436,21 +436,21 @@ namespace Android.Hardware.Camera2
         public partial class TorchCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.TorchCallback.html#onTorchModeChanged(java.lang.String,boolean)"/>
@@ -459,7 +459,7 @@ namespace Android.Hardware.Camera2
             /// <param name="arg1"><see cref="bool"/></param>
             public void OnTorchModeChanged(Java.Lang.String arg0, bool arg1)
             {
-                IExecute("onTorchModeChanged", arg0, arg1);
+                IExecuteWithSignature("onTorchModeChanged", "(Ljava/lang/String;Z)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.TorchCallback.html#onTorchModeUnavailable(java.lang.String)"/>
@@ -476,22 +476,22 @@ namespace Android.Hardware.Camera2
             /// <param name="arg1"><see cref="int"/></param>
             public void OnTorchStrengthLevelChanged(Java.Lang.String arg0, int arg1)
             {
-                IExecute("onTorchStrengthLevelChanged", arg0, arg1);
+                IExecuteWithSignature("onTorchStrengthLevelChanged", "(Ljava/lang/String;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

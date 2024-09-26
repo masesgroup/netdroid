@@ -40,10 +40,10 @@ namespace Android.Net.Wifi.Aware
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public WifiAwareSession(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Net.Wifi.Aware
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Net.Wifi.Aware
     public partial class WifiAwareSession
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareSession.html#createNetworkSpecifierOpen(int,byte[])"/>
@@ -99,7 +99,7 @@ namespace Android.Net.Wifi.Aware
         [global::System.Obsolete()]
         public Android.Net.NetworkSpecifier CreateNetworkSpecifierOpen(int arg0, byte[] arg1)
         {
-            return IExecute<Android.Net.NetworkSpecifier>("createNetworkSpecifierOpen", arg0, arg1);
+            return IExecuteWithSignature<Android.Net.NetworkSpecifier>("createNetworkSpecifierOpen", "(I[B)Landroid/net/NetworkSpecifier;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareSession.html#createNetworkSpecifierPassphrase(int,byte[],java.lang.String)"/>
@@ -111,7 +111,7 @@ namespace Android.Net.Wifi.Aware
         [global::System.Obsolete()]
         public Android.Net.NetworkSpecifier CreateNetworkSpecifierPassphrase(int arg0, byte[] arg1, Java.Lang.String arg2)
         {
-            return IExecute<Android.Net.NetworkSpecifier>("createNetworkSpecifierPassphrase", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Net.NetworkSpecifier>("createNetworkSpecifierPassphrase", "(I[BLjava/lang/String;)Landroid/net/NetworkSpecifier;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareSession.html#close()"/>
@@ -128,7 +128,7 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         public void Publish(Android.Net.Wifi.Aware.PublishConfig arg0, Android.Net.Wifi.Aware.DiscoverySessionCallback arg1, Android.Os.Handler arg2)
         {
-            IExecute("publish", arg0, arg1, arg2);
+            IExecuteWithSignature("publish", "(Landroid/net/wifi/aware/PublishConfig;Landroid/net/wifi/aware/DiscoverySessionCallback;Landroid/os/Handler;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareSession.html#subscribe(android.net.wifi.aware.SubscribeConfig,android.net.wifi.aware.DiscoverySessionCallback,android.os.Handler)"/>
@@ -138,15 +138,15 @@ namespace Android.Net.Wifi.Aware
         /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
         public void Subscribe(Android.Net.Wifi.Aware.SubscribeConfig arg0, Android.Net.Wifi.Aware.DiscoverySessionCallback arg1, Android.Os.Handler arg2)
         {
-            IExecute("subscribe", arg0, arg1, arg2);
+            IExecuteWithSignature("subscribe", "(Landroid/net/wifi/aware/SubscribeConfig;Landroid/net/wifi/aware/DiscoverySessionCallback;Landroid/os/Handler;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

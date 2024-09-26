@@ -42,10 +42,10 @@ namespace Android.View
         /// </summary>
         [global::System.Obsolete("WindowInsetsController class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WindowInsetsController(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.View
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region OnControllableInsetsChangedListener declaration
         /// <summary>
@@ -78,7 +78,7 @@ namespace Android.View
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnControllableInsetsChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.view.WindowInsetsController_OnControllableInsetsChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -87,13 +87,13 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnControllableInsetsChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnControllableInsetsChangedListener"/> or its generic type if there is one
@@ -104,14 +104,14 @@ namespace Android.View
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.view.WindowInsetsController$OnControllableInsetsChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -146,13 +146,13 @@ namespace Android.View
     public partial interface IWindowInsetsController
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -161,13 +161,13 @@ namespace Android.View
     public partial class WindowInsetsController : Android.View.IWindowInsetsController
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#APPEARANCE_LIGHT_CAPTION_BARS"/>
@@ -219,13 +219,13 @@ namespace Android.View
         public static int BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE { get { if (!_BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPEReady) { _BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPEContent = SGetField<int>(LocalBridgeClazz, "BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE"); _BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPEReady = true; } return _BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPEContent; } }
         private static int _BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPEContent = default;
         private static bool _BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#getSystemBarsAppearance()"/>
@@ -261,7 +261,7 @@ namespace Android.View
         /// <param name="arg4"><see cref="Android.View.WindowInsetsAnimationControlListener"/></param>
         public void ControlWindowInsetsAnimation(int arg0, long arg1, Android.View.Animation.Interpolator arg2, Android.Os.CancellationSignal arg3, Android.View.WindowInsetsAnimationControlListener arg4)
         {
-            IExecute("controlWindowInsetsAnimation", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("controlWindowInsetsAnimation", "(IJLandroid/view/animation/Interpolator;Landroid/os/CancellationSignal;Landroid/view/WindowInsetsAnimationControlListener;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#hide(int)"/>
@@ -286,7 +286,7 @@ namespace Android.View
         /// <param name="arg1"><see cref="int"/></param>
         public void SetSystemBarsAppearance(int arg0, int arg1)
         {
-            IExecute("setSystemBarsAppearance", arg0, arg1);
+            IExecuteWithSignature("setSystemBarsAppearance", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#setSystemBarsBehavior(int)"/>
@@ -304,29 +304,29 @@ namespace Android.View
         {
             IExecuteWithSignature("show", "(I)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region OnControllableInsetsChangedListener implementation
         public partial class OnControllableInsetsChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnControllableInsetsChangedListener"/>
@@ -336,13 +336,13 @@ namespace Android.View
                 AddEventHandler("onControllableInsetsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnControllableInsetsChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/view/WindowInsetsController.OnControllableInsetsChangedListener.html#onControllableInsetsChanged(android.view.WindowInsetsController,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnControllableInsetsChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.View.WindowInsetsController, int> OnOnControllableInsetsChanged { get; set; } = null;
-            
+
             bool hasOverrideOnControllableInsetsChanged = true;
             void OnControllableInsetsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -351,7 +351,7 @@ namespace Android.View
                 methodToExecute.Invoke(data.EventData.GetAt<Android.View.WindowInsetsController>(0), data.EventData.GetAt<int>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnControllableInsetsChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.OnControllableInsetsChangedListener.html#onControllableInsetsChanged(android.view.WindowInsetsController,int)"/>
             /// </summary>
@@ -361,13 +361,13 @@ namespace Android.View
             {
                 hasOverrideOnControllableInsetsChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -376,21 +376,21 @@ namespace Android.View
         public partial class OnControllableInsetsChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.OnControllableInsetsChangedListener.html#onControllableInsetsChanged(android.view.WindowInsetsController,int)"/>
@@ -399,22 +399,22 @@ namespace Android.View
             /// <param name="arg1"><see cref="int"/></param>
             public override void OnControllableInsetsChanged(Android.View.WindowInsetsController arg0, int arg1)
             {
-                IExecute("onControllableInsetsChanged", arg0, arg1);
+                IExecuteWithSignature("onControllableInsetsChanged", "(Landroid/view/WindowInsetsController;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -40,10 +40,10 @@ namespace Android.System
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Os(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.System
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.System
     public partial class Os
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#fstat(java.io.FileDescriptor)"/>
@@ -146,7 +146,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static Android.System.StructTimeval GetsockoptTimeval(Java.Io.FileDescriptor arg0, int arg1, int arg2)
         {
-            return SExecute<Android.System.StructTimeval>(LocalBridgeClazz, "getsockoptTimeval", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.System.StructTimeval>(LocalBridgeClazz, "getsockoptTimeval", "(Ljava/io/FileDescriptor;II)Landroid/system/StructTimeval;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#uname()"/>
@@ -165,7 +165,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static bool Access(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "access", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "access", "(Ljava/lang/String;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#isatty(java.io.FileDescriptor)"/>
@@ -185,7 +185,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static byte[] Getxattr(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecuteArray<byte>(LocalBridgeClazz, "getxattr", arg0, arg1);
+            return SExecuteWithSignatureArray<byte>(LocalBridgeClazz, "getxattr", "(Ljava/lang/String;Ljava/lang/String;)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#fcntlInt(java.io.FileDescriptor,int,int)"/>
@@ -197,7 +197,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static int FcntlInt(Java.Io.FileDescriptor arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "fcntlInt", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "fcntlInt", "(Ljava/io/FileDescriptor;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#getegid()"/>
@@ -273,7 +273,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static int Poll(Android.System.StructPollfd[] arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "poll", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "poll", "([Landroid/system/StructPollfd;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#prctl(int,long,long,long,long)"/>
@@ -287,7 +287,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static int Prctl(int arg0, long arg1, long arg2, long arg3, long arg4)
         {
-            return SExecute<int>(LocalBridgeClazz, "prctl", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "prctl", "(IJJJJ)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#pread(java.io.FileDescriptor,byte[],int,int,long)"/>
@@ -302,7 +302,7 @@ namespace Android.System
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Pread(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3, long arg4)
         {
-            return SExecute<int>(LocalBridgeClazz, "pread", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "pread", "(Ljava/io/FileDescriptor;[BIIJ)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#pread(java.io.FileDescriptor,java.nio.ByteBuffer,long)"/>
@@ -315,7 +315,7 @@ namespace Android.System
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Pread(Java.Io.FileDescriptor arg0, Java.Nio.ByteBuffer arg1, long arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "pread", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "pread", "(Ljava/io/FileDescriptor;Ljava/nio/ByteBuffer;J)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#pwrite(java.io.FileDescriptor,byte[],int,int,long)"/>
@@ -330,7 +330,7 @@ namespace Android.System
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Pwrite(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3, long arg4)
         {
-            return SExecute<int>(LocalBridgeClazz, "pwrite", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "pwrite", "(Ljava/io/FileDescriptor;[BIIJ)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#pwrite(java.io.FileDescriptor,java.nio.ByteBuffer,long)"/>
@@ -343,7 +343,7 @@ namespace Android.System
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Pwrite(Java.Io.FileDescriptor arg0, Java.Nio.ByteBuffer arg1, long arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "pwrite", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "pwrite", "(Ljava/io/FileDescriptor;Ljava/nio/ByteBuffer;J)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#read(java.io.FileDescriptor,byte[],int,int)"/>
@@ -357,7 +357,7 @@ namespace Android.System
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Read(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "read", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "read", "(Ljava/io/FileDescriptor;[BII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#read(java.io.FileDescriptor,java.nio.ByteBuffer)"/>
@@ -369,7 +369,7 @@ namespace Android.System
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Read(Java.Io.FileDescriptor arg0, Java.Nio.ByteBuffer arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "read", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "read", "(Ljava/io/FileDescriptor;Ljava/nio/ByteBuffer;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#readv(java.io.FileDescriptor,java.lang.Object[],int[],int[])"/>
@@ -383,7 +383,7 @@ namespace Android.System
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Readv(Java.Io.FileDescriptor arg0, object[] arg1, int[] arg2, int[] arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "readv", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "readv", "(Ljava/io/FileDescriptor;[Ljava/lang/Object;[I[I)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#recvfrom(java.io.FileDescriptor,byte[],int,int,int,java.net.InetSocketAddress)"/>
@@ -399,7 +399,7 @@ namespace Android.System
         /// <exception cref="Java.Net.SocketException"/>
         public static int Recvfrom(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3, int arg4, Java.Net.InetSocketAddress arg5)
         {
-            return SExecute<int>(LocalBridgeClazz, "recvfrom", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "recvfrom", "(Ljava/io/FileDescriptor;[BIIILjava/net/InetSocketAddress;)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#recvfrom(java.io.FileDescriptor,java.nio.ByteBuffer,int,java.net.InetSocketAddress)"/>
@@ -413,7 +413,7 @@ namespace Android.System
         /// <exception cref="Java.Net.SocketException"/>
         public static int Recvfrom(Java.Io.FileDescriptor arg0, Java.Nio.ByteBuffer arg1, int arg2, Java.Net.InetSocketAddress arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "recvfrom", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "recvfrom", "(Ljava/io/FileDescriptor;Ljava/nio/ByteBuffer;ILjava/net/InetSocketAddress;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#recvmsg(java.io.FileDescriptor,android.system.StructMsghdr,int)"/>
@@ -426,7 +426,7 @@ namespace Android.System
         /// <exception cref="Java.Net.SocketException"/>
         public static int Recvmsg(Java.Io.FileDescriptor arg0, Android.System.StructMsghdr arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "recvmsg", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "recvmsg", "(Ljava/io/FileDescriptor;Landroid/system/StructMsghdr;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#sendmsg(java.io.FileDescriptor,android.system.StructMsghdr,int)"/>
@@ -439,7 +439,7 @@ namespace Android.System
         /// <exception cref="Java.Net.SocketException"/>
         public static int Sendmsg(Java.Io.FileDescriptor arg0, Android.System.StructMsghdr arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "sendmsg", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "sendmsg", "(Ljava/io/FileDescriptor;Landroid/system/StructMsghdr;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#sendto(java.io.FileDescriptor,byte[],int,int,int,java.net.InetAddress,int)"/>
@@ -456,7 +456,7 @@ namespace Android.System
         /// <exception cref="Java.Net.SocketException"/>
         public static int Sendto(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3, int arg4, Java.Net.InetAddress arg5, int arg6)
         {
-            return SExecute<int>(LocalBridgeClazz, "sendto", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "sendto", "(Ljava/io/FileDescriptor;[BIIILjava/net/InetAddress;I)I", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#sendto(java.io.FileDescriptor,byte[],int,int,int,java.net.SocketAddress)"/>
@@ -472,7 +472,7 @@ namespace Android.System
         /// <exception cref="Java.Net.SocketException"/>
         public static int Sendto(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3, int arg4, Java.Net.SocketAddress arg5)
         {
-            return SExecute<int>(LocalBridgeClazz, "sendto", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "sendto", "(Ljava/io/FileDescriptor;[BIIILjava/net/SocketAddress;)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#sendto(java.io.FileDescriptor,java.nio.ByteBuffer,int,java.net.InetAddress,int)"/>
@@ -487,7 +487,7 @@ namespace Android.System
         /// <exception cref="Java.Net.SocketException"/>
         public static int Sendto(Java.Io.FileDescriptor arg0, Java.Nio.ByteBuffer arg1, int arg2, Java.Net.InetAddress arg3, int arg4)
         {
-            return SExecute<int>(LocalBridgeClazz, "sendto", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "sendto", "(Ljava/io/FileDescriptor;Ljava/nio/ByteBuffer;ILjava/net/InetAddress;I)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#setsid()"/>
@@ -519,7 +519,7 @@ namespace Android.System
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Write(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "write", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "write", "(Ljava/io/FileDescriptor;[BII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#write(java.io.FileDescriptor,java.nio.ByteBuffer)"/>
@@ -531,7 +531,7 @@ namespace Android.System
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Write(Java.Io.FileDescriptor arg0, Java.Nio.ByteBuffer arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "write", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "write", "(Ljava/io/FileDescriptor;Ljava/nio/ByteBuffer;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#writev(java.io.FileDescriptor,java.lang.Object[],int[],int[])"/>
@@ -545,7 +545,7 @@ namespace Android.System
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Writev(Java.Io.FileDescriptor arg0, object[] arg1, int[] arg2, int[] arg3)
         {
-            return SExecute<int>(LocalBridgeClazz, "writev", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "writev", "(Ljava/io/FileDescriptor;[Ljava/lang/Object;[I[I)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#accept(java.io.FileDescriptor,java.net.InetSocketAddress)"/>
@@ -557,7 +557,7 @@ namespace Android.System
         /// <exception cref="Java.Net.SocketException"/>
         public static Java.Io.FileDescriptor Accept(Java.Io.FileDescriptor arg0, Java.Net.InetSocketAddress arg1)
         {
-            return SExecute<Java.Io.FileDescriptor>(LocalBridgeClazz, "accept", arg0, arg1);
+            return SExecuteWithSignature<Java.Io.FileDescriptor>(LocalBridgeClazz, "accept", "(Ljava/io/FileDescriptor;Ljava/net/InetSocketAddress;)Ljava/io/FileDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#dup(java.io.FileDescriptor)"/>
@@ -578,7 +578,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static Java.Io.FileDescriptor Dup2(Java.Io.FileDescriptor arg0, int arg1)
         {
-            return SExecute<Java.Io.FileDescriptor>(LocalBridgeClazz, "dup2", arg0, arg1);
+            return SExecuteWithSignature<Java.Io.FileDescriptor>(LocalBridgeClazz, "dup2", "(Ljava/io/FileDescriptor;I)Ljava/io/FileDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#memfd_create(java.lang.String,int)"/>
@@ -589,7 +589,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static Java.Io.FileDescriptor Memfd_create(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Io.FileDescriptor>(LocalBridgeClazz, "memfd_create", arg0, arg1);
+            return SExecuteWithSignature<Java.Io.FileDescriptor>(LocalBridgeClazz, "memfd_create", "(Ljava/lang/String;I)Ljava/io/FileDescriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#open(java.lang.String,int,int)"/>
@@ -601,7 +601,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static Java.Io.FileDescriptor Open(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Io.FileDescriptor>(LocalBridgeClazz, "open", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Io.FileDescriptor>(LocalBridgeClazz, "open", "(Ljava/lang/String;II)Ljava/io/FileDescriptor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#socket(int,int,int)"/>
@@ -613,7 +613,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static Java.Io.FileDescriptor Socket(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Io.FileDescriptor>(LocalBridgeClazz, "socket", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Io.FileDescriptor>(LocalBridgeClazz, "socket", "(III)Ljava/io/FileDescriptor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#pipe()"/>
@@ -705,7 +705,7 @@ namespace Android.System
         /// <returns><see cref="Java.Net.InetAddress"/></returns>
         public static Java.Net.InetAddress Inet_pton(int arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Net.InetAddress>(LocalBridgeClazz, "inet_pton", arg0, arg1);
+            return SExecuteWithSignature<Java.Net.InetAddress>(LocalBridgeClazz, "inet_pton", "(ILjava/lang/String;)Ljava/net/InetAddress;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#getpeername(java.io.FileDescriptor)"/>
@@ -737,7 +737,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static long Lseek(Java.Io.FileDescriptor arg0, long arg1, int arg2)
         {
-            return SExecute<long>(LocalBridgeClazz, "lseek", arg0, arg1, arg2);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "lseek", "(Ljava/io/FileDescriptor;JI)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#mmap(long,long,int,int,java.io.FileDescriptor,long)"/>
@@ -752,7 +752,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static long Mmap(long arg0, long arg1, int arg2, int arg3, Java.Io.FileDescriptor arg4, long arg5)
         {
-            return SExecute<long>(LocalBridgeClazz, "mmap", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "mmap", "(JJIILjava/io/FileDescriptor;J)J", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#sendfile(java.io.FileDescriptor,java.io.FileDescriptor,android.system.Int64Ref,long)"/>
@@ -765,7 +765,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static long Sendfile(Java.Io.FileDescriptor arg0, Java.Io.FileDescriptor arg1, Android.System.Int64Ref arg2, long arg3)
         {
-            return SExecute<long>(LocalBridgeClazz, "sendfile", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "sendfile", "(Ljava/io/FileDescriptor;Ljava/io/FileDescriptor;Landroid/system/Int64Ref;J)J", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#sysconf(int)"/>
@@ -786,7 +786,7 @@ namespace Android.System
         /// <exception cref="Java.Net.SocketException"/>
         public static void Bind(Java.Io.FileDescriptor arg0, Java.Net.InetAddress arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "bind", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "bind", "(Ljava/io/FileDescriptor;Ljava/net/InetAddress;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#bind(java.io.FileDescriptor,java.net.SocketAddress)"/>
@@ -797,7 +797,7 @@ namespace Android.System
         /// <exception cref="Java.Net.SocketException"/>
         public static void Bind(Java.Io.FileDescriptor arg0, Java.Net.SocketAddress arg1)
         {
-            SExecute(LocalBridgeClazz, "bind", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "bind", "(Ljava/io/FileDescriptor;Ljava/net/SocketAddress;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#chmod(java.lang.String,int)"/>
@@ -807,7 +807,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Chmod(Java.Lang.String arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "chmod", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "chmod", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#chown(java.lang.String,int,int)"/>
@@ -818,7 +818,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Chown(Java.Lang.String arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "chown", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "chown", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#close(java.io.FileDescriptor)"/>
@@ -839,7 +839,7 @@ namespace Android.System
         /// <exception cref="Java.Net.SocketException"/>
         public static void Connect(Java.Io.FileDescriptor arg0, Java.Net.InetAddress arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "connect", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "connect", "(Ljava/io/FileDescriptor;Ljava/net/InetAddress;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#connect(java.io.FileDescriptor,java.net.SocketAddress)"/>
@@ -850,7 +850,7 @@ namespace Android.System
         /// <exception cref="Java.Net.SocketException"/>
         public static void Connect(Java.Io.FileDescriptor arg0, Java.Net.SocketAddress arg1)
         {
-            SExecute(LocalBridgeClazz, "connect", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "connect", "(Ljava/io/FileDescriptor;Ljava/net/SocketAddress;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#execv(java.lang.String,java.lang.String[])"/>
@@ -860,7 +860,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Execv(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            SExecute(LocalBridgeClazz, "execv", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "execv", "(Ljava/lang/String;[Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#execve(java.lang.String,java.lang.String[],java.lang.String[])"/>
@@ -871,7 +871,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Execve(Java.Lang.String arg0, Java.Lang.String[] arg1, Java.Lang.String[] arg2)
         {
-            SExecute(LocalBridgeClazz, "execve", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "execve", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#fchmod(java.io.FileDescriptor,int)"/>
@@ -881,7 +881,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Fchmod(Java.Io.FileDescriptor arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "fchmod", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "fchmod", "(Ljava/io/FileDescriptor;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#fchown(java.io.FileDescriptor,int,int)"/>
@@ -892,7 +892,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Fchown(Java.Io.FileDescriptor arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "fchown", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "fchown", "(Ljava/io/FileDescriptor;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#fdatasync(java.io.FileDescriptor)"/>
@@ -920,7 +920,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Ftruncate(Java.Io.FileDescriptor arg0, long arg1)
         {
-            SExecute(LocalBridgeClazz, "ftruncate", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "ftruncate", "(Ljava/io/FileDescriptor;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#kill(int,int)"/>
@@ -930,7 +930,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Kill(int arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "kill", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "kill", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#lchown(java.lang.String,int,int)"/>
@@ -941,7 +941,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Lchown(Java.Lang.String arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "lchown", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "lchown", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#link(java.lang.String,java.lang.String)"/>
@@ -951,7 +951,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Link(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "link", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "link", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#listen(java.io.FileDescriptor,int)"/>
@@ -961,7 +961,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Listen(Java.Io.FileDescriptor arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "listen", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "listen", "(Ljava/io/FileDescriptor;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#mincore(long,long,byte[])"/>
@@ -972,7 +972,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Mincore(long arg0, long arg1, byte[] arg2)
         {
-            SExecute(LocalBridgeClazz, "mincore", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "mincore", "(JJ[B)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#mkdir(java.lang.String,int)"/>
@@ -982,7 +982,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Mkdir(Java.Lang.String arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "mkdir", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "mkdir", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#mkfifo(java.lang.String,int)"/>
@@ -992,7 +992,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Mkfifo(Java.Lang.String arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "mkfifo", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "mkfifo", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#mlock(long,long)"/>
@@ -1002,7 +1002,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Mlock(long arg0, long arg1)
         {
-            SExecute(LocalBridgeClazz, "mlock", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "mlock", "(JJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#msync(long,long,int)"/>
@@ -1013,7 +1013,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Msync(long arg0, long arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "msync", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "msync", "(JJI)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#munlock(long,long)"/>
@@ -1023,7 +1023,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Munlock(long arg0, long arg1)
         {
-            SExecute(LocalBridgeClazz, "munlock", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "munlock", "(JJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#munmap(long,long)"/>
@@ -1033,7 +1033,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Munmap(long arg0, long arg1)
         {
-            SExecute(LocalBridgeClazz, "munmap", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "munmap", "(JJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#posix_fallocate(java.io.FileDescriptor,long,long)"/>
@@ -1044,7 +1044,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Posix_fallocate(Java.Io.FileDescriptor arg0, long arg1, long arg2)
         {
-            SExecute(LocalBridgeClazz, "posix_fallocate", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "posix_fallocate", "(Ljava/io/FileDescriptor;JJ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#remove(java.lang.String)"/>
@@ -1063,7 +1063,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Removexattr(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "removexattr", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "removexattr", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#rename(java.lang.String,java.lang.String)"/>
@@ -1073,7 +1073,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Rename(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "rename", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "rename", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#setegid(int)"/>
@@ -1094,7 +1094,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Setenv(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
         {
-            SExecute(LocalBridgeClazz, "setenv", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "setenv", "(Ljava/lang/String;Ljava/lang/String;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#seteuid(int)"/>
@@ -1126,7 +1126,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void SetsockoptInt(Java.Io.FileDescriptor arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "setsockoptInt", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "setsockoptInt", "(Ljava/io/FileDescriptor;III)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#setsockoptTimeval(java.io.FileDescriptor,int,int,android.system.StructTimeval)"/>
@@ -1138,7 +1138,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void SetsockoptTimeval(Java.Io.FileDescriptor arg0, int arg1, int arg2, Android.System.StructTimeval arg3)
         {
-            SExecute(LocalBridgeClazz, "setsockoptTimeval", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "setsockoptTimeval", "(Ljava/io/FileDescriptor;IILandroid/system/StructTimeval;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#setuid(int)"/>
@@ -1160,7 +1160,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Setxattr(Java.Lang.String arg0, Java.Lang.String arg1, byte[] arg2, int arg3)
         {
-            SExecute(LocalBridgeClazz, "setxattr", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "setxattr", "(Ljava/lang/String;Ljava/lang/String;[BI)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#shutdown(java.io.FileDescriptor,int)"/>
@@ -1170,7 +1170,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Shutdown(Java.Io.FileDescriptor arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "shutdown", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "shutdown", "(Ljava/io/FileDescriptor;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#socketpair(int,int,int,java.io.FileDescriptor,java.io.FileDescriptor)"/>
@@ -1183,7 +1183,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Socketpair(int arg0, int arg1, int arg2, Java.Io.FileDescriptor arg3, Java.Io.FileDescriptor arg4)
         {
-            SExecute(LocalBridgeClazz, "socketpair", arg0, arg1, arg2, arg3, arg4);
+            SExecuteWithSignature(LocalBridgeClazz, "socketpair", "(IIILjava/io/FileDescriptor;Ljava/io/FileDescriptor;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#symlink(java.lang.String,java.lang.String)"/>
@@ -1193,7 +1193,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Symlink(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "symlink", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "symlink", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#tcdrain(java.io.FileDescriptor)"/>
@@ -1212,7 +1212,7 @@ namespace Android.System
         /// <exception cref="Android.System.ErrnoException"/>
         public static void Tcsendbreak(Java.Io.FileDescriptor arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "tcsendbreak", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "tcsendbreak", "(Ljava/io/FileDescriptor;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#unsetenv(java.lang.String)"/>
@@ -1223,17 +1223,17 @@ namespace Android.System
         {
             SExecuteWithSignature(LocalBridgeClazz, "unsetenv", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

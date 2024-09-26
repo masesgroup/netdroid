@@ -42,10 +42,10 @@ namespace Org.W3c.Dom
         /// </summary>
         [global::System.Obsolete("Node class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Node(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Org.W3c.Dom
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Org.W3c.Dom
     public partial interface INode
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Org.W3c.Dom
     public partial class Node : Org.W3c.Dom.INode
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Node.html#ATTRIBUTE_NODE"/>
@@ -210,13 +210,13 @@ namespace Org.W3c.Dom
         public static short TEXT_NODE { get { if (!_TEXT_NODEReady) { _TEXT_NODEContent = SGetField<short>(LocalBridgeClazz, "TEXT_NODE"); _TEXT_NODEReady = true; } return _TEXT_NODEContent; } }
         private static short _TEXT_NODEContent = default;
         private static bool _TEXT_NODEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Node.html#hasAttributes()"/>
@@ -269,7 +269,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="bool"/></returns>
         public bool IsSupported(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isSupported", arg0, arg1);
+            return IExecuteWithSignature<bool>("isSupported", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Node.html#getFeature(java.lang.String,java.lang.String)"/>
@@ -279,7 +279,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="object"/></returns>
         public object GetFeature(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute("getFeature", arg0, arg1);
+            return IExecuteWithSignature("getFeature", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Node.html#getUserData(java.lang.String)"/>
@@ -299,7 +299,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="object"/></returns>
         public object SetUserData(Java.Lang.String arg0, object arg1, Org.W3c.Dom.UserDataHandler arg2)
         {
-            return IExecute("setUserData", arg0, arg1, arg2);
+            return IExecuteWithSignature("setUserData", "(Ljava/lang/String;Ljava/lang/Object;Lorg/w3c/dom/UserDataHandler;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Node.html#getBaseURI()"/>
@@ -461,7 +461,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node InsertBefore(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1)
         {
-            return IExecute<Org.W3c.Dom.Node>("insertBefore", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("insertBefore", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Node.html#removeChild(org.w3c.dom.Node)"/>
@@ -482,7 +482,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node ReplaceChild(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1)
         {
-            return IExecute<Org.W3c.Dom.Node>("replaceChild", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("replaceChild", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/Node.html#getChildNodes()"/>
@@ -544,13 +544,13 @@ namespace Org.W3c.Dom
         {
             IExecuteWithSignature("setTextContent", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

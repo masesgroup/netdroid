@@ -40,10 +40,10 @@ namespace Android.Provider
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CalendarContract(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Provider
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Attendees declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Attendees(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CalendarAlerts(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CalendarCache(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -216,10 +216,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CalendarEntity(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -240,9 +240,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -261,10 +261,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Calendars(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -285,9 +285,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -306,10 +306,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Colors(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -330,9 +330,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -351,10 +351,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public EventDays(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -375,9 +375,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -396,10 +396,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Events(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -420,9 +420,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -441,10 +441,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public EventsEntity(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -465,9 +465,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -486,10 +486,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ExtendedProperties(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -510,9 +510,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -531,10 +531,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Instances(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -555,9 +555,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -576,10 +576,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Reminders(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -600,9 +600,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -621,10 +621,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public SyncState(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -645,9 +645,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -659,13 +659,13 @@ namespace Android.Provider
     public partial class CalendarContract
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.html#CONTENT_URI"/>
@@ -739,9 +739,9 @@ namespace Android.Provider
         public static Java.Lang.String EXTRA_EVENT_ID { get { if (!_EXTRA_EVENT_IDReady) { _EXTRA_EVENT_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_EVENT_ID"); _EXTRA_EVENT_IDReady = true; } return _EXTRA_EVENT_IDContent; } }
         private static Java.Lang.String _EXTRA_EVENT_IDContent = default;
         private static bool _EXTRA_EVENT_IDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.html#startViewCalendarEventInManagedProfile(android.content.Context,long,long,long,boolean,int)"/>
@@ -755,31 +755,31 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public static bool StartViewCalendarEventInManagedProfile(Android.Content.Context arg0, long arg1, long arg2, long arg3, bool arg4, int arg5)
         {
-            return SExecute<bool>(LocalBridgeClazz, "startViewCalendarEventInManagedProfile", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "startViewCalendarEventInManagedProfile", "(Landroid/content/Context;JJJZI)Z", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Attendees implementation
         public partial class Attendees : Android.Provider.IBaseColumns
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.CalendarContract.Attendees"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.CalendarContract.Attendees t) => t.Cast<Android.Provider.BaseColumns>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.Attendees.html#CONTENT_URI"/>
@@ -787,9 +787,9 @@ namespace Android.Provider
             public static Android.Net.Uri CONTENT_URI { get { if (!_CONTENT_URIReady) { _CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "CONTENT_URI"); _CONTENT_URIReady = true; } return _CONTENT_URIContent; } }
             private static Android.Net.Uri _CONTENT_URIContent = default;
             private static bool _CONTENT_URIReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.Attendees.html#query(android.content.ContentResolver,long,java.lang.String[])"/>
@@ -800,19 +800,19 @@ namespace Android.Provider
             /// <returns><see cref="Android.Database.Cursor"/></returns>
             public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, long arg1, Java.Lang.String[] arg2)
             {
-                return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2);
+                return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;J[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -821,17 +821,17 @@ namespace Android.Provider
         public partial class CalendarAlerts : Android.Provider.IBaseColumns
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.CalendarContract.CalendarAlerts"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.CalendarContract.CalendarAlerts t) => t.Cast<Android.Provider.BaseColumns>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.CalendarAlerts.html#CONTENT_URI"/>
@@ -845,21 +845,21 @@ namespace Android.Provider
             public static Android.Net.Uri CONTENT_URI_BY_INSTANCE { get { if (!_CONTENT_URI_BY_INSTANCEReady) { _CONTENT_URI_BY_INSTANCEContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "CONTENT_URI_BY_INSTANCE"); _CONTENT_URI_BY_INSTANCEReady = true; } return _CONTENT_URI_BY_INSTANCEContent; } }
             private static Android.Net.Uri _CONTENT_URI_BY_INSTANCEContent = default;
             private static bool _CONTENT_URI_BY_INSTANCEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -868,13 +868,13 @@ namespace Android.Provider
         public partial class CalendarCache
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.CalendarCache.html#URI"/>
@@ -912,21 +912,21 @@ namespace Android.Provider
             public static Java.Lang.String TIMEZONE_TYPE_HOME { get { if (!_TIMEZONE_TYPE_HOMEReady) { _TIMEZONE_TYPE_HOMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TIMEZONE_TYPE_HOME"); _TIMEZONE_TYPE_HOMEReady = true; } return _TIMEZONE_TYPE_HOMEContent; } }
             private static Java.Lang.String _TIMEZONE_TYPE_HOMEContent = default;
             private static bool _TIMEZONE_TYPE_HOMEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -935,17 +935,17 @@ namespace Android.Provider
         public partial class CalendarEntity : Android.Provider.IBaseColumns
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.CalendarContract.CalendarEntity"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.CalendarContract.CalendarEntity t) => t.Cast<Android.Provider.BaseColumns>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.CalendarEntity.html#CONTENT_URI"/>
@@ -953,9 +953,9 @@ namespace Android.Provider
             public static Android.Net.Uri CONTENT_URI { get { if (!_CONTENT_URIReady) { _CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "CONTENT_URI"); _CONTENT_URIReady = true; } return _CONTENT_URIContent; } }
             private static Android.Net.Uri _CONTENT_URIContent = default;
             private static bool _CONTENT_URIReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.CalendarEntity.html#newEntityIterator(android.database.Cursor)"/>
@@ -966,17 +966,17 @@ namespace Android.Provider
             {
                 return SExecuteWithSignature<Android.Content.EntityIterator>(LocalBridgeClazz, "newEntityIterator", "(Landroid/database/Cursor;)Landroid/content/EntityIterator;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -985,17 +985,17 @@ namespace Android.Provider
         public partial class Calendars : Android.Provider.IBaseColumns
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.CalendarContract.Calendars"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.CalendarContract.Calendars t) => t.Cast<Android.Provider.BaseColumns>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.Calendars.html#CONTENT_URI"/>
@@ -1027,21 +1027,21 @@ namespace Android.Provider
             public static Java.Lang.String NAME { get { if (!_NAMEReady) { _NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NAME"); _NAMEReady = true; } return _NAMEContent; } }
             private static Java.Lang.String _NAMEContent = default;
             private static bool _NAMEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1050,13 +1050,13 @@ namespace Android.Provider
         public partial class Colors
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.Colors.html#CONTENT_URI"/>
@@ -1064,21 +1064,21 @@ namespace Android.Provider
             public static Android.Net.Uri CONTENT_URI { get { if (!_CONTENT_URIReady) { _CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "CONTENT_URI"); _CONTENT_URIReady = true; } return _CONTENT_URIContent; } }
             private static Android.Net.Uri _CONTENT_URIContent = default;
             private static bool _CONTENT_URIReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1087,13 +1087,13 @@ namespace Android.Provider
         public partial class EventDays
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.EventDays.html#CONTENT_URI"/>
@@ -1101,9 +1101,9 @@ namespace Android.Provider
             public static Android.Net.Uri CONTENT_URI { get { if (!_CONTENT_URIReady) { _CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "CONTENT_URI"); _CONTENT_URIReady = true; } return _CONTENT_URIContent; } }
             private static Android.Net.Uri _CONTENT_URIContent = default;
             private static bool _CONTENT_URIReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.EventDays.html#query(android.content.ContentResolver,int,int,java.lang.String[])"/>
@@ -1115,19 +1115,19 @@ namespace Android.Provider
             /// <returns><see cref="Android.Database.Cursor"/></returns>
             public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, int arg1, int arg2, Java.Lang.String[] arg3)
             {
-                return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2, arg3);
+                return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;II[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1136,17 +1136,17 @@ namespace Android.Provider
         public partial class Events : Android.Provider.IBaseColumns
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.CalendarContract.Events"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.CalendarContract.Events t) => t.Cast<Android.Provider.BaseColumns>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.Events.html#CONTENT_EXCEPTION_URI"/>
@@ -1166,21 +1166,21 @@ namespace Android.Provider
             public static Android.Net.Uri ENTERPRISE_CONTENT_URI { get { if (!_ENTERPRISE_CONTENT_URIReady) { _ENTERPRISE_CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "ENTERPRISE_CONTENT_URI"); _ENTERPRISE_CONTENT_URIReady = true; } return _ENTERPRISE_CONTENT_URIContent; } }
             private static Android.Net.Uri _ENTERPRISE_CONTENT_URIContent = default;
             private static bool _ENTERPRISE_CONTENT_URIReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1189,17 +1189,17 @@ namespace Android.Provider
         public partial class EventsEntity : Android.Provider.IBaseColumns
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.CalendarContract.EventsEntity"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.CalendarContract.EventsEntity t) => t.Cast<Android.Provider.BaseColumns>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.EventsEntity.html#CONTENT_URI"/>
@@ -1207,9 +1207,9 @@ namespace Android.Provider
             public static Android.Net.Uri CONTENT_URI { get { if (!_CONTENT_URIReady) { _CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "CONTENT_URI"); _CONTENT_URIReady = true; } return _CONTENT_URIContent; } }
             private static Android.Net.Uri _CONTENT_URIContent = default;
             private static bool _CONTENT_URIReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.EventsEntity.html#newEntityIterator(android.database.Cursor,android.content.ContentProviderClient)"/>
@@ -1219,7 +1219,7 @@ namespace Android.Provider
             /// <returns><see cref="Android.Content.EntityIterator"/></returns>
             public static Android.Content.EntityIterator NewEntityIterator(Android.Database.Cursor arg0, Android.Content.ContentProviderClient arg1)
             {
-                return SExecute<Android.Content.EntityIterator>(LocalBridgeClazz, "newEntityIterator", arg0, arg1);
+                return SExecuteWithSignature<Android.Content.EntityIterator>(LocalBridgeClazz, "newEntityIterator", "(Landroid/database/Cursor;Landroid/content/ContentProviderClient;)Landroid/content/EntityIterator;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.EventsEntity.html#newEntityIterator(android.database.Cursor,android.content.ContentResolver)"/>
@@ -1229,19 +1229,19 @@ namespace Android.Provider
             /// <returns><see cref="Android.Content.EntityIterator"/></returns>
             public static Android.Content.EntityIterator NewEntityIterator(Android.Database.Cursor arg0, Android.Content.ContentResolver arg1)
             {
-                return SExecute<Android.Content.EntityIterator>(LocalBridgeClazz, "newEntityIterator", arg0, arg1);
+                return SExecuteWithSignature<Android.Content.EntityIterator>(LocalBridgeClazz, "newEntityIterator", "(Landroid/database/Cursor;Landroid/content/ContentResolver;)Landroid/content/EntityIterator;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1250,17 +1250,17 @@ namespace Android.Provider
         public partial class ExtendedProperties : Android.Provider.IBaseColumns
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.CalendarContract.ExtendedProperties"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.CalendarContract.ExtendedProperties t) => t.Cast<Android.Provider.BaseColumns>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.ExtendedProperties.html#CONTENT_URI"/>
@@ -1268,21 +1268,21 @@ namespace Android.Provider
             public static Android.Net.Uri CONTENT_URI { get { if (!_CONTENT_URIReady) { _CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "CONTENT_URI"); _CONTENT_URIReady = true; } return _CONTENT_URIContent; } }
             private static Android.Net.Uri _CONTENT_URIContent = default;
             private static bool _CONTENT_URIReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1291,17 +1291,17 @@ namespace Android.Provider
         public partial class Instances : Android.Provider.IBaseColumns
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.CalendarContract.Instances"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.CalendarContract.Instances t) => t.Cast<Android.Provider.BaseColumns>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.Instances.html#CONTENT_BY_DAY_URI"/>
@@ -1393,9 +1393,9 @@ namespace Android.Provider
             public static Java.Lang.String START_MINUTE { get { if (!_START_MINUTEReady) { _START_MINUTEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "START_MINUTE"); _START_MINUTEReady = true; } return _START_MINUTEContent; } }
             private static Java.Lang.String _START_MINUTEContent = default;
             private static bool _START_MINUTEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.Instances.html#query(android.content.ContentResolver,java.lang.String[],long,long,java.lang.String)"/>
@@ -1408,7 +1408,7 @@ namespace Android.Provider
             /// <returns><see cref="Android.Database.Cursor"/></returns>
             public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Java.Lang.String[] arg1, long arg2, long arg3, Java.Lang.String arg4)
             {
-                return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2, arg3, arg4);
+                return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;[Ljava/lang/String;JJLjava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.Instances.html#query(android.content.ContentResolver,java.lang.String[],long,long)"/>
@@ -1420,19 +1420,19 @@ namespace Android.Provider
             /// <returns><see cref="Android.Database.Cursor"/></returns>
             public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Java.Lang.String[] arg1, long arg2, long arg3)
             {
-                return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2, arg3);
+                return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;[Ljava/lang/String;JJ)Landroid/database/Cursor;", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1441,17 +1441,17 @@ namespace Android.Provider
         public partial class Reminders : Android.Provider.IBaseColumns
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
             /// <summary>
             /// Converter from <see cref="Android.Provider.CalendarContract.Reminders"/> to <see cref="Android.Provider.BaseColumns"/>
             /// </summary>
             public static implicit operator Android.Provider.BaseColumns(Android.Provider.CalendarContract.Reminders t) => t.Cast<Android.Provider.BaseColumns>();
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.Reminders.html#CONTENT_URI"/>
@@ -1459,9 +1459,9 @@ namespace Android.Provider
             public static Android.Net.Uri CONTENT_URI { get { if (!_CONTENT_URIReady) { _CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "CONTENT_URI"); _CONTENT_URIReady = true; } return _CONTENT_URIContent; } }
             private static Android.Net.Uri _CONTENT_URIContent = default;
             private static bool _CONTENT_URIReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.Reminders.html#query(android.content.ContentResolver,long,java.lang.String[])"/>
@@ -1472,19 +1472,19 @@ namespace Android.Provider
             /// <returns><see cref="Android.Database.Cursor"/></returns>
             public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, long arg1, Java.Lang.String[] arg2)
             {
-                return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2);
+                return SExecuteWithSignature<Android.Database.Cursor>(LocalBridgeClazz, "query", "(Landroid/content/ContentResolver;J[Ljava/lang/String;)Landroid/database/Cursor;", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1493,13 +1493,13 @@ namespace Android.Provider
         public partial class SyncState
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/CalendarContract.SyncState.html#CONTENT_URI"/>
@@ -1507,28 +1507,28 @@ namespace Android.Provider
             public static Android.Net.Uri CONTENT_URI { get { if (!_CONTENT_URIReady) { _CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "CONTENT_URI"); _CONTENT_URIReady = true; } return _CONTENT_URIContent; } }
             private static Android.Net.Uri _CONTENT_URIContent = default;
             private static bool _CONTENT_URIReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

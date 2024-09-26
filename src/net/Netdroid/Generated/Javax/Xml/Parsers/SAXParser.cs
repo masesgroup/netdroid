@@ -42,10 +42,10 @@ namespace Javax.Xml.Parsers
         /// </summary>
         [global::System.Obsolete("SAXParser class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SAXParser(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Xml.Parsers
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Javax.Xml.Parsers
     public partial class SAXParser
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParser.html#isNamespaceAware()"/>
@@ -146,7 +146,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetProperty(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setProperty", arg0, arg1);
+            IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParser.html#isXIncludeAware()"/>
@@ -173,7 +173,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.File arg0, Org.Xml.Sax.HandlerBase arg1)
         {
-            IExecute("parse", arg0, arg1);
+            IExecuteWithSignature("parse", "(Ljava/io/File;Lorg/xml/sax/HandlerBase;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParser.html#parse(java.io.File,org.xml.sax.helpers.DefaultHandler)"/>
@@ -184,7 +184,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.File arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1)
         {
-            IExecute("parse", arg0, arg1);
+            IExecuteWithSignature("parse", "(Ljava/io/File;Lorg/xml/sax/helpers/DefaultHandler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParser.html#parse(java.io.InputStream,org.xml.sax.HandlerBase,java.lang.String)"/>
@@ -196,7 +196,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.InputStream arg0, Org.Xml.Sax.HandlerBase arg1, Java.Lang.String arg2)
         {
-            IExecute("parse", arg0, arg1, arg2);
+            IExecuteWithSignature("parse", "(Ljava/io/InputStream;Lorg/xml/sax/HandlerBase;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParser.html#parse(java.io.InputStream,org.xml.sax.HandlerBase)"/>
@@ -207,7 +207,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.InputStream arg0, Org.Xml.Sax.HandlerBase arg1)
         {
-            IExecute("parse", arg0, arg1);
+            IExecuteWithSignature("parse", "(Ljava/io/InputStream;Lorg/xml/sax/HandlerBase;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParser.html#parse(java.io.InputStream,org.xml.sax.helpers.DefaultHandler,java.lang.String)"/>
@@ -219,7 +219,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.InputStream arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1, Java.Lang.String arg2)
         {
-            IExecute("parse", arg0, arg1, arg2);
+            IExecuteWithSignature("parse", "(Ljava/io/InputStream;Lorg/xml/sax/helpers/DefaultHandler;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParser.html#parse(java.io.InputStream,org.xml.sax.helpers.DefaultHandler)"/>
@@ -230,7 +230,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Io.InputStream arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1)
         {
-            IExecute("parse", arg0, arg1);
+            IExecuteWithSignature("parse", "(Ljava/io/InputStream;Lorg/xml/sax/helpers/DefaultHandler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParser.html#parse(java.lang.String,org.xml.sax.HandlerBase)"/>
@@ -241,7 +241,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Lang.String arg0, Org.Xml.Sax.HandlerBase arg1)
         {
-            IExecute("parse", arg0, arg1);
+            IExecuteWithSignature("parse", "(Ljava/lang/String;Lorg/xml/sax/HandlerBase;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParser.html#parse(java.lang.String,org.xml.sax.helpers.DefaultHandler)"/>
@@ -252,7 +252,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Java.Lang.String arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1)
         {
-            IExecute("parse", arg0, arg1);
+            IExecuteWithSignature("parse", "(Ljava/lang/String;Lorg/xml/sax/helpers/DefaultHandler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParser.html#parse(org.xml.sax.InputSource,org.xml.sax.HandlerBase)"/>
@@ -263,7 +263,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Org.Xml.Sax.InputSource arg0, Org.Xml.Sax.HandlerBase arg1)
         {
-            IExecute("parse", arg0, arg1);
+            IExecuteWithSignature("parse", "(Lorg/xml/sax/InputSource;Lorg/xml/sax/HandlerBase;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParser.html#parse(org.xml.sax.InputSource,org.xml.sax.helpers.DefaultHandler)"/>
@@ -274,7 +274,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public void Parse(Org.Xml.Sax.InputSource arg0, Org.Xml.Sax.Helpers.DefaultHandler arg1)
         {
-            IExecute("parse", arg0, arg1);
+            IExecuteWithSignature("parse", "(Lorg/xml/sax/InputSource;Lorg/xml/sax/helpers/DefaultHandler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParser.html#reset()"/>
@@ -283,13 +283,13 @@ namespace Javax.Xml.Parsers
         {
             IExecuteWithSignature("reset", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

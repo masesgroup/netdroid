@@ -40,10 +40,10 @@ namespace Java.Time.Temporal
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ChronoUnit(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time.Temporal
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Time.Temporal
     public partial class ChronoUnit
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Time.Temporal.ChronoUnit"/> to <see cref="Java.Time.Temporal.TemporalUnit"/>
         /// </summary>
         public static implicit operator Java.Time.Temporal.TemporalUnit(Java.Time.Temporal.ChronoUnit t) => t.Cast<Java.Time.Temporal.TemporalUnit>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/ChronoUnit.html#CENTURIES"/>
@@ -182,9 +182,9 @@ namespace Java.Time.Temporal
         public static Java.Time.Temporal.ChronoUnit YEARS { get { if (!_YEARSReady) { _YEARSContent = SGetField<Java.Time.Temporal.ChronoUnit>(LocalBridgeClazz, "YEARS"); _YEARSReady = true; } return _YEARSContent; } }
         private static Java.Time.Temporal.ChronoUnit _YEARSContent = default;
         private static bool _YEARSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/ChronoUnit.html#valueOf(java.lang.String)"/>
@@ -203,9 +203,9 @@ namespace Java.Time.Temporal
         {
             return SExecuteWithSignatureArray<Java.Time.Temporal.ChronoUnit>(LocalBridgeClazz, "values", "()[Ljava/time/temporal/ChronoUnit;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/ChronoUnit.html#addTo(java.time.temporal.Temporal,long)"/>
@@ -216,7 +216,7 @@ namespace Java.Time.Temporal
         /// <returns><typeparamref name="R"/></returns>
         public R AddTo<R>(R arg0, long arg1) where R : Java.Time.Temporal.ITemporal, new()
         {
-            return IExecute<R>("addTo", arg0, arg1);
+            return IExecuteWithSignature<R>("addTo", "(Ljava/time/temporal/Temporal;J)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/ChronoUnit.html#isDateBased()"/>
@@ -267,15 +267,15 @@ namespace Java.Time.Temporal
         /// <returns><see cref="long"/></returns>
         public long Between(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.Temporal arg1)
         {
-            return IExecute<long>("between", arg0, arg1);
+            return IExecuteWithSignature<long>("between", "(Ljava/time/temporal/Temporal;Ljava/time/temporal/Temporal;)J", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

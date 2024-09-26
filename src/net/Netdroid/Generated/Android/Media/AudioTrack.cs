@@ -40,10 +40,10 @@ namespace Android.Media
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AudioTrack(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Media
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MetricsConstants(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -166,7 +166,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnCodecFormatChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.AudioTrack_OnCodecFormatChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -175,13 +175,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnCodecFormatChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnCodecFormatChangedListener"/> or its generic type if there is one
@@ -192,14 +192,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.AudioTrack$OnCodecFormatChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -233,7 +233,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnPlaybackPositionUpdateListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.AudioTrack_OnPlaybackPositionUpdateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -242,13 +242,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnPlaybackPositionUpdateListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnPlaybackPositionUpdateListener"/> or its generic type if there is one
@@ -259,14 +259,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.AudioTrack$OnPlaybackPositionUpdateListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -301,7 +301,7 @@ namespace Android.Media
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnRoutingChangedListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.AudioTrack_OnRoutingChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -310,13 +310,13 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnRoutingChangedListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnRoutingChangedListener"/> or its generic type if there is one
@@ -327,14 +327,14 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.AudioTrack$OnRoutingChangedListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -375,10 +375,10 @@ namespace Android.Media
             /// </summary>
             [global::System.Obsolete("StreamEventCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public StreamEventCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -399,9 +399,9 @@ namespace Android.Media
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -457,9 +457,9 @@ namespace Android.Media
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Android.Media.AudioTrack"/> to <see cref="Android.Media.AudioRouting"/>
@@ -469,9 +469,9 @@ namespace Android.Media
         /// Converter from <see cref="Android.Media.AudioTrack"/> to <see cref="Android.Media.VolumeAutomation"/>
         /// </summary>
         public static implicit operator Android.Media.VolumeAutomation(Android.Media.AudioTrack t) => t.Cast<Android.Media.VolumeAutomation>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#DUAL_MONO_MODE_LL"/>
@@ -653,9 +653,9 @@ namespace Android.Media
         public static int WRITE_NON_BLOCKING { get { if (!_WRITE_NON_BLOCKINGReady) { _WRITE_NON_BLOCKINGContent = SGetField<int>(LocalBridgeClazz, "WRITE_NON_BLOCKING"); _WRITE_NON_BLOCKINGReady = true; } return _WRITE_NON_BLOCKINGContent; } }
         private static int _WRITE_NON_BLOCKINGContent = default;
         private static bool _WRITE_NON_BLOCKINGReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#isDirectPlaybackSupported(android.media.AudioFormat,android.media.AudioAttributes)"/>
@@ -666,7 +666,7 @@ namespace Android.Media
         [global::System.Obsolete()]
         public static bool IsDirectPlaybackSupported(Android.Media.AudioFormat arg0, Android.Media.AudioAttributes arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isDirectPlaybackSupported", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDirectPlaybackSupported", "(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getMaxVolume()"/>
@@ -693,7 +693,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public static int GetMinBufferSize(int arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "getMinBufferSize", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMinBufferSize", "(III)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getNativeOutputSampleRate(int)"/>
@@ -704,9 +704,9 @@ namespace Android.Media
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getNativeOutputSampleRate", "(I)I", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getAudioAttributes()"/>
@@ -1029,7 +1029,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int SetLoopPoints(int arg0, int arg1, int arg2)
         {
-            return IExecute<int>("setLoopPoints", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("setLoopPoints", "(III)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#setNotificationMarkerPosition(int)"/>
@@ -1094,7 +1094,7 @@ namespace Android.Media
         [global::System.Obsolete()]
         public int SetStereoVolume(float arg0, float arg1)
         {
-            return IExecute<int>("setStereoVolume", arg0, arg1);
+            return IExecuteWithSignature<int>("setStereoVolume", "(FF)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#setVolume(float)"/>
@@ -1115,7 +1115,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int Write(byte[] arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<int>("write", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("write", "([BIII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#write(byte[],int,int)"/>
@@ -1126,7 +1126,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int Write(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("write", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("write", "([BII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#write(float[],int,int,int)"/>
@@ -1138,7 +1138,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int Write(float[] arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<int>("write", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("write", "([FIII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#write(java.nio.ByteBuffer,int,int,long)"/>
@@ -1150,7 +1150,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int Write(Java.Nio.ByteBuffer arg0, int arg1, int arg2, long arg3)
         {
-            return IExecute<int>("write", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("write", "(Ljava/nio/ByteBuffer;IIJ)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#write(java.nio.ByteBuffer,int,int)"/>
@@ -1161,7 +1161,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int Write(Java.Nio.ByteBuffer arg0, int arg1, int arg2)
         {
-            return IExecute<int>("write", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("write", "(Ljava/nio/ByteBuffer;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#write(short[],int,int,int)"/>
@@ -1173,7 +1173,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int Write(short[] arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<int>("write", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("write", "([SIII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#write(short[],int,int)"/>
@@ -1184,7 +1184,7 @@ namespace Android.Media
         /// <returns><see cref="int"/></returns>
         public int Write(short[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("write", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("write", "([SII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#addOnCodecFormatChangedListener(java.util.concurrent.Executor,android.media.AudioTrack.OnCodecFormatChangedListener)"/>
@@ -1193,7 +1193,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.AudioTrack.OnCodecFormatChangedListener"/></param>
         public void AddOnCodecFormatChangedListener(Java.Util.Concurrent.Executor arg0, Android.Media.AudioTrack.OnCodecFormatChangedListener arg1)
         {
-            IExecute("addOnCodecFormatChangedListener", arg0, arg1);
+            IExecuteWithSignature("addOnCodecFormatChangedListener", "(Ljava/util/concurrent/Executor;Landroid/media/AudioTrack$OnCodecFormatChangedListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#addOnRoutingChangedListener(android.media.AudioRouting.OnRoutingChangedListener,android.os.Handler)"/>
@@ -1202,7 +1202,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void AddOnRoutingChangedListener(Android.Media.AudioRouting.OnRoutingChangedListener arg0, Android.Os.Handler arg1)
         {
-            IExecute("addOnRoutingChangedListener", arg0, arg1);
+            IExecuteWithSignature("addOnRoutingChangedListener", "(Landroid/media/AudioRouting$OnRoutingChangedListener;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#addOnRoutingChangedListener(android.media.AudioTrack.OnRoutingChangedListener,android.os.Handler)"/>
@@ -1212,7 +1212,7 @@ namespace Android.Media
         [global::System.Obsolete()]
         public void AddOnRoutingChangedListener(Android.Media.AudioTrack.OnRoutingChangedListener arg0, Android.Os.Handler arg1)
         {
-            IExecute("addOnRoutingChangedListener", arg0, arg1);
+            IExecuteWithSignature("addOnRoutingChangedListener", "(Landroid/media/AudioTrack$OnRoutingChangedListener;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#flush()"/>
@@ -1244,7 +1244,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Media.AudioTrack.StreamEventCallback"/></param>
         public void RegisterStreamEventCallback(Java.Util.Concurrent.Executor arg0, Android.Media.AudioTrack.StreamEventCallback arg1)
         {
-            IExecute("registerStreamEventCallback", arg0, arg1);
+            IExecuteWithSignature("registerStreamEventCallback", "(Ljava/util/concurrent/Executor;Landroid/media/AudioTrack$StreamEventCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#release()"/>
@@ -1293,7 +1293,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="int"/></param>
         public void SetOffloadDelayPadding(int arg0, int arg1)
         {
-            IExecute("setOffloadDelayPadding", arg0, arg1);
+            IExecuteWithSignature("setOffloadDelayPadding", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#setOffloadEndOfStream()"/>
@@ -1317,7 +1317,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         public void SetPlaybackPositionUpdateListener(Android.Media.AudioTrack.OnPlaybackPositionUpdateListener arg0, Android.Os.Handler arg1)
         {
-            IExecute("setPlaybackPositionUpdateListener", arg0, arg1);
+            IExecuteWithSignature("setPlaybackPositionUpdateListener", "(Landroid/media/AudioTrack$OnPlaybackPositionUpdateListener;Landroid/os/Handler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#setPlaybackPositionUpdateListener(android.media.AudioTrack.OnPlaybackPositionUpdateListener)"/>
@@ -1343,29 +1343,29 @@ namespace Android.Media
         {
             IExecuteWithSignature("unregisterStreamEventCallback", "(Landroid/media/AudioTrack$StreamEventCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.Builder.html#build()"/>
@@ -1462,13 +1462,13 @@ namespace Android.Media
             {
                 return IExecuteWithSignature<Android.Media.AudioTrack.Builder>("setTransferMode", "(I)Landroid/media/AudioTrack$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1477,13 +1477,13 @@ namespace Android.Media
         public partial class MetricsConstants
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.MetricsConstants.html#CHANNELMASK"/>
@@ -1517,21 +1517,21 @@ namespace Android.Media
             public static Java.Lang.String USAGE { get { if (!_USAGEReady) { _USAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USAGE"); _USAGEReady = true; } return _USAGEContent; } }
             private static Java.Lang.String _USAGEContent = default;
             private static bool _USAGEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1540,21 +1540,21 @@ namespace Android.Media
         public partial class OnCodecFormatChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnCodecFormatChangedListener"/>
@@ -1564,13 +1564,13 @@ namespace Android.Media
                 AddEventHandler("onCodecFormatChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnCodecFormatChangedEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioTrack.OnCodecFormatChangedListener.html#onCodecFormatChanged(android.media.AudioTrack,android.media.AudioMetadataReadMap)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCodecFormatChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.AudioTrack, Android.Media.AudioMetadataReadMap> OnOnCodecFormatChanged { get; set; } = null;
-            
+
             bool hasOverrideOnCodecFormatChanged = true;
             void OnCodecFormatChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1579,7 +1579,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.AudioTrack>(0), data.EventData.GetAt<Android.Media.AudioMetadataReadMap>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnCodecFormatChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.OnCodecFormatChangedListener.html#onCodecFormatChanged(android.media.AudioTrack,android.media.AudioMetadataReadMap)"/>
             /// </summary>
@@ -1589,13 +1589,13 @@ namespace Android.Media
             {
                 hasOverrideOnCodecFormatChanged = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1604,21 +1604,21 @@ namespace Android.Media
         public partial class OnCodecFormatChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.OnCodecFormatChangedListener.html#onCodecFormatChanged(android.media.AudioTrack,android.media.AudioMetadataReadMap)"/>
@@ -1627,15 +1627,15 @@ namespace Android.Media
             /// <param name="arg1"><see cref="Android.Media.AudioMetadataReadMap"/></param>
             public override void OnCodecFormatChanged(Android.Media.AudioTrack arg0, Android.Media.AudioMetadataReadMap arg1)
             {
-                IExecute("onCodecFormatChanged", arg0, arg1);
+                IExecuteWithSignature("onCodecFormatChanged", "(Landroid/media/AudioTrack;Landroid/media/AudioMetadataReadMap;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1644,21 +1644,21 @@ namespace Android.Media
         public partial class OnPlaybackPositionUpdateListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnPlaybackPositionUpdateListener"/>
@@ -1669,13 +1669,13 @@ namespace Android.Media
                 AddEventHandler("onPeriodicNotification", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnPeriodicNotificationEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioTrack.OnPlaybackPositionUpdateListener.html#onMarkerReached(android.media.AudioTrack)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMarkerReached"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.AudioTrack> OnOnMarkerReached { get; set; } = null;
-            
+
             bool hasOverrideOnMarkerReached = true;
             void OnMarkerReachedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1684,7 +1684,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.AudioTrack>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnMarkerReached;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.OnPlaybackPositionUpdateListener.html#onMarkerReached(android.media.AudioTrack)"/>
             /// </summary>
@@ -1693,13 +1693,13 @@ namespace Android.Media
             {
                 hasOverrideOnMarkerReached = false;
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioTrack.OnPlaybackPositionUpdateListener.html#onPeriodicNotification(android.media.AudioTrack)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPeriodicNotification"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.AudioTrack> OnOnPeriodicNotification { get; set; } = null;
-            
+
             bool hasOverrideOnPeriodicNotification = true;
             void OnPeriodicNotificationEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1708,7 +1708,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.AudioTrack>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnPeriodicNotification;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.OnPlaybackPositionUpdateListener.html#onPeriodicNotification(android.media.AudioTrack)"/>
             /// </summary>
@@ -1717,13 +1717,13 @@ namespace Android.Media
             {
                 hasOverrideOnPeriodicNotification = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1732,21 +1732,21 @@ namespace Android.Media
         public partial class OnPlaybackPositionUpdateListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.OnPlaybackPositionUpdateListener.html#onMarkerReached(android.media.AudioTrack)"/>
@@ -1764,13 +1764,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onPeriodicNotification", "(Landroid/media/AudioTrack;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1779,21 +1779,21 @@ namespace Android.Media
         public partial class OnRoutingChangedListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnRoutingChangedListener"/>
@@ -1804,13 +1804,13 @@ namespace Android.Media
                 AddEventHandler("onRoutingChanged1", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnRoutingChanged1EventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioTrack.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioTrack)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRoutingChanged"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.AudioTrack> OnOnRoutingChanged { get; set; } = null;
-            
+
             bool hasOverrideOnRoutingChanged = true;
             void OnRoutingChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1819,7 +1819,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.AudioTrack>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnRoutingChanged;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioTrack)"/>
             /// </summary>
@@ -1839,13 +1839,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onRoutingChangedDefault", "(Landroid/media/AudioRouting;)V", arg0);
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioTrack.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRoutingChanged1"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.AudioRouting> OnOnRoutingChanged1 { get; set; } = null;
-            
+
             bool hasOverrideOnRoutingChanged1 = true;
             void OnRoutingChanged1EventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -1854,7 +1854,7 @@ namespace Android.Media
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.AudioRouting>(0));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnRoutingChanged1;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
             /// </summary>
@@ -1865,13 +1865,13 @@ namespace Android.Media
             {
                 hasOverrideOnRoutingChanged1 = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1880,21 +1880,21 @@ namespace Android.Media
         public partial class OnRoutingChangedListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioTrack)"/>
@@ -1914,13 +1914,13 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onRoutingChanged", "(Landroid/media/AudioRouting;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1929,21 +1929,21 @@ namespace Android.Media
         public partial class StreamEventCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.StreamEventCallback.html#onDataRequest(android.media.AudioTrack,int)"/>
@@ -1952,7 +1952,7 @@ namespace Android.Media
             /// <param name="arg1"><see cref="int"/></param>
             public void OnDataRequest(Android.Media.AudioTrack arg0, int arg1)
             {
-                IExecute("onDataRequest", arg0, arg1);
+                IExecuteWithSignature("onDataRequest", "(Landroid/media/AudioTrack;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.StreamEventCallback.html#onPresentationEnded(android.media.AudioTrack)"/>
@@ -1970,20 +1970,20 @@ namespace Android.Media
             {
                 IExecuteWithSignature("onTearDown", "(Landroid/media/AudioTrack;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

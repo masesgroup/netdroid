@@ -35,7 +35,7 @@ namespace Android.Hardware
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public SensorEventListener2() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.android.hardware.SensorEventListener2";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Android.Hardware
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region SensorEventListener2Direct declaration
     /// <summary>
     /// Direct override of <see cref="SensorEventListener2"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Android.Hardware
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "android.hardware.SensorEventListener2";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Android.Hardware
     public partial interface ISensorEventListener2
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Android.Hardware
     public partial class SensorEventListener2 : Android.Hardware.ISensorEventListener2
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="SensorEventListener2"/>
@@ -140,13 +140,13 @@ namespace Android.Hardware
             AddEventHandler("onFlushCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnFlushCompletedEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/hardware/SensorEventListener.html#onAccuracyChanged(android.hardware.Sensor,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnAccuracyChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Android.Hardware.Sensor, int> OnOnAccuracyChanged { get; set; } = null;
-        
+
         bool hasOverrideOnAccuracyChanged = true;
         void OnAccuracyChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -155,7 +155,7 @@ namespace Android.Hardware
             methodToExecute.Invoke(data.EventData.GetAt<Android.Hardware.Sensor>(0), data.EventData.GetAt<int>(1));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnAccuracyChanged;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorEventListener.html#onAccuracyChanged(android.hardware.Sensor,int)"/>
         /// </summary>
@@ -165,13 +165,13 @@ namespace Android.Hardware
         {
             hasOverrideOnAccuracyChanged = false;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/hardware/SensorEventListener.html#onSensorChanged(android.hardware.SensorEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnSensorChanged"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Android.Hardware.SensorEvent> OnOnSensorChanged { get; set; } = null;
-        
+
         bool hasOverrideOnSensorChanged = true;
         void OnSensorChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -180,7 +180,7 @@ namespace Android.Hardware
             methodToExecute.Invoke(data.EventData.GetAt<Android.Hardware.SensorEvent>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnSensorChanged;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorEventListener.html#onSensorChanged(android.hardware.SensorEvent)"/>
         /// </summary>
@@ -189,13 +189,13 @@ namespace Android.Hardware
         {
             hasOverrideOnSensorChanged = false;
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/hardware/SensorEventListener2.html#onFlushCompleted(android.hardware.Sensor)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnFlushCompleted"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Android.Hardware.Sensor> OnOnFlushCompleted { get; set; } = null;
-        
+
         bool hasOverrideOnFlushCompleted = true;
         void OnFlushCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -204,7 +204,7 @@ namespace Android.Hardware
             methodToExecute.Invoke(data.EventData.GetAt<Android.Hardware.Sensor>(0));
             data.EventData.TypedEventData.HasOverride = hasOverrideOnFlushCompleted;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorEventListener2.html#onFlushCompleted(android.hardware.Sensor)"/>
         /// </summary>
@@ -213,13 +213,13 @@ namespace Android.Hardware
         {
             hasOverrideOnFlushCompleted = false;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -228,21 +228,21 @@ namespace Android.Hardware
     public partial class SensorEventListener2Direct : Android.Hardware.ISensorEventListener2
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorEventListener.html#onAccuracyChanged(android.hardware.Sensor,int)"/>
@@ -269,13 +269,13 @@ namespace Android.Hardware
         {
             IExecuteWithSignature("onFlushCompleted", "(Landroid/hardware/Sensor;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

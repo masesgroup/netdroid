@@ -40,10 +40,10 @@ namespace Android.Provider
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public E2eeContactKeysManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Provider
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region E2eeContactKey declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public E2eeContactKey(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public E2eeSelfKey(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Provider
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -164,13 +164,13 @@ namespace Android.Provider
     public partial class E2eeContactKeysManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.html#VERIFICATION_STATE_UNVERIFIED"/>
@@ -190,9 +190,9 @@ namespace Android.Provider
         public static int VERIFICATION_STATE_VERIFIED { get { if (!_VERIFICATION_STATE_VERIFIEDReady) { _VERIFICATION_STATE_VERIFIEDContent = SGetField<int>(LocalBridgeClazz, "VERIFICATION_STATE_VERIFIED"); _VERIFICATION_STATE_VERIFIEDReady = true; } return _VERIFICATION_STATE_VERIFIEDContent; } }
         private static int _VERIFICATION_STATE_VERIFIEDContent = default;
         private static bool _VERIFICATION_STATE_VERIFIEDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.html#getMaxKeySizeBytes()"/>
@@ -202,9 +202,9 @@ namespace Android.Provider
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxKeySizeBytes", "()I");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.html#getE2eeContactKey(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -215,7 +215,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.Provider.E2eeContactKeysManager.E2eeContactKey"/></returns>
         public Android.Provider.E2eeContactKeysManager.E2eeContactKey GetE2eeContactKey(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Android.Provider.E2eeContactKeysManager.E2eeContactKey>("getE2eeContactKey", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.Provider.E2eeContactKeysManager.E2eeContactKey>("getE2eeContactKey", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/provider/E2eeContactKeysManager$E2eeContactKey;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.html#getE2eeSelfKey(java.lang.String,java.lang.String)"/>
@@ -225,7 +225,7 @@ namespace Android.Provider
         /// <returns><see cref="Android.Provider.E2eeContactKeysManager.E2eeSelfKey"/></returns>
         public Android.Provider.E2eeContactKeysManager.E2eeSelfKey GetE2eeSelfKey(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.Provider.E2eeContactKeysManager.E2eeSelfKey>("getE2eeSelfKey", arg0, arg1);
+            return IExecuteWithSignature<Android.Provider.E2eeContactKeysManager.E2eeSelfKey>("getE2eeSelfKey", "(Ljava/lang/String;Ljava/lang/String;)Landroid/provider/E2eeContactKeysManager$E2eeSelfKey;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.html#removeE2eeContactKey(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -236,7 +236,7 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public bool RemoveE2eeContactKey(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<bool>("removeE2eeContactKey", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("removeE2eeContactKey", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.html#removeE2eeSelfKey(java.lang.String,java.lang.String)"/>
@@ -246,7 +246,7 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public bool RemoveE2eeSelfKey(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("removeE2eeSelfKey", arg0, arg1);
+            return IExecuteWithSignature<bool>("removeE2eeSelfKey", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.html#updateE2eeContactKeyLocalVerificationState(java.lang.String,java.lang.String,java.lang.String,int)"/>
@@ -258,7 +258,7 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public bool UpdateE2eeContactKeyLocalVerificationState(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3)
         {
-            return IExecute<bool>("updateE2eeContactKeyLocalVerificationState", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("updateE2eeContactKeyLocalVerificationState", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.html#updateE2eeContactKeyRemoteVerificationState(java.lang.String,java.lang.String,java.lang.String,int)"/>
@@ -270,7 +270,7 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public bool UpdateE2eeContactKeyRemoteVerificationState(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3)
         {
-            return IExecute<bool>("updateE2eeContactKeyRemoteVerificationState", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("updateE2eeContactKeyRemoteVerificationState", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.html#updateE2eeSelfKeyRemoteVerificationState(java.lang.String,java.lang.String,int)"/>
@@ -281,7 +281,7 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public bool UpdateE2eeSelfKeyRemoteVerificationState(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<bool>("updateE2eeSelfKeyRemoteVerificationState", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("updateE2eeSelfKeyRemoteVerificationState", "(Ljava/lang/String;Ljava/lang/String;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.html#updateOrInsertE2eeSelfKey(java.lang.String,java.lang.String,byte[])"/>
@@ -292,7 +292,7 @@ namespace Android.Provider
         /// <returns><see cref="bool"/></returns>
         public bool UpdateOrInsertE2eeSelfKey(Java.Lang.String arg0, Java.Lang.String arg1, byte[] arg2)
         {
-            return IExecute<bool>("updateOrInsertE2eeSelfKey", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("updateOrInsertE2eeSelfKey", "(Ljava/lang/String;Ljava/lang/String;[B)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.html#getAllE2eeContactKeys(java.lang.String)"/>
@@ -337,23 +337,23 @@ namespace Android.Provider
         /// <param name="arg3"><see cref="byte"/></param>
         public void UpdateOrInsertE2eeContactKey(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, byte[] arg3)
         {
-            IExecute("updateOrInsertE2eeContactKey", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("updateOrInsertE2eeContactKey", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[B)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region E2eeContactKey implementation
         public partial class E2eeContactKey
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.E2eeContactKey.html#CREATOR"/>
@@ -361,13 +361,13 @@ namespace Android.Provider
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.E2eeContactKey.html#getKeyValue()"/>
@@ -464,15 +464,15 @@ namespace Android.Provider
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -481,13 +481,13 @@ namespace Android.Provider
         public partial class E2eeSelfKey
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.E2eeSelfKey.html#CREATOR"/>
@@ -495,13 +495,13 @@ namespace Android.Provider
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/E2eeContactKeysManager.E2eeSelfKey.html#getKeyValue()"/>
@@ -566,22 +566,22 @@ namespace Android.Provider
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

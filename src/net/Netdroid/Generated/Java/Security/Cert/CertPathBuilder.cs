@@ -40,10 +40,10 @@ namespace Java.Security.Cert
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public CertPathBuilder(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Security.Cert
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Security.Cert
     public partial class CertPathBuilder
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/CertPathBuilder.html#getDefaultType()"/>
@@ -104,7 +104,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.Cert.CertPathBuilder GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Security.Cert.CertPathBuilder>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.Cert.CertPathBuilder>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/cert/CertPathBuilder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/CertPathBuilder.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -115,7 +115,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Cert.CertPathBuilder GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Java.Security.Cert.CertPathBuilder>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.Cert.CertPathBuilder>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/cert/CertPathBuilder;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/CertPathBuilder.html#getInstance(java.lang.String)"/>
@@ -127,9 +127,9 @@ namespace Java.Security.Cert
         {
             return SExecuteWithSignature<Java.Security.Cert.CertPathBuilder>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/cert/CertPathBuilder;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/CertPathBuilder.html#getAlgorithm()"/>
@@ -166,13 +166,13 @@ namespace Java.Security.Cert
         {
             return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

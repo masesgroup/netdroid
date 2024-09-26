@@ -40,10 +40,10 @@ namespace Android.Media.Browse
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public MediaBrowser(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Browse
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ConnectionCallback declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media.Browse
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ConnectionCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media.Browse
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -128,10 +128,10 @@ namespace Android.Media.Browse
             /// </summary>
             [global::System.Obsolete("ItemCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ItemCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -152,9 +152,9 @@ namespace Android.Media.Browse
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,10 +173,10 @@ namespace Android.Media.Browse
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MediaItem(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -197,9 +197,9 @@ namespace Android.Media.Browse
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -220,10 +220,10 @@ namespace Android.Media.Browse
             /// </summary>
             [global::System.Obsolete("SubscriptionCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SubscriptionCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -244,9 +244,9 @@ namespace Android.Media.Browse
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -269,13 +269,13 @@ namespace Android.Media.Browse
             : base(arg0, arg1, arg2, arg3)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#EXTRA_PAGE"/>
@@ -289,13 +289,13 @@ namespace Android.Media.Browse
         public static Java.Lang.String EXTRA_PAGE_SIZE { get { if (!_EXTRA_PAGE_SIZEReady) { _EXTRA_PAGE_SIZEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PAGE_SIZE"); _EXTRA_PAGE_SIZEReady = true; } return _EXTRA_PAGE_SIZEContent; } }
         private static Java.Lang.String _EXTRA_PAGE_SIZEContent = default;
         private static bool _EXTRA_PAGE_SIZEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#getServiceComponent()"/>
@@ -358,7 +358,7 @@ namespace Android.Media.Browse
         /// <param name="arg1"><see cref="Android.Media.Browse.MediaBrowser.ItemCallback"/></param>
         public void GetItem(Java.Lang.String arg0, Android.Media.Browse.MediaBrowser.ItemCallback arg1)
         {
-            IExecute("getItem", arg0, arg1);
+            IExecuteWithSignature("getItem", "(Ljava/lang/String;Landroid/media/browse/MediaBrowser$ItemCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#subscribe(java.lang.String,android.media.browse.MediaBrowser.SubscriptionCallback)"/>
@@ -367,7 +367,7 @@ namespace Android.Media.Browse
         /// <param name="arg1"><see cref="Android.Media.Browse.MediaBrowser.SubscriptionCallback"/></param>
         public void Subscribe(Java.Lang.String arg0, Android.Media.Browse.MediaBrowser.SubscriptionCallback arg1)
         {
-            IExecute("subscribe", arg0, arg1);
+            IExecuteWithSignature("subscribe", "(Ljava/lang/String;Landroid/media/browse/MediaBrowser$SubscriptionCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#subscribe(java.lang.String,android.os.Bundle,android.media.browse.MediaBrowser.SubscriptionCallback)"/>
@@ -377,7 +377,7 @@ namespace Android.Media.Browse
         /// <param name="arg2"><see cref="Android.Media.Browse.MediaBrowser.SubscriptionCallback"/></param>
         public void Subscribe(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.Media.Browse.MediaBrowser.SubscriptionCallback arg2)
         {
-            IExecute("subscribe", arg0, arg1, arg2);
+            IExecuteWithSignature("subscribe", "(Ljava/lang/String;Landroid/os/Bundle;Landroid/media/browse/MediaBrowser$SubscriptionCallback;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#unsubscribe(java.lang.String,android.media.browse.MediaBrowser.SubscriptionCallback)"/>
@@ -386,7 +386,7 @@ namespace Android.Media.Browse
         /// <param name="arg1"><see cref="Android.Media.Browse.MediaBrowser.SubscriptionCallback"/></param>
         public void Unsubscribe(Java.Lang.String arg0, Android.Media.Browse.MediaBrowser.SubscriptionCallback arg1)
         {
-            IExecute("unsubscribe", arg0, arg1);
+            IExecuteWithSignature("unsubscribe", "(Ljava/lang/String;Landroid/media/browse/MediaBrowser$SubscriptionCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.html#unsubscribe(java.lang.String)"/>
@@ -396,29 +396,29 @@ namespace Android.Media.Browse
         {
             IExecuteWithSignature("unsubscribe", "(Ljava/lang/String;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ConnectionCallback implementation
         public partial class ConnectionCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.ConnectionCallback.html#onConnected()"/>
@@ -441,13 +441,13 @@ namespace Android.Media.Browse
             {
                 IExecuteWithSignature("onConnectionSuspended", "()V");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -456,21 +456,21 @@ namespace Android.Media.Browse
         public partial class ItemCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.ItemCallback.html#onError(java.lang.String)"/>
@@ -488,13 +488,13 @@ namespace Android.Media.Browse
             {
                 IExecuteWithSignature("onItemLoaded", "(Landroid/media/browse/MediaBrowser$MediaItem;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -512,13 +512,13 @@ namespace Android.Media.Browse
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.MediaItem.html#CREATOR"/>
@@ -538,13 +538,13 @@ namespace Android.Media.Browse
             public static int FLAG_PLAYABLE { get { if (!_FLAG_PLAYABLEReady) { _FLAG_PLAYABLEContent = SGetField<int>(LocalBridgeClazz, "FLAG_PLAYABLE"); _FLAG_PLAYABLEReady = true; } return _FLAG_PLAYABLEContent; } }
             private static int _FLAG_PLAYABLEContent = default;
             private static bool _FLAG_PLAYABLEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.MediaItem.html#getDescription()"/>
@@ -601,15 +601,15 @@ namespace Android.Media.Browse
             /// <param name="arg1"><see cref="int"/></param>
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
-                IExecute("writeToParcel", arg0, arg1);
+                IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -618,21 +618,21 @@ namespace Android.Media.Browse
         public partial class SubscriptionCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.SubscriptionCallback.html#onChildrenLoaded(java.lang.String,java.util.List,android.os.Bundle)"/>
@@ -642,7 +642,7 @@ namespace Android.Media.Browse
             /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
             public void OnChildrenLoaded(Java.Lang.String arg0, Java.Util.List<Android.Media.Browse.MediaBrowser.MediaItem> arg1, Android.Os.Bundle arg2)
             {
-                IExecute("onChildrenLoaded", arg0, arg1, arg2);
+                IExecuteWithSignature("onChildrenLoaded", "(Ljava/lang/String;Ljava/util/List;Landroid/os/Bundle;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.SubscriptionCallback.html#onChildrenLoaded(java.lang.String,java.util.List)"/>
@@ -651,7 +651,7 @@ namespace Android.Media.Browse
             /// <param name="arg1"><see cref="Java.Util.List"/></param>
             public void OnChildrenLoaded(Java.Lang.String arg0, Java.Util.List<Android.Media.Browse.MediaBrowser.MediaItem> arg1)
             {
-                IExecute("onChildrenLoaded", arg0, arg1);
+                IExecuteWithSignature("onChildrenLoaded", "(Ljava/lang/String;Ljava/util/List;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.SubscriptionCallback.html#onError(java.lang.String,android.os.Bundle)"/>
@@ -660,7 +660,7 @@ namespace Android.Media.Browse
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             public void OnError(Java.Lang.String arg0, Android.Os.Bundle arg1)
             {
-                IExecute("onError", arg0, arg1);
+                IExecuteWithSignature("onError", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/browse/MediaBrowser.SubscriptionCallback.html#onError(java.lang.String)"/>
@@ -670,20 +670,20 @@ namespace Android.Media.Browse
             {
                 IExecuteWithSignature("onError", "(Ljava/lang/String;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Javax.Xml.Transform
         /// </summary>
         [global::System.Obsolete("TransformerFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TransformerFactory(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Javax.Xml.Transform
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Javax.Xml.Transform
     public partial class TransformerFactory
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/TransformerFactory.html#newDefaultInstance()"/>
@@ -114,11 +114,11 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerFactoryConfigurationError"/>
         public static Javax.Xml.Transform.TransformerFactory NewInstance(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Javax.Xml.Transform.TransformerFactory>(LocalBridgeClazz, "newInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Xml.Transform.TransformerFactory>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljavax/xml/transform/TransformerFactory;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/TransformerFactory.html#getFeature(java.lang.String)"/>
@@ -165,7 +165,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Source GetAssociatedStylesheet(Javax.Xml.Transform.Source arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return IExecute<Javax.Xml.Transform.Source>("getAssociatedStylesheet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Xml.Transform.Source>("getAssociatedStylesheet", "(Ljavax/xml/transform/Source;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/TransformerFactory.html#newTemplates(javax.xml.transform.Source)"/>
@@ -211,7 +211,7 @@ namespace Javax.Xml.Transform
         /// <param name="arg1"><see cref="object"/></param>
         public void SetAttribute(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setAttribute", arg0, arg1);
+            IExecuteWithSignature("setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/TransformerFactory.html#setErrorListener(javax.xml.transform.ErrorListener)"/>
@@ -229,7 +229,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setFeature", arg0, arg1);
+            IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/transform/TransformerFactory.html#setURIResolver(javax.xml.transform.URIResolver)"/>
@@ -239,13 +239,13 @@ namespace Javax.Xml.Transform
         {
             IExecuteWithSignature("setURIResolver", "(Ljavax/xml/transform/URIResolver;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

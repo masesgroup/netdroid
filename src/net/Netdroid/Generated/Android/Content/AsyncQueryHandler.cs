@@ -42,10 +42,10 @@ namespace Android.Content
         /// </summary>
         [global::System.Obsolete("AsyncQueryHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AsyncQueryHandler(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Content
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -84,21 +84,21 @@ namespace Android.Content
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AsyncQueryHandler.html#cancelOperation(int)"/>
@@ -118,7 +118,7 @@ namespace Android.Content
         /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         public void StartDelete(int arg0, object arg1, Android.Net.Uri arg2, Java.Lang.String arg3, Java.Lang.String[] arg4)
         {
-            IExecute("startDelete", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("startDelete", "(ILjava/lang/Object;Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AsyncQueryHandler.html#startInsert(int,java.lang.Object,android.net.Uri,android.content.ContentValues)"/>
@@ -129,7 +129,7 @@ namespace Android.Content
         /// <param name="arg3"><see cref="Android.Content.ContentValues"/></param>
         public void StartInsert(int arg0, object arg1, Android.Net.Uri arg2, Android.Content.ContentValues arg3)
         {
-            IExecute("startInsert", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startInsert", "(ILjava/lang/Object;Landroid/net/Uri;Landroid/content/ContentValues;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AsyncQueryHandler.html#startUpdate(int,java.lang.Object,android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])"/>
@@ -142,7 +142,7 @@ namespace Android.Content
         /// <param name="arg5"><see cref="Java.Lang.String"/></param>
         public void StartUpdate(int arg0, object arg1, Android.Net.Uri arg2, Android.Content.ContentValues arg3, Java.Lang.String arg4, Java.Lang.String[] arg5)
         {
-            IExecute("startUpdate", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("startUpdate", "(ILjava/lang/Object;Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AsyncQueryHandler.html#startQuery(int,java.lang.Object,android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"/>
@@ -156,15 +156,15 @@ namespace Android.Content
         /// <param name="arg6"><see cref="Java.Lang.String"/></param>
         public void StartQuery(int arg0, object arg1, Android.Net.Uri arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String[] arg5, Java.Lang.String arg6)
         {
-            IExecute("startQuery", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("startQuery", "(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

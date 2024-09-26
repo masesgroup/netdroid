@@ -42,10 +42,10 @@ namespace Android.Graphics.Drawable.Shapes
         /// </summary>
         [global::System.Obsolete("Shape class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Shape(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Graphics.Drawable.Shapes
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Android.Graphics.Drawable.Shapes
     public partial class Shape
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/shapes/Shape.html#draw(android.graphics.Canvas,android.graphics.Paint)"/>
@@ -99,7 +99,7 @@ namespace Android.Graphics.Drawable.Shapes
         /// <param name="arg1"><see cref="Android.Graphics.Paint"/></param>
         public void Draw(Android.Graphics.Canvas arg0, Android.Graphics.Paint arg1)
         {
-            IExecute("draw", arg0, arg1);
+            IExecuteWithSignature("draw", "(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/shapes/Shape.html#clone()"/>
@@ -141,7 +141,7 @@ namespace Android.Graphics.Drawable.Shapes
         /// <param name="arg1"><see cref="float"/></param>
         public void Resize(float arg0, float arg1)
         {
-            IExecute("resize", arg0, arg1);
+            IExecuteWithSignature("resize", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/shapes/Shape.html#getOutline(android.graphics.Outline)"/>
@@ -151,13 +151,13 @@ namespace Android.Graphics.Drawable.Shapes
         {
             IExecuteWithSignature("getOutline", "(Landroid/graphics/Outline;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

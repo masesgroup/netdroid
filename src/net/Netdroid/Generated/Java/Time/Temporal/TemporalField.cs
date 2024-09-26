@@ -42,10 +42,10 @@ namespace Java.Time.Temporal
         /// </summary>
         [global::System.Obsolete("TemporalField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemporalField(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Time.Temporal
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Java.Time.Temporal
     public partial interface ITemporalField
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,21 +94,21 @@ namespace Java.Time.Temporal
     public partial class TemporalField : Java.Time.Temporal.ITemporalField
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html#adjustInto(java.time.temporal.Temporal,long)"/>
@@ -119,7 +119,7 @@ namespace Java.Time.Temporal
         /// <returns><typeparamref name="R"/></returns>
         public R AdjustInto<R>(R arg0, long arg1) where R : Java.Time.Temporal.ITemporal, new()
         {
-            return IExecute<R>("adjustInto", arg0, arg1);
+            return IExecuteWithSignature<R>("adjustInto", "(Ljava/time/temporal/Temporal;J)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html#isDateBased()"/>
@@ -206,15 +206,15 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.TemporalAccessor"/></returns>
         public Java.Time.Temporal.TemporalAccessor Resolve(Java.Util.Map<Java.Time.Temporal.TemporalField, Java.Lang.Long> arg0, Java.Time.Temporal.TemporalAccessor arg1, Java.Time.Format.ResolverStyle arg2)
         {
-            return IExecute<Java.Time.Temporal.TemporalAccessor>("resolve", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Time.Temporal.TemporalAccessor>("resolve", "(Ljava/util/Map;Ljava/time/temporal/TemporalAccessor;Ljava/time/format/ResolverStyle;)Ljava/time/temporal/TemporalAccessor;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

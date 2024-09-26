@@ -40,10 +40,10 @@ namespace Android.Gesture
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Gesture(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Gesture
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.Gesture
     public partial class Gesture
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/Gesture.html#CREATOR"/>
@@ -88,13 +88,13 @@ namespace Android.Gesture
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/Gesture.html#toBitmap(int,int,int,int,int)"/>
@@ -107,7 +107,7 @@ namespace Android.Gesture
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public Android.Graphics.Bitmap ToBitmap(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            return IExecute<Android.Graphics.Bitmap>("toBitmap", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("toBitmap", "(IIIII)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/Gesture.html#toBitmap(int,int,int,int)"/>
@@ -119,7 +119,7 @@ namespace Android.Gesture
         /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
         public Android.Graphics.Bitmap ToBitmap(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Android.Graphics.Bitmap>("toBitmap", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("toBitmap", "(IIII)Landroid/graphics/Bitmap;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/Gesture.html#toPath()"/>
@@ -140,7 +140,7 @@ namespace Android.Gesture
         /// <returns><see cref="Android.Graphics.Path"/></returns>
         public Android.Graphics.Path ToPath(Android.Graphics.Path arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            return IExecute<Android.Graphics.Path>("toPath", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Android.Graphics.Path>("toPath", "(Landroid/graphics/Path;IIII)Landroid/graphics/Path;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/Gesture.html#toPath(android.graphics.Path)"/>
@@ -161,7 +161,7 @@ namespace Android.Gesture
         /// <returns><see cref="Android.Graphics.Path"/></returns>
         public Android.Graphics.Path ToPath(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Android.Graphics.Path>("toPath", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Graphics.Path>("toPath", "(IIII)Landroid/graphics/Path;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/Gesture.html#getBoundingBox()"/>
@@ -226,15 +226,15 @@ namespace Android.Gesture
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

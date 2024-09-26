@@ -40,10 +40,10 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Locale(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Java.Util
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Java.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Java.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Category(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Java.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FilteringMode(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -218,10 +218,10 @@ namespace Java.Util
             /// </summary>
             [global::System.Obsolete("IsoCountryCode class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public IsoCountryCode(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -242,9 +242,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -263,10 +263,10 @@ namespace Java.Util
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public LanguageRange(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -287,9 +287,9 @@ namespace Java.Util
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -328,9 +328,9 @@ namespace Java.Util
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Locale"/> to <see cref="Java.Lang.Cloneable"/>
@@ -340,9 +340,9 @@ namespace Java.Util
         /// Converter from <see cref="Java.Util.Locale"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Locale t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Locale.html#PRIVATE_USE_EXTENSION"/>
@@ -488,9 +488,9 @@ namespace Java.Util
         public static Java.Util.Locale US { get { if (!_USReady) { _USContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "US"); _USReady = true; } return _USContent; } }
         private static Java.Util.Locale _USContent = default;
         private static bool _USReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Locale.html#lookupTag(java.util.List,java.util.Collection)"/>
@@ -500,7 +500,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String LookupTag(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Collection<Java.Lang.String> arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "lookupTag", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "lookupTag", "(Ljava/util/List;Ljava/util/Collection;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Locale.html#getISOCountries()"/>
@@ -527,7 +527,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Java.Lang.String> FilterTags(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Collection<Java.Lang.String> arg1, Java.Util.Locale.FilteringMode arg2)
         {
-            return SExecute<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "filterTags", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "filterTags", "(Ljava/util/List;Ljava/util/Collection;Ljava/util/Locale$FilteringMode;)Ljava/util/List;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Locale.html#filterTags(java.util.List,java.util.Collection)"/>
@@ -537,7 +537,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Java.Lang.String> FilterTags(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Collection<Java.Lang.String> arg1)
         {
-            return SExecute<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "filterTags", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "filterTags", "(Ljava/util/List;Ljava/util/Collection;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Locale.html#filter(java.util.List,java.util.Collection,java.util.Locale.FilteringMode)"/>
@@ -548,7 +548,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Java.Util.Locale> Filter(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Collection<Java.Util.Locale> arg1, Java.Util.Locale.FilteringMode arg2)
         {
-            return SExecute<Java.Util.List<Java.Util.Locale>>(LocalBridgeClazz, "filter", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.List<Java.Util.Locale>>(LocalBridgeClazz, "filter", "(Ljava/util/List;Ljava/util/Collection;Ljava/util/Locale$FilteringMode;)Ljava/util/List;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Locale.html#filter(java.util.List,java.util.Collection)"/>
@@ -558,7 +558,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Java.Util.Locale> Filter(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Collection<Java.Util.Locale> arg1)
         {
-            return SExecute<Java.Util.List<Java.Util.Locale>>(LocalBridgeClazz, "filter", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.List<Java.Util.Locale>>(LocalBridgeClazz, "filter", "(Ljava/util/List;Ljava/util/Collection;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Locale.html#forLanguageTag(java.lang.String)"/>
@@ -594,7 +594,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public static Java.Util.Locale Lookup(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Collection<Java.Util.Locale> arg1)
         {
-            return SExecute<Java.Util.Locale>(LocalBridgeClazz, "lookup", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Locale>(LocalBridgeClazz, "lookup", "(Ljava/util/List;Ljava/util/Collection;)Ljava/util/Locale;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Locale.html#getAvailableLocales()"/>
@@ -628,11 +628,11 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
         public static void SetDefault(Java.Util.Locale.Category arg0, Java.Util.Locale arg1)
         {
-            SExecute(LocalBridgeClazz, "setDefault", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/util/Locale$Category;Ljava/util/Locale;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Locale.html#hasExtensions()"/>
@@ -835,29 +835,29 @@ namespace Java.Util
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleKeys", "()Ljava/util/Set;");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#build()"/>
@@ -909,7 +909,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder SetExtension(char arg0, Java.Lang.String arg1)
             {
-                return IExecute<Java.Util.Locale.Builder>("setExtension", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Locale.Builder>("setExtension", "(CLjava/lang/String;)Ljava/util/Locale$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#setLanguage(java.lang.String)"/>
@@ -964,7 +964,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder SetUnicodeLocaleKeyword(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<Java.Util.Locale.Builder>("setUnicodeLocaleKeyword", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Locale.Builder>("setUnicodeLocaleKeyword", "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Locale$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#setVariant(java.lang.String)"/>
@@ -975,13 +975,13 @@ namespace Java.Util
             {
                 return IExecuteWithSignature<Java.Util.Locale.Builder>("setVariant", "(Ljava/lang/String;)Ljava/util/Locale$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -990,13 +990,13 @@ namespace Java.Util
         public partial class Category
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.Category.html#DISPLAY"/>
@@ -1010,9 +1010,9 @@ namespace Java.Util
             public static Java.Util.Locale.Category FORMAT { get { if (!_FORMATReady) { _FORMATContent = SGetField<Java.Util.Locale.Category>(LocalBridgeClazz, "FORMAT"); _FORMATReady = true; } return _FORMATContent; } }
             private static Java.Util.Locale.Category _FORMATContent = default;
             private static bool _FORMATReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.Category.html#valueOf(java.lang.String)"/>
@@ -1031,17 +1031,17 @@ namespace Java.Util
             {
                 return SExecuteWithSignatureArray<Java.Util.Locale.Category>(LocalBridgeClazz, "values", "()[Ljava/util/Locale$Category;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1050,13 +1050,13 @@ namespace Java.Util
         public partial class FilteringMode
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.FilteringMode.html#AUTOSELECT_FILTERING"/>
@@ -1088,9 +1088,9 @@ namespace Java.Util
             public static Java.Util.Locale.FilteringMode REJECT_EXTENDED_RANGES { get { if (!_REJECT_EXTENDED_RANGESReady) { _REJECT_EXTENDED_RANGESContent = SGetField<Java.Util.Locale.FilteringMode>(LocalBridgeClazz, "REJECT_EXTENDED_RANGES"); _REJECT_EXTENDED_RANGESReady = true; } return _REJECT_EXTENDED_RANGESContent; } }
             private static Java.Util.Locale.FilteringMode _REJECT_EXTENDED_RANGESContent = default;
             private static bool _REJECT_EXTENDED_RANGESReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.FilteringMode.html#valueOf(java.lang.String)"/>
@@ -1109,17 +1109,17 @@ namespace Java.Util
             {
                 return SExecuteWithSignatureArray<Java.Util.Locale.FilteringMode>(LocalBridgeClazz, "values", "()[Ljava/util/Locale$FilteringMode;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1128,13 +1128,13 @@ namespace Java.Util
         public partial class IsoCountryCode
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.IsoCountryCode.html#PART1_ALPHA2"/>
@@ -1154,9 +1154,9 @@ namespace Java.Util
             public static Java.Util.Locale.IsoCountryCode PART3 { get { if (!_PART3Ready) { _PART3Content = SGetField<Java.Util.Locale.IsoCountryCode>(LocalBridgeClazz, "PART3"); _PART3Ready = true; } return _PART3Content; } }
             private static Java.Util.Locale.IsoCountryCode _PART3Content = default;
             private static bool _PART3Ready = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.IsoCountryCode.html#valueOf(java.lang.String)"/>
@@ -1175,17 +1175,17 @@ namespace Java.Util
             {
                 return SExecuteWithSignatureArray<Java.Util.Locale.IsoCountryCode>(LocalBridgeClazz, "values", "()[Ljava/util/Locale$IsoCountryCode;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1211,13 +1211,13 @@ namespace Java.Util
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#MAX_WEIGHT"/>
@@ -1231,9 +1231,9 @@ namespace Java.Util
             public static double MIN_WEIGHT { get { if (!_MIN_WEIGHTReady) { _MIN_WEIGHTContent = SGetField<double>(LocalBridgeClazz, "MIN_WEIGHT"); _MIN_WEIGHTReady = true; } return _MIN_WEIGHTContent; } }
             private static double _MIN_WEIGHTContent = default;
             private static bool _MIN_WEIGHTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#mapEquivalents(java.util.List,java.util.Map)"/>
@@ -1243,7 +1243,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.List"/></returns>
             public static Java.Util.List<Java.Util.Locale.LanguageRange> MapEquivalents(Java.Util.List<Java.Util.Locale.LanguageRange> arg0, Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> arg1)
             {
-                return SExecute<Java.Util.List<Java.Util.Locale.LanguageRange>>(LocalBridgeClazz, "mapEquivalents", arg0, arg1);
+                return SExecuteWithSignature<Java.Util.List<Java.Util.Locale.LanguageRange>>(LocalBridgeClazz, "mapEquivalents", "(Ljava/util/List;Ljava/util/Map;)Ljava/util/List;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#parse(java.lang.String,java.util.Map)"/>
@@ -1253,7 +1253,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.List"/></returns>
             public static Java.Util.List<Java.Util.Locale.LanguageRange> Parse(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> arg1)
             {
-                return SExecute<Java.Util.List<Java.Util.Locale.LanguageRange>>(LocalBridgeClazz, "parse", arg0, arg1);
+                return SExecuteWithSignature<Java.Util.List<Java.Util.Locale.LanguageRange>>(LocalBridgeClazz, "parse", "(Ljava/lang/String;Ljava/util/Map;)Ljava/util/List;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#parse(java.lang.String)"/>
@@ -1264,9 +1264,9 @@ namespace Java.Util
             {
                 return SExecuteWithSignature<Java.Util.List<Java.Util.Locale.LanguageRange>>(LocalBridgeClazz, "parse", "(Ljava/lang/String;)Ljava/util/List;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#getWeight()"/>
@@ -1284,20 +1284,20 @@ namespace Java.Util
             {
                 return IExecuteWithSignature<Java.Lang.String>("getRange", "()Ljava/lang/String;");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

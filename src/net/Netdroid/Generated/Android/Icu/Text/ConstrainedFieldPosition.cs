@@ -40,10 +40,10 @@ namespace Android.Icu.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ConstrainedFieldPosition(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.Icu.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,21 +74,21 @@ namespace Android.Icu.Text
     public partial class ConstrainedFieldPosition
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#matchesField(java.text.Format.Field,java.lang.Object)"/>
@@ -98,7 +98,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="bool"/></returns>
         public bool MatchesField(Java.Text.Format.Field arg0, object arg1)
         {
-            return IExecute<bool>("matchesField", arg0, arg1);
+            return IExecuteWithSignature<bool>("matchesField", "(Ljava/text/Format$Field;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/ConstrainedFieldPosition.html#getLimit()"/>
@@ -180,15 +180,15 @@ namespace Android.Icu.Text
         /// <param name="arg3"><see cref="int"/></param>
         public void SetState(Java.Text.Format.Field arg0, object arg1, int arg2, int arg3)
         {
-            IExecute("setState", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setState", "(Ljava/text/Format$Field;Ljava/lang/Object;II)V", arg0, arg1, arg2, arg3);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

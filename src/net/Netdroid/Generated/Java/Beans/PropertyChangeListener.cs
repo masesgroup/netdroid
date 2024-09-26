@@ -35,7 +35,7 @@ namespace Java.Beans
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public PropertyChangeListener() { InitializeHandlers(); }
-    
+
         const string _bridgeClassName = "org.mases.netdroid.generated.java.beans.PropertyChangeListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -44,13 +44,13 @@ namespace Java.Beans
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
-    
+
     
         // TODO: complete the class
-    
+
     }
     #endregion
-    
+
     #region PropertyChangeListenerDirect declaration
     /// <summary>
     /// Direct override of <see cref="PropertyChangeListener"/> or its generic type if there is one
@@ -61,14 +61,14 @@ namespace Java.Beans
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
-    
+
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
-    
+
         const string _bridgeClassName = "java.beans.PropertyChangeListener";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -99,13 +99,13 @@ namespace Java.Beans
     public partial interface IPropertyChangeListener
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -114,21 +114,21 @@ namespace Java.Beans
     public partial class PropertyChangeListener : Java.Beans.IPropertyChangeListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// Handlers initializer for <see cref="PropertyChangeListener"/>
@@ -138,13 +138,13 @@ namespace Java.Beans
             AddEventHandler("propertyChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(PropertyChangeEventHandler));
 
         }
-        
+
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnPropertyChange"/> has a value it takes precedence over corresponding class method</remarks>
         public global::System.Action<Java.Beans.PropertyChangeEvent> OnPropertyChange { get; set; } = null;
-        
+
         bool hasOverridePropertyChange = true;
         void PropertyChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
         {
@@ -153,7 +153,7 @@ namespace Java.Beans
             methodToExecute.Invoke(data.EventData.GetAt<Java.Beans.PropertyChangeEvent>(0));
             data.EventData.TypedEventData.HasOverride = hasOverridePropertyChange;
         }
-        
+
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
@@ -162,13 +162,13 @@ namespace Java.Beans
         {
             hasOverridePropertyChange = false;
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -177,21 +177,21 @@ namespace Java.Beans
     public partial class PropertyChangeListenerDirect : Java.Beans.IPropertyChangeListener
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
@@ -201,13 +201,13 @@ namespace Java.Beans
         {
             IExecuteWithSignature("propertyChange", "(Ljava/beans/PropertyChangeEvent;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

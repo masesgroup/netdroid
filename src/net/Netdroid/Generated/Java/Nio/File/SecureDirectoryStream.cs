@@ -42,10 +42,10 @@ namespace Java.Nio.File
         /// </summary>
         [global::System.Obsolete("SecureDirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SecureDirectoryStream(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Nio.File
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -90,10 +90,10 @@ namespace Java.Nio.File
         /// </summary>
         [global::System.Obsolete("SecureDirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SecureDirectoryStream(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -114,7 +114,7 @@ namespace Java.Nio.File
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -124,21 +124,21 @@ namespace Java.Nio.File
     public partial class SecureDirectoryStream
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Class)"/>
@@ -158,7 +158,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Attribute.FileAttributeView"/></returns>
         public Java.Nio.File.Attribute.FileAttributeView GetFileAttributeView(object arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", arg0, arg1); else return IExecute<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", "(Ljava/lang/Object;Ljava/lang/Class;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/FileAttributeView;", arg0, arg1); else return IExecuteWithSignature<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", "(Ljava/lang/Object;Ljava/lang/Class;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/FileAttributeView;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#newByteChannel(java.lang.Object,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
@@ -170,7 +170,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SeekableByteChannel NewByteChannel(object arg0, Java.Util.Set arg1, params Java.Nio.File.Attribute.FileAttribute[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1); else return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", "(Ljava/lang/Object;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/SeekableByteChannel;", arg0, arg1); else return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", "(Ljava/lang/Object;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/SeekableByteChannel;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#newDirectoryStream(java.lang.Object,java.nio.file.LinkOption[])"/>
@@ -181,7 +181,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.SecureDirectoryStream NewDirectoryStream(object arg0, params Java.Nio.File.LinkOption[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Nio.File.SecureDirectoryStream>("newDirectoryStream", arg0); else return IExecute<Java.Nio.File.SecureDirectoryStream>("newDirectoryStream", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Nio.File.SecureDirectoryStream>("newDirectoryStream", "(Ljava/lang/Object;[Ljava/nio/file/LinkOption;)Ljava/nio/file/SecureDirectoryStream;", arg0); else return IExecuteWithSignature<Java.Nio.File.SecureDirectoryStream>("newDirectoryStream", "(Ljava/lang/Object;[Ljava/nio/file/LinkOption;)Ljava/nio/file/SecureDirectoryStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#deleteDirectory(java.lang.Object)"/>
@@ -210,15 +210,15 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public void Move(object arg0, Java.Nio.File.SecureDirectoryStream arg1, object arg2)
         {
-            IExecute("move", arg0, arg1, arg2);
+            IExecuteWithSignature("move", "(Ljava/lang/Object;Ljava/nio/file/SecureDirectoryStream;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -230,13 +230,13 @@ namespace Java.Nio.File
     public partial interface ISecureDirectoryStream<T> : Java.Nio.File.IDirectoryStream<T>
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -245,25 +245,25 @@ namespace Java.Nio.File
     public partial class SecureDirectoryStream<T> : Java.Nio.File.ISecureDirectoryStream<T>
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Nio.File.SecureDirectoryStream{T}"/> to <see cref="Java.Nio.File.SecureDirectoryStream"/>
         /// </summary>
         public static implicit operator Java.Nio.File.SecureDirectoryStream(Java.Nio.File.SecureDirectoryStream<T> t) => t.Cast<Java.Nio.File.SecureDirectoryStream>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Class)"/>
@@ -285,7 +285,7 @@ namespace Java.Nio.File
         /// <returns><typeparamref name="V"/></returns>
         public V GetFileAttributeView<V>(T arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V : Java.Nio.File.Attribute.IFileAttributeView, new()
         {
-            if (arg2.Length == 0) return IExecute<V>("getFileAttributeView", arg0, arg1); else return IExecute<V>("getFileAttributeView", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<V>("getFileAttributeView", "(Ljava/lang/Object;Ljava/lang/Class;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/FileAttributeView;", arg0, arg1); else return IExecuteWithSignature<V>("getFileAttributeView", "(Ljava/lang/Object;Ljava/lang/Class;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/FileAttributeView;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#newByteChannel(java.lang.Object,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
@@ -298,7 +298,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SeekableByteChannel NewByteChannel<Arg1ExtendsJava_Nio_File_OpenOption>(T arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
-            if (arg2.Length == 0) return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1); else return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", "(Ljava/lang/Object;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/SeekableByteChannel;", arg0, arg1); else return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", "(Ljava/lang/Object;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/SeekableByteChannel;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#newDirectoryStream(java.lang.Object,java.nio.file.LinkOption[])"/>
@@ -309,7 +309,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.SecureDirectoryStream<T> NewDirectoryStream(T arg0, params Java.Nio.File.LinkOption[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Nio.File.SecureDirectoryStream<T>>("newDirectoryStream", arg0); else return IExecute<Java.Nio.File.SecureDirectoryStream<T>>("newDirectoryStream", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Nio.File.SecureDirectoryStream<T>>("newDirectoryStream", "(Ljava/lang/Object;[Ljava/nio/file/LinkOption;)Ljava/nio/file/SecureDirectoryStream;", arg0); else return IExecuteWithSignature<Java.Nio.File.SecureDirectoryStream<T>>("newDirectoryStream", "(Ljava/lang/Object;[Ljava/nio/file/LinkOption;)Ljava/nio/file/SecureDirectoryStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#deleteDirectory(java.lang.Object)"/>
@@ -338,15 +338,15 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public void Move(T arg0, Java.Nio.File.SecureDirectoryStream<T> arg1, T arg2)
         {
-            IExecute("move", arg0, arg1, arg2);
+            IExecuteWithSignature("move", "(Ljava/lang/Object;Ljava/nio/file/SecureDirectoryStream;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.View.Contentcapture
         /// </summary>
         [global::System.Obsolete("ContentCaptureSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ContentCaptureSession(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.View.Contentcapture
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Android.View.Contentcapture
     public partial class ContentCaptureSession
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#newAutofillId(android.view.autofill.AutofillId,long)"/>
@@ -100,7 +100,7 @@ namespace Android.View.Contentcapture
         /// <returns><see cref="Android.View.Autofill.AutofillId"/></returns>
         public Android.View.Autofill.AutofillId NewAutofillId(Android.View.Autofill.AutofillId arg0, long arg1)
         {
-            return IExecute<Android.View.Autofill.AutofillId>("newAutofillId", arg0, arg1);
+            return IExecuteWithSignature<Android.View.Autofill.AutofillId>("newAutofillId", "(Landroid/view/autofill/AutofillId;J)Landroid/view/autofill/AutofillId;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#getContentCaptureContext()"/>
@@ -144,7 +144,7 @@ namespace Android.View.Contentcapture
         /// <returns><see cref="Android.View.ViewStructure"/></returns>
         public Android.View.ViewStructure NewVirtualViewStructure(Android.View.Autofill.AutofillId arg0, long arg1)
         {
-            return IExecute<Android.View.ViewStructure>("newVirtualViewStructure", arg0, arg1);
+            return IExecuteWithSignature<Android.View.ViewStructure>("newVirtualViewStructure", "(Landroid/view/autofill/AutofillId;J)Landroid/view/ViewStructure;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#destroy()"/>
@@ -206,7 +206,7 @@ namespace Android.View.Contentcapture
         /// <param name="arg1"><see cref="long"/></param>
         public void NotifyViewsDisappeared(Android.View.Autofill.AutofillId arg0, long[] arg1)
         {
-            IExecute("notifyViewsDisappeared", arg0, arg1);
+            IExecuteWithSignature("notifyViewsDisappeared", "(Landroid/view/autofill/AutofillId;[J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#notifyViewTextChanged(android.view.autofill.AutofillId,java.lang.CharSequence)"/>
@@ -215,7 +215,7 @@ namespace Android.View.Contentcapture
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void NotifyViewTextChanged(Android.View.Autofill.AutofillId arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("notifyViewTextChanged", arg0, arg1);
+            IExecuteWithSignature("notifyViewTextChanged", "(Landroid/view/autofill/AutofillId;Ljava/lang/CharSequence;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#setContentCaptureContext(android.view.contentcapture.ContentCaptureContext)"/>
@@ -232,13 +232,13 @@ namespace Android.View.Contentcapture
         {
             IExecuteWithSignature("close", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

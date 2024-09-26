@@ -40,10 +40,10 @@ namespace Android.Media.Audiofx
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AudioEffect(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Audiofx
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Descriptor declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Media.Audiofx
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Descriptor(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,7 +121,7 @@ namespace Android.Media.Audiofx
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnControlStatusChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.audiofx.AudioEffect_OnControlStatusChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -130,13 +130,13 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnControlStatusChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnControlStatusChangeListener"/> or its generic type if there is one
@@ -147,14 +147,14 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.audiofx.AudioEffect$OnControlStatusChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -188,7 +188,7 @@ namespace Android.Media.Audiofx
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public OnEnableStatusChangeListener() { InitializeHandlers(); }
-        
+
             const string _bridgeClassName = "org.mases.netdroid.generated.android.media.audiofx.AudioEffect_OnEnableStatusChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
@@ -197,13 +197,13 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
             public override string BridgeClassName => _bridgeClassName;
-        
+
         
             // TODO: complete the class
-        
+
         }
         #endregion
-        
+
         #region OnEnableStatusChangeListenerDirect declaration
         /// <summary>
         /// Direct override of <see cref="OnEnableStatusChangeListener"/> or its generic type if there is one
@@ -214,14 +214,14 @@ namespace Android.Media.Audiofx
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
             /// </summary>
             public override bool AutoInit => false;
-        
+
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
-        
+
             const string _bridgeClassName = "android.media.audiofx.AudioEffect$OnEnableStatusChangeListener";
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
@@ -253,13 +253,13 @@ namespace Android.Media.Audiofx
     public partial class AudioEffect
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.html#ALREADY_EXISTS"/>
@@ -459,9 +459,9 @@ namespace Android.Media.Audiofx
         public static Java.Util.UUID EFFECT_TYPE_VIRTUALIZER { get { if (!_EFFECT_TYPE_VIRTUALIZERReady) { _EFFECT_TYPE_VIRTUALIZERContent = SGetField<Java.Util.UUID>(LocalBridgeClazz, "EFFECT_TYPE_VIRTUALIZER"); _EFFECT_TYPE_VIRTUALIZERReady = true; } return _EFFECT_TYPE_VIRTUALIZERContent; } }
         private static Java.Util.UUID _EFFECT_TYPE_VIRTUALIZERContent = default;
         private static bool _EFFECT_TYPE_VIRTUALIZERReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.html#queryEffects()"/>
@@ -471,9 +471,9 @@ namespace Android.Media.Audiofx
         {
             return SExecuteWithSignatureArray<Android.Media.Audiofx.AudioEffect.Descriptor>(LocalBridgeClazz, "queryEffects", "()[Landroid/media/audiofx/AudioEffect$Descriptor;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.html#getDescriptor()"/>
@@ -544,9 +544,9 @@ namespace Android.Media.Audiofx
         {
             IExecuteWithSignature("setEnableStatusListener", "(Landroid/media/audiofx/AudioEffect$OnEnableStatusChangeListener;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Descriptor implementation
         public partial class Descriptor
@@ -564,13 +564,13 @@ namespace Android.Media.Audiofx
                 : base(arg0, arg1, arg2, arg3, arg4)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.Descriptor.html#connectMode"/>
@@ -592,21 +592,21 @@ namespace Android.Media.Audiofx
             /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.Descriptor.html#uuid"/>
             /// </summary>
             public Java.Util.UUID uuid { get { return IGetField<Java.Util.UUID>("uuid"); } set { ISetField("uuid", value); } }
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -615,21 +615,21 @@ namespace Android.Media.Audiofx
         public partial class OnControlStatusChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnControlStatusChangeListener"/>
@@ -639,13 +639,13 @@ namespace Android.Media.Audiofx
                 AddEventHandler("onControlStatusChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnControlStatusChangeEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.OnControlStatusChangeListener.html#onControlStatusChange(android.media.audiofx.AudioEffect,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnControlStatusChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.Audiofx.AudioEffect, bool> OnOnControlStatusChange { get; set; } = null;
-            
+
             bool hasOverrideOnControlStatusChange = true;
             void OnControlStatusChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -654,7 +654,7 @@ namespace Android.Media.Audiofx
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.Audiofx.AudioEffect>(0), data.EventData.GetAt<bool>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnControlStatusChange;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.OnControlStatusChangeListener.html#onControlStatusChange(android.media.audiofx.AudioEffect,boolean)"/>
             /// </summary>
@@ -664,13 +664,13 @@ namespace Android.Media.Audiofx
             {
                 hasOverrideOnControlStatusChange = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -679,21 +679,21 @@ namespace Android.Media.Audiofx
         public partial class OnControlStatusChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.OnControlStatusChangeListener.html#onControlStatusChange(android.media.audiofx.AudioEffect,boolean)"/>
@@ -702,15 +702,15 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="bool"/></param>
             public override void OnControlStatusChange(Android.Media.Audiofx.AudioEffect arg0, bool arg1)
             {
-                IExecute("onControlStatusChange", arg0, arg1);
+                IExecuteWithSignature("onControlStatusChange", "(Landroid/media/audiofx/AudioEffect;Z)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -719,21 +719,21 @@ namespace Android.Media.Audiofx
         public partial class OnEnableStatusChangeListener
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// Handlers initializer for <see cref="OnEnableStatusChangeListener"/>
@@ -743,13 +743,13 @@ namespace Android.Media.Audiofx
                 AddEventHandler("onEnableStatusChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(OnEnableStatusChangeEventHandler));
 
             }
-            
+
             /// <summary>
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.OnEnableStatusChangeListener.html#onEnableStatusChange(android.media.audiofx.AudioEffect,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnEnableStatusChange"/> has a value it takes precedence over corresponding class method</remarks>
             public global::System.Action<Android.Media.Audiofx.AudioEffect, bool> OnOnEnableStatusChange { get; set; } = null;
-            
+
             bool hasOverrideOnEnableStatusChange = true;
             void OnEnableStatusChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
             {
@@ -758,7 +758,7 @@ namespace Android.Media.Audiofx
                 methodToExecute.Invoke(data.EventData.GetAt<Android.Media.Audiofx.AudioEffect>(0), data.EventData.GetAt<bool>(1));
                 data.EventData.TypedEventData.HasOverride = hasOverrideOnEnableStatusChange;
             }
-            
+
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.OnEnableStatusChangeListener.html#onEnableStatusChange(android.media.audiofx.AudioEffect,boolean)"/>
             /// </summary>
@@ -768,13 +768,13 @@ namespace Android.Media.Audiofx
             {
                 hasOverrideOnEnableStatusChange = false;
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -783,21 +783,21 @@ namespace Android.Media.Audiofx
         public partial class OnEnableStatusChangeListenerDirect
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/audiofx/AudioEffect.OnEnableStatusChangeListener.html#onEnableStatusChange(android.media.audiofx.AudioEffect,boolean)"/>
@@ -806,22 +806,22 @@ namespace Android.Media.Audiofx
             /// <param name="arg1"><see cref="bool"/></param>
             public override void OnEnableStatusChange(Android.Media.Audiofx.AudioEffect arg0, bool arg1)
             {
-                IExecute("onEnableStatusChange", arg0, arg1);
+                IExecuteWithSignature("onEnableStatusChange", "(Landroid/media/audiofx/AudioEffect;Z)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

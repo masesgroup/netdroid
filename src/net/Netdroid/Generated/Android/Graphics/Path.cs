@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Path(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Direction declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Direction(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public FillType(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -171,10 +171,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Op(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -195,9 +195,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -217,21 +217,21 @@ namespace Android.Graphics
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#getFillType()"/>
@@ -258,7 +258,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool Interpolate(Android.Graphics.Path arg0, float arg1, Android.Graphics.Path arg2)
         {
-            return IExecute<bool>("interpolate", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("interpolate", "(Landroid/graphics/Path;FLandroid/graphics/Path;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#isConvex()"/>
@@ -312,7 +312,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool OpMethod(Android.Graphics.Path arg0, Android.Graphics.Path arg1, Android.Graphics.Path.Op arg2)
         {
-            return IExecute<bool>("op", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("op", "(Landroid/graphics/Path;Landroid/graphics/Path;Landroid/graphics/Path$Op;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#op(android.graphics.Path,android.graphics.Path.Op)"/>
@@ -322,7 +322,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool OpMethod(Android.Graphics.Path arg0, Android.Graphics.Path.Op arg1)
         {
-            return IExecute<bool>("op", arg0, arg1);
+            return IExecuteWithSignature<bool>("op", "(Landroid/graphics/Path;Landroid/graphics/Path$Op;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#approximate(float)"/>
@@ -349,7 +349,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void AddArc(Android.Graphics.RectF arg0, float arg1, float arg2)
         {
-            IExecute("addArc", arg0, arg1, arg2);
+            IExecuteWithSignature("addArc", "(Landroid/graphics/RectF;FF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#addArc(float,float,float,float,float,float)"/>
@@ -362,7 +362,7 @@ namespace Android.Graphics
         /// <param name="arg5"><see cref="float"/></param>
         public void AddArc(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
         {
-            IExecute("addArc", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("addArc", "(FFFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#addCircle(float,float,float,android.graphics.Path.Direction)"/>
@@ -373,7 +373,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="Android.Graphics.Path.Direction"/></param>
         public void AddCircle(float arg0, float arg1, float arg2, Android.Graphics.Path.Direction arg3)
         {
-            IExecute("addCircle", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("addCircle", "(FFFLandroid/graphics/Path$Direction;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#addOval(android.graphics.RectF,android.graphics.Path.Direction)"/>
@@ -382,7 +382,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.Path.Direction"/></param>
         public void AddOval(Android.Graphics.RectF arg0, Android.Graphics.Path.Direction arg1)
         {
-            IExecute("addOval", arg0, arg1);
+            IExecuteWithSignature("addOval", "(Landroid/graphics/RectF;Landroid/graphics/Path$Direction;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#addOval(float,float,float,float,android.graphics.Path.Direction)"/>
@@ -394,7 +394,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="Android.Graphics.Path.Direction"/></param>
         public void AddOval(float arg0, float arg1, float arg2, float arg3, Android.Graphics.Path.Direction arg4)
         {
-            IExecute("addOval", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("addOval", "(FFFFLandroid/graphics/Path$Direction;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#addPath(android.graphics.Path,android.graphics.Matrix)"/>
@@ -403,7 +403,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.Matrix"/></param>
         public void AddPath(Android.Graphics.Path arg0, Android.Graphics.Matrix arg1)
         {
-            IExecute("addPath", arg0, arg1);
+            IExecuteWithSignature("addPath", "(Landroid/graphics/Path;Landroid/graphics/Matrix;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#addPath(android.graphics.Path,float,float)"/>
@@ -413,7 +413,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void AddPath(Android.Graphics.Path arg0, float arg1, float arg2)
         {
-            IExecute("addPath", arg0, arg1, arg2);
+            IExecuteWithSignature("addPath", "(Landroid/graphics/Path;FF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#addPath(android.graphics.Path)"/>
@@ -430,7 +430,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.Path.Direction"/></param>
         public void AddRect(Android.Graphics.RectF arg0, Android.Graphics.Path.Direction arg1)
         {
-            IExecute("addRect", arg0, arg1);
+            IExecuteWithSignature("addRect", "(Landroid/graphics/RectF;Landroid/graphics/Path$Direction;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#addRect(float,float,float,float,android.graphics.Path.Direction)"/>
@@ -442,7 +442,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="Android.Graphics.Path.Direction"/></param>
         public void AddRect(float arg0, float arg1, float arg2, float arg3, Android.Graphics.Path.Direction arg4)
         {
-            IExecute("addRect", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("addRect", "(FFFFLandroid/graphics/Path$Direction;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#addRoundRect(android.graphics.RectF,float,float,android.graphics.Path.Direction)"/>
@@ -453,7 +453,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="Android.Graphics.Path.Direction"/></param>
         public void AddRoundRect(Android.Graphics.RectF arg0, float arg1, float arg2, Android.Graphics.Path.Direction arg3)
         {
-            IExecute("addRoundRect", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("addRoundRect", "(Landroid/graphics/RectF;FFLandroid/graphics/Path$Direction;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#addRoundRect(android.graphics.RectF,float[],android.graphics.Path.Direction)"/>
@@ -463,7 +463,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="Android.Graphics.Path.Direction"/></param>
         public void AddRoundRect(Android.Graphics.RectF arg0, float[] arg1, Android.Graphics.Path.Direction arg2)
         {
-            IExecute("addRoundRect", arg0, arg1, arg2);
+            IExecuteWithSignature("addRoundRect", "(Landroid/graphics/RectF;[FLandroid/graphics/Path$Direction;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#addRoundRect(float,float,float,float,float,float,android.graphics.Path.Direction)"/>
@@ -477,7 +477,7 @@ namespace Android.Graphics
         /// <param name="arg6"><see cref="Android.Graphics.Path.Direction"/></param>
         public void AddRoundRect(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, Android.Graphics.Path.Direction arg6)
         {
-            IExecute("addRoundRect", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("addRoundRect", "(FFFFFFLandroid/graphics/Path$Direction;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#addRoundRect(float,float,float,float,float[],android.graphics.Path.Direction)"/>
@@ -490,7 +490,7 @@ namespace Android.Graphics
         /// <param name="arg5"><see cref="Android.Graphics.Path.Direction"/></param>
         public void AddRoundRect(float arg0, float arg1, float arg2, float arg3, float[] arg4, Android.Graphics.Path.Direction arg5)
         {
-            IExecute("addRoundRect", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("addRoundRect", "(FFFF[FLandroid/graphics/Path$Direction;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#arcTo(android.graphics.RectF,float,float,boolean)"/>
@@ -501,7 +501,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="bool"/></param>
         public void ArcTo(Android.Graphics.RectF arg0, float arg1, float arg2, bool arg3)
         {
-            IExecute("arcTo", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("arcTo", "(Landroid/graphics/RectF;FFZ)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#arcTo(android.graphics.RectF,float,float)"/>
@@ -511,7 +511,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void ArcTo(Android.Graphics.RectF arg0, float arg1, float arg2)
         {
-            IExecute("arcTo", arg0, arg1, arg2);
+            IExecuteWithSignature("arcTo", "(Landroid/graphics/RectF;FF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#arcTo(float,float,float,float,float,float,boolean)"/>
@@ -525,7 +525,7 @@ namespace Android.Graphics
         /// <param name="arg6"><see cref="bool"/></param>
         public void ArcTo(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, bool arg6)
         {
-            IExecute("arcTo", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("arcTo", "(FFFFFFZ)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#close()"/>
@@ -542,7 +542,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public void ComputeBounds(Android.Graphics.RectF arg0, bool arg1)
         {
-            IExecute("computeBounds", arg0, arg1);
+            IExecuteWithSignature("computeBounds", "(Landroid/graphics/RectF;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#conicTo(float,float,float,float,float)"/>
@@ -554,7 +554,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="float"/></param>
         public void ConicTo(float arg0, float arg1, float arg2, float arg3, float arg4)
         {
-            IExecute("conicTo", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("conicTo", "(FFFFF)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#cubicTo(float,float,float,float,float,float)"/>
@@ -567,7 +567,7 @@ namespace Android.Graphics
         /// <param name="arg5"><see cref="float"/></param>
         public void CubicTo(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
         {
-            IExecute("cubicTo", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("cubicTo", "(FFFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#incReserve(int)"/>
@@ -584,7 +584,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void LineTo(float arg0, float arg1)
         {
-            IExecute("lineTo", arg0, arg1);
+            IExecuteWithSignature("lineTo", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#moveTo(float,float)"/>
@@ -593,7 +593,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void MoveTo(float arg0, float arg1)
         {
-            IExecute("moveTo", arg0, arg1);
+            IExecuteWithSignature("moveTo", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#offset(float,float,android.graphics.Path)"/>
@@ -603,7 +603,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="Android.Graphics.Path"/></param>
         public void Offset(float arg0, float arg1, Android.Graphics.Path arg2)
         {
-            IExecute("offset", arg0, arg1, arg2);
+            IExecuteWithSignature("offset", "(FFLandroid/graphics/Path;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#offset(float,float)"/>
@@ -612,7 +612,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void Offset(float arg0, float arg1)
         {
-            IExecute("offset", arg0, arg1);
+            IExecuteWithSignature("offset", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#quadTo(float,float,float,float)"/>
@@ -623,7 +623,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="float"/></param>
         public void QuadTo(float arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("quadTo", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("quadTo", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#rConicTo(float,float,float,float,float)"/>
@@ -635,7 +635,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="float"/></param>
         public void RConicTo(float arg0, float arg1, float arg2, float arg3, float arg4)
         {
-            IExecute("rConicTo", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("rConicTo", "(FFFFF)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#rCubicTo(float,float,float,float,float,float)"/>
@@ -648,7 +648,7 @@ namespace Android.Graphics
         /// <param name="arg5"><see cref="float"/></param>
         public void RCubicTo(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
         {
-            IExecute("rCubicTo", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("rCubicTo", "(FFFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#reset()"/>
@@ -671,7 +671,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void RLineTo(float arg0, float arg1)
         {
-            IExecute("rLineTo", arg0, arg1);
+            IExecuteWithSignature("rLineTo", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#rMoveTo(float,float)"/>
@@ -680,7 +680,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void RMoveTo(float arg0, float arg1)
         {
-            IExecute("rMoveTo", arg0, arg1);
+            IExecuteWithSignature("rMoveTo", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#rQuadTo(float,float,float,float)"/>
@@ -691,7 +691,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="float"/></param>
         public void RQuadTo(float arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("rQuadTo", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("rQuadTo", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#set(android.graphics.Path)"/>
@@ -716,7 +716,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void SetLastPoint(float arg0, float arg1)
         {
-            IExecute("setLastPoint", arg0, arg1);
+            IExecuteWithSignature("setLastPoint", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#toggleInverseFillType()"/>
@@ -732,7 +732,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.Path"/></param>
         public void Transform(Android.Graphics.Matrix arg0, Android.Graphics.Path arg1)
         {
-            IExecute("transform", arg0, arg1);
+            IExecuteWithSignature("transform", "(Landroid/graphics/Matrix;Landroid/graphics/Path;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#transform(android.graphics.Matrix)"/>
@@ -742,21 +742,21 @@ namespace Android.Graphics
         {
             IExecuteWithSignature("transform", "(Landroid/graphics/Matrix;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Direction implementation
         public partial class Direction
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Path.Direction.html#CCW"/>
@@ -770,9 +770,9 @@ namespace Android.Graphics
             public static Android.Graphics.Path.Direction CW { get { if (!_CWReady) { _CWContent = SGetField<Android.Graphics.Path.Direction>(LocalBridgeClazz, "CW"); _CWReady = true; } return _CWContent; } }
             private static Android.Graphics.Path.Direction _CWContent = default;
             private static bool _CWReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Path.Direction.html#valueOf(java.lang.String)"/>
@@ -791,17 +791,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Path.Direction>(LocalBridgeClazz, "values", "()[Landroid/graphics/Path$Direction;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -810,13 +810,13 @@ namespace Android.Graphics
         public partial class FillType
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Path.FillType.html#EVEN_ODD"/>
@@ -842,9 +842,9 @@ namespace Android.Graphics
             public static Android.Graphics.Path.FillType WINDING { get { if (!_WINDINGReady) { _WINDINGContent = SGetField<Android.Graphics.Path.FillType>(LocalBridgeClazz, "WINDING"); _WINDINGReady = true; } return _WINDINGContent; } }
             private static Android.Graphics.Path.FillType _WINDINGContent = default;
             private static bool _WINDINGReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Path.FillType.html#valueOf(java.lang.String)"/>
@@ -863,17 +863,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Path.FillType>(LocalBridgeClazz, "values", "()[Landroid/graphics/Path$FillType;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -882,13 +882,13 @@ namespace Android.Graphics
         public partial class Op
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Path.Op.html#DIFFERENCE"/>
@@ -920,9 +920,9 @@ namespace Android.Graphics
             public static Android.Graphics.Path.Op XOR { get { if (!_XORReady) { _XORContent = SGetField<Android.Graphics.Path.Op>(LocalBridgeClazz, "XOR"); _XORReady = true; } return _XORContent; } }
             private static Android.Graphics.Path.Op _XORContent = default;
             private static bool _XORReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Path.Op.html#valueOf(java.lang.String)"/>
@@ -941,24 +941,24 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Path.Op>(LocalBridgeClazz, "values", "()[Landroid/graphics/Path$Op;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

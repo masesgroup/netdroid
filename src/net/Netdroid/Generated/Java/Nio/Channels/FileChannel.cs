@@ -42,10 +42,10 @@ namespace Java.Nio.Channels
         /// </summary>
         [global::System.Obsolete("FileChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileChannel(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Nio.Channels
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region MapMode declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Java.Nio.Channels
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public MapMode(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Java.Nio.Channels
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,9 +121,9 @@ namespace Java.Nio.Channels
     public partial class FileChannel : Java.Nio.Channels.ISeekableByteChannel, Java.Nio.Channels.IGatheringByteChannel, Java.Nio.Channels.IScatteringByteChannel
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Nio.Channels.FileChannel"/> to <see cref="Java.Nio.Channels.SeekableByteChannel"/>
@@ -137,13 +137,13 @@ namespace Java.Nio.Channels
         /// Converter from <see cref="Java.Nio.Channels.FileChannel"/> to <see cref="Java.Nio.Channels.ScatteringByteChannel"/>
         /// </summary>
         public static implicit operator Java.Nio.Channels.ScatteringByteChannel(Java.Nio.Channels.FileChannel t) => t.Cast<Java.Nio.Channels.ScatteringByteChannel>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#open(java.nio.file.Path,java.nio.file.OpenOption[])"/>
@@ -154,7 +154,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.FileChannel Open(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", arg0); else return SExecute<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/nio/channels/FileChannel;", arg0); else return SExecuteWithSignature<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/nio/channels/FileChannel;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#open(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
@@ -167,11 +167,11 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.FileChannel Open<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
-            if (arg2.Length == 0) return SExecute<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", arg0, arg1); else return SExecute<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecuteWithSignature<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", "(Ljava/nio/file/Path;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/FileChannel;", arg0, arg1); else return SExecuteWithSignature<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", "(Ljava/nio/file/Path;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/FileChannel;", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer,long)"/>
@@ -182,7 +182,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Read(Java.Nio.ByteBuffer arg0, long arg1)
         {
-            return IExecute<int>("read", arg0, arg1);
+            return IExecuteWithSignature<int>("read", "(Ljava/nio/ByteBuffer;J)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer)"/>
@@ -203,7 +203,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Write(Java.Nio.ByteBuffer arg0, long arg1)
         {
-            return IExecute<int>("write", arg0, arg1);
+            return IExecuteWithSignature<int>("write", "(Ljava/nio/ByteBuffer;J)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer)"/>
@@ -225,7 +225,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.FileLock Lock(long arg0, long arg1, bool arg2)
         {
-            return IExecute<Java.Nio.Channels.FileLock>("lock", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.Channels.FileLock>("lock", "(JJZ)Ljava/nio/channels/FileLock;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#tryLock(long,long,boolean)"/>
@@ -237,7 +237,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.FileLock TryLock(long arg0, long arg1, bool arg2)
         {
-            return IExecute<Java.Nio.Channels.FileLock>("tryLock", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.Channels.FileLock>("tryLock", "(JJZ)Ljava/nio/channels/FileLock;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long)"/>
@@ -249,7 +249,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.MappedByteBuffer Map(Java.Nio.Channels.FileChannel.MapMode arg0, long arg1, long arg2)
         {
-            return IExecute<Java.Nio.MappedByteBuffer>("map", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.MappedByteBuffer>("map", "(Ljava/nio/channels/FileChannel$MapMode;JJ)Ljava/nio/MappedByteBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#position()"/>
@@ -270,7 +270,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Read(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2)
         {
-            return IExecute<long>("read", arg0, arg1, arg2);
+            return IExecuteWithSignature<long>("read", "([Ljava/nio/ByteBuffer;II)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#size()"/>
@@ -291,7 +291,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long TransferFrom(Java.Nio.Channels.ReadableByteChannel arg0, long arg1, long arg2)
         {
-            return IExecute<long>("transferFrom", arg0, arg1, arg2);
+            return IExecuteWithSignature<long>("transferFrom", "(Ljava/nio/channels/ReadableByteChannel;JJ)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#transferTo(long,long,java.nio.channels.WritableByteChannel)"/>
@@ -303,7 +303,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long TransferTo(long arg0, long arg1, Java.Nio.Channels.WritableByteChannel arg2)
         {
-            return IExecute<long>("transferTo", arg0, arg1, arg2);
+            return IExecuteWithSignature<long>("transferTo", "(JJLjava/nio/channels/WritableByteChannel;)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer[],int,int)"/>
@@ -315,7 +315,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public long Write(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2)
         {
-            return IExecute<long>("write", arg0, arg1, arg2);
+            return IExecuteWithSignature<long>("write", "([Ljava/nio/ByteBuffer;II)J", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#force(boolean)"/>
@@ -384,21 +384,21 @@ namespace Java.Nio.Channels
         {
             return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("truncate", "(J)Ljava/nio/channels/SeekableByteChannel;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region MapMode implementation
         public partial class MapMode
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.MapMode.html#PRIVATE"/>
@@ -418,28 +418,28 @@ namespace Java.Nio.Channels
             public static Java.Nio.Channels.FileChannel.MapMode READ_WRITE { get { if (!_READ_WRITEReady) { _READ_WRITEContent = SGetField<Java.Nio.Channels.FileChannel.MapMode>(LocalBridgeClazz, "READ_WRITE"); _READ_WRITEReady = true; } return _READ_WRITEContent; } }
             private static Java.Nio.Channels.FileChannel.MapMode _READ_WRITEContent = default;
             private static bool _READ_WRITEReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

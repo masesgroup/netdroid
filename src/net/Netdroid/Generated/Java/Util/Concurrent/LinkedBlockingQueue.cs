@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LinkedBlockingQueue(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -86,10 +86,10 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public LinkedBlockingQueue(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
     
     }
@@ -136,9 +136,9 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.LinkedBlockingQueue"/> to <see cref="Java.Util.Concurrent.BlockingQueue"/>
@@ -148,17 +148,17 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.LinkedBlockingQueue"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
         public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.LinkedBlockingQueue t) => t.Cast<Java.Io.Serializable>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -170,7 +170,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool Offer(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("offer", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
@@ -181,7 +181,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute("poll", arg0, arg1);
+            return IExecuteWithSignature("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingQueue.html#take()"/>
@@ -200,7 +200,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DrainTo(Java.Util.Collection arg0, int arg1)
         {
-            return IExecute<int>("drainTo", arg0, arg1);
+            return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingQueue.html#drainTo(java.util.Collection)"/>
@@ -228,13 +228,13 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -259,9 +259,9 @@ namespace Java.Util.Concurrent
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.LinkedBlockingQueue{E}"/> to <see cref="Java.Util.Concurrent.BlockingQueue{E}"/>
@@ -275,17 +275,17 @@ namespace Java.Util.Concurrent
         /// Converter from <see cref="Java.Util.Concurrent.LinkedBlockingQueue{E}"/> to <see cref="Java.Util.Concurrent.LinkedBlockingQueue"/>
         /// </summary>
         public static implicit operator Java.Util.Concurrent.LinkedBlockingQueue(Java.Util.Concurrent.LinkedBlockingQueue<E> t) => t.Cast<Java.Util.Concurrent.LinkedBlockingQueue>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
@@ -297,7 +297,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool Offer(E arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("offer", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
@@ -308,7 +308,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public E Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<E>("poll", arg0, arg1);
+            return IExecuteWithSignature<E>("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingQueue.html#take()"/>
@@ -328,7 +328,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0, int arg1) where Arg0objectSuperE : E
         {
-            return IExecute<int>("drainTo", arg0, arg1);
+            return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingQueue.html#drainTo(java.util.Collection)"/>
@@ -357,13 +357,13 @@ namespace Java.Util.Concurrent
         {
             IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

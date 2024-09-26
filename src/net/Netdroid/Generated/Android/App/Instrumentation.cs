@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Instrumentation(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ActivityMonitor declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ActivityMonitor(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,10 +126,10 @@ namespace Android.App
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ActivityResult(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -150,9 +150,9 @@ namespace Android.App
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -164,13 +164,13 @@ namespace Android.App
     public partial class Instrumentation
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#REPORT_KEY_IDENTIFIER"/>
@@ -184,9 +184,9 @@ namespace Android.App
         public static Java.Lang.String REPORT_KEY_STREAMRESULT { get { if (!_REPORT_KEY_STREAMRESULTReady) { _REPORT_KEY_STREAMRESULTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "REPORT_KEY_STREAMRESULT"); _REPORT_KEY_STREAMRESULTReady = true; } return _REPORT_KEY_STREAMRESULTContent; } }
         private static Java.Lang.String _REPORT_KEY_STREAMRESULTContent = default;
         private static bool _REPORT_KEY_STREAMRESULTReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#newApplication(java.lang.Class,android.content.Context)"/>
@@ -199,11 +199,11 @@ namespace Android.App
         /// <exception cref="Java.Lang.InstantiationException"/>
         public static Android.App.Application NewApplication(Java.Lang.Class arg0, Android.Content.Context arg1)
         {
-            return SExecute<Android.App.Application>(LocalBridgeClazz, "newApplication", arg0, arg1);
+            return SExecuteWithSignature<Android.App.Application>(LocalBridgeClazz, "newApplication", "(Ljava/lang/Class;Landroid/content/Context;)Landroid/app/Application;", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#newActivity(java.lang.Class,android.content.Context,android.os.IBinder,android.app.Application,android.content.Intent,android.content.pm.ActivityInfo,java.lang.CharSequence,android.app.Activity,java.lang.String,java.lang.Object)"/>
@@ -223,7 +223,7 @@ namespace Android.App
         /// <exception cref="Java.Lang.InstantiationException"/>
         public Android.App.Activity NewActivity(Java.Lang.Class arg0, Android.Content.Context arg1, Android.Os.IBinder arg2, Android.App.Application arg3, Android.Content.Intent arg4, Android.Content.Pm.ActivityInfo arg5, Java.Lang.CharSequence arg6, Android.App.Activity arg7, Java.Lang.String arg8, object arg9)
         {
-            return IExecute<Android.App.Activity>("newActivity", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return IExecuteWithSignature<Android.App.Activity>("newActivity", "(Ljava/lang/Class;Landroid/content/Context;Landroid/os/IBinder;Landroid/app/Application;Landroid/content/Intent;Landroid/content/pm/ActivityInfo;Ljava/lang/CharSequence;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Object;)Landroid/app/Activity;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#newActivity(java.lang.ClassLoader,java.lang.String,android.content.Intent)"/>
@@ -237,7 +237,7 @@ namespace Android.App
         /// <exception cref="Java.Lang.InstantiationException"/>
         public Android.App.Activity NewActivity(Java.Lang.ClassLoader arg0, Java.Lang.String arg1, Android.Content.Intent arg2)
         {
-            return IExecute<Android.App.Activity>("newActivity", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.App.Activity>("newActivity", "(Ljava/lang/ClassLoader;Ljava/lang/String;Landroid/content/Intent;)Landroid/app/Activity;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#startActivitySync(android.content.Intent,android.os.Bundle)"/>
@@ -247,7 +247,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.Activity"/></returns>
         public Android.App.Activity StartActivitySync(Android.Content.Intent arg0, Android.Os.Bundle arg1)
         {
-            return IExecute<Android.App.Activity>("startActivitySync", arg0, arg1);
+            return IExecuteWithSignature<Android.App.Activity>("startActivitySync", "(Landroid/content/Intent;Landroid/os/Bundle;)Landroid/app/Activity;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#startActivitySync(android.content.Intent)"/>
@@ -275,7 +275,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.Activity"/></returns>
         public Android.App.Activity WaitForMonitorWithTimeout(Android.App.Instrumentation.ActivityMonitor arg0, long arg1)
         {
-            return IExecute<Android.App.Activity>("waitForMonitorWithTimeout", arg0, arg1);
+            return IExecuteWithSignature<Android.App.Activity>("waitForMonitorWithTimeout", "(Landroid/app/Instrumentation$ActivityMonitor;J)Landroid/app/Activity;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#newApplication(java.lang.ClassLoader,java.lang.String,android.content.Context)"/>
@@ -289,7 +289,7 @@ namespace Android.App
         /// <exception cref="Java.Lang.InstantiationException"/>
         public Android.App.Application NewApplication(Java.Lang.ClassLoader arg0, Java.Lang.String arg1, Android.Content.Context arg2)
         {
-            return IExecute<Android.App.Application>("newApplication", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.App.Application>("newApplication", "(Ljava/lang/ClassLoader;Ljava/lang/String;Landroid/content/Context;)Landroid/app/Application;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#addMonitor(android.content.IntentFilter,android.app.Instrumentation.ActivityResult,boolean)"/>
@@ -300,7 +300,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.Instrumentation.ActivityMonitor"/></returns>
         public Android.App.Instrumentation.ActivityMonitor AddMonitor(Android.Content.IntentFilter arg0, Android.App.Instrumentation.ActivityResult arg1, bool arg2)
         {
-            return IExecute<Android.App.Instrumentation.ActivityMonitor>("addMonitor", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.App.Instrumentation.ActivityMonitor>("addMonitor", "(Landroid/content/IntentFilter;Landroid/app/Instrumentation$ActivityResult;Z)Landroid/app/Instrumentation$ActivityMonitor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#addMonitor(java.lang.String,android.app.Instrumentation.ActivityResult,boolean)"/>
@@ -311,7 +311,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.Instrumentation.ActivityMonitor"/></returns>
         public Android.App.Instrumentation.ActivityMonitor AddMonitor(Java.Lang.String arg0, Android.App.Instrumentation.ActivityResult arg1, bool arg2)
         {
-            return IExecute<Android.App.Instrumentation.ActivityMonitor>("addMonitor", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.App.Instrumentation.ActivityMonitor>("addMonitor", "(Ljava/lang/String;Landroid/app/Instrumentation$ActivityResult;Z)Landroid/app/Instrumentation$ActivityMonitor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getUiAutomation()"/>
@@ -387,7 +387,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool CheckMonitorHit(Android.App.Instrumentation.ActivityMonitor arg0, int arg1)
         {
-            return IExecute<bool>("checkMonitorHit", arg0, arg1);
+            return IExecuteWithSignature<bool>("checkMonitorHit", "(Landroid/app/Instrumentation$ActivityMonitor;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#invokeContextMenuAction(android.app.Activity,int,int)"/>
@@ -398,7 +398,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool InvokeContextMenuAction(Android.App.Activity arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("invokeContextMenuAction", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("invokeContextMenuAction", "(Landroid/app/Activity;II)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#invokeMenuActionSync(android.app.Activity,int,int)"/>
@@ -409,7 +409,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool InvokeMenuActionSync(Android.App.Activity arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("invokeMenuActionSync", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("invokeMenuActionSync", "(Landroid/app/Activity;II)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#isProfiling()"/>
@@ -427,7 +427,7 @@ namespace Android.App
         /// <returns><see cref="bool"/></returns>
         public bool OnException(object arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
-            return IExecute<bool>("onException", arg0, arg1);
+            return IExecuteWithSignature<bool>("onException", "(Ljava/lang/Object;Ljava/lang/Throwable;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#getProcessName()"/>
@@ -461,7 +461,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.Os.PersistableBundle"/></param>
         public void CallActivityOnCreate(Android.App.Activity arg0, Android.Os.Bundle arg1, Android.Os.PersistableBundle arg2)
         {
-            IExecute("callActivityOnCreate", arg0, arg1, arg2);
+            IExecuteWithSignature("callActivityOnCreate", "(Landroid/app/Activity;Landroid/os/Bundle;Landroid/os/PersistableBundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnCreate(android.app.Activity,android.os.Bundle)"/>
@@ -470,7 +470,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void CallActivityOnCreate(Android.App.Activity arg0, Android.Os.Bundle arg1)
         {
-            IExecute("callActivityOnCreate", arg0, arg1);
+            IExecuteWithSignature("callActivityOnCreate", "(Landroid/app/Activity;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnDestroy(android.app.Activity)"/>
@@ -488,7 +488,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.App.ComponentCaller"/></param>
         public void CallActivityOnNewIntent(Android.App.Activity arg0, Android.Content.Intent arg1, Android.App.ComponentCaller arg2)
         {
-            IExecute("callActivityOnNewIntent", arg0, arg1, arg2);
+            IExecuteWithSignature("callActivityOnNewIntent", "(Landroid/app/Activity;Landroid/content/Intent;Landroid/app/ComponentCaller;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnNewIntent(android.app.Activity,android.content.Intent)"/>
@@ -497,7 +497,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         public void CallActivityOnNewIntent(Android.App.Activity arg0, Android.Content.Intent arg1)
         {
-            IExecute("callActivityOnNewIntent", arg0, arg1);
+            IExecuteWithSignature("callActivityOnNewIntent", "(Landroid/app/Activity;Landroid/content/Intent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPause(android.app.Activity)"/>
@@ -523,7 +523,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.Os.PersistableBundle"/></param>
         public void CallActivityOnPostCreate(Android.App.Activity arg0, Android.Os.Bundle arg1, Android.Os.PersistableBundle arg2)
         {
-            IExecute("callActivityOnPostCreate", arg0, arg1, arg2);
+            IExecuteWithSignature("callActivityOnPostCreate", "(Landroid/app/Activity;Landroid/os/Bundle;Landroid/os/PersistableBundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnPostCreate(android.app.Activity,android.os.Bundle)"/>
@@ -532,7 +532,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void CallActivityOnPostCreate(Android.App.Activity arg0, Android.Os.Bundle arg1)
         {
-            IExecute("callActivityOnPostCreate", arg0, arg1);
+            IExecuteWithSignature("callActivityOnPostCreate", "(Landroid/app/Activity;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestart(android.app.Activity)"/>
@@ -550,7 +550,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.Os.PersistableBundle"/></param>
         public void CallActivityOnRestoreInstanceState(Android.App.Activity arg0, Android.Os.Bundle arg1, Android.Os.PersistableBundle arg2)
         {
-            IExecute("callActivityOnRestoreInstanceState", arg0, arg1, arg2);
+            IExecuteWithSignature("callActivityOnRestoreInstanceState", "(Landroid/app/Activity;Landroid/os/Bundle;Landroid/os/PersistableBundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnRestoreInstanceState(android.app.Activity,android.os.Bundle)"/>
@@ -559,7 +559,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void CallActivityOnRestoreInstanceState(Android.App.Activity arg0, Android.Os.Bundle arg1)
         {
-            IExecute("callActivityOnRestoreInstanceState", arg0, arg1);
+            IExecuteWithSignature("callActivityOnRestoreInstanceState", "(Landroid/app/Activity;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnResume(android.app.Activity)"/>
@@ -577,7 +577,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.Os.PersistableBundle"/></param>
         public void CallActivityOnSaveInstanceState(Android.App.Activity arg0, Android.Os.Bundle arg1, Android.Os.PersistableBundle arg2)
         {
-            IExecute("callActivityOnSaveInstanceState", arg0, arg1, arg2);
+            IExecuteWithSignature("callActivityOnSaveInstanceState", "(Landroid/app/Activity;Landroid/os/Bundle;Landroid/os/PersistableBundle;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnSaveInstanceState(android.app.Activity,android.os.Bundle)"/>
@@ -586,7 +586,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void CallActivityOnSaveInstanceState(Android.App.Activity arg0, Android.Os.Bundle arg1)
         {
-            IExecute("callActivityOnSaveInstanceState", arg0, arg1);
+            IExecuteWithSignature("callActivityOnSaveInstanceState", "(Landroid/app/Activity;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#callActivityOnStart(android.app.Activity)"/>
@@ -634,7 +634,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void Finish(int arg0, Android.Os.Bundle arg1)
         {
-            IExecute("finish", arg0, arg1);
+            IExecuteWithSignature("finish", "(ILandroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#onCreate(android.os.Bundle)"/>
@@ -720,7 +720,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void SendStatus(int arg0, Android.Os.Bundle arg1)
         {
-            IExecute("sendStatus", arg0, arg1);
+            IExecuteWithSignature("sendStatus", "(ILandroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#sendStringSync(java.lang.String)"/>
@@ -812,9 +812,9 @@ namespace Android.App
         {
             IExecuteWithSignature("waitForIdleSync", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ActivityMonitor implementation
         public partial class ActivityMonitor
@@ -840,21 +840,21 @@ namespace Android.App
                 : base(arg0, arg1, arg2)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityMonitor.html#onStartActivity(android.content.Intent)"/>
@@ -922,13 +922,13 @@ namespace Android.App
             {
                 return IExecuteWithSignature<int>("getHits", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -946,21 +946,21 @@ namespace Android.App
                 : base(arg0, arg1)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Instrumentation.ActivityResult.html#getResultData()"/>
@@ -978,20 +978,20 @@ namespace Android.App
             {
                 return IExecuteWithSignature<int>("getResultCode", "()I");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

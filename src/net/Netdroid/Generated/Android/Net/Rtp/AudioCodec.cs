@@ -41,10 +41,10 @@ namespace Android.Net.Rtp
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public AudioCodec(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Net.Rtp
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -75,13 +75,13 @@ namespace Android.Net.Rtp
     public partial class AudioCodec
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#type"/>
@@ -139,9 +139,9 @@ namespace Android.Net.Rtp
         public static Android.Net.Rtp.AudioCodec PCMU { get { if (!_PCMUReady) { _PCMUContent = SGetField<Android.Net.Rtp.AudioCodec>(LocalBridgeClazz, "PCMU"); _PCMUReady = true; } return _PCMUContent; } }
         private static Android.Net.Rtp.AudioCodec _PCMUContent = default;
         private static bool _PCMUReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#getCodec(int,java.lang.String,java.lang.String)"/>
@@ -153,7 +153,7 @@ namespace Android.Net.Rtp
         [global::System.Obsolete()]
         public static Android.Net.Rtp.AudioCodec GetCodec(int arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<Android.Net.Rtp.AudioCodec>(LocalBridgeClazz, "getCodec", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Net.Rtp.AudioCodec>(LocalBridgeClazz, "getCodec", "(ILjava/lang/String;Ljava/lang/String;)Landroid/net/rtp/AudioCodec;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#getCodecs()"/>
@@ -164,17 +164,17 @@ namespace Android.Net.Rtp
         {
             return SExecuteWithSignatureArray<Android.Net.Rtp.AudioCodec>(LocalBridgeClazz, "getCodecs", "()[Landroid/net/rtp/AudioCodec;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

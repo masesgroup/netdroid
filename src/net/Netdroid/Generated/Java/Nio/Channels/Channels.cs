@@ -40,10 +40,10 @@ namespace Java.Nio.Channels
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Channels(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Nio.Channels
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Nio.Channels
     public partial class Channels
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newInputStream(java.nio.channels.AsynchronousByteChannel)"/>
@@ -130,7 +130,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NewReader(Java.Nio.Channels.ReadableByteChannel arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Io.Reader>(LocalBridgeClazz, "newReader", arg0, arg1);
+            return SExecuteWithSignature<Java.Io.Reader>(LocalBridgeClazz, "newReader", "(Ljava/nio/channels/ReadableByteChannel;Ljava/lang/String;)Ljava/io/Reader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.Charset)"/>
@@ -140,7 +140,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NewReader(Java.Nio.Channels.ReadableByteChannel arg0, Java.Nio.Charset.Charset arg1)
         {
-            return SExecute<Java.Io.Reader>(LocalBridgeClazz, "newReader", arg0, arg1);
+            return SExecuteWithSignature<Java.Io.Reader>(LocalBridgeClazz, "newReader", "(Ljava/nio/channels/ReadableByteChannel;Ljava/nio/charset/Charset;)Ljava/io/Reader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.CharsetDecoder,int)"/>
@@ -151,7 +151,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NewReader(Java.Nio.Channels.ReadableByteChannel arg0, Java.Nio.Charset.CharsetDecoder arg1, int arg2)
         {
-            return SExecute<Java.Io.Reader>(LocalBridgeClazz, "newReader", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Io.Reader>(LocalBridgeClazz, "newReader", "(Ljava/nio/channels/ReadableByteChannel;Ljava/nio/charset/CharsetDecoder;I)Ljava/io/Reader;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.lang.String)"/>
@@ -161,7 +161,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.Writer"/></returns>
         public static Java.Io.Writer NewWriter(Java.Nio.Channels.WritableByteChannel arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Io.Writer>(LocalBridgeClazz, "newWriter", arg0, arg1);
+            return SExecuteWithSignature<Java.Io.Writer>(LocalBridgeClazz, "newWriter", "(Ljava/nio/channels/WritableByteChannel;Ljava/lang/String;)Ljava/io/Writer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.Charset)"/>
@@ -171,7 +171,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.Writer"/></returns>
         public static Java.Io.Writer NewWriter(Java.Nio.Channels.WritableByteChannel arg0, Java.Nio.Charset.Charset arg1)
         {
-            return SExecute<Java.Io.Writer>(LocalBridgeClazz, "newWriter", arg0, arg1);
+            return SExecuteWithSignature<Java.Io.Writer>(LocalBridgeClazz, "newWriter", "(Ljava/nio/channels/WritableByteChannel;Ljava/nio/charset/Charset;)Ljava/io/Writer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.CharsetEncoder,int)"/>
@@ -182,7 +182,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.Writer"/></returns>
         public static Java.Io.Writer NewWriter(Java.Nio.Channels.WritableByteChannel arg0, Java.Nio.Charset.CharsetEncoder arg1, int arg2)
         {
-            return SExecute<Java.Io.Writer>(LocalBridgeClazz, "newWriter", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Io.Writer>(LocalBridgeClazz, "newWriter", "(Ljava/nio/channels/WritableByteChannel;Ljava/nio/charset/CharsetEncoder;I)Ljava/io/Writer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/channels/Channels.html#newChannel(java.io.InputStream)"/>
@@ -202,17 +202,17 @@ namespace Java.Nio.Channels
         {
             return SExecuteWithSignature<Java.Nio.Channels.WritableByteChannel>(LocalBridgeClazz, "newChannel", "(Ljava/io/OutputStream;)Ljava/nio/channels/WritableByteChannel;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

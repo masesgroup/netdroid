@@ -40,10 +40,10 @@ namespace Android.Media.Tv.Interactive
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TvInteractiveAppManager(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Media.Tv.Interactive
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region TvInteractiveAppCallback declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Media.Tv.Interactive
             /// </summary>
             [global::System.Obsolete("TvInteractiveAppCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TvInteractiveAppCallback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Media.Tv.Interactive
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,13 +121,13 @@ namespace Android.Media.Tv.Interactive
     public partial class TvInteractiveAppManager
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_BLOCKED"/>
@@ -309,13 +309,13 @@ namespace Android.Media.Tv.Interactive
         public static Java.Lang.String INTENT_KEY_TV_INPUT_ID { get { if (!_INTENT_KEY_TV_INPUT_IDReady) { _INTENT_KEY_TV_INPUT_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INTENT_KEY_TV_INPUT_ID"); _INTENT_KEY_TV_INPUT_IDReady = true; } return _INTENT_KEY_TV_INPUT_IDContent; } }
         private static Java.Lang.String _INTENT_KEY_TV_INPUT_IDContent = default;
         private static bool _INTENT_KEY_TV_INPUT_IDReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#getAppLinkInfoList()"/>
@@ -340,7 +340,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="Android.Media.Tv.Interactive.AppLinkInfo"/></param>
         public void RegisterAppLinkInfo(Java.Lang.String arg0, Android.Media.Tv.Interactive.AppLinkInfo arg1)
         {
-            IExecute("registerAppLinkInfo", arg0, arg1);
+            IExecuteWithSignature("registerAppLinkInfo", "(Ljava/lang/String;Landroid/media/tv/interactive/AppLinkInfo;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#registerCallback(java.util.concurrent.Executor,android.media.tv.interactive.TvInteractiveAppManager.TvInteractiveAppCallback)"/>
@@ -349,7 +349,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="Android.Media.Tv.Interactive.TvInteractiveAppManager.TvInteractiveAppCallback"/></param>
         public void RegisterCallback(Java.Util.Concurrent.Executor arg0, Android.Media.Tv.Interactive.TvInteractiveAppManager.TvInteractiveAppCallback arg1)
         {
-            IExecute("registerCallback", arg0, arg1);
+            IExecuteWithSignature("registerCallback", "(Ljava/util/concurrent/Executor;Landroid/media/tv/interactive/TvInteractiveAppManager$TvInteractiveAppCallback;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#sendAppLinkCommand(java.lang.String,android.os.Bundle)"/>
@@ -358,7 +358,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         public void SendAppLinkCommand(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
-            IExecute("sendAppLinkCommand", arg0, arg1);
+            IExecuteWithSignature("sendAppLinkCommand", "(Ljava/lang/String;Landroid/os/Bundle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#unregisterAppLinkInfo(java.lang.String,android.media.tv.interactive.AppLinkInfo)"/>
@@ -367,7 +367,7 @@ namespace Android.Media.Tv.Interactive
         /// <param name="arg1"><see cref="Android.Media.Tv.Interactive.AppLinkInfo"/></param>
         public void UnregisterAppLinkInfo(Java.Lang.String arg0, Android.Media.Tv.Interactive.AppLinkInfo arg1)
         {
-            IExecute("unregisterAppLinkInfo", arg0, arg1);
+            IExecuteWithSignature("unregisterAppLinkInfo", "(Ljava/lang/String;Landroid/media/tv/interactive/AppLinkInfo;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#unregisterCallback(android.media.tv.interactive.TvInteractiveAppManager.TvInteractiveAppCallback)"/>
@@ -377,29 +377,29 @@ namespace Android.Media.Tv.Interactive
         {
             IExecuteWithSignature("unregisterCallback", "(Landroid/media/tv/interactive/TvInteractiveAppManager$TvInteractiveAppCallback;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region TvInteractiveAppCallback implementation
         public partial class TvInteractiveAppCallback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.TvInteractiveAppCallback.html#onInteractiveAppServiceAdded(java.lang.String)"/>
@@ -434,22 +434,22 @@ namespace Android.Media.Tv.Interactive
             /// <param name="arg3"><see cref="int"/></param>
             public void OnTvInteractiveAppServiceStateChanged(Java.Lang.String arg0, int arg1, int arg2, int arg3)
             {
-                IExecute("onTvInteractiveAppServiceStateChanged", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onTvInteractiveAppServiceStateChanged", "(Ljava/lang/String;III)V", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

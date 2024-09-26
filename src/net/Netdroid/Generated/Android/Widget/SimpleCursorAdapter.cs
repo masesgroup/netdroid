@@ -40,10 +40,10 @@ namespace Android.Widget
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SimpleCursorAdapter(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region CursorToStringConverter declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Widget
             /// </summary>
             [global::System.Obsolete("CursorToStringConverter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public CursorToStringConverter(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -130,10 +130,10 @@ namespace Android.Widget
             /// </summary>
             [global::System.Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ViewBinder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -154,9 +154,9 @@ namespace Android.Widget
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -194,21 +194,21 @@ namespace Android.Widget
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#getCursorToStringConverter()"/>
@@ -242,7 +242,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="int"/></param>
         public void ChangeCursorAndColumns(Android.Database.Cursor arg0, Java.Lang.String[] arg1, int[] arg2)
         {
-            IExecute("changeCursorAndColumns", arg0, arg1, arg2);
+            IExecuteWithSignature("changeCursorAndColumns", "(Landroid/database/Cursor;[Ljava/lang/String;[I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setCursorToStringConverter(android.widget.SimpleCursorAdapter.CursorToStringConverter)"/>
@@ -275,7 +275,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetViewImage(Android.Widget.ImageView arg0, Java.Lang.String arg1)
         {
-            IExecute("setViewImage", arg0, arg1);
+            IExecuteWithSignature("setViewImage", "(Landroid/widget/ImageView;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setViewText(android.widget.TextView,java.lang.String)"/>
@@ -284,31 +284,31 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetViewText(Android.Widget.TextView arg0, Java.Lang.String arg1)
         {
-            IExecute("setViewText", arg0, arg1);
+            IExecuteWithSignature("setViewText", "(Landroid/widget/TextView;Ljava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region CursorToStringConverter implementation
         public partial class CursorToStringConverter
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.CursorToStringConverter.html#convertToString(android.database.Cursor)"/>
@@ -319,13 +319,13 @@ namespace Android.Widget
             {
                 return IExecuteWithSignature<Java.Lang.CharSequence>("convertToString", "(Landroid/database/Cursor;)Ljava/lang/CharSequence;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -334,21 +334,21 @@ namespace Android.Widget
         public partial class ViewBinder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.ViewBinder.html#setViewValue(android.view.View,android.database.Cursor,int)"/>
@@ -359,22 +359,22 @@ namespace Android.Widget
             /// <returns><see cref="bool"/></returns>
             public bool SetViewValue(Android.View.View arg0, Android.Database.Cursor arg1, int arg2)
             {
-                return IExecute<bool>("setViewValue", arg0, arg1, arg2);
+                return IExecuteWithSignature<bool>("setViewValue", "(Landroid/view/View;Landroid/database/Cursor;I)Z", arg0, arg1, arg2);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

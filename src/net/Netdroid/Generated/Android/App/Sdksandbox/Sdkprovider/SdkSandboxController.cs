@@ -40,10 +40,10 @@ namespace Android.App.Sdksandbox.Sdkprovider
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public SdkSandboxController(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App.Sdksandbox.Sdkprovider
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Android.App.Sdksandbox.Sdkprovider
     public partial class SdkSandboxController
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#SDK_SANDBOX_CONTROLLER_SERVICE"/>
@@ -88,13 +88,13 @@ namespace Android.App.Sdksandbox.Sdkprovider
         public static Java.Lang.String SDK_SANDBOX_CONTROLLER_SERVICE { get { if (!_SDK_SANDBOX_CONTROLLER_SERVICEReady) { _SDK_SANDBOX_CONTROLLER_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SDK_SANDBOX_CONTROLLER_SERVICE"); _SDK_SANDBOX_CONTROLLER_SERVICEReady = true; } return _SDK_SANDBOX_CONTROLLER_SERVICEContent; } }
         private static Java.Lang.String _SDK_SANDBOX_CONTROLLER_SERVICEContent = default;
         private static bool _SDK_SANDBOX_CONTROLLER_SERVICEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#getClientSharedPreferences()"/>
@@ -146,7 +146,7 @@ namespace Android.App.Sdksandbox.Sdkprovider
         /// <param name="arg3"><see cref="Android.Os.OutcomeReceiver"/></param>
         public void LoadSdk(Java.Lang.String arg0, Android.Os.Bundle arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<Android.App.Sdksandbox.SandboxedSdk, Android.App.Sdksandbox.LoadSdkException> arg3)
         {
-            IExecute("loadSdk", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("loadSdk", "(Ljava/lang/String;Landroid/os/Bundle;Ljava/util/concurrent/Executor;Landroid/os/OutcomeReceiver;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#unregisterSdkSandboxActivityHandler(android.app.sdksandbox.sdkprovider.SdkSandboxActivityHandler)"/>
@@ -156,13 +156,13 @@ namespace Android.App.Sdksandbox.Sdkprovider
         {
             IExecuteWithSignature("unregisterSdkSandboxActivityHandler", "(Landroid/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

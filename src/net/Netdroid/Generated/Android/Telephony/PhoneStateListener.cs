@@ -41,10 +41,10 @@ namespace Android.Telephony
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PhoneStateListener(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,9 +65,9 @@ namespace Android.Telephony
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -84,13 +84,13 @@ namespace Android.Telephony
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGE"/>
@@ -232,13 +232,13 @@ namespace Android.Telephony
         public static int LISTEN_USER_MOBILE_DATA_STATE { get { if (!_LISTEN_USER_MOBILE_DATA_STATEReady) { _LISTEN_USER_MOBILE_DATA_STATEContent = SGetField<int>(LocalBridgeClazz, "LISTEN_USER_MOBILE_DATA_STATE"); _LISTEN_USER_MOBILE_DATA_STATEReady = true; } return _LISTEN_USER_MOBILE_DATA_STATEContent; } }
         private static int _LISTEN_USER_MOBILE_DATA_STATEContent = default;
         private static bool _LISTEN_USER_MOBILE_DATA_STATEReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onActiveDataSubscriptionIdChanged(int)"/>
@@ -266,7 +266,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public void OnCallDisconnectCauseChanged(int arg0, int arg1)
         {
-            IExecute("onCallDisconnectCauseChanged", arg0, arg1);
+            IExecuteWithSignature("onCallDisconnectCauseChanged", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCallForwardingIndicatorChanged(boolean)"/>
@@ -285,7 +285,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public void OnCallStateChanged(int arg0, Java.Lang.String arg1)
         {
-            IExecute("onCallStateChanged", arg0, arg1);
+            IExecuteWithSignature("onCallStateChanged", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCellInfoChanged(java.util.List)"/>
@@ -322,7 +322,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public void OnDataConnectionStateChanged(int arg0, int arg1)
         {
-            IExecute("onDataConnectionStateChanged", arg0, arg1);
+            IExecuteWithSignature("onDataConnectionStateChanged", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onDataConnectionStateChanged(int)"/>
@@ -389,7 +389,7 @@ namespace Android.Telephony
         [global::System.Obsolete()]
         public void OnRegistrationFailed(Android.Telephony.CellIdentity arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("onRegistrationFailed", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("onRegistrationFailed", "(Landroid/telephony/CellIdentity;Ljava/lang/String;III)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onServiceStateChanged(android.telephony.ServiceState)"/>
@@ -427,13 +427,13 @@ namespace Android.Telephony
         {
             IExecuteWithSignature("onUserMobileDataStateChanged", "(Z)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

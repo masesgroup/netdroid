@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Matrix(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region ScaleToFit declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public ScaleToFit(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -127,13 +127,13 @@ namespace Android.Graphics
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#IDENTITY_MATRIX"/>
@@ -195,13 +195,13 @@ namespace Android.Graphics
         public static int MTRANS_Y { get { if (!_MTRANS_YReady) { _MTRANS_YContent = SGetField<int>(LocalBridgeClazz, "MTRANS_Y"); _MTRANS_YReady = true; } return _MTRANS_YContent; } }
         private static int _MTRANS_YContent = default;
         private static bool _MTRANS_YReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#invert(android.graphics.Matrix)"/>
@@ -236,7 +236,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool MapRect(Android.Graphics.RectF arg0, Android.Graphics.RectF arg1)
         {
-            return IExecute<bool>("mapRect", arg0, arg1);
+            return IExecuteWithSignature<bool>("mapRect", "(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#mapRect(android.graphics.RectF)"/>
@@ -265,7 +265,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool PostRotate(float arg0, float arg1, float arg2)
         {
-            return IExecute<bool>("postRotate", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("postRotate", "(FFF)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#postRotate(float)"/>
@@ -286,7 +286,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool PostScale(float arg0, float arg1, float arg2, float arg3)
         {
-            return IExecute<bool>("postScale", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("postScale", "(FFFF)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#postScale(float,float)"/>
@@ -296,7 +296,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool PostScale(float arg0, float arg1)
         {
-            return IExecute<bool>("postScale", arg0, arg1);
+            return IExecuteWithSignature<bool>("postScale", "(FF)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#postSkew(float,float,float,float)"/>
@@ -308,7 +308,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool PostSkew(float arg0, float arg1, float arg2, float arg3)
         {
-            return IExecute<bool>("postSkew", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("postSkew", "(FFFF)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#postSkew(float,float)"/>
@@ -318,7 +318,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool PostSkew(float arg0, float arg1)
         {
-            return IExecute<bool>("postSkew", arg0, arg1);
+            return IExecuteWithSignature<bool>("postSkew", "(FF)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#postTranslate(float,float)"/>
@@ -328,7 +328,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool PostTranslate(float arg0, float arg1)
         {
-            return IExecute<bool>("postTranslate", arg0, arg1);
+            return IExecuteWithSignature<bool>("postTranslate", "(FF)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#preConcat(android.graphics.Matrix)"/>
@@ -348,7 +348,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool PreRotate(float arg0, float arg1, float arg2)
         {
-            return IExecute<bool>("preRotate", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("preRotate", "(FFF)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#preRotate(float)"/>
@@ -369,7 +369,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool PreScale(float arg0, float arg1, float arg2, float arg3)
         {
-            return IExecute<bool>("preScale", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("preScale", "(FFFF)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#preScale(float,float)"/>
@@ -379,7 +379,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool PreScale(float arg0, float arg1)
         {
-            return IExecute<bool>("preScale", arg0, arg1);
+            return IExecuteWithSignature<bool>("preScale", "(FF)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#preSkew(float,float,float,float)"/>
@@ -391,7 +391,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool PreSkew(float arg0, float arg1, float arg2, float arg3)
         {
-            return IExecute<bool>("preSkew", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("preSkew", "(FFFF)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#preSkew(float,float)"/>
@@ -401,7 +401,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool PreSkew(float arg0, float arg1)
         {
-            return IExecute<bool>("preSkew", arg0, arg1);
+            return IExecuteWithSignature<bool>("preSkew", "(FF)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#preTranslate(float,float)"/>
@@ -411,7 +411,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool PreTranslate(float arg0, float arg1)
         {
-            return IExecute<bool>("preTranslate", arg0, arg1);
+            return IExecuteWithSignature<bool>("preTranslate", "(FF)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#rectStaysRect()"/>
@@ -429,7 +429,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool SetConcat(Android.Graphics.Matrix arg0, Android.Graphics.Matrix arg1)
         {
-            return IExecute<bool>("setConcat", arg0, arg1);
+            return IExecuteWithSignature<bool>("setConcat", "(Landroid/graphics/Matrix;Landroid/graphics/Matrix;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#setPolyToPoly(float[],int,float[],int,int)"/>
@@ -442,7 +442,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool SetPolyToPoly(float[] arg0, int arg1, float[] arg2, int arg3, int arg4)
         {
-            return IExecute<bool>("setPolyToPoly", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("setPolyToPoly", "([FI[FII)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#setRectToRect(android.graphics.RectF,android.graphics.RectF,android.graphics.Matrix.ScaleToFit)"/>
@@ -453,7 +453,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool SetRectToRect(Android.Graphics.RectF arg0, Android.Graphics.RectF arg1, Android.Graphics.Matrix.ScaleToFit arg2)
         {
-            return IExecute<bool>("setRectToRect", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("setRectToRect", "(Landroid/graphics/RectF;Landroid/graphics/RectF;Landroid/graphics/Matrix$ScaleToFit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#dump(java.io.PrintWriter)"/>
@@ -495,7 +495,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void MapPoints(float[] arg0, float[] arg1)
         {
-            IExecute("mapPoints", arg0, arg1);
+            IExecuteWithSignature("mapPoints", "([F[F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#mapPoints(float[],int,float[],int,int)"/>
@@ -507,7 +507,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="int"/></param>
         public void MapPoints(float[] arg0, int arg1, float[] arg2, int arg3, int arg4)
         {
-            IExecute("mapPoints", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("mapPoints", "([FI[FII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#mapPoints(float[])"/>
@@ -524,7 +524,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void MapVectors(float[] arg0, float[] arg1)
         {
-            IExecute("mapVectors", arg0, arg1);
+            IExecuteWithSignature("mapVectors", "([F[F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#mapVectors(float[],int,float[],int,int)"/>
@@ -536,7 +536,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="int"/></param>
         public void MapVectors(float[] arg0, int arg1, float[] arg2, int arg3, int arg4)
         {
-            IExecute("mapVectors", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("mapVectors", "([FI[FII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#mapVectors(float[])"/>
@@ -569,7 +569,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void SetRotate(float arg0, float arg1, float arg2)
         {
-            IExecute("setRotate", arg0, arg1, arg2);
+            IExecuteWithSignature("setRotate", "(FFF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#setRotate(float)"/>
@@ -588,7 +588,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="float"/></param>
         public void SetScale(float arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("setScale", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setScale", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#setScale(float,float)"/>
@@ -597,7 +597,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void SetScale(float arg0, float arg1)
         {
-            IExecute("setScale", arg0, arg1);
+            IExecuteWithSignature("setScale", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#setSinCos(float,float,float,float)"/>
@@ -608,7 +608,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="float"/></param>
         public void SetSinCos(float arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("setSinCos", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setSinCos", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#setSinCos(float,float)"/>
@@ -617,7 +617,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void SetSinCos(float arg0, float arg1)
         {
-            IExecute("setSinCos", arg0, arg1);
+            IExecuteWithSignature("setSinCos", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#setSkew(float,float,float,float)"/>
@@ -628,7 +628,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="float"/></param>
         public void SetSkew(float arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("setSkew", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setSkew", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#setSkew(float,float)"/>
@@ -637,7 +637,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void SetSkew(float arg0, float arg1)
         {
-            IExecute("setSkew", arg0, arg1);
+            IExecuteWithSignature("setSkew", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#setTranslate(float,float)"/>
@@ -646,7 +646,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void SetTranslate(float arg0, float arg1)
         {
-            IExecute("setTranslate", arg0, arg1);
+            IExecuteWithSignature("setTranslate", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Matrix.html#setValues(float[])"/>
@@ -656,21 +656,21 @@ namespace Android.Graphics
         {
             IExecuteWithSignature("setValues", "([F)V", new object[] { arg0 });
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region ScaleToFit implementation
         public partial class ScaleToFit
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Matrix.ScaleToFit.html#CENTER"/>
@@ -696,9 +696,9 @@ namespace Android.Graphics
             public static Android.Graphics.Matrix.ScaleToFit START { get { if (!_STARTReady) { _STARTContent = SGetField<Android.Graphics.Matrix.ScaleToFit>(LocalBridgeClazz, "START"); _STARTReady = true; } return _STARTContent; } }
             private static Android.Graphics.Matrix.ScaleToFit _STARTContent = default;
             private static bool _STARTReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Matrix.ScaleToFit.html#valueOf(java.lang.String)"/>
@@ -717,24 +717,24 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Matrix.ScaleToFit>(LocalBridgeClazz, "values", "()[Landroid/graphics/Matrix$ScaleToFit;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

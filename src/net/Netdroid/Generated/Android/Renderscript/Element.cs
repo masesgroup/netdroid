@@ -41,10 +41,10 @@ namespace Android.Renderscript
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Element(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -65,7 +65,7 @@ namespace Android.Renderscript
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -129,10 +129,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DataKind(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -153,9 +153,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -175,10 +175,10 @@ namespace Android.Renderscript
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DataType(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -199,9 +199,9 @@ namespace Android.Renderscript
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -213,17 +213,17 @@ namespace Android.Renderscript
     public partial class Element
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#A_8(android.renderscript.RenderScript)"/>
@@ -265,7 +265,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public static Android.Renderscript.Element CreatePixel(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element.DataType arg1, Android.Renderscript.Element.DataKind arg2)
         {
-            return SExecute<Android.Renderscript.Element>(LocalBridgeClazz, "createPixel", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "createPixel", "(Landroid/renderscript/RenderScript;Landroid/renderscript/Element$DataType;Landroid/renderscript/Element$DataKind;)Landroid/renderscript/Element;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#createVector(android.renderscript.RenderScript,android.renderscript.Element.DataType,int)"/>
@@ -277,7 +277,7 @@ namespace Android.Renderscript
         [global::System.Obsolete()]
         public static Android.Renderscript.Element CreateVector(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element.DataType arg1, int arg2)
         {
-            return SExecute<Android.Renderscript.Element>(LocalBridgeClazz, "createVector", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "createVector", "(Landroid/renderscript/RenderScript;Landroid/renderscript/Element$DataType;I)Landroid/renderscript/Element;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#ELEMENT(android.renderscript.RenderScript)"/>
@@ -919,9 +919,9 @@ namespace Android.Renderscript
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "YUV", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getSubElement(int)"/>
@@ -1027,9 +1027,9 @@ namespace Android.Renderscript
         {
             return IExecuteWithSignature<Java.Lang.String>("getSubElementName", "(I)Ljava/lang/String;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -1044,21 +1044,21 @@ namespace Android.Renderscript
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.Builder.html#create()"/>
@@ -1079,7 +1079,7 @@ namespace Android.Renderscript
             [global::System.Obsolete()]
             public Android.Renderscript.Element.Builder Add(Android.Renderscript.Element arg0, Java.Lang.String arg1, int arg2)
             {
-                return IExecute<Android.Renderscript.Element.Builder>("add", arg0, arg1, arg2);
+                return IExecuteWithSignature<Android.Renderscript.Element.Builder>("add", "(Landroid/renderscript/Element;Ljava/lang/String;I)Landroid/renderscript/Element$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.Builder.html#add(android.renderscript.Element,java.lang.String)"/>
@@ -1090,15 +1090,15 @@ namespace Android.Renderscript
             [global::System.Obsolete()]
             public Android.Renderscript.Element.Builder Add(Android.Renderscript.Element arg0, Java.Lang.String arg1)
             {
-                return IExecute<Android.Renderscript.Element.Builder>("add", arg0, arg1);
+                return IExecuteWithSignature<Android.Renderscript.Element.Builder>("add", "(Landroid/renderscript/Element;Ljava/lang/String;)Landroid/renderscript/Element$Builder;", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1107,13 +1107,13 @@ namespace Android.Renderscript
         public partial class DataKind
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataKind.html#PIXEL_A"/>
@@ -1171,9 +1171,9 @@ namespace Android.Renderscript
             public static Android.Renderscript.Element.DataKind USER { get { if (!_USERReady) { _USERContent = SGetField<Android.Renderscript.Element.DataKind>(LocalBridgeClazz, "USER"); _USERReady = true; } return _USERContent; } }
             private static Android.Renderscript.Element.DataKind _USERContent = default;
             private static bool _USERReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataKind.html#valueOf(java.lang.String)"/>
@@ -1192,17 +1192,17 @@ namespace Android.Renderscript
             {
                 return SExecuteWithSignatureArray<Android.Renderscript.Element.DataKind>(LocalBridgeClazz, "values", "()[Landroid/renderscript/Element$DataKind;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1211,13 +1211,13 @@ namespace Android.Renderscript
         public partial class DataType
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#BOOLEAN"/>
@@ -1429,9 +1429,9 @@ namespace Android.Renderscript
             public static Android.Renderscript.Element.DataType UNSIGNED_8 { get { if (!_UNSIGNED_8Ready) { _UNSIGNED_8Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "UNSIGNED_8"); _UNSIGNED_8Ready = true; } return _UNSIGNED_8Content; } }
             private static Android.Renderscript.Element.DataType _UNSIGNED_8Content = default;
             private static bool _UNSIGNED_8Ready = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#valueOf(java.lang.String)"/>
@@ -1450,24 +1450,24 @@ namespace Android.Renderscript
             {
                 return SExecuteWithSignatureArray<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "values", "()[Landroid/renderscript/Element$DataType;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

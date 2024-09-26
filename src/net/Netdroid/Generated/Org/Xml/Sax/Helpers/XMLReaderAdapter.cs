@@ -40,10 +40,10 @@ namespace Org.Xml.Sax.Helpers
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public XMLReaderAdapter(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Org.Xml.Sax.Helpers
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -82,9 +82,9 @@ namespace Org.Xml.Sax.Helpers
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
         /// <summary>
         /// Converter from <see cref="Org.Xml.Sax.Helpers.XMLReaderAdapter"/> to <see cref="Org.Xml.Sax.Parser"/>
@@ -94,17 +94,17 @@ namespace Org.Xml.Sax.Helpers
         /// Converter from <see cref="Org.Xml.Sax.Helpers.XMLReaderAdapter"/> to <see cref="Org.Xml.Sax.ContentHandler"/>
         /// </summary>
         public static implicit operator Org.Xml.Sax.ContentHandler(Org.Xml.Sax.Helpers.XMLReaderAdapter t) => t.Cast<Org.Xml.Sax.ContentHandler>();
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLReaderAdapter.html#characters(char[],int,int)"/>
@@ -115,7 +115,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Characters(char[] arg0, int arg1, int arg2)
         {
-            IExecute("characters", arg0, arg1, arg2);
+            IExecuteWithSignature("characters", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLReaderAdapter.html#endDocument()"/>
@@ -134,7 +134,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("endElement", arg0, arg1, arg2);
+            IExecuteWithSignature("endElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLReaderAdapter.html#endPrefixMapping(java.lang.String)"/>
@@ -153,7 +153,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void IgnorableWhitespace(char[] arg0, int arg1, int arg2)
         {
-            IExecute("ignorableWhitespace", arg0, arg1, arg2);
+            IExecuteWithSignature("ignorableWhitespace", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLReaderAdapter.html#parse(java.lang.String)"/>
@@ -183,7 +183,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void ProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("processingInstruction", arg0, arg1);
+            IExecuteWithSignature("processingInstruction", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLReaderAdapter.html#setDocumentHandler(org.xml.sax.DocumentHandler)"/>
@@ -261,7 +261,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Org.Xml.Sax.Attributes arg3)
         {
-            IExecute("startElement", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/XMLReaderAdapter.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
@@ -270,15 +270,15 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void StartPrefixMapping(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("startPrefixMapping", arg0, arg1);
+            IExecuteWithSignature("startPrefixMapping", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

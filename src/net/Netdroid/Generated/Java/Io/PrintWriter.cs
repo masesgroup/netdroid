@@ -40,10 +40,10 @@ namespace Java.Io
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PrintWriter(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Io
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -178,21 +178,21 @@ namespace Java.Io
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#checkError()"/>
@@ -210,7 +210,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintWriter"/></returns>
         public Java.Io.PrintWriter Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Io.PrintWriter>("format", arg0); else return IExecute<Java.Io.PrintWriter>("format", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.PrintWriter>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0); else return IExecuteWithSignature<Java.Io.PrintWriter>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
@@ -221,7 +221,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintWriter"/></returns>
         public Java.Io.PrintWriter Format(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Io.PrintWriter>("format", arg0, arg1); else return IExecute<Java.Io.PrintWriter>("format", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Io.PrintWriter>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0, arg1); else return IExecuteWithSignature<Java.Io.PrintWriter>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#printf(java.lang.String,java.lang.Object[])"/>
@@ -231,7 +231,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintWriter"/></returns>
         public Java.Io.PrintWriter Printf(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Io.PrintWriter>("printf", arg0); else return IExecute<Java.Io.PrintWriter>("printf", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.PrintWriter>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0); else return IExecuteWithSignature<Java.Io.PrintWriter>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#printf(java.util.Locale,java.lang.String,java.lang.Object[])"/>
@@ -242,7 +242,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintWriter"/></returns>
         public Java.Io.PrintWriter Printf(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Io.PrintWriter>("printf", arg0, arg1); else return IExecute<Java.Io.PrintWriter>("printf", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Io.PrintWriter>("printf", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0, arg1); else return IExecuteWithSignature<Java.Io.PrintWriter>("printf", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#print(boolean)"/>
@@ -395,13 +395,13 @@ namespace Java.Io
         {
             IExecuteWithSignature("println", "(J)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

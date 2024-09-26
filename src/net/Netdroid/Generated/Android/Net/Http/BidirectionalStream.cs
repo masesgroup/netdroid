@@ -42,10 +42,10 @@ namespace Android.Net.Http
         /// </summary>
         [global::System.Obsolete("BidirectionalStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BidirectionalStream(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Net.Http
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Net.Http
             /// </summary>
             [global::System.Obsolete("Builder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Net.Http
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -132,10 +132,10 @@ namespace Android.Net.Http
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -156,9 +156,9 @@ namespace Android.Net.Http
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -170,13 +170,13 @@ namespace Android.Net.Http
     public partial class BidirectionalStream
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#STREAM_PRIORITY_HIGHEST"/>
@@ -208,13 +208,13 @@ namespace Android.Net.Http
         public static int STREAM_PRIORITY_MEDIUM { get { if (!_STREAM_PRIORITY_MEDIUMReady) { _STREAM_PRIORITY_MEDIUMContent = SGetField<int>(LocalBridgeClazz, "STREAM_PRIORITY_MEDIUM"); _STREAM_PRIORITY_MEDIUMReady = true; } return _STREAM_PRIORITY_MEDIUMContent; } }
         private static int _STREAM_PRIORITY_MEDIUMContent = default;
         private static bool _STREAM_PRIORITY_MEDIUMReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#getHeaders()"/>
@@ -324,31 +324,31 @@ namespace Android.Net.Http
         /// <param name="arg1"><see cref="bool"/></param>
         public void Write(Java.Nio.ByteBuffer arg0, bool arg1)
         {
-            IExecute("write", arg0, arg1);
+            IExecuteWithSignature("write", "(Ljava/nio/ByteBuffer;Z)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.Builder.html#build()"/>
@@ -366,7 +366,7 @@ namespace Android.Net.Http
             /// <returns><see cref="Android.Net.Http.BidirectionalStream.Builder"/></returns>
             public Android.Net.Http.BidirectionalStream.Builder AddHeader(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<Android.Net.Http.BidirectionalStream.Builder>("addHeader", arg0, arg1);
+                return IExecuteWithSignature<Android.Net.Http.BidirectionalStream.Builder>("addHeader", "(Ljava/lang/String;Ljava/lang/String;)Landroid/net/http/BidirectionalStream$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.Builder.html#setDelayRequestHeadersUntilFirstFlushEnabled(boolean)"/>
@@ -413,13 +413,13 @@ namespace Android.Net.Http
             {
                 return IExecuteWithSignature<Android.Net.Http.BidirectionalStream.Builder>("setTrafficStatsUid", "(I)Landroid/net/http/BidirectionalStream$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -428,21 +428,21 @@ namespace Android.Net.Http
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.Callback.html#onCanceled(android.net.http.BidirectionalStream,android.net.http.UrlResponseInfo)"/>
@@ -451,7 +451,7 @@ namespace Android.Net.Http
             /// <param name="arg1"><see cref="Android.Net.Http.UrlResponseInfo"/></param>
             public void OnCanceled(Android.Net.Http.BidirectionalStream arg0, Android.Net.Http.UrlResponseInfo arg1)
             {
-                IExecute("onCanceled", arg0, arg1);
+                IExecuteWithSignature("onCanceled", "(Landroid/net/http/BidirectionalStream;Landroid/net/http/UrlResponseInfo;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.Callback.html#onFailed(android.net.http.BidirectionalStream,android.net.http.UrlResponseInfo,android.net.http.HttpException)"/>
@@ -461,7 +461,7 @@ namespace Android.Net.Http
             /// <param name="arg2"><see cref="Android.Net.Http.HttpException"/></param>
             public void OnFailed(Android.Net.Http.BidirectionalStream arg0, Android.Net.Http.UrlResponseInfo arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
             {
-                IExecute("onFailed", arg0, arg1, arg2);
+                IExecuteWithSignature("onFailed", "(Landroid/net/http/BidirectionalStream;Landroid/net/http/UrlResponseInfo;Landroid/net/http/HttpException;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.Callback.html#onReadCompleted(android.net.http.BidirectionalStream,android.net.http.UrlResponseInfo,java.nio.ByteBuffer,boolean)"/>
@@ -472,7 +472,7 @@ namespace Android.Net.Http
             /// <param name="arg3"><see cref="bool"/></param>
             public void OnReadCompleted(Android.Net.Http.BidirectionalStream arg0, Android.Net.Http.UrlResponseInfo arg1, Java.Nio.ByteBuffer arg2, bool arg3)
             {
-                IExecute("onReadCompleted", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onReadCompleted", "(Landroid/net/http/BidirectionalStream;Landroid/net/http/UrlResponseInfo;Ljava/nio/ByteBuffer;Z)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.Callback.html#onResponseHeadersReceived(android.net.http.BidirectionalStream,android.net.http.UrlResponseInfo)"/>
@@ -481,7 +481,7 @@ namespace Android.Net.Http
             /// <param name="arg1"><see cref="Android.Net.Http.UrlResponseInfo"/></param>
             public void OnResponseHeadersReceived(Android.Net.Http.BidirectionalStream arg0, Android.Net.Http.UrlResponseInfo arg1)
             {
-                IExecute("onResponseHeadersReceived", arg0, arg1);
+                IExecuteWithSignature("onResponseHeadersReceived", "(Landroid/net/http/BidirectionalStream;Landroid/net/http/UrlResponseInfo;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.Callback.html#onResponseTrailersReceived(android.net.http.BidirectionalStream,android.net.http.UrlResponseInfo,android.net.http.HeaderBlock)"/>
@@ -491,7 +491,7 @@ namespace Android.Net.Http
             /// <param name="arg2"><see cref="Android.Net.Http.HeaderBlock"/></param>
             public void OnResponseTrailersReceived(Android.Net.Http.BidirectionalStream arg0, Android.Net.Http.UrlResponseInfo arg1, Android.Net.Http.HeaderBlock arg2)
             {
-                IExecute("onResponseTrailersReceived", arg0, arg1, arg2);
+                IExecuteWithSignature("onResponseTrailersReceived", "(Landroid/net/http/BidirectionalStream;Landroid/net/http/UrlResponseInfo;Landroid/net/http/HeaderBlock;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.Callback.html#onStreamReady(android.net.http.BidirectionalStream)"/>
@@ -508,7 +508,7 @@ namespace Android.Net.Http
             /// <param name="arg1"><see cref="Android.Net.Http.UrlResponseInfo"/></param>
             public void OnSucceeded(Android.Net.Http.BidirectionalStream arg0, Android.Net.Http.UrlResponseInfo arg1)
             {
-                IExecute("onSucceeded", arg0, arg1);
+                IExecuteWithSignature("onSucceeded", "(Landroid/net/http/BidirectionalStream;Landroid/net/http/UrlResponseInfo;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.Callback.html#onWriteCompleted(android.net.http.BidirectionalStream,android.net.http.UrlResponseInfo,java.nio.ByteBuffer,boolean)"/>
@@ -519,22 +519,22 @@ namespace Android.Net.Http
             /// <param name="arg3"><see cref="bool"/></param>
             public void OnWriteCompleted(Android.Net.Http.BidirectionalStream arg0, Android.Net.Http.UrlResponseInfo arg1, Java.Nio.ByteBuffer arg2, bool arg3)
             {
-                IExecute("onWriteCompleted", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("onWriteCompleted", "(Landroid/net/http/BidirectionalStream;Landroid/net/http/UrlResponseInfo;Ljava/nio/ByteBuffer;Z)V", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

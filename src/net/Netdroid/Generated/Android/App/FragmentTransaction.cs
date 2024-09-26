@@ -43,10 +43,10 @@ namespace Android.App
         /// </summary>
         [global::System.Obsolete("FragmentTransaction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FragmentTransaction(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -67,9 +67,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -77,13 +77,13 @@ namespace Android.App
     public partial class FragmentTransaction
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentTransaction.html#TRANSIT_ENTER_MASK"/>
@@ -134,13 +134,13 @@ namespace Android.App
         public static int TRANSIT_UNSET { get { if (!_TRANSIT_UNSETReady) { _TRANSIT_UNSETContent = SGetField<int>(LocalBridgeClazz, "TRANSIT_UNSET"); _TRANSIT_UNSETReady = true; } return _TRANSIT_UNSETContent; } }
         private static int _TRANSIT_UNSETContent = default;
         private static bool _TRANSIT_UNSETReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentTransaction.html#add(android.app.Fragment,java.lang.String)"/>
@@ -151,7 +151,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.App.FragmentTransaction Add(Android.App.Fragment arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.App.FragmentTransaction>("add", arg0, arg1);
+            return IExecuteWithSignature<Android.App.FragmentTransaction>("add", "(Landroid/app/Fragment;Ljava/lang/String;)Landroid/app/FragmentTransaction;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentTransaction.html#add(int,android.app.Fragment,java.lang.String)"/>
@@ -163,7 +163,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.App.FragmentTransaction Add(int arg0, Android.App.Fragment arg1, Java.Lang.String arg2)
         {
-            return IExecute<Android.App.FragmentTransaction>("add", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.App.FragmentTransaction>("add", "(ILandroid/app/Fragment;Ljava/lang/String;)Landroid/app/FragmentTransaction;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentTransaction.html#add(int,android.app.Fragment)"/>
@@ -174,7 +174,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.App.FragmentTransaction Add(int arg0, Android.App.Fragment arg1)
         {
-            return IExecute<Android.App.FragmentTransaction>("add", arg0, arg1);
+            return IExecuteWithSignature<Android.App.FragmentTransaction>("add", "(ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentTransaction.html#addSharedElement(android.view.View,java.lang.String)"/>
@@ -185,7 +185,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.App.FragmentTransaction AddSharedElement(Android.View.View arg0, Java.Lang.String arg1)
         {
-            return IExecute<Android.App.FragmentTransaction>("addSharedElement", arg0, arg1);
+            return IExecuteWithSignature<Android.App.FragmentTransaction>("addSharedElement", "(Landroid/view/View;Ljava/lang/String;)Landroid/app/FragmentTransaction;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentTransaction.html#addToBackStack(java.lang.String)"/>
@@ -256,7 +256,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.App.FragmentTransaction Replace(int arg0, Android.App.Fragment arg1, Java.Lang.String arg2)
         {
-            return IExecute<Android.App.FragmentTransaction>("replace", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.App.FragmentTransaction>("replace", "(ILandroid/app/Fragment;Ljava/lang/String;)Landroid/app/FragmentTransaction;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentTransaction.html#replace(int,android.app.Fragment)"/>
@@ -267,7 +267,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.App.FragmentTransaction Replace(int arg0, Android.App.Fragment arg1)
         {
-            return IExecute<Android.App.FragmentTransaction>("replace", arg0, arg1);
+            return IExecuteWithSignature<Android.App.FragmentTransaction>("replace", "(ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentTransaction.html#runOnCommit(java.lang.Runnable)"/>
@@ -330,7 +330,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.App.FragmentTransaction SetCustomAnimations(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Android.App.FragmentTransaction>("setCustomAnimations", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.App.FragmentTransaction>("setCustomAnimations", "(IIII)Landroid/app/FragmentTransaction;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentTransaction.html#setCustomAnimations(int,int)"/>
@@ -341,7 +341,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public Android.App.FragmentTransaction SetCustomAnimations(int arg0, int arg1)
         {
-            return IExecute<Android.App.FragmentTransaction>("setCustomAnimations", arg0, arg1);
+            return IExecuteWithSignature<Android.App.FragmentTransaction>("setCustomAnimations", "(II)Landroid/app/FragmentTransaction;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentTransaction.html#setPrimaryNavigationFragment(android.app.Fragment)"/>
@@ -445,13 +445,13 @@ namespace Android.App
         {
             IExecuteWithSignature("commitNowAllowingStateLoss", "()V");
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

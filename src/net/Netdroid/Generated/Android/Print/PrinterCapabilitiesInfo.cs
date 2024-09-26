@@ -40,10 +40,10 @@ namespace Android.Print
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public PrinterCapabilitiesInfo(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Print
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Builder declaration
         /// <summary>
@@ -81,10 +81,10 @@ namespace Android.Print
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public Builder(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -105,9 +105,9 @@ namespace Android.Print
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -119,13 +119,13 @@ namespace Android.Print
     public partial class PrinterCapabilitiesInfo
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#CREATOR"/>
@@ -133,13 +133,13 @@ namespace Android.Print
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#getDefaults()"/>
@@ -204,11 +204,11 @@ namespace Android.Print
         /// <param name="arg1"><see cref="int"/></param>
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
-            IExecute("writeToParcel", arg0, arg1);
+            IExecuteWithSignature("writeToParcel", "(Landroid/os/Parcel;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Builder implementation
         public partial class Builder
@@ -222,21 +222,21 @@ namespace Android.Print
                 : base(arg0)
             {
             }
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.Builder.html#build()"/>
@@ -254,7 +254,7 @@ namespace Android.Print
             /// <returns><see cref="Android.Print.PrinterCapabilitiesInfo.Builder"/></returns>
             public Android.Print.PrinterCapabilitiesInfo.Builder AddMediaSize(Android.Print.PrintAttributes.MediaSize arg0, bool arg1)
             {
-                return IExecute<Android.Print.PrinterCapabilitiesInfo.Builder>("addMediaSize", arg0, arg1);
+                return IExecuteWithSignature<Android.Print.PrinterCapabilitiesInfo.Builder>("addMediaSize", "(Landroid/print/PrintAttributes$MediaSize;Z)Landroid/print/PrinterCapabilitiesInfo$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.Builder.html#addResolution(android.print.PrintAttributes.Resolution,boolean)"/>
@@ -264,7 +264,7 @@ namespace Android.Print
             /// <returns><see cref="Android.Print.PrinterCapabilitiesInfo.Builder"/></returns>
             public Android.Print.PrinterCapabilitiesInfo.Builder AddResolution(Android.Print.PrintAttributes.Resolution arg0, bool arg1)
             {
-                return IExecute<Android.Print.PrinterCapabilitiesInfo.Builder>("addResolution", arg0, arg1);
+                return IExecuteWithSignature<Android.Print.PrinterCapabilitiesInfo.Builder>("addResolution", "(Landroid/print/PrintAttributes$Resolution;Z)Landroid/print/PrinterCapabilitiesInfo$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.Builder.html#setColorModes(int,int)"/>
@@ -274,7 +274,7 @@ namespace Android.Print
             /// <returns><see cref="Android.Print.PrinterCapabilitiesInfo.Builder"/></returns>
             public Android.Print.PrinterCapabilitiesInfo.Builder SetColorModes(int arg0, int arg1)
             {
-                return IExecute<Android.Print.PrinterCapabilitiesInfo.Builder>("setColorModes", arg0, arg1);
+                return IExecuteWithSignature<Android.Print.PrinterCapabilitiesInfo.Builder>("setColorModes", "(II)Landroid/print/PrinterCapabilitiesInfo$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.Builder.html#setDuplexModes(int,int)"/>
@@ -284,7 +284,7 @@ namespace Android.Print
             /// <returns><see cref="Android.Print.PrinterCapabilitiesInfo.Builder"/></returns>
             public Android.Print.PrinterCapabilitiesInfo.Builder SetDuplexModes(int arg0, int arg1)
             {
-                return IExecute<Android.Print.PrinterCapabilitiesInfo.Builder>("setDuplexModes", arg0, arg1);
+                return IExecuteWithSignature<Android.Print.PrinterCapabilitiesInfo.Builder>("setDuplexModes", "(II)Landroid/print/PrinterCapabilitiesInfo$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.Builder.html#setMinMargins(android.print.PrintAttributes.Margins)"/>
@@ -295,20 +295,20 @@ namespace Android.Print
             {
                 return IExecuteWithSignature<Android.Print.PrinterCapabilitiesInfo.Builder>("setMinMargins", "(Landroid/print/PrintAttributes$Margins;)Landroid/print/PrinterCapabilitiesInfo$Builder;", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

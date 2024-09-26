@@ -40,10 +40,10 @@ namespace Android.App
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TaskStackBuilder(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Android.App
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Android.App
     public partial class TaskStackBuilder
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/TaskStackBuilder.html#create(android.content.Context)"/>
@@ -95,9 +95,9 @@ namespace Android.App
         {
             return SExecuteWithSignature<Android.App.TaskStackBuilder>(LocalBridgeClazz, "create", "(Landroid/content/Context;)Landroid/app/TaskStackBuilder;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/TaskStackBuilder.html#getPendingIntent(int,int,android.os.Bundle)"/>
@@ -108,7 +108,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public Android.App.PendingIntent GetPendingIntent(int arg0, int arg1, Android.Os.Bundle arg2)
         {
-            return IExecute<Android.App.PendingIntent>("getPendingIntent", arg0, arg1, arg2);
+            return IExecuteWithSignature<Android.App.PendingIntent>("getPendingIntent", "(IILandroid/os/Bundle;)Landroid/app/PendingIntent;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/TaskStackBuilder.html#getPendingIntent(int,int)"/>
@@ -118,7 +118,7 @@ namespace Android.App
         /// <returns><see cref="Android.App.PendingIntent"/></returns>
         public Android.App.PendingIntent GetPendingIntent(int arg0, int arg1)
         {
-            return IExecute<Android.App.PendingIntent>("getPendingIntent", arg0, arg1);
+            return IExecuteWithSignature<Android.App.PendingIntent>("getPendingIntent", "(II)Landroid/app/PendingIntent;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/TaskStackBuilder.html#addNextIntent(android.content.Intent)"/>
@@ -205,13 +205,13 @@ namespace Android.App
         {
             IExecuteWithSignature("startActivities", "(Landroid/os/Bundle;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

@@ -42,10 +42,10 @@ namespace Android.View.Displayhash
         /// </summary>
         [global::System.Obsolete("DisplayHashResultCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DisplayHashResultCallback(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.View.Displayhash
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -79,13 +79,13 @@ namespace Android.View.Displayhash
     public partial interface IDisplayHashResultCallback
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -94,13 +94,13 @@ namespace Android.View.Displayhash
     public partial class DisplayHashResultCallback : Android.View.Displayhash.IDisplayHashResultCallback
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/displayhash/DisplayHashResultCallback.html#DISPLAY_HASH_ERROR_INVALID_BOUNDS"/>
@@ -138,13 +138,13 @@ namespace Android.View.Displayhash
         public static int DISPLAY_HASH_ERROR_UNKNOWN { get { if (!_DISPLAY_HASH_ERROR_UNKNOWNReady) { _DISPLAY_HASH_ERROR_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "DISPLAY_HASH_ERROR_UNKNOWN"); _DISPLAY_HASH_ERROR_UNKNOWNReady = true; } return _DISPLAY_HASH_ERROR_UNKNOWNContent; } }
         private static int _DISPLAY_HASH_ERROR_UNKNOWNContent = default;
         private static bool _DISPLAY_HASH_ERROR_UNKNOWNReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/displayhash/DisplayHashResultCallback.html#onDisplayHashError(int)"/>
@@ -162,13 +162,13 @@ namespace Android.View.Displayhash
         {
             IExecuteWithSignature("onDisplayHashResult", "(Landroid/view/displayhash/DisplayHash;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

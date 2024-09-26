@@ -42,10 +42,10 @@ namespace Java.Net
         /// </summary>
         [global::System.Obsolete("ProxySelector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ProxySelector(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Net
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,17 +76,17 @@ namespace Java.Net
     public partial class ProxySelector
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/ProxySelector.html#getDefault()"/>
@@ -113,9 +113,9 @@ namespace Java.Net
         {
             SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/ProxySelector;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/ProxySelector.html#select(java.net.URI)"/>
@@ -134,15 +134,15 @@ namespace Java.Net
         /// <param name="arg2"><see cref="Java.Io.IOException"/></param>
         public void ConnectFailed(Java.Net.URI arg0, Java.Net.SocketAddress arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
-            IExecute("connectFailed", arg0, arg1, arg2);
+            IExecuteWithSignature("connectFailed", "(Ljava/net/URI;Ljava/net/SocketAddress;Ljava/io/IOException;)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

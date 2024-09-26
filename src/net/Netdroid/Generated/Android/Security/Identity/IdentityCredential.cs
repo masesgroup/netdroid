@@ -42,10 +42,10 @@ namespace Android.Security.Identity
         /// </summary>
         [global::System.Obsolete("IdentityCredential class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IdentityCredential(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,9 +66,9 @@ namespace Android.Security.Identity
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -76,21 +76,21 @@ namespace Android.Security.Identity
     public partial class IdentityCredential
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#getEntries(byte[],java.util.Map,byte[],byte[])"/>
@@ -108,7 +108,7 @@ namespace Android.Security.Identity
         [global::System.Obsolete()]
         public Android.Security.Identity.ResultData GetEntries(byte[] arg0, Java.Util.Map<Java.Lang.String, Java.Util.Collection<Java.Lang.String>> arg1, byte[] arg2, byte[] arg3)
         {
-            return IExecute<Android.Security.Identity.ResultData>("getEntries", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Android.Security.Identity.ResultData>("getEntries", "([BLjava/util/Map;[B[B)Landroid/security/identity/ResultData;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#decryptMessageFromReader(byte[])"/>
@@ -182,7 +182,7 @@ namespace Android.Security.Identity
         [global::System.Obsolete()]
         public void SetAvailableAuthenticationKeys(int arg0, int arg1)
         {
-            IExecute("setAvailableAuthenticationKeys", arg0, arg1);
+            IExecuteWithSignature("setAvailableAuthenticationKeys", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#setReaderEphemeralPublicKey(java.security.PublicKey)"/>
@@ -203,7 +203,7 @@ namespace Android.Security.Identity
         [global::System.Obsolete()]
         public void StoreStaticAuthenticationData(Java.Security.Cert.X509Certificate arg0, byte[] arg1)
         {
-            IExecute("storeStaticAuthenticationData", arg0, arg1);
+            IExecuteWithSignature("storeStaticAuthenticationData", "(Ljava/security/cert/X509Certificate;[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#delete(byte[])"/>
@@ -257,7 +257,7 @@ namespace Android.Security.Identity
         /// <param name="arg2"><see cref="long"/></param>
         public void SetAvailableAuthenticationKeys(int arg0, int arg1, long arg2)
         {
-            IExecute("setAvailableAuthenticationKeys", arg0, arg1, arg2);
+            IExecuteWithSignature("setAvailableAuthenticationKeys", "(IIJ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#storeStaticAuthenticationData(java.security.cert.X509Certificate,java.time.Instant,byte[])"/>
@@ -268,15 +268,15 @@ namespace Android.Security.Identity
         /// <exception cref="Android.Security.Identity.UnknownAuthenticationKeyException"/>
         public void StoreStaticAuthenticationData(Java.Security.Cert.X509Certificate arg0, Java.Time.Instant arg1, byte[] arg2)
         {
-            IExecute("storeStaticAuthenticationData", arg0, arg1, arg2);
+            IExecuteWithSignature("storeStaticAuthenticationData", "(Ljava/security/cert/X509Certificate;Ljava/time/Instant;[B)V", arg0, arg1, arg2);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

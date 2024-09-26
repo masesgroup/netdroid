@@ -42,10 +42,10 @@ namespace Android.Os
         /// </summary>
         [global::System.Obsolete("IBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IBinder(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Os
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region DeathRecipient declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Os
             /// </summary>
             [global::System.Obsolete("DeathRecipient class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public DeathRecipient(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Os
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -126,13 +126,13 @@ namespace Android.Os
     public partial interface IIBinder
     {
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
@@ -141,13 +141,13 @@ namespace Android.Os
     public partial class IBinder : Android.Os.IIBinder
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/IBinder.html#DUMP_TRANSACTION"/>
@@ -197,9 +197,9 @@ namespace Android.Os
         public static int TWEET_TRANSACTION { get { if (!_TWEET_TRANSACTIONReady) { _TWEET_TRANSACTIONContent = SGetField<int>(LocalBridgeClazz, "TWEET_TRANSACTION"); _TWEET_TRANSACTIONReady = true; } return _TWEET_TRANSACTIONContent; } }
         private static int _TWEET_TRANSACTIONContent = default;
         private static bool _TWEET_TRANSACTIONReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/IBinder.html#getSuggestedMaxIpcSizeBytes()"/>
@@ -209,9 +209,9 @@ namespace Android.Os
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getSuggestedMaxIpcSizeBytes", "()I");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/IBinder.html#queryLocalInterface(java.lang.String)"/>
@@ -249,7 +249,7 @@ namespace Android.Os
         /// <exception cref="Android.Os.RemoteException"/>
         public bool Transact(int arg0, Android.Os.Parcel arg1, Android.Os.Parcel arg2, int arg3)
         {
-            return IExecute<bool>("transact", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("transact", "(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/IBinder.html#unlinkToDeath(android.os.IBinder.DeathRecipient,int)"/>
@@ -259,7 +259,7 @@ namespace Android.Os
         /// <returns><see cref="bool"/></returns>
         public bool UnlinkToDeath(Android.Os.IBinder.DeathRecipient arg0, int arg1)
         {
-            return IExecute<bool>("unlinkToDeath", arg0, arg1);
+            return IExecuteWithSignature<bool>("unlinkToDeath", "(Landroid/os/IBinder$DeathRecipient;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/IBinder.html#getInterfaceDescriptor()"/>
@@ -278,7 +278,7 @@ namespace Android.Os
         /// <exception cref="Android.Os.RemoteException"/>
         public void Dump(Java.Io.FileDescriptor arg0, Java.Lang.String[] arg1)
         {
-            IExecute("dump", arg0, arg1);
+            IExecuteWithSignature("dump", "(Ljava/io/FileDescriptor;[Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/IBinder.html#dumpAsync(java.io.FileDescriptor,java.lang.String[])"/>
@@ -288,7 +288,7 @@ namespace Android.Os
         /// <exception cref="Android.Os.RemoteException"/>
         public void DumpAsync(Java.Io.FileDescriptor arg0, Java.Lang.String[] arg1)
         {
-            IExecute("dumpAsync", arg0, arg1);
+            IExecuteWithSignature("dumpAsync", "(Ljava/io/FileDescriptor;[Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/IBinder.html#linkToDeath(android.os.IBinder.DeathRecipient,int)"/>
@@ -298,31 +298,31 @@ namespace Android.Os
         /// <exception cref="Android.Os.RemoteException"/>
         public void LinkToDeath(Android.Os.IBinder.DeathRecipient arg0, int arg1)
         {
-            IExecute("linkToDeath", arg0, arg1);
+            IExecuteWithSignature("linkToDeath", "(Landroid/os/IBinder$DeathRecipient;I)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region DeathRecipient implementation
         public partial class DeathRecipient
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/IBinder.DeathRecipient.html#binderDied()"/>
@@ -339,20 +339,20 @@ namespace Android.Os
             {
                 IExecuteWithSignature("binderDied", "(Landroid/os/IBinder;)V", arg0);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

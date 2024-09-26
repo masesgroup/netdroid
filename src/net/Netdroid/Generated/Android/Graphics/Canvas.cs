@@ -40,10 +40,10 @@ namespace Android.Graphics
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Canvas(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Graphics
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region EdgeType declaration
         /// <summary>
@@ -82,10 +82,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public EdgeType(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -106,9 +106,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -127,10 +127,10 @@ namespace Android.Graphics
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public VertexMode(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -151,9 +151,9 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -173,13 +173,13 @@ namespace Android.Graphics
             : base(arg0)
         {
         }
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#ALL_SAVE_FLAG"/>
@@ -187,13 +187,13 @@ namespace Android.Graphics
         public static int ALL_SAVE_FLAG { get { if (!_ALL_SAVE_FLAGReady) { _ALL_SAVE_FLAGContent = SGetField<int>(LocalBridgeClazz, "ALL_SAVE_FLAG"); _ALL_SAVE_FLAGReady = true; } return _ALL_SAVE_FLAGContent; } }
         private static int _ALL_SAVE_FLAGContent = default;
         private static bool _ALL_SAVE_FLAGReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#getDrawFilter()"/>
@@ -240,7 +240,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool ClipOutRect(float arg0, float arg1, float arg2, float arg3)
         {
-            return IExecute<bool>("clipOutRect", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("clipOutRect", "(FFFF)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipOutRect(int,int,int,int)"/>
@@ -252,7 +252,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool ClipOutRect(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("clipOutRect", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("clipOutRect", "(IIII)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipPath(android.graphics.Path,android.graphics.Region.Op)"/>
@@ -263,7 +263,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public bool ClipPath(Android.Graphics.Path arg0, Android.Graphics.Region.Op arg1)
         {
-            return IExecute<bool>("clipPath", arg0, arg1);
+            return IExecuteWithSignature<bool>("clipPath", "(Landroid/graphics/Path;Landroid/graphics/Region$Op;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipPath(android.graphics.Path)"/>
@@ -283,7 +283,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public bool ClipRect(Android.Graphics.Rect arg0, Android.Graphics.Region.Op arg1)
         {
-            return IExecute<bool>("clipRect", arg0, arg1);
+            return IExecuteWithSignature<bool>("clipRect", "(Landroid/graphics/Rect;Landroid/graphics/Region$Op;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipRect(android.graphics.Rect)"/>
@@ -303,7 +303,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public bool ClipRect(Android.Graphics.RectF arg0, Android.Graphics.Region.Op arg1)
         {
-            return IExecute<bool>("clipRect", arg0, arg1);
+            return IExecuteWithSignature<bool>("clipRect", "(Landroid/graphics/RectF;Landroid/graphics/Region$Op;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipRect(android.graphics.RectF)"/>
@@ -326,7 +326,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public bool ClipRect(float arg0, float arg1, float arg2, float arg3, Android.Graphics.Region.Op arg4)
         {
-            return IExecute<bool>("clipRect", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("clipRect", "(FFFFLandroid/graphics/Region$Op;)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipRect(float,float,float,float)"/>
@@ -338,7 +338,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool ClipRect(float arg0, float arg1, float arg2, float arg3)
         {
-            return IExecute<bool>("clipRect", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("clipRect", "(FFFF)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipRect(int,int,int,int)"/>
@@ -350,7 +350,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool ClipRect(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("clipRect", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("clipRect", "(IIII)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#getClipBounds(android.graphics.Rect)"/>
@@ -386,7 +386,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public bool QuickReject(Android.Graphics.Path arg0, Android.Graphics.Canvas.EdgeType arg1)
         {
-            return IExecute<bool>("quickReject", arg0, arg1);
+            return IExecuteWithSignature<bool>("quickReject", "(Landroid/graphics/Path;Landroid/graphics/Canvas$EdgeType;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#quickReject(android.graphics.Path)"/>
@@ -406,7 +406,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public bool QuickReject(Android.Graphics.RectF arg0, Android.Graphics.Canvas.EdgeType arg1)
         {
-            return IExecute<bool>("quickReject", arg0, arg1);
+            return IExecuteWithSignature<bool>("quickReject", "(Landroid/graphics/RectF;Landroid/graphics/Canvas$EdgeType;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#quickReject(android.graphics.RectF)"/>
@@ -429,7 +429,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public bool QuickReject(float arg0, float arg1, float arg2, float arg3, Android.Graphics.Canvas.EdgeType arg4)
         {
-            return IExecute<bool>("quickReject", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("quickReject", "(FFFFLandroid/graphics/Canvas$EdgeType;)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#quickReject(float,float,float,float)"/>
@@ -441,7 +441,7 @@ namespace Android.Graphics
         /// <returns><see cref="bool"/></returns>
         public bool QuickReject(float arg0, float arg1, float arg2, float arg3)
         {
-            return IExecute<bool>("quickReject", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("quickReject", "(FFFF)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#getMatrix()"/>
@@ -468,7 +468,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="float"/></param>
         public void Rotate(float arg0, float arg1, float arg2)
         {
-            IExecute("rotate", arg0, arg1, arg2);
+            IExecuteWithSignature("rotate", "(FFF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#scale(float,float,float,float)"/>
@@ -479,7 +479,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="float"/></param>
         public void Scale(float arg0, float arg1, float arg2, float arg3)
         {
-            IExecute("scale", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("scale", "(FFFF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#getDensity()"/>
@@ -547,7 +547,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public int SaveLayer(Android.Graphics.RectF arg0, Android.Graphics.Paint arg1, int arg2)
         {
-            return IExecute<int>("saveLayer", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("saveLayer", "(Landroid/graphics/RectF;Landroid/graphics/Paint;I)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayer(android.graphics.RectF,android.graphics.Paint)"/>
@@ -557,7 +557,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int SaveLayer(Android.Graphics.RectF arg0, Android.Graphics.Paint arg1)
         {
-            return IExecute<int>("saveLayer", arg0, arg1);
+            return IExecuteWithSignature<int>("saveLayer", "(Landroid/graphics/RectF;Landroid/graphics/Paint;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayer(float,float,float,float,android.graphics.Paint,int)"/>
@@ -572,7 +572,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public int SaveLayer(float arg0, float arg1, float arg2, float arg3, Android.Graphics.Paint arg4, int arg5)
         {
-            return IExecute<int>("saveLayer", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<int>("saveLayer", "(FFFFLandroid/graphics/Paint;I)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayer(float,float,float,float,android.graphics.Paint)"/>
@@ -585,7 +585,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int SaveLayer(float arg0, float arg1, float arg2, float arg3, Android.Graphics.Paint arg4)
         {
-            return IExecute<int>("saveLayer", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("saveLayer", "(FFFFLandroid/graphics/Paint;)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayerAlpha(android.graphics.RectF,int,int)"/>
@@ -597,7 +597,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public int SaveLayerAlpha(Android.Graphics.RectF arg0, int arg1, int arg2)
         {
-            return IExecute<int>("saveLayerAlpha", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("saveLayerAlpha", "(Landroid/graphics/RectF;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayerAlpha(android.graphics.RectF,int)"/>
@@ -607,7 +607,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int SaveLayerAlpha(Android.Graphics.RectF arg0, int arg1)
         {
-            return IExecute<int>("saveLayerAlpha", arg0, arg1);
+            return IExecuteWithSignature<int>("saveLayerAlpha", "(Landroid/graphics/RectF;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayerAlpha(float,float,float,float,int,int)"/>
@@ -622,7 +622,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public int SaveLayerAlpha(float arg0, float arg1, float arg2, float arg3, int arg4, int arg5)
         {
-            return IExecute<int>("saveLayerAlpha", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<int>("saveLayerAlpha", "(FFFFII)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayerAlpha(float,float,float,float,int)"/>
@@ -635,7 +635,7 @@ namespace Android.Graphics
         /// <returns><see cref="int"/></returns>
         public int SaveLayerAlpha(float arg0, float arg1, float arg2, float arg3, int arg4)
         {
-            return IExecute<int>("saveLayerAlpha", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("saveLayerAlpha", "(FFFFI)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipOutShader(android.graphics.Shader)"/>
@@ -686,7 +686,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="Android.Graphics.Paint"/></param>
         public void DrawArc(Android.Graphics.RectF arg0, float arg1, float arg2, bool arg3, Android.Graphics.Paint arg4)
         {
-            IExecute("drawArc", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("drawArc", "(Landroid/graphics/RectF;FFZLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawArc(float,float,float,float,float,float,boolean,android.graphics.Paint)"/>
@@ -701,7 +701,7 @@ namespace Android.Graphics
         /// <param name="arg7"><see cref="Android.Graphics.Paint"/></param>
         public void DrawArc(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, bool arg6, Android.Graphics.Paint arg7)
         {
-            IExecute("drawArc", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("drawArc", "(FFFFFFZLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawARGB(int,int,int,int)"/>
@@ -712,7 +712,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="int"/></param>
         public void DrawARGB(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("drawARGB", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("drawARGB", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawBitmap(android.graphics.Bitmap,android.graphics.Matrix,android.graphics.Paint)"/>
@@ -722,7 +722,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="Android.Graphics.Paint"/></param>
         public void DrawBitmap(Android.Graphics.Bitmap arg0, Android.Graphics.Matrix arg1, Android.Graphics.Paint arg2)
         {
-            IExecute("drawBitmap", arg0, arg1, arg2);
+            IExecuteWithSignature("drawBitmap", "(Landroid/graphics/Bitmap;Landroid/graphics/Matrix;Landroid/graphics/Paint;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawBitmap(android.graphics.Bitmap,android.graphics.Rect,android.graphics.Rect,android.graphics.Paint)"/>
@@ -733,7 +733,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="Android.Graphics.Paint"/></param>
         public void DrawBitmap(Android.Graphics.Bitmap arg0, Android.Graphics.Rect arg1, Android.Graphics.Rect arg2, Android.Graphics.Paint arg3)
         {
-            IExecute("drawBitmap", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("drawBitmap", "(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawBitmap(android.graphics.Bitmap,android.graphics.Rect,android.graphics.RectF,android.graphics.Paint)"/>
@@ -744,7 +744,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="Android.Graphics.Paint"/></param>
         public void DrawBitmap(Android.Graphics.Bitmap arg0, Android.Graphics.Rect arg1, Android.Graphics.RectF arg2, Android.Graphics.Paint arg3)
         {
-            IExecute("drawBitmap", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("drawBitmap", "(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawBitmap(android.graphics.Bitmap,float,float,android.graphics.Paint)"/>
@@ -755,7 +755,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="Android.Graphics.Paint"/></param>
         public void DrawBitmap(Android.Graphics.Bitmap arg0, float arg1, float arg2, Android.Graphics.Paint arg3)
         {
-            IExecute("drawBitmap", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("drawBitmap", "(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawBitmap(int[],int,int,float,float,int,int,boolean,android.graphics.Paint)"/>
@@ -772,7 +772,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public void DrawBitmap(int[] arg0, int arg1, int arg2, float arg3, float arg4, int arg5, int arg6, bool arg7, Android.Graphics.Paint arg8)
         {
-            IExecute("drawBitmap", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecuteWithSignature("drawBitmap", "([IIIFFIIZLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawBitmap(int[],int,int,int,int,int,int,boolean,android.graphics.Paint)"/>
@@ -789,7 +789,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public void DrawBitmap(int[] arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, Android.Graphics.Paint arg8)
         {
-            IExecute("drawBitmap", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecuteWithSignature("drawBitmap", "([IIIIIIIZLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawBitmapMesh(android.graphics.Bitmap,int,int,float[],int,int[],int,android.graphics.Paint)"/>
@@ -804,7 +804,7 @@ namespace Android.Graphics
         /// <param name="arg7"><see cref="Android.Graphics.Paint"/></param>
         public void DrawBitmapMesh(Android.Graphics.Bitmap arg0, int arg1, int arg2, float[] arg3, int arg4, int[] arg5, int arg6, Android.Graphics.Paint arg7)
         {
-            IExecute("drawBitmapMesh", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("drawBitmapMesh", "(Landroid/graphics/Bitmap;II[FI[IILandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawCircle(float,float,float,android.graphics.Paint)"/>
@@ -815,7 +815,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="Android.Graphics.Paint"/></param>
         public void DrawCircle(float arg0, float arg1, float arg2, Android.Graphics.Paint arg3)
         {
-            IExecute("drawCircle", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("drawCircle", "(FFFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawColor(int,android.graphics.BlendMode)"/>
@@ -824,7 +824,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.BlendMode"/></param>
         public void DrawColor(int arg0, Android.Graphics.BlendMode arg1)
         {
-            IExecute("drawColor", arg0, arg1);
+            IExecuteWithSignature("drawColor", "(ILandroid/graphics/BlendMode;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawColor(int,android.graphics.PorterDuff.Mode)"/>
@@ -833,7 +833,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
         public void DrawColor(int arg0, Android.Graphics.PorterDuff.Mode arg1)
         {
-            IExecute("drawColor", arg0, arg1);
+            IExecuteWithSignature("drawColor", "(ILandroid/graphics/PorterDuff$Mode;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawColor(int)"/>
@@ -850,7 +850,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.BlendMode"/></param>
         public void DrawColor(long arg0, Android.Graphics.BlendMode arg1)
         {
-            IExecute("drawColor", arg0, arg1);
+            IExecuteWithSignature("drawColor", "(JLandroid/graphics/BlendMode;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawColor(long)"/>
@@ -872,7 +872,7 @@ namespace Android.Graphics
         /// <param name="arg6"><see cref="Android.Graphics.Paint"/></param>
         public void DrawDoubleRoundRect(Android.Graphics.RectF arg0, float arg1, float arg2, Android.Graphics.RectF arg3, float arg4, float arg5, Android.Graphics.Paint arg6)
         {
-            IExecute("drawDoubleRoundRect", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("drawDoubleRoundRect", "(Landroid/graphics/RectF;FFLandroid/graphics/RectF;FFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawDoubleRoundRect(android.graphics.RectF,float[],android.graphics.RectF,float[],android.graphics.Paint)"/>
@@ -884,7 +884,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="Android.Graphics.Paint"/></param>
         public void DrawDoubleRoundRect(Android.Graphics.RectF arg0, float[] arg1, Android.Graphics.RectF arg2, float[] arg3, Android.Graphics.Paint arg4)
         {
-            IExecute("drawDoubleRoundRect", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("drawDoubleRoundRect", "(Landroid/graphics/RectF;[FLandroid/graphics/RectF;[FLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawGlyphs(int[],int,float[],int,int,android.graphics.fonts.Font,android.graphics.Paint)"/>
@@ -898,7 +898,7 @@ namespace Android.Graphics
         /// <param name="arg6"><see cref="Android.Graphics.Paint"/></param>
         public void DrawGlyphs(int[] arg0, int arg1, float[] arg2, int arg3, int arg4, Android.Graphics.Fonts.Font arg5, Android.Graphics.Paint arg6)
         {
-            IExecute("drawGlyphs", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("drawGlyphs", "([II[FIILandroid/graphics/fonts/Font;Landroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawLine(float,float,float,float,android.graphics.Paint)"/>
@@ -910,7 +910,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="Android.Graphics.Paint"/></param>
         public void DrawLine(float arg0, float arg1, float arg2, float arg3, Android.Graphics.Paint arg4)
         {
-            IExecute("drawLine", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("drawLine", "(FFFFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawLines(float[],android.graphics.Paint)"/>
@@ -919,7 +919,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.Paint"/></param>
         public void DrawLines(float[] arg0, Android.Graphics.Paint arg1)
         {
-            IExecute("drawLines", arg0, arg1);
+            IExecuteWithSignature("drawLines", "([FLandroid/graphics/Paint;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawLines(float[],int,int,android.graphics.Paint)"/>
@@ -930,7 +930,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="Android.Graphics.Paint"/></param>
         public void DrawLines(float[] arg0, int arg1, int arg2, Android.Graphics.Paint arg3)
         {
-            IExecute("drawLines", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("drawLines", "([FIILandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawMesh(android.graphics.Mesh,android.graphics.BlendMode,android.graphics.Paint)"/>
@@ -940,7 +940,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="Android.Graphics.Paint"/></param>
         public void DrawMesh(Android.Graphics.Mesh arg0, Android.Graphics.BlendMode arg1, Android.Graphics.Paint arg2)
         {
-            IExecute("drawMesh", arg0, arg1, arg2);
+            IExecuteWithSignature("drawMesh", "(Landroid/graphics/Mesh;Landroid/graphics/BlendMode;Landroid/graphics/Paint;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawOval(android.graphics.RectF,android.graphics.Paint)"/>
@@ -949,7 +949,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.Paint"/></param>
         public void DrawOval(Android.Graphics.RectF arg0, Android.Graphics.Paint arg1)
         {
-            IExecute("drawOval", arg0, arg1);
+            IExecuteWithSignature("drawOval", "(Landroid/graphics/RectF;Landroid/graphics/Paint;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawOval(float,float,float,float,android.graphics.Paint)"/>
@@ -961,7 +961,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="Android.Graphics.Paint"/></param>
         public void DrawOval(float arg0, float arg1, float arg2, float arg3, Android.Graphics.Paint arg4)
         {
-            IExecute("drawOval", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("drawOval", "(FFFFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawPaint(android.graphics.Paint)"/>
@@ -979,7 +979,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="Android.Graphics.Paint"/></param>
         public void DrawPatch(Android.Graphics.NinePatch arg0, Android.Graphics.Rect arg1, Android.Graphics.Paint arg2)
         {
-            IExecute("drawPatch", arg0, arg1, arg2);
+            IExecuteWithSignature("drawPatch", "(Landroid/graphics/NinePatch;Landroid/graphics/Rect;Landroid/graphics/Paint;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawPatch(android.graphics.NinePatch,android.graphics.RectF,android.graphics.Paint)"/>
@@ -989,7 +989,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="Android.Graphics.Paint"/></param>
         public void DrawPatch(Android.Graphics.NinePatch arg0, Android.Graphics.RectF arg1, Android.Graphics.Paint arg2)
         {
-            IExecute("drawPatch", arg0, arg1, arg2);
+            IExecuteWithSignature("drawPatch", "(Landroid/graphics/NinePatch;Landroid/graphics/RectF;Landroid/graphics/Paint;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawPath(android.graphics.Path,android.graphics.Paint)"/>
@@ -998,7 +998,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.Paint"/></param>
         public void DrawPath(Android.Graphics.Path arg0, Android.Graphics.Paint arg1)
         {
-            IExecute("drawPath", arg0, arg1);
+            IExecuteWithSignature("drawPath", "(Landroid/graphics/Path;Landroid/graphics/Paint;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawPicture(android.graphics.Picture,android.graphics.Rect)"/>
@@ -1007,7 +1007,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.Rect"/></param>
         public void DrawPicture(Android.Graphics.Picture arg0, Android.Graphics.Rect arg1)
         {
-            IExecute("drawPicture", arg0, arg1);
+            IExecuteWithSignature("drawPicture", "(Landroid/graphics/Picture;Landroid/graphics/Rect;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawPicture(android.graphics.Picture,android.graphics.RectF)"/>
@@ -1016,7 +1016,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.RectF"/></param>
         public void DrawPicture(Android.Graphics.Picture arg0, Android.Graphics.RectF arg1)
         {
-            IExecute("drawPicture", arg0, arg1);
+            IExecuteWithSignature("drawPicture", "(Landroid/graphics/Picture;Landroid/graphics/RectF;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawPicture(android.graphics.Picture)"/>
@@ -1034,7 +1034,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="Android.Graphics.Paint"/></param>
         public void DrawPoint(float arg0, float arg1, Android.Graphics.Paint arg2)
         {
-            IExecute("drawPoint", arg0, arg1, arg2);
+            IExecuteWithSignature("drawPoint", "(FFLandroid/graphics/Paint;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawPoints(float[],android.graphics.Paint)"/>
@@ -1043,7 +1043,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.Paint"/></param>
         public void DrawPoints(float[] arg0, Android.Graphics.Paint arg1)
         {
-            IExecute("drawPoints", arg0, arg1);
+            IExecuteWithSignature("drawPoints", "([FLandroid/graphics/Paint;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawPoints(float[],int,int,android.graphics.Paint)"/>
@@ -1054,7 +1054,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="Android.Graphics.Paint"/></param>
         public void DrawPoints(float[] arg0, int arg1, int arg2, Android.Graphics.Paint arg3)
         {
-            IExecute("drawPoints", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("drawPoints", "([FIILandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawPosText(char[],int,int,float[],android.graphics.Paint)"/>
@@ -1067,7 +1067,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public void DrawPosText(char[] arg0, int arg1, int arg2, float[] arg3, Android.Graphics.Paint arg4)
         {
-            IExecute("drawPosText", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("drawPosText", "([CII[FLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawPosText(java.lang.String,float[],android.graphics.Paint)"/>
@@ -1078,7 +1078,7 @@ namespace Android.Graphics
         [global::System.Obsolete()]
         public void DrawPosText(Java.Lang.String arg0, float[] arg1, Android.Graphics.Paint arg2)
         {
-            IExecute("drawPosText", arg0, arg1, arg2);
+            IExecuteWithSignature("drawPosText", "(Ljava/lang/String;[FLandroid/graphics/Paint;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawRect(android.graphics.Rect,android.graphics.Paint)"/>
@@ -1087,7 +1087,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.Paint"/></param>
         public void DrawRect(Android.Graphics.Rect arg0, Android.Graphics.Paint arg1)
         {
-            IExecute("drawRect", arg0, arg1);
+            IExecuteWithSignature("drawRect", "(Landroid/graphics/Rect;Landroid/graphics/Paint;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawRect(android.graphics.RectF,android.graphics.Paint)"/>
@@ -1096,7 +1096,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="Android.Graphics.Paint"/></param>
         public void DrawRect(Android.Graphics.RectF arg0, Android.Graphics.Paint arg1)
         {
-            IExecute("drawRect", arg0, arg1);
+            IExecuteWithSignature("drawRect", "(Landroid/graphics/RectF;Landroid/graphics/Paint;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawRect(float,float,float,float,android.graphics.Paint)"/>
@@ -1108,7 +1108,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="Android.Graphics.Paint"/></param>
         public void DrawRect(float arg0, float arg1, float arg2, float arg3, Android.Graphics.Paint arg4)
         {
-            IExecute("drawRect", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("drawRect", "(FFFFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawRenderNode(android.graphics.RenderNode)"/>
@@ -1126,7 +1126,7 @@ namespace Android.Graphics
         /// <param name="arg2"><see cref="int"/></param>
         public void DrawRGB(int arg0, int arg1, int arg2)
         {
-            IExecute("drawRGB", arg0, arg1, arg2);
+            IExecuteWithSignature("drawRGB", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawRoundRect(android.graphics.RectF,float,float,android.graphics.Paint)"/>
@@ -1137,7 +1137,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="Android.Graphics.Paint"/></param>
         public void DrawRoundRect(Android.Graphics.RectF arg0, float arg1, float arg2, Android.Graphics.Paint arg3)
         {
-            IExecute("drawRoundRect", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("drawRoundRect", "(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawRoundRect(float,float,float,float,float,float,android.graphics.Paint)"/>
@@ -1151,7 +1151,7 @@ namespace Android.Graphics
         /// <param name="arg6"><see cref="Android.Graphics.Paint"/></param>
         public void DrawRoundRect(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, Android.Graphics.Paint arg6)
         {
-            IExecute("drawRoundRect", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("drawRoundRect", "(FFFFFFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawText(char[],int,int,float,float,android.graphics.Paint)"/>
@@ -1164,7 +1164,7 @@ namespace Android.Graphics
         /// <param name="arg5"><see cref="Android.Graphics.Paint"/></param>
         public void DrawText(char[] arg0, int arg1, int arg2, float arg3, float arg4, Android.Graphics.Paint arg5)
         {
-            IExecute("drawText", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("drawText", "([CIIFFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawText(java.lang.CharSequence,int,int,float,float,android.graphics.Paint)"/>
@@ -1177,7 +1177,7 @@ namespace Android.Graphics
         /// <param name="arg5"><see cref="Android.Graphics.Paint"/></param>
         public void DrawText(Java.Lang.CharSequence arg0, int arg1, int arg2, float arg3, float arg4, Android.Graphics.Paint arg5)
         {
-            IExecute("drawText", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("drawText", "(Ljava/lang/CharSequence;IIFFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawText(java.lang.String,float,float,android.graphics.Paint)"/>
@@ -1188,7 +1188,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="Android.Graphics.Paint"/></param>
         public void DrawText(Java.Lang.String arg0, float arg1, float arg2, Android.Graphics.Paint arg3)
         {
-            IExecute("drawText", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("drawText", "(Ljava/lang/String;FFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawText(java.lang.String,int,int,float,float,android.graphics.Paint)"/>
@@ -1201,7 +1201,7 @@ namespace Android.Graphics
         /// <param name="arg5"><see cref="Android.Graphics.Paint"/></param>
         public void DrawText(Java.Lang.String arg0, int arg1, int arg2, float arg3, float arg4, Android.Graphics.Paint arg5)
         {
-            IExecute("drawText", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("drawText", "(Ljava/lang/String;IIFFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawTextOnPath(char[],int,int,android.graphics.Path,float,float,android.graphics.Paint)"/>
@@ -1215,7 +1215,7 @@ namespace Android.Graphics
         /// <param name="arg6"><see cref="Android.Graphics.Paint"/></param>
         public void DrawTextOnPath(char[] arg0, int arg1, int arg2, Android.Graphics.Path arg3, float arg4, float arg5, Android.Graphics.Paint arg6)
         {
-            IExecute("drawTextOnPath", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("drawTextOnPath", "([CIILandroid/graphics/Path;FFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawTextOnPath(java.lang.String,android.graphics.Path,float,float,android.graphics.Paint)"/>
@@ -1227,7 +1227,7 @@ namespace Android.Graphics
         /// <param name="arg4"><see cref="Android.Graphics.Paint"/></param>
         public void DrawTextOnPath(Java.Lang.String arg0, Android.Graphics.Path arg1, float arg2, float arg3, Android.Graphics.Paint arg4)
         {
-            IExecute("drawTextOnPath", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("drawTextOnPath", "(Ljava/lang/String;Landroid/graphics/Path;FFLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawTextRun(android.graphics.text.MeasuredText,int,int,int,int,float,float,boolean,android.graphics.Paint)"/>
@@ -1243,7 +1243,7 @@ namespace Android.Graphics
         /// <param name="arg8"><see cref="Android.Graphics.Paint"/></param>
         public void DrawTextRun(Android.Graphics.Text.MeasuredText arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, bool arg7, Android.Graphics.Paint arg8)
         {
-            IExecute("drawTextRun", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecuteWithSignature("drawTextRun", "(Landroid/graphics/text/MeasuredText;IIIIFFZLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawTextRun(char[],int,int,int,int,float,float,boolean,android.graphics.Paint)"/>
@@ -1259,7 +1259,7 @@ namespace Android.Graphics
         /// <param name="arg8"><see cref="Android.Graphics.Paint"/></param>
         public void DrawTextRun(char[] arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, bool arg7, Android.Graphics.Paint arg8)
         {
-            IExecute("drawTextRun", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecuteWithSignature("drawTextRun", "([CIIIIFFZLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawTextRun(java.lang.CharSequence,int,int,int,int,float,float,boolean,android.graphics.Paint)"/>
@@ -1275,7 +1275,7 @@ namespace Android.Graphics
         /// <param name="arg8"><see cref="Android.Graphics.Paint"/></param>
         public void DrawTextRun(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3, int arg4, float arg5, float arg6, bool arg7, Android.Graphics.Paint arg8)
         {
-            IExecute("drawTextRun", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecuteWithSignature("drawTextRun", "(Ljava/lang/CharSequence;IIIIFFZLandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawVertices(android.graphics.Canvas.VertexMode,int,float[],int,float[],int,int[],int,short[],int,int,android.graphics.Paint)"/>
@@ -1294,7 +1294,7 @@ namespace Android.Graphics
         /// <param name="arg11"><see cref="Android.Graphics.Paint"/></param>
         public void DrawVertices(Android.Graphics.Canvas.VertexMode arg0, int arg1, float[] arg2, int arg3, float[] arg4, int arg5, int[] arg6, int arg7, short[] arg8, int arg9, int arg10, Android.Graphics.Paint arg11)
         {
-            IExecute("drawVertices", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+            IExecuteWithSignature("drawVertices", "(Landroid/graphics/Canvas$VertexMode;I[FI[FI[II[SIILandroid/graphics/Paint;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#enableZ()"/>
@@ -1342,7 +1342,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void Scale(float arg0, float arg1)
         {
-            IExecute("scale", arg0, arg1);
+            IExecuteWithSignature("scale", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#setBitmap(android.graphics.Bitmap)"/>
@@ -1383,7 +1383,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void Skew(float arg0, float arg1)
         {
-            IExecute("skew", arg0, arg1);
+            IExecuteWithSignature("skew", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#translate(float,float)"/>
@@ -1392,23 +1392,23 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         public void Translate(float arg0, float arg1)
         {
-            IExecute("translate", arg0, arg1);
+            IExecuteWithSignature("translate", "(FF)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region EdgeType implementation
         public partial class EdgeType
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Canvas.EdgeType.html#AA"/>
@@ -1424,9 +1424,9 @@ namespace Android.Graphics
             public static Android.Graphics.Canvas.EdgeType BW { get { if (!_BWReady) { _BWContent = SGetField<Android.Graphics.Canvas.EdgeType>(LocalBridgeClazz, "BW"); _BWReady = true; } return _BWContent; } }
             private static Android.Graphics.Canvas.EdgeType _BWContent = default;
             private static bool _BWReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Canvas.EdgeType.html#valueOf(java.lang.String)"/>
@@ -1445,17 +1445,17 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Canvas.EdgeType>(LocalBridgeClazz, "values", "()[Landroid/graphics/Canvas$EdgeType;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -1464,13 +1464,13 @@ namespace Android.Graphics
         public partial class VertexMode
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Canvas.VertexMode.html#TRIANGLE_FAN"/>
@@ -1490,9 +1490,9 @@ namespace Android.Graphics
             public static Android.Graphics.Canvas.VertexMode TRIANGLES { get { if (!_TRIANGLESReady) { _TRIANGLESContent = SGetField<Android.Graphics.Canvas.VertexMode>(LocalBridgeClazz, "TRIANGLES"); _TRIANGLESReady = true; } return _TRIANGLESContent; } }
             private static Android.Graphics.Canvas.VertexMode _TRIANGLESContent = default;
             private static bool _TRIANGLESReady = false; // this is used because in case of generics 
-        
+
             #endregion
-        
+
             #region Static methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Canvas.VertexMode.html#valueOf(java.lang.String)"/>
@@ -1511,24 +1511,24 @@ namespace Android.Graphics
             {
                 return SExecuteWithSignatureArray<Android.Graphics.Canvas.VertexMode>(LocalBridgeClazz, "values", "()[Landroid/graphics/Canvas$VertexMode;");
             }
-        
+
             #endregion
-        
+
             #region Instance methods
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

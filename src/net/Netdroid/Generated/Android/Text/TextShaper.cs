@@ -40,10 +40,10 @@ namespace Android.Text
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TextShaper(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,7 +64,7 @@ namespace Android.Text
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region GlyphsConsumer declaration
         /// <summary>
@@ -83,10 +83,10 @@ namespace Android.Text
             /// </summary>
             [global::System.Obsolete("GlyphsConsumer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public GlyphsConsumer(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -107,9 +107,9 @@ namespace Android.Text
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -121,17 +121,17 @@ namespace Android.Text
     public partial class TextShaper
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextShaper.html#shapeText(java.lang.CharSequence,int,int,android.text.TextDirectionHeuristic,android.text.TextPaint,android.text.TextShaper.GlyphsConsumer)"/>
@@ -144,35 +144,35 @@ namespace Android.Text
         /// <param name="arg5"><see cref="Android.Text.TextShaper.GlyphsConsumer"/></param>
         public static void ShapeText(Java.Lang.CharSequence arg0, int arg1, int arg2, Android.Text.TextDirectionHeuristic arg3, Android.Text.TextPaint arg4, Android.Text.TextShaper.GlyphsConsumer arg5)
         {
-            SExecute(LocalBridgeClazz, "shapeText", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "shapeText", "(Ljava/lang/CharSequence;IILandroid/text/TextDirectionHeuristic;Landroid/text/TextPaint;Landroid/text/TextShaper$GlyphsConsumer;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
-    
+
         #endregion
-    
+
         #region Nested classes
         #region GlyphsConsumer implementation
         public partial class GlyphsConsumer
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/TextShaper.GlyphsConsumer.html#accept(int,int,android.graphics.text.PositionedGlyphs,android.text.TextPaint)"/>
@@ -183,22 +183,22 @@ namespace Android.Text
             /// <param name="arg3"><see cref="Android.Text.TextPaint"/></param>
             public void Accept(int arg0, int arg1, Android.Graphics.Text.PositionedGlyphs arg2, Android.Text.TextPaint arg3)
             {
-                IExecute("accept", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("accept", "(IILandroid/graphics/text/PositionedGlyphs;Landroid/text/TextPaint;)V", arg0, arg1, arg2, arg3);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

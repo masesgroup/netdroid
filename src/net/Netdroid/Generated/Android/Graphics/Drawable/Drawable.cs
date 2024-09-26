@@ -42,10 +42,10 @@ namespace Android.Graphics.Drawable
         /// </summary>
         [global::System.Obsolete("Drawable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Drawable(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -66,7 +66,7 @@ namespace Android.Graphics.Drawable
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
         #region Callback declaration
         /// <summary>
@@ -85,10 +85,10 @@ namespace Android.Graphics.Drawable
             /// </summary>
             [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -109,9 +109,9 @@ namespace Android.Graphics.Drawable
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -132,10 +132,10 @@ namespace Android.Graphics.Drawable
             /// </summary>
             [global::System.Obsolete("ConstantState class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ConstantState(params object[] args) : base(args) { }
-        
+
             private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
             private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-        
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
@@ -156,9 +156,9 @@ namespace Android.Graphics.Drawable
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
-        
+
             // TODO: complete the class
-        
+
         }
         #endregion
 
@@ -170,17 +170,17 @@ namespace Android.Graphics.Drawable
     public partial class Drawable
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#createFromPath(java.lang.String)"/>
@@ -203,7 +203,7 @@ namespace Android.Graphics.Drawable
         [global::System.Obsolete()]
         public static Android.Graphics.Drawable.Drawable CreateFromResourceStream(Android.Content.Res.Resources arg0, Android.Util.TypedValue arg1, Java.Io.InputStream arg2, Java.Lang.String arg3, Android.Graphics.BitmapFactory.Options arg4)
         {
-            return SExecute<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromResourceStream", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromResourceStream", "(Landroid/content/res/Resources;Landroid/util/TypedValue;Ljava/io/InputStream;Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#createFromResourceStream(android.content.res.Resources,android.util.TypedValue,java.io.InputStream,java.lang.String)"/>
@@ -215,7 +215,7 @@ namespace Android.Graphics.Drawable
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public static Android.Graphics.Drawable.Drawable CreateFromResourceStream(Android.Content.Res.Resources arg0, Android.Util.TypedValue arg1, Java.Io.InputStream arg2, Java.Lang.String arg3)
         {
-            return SExecute<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromResourceStream", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromResourceStream", "(Landroid/content/res/Resources;Landroid/util/TypedValue;Ljava/io/InputStream;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#createFromStream(java.io.InputStream,java.lang.String)"/>
@@ -225,7 +225,7 @@ namespace Android.Graphics.Drawable
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public static Android.Graphics.Drawable.Drawable CreateFromStream(Java.Io.InputStream arg0, Java.Lang.String arg1)
         {
-            return SExecute<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromStream", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromStream", "(Ljava/io/InputStream;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#createFromXml(android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.content.res.Resources.Theme)"/>
@@ -238,7 +238,7 @@ namespace Android.Graphics.Drawable
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public static Android.Graphics.Drawable.Drawable CreateFromXml(Android.Content.Res.Resources arg0, Org.Xmlpull.V1.XmlPullParser arg1, Android.Content.Res.Resources.Theme arg2)
         {
-            return SExecute<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromXml", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromXml", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#createFromXml(android.content.res.Resources,org.xmlpull.v1.XmlPullParser)"/>
@@ -250,7 +250,7 @@ namespace Android.Graphics.Drawable
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public static Android.Graphics.Drawable.Drawable CreateFromXml(Android.Content.Res.Resources arg0, Org.Xmlpull.V1.XmlPullParser arg1)
         {
-            return SExecute<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromXml", arg0, arg1);
+            return SExecuteWithSignature<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromXml", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;)Landroid/graphics/drawable/Drawable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#createFromXmlInner(android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet,android.content.res.Resources.Theme)"/>
@@ -264,7 +264,7 @@ namespace Android.Graphics.Drawable
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public static Android.Graphics.Drawable.Drawable CreateFromXmlInner(Android.Content.Res.Resources arg0, Org.Xmlpull.V1.XmlPullParser arg1, Android.Util.AttributeSet arg2, Android.Content.Res.Resources.Theme arg3)
         {
-            return SExecute<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromXmlInner", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromXmlInner", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#createFromXmlInner(android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet)"/>
@@ -277,7 +277,7 @@ namespace Android.Graphics.Drawable
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public static Android.Graphics.Drawable.Drawable CreateFromXmlInner(Android.Content.Res.Resources arg0, Org.Xmlpull.V1.XmlPullParser arg1, Android.Util.AttributeSet arg2)
         {
-            return SExecute<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromXmlInner", arg0, arg1, arg2);
+            return SExecuteWithSignature<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromXmlInner", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)Landroid/graphics/drawable/Drawable;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#resolveOpacity(int,int)"/>
@@ -287,11 +287,11 @@ namespace Android.Graphics.Drawable
         /// <returns><see cref="int"/></returns>
         public static int ResolveOpacity(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "resolveOpacity", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "resolveOpacity", "(II)I", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getOpacity()"/>
@@ -473,7 +473,7 @@ namespace Android.Graphics.Drawable
         /// <returns><see cref="bool"/></returns>
         public bool SetVisible(bool arg0, bool arg1)
         {
-            return IExecute<bool>("setVisible", arg0, arg1);
+            return IExecuteWithSignature<bool>("setVisible", "(ZZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#copyBounds()"/>
@@ -647,7 +647,7 @@ namespace Android.Graphics.Drawable
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public void Inflate(Android.Content.Res.Resources arg0, Org.Xmlpull.V1.XmlPullParser arg1, Android.Util.AttributeSet arg2, Android.Content.Res.Resources.Theme arg3)
         {
-            IExecute("inflate", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#inflate(android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet)"/>
@@ -659,7 +659,7 @@ namespace Android.Graphics.Drawable
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
         public void Inflate(Android.Content.Res.Resources arg0, Org.Xmlpull.V1.XmlPullParser arg1, Android.Util.AttributeSet arg2)
         {
-            IExecute("inflate", arg0, arg1, arg2);
+            IExecuteWithSignature("inflate", "(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#invalidateSelf()"/>
@@ -682,7 +682,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="long"/></param>
         public void ScheduleSelf(Java.Lang.Runnable arg0, long arg1)
         {
-            IExecute("scheduleSelf", arg0, arg1);
+            IExecuteWithSignature("scheduleSelf", "(Ljava/lang/Runnable;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setAutoMirrored(boolean)"/>
@@ -709,7 +709,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg3"><see cref="int"/></param>
         public void SetBounds(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setBounds", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setBounds", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setChangingConfigurations(int)"/>
@@ -727,7 +727,7 @@ namespace Android.Graphics.Drawable
         [global::System.Obsolete()]
         public void SetColorFilter(int arg0, Android.Graphics.PorterDuff.Mode arg1)
         {
-            IExecute("setColorFilter", arg0, arg1);
+            IExecuteWithSignature("setColorFilter", "(ILandroid/graphics/PorterDuff$Mode;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setDither(boolean)"/>
@@ -753,7 +753,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg1"><see cref="float"/></param>
         public void SetHotspot(float arg0, float arg1)
         {
-            IExecute("setHotspot", arg0, arg1);
+            IExecuteWithSignature("setHotspot", "(FF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setHotspotBounds(int,int,int,int)"/>
@@ -764,7 +764,7 @@ namespace Android.Graphics.Drawable
         /// <param name="arg3"><see cref="int"/></param>
         public void SetHotspotBounds(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setHotspotBounds", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setHotspotBounds", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setTint(int)"/>
@@ -806,29 +806,29 @@ namespace Android.Graphics.Drawable
         {
             IExecuteWithSignature("unscheduleSelf", "(Ljava/lang/Runnable;)V", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
         #region Callback implementation
         public partial class Callback
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.Callback.html#invalidateDrawable(android.graphics.drawable.Drawable)"/>
@@ -846,7 +846,7 @@ namespace Android.Graphics.Drawable
             /// <param name="arg2"><see cref="long"/></param>
             public void ScheduleDrawable(Android.Graphics.Drawable.Drawable arg0, Java.Lang.Runnable arg1, long arg2)
             {
-                IExecute("scheduleDrawable", arg0, arg1, arg2);
+                IExecuteWithSignature("scheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.Callback.html#unscheduleDrawable(android.graphics.drawable.Drawable,java.lang.Runnable)"/>
@@ -855,15 +855,15 @@ namespace Android.Graphics.Drawable
             /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
             public void UnscheduleDrawable(Android.Graphics.Drawable.Drawable arg0, Java.Lang.Runnable arg1)
             {
-                IExecute("unscheduleDrawable", arg0, arg1);
+                IExecuteWithSignature("unscheduleDrawable", "(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V", arg0, arg1);
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
@@ -872,21 +872,21 @@ namespace Android.Graphics.Drawable
         public partial class ConstantState
         {
             #region Constructors
-        
+
             #endregion
-        
+
             #region Class/Interface conversion operators
-        
+
             #endregion
-        
+
             #region Fields
-        
+
             #endregion
-        
+
             #region Static methods
-        
+
             #endregion
-        
+
             #region Instance methods
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.ConstantState.html#newDrawable()"/>
@@ -912,7 +912,7 @@ namespace Android.Graphics.Drawable
             /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
             public Android.Graphics.Drawable.Drawable NewDrawable(Android.Content.Res.Resources arg0, Android.Content.Res.Resources.Theme arg1)
             {
-                return IExecute<Android.Graphics.Drawable.Drawable>("newDrawable", arg0, arg1);
+                return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("newDrawable", "(Landroid/content/res/Resources;Landroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.ConstantState.html#newDrawable(android.content.res.Resources)"/>
@@ -931,20 +931,20 @@ namespace Android.Graphics.Drawable
             {
                 return IExecuteWithSignature<bool>("canApplyTheme", "()Z");
             }
-        
+
             #endregion
-        
+
             #region Nested classes
-        
+
             #endregion
-        
+
             // TODO: complete the class
         }
         #endregion
 
     
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

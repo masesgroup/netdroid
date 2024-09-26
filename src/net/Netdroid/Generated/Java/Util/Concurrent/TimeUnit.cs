@@ -40,10 +40,10 @@ namespace Java.Util.Concurrent
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public TimeUnit(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,13 +74,13 @@ namespace Java.Util.Concurrent
     public partial class TimeUnit
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#DAYS"/>
@@ -124,9 +124,9 @@ namespace Java.Util.Concurrent
         public static Java.Util.Concurrent.TimeUnit SECONDS { get { if (!_SECONDSReady) { _SECONDSContent = SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "SECONDS"); _SECONDSReady = true; } return _SECONDSContent; } }
         private static Java.Util.Concurrent.TimeUnit _SECONDSContent = default;
         private static bool _SECONDSReady = false; // this is used because in case of generics 
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#of(java.time.temporal.ChronoUnit)"/>
@@ -154,9 +154,9 @@ namespace Java.Util.Concurrent
         {
             return SExecuteWithSignatureArray<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "values", "()[Ljava/util/concurrent/TimeUnit;");
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#toChronoUnit()"/>
@@ -183,7 +183,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long Convert(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<long>("convert", arg0, arg1);
+            return IExecuteWithSignature<long>("convert", "(JLjava/util/concurrent/TimeUnit;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#toDays(long)"/>
@@ -265,7 +265,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void TimedJoin(Java.Lang.Thread arg0, long arg1)
         {
-            IExecute("timedJoin", arg0, arg1);
+            IExecuteWithSignature("timedJoin", "(Ljava/lang/Thread;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#timedWait(java.lang.Object,long)"/>
@@ -275,15 +275,15 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void TimedWait(object arg0, long arg1)
         {
-            IExecute("timedWait", arg0, arg1);
+            IExecuteWithSignature("timedWait", "(Ljava/lang/Object;J)V", arg0, arg1);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion

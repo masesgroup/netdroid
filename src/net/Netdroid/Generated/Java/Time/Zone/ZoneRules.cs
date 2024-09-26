@@ -40,10 +40,10 @@ namespace Java.Time.Zone
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ZoneRules(params object[] args) : base(args) { }
-    
+
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-    
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
@@ -64,9 +64,9 @@ namespace Java.Time.Zone
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-    
+
         // TODO: complete the class
-    
+
     }
     #endregion
 
@@ -74,17 +74,17 @@ namespace Java.Time.Zone
     public partial class ZoneRules
     {
         #region Constructors
-    
+
         #endregion
-    
+
         #region Class/Interface conversion operators
-    
+
         #endregion
-    
+
         #region Fields
-    
+
         #endregion
-    
+
         #region Static methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/zone/ZoneRules.html#of(java.time.ZoneOffset,java.time.ZoneOffset,java.util.List,java.util.List,java.util.List)"/>
@@ -97,7 +97,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="Java.Time.Zone.ZoneRules"/></returns>
         public static Java.Time.Zone.ZoneRules Of(Java.Time.ZoneOffset arg0, Java.Time.ZoneOffset arg1, Java.Util.List<Java.Time.Zone.ZoneOffsetTransition> arg2, Java.Util.List<Java.Time.Zone.ZoneOffsetTransition> arg3, Java.Util.List<Java.Time.Zone.ZoneOffsetTransitionRule> arg4)
         {
-            return SExecute<Java.Time.Zone.ZoneRules>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Time.Zone.ZoneRules>(LocalBridgeClazz, "of", "(Ljava/time/ZoneOffset;Ljava/time/ZoneOffset;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Ljava/time/zone/ZoneRules;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/zone/ZoneRules.html#of(java.time.ZoneOffset)"/>
@@ -108,9 +108,9 @@ namespace Java.Time.Zone
         {
             return SExecuteWithSignature<Java.Time.Zone.ZoneRules>(LocalBridgeClazz, "of", "(Ljava/time/ZoneOffset;)Ljava/time/zone/ZoneRules;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Instance methods
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/zone/ZoneRules.html#isDaylightSavings(java.time.Instant)"/>
@@ -137,7 +137,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="bool"/></returns>
         public bool IsValidOffset(Java.Time.LocalDateTime arg0, Java.Time.ZoneOffset arg1)
         {
-            return IExecute<bool>("isValidOffset", arg0, arg1);
+            return IExecuteWithSignature<bool>("isValidOffset", "(Ljava/time/LocalDateTime;Ljava/time/ZoneOffset;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/zone/ZoneRules.html#getDaylightSavings(java.time.Instant)"/>
@@ -227,13 +227,13 @@ namespace Java.Time.Zone
         {
             return IExecuteWithSignature<Java.Util.List<Java.Time.ZoneOffset>>("getValidOffsets", "(Ljava/time/LocalDateTime;)Ljava/util/List;", arg0);
         }
-    
+
         #endregion
-    
+
         #region Nested classes
-    
+
         #endregion
-    
+
         // TODO: complete the class
     }
     #endregion
