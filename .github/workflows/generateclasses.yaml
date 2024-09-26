@@ -107,7 +107,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: JNetReflector report
-          path: $GITHUB_WORKSPACE/JNetReflector.txt
+          path: ./JNetReflector.txt
 
       - name: Pre compile
         continue-on-error: ${{ inputs.ContinueOnCompilationError == true }}
