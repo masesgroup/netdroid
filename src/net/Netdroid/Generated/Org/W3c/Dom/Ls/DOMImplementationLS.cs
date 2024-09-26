@@ -128,7 +128,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Org.W3c.Dom.Ls.LSInput"/></returns>
         public Org.W3c.Dom.Ls.LSInput CreateLSInput()
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSInput>("createLSInput", "()Lorg/w3c/dom/ls/LSInput;");
+            return IExecute<Org.W3c.Dom.Ls.LSInput>("createLSInput");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/DOMImplementationLS.html#createLSOutput()"/>
@@ -136,7 +136,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Org.W3c.Dom.Ls.LSOutput"/></returns>
         public Org.W3c.Dom.Ls.LSOutput CreateLSOutput()
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSOutput>("createLSOutput", "()Lorg/w3c/dom/ls/LSOutput;");
+            return IExecute<Org.W3c.Dom.Ls.LSOutput>("createLSOutput");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/DOMImplementationLS.html#createLSParser(short,java.lang.String)"/>
@@ -147,7 +147,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Ls.LSParser CreateLSParser(short arg0, Java.Lang.String arg1)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSParser>("createLSParser", "(SLjava/lang/String;)Lorg/w3c/dom/ls/LSParser;", arg0, arg1);
+            return IExecute<Org.W3c.Dom.Ls.LSParser>("createLSParser", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/DOMImplementationLS.html#createLSSerializer()"/>
@@ -155,7 +155,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Org.W3c.Dom.Ls.LSSerializer"/></returns>
         public Org.W3c.Dom.Ls.LSSerializer CreateLSSerializer()
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSSerializer>("createLSSerializer", "()Lorg/w3c/dom/ls/LSSerializer;");
+            return IExecute<Org.W3c.Dom.Ls.LSSerializer>("createLSSerializer");
         }
 
         #endregion
