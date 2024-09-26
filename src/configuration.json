@@ -33,7 +33,7 @@
 	],
 	"ClassesWithCallbacks": [
 		{
-			"ClassName": "android.account.AccountAuthenticatorActivity",
+			"ClassName": "android.accounts.AccountAuthenticatorActivity",
 			"Patterns": [
 				"^on.*"
 			]
