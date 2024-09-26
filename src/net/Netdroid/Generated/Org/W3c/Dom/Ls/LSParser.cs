@@ -146,7 +146,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="bool"/></returns>
         public bool GetAsync()
         {
-            return IExecuteWithSignature<bool>("getAsync", "()Z");
+            return IExecute<bool>("getAsync");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#getBusy()"/>
@@ -154,7 +154,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="bool"/></returns>
         public bool GetBusy()
         {
-            return IExecuteWithSignature<bool>("getBusy", "()Z");
+            return IExecute<bool>("getBusy");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#parse(org.w3c.dom.ls.LSInput)"/>
@@ -165,7 +165,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public Org.W3c.Dom.Document Parse(Org.W3c.Dom.Ls.LSInput arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Lorg/w3c/dom/ls/LSInput;)Lorg/w3c/dom/Document;", arg0);
+            return IExecute<Org.W3c.Dom.Document>("parse", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#parseURI(java.lang.String)"/>
@@ -176,7 +176,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public Org.W3c.Dom.Document ParseURI(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Document>("parseURI", "(Ljava/lang/String;)Lorg/w3c/dom/Document;", arg0);
+            return IExecute<Org.W3c.Dom.Document>("parseURI", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#getDomConfig()"/>
@@ -184,7 +184,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Org.W3c.Dom.DOMConfiguration"/></returns>
         public Org.W3c.Dom.DOMConfiguration GetDomConfig()
         {
-            return IExecuteWithSignature<Org.W3c.Dom.DOMConfiguration>("getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;");
+            return IExecute<Org.W3c.Dom.DOMConfiguration>("getDomConfig");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#getFilter()"/>
@@ -192,7 +192,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Org.W3c.Dom.Ls.LSParserFilter"/></returns>
         public Org.W3c.Dom.Ls.LSParserFilter GetFilter()
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSParserFilter>("getFilter", "()Lorg/w3c/dom/ls/LSParserFilter;");
+            return IExecute<Org.W3c.Dom.Ls.LSParserFilter>("getFilter");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#parseWithContext(org.w3c.dom.ls.LSInput,org.w3c.dom.Node,short)"/>
@@ -205,14 +205,14 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public Org.W3c.Dom.Node ParseWithContext(Org.W3c.Dom.Ls.LSInput arg0, Org.W3c.Dom.Node arg1, short arg2)
         {
-            return IExecuteWithSignature<Org.W3c.Dom.Node>("parseWithContext", "(Lorg/w3c/dom/ls/LSInput;Lorg/w3c/dom/Node;S)Lorg/w3c/dom/Node;", arg0, arg1, arg2);
+            return IExecute<Org.W3c.Dom.Node>("parseWithContext", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#abort()"/>
         /// </summary>
         public void Abort()
         {
-            IExecuteWithSignature("abort", "()V");
+            IExecute("abort");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSParser.html#setFilter(org.w3c.dom.ls.LSParserFilter)"/>
@@ -220,7 +220,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSParserFilter"/></param>
         public void SetFilter(Org.W3c.Dom.Ls.LSParserFilter arg0)
         {
-            IExecuteWithSignature("setFilter", "(Lorg/w3c/dom/ls/LSParserFilter;)V", arg0);
+            IExecute("setFilter", arg0);
         }
 
         #endregion

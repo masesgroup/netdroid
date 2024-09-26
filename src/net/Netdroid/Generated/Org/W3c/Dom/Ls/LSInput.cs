@@ -116,7 +116,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="bool"/></returns>
         public bool GetCertifiedText()
         {
-            return IExecuteWithSignature<bool>("getCertifiedText", "()Z");
+            return IExecute<bool>("getCertifiedText");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getByteStream()"/>
@@ -124,7 +124,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         public Java.Io.InputStream GetByteStream()
         {
-            return IExecuteWithSignature<Java.Io.InputStream>("getByteStream", "()Ljava/io/InputStream;");
+            return IExecute<Java.Io.InputStream>("getByteStream");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getCharacterStream()"/>
@@ -132,7 +132,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public Java.Io.Reader GetCharacterStream()
         {
-            return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "()Ljava/io/Reader;");
+            return IExecute<Java.Io.Reader>("getCharacterStream");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getBaseURI()"/>
@@ -140,7 +140,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetBaseURI()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getBaseURI", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getBaseURI");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getEncoding()"/>
@@ -148,7 +148,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetEncoding()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getEncoding");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getPublicId()"/>
@@ -156,7 +156,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetPublicId()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getPublicId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getStringData()"/>
@@ -164,7 +164,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetStringData()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getStringData", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getStringData");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#getSystemId()"/>
@@ -172,7 +172,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetSystemId()
         {
-            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
+            return IExecute<Java.Lang.String>("getSystemId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setBaseURI(java.lang.String)"/>
@@ -180,7 +180,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetBaseURI(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("setBaseURI", "(Ljava/lang/String;)V", arg0);
+            IExecute("setBaseURI", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setByteStream(java.io.InputStream)"/>
@@ -188,7 +188,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public void SetByteStream(Java.Io.InputStream arg0)
         {
-            IExecuteWithSignature("setByteStream", "(Ljava/io/InputStream;)V", arg0);
+            IExecute("setByteStream", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setCertifiedText(boolean)"/>
@@ -196,7 +196,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetCertifiedText(bool arg0)
         {
-            IExecuteWithSignature("setCertifiedText", "(Z)V", arg0);
+            IExecute("setCertifiedText", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setCharacterStream(java.io.Reader)"/>
@@ -204,7 +204,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public void SetCharacterStream(Java.Io.Reader arg0)
         {
-            IExecuteWithSignature("setCharacterStream", "(Ljava/io/Reader;)V", arg0);
+            IExecute("setCharacterStream", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setEncoding(java.lang.String)"/>
@@ -212,7 +212,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetEncoding(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", arg0);
+            IExecute("setEncoding", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setPublicId(java.lang.String)"/>
@@ -220,7 +220,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetPublicId(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("setPublicId", "(Ljava/lang/String;)V", arg0);
+            IExecute("setPublicId", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setStringData(java.lang.String)"/>
@@ -228,7 +228,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetStringData(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("setStringData", "(Ljava/lang/String;)V", arg0);
+            IExecute("setStringData", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSInput.html#setSystemId(java.lang.String)"/>
@@ -236,7 +236,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetSystemId(Java.Lang.String arg0)
         {
-            IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);
+            IExecute("setSystemId", arg0);
         }
 
         #endregion

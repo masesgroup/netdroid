@@ -2229,7 +2229,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0);
                 }
 
                 #endregion
@@ -2409,7 +2409,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;J)Landroid/net/Uri;", arg0, arg1);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Media.html#getContentUri(java.lang.String)"/>
@@ -2418,7 +2418,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Media.html#getContentUriForPath(java.lang.String)"/>
@@ -2428,7 +2428,7 @@ namespace Android.Provider
                 [global::System.Obsolete()]
                 public static Android.Net.Uri GetContentUriForPath(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUriForPath", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUriForPath", arg0);
                 }
 
                 #endregion
@@ -2539,7 +2539,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0);
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Genres.html#getContentUriForAudioId(java.lang.String,int)"/>
@@ -2549,7 +2549,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUriForAudioId(Java.Lang.String arg0, int arg1)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUriForAudioId", "(Ljava/lang/String;I)Landroid/net/Uri;", arg0, arg1);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUriForAudioId", arg0, arg1);
                 }
 
                 #endregion
@@ -2837,7 +2837,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0);
                 }
 
                 #endregion
@@ -3012,7 +3012,7 @@ namespace Android.Provider
                 /// <returns><see cref="Android.Net.Uri"/></returns>
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                    return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0);
                 }
 
                 #endregion
