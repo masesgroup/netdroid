@@ -547,7 +547,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglChooseConfig(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, int[] arg1, Javax.Microedition.Khronos.Egl.EGLConfig[] arg2, int arg3, int[] arg4)
         {
-            return IExecute<bool>("eglChooseConfig", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<bool>("eglChooseConfig", "(Ljavax/microedition/khronos/egl/EGLDisplay;[I[Ljavax/microedition/khronos/egl/EGLConfig;I[I)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCopyBuffers(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface,java.lang.Object)"/>
@@ -558,7 +558,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglCopyBuffers(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLSurface arg1, object arg2)
         {
-            return IExecute<bool>("eglCopyBuffers", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("eglCopyBuffers", "(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;Ljava/lang/Object;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglDestroyContext(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLContext)"/>
@@ -568,7 +568,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglDestroyContext(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLContext arg1)
         {
-            return IExecute<bool>("eglDestroyContext", arg0, arg1);
+            return IExecuteWithSignature<bool>("eglDestroyContext", "(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLContext;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglDestroySurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface)"/>
@@ -578,7 +578,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglDestroySurface(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLSurface arg1)
         {
-            return IExecute<bool>("eglDestroySurface", arg0, arg1);
+            return IExecuteWithSignature<bool>("eglDestroySurface", "(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetConfigAttrib(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,int,int[])"/>
@@ -590,7 +590,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglGetConfigAttrib(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLConfig arg1, int arg2, int[] arg3)
         {
-            return IExecute<bool>("eglGetConfigAttrib", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("eglGetConfigAttrib", "(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;I[I)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetConfigs(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig[],int,int[])"/>
@@ -602,7 +602,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglGetConfigs(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLConfig[] arg1, int arg2, int[] arg3)
         {
-            return IExecute<bool>("eglGetConfigs", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("eglGetConfigs", "(Ljavax/microedition/khronos/egl/EGLDisplay;[Ljavax/microedition/khronos/egl/EGLConfig;I[I)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglInitialize(javax.microedition.khronos.egl.EGLDisplay,int[])"/>
@@ -612,7 +612,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglInitialize(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, int[] arg1)
         {
-            return IExecute<bool>("eglInitialize", arg0, arg1);
+            return IExecuteWithSignature<bool>("eglInitialize", "(Ljavax/microedition/khronos/egl/EGLDisplay;[I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglMakeCurrent(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface,javax.microedition.khronos.egl.EGLSurface,javax.microedition.khronos.egl.EGLContext)"/>
@@ -624,7 +624,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglMakeCurrent(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLSurface arg1, Javax.Microedition.Khronos.Egl.EGLSurface arg2, Javax.Microedition.Khronos.Egl.EGLContext arg3)
         {
-            return IExecute<bool>("eglMakeCurrent", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("eglMakeCurrent", "(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;Ljavax/microedition/khronos/egl/EGLSurface;Ljavax/microedition/khronos/egl/EGLContext;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglQueryContext(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLContext,int,int[])"/>
@@ -636,7 +636,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglQueryContext(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLContext arg1, int arg2, int[] arg3)
         {
-            return IExecute<bool>("eglQueryContext", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("eglQueryContext", "(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLContext;I[I)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglQuerySurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface,int,int[])"/>
@@ -648,7 +648,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglQuerySurface(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLSurface arg1, int arg2, int[] arg3)
         {
-            return IExecute<bool>("eglQuerySurface", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("eglQuerySurface", "(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;I[I)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglSwapBuffers(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface)"/>
@@ -658,7 +658,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglSwapBuffers(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLSurface arg1)
         {
-            return IExecute<bool>("eglSwapBuffers", arg0, arg1);
+            return IExecuteWithSignature<bool>("eglSwapBuffers", "(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglTerminate(javax.microedition.khronos.egl.EGLDisplay)"/>
@@ -667,7 +667,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglTerminate(Javax.Microedition.Khronos.Egl.EGLDisplay arg0)
         {
-            return IExecute<bool>("eglTerminate", arg0);
+            return IExecuteWithSignature<bool>("eglTerminate", "(Ljavax/microedition/khronos/egl/EGLDisplay;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglWaitGL()"/>
@@ -675,7 +675,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglWaitGL()
         {
-            return IExecute<bool>("eglWaitGL");
+            return IExecuteWithSignature<bool>("eglWaitGL", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglWaitNative(int,java.lang.Object)"/>
@@ -685,7 +685,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="bool"/></returns>
         public bool EglWaitNative(int arg0, object arg1)
         {
-            return IExecute<bool>("eglWaitNative", arg0, arg1);
+            return IExecuteWithSignature<bool>("eglWaitNative", "(ILjava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetError()"/>
@@ -693,7 +693,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="int"/></returns>
         public int EglGetError()
         {
-            return IExecute<int>("eglGetError");
+            return IExecuteWithSignature<int>("eglGetError", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglQueryString(javax.microedition.khronos.egl.EGLDisplay,int)"/>
@@ -703,7 +703,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String EglQueryString(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("eglQueryString", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("eglQueryString", "(Ljavax/microedition/khronos/egl/EGLDisplay;I)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreateContext(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,javax.microedition.khronos.egl.EGLContext,int[])"/>
@@ -715,7 +715,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="Javax.Microedition.Khronos.Egl.EGLContext"/></returns>
         public Javax.Microedition.Khronos.Egl.EGLContext EglCreateContext(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLConfig arg1, Javax.Microedition.Khronos.Egl.EGLContext arg2, int[] arg3)
         {
-            return IExecute<Javax.Microedition.Khronos.Egl.EGLContext>("eglCreateContext", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Microedition.Khronos.Egl.EGLContext>("eglCreateContext", "(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljavax/microedition/khronos/egl/EGLContext;[I)Ljavax/microedition/khronos/egl/EGLContext;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetCurrentContext()"/>
@@ -723,7 +723,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="Javax.Microedition.Khronos.Egl.EGLContext"/></returns>
         public Javax.Microedition.Khronos.Egl.EGLContext EglGetCurrentContext()
         {
-            return IExecute<Javax.Microedition.Khronos.Egl.EGLContext>("eglGetCurrentContext");
+            return IExecuteWithSignature<Javax.Microedition.Khronos.Egl.EGLContext>("eglGetCurrentContext", "()Ljavax/microedition/khronos/egl/EGLContext;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetCurrentDisplay()"/>
@@ -731,7 +731,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="Javax.Microedition.Khronos.Egl.EGLDisplay"/></returns>
         public Javax.Microedition.Khronos.Egl.EGLDisplay EglGetCurrentDisplay()
         {
-            return IExecute<Javax.Microedition.Khronos.Egl.EGLDisplay>("eglGetCurrentDisplay");
+            return IExecuteWithSignature<Javax.Microedition.Khronos.Egl.EGLDisplay>("eglGetCurrentDisplay", "()Ljavax/microedition/khronos/egl/EGLDisplay;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetDisplay(java.lang.Object)"/>
@@ -740,7 +740,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="Javax.Microedition.Khronos.Egl.EGLDisplay"/></returns>
         public Javax.Microedition.Khronos.Egl.EGLDisplay EglGetDisplay(object arg0)
         {
-            return IExecute<Javax.Microedition.Khronos.Egl.EGLDisplay>("eglGetDisplay", arg0);
+            return IExecuteWithSignature<Javax.Microedition.Khronos.Egl.EGLDisplay>("eglGetDisplay", "(Ljava/lang/Object;)Ljavax/microedition/khronos/egl/EGLDisplay;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreatePbufferSurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,int[])"/>
@@ -751,7 +751,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="Javax.Microedition.Khronos.Egl.EGLSurface"/></returns>
         public Javax.Microedition.Khronos.Egl.EGLSurface EglCreatePbufferSurface(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLConfig arg1, int[] arg2)
         {
-            return IExecute<Javax.Microedition.Khronos.Egl.EGLSurface>("eglCreatePbufferSurface", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Microedition.Khronos.Egl.EGLSurface>("eglCreatePbufferSurface", "(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;[I)Ljavax/microedition/khronos/egl/EGLSurface;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreatePixmapSurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,java.lang.Object,int[])"/>
@@ -764,7 +764,7 @@ namespace Javax.Microedition.Khronos.Egl
         [global::System.Obsolete()]
         public Javax.Microedition.Khronos.Egl.EGLSurface EglCreatePixmapSurface(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLConfig arg1, object arg2, int[] arg3)
         {
-            return IExecute<Javax.Microedition.Khronos.Egl.EGLSurface>("eglCreatePixmapSurface", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Microedition.Khronos.Egl.EGLSurface>("eglCreatePixmapSurface", "(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljava/lang/Object;[I)Ljavax/microedition/khronos/egl/EGLSurface;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreateWindowSurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,java.lang.Object,int[])"/>
@@ -776,7 +776,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="Javax.Microedition.Khronos.Egl.EGLSurface"/></returns>
         public Javax.Microedition.Khronos.Egl.EGLSurface EglCreateWindowSurface(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLConfig arg1, object arg2, int[] arg3)
         {
-            return IExecute<Javax.Microedition.Khronos.Egl.EGLSurface>("eglCreateWindowSurface", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Microedition.Khronos.Egl.EGLSurface>("eglCreateWindowSurface", "(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljava/lang/Object;[I)Ljavax/microedition/khronos/egl/EGLSurface;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetCurrentSurface(int)"/>
@@ -785,7 +785,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="Javax.Microedition.Khronos.Egl.EGLSurface"/></returns>
         public Javax.Microedition.Khronos.Egl.EGLSurface EglGetCurrentSurface(int arg0)
         {
-            return IExecute<Javax.Microedition.Khronos.Egl.EGLSurface>("eglGetCurrentSurface", arg0);
+            return IExecuteWithSignature<Javax.Microedition.Khronos.Egl.EGLSurface>("eglGetCurrentSurface", "(I)Ljavax/microedition/khronos/egl/EGLSurface;", arg0);
         }
 
         #endregion

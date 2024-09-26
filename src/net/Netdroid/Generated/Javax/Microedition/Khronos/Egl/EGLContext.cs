@@ -94,7 +94,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="Javax.Microedition.Khronos.Egl.EGL"/></returns>
         public static Javax.Microedition.Khronos.Egl.EGL GetEGL()
         {
-            return SExecute<Javax.Microedition.Khronos.Egl.EGL>(LocalBridgeClazz, "getEGL");
+            return SExecuteWithSignature<Javax.Microedition.Khronos.Egl.EGL>(LocalBridgeClazz, "getEGL", "()Ljavax/microedition/khronos/egl/EGL;");
         }
 
         #endregion
@@ -106,7 +106,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <returns><see cref="Javax.Microedition.Khronos.Opengles.GL"/></returns>
         public Javax.Microedition.Khronos.Opengles.GL GetGL()
         {
-            return IExecute<Javax.Microedition.Khronos.Opengles.GL>("getGL");
+            return IExecuteWithSignature<Javax.Microedition.Khronos.Opengles.GL>("getGL", "()Ljavax/microedition/khronos/opengles/GL;");
         }
 
         #endregion
