@@ -119,7 +119,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public bool Write(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Ls.LSOutput arg1)
         {
-            return IExecute<bool>("write", arg0, arg1);
+            return IExecuteWithSignature<bool>("write", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/ls/LSOutput;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSSerializer.html#writeToURI(org.w3c.dom.Node,java.lang.String)"/>
@@ -130,7 +130,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public bool WriteToURI(Org.W3c.Dom.Node arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("writeToURI", arg0, arg1);
+            return IExecuteWithSignature<bool>("writeToURI", "(Lorg/w3c/dom/Node;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSSerializer.html#getNewLine()"/>
@@ -138,7 +138,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetNewLine()
         {
-            return IExecute<Java.Lang.String>("getNewLine");
+            return IExecuteWithSignature<Java.Lang.String>("getNewLine", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSSerializer.html#writeToString(org.w3c.dom.Node)"/>
@@ -149,7 +149,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public Java.Lang.String WriteToString(Org.W3c.Dom.Node arg0)
         {
-            return IExecute<Java.Lang.String>("writeToString", arg0);
+            return IExecuteWithSignature<Java.Lang.String>("writeToString", "(Lorg/w3c/dom/Node;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSSerializer.html#getDomConfig()"/>
@@ -157,7 +157,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Org.W3c.Dom.DOMConfiguration"/></returns>
         public Org.W3c.Dom.DOMConfiguration GetDomConfig()
         {
-            return IExecute<Org.W3c.Dom.DOMConfiguration>("getDomConfig");
+            return IExecuteWithSignature<Org.W3c.Dom.DOMConfiguration>("getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSSerializer.html#setNewLine(java.lang.String)"/>
@@ -165,7 +165,7 @@ namespace Org.W3c.Dom.Ls
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetNewLine(Java.Lang.String arg0)
         {
-            IExecute("setNewLine", arg0);
+            IExecuteWithSignature("setNewLine", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion
